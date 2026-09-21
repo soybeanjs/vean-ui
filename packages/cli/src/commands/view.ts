@@ -24,7 +24,7 @@ export const view = new Command()
     const config = await getConfig(options.cwd);
 
     if (!config) {
-      console.error('No sbean.json found. Run "sbean init" first.');
+      console.error('No vean.json found. Run "vean init" first.');
       process.exit(1);
     }
 
@@ -48,13 +48,13 @@ export const view = new Command()
     let resolvedItem = localItems.find((i: any) => i.name === resolvedName) ?? null;
 
     if (!resolvedItem) {
-      console.log('  Fetching from ui.soybeanjs.cn...');
+      console.log('  Fetching from veanui.com...');
       resolvedItem = await fetchRegistryItem(options.component, config);
     }
 
     if (!resolvedItem) {
       console.error(`Component "${options.component}" not found in registry.`);
-      console.log('Run "sbean search" to see available components.');
+      console.log('Run "vean search" to see available components.');
       process.exit(1);
     }
 

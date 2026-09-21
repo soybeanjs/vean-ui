@@ -16,15 +16,15 @@ export default defineConfig({
   run: {
     tasks: {
       'build-ui': {
-        command: 'pnpm --filter @soybeanjs/ui build',
-        dependsOn: ['build-headless']
+        command: 'pnpm --filter @vean/ui build',
+        dependsOn: ['build-aria']
       },
       'dev-docs': {
-        command: 'pnpm --filter @soybeanjs/ui-docs dev',
+        command: 'pnpm --filter @vean/docs dev',
         dependsOn: ['build-ui']
       },
       'build-docs': {
-        command: 'pnpm --filter @soybeanjs/ui-docs build && vp fmt',
+        command: 'pnpm --filter @vean/docs build && vp fmt',
         dependsOn: ['build-ui']
       }
     }

@@ -1,10 +1,5 @@
-import type {
-  TextareaCompactEmits,
-  TextareaCompactProps,
-  TextareaCompactSlots,
-  TextareaUi
-} from '@soybeanjs/headless/textarea';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { TextareaCompactEmits, TextareaCompactProps, TextareaCompactSlots, TextareaUi } from '@vean/aria/textarea';
+import type { ClassValue } from '@vean/aria/types';
 import type { TextareaResize } from '@/styles/textarea';
 import type { ThemeSize } from '@/theme';
 

@@ -1,6 +1,6 @@
 import { defineConfig } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
-import { presetUi } from '@soybeanjs/ui-uno';
+import { presetUi } from '@vean/unocss';
 
 export default defineConfig<Theme>({
   cli: {

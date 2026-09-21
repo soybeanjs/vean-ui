@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.value",
             "default": null,
             "inheritedFrom": "_ClipboardProps.value",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.copiedduration",
             "default": "2000",
             "inheritedFrom": "_ClipboardProps.copiedDuration",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -178,7 +178,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.legacy",
             "default": "true",
             "inheritedFrom": "_ClipboardProps.legacy",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -189,7 +189,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.copyicon",
             "default": "'lucide:copy'",
             "inheritedFrom": "_ClipboardProps.copyIcon",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "IconValue",
@@ -197,8 +197,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -214,7 +214,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.copiedicon",
             "default": "'lucide:check'",
             "inheritedFrom": "_ClipboardProps.copiedIcon",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "IconValue",
@@ -222,8 +222,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -239,7 +239,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.copytext",
             "default": null,
             "inheritedFrom": "_ClipboardProps.copyText",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -250,7 +250,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.copiedtext",
             "default": null,
             "inheritedFrom": "_ClipboardProps.copiedText",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -261,7 +261,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.onlyicon",
             "default": "false",
             "inheritedFrom": "_ClipboardProps.onlyIcon",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -272,7 +272,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.type",
             "default": "'button'",
             "inheritedFrom": "_ClipboardProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -280,8 +280,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -297,7 +297,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.disabled",
             "default": null,
             "inheritedFrom": "_ClipboardProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -308,7 +308,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.aschild",
             "default": null,
             "inheritedFrom": "_ClipboardProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -319,7 +319,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_clipboard_types.clipboardprops.members.as",
             "default": "'div'",
             "inheritedFrom": "_ClipboardProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -354,8 +354,8 @@
         "type": "TypeAlias ClipboardEmits",
         "resolvedType": "{ click: [event: PointerEvent]; copied: [value: string]; copyError: [error: unknown] }",
         "description": "Events for the Clipboard component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardemits.emits",
-        "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardemits.emits",
+        "sourcePath": "packages/aria/src/components/clipboard/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -365,8 +365,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when click occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardemits.callables.click",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardemits.callables.click",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -389,8 +389,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when copied occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardemits.callables.copied",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardemits.callables.copied",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -399,8 +399,8 @@
             "parameters": "error: unknown",
             "required": true,
             "description": "Emitted when copy error occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardemits.callables.copyerror",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardemits.callables.copyerror",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           }
         ],
@@ -412,8 +412,8 @@
         "type": "Interface ClipboardSlotProps",
         "resolvedType": "{ copied: boolean; disabled: boolean; icon: string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined; supported: boolean; state: 'ready' | 'copied' | 'unsupported'; text: string; copy: () => Promise<void> }",
         "description": "Slot properties for the Clipboard component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/clipboard/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -421,10 +421,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether copied.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.copied",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.copied",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -432,10 +432,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -443,10 +443,10 @@
             "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
             "required": true,
             "description": "Icon rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.icon",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.icon",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "IconValue",
@@ -454,8 +454,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -468,10 +468,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether supported.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.supported",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.supported",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -479,10 +479,10 @@
             "type": "'ready' | 'copied' | 'unsupported'",
             "required": true,
             "description": "State exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.state",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.state",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardState",
@@ -490,8 +490,8 @@
                 "type": "'ready' | 'copied' | 'unsupported'",
                 "resolvedType": "'ready' | 'copied' | 'unsupported'",
                 "description": "State values for ClipboardState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardstate",
-                "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardstate",
+                "sourcePath": "packages/aria/src/components/clipboard/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -504,10 +504,10 @@
             "type": "string",
             "required": true,
             "description": "Text exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.text",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.text",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           },
           {
@@ -515,10 +515,10 @@
             "type": "() => Promise<void>",
             "required": true,
             "description": "Copy exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops.members.copy",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops.members.copy",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": []
           }
         ],
@@ -531,8 +531,8 @@
         "type": "TypeAlias ClipboardSlots",
         "resolvedType": "{ leading?: ((props: ClipboardSlotProps) => any); Clipboard?: ((props: ClipboardSlotProps) => any); trailing?: ((props: ClipboardSlotProps) => any) }",
         "description": "Slots for the Clipboard component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslots.slots",
-        "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslots.slots",
+        "sourcePath": "packages/aria/src/components/clipboard/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -542,8 +542,8 @@
             "parameters": "((props: ClipboardSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslots.callables.leading",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardSlotProps",
@@ -551,8 +551,8 @@
                 "type": "ClipboardSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Clipboard component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops",
-                "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops",
+                "sourcePath": "packages/aria/src/components/clipboard/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -566,8 +566,8 @@
             "parameters": "((props: ClipboardSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslots.callables.default",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslots.callables.default",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardSlotProps",
@@ -575,8 +575,8 @@
                 "type": "ClipboardSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Clipboard component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops",
-                "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops",
+                "sourcePath": "packages/aria/src/components/clipboard/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -590,8 +590,8 @@
             "parameters": "((props: ClipboardSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslots.callables.trailing",
-            "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslots.callables.trailing",
+            "sourcePath": "packages/aria/src/components/clipboard/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardSlotProps",
@@ -599,8 +599,8 @@
                 "type": "ClipboardSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Clipboard component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_clipboard_types.clipboardslotprops",
-                "sourcePath": "packages/headless/src/components/clipboard/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_clipboard_types.clipboardslotprops",
+                "sourcePath": "packages/aria/src/components/clipboard/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

@@ -87,7 +87,7 @@ describe('SNavMenu (e2e)', () => {
     // Move the real pointer from the trigger center down into the open viewport. The
     // positioner's grace corridor must keep the menu open while the pointer is in transit.
     const triggerEl = oneTrigger.elements()[0]!;
-    const viewportEl = document.querySelector('[data-soybean-nav-menu-viewport]')!;
+    const viewportEl = document.querySelector('[data-vean-nav-menu-viewport]')!;
     const session = cdp();
     const t = triggerEl.getBoundingClientRect();
     const v = viewportEl.getBoundingClientRect();
@@ -199,7 +199,7 @@ describe('SNavMenu (e2e)', () => {
     // so poll until placement settles instead of sampling a transition frame.
     const measureAlignmentGap = () => {
       const triggerRect = oneTrigger.elements()[0]!.getBoundingClientRect();
-      const viewportRect = document.querySelector('[data-soybean-nav-menu-viewport]')!.getBoundingClientRect();
+      const viewportRect = document.querySelector('[data-vean-nav-menu-viewport]')!.getBoundingClientRect();
 
       return Math.abs(viewportRect.right - triggerRect.right);
     };
@@ -245,7 +245,7 @@ describe('SNavMenu (e2e)', () => {
     // Move the real pointer from the sub-trigger into the nested flyout. The child
     // transit corridor + parent `isPointerInTree` must keep both levels open.
     const triggerEl = oneATrigger.elements()[0]!;
-    const flyoutEl = document.querySelector('[data-soybean-nav-menu-sub-content]')!;
+    const flyoutEl = document.querySelector('[data-vean-nav-menu-sub-content]')!;
     await movePointerBetween(triggerEl, flyoutEl);
 
     await expect.element(oneA1).toBeVisible();

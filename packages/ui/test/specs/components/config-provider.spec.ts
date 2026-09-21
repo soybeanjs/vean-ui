@@ -1,8 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { resolveThemeMap } from '@soybeanjs/theme';
-import { THEME_ENVELOPE_VERSION, THEME_STORAGE_KEY, readThemeEnvelope } from '@soybeanjs/theme/storage';
+import { resolveThemeMap } from '@vean/theme';
+import { THEME_ENVELOPE_VERSION, THEME_STORAGE_KEY, readThemeEnvelope } from '@vean/theme/storage';
 import SAccordion from '@/components/accordion/accordion.vue';
 import SConfigProvider from '@/components/config-provider/config-provider.vue';
 import SIcon from '@/components/icon/icon.vue';
@@ -10,8 +10,8 @@ import { getA11yViolations } from '../../shared/a11y';
 
 // 部分 mock 主题引擎：保留真实实现，仅包装 resolveThemeMap / readThemeEnvelope
 // 以便断言派生与存储读取的次数。
-vi.mock('@soybeanjs/theme', async importOriginal => {
-  const actual = await importOriginal<typeof import('@soybeanjs/theme')>();
+vi.mock('@vean/theme', async importOriginal => {
+  const actual = await importOriginal<typeof import('@vean/theme')>();
 
   return {
     ...actual,
@@ -19,8 +19,8 @@ vi.mock('@soybeanjs/theme', async importOriginal => {
   };
 });
 
-vi.mock('@soybeanjs/theme/storage', async importOriginal => {
-  const actual = await importOriginal<typeof import('@soybeanjs/theme/storage')>();
+vi.mock('@vean/theme/storage', async importOriginal => {
+  const actual = await importOriginal<typeof import('@vean/theme/storage')>();
 
   return {
     ...actual,
@@ -38,9 +38,9 @@ describe('SConfigProvider', () => {
   afterEach(() => {
     // the runtime theme <style> lives in <head> by design, so it is cleared
     // between tests to keep assertions independent of earlier mounts.
-    getStyleEl('#soybean-theme')?.remove();
-    getStyleEl('__SoybeanHeadless_Styles')?.remove();
-    getStyleEl('__SoybeanUI_toastStyle')?.remove();
+    getStyleEl('#vean-theme')?.remove();
+    getStyleEl('__Vean_Aria_Styles')?.remove();
+    getStyleEl('__Vean_toastStyle')?.remove();
   });
 
   describe('rendering', () => {
@@ -71,7 +71,7 @@ describe('SConfigProvider', () => {
 
   describe('theme injection', () => {
     it('owns a single runtime style element in <head>', () => {
-      document.head.querySelectorAll('#soybean-theme').forEach(node => node.remove());
+      document.head.querySelectorAll('#vean-theme').forEach(node => node.remove());
 
       const wrapper = mount(SConfigProvider, {
         props: { theme: { base: 'gray', primary: 'violet' } },
@@ -80,7 +80,7 @@ describe('SConfigProvider', () => {
       });
 
       // 运行时元素挂在 head、且只有一个（不渲染进组件树）
-      const styleEl = document.head.querySelector('#soybean-theme');
+      const styleEl = document.head.querySelector('#vean-theme');
       expect(styleEl).toBeTruthy();
       expect(styleEl!.textContent).toContain('--');
       expect(styleEl!.textContent).toContain('--background');
@@ -96,15 +96,15 @@ describe('SConfigProvider', () => {
         attachTo: document.body
       });
 
-      const firstCss = document.head.querySelector('#soybean-theme')?.textContent ?? '';
+      const firstCss = document.head.querySelector('#vean-theme')?.textContent ?? '';
 
       await wrapper.setProps({ theme: { base: 'slate', primary: 'blue' } });
 
-      const secondCss = document.head.querySelector('#soybean-theme')?.textContent ?? '';
+      const secondCss = document.head.querySelector('#vean-theme')?.textContent ?? '';
       expect(secondCss).toBeTruthy();
       expect(secondCss).not.toBe(firstCss);
       // 仍是同一个元素（就地更新，不新增）
-      expect(document.head.querySelectorAll('#soybean-theme').length).toBe(1);
+      expect(document.head.querySelectorAll('#vean-theme').length).toBe(1);
 
       wrapper.unmount();
     });
@@ -121,7 +121,7 @@ describe('SConfigProvider', () => {
         { attachTo: document.body }
       );
 
-      expect(wrapper.find('[data-soybean-accordion-root]').attributes('dir')).toBe('rtl');
+      expect(wrapper.find('[data-vean-accordion-root]').attributes('dir')).toBe('rtl');
 
       wrapper.unmount();
     });
@@ -136,7 +136,7 @@ describe('SConfigProvider', () => {
         { attachTo: document.body }
       );
 
-      expect(wrapper.find('[data-soybean-accordion-root]').attributes('dir')).toBe('ltr');
+      expect(wrapper.find('[data-vean-accordion-root]').attributes('dir')).toBe('ltr');
 
       wrapper.unmount();
     });
@@ -151,7 +151,7 @@ describe('SConfigProvider', () => {
         { attachTo: document.body }
       );
 
-      expect(wrapper.find('[data-soybean-accordion-root]').attributes('dir')).toBe('ltr');
+      expect(wrapper.find('[data-vean-accordion-root]').attributes('dir')).toBe('ltr');
 
       wrapper.unmount();
     });
@@ -166,7 +166,7 @@ describe('SConfigProvider', () => {
         { attachTo: document.body }
       );
 
-      expect(wrapper.find('[data-soybean-accordion-root]').attributes('dir')).toBe('ltr');
+      expect(wrapper.find('[data-vean-accordion-root]').attributes('dir')).toBe('ltr');
 
       wrapper.unmount();
     });
@@ -179,7 +179,7 @@ describe('SConfigProvider', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-toast-provider]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-toast-provider]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -191,7 +191,7 @@ describe('SConfigProvider', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-toast-provider]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-toast-provider]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -362,7 +362,7 @@ describe('SConfigProvider', () => {
       expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining('preset "missing" not found'));
 
       // 回退内置：仍生成主题 CSS（运行时元素在 head）
-      expect(document.head.querySelector('#soybean-theme')?.textContent).toContain('--');
+      expect(document.head.querySelector('#vean-theme')?.textContent).toContain('--');
 
       warnSpy.mockRestore();
       wrapper.unmount();
@@ -411,7 +411,7 @@ describe('SConfigProvider', () => {
     });
 
     it('never creates a second runtime style element', () => {
-      document.head.querySelectorAll('#soybean-theme').forEach(node => node.remove());
+      document.head.querySelectorAll('#vean-theme').forEach(node => node.remove());
 
       const first = mount(SConfigProvider, {
         props: { persistTheme: true, theme: { base: 'gray' } },
@@ -424,7 +424,7 @@ describe('SConfigProvider', () => {
         attachTo: document.body
       });
 
-      expect(document.head.querySelectorAll('#soybean-theme').length).toBe(1);
+      expect(document.head.querySelectorAll('#vean-theme').length).toBe(1);
 
       first.unmount();
       second.unmount();
@@ -433,7 +433,7 @@ describe('SConfigProvider', () => {
 
   describe('font options', () => {
     it('forwards the theme `font` stacks into the emitted literal tokens', () => {
-      document.head.querySelectorAll('#soybean-theme').forEach(node => node.remove());
+      document.head.querySelectorAll('#vean-theme').forEach(node => node.remove());
 
       const wrapper = mount(SConfigProvider, {
         props: {
@@ -443,7 +443,7 @@ describe('SConfigProvider', () => {
         attachTo: document.body
       });
 
-      const css = document.head.querySelector('#soybean-theme')?.textContent ?? '';
+      const css = document.head.querySelector('#vean-theme')?.textContent ?? '';
 
       // 单个家族名会被引擎补上系统栈兜底（`resolveFontValue`），断言前缀即可
       expect(css).toContain('--font-sans: Inter,');
@@ -460,12 +460,12 @@ describe('SConfigProvider', () => {
         attachTo: document.body
       });
 
-      const before = document.head.querySelector('#soybean-theme')?.textContent ?? '';
+      const before = document.head.querySelector('#vean-theme')?.textContent ?? '';
       expect(before).toContain('--font-sans: Inter,');
 
       await wrapper.setProps({ theme: { font: { sans: 'Geist' } } });
 
-      const after = document.head.querySelector('#soybean-theme')?.textContent ?? '';
+      const after = document.head.querySelector('#vean-theme')?.textContent ?? '';
       expect(after).toContain('--font-sans: Geist,');
       expect(after).not.toBe(before);
 

@@ -3,8 +3,8 @@ import type {
   TagsInputCompactEmits,
   TagsInputCompactSlots,
   TagsInputUi
-} from '@soybeanjs/headless/tags-input';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/tags-input';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

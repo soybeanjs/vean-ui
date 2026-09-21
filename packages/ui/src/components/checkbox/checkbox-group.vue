@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="T extends CheckboxGroupOptionData = CheckboxGroupOptionData">
 import { computed } from 'vue';
-import { CheckboxGroupCompact, provideCheckboxUi } from '@soybeanjs/headless/checkbox';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { CheckboxGroupCompact, provideCheckboxUi } from '@vean/aria/checkbox';
+import { useOmitProps } from '@vean/aria/composables';
 import { checkboxVariants } from '@/styles/checkbox';
 import type { CheckboxGroupProps, CheckboxGroupEmits, CheckboxGroupOptionData } from './types';
 

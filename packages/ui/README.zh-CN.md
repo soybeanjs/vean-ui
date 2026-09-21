@@ -1,34 +1,34 @@
 <p align="center">
-  <a href="https://github.com/soybeanjs/soybean-ui">
-    <img src="https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144" alt="Logo" width="150" />
+  <a href="https://github.com/soybeanjs/vean-ui">
+    <img src="https://r2.veanui.com/imgs/logo-vean-ui.svg?v=202609141212" alt="Logo" width="150" />
   </a>
 </p>
 
-# @soybeanjs/ui
+# @vean/ui
 
 [English](./README.md) | 中文
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](../../LICENSE)
-[![npm version](https://img.shields.io/npm/v/@soybeanjs/ui)](https://www.npmjs.com/package/@soybeanjs/ui)
-[![npm downloads](https://img.shields.io/npm/dt/@soybeanjs/ui)](https://www.npmjs.com/package/@soybeanjs/ui)
-[![github stars](https://img.shields.io/github/stars/soybeanjs/soybean-ui)](https://github.com/soybeanjs/soybean-ui)
+[![npm version](https://img.shields.io/npm/v/@vean/ui)](https://www.npmjs.com/package/@vean/ui)
+[![npm downloads](https://img.shields.io/npm/dt/@vean/ui)](https://www.npmjs.com/package/@vean/ui)
+[![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-一套优雅、现代、可访问的、具有 shadcn 风格设计的 Vue 3 UI 组件库，基于 `@soybeanjs/headless` 构建。
+一套优雅、现代、可访问的、具有 shadcn 风格设计的 Vue 3 UI 组件库，基于 `@vean/aria` 构建。
 
 ## 📖 简介
 
-`@soybeanjs/ui` 提供开箱即用的带样式组件，由 UnoCSS 和 `@soybeanjs/cva` class-variance 配方驱动。每个组件都是对应 `@soybeanjs/headless` 原语的 `S`-前缀包装层，遵循 **样式注入** 模式：样式包装层计算类名并通过 `provide{Name}Ui` 注入，headless 组件通过 `useUiContext()` 读取。
+`@vean/ui` 提供开箱即用的带样式组件，由 UnoCSS 和 `@soybeanjs/cva` class-variance 配方驱动。每个组件都是对应 `@vean/aria` 原语的 `S`-前缀包装层，遵循 **样式注入** 模式：样式包装层计算类名并通过 `provide{Name}Ui` 注入，aria 组件通过 `useUiContext()` 读取。
 
 ```ts
 // 样式注入 — 单向数据流
 const ui = computed(() => accordionVariants({ size: props.size }, props.ui, { root: props.class }));
-provideAccordionUi(ui); // headless 通过 useAccordionUi() 读取
+provideAccordionUi(ui); // aria 通过 useAccordionUi() 读取
 ```
 
 ## 📦 安装
 
 ```bash
-pnpm add @soybeanjs/ui
+pnpm add @vean/ui
 ```
 
 ## 🚀 使用方法
@@ -38,7 +38,7 @@ pnpm add @soybeanjs/ui
 在主入口文件（如 `main.ts`）中引入预构建的 UnoCSS 样式表：
 
 ```ts
-import '@soybeanjs/ui/styles.css';
+import '@vean/ui/styles.css';
 ```
 
 ### 2. 按需引入（推荐）
@@ -48,7 +48,7 @@ import '@soybeanjs/ui/styles.css';
 ```ts
 // vite.config.ts
 import Components from 'unplugin-vue-components/vite';
-import UiResolver from '@soybeanjs/ui/resolver';
+import UiResolver from '@vean/ui/resolver';
 
 export default defineConfig({
   plugins: [
@@ -64,7 +64,7 @@ export default defineConfig({
 ```ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@soybeanjs/ui/nuxt']
+  modules: ['@vean/ui/nuxt']
 });
 ```
 
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
 
 ```vue
 <script setup>
-import { SButton, SDialog } from '@soybeanjs/ui';
+import { SButton, SDialog } from '@vean/ui';
 </script>
 
 <template>
@@ -85,7 +85,7 @@ import { SButton, SDialog } from '@soybeanjs/ui';
 ## ✨ 特性
 
 - **shadcn 风格设计**: 现代、简洁的美学，受 shadcn/ui 启发。
-- **可访问性**: 基于 `@soybeanjs/headless` 原语构建，全面支持 WAI-ARIA。
+- **可访问性**: 基于 `@vean/aria` 原语构建，全面支持 WAI-ARIA。
 - **RTL 就绪**: 通过 `ConfigProvider` 即可切换 LTR / RTL 布局。
 - **多级自定义**: 通过 `ui` prop 覆盖单个插槽类名，也可替换整个样式层。
 - **主题系统**: 8 种语义色彩和 6 种尺寸，通过 `ConfigProvider` 控制。
@@ -122,7 +122,7 @@ import { SButton, SDialog } from '@soybeanjs/ui';
 
 ```vue
 <script setup>
-import { SConfigProvider, SButton } from '@soybeanjs/ui';
+import { SConfigProvider, SButton } from '@vean/ui';
 </script>
 
 <template>
@@ -134,7 +134,7 @@ import { SConfigProvider, SButton } from '@soybeanjs/ui';
 
 ## 🌐 语言支持
 
-`@soybeanjs/ui` 通过 `ConfigProvider` 继承 `@soybeanjs/headless` 的国际化支持：
+`@vean/ui` 通过 `ConfigProvider` 继承 `@vean/aria` 的国际化支持：
 
 | 代码    | 语言         |
 | ------- | ------------ |
@@ -176,14 +176,14 @@ packages/ui/src/
 ### 包导出
 
 ```ts
-import { SButton, SAccordion } from '@soybeanjs/ui'; // 所有组件
-import '@soybeanjs/ui/styles.css'; // 预构建 UnoCSS 样式表
-// 另见: @soybeanjs/ui/nuxt · @soybeanjs/ui/resolver
+import { SButton, SAccordion } from '@vean/ui'; // 所有组件
+import '@vean/ui/styles.css'; // 预构建 UnoCSS 样式表
+// 另见: @vean/ui/nuxt · @vean/ui/resolver
 ```
 
 ## 🧩 组件
 
-`@soybeanjs/ui` 提供 86 个 `S`-前缀样式组件，每个都包装一个 `@soybeanjs/headless` 原语：
+`@vean/ui` 提供 86 个 `S`-前缀样式组件，每个都包装一个 `@vean/aria` 原语：
 
 | 分类         | 组件                                                                |
 | ------------ | ------------------------------------------------------------------- |
@@ -213,7 +213,7 @@ import '@soybeanjs/ui/styles.css'; // 预构建 UnoCSS 样式表
 
 ## 📖 文档
 
-完整文档、Playground 示例和组件 API 参考，请访问 [SoybeanUI 文档站点](https://ui.soybeanjs.cn)。
+完整文档、Playground 示例和组件 API 参考，请访问 [Vean 文档站点](https://veanui.com)。
 
 ## 💝 致谢
 

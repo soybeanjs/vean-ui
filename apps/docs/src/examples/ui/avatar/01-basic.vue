@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SAvatar, SButtonIcon, SInput, SInputNumber, SSelect } from '@soybeanjs/ui';
-import type { ThemeSize } from '@soybeanjs/ui';
+import { SAvatar, SButtonIcon, SInput, SInputNumber, SSelect } from '@vean/ui';
+import type { ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -23,7 +23,7 @@ interface CustomizerState {
 /** 默认形态：`reset` 回到这份快照，所以它是常量而不是状态。 */
 const DEFAULTS: CustomizerState = {
   size: 'md',
-  src: 'https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144',
+  src: 'https://r2.veanui.com/imgs/logo-vean-ui.svg?v=202609141212',
   fallbackLabel: 'S',
   delayMs: null
 };

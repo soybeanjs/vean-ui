@@ -10,7 +10,7 @@ import uiStyles from './styles.css?raw';
 import { buildThemeColors, buildThemeEntries, buildThemePreflight } from './theme';
 
 /**
- * The SoybeanUI unocss preset.
+ * The Vean unocss preset.
  *
  * Returns **multiple presets** so that a single call composes the full
  * recommendation stack:
@@ -18,7 +18,7 @@ import { buildThemeColors, buildThemeEntries, buildThemePreflight } from './them
  * ```ts
  * // uno.config.ts
  * import { defineConfig } from 'unocss'
- * import { presetUi } from '@soybeanjs/ui-uno'
+ * import { presetUi } from '@vean/unocss'
  *
  * export default defineConfig({
  *   presets: [presetUi({ base: 'zinc', primary: 'indigo', resetCSS: true, globalCSS: true, uiCSS: true })],
@@ -89,13 +89,13 @@ export function presetUi(options?: UiUnocssOptions): Preset<Theme>[] {
 
   // ---- Self preset (theme layer) ----------------------------------------
   const selfPreset: Preset = {
-    name: 'soybean-ui-uno',
+    name: 'vean-uno',
     preflights: [...preflights, { getCSS: () => uiStyles }],
     theme: {
       animation: {
         keyframes: {
-          'collapsible-down': '{from{ height: 0 } to { height: var(--soybean-collapsible-content-height)}}',
-          'collapsible-up': '{from{ height: var(--soybean-collapsible-content-height)} to { height: 0 }}'
+          'collapsible-down': '{from{ height: 0 } to { height: var(--vean-collapsible-content-height)}}',
+          'collapsible-up': '{from{ height: var(--vean-collapsible-content-height)} to { height: 0 }}'
         },
         durations: {
           'collapsible-down': '200ms',

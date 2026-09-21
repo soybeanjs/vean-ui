@@ -1,10 +1,5 @@
-import type {
-  EditableCompactProps,
-  EditableCompactEmits,
-  EditableCompactSlots,
-  EditableUi
-} from '@soybeanjs/headless/editable';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { EditableCompactProps, EditableCompactEmits, EditableCompactSlots, EditableUi } from '@vean/aria/editable';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

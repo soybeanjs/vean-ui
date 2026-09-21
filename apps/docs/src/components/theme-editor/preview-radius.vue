@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SButton, SCard, SInput, STag, STextarea } from '@soybeanjs/ui';
+import { SButton, SCard, SInput, STag, STextarea } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewRadius'

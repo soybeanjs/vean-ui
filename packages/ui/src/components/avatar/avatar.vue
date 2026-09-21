@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, useSlots } from 'vue';
-import { AvatarCompact, provideAvatarUi } from '@soybeanjs/headless/avatar';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { AvatarCompact, provideAvatarUi } from '@vean/aria/avatar';
+import { useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { avatarVariants } from '@/styles/avatar';
 import type { AvatarProps, AvatarEmits } from './types';
 

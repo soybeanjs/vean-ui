@@ -40,7 +40,7 @@ function createHarness(defaultOpen: boolean) {
 }
 
 function contentElement(): HTMLElement {
-  const element = document.querySelector<HTMLElement>('[data-soybean-collapsible-content]');
+  const element = document.querySelector<HTMLElement>('[data-vean-collapsible-content]');
 
   if (!element) {
     throw new Error('expected the collapsible content to be rendered');

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { Label } from '@soybeanjs/headless/label';
+import { useOmitProps } from '@vean/aria/composables';
+import { Label } from '@vean/aria/label';
 import { labelVariants } from '@/styles/label';
 import type { LabelProps } from './types';
 

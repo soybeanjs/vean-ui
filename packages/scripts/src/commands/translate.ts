@@ -156,18 +156,18 @@ function createChangelogTarget(target: DocsTarget): TranslateTarget {
   };
 }
 
-/** Headless locale bundles are hand-written source, so there is nothing to prepare. */
+/** Aria locale bundles are hand-written source, so there is nothing to prepare. */
 function createLocaleTarget(): TranslateTarget {
   return {
     key: 'locale',
     label: 'locale',
     availableLocales: listLocaleNames,
     prepare: async () => {},
-    translateLocale: translateHeadlessLocale
+    translateLocale: translateAriaLocale
   };
 }
 
-async function translateHeadlessLocale(locale: string, cli: TranslateCliOptions): Promise<void> {
+async function translateAriaLocale(locale: string, cli: TranslateCliOptions): Promise<void> {
   const logPrefix = `locale ${locale}`;
   const sourceMessages = await readLocaleMessages(cli.sourceLocale);
 

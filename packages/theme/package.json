@@ -1,10 +1,10 @@
 {
-  "name": "@soybeanjs/theme",
+  "name": "@vean/theme",
   "version": "0.50.0",
-  "description": "The SoybeanUI theme engine: a static palette layer plus a declarative semantic alias layer (no measurement or correction).",
-  "homepage": "https://github.com/soybeanjs/soybean-ui",
+  "description": "The Vean theme engine: a static palette layer plus a declarative semantic alias layer (no measurement or correction).",
+  "homepage": "https://github.com/soybeanjs/vean-ui",
   "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-ui/issues"
+    "url": "https://github.com/soybeanjs/vean-ui/issues"
   },
   "license": "MIT",
   "author": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/soybeanjs"
   },
   "repository": {
-    "url": "https://github.com/soybeanjs/soybean-ui.git"
+    "url": "https://github.com/soybeanjs/vean-ui.git"
   },
   "files": [
     "dist"

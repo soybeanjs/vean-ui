@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -185,7 +185,7 @@
                     "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -196,7 +196,7 @@
                     "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcontentprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -207,7 +207,7 @@
                     "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcontentprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -323,7 +323,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -334,7 +334,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -345,7 +345,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -356,7 +356,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardprops.members.unmountonhide",
             "default": null,
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -367,7 +367,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -378,7 +378,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -425,7 +425,7 @@
             "required": true,
             "description": "Event handler called when the open state of the collapsible changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           }
         ],
@@ -436,8 +436,8 @@
             "type": "{ 'update:open': [value: boolean]; }",
             "resolvedType": "{ \"update:open\": [value: boolean] }",
             "description": "Events for the CollapsibleRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -448,8 +448,8 @@
                 "parameters": "value: boolean",
                 "required": true,
                 "description": "Event handler called when the open state of the collapsible changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -570,7 +570,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcollapsibletriggerprops.members.disabledcollapsible",
             "default": null,
             "inheritedFrom": "disabledCollapsible",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -581,7 +581,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcollapsibletriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -589,8 +589,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -606,7 +606,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcollapsibletriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -617,7 +617,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcollapsibletriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -628,7 +628,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcollapsibletriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -677,7 +677,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcontentprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -688,7 +688,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcontentprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -699,7 +699,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardcontentprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -793,7 +793,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -804,7 +804,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -815,7 +815,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -826,7 +826,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootprops.members.unmountonhide",
             "default": null,
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -837,7 +837,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -848,7 +848,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -895,7 +895,7 @@
             "required": true,
             "description": "Event handler called when the open state of the collapsible changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_card_types.cardrootemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           }
         ],
@@ -906,8 +906,8 @@
             "type": "{ 'update:open': [value: boolean]; }",
             "resolvedType": "{ \"update:open\": [value: boolean] }",
             "description": "Events for the CollapsibleRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -918,8 +918,8 @@
                 "parameters": "value: boolean",
                 "required": true,
                 "description": "Event handler called when the open state of the collapsible changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                 "referencedTypes": []
               }
             ]

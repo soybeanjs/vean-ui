@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButtonIcon, SInput, SInputNumber, SSelect, SSwitch, STreeMenu } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize, TreeMenuExpandStrategy } from '@soybeanjs/ui';
+import { SButtonIcon, SInput, SInputNumber, SSelect, SSwitch, STreeMenu } from '@vean/ui';
+import type { SelectOptionData, ThemeSize, TreeMenuExpandStrategy } from '@vean/ui';
 import { themeSizeOptions, themeSizeRatioMap } from '~/constants/theme';
 import { treeMenuItems } from './data';
 

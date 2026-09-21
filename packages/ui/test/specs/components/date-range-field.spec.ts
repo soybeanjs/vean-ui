@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { toISODateString } from '@soybeanjs/headless/date';
-import type { DateRange } from '@soybeanjs/headless/date';
+import { toISODateString } from '@vean/aria/date';
+import type { DateRange } from '@vean/aria/date';
 import SDateRangeField from '@/components/date-range-field/date-range-field.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -28,7 +28,7 @@ describe('SDateRangeField', () => {
       const wrapper = mountRangeField({ class: 'test-date-range-field' });
 
       expect(wrapper.classes()).toContain('test-date-range-field');
-      expect(wrapper.findAll('[data-soybean-date-field-segment]').length).toBeGreaterThanOrEqual(10);
+      expect(wrapper.findAll('[data-vean-date-field-segment]').length).toBeGreaterThanOrEqual(10);
       expect(partOf(wrapper, 'start').exists()).toBe(true);
       expect(partOf(wrapper, 'end').exists()).toBe(true);
       wrapper.unmount();
@@ -285,7 +285,7 @@ describe('SDateRangeField', () => {
         minValue: new Date(2026, 1 - 1, 1),
         maxValue: new Date(2026, 12 - 1, 31)
       });
-      const inputs = wrapper.findAll('input[data-soybean-visually-hidden]');
+      const inputs = wrapper.findAll('input[data-vean-visually-hidden]');
 
       expect(inputs).toHaveLength(2);
       expect(inputs[0].attributes('type')).toBe('date');
@@ -304,14 +304,14 @@ describe('SDateRangeField', () => {
     it('applies ui.root class overrides', () => {
       const wrapper = mountRangeField({ ui: { root: 'my-root-cls' } });
 
-      expect(wrapper.find('[data-soybean-date-range-field-root]').classes()).toContain('my-root-cls');
+      expect(wrapper.find('[data-vean-date-range-field-root]').classes()).toContain('my-root-cls');
       wrapper.unmount();
     });
 
     it('applies ui.input class overrides to every segment', () => {
       const wrapper = mountRangeField({ ui: { input: 'my-input-cls' } });
 
-      wrapper.findAll('[data-soybean-date-field-segment]').forEach(segment => {
+      wrapper.findAll('[data-vean-date-field-segment]').forEach(segment => {
         expect(segment.classes()).toContain('my-input-cls');
       });
       wrapper.unmount();
@@ -321,7 +321,7 @@ describe('SDateRangeField', () => {
       const wrapper = mountRangeField({ ui: { separator: 'my-sep-cls' } });
 
       const separator = wrapper
-        .findAll('[data-soybean-date-range-field-root] > div')
+        .findAll('[data-vean-date-range-field-root] > div')
         .find(el => el.classes().includes('my-sep-cls'));
 
       expect(separator).toBeDefined();

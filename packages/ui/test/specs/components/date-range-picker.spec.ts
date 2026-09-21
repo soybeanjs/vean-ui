@@ -1,14 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { toISODateString } from '@soybeanjs/headless/date';
+import { toISODateString } from '@vean/aria/date';
 import SDateRangePicker from '@/components/date-range-picker/date-range-picker.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
 describe('SDateRangePicker', () => {
   const findPopup = () => document.body.querySelector('[data-dismissable-layer][role="dialog"]');
   const findTrigger = (wrapper: ReturnType<typeof mount>) => wrapper.find('button[aria-haspopup="dialog"]');
-  const findCalendar = () => document.body.querySelector('[data-soybean-calendar-range-root]');
+  const findCalendar = () => document.body.querySelector('[data-vean-calendar-range-root]');
   const waitForDismissableLayer = async () => new Promise(resolve => window.setTimeout(resolve, 0));
 
   const mountRangePicker = (props?: Record<string, unknown>, slots?: Record<string, string>) =>
@@ -25,7 +25,7 @@ describe('SDateRangePicker', () => {
     it('renders the range field and the calendar trigger', () => {
       const wrapper = mountRangePicker();
 
-      expect(wrapper.find('[data-soybean-date-range-field-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-date-range-field-root]').exists()).toBe(true);
       expect(findTrigger(wrapper).exists()).toBe(true);
 
       wrapper.unmount();
@@ -34,7 +34,7 @@ describe('SDateRangePicker', () => {
     it('renders with custom class', () => {
       const wrapper = mountRangePicker({ class: 'custom-class' });
 
-      expect(wrapper.find('[data-soybean-date-range-field-root]').classes()).toContain('custom-class');
+      expect(wrapper.find('[data-vean-date-range-field-root]').classes()).toContain('custom-class');
 
       wrapper.unmount();
     });
@@ -238,7 +238,7 @@ describe('SDateRangePicker', () => {
     it('marks the range field root and trigger as disabled', () => {
       const wrapper = mountRangePicker({ disabled: true });
 
-      const root = wrapper.find('[data-soybean-date-range-field-root]');
+      const root = wrapper.find('[data-vean-date-range-field-root]');
       const trigger = findTrigger(wrapper);
 
       expect(root.attributes('data-disabled')).toBe('');
@@ -305,7 +305,7 @@ describe('SDateRangePicker', () => {
 
       const wrapper = mountRangePicker({ modelValue: { start, end } });
 
-      const root = wrapper.find('[data-soybean-date-range-field-root]');
+      const root = wrapper.find('[data-vean-date-range-field-root]');
 
       expect(root.text()).toContain('2024');
       expect(root.text()).toContain('31');
@@ -319,7 +319,7 @@ describe('SDateRangePicker', () => {
     it('applies ui.root class overrides', () => {
       const wrapper = mountRangePicker({ ui: { root: 'my-root-cls' } });
 
-      expect(wrapper.find('[data-soybean-date-range-field-root]').classes()).toContain('my-root-cls');
+      expect(wrapper.find('[data-vean-date-range-field-root]').classes()).toContain('my-root-cls');
 
       wrapper.unmount();
     });

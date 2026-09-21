@@ -3,9 +3,9 @@ import { scv } from '@soybeanjs/cva';
 import { dialogVariants } from './dialog';
 
 /**
- * The popup position is fully CSS-variable driven: the headless gesture layer
- * writes `--soybean-drawer-snap-point-offset` (resting snap position) and
- * `--soybean-drawer-swipe-movement-x/y` (live drag), and this transform plus a
+ * The popup position is fully CSS-variable driven: the Aria gesture layer
+ * writes `--vean-drawer-snap-point-offset` (resting snap position) and
+ * `--vean-drawer-swipe-movement-x/y` (live drag), and this transform plus a
  * transform transition turns every snap change or release into a CSS animation.
  * The `animate-in`/`animate-out` keyframes only define `from`/`to`, so open and
  * close slide to and from the variable-driven resting position seamlessly.
@@ -21,15 +21,15 @@ import { dialogVariants } from './dialog';
  * picked up and their rules would silently vanish from the stylesheet.
  */
 const POPUP_TRANSFORM_VERTICAL_BOTTOM =
-  '[transform:translateY(max(0px,calc(var(--soybean-drawer-snap-point-offset,0px)_+_var(--soybean-drawer-swipe-movement-y,0px))))_scale(var(--soybean-drawer-nested-scale,1))]';
+  '[transform:translateY(max(0px,calc(var(--vean-drawer-snap-point-offset,0px)_+_var(--vean-drawer-swipe-movement-y,0px))))_scale(var(--vean-drawer-nested-scale,1))]';
 const POPUP_TRANSFORM_VERTICAL_TOP =
-  '[transform:translateY(min(0px,calc(var(--soybean-drawer-snap-point-offset,0px)_+_var(--soybean-drawer-swipe-movement-y,0px))))_scale(var(--soybean-drawer-nested-scale,1))]';
+  '[transform:translateY(min(0px,calc(var(--vean-drawer-snap-point-offset,0px)_+_var(--vean-drawer-swipe-movement-y,0px))))_scale(var(--vean-drawer-nested-scale,1))]';
 const POPUP_HEIGHT_GROWTH_BOTTOM =
-  '[height:calc(var(--soybean-drawer-height,auto)_+_max(0px,calc(-1_*_var(--soybean-drawer-snap-point-offset,0px)_-_var(--soybean-drawer-swipe-movement-y,0px))))]';
+  '[height:calc(var(--vean-drawer-height,auto)_+_max(0px,calc(-1_*_var(--vean-drawer-snap-point-offset,0px)_-_var(--vean-drawer-swipe-movement-y,0px))))]';
 const POPUP_HEIGHT_GROWTH_TOP =
-  '[height:calc(var(--soybean-drawer-height,auto)_+_max(0px,calc(var(--soybean-drawer-snap-point-offset,0px)_+_var(--soybean-drawer-swipe-movement-y,0px))))]';
+  '[height:calc(var(--vean-drawer-height,auto)_+_max(0px,calc(var(--vean-drawer-snap-point-offset,0px)_+_var(--vean-drawer-swipe-movement-y,0px))))]';
 const POPUP_TRANSFORM_HORIZONTAL =
-  '[transform:translateX(calc(var(--soybean-drawer-snap-point-offset,0px)_+_var(--soybean-drawer-swipe-movement-x,0px)))_scale(var(--soybean-drawer-nested-scale,1))]';
+  '[transform:translateX(calc(var(--vean-drawer-snap-point-offset,0px)_+_var(--vean-drawer-swipe-movement-x,0px)))_scale(var(--vean-drawer-nested-scale,1))]';
 const POPUP_TRANSITION =
   '[transition:transform_0.5s_cubic-bezier(0.32,0.72,0,1),height_0.5s_cubic-bezier(0.32,0.72,0,1),opacity_0.5s_cubic-bezier(0.32,0.72,0,1)]';
 /**
@@ -48,11 +48,11 @@ const POPUP_TRANSITION =
  * disambiguate the fallback.
  */
 const POPUP_VIEWPORT_MAX_HEIGHT =
-  'max-h-[var(--soybean-drawer-max-height,calc(100dvh-2rem))] [@supports(not_(height:100dvh))]:max-h-[var(--soybean-drawer-max-height,calc(100vh-2rem))]';
+  'max-h-[var(--vean-drawer-max-height,calc(100dvh-2rem))] [@supports(not_(height:100dvh))]:max-h-[var(--vean-drawer-max-height,calc(100vh-2rem))]';
 /** The horizontal counterpart, used by the `start`/`end` sides. */
-const POPUP_VIEWPORT_MAX_WIDTH = 'max-w-[var(--soybean-drawer-max-width,100%)]';
+const POPUP_VIEWPORT_MAX_WIDTH = 'max-w-[var(--vean-drawer-max-width,100%)]';
 /**
- * Fullscreen, driven by the headless `data-fullscreen` attribute, has to be
+ * Fullscreen, driven by the Aria `data-fullscreen` attribute, has to be
  * re-declared here: this recipe drops the inherited dialog `popup` slot
  * (`extendIgnore`), so the dialog's `data-[fullscreen]:*` rules never reach the
  * panel. Every per-side dimension needs an override, because each side sizes the

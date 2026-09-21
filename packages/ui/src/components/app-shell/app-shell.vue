@@ -1,17 +1,13 @@
 <script setup lang="ts">
 import { computed, shallowRef, useId, watch } from 'vue';
-import { BreadcrumbLink, BreadcrumbPage } from '@soybeanjs/headless/breadcrumb';
-import type { BreadcrumbOptionData, BreadcrumbUi } from '@soybeanjs/headless/breadcrumb';
-import { useControllableState, useIsMobile } from '@soybeanjs/headless/composables';
-import { LayoutTrigger } from '@soybeanjs/headless/layout';
-import type { LayoutUi } from '@soybeanjs/headless/layout';
-import type { MenuOptionData } from '@soybeanjs/headless/menu';
-import type {
-  PageTabsContextMenuOptionData,
-  PageTabsDragEvent,
-  PageTabsOptionData
-} from '@soybeanjs/headless/page-tabs';
-import { resolveSplitNavSidebarColumns } from '@soybeanjs/headless/split-nav';
+import { BreadcrumbLink, BreadcrumbPage } from '@vean/aria/breadcrumb';
+import type { BreadcrumbOptionData, BreadcrumbUi } from '@vean/aria/breadcrumb';
+import { useControllableState, useIsMobile } from '@vean/aria/composables';
+import { LayoutTrigger } from '@vean/aria/layout';
+import type { LayoutUi } from '@vean/aria/layout';
+import type { MenuOptionData } from '@vean/aria/menu';
+import type { PageTabsContextMenuOptionData, PageTabsDragEvent, PageTabsOptionData } from '@vean/aria/page-tabs';
+import { resolveSplitNavSidebarColumns } from '@vean/aria/split-nav';
 import { appShellVariants } from '@/styles/app-shell';
 import SBreadcrumb from '../breadcrumb/breadcrumb.vue';
 import SDropdownMenu from '../dropdown-menu/dropdown-menu.vue';
@@ -210,11 +206,11 @@ const layoutUi = computed<Partial<LayoutUi>>(() => ({
 const _shellId = useId();
 
 const headerMountId = computed(() =>
-  skeleton.value.mounts.includes('header') ? `soybean-app-shell-header-menu-${_shellId}` : undefined
+  skeleton.value.mounts.includes('header') ? `vean-app-shell-header-menu-${_shellId}` : undefined
 );
 
 const sidebarMountId = computed(() =>
-  skeleton.value.mounts.includes('sidebar') ? `soybean-app-shell-sidebar-menu-${_shellId}` : undefined
+  skeleton.value.mounts.includes('sidebar') ? `vean-app-shell-sidebar-menu-${_shellId}` : undefined
 );
 
 /**
@@ -420,7 +416,7 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
     v-model:open="open"
     :mobile-open="mobileOpen"
     :default-mobile-open="defaultMobileOpen"
-    data-soybean-app-shell
+    data-vean-app-shell
     :data-mode="mode"
     :size="size"
     :side="side"
@@ -436,7 +432,7 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
     @update:mobile-open="emit('update:mobileOpen', $event)"
   >
     <template #sidebar="{ collapsed }">
-      <div :class="ui.sidebar" data-soybean-app-shell-sidebar>
+      <div :class="ui.sidebar" data-vean-app-shell-sidebar>
         <AppShellBrand
           v-if="slots.logo && brandPlacement === 'sidebar' && !menuBrand"
           :placement="brandPlacement"
@@ -455,8 +451,8 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
           </template>
         </AppShellBrand>
         <slot name="sidebar-start" />
-        <div :class="ui.menuSidebar" data-soybean-app-shell-menu-sidebar>
-          <div v-if="sidebarMountId" :id="sidebarMountId" :class="ui.menuMount" data-soybean-app-shell-mount-vertical />
+        <div :class="ui.menuSidebar" data-vean-app-shell-menu-sidebar>
+          <div v-if="sidebarMountId" :id="sidebarMountId" :class="ui.menuMount" data-vean-app-shell-mount-vertical />
           <slot
             v-if="skeleton.menuPlacement === 'sidebar'"
             name="menu"
@@ -491,14 +487,14 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
                 only renders while that column is expanded.
               -->
               <template v-if="menuBrand" #top-left>
-                <div :class="ui.logoMark" data-soybean-app-shell-logo-mark>
+                <div :class="ui.logoMark" data-vean-app-shell-logo-mark>
                   <STreeMenuStyledItem as="div" :size="size" :ui="{ button: 'justify-center' }" class="w-full">
                     <slot name="logo" :collapsed="collapsed" :placement="brandPlacement" />
                   </STreeMenuStyledItem>
                 </div>
               </template>
               <template v-if="menuBrand && slots.title && !collapsed" #top-right>
-                <div :class="ui.logoTitle" data-soybean-app-shell-logo-title>
+                <div :class="ui.logoTitle" data-vean-app-shell-logo-title>
                   <slot name="title" :collapsed="collapsed" :placement="brandPlacement" />
                 </div>
               </template>
@@ -523,18 +519,18 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
             <slot name="title" v-bind="slotProps" />
           </template>
         </AppShellBrand>
-        <div v-if="sidebarTriggerVisible" :class="ui.triggerRow" data-soybean-app-shell-trigger-row>
+        <div v-if="sidebarTriggerVisible" :class="ui.triggerRow" data-vean-app-shell-trigger-row>
           <div
             v-if="resolveSidebarTriggerRailStyle(collapsed)"
             :class="ui.triggerRail"
             :style="resolveSidebarTriggerRailStyle(collapsed)"
-            data-soybean-app-shell-trigger-rail
+            data-vean-app-shell-trigger-rail
           />
           <div
             :class="ui.triggerCell"
             :style="resolveSidebarTriggerCellStyle(collapsed)"
             :data-centered="resolveSidebarTriggerLayout(collapsed).centered ? 'true' : undefined"
-            data-soybean-app-shell-trigger-cell
+            data-vean-app-shell-trigger-cell
           >
             <LayoutTrigger :class="ui.trigger" />
           </div>
@@ -542,7 +538,7 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
       </div>
     </template>
     <template #header>
-      <div :class="ui.header" data-soybean-app-shell-header>
+      <div :class="ui.header" data-vean-app-shell-header>
         <div :class="ui.headerStart">
           <LayoutTrigger v-if="headerTriggerVisible" :class="ui.trigger" />
           <slot name="header-start">
@@ -596,7 +592,7 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
           </slot>
         </div>
         <div :class="ui.headerCenter">
-          <div v-if="headerMountId" :id="headerMountId" data-soybean-app-shell-mount-horizontal />
+          <div v-if="headerMountId" :id="headerMountId" data-vean-app-shell-mount-horizontal />
           <slot name="header">
             <slot
               v-if="skeleton.menuPlacement === 'header'"
@@ -635,7 +631,7 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
       </div>
     </template>
     <template #tab>
-      <div :class="ui.tab" data-soybean-app-shell-tab>
+      <div :class="ui.tab" data-vean-app-shell-tab>
         <slot name="tabs">
           <SPageTabs
             v-if="showTabs"
@@ -660,11 +656,11 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
         </slot>
       </div>
     </template>
-    <div :class="ui.content" data-soybean-app-shell-content>
+    <div :class="ui.content" data-vean-app-shell-content>
       <slot />
     </div>
     <template #footer>
-      <div :class="ui.footer" data-soybean-app-shell-footer>
+      <div :class="ui.footer" data-vean-app-shell-footer>
         <slot name="footer" />
       </div>
     </template>

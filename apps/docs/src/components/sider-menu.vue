@@ -3,8 +3,8 @@ import { computed, ref, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { extractLocaleFromPath } from 'ubean/client';
-import { kebabCase, pascalCase } from '@soybeanjs/headless/shared';
-import type { TreeMenuOptionData } from '@soybeanjs/ui';
+import { kebabCase, pascalCase } from '@vean/aria/shared';
+import type { TreeMenuOptionData } from '@vean/ui';
 import { menuData, newlyComponentKeys, chartMenuData, chartNewlyComponentKeys } from '~/constants/menus';
 import { getUpgradeGuides } from '~/shared/generated-changelog';
 
@@ -142,18 +142,18 @@ const chartMenus = computed<TreeMenuOptionData[]>(() => [
   }
 ]);
 
-// headless docs are not written yet (D8) — sidebar shows only the placeholder entry
-const headlessMenus = computed<TreeMenuOptionData[]>(() => [
+// aria docs are not written yet (D8) — sidebar shows only the placeholder entry
+const ariaMenus = computed<TreeMenuOptionData[]>(() => [
   {
     isGroup: true,
-    label: t('layout.header.headless'),
-    value: 'headless',
+    label: t('layout.header.aria'),
+    value: 'aria',
     icon: 'lucide:code-xml',
     children: [
       {
-        label: t('headless.catalog.title'),
-        value: 'headless-overview',
-        to: '/headless'
+        label: t('aria.catalog.title'),
+        value: 'aria-overview',
+        to: '/aria'
       }
     ]
   }
@@ -172,8 +172,8 @@ const menus = computed<TreeMenuOptionData[]>(() => {
     return chartMenus.value;
   }
 
-  if (section.value === 'headless') {
-    return headlessMenus.value;
+  if (section.value === 'aria') {
+    return ariaMenus.value;
   }
 
   return [];
@@ -193,7 +193,7 @@ watchEffect(() => {
       overview: 'installation',
       components: componentsOverviewValue,
       chart: 'chart-overview',
-      headless: 'headless-overview'
+      aria: 'aria-overview'
     };
 
     selected.value = valueMap[dir] || '';

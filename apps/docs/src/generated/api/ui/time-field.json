@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; input: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the TimeField component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldui",
-                "sourcePath": "packages/headless/src/components/time-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldui",
+                "sourcePath": "packages/aria/src/components/time-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.inputprops",
             "default": null,
             "inheritedFrom": "inputProps",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateFieldInputProps",
@@ -103,8 +103,8 @@
                 "type": "TimeFieldInputProps",
                 "resolvedType": "{ part: import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the DateFieldInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -113,10 +113,10 @@
                     "type": "import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart",
                     "required": true,
                     "description": "Part.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.part",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.part",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                    "sourcePath": "packages/aria/src/components/date-field/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -124,10 +124,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -135,10 +135,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -154,7 +154,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -165,7 +165,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -176,7 +176,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.defaultplaceholder",
             "default": null,
             "inheritedFrom": "defaultPlaceholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -187,7 +187,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -198,7 +198,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.granularity",
             "default": null,
             "inheritedFrom": "granularity",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeGranularity",
@@ -206,8 +206,8 @@
                 "type": "'hour' | 'minute' | 'second'",
                 "resolvedType": "'hour' | 'minute' | 'second'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.timegranularity",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.timegranularity",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -223,7 +223,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.maxvalue",
             "default": null,
             "inheritedFrom": "maxValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -234,7 +234,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.minvalue",
             "default": null,
             "inheritedFrom": "minValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -245,7 +245,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.istimeunavailable",
             "default": null,
             "inheritedFrom": "isTimeUnavailable",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeMatcher",
@@ -253,8 +253,8 @@
                 "type": "(time: Date) => boolean",
                 "resolvedType": "(time: Date) => boolean",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.timematcher",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.timematcher",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -270,7 +270,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -281,7 +281,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -292,7 +292,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -325,7 +325,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -333,8 +333,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -350,7 +350,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -361,7 +361,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -372,7 +372,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -383,7 +383,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -394,7 +394,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateStep",
@@ -402,8 +402,8 @@
                 "type": "DateStep",
                 "resolvedType": "{ year?: number; month?: number; day?: number; hour?: number; minute?: number; second?: number; millisecond?: number }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datestep",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datestep",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -412,10 +412,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.year",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.year",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -423,10 +423,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.month",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.month",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -434,10 +434,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.day",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.day",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -445,10 +445,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.hour",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.hour",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -456,10 +456,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.minute",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.minute",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -467,10 +467,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.second",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.second",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -478,10 +478,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.millisecond",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.millisecond",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -497,7 +497,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.locale",
             "default": null,
             "inheritedFrom": "locale",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -508,7 +508,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.hourcycle",
             "default": null,
             "inheritedFrom": "hourCycle",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "HourCycle",
@@ -516,8 +516,8 @@
                 "type": "12 | 24 | undefined",
                 "resolvedType": "12 | 24 | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.hourcycle",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.hourcycle",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -533,7 +533,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldprops.members.hidetimezone",
             "default": null,
             "inheritedFrom": "hideTimeZone",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -558,7 +558,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -568,7 +568,7 @@
             "required": true,
             "description": "Emitted when the placeholder value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_time_field_types.timefieldemits.callables.update_placeholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -576,11 +576,11 @@
           {
             "name": "TimeFieldRootEmits",
             "kind": "typeAlias",
-            "type": "{ 'update:modelValue': [time: import(\"@soybeanjs/headless\").TimeValue | undefined]; 'update:placeholder': [time: import(\"@soybeanjs/headless\").TimeValue]; }",
+            "type": "{ 'update:modelValue': [time: import(\"@vean/aria\").TimeValue | undefined]; 'update:placeholder': [time: import(\"@vean/aria\").TimeValue]; }",
             "resolvedType": "{ \"update:modelValue\": [time: Date | undefined]; \"update:placeholder\": [time: Date] }",
             "description": "Events for the TimeFieldRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -591,8 +591,8 @@
                 "parameters": "time: Date | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/time-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/time-field/types.ts",
                 "referencedTypes": []
               },
               {
@@ -601,8 +601,8 @@
                 "parameters": "time: Date",
                 "required": true,
                 "description": "Emitted when the placeholder value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.callables.update_placeholder",
-                "sourcePath": "packages/headless/src/components/time-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.callables.update_placeholder",
+                "sourcePath": "packages/aria/src/components/time-field/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -651,8 +651,8 @@
         "type": "Interface TimeFieldCompactProps",
         "resolvedType": "{ inputProps?: TimeFieldInputProps; defaultValue?: Date; modelValue?: Date; defaultPlaceholder?: Date; placeholder?: Date; granularity?: TimeGranularity; maxValue?: Date; minValue?: Date; isTimeUnavailable?: TimeMatcher; disabled?: boolean; asChild?: boolean; as?: AsTag | Component; dir?: Direction; id?: string; name?: string; required?: boolean; readonly?: boolean; step?: DateStep; locale?: string; hourCycle?: 12 | 24; hideTimeZone?: boolean }",
         "description": "Properties for the time field compact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.props",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.props",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -660,10 +660,10 @@
             "type": "TimeFieldInputProps",
             "required": false,
             "description": "Properties forwarded to the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.inputprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.inputprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateFieldInputProps",
@@ -671,8 +671,8 @@
                 "type": "TimeFieldInputProps",
                 "resolvedType": "{ part: import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the DateFieldInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -681,10 +681,10 @@
                     "type": "import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart",
                     "required": true,
                     "description": "Part.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.part",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.part",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                    "sourcePath": "packages/aria/src/components/date-field/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -692,10 +692,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -703,10 +703,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -719,10 +719,10 @@
             "type": "Date",
             "required": false,
             "description": "Default value for the time field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -730,10 +730,10 @@
             "type": "Date",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -741,10 +741,10 @@
             "type": "Date",
             "required": false,
             "description": "Default placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.defaultplaceholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.defaultplaceholder",
             "default": null,
             "inheritedFrom": "defaultPlaceholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -752,10 +752,10 @@
             "type": "Date",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -763,10 +763,10 @@
             "type": "TimeGranularity",
             "required": false,
             "description": "Granularity.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.granularity",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.granularity",
             "default": null,
             "inheritedFrom": "granularity",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeGranularity",
@@ -774,8 +774,8 @@
                 "type": "'hour' | 'minute' | 'second'",
                 "resolvedType": "'hour' | 'minute' | 'second'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.timegranularity",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.timegranularity",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -788,10 +788,10 @@
             "type": "Date",
             "required": false,
             "description": "Max value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.maxvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.maxvalue",
             "default": null,
             "inheritedFrom": "maxValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -799,10 +799,10 @@
             "type": "Date",
             "required": false,
             "description": "Min value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.minvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.minvalue",
             "default": null,
             "inheritedFrom": "minValue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -810,10 +810,10 @@
             "type": "TimeMatcher",
             "required": false,
             "description": "Whether the time is unavailable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.istimeunavailable",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.istimeunavailable",
             "default": null,
             "inheritedFrom": "isTimeUnavailable",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeMatcher",
@@ -821,8 +821,8 @@
                 "type": "(time: Date) => boolean",
                 "resolvedType": "(time: Date) => boolean",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.timematcher",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.timematcher",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -835,10 +835,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -846,10 +846,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -857,10 +857,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -890,10 +890,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -901,8 +901,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -915,10 +915,10 @@
             "type": "string",
             "required": false,
             "description": "Id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -926,10 +926,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -937,10 +937,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -948,10 +948,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -959,10 +959,10 @@
             "type": "DateStep",
             "required": false,
             "description": "Step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateStep",
@@ -970,8 +970,8 @@
                 "type": "DateStep",
                 "resolvedType": "{ year?: number; month?: number; day?: number; hour?: number; minute?: number; second?: number; millisecond?: number }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datestep",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datestep",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -980,10 +980,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.year",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.year",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -991,10 +991,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.month",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.month",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1002,10 +1002,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.day",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.day",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1013,10 +1013,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.hour",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.hour",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1024,10 +1024,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.minute",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.minute",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1035,10 +1035,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.second",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.second",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1046,10 +1046,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.millisecond",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.millisecond",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1062,10 +1062,10 @@
             "type": "string",
             "required": false,
             "description": "Locale.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.locale",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.locale",
             "default": null,
             "inheritedFrom": "locale",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1073,10 +1073,10 @@
             "type": "12 | 24",
             "required": false,
             "description": "Hour cycle.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.hourcycle",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.hourcycle",
             "default": null,
             "inheritedFrom": "hourCycle",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "HourCycle",
@@ -1084,8 +1084,8 @@
                 "type": "12 | 24 | undefined",
                 "resolvedType": "12 | 24 | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.hourcycle",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.hourcycle",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1098,10 +1098,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether hide time zone.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactprops.members.hidetimezone",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactprops.members.hidetimezone",
             "default": null,
             "inheritedFrom": "hideTimeZone",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1114,8 +1114,8 @@
         "type": "TypeAlias TimeFieldCompactEmits: TimeFieldRootEmits",
         "resolvedType": "{ \"update:modelValue\": [time: Date | undefined]; \"update:placeholder\": [time: Date] }",
         "description": "Events for the time field compact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1125,8 +1125,8 @@
             "parameters": "time: Date | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1135,8 +1135,8 @@
             "parameters": "time: Date",
             "required": true,
             "description": "Emitted when the placeholder value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactemits.callables.update_placeholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactemits.callables.update_placeholder",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1147,8 +1147,8 @@
             "type": "{ 'update:modelValue': [time: TimeValue | undefined]; 'update:placeholder': [time: TimeValue]; }",
             "resolvedType": "{ \"update:modelValue\": [time: Date | undefined]; \"update:placeholder\": [time: Date] }",
             "description": "Events for the TimeFieldRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1159,8 +1159,8 @@
                 "parameters": "time: Date | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/time-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/time-field/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1169,8 +1169,8 @@
                 "parameters": "time: Date",
                 "required": true,
                 "description": "Emitted when the placeholder value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.callables.update_placeholder",
-                "sourcePath": "packages/headless/src/components/time-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.callables.update_placeholder",
+                "sourcePath": "packages/aria/src/components/time-field/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1183,8 +1183,8 @@
         "type": "TypeAlias TimeFieldCompactSlots",
         "resolvedType": "{ leading?: (() => any); trailing?: (() => any) }",
         "description": "Slots for the TimeFieldCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1194,8 +1194,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Content rendered before the time segments.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactslots.callables.leading",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1204,8 +1204,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Content rendered after the time segments.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldcompactslots.callables.trailing",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldcompactslots.callables.trailing",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1220,8 +1220,8 @@
         "type": "Interface TimeFieldRootProps",
         "resolvedType": "{ defaultValue?: Date; modelValue?: Date; defaultPlaceholder?: Date; placeholder?: Date; granularity?: TimeGranularity; maxValue?: Date; minValue?: Date; isTimeUnavailable?: TimeMatcher; disabled?: boolean; asChild?: boolean; as?: AsTag | Component; dir?: Direction; id?: string; name?: string; required?: boolean; readonly?: boolean; step?: DateStep; locale?: string; hourCycle?: 12 | 24; hideTimeZone?: boolean }",
         "description": "Properties for the TimeFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.props",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.props",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1229,10 +1229,10 @@
             "type": "Date",
             "required": false,
             "description": "Default value for the time field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1240,10 +1240,10 @@
             "type": "Date",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1251,10 +1251,10 @@
             "type": "Date",
             "required": false,
             "description": "Default placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.defaultplaceholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.defaultplaceholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1262,10 +1262,10 @@
             "type": "Date",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.placeholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1273,10 +1273,10 @@
             "type": "TimeGranularity",
             "required": false,
             "description": "Granularity.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.granularity",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.granularity",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeGranularity",
@@ -1284,8 +1284,8 @@
                 "type": "'hour' | 'minute' | 'second'",
                 "resolvedType": "'hour' | 'minute' | 'second'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.timegranularity",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.timegranularity",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1298,10 +1298,10 @@
             "type": "Date",
             "required": false,
             "description": "Max value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.maxvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.maxvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1309,10 +1309,10 @@
             "type": "Date",
             "required": false,
             "description": "Min value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.minvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.minvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1320,10 +1320,10 @@
             "type": "TimeMatcher",
             "required": false,
             "description": "Whether the time is unavailable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.istimeunavailable",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.istimeunavailable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeMatcher",
@@ -1331,8 +1331,8 @@
                 "type": "(time: Date) => boolean",
                 "resolvedType": "(time: Date) => boolean",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.timematcher",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.timematcher",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1345,10 +1345,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1356,10 +1356,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1367,10 +1367,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1400,10 +1400,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1411,8 +1411,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1425,10 +1425,10 @@
             "type": "string",
             "required": false,
             "description": "Id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1436,10 +1436,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1447,10 +1447,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1458,10 +1458,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1469,10 +1469,10 @@
             "type": "DateStep",
             "required": false,
             "description": "Step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateStep",
@@ -1480,8 +1480,8 @@
                 "type": "DateStep",
                 "resolvedType": "{ year?: number; month?: number; day?: number; hour?: number; minute?: number; second?: number; millisecond?: number }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datestep",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datestep",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1490,10 +1490,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.year",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.year",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1501,10 +1501,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.month",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.month",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1512,10 +1512,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.day",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.day",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1523,10 +1523,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.hour",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.hour",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1534,10 +1534,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.minute",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.minute",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1545,10 +1545,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.second",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.second",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1556,10 +1556,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.millisecond",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.millisecond",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1572,10 +1572,10 @@
             "type": "string",
             "required": false,
             "description": "Locale.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.locale",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.locale",
             "default": null,
             "inheritedFrom": "locale",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1583,10 +1583,10 @@
             "type": "12 | 24",
             "required": false,
             "description": "Hour cycle.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.hourcycle",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.hourcycle",
             "default": null,
             "inheritedFrom": "hourCycle",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "HourCycle",
@@ -1594,8 +1594,8 @@
                 "type": "12 | 24 | undefined",
                 "resolvedType": "12 | 24 | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.hourcycle",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.hourcycle",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1608,10 +1608,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether hide time zone.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootprops.members.hidetimezone",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootprops.members.hidetimezone",
             "default": null,
             "inheritedFrom": "hideTimeZone",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1624,8 +1624,8 @@
         "type": "TypeAlias TimeFieldRootEmits",
         "resolvedType": "{ \"update:modelValue\": [time: Date | undefined]; \"update:placeholder\": [time: Date] }",
         "description": "Events for the TimeFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.emits",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.emits",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1635,8 +1635,8 @@
             "parameters": "time: Date | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1645,8 +1645,8 @@
             "parameters": "time: Date",
             "required": true,
             "description": "Emitted when the placeholder value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootemits.callables.update_placeholder",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootemits.callables.update_placeholder",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1658,8 +1658,8 @@
         "type": "TypeAlias TimeFieldRootSlots",
         "resolvedType": "{ TimeFieldInput?: ((props: TimeFieldRootSlotProps) => any) }",
         "description": "Slots for the TimeFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslots.slots",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslots.slots",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1669,8 +1669,8 @@
             "parameters": "((props: TimeFieldRootSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslots.callables.default",
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslots.callables.default",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": [
               {
                 "name": "TimeFieldRootSlotProps",
@@ -1678,8 +1678,8 @@
                 "type": "TimeFieldRootSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TimeFieldRoot component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslotprops",
-                "sourcePath": "packages/headless/src/components/time-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslotprops",
+                "sourcePath": "packages/aria/src/components/time-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1696,8 +1696,8 @@
         "type": "Interface TimeFieldRootSlotProps",
         "resolvedType": "{ modelValue: Date | undefined; segments: DateFieldSegment[]; isInvalid: boolean }",
         "description": "Slot properties for the TimeFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/time-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/time-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1705,10 +1705,10 @@
             "type": "Date | undefined",
             "required": true,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1716,10 +1716,10 @@
             "type": "DateFieldSegment[]",
             "required": true,
             "description": "Segments used by the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslotprops.members.segments",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslotprops.members.segments",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1727,10 +1727,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the current value is invalid.",
-            "descriptionKey": "api.generated.packages_headless_src_components_time_field_types.timefieldrootslotprops.members.isinvalid",
+            "descriptionKey": "api.generated.packages_aria_src_components_time_field_types.timefieldrootslotprops.members.isinvalid",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/time-field/types.ts",
+            "sourcePath": "packages/aria/src/components/time-field/types.ts",
             "referencedTypes": []
           }
         ],

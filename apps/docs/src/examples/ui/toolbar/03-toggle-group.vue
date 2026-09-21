@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SToolbar, SToolbarSeparator, SToolbarToggleGroup, SToolbarToggleItem } from '@soybeanjs/ui';
+import { SToolbar, SToolbarSeparator, SToolbarToggleGroup, SToolbarToggleItem } from '@vean/ui';
 
 const value = ref('bold');
 </script>

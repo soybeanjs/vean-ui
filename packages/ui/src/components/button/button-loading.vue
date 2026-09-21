@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, useAttrs, watchEffect } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import type { Align } from '@soybeanjs/headless/types';
+import { useOmitProps } from '@vean/aria/composables';
+import type { Align } from '@vean/aria/types';
 import Icon from '../icon/icon.vue';
 import Button from './button.vue';
 import type { ButtonLoadingProps } from './types';

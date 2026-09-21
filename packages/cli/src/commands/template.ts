@@ -56,8 +56,8 @@ export const template = new Command()
       }
 
       console.log();
-      console.log('  Usage: sbean template <name> [--output <dir>]');
-      console.log('         sbean template --framework <vite|nuxt> [--output <dir>]');
+      console.log('  Usage: vean template <name> [--output <dir>]');
+      console.log('         vean template --framework <vite|nuxt> [--output <dir>]');
       console.log();
 
       if (templateName) {
@@ -88,8 +88,8 @@ export const template = new Command()
       console.log('  Next steps:');
       console.log(`    cd ${projectName}`);
       console.log('    pnpm install');
-      console.log('    sbean init');
-      console.log('    sbean add <component>');
+      console.log('    vean init');
+      console.log('    vean add <component>');
       console.log();
     } catch (error) {
       console.error(`  ✖ Failed to scaffold project: ${(error as Error).message}`);

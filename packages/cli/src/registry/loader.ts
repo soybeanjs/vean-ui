@@ -20,7 +20,7 @@ export class PackageNamespaceRequiredError extends Error {
   readonly pkg: string;
 
   constructor(name: string, pkg: string) {
-    super(`Component "${name}" is from the "${pkg}" package — use the namespaced form: "sbean add ${pkg}/${name}".`);
+    super(`Component "${name}" is from the "${pkg}" package — use the namespaced form: "vean add ${pkg}/${name}".`);
     this.name = 'PackageNamespaceRequiredError';
     this.pkg = pkg;
   }

@@ -10,7 +10,7 @@ head:
 
 Affix keeps content pinned to the top or bottom edge of the viewport or a custom scroll container while the target area is scrolling.
 
-> Note: In addition to SAffix, the headless layer also exports AffixCompact for the default placeholder/content structure, plus AffixRoot, AffixPlaceholder, AffixContent, and provideAffixUi for fully custom composition and style injection.
+> Note: In addition to SAffix, the Aria layer also exports AffixCompact for the default placeholder/content structure, plus AffixRoot, AffixPlaceholder, AffixContent, and provideAffixUi for fully custom composition and style injection.
 
 ## Features
 
@@ -24,7 +24,7 @@ Affix keeps content pinned to the top or bottom edge of the viewport or a custom
 - **Dynamic target switching** — when the `target` prop changes, listeners are detached from the old target and attached to the new one via `onWatcherCleanup`.
 - **Imperative API** — `AffixRoot` exposes `affixed` and `updatePosition()` via `defineExpose` for programmatic repositioning.
 - **SSR safe** — `window` / `document` access is guarded (`getDefaultTarget` / `queryTargetSelector` / `measurePosition`); listeners activate client-side only.
-- **Headless composition** — `AffixRoot` / `AffixPlaceholder` / `AffixContent` / `AffixCompact` are exported from `@soybeanjs/headless/affix` for fully custom styled builds.
+- **Aria composition** — `AffixRoot` / `AffixPlaceholder` / `AffixContent` / `AffixCompact` are exported from `@vean/aria/affix` for fully custom styled builds.
 
 ## Usage
 
@@ -42,19 +42,19 @@ Affix keeps content pinned to the top or bottom edge of the viewport or a custom
 
 ### Architecture and benchmark comparison
 
-| Concern                      | SoybeanUI                                       | Ant Design `Affix`              | Element Plus `Affix`     |
-| :--------------------------- | :---------------------------------------------- | :------------------------------ | :----------------------- |
-| Headless / styled separation | ✅ `@soybeanjs/headless/affix` + `scv()` recipe | ❌ single styled package        | ❌ single styled package |
-| Pin to top / bottom          | ✅ `offsetTop` / `offsetBottom`                 | ✅ `offsetTop` / `offsetBottom` | ✅ `offset`              |
-| Custom target                | ✅ element / selector / window                  | ✅ `target` (function)          | ✅ `target` (function)   |
-| Placeholder preservation     | ✅ hidden placeholder keeps space               | ✅ `placeholder` node           | ✅ `placeholder` node    |
-| `change` event on transition | ✅ fires only on state change                   | ✅ `onChange`                   | ✅ `on-change`           |
-| rAF-throttled measurement    | ✅ `useRafFn` frame coalescing                  | ✅ rAF loop                     | ✅ rAF loop              |
-| Touch events                 | ✅ scroll + touchstart/move/end                 | ✅ touch support                | —                        |
-| Dynamic target switching     | ✅ listener cleanup via `onWatcherCleanup`      | ✅ `updatePosition` re-init     | ✅ `update`              |
-| Zero-size guard              | ✅ skips when rect is all zeros                 | —                               | —                        |
-| Imperative API               | ✅ `affixed` + `updatePosition()`               | ✅ `updatePosition`             | —                        |
-| SSR safety                   | ✅ guarded `window` / `document`                | partial                         | partial                  |
+| Concern                      | VeanUI                                     | Ant Design `Affix`              | Element Plus `Affix`     |
+| :--------------------------- | :----------------------------------------- | :------------------------------ | :----------------------- |
+| Aria / styled separation     | ✅ `@vean/aria/affix` + `scv()` recipe     | ❌ single styled package        | ❌ single styled package |
+| Pin to top / bottom          | ✅ `offsetTop` / `offsetBottom`            | ✅ `offsetTop` / `offsetBottom` | ✅ `offset`              |
+| Custom target                | ✅ element / selector / window             | ✅ `target` (function)          | ✅ `target` (function)   |
+| Placeholder preservation     | ✅ hidden placeholder keeps space          | ✅ `placeholder` node           | ✅ `placeholder` node    |
+| `change` event on transition | ✅ fires only on state change              | ✅ `onChange`                   | ✅ `on-change`           |
+| rAF-throttled measurement    | ✅ `useRafFn` frame coalescing             | ✅ rAF loop                     | ✅ rAF loop              |
+| Touch events                 | ✅ scroll + touchstart/move/end            | ✅ touch support                | —                        |
+| Dynamic target switching     | ✅ listener cleanup via `onWatcherCleanup` | ✅ `updatePosition` re-init     | ✅ `update`              |
+| Zero-size guard              | ✅ skips when rect is all zeros            | —                               | —                        |
+| Imperative API               | ✅ `affixed` + `updatePosition()`          | ✅ `updatePosition`             | —                        |
+| SSR safety                   | ✅ guarded `window` / `document`           | partial                         | partial                  |
 
 ### Runtime considerations
 
@@ -95,14 +95,14 @@ No — the placeholder is `role="presentation"` and `aria-hidden="true"`, so it 
 
 Yes — all `window` / `document` access is guarded. On the server the affix simply renders static content; positioning activates client-side once the element and target exist.
 
-## Headless Composition
+## Aria Composition
 
-When the default placeholder/content structure is enough, import `AffixCompact` from `@soybeanjs/headless/affix`. If you need separate control over the root, placeholder, and content elements, compose the headless primitives directly:
+When the default placeholder/content structure is enough, import `AffixCompact` from `@vean/aria/affix`. If you need separate control over the root, placeholder, and content elements, compose the Aria primitives directly:
 
 ```vue
 <script setup lang="ts">
 import { computed } from 'vue';
-import { AffixContent, AffixPlaceholder, AffixRoot, provideAffixUi } from '@soybeanjs/headless';
+import { AffixContent, AffixPlaceholder, AffixRoot, provideAffixUi } from '@vean/aria';
 
 const ui = computed(() => ({
   content: 'data-[state=fixed]:z-50'

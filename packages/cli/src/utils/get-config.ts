@@ -7,14 +7,14 @@ import type { Config } from '../registry/config';
 export type { Config };
 
 /**
- * Walk up from `cwd` to find the nearest `sbean.json`.
+ * Walk up from `cwd` to find the nearest `vean.json`.
  */
 export async function findConfigFile(cwd: string): Promise<{ configPath: string; configDir: string } | null> {
   let dir = path.resolve(cwd);
   const root = path.parse(dir).root;
 
   while (true) {
-    const configPath = path.join(dir, 'sbean.json');
+    const configPath = path.join(dir, 'vean.json');
     try {
       await fs.access(configPath);
       return { configPath, configDir: dir };
@@ -53,7 +53,7 @@ export async function detectMonorepo(cwd: string): Promise<boolean> {
 }
 
 /**
- * Find and read sbean.json.
+ * Find and read vean.json.
  */
 export async function getConfig(cwd: string): Promise<Config | null> {
   const found = await findConfigFile(cwd);
@@ -165,10 +165,10 @@ export async function createDefaultConfig(
 }
 
 /**
- * Write sbean.json to disk.
+ * Write vean.json to disk.
  */
 export async function writeConfig(cwd: string, config: Config): Promise<void> {
-  const configPath = path.join(cwd, 'sbean.json');
+  const configPath = path.join(cwd, 'vean.json');
   const { resolvedPaths: _, ...rest } = config;
   await fs.writeFile(configPath, JSON.stringify(rest, null, 2), 'utf-8');
 }

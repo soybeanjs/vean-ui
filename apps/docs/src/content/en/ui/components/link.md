@@ -40,11 +40,11 @@ head:
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits the link into a headless layer (route detection, disabled handling, `RouterLink` integration) and a styled layer (`linkVariants` styling). This differs from single-package solutions like Nuxt Link, React Router Link, and Next.js Link.
+VeanUI splits the link into an Aria layer (route detection, disabled handling, `RouterLink` integration) and a styled layer (`linkVariants` styling). This differs from single-package solutions like Nuxt Link, React Router Link, and Next.js Link.
 
-| Aspect          | SoybeanUI                                                           | Nuxt Link / React Router Link / Next.js Link |
+| Aspect          | VeanUI                                                              | Nuxt Link / React Router Link / Next.js Link |
 | :-------------- | :------------------------------------------------------------------ | :------------------------------------------- |
-| Architecture    | headless + styled split                                             | single package                               |
+| Architecture    | Aria + styled split                                                 | single package                               |
 | Route detection | auto-detect `http` prefix, `external` prop, RouterLink availability | explicit `<NuxtLink>` / `<Link>`             |
 | External links  | auto `target="_blank"` + `rel="noopener noreferrer"`                | manual setup required                        |
 | Disabled state  | `aria-disabled` + `tabindex="-1"` + `preventDefault`                | manual handling required                     |

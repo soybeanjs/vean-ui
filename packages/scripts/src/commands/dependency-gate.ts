@@ -11,8 +11,8 @@ import process from 'node:process';
  *    standard-schema, soybeanjs hooks/utils) must never be imported from any package's
  *    `src` directory.
  *    Matching is restricted to import specifiers so self-built helpers that share a name
- *    (e.g. headless `shared/object.ts` exporting its own `defu`) do not trigger it.
- * 2. Runtime dependency allowlists — `@soybeanjs/headless` and `@soybeanjs/ui` may only
+ *    (e.g. aria `shared/object.ts` exporting its own `defu`) do not trigger it.
+ * 2. Runtime dependency allowlists — `@vean/aria` and `@vean/ui` may only
  *    take runtime dependencies from the `RUNTIME_DEP_ALLOWLISTS` table below. Heavy
  *    engines must stay out of the UI package entirely.
  *
@@ -26,11 +26,12 @@ const BANNED_DEP_PATTERN =
   /^(@dnd-kit\/.+|@formkit\/auto-animate|@internationalized\/.+|fuse\.js|defu|klona|ohash|aria-hidden|@standard-schema\/spec|@soybeanjs\/hooks|@soybeanjs\/utils)$/;
 
 /**
- * §3.2 runtime dependency whitelists. `@tanstack/vue-table` (T6.1) and `markstream-vue`
- * (§8, UI-only optional rendering base) are pre-admitted so upcoming tasks stay green.
+ * Runtime dependency whitelists. Adding an entry is a deliberate decision: it widens
+ * what every consumer of the package installs. `@tanstack/vue-table` (table engine) and
+ * `markstream-vue` (UI-only optional rendering base) are admitted per those decisions.
  */
 const RUNTIME_DEP_ALLOWLISTS: Readonly<Record<string, readonly string[]>> = {
-  '@soybeanjs/headless': [
+  '@vean/aria': [
     '@floating-ui/dom',
     '@soybeanjs/colord',
     '@tanstack/vue-form',
@@ -40,14 +41,7 @@ const RUNTIME_DEP_ALLOWLISTS: Readonly<Record<string, readonly string[]>> = {
     'date-fns',
     'embla-carousel'
   ],
-  '@soybeanjs/ui': [
-    '@iconify/vue',
-    '@soybeanjs/colord',
-    '@soybeanjs/cva',
-    '@soybeanjs/headless',
-    '@soybeanjs/theme',
-    'markstream-vue'
-  ]
+  '@vean/ui': ['@iconify/vue', '@soybeanjs/colord', '@soybeanjs/cva', '@vean/aria', '@vean/theme', 'markstream-vue']
 };
 
 const SOURCE_EXTENSIONS = new Set(['.ts', '.tsx', '.mts', '.cts', '.js', '.jsx', '.mjs', '.cjs', '.vue']);

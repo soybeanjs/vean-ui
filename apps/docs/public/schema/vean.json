@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "description": "Vean project configuration file. Defines component style, aliases, and UnoCSS settings.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference for this config. Set to \"https://veanui.com/schema/vean.json\" for validation."
+    },
+    "iconLibrary": {
+      "enum": ["lucide", "material-symbols", "ph", "tabler", "solar", "radix-icons"],
+      "type": "string",
+      "description": "The Iconify icon set to use. Components use icons from this set via SIcon.",
+      "default": "lucide"
+    },
+    "uno": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "enum": ["slate", "mist", "gray", "zinc", "neutral", "stone", "taupe", "olive", "mauve"],
+          "type": "string",
+          "description": "Base color palette for backgrounds, borders, and muted elements.",
+          "default": "zinc"
+        },
+        "primary": {
+          "enum": [
+            "slate",
+            "mist",
+            "gray",
+            "zinc",
+            "neutral",
+            "stone",
+            "taupe",
+            "olive",
+            "mauve",
+            "red",
+            "orange",
+            "amber",
+            "yellow",
+            "lime",
+            "green",
+            "emerald",
+            "teal",
+            "cyan",
+            "sky",
+            "blue",
+            "indigo",
+            "violet",
+            "purple",
+            "fuchsia",
+            "pink",
+            "rose"
+          ],
+          "type": "string",
+          "description": "Primary brand color for buttons, links, and accents.",
+          "default": "indigo"
+        },
+        "size": {
+          "enum": ["xs", "sm", "md", "lg", "xl", "2xl"],
+          "type": "string",
+          "description": "Component size/density preset. Controls the base font size and spacing.",
+          "default": "md"
+        },
+        "radius": {
+          "enum": ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl"],
+          "type": "string",
+          "description": "Default border radius for components.",
+          "default": "md"
+        }
+      },
+      "required": ["base", "primary", "radius"],
+      "description": "UnoCSS theme configuration. Controls the CSS variable system via @vean/unocss."
+    },
+    "font": {
+      "type": "object",
+      "properties": {
+        "sans": {
+          "enum": [
+            "geist",
+            "inter",
+            "noto-sans",
+            "nunito-sans",
+            "figtree",
+            "roboto",
+            "raleway",
+            "dm-sans",
+            "public-sans",
+            "outfit",
+            "oxanium",
+            "manrope",
+            "space-grotesk",
+            "montserrat",
+            "ibm-plex-sans",
+            "source-sans-3",
+            "instrument-sans",
+            "jetbrains-mono",
+            "geist-mono",
+            "noto-serif",
+            "roboto-slab",
+            "merriweather",
+            "lora",
+            "playfair-display",
+            "eb-garamond",
+            "instrument-serif"
+          ],
+          "type": "string",
+          "description": "Sans-serif font family for body text. Set to a font key from the preset list to load it, or omit for system default."
+        },
+        "serif": {
+          "enum": [
+            "geist",
+            "inter",
+            "noto-sans",
+            "nunito-sans",
+            "figtree",
+            "roboto",
+            "raleway",
+            "dm-sans",
+            "public-sans",
+            "outfit",
+            "oxanium",
+            "manrope",
+            "space-grotesk",
+            "montserrat",
+            "ibm-plex-sans",
+            "source-sans-3",
+            "instrument-sans",
+            "jetbrains-mono",
+            "geist-mono",
+            "noto-serif",
+            "roboto-slab",
+            "merriweather",
+            "lora",
+            "playfair-display",
+            "eb-garamond",
+            "instrument-serif"
+          ],
+          "type": "string"
+        },
+        "mono": {
+          "enum": [
+            "geist",
+            "inter",
+            "noto-sans",
+            "nunito-sans",
+            "figtree",
+            "roboto",
+            "raleway",
+            "dm-sans",
+            "public-sans",
+            "outfit",
+            "oxanium",
+            "manrope",
+            "space-grotesk",
+            "montserrat",
+            "ibm-plex-sans",
+            "source-sans-3",
+            "instrument-sans",
+            "jetbrains-mono",
+            "geist-mono",
+            "noto-serif",
+            "roboto-slab",
+            "merriweather",
+            "lora",
+            "playfair-display",
+            "eb-garamond",
+            "instrument-serif"
+          ],
+          "type": "string"
+        },
+        "heading": {
+          "enum": [
+            "inherit",
+            "geist",
+            "inter",
+            "noto-sans",
+            "nunito-sans",
+            "figtree",
+            "roboto",
+            "raleway",
+            "dm-sans",
+            "public-sans",
+            "outfit",
+            "oxanium",
+            "manrope",
+            "space-grotesk",
+            "montserrat",
+            "ibm-plex-sans",
+            "source-sans-3",
+            "instrument-sans",
+            "jetbrains-mono",
+            "geist-mono",
+            "noto-serif",
+            "roboto-slab",
+            "merriweather",
+            "lora",
+            "playfair-display",
+            "eb-garamond",
+            "instrument-serif"
+          ],
+          "type": "string",
+          "description": "Heading font family. Set to \"inherit\" to use the sans font, or pick a specific font key."
+        }
+      },
+      "required": [],
+      "description": "Font family configuration for the project."
+    },
+    "aliases": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "registries": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Additional registry URLs for extending the component catalog."
+    },
+    "style": {
+      "description": "The design style preset. \"soybean\" is the default — a balanced, modern look. \"clean\" is minimal with sharper corners. \"dense\" is compact for data-heavy interfaces.",
+      "default": "soybean"
+    },
+    "menu": {
+      "description": "Navigation / sidebar menu styling configuration.",
+      "properties": {
+        "accent": {
+          "description": "Menu accent style. \"subtle\" is a gentle highlight; \"bold\" uses stronger colors."
+        },
+        "color": {
+          "description": "Menu color scheme for light/dark mode."
+        }
+      }
+    }
+  },
+  "required": ["iconLibrary", "uno", "font"]
+}

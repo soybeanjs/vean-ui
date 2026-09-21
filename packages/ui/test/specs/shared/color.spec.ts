@@ -1,10 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import {
-  getSliderBackgroundStyle,
-  isValidColor,
-  toColorObject,
-  formatColor
-} from '../../../../headless/src/shared/color';
+import { getSliderBackgroundStyle, isValidColor, toColorObject, formatColor } from '../../../../aria/src/shared/color';
 
 describe('shared color helpers', () => {
   it('parses legacy rgba strings with commas', () => {

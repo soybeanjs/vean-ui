@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends CommandSingleOptionData = CommandSingleOptionData">
 import { computed } from 'vue';
-import { CommandCompact, provideCommandUi } from '@soybeanjs/headless/command';
-import type { CommandSingleOptionData } from '@soybeanjs/headless/command';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { CommandCompact, provideCommandUi } from '@vean/aria/command';
+import type { CommandSingleOptionData } from '@vean/aria/command';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { commandVariants } from '@/styles/command';
 import type { CommandProps, CommandEmits, CommandSlots } from './types';
 

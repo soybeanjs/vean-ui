@@ -1,10 +1,5 @@
-import type {
-  CarouselCompactProps,
-  CarouselCompactEmits,
-  CarouselCompactSlots,
-  CarouselUi
-} from '@soybeanjs/headless/carousel';
-import type { ClassValue, DefinedValue } from '@soybeanjs/headless/types';
+import type { CarouselCompactProps, CarouselCompactEmits, CarouselCompactSlots, CarouselUi } from '@vean/aria/carousel';
+import type { ClassValue, DefinedValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

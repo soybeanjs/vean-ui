@@ -1,23 +1,23 @@
-# @soybeanjs/theme
+# @vean/theme
 
 English | [中文](./README.zh-CN.md)
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](../../LICENSE)
-[![npm version](https://img.shields.io/npm/v/@soybeanjs/theme)](https://www.npmjs.com/package/@soybeanjs/theme)
-[![npm downloads](https://img.shields.io/npm/dt/@soybeanjs/theme)](https://www.npmjs.com/package/@soybeanjs/theme)
-[![github stars](https://img.shields.io/github/stars/soybeanjs/soybean-ui)](https://github.com/soybeanjs/soybean-ui)
+[![npm version](https://img.shields.io/npm/v/@vean/theme)](https://www.npmjs.com/package/@vean/theme)
+[![npm downloads](https://img.shields.io/npm/dt/@vean/theme)](https://www.npmjs.com/package/@vean/theme)
+[![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
 > The full design spec, token contract, and AI-agent handbook live in [docs/theme.md](../../docs/theme.md) (this README only covers package-level usage).
 
-The SoybeanUI theme engine: **a static palette layer plus a semantic alias layer** — a declarative mapping table with no measurement and no correction.
+The Vean theme engine: **a static palette layer plus a semantic alias layer** — a declarative mapping table with no measurement and no correction.
 
 > Status: ✅ Implemented (the first-generation engine is retired; this package is the only implementation, and [docs/theme.md](../../docs/theme.md) is the design authority).
-> Adapters and runtime (UnoCSS preset, `SConfigProvider`, first-paint script, persistence, customizer panel) live in `@soybeanjs/ui-uno` and `@soybeanjs/ui`, not in this package.
+> Adapters and runtime (UnoCSS preset, `SConfigProvider`, first-paint script, persistence, customizer panel) live in `@vean/unocss` and `@vean/ui`, not in this package.
 
 ## 📦 Installation
 
 ```bash
-pnpm add @soybeanjs/theme
+pnpm add @vean/theme
 ```
 
 ## 🧩 Three-Layer Model
@@ -55,7 +55,7 @@ On the UnoCSS side, spacing is exposed through both named and numeric keys (`gap
 ## 🚀 Quick Start
 
 ```ts
-import { resolveThemeMap, emitThemeCss, generatePaletteCss } from '@soybeanjs/theme';
+import { resolveThemeMap, emitThemeCss, generatePaletteCss } from '@vean/theme';
 
 // 1) Layer 1 (static, produced once at build time)
 const paletteCss = generatePaletteCss({ format: 'hsl' });
@@ -65,7 +65,7 @@ const map = resolveThemeMap({ base: 'zinc', primary: 'indigo', surfaceStyle: 'la
 const themeCss = emitThemeCss(map); // token names carry no prefix by default; pass { prefix: 'acme' } when you need a namespace
 
 // 3) When you need a full color (canvas / charts / color math)
-import { resolveTokenColor } from '@soybeanjs/theme';
+import { resolveTokenColor } from '@vean/theme';
 const primary = resolveTokenColor({ primary: 'indigo' }, 'primary', 'dark');
 ```
 
@@ -99,9 +99,9 @@ theme.colors = {
 ## 🧪 Commands
 
 ```bash
-pnpm --filter @soybeanjs/theme test        # layer invariants, emission contract, JS↔CSS parity, family split, dimension scales, budget
-pnpm --filter @soybeanjs/theme typecheck
-pnpm --filter @soybeanjs/theme build       # vp pack + dist/palette.css
+pnpm --filter @vean/theme test        # layer invariants, emission contract, JS↔CSS parity, family split, dimension scales, budget
+pnpm --filter @vean/theme typecheck
+pnpm --filter @vean/theme build       # vp pack + dist/palette.css
 ```
 
 ## 📌 Not Yet Included
@@ -110,7 +110,7 @@ Custom palette registration (beyond the built-in 26) is deferred — use `overri
 
 ## 📖 Documentation
 
-Design spec and AI-agent handbook: [docs/theme.md](../../docs/theme.md) · scale rationale: [docs/space-control-scale.md](../../docs/space-control-scale.md) · docs site: [ui.soybeanjs.cn](https://ui.soybeanjs.cn)
+Design spec and AI-agent handbook: [docs/theme.md](../../docs/theme.md) · scale rationale: [docs/space-control-scale.md](../../docs/space-control-scale.md) · docs site: [veanui.com](https://veanui.com)
 
 ## 📄 License
 

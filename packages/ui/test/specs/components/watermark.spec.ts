@@ -1,7 +1,7 @@
 import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { WatermarkCompact, WatermarkRoot } from '@soybeanjs/headless/watermark';
+import { WatermarkCompact, WatermarkRoot } from '@vean/aria/watermark';
 import SWatermark from '@/components/watermark/watermark.vue';
 
 async function flushMutationObserver() {
@@ -77,7 +77,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      const overlay = wrapper.find('[data-soybean-watermark-overlay]');
+      const overlay = wrapper.find('[data-vean-watermark-overlay]');
 
       expect(overlay.exists()).toBe(true);
       wrapper.unmount();
@@ -89,7 +89,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      const overlay = wrapper.find('[data-soybean-watermark-overlay]');
+      const overlay = wrapper.find('[data-vean-watermark-overlay]');
 
       expect(overlay.exists()).toBe(false);
       wrapper.unmount();
@@ -102,14 +102,14 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-watermark-root]');
+      const root = wrapper.find('[data-vean-watermark-root]');
 
       expect(root.classes()).toContain('my-custom-class');
       wrapper.unmount();
     });
   });
 
-  describe('headless primitives', () => {
+  describe('Aria primitives', () => {
     it('WatermarkRoot renders content slot', () => {
       const wrapper = mount(WatermarkRoot, {
         props: { content: 'TEST' },
@@ -117,7 +117,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-root]').exists()).toBe(true);
       expect(wrapper.text()).toContain('Slotted content');
       wrapper.unmount();
     });
@@ -129,8 +129,8 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       expect(wrapper.text()).toContain('Slotted content');
       wrapper.unmount();
     });
@@ -142,7 +142,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      const overlay = wrapper.find('[data-soybean-watermark-overlay]');
+      const overlay = wrapper.find('[data-vean-watermark-overlay]');
 
       expect(overlay.attributes('aria-hidden')).toBe('true');
       wrapper.unmount();
@@ -155,9 +155,9 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      const overlay = wrapper.find('[data-soybean-watermark-overlay]').element as HTMLDivElement;
+      const overlay = wrapper.find('[data-vean-watermark-overlay]').element as HTMLDivElement;
 
-      overlay.removeAttribute('data-soybean-watermark-overlay');
+      overlay.removeAttribute('data-vean-watermark-overlay');
       overlay.removeAttribute('aria-hidden');
       overlay.className = 'tampered';
       overlay.style.cssText = 'display: none;';
@@ -165,7 +165,7 @@ describe('SWatermark', () => {
 
       await flushMutationObserver();
 
-      const repairedOverlay = wrapper.find('[data-soybean-watermark-overlay]');
+      const repairedOverlay = wrapper.find('[data-vean-watermark-overlay]');
 
       expect(repairedOverlay.exists()).toBe(true);
       expect(repairedOverlay.attributes('aria-hidden')).toBe('true');
@@ -190,7 +190,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -205,7 +205,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -219,7 +219,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -234,7 +234,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -248,7 +248,7 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -262,11 +262,11 @@ describe('SWatermark', () => {
         attachTo: document.body
       });
 
-      wrapper.find('[data-soybean-watermark-overlay]').element.remove();
+      wrapper.find('[data-vean-watermark-overlay]').element.remove();
 
       await flushMutationObserver();
 
-      expect(wrapper.find('[data-soybean-watermark-overlay]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-watermark-overlay]').exists()).toBe(true);
       wrapper.unmount();
     });
   });

@@ -2,9 +2,9 @@ import { existsSync, readdirSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import { components as headlessComponents } from '../../../headless/src/constants/components';
+import { components as ariaComponents } from '../../../aria/src/constants/components';
 import { components as uiComponents } from '../../../ui/src/constants/components';
-import { kebabCase } from '../../../headless/src/shared/string';
+import { kebabCase } from '../../../aria/src/shared/string';
 import { writeGeneratedJsonDirectory } from '../shared/json';
 import { componentRenameMap, releaseIntroducedComponents, releaseChangelogNotes } from './changelog-notes';
 import type { ReleaseChangelogNoteSource } from './changelog-notes';
@@ -103,12 +103,12 @@ interface GeneratedComponentChangelogIndex {
 const rootDir = process.cwd();
 const changelogPath = path.join(rootDir, 'CHANGELOG.md');
 /**
- * The changelog tracks the whole consumer surface: headless families plus
+ * The changelog tracks the whole consumer surface: aria families plus
  * UI-only components. Admission remediation (v0.50.0) moved presentation-only
  * shells (badge/card/empty/skeleton/tag…) to the UI layer, so a component may
- * legitimately exist without a headless family.
+ * legitimately exist without an aria family.
  */
-const componentNames = Array.from(new Set([...Object.keys(headlessComponents), ...Object.keys(uiComponents)]))
+const componentNames = Array.from(new Set([...Object.keys(ariaComponents), ...Object.keys(uiComponents)]))
   .map(component => kebabCase(component))
   .sort((left, right) => left.localeCompare(right));
 const componentNameSet = new Set(componentNames);
@@ -150,6 +150,7 @@ const typeRelevanceScoreMap: Record<ChangelogEntryType, number> = {
 };
 const sharedScopeRelevanceScoreMap: Record<string, number> = {
   components: 20,
+  aria: 18,
   headless: 18,
   ui: 18,
   shared: 14,

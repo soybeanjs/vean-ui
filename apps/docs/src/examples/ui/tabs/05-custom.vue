@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { STabs } from '@soybeanjs/ui';
+import { STabs } from '@vean/ui';
 
 const tabValue = ref('1');
 const tabs = [

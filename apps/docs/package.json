@@ -1,8 +1,8 @@
 {
-  "name": "@soybeanjs/ui-docs",
+  "name": "@vean/docs",
   "version": "0.50.0",
   "private": true,
-  "description": "SoybeanUI Docs is a documentation for SoybeanUI. It is designed to be easy to use and understand.",
+  "description": "Vean Docs is a documentation for Vean. It is designed to be easy to use and understand.",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
@@ -11,8 +11,8 @@
   "type": "module",
   "scripts": {
     "build": "pnpm build:registry && ubean build && pnpm build:seo",
-    "build:registry": "pnpm --filter sbean build:registry && vp fmt public/r --write",
-    "build:schema": "pnpm --filter sbean build:schema",
+    "build:registry": "pnpm --filter @vean/cli build:registry && vp fmt public/r --write",
+    "build:schema": "pnpm --filter @vean/cli build:schema",
     "build:seo": "tsx build/seo.ts",
     "dev": "ubean dev",
     "prepare": "ubean prepare",
@@ -22,12 +22,12 @@
   "dependencies": {
     "@iconify/vue": "^5.0.3",
     "@soybeanjs/colord": "^0.8.1",
-    "@soybeanjs/headless": "workspace:^",
-    "@soybeanjs/theme": "workspace:^",
-    "@soybeanjs/ui": "workspace:^",
     "@tanstack/charts": "^1.0.0",
     "@ubean/content": "^0.6.0",
     "@unhead/vue": "^3.4.2",
+    "@vean/aria": "workspace:^",
+    "@vean/theme": "workspace:^",
+    "@vean/ui": "workspace:^",
     "@vueuse/core": "^15.0.0",
     "d3-shape": "^3.2.0",
     "minisearch": "^7.2.0",
@@ -40,9 +40,9 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@soybeanjs/ui-uno": "workspace:^",
     "@soybeanjs/unocss-preset": "^0.2.0",
     "@types/d3-shape": "^3.2.0",
+    "@vean/unocss": "workspace:^",
     "@vitejs/plugin-vue-jsx": "^5.1.6",
     "typescript": "catalog:",
     "unocss": "^66.10.5",

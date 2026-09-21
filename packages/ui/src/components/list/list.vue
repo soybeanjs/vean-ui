@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { useOmitProps } from '@vean/aria/composables';
 import { listVariants } from '@/styles/list';
 import { provideListUi } from './context';
 import type { ListProps } from './types';
@@ -19,7 +19,7 @@ provideListUi(ui);
 </script>
 
 <template>
-  <ul v-bind="forwardedProps" data-soybean-list-root :class="ui.root">
+  <ul v-bind="forwardedProps" data-vean-list-root :class="ui.root">
     <slot />
   </ul>
 </template>

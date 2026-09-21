@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { Ref } from 'vue';
-import { SPageTabs } from '@soybeanjs/ui';
-import type {
-  PageTabsDragEvent,
-  PageTabsState,
-  PageTabsOptionData,
-  PageTabsContextMenuOptionData
-} from '@soybeanjs/ui';
+import { SPageTabs } from '@vean/ui';
+import type { PageTabsDragEvent, PageTabsState, PageTabsOptionData, PageTabsContextMenuOptionData } from '@vean/ui';
 
 const modelValue = ref('home');
 

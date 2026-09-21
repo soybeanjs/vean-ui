@@ -10,7 +10,7 @@ export const CONTENT_LOCALES = ['en', 'zh'] as const;
  * Static (non-content) pages that must be prerendered / listed in the sitemap.
  * Mirrors the `definePage` routes under `src/pages`.
  */
-export const STATIC_ROUTES = ['/', '/releases', '/headless', '/components', '/playground', '/theme-editor'] as const;
+export const STATIC_ROUTES = ['/', '/releases', '/aria', '/components', '/playground', '/theme-editor'] as const;
 
 export function toPosixPath(filePath: string): string {
   return filePath.split(path.sep).join('/');

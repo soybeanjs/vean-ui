@@ -1,14 +1,14 @@
 ---
 head:
   title: Command
-  description: 'Fast, composable, command menu for Vue. SCommand is a searchable command palette built on the headless listbox primitives with Fuse fuzzy matching. It delegates filtering, grouped item aggregation, and default item composition to the headless CommandCompact; the UI wrapper only injects styles.'
+  description: 'Fast, composable, command menu for Vue. SCommand is a searchable command palette built on the Aria listbox primitives with Fuse fuzzy matching. It delegates filtering, grouped item aggregation, and default item composition to the Aria CommandCompact; the UI wrapper only injects styles.'
 ---
 
 # Command
 
 ## Overview
 
-Fast, composable, command menu for Vue. `SCommand` is a searchable command palette built on the headless listbox primitives with Fuse fuzzy matching. It delegates filtering, grouped item aggregation, and default item composition to the headless `CommandCompact`; the UI wrapper only injects styles.
+Fast, composable, command menu for Vue. `SCommand` is a searchable command palette built on the Aria listbox primitives with Fuse fuzzy matching. It delegates filtering, grouped item aggregation, and default item composition to the Aria `CommandCompact`; the UI wrapper only injects styles.
 
 Use a command for a ⌘K-style palette, searchable menus, or inline typeahead. For a plain action menu use `dropdown-menu`; for a compact single-select list use `select`.
 
@@ -16,12 +16,12 @@ Use a command for a ⌘K-style palette, searchable menus, or inline typeahead. F
 
 <UsageCode component="command" />
 
-> `SCommand` now delegates filtering, grouped item aggregation, and default item composition to headless `CommandCompact`. For unstyled, data-driven usage, import `CommandCompact` from `@soybeanjs/headless/command`.
+> `SCommand` now delegates filtering, grouped item aggregation, and default item composition to Aria `CommandCompact`. For unstyled, data-driven usage, import `CommandCompact` from `@vean/aria/command`.
 
 ## Features
 
 - 🔎 Fuzzy search — Fuse-powered matching over `label`/`groupLabel`/`description` with configurable `fuseOptions` (threshold, `resultLimit`, match-all-on-empty)
-- 🧩 Headless/styled split — `CommandCompact` owns filtering, grouping and item composition; `SCommand` only injects styles
+- 🧩 Aria/styled split — `CommandCompact` owns filtering, grouping and item composition; `SCommand` only injects styles
 - 📊 Grouped data — `items` with nested group `items` (label/value/icon/description/disabled/separator) and flat items
 - 🔍 Item descriptions — `description` renders as a secondary line under the label and is searchable by the built-in filter
 - 🚀 External filtering — `external-filter` bypasses the built-in fuzzy filter so items can be filtered and ranked by an external engine (e.g. full-text content search)
@@ -34,9 +34,9 @@ Use a command for a ⌘K-style palette, searchable menus, or inline typeahead. F
 ## Component family
 
 - `SCommand` (styled) — the entry wrapper; `commandVariants` recipe with dynamic slot forwarding
-- `CommandCompact` (headless) — the aggregated composite; owns search, grouping, filtering and default item composition
-- `ListboxRoot`/`ListboxFilter`/`ListboxContent`/`ListboxGroup`/`ListboxGroupLabel`/`ListboxItem` (headless) — the underlying listbox primitives
-- `Kbd` (headless) — renders item `shortcut`s
+- `CommandCompact` (Aria) — the aggregated composite; owns search, grouping, filtering and default item composition
+- `ListboxRoot`/`ListboxFilter`/`ListboxContent`/`ListboxGroup`/`ListboxGroupLabel`/`ListboxItem` (Aria) — the underlying listbox primitives
+- `Kbd` (Aria) — renders item `shortcut`s
 
 ## Demos
 
@@ -50,16 +50,16 @@ Use a command for a ⌘K-style palette, searchable menus, or inline typeahead. F
 
 ### Architecture and benchmark differences
 
-`CommandCompact` owns the Fuse search, grouped-item aggregation and default item composition while the underlying listbox primitives stay style-free and only the UI wrapper injects the `commandVariants` classes. This mirrors the cmdk/shadcn-ui headless command split. Ant Design, Element Plus, Mantine and Naive UI ship a select/autocomplete rather than a dedicated command palette; SoybeanUI provides a true `⌘K`-style command with Fuse fuzzy search, grouped data, icons/shortcuts, and full listbox keyboard behavior.
+`CommandCompact` owns the Fuse search, grouped-item aggregation and default item composition while the underlying listbox primitives stay style-free and only the UI wrapper injects the `commandVariants` classes. This mirrors the cmdk/shadcn-ui headless command split. Ant Design, Element Plus, Mantine and Naive UI ship a select/autocomplete rather than a dedicated command palette; VeanUI provides a true `⌘K`-style command with Fuse fuzzy search, grouped data, icons/shortcuts, and full listbox keyboard behavior.
 
-| Capability            | SoybeanUI | shadcn/ui (cmdk) | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------------- | :-------: | :--------------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split |    ✅     |        ✅        |     —      |      —       |    —    |    —     |
-| Fuzzy search (Fuse)   |    ✅     |        ✅        |     —      |      —       |    —    |    —     |
-| Grouped data          |    ✅     |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
-| Icons + shortcuts     |    ✅     |        ✅        |     —      |      —       |   ✅    |    —     |
-| Keyboard nav          |    ✅     |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
-| Empty state           |    ✅     |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
+| Capability          | VeanUI | shadcn/ui (cmdk) | Ant Design | Element Plus | Mantine | Naive UI |
+| :------------------ | :----: | :--------------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split   |   ✅   |        ✅        |     —      |      —       |    —    |    —     |
+| Fuzzy search (Fuse) |   ✅   |        ✅        |     —      |      —       |    —    |    —     |
+| Grouped data        |   ✅   |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
+| Icons + shortcuts   |   ✅   |        ✅        |     —      |      —       |   ✅    |    —     |
+| Keyboard nav        |   ✅   |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
+| Empty state         |   ✅   |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
 
 `—` = unsupported or a different interaction model.
 

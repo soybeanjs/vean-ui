@@ -3,8 +3,8 @@ import process from 'node:process';
 import { Application, ReflectionKind } from 'typedoc';
 import type { Comment, DeclarationReflection, ProjectReflection, Reflection, SignatureReflection } from 'typedoc';
 import ts from 'typescript';
-import { components as headlessComponents } from '../../../headless/src/constants/components';
-import { kebabCase } from '../../../headless/src/shared/string';
+import { components as ariaComponents } from '../../../aria/src/constants/components';
+import { kebabCase } from '../../../aria/src/shared/string';
 import {
   hashGenerationInputs,
   hashGenerationOutputs,
@@ -103,12 +103,12 @@ const vueModuleShimPath = 'packages/scripts/src/typings/typedoc.d.ts';
  */
 const apiInputPaths = [
   'packages/ui/src',
-  'packages/headless/src',
+  'packages/aria/src',
   'packages/theme/src',
   'packages/scripts/src',
   'tsconfig.json',
   'packages/ui/tsconfig.json',
-  'packages/headless/tsconfig.json',
+  'packages/aria/tsconfig.json',
   'package.json',
   'pnpm-lock.yaml'
 ];
@@ -121,9 +121,9 @@ type ApiPackageConfig = {
   /** `<component>/types.ts` lookup roots used to complete symbol sections. */
   componentRoots: string[];
   /**
-   * Skip components already emitted by another package. The `headless` dataset
-   * only carries headless-only exports (e.g. `visually-hidden`), because every
-   * headless type reachable from `@soybeanjs/ui` is already in the `ui` dataset.
+   * Skip components already emitted by another package. The `aria` dataset
+   * only carries aria-only exports (e.g. `visually-hidden`), because every
+   * aria type reachable from `@vean/ui` is already in the `ui` dataset.
    */
   onlyMissingFrom?: string;
   paths: Record<string, string[]>;
@@ -132,13 +132,13 @@ type ApiPackageConfig = {
 /** Packages for the docs target currently being generated (set per target run). */
 let currentApiPackages: ApiPackageConfig[] = [];
 
-/** Alias map shared by the peripheral package datasets (headless). */
+/** Alias map shared by the peripheral package datasets (aria). */
 const peripheralPackagePaths: Record<string, string[]> = {
-  '@soybeanjs/ui': ['./packages/ui/src/index.ts'],
-  '@soybeanjs/headless': ['./packages/headless/src/index.ts'],
-  '@soybeanjs/headless/*': ['./packages/headless/src/*'],
-  '@soybeanjs/theme': ['./packages/theme/src/index.ts'],
-  '@soybeanjs/theme/*': ['./packages/theme/src/*']
+  '@vean/ui': ['./packages/ui/src/index.ts'],
+  '@vean/aria': ['./packages/aria/src/index.ts'],
+  '@vean/aria/*': ['./packages/aria/src/*'],
+  '@vean/theme': ['./packages/theme/src/index.ts'],
+  '@vean/theme/*': ['./packages/theme/src/*']
 };
 
 /**
@@ -153,21 +153,21 @@ function createApiPackages(apiRootDir: string): ApiPackageConfig[] {
       key: 'ui',
       entryPoint: 'packages/ui/src/index.ts',
       outputDir: path.join(apiRootDir, 'ui'),
-      sourceRoots: ['packages/ui/src/', 'packages/headless/src/'],
-      componentRoots: ['packages/ui/src/components', 'packages/headless/src/components'],
+      sourceRoots: ['packages/ui/src/', 'packages/aria/src/'],
+      componentRoots: ['packages/ui/src/components', 'packages/aria/src/components'],
       paths: {
         '@/*': ['./packages/ui/src/*'],
-        '@soybeanjs/ui': ['./packages/ui/src/index.ts'],
-        '@soybeanjs/theme': ['./packages/theme/src/index.ts'],
-        '@soybeanjs/theme/*': ['./packages/theme/src/*']
+        '@vean/ui': ['./packages/ui/src/index.ts'],
+        '@vean/theme': ['./packages/theme/src/index.ts'],
+        '@vean/theme/*': ['./packages/theme/src/*']
       }
     },
     {
-      key: 'headless',
-      entryPoint: 'packages/headless/src/index.ts',
-      outputDir: path.join(apiRootDir, 'headless'),
-      sourceRoots: ['packages/headless/src/'],
-      componentRoots: ['packages/headless/src/components'],
+      key: 'aria',
+      entryPoint: 'packages/aria/src/index.ts',
+      outputDir: path.join(apiRootDir, 'aria'),
+      sourceRoots: ['packages/aria/src/'],
+      componentRoots: ['packages/aria/src/components'],
       onlyMissingFrom: 'ui',
       paths: { ...peripheralPackagePaths }
     }
@@ -183,7 +183,7 @@ function createTypedocTsconfig(pkg: ApiPackageConfig): Record<string, unknown> {
       types: ['vite/client']
     },
     // Only the package's own sources are listed: everything else it needs
-    // (`@soybeanjs/ui`, `@soybeanjs/theme`, ...) is reachable through `paths`,
+    // (`@vean/ui`, `@vean/theme`, ...) is reachable through `paths`,
     // which keeps each program scoped and avoids dragging unrelated packages in.
     include: [vueModuleShimPath, ...pkg.sourceRoots.map(sourceRoot => `${sourceRoot}**/*`)],
     exclude: ['apps/docs/**/*', 'test/**/*']
@@ -278,7 +278,7 @@ const apiSectionSuffixes = {
   slotProps: 'SlotProps'
 } satisfies Record<ApiSectionKind, string>;
 const componentSymbolsByKey = Object.fromEntries(
-  Object.entries(headlessComponents).map(([componentKey, symbols]) => [kebabCase(componentKey), symbols])
+  Object.entries(ariaComponents).map(([componentKey, symbols]) => [kebabCase(componentKey), symbols])
 ) as Record<string, string[]>;
 const componentKeyBySymbolName = buildComponentKeyBySymbolName();
 const aliasExportRegistry = buildAliasExportRegistry();
@@ -317,7 +317,7 @@ function buildAliasExportRegistry(): AliasExportMeta[] {
   const aliasExports: AliasExportMeta[] = [];
 
   for (const componentKey of Object.keys(componentSymbolsByKey)) {
-    const componentIndexFilePath = path.join(rootDir, 'packages/headless/src/components', componentKey, 'index.ts');
+    const componentIndexFilePath = path.join(rootDir, 'packages/aria/src/components', componentKey, 'index.ts');
     const source = ts.sys.readFile(componentIndexFilePath);
 
     if (!source) {

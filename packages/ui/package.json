@@ -1,10 +1,10 @@
 {
-  "name": "@soybeanjs/ui",
+  "name": "@vean/ui",
   "version": "0.50.0",
-  "description": "SoybeanUI is built on top of SoybeanHeadless, providing a collection of styled components for Vue 3.",
-  "homepage": "https://github.com/soybeanjs/soybean-ui",
+  "description": "Vean is built on top of Vean Aria, providing a collection of styled components for Vue 3.",
+  "homepage": "https://github.com/soybeanjs/vean-ui",
   "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-ui/issues"
+    "url": "https://github.com/soybeanjs/vean-ui/issues"
   },
   "license": "MIT",
   "author": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/soybeanjs"
   },
   "repository": {
-    "url": "https://github.com/soybeanjs/soybean-ui.git"
+    "url": "https://github.com/soybeanjs/vean-ui.git"
   },
   "files": [
     "dist"
@@ -74,13 +74,13 @@
     "@iconify/vue": "^5.0.3",
     "@soybeanjs/colord": "^0.8.1",
     "@soybeanjs/cva": "^0.1.1",
-    "@soybeanjs/headless": "workspace:^",
-    "@soybeanjs/theme": "workspace:^"
+    "@vean/aria": "workspace:^",
+    "@vean/theme": "workspace:^"
   },
   "devDependencies": {
-    "@soybeanjs/ui-uno": "workspace:^",
     "@types/node": "^26.6.4",
     "@unocss/cli": "^66.10.5",
+    "@vean/unocss": "workspace:^",
     "@vitest/browser": "^5.0.3",
     "@vitest/browser-playwright": "^5.0.3",
     "@vue/test-utils": "^2.5.1",

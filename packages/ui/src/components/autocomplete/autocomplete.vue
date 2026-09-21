@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends AutocompleteSingleOptionData = AutocompleteSingleOptionData">
 import { computed } from 'vue';
-import { AutocompleteCompact, provideAutocompleteUi } from '@soybeanjs/headless/autocomplete';
-import type { AutocompleteSingleOptionData } from '@soybeanjs/headless/autocomplete';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { AutocompleteCompact, provideAutocompleteUi } from '@vean/aria/autocomplete';
+import type { AutocompleteSingleOptionData } from '@vean/aria/autocomplete';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { autocompleteVariants } from '@/styles/autocomplete';
 import type { AutocompleteProps, AutocompleteEmits, AutocompleteSlots } from './types';
 

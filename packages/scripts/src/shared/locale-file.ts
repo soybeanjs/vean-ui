@@ -7,8 +7,8 @@ import type { JsonObject, JsonValue } from '../shared/json';
 import type { TranslationEntry } from '../shared/translate';
 
 /**
- * File-format layer for the headless locale registry
- * (`packages/headless/src/locale/langs/*.ts`): reading, rebuilding, and
+ * File-format layer for the aria locale registry
+ * (`packages/aria/src/locale/langs/*.ts`): reading, rebuilding, and
  * serializing these modules, plus the copy guidance used when translating them.
  */
 interface LocaleRegistryDocument {
@@ -19,7 +19,7 @@ interface LocaleRegistryDocument {
 }
 
 const rootDir = process.cwd();
-export const localeDir = path.join(rootDir, 'packages/headless/src/locale/langs');
+export const localeDir = path.join(rootDir, 'packages/aria/src/locale/langs');
 
 const rtlLanguageCodes = new Set(['ar', 'fa', 'he', 'ur']);
 

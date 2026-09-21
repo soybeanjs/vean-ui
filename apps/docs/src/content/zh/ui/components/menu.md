@@ -1,18 +1,18 @@
 ---
 head:
   title: 菜单
-  description: 'Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键菜单）。它提供数据驱动方式：通过 SMenuOptions、SMenuCheckboxOptions、SMenuRadioOptions 轻松配置分组、子菜单、复选项、单选项、分隔线、快捷键与链接项。逻辑层复用 @soybeanjs/headless/menu，具备完整的 WAI-ARIA 菜单语义与 roving-focus 键盘导航。'
+  description: 'Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键菜单）。它提供数据驱动方式：通过 SMenuOptions、SMenuCheckboxOptions、SMenuRadioOptions 轻松配置分组、子菜单、复选项、单选项、分隔线、快捷键与链接项。逻辑层复用 @vean/aria/menu，具备完整的 WAI-ARIA 菜单语义与 roving-focus 键盘导航。'
 ---
 
 # 菜单
 
 ## 概述
 
-Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键菜单）。它提供数据驱动方式：通过 `SMenuOptions`、`SMenuCheckboxOptions`、`SMenuRadioOptions` 轻松配置分组、子菜单、复选项、单选项、分隔线、快捷键与链接项。逻辑层复用 `@soybeanjs/headless/menu`，具备完整的 WAI-ARIA 菜单语义与 roving-focus 键盘导航。
+Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键菜单）。它提供数据驱动方式：通过 `SMenuOptions`、`SMenuCheckboxOptions`、`SMenuRadioOptions` 轻松配置分组、子菜单、复选项、单选项、分隔线、快捷键与链接项。逻辑层复用 `@vean/aria/menu`，具备完整的 WAI-ARIA 菜单语义与 roving-focus 键盘导航。
 
 ## 功能特性
 
-- **数据驱动的 Compact 组合** — `SMenuOptions` / `SMenuCheckboxOptions` / `SMenuRadioOptions` 从 `items` 数组递归渲染条目；headless `MenuOptionsCompact` 负责迭代、默认装配与子菜单递归。
+- **数据驱动的 Compact 组合** — `SMenuOptions` / `SMenuCheckboxOptions` / `SMenuRadioOptions` 从 `items` 数组递归渲染条目；Aria `MenuOptionsCompact` 负责迭代、默认装配与子菜单递归。
 - **完整 WAI-ARIA 菜单语义** — `role="menu"` / `menuitem` / `menuitemcheckbox` / `menuitemradio`，`aria-checked`（含 `'mixed'`）、`aria-haspopup`、`aria-expanded`、`aria-controls`、`aria-disabled`。
 - **完整键盘导航** — roving focus 方向键移动（dir 感知）、Typeahead 字符搜索（过滤禁用项）、Home/End/PageUp/PageDown 跳转、Enter/Space 选中、Esc 关闭并归还焦点、Tab 在菜单内循环、子菜单方向键打开/关闭。
 - **浮层定位** — 基于 `@floating-ui/dom`（`autoUpdate` + `arrow`/`flip`/`hide`/`limitShift`/`offset`/`shift`/`size` 中间件），支持 arrow、placement、sideOffset 与 CSS 变量传递。
@@ -21,7 +21,7 @@ Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键
 - **浮层生命周期** — dismissable layer（点击外部/Esc 关闭）、Presence（退出动画 + `forceMount`）、body scroll lock、focus scope/trap、modal 模式。
 - **禁用项** — 逐项 `disabled` 与 `itemProps.disabled` 全局兜底（显式项值优先），`aria-disabled` + `tabindex="-1"`。
 - **隐藏项** — 逐项 `hidden` 将该条目及其整棵子树从渲染结果、激活路径查找与键盘导航中移除；子项全部隐藏的条目按叶子节点渲染。
-- **Headless 组合** — `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` 等从 `@soybeanjs/headless/menu` 导出，供下拉菜单、右键菜单、菜单栏复用。
+- **Aria 组合** — `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` 等从 `@vean/aria/menu` 导出，供下拉菜单、右键菜单、菜单栏复用。
 
 ## 组件家族
 
@@ -46,17 +46,17 @@ Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键
 
 ### 架构与行业对标
 
-| 关注点                   | SoybeanUI                                   | Radix UI Menu    | Ant Design Menu / Dropdown | Element Plus Dropdown |
-| :----------------------- | :------------------------------------------ | :--------------- | :------------------------- | :-------------------- |
-| Headless / 样式分离      | ✅ `@soybeanjs/headless/menu` + `scv()`     | ✅ headless 原语 | ❌ 单一包                  | ❌ 单一包             |
-| 数据驱动 Compact API     | ✅ 普通/复选/单选三形态                     | ❌ 仅组件组合    | ✅ 配置驱动（items）       | ✅ 配置驱动           |
-| roving focus + typeahead | ✅ 完整键盘模型（Home/End/PageUp/PageDown） | ✅               | 部分                       | 部分                  |
-| 子菜单方向键             | ✅ ArrowRight/Left（dir 感知）              | ✅               | 部分                       | 部分                  |
-| 复选/单选项              | ✅ `menuitemcheckbox` / `menuitemradio`     | ✅               | ✅                         | 部分                  |
-| `'mixed'` 半选           | ✅ `CheckedState`                           | ✅               | ✅                         | —                     |
-| 浮层定位                 | ✅ floating-ui（arrow/size/flip/…）         | ✅               | ✅                         | ✅                    |
-| 分隔线 / 快捷键          | ✅ `separator` / `shortcut`                 | 组件组合         | ✅（divider / command）    | 部分                  |
-| 分组                     | ✅ `isGroupLabel` + `MenuGroupLabel`        | ✅ `MenuGroup`   | ✅（type:'group'）         | 部分                  |
+| 关注点                   | VeanUI                                      | Radix UI Menu  | Ant Design Menu / Dropdown | Element Plus Dropdown |
+| :----------------------- | :------------------------------------------ | :------------- | :------------------------- | :-------------------- |
+| Aria / 样式分离          | ✅ `@vean/aria/menu` + `scv()`              | ✅ Aria 原语   | ❌ 单一包                  | ❌ 单一包             |
+| 数据驱动 Compact API     | ✅ 普通/复选/单选三形态                     | ❌ 仅组件组合  | ✅ 配置驱动（items）       | ✅ 配置驱动           |
+| roving focus + typeahead | ✅ 完整键盘模型（Home/End/PageUp/PageDown） | ✅             | 部分                       | 部分                  |
+| 子菜单方向键             | ✅ ArrowRight/Left（dir 感知）              | ✅             | 部分                       | 部分                  |
+| 复选/单选项              | ✅ `menuitemcheckbox` / `menuitemradio`     | ✅             | ✅                         | 部分                  |
+| `'mixed'` 半选           | ✅ `CheckedState`                           | ✅             | ✅                         | —                     |
+| 浮层定位                 | ✅ floating-ui（arrow/size/flip/…）         | ✅             | ✅                         | ✅                    |
+| 分隔线 / 快捷键          | ✅ `separator` / `shortcut`                 | 组件组合       | ✅（divider / command）    | 部分                  |
+| 分组                     | ✅ `isGroupLabel` + `MenuGroupLabel`        | ✅ `MenuGroup` | ✅（type:'group'）         | 部分                  |
 
 `—` = 不支持或采用不同交互模型。
 
@@ -90,4 +90,4 @@ Menu 组件家族用于构建复杂的嵌套菜单（支持下拉菜单与右键
 
 ### 可以构建完全自定义的菜单吗？
 
-可以 — 从 `@soybeanjs/headless/menu` 组合 `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` 等原语，并通过 `provideMenuUi`（或 `SMenuOptions` 的 `ui` prop）注入样式。
+可以 — 从 `@vean/aria/menu` 组合 `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` 等原语，并通过 `provideMenuUi`（或 `SMenuOptions` 的 `ui` prop）注入样式。

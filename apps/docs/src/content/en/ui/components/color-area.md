@@ -1,14 +1,14 @@
 ---
 head:
   title: Color Area
-  description: 'A two-dimensional color editor for saturation/lightness, saturation/brightness, or OKLCH chroma/lightness selection. SColorArea combines the headless ColorAreaRoot/ColorAreaArea/ColorAreaThumb primitives with the colorAreaVariants style recipe (3 slots, 6 sizes).'
+  description: 'A two-dimensional color editor for saturation/lightness, saturation/brightness, or OKLCH chroma/lightness selection. SColorArea combines the Aria ColorAreaRoot/ColorAreaArea/ColorAreaThumb primitives with the colorAreaVariants style recipe (3 slots, 6 sizes).'
 ---
 
 # Color Area
 
 ## Overview
 
-A two-dimensional color editor for saturation/lightness, saturation/brightness, or OKLCH chroma/lightness selection. `SColorArea` combines the headless `ColorAreaRoot`/`ColorAreaArea`/`ColorAreaThumb` primitives with the `colorAreaVariants` style recipe (3 slots, 6 sizes).
+A two-dimensional color editor for saturation/lightness, saturation/brightness, or OKLCH chroma/lightness selection. `SColorArea` combines the Aria `ColorAreaRoot`/`ColorAreaArea`/`ColorAreaThumb` primitives with the `colorAreaVariants` style recipe (3 slots, 6 sizes).
 
 Use a color area for a saturation/lightness plane inside a color picker (typically paired with `color-slider` for the hue channel).
 
@@ -18,7 +18,7 @@ Use a color area for a saturation/lightness plane inside a color picker (typical
 
 ## Features
 
-- 🧩 Headless/styled split — `ColorAreaCompact` composes the area + thumb; `SColorArea` only injects styles and forwards props/events
+- 🧩 Aria/styled split — `ColorAreaCompact` composes the area + thumb; `SColorArea` only injects styles and forwards props/events
 - 🎛️ Axis channels — `xChannel`/`yChannel` pick `hue`/`saturation`/`lightness`/`brightness`/`chroma`
 - 🎨 Color spaces — `colorSpace` (e.g. `hsl`, `oklch`) with `format` for the emitted string
 - ⌨️ Keyboard — arrow keys adjust the thumb in fine/step increments; `role="application"` + `role="slider"`
@@ -29,10 +29,10 @@ Use a color area for a saturation/lightness plane inside a color picker (typical
 ## Component family
 
 - `SColorArea` (styled) — the entry wrapper; `colorAreaVariants` recipe with dynamic slot forwarding
-- `ColorAreaRoot` (headless) — the state owner; `modelValue`/`color`, axis channels, `colorSpace`/`format`, `updateValues`/`commitValues`
-- `ColorAreaArea` (headless) — the 2D plane surface
-- `ColorAreaThumb` (headless) — the draggable position indicator
-- `ColorAreaCompact` (headless) — the aggregated composite; composes area + thumb
+- `ColorAreaRoot` (Aria) — the state owner; `modelValue`/`color`, axis channels, `colorSpace`/`format`, `updateValues`/`commitValues`
+- `ColorAreaArea` (Aria) — the 2D plane surface
+- `ColorAreaThumb` (Aria) — the draggable position indicator
+- `ColorAreaCompact` (Aria) — the aggregated composite; composes area + thumb
 
 ## Demo
 
@@ -46,16 +46,16 @@ Use a color area for a saturation/lightness plane inside a color picker (typical
 
 ### Architecture and benchmark differences
 
-`ColorAreaCompact` owns the area/thumb composition while every primitive stays style-free and only the UI wrapper injects the `colorAreaVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI ship a full color-picker with an embedded saturation plane; SoybeanUI exposes the area as a standalone configurable primitive with axis-channel, color-space and format control, plus native form inputs and a `size` scale.
+`ColorAreaCompact` owns the area/thumb composition while every primitive stays style-free and only the UI wrapper injects the `colorAreaVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI ship a full color-picker with an embedded saturation plane; VeanUI exposes the area as a standalone configurable primitive with axis-channel, color-space and format control, plus native form inputs and a `size` scale.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Configurable axes     |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Multiple color spaces |    ✅     |    ✅     |     —      |      —       |   ✅    |    —     |
-| Keyboard interaction  |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Native form inputs    |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Sizes (6)             |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability            | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :-------------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split     |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Configurable axes     |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Multiple color spaces |   ✅   |    ✅     |     —      |      —       |   ✅    |    —     |
+| Keyboard interaction  |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Native form inputs    |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Sizes (6)             |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model (most ship a single combined color-picker).
 

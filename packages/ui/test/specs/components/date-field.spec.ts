@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { toISODateString } from '@soybeanjs/headless/date';
-import { DateFieldRoot } from '@soybeanjs/headless/date-field';
+import { toISODateString } from '@vean/aria/date';
+import { DateFieldRoot } from '@vean/aria/date-field';
 import SDateField from '@/components/date-field/date-field.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -22,7 +22,7 @@ describe('SDateField', () => {
       const wrapper = mountDateField({ class: 'test-date-field' });
 
       expect(wrapper.classes()).toContain('test-date-field');
-      expect(wrapper.findAll('[data-soybean-date-field-segment]').length).toBeGreaterThanOrEqual(5);
+      expect(wrapper.findAll('[data-vean-date-field-segment]').length).toBeGreaterThanOrEqual(5);
       expect(wrapper.find('[data-segment="month"]').text()).toContain('4');
       wrapper.unmount();
     });
@@ -43,7 +43,7 @@ describe('SDateField', () => {
     it('applies the size variant class to the root', () => {
       const wrapper = mountDateField({ size: 'lg' });
 
-      expect(wrapper.find('[data-soybean-date-field-root]').classes()).toContain('h-9');
+      expect(wrapper.find('[data-vean-date-field-root]').classes()).toContain('h-9');
       wrapper.unmount();
     });
 
@@ -177,10 +177,10 @@ describe('SDateField', () => {
 
       await day.trigger('focusin');
       await day.trigger('keydown', { key: 'ArrowRight', preventDefault() {} });
-      expect(document.activeElement?.getAttribute('data-soybean-date-field-segment')).toBe('year');
+      expect(document.activeElement?.getAttribute('data-vean-date-field-segment')).toBe('year');
 
       await document.activeElement?.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft', bubbles: true }));
-      expect(document.activeElement?.getAttribute('data-soybean-date-field-segment')).toBe('day');
+      expect(document.activeElement?.getAttribute('data-vean-date-field-segment')).toBe('day');
       wrapper.unmount();
     });
 
@@ -191,7 +191,7 @@ describe('SDateField', () => {
       await day.trigger('focusin');
       await day.trigger('keydown', { key: 'ArrowLeft', preventDefault() {} });
 
-      expect(document.activeElement?.getAttribute('data-soybean-date-field-segment')).toBe('year');
+      expect(document.activeElement?.getAttribute('data-vean-date-field-segment')).toBe('year');
       wrapper.unmount();
     });
 
@@ -203,7 +203,7 @@ describe('SDateField', () => {
       await day.trigger('keydown', { key: '1', preventDefault() {} });
       await day.trigger('keydown', { key: '9', preventDefault() {} });
 
-      expect(document.activeElement?.getAttribute('data-soybean-date-field-segment')).toBe('year');
+      expect(document.activeElement?.getAttribute('data-vean-date-field-segment')).toBe('year');
       expect(toISODateString((wrapper.emitted('update:modelValue')?.at(-1)?.[0] as Date) ?? new Date(NaN))).toBe(
         '2026-04-19'
       );
@@ -248,7 +248,7 @@ describe('SDateField', () => {
     it('marks the root and segments as invalid when the value exceeds maxValue', () => {
       const wrapper = mountDateField({ maxValue: new Date(2026, 4 - 1, 18) });
 
-      expect(wrapper.find('[data-soybean-date-field-root]').attributes('data-invalid')).toBeDefined();
+      expect(wrapper.find('[data-vean-date-field-root]').attributes('data-invalid')).toBeDefined();
       expect(wrapper.find('[data-segment="day"]').attributes('aria-invalid')).toBe('true');
       wrapper.unmount();
     });
@@ -256,7 +256,7 @@ describe('SDateField', () => {
     it('marks the root as invalid when isDateUnavailable matches', () => {
       const wrapper = mountDateField({ isDateUnavailable: (item: Date) => item.getDate() === 19 });
 
-      expect(wrapper.find('[data-soybean-date-field-root]').attributes('data-invalid')).toBeDefined();
+      expect(wrapper.find('[data-vean-date-field-root]').attributes('data-invalid')).toBeDefined();
       wrapper.unmount();
     });
   });
@@ -293,7 +293,7 @@ describe('SDateField', () => {
         minValue: new Date(2026, 1 - 1, 1),
         maxValue: new Date(2026, 12 - 1, 31)
       });
-      const input = wrapper.find('input[data-soybean-visually-hidden]');
+      const input = wrapper.find('input[data-vean-visually-hidden]');
 
       expect(input.attributes('type')).toBe('date');
       expect(input.attributes('value')).toBe('2026-04-19');
@@ -309,14 +309,14 @@ describe('SDateField', () => {
     it('applies ui.root class overrides', () => {
       const wrapper = mountDateField({ ui: { root: 'my-root-cls' } });
 
-      expect(wrapper.find('[data-soybean-date-field-root]').classes()).toContain('my-root-cls');
+      expect(wrapper.find('[data-vean-date-field-root]').classes()).toContain('my-root-cls');
       wrapper.unmount();
     });
 
     it('applies ui.input class overrides to every segment', () => {
       const wrapper = mountDateField({ ui: { input: 'my-input-cls' } });
 
-      wrapper.findAll('[data-soybean-date-field-segment]').forEach(segment => {
+      wrapper.findAll('[data-vean-date-field-segment]').forEach(segment => {
         expect(segment.classes()).toContain('my-input-cls');
       });
       wrapper.unmount();

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; sidebar: ClassValue; tab: ClassValue; footer: ClassValue; sidebarRoot: ClassValue; sidebarWrapper: ClassValue; sidebarGapHandler: ClassValue; main: ClassValue; rail: ClassValue; mobile: ClassValue; mobileDrawer: ClassValue; mobileOverlay: ClassValue; headerPlaceholder: ClassValue; tabPlaceholder: ClassValue; footerPlaceholder: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Layout component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutui",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutui",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.side",
             "default": null,
             "inheritedFrom": "side",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "HorizontalSide",
@@ -125,8 +125,8 @@
                 "type": "'right' | 'left'",
                 "resolvedType": "'right' | 'left'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.horizontalside",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.horizontalside",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.variant",
             "default": null,
             "inheritedFrom": "variant",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutVariant",
@@ -150,8 +150,8 @@
                 "type": "'sidebar' | 'floating' | 'inset'",
                 "resolvedType": "'sidebar' | 'floating' | 'inset'",
                 "description": "Type information for LayoutVariant.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutvariant",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutvariant",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.collapsible",
             "default": null,
             "inheritedFrom": "collapsible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutCollapsible",
@@ -175,8 +175,8 @@
                 "type": "'icon' | 'offcanvas'",
                 "resolvedType": "'icon' | 'offcanvas'",
                 "description": "Type information for LayoutCollapsible.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcollapsible",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcollapsible",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.sidebarvisible",
             "default": "true",
             "inheritedFrom": "sidebarVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -203,7 +203,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.sidebarwidth",
             "default": "240",
             "inheritedFrom": "sidebarWidth",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -214,7 +214,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.collapsedsidebarwidth",
             "default": "50",
             "inheritedFrom": "collapsedSidebarWidth",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -225,7 +225,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.ismobile",
             "default": null,
             "inheritedFrom": "isMobile",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -236,7 +236,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.mobileopen",
             "default": null,
             "inheritedFrom": "mobileOpen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -247,7 +247,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.defaultmobileopen",
             "default": "false",
             "inheritedFrom": "defaultMobileOpen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -258,7 +258,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.mobilesidebarwidth",
             "default": "240",
             "inheritedFrom": "mobileSidebarWidth",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -269,7 +269,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.headervisible",
             "default": "true",
             "inheritedFrom": "headerVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -280,7 +280,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.headerheight",
             "default": "56",
             "inheritedFrom": "headerHeight",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -291,7 +291,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.tabvisible",
             "default": "true",
             "inheritedFrom": "tabVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -302,7 +302,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.tabheight",
             "default": "44",
             "inheritedFrom": "tabHeight",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -313,7 +313,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.footervisible",
             "default": "true",
             "inheritedFrom": "footerVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -324,7 +324,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.footerheight",
             "default": "48",
             "inheritedFrom": "footerHeight",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -335,7 +335,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.fullcontent",
             "default": "false",
             "inheritedFrom": "fullContent",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -346,7 +346,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.pxtorem",
             "default": "(px: number) => px / 16 (16 is the base font size)",
             "inheritedFrom": "pxToRem",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -357,7 +357,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -365,8 +365,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -382,7 +382,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.scrollbehavior",
             "default": null,
             "inheritedFrom": "scrollBehavior",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutScrollBehavior",
@@ -390,8 +390,8 @@
                 "type": "'content' | 'wrapper'",
                 "resolvedType": "'content' | 'wrapper'",
                 "description": "Type information for LayoutScrollBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutscrollbehavior",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutscrollbehavior",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -407,7 +407,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.scrollid",
             "default": null,
             "inheritedFrom": "scrollId",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -418,7 +418,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.basezindex",
             "default": "50",
             "inheritedFrom": "baseZIndex",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -429,7 +429,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.fixedtop",
             "default": "true",
             "inheritedFrom": "fixedTop",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -440,7 +440,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.fixedfooter",
             "default": "true",
             "inheritedFrom": "fixedFooter",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -451,7 +451,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.stretchfooter",
             "default": "true",
             "inheritedFrom": "stretchFooter",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -462,7 +462,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.sidebarprops",
             "default": null,
             "inheritedFrom": "sidebarProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutSidebarProps",
@@ -470,8 +470,8 @@
                 "type": "LayoutSidebarProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutSidebar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutsidebarprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutsidebarprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -487,7 +487,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.railprops",
             "default": null,
             "inheritedFrom": "railProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutRailProps",
@@ -495,8 +495,8 @@
                 "type": "LayoutRailProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutRail component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrailprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrailprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -512,7 +512,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.mainprops",
             "default": null,
             "inheritedFrom": "mainProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutMainProps",
@@ -520,8 +520,8 @@
                 "type": "LayoutMainProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutMain component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutmainprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutmainprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -537,7 +537,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.headerprops",
             "default": null,
             "inheritedFrom": "headerProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutHeaderProps",
@@ -545,8 +545,8 @@
                 "type": "LayoutHeaderProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutHeader component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutheaderprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutheaderprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -562,7 +562,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.tabprops",
             "default": null,
             "inheritedFrom": "tabProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutTabProps",
@@ -570,8 +570,8 @@
                 "type": "LayoutTabProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutTab component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttabprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttabprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -587,7 +587,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutContentProps",
@@ -595,8 +595,8 @@
                 "type": "LayoutContentProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcontentprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcontentprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -612,7 +612,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.footerprops",
             "default": null,
             "inheritedFrom": "footerProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutFooterProps",
@@ -620,8 +620,8 @@
                 "type": "LayoutFooterProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutFooter component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutfooterprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutfooterprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -637,7 +637,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutprops.members.mobileprops",
             "default": null,
             "inheritedFrom": "mobileProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutMobileProps",
@@ -645,8 +645,8 @@
                 "type": "LayoutMobileProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutMobile component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutmobileprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutmobileprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -676,7 +676,7 @@
             "required": true,
             "description": "Emitted when the open state changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -686,7 +686,7 @@
             "required": true,
             "description": "Emitted when the mobile drawer open state changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutemits.callables.update_mobileopen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -697,8 +697,8 @@
             "type": "{ 'update:open': [open: boolean]; 'update:mobileOpen': [open: boolean]; }",
             "resolvedType": "{ \"update:open\": [open: boolean]; \"update:mobileOpen\": [open: boolean] }",
             "description": "Events for the LayoutRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -709,8 +709,8 @@
                 "parameters": "open: boolean",
                 "required": true,
                 "description": "Emitted when the open state changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -719,8 +719,8 @@
                 "parameters": "open: boolean",
                 "required": true,
                 "description": "Emitted when the mobile drawer open state changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.callables.update_mobileopen",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.callables.update_mobileopen",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -745,7 +745,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutslots.callables.default",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -755,7 +755,7 @@
             "required": false,
             "description": "Custom content for the sidebar slot.\n\n`collapsed` is the mode-aware state to render from: it is `false` on mobile,\nwhere the sidebar is a drawer that always shows the expanded navigation, so a\ncollapse chosen on desktop does not follow the content into the drawer.\n`open` still reports the desktop state.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutslots.callables.sidebar",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -763,8 +763,8 @@
                 "type": "{ open: boolean | undefined; collapsedSidebarWidth: number; collapsed: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.type",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.type",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -779,7 +779,7 @@
             "required": false,
             "description": "Custom content for the header slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutslots.callables.header",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -789,7 +789,7 @@
             "required": false,
             "description": "Custom content for the tab slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutslots.callables.tab",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -799,7 +799,7 @@
             "required": false,
             "description": "Custom content for the content slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutslots.callables.content",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -809,7 +809,7 @@
             "required": false,
             "description": "Custom content for the footer slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_layout_types.layoutslots.callables.footer",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -820,8 +820,8 @@
             "type": "{ LayoutTrigger?: () => any; sidebar?: (props: { open: boolean | undefined; collapsedSidebarWidth: number; collapsed: boolean; }) => any; header?: () => any; tab?: () => any; content?: () => any; footer?: () => any; }",
             "resolvedType": "{ LayoutTrigger?: (() => any); sidebar?: ((props: { open: boolean; collapsedSidebarWidth: number; collapsed: boolean; }) => any); header?: (() => any); tab?: (() => any); content?: (() => any); footer?: (() => any) }",
             "description": "Slots for the LayoutCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -832,8 +832,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -842,8 +842,8 @@
                 "parameters": "((props: { open: boolean | undefined; collapsedSidebarWidth: number; collapsed: boolean; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the sidebar slot.\n\n`collapsed` is the mode-aware state to render from: it is `false` on mobile,\nwhere the sidebar is a drawer that always shows the expanded navigation, so a\ncollapse chosen on desktop does not follow the content into the drawer.\n`open` still reports the desktop state.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.sidebar",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.sidebar",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -852,8 +852,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the header slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.header",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.header",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -862,8 +862,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the tab slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.tab",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.tab",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -872,8 +872,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the content slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.content",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.content",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -882,8 +882,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the footer slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.footer",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.footer",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -898,8 +898,8 @@
         "type": "Interface LayoutCompactProps",
         "resolvedType": "{ open?: boolean; defaultOpen?: boolean; side?: HorizontalSide; variant?: LayoutVariant; collapsible?: LayoutCollapsible; sidebarVisible?: boolean; sidebarWidth?: number; collapsedSidebarWidth?: number; isMobile?: boolean; mobileOpen?: boolean; defaultMobileOpen?: boolean; mobileSidebarWidth?: number; headerVisible?: boolean; headerHeight?: number; tabVisible?: boolean; tabHeight?: number; footerVisible?: boolean; footerHeight?: number; fullContent?: boolean; pxToRem?: ((px: number) => number); orientation?: DataOrientation; scrollBehavior?: LayoutScrollBehavior; scrollId?: string; baseZIndex?: number; fixedTop?: boolean; fixedFooter?: boolean; stretchFooter?: boolean; sidebarProps?: LayoutSidebarProps; railProps?: LayoutRailProps; mainProps?: LayoutMainProps; headerProps?: LayoutHeaderProps; tabProps?: LayoutTabProps; contentProps?: LayoutContentProps; footerProps?: LayoutFooterProps; mobileProps?: LayoutMobileProps }",
         "description": "Properties for the LayoutCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -907,10 +907,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the layout. Can be bound with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -918,10 +918,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the layout when it is initially rendered.\n\nUse when you do not need to control its open state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -929,10 +929,10 @@
             "type": "HorizontalSide",
             "required": false,
             "description": "The side of the layout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.side",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.side",
             "default": null,
             "inheritedFrom": "side",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "HorizontalSide",
@@ -940,8 +940,8 @@
                 "type": "'right' | 'left'",
                 "resolvedType": "'right' | 'left'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.horizontalside",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.horizontalside",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -954,10 +954,10 @@
             "type": "LayoutVariant",
             "required": false,
             "description": "The variant of the layout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.variant",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.variant",
             "default": null,
             "inheritedFrom": "variant",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutVariant",
@@ -965,8 +965,8 @@
                 "type": "'sidebar' | 'floating' | 'inset'",
                 "resolvedType": "'sidebar' | 'floating' | 'inset'",
                 "description": "Type information for LayoutVariant.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutvariant",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutvariant",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -979,10 +979,10 @@
             "type": "LayoutCollapsible",
             "required": false,
             "description": "The collapsible state of the layout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.collapsible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.collapsible",
             "default": null,
             "inheritedFrom": "collapsible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutCollapsible",
@@ -990,8 +990,8 @@
                 "type": "'icon' | 'offcanvas'",
                 "resolvedType": "'icon' | 'offcanvas'",
                 "description": "Type information for LayoutCollapsible.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcollapsible",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcollapsible",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1004,10 +1004,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the sidebar.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.sidebarvisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.sidebarvisible",
             "default": "true",
             "inheritedFrom": "sidebarVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1015,10 +1015,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the sidebar. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.sidebarwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.sidebarwidth",
             "default": "240",
             "inheritedFrom": "sidebarWidth",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1026,10 +1026,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the sidebar when it is collapsed. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.collapsedsidebarwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.collapsedsidebarwidth",
             "default": "50",
             "inheritedFrom": "collapsedSidebarWidth",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1037,10 +1037,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the layout is in mobile view.\n\nResolution order: this prop, then a host viewport decision provided through\n`provideViewportContext` (a simulated viewport — a device frame, an embedded\nshell), then `useMediaQuery(mobileViewportQuery)` — the same breakpoint the\nstyled desktop sidebar is hidden at. Pass an explicit boolean to force the\nmode (e.g. a server-side detection); `false` re-enables the inline sidebar\neven below the breakpoint.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.ismobile",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.ismobile",
             "default": null,
             "inheritedFrom": "isMobile",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1048,10 +1048,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the mobile drawer. Can be bound with\n`v-model:mobileOpen`.\n\nKept apart from `open`, which drives the desktop sidebar: on mobile the\ninline sidebar is replaced by a drawer, so the two states never apply at the\nsame time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.mobileopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.mobileopen",
             "default": null,
             "inheritedFrom": "mobileOpen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1059,10 +1059,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the mobile drawer when it is initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.defaultmobileopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.defaultmobileopen",
             "default": "false",
             "inheritedFrom": "defaultMobileOpen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1070,10 +1070,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the sidebar in the mobile view. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.mobilesidebarwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.mobilesidebarwidth",
             "default": "240",
             "inheritedFrom": "mobileSidebarWidth",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1081,10 +1081,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the header.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.headervisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.headervisible",
             "default": "true",
             "inheritedFrom": "headerVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1092,10 +1092,10 @@
             "type": "number",
             "required": false,
             "description": "The height of the header. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.headerheight",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.headerheight",
             "default": "56",
             "inheritedFrom": "headerHeight",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1103,10 +1103,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the tab.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.tabvisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.tabvisible",
             "default": "true",
             "inheritedFrom": "tabVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1114,10 +1114,10 @@
             "type": "number",
             "required": false,
             "description": "The height of the tab. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.tabheight",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.tabheight",
             "default": "44",
             "inheritedFrom": "tabHeight",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1125,10 +1125,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the footer.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.footervisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.footervisible",
             "default": "true",
             "inheritedFrom": "footerVisible",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1136,10 +1136,10 @@
             "type": "number",
             "required": false,
             "description": "The height of the footer. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.footerheight",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.footerheight",
             "default": "48",
             "inheritedFrom": "footerHeight",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1147,10 +1147,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether the content takes the full height of the layout (include).",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.fullcontent",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.fullcontent",
             "default": "false",
             "inheritedFrom": "fullContent",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1158,10 +1158,10 @@
             "type": "((px: number) => number)",
             "required": false,
             "description": "The function to convert pixels to rem.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.pxtorem",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.pxtorem",
             "default": "(px: number) => px / 16 (16 is the base font size)",
             "inheritedFrom": "pxToRem",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1169,10 +1169,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "Orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1180,8 +1180,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1194,10 +1194,10 @@
             "type": "LayoutScrollBehavior",
             "required": false,
             "description": "Scroll behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.scrollbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.scrollbehavior",
             "default": null,
             "inheritedFrom": "scrollBehavior",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutScrollBehavior",
@@ -1205,8 +1205,8 @@
                 "type": "'content' | 'wrapper'",
                 "resolvedType": "'content' | 'wrapper'",
                 "description": "Type information for LayoutScrollBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutscrollbehavior",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutscrollbehavior",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1219,10 +1219,10 @@
             "type": "string",
             "required": false,
             "description": "Scroll id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.scrollid",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.scrollid",
             "default": null,
             "inheritedFrom": "scrollId",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1230,10 +1230,10 @@
             "type": "number",
             "required": false,
             "description": "The base z-index of the layout. The z-index of the sidebar, header, tab, footer, and their fixed versions will be calculated based on this value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.basezindex",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.basezindex",
             "default": "50",
             "inheritedFrom": "baseZIndex",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1241,10 +1241,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the header and tab are fixed to the top of the layout when the orientation is vertical. If true, the header and tab will be fixed to the top of the layout when the orientation is vertical, and will scroll with the content when the orientation is horizontal.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.fixedtop",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.fixedtop",
             "default": "true",
             "inheritedFrom": "fixedTop",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1252,10 +1252,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether footer is fixed",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.fixedfooter",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.fixedfooter",
             "default": "true",
             "inheritedFrom": "fixedFooter",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1263,10 +1263,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the footer should stretch to the full width of the layout or the content when layout orientation is vertical.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.stretchfooter",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.stretchfooter",
             "default": "true",
             "inheritedFrom": "stretchFooter",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1274,10 +1274,10 @@
             "type": "LayoutSidebarProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.sidebarprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.sidebarprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.sidebarProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutSidebarProps",
@@ -1285,8 +1285,8 @@
                 "type": "LayoutSidebarProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutSidebar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutsidebarprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutsidebarprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1299,10 +1299,10 @@
             "type": "LayoutRailProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.railprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.railprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.railProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutRailProps",
@@ -1310,8 +1310,8 @@
                 "type": "LayoutRailProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutRail component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrailprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrailprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1324,10 +1324,10 @@
             "type": "LayoutMainProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.mainprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.mainprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.mainProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutMainProps",
@@ -1335,8 +1335,8 @@
                 "type": "LayoutMainProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutMain component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutmainprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutmainprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1349,10 +1349,10 @@
             "type": "LayoutHeaderProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.headerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.headerprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.headerProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutHeaderProps",
@@ -1360,8 +1360,8 @@
                 "type": "LayoutHeaderProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutHeader component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutheaderprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutheaderprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1374,10 +1374,10 @@
             "type": "LayoutTabProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.tabprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.tabprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.tabProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutTabProps",
@@ -1385,8 +1385,8 @@
                 "type": "LayoutTabProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutTab component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttabprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttabprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1399,10 +1399,10 @@
             "type": "LayoutContentProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.contentProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutContentProps",
@@ -1410,8 +1410,8 @@
                 "type": "LayoutContentProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcontentprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcontentprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1424,10 +1424,10 @@
             "type": "LayoutFooterProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.footerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.footerprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.footerProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutFooterProps",
@@ -1435,8 +1435,8 @@
                 "type": "LayoutFooterProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutFooter component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutfooterprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutfooterprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1449,10 +1449,10 @@
             "type": "LayoutMobileProps",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactprops.members.mobileprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactprops.members.mobileprops",
             "default": null,
             "inheritedFrom": "LayoutOthersProps.mobileProps",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutMobileProps",
@@ -1460,8 +1460,8 @@
                 "type": "LayoutMobileProps",
                 "resolvedType": null,
                 "description": "Properties for the LayoutMobile component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutmobileprops",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutmobileprops",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1479,8 +1479,8 @@
         "type": "TypeAlias LayoutCompactEmits: LayoutRootEmits",
         "resolvedType": "{ \"update:open\": [open: boolean]; \"update:mobileOpen\": [open: boolean] }",
         "description": "Events for the LayoutCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1490,8 +1490,8 @@
             "parameters": "open: boolean",
             "required": true,
             "description": "Emitted when the open state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1500,8 +1500,8 @@
             "parameters": "open: boolean",
             "required": true,
             "description": "Emitted when the mobile drawer open state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactemits.callables.update_mobileopen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactemits.callables.update_mobileopen",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1512,8 +1512,8 @@
             "type": "{ 'update:open': [open: boolean]; 'update:mobileOpen': [open: boolean]; }",
             "resolvedType": "{ \"update:open\": [open: boolean]; \"update:mobileOpen\": [open: boolean] }",
             "description": "Events for the LayoutRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1524,8 +1524,8 @@
                 "parameters": "open: boolean",
                 "required": true,
                 "description": "Emitted when the open state changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1534,8 +1534,8 @@
                 "parameters": "open: boolean",
                 "required": true,
                 "description": "Emitted when the mobile drawer open state changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.callables.update_mobileopen",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.callables.update_mobileopen",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1548,8 +1548,8 @@
         "type": "TypeAlias LayoutCompactSlots",
         "resolvedType": "{ LayoutTrigger?: (() => any); sidebar?: ((props: { open: boolean; collapsedSidebarWidth: number; collapsed: boolean; }) => any); header?: (() => any); tab?: (() => any); content?: (() => any); footer?: (() => any) }",
         "description": "Slots for the LayoutCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1559,8 +1559,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1569,8 +1569,8 @@
             "parameters": "((props: { open: boolean | undefined; collapsedSidebarWidth: number; collapsed: boolean; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the sidebar slot.\n\n`collapsed` is the mode-aware state to render from: it is `false` on mobile,\nwhere the sidebar is a drawer that always shows the expanded navigation, so a\ncollapse chosen on desktop does not follow the content into the drawer.\n`open` still reports the desktop state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.sidebar",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.sidebar",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1578,8 +1578,8 @@
                 "type": "{ open: boolean | undefined; collapsedSidebarWidth: number; collapsed: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.type",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.type",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1593,8 +1593,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the header slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.header",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.header",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1603,8 +1603,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the tab slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.tab",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.tab",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1613,8 +1613,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the content slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.content",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.content",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1623,8 +1623,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the footer slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcompactslots.callables.footer",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcompactslots.callables.footer",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1638,8 +1638,8 @@
         "type": "Interface LayoutContentProps",
         "resolvedType": null,
         "description": "Properties for the LayoutContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcontentprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcontentprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1653,8 +1653,8 @@
         "type": "Interface LayoutFooterProps",
         "resolvedType": null,
         "description": "Properties for the LayoutFooter component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutfooterprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutfooterprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1668,8 +1668,8 @@
         "type": "Interface LayoutHeaderProps",
         "resolvedType": null,
         "description": "Properties for the LayoutHeader component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutheaderprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutheaderprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1683,8 +1683,8 @@
         "type": "Interface LayoutMainProps",
         "resolvedType": null,
         "description": "Properties for the LayoutMain component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutmainprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutmainprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1698,8 +1698,8 @@
         "type": "Interface LayoutMobileProps",
         "resolvedType": null,
         "description": "Properties for the LayoutMobile component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutmobileprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutmobileprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1713,8 +1713,8 @@
         "type": "Interface LayoutPlaceholderProps",
         "resolvedType": "{ type: 'header' | 'tab' | 'footer' }",
         "description": "Properties for the LayoutPlaceholder component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutplaceholderprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutplaceholderprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1722,10 +1722,10 @@
             "type": "'header' | 'tab' | 'footer'",
             "required": true,
             "description": "Which region the placeholder reserves space for.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutplaceholderprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutplaceholderprops.members.type",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1740,8 +1740,8 @@
         "type": "Interface LayoutRailProps",
         "resolvedType": null,
         "description": "Properties for the LayoutRail component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrailprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrailprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1755,8 +1755,8 @@
         "type": "Interface LayoutRootProps",
         "resolvedType": "{ open?: boolean; defaultOpen?: boolean; side?: HorizontalSide; variant?: LayoutVariant; collapsible?: LayoutCollapsible; sidebarVisible?: boolean; sidebarWidth?: number; collapsedSidebarWidth?: number; isMobile?: boolean; mobileOpen?: boolean; defaultMobileOpen?: boolean; mobileSidebarWidth?: number; headerVisible?: boolean; headerHeight?: number; tabVisible?: boolean; tabHeight?: number; footerVisible?: boolean; footerHeight?: number; fullContent?: boolean; pxToRem?: ((px: number) => number); orientation?: DataOrientation; scrollBehavior?: LayoutScrollBehavior; scrollId?: string; baseZIndex?: number; fixedTop?: boolean; fixedFooter?: boolean; stretchFooter?: boolean }",
         "description": "Properties for the LayoutRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1764,10 +1764,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the layout. Can be bound with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.open",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1775,10 +1775,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the layout when it is initially rendered.\n\nUse when you do not need to control its open state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.defaultopen",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1786,10 +1786,10 @@
             "type": "HorizontalSide",
             "required": false,
             "description": "The side of the layout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.side",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.side",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "HorizontalSide",
@@ -1797,8 +1797,8 @@
                 "type": "'right' | 'left'",
                 "resolvedType": "'right' | 'left'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.horizontalside",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.horizontalside",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1811,10 +1811,10 @@
             "type": "LayoutVariant",
             "required": false,
             "description": "The variant of the layout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.variant",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.variant",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutVariant",
@@ -1822,8 +1822,8 @@
                 "type": "'sidebar' | 'floating' | 'inset'",
                 "resolvedType": "'sidebar' | 'floating' | 'inset'",
                 "description": "Type information for LayoutVariant.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutvariant",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutvariant",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1836,10 +1836,10 @@
             "type": "LayoutCollapsible",
             "required": false,
             "description": "The collapsible state of the layout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.collapsible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.collapsible",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutCollapsible",
@@ -1847,8 +1847,8 @@
                 "type": "'icon' | 'offcanvas'",
                 "resolvedType": "'icon' | 'offcanvas'",
                 "description": "Type information for LayoutCollapsible.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutcollapsible",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutcollapsible",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1861,10 +1861,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the sidebar.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.sidebarvisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.sidebarvisible",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1872,10 +1872,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the sidebar. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.sidebarwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.sidebarwidth",
             "default": "240",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1883,10 +1883,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the sidebar when it is collapsed. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.collapsedsidebarwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.collapsedsidebarwidth",
             "default": "50",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1894,10 +1894,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the layout is in mobile view.\n\nResolution order: this prop, then a host viewport decision provided through\n`provideViewportContext` (a simulated viewport — a device frame, an embedded\nshell), then `useMediaQuery(mobileViewportQuery)` — the same breakpoint the\nstyled desktop sidebar is hidden at. Pass an explicit boolean to force the\nmode (e.g. a server-side detection); `false` re-enables the inline sidebar\neven below the breakpoint.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.ismobile",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.ismobile",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1905,10 +1905,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the mobile drawer. Can be bound with\n`v-model:mobileOpen`.\n\nKept apart from `open`, which drives the desktop sidebar: on mobile the\ninline sidebar is replaced by a drawer, so the two states never apply at the\nsame time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.mobileopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.mobileopen",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1916,10 +1916,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the mobile drawer when it is initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.defaultmobileopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.defaultmobileopen",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1927,10 +1927,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the sidebar in the mobile view. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.mobilesidebarwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.mobilesidebarwidth",
             "default": "240",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1938,10 +1938,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the header.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.headervisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.headervisible",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1949,10 +1949,10 @@
             "type": "number",
             "required": false,
             "description": "The height of the header. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.headerheight",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.headerheight",
             "default": "56",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1960,10 +1960,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the tab.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.tabvisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.tabvisible",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1971,10 +1971,10 @@
             "type": "number",
             "required": false,
             "description": "The height of the tab. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.tabheight",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.tabheight",
             "default": "44",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1982,10 +1982,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether to show the footer.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.footervisible",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.footervisible",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -1993,10 +1993,10 @@
             "type": "number",
             "required": false,
             "description": "The height of the footer. (px)",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.footerheight",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.footerheight",
             "default": "48",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2004,10 +2004,10 @@
             "type": "boolean",
             "required": false,
             "description": "whether the content takes the full height of the layout (include).",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.fullcontent",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.fullcontent",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2015,10 +2015,10 @@
             "type": "((px: number) => number)",
             "required": false,
             "description": "The function to convert pixels to rem.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.pxtorem",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.pxtorem",
             "default": "(px: number) => px / 16 (16 is the base font size)",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2026,10 +2026,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "Orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -2037,8 +2037,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2051,10 +2051,10 @@
             "type": "LayoutScrollBehavior",
             "required": false,
             "description": "Scroll behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.scrollbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.scrollbehavior",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": [
               {
                 "name": "LayoutScrollBehavior",
@@ -2062,8 +2062,8 @@
                 "type": "'content' | 'wrapper'",
                 "resolvedType": "'content' | 'wrapper'",
                 "description": "Type information for LayoutScrollBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutscrollbehavior",
-                "sourcePath": "packages/headless/src/components/layout/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutscrollbehavior",
+                "sourcePath": "packages/aria/src/components/layout/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2076,10 +2076,10 @@
             "type": "string",
             "required": false,
             "description": "Scroll id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.scrollid",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.scrollid",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2087,10 +2087,10 @@
             "type": "number",
             "required": false,
             "description": "The base z-index of the layout. The z-index of the sidebar, header, tab, footer, and their fixed versions will be calculated based on this value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.basezindex",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.basezindex",
             "default": "50",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2098,10 +2098,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the header and tab are fixed to the top of the layout when the orientation is vertical. If true, the header and tab will be fixed to the top of the layout when the orientation is vertical, and will scroll with the content when the orientation is horizontal.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.fixedtop",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.fixedtop",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2109,10 +2109,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether footer is fixed",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.fixedfooter",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.fixedfooter",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2120,10 +2120,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the footer should stretch to the full width of the layout or the content when layout orientation is vertical.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootprops.members.stretchfooter",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootprops.members.stretchfooter",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2136,8 +2136,8 @@
         "type": "TypeAlias LayoutRootEmits",
         "resolvedType": "{ \"update:open\": [open: boolean]; \"update:mobileOpen\": [open: boolean] }",
         "description": "Events for the LayoutRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.emits",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.emits",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2147,8 +2147,8 @@
             "parameters": "open: boolean",
             "required": true,
             "description": "Emitted when the open state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           },
           {
@@ -2157,8 +2157,8 @@
             "parameters": "open: boolean",
             "required": true,
             "description": "Emitted when the mobile drawer open state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutrootemits.callables.update_mobileopen",
-            "sourcePath": "packages/headless/src/components/layout/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutrootemits.callables.update_mobileopen",
+            "sourcePath": "packages/aria/src/components/layout/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2172,8 +2172,8 @@
         "type": "Interface LayoutSidebarProps",
         "resolvedType": null,
         "description": "Properties for the LayoutSidebar component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layoutsidebarprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutsidebarprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2187,8 +2187,8 @@
         "type": "Interface LayoutTabProps",
         "resolvedType": null,
         "description": "Properties for the LayoutTab component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttabprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttabprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2202,8 +2202,8 @@
         "type": "Interface LayoutTriggerProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the LayoutTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttriggerprops.props",
-        "sourcePath": "packages/headless/src/components/layout/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttriggerprops.props",
+        "sourcePath": "packages/aria/src/components/layout/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2211,10 +2211,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -2222,8 +2222,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2236,10 +2236,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -2247,10 +2247,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2258,10 +2258,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_layout_types.layouttriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layouttriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

@@ -8,7 +8,7 @@ import type { SemanticToken, SurfaceStyle, ThemeModePreference, ThemeOptions, Th
  *
  * One key, one envelope, one writer:
  *
- * - **one key** (`__SOYBEAN_THEME`) removes the cross-key races the first
+ * - **one key** (`__VEAN_THEME`) removes the cross-key races the first
  *   generation had (four keys, three writers, a cross-tab listener that watched
  *   only two of them);
  * - **one envelope** carries the validated options, the light/dark preference and
@@ -22,7 +22,7 @@ import type { SemanticToken, SurfaceStyle, ThemeModePreference, ThemeOptions, Th
  */
 
 /** the single storage key. */
-export const THEME_STORAGE_KEY = '__SOYBEAN_THEME';
+export const THEME_STORAGE_KEY = '__VEAN_THEME';
 
 /**
  * the current envelope schema version.
@@ -42,7 +42,7 @@ export const THEME_STORAGE_KEY = '__SOYBEAN_THEME';
 export const THEME_ENVELOPE_VERSION = 2;
 
 /** the style element id the first-paint script patches in place. */
-export const THEME_STYLE_ID = 'soybean-theme';
+export const THEME_STYLE_ID = 'vean-theme';
 
 /**
  * an upper bound for the style snapshot: a runaway value must not fill the
@@ -60,7 +60,7 @@ export interface ThemeEnvelope {
   /** the light / dark / auto preference. */
   mode?: ThemeModePreference;
   /**
-   * the style payload applied by the first-paint script (`#soybean-theme`).
+   * the style payload applied by the first-paint script (`#vean-theme`).
    *
    * The snapshot is what removes the theme flash on refresh: the head script
    * applies it before any stylesheet is parsed, then the runtime provider
@@ -313,7 +313,7 @@ export function parseThemeEnvelope(raw: string | null | undefined): ThemeEnvelop
 
   /**
    * The snapshot is **engine output**, so a pre-v2 one declares variables this
-   * engine no longer reads (`--soybean-*`, `--surface`, …). Applying it would leave
+   * engine no longer reads (`--vean-*`, `--surface`, …). Applying it would leave
    * the first paint on the static default block *and* inject dead declarations,
    * so it is dropped: the provider emits the migrated theme from
    * `envelope.options` on mount and writes the fresh snapshot back through the

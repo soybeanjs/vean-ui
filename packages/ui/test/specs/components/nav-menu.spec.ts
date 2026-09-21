@@ -40,7 +40,7 @@ describe('SNavMenu', () => {
 
       expect(wrapper.find('nav').exists()).toBe(true);
       expect(wrapper.find('nav ul').exists()).toBe(true);
-      expect(wrapper.findAll('[data-soybean-nav-menu-item]')).toHaveLength(3);
+      expect(wrapper.findAll('[data-vean-nav-menu-item]')).toHaveLength(3);
       expect(wrapper.text()).toContain('Guide');
       expect(wrapper.find('a[href="/guide"]').exists()).toBe(true);
 
@@ -69,10 +69,10 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-nav-menu-item]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-nav-menu-item]')).toHaveLength(2);
       expect(wrapper.text()).not.toContain('Secret');
 
-      await wrapper.find('[data-soybean-nav-menu-trigger]').trigger('click');
+      await wrapper.find('[data-vean-nav-menu-trigger]').trigger('click');
       await nextTick();
 
       expect(wrapper.text()).toContain('Button');
@@ -96,7 +96,7 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-nav-menu-trigger]')).toHaveLength(0);
+      expect(wrapper.findAll('[data-vean-nav-menu-trigger]')).toHaveLength(0);
       expect(wrapper.find('a[href="/components"]').exists()).toBe(true);
 
       wrapper.unmount();
@@ -110,21 +110,21 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const trigger = wrapper.find('[data-soybean-nav-menu-trigger]');
+      const trigger = wrapper.find('[data-vean-nav-menu-trigger]');
       expect(trigger.attributes('aria-expanded')).toBe('false');
 
       await trigger.trigger('click');
       await nextTick();
 
       expect(trigger.attributes('aria-expanded')).toBe('true');
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(true);
       expect(wrapper.text()).toContain('Button');
 
       await trigger.trigger('click');
       await nextTick();
 
       expect(trigger.attributes('aria-expanded')).toBe('false');
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -135,7 +135,7 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-nav-menu-trigger]').trigger('click');
+      await wrapper.find('[data-vean-nav-menu-trigger]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
 
@@ -148,10 +148,10 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-nav-menu-trigger]').trigger('click');
+      await wrapper.find('[data-vean-nav-menu-trigger]').trigger('click');
       await nextTick();
 
-      const subLink = wrapper.find('[data-soybean-nav-menu-content] [data-soybean-nav-menu-link]');
+      const subLink = wrapper.find('[data-vean-nav-menu-content] [data-vean-nav-menu-link]');
       expect(subLink.exists()).toBe(true);
       expect(subLink.classes()).toContain('w-60');
 
@@ -164,11 +164,11 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-nav-menu-trigger]').trigger('click');
+      await wrapper.find('[data-vean-nav-menu-trigger]').trigger('click');
       await nextTick();
 
       // wait for the positioner's post-flush `placed` effect (+ its deferred rAF) to run
-      const viewport = document.querySelector('[data-soybean-nav-menu-viewport]');
+      const viewport = document.querySelector('[data-vean-nav-menu-viewport]');
       await vi.waitFor(() => {
         expect(viewport?.getAttribute('data-settled')).toBe('');
       });
@@ -182,11 +182,11 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const trigger = wrapper.find('[data-soybean-nav-menu-trigger]');
+      const trigger = wrapper.find('[data-vean-nav-menu-trigger]');
 
       await trigger.trigger('click');
       await nextTick();
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(true);
 
       document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
       await nextTick();
@@ -210,14 +210,14 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const triggers = wrapper.findAll('[data-soybean-nav-menu-trigger]');
+      const triggers = wrapper.findAll('[data-vean-nav-menu-trigger]');
 
       await triggers[0].trigger('pointerenter', { pointerType: 'mouse' });
       await vi.advanceTimersByTimeAsync(200);
       await nextTick();
 
       expect(triggers[0].attributes('data-state')).toBe('open');
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(true);
 
       // the shared-surface grace override means leaving a trigger does not close it
       await triggers[0].trigger('pointerleave', { pointerType: 'mouse' });
@@ -230,7 +230,7 @@ describe('SNavMenu', () => {
       await nextTick();
 
       expect(triggers[1].attributes('data-state')).toBe('open');
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -245,19 +245,19 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const trigger = wrapper.find('[data-soybean-nav-menu-trigger]');
+      const trigger = wrapper.find('[data-vean-nav-menu-trigger]');
 
       await trigger.trigger('pointerenter', { pointerType: 'mouse' });
       await vi.advanceTimersByTimeAsync(200);
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(true);
 
       // a root-level link without children has no flyout: entering it dismisses the open menu
       await wrapper.find('a[href="/leaf"]').trigger('pointerenter', { pointerType: 'mouse' });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(false);
       expect(trigger.attributes('data-state')).not.toBe('open');
 
       wrapper.unmount();
@@ -271,7 +271,7 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const triggers = wrapper.findAll('[data-soybean-nav-menu-trigger]');
+      const triggers = wrapper.findAll('[data-vean-nav-menu-trigger]');
 
       await triggers[0].trigger('pointerenter', { pointerType: 'mouse' });
       await vi.advanceTimersByTimeAsync(300);
@@ -295,12 +295,12 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const triggers = wrapper.findAll('[data-soybean-nav-menu-trigger]');
+      const triggers = wrapper.findAll('[data-vean-nav-menu-trigger]');
 
       await triggers[0].trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(false);
 
       await triggers[0].trigger('pointerenter', { pointerType: 'mouse' });
       await vi.advanceTimersByTimeAsync(200);
@@ -319,15 +319,15 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const trigger = wrapper.find('[data-soybean-nav-menu-trigger]');
+      const trigger = wrapper.find('[data-vean-nav-menu-trigger]');
       (trigger.element as HTMLElement).focus();
 
       await trigger.trigger('keydown', { key: 'ArrowDown' });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-nav-menu-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-nav-menu-content]').exists()).toBe(true);
       // focus moved into the content's first link
-      expect(document.activeElement?.closest('[data-soybean-nav-menu-content]')).toBeTruthy();
+      expect(document.activeElement?.closest('[data-vean-nav-menu-content]')).toBeTruthy();
 
       wrapper.unmount();
     });
@@ -338,7 +338,7 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const triggers = wrapper.findAll('[data-soybean-nav-menu-trigger]');
+      const triggers = wrapper.findAll('[data-vean-nav-menu-trigger]');
       (triggers[0].element as HTMLElement).focus();
 
       await triggers[0].trigger('keydown', { key: 'ArrowRight' });
@@ -358,7 +358,7 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const triggers = wrapper.findAll('[data-soybean-nav-menu-trigger]');
+      const triggers = wrapper.findAll('[data-vean-nav-menu-trigger]');
       (triggers[0].element as HTMLElement).focus();
 
       await triggers[0].trigger('keydown', { key: 'ArrowUp' });
@@ -374,7 +374,7 @@ describe('SNavMenu', () => {
         attachTo: document.body
       });
 
-      const triggers = wrapper.findAll('[data-soybean-nav-menu-trigger]');
+      const triggers = wrapper.findAll('[data-vean-nav-menu-trigger]');
       (triggers[0].element as HTMLElement).focus();
 
       await triggers[0].trigger('keydown', { key: 'ArrowDown' });
@@ -412,16 +412,16 @@ describe('SNavMenu', () => {
     ];
 
     const openRoot = async (wrapper: ReturnType<typeof mount>) => {
-      await wrapper.find('[data-soybean-nav-menu-trigger]').trigger('click');
+      await wrapper.find('[data-vean-nav-menu-trigger]').trigger('click');
       await nextTick();
-      expect(document.querySelector('[data-soybean-nav-menu-content]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-content]')).toBeTruthy();
     };
 
     it('opens a nested flyout on sub-trigger click and keeps the root menu open', async () => {
       const wrapper = mount(SNavMenu, { props: { items: nestedItems }, attachTo: document.body });
       await openRoot(wrapper);
 
-      const subTrigger = document.querySelector('[data-soybean-nav-menu-sub-trigger]') as HTMLElement;
+      const subTrigger = document.querySelector('[data-vean-nav-menu-sub-trigger]') as HTMLElement;
       expect(subTrigger).toBeTruthy();
       expect(subTrigger.getAttribute('aria-expanded')).toBe('false');
 
@@ -429,12 +429,12 @@ describe('SNavMenu', () => {
       await nextTick();
 
       expect(subTrigger.getAttribute('aria-expanded')).toBe('true');
-      const flyout = document.querySelector('[data-soybean-nav-menu-sub-content]') as HTMLElement;
+      const flyout = document.querySelector('[data-vean-nav-menu-sub-content]') as HTMLElement;
       expect(flyout).toBeTruthy();
       expect(flyout.textContent).toContain('One A 1');
       expect(flyout.textContent).toContain('One A 2');
       // the root viewport stays open underneath
-      expect(document.querySelector('[data-soybean-nav-menu-content]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-content]')).toBeTruthy();
 
       wrapper.unmount();
     });
@@ -444,12 +444,12 @@ describe('SNavMenu', () => {
       const wrapper = mount(SNavMenu, { props: { items: nestedItems }, attachTo: document.body });
       await openRoot(wrapper);
 
-      const subTrigger = document.querySelector('[data-soybean-nav-menu-sub-trigger]') as HTMLElement;
+      const subTrigger = document.querySelector('[data-vean-nav-menu-sub-trigger]') as HTMLElement;
       subTrigger.dispatchEvent(new PointerEvent('pointerenter', { bubbles: true, pointerType: 'mouse' }));
       await vi.advanceTimersByTimeAsync(200);
       await nextTick();
 
-      expect(document.querySelector('[data-soybean-nav-menu-sub-content]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-sub-content]')).toBeTruthy();
 
       vi.useRealTimers();
       wrapper.unmount();
@@ -459,16 +459,16 @@ describe('SNavMenu', () => {
       const wrapper = mount(SNavMenu, { props: { items: nestedItems }, attachTo: document.body });
       await openRoot(wrapper);
 
-      const subTrigger = document.querySelector('[data-soybean-nav-menu-sub-trigger]') as HTMLElement;
+      const subTrigger = document.querySelector('[data-vean-nav-menu-sub-trigger]') as HTMLElement;
       subTrigger.click();
       await nextTick();
-      expect(document.querySelector('[data-soybean-nav-menu-sub-content]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-sub-content]')).toBeTruthy();
 
       document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
       await nextTick();
 
-      expect(document.querySelector('[data-soybean-nav-menu-sub-content]')).toBeNull();
-      expect(document.querySelector('[data-soybean-nav-menu-content]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-sub-content]')).toBeNull();
+      expect(document.querySelector('[data-vean-nav-menu-content]')).toBeTruthy();
 
       wrapper.unmount();
     });
@@ -477,17 +477,17 @@ describe('SNavMenu', () => {
       const wrapper = mount(SNavMenu, { props: { items: nestedItems }, attachTo: document.body });
       await openRoot(wrapper);
 
-      const subTrigger = document.querySelector('[data-soybean-nav-menu-sub-trigger]') as HTMLElement;
+      const subTrigger = document.querySelector('[data-vean-nav-menu-sub-trigger]') as HTMLElement;
       subTrigger.click();
       await nextTick();
-      expect(document.querySelector('[data-soybean-nav-menu-sub-content]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-sub-content]')).toBeTruthy();
 
       // closing the root trigger cascades to the nested flyout (Popper nesting)
-      await wrapper.find('[data-soybean-nav-menu-trigger]').trigger('click');
+      await wrapper.find('[data-vean-nav-menu-trigger]').trigger('click');
       await nextTick();
 
-      expect(document.querySelector('[data-soybean-nav-menu-content]')).toBeNull();
-      expect(document.querySelector('[data-soybean-nav-menu-sub-content]')).toBeNull();
+      expect(document.querySelector('[data-vean-nav-menu-content]')).toBeNull();
+      expect(document.querySelector('[data-vean-nav-menu-sub-content]')).toBeNull();
 
       wrapper.unmount();
     });
@@ -497,23 +497,23 @@ describe('SNavMenu', () => {
       await openRoot(wrapper);
 
       // level 3: open the "One A" flyout
-      const triggers = document.querySelectorAll('[data-soybean-nav-menu-sub-trigger]');
+      const triggers = document.querySelectorAll('[data-vean-nav-menu-sub-trigger]');
       (triggers[0] as HTMLElement).click();
       await nextTick();
 
       // level 4: "One A 1" also has children -> a deeper sub trigger appears
-      const deepTriggers = document.querySelectorAll('[data-soybean-nav-menu-sub-trigger]');
+      const deepTriggers = document.querySelectorAll('[data-vean-nav-menu-sub-trigger]');
       expect(deepTriggers.length).toBe(2);
       (deepTriggers[1] as HTMLElement).click();
       await nextTick();
 
-      const deepFlyouts = document.querySelectorAll('[data-soybean-nav-menu-sub-content]');
+      const deepFlyouts = document.querySelectorAll('[data-vean-nav-menu-sub-content]');
       expect(deepFlyouts.length).toBe(2);
       const deepFlyout = deepFlyouts[1] as HTMLElement;
       expect(deepFlyout.textContent).toContain('One A 1 X');
 
       // "One B" is a leaf at level 2 and renders as a link
-      expect(document.querySelector('[data-soybean-nav-menu-content] a[href="/one-b"]')).toBeTruthy();
+      expect(document.querySelector('[data-vean-nav-menu-content] a[href="/one-b"]')).toBeTruthy();
 
       wrapper.unmount();
     });

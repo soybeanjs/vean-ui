@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { useOmitProps } from '@vean/aria/composables';
 import Icon from '../icon/icon.vue';
 import Button from './button.vue';
 import type { ButtonIconProps } from './types';

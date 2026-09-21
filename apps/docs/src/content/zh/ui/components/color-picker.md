@@ -1,14 +1,14 @@
 ---
 head:
   title: 颜色选择器
-  description: 组合式颜色选择器，内置颜色区域、色相/透明度滑块、格式化输入框和预设色板，并支持 oklch 输出与编辑。SColorPicker 在 popover 内组合 headless 颜色基础组件（ColorArea/ColorSlider/ColorField/ColorSwatch/ColorSwatchPicker），以 SegmentCompact 切换格式。子部件样式统一写在 colorPickerVariants 中，经 provideColorPickerUi 转发。
+  description: 组合式颜色选择器，内置颜色区域、色相/透明度滑块、格式化输入框和预设色板，并支持 oklch 输出与编辑。SColorPicker 在 popover 内组合 Aria 颜色基础组件（ColorArea/ColorSlider/ColorField/ColorSwatch/ColorSwatchPicker），以 SegmentCompact 切换格式。子部件样式统一写在 colorPickerVariants 中，经 provideColorPickerUi 转发。
 ---
 
 # 颜色选择器
 
 ## 概述
 
-组合式颜色选择器，内置颜色区域、色相/透明度滑块、格式化输入框和预设色板，并支持 `oklch` 输出与编辑。`SColorPicker` 在 popover 内组合 headless 颜色基础组件（`ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatch`/`ColorSwatchPicker`），以 `SegmentCompact` 切换格式。子部件样式统一写在 `colorPickerVariants` 中，经 `provideColorPickerUi` 转发。
+组合式颜色选择器，内置颜色区域、色相/透明度滑块、格式化输入框和预设色板，并支持 `oklch` 输出与编辑。`SColorPicker` 在 popover 内组合 Aria 颜色基础组件（`ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatch`/`ColorSwatchPicker`），以 `SegmentCompact` 切换格式。子部件样式统一写在 `colorPickerVariants` 中，经 `provideColorPickerUi` 转发。
 
 颜色选择器适合完整的颜色选择 UI（格式页签、饱和度平面、色相/透明度滑块、预设色板与格式化输入）。
 
@@ -18,7 +18,7 @@ head:
 
 ## 特性
 
-- 🧩 组合式 headless — 在 `Popover` 内组合 `ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatchPicker`，各自零样式
+- 🧩 组合式 Aria — 在 `Popover` 内组合 `ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatchPicker`，各自零样式
 - 🎛️ 格式页签 — `SegmentCompact` 切换 `hex`/`rgb`/`hsl`/`oklch`；`update:format` 反映当前格式
 - 🎨 完整 `oklch` 支持 — `colorSpace="oklch"` 带色度/明度区域与 OKLCH 格式化输出
 - 🎚️ 色相 + 透明度滑块 — `showAlpha` 切换 alpha 通道滑块与输入框
@@ -31,9 +31,9 @@ head:
 ## 组件家族
 
 - `SColorPicker`（样式层）— 入口包装组件；计算 `colorPickerVariants` 并调用 `provideColorPickerUi`
-- `ColorPickerCompact`（headless）— 聚合组件；连接根、popover、区域、滑块、输入框与色板
-- `ColorPickerRoot`（headless）— 共享颜色状态（`color`/`hexValue`/`displayFormat`/`areaChannel`/`setColor`/`setFormat`）
-- `ColorPickerTrigger`（headless）— 显示当前值的按钮
+- `ColorPickerCompact`（Aria）— 聚合组件；连接根、popover、区域、滑块、输入框与色板
+- `ColorPickerRoot`（Aria）— 共享颜色状态（`color`/`hexValue`/`displayFormat`/`areaChannel`/`setColor`/`setFormat`）
+- `ColorPickerTrigger`（Aria）— 显示当前值的按钮
 - 底层基础组件 — `ColorAreaCompact`、`ColorSliderCompact`、`ColorFieldCompact`、`ColorSwatchCompact`、`ColorSwatchPickerCompact`、`PopoverCompact`、`SegmentCompact`
 
 ## 演示
@@ -48,16 +48,16 @@ head:
 
 ### 架构与对标差异
 
-`ColorPickerCompact` 负责跨基础组件组合（根状态 + popover + 区域 + 滑块 + 输入框 + 色板 + 页签），所有底层基础组件保持零样式。UI 包装组件通过 `provideColorPickerUi` 注入一份 `colorPickerVariants` map，再把别名 slot 映射到各子树的 `provide*Ui`。这与 radix-ui-color/shadcn-ui 的 headless 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供带 `showAlpha`/`presets` prop 的单一样式化颜色选择器；SoybeanUI 暴露带显式格式页签、完整 `oklch` 编辑与 `size` 尺寸体系的组合式选择器。
+`ColorPickerCompact` 负责跨基础组件组合（根状态 + popover + 区域 + 滑块 + 输入框 + 色板 + 页签），所有底层基础组件保持零样式。UI 包装组件通过 `provideColorPickerUi` 注入一份 `colorPickerVariants` map，再把别名 slot 映射到各子树的 `provide*Ui`。这与 radix-ui-color/shadcn-ui 的 headless 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供带 `showAlpha`/`presets` prop 的单一样式化颜色选择器；VeanUI 暴露带显式格式页签、完整 `oklch` 编辑与 `size` 尺寸体系的组合式选择器。
 
-| 能力              | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :---------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| 组合式基础组件    |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 格式页签          |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 完整 oklch 编辑   |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 色相 + 透明度滑块 |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| 预设色板          |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| 尺寸（6）         |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| 能力              | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :---------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| 组合式基础组件    |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 格式页签          |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 完整 oklch 编辑   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 色相 + 透明度滑块 |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| 预设色板          |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| 尺寸（6）         |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = 不支持或采用不同交互模型。
 

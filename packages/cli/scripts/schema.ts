@@ -6,7 +6,7 @@
  * apps/docs/public/schema/ for IDE validation and documentation.
  *
  * Usage:
- *   pnpm --filter sbean build:schema
+ *   pnpm --filter vean build:schema
  *   tsx packages/cli/scripts/schema.ts --output apps/docs/public/schema
  */
 
@@ -45,12 +45,11 @@ const DEFAULT_OUTPUT_DIR = path.join(REPO_ROOT, 'apps/docs/public/schema');
 // Enrichment data — descriptions & extra defaults
 // ---------------------------------------------------------------------------
 
-const SBEAN_ENRICHMENT: SchemaEnrichment = {
-  description: 'SBean project configuration file. Defines component style, aliases, and UnoCSS settings.',
+const VEAN_ENRICHMENT: SchemaEnrichment = {
+  description: 'Vean project configuration file. Defines component style, aliases, and UnoCSS settings.',
   properties: {
     $schema: {
-      description:
-        'JSON Schema reference for this config. Set to "https://ui.soybeanjs.cn/schema/sbean.json" for validation.'
+      description: 'JSON Schema reference for this config. Set to "https://veanui.com/schema/vean.json" for validation.'
     },
     style: {
       description:
@@ -62,7 +61,7 @@ const SBEAN_ENRICHMENT: SchemaEnrichment = {
       default: 'lucide'
     },
     uno: {
-      description: 'UnoCSS theme configuration. Controls the CSS variable system via @soybeanjs/ui-uno.',
+      description: 'UnoCSS theme configuration. Controls the CSS variable system via @vean/unocss.',
       properties: {
         base: {
           description: 'Base color palette for backgrounds, borders, and muted elements.',
@@ -112,14 +111,13 @@ const SBEAN_ENRICHMENT: SchemaEnrichment = {
 };
 
 const REGISTRY_ITEM_ENRICHMENT: SchemaEnrichment = {
-  description: 'A single item in the sbean registry. Represents a component, style, utility, or theme.',
+  description: 'A single item in the vean registry. Represents a component, style, utility, or theme.',
   properties: {
     $schema: {
       description: 'JSON Schema reference for this item.'
     },
     name: {
-      description:
-        'The name of the item. Unique within the registry. This is the identifier used by `sbean add <name>`.'
+      description: 'The name of the item. Unique within the registry. This is the identifier used by `vean add <name>`.'
     },
     type: {
       description: "The item type. Determines the target directory and how the item is resolved in the user's project."
@@ -176,10 +174,10 @@ const REGISTRY_ITEM_ENRICHMENT: SchemaEnrichment = {
     },
     uno: {
       description:
-        'UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `sbean add`.',
+        'UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `vean add`.',
       properties: {
         presets: {
-          description: 'Preset module specifiers to load (e.g. "@soybeanjs/ui-uno").'
+          description: 'Preset module specifiers to load (e.g. "@vean/unocss").'
         },
         rules: {
           description:
@@ -198,7 +196,7 @@ const REGISTRY_ITEM_ENRICHMENT: SchemaEnrichment = {
     },
     config: {
       description:
-        'Typed SoybeanUI base config (ADR-009). Only present on `registry:base` items. Deep-partial of sbeanBaseConfigSchema — any subset of the SoybeanUI project shape (uno palette, aliases, themePackage, resolver, iconLibrary, rtl, pointer) can be declared.',
+        'Typed Vean base config (ADR-009). Only present on `registry:base` items. Deep-partial of veanBaseConfigSchema — any subset of the Vean project shape (uno palette, aliases, themePackage, resolver, iconLibrary, rtl, pointer) can be declared.',
       properties: {
         uno: {
           description: 'UnoCSS theme palette — base/primary/size/radius picklists.',
@@ -220,7 +218,7 @@ const REGISTRY_ITEM_ENRICHMENT: SchemaEnrichment = {
           }
         },
         themePackage: {
-          description: 'Theme token package, e.g. "@soybeanjs/theme".'
+          description: 'Theme token package, e.g. "@vean/theme".'
         },
         resolver: {
           description: 'Resolver module path (relative to project root), e.g. "./src/ui/resolver".'
@@ -240,11 +238,11 @@ const REGISTRY_ITEM_ENRICHMENT: SchemaEnrichment = {
 };
 
 const REGISTRY_ENRICHMENT: SchemaEnrichment = {
-  description: 'A sbean registry of components, styles, utilities, and themes.',
+  description: 'A vean registry of components, styles, utilities, and themes.',
   properties: {
     $schema: {
       description:
-        'JSON Schema reference for this registry. Set to "https://ui.soybeanjs.cn/schema/registry.json" for validation.'
+        'JSON Schema reference for this registry. Set to "https://veanui.com/schema/registry.json" for validation.'
     },
     name: {
       description:
@@ -384,12 +382,12 @@ function addRegistryConstraints(schema: JsonSchema): JsonSchema {
 export async function generateSchemas(outputDir: string): Promise<void> {
   await mkdir(outputDir, { recursive: true });
 
-  // 1. sbean.json — from rawConfigSchema
-  const sbeanSchema = addSchemaRef(
-    deepMergeJsonSchema(toJsonSchema(rawConfigSchema, { target: 'draft-07' }), SBEAN_ENRICHMENT)
+  // 1. vean.json — from rawConfigSchema
+  const veanSchema = addSchemaRef(
+    deepMergeJsonSchema(toJsonSchema(rawConfigSchema, { target: 'draft-07' }), VEAN_ENRICHMENT)
   );
-  await writeFile(path.join(outputDir, 'sbean.json'), JSON.stringify(sbeanSchema, null, 2), 'utf-8');
-  console.log(`✔ Generated ${path.join(outputDir, 'sbean.json')}`);
+  await writeFile(path.join(outputDir, 'vean.json'), JSON.stringify(veanSchema, null, 2), 'utf-8');
+  console.log(`✔ Generated ${path.join(outputDir, 'vean.json')}`);
 
   // 2. registry-item.json — from registryItemSchema
   const registryItemSchemaResult = addSchemaRef(

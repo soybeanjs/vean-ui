@@ -4,7 +4,7 @@ This scoped AGENTS file is a routing bridge for assistants editing `packages/ui/
 
 Before editing files here:
 
-1. Load the project skill at `.agents/skills/soybean-ui-develop/` — start with `SKILL.md`, then `surfaces.md` (Testing section). If the tests change is part of component work, also load `layers.md` for the relevant implementation layer.
+1. Load the project skill at `.agents/skills/vean-ui-develop/` — start with `SKILL.md`, then `surfaces.md` (Testing section). If the tests change is part of component work, also load `layers.md` for the relevant implementation layer.
 2. For `**/*.ts` edits, also load the global `typescript-functional-style` skill.
 3. If the task is part of component delivery, apply `process.md` (finish checklist) at the end.
 

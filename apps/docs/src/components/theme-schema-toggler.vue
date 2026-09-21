@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTheme } from '@soybeanjs/ui';
+import { useTheme } from '@vean/ui';
 
 const { mode } = useTheme();
 </script>

@@ -20,7 +20,8 @@
           "50": {
             "0": {
               "0": "本次发布更换了全部三个引擎，并重命名了两个组件系列。日期引擎从 @internationalized/date 迁移至 date-fns，并采用原生 Date 值；表格引擎基于 @tanstack/vue-table 重新构建（采用 TanStack 的列/状态命名规范，不再使用旧版别名）； 表单引擎基于 @tanstack/vue-form 重构（useForm 返回一个上下文对象，initialValues 改为 defaultValues）。NavigationMenu 已移除，改用 NavMenu； SDrawer 更名为 SSheet，而 SBottomSheet 则成为新的手势驱动型 SDrawer；仅用于展示的无头组件家族（card/empty/list/skeleton/badge/tag）已被移除，且 SPopper/SArrow 不再从 UI 包中导出。 SPagination 的 actionAsSelected 属性更名为 actionVariant（语义和默认值保持不变）。请参阅升级指南以获取完整的迁移指南。",
-              "1": "日期组件（Calendar、DateField、DatePicker、TimeField 及其范围变体）现基于 date-fns 构建的原生 Date 值进行操作。专门的日期指南将 CalendarDate/Time/DateTime 值、日历运算以及格式化/解析映射到了新模型。"
+              "1": "日期组件（Calendar、DateField、DatePicker、TimeField 及其范围变体）现基于 date-fns 构建的原生 Date 值进行操作。专门的日期指南将 CalendarDate/Time/DateTime 值、日历运算以及格式化/解析映射到了新模型。",
+              "2": "本次发布包含品牌更名：npm 命名空间从 @soybeanjs/* 变更为 @vean/*（@soybeanjs/headless 变为 @vean/aria，@soybeanjs/ui 变为 @vean/ui， @soybeanjs/theme 更名为 @vean/theme，@soybeanjs/ui-uno 更名为 @vean/unocss，@soybeanjs/ui-skills 更名为 @vean/skills），运行时契约也进行了重命名（data-soybean-* 改为 data-vean-*，--soybean-* 改为 --vean-*)，CLI 将作为 @vean/cli 发布，并包含 vean 二进制文件（配置文件 sbean.json 更名为 vean.json）。S 组件前缀、设计令牌以及主题的 localStorage 键保持不变。完整的映射关系请参阅品牌迁移指南。"
             }
           }
         }

@@ -3,8 +3,8 @@ import type {
   TimeRangeFieldCompactEmits,
   TimeRangeFieldCompactSlots,
   TimeRangeFieldUi
-} from '@soybeanjs/headless/time-range-field';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/time-range-field';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

@@ -16,7 +16,7 @@ export interface SplitNavPaneMetric {
  * Rail / tree pane widths of `splitNavVariants`, per size.
  *
  * The recipe keeps the authoritative literal utility classes
- * (`[--soybean-split-nav-first-level-width:5rem]`); these numbers exist so a
+ * (`[--vean-split-nav-first-level-width:5rem]`); these numbers exist so a
  * consumer that must size an outer container to the panes — `SAppShell`
  * aligning the layout sidebar — can do it without measuring the DOM, which
  * would be unavailable during SSR. The app-shell unit spec asserts the two
@@ -55,7 +55,7 @@ export const splitNavVariants = scv({
     // hanging over the sidebar.
     firstLevel: [
       'flex outline-none',
-      'data-[orientation=vertical]:h-full data-[orientation=vertical]:w-[--soybean-split-nav-first-level-width] data-[orientation=vertical]:shrink-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:overflow-y-auto',
+      'data-[orientation=vertical]:h-full data-[orientation=vertical]:w-[--vean-split-nav-first-level-width] data-[orientation=vertical]:shrink-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:overflow-y-auto',
       'data-[orientation=horizontal]:h-fit data-[orientation=horizontal]:w-full data-[orientation=horizontal]:flex-row data-[orientation=horizontal]:items-center'
     ],
     firstLevelItem: [
@@ -74,23 +74,23 @@ export const splitNavVariants = scv({
     ],
     subVertical: [
       'flex h-full min-h-0 shrink-0 flex-col overflow-hidden',
-      'w-[--soybean-split-nav-tree-width] data-[state=collapsed]:w-[--soybean-split-nav-tree-collapsed-width]',
+      'w-[--vean-split-nav-tree-width] data-[state=collapsed]:w-[--vean-split-nav-tree-collapsed-width]',
       'transition-[width]-200 ease-out',
       // The second column of a dual-vertical menu leads with the divider between
       // the two: it spans that column's whole height — the brand band above the
       // items included — and follows it while it folds. A lone pane
       // (`horizontal-vertical`) has no column to separate from, so its edge stays
       // the host's to draw.
-      'data-[soybean-split-nav-dual-vertical-pane]:border-s data-[soybean-split-nav-dual-vertical-pane]:border-sidebar-border'
+      'data-[vean-split-nav-dual-vertical-pane]:border-s data-[vean-split-nav-dual-vertical-pane]:border-sidebar-border'
     ],
     subHorizontal: 'flex h-fit min-w-0 flex-1 items-center'
   },
   variants: {
     size: {
       xs: {
-        subVertical: '[--soybean-split-nav-tree-width:11.25rem]',
+        subVertical: '[--vean-split-nav-tree-width:11.25rem]',
         firstLevel: [
-          `[--soybean-split-nav-first-level-width:4rem] text-2xs`,
+          `[--vean-split-nav-first-level-width:4rem] text-2xs`,
           `data-[orientation=vertical]:text-3xs gap-0.625 data-[orientation=vertical]:p-0.625`,
           `data-[orientation=horizontal]:p-1`
         ],
@@ -98,9 +98,9 @@ export const splitNavVariants = scv({
         firstLevelItemIcon: 'size-3.5'
       },
       sm: {
-        subVertical: '[--soybean-split-nav-tree-width:13.125rem]',
+        subVertical: '[--vean-split-nav-tree-width:13.125rem]',
         firstLevel: [
-          `[--soybean-split-nav-first-level-width:4.5rem] text-xs`,
+          `[--vean-split-nav-first-level-width:4.5rem] text-xs`,
           `data-[orientation=vertical]:text-2xs gap-0.75 data-[orientation=vertical]:p-0.75`,
           `data-[orientation=horizontal]:p-1.5`
         ],
@@ -108,9 +108,9 @@ export const splitNavVariants = scv({
         firstLevelItemIcon: 'size-4'
       },
       md: {
-        subVertical: '[--soybean-split-nav-tree-width:15rem]',
+        subVertical: '[--vean-split-nav-tree-width:15rem]',
         firstLevel: [
-          `[--soybean-split-nav-first-level-width:5rem] text-sm`,
+          `[--vean-split-nav-first-level-width:5rem] text-sm`,
           `data-[orientation=vertical]:text-xs gap-1 data-[orientation=vertical]:p-1`,
           `data-[orientation=horizontal]:p-2`
         ],
@@ -118,9 +118,9 @@ export const splitNavVariants = scv({
         firstLevelItemIcon: 'size-4.5'
       },
       lg: {
-        subVertical: '[--soybean-split-nav-tree-width:16.875rem]',
+        subVertical: '[--vean-split-nav-tree-width:16.875rem]',
         firstLevel: [
-          `[--soybean-split-nav-first-level-width:5.5rem] text-base`,
+          `[--vean-split-nav-first-level-width:5.5rem] text-base`,
           `data-[orientation=vertical]:text-sm gap-1.5 data-[orientation=vertical]:p-1.5`,
           `data-[orientation=horizontal]:p-2.5`
         ],
@@ -128,9 +128,9 @@ export const splitNavVariants = scv({
         firstLevelItemIcon: 'size-5'
       },
       xl: {
-        subVertical: '[--soybean-split-nav-tree-width:18.75rem]',
+        subVertical: '[--vean-split-nav-tree-width:18.75rem]',
         firstLevel: [
-          `[--soybean-split-nav-first-level-width:6rem] text-lg`,
+          `[--vean-split-nav-first-level-width:6rem] text-lg`,
           `data-[orientation=vertical]:text-base gap-2 data-[orientation=vertical]:p-2`,
           `data-[orientation=horizontal]:p-3`
         ],
@@ -138,9 +138,9 @@ export const splitNavVariants = scv({
         firstLevelItemIcon: 'size-5.5'
       },
       '2xl': {
-        subVertical: '[--soybean-split-nav-tree-width:22.5rem]',
+        subVertical: '[--vean-split-nav-tree-width:22.5rem]',
         firstLevel: [
-          `[--soybean-split-nav-first-level-width:6.5rem] text-xl`,
+          `[--vean-split-nav-first-level-width:6.5rem] text-xl`,
           `data-[orientation=vertical]:text-lg gap-2 data-[orientation=vertical]:p-2.5`,
           `data-[orientation=horizontal]:p-3.5`
         ],

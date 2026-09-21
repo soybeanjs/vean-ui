@@ -84,7 +84,9 @@ function resolveRegistryTargets(specifier: string, config?: RegistryConfigSource
     registryUrl,
     itemName: parsed.name,
     displayName:
-      namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@sbean' ? parsed.name : `${namespace}/${parsed.name}`
+      namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@soybean' || namespace === '@sbean'
+        ? parsed.name
+        : `${namespace}/${parsed.name}`
   }));
 }
 
@@ -109,9 +111,9 @@ function attachRegistryMeta(
  * Fetch a single registry item from the remote registry.
  * Checks local cache first, falls back to network if not cached.
  *
- * URL pattern: `https://ui.soybeanjs.cn/r/{name}.json`, where `{name}` is the
+ * URL pattern: `https://veanui.com/r/{name}.json`, where `{name}` is the
  * namespace-qualified item name (`ui/button`, served from `r/ui/button.json`);
- * the catalog index lives at `https://ui.soybeanjs.cn/r/registry.json`.
+ * the catalog index lives at `https://veanui.com/r/registry.json`.
  */
 export async function fetchRegistryItem(
   name: string,
@@ -228,7 +230,9 @@ export async function fetchRegistryCatalog(
     if (cachedCatalog) {
       for (const item of cachedCatalog) {
         const displayName =
-          namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@sbean' ? item.name : `${namespace}/${item.name}`;
+          namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@soybean' || namespace === '@sbean'
+            ? item.name
+            : `${namespace}/${item.name}`;
 
         if (seen.has(displayName)) {
           continue;
@@ -263,7 +267,7 @@ export async function fetchRegistryCatalog(
 
           for (const item of rawCatalog.data) {
             const displayName =
-              namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@sbean'
+              namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@soybean' || namespace === '@sbean'
                 ? item.name
                 : `${namespace}/${item.name}`;
 
@@ -299,7 +303,9 @@ export async function fetchRegistryCatalog(
       for (const entry of catalogItems) {
         const item = v.parse(registryItemSchema, entry);
         const displayName =
-          namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@sbean' ? item.name : `${namespace}/${item.name}`;
+          namespace === DEFAULT_REGISTRY_NAMESPACE || namespace === '@soybean' || namespace === '@sbean'
+            ? item.name
+            : `${namespace}/${item.name}`;
 
         if (seen.has(displayName)) {
           continue;

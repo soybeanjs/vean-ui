@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ verticalPane: ClassValue; verticalRail: ClassValue; verticalRailMenu: ClassValue; topLeft: ClassValue; topRight: ClassValue; firstLevel: ClassValue; firstLevelItem: ClassValue; firstLevelItemIcon: ClassValue; firstLevelItemLabel: ClassValue; subVertical: ClassValue; subHorizontal: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the SplitNav component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavui",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavui",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -103,8 +103,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.mode",
             "default": "'dual-vertical'",
             "inheritedFrom": "mode",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "SplitNavMode",
@@ -128,8 +128,8 @@
                 "type": "'dual-vertical' | 'vertical-horizontal' | 'horizontal-vertical' | 'horizontal-dual-vertical'",
                 "resolvedType": "'dual-vertical' | 'vertical-horizontal' | 'horizontal-vertical' | 'horizontal-dual-vertical'",
                 "description": "Available menu shapes for the SplitNav component.\n\n- `dual-vertical`: level-1 vertical + remaining tree vertical.\n- `vertical-horizontal`: level-1 vertical + nested TreeNav.\n- `horizontal-vertical`: level-1 horizontal + nested TreeMenu.\n- `horizontal-dual-vertical`: level-1 horizontal + nested dual-vertical.",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavmode",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavmode",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -178,7 +178,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.horizontalmountedid",
             "default": null,
             "inheritedFrom": "horizontalMountedId",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -189,7 +189,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.verticalmountedid",
             "default": null,
             "inheritedFrom": "verticalMountedId",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -200,7 +200,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.loop",
             "default": "true",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -211,7 +211,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.expandstrategy",
             "default": "'keep'",
             "inheritedFrom": "expandStrategy",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeMenuExpandStrategy",
@@ -219,8 +219,8 @@
                 "type": "'keep' | 'selected'",
                 "resolvedType": "'keep' | 'selected'",
                 "description": "Expand strategy of the TreeMenu component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_menu_types.treemenuexpandstrategy",
-                "sourcePath": "packages/headless/src/components/tree-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_menu_types.treemenuexpandstrategy",
+                "sourcePath": "packages/aria/src/components/tree-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -236,7 +236,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.collapsed",
             "default": null,
             "inheritedFrom": "collapsed",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -247,7 +247,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.defaultcollapsed",
             "default": "false",
             "inheritedFrom": "defaultCollapsed",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -258,7 +258,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.collapsedwidth",
             "default": "50",
             "inheritedFrom": "collapsedWidth",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -269,7 +269,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -280,7 +280,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -327,7 +327,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -337,7 +337,7 @@
             "required": true,
             "description": "Emitted when a leaf menu item is chosen.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavemits.callables.select",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -361,7 +361,7 @@
             "required": true,
             "description": "Emitted when a menu item with children is activated and its nested pane opens.\n\nThe payload is the complete option data of the activated parent, including\nchildren, so consumers can react to the expansion — for example, activate\nthe first child at the same time.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavemits.callables.open",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -382,8 +382,8 @@
                 "type": "Omit<T, 'children'> & { children?: SplitNavOptionData<T>[] | undefined; }",
                 "resolvedType": null,
                 "description": "Recursive option data for the SplitNav component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavoptiondata",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavoptiondata",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": ["T extends SplitNavBaseOptionData = SplitNavBaseOptionData"],
                 "external": false,
                 "members": [],
@@ -398,7 +398,7 @@
             "required": true,
             "description": "Emitted when the nested TreeMenu pane collapsed state changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavemits.callables.update_collapsed",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           }
         ],
@@ -422,7 +422,7 @@
             "required": false,
             "description": "Custom content for a first-level item.\n\n`selected` is true for a selected leaf. `open` is true for a parent whose nested pane is showing.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.first_level_item",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -430,8 +430,8 @@
                 "type": "{ item: SplitNavOptionData<T>; selected: boolean; open: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -446,7 +446,7 @@
             "required": false,
             "description": "Custom content rendered above the first-level rail of a dual-vertical menu.\n\nThe cell is as wide as the rail, so a brand can sit in the menu's own\ntop-left corner instead of beside it; the divider between the two columns is\nthe pane's own leading edge, so it runs through this band as well.\n`collapsed` reports whether the nested pane is folded.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.top_left",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -454,8 +454,8 @@
                 "type": "{ collapsed: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -470,7 +470,7 @@
             "required": false,
             "description": "Custom content rendered above the nested pane of a dual-vertical menu.\n\nThe cell only renders while the pane column exists — the active first-level\nitem has visible children — and follows that column's width, folded state\nincluded. `collapsed` reports whether the pane is folded.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.top_right",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -478,8 +478,8 @@
                 "type": "{ collapsed: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -494,7 +494,7 @@
             "required": false,
             "description": "Custom content for a nested TreeMenu / TreeNav item.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.item",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -502,8 +502,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -518,7 +518,7 @@
             "required": false,
             "description": "Custom content for a nested TreeMenu / TreeNav item leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -526,8 +526,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -542,7 +542,7 @@
             "required": false,
             "description": "Custom content for a nested TreeMenu / TreeNav item trailing slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -550,8 +550,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -566,7 +566,7 @@
             "required": false,
             "description": "Custom content for a nested TreeNav item trigger icon.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.item_trigger_icon",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -574,8 +574,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -590,7 +590,7 @@
             "required": false,
             "description": "Custom content for a nested TreeNav item link icon.",
             "descriptionKey": "api.generated.packages_ui_src_components_split_nav_types.splitnavslots.callables.item_link_icon",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -598,8 +598,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -618,8 +618,8 @@
         "type": "Interface SplitNavRootProps<T>",
         "resolvedType": "{ dir?: Direction; mode?: SplitNavMode; modelValue?: string; defaultValue?: string; items: SplitNavOptionData<T>[]; horizontalMountedId?: string; verticalMountedId?: string; loop?: boolean; expandStrategy?: TreeMenuExpandStrategy; collapsed?: boolean; defaultCollapsed?: boolean; collapsedWidth?: number; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the SplitNavRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.props",
-        "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.props",
+        "sourcePath": "packages/aria/src/components/split-nav/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -627,10 +627,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the menu when applicable.\n\nIf omitted, inherits globally from `ConfigProvider` or assumes LTR.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -638,8 +638,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -652,10 +652,10 @@
             "type": "SplitNavMode",
             "required": false,
             "description": "The menu shape.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.mode",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.mode",
             "default": "'dual-vertical'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "SplitNavMode",
@@ -663,8 +663,8 @@
                 "type": "'dual-vertical' | 'vertical-horizontal' | 'horizontal-vertical' | 'horizontal-dual-vertical'",
                 "resolvedType": "'dual-vertical' | 'vertical-horizontal' | 'horizontal-vertical' | 'horizontal-dual-vertical'",
                 "description": "Available menu shapes for the SplitNav component.\n\n- `dual-vertical`: level-1 vertical + remaining tree vertical.\n- `vertical-horizontal`: level-1 vertical + nested TreeNav.\n- `horizontal-vertical`: level-1 horizontal + nested TreeMenu.\n- `horizontal-dual-vertical`: level-1 horizontal + nested dual-vertical.",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavmode",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavmode",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -677,10 +677,10 @@
             "type": "string",
             "required": false,
             "description": "The selected leaf value of the SplitNav component. Can be bound with `v-model`.\n\nParent items are not written here; clicking them only opens the nested pane.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -688,10 +688,10 @@
             "type": "string",
             "required": false,
             "description": "The selected leaf when initially rendered. Use when you do not need to control the state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -699,10 +699,10 @@
             "type": "SplitNavOptionData<T>[]",
             "required": true,
             "description": "The option data for the SplitNav component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -710,10 +710,10 @@
             "type": "string",
             "required": false,
             "description": "The id of the element to mount horizontal menus into (rendered via `Teleport`).\n\nWhen unset, the horizontal menus render in place. Pass the element id without `#`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.horizontalmountedid",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.horizontalmountedid",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -721,10 +721,10 @@
             "type": "string",
             "required": false,
             "description": "The id of the element to mount vertical menus into (rendered via `Teleport`).\n\nWhen unset, the vertical menus render in place. Pass the element id without `#`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.verticalmountedid",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.verticalmountedid",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -732,10 +732,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether first-level keyboard navigation loops from last item to first and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.loop",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -743,10 +743,10 @@
             "type": "TreeMenuExpandStrategy",
             "required": false,
             "description": "The expand strategy of the nested vertical TreeMenu pane.\n\n- `keep`: keep the current expanded state; manually expanded or collapsed menus are not affected by activating other menus. The collapsible ancestors of the selected menu are expanded on mount and whenever the selected menu changes from outside (e.g. driven by an external route), so it stays visible.\n- `selected`: only expand the currently selected menu and all its ancestor menus; non-selected menus are collapsed when the selected menu changes.\n\nOnly applies to the nested `TreeMenuCompact`; the nested horizontal pane\n(`TreeNavCompact`) has no expand strategy.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.expandstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.expandstrategy",
             "default": "'keep'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeMenuExpandStrategy",
@@ -754,8 +754,8 @@
                 "type": "'keep' | 'selected'",
                 "resolvedType": "'keep' | 'selected'",
                 "description": "Expand strategy of the TreeMenu component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_menu_types.treemenuexpandstrategy",
-                "sourcePath": "packages/headless/src/components/tree-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_menu_types.treemenuexpandstrategy",
+                "sourcePath": "packages/aria/src/components/tree-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -768,10 +768,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the nested vertical TreeMenu pane is collapsed.\n\nCan be bound with `v-model:collapsed`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.collapsed",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.collapsed",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -779,10 +779,10 @@
             "type": "boolean",
             "required": false,
             "description": "The collapsed state of the nested TreeMenu pane when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.defaultcollapsed",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.defaultcollapsed",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -790,10 +790,10 @@
             "type": "number",
             "required": false,
             "description": "The width of the nested TreeMenu pane when it is collapsed, in pixels.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.collapsedwidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.collapsedwidth",
             "default": "50",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -801,10 +801,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -812,10 +812,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -850,8 +850,8 @@
         "type": "TypeAlias SplitNavRootEmits<T>",
         "resolvedType": "{ \"update:modelValue\": [value: string]; select: [key: string, event?: Event | undefined]; open: [item: SplitNavOptionData<T>, event?: Event | undefined]; \"update:collapsed\": [value: boolean] }",
         "description": "Events for the SplitNavRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootemits.emits",
-        "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootemits.emits",
+        "sourcePath": "packages/aria/src/components/split-nav/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -861,8 +861,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           },
           {
@@ -871,8 +871,8 @@
             "parameters": "key: string, event?: Event | undefined",
             "required": true,
             "description": "Emitted when a leaf menu item is chosen.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootemits.callables.select",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootemits.callables.select",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -895,8 +895,8 @@
             "parameters": "item: SplitNavOptionData<T>, event?: Event | undefined",
             "required": true,
             "description": "Emitted when a menu item with children is activated and its nested pane opens.\n\nThe payload is the complete option data of the activated parent, including\nchildren, so consumers can react to the expansion — for example, activate\nthe first child at the same time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootemits.callables.open",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootemits.callables.open",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -917,8 +917,8 @@
                 "type": "Omit<T, 'children'> & { children?: SplitNavOptionData<T>[] | undefined; }",
                 "resolvedType": null,
                 "description": "Recursive option data for the SplitNav component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavoptiondata",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavoptiondata",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": ["T extends SplitNavBaseOptionData = SplitNavBaseOptionData"],
                 "external": false,
                 "members": [],
@@ -932,8 +932,8 @@
             "parameters": "value: boolean",
             "required": true,
             "description": "Emitted when the nested TreeMenu pane collapsed state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootemits.callables.update_collapsed",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootemits.callables.update_collapsed",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": []
           }
         ],
@@ -945,8 +945,8 @@
         "type": "TypeAlias SplitNavRootSlots<T>",
         "resolvedType": "{ \"first-level-item\"?: ((props: { item: SplitNavOptionData<T>; selected: boolean; open: boolean; }) => any); \"top-left\"?: ((props: { collapsed: boolean; }) => any); \"top-right\"?: ((props: { collapsed: boolean; }) => any); item?: ((props: { item: T; }) => any); \"item-leading\"?: ((props: { item: T; }) => any); \"item-trailing\"?: ((props: { item: T; }) => any); \"item-trigger-icon\"?: ((props: { item: T; }) => any); \"item-link-icon\"?: ((props: { item: T; }) => any) }",
         "description": "Slots for the SplitNavRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.slots",
-        "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.slots",
+        "sourcePath": "packages/aria/src/components/split-nav/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -956,8 +956,8 @@
             "parameters": "((props: { item: SplitNavOptionData<T>; selected: boolean; open: boolean; }) => any) | undefined",
             "required": false,
             "description": "Custom content for a first-level item.\n\n`selected` is true for a selected leaf. `open` is true for a parent whose nested pane is showing.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.first_level_item",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.first_level_item",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -965,8 +965,8 @@
                 "type": "{ item: SplitNavOptionData<T>; selected: boolean; open: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -980,8 +980,8 @@
             "parameters": "((props: { collapsed: boolean; }) => any) | undefined",
             "required": false,
             "description": "Custom content rendered above the first-level rail of a dual-vertical menu.\n\nThe cell is as wide as the rail, so a brand can sit in the menu's own\ntop-left corner instead of beside it; the divider between the two columns is\nthe pane's own leading edge, so it runs through this band as well.\n`collapsed` reports whether the nested pane is folded.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.top_left",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.top_left",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -989,8 +989,8 @@
                 "type": "{ collapsed: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1004,8 +1004,8 @@
             "parameters": "((props: { collapsed: boolean; }) => any) | undefined",
             "required": false,
             "description": "Custom content rendered above the nested pane of a dual-vertical menu.\n\nThe cell only renders while the pane column exists — the active first-level\nitem has visible children — and follows that column's width, folded state\nincluded. `collapsed` reports whether the pane is folded.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.top_right",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.top_right",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1013,8 +1013,8 @@
                 "type": "{ collapsed: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1028,8 +1028,8 @@
             "parameters": "((props: { item: T; }) => any) | undefined",
             "required": false,
             "description": "Custom content for a nested TreeMenu / TreeNav item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.item",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.item",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1037,8 +1037,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1052,8 +1052,8 @@
             "parameters": "((props: { item: T; }) => any) | undefined",
             "required": false,
             "description": "Custom content for a nested TreeMenu / TreeNav item leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.item_leading",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1061,8 +1061,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1076,8 +1076,8 @@
             "parameters": "((props: { item: T; }) => any) | undefined",
             "required": false,
             "description": "Custom content for a nested TreeMenu / TreeNav item trailing slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.item_trailing",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1085,8 +1085,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1100,8 +1100,8 @@
             "parameters": "((props: { item: T; }) => any) | undefined",
             "required": false,
             "description": "Custom content for a nested TreeNav item trigger icon.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.item_trigger_icon",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.item_trigger_icon",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1109,8 +1109,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1124,8 +1124,8 @@
             "parameters": "((props: { item: T; }) => any) | undefined",
             "required": false,
             "description": "Custom content for a nested TreeNav item link icon.",
-            "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.splitnavrootslots.callables.item_link_icon",
-            "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.splitnavrootslots.callables.item_link_icon",
+            "sourcePath": "packages/aria/src/components/split-nav/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1133,8 +1133,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_split_nav_types.type",
-                "sourcePath": "packages/headless/src/components/split-nav/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_split_nav_types.type",
+                "sourcePath": "packages/aria/src/components/split-nav/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

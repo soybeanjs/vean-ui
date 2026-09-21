@@ -28,8 +28,8 @@
                 "type": "VirtualizerContentProps",
                 "resolvedType": "{ dynamicContentProps?: VirtualizerDynamicContentProps; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the VirtualizerContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -38,10 +38,10 @@
                     "type": "VirtualizerDynamicContentProps",
                     "required": false,
                     "description": "Properties forwarded to the dynamic content element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.dynamiccontentprops",
+                    "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.dynamiccontentprops",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                    "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -49,10 +49,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -60,10 +60,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -87,8 +87,8 @@
                 "type": "VirtualizerDynamicContentProps",
                 "resolvedType": null,
                 "description": "Properties for the VirtualizerDynamicContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerdynamiccontentprops",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerdynamiccontentprops",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -104,7 +104,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_virtualizer_types.virtualizerprops.members.height",
             "default": null,
             "inheritedFrom": "height",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -115,7 +115,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_virtualizer_types.virtualizerprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -126,7 +126,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_virtualizer_types.virtualizerprops.members.options",
             "default": null,
             "inheritedFrom": "options",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualizerOptions",
@@ -134,8 +134,8 @@
                 "type": "VirtualizerOptions",
                 "resolvedType": null,
                 "description": "Type information for VirtualizerOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeroptions",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeroptions",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -151,7 +151,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_virtualizer_types.virtualizerprops.members.dynamic",
             "default": null,
             "inheritedFrom": "dynamic",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -162,7 +162,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_virtualizer_types.virtualizerprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -173,7 +173,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_virtualizer_types.virtualizerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -210,8 +210,8 @@
         "type": "Interface VirtualizerContentProps",
         "resolvedType": "{ dynamicContentProps?: VirtualizerDynamicContentProps; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the VirtualizerContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.props",
-        "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.props",
+        "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -219,10 +219,10 @@
             "type": "VirtualizerDynamicContentProps",
             "required": false,
             "description": "Properties forwarded to the dynamic content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.dynamiccontentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.dynamiccontentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualizerDynamicContentProps",
@@ -230,8 +230,8 @@
                 "type": "VirtualizerDynamicContentProps",
                 "resolvedType": null,
                 "description": "Properties for the VirtualizerDynamicContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerdynamiccontentprops",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerdynamiccontentprops",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -244,10 +244,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -255,10 +255,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -295,8 +295,8 @@
         "type": "Interface VirtualizerDynamicContentProps",
         "resolvedType": null,
         "description": "Properties for the VirtualizerDynamicContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerdynamiccontentprops.props",
-        "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerdynamiccontentprops.props",
+        "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -310,8 +310,8 @@
         "type": "Interface VirtualizerItemProps",
         "resolvedType": "{ data: VirtualItem; customStyle?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the VirtualizerItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeritemprops.props",
-        "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeritemprops.props",
+        "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -319,10 +319,10 @@
             "type": "VirtualItem",
             "required": true,
             "description": "Data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeritemprops.members.data",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeritemprops.members.data",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualItem",
@@ -344,10 +344,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether custom style.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeritemprops.members.customstyle",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeritemprops.members.customstyle",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -355,10 +355,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeritemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeritemprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -366,10 +366,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeritemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeritemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -406,8 +406,8 @@
         "type": "Interface VirtualizerRootProps<T>",
         "resolvedType": "{ height: string | number; items: T[]; options?: VirtualizerOptions; dynamic?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the VirtualizerRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.props",
-        "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.props",
+        "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -415,10 +415,10 @@
             "type": "string | number",
             "required": true,
             "description": "The height of the virtualizer root",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.members.height",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.members.height",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -426,10 +426,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -437,10 +437,10 @@
             "type": "VirtualizerOptions",
             "required": false,
             "description": "Options.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.members.options",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.members.options",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualizerOptions",
@@ -448,8 +448,8 @@
                 "type": "VirtualizerOptions",
                 "resolvedType": null,
                 "description": "Type information for VirtualizerOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeroptions",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeroptions",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -462,10 +462,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether dynamic.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.members.dynamic",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.members.dynamic",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -473,10 +473,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -484,10 +484,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

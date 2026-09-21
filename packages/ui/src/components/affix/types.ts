@@ -1,5 +1,5 @@
-import type { AffixCompactEmits, AffixCompactProps, AffixUi } from '@soybeanjs/headless/affix';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { AffixCompactEmits, AffixCompactProps, AffixUi } from '@vean/aria/affix';
+import type { ClassValue } from '@vean/aria/types';
 
 /**
  * Properties for the Affix component.

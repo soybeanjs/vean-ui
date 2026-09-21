@@ -33,10 +33,10 @@ Mount one `SToastProvider` near your app root. If your app is already wrapped wi
 ## Component family
 
 - `SToastProvider` (styled) — the entry provider; injects `toastVariants` and the animation stylesheet
-- `ToastProvider` (headless) — thin wrapper over `Toaster`
-- `Toaster` (headless) — the state owner; subscribes to `ToastState`, manages stack/expand/focus, renders the 6 viewports
-- `Toast` (headless) — a single toast; auto-close timer, swipe logic, height measurement, action/cancel/close
-- `toast` (imperative) — the shared `toast` controller (`ToastState` observer) exposed on `@soybeanjs/ui`
+- `ToastProvider` (Aria) — thin wrapper over `Toaster`
+- `Toaster` (Aria) — the state owner; subscribes to `ToastState`, manages stack/expand/focus, renders the 6 viewports
+- `Toast` (Aria) — a single toast; auto-close timer, swipe logic, height measurement, action/cancel/close
+- `toast` (imperative) — the shared `toast` controller (`ToastState` observer) exposed on `@vean/ui`
 
 ## Demos
 
@@ -64,19 +64,19 @@ Common `data` options: `description`, `position`, `duration`, `action`/`cancel` 
 
 ### Architecture and benchmark differences
 
-`Toaster` is a self-contained state owner that subscribes to a module-level `ToastState` observer and drives stacking/expansion, swipe, focus management and the auto-close timers, while `SToastProvider` only injects the recipe classes and the animation stylesheet. This is an imperative-first model like Ant Design's `message`/`notification`, Element Plus `ElMessage`, Mantine `notifications` and Naive UI `useMessage` — unlike shadcn/ui which has no global toast primitive. SoybeanUI distinguishes itself with stacked/expandable toasts, swipe-to-dismiss, promise toasts, and a focus hotkey, matching the ergonomics of Sonner while keeping a headless/styled split.
+`Toaster` is a self-contained state owner that subscribes to a module-level `ToastState` observer and drives stacking/expansion, swipe, focus management and the auto-close timers, while `SToastProvider` only injects the recipe classes and the animation stylesheet. This is an imperative-first model like Ant Design's `message`/`notification`, Element Plus `ElMessage`, Mantine `notifications` and Naive UI `useMessage` — unlike shadcn/ui which has no global toast primitive. VeanUI distinguishes itself with stacked/expandable toasts, swipe-to-dismiss, promise toasts, and a focus hotkey, matching the ergonomics of Sonner while keeping an Aria/styled split.
 
-| Capability                  | SoybeanUI | shadcn/ui | Ant Design message | Element Plus ElMessage | Mantine notifications | Naive UI useMessage |
-| :-------------------------- | :-------: | :-------: | :----------------: | :--------------------: | :-------------------: | :-----------------: |
-| Imperative API              |    ✅     |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
-| Types (success/error/…)     |    ✅     |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
-| Positions (6)               |    ✅     |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
-| Stack / expand              |    ✅     |     —     |         —          |           —            |          ✅           |          —          |
-| Swipe to dismiss            |    ✅     |     —     |         —          |           —            |           —           |          —          |
-| Promise toasts              |    ✅     |     —     |         ✅         |           —            |          ✅           |         ✅          |
-| Rich color / inverted       |    ✅     |     —     |         ✅         |           —            |           —           |          —          |
-| Pause on hover / hidden tab |    ✅     |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
-| Focus hotkey                |    ✅     |     —     |         —          |           —            |           —           |          —          |
+| Capability                  | VeanUI | shadcn/ui | Ant Design message | Element Plus ElMessage | Mantine notifications | Naive UI useMessage |
+| :-------------------------- | :----: | :-------: | :----------------: | :--------------------: | :-------------------: | :-----------------: |
+| Imperative API              |   ✅   |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
+| Types (success/error/…)     |   ✅   |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
+| Positions (6)               |   ✅   |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
+| Stack / expand              |   ✅   |     —     |         —          |           —            |          ✅           |          —          |
+| Swipe to dismiss            |   ✅   |     —     |         —          |           —            |           —           |          —          |
+| Promise toasts              |   ✅   |     —     |         ✅         |           —            |          ✅           |         ✅          |
+| Rich color / inverted       |   ✅   |     —     |         ✅         |           —            |           —           |          —          |
+| Pause on hover / hidden tab |   ✅   |     —     |         ✅         |           ✅           |          ✅           |         ✅          |
+| Focus hotkey                |   ✅   |     —     |         —          |           —            |           —           |          —          |
 
 `—` = unsupported or a different interaction model.
 
@@ -97,7 +97,7 @@ No blocking gaps identified for the core toast API.
 ### How do I show a basic toast?
 
 ```ts
-import { toast } from '@soybeanjs/ui';
+import { toast } from '@vean/ui';
 
 toast('Changes saved');
 ```

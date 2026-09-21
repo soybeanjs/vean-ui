@@ -21,7 +21,7 @@ import { renderComponent } from '../../shared/render';
 
 /**
  * Drawer snap-point release contracts, ported from Base UI's `DrawerRoot.test.tsx`
- * snap suite to the SoybeanUI model.
+ * snap suite to the Vean model.
  *
  * Model divergences that are deliberate (asserted per our docs, not Base UI's):
  * - there is no cancellable close event, so Base UI's `eventDetails.cancel()`

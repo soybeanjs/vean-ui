@@ -81,6 +81,16 @@ export const releaseChangelogNotes: Record<string, ReleaseChangelogNoteSource[]>
         'Date components (Calendar, DateField, DatePicker, TimeField and their range variants) now operate on native Date values built ' +
         'on date-fns. The dedicated date guide maps CalendarDate/Time/DateTime values, calendar math and formatting/parsing to the new model.',
       docPath: 'ui/migration/v0.50.0-date'
+    },
+    {
+      type: 'breaking',
+      summary:
+        'The brand rename ships with this release: the npm scope moves from @soybeanjs/* to @vean/* (@soybeanjs/headless becomes ' +
+        '@vean/aria, @soybeanjs/ui becomes @vean/ui, @soybeanjs/theme becomes @vean/theme, @soybeanjs/ui-uno becomes @vean/unocss, ' +
+        '@soybeanjs/ui-skills becomes @vean/skills), the runtime contracts rename (data-soybean-* to data-vean-*, --soybean-* to ' +
+        '--vean-*), and the CLI ships as @vean/cli with the vean bin (config file sbean.json becomes vean.json). The S component prefix, ' +
+        'design tokens and the theme localStorage key are unchanged. See the brand migration guide for the full mapping.',
+      docPath: 'ui/migration/rebrand'
     }
   ]
 };

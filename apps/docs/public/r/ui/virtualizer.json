@@ -1,22 +1,22 @@
 {
   "name": "ui/virtualizer",
   "package": "ui",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "files": [
     {
       "path": "packages/ui/src/components/virtualizer/types.ts",
       "type": "registry:lib",
-      "content": "import type {\n  VirtualizerContentProps,\n  VirtualizerDynamicContentProps,\n  VirtualizerRootProps\n} from '@soybeanjs/headless/virtualizer';\n\n/**\n * Properties for the Virtualizer component.\n */\nexport interface VirtualizerProps<T extends Record<string, any>> extends VirtualizerRootProps<T> {\n  /**\n   * Properties forwarded to the content element.\n   */\n  contentProps?: VirtualizerContentProps;\n  /**\n   * Properties forwarded to the dynamic content element.\n   */\n  dynamicContentProps?: VirtualizerDynamicContentProps;\n}\n"
+      "content": "import type {\n  VirtualizerContentProps,\n  VirtualizerDynamicContentProps,\n  VirtualizerRootProps\n} from '@vean/aria/virtualizer';\n\n/**\n * Properties for the Virtualizer component.\n */\nexport interface VirtualizerProps<T extends Record<string, any>> extends VirtualizerRootProps<T> {\n  /**\n   * Properties forwarded to the content element.\n   */\n  contentProps?: VirtualizerContentProps;\n  /**\n   * Properties forwarded to the dynamic content element.\n   */\n  dynamicContentProps?: VirtualizerDynamicContentProps;\n}\n"
     },
     {
       "path": "packages/ui/src/components/virtualizer/virtualizer.vue",
       "type": "registry:ui",
-      "content": "<script setup lang=\"ts\" generic=\"T extends Record<string, any>\">\nimport { useOmitProps } from '@soybeanjs/headless/composables';\nimport { VirtualizerContent, VirtualizerRoot } from '@soybeanjs/headless/virtualizer';\nimport type { VirtualizerProps } from './types';\n\ndefineOptions({\n  name: 'SVirtualizer'\n});\n\nconst props = defineProps<VirtualizerProps<T>>();\n\nconst forwardedProps = useOmitProps(props, ['contentProps', 'dynamicContentProps']);\n</script>\n\n<template>\n  <VirtualizerRoot v-slot=\"{ virtualItems, items }\" v-bind=\"forwardedProps\">\n    <VirtualizerContent v-bind=\"contentProps\" :dynamic-content-props=\"dynamicContentProps\">\n      <slot\n        v-for=\"item in virtualItems\"\n        name=\"item\"\n        :virtual-item=\"item\"\n        :index=\"item.index\"\n        :item=\"items[item.index]\"\n      />\n    </VirtualizerContent>\n  </VirtualizerRoot>\n</template>\n"
+      "content": "<script setup lang=\"ts\" generic=\"T extends Record<string, any>\">\nimport { useOmitProps } from '@vean/aria/composables';\nimport { VirtualizerContent, VirtualizerRoot } from '@vean/aria/virtualizer';\nimport type { VirtualizerProps } from './types';\n\ndefineOptions({\n  name: 'SVirtualizer'\n});\n\nconst props = defineProps<VirtualizerProps<T>>();\n\nconst forwardedProps = useOmitProps(props, ['contentProps', 'dynamicContentProps']);\n</script>\n\n<template>\n  <VirtualizerRoot v-slot=\"{ virtualItems, items }\" v-bind=\"forwardedProps\">\n    <VirtualizerContent v-bind=\"contentProps\" :dynamic-content-props=\"dynamicContentProps\">\n      <slot\n        v-for=\"item in virtualItems\"\n        name=\"item\"\n        :virtual-item=\"item\"\n        :index=\"item.index\"\n        :item=\"items[item.index]\"\n      />\n    </VirtualizerContent>\n  </VirtualizerRoot>\n</template>\n"
     },
     {
       "path": "packages/ui/src/components/virtualizer/index.ts",
       "type": "registry:lib",
-      "content": "export { default as SVirtualizer } from './virtualizer.vue';\nexport { VirtualizerItem as SVirtualizerItem } from '@soybeanjs/headless/virtualizer';\n\nexport type * from '@soybeanjs/headless/virtualizer';\nexport type * from './types';\n"
+      "content": "export { default as SVirtualizer } from './virtualizer.vue';\nexport { VirtualizerItem as SVirtualizerItem } from '@vean/aria/virtualizer';\n\nexport type * from '@vean/aria/virtualizer';\nexport type * from './types';\n"
     }
   ],
   "type": "registry:ui"

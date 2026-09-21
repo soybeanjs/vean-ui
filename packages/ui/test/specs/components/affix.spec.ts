@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { computed, nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { AffixContent, AffixPlaceholder, AffixRoot, provideAffixUi } from '@soybeanjs/headless/affix';
+import { AffixContent, AffixPlaceholder, AffixRoot, provideAffixUi } from '@vean/aria/affix';
 import SAffix from '@/components/affix/affix.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -271,7 +271,7 @@ describe('SAffix', () => {
       target.remove();
     });
 
-    it('supports headless composition with placeholder and content', async () => {
+    it('supports Aria composition with placeholder and content', async () => {
       let targetTop = 0;
       const target = document.createElement('div');
 
@@ -287,7 +287,7 @@ describe('SAffix', () => {
           setup() {
             provideAffixUi(
               computed(() => ({
-                content: 'headless-affix-class'
+                content: 'aria-affix-class'
               }))
             );
 
@@ -319,7 +319,7 @@ describe('SAffix', () => {
       target.dispatchEvent(new Event('scroll'));
       await waitForAffixUpdate();
 
-      expect(wrapper.find('[data-state]').classes()).toContain('headless-affix-class');
+      expect(wrapper.find('[data-state]').classes()).toContain('aria-affix-class');
       expect(wrapper.find('[role="presentation"]').exists()).toBe(true);
 
       wrapper.unmount();

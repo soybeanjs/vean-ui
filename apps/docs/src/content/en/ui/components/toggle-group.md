@@ -42,22 +42,22 @@ A set of two-state buttons that can be toggled on or off as a group, supporting 
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds the group from headless `ToggleGroupRoot` (`useSelection` + `useRovingFocusGroup` + hidden-input form proxy) and `ToggleGroupItem` (dynamically backed by `useRovingFocusGroupItem` or the `Button` base depending on `rovingFocus`). The UI wrapper `SToggleGroup` is a thin pass-through that only computes `toggleGroupVariants` classes; `data-state` drives the pressed look through UnoCSS `data-[state=on]:*` selectors. `toggle-group` is a Radix/shadcn-native pattern; the other benchmark libraries express the same interaction with radio/button groups or segmented controls.
+VeanUI builds the group from Aria `ToggleGroupRoot` (`useSelection` + `useRovingFocusGroup` + hidden-input form proxy) and `ToggleGroupItem` (dynamically backed by `useRovingFocusGroupItem` or the `Button` base depending on `rovingFocus`). The UI wrapper `SToggleGroup` is a thin pass-through that only computes `toggleGroupVariants` classes; `data-state` drives the pressed look through UnoCSS `data-[state=on]:*` selectors. `toggle-group` is a Radix/shadcn-native pattern; the other benchmark libraries express the same interaction with radio/button groups or segmented controls.
 
-| Capability                        | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn `ToggleGroup` |
-| :-------------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :------------------: |
-| headless/styled split             |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| Single / multiple selection       |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
-| Controlled / uncontrolled         |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
-| Roving focus arrow keys           |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| Loop navigation                   |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| RTL-aware arrow direction         |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| `aria-pressed` + `data-state`     |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| Orientation (horizontal/vertical) |    ✅     |     —      |      ✅      |   ✅    |    —     |          ✅          |
-| Variants × sizes × colors         |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          —           |
-| Hidden-input form submission      |    ✅     |     —      |      —       |    —    |    —     |          —           |
-| Clearable single deselect         |    ✅     |     ✅     |      —       |    —    |    —     |          —           |
-| Disabled (group + item)           |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
+| Capability                        | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn `ToggleGroup` |
+| :-------------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :------------------: |
+| Aria/styled split                 |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| Single / multiple selection       |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
+| Controlled / uncontrolled         |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
+| Roving focus arrow keys           |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| Loop navigation                   |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| RTL-aware arrow direction         |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| `aria-pressed` + `data-state`     |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| Orientation (horizontal/vertical) |   ✅   |     —      |      ✅      |   ✅    |    —     |          ✅          |
+| Variants × sizes × colors         |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          —           |
+| Hidden-input form submission      |   ✅   |     —      |      —       |    —    |    —     |          —           |
+| Clearable single deselect         |   ✅   |     ✅     |      —       |    —    |    —     |          —           |
+| Disabled (group + item)           |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
 
 ### Cautions
 

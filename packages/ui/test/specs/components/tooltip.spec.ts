@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { TooltipProvider } from '@soybeanjs/headless/tooltip';
+import { TooltipProvider } from '@vean/aria/tooltip';
 import STooltip from '@/components/tooltip/tooltip.vue';
 import { getA11yViolations } from '../../shared/a11y';
 

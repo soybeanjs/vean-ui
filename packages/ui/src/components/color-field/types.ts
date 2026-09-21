@@ -1,5 +1,5 @@
-import type { ColorFieldCompactEmits, ColorFieldCompactProps, ColorFieldUi } from '@soybeanjs/headless/color-field';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ColorFieldCompactEmits, ColorFieldCompactProps, ColorFieldUi } from '@vean/aria/color-field';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

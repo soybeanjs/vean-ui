@@ -1,14 +1,14 @@
 ---
 head:
   title: Tooltip
-  description: 'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it. STooltip combines the headless TooltipRoot/TooltipTrigger/TooltipPositioner/TooltipPopup/TooltipArrow primitive family (built on the shared Popper) with the tooltipVariants style recipe (3 slots, 6 sizes).'
+  description: 'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it. STooltip combines the Aria TooltipRoot/TooltipTrigger/TooltipPositioner/TooltipPopup/TooltipArrow primitive family (built on the shared Popper) with the tooltipVariants style recipe (3 slots, 6 sizes).'
 ---
 
 # Tooltip
 
 ## Overview
 
-A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it. `STooltip` combines the headless `TooltipRoot`/`TooltipTrigger`/`TooltipPositioner`/`TooltipPopup`/`TooltipArrow` primitive family (built on the shared `Popper`) with the `tooltipVariants` style recipe (3 slots, 6 sizes).
+A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it. `STooltip` combines the Aria `TooltipRoot`/`TooltipTrigger`/`TooltipPositioner`/`TooltipPopup`/`TooltipArrow` primitive family (built on the shared `Popper`) with the `tooltipVariants` style recipe (3 slots, 6 sizes).
 
 Use a tooltip for a short, non-interactive hint. For rich hover content use `hover-card`; for click-triggered content use `popover`; for a confirmation use `popconfirm`.
 
@@ -18,7 +18,7 @@ Use a tooltip for a short, non-interactive hint. For rich hover content use `hov
 
 ## Features
 
-- 🧩 Headless/styled split — `TooltipCompact` aggregates the popper trigger, positioner, popup and arrow; `STooltip` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `TooltipCompact` aggregates the popper trigger, positioner, popup and arrow; `STooltip` only injects styles and forwards slots/events
 - 🖱️ Hover + focus — opens on pointer hover or keyboard focus; dismisses on Escape or pointer leave
 - ⏱️ Delay tuning — `delayDuration` (open) and `skipDelayDuration` (between triggers), with global defaults via `ConfigProvider`
 - 🎯 Placement — full popper `placement` control with collision avoidance and side-aware slide animations
@@ -31,12 +31,12 @@ Use a tooltip for a short, non-interactive hint. For rich hover content use `hov
 ## Component family
 
 - `STooltip` (styled) — the entry wrapper; `tooltipVariants` recipe with dynamic slot forwarding
-- `TooltipRoot` (headless) — the state owner; `open` via `useControllableState`, `delayDuration`/`skipDelayDuration`/`disabled`/`ignoreNonKeyboardFocus`, merges the global `ConfigProvider` tooltip config
-- `TooltipTrigger` (headless) — the anchor that opens the tooltip on hover/focus
-- `TooltipPositioner` / `TooltipPositionerImpl` (headless) — the positioned surface (built on `PopperPositioner`)
-- `TooltipPopup` (headless) — the popup body; exposes a visually-hidden `role="tooltip"` text node for screen readers
-- `TooltipArrow` (headless) — the popper arrow
-- `TooltipCompact` (headless) — the aggregated composite; composes trigger/positioner/popup/arrow and exposes the slots
+- `TooltipRoot` (Aria) — the state owner; `open` via `useControllableState`, `delayDuration`/`skipDelayDuration`/`disabled`/`ignoreNonKeyboardFocus`, merges the global `ConfigProvider` tooltip config
+- `TooltipTrigger` (Aria) — the anchor that opens the tooltip on hover/focus
+- `TooltipPositioner` / `TooltipPositionerImpl` (Aria) — the positioned surface (built on `PopperPositioner`)
+- `TooltipPopup` (Aria) — the popup body; exposes a visually-hidden `role="tooltip"` text node for screen readers
+- `TooltipArrow` (Aria) — the popper arrow
+- `TooltipCompact` (Aria) — the aggregated composite; composes trigger/positioner/popup/arrow and exposes the slots
 
 ## Demos
 
@@ -50,16 +50,16 @@ Use a tooltip for a short, non-interactive hint. For rich hover content use `hov
 
 ### Architecture and benchmark differences
 
-`TooltipCompact` owns the trigger/positioner/popup/arrow composition while every primitive stays style-free and only the UI wrapper injects the `tooltipVariants` classes. This mirrors radix-ui/shadcn-ui's headless split, built on the shared `Popper` primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single styled tooltip with `title`/`placement` props; SoybeanUI additionally exposes per-slot `*Props`, a `size` scale, an arrow toggle, a `delayDuration`/`skipDelayDuration` tuning model with `ConfigProvider` global defaults, and an accessible visually-hidden `role="tooltip"` node.
+`TooltipCompact` owns the trigger/positioner/popup/arrow composition while every primitive stays style-free and only the UI wrapper injects the `tooltipVariants` classes. This mirrors radix-ui/shadcn-ui's headless split, built on the shared `Popper` primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single styled tooltip with `title`/`placement` props; VeanUI additionally exposes per-slot `*Props`, a `size` scale, an arrow toggle, a `delayDuration`/`skipDelayDuration` tuning model with `ConfigProvider` global defaults, and an accessible visually-hidden `role="tooltip"` node.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design Tooltip | Element Plus Tooltip | Mantine Tooltip | Naive UI Tooltip |
-| :-------------------- | :-------: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
-| Headless/styled split |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Popper placement (12) |    ✅     |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
-| Delay tuning          |    ✅     |    ✅     |         —          |          ✅          |       ✅        |        —         |
-| Arrow                 |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Sizes (6)             |    ✅     |     —     |         —          |          —           |        —        |        —         |
-| Focus trigger         |    ✅     |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
+| Capability            | VeanUI | shadcn/ui | Ant Design Tooltip | Element Plus Tooltip | Mantine Tooltip | Naive UI Tooltip |
+| :-------------------- | :----: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
+| Aria/styled split     |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Popper placement (12) |   ✅   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
+| Delay tuning          |   ✅   |    ✅     |         —          |          ✅          |       ✅        |        —         |
+| Arrow                 |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Sizes (6)             |   ✅   |     —     |         —          |          —           |        —        |        —         |
+| Focus trigger         |   ✅   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
 
 `—` = unsupported or a different interaction model.
 

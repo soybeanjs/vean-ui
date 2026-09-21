@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SEditable, SInput, SSelect, SSwitch } from '@soybeanjs/ui';
+import { SButtonIcon, SEditable, SInput, SSelect, SSwitch } from '@vean/ui';
 import type {
   EditableActivationMode,
   EditableEventState,
   EditableSubmitMode,
   SelectOptionData,
   ThemeSize
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

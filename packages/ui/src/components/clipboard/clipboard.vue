@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { Clipboard } from '@soybeanjs/headless/clipboard';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { Clipboard } from '@vean/aria/clipboard';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { clipboardVariants } from '@/styles/clipboard';
 import type { ClipboardProps, ClipboardEmits } from './types';
 

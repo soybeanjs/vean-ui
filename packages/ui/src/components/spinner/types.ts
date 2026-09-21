@@ -1,4 +1,4 @@
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeColor, ThemeSize } from '@/theme';
 import type { IconProps } from '../icon/types';
 

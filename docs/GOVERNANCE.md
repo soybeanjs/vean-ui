@@ -33,7 +33,7 @@
 | `docs/research/`  | 市场/竞品调研                    | `README.md`         |
 | `docs/info/`      | 一次性/周期报告                  | `README.md`         |
 
-> 注：组件检查 / 审计（D1–D7）的**方法与交付面**由组件开发技能 `.agents/skills/soybean-ui-develop/audit.md` 定义，历史检查报告（`docs/check-reports/`、`docs/check.md`）已于 2026-08-14 清理归档，不再在 `docs/` 维护。
+> 注：组件检查 / 审计（D1–D7）的**方法与交付面**由组件开发技能 `.agents/skills/vean-ui-develop/audit.md` 定义，历史检查报告（`docs/check-reports/`、`docs/check.md`）已于 2026-08-14 清理归档，不再在 `docs/` 维护。
 
 ### 3.2 文件命名
 
@@ -77,7 +77,7 @@
 
 > **docs/ 不保留常驻的任务拆解/状态跟踪文档**（2026-09 起 tasks.md / task-tracking.md / ecosystem-tasks.md 已废止，经 git 历史追溯）：执行状态天然高频漂移，历史教训是状态表与实际很快脱节。
 >
-> 组件级状态与检查由组件开发技能（`.agents/skills/soybean-ui-develop/`）统一管理，不落 `docs/`。
+> 组件级状态与检查由组件开发技能（`.agents/skills/vean-ui-develop/`）统一管理，不落 `docs/`。
 
 ### 5.2 单事实源清单
 
@@ -87,7 +87,7 @@
 | 工程质量改进项 | `docs/optimize.md`（F1–F11）                            |
 | 组件评估明细   | `docs/roadmap.md`                                       |
 | 核心内领域规划 | `docs/ui-ai-roadmap.md` · `docs/ui-shell-roadmap.md`    |
-| 组件审计方法   | `.agents/skills/soybean-ui-develop/audit.md`（D1–D7）   |
+| 组件审计方法   | `.agents/skills/vean-ui-develop/audit.md`（D1–D7）      |
 | 未来领域提案   | `docs/ecosystem/`（每方向一篇，立项时确定落地形态）     |
 | 商业化策略     | `docs/ecosystem/commercialization.md`（方向与横向建议） |
 | 调研结论       | `docs/research/`                                        |

@@ -38,20 +38,20 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 通过复用 listbox 基座与 Popper 定位构建组合框：`ComboboxRoot`（选择状态 + `useControllableState(open)` + 三态过滤）→ `ComboboxInput`（`role="combobox"` + `aria-autocomplete`）→ `ComboboxTrigger` → `ComboboxContentImpl`（DismissableLayer + FocusScope + bodyLock）→ `ComboboxItem` → `ListboxItem`。`scv()` 配方 `comboboxVariants` 声明 16 个插槽与 7 个尺寸变体。这与 reka-ui / shadcn 的 combobox 语义一致，虚拟滚动与数据驱动 compact API 为 SoybeanUI 的差异化增强。
+VeanUI 通过复用 listbox 基座与 Popper 定位构建组合框：`ComboboxRoot`（选择状态 + `useControllableState(open)` + 三态过滤）→ `ComboboxInput`（`role="combobox"` + `aria-autocomplete`）→ `ComboboxTrigger` → `ComboboxContentImpl`（DismissableLayer + FocusScope + bodyLock）→ `ComboboxItem` → `ListboxItem`。`scv()` 配方 `comboboxVariants` 声明 16 个插槽与 7 个尺寸变体。这与 reka-ui / shadcn 的 combobox 语义一致，虚拟滚动与数据驱动 compact API 为 VeanUI 的差异化增强。
 
-| 能力                     | SoybeanUI | reka-ui `Combobox` | shadcn `Combobox` | Ant Design `Select` (showSearch) |
-| :----------------------- | :-------: | :----------------: | :---------------: | :------------------------------: |
-| headless/styled 分离     |    ✅     |         ✅         |         —         |                —                 |
-| 输入即过滤 + 三态 filter |    ✅     |         ✅         |        ✅         |                ✅                |
-| combobox/listbox 角色    |    ✅     |         ✅         |        ✅         |                ✅                |
-| 键盘导航 + typeahead     |    ✅     |         ✅         |         —         |                ✅                |
-| 虚拟滚动                 |    ✅     |         ✅         |         —         |                ✅                |
-| 分组 + 组标签            |    ✅     |         ✅         |        ✅         |                ✅                |
-| 取消按钮（clear）        |    ✅     |         ✅         |        ✅         |                ✅                |
-| 空态                     |    ✅     |         ✅         |         —         |                —                 |
-| 数据驱动 Compact API     |    ✅     |         —          |         —         |                —                 |
-| axe 零违规（打开态）     |    ✅     |         —          |        ✅         |                —                 |
+| 能力                     | VeanUI | reka-ui `Combobox` | shadcn `Combobox` | Ant Design `Select` (showSearch) |
+| :----------------------- | :----: | :----------------: | :---------------: | :------------------------------: |
+| Aria/styled 分离         |   ✅   |         ✅         |         —         |                —                 |
+| 输入即过滤 + 三态 filter |   ✅   |         ✅         |        ✅         |                ✅                |
+| combobox/listbox 角色    |   ✅   |         ✅         |        ✅         |                ✅                |
+| 键盘导航 + typeahead     |   ✅   |         ✅         |         —         |                ✅                |
+| 虚拟滚动                 |   ✅   |         ✅         |         —         |                ✅                |
+| 分组 + 组标签            |   ✅   |         ✅         |        ✅         |                ✅                |
+| 取消按钮（clear）        |   ✅   |         ✅         |        ✅         |                ✅                |
+| 空态                     |   ✅   |         ✅         |         —         |                —                 |
+| 数据驱动 Compact API     |   ✅   |         —          |         —         |                —                 |
+| axe 零违规（打开态）     |   ✅   |         —          |        ✅         |                —                 |
 
 ### 注意事项
 

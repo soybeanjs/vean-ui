@@ -1,5 +1,5 @@
 import type { SourceFile } from 'typescript';
-import { camelCase, pascalCase } from '../../../headless/src/shared/string';
+import { camelCase, pascalCase } from '../../../aria/src/shared/string';
 import { getExportModuleSpecifier, getNamedExportNames } from './ast';
 
 export interface CatalogGroup {
@@ -17,12 +17,12 @@ function isPascalIdentifier(name: string): boolean {
   return /^[A-Z][A-Za-z0-9]*$/.test(name) && !/^[A-Z0-9_]+$/.test(name);
 }
 
-/** Headless families: every component export repeats the family name (`Button`, `ButtonGroup`). */
+/** Aria families: every component export repeats the family name (`Button`, `ButtonGroup`). */
 export function isFamilyExport(exportName: string, groupName: string): boolean {
   return isPascalIdentifier(exportName) && (exportName === groupName || exportName.startsWith(groupName));
 }
 
-/** Styled wrappers: every component export carries the `S` brand prefix (`SButton`). */
+/** Styled wrappers: every component export carries the `S` Styled prefix (`SButton`). */
 export function isStyledExport(exportName: string): boolean {
   return isPascalIdentifier(exportName) && exportName.startsWith('S');
 }

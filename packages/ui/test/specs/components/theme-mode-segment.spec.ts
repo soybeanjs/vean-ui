@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { mount } from '@vue/test-utils';
 import type { VueWrapper } from '@vue/test-utils';
-import { THEME_STORAGE_KEY } from '@soybeanjs/theme/storage';
+import { THEME_STORAGE_KEY } from '@vean/theme/storage';
 import SConfigProvider from '@/components/config-provider/config-provider.vue';
 import SThemeModeSegment from '@/components/theme-mode-segment/theme-mode-segment.vue';
 
@@ -70,7 +70,7 @@ describe('SThemeModeSegment', () => {
     it('renders a scheme icon in each option by default', () => {
       const wrapper = mountInProvider();
 
-      const icons = wrapper.findAll('[role="tab"] [data-soybean-icon]');
+      const icons = wrapper.findAll('[role="tab"] [data-vean-icon]');
 
       expect(icons.length).toBe(3);
 
@@ -80,7 +80,7 @@ describe('SThemeModeSegment', () => {
     it('defaults to the rounded shape', () => {
       const wrapper = mountInProvider();
 
-      expect(wrapper.get('[data-soybean-segment-list]').classes()).toContain('rounded-full');
+      expect(wrapper.get('[data-vean-segment-list]').classes()).toContain('rounded-full');
 
       wrapper.unmount();
     });
@@ -88,8 +88,8 @@ describe('SThemeModeSegment', () => {
     it('applies the square shape when configured', () => {
       const wrapper = mountInProvider(false, { shape: 'square' });
 
-      expect(wrapper.get('[data-soybean-segment-list]').classes()).toContain('rounded-md');
-      expect(wrapper.get('[data-soybean-segment-list]').classes()).not.toContain('rounded-full');
+      expect(wrapper.get('[data-vean-segment-list]').classes()).toContain('rounded-md');
+      expect(wrapper.get('[data-vean-segment-list]').classes()).not.toContain('rounded-full');
 
       wrapper.unmount();
     });
@@ -109,7 +109,7 @@ describe('SThemeModeSegment', () => {
       const wrapper = mountInProvider(false, { showLabel: true });
 
       expect(wrapper.findAll('[role="tab"] .sr-only').length).toBe(0);
-      expect(wrapper.findAll('[role="tab"] [data-soybean-icon]').length).toBe(3);
+      expect(wrapper.findAll('[role="tab"] [data-vean-icon]').length).toBe(3);
 
       wrapper.unmount();
     });

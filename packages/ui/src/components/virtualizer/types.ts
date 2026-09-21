@@ -2,7 +2,7 @@ import type {
   VirtualizerContentProps,
   VirtualizerDynamicContentProps,
   VirtualizerRootProps
-} from '@soybeanjs/headless/virtualizer';
+} from '@vean/aria/virtualizer';
 
 /**
  * Properties for the Virtualizer component.

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { CollapsibleContent, CollapsibleRoot, provideCollapsibleUi } from '@soybeanjs/headless/collapsible';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { CollapsibleContent, CollapsibleRoot, provideCollapsibleUi } from '@vean/aria/collapsible';
+import { useOmitProps } from '@vean/aria/composables';
 import { cardVariants } from '@/styles/card';
 import type { CardProps, CardEmits, CardSlots } from './types';
 
@@ -47,7 +47,7 @@ const ui = computed(() =>
   )
 );
 
-// The card has no headless family of its own: the chrome nodes below are UI-owned, while the
+// The card has no Aria family of its own: the chrome nodes below are UI-owned, while the
 // collapsible behavior comes from the admitted `collapsible` primitives. Handing the recipe to
 // `provideCollapsibleUi` lets `CollapsibleRoot` / `CollapsibleContent` / `CollapsibleTrigger`
 // resolve their own `root` / `content` / `trigger` classes from the card recipe.
@@ -63,16 +63,16 @@ const showFooter = computed(() => Boolean(slots.footer));
 <template>
   <CollapsibleRoot
     v-bind="forwardedProps"
-    data-soybean-card-root
+    data-vean-card-root
     :data-header-visible="showHeader"
     :data-footer-visible="showFooter"
     @update:open="emit('update:open', $event)"
   >
-    <div v-if="showHeader" v-bind="headerProps" data-soybean-card-header :class="ui.header">
+    <div v-if="showHeader" v-bind="headerProps" data-vean-card-header :class="ui.header">
       <slot name="header">
-        <div v-bind="titleRootProps" data-soybean-card-title-root :class="ui.titleRoot">
+        <div v-bind="titleRootProps" data-vean-card-title-root :class="ui.titleRoot">
           <slot name="title-leading" />
-          <h3 v-bind="titleProps" data-soybean-card-title :class="ui.title">
+          <h3 v-bind="titleProps" data-vean-card-title :class="ui.title">
             <slot name="title">{{ title }}</slot>
           </h3>
           <slot name="title-trailing" />
@@ -81,7 +81,7 @@ const showFooter = computed(() => Boolean(slots.footer));
         <p
           v-if="slots.description || description"
           v-bind="descriptionProps"
-          data-soybean-card-description
+          data-vean-card-description
           :class="ui.description"
         >
           <slot name="description">{{ description }}</slot>
@@ -92,13 +92,13 @@ const showFooter = computed(() => Boolean(slots.footer));
     <CollapsibleContent
       tabindex="-1"
       v-bind="contentProps"
-      data-soybean-card-content
+      data-vean-card-content
       :data-header-visible="showHeader"
       :data-footer-visible="showFooter"
     >
       <slot />
     </CollapsibleContent>
-    <div v-if="showFooter" v-bind="footerProps" data-soybean-card-footer :class="ui.footer">
+    <div v-if="showFooter" v-bind="footerProps" data-vean-card-footer :class="ui.footer">
       <slot name="footer" />
     </div>
   </CollapsibleRoot>

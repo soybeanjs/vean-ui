@@ -1,10 +1,5 @@
-import type {
-  PasswordCompactEmits,
-  PasswordCompactProps,
-  PasswordCompactSlots,
-  PasswordUi
-} from '@soybeanjs/headless/password';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { PasswordCompactEmits, PasswordCompactProps, PasswordCompactSlots, PasswordUi } from '@vean/aria/password';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

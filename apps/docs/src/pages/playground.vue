@@ -3,8 +3,8 @@ import { computed, onMounted, ref, shallowRef, watch } from 'vue';
 import type { Component } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
-import { kebabCase, pascalCase } from '@soybeanjs/headless/shared';
-import type { SelectSingleOptionData, TabsOptionData } from '@soybeanjs/ui';
+import { kebabCase, pascalCase } from '@vean/aria/shared';
+import type { SelectSingleOptionData, TabsOptionData } from '@vean/ui';
 
 definePage({ layout: 'default' });
 
@@ -25,7 +25,7 @@ const examplePathPattern = /examples\/([^/]+)\/([^/]+)\/index\.vue$/u;
 const exampleModules = import.meta.glob<{ default: Component }>('../examples/**/index.vue');
 
 const libraryOptions: SelectSingleOptionData<string>[] = [
-  { label: 'Headless', value: 'headless', icon: 'lucide:code-xml' },
+  { label: 'Aria', value: 'aria', icon: 'lucide:code-xml' },
   { label: 'UI', value: 'ui', icon: 'lucide:layout-grid' },
   { label: 'Chart', value: 'chart', icon: 'lucide:bar-chart-3' }
 ];

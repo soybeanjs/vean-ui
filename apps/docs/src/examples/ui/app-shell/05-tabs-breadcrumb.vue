@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { Ref } from 'vue';
-import { SAppShell, SButton, SIcon } from '@soybeanjs/ui';
+import { SAppShell, SButton, SIcon } from '@vean/ui';
 import type {
   AppShellProps,
   BreadcrumbOptionData,
@@ -9,12 +9,12 @@ import type {
   PageTabsDragEvent,
   PageTabsOptionData,
   PageTabsState
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 import { appShellItems } from './menu';
 
-// The active menu drives the breadcrumb: the trail down to `soybean-ui`, with
+// The active menu drives the breadcrumb: the trail down to `vean-ui`, with
 // each ancestor opening its children as a dropdown.
-const active = ref('soybean-ui');
+const active = ref('vean-ui');
 
 const tabs: Ref<PageTabsOptionData[]> = ref([
   {
@@ -36,7 +36,7 @@ const tabs: Ref<PageTabsOptionData[]> = ref([
   }
 ]);
 
-const tabValue = ref('soybean-ui');
+const tabValue = ref('vean-ui');
 
 const lastAction = ref('');
 
@@ -104,7 +104,7 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
         <SIcon icon="lucide:hexagon" class="size-6 text-primary" />
       </template>
       <template #title>
-        <span class="truncate font-semibold">Soybean UI</span>
+        <span class="truncate font-semibold">Vean UI</span>
       </template>
       <template #header-end>
         <SButton variant="pure" icon="lucide:plus" @click="addTab">Add tab</SButton>

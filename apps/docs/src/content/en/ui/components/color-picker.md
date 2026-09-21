@@ -1,14 +1,14 @@
 ---
 head:
   title: Color Picker
-  description: 'A composite color picker that combines a color area, hue/alpha sliders, formatted inputs, and preset swatches, with full oklch editing and output support. SColorPicker composes the headless color primitives (ColorArea/ColorSlider/ColorField/ColorSwatch/ColorSwatchPicker) inside a popover, with a SegmentCompact for format switching. Nested part styles are unified in colorPickerVariants and forwarded through provideColorPickerUi.'
+  description: 'A composite color picker that combines a color area, hue/alpha sliders, formatted inputs, and preset swatches, with full oklch editing and output support. SColorPicker composes the Aria color primitives (ColorArea/ColorSlider/ColorField/ColorSwatch/ColorSwatchPicker) inside a popover, with a SegmentCompact for format switching. Nested part styles are unified in colorPickerVariants and forwarded through provideColorPickerUi.'
 ---
 
 # Color Picker
 
 ## Overview
 
-A composite color picker that combines a color area, hue/alpha sliders, formatted inputs, and preset swatches, with full `oklch` editing and output support. `SColorPicker` composes the headless color primitives (`ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatch`/`ColorSwatchPicker`) inside a popover, with a `SegmentCompact` for format switching. Nested part styles are unified in `colorPickerVariants` and forwarded through `provideColorPickerUi`.
+A composite color picker that combines a color area, hue/alpha sliders, formatted inputs, and preset swatches, with full `oklch` editing and output support. `SColorPicker` composes the Aria color primitives (`ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatch`/`ColorSwatchPicker`) inside a popover, with a `SegmentCompact` for format switching. Nested part styles are unified in `colorPickerVariants` and forwarded through `provideColorPickerUi`.
 
 Use a color picker for a full-featured color selection UI (format tabs, saturation plane, hue/alpha sliders, swatch presets and formatted input).
 
@@ -18,7 +18,7 @@ Use a color picker for a full-featured color selection UI (format tabs, saturati
 
 ## Features
 
-- 🧩 Composite headless — composes `ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatchPicker` inside a `Popover`, each style-free
+- 🧩 Composite Aria — composes `ColorArea`/`ColorSlider`/`ColorField`/`ColorSwatchPicker` inside a `Popover`, each style-free
 - 🎛️ Format tabs — `SegmentCompact` switches `hex`/`rgb`/`hsl`/`oklch`; `update:format` reflects the active format
 - 🎨 Full `oklch` support — `colorSpace="oklch"` with chroma/lightness area and formatted OKLCH output
 - 🎚️ Hue + alpha sliders — `showAlpha` toggles the alpha channel slider and field
@@ -31,9 +31,9 @@ Use a color picker for a full-featured color selection UI (format tabs, saturati
 ## Component family
 
 - `SColorPicker` (styled) — the entry wrapper; computes `colorPickerVariants` and calls `provideColorPickerUi`
-- `ColorPickerCompact` (headless) — the aggregated composite; wires root, popover, area, sliders, fields and swatches
-- `ColorPickerRoot` (headless) — the shared color state (`color`/`hexValue`/`displayFormat`/`areaChannel`/`setColor`/`setFormat`)
-- `ColorPickerTrigger` (headless) — the button showing the current value
+- `ColorPickerCompact` (Aria) — the aggregated composite; wires root, popover, area, sliders, fields and swatches
+- `ColorPickerRoot` (Aria) — the shared color state (`color`/`hexValue`/`displayFormat`/`areaChannel`/`setColor`/`setFormat`)
+- `ColorPickerTrigger` (Aria) — the button showing the current value
 - Underlying primitives — `ColorAreaCompact`, `ColorSliderCompact`, `ColorFieldCompact`, `ColorSwatchCompact`, `ColorSwatchPickerCompact`, `PopoverCompact`, `SegmentCompact`
 
 ## Demo
@@ -48,16 +48,16 @@ Use a color picker for a full-featured color selection UI (format tabs, saturati
 
 ### Architecture and benchmark differences
 
-`ColorPickerCompact` owns the cross-primitive composition (root state + popover + area + sliders + fields + swatches + segment) while every underlying primitive stays style-free. The UI wrapper injects a single `colorPickerVariants` map through `provideColorPickerUi`, which remaps aliased slots onto the nested `provide*Ui` contexts. This mirrors radix-ui-color/shadcn-ui's headless split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled color-picker with `showAlpha`/`presets` props; SoybeanUI exposes a composite with explicit format tabs, full `oklch` editing and a `size` scale.
+`ColorPickerCompact` owns the cross-primitive composition (root state + popover + area + sliders + fields + swatches + segment) while every underlying primitive stays style-free. The UI wrapper injects a single `colorPickerVariants` map through `provideColorPickerUi`, which remaps aliased slots onto the nested `provide*Ui` contexts. This mirrors radix-ui-color/shadcn-ui's headless split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled color-picker with `showAlpha`/`presets` props; VeanUI exposes a composite with explicit format tabs, full `oklch` editing and a `size` scale.
 
-| Capability           | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Composite primitives |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Format tabs          |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Full oklch editing   |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Hue + alpha sliders  |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Preset swatches      |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Sizes (6)            |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability           | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :------------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Composite primitives |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Format tabs          |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Full oklch editing   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Hue + alpha sliders  |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Preset swatches      |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Sizes (6)            |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

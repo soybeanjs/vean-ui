@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -153,7 +153,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.allowhalf",
             "default": null,
             "inheritedFrom": "allowHalf",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -164,7 +164,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.allowclear",
             "default": null,
             "inheritedFrom": "allowClear",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -175,7 +175,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -186,7 +186,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -197,7 +197,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -205,8 +205,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -222,7 +222,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -230,8 +230,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -247,7 +247,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -258,7 +258,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -269,7 +269,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -280,7 +280,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -327,7 +327,7 @@
             "required": true,
             "description": "Event handler called when the rating value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -337,7 +337,7 @@
             "required": true,
             "description": "Event handler called when the hover preview value changes. `null` when the pointer leaves.",
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingemits.callables.hoverchange",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -347,7 +347,7 @@
             "required": true,
             "description": "Event handler called when a rating interaction is committed (click or keyboard).",
             "descriptionKey": "api.generated.packages_ui_src_components_rating_types.ratingemits.callables.valuecommit",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           }
         ],
@@ -358,8 +358,8 @@
             "type": "{ 'update:modelValue': [value: number]; hoverChange: [value: number | null]; valueCommit: [value: number]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number]; hoverChange: [value: number | null]; valueCommit: [value: number] }",
             "description": "Events for the RatingRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -370,8 +370,8 @@
                 "parameters": "value: number",
                 "required": true,
                 "description": "Event handler called when the rating value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/rating/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/rating/types.ts",
                 "referencedTypes": []
               },
               {
@@ -380,8 +380,8 @@
                 "parameters": "value: number | null",
                 "required": true,
                 "description": "Event handler called when the hover preview value changes. `null` when the pointer leaves.",
-                "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.callables.hoverchange",
-                "sourcePath": "packages/headless/src/components/rating/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.callables.hoverchange",
+                "sourcePath": "packages/aria/src/components/rating/types.ts",
                 "referencedTypes": []
               },
               {
@@ -390,8 +390,8 @@
                 "parameters": "value: number",
                 "required": true,
                 "description": "Event handler called when a rating interaction is committed (click or keyboard).",
-                "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.callables.valuecommit",
-                "sourcePath": "packages/headless/src/components/rating/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.callables.valuecommit",
+                "sourcePath": "packages/aria/src/components/rating/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -406,8 +406,8 @@
         "type": "TypeAlias RatingItemEmits: Record<string, never>",
         "resolvedType": "{ [x: string]: never; }",
         "description": "Events for the RatingItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingitememits.emits",
-        "sourcePath": "packages/headless/src/components/rating/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingitememits.emits",
+        "sourcePath": "packages/aria/src/components/rating/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -419,8 +419,8 @@
         "type": "Interface RatingItemProps",
         "resolvedType": "{ index: number; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the RatingItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingitemprops.props",
-        "sourcePath": "packages/headless/src/components/rating/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingitemprops.props",
+        "sourcePath": "packages/aria/src/components/rating/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -428,10 +428,10 @@
             "type": "number",
             "required": true,
             "description": "The zero-based index of the item within the rating.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingitemprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingitemprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -439,10 +439,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingitemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingitemprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -450,10 +450,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingitemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingitemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -490,8 +490,8 @@
         "type": "TypeAlias RatingRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: number]; hoverChange: [value: number | null]; valueCommit: [value: number] }",
         "description": "Events for the RatingRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.emits",
-        "sourcePath": "packages/headless/src/components/rating/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.emits",
+        "sourcePath": "packages/aria/src/components/rating/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -501,8 +501,8 @@
             "parameters": "value: number",
             "required": true,
             "description": "Event handler called when the rating value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -511,8 +511,8 @@
             "parameters": "value: number | null",
             "required": true,
             "description": "Event handler called when the hover preview value changes. `null` when the pointer leaves.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.callables.hoverchange",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.callables.hoverchange",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -521,8 +521,8 @@
             "parameters": "value: number",
             "required": true,
             "description": "Event handler called when a rating interaction is committed (click or keyboard).",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootemits.callables.valuecommit",
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootemits.callables.valuecommit",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           }
         ],
@@ -534,8 +534,8 @@
         "type": "Interface RatingRootProps",
         "resolvedType": "{ modelValue?: number; defaultValue?: number; max?: number; allowHalf?: boolean; allowClear?: boolean; readonly?: boolean; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the RatingRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.props",
-        "sourcePath": "packages/headless/src/components/rating/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.props",
+        "sourcePath": "packages/aria/src/components/rating/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -543,10 +543,10 @@
             "type": "number",
             "required": false,
             "description": "The controlled value of the rating. Can be bound as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -554,10 +554,10 @@
             "type": "number",
             "required": false,
             "description": "The initial value of the rating when uncontrolled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -565,10 +565,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum rating value (number of items).",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.max",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -576,10 +576,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether half-star precision is allowed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.allowhalf",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.allowhalf",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -587,10 +587,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether clicking the current value clears the rating to 0.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.allowclear",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.allowclear",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -598,10 +598,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the rating is read-only (focusable but not interactive).",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.readonly",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -609,10 +609,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the rating is disabled (inert).",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": []
           },
           {
@@ -620,10 +620,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the rating.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -631,8 +631,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -645,10 +645,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the rating.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/rating/types.ts",
+            "sourcePath": "packages/aria/src/components/rating/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -656,8 +656,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -670,10 +670,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -681,10 +681,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -692,10 +692,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -703,10 +703,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_rating_types.ratingrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_rating_types.ratingrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

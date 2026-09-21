@@ -12,7 +12,7 @@ Breadcrumb（面包屑）允许用户按照页面层级结构进行导航，展�
 
 ## 功能
 
-- **数据驱动的 compact 组合** — `SBreadcrumb` 从 `items` 数组渲染条目；headless `BreadcrumbCompact` 负责迭代、默认内容与内部组合（root → list → items → separators）。
+- **数据驱动的 compact 组合** — `SBreadcrumb` 从 `items` 数组渲染条目；Aria `BreadcrumbCompact` 负责迭代、默认内容与内部组合（root → list → items → separators）。
 - **链接 vs 当前页** — 带 `to` / `href` 的条目渲染为 `BreadcrumbLink`（复用 Link 原语）；末尾无目标条目的渲染为 `BreadcrumbPage`，带 `aria-current="page"` 与 `aria-disabled`。
 - **省略号折叠** — `ellipsis: true` 在条目数 ≥5 时将所有中间条目折叠为省略号；`ellipsis: [start, end]` 支持自定义折叠范围（自动归一化：`start 0 → 1`、`end length → length - 1`）。
 - **带条目数据的点击事件** — `click` 事件携带完整的被激活条目对象；disabled 条目永不触发。
@@ -22,13 +22,13 @@ Breadcrumb（面包屑）允许用户按照页面层级结构进行导航，展�
 - **图标支持** — 每个条目可携带 `icon`（经 `item-leading` 槽默认内容渲染），使用 `IconValue` 类型。
 - **禁用条目** — 条目上的 `disabled: true` 会禁用链接并抑制 click 事件。
 - **尺寸缩放** — `size`（xs…2xl）经 `breadcrumbVariants` 缩放字号与间距。
-- **Headless 组合** — `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis` 从 `@soybeanjs/headless/breadcrumb` 导出，可完全自定义样式构建。
+- **Aria 组合** — `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis` 从 `@vean/aria/breadcrumb` 导出，可完全自定义样式构建。
 
 ## 用法
 
 <UsageCode component="breadcrumb" />
 
-> `SBreadcrumb` 将列表聚合委托给 headless `BreadcrumbCompact`。如需无样式的数据驱动组合，请从 `@soybeanjs/headless/breadcrumb` 导入 `BreadcrumbCompact`。
+> `SBreadcrumb` 将列表聚合委托给 Aria `BreadcrumbCompact`。如需无样式的数据驱动组合，请从 `@vean/aria/breadcrumb` 导入 `BreadcrumbCompact`。
 
 ## 演示
 
@@ -42,9 +42,9 @@ Breadcrumb（面包屑）允许用户按照页面层级结构进行导航，展�
 
 ### 架构与行业对标
 
-| 关注点               | SoybeanUI                                       | shadcn-vue `Breadcrumb`                   | Ant Design `Breadcrumb` | Element Plus `Breadcrumb`   |
+| 关注点               | VeanUI                                          | shadcn-vue `Breadcrumb`                   | Ant Design `Breadcrumb` | Element Plus `Breadcrumb`   |
 | :------------------- | :---------------------------------------------- | :---------------------------------------- | :---------------------- | :-------------------------- |
-| Headless / 样式分离  | ✅ `@soybeanjs/headless/breadcrumb` + `scv()`   | ❌ 单一包                                 | ❌ 单一包               | ❌ 单一包                   |
+| Aria / 样式分离      | ✅ `@vean/aria/breadcrumb` + `scv()`            | ❌ 单一包                                 | ❌ 单一包               | ❌ 单一包                   |
 | 数据驱动 compact API | ✅ `items` + `ellipsis` + `click`               | ❌ 仅槽/组件组合                          | ✅ `routes` / `items`   | ✅ `breadcrumb-item` 循环   |
 | 省略号折叠           | ✅ `true`（≥5 条）或自定义 `[start, end]`       | ❌ 手动省略号条目                         | ✅ `ellipsis`（≥4 条）  | ❌ 手动                     |
 | 链接 vs 当前页       | ✅ `to`/`href` → Link；末尾 → `aria-current` 页 | ✅ 独立 `BreadcrumbLink`/`BreadcrumbPage` | ✅ 末尾项即当前页       | ✅ 末尾项自动当前           |
@@ -92,4 +92,4 @@ Breadcrumb（面包屑）允许用户按照页面层级结构进行导航，展�
 
 ### 可以构建完全自定义的面包屑吗？
 
-可以 — 用 `@soybeanjs/headless/breadcrumb` 组合 `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis`，并通过 `provideBreadcrumbUi`（或 `SBreadcrumb` 的 `ui` prop）注入样式。
+可以 — 用 `@vean/aria/breadcrumb` 组合 `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis`，并通过 `provideBreadcrumbUi`（或 `SBreadcrumb` 的 `ui` prop）注入样式。

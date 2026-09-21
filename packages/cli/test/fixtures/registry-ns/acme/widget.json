@@ -3,7 +3,7 @@
   "package": "acme",
   "type": "registry:ui",
   "description": "Fictional third-party widget used to exercise namespaced resolution.",
-  "dependencies": ["@soybeanjs/ui"],
+  "dependencies": ["@vean/ui"],
   "files": [
     {
       "path": "components/widget/widget.vue",

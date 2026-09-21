@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { STable, STableRow, STableCell, SButton } from '@soybeanjs/ui';
-import type { TableColumn } from '@soybeanjs/ui';
+import { STable, STableRow, STableCell, SButton } from '@vean/ui';
+import type { TableColumn } from '@vean/ui';
 
 interface TableData {
   id: number;

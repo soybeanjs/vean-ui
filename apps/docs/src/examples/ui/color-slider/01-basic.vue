@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { formatColor } from '@soybeanjs/headless/shared';
-import type { ColorChannel, ColorFormat, ColorSpace, ColorValue } from '@soybeanjs/headless/types';
-import { resolveThemeColors } from '@soybeanjs/theme';
-import { SButtonIcon, SColorSlider, SColorSwatch, SSelect, SSwitch, useTheme } from '@soybeanjs/ui';
-import type { DataOrientation, SelectOptionData, ThemeColor, ThemeSize } from '@soybeanjs/ui';
+import { formatColor } from '@vean/aria/shared';
+import type { ColorChannel, ColorFormat, ColorSpace, ColorValue } from '@vean/aria/types';
+import { resolveThemeColors } from '@vean/theme';
+import { SButtonIcon, SColorSlider, SColorSwatch, SSelect, SSwitch, useTheme } from '@vean/ui';
+import type { DataOrientation, SelectOptionData, ThemeColor, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

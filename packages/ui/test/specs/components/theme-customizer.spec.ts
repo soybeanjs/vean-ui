@@ -11,14 +11,14 @@ import type { ThemeCustomizerSection } from '@/components/theme-customizer/types
  *
  * Both panels write through the same chain: child control emits `update:modelValue`
  * → the panel's listener calls a script-defined setter → `settings.commit()` →
- * `SConfigProvider` re-emits `#soybean-theme`. The listener has to *pass the event
+ * `SConfigProvider` re-emits `#vean-theme`. The listener has to *pass the event
  * payload*; a curried factory (`@update:model-value="onChange(key)"`) is invoked as
  * an inline statement, so its returned function is discarded and the write never
  * happens. Driving the child's `update:modelValue` emit from a real mount is exactly
  * the contract that regressed, so it is asserted here instead of a DOM click path.
  */
 
-const STYLE_ID = 'soybean-theme';
+const STYLE_ID = 'vean-theme';
 
 const flush = async (): Promise<void> => {
   await nextTick();

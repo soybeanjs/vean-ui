@@ -1,4 +1,4 @@
-import type { AppShellMenuItem } from '@soybeanjs/ui';
+import type { AppShellMenuItem } from '@vean/ui';
 
 export const appShellItems: AppShellMenuItem[] = [
   {
@@ -17,8 +17,8 @@ export const appShellItems: AppShellMenuItem[] = [
         icon: 'lucide:folder-kanban',
         children: [
           {
-            label: 'Soybean UI',
-            value: 'soybean-ui',
+            label: 'Vean UI',
+            value: 'vean-ui',
             icon: 'lucide:book-open'
           },
           {

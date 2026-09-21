@@ -1,8 +1,8 @@
-# @soybeanjs/ui-nuxt
+# @vean/nuxt
 
 [English](./README.md) | 中文
 
-用于验证 `@soybeanjs/ui` 集成的最小 Nuxt fixture。
+用于验证 `@vean/ui` 集成的最小 Nuxt fixture。
 
 ## 📖 概述
 
@@ -33,8 +33,8 @@ pnpm preview
 ## 🏗 技术栈
 
 - **Nuxt 4** — Vue 框架
-- **@soybeanjs/ui** — 带样式组件库
-- **@soybeanjs/ui/nuxt** — Nuxt 自动注册模块
+- **@vean/ui** — 带样式组件库
+- **@vean/ui/nuxt** — Nuxt 自动注册模块
 - **UnoCSS** — 原子化 CSS 引擎
 - **Vue I18n** — 国际化
 
@@ -46,7 +46,7 @@ apps/nuxt/
 │   ├── app.vue       # SConfigProvider 包裹的最小演示页
 │   └── theme.ts      # 本地主题 context provider
 ├── nuxt.config.ts    # UI module、i18n、UnoCSS
-├── uno.config.ts     # 共享 SoybeanUI preset 栈
+├── uno.config.ts     # 共享 Vean preset 栈
 ├── package.json
 └── tsconfig.json
 ```

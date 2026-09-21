@@ -24,7 +24,7 @@ const items: MenuOptionData<string>[] = [
   {
     value: 'github',
     label: 'GitHub',
-    href: 'https://github.com/soybeanjs/soybean-ui'
+    href: 'https://github.com/soybeanjs/vean-ui'
   }
 ];
 
@@ -55,9 +55,9 @@ describe('SMenubar', () => {
 
       expect(wrapper.find('[role="menubar"]').exists()).toBe(true);
       expect(wrapper.findAll('[role="menuitem"]')).toHaveLength(3);
-      expect(wrapper.find('[data-soybean-menubar-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-menubar-trigger][data-value="file"]').exists()).toBe(true);
-      expect(wrapper.find('a[href="https://github.com/soybeanjs/soybean-ui"]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-menubar-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-menubar-trigger][data-value="file"]').exists()).toBe(true);
+      expect(wrapper.find('a[href="https://github.com/soybeanjs/vean-ui"]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -110,7 +110,7 @@ describe('SMenubar', () => {
       expect(wrapper.findAll('[role="menuitem"]')).toHaveLength(2);
       expect(wrapper.text()).not.toContain('Hidden Menu');
 
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
 
       await trigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
@@ -126,7 +126,7 @@ describe('SMenubar', () => {
   describe('open state', () => {
     it('opens the menu on pointerdown and reflects aria-expanded', async () => {
       const wrapper = mountMenubar();
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
 
       await trigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
@@ -145,7 +145,7 @@ describe('SMenubar', () => {
         props: { items, modelValue: '', portalProps: { disabled: true } },
         attachTo: document.body
       });
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="edit"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="edit"]');
 
       await trigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
@@ -184,7 +184,7 @@ describe('SMenubar', () => {
         { attachTo: document.body }
       );
 
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="disabled-menu"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="disabled-menu"]');
 
       expect(trigger.attributes('aria-disabled')).toBe('true');
       expect(trigger.attributes('tabindex')).toBe('-1');
@@ -201,7 +201,7 @@ describe('SMenubar', () => {
 
     it('disables all triggers when the compact disabled prop is set, including link triggers', async () => {
       const linkItems: MenuOptionData<string>[] = [
-        { value: 'github', label: 'GitHub', href: 'https://github.com/soybeanjs/soybean-ui' },
+        { value: 'github', label: 'GitHub', href: 'https://github.com/soybeanjs/vean-ui' },
         { value: 'file', label: 'File', children: [{ value: 'new-tab', label: 'New Tab' }] }
       ];
 
@@ -220,15 +220,15 @@ describe('SMenubar', () => {
         { attachTo: document.body }
       );
 
-      wrapper.findAll('[data-soybean-menubar-trigger]').forEach(trigger => {
+      wrapper.findAll('[data-vean-menubar-trigger]').forEach(trigger => {
         expect(trigger.attributes('aria-disabled')).toBe('true');
       });
 
-      const linkTrigger = wrapper.find('[data-soybean-menubar-trigger][data-value="github"]');
+      const linkTrigger = wrapper.find('[data-vean-menubar-trigger][data-value="github"]');
       expect(linkTrigger.element.tagName).toBe('A');
       expect(linkTrigger.attributes('aria-disabled')).toBe('true');
 
-      const fileTrigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const fileTrigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
       await fileTrigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
       await nextTick();
@@ -242,7 +242,7 @@ describe('SMenubar', () => {
   describe('trigger modes', () => {
     it('opens the menu on pointer enter in hover mode', async () => {
       const wrapper = mountMenubar({ trigger: 'hover', delayDuration: 0 });
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
 
       await trigger.trigger('pointerenter');
       await new Promise(resolve => window.setTimeout(resolve, 0));
@@ -257,7 +257,7 @@ describe('SMenubar', () => {
 
     it('delays the first hover open and switches to a sibling instantly while a menu is open', async () => {
       const wrapper = mountMenubar({ trigger: 'hover', delayDuration: 50, skipDelayDuration: 300 });
-      const [fileTrigger, editTrigger] = wrapper.findAll('[data-soybean-menubar-trigger]');
+      const [fileTrigger, editTrigger] = wrapper.findAll('[data-vean-menubar-trigger]');
 
       // The first open waits for `delayDuration`.
       await fileTrigger.trigger('pointerenter');
@@ -283,7 +283,7 @@ describe('SMenubar', () => {
 
     it('keeps the menu open while the pointer moves from the trigger to the popup', async () => {
       const wrapper = mountMenubar({ trigger: 'hover', delayDuration: 0 });
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
 
       await trigger.trigger('pointerenter');
       await new Promise(resolve => window.setTimeout(resolve, 20));
@@ -299,7 +299,7 @@ describe('SMenubar', () => {
       expect(trigger.attributes('aria-expanded')).toBe('true');
 
       // Entering the teleported popup keeps the menu open.
-      const positioner = document.querySelector('[data-soybean-popper-positioner]') as HTMLElement;
+      const positioner = document.querySelector('[data-vean-popper-positioner]') as HTMLElement;
       expect(positioner).toBeTruthy();
       positioner.dispatchEvent(new MouseEvent('pointerenter', { bubbles: false, clientX: 10, clientY: 100 }));
       await new Promise(resolve => window.setTimeout(resolve, 20));
@@ -321,7 +321,7 @@ describe('SMenubar', () => {
 
     it('ignores pointer down in hover mode', async () => {
       const wrapper = mountMenubar({ trigger: 'hover' });
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
 
       await trigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
@@ -335,7 +335,7 @@ describe('SMenubar', () => {
 
     it('opens the menu on pointer down in click mode', async () => {
       const wrapper = mountMenubar({ trigger: 'click' });
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
 
       await trigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
@@ -360,8 +360,8 @@ describe('SMenubar', () => {
         attachTo: document.body
       });
 
-      const container = wrapper.find('[data-soybean-menubar-overflow]').element as HTMLElement;
-      const root = wrapper.find('[data-soybean-menubar-root]').element as HTMLElement;
+      const container = wrapper.find('[data-vean-menubar-overflow]').element as HTMLElement;
+      const root = wrapper.find('[data-vean-menubar-root]').element as HTMLElement;
 
       // happy-dom performs no layout, so force the measured overflow the reflow
       // loop reads: the root always overflows its container.
@@ -380,7 +380,7 @@ describe('SMenubar', () => {
       // Regression guard: the measured overflow count leaked out of collapsible
       // mode and kept rendering the "more" menu over a bar that now holds every
       // trigger.
-      expect(wrapper.find('[data-soybean-menubar-overflow]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-menubar-overflow]').exists()).toBe(false);
       expect(wrapper.text()).not.toContain('More');
       expect(wrapper.findAll('[role="menuitem"]')).toHaveLength(3);
 
@@ -419,7 +419,7 @@ describe('SMenubar', () => {
         { attachTo: document.body }
       );
 
-      const trigger = wrapper.find('[data-soybean-menubar-trigger][data-value="file"]');
+      const trigger = wrapper.find('[data-vean-menubar-trigger][data-value="file"]');
       await trigger.trigger('pointerdown', { button: 0, ctrlKey: false });
       await nextTick();
       await nextTick();

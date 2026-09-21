@@ -317,7 +317,7 @@
 ### 4.2 Vue 3 生态的差距与机会(对 `@soybeanjs/form` 的定位建议)
 
 1. **「协议驱动渲染」是最大空白**:Formily 是唯一完整实现「schema 描述 → 自动渲染 + 声明式联动(x-reactions)+ 命令式 effects」的 Vue 方案,但其 Vue 侧长期低活跃、依赖自研 JSON-Schema 方言(x-* 扩展)、设计器停滞。VeeValidate / TanStack Form / Element Plus / Naive UI 都只把 schema 用于校验。`@soybeanjs/form` 可以在**标准 JSON Schema / 自定义 ISchema 之上做 schema 驱动渲染层**,这是「比 TanStack Form 更进一步」的差异化定位。
-2. **headless 引擎 + schema 层分离**:TanStack Form 证明了「form-core(框架无关)+ 各框架绑定」的架构在 Vue 3 可行且被接受。`@soybeanjs/form` 可参考此分层:逻辑/状态留在 headless,UI 由 @soybeanjs/ui 提供,渲染层由 schema 驱动,符合本项目 headless-first 的一贯约束。
+2. **headless 引擎 + schema 层分离**:TanStack Form 证明了「form-core(框架无关)+ 各框架绑定」的架构在 Vue 3 可行且被接受。`@soybeanjs/form` 可参考此分层:逻辑/状态留在 headless,UI 由 @vean/ui 提供,渲染层由 schema 驱动,符合本项目 headless-first 的一贯约束。
 3. **声明式联动语言(x-reactions 式)价值高**:Formily 的 `when/fulfill` 声明式联动(显隐/必填/禁用随依赖字段变化)是企业级表单高频诉求;RHF/AntD 依赖手写 watch/effects。`@soybeanjs/form` 若能提供「声明式联动 + 命令式 fallback」将显著降低复杂表单心智成本。
 4. **可视化设计器仍缺位**:Vue 侧开源且活跃的只有 form-create-designer(MIT);Formily Designable 已停滞。若 `@soybeanjs/form` 的 schema 协议足够稳定,后续可考虑轻量 schema 编辑/预览工具或与 form-create 类设计器互转,但建议**先做协议与渲染,再做设计器**。
 5. **类型化 schema 体验(toTypedSchema 模式)**:VeeValidate 的 `@vee-validate/zod` `toTypedSchema` 区分 input/output 类型、从 schema 自动拾取默认值/提交前 transform,是值得对齐的 DX 细节(来源:[vee-validate Typed Schemas](https://vee-validate.logaretm.com/v4/guide/composition-api/typed-schema/))。

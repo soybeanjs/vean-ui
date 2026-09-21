@@ -1,14 +1,14 @@
 ---
 head:
   title: Toolbar
-  description: 'A compact container that groups related actions, links, and toggle controls into a single roving-focus toolbar. SToolbar combines the headless toolbar primitives (ToolbarRoot/ToolbarButton/ToolbarLink/ToolbarSeparator/ToolbarToggleGroup/ToolbarToggleItem) with the toolbarVariants style recipe (7 slots, 6 sizes × 2 orientations).'
+  description: 'A compact container that groups related actions, links, and toggle controls into a single roving-focus toolbar. SToolbar combines the Aria toolbar primitives (ToolbarRoot/ToolbarButton/ToolbarLink/ToolbarSeparator/ToolbarToggleGroup/ToolbarToggleItem) with the toolbarVariants style recipe (7 slots, 6 sizes × 2 orientations).'
 ---
 
 # Toolbar
 
 ## Overview
 
-A compact container that groups related actions, links, and toggle controls into a single roving-focus toolbar. `SToolbar` combines the headless toolbar primitives (`ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem`) with the `toolbarVariants` style recipe (7 slots, 6 sizes × 2 orientations).
+A compact container that groups related actions, links, and toggle controls into a single roving-focus toolbar. `SToolbar` combines the Aria toolbar primitives (`ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem`) with the `toolbarVariants` style recipe (7 slots, 6 sizes × 2 orientations).
 
 Use a toolbar for a dense, keyboard-navigable row of actions. For a single action button use `button`; for grouped buttons use `toggle-group`.
 
@@ -18,7 +18,7 @@ Use a toolbar for a dense, keyboard-navigable row of actions. For a single actio
 
 ## Features
 
-- 🧩 Headless/styled split — `ToolbarRoot` provides the toolbar context; each part (`button`/`link`/`separator`/`toggle-group`) is a thin styled primitive
+- 🧩 Aria/styled split — `ToolbarRoot` provides the toolbar context; each part (`button`/`link`/`separator`/`toggle-group`) is a thin styled primitive
 - ⌨️ Roving focus — arrow-key navigation between toolbar items, Home/End, with optional `loop`; separators/disabled items are skipped
 - ↔️ Orientation — `horizontal` (default) or `vertical`; separators auto-flip orientation
 - 🔘 Toggle group — `SToolbarToggleGroup`/`SToolbarToggleItem` for single/multi-select toggles with `v-model`
@@ -33,7 +33,7 @@ Use a toolbar for a dense, keyboard-navigable row of actions. For a single actio
 - `SToolbarLink` (styled) — a toolbar link (`Link` base with optional `showIcon`)
 - `SToolbarSeparator` (styled) — an orientation-aware divider (`SeparatorRoot` base)
 - `SToolbarToggleGroup` / `SToolbarToggleItem` (styled) — toggle-group controls (`ToggleGroupRoot`/`ToggleGroupItem` base)
-- `ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem` (headless) — the underlying primitives
+- `ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem` (Aria) — the underlying primitives
 
 ## Demos
 
@@ -47,16 +47,16 @@ Use a toolbar for a dense, keyboard-navigable row of actions. For a single actio
 
 ### Architecture and benchmark differences
 
-The toolbar family is a multi-slot composition: `ToolbarRoot` provides the roving-focus + orientation context while each part (button/link/separator/toggle-group) reuses the button, link, separator and toggle-group primitives, with the UI wrapper injecting `toolbarVariants` classes per slot. This mirrors radix-ui/shadcn-ui's headless toolbar/toggle-group split. Ant Design, Element Plus, Mantine and Naive UI ship a button/segmented-control but not a dedicated roving-focus toolbar container with orientation-aware separators; SoybeanUI provides a complete toolbar with `loop`/RTL support and a `size` scale.
+The toolbar family is a multi-slot composition: `ToolbarRoot` provides the roving-focus + orientation context while each part (button/link/separator/toggle-group) reuses the button, link, separator and toggle-group primitives, with the UI wrapper injecting `toolbarVariants` classes per slot. This mirrors radix-ui/shadcn-ui's headless toolbar/toggle-group split. Ant Design, Element Plus, Mantine and Naive UI ship a button/segmented-control but not a dedicated roving-focus toolbar container with orientation-aware separators; VeanUI provides a complete toolbar with `loop`/RTL support and a `size` scale.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Roving focus + loop   |    ✅     |    ✅     |     —      |      —       |   ✅    |    —     |
-| Orientation-aware     |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Toggle group          |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Link support          |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Sizes (6)             |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability          | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :------------------ | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Roving focus + loop |   ✅   |    ✅     |     —      |      —       |   ✅    |    —     |
+| Orientation-aware   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Toggle group        |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Link support        |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Sizes (6)           |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

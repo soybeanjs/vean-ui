@@ -9,22 +9,22 @@ superseded（对 AI 域与 admin 壳域均失效；单包分层模型仅作为�
 > 补注（2026-09）：
 >
 > 1. 最后的单包外围实例 `@soybeanjs/ui-x` 已整包移除，AI/chat 组件改为按标准 headless/ui 两层契约在核心库内重新实现，统一 `S` 前缀，准入判据与迁移决策见 [`docs/ui-ai-roadmap.md`](../ui-ai-roadmap.md)（决策 A1）。
-> 2. admin 壳组件回迁方向明确为**核心内领域**（不新建包）：领域逻辑进 `@soybeanjs/headless` 的 `shell` 域模块，复合组件进 `@soybeanjs/ui`，见 [`docs/ui-shell-roadmap.md`](../ui-shell-roadmap.md)（决策 S1/S2）。
+> 2. admin 壳组件回迁方向明确为**核心内领域**（不新建包）：领域逻辑进 `@vean/aria` 的 `shell` 域模块，复合组件进 `@vean/ui`，见 [`docs/ui-shell-roadmap.md`](../ui-shell-roadmap.md)（决策 S1/S2）。
 >
 > 自此仓库内不再有任何外围单包，本 ADR 全面 superseded；未来新领域立项时按 [`docs/ecosystem/README.md`](../ecosystem/README.md) 的形态决策（核心内 / 独立包 / sbean 配方）重新裁定。下文为历史决策记录，保留备查。
 
 ## 背景
 
-SoybeanUI 周边 UI 组件生态（ui-x / admin / chart …）在初始化时出现了两种不一致的分层：
+Vean 周边 UI 组件生态（ui-x / admin / chart …）在初始化时出现了两种不一致的分层：
 
-- `admin` 分支：单包 `@soybeanjs/admin`，无独立逻辑层，直接组合 `@soybeanjs/headless` + `@soybeanjs/ui` 的 primitives。
+- `admin` 分支：单包 `@soybeanjs/admin`，无独立逻辑层，直接组合 `@vean/aria` + `@vean/ui` 的 primitives。
 - `ui-x` 分支：双包 `@soybeanjs/headless-x`（仅 composables + types，无 SFC）+ `@soybeanjs/ui-x`（样式）。
 
 `headless-x` 的命名暗示"无头基础组件"，实际却只含领域 hooks（use-chat / use-send / use-think …），与核心 headless 承载 a11y primitives 的语义混淆；且双包分裂在外围包中仅此一例，破坏了生态一致性。
 
 ## 决策
 
-1. **核心 `@soybeanjs/headless` 是唯一逻辑层**，只承载 a11y primitives、通用 composables、共享 types。
+1. **核心 `@vean/aria` 是唯一逻辑层**，只承载 a11y primitives、通用 composables、共享 types。
 2. **外围包均为单包**（领域逻辑 + 样式同居于 `packages/<pkg>/src/`），不另建"领域逻辑包"。
 3. **拆解 `@soybeanjs/headless-x`**：composables/types 迁入 `@soybeanjs/ui-x/src/`，删除 `headless-x` 包；`ui-x` 仅依赖 `headless + ui + theme`，并在 exports 增补 `./composables`、`./types` 子路径以缓解"逻辑被锁进样式包"的复用代价。
 4. **仅"原子原语"级新组件可上浮核心 headless**（判据：无法由现有 primitives 组合 + 提供可复用 a11y/交互原语）；其余外围组件一律作为包装型组件留在外围包内。

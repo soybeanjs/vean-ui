@@ -1,10 +1,5 @@
-import type {
-  CascaderCompactEmits,
-  CascaderCompactProps,
-  CascaderCompactSlots,
-  CascaderUi
-} from '@soybeanjs/headless/cascader';
-import type { ClassValue, DefinedValue } from '@soybeanjs/headless/types';
+import type { CascaderCompactEmits, CascaderCompactProps, CascaderCompactSlots, CascaderUi } from '@vean/aria/cascader';
+import type { ClassValue, DefinedValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

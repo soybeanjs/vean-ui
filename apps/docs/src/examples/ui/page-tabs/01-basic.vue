@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, shallowRef } from 'vue';
 import type { Ref } from 'vue';
-import { SButtonIcon, SPageTabs, SSelect, SSwitch } from '@soybeanjs/ui';
+import { SButtonIcon, SPageTabs, SSelect, SSwitch } from '@vean/ui';
 import type {
   PageTabsContextMenuOptionData,
   PageTabsOptionData,
@@ -9,7 +9,7 @@ import type {
   PageTabsVariant,
   SelectOptionData,
   ThemeSize
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

@@ -1,18 +1,18 @@
 ---
 head:
   title: Accordion
-  description: 'A vertically (or horizontally) stacked set of interactive headings that each reveal a section of content, supporting single or multiple expansion. SAccordion combines an AccordionRoot/AccordionItem/AccordionHeader/AccordionTrigger/AccordionContent/AccordionDescription family of headless primitives (zero styles) with the accordionVariants style recipe (8 slots, 6 sizes).'
+  description: 'A vertically (or horizontally) stacked set of interactive headings that each reveal a section of content, supporting single or multiple expansion. SAccordion combines an AccordionRoot/AccordionItem/AccordionHeader/AccordionTrigger/AccordionContent/AccordionDescription family of Aria primitives (zero styles) with the accordionVariants style recipe (8 slots, 6 sizes).'
 ---
 
 # Accordion
 
 ## Overview
 
-A vertically (or horizontally) stacked set of interactive headings that each reveal a section of content, supporting single or multiple expansion. `SAccordion` combines an `AccordionRoot`/`AccordionItem`/`AccordionHeader`/`AccordionTrigger`/`AccordionContent`/`AccordionDescription` family of headless primitives (zero styles) with the `accordionVariants` style recipe (8 slots, 6 sizes).
+A vertically (or horizontally) stacked set of interactive headings that each reveal a section of content, supporting single or multiple expansion. `SAccordion` combines an `AccordionRoot`/`AccordionItem`/`AccordionHeader`/`AccordionTrigger`/`AccordionContent`/`AccordionDescription` family of Aria primitives (zero styles) with the `accordionVariants` style recipe (8 slots, 6 sizes).
 
 Use it for FAQs, settings groups, collapsible navigation, or any "expand to reveal" pattern where one (or several) sections should be open at a time. Prefer `tabs` when only one panel should be visible at once and each panel has a persistent label, and `collapsible` for a single standalone foldable section.
 
-`SAccordion` aggregates the primitives through `AccordionCompact` and is `items`-driven with `item`/`leading`/`title`/`trigger-icon`/`content` slots. For fully custom compositions, fall back to the headless `AccordionRoot`-family primitives.
+`SAccordion` aggregates the primitives through `AccordionCompact` and is `items`-driven with `item`/`leading`/`title`/`trigger-icon`/`content` slots. For fully custom compositions, fall back to the Aria `AccordionRoot`-family primitives.
 
 ## Usage
 
@@ -20,7 +20,7 @@ Use it for FAQs, settings groups, collapsible navigation, or any "expand to reve
 
 ## Features
 
-- 🧩 Headless/styled split — `AccordionCompact` aggregates the 6 primitives and is `items`-driven; `SAccordion` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `AccordionCompact` aggregates the 6 primitives and is `items`-driven; `SAccordion` only injects styles and forwards slots/events
 - 🎚️ Single / multiple — `multiple` toggles one-open vs many-open (`M extends boolean` generic); `collapsible` allows all sections closed
 - ⌨️ Keyboard navigation — arrow keys move between triggers (`useArrowNavigation`), respecting `orientation` and `dir`; triggers expose `aria-expanded`/`aria-disabled`/`data-state`
 - 🧭 Orientation — `vertical` (default) or `horizontal`
@@ -32,13 +32,13 @@ Use it for FAQs, settings groups, collapsible navigation, or any "expand to reve
 ## Component family
 
 - `SAccordion` (styled) — the entry wrapper; `accordionVariants` recipe with dynamic slot forwarding
-- `AccordionRoot` (headless) — the state owner; `useSelection` manages single/multiple `modelValue`, exposes `dir`/`orientation`
-- `AccordionItem` (headless) — one section; derives its open/disabled state from the root and wires arrow-key navigation
-- `AccordionHeader` (headless) — the header container for the trigger
-- `AccordionTrigger` (headless) — the `<button>` trigger; `aria-expanded`/`aria-disabled`/`data-state` and click-to-toggle
-- `AccordionContent` (headless) — the animated collapsible content (`CollapsibleContent`)
-- `AccordionDescription` (headless) — the default description text inside content
-- `AccordionCompact` (headless) — the aggregated composite; iterates `items` into items and exposes the customization slots
+- `AccordionRoot` (Aria) — the state owner; `useSelection` manages single/multiple `modelValue`, exposes `dir`/`orientation`
+- `AccordionItem` (Aria) — one section; derives its open/disabled state from the root and wires arrow-key navigation
+- `AccordionHeader` (Aria) — the header container for the trigger
+- `AccordionTrigger` (Aria) — the `<button>` trigger; `aria-expanded`/`aria-disabled`/`data-state` and click-to-toggle
+- `AccordionContent` (Aria) — the animated collapsible content (`CollapsibleContent`)
+- `AccordionDescription` (Aria) — the default description text inside content
+- `AccordionCompact` (Aria) — the aggregated composite; iterates `items` into items and exposes the customization slots
 
 ## Demos
 
@@ -52,19 +52,19 @@ Use it for FAQs, settings groups, collapsible navigation, or any "expand to reve
 
 ### Architecture and benchmark differences
 
-`AccordionCompact` owns the `items` iteration and default content assembly while every primitive stays style-free and only the UI wrapper injects the `accordionVariants` classes. This mirrors shadcn/ui's headless split and Radix's `Accordion` primitive, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a config-driven collapse with `defaultActiveKey`/`activeKey`. SoybeanUI's root uses `useSelection` so single/multiple modes share one state model, and arrow-key navigation is driven by the same `useArrowNavigation` composable used across the menu family for consistency.
+`AccordionCompact` owns the `items` iteration and default content assembly while every primitive stays style-free and only the UI wrapper injects the `accordionVariants` classes. This mirrors shadcn/ui's headless split and Radix's `Accordion` primitive, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a config-driven collapse with `defaultActiveKey`/`activeKey`. Vean's root uses `useSelection` so single/multiple modes share one state model, and arrow-key navigation is driven by the same `useArrowNavigation` composable used across the menu family for consistency.
 
-| Capability                    | SoybeanUI | shadcn/ui | Ant Design Collapse | Element Plus Collapse | Mantine Accordion | Naive UI Collapse |
-| :---------------------------- | :-------: | :-------: | :-----------------: | :-------------------: | :---------------: | :---------------: |
-| Headless/styled split         |    ✅     |    ✅     |          —          |           —           |         —         |         —         |
-| Single / multiple             |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| Collapsible (all closed)      |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| Keyboard arrow navigation     |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| Custom trigger icon           |    ✅     |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
-| Data-driven `items` (Compact) |    ✅     |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
-| Disabled item                 |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| Orientation (v/h)             |    ✅     |     —     |         ✅          |          ✅           |         —         |         —         |
-| `as`/`asChild` trigger        |    ✅     |    ✅     |          —          |           —           |         —         |         —         |
+| Capability                    | VeanUI | shadcn/ui | Ant Design Collapse | Element Plus Collapse | Mantine Accordion | Naive UI Collapse |
+| :---------------------------- | :----: | :-------: | :-----------------: | :-------------------: | :---------------: | :---------------: |
+| Aria/styled split             |   ✅   |    ✅     |          —          |           —           |         —         |         —         |
+| Single / multiple             |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| Collapsible (all closed)      |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| Keyboard arrow navigation     |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| Custom trigger icon           |   ✅   |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
+| Data-driven `items` (Compact) |   ✅   |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
+| Disabled item                 |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| Orientation (v/h)             |   ✅   |     —     |         ✅          |          ✅           |         —         |         —         |
+| `as`/`asChild` trigger        |   ✅   |    ✅     |          —          |           —           |         —         |         —         |
 
 `—` = unsupported or a different interaction model.
 
@@ -120,7 +120,7 @@ Use the `trigger-icon` slot (or `leading` for a left icon):
 
 ### How do I build a fully custom item?
 
-Use the `item` slot to compose the headless parts yourself:
+Use the `item` slot to compose the Aria parts yourself:
 
 ```vue
 <SAccordion :items="items">

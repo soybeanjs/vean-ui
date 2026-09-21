@@ -51,11 +51,11 @@ export const tabsVariants = scv({
     orientation: {
       horizontal: {
         root: `flex-col`,
-        indicator: `h-full w-[--soybean-tabs-indicator-size] translate-x-[--soybean-tabs-indicator-position] rtl:-translate-x-[--soybean-tabs-indicator-position]`
+        indicator: `h-full w-[--vean-tabs-indicator-size] translate-x-[--vean-tabs-indicator-position] rtl:-translate-x-[--vean-tabs-indicator-position]`
       },
       vertical: {
         list: `flex-col items-stretch`,
-        indicator: `w-full h-[--soybean-tabs-indicator-size] translate-y-[--soybean-tabs-indicator-position]`
+        indicator: `w-full h-[--vean-tabs-indicator-size] translate-y-[--vean-tabs-indicator-position]`
       }
     },
     shape: {

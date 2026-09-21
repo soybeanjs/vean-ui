@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { SplitterResizeHandle } from '@soybeanjs/headless/splitter';
+import { useOmitProps } from '@vean/aria/composables';
+import { SplitterResizeHandle } from '@vean/aria/splitter';
 import type { SplitterResizeHandleProps, SplitterResizeHandleEmits } from './types';
 
 defineOptions({

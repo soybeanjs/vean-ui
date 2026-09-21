@@ -10,7 +10,7 @@ head:
 
 `VisuallyHidden` is a utility component that hides content from the screen but keeps it accessible to screen readers. It is essential for accessibility when you want to provide context to users relying on assistive technologies without affecting the visual design.
 
-> Note: This component is exported from `@soybeanjs/headless`.
+> Note: This component is exported from `@vean/aria`.
 
 ## Usage
 

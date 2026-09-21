@@ -68,8 +68,8 @@
         "type": "Interface TreeItemProps",
         "resolvedType": "{ value: string; level: number; disabled?: boolean; disabledSelect?: boolean; disabledToggle?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the TreeItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.props",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.props",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -77,10 +77,10 @@
             "type": "string",
             "required": true,
             "description": "Value associated with the current item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -88,10 +88,10 @@
             "type": "number",
             "required": true,
             "description": "Level.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.level",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.level",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -99,10 +99,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from selecting or toggling the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -110,10 +110,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from selecting the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.disabledselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.disabledselect",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -121,10 +121,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from toggling the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.disabledtoggle",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.disabledtoggle",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -132,10 +132,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -143,10 +143,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -181,8 +181,8 @@
         "type": "TypeAlias TreeItemEmits",
         "resolvedType": "{ select: [event: TreeSelectEvent<string>]; toggle: [event: TreeToggleEvent<string>] }",
         "description": "Events for the TreeItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitememits.emits",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitememits.emits",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -192,8 +192,8 @@
             "parameters": "event: TreeSelectEvent<string>",
             "required": true,
             "description": "Event handler called when selecting item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitememits.callables.select",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitememits.callables.select",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeSelectEvent",
@@ -201,8 +201,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent | KeyboardEvent; value?: string | undefined; isExpanded: boolean; isSelected: boolean; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.treeselectevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.treeselectevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T = AcceptableValue"],
                 "external": false,
                 "members": [],
@@ -216,8 +216,8 @@
             "parameters": "event: TreeToggleEvent<string>",
             "required": true,
             "description": "Event handler called when toggling item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitememits.callables.toggle",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitememits.callables.toggle",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeToggleEvent",
@@ -225,8 +225,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent | KeyboardEvent; value?: string | undefined; isExpanded: boolean; isSelected: boolean; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.treetoggleevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.treetoggleevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T = AcceptableValue"],
                 "external": false,
                 "members": [],
@@ -245,8 +245,8 @@
         "type": "Interface TreeRootProps<T, U, M>",
         "resolvedType": "{ modelValue?: U; defaultValue?: U; multiple?: IsMultiple<U, M>; items?: T[]; expanded?: string[]; defaultExpanded?: string[]; selectionBehavior?: TreeSelectBehavior; toggleBehavior?: TreeToggleBehavior; dir?: Direction; loop?: boolean; disabled?: boolean; propagateSelect?: boolean; bubbleSelect?: boolean; allowParentSelect?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the TreeRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.props",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.props",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": ["TypeParameter T", "TypeParameter U", "TypeParameter M"],
         "members": [
           {
@@ -254,10 +254,10 @@
             "type": "U",
             "required": false,
             "description": "The controlled value of the tree. Can be bound-with with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -265,10 +265,10 @@
             "type": "U",
             "required": false,
             "description": "The value of the tree when initially rendered. Use when you do not need to control the state of the tree",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -276,10 +276,10 @@
             "type": "IsMultiple<U, M>",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.multiple",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "IsMultiple",
@@ -287,8 +287,8 @@
                 "type": "U extends string ? false : M extends true ? true : false",
                 "resolvedType": "U extends string ? false : M extends true ? true : false",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.ismultiple",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.ismultiple",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": ["U extends MaybeArray<string> | undefined", "M extends boolean"],
                 "external": false,
                 "members": [],
@@ -301,10 +301,10 @@
             "type": "T[]",
             "required": false,
             "description": "List of items",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -312,10 +312,10 @@
             "type": "string[]",
             "required": false,
             "description": "The controlled value of the expanded item. Can be bound-with with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.expanded",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.expanded",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -323,10 +323,10 @@
             "type": "string[]",
             "required": false,
             "description": "The value of the expanded tree when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.defaultexpanded",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.defaultexpanded",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -334,10 +334,10 @@
             "type": "TreeSelectBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.selectionbehavior",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeSelectBehavior",
@@ -345,8 +345,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "Type information for TreeSelectBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeselectbehavior",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeselectbehavior",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -359,10 +359,10 @@
             "type": "TreeToggleBehavior",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be toggled at a time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.togglebehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.togglebehavior",
             "default": "'multiple'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeToggleBehavior",
@@ -370,8 +370,8 @@
                 "type": "'multiple' | 'single'",
                 "resolvedType": "'multiple' | 'single'",
                 "description": "Type information for TreeToggleBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treetogglebehavior",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treetogglebehavior",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -384,10 +384,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -395,8 +395,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -409,10 +409,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, keyboard navigation will loop from last item to first, and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.loop",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -420,10 +420,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with tree",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -431,10 +431,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, selecting parent will select the descendants.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.propagateselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.propagateselect",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -442,10 +442,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, selecting children will update the parent state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.bubbleselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.bubbleselect",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -453,10 +453,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, parent can be selected.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.allowparentselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.allowparentselect",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -464,10 +464,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -475,10 +475,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -513,8 +513,8 @@
         "type": "TypeAlias TreeRootEmits<M>",
         "resolvedType": "{ \"update:modelValue\": [value: M extends true ? string[] : string]; \"update:expanded\": [value: string[]] }",
         "description": "Events for the TreeRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootemits.emits",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootemits.emits",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [],
         "callables": [
@@ -524,8 +524,8 @@
             "parameters": "value: M extends true ? string[] : string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -534,8 +534,8 @@
             "parameters": "value: string[]",
             "required": true,
             "description": "Emitted when the expanded state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treerootemits.callables.update_expanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treerootemits.callables.update_expanded",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           }
         ],
@@ -569,8 +569,8 @@
                 "type": "VirtualizerContentProps",
                 "resolvedType": "{ dynamicContentProps?: VirtualizerDynamicContentProps; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the VirtualizerContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -579,10 +579,10 @@
                     "type": "VirtualizerDynamicContentProps",
                     "required": false,
                     "description": "Properties forwarded to the dynamic content element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.dynamiccontentprops",
+                    "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.dynamiccontentprops",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                    "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -590,10 +590,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -601,10 +601,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizercontentprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizercontentprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -628,8 +628,8 @@
                 "type": "VirtualizerDynamicContentProps",
                 "resolvedType": null,
                 "description": "Properties for the VirtualizerDynamicContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizerdynamiccontentprops",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizerdynamiccontentprops",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -656,7 +656,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -667,7 +667,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -678,7 +678,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "IsMultiple",
@@ -686,8 +686,8 @@
                 "type": "U extends string ? false : M extends true ? true : false",
                 "resolvedType": "U extends string ? false : M extends true ? true : false",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.ismultiple",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.ismultiple",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": ["U extends MaybeArray<string> | undefined", "M extends boolean"],
                 "external": false,
                 "members": [],
@@ -703,7 +703,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -714,7 +714,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.expanded",
             "default": null,
             "inheritedFrom": "expanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -725,7 +725,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.defaultexpanded",
             "default": null,
             "inheritedFrom": "defaultExpanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -736,7 +736,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.selectionbehavior",
             "default": null,
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeSelectBehavior",
@@ -744,8 +744,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "Type information for TreeSelectBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeselectbehavior",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeselectbehavior",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -761,7 +761,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.togglebehavior",
             "default": "'multiple'",
             "inheritedFrom": "toggleBehavior",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeToggleBehavior",
@@ -769,8 +769,8 @@
                 "type": "'multiple' | 'single'",
                 "resolvedType": "'multiple' | 'single'",
                 "description": "Type information for TreeToggleBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treetogglebehavior",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treetogglebehavior",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -786,7 +786,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -794,8 +794,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -811,7 +811,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.loop",
             "default": "true",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -822,7 +822,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -833,7 +833,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.propagateselect",
             "default": null,
             "inheritedFrom": "propagateSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -844,7 +844,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.bubbleselect",
             "default": null,
             "inheritedFrom": "bubbleSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -855,7 +855,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.allowparentselect",
             "default": null,
             "inheritedFrom": "allowParentSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -866,7 +866,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -877,7 +877,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -910,7 +910,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.height",
             "default": null,
             "inheritedFrom": "height",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -921,7 +921,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.options",
             "default": null,
             "inheritedFrom": "options",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualizerOptions",
@@ -929,8 +929,8 @@
                 "type": "VirtualizerOptions",
                 "resolvedType": null,
                 "description": "Type information for VirtualizerOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeroptions",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeroptions",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -946,7 +946,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizerprops.members.dynamic",
             "default": null,
             "inheritedFrom": "dynamic",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           }
         ],
@@ -971,7 +971,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizeremits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -981,7 +981,7 @@
             "required": true,
             "description": "Emitted when the expanded state changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_tree_types.treevirtualizeremits.callables.update_expanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           }
         ],
@@ -995,8 +995,8 @@
         "type": "Interface TreeVirtualizerItemProps",
         "resolvedType": "{ value: string; level: number; disabled?: boolean; disabledSelect?: boolean; disabledToggle?: boolean; asChild?: boolean; as?: AsTag | Component; data: VirtualItem; customStyle?: boolean }",
         "description": "Properties for the TreeVirtualizerItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.props",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.props",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1004,10 +1004,10 @@
             "type": "string",
             "required": true,
             "description": "Value associated with the current item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.value",
             "default": null,
             "inheritedFrom": "value",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1015,10 +1015,10 @@
             "type": "number",
             "required": true,
             "description": "Level.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.level",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.level",
             "default": null,
             "inheritedFrom": "level",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1026,10 +1026,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from selecting or toggling the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1037,10 +1037,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from selecting the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.disabledselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.disabledselect",
             "default": null,
             "inheritedFrom": "disabledSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1048,10 +1048,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from toggling the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.disabledtoggle",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.disabledtoggle",
             "default": null,
             "inheritedFrom": "disabledToggle",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1059,10 +1059,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1070,10 +1070,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1103,10 +1103,10 @@
             "type": "VirtualItem",
             "required": true,
             "description": "Data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.data",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.data",
             "default": null,
             "inheritedFrom": "data",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualItem",
@@ -1128,10 +1128,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether custom style.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritemprops.members.customstyle",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritemprops.members.customstyle",
             "default": null,
             "inheritedFrom": "customStyle",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1144,8 +1144,8 @@
         "type": "TypeAlias TreeVirtualizerItemEmits: TreeItemEmits",
         "resolvedType": "{ select: [event: TreeSelectEvent<string>]; toggle: [event: TreeToggleEvent<string>] }",
         "description": "Events for the TreeVirtualizerItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritememits.emits",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritememits.emits",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1155,8 +1155,8 @@
             "parameters": "event: TreeSelectEvent<string>",
             "required": true,
             "description": "Event handler called when selecting item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritememits.callables.select",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritememits.callables.select",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeSelectEvent",
@@ -1164,8 +1164,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent | KeyboardEvent; value?: string | undefined; isExpanded: boolean; isSelected: boolean; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.treeselectevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.treeselectevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T = AcceptableValue"],
                 "external": false,
                 "members": [],
@@ -1179,8 +1179,8 @@
             "parameters": "event: TreeToggleEvent<string>",
             "required": true,
             "description": "Event handler called when toggling item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizeritememits.callables.toggle",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizeritememits.callables.toggle",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeToggleEvent",
@@ -1188,8 +1188,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent | KeyboardEvent; value?: string | undefined; isExpanded: boolean; isSelected: boolean; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.treetoggleevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.treetoggleevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T = AcceptableValue"],
                 "external": false,
                 "members": [],
@@ -1205,8 +1205,8 @@
             "type": "{ select: [event: TreeSelectEvent<string>]; toggle: [event: TreeToggleEvent<string>]; }",
             "resolvedType": "{ select: [event: TreeSelectEvent<string>]; toggle: [event: TreeToggleEvent<string>] }",
             "description": "Events for the TreeItem component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitememits",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitememits",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1217,8 +1217,8 @@
                 "parameters": "event: TreeSelectEvent<string>",
                 "required": true,
                 "description": "Event handler called when selecting item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitememits.callables.select",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitememits.callables.select",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1227,8 +1227,8 @@
                 "parameters": "event: TreeToggleEvent<string>",
                 "required": true,
                 "description": "Event handler called when toggling item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeitememits.callables.toggle",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeitememits.callables.toggle",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1243,8 +1243,8 @@
         "type": "Interface TreeVirtualizerRootProps<T, U, M>",
         "resolvedType": "{ modelValue?: U; defaultValue?: U; multiple?: IsMultiple<U, M>; items?: T[]; expanded?: string[]; defaultExpanded?: string[]; selectionBehavior?: TreeSelectBehavior; toggleBehavior?: TreeToggleBehavior; dir?: Direction; loop?: boolean; disabled?: boolean; propagateSelect?: boolean; bubbleSelect?: boolean; allowParentSelect?: boolean; asChild?: boolean; as?: AsTag | Component; height: string | number; options?: VirtualizerOptions; dynamic?: boolean }",
         "description": "Properties for the TreeVirtualizerRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.props",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.props",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": ["TypeParameter T", "TypeParameter U", "TypeParameter M"],
         "members": [
           {
@@ -1252,10 +1252,10 @@
             "type": "U",
             "required": false,
             "description": "The controlled value of the tree. Can be bound-with with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1263,10 +1263,10 @@
             "type": "U",
             "required": false,
             "description": "The value of the tree when initially rendered. Use when you do not need to control the state of the tree",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1274,10 +1274,10 @@
             "type": "IsMultiple<U, M>",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "IsMultiple",
@@ -1285,8 +1285,8 @@
                 "type": "U extends string ? false : M extends true ? true : false",
                 "resolvedType": "U extends string ? false : M extends true ? true : false",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.ismultiple",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.ismultiple",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": ["U extends MaybeArray<string> | undefined", "M extends boolean"],
                 "external": false,
                 "members": [],
@@ -1299,10 +1299,10 @@
             "type": "T[]",
             "required": false,
             "description": "List of items",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1310,10 +1310,10 @@
             "type": "string[]",
             "required": false,
             "description": "The controlled value of the expanded item. Can be bound-with with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.expanded",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.expanded",
             "default": null,
             "inheritedFrom": "expanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1321,10 +1321,10 @@
             "type": "string[]",
             "required": false,
             "description": "The value of the expanded tree when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.defaultexpanded",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.defaultexpanded",
             "default": null,
             "inheritedFrom": "defaultExpanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1332,10 +1332,10 @@
             "type": "TreeSelectBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.selectionbehavior",
             "default": null,
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeSelectBehavior",
@@ -1343,8 +1343,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "Type information for TreeSelectBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treeselectbehavior",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treeselectbehavior",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1357,10 +1357,10 @@
             "type": "TreeToggleBehavior",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be toggled at a time.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.togglebehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.togglebehavior",
             "default": "'multiple'",
             "inheritedFrom": "toggleBehavior",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "TreeToggleBehavior",
@@ -1368,8 +1368,8 @@
                 "type": "'multiple' | 'single'",
                 "resolvedType": "'multiple' | 'single'",
                 "description": "Type information for TreeToggleBehavior.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treetogglebehavior",
-                "sourcePath": "packages/headless/src/components/tree/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treetogglebehavior",
+                "sourcePath": "packages/aria/src/components/tree/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1382,10 +1382,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1393,8 +1393,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1407,10 +1407,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, keyboard navigation will loop from last item to first, and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.loop",
             "default": "true",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1418,10 +1418,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with tree",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1429,10 +1429,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, selecting parent will select the descendants.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.propagateselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.propagateselect",
             "default": null,
             "inheritedFrom": "propagateSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1440,10 +1440,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, selecting children will update the parent state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.bubbleselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.bubbleselect",
             "default": null,
             "inheritedFrom": "bubbleSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1451,10 +1451,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, parent can be selected.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.allowparentselect",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.allowparentselect",
             "default": null,
             "inheritedFrom": "allowParentSelect",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1462,10 +1462,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1473,10 +1473,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1506,10 +1506,10 @@
             "type": "string | number",
             "required": true,
             "description": "The height of the virtualizer root",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.height",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.height",
             "default": null,
             "inheritedFrom": "height",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           },
           {
@@ -1517,10 +1517,10 @@
             "type": "VirtualizerOptions",
             "required": false,
             "description": "Options.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.options",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.options",
             "default": null,
             "inheritedFrom": "options",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": [
               {
                 "name": "VirtualizerOptions",
@@ -1528,8 +1528,8 @@
                 "type": "VirtualizerOptions",
                 "resolvedType": null,
                 "description": "Type information for VirtualizerOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_virtualizer_types.virtualizeroptions",
-                "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_virtualizer_types.virtualizeroptions",
+                "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1542,10 +1542,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether dynamic.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootprops.members.dynamic",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootprops.members.dynamic",
             "default": null,
             "inheritedFrom": "dynamic",
-            "sourcePath": "packages/headless/src/components/virtualizer/types.ts",
+            "sourcePath": "packages/aria/src/components/virtualizer/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1558,8 +1558,8 @@
         "type": "TypeAlias TreeVirtualizerRootEmits<M>: TreeRootEmits<M>",
         "resolvedType": "{ \"update:modelValue\": [value: M extends true ? string[] : string]; \"update:expanded\": [value: string[]] }",
         "description": "Events for the TreeVirtualizerRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootemits.emits",
-        "sourcePath": "packages/headless/src/components/tree/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootemits.emits",
+        "sourcePath": "packages/aria/src/components/tree/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [],
         "callables": [
@@ -1569,8 +1569,8 @@
             "parameters": "value: M extends true ? string[] : string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           },
           {
@@ -1579,8 +1579,8 @@
             "parameters": "value: string[]",
             "required": true,
             "description": "Emitted when the expanded state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tree_types.treevirtualizerrootemits.callables.update_expanded",
-            "sourcePath": "packages/headless/src/components/tree/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tree_types.treevirtualizerrootemits.callables.update_expanded",
+            "sourcePath": "packages/aria/src/components/tree/types.ts",
             "referencedTypes": []
           }
         ],

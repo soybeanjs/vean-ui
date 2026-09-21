@@ -1,8 +1,8 @@
 {
-  "name": "soybean-ui",
-  "homepage": "https://ui.soybeanjs.cn",
+  "name": "vean",
+  "homepage": "https://veanui.com",
   "packages": [
-    { "name": "ui", "scope": "@soybeanjs/ui", "prefix": "S" },
+    { "name": "ui", "scope": "@vean/ui", "prefix": "S" },
     { "name": "acme", "scope": "@acme/ui", "prefix": "A" },
     { "name": "admin", "scope": "@soybeanjs/admin", "prefix": "S", "nounPrefix": "App" }
   ],
@@ -12,7 +12,7 @@
       "package": "ui",
       "type": "registry:ui",
       "description": "Displays a button or a component that looks like a button.",
-      "dependencies": ["@soybeanjs/headless"],
+      "dependencies": ["@vean/aria"],
       "files": [
         {
           "path": "components/button/button.vue",
@@ -33,7 +33,7 @@
       "package": "acme",
       "type": "registry:ui",
       "description": "Fictional third-party widget used to exercise namespaced resolution.",
-      "dependencies": ["@soybeanjs/ui"],
+      "dependencies": ["@vean/ui"],
       "files": [
         {
           "path": "components/widget/widget.vue",

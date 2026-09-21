@@ -1,14 +1,14 @@
 ---
 head:
   title: Alert
-  description: 'A callout that surfaces important, time-sensitive information — warnings, errors, or confirmations — near the content it refers to. SAlert combines an AlertRoot/AlertTitle/AlertDescription/AlertClose family of headless primitives (zero styles) with the alertVariants style recipe (6 slots, 8 colors × 5 variants × 6 sizes).'
+  description: 'A callout that surfaces important, time-sensitive information — warnings, errors, or confirmations — near the content it refers to. SAlert combines an AlertRoot/AlertTitle/AlertDescription/AlertClose family of Aria primitives (zero styles) with the alertVariants style recipe (6 slots, 8 colors × 5 variants × 6 sizes).'
 ---
 
 # Alert
 
 ## Overview
 
-A callout that surfaces important, time-sensitive information — warnings, errors, or confirmations — near the content it refers to. `SAlert` combines an `AlertRoot`/`AlertTitle`/`AlertDescription`/`AlertClose` family of headless primitives (zero styles) with the `alertVariants` style recipe (6 slots, 8 colors × 5 variants × 6 sizes).
+A callout that surfaces important, time-sensitive information — warnings, errors, or confirmations — near the content it refers to. `SAlert` combines an `AlertRoot`/`AlertTitle`/`AlertDescription`/`AlertClose` family of Aria primitives (zero styles) with the `alertVariants` style recipe (6 slots, 8 colors × 5 variants × 6 sizes).
 
 Use it for inline feedback that must not be missed. Prefer `toast` for transient, global notifications and `dialog` for blocking confirmations. For a banner-style full-width variant, track the roadmap `Banner` item.
 
@@ -18,7 +18,7 @@ Use it for inline feedback that must not be missed. Prefer `toast` for transient
 
 ## Features
 
-- 🧩 Headless/styled split — `AlertCompact` aggregates the primitives and composes the default icon/title/description/close; `SAlert` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `AlertCompact` aggregates the primitives and composes the default icon/title/description/close; `SAlert` only injects styles and forwards slots/events
 - 🏷️ Title + description — `title`/`description` props or the matching slots
 - ❌ Closable — `closable` renders a close `<button>` (localized `aria-label`) driven by `v-model:open`
 - 🎨 8 colors — `ThemeColor` values (`primary`/`destructive`/`success`/`warning`/`info`/`carbon`/`secondary`/`accent`)
@@ -30,12 +30,12 @@ Use it for inline feedback that must not be missed. Prefer `toast` for transient
 ## Component family
 
 - `SAlert` (styled) — the entry wrapper; `alertVariants` recipe with dynamic slot forwarding
-- `AlertRoot` (headless) — the container; owns `open` via `useControllableState` and `provideAlertRootContext`
-- `AlertContent` (headless) — the content area hosting title/description
-- `AlertTitle` (headless) — the title
-- `AlertDescription` (headless) — the description
-- `AlertClose` (headless) — the close `<button>`; localized `aria-label`, emits `close` and toggles `open`
-- `AlertCompact` (headless) — the aggregated composite; composes icon/title/description/close and exposes the slots
+- `AlertRoot` (Aria) — the container; owns `open` via `useControllableState` and `provideAlertRootContext`
+- `AlertContent` (Aria) — the content area hosting title/description
+- `AlertTitle` (Aria) — the title
+- `AlertDescription` (Aria) — the description
+- `AlertClose` (Aria) — the close `<button>`; localized `aria-label`, emits `close` and toggles `open`
+- `AlertCompact` (Aria) — the aggregated composite; composes icon/title/description/close and exposes the slots
 
 ## Demos
 
@@ -49,18 +49,18 @@ Use it for inline feedback that must not be missed. Prefer `toast` for transient
 
 ### Architecture and benchmark differences
 
-`AlertCompact` owns the icon/title/description/close composition while every primitive stays style-free and only the UI wrapper injects the `alertVariants` classes. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled alert with `type`/`closable`/`showIcon` props. SoybeanUI exposes the full per-slot `*Props` channels and a `size` scale the single-package libraries generally omit, and localizes the close button's `aria-label` (via `alert.close`) instead of relying on a plain `×` glyph.
+`AlertCompact` owns the icon/title/description/close composition while every primitive stays style-free and only the UI wrapper injects the `alertVariants` classes. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled alert with `type`/`closable`/`showIcon` props. VeanUI exposes the full per-slot `*Props` channels and a `size` scale the single-package libraries generally omit, and localizes the close button's `aria-label` (via `alert.close`) instead of relying on a plain `×` glyph.
 
-| Capability                  | SoybeanUI | shadcn/ui | Ant Design Alert | Element Plus Alert | Mantine Alert | Naive UI Alert |
-| :-------------------------- | :-------: | :-------: | :--------------: | :----------------: | :-----------: | :------------: |
-| Headless/styled split       |    ✅     |    ✅     |        —         |         —          |       —       |       —        |
-| Title + description         |    ✅     |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
-| Closable                    |    ✅     |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
-| Leading icon                |    ✅     |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
-| Variants (solid/soft/ghost) |    ✅     |    ✅     |        —         |         —          |       —       |       —        |
-| Colors (8)                  |    ✅     |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
-| Sizes (6)                   |    ✅     |     —     |        —         |         —          |       —       |       —        |
-| Localized close label       |    ✅     |     —     |        —         |         ✅         |       —       |       —        |
+| Capability                  | VeanUI | shadcn/ui | Ant Design Alert | Element Plus Alert | Mantine Alert | Naive UI Alert |
+| :-------------------------- | :----: | :-------: | :--------------: | :----------------: | :-----------: | :------------: |
+| Aria/styled split           |   ✅   |    ✅     |        —         |         —          |       —       |       —        |
+| Title + description         |   ✅   |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
+| Closable                    |   ✅   |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
+| Leading icon                |   ✅   |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
+| Variants (solid/soft/ghost) |   ✅   |    ✅     |        —         |         —          |       —       |       —        |
+| Colors (8)                  |   ✅   |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
+| Sizes (6)                   |   ✅   |     —     |        —         |         —          |       —       |       —        |
+| Localized close label       |   ✅   |     —     |        —         |         ✅         |       —       |       —        |
 
 `—` = unsupported or a different interaction model.
 

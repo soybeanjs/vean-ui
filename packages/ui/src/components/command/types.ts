@@ -4,8 +4,8 @@ import type {
   CommandCompactSlots,
   CommandSingleOptionData,
   CommandUi
-} from '@soybeanjs/headless/command';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/command';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

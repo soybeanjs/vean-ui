@@ -4,8 +4,8 @@ import type {
   SegmentCompactSlots,
   SegmentUi,
   SegmentOptionData
-} from '@soybeanjs/headless/segment';
-import type { AcceptableValue, ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/segment';
+import type { AcceptableValue, ClassValue } from '@vean/aria/types';
 import type { TabsFill as SegmentFill, TabsShape as SegmentShape } from '@/styles/tabs';
 import type { ThemeSize } from '@/theme';
 

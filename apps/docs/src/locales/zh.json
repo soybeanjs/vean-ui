@@ -9,7 +9,7 @@
     "timeline": "本站将于 2026 年 11 月重定向，{'@'}soybeanjs 系列包将于 2027 年 4 月标记废弃。"
   },
   "playground": {
-    "title": "SoybeanUI 演练场",
+    "title": "VeanUI 演练场",
     "loading": "加载中...",
     "empty": {
       "title": "暂无示例",
@@ -564,13 +564,13 @@
       "theme": "主题",
       "theme_configurator": "主题配置",
       "language": "语言",
-      "headless": "Headless"
+      "aria": "Aria"
     }
   },
   "components": {
     "catalog": {
       "title": "组件总览",
-      "description": "按分类浏览 Soybean UI 的全部组件，并直接跳转到每个组件对应的文档页面。",
+      "description": "按分类浏览 VeanUI 的全部组件，并直接跳转到每个组件对应的文档页面。",
       "helper": "你可以先按下面的分类浏览，也可以按 Command + K 直接搜索组件。",
       "kicker": "组件目录与入口",
       "group_count": "{count} 个组件",
@@ -595,7 +595,7 @@
         },
         "introduction": {
           "title": "先理解分层",
-          "desc": "先弄清 headless 与 UI 的职责边界，再挑组件会更准确。"
+          "desc": "先弄清 aria 与 UI 的职责边界，再挑组件会更准确。"
         },
         "theming": {
           "title": "先看主题能力",
@@ -616,7 +616,7 @@
       }
     },
     "home": {
-      "title": "SoybeanUI",
+      "title": "VeanUI",
       "description": "面向 Vue 3 的强大而优雅的组件系统，提供无头交互能力与开箱即用的样式封装。",
       "kicker": "Vue 3 组件系统",
       "actions": {
@@ -632,13 +632,9 @@
         "guides": "指南数"
       },
       "features": {
-        "headless_first": {
-          "title": "Headless First",
-          "desc": "{'@'}soybeanjs/headless 只提供状态、行为与可访问性语义，便于直接复用到自定义设计系统。"
-        },
         "styled_wrappers": {
           "title": "样式包装层",
-          "desc": "{'@'}soybeanjs/ui 提供带默认样式的 S 前缀组件，让常见界面可以直接交付而不必从零包样式。"
+          "desc": "{'@'}vean/ui 提供带默认样式的 S 前缀组件，让常见界面可以直接交付而不必从零包样式。"
         },
         "accessible": {
           "title": "内建可访问性",
@@ -663,6 +659,10 @@
         "ecosystem": {
           "title": "Vue 生态友好",
           "desc": "提供 Nuxt、自动导入与文档示例支持，让接入、演示和维护更顺手。"
+        },
+        "aria_first": {
+          "title": "Aria First",
+          "desc": "{'@'}vean/aria 只提供状态、行为与可访问性语义，便于直接复用到自定义设计系统。"
         }
       },
       "quick_links": {
@@ -693,7 +693,7 @@
           "npm": {
             "title": "NPM 包",
             "subtitle": "传统依赖",
-            "description": "将 {'@'}soybeanjs/ui 作为依赖安装。自动导入、Tree-shaking，通过包管理器无缝升级。",
+            "description": "将 {'@'}vean/ui 作为依赖安装。自动导入、Tree-shaking，通过包管理器无缝升级。",
             "feature_0": "一行命令安装",
             "feature_1": "支持 unplugin-vue-components 自动导入",
             "feature_2": "Tree-shaking — 只打包使用的代码",
@@ -704,10 +704,10 @@
           "cli": {
             "title": "CLI · 复制粘贴",
             "subtitle": "shadcn 风格",
-            "description": "通过 sbean CLI 将源码复制到你的项目中。完全控制、完全自定义 — 你拥有代码。",
+            "description": "通过 vean CLI 将源码复制到你的项目中。完全控制、完全自定义 — 你拥有代码。",
             "feature_0": "组件存在于你的源码树中",
             "feature_1": "可编辑任何文件 — 完全自定义",
-            "feature_2": "sbean diff 查看上游变更",
+            "feature_2": "vean diff 查看上游变更",
             "feature_3": "只有你添加的组件才会存在",
             "feature_4": "自定义设计系统的最佳选择",
             "cta": "尝试 CLI"
@@ -715,7 +715,7 @@
         },
         "featured": {
           "title": "高频组件入口",
-          "desc": "如果你想先感受体系能力，这些组件最能代表 SoybeanUI 的常用交互面。"
+          "desc": "如果你想先感受体系能力，这些组件最能代表 VeanUI 的常用交互面。"
         },
         "categories": {
           "title": "按场景浏览组件"
@@ -747,8 +747,8 @@
     "utilities": "工具",
     "installation": "安装",
     "cli": "CLI",
-    "headless": "Headless",
-    "migration": "升级指南"
+    "migration": "升级指南",
+    "aria": "Aria"
   },
   "migration": {
     "kicker": "升级指南",
@@ -757,7 +757,6 @@
   },
   "api": {
     "ui_layer": "UI 层",
-    "headless_layer": "Headless 层",
     "chart_layer": "Chart 层",
     "admin_layer": "Admin 层",
     "props": "属性",
@@ -775,7 +774,8 @@
     },
     "actions": {
       "open_full_type": "查看完整类型"
-    }
+    },
+    "aria_layer": "Aria 层"
   },
   "changelog": {
     "actions": {
@@ -907,15 +907,6 @@
       "scatter": "散点图：展示两个数值维度之间的相关性。"
     }
   },
-  "headless": {
-    "catalog": {
-      "title": "Headless",
-      "notice": {
-        "title": "文档建设中",
-        "description": "Headless 文档正在编写中，可先查阅组件（Components）下的样式化 API 参考。"
-      }
-    }
-  },
   "themeEditor": {
     "title": "主题编辑器",
     "description": "左侧调整主题配置，下方组件实时跟随。面板即真实的 SThemeCustomizer：颜色、圆角、尺寸、间距、字体、表面、描边与逐 token 覆盖都会即时作用于当前页面。",
@@ -989,5 +980,14 @@
   },
   "button": {
     "back_to_home": "返回首页"
+  },
+  "aria": {
+    "catalog": {
+      "title": "Aria",
+      "notice": {
+        "title": "文档建设中",
+        "description": "Aria 文档正在编写中，可先查阅组件（Components）下的样式化 API 参考。"
+      }
+    }
   }
 }

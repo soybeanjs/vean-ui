@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends DefinedValue = DefinedValue">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { ContextMenuCompact } from '@soybeanjs/headless/context-menu';
-import { keysOf } from '@soybeanjs/headless/shared';
-import type { DefinedValue } from '@soybeanjs/headless/types';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { ContextMenuCompact } from '@vean/aria/context-menu';
+import { keysOf } from '@vean/aria/shared';
+import type { DefinedValue } from '@vean/aria/types';
 import { provideMenuUi } from '../menu/context';
 import type { ContextMenuProps, ContextMenuEmits, ContextMenuSlots } from './types';
 

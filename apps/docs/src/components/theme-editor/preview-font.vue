@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { SCard, SKbd } from '@soybeanjs/ui';
+import { SCard, SKbd } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewFont'

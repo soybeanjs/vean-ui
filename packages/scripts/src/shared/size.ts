@@ -9,7 +9,7 @@ import path from 'node:path';
  * bundler, packing) lives in `./size-measure`, so the rules stay unit-testable
  * without building the packages.
  *
- * Why "published entry points": `packages/{ui,headless}/package.json` `exports`
+ * Why "published entry points": `packages/{ui,aria}/package.json` `exports`
  * resolve to `./src/*.ts` for in-repo development, so a naive bundle would
  * measure TypeScript source. The publishConfig map is the only truthful
  * description of what a consumer downloads, so resolution is derived from it

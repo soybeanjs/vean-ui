@@ -37,19 +37,19 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 由 headless 的 `SwitchRoot`（`useControllableState` + `VisuallyHiddenInput` 表单代理）→ `SwitchControl`（`Button` 基座 + `role="switch"` + `aria-checked`/`data-state`，禁用守卫）→ `SwitchThumb`（`Primitive` + `data-state`/`data-disabled`）组成。`SwitchCompact` 聚合 root + control + thumb，持有 `leading`/`trailing` 插槽并生成控件 id；UI 包装器 `SSwitch` 仅通过 `switchVariants` 计算变体类并经由 `provideSwitchUi` 注入 `ui` 映射。
+VeanUI 由 Aria 的 `SwitchRoot`（`useControllableState` + `VisuallyHiddenInput` 表单代理）→ `SwitchControl`（`Button` 基座 + `role="switch"` + `aria-checked`/`data-state`，禁用守卫）→ `SwitchThumb`（`Primitive` + `data-state`/`data-disabled`）组成。`SwitchCompact` 聚合 root + control + thumb，持有 `leading`/`trailing` 插槽并生成控件 id；UI 包装器 `SSwitch` 仅通过 `switchVariants` 计算变体类并经由 `provideSwitchUi` 注入 `ui` 映射。
 
-| 能力                             | SoybeanUI | Ant Design `Switch` | Element Plus `Switch` | Mantine `Switch` | Naive UI `Switch` | shadcn `Switch` |
-| :------------------------------- | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
-| headless/styled 分离             |    ✅     |          —          |           —           |        —         |         —         |       ✅        |
-| 受控/非受控                      |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| 自定义开/关值                    |    ✅     |         ✅          |          ✅           |        —         |        ✅         |       ✅        |
-| leading/trailing 插槽            |    ✅     |          —          |          ✅           |        ✅        |         —         |        —        |
-| `loading` 状态                   |    ➕     |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
-| 内联标签（`onLabel`/`offLabel`） |    ➕     |          —          |          ✅           |        ✅        |         —         |        —        |
-| `beforeChange` 钩子              |    ➕     |          —          |          ✅           |        —         |         —         |        —        |
-| 表单代理 / `name` 提交           |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| axe 零违规                       |    ✅     |          —          |           —           |        —         |         —         |        —        |
+| 能力                             | VeanUI | Ant Design `Switch` | Element Plus `Switch` | Mantine `Switch` | Naive UI `Switch` | shadcn `Switch` |
+| :------------------------------- | :----: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
+| Aria/styled 分离                 |   ✅   |          —          |           —           |        —         |         —         |       ✅        |
+| 受控/非受控                      |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| 自定义开/关值                    |   ✅   |         ✅          |          ✅           |        —         |        ✅         |       ✅        |
+| leading/trailing 插槽            |   ✅   |          —          |          ✅           |        ✅        |         —         |        —        |
+| `loading` 状态                   |   ➕   |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
+| 内联标签（`onLabel`/`offLabel`） |   ➕   |          —          |          ✅           |        ✅        |         —         |        —        |
+| `beforeChange` 钩子              |   ➕   |          —          |          ✅           |        —         |         —         |        —        |
+| 表单代理 / `name` 提交           |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| axe 零违规                       |   ✅   |          —          |           —           |        —         |         —         |        —        |
 
 ### 运行约束
 

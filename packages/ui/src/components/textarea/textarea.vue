@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import { TextareaCompact, provideTextareaUi } from '@soybeanjs/headless/textarea';
+import { useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import { TextareaCompact, provideTextareaUi } from '@vean/aria/textarea';
 import { textareaVariants } from '@/styles/textarea';
 import type { TextareaProps, TextareaEmits, TextareaSlots } from './types';
 

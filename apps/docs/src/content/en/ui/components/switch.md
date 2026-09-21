@@ -37,19 +37,19 @@ A control that toggles between checked and unchecked states with a sliding thumb
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds the switch from headless `SwitchRoot` (`useControllableState` + `VisuallyHiddenInput` form proxy) → `SwitchControl` (`Button` base + `role="switch"` + `aria-checked`/`data-state`, disabled-guarded) → `SwitchThumb` (`Primitive` + `data-state`/`data-disabled`). `SwitchCompact` composes root + control + thumb, owns the `leading`/`trailing` slots, and generates the control id; the UI wrapper `SSwitch` only computes variant classes via `switchVariants` and injects the `ui` map through `provideSwitchUi`.
+VeanUI builds the switch from Aria `SwitchRoot` (`useControllableState` + `VisuallyHiddenInput` form proxy) → `SwitchControl` (`Button` base + `role="switch"` + `aria-checked`/`data-state`, disabled-guarded) → `SwitchThumb` (`Primitive` + `data-state`/`data-disabled`). `SwitchCompact` composes root + control + thumb, owns the `leading`/`trailing` slots, and generates the control id; the UI wrapper `SSwitch` only computes variant classes via `switchVariants` and injects the `ui` map through `provideSwitchUi`.
 
-| Capability                          | SoybeanUI | Ant Design `Switch` | Element Plus `Switch` | Mantine `Switch` | Naive UI `Switch` | shadcn `Switch` |
-| :---------------------------------- | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
-| headless/styled split               |    ✅     |          —          |           —           |        —         |         —         |       ✅        |
-| Controlled/uncontrolled             |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Custom on/off values                |    ✅     |         ✅          |          ✅           |        —         |        ✅         |       ✅        |
-| Leading/trailing slots              |    ✅     |          —          |          ✅           |        ✅        |         —         |        —        |
-| `loading` state                     |    ➕     |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
-| Inline label (`onLabel`/`offLabel`) |    ➕     |          —          |          ✅           |        ✅        |         —         |        —        |
-| `beforeChange` hook                 |    ➕     |          —          |          ✅           |        —         |         —         |        —        |
-| Form proxy / `name` submit          |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Axe-clean                           |    ✅     |          —          |           —           |        —         |         —         |        —        |
+| Capability                          | VeanUI | Ant Design `Switch` | Element Plus `Switch` | Mantine `Switch` | Naive UI `Switch` | shadcn `Switch` |
+| :---------------------------------- | :----: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
+| Aria/styled split                   |   ✅   |          —          |           —           |        —         |         —         |       ✅        |
+| Controlled/uncontrolled             |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Custom on/off values                |   ✅   |         ✅          |          ✅           |        —         |        ✅         |       ✅        |
+| Leading/trailing slots              |   ✅   |          —          |          ✅           |        ✅        |         —         |        —        |
+| `loading` state                     |   ➕   |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
+| Inline label (`onLabel`/`offLabel`) |   ➕   |          —          |          ✅           |        ✅        |         —         |        —        |
+| `beforeChange` hook                 |   ➕   |          —          |          ✅           |        —         |         —         |        —        |
+| Form proxy / `name` submit          |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Axe-clean                           |   ✅   |          —          |           —           |        —         |         —         |        —        |
 
 ### Cautions
 

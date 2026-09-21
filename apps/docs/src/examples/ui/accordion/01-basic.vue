@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SAccordion, SButtonIcon, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { AccordionOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SAccordion, SButtonIcon, SSelect, SSwitch } from '@vean/ui';
+import type { AccordionOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

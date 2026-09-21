@@ -46,7 +46,7 @@ export function readManifest(packageDir: string): WorkspacePackageManifest | nul
     dependencies: readStringArray(Object.keys(toRecord(raw.dependencies))),
     dir: packageDir,
     // `publishConfig.exports` is what npm consumers resolve; the top-level
-    // `exports` map is the in-repo (source) surface for headless and ui.
+    // `exports` map is the in-repo (source) surface for aria and ui.
     exports: toRecord(toRecord(raw.publishConfig).exports ?? raw.exports),
     name,
     peerDependencies: readStringArray(Object.keys(toRecord(raw.peerDependencies)))
@@ -129,9 +129,9 @@ const createPublishedShapePlugin = (
   manifests: readonly WorkspacePackageManifest[],
   external: readonly string[]
 ): Plugin => ({
-  name: 'soybean-ui-published-shape',
+  name: 'vean-ui-published-shape',
   setup(context) {
-    context.onResolve({ filter: /^@soybeanjs\// }, args => {
+    context.onResolve({ filter: /^@vean\// }, args => {
       if (isExternalSpecifier(args.path, external)) {
         return null;
       }

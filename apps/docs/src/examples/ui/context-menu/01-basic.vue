@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButtonIcon, SContextMenu, SInputNumber, SSwitch } from '@soybeanjs/ui';
-import type { MenuOptionData } from '@soybeanjs/ui';
+import { SButtonIcon, SContextMenu, SInputNumber, SSwitch } from '@vean/ui';
+import type { MenuOptionData } from '@vean/ui';
 import ContextMenuTrigger from './_trigger.vue';
 
 interface Props {

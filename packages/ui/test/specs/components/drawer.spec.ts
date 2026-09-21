@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from 'vitest';
 import { defineComponent, h, nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { DialogFullscreen } from '@soybeanjs/headless/dialog';
-import { DrawerPopup, DrawerRoot, DrawerRootNested, DrawerViewport } from '@soybeanjs/headless/drawer';
+import { DialogFullscreen } from '@vean/aria/dialog';
+import { DrawerPopup, DrawerRoot, DrawerRootNested, DrawerViewport } from '@vean/aria/drawer';
 import SDrawer from '@/components/drawer/drawer.vue';
 
 function mockRect(element: Element, rect: { x?: number; y?: number; width?: number; height?: number }) {
@@ -99,7 +99,7 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-handle]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-handle]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -113,11 +113,11 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-trigger]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-drawer-header]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-drawer-title]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-drawer-content]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-drawer-close]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-drawer-trigger]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-drawer-header]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-drawer-title]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-drawer-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-drawer-close]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -184,7 +184,7 @@ describe('SDrawer', () => {
       await nextTick();
       await nextTick();
 
-      const popup = document.body.querySelector('[data-soybean-drawer-popup]') as HTMLElement | null;
+      const popup = document.body.querySelector('[data-vean-drawer-popup]') as HTMLElement | null;
 
       expect(popup).toBeTruthy();
 
@@ -246,7 +246,7 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeUndefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeUndefined();
 
       wrapper.unmount();
     });
@@ -268,7 +268,7 @@ describe('SDrawer', () => {
       // Before the wiring fix this stayed out of fullscreen: the absent Boolean
       // prop was cast to `false` on the way down, so `DialogRoot` read a
       // controlled `false` and ignored `defaultFullscreen` entirely.
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -288,11 +288,11 @@ describe('SDrawer', () => {
 
       await wrapper.setProps({ fullscreen: true });
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
 
       await wrapper.setProps({ fullscreen: false });
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeUndefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeUndefined();
 
       wrapper.unmount();
     });
@@ -315,10 +315,10 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
       expect(wrapper.emitted('update:fullscreen')![0][0]).toBe(true);
 
       wrapper.unmount();
@@ -352,10 +352,10 @@ describe('SDrawer', () => {
       await nextTick();
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
-      expect(wrapper.findAll('[data-soybean-drawer-popup]').map(node => node.attributes('data-fullscreen'))).toEqual([
+      expect(wrapper.findAll('[data-vean-drawer-popup]').map(node => node.attributes('data-fullscreen'))).toEqual([
         undefined,
         ''
       ]);
@@ -376,10 +376,10 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -402,10 +402,10 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -432,9 +432,9 @@ describe('SDrawer', () => {
         await nextTick();
         await nextTick();
 
-        const heightVar = () => wrapper.find('[data-soybean-drawer-popup]').attributes('style') ?? '';
+        const heightVar = () => wrapper.find('[data-vean-drawer-popup]').attributes('style') ?? '';
 
-        expect(heightVar()).toMatch(/--soybean-drawer-height:\s*178px/);
+        expect(heightVar()).toMatch(/--vean-drawer-height:\s*178px/);
 
         await wrapper.setProps({ open: false });
         await nextTick();
@@ -444,7 +444,7 @@ describe('SDrawer', () => {
 
         // The panel is viewport-sized while fullscreen, but that size is forced
         // by the style rather than measured from the content.
-        expect(heightVar()).toMatch(/--soybean-drawer-height:\s*178px/);
+        expect(heightVar()).toMatch(/--vean-drawer-height:\s*178px/);
 
         await wrapper.setProps({ open: false });
         await nextTick();
@@ -454,7 +454,7 @@ describe('SDrawer', () => {
 
         // The published height is what the box reads back as its own height, so a
         // captured 768 here would pin the panel to the viewport for good.
-        expect(heightVar()).toMatch(/--soybean-drawer-height:\s*178px/);
+        expect(heightVar()).toMatch(/--vean-drawer-height:\s*178px/);
 
         wrapper.unmount();
       } finally {
@@ -480,19 +480,19 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-fullscreen')).toBeDefined();
 
       await wrapper.setProps({ open: false });
       await wrapper.setProps({ open: true });
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-drawer-popup]');
+      const popup = wrapper.find('[data-vean-drawer-popup]');
 
       expect(popup.attributes('data-fullscreen')).toBeUndefined();
-      expect(popup.attributes('data-soybean-snap-points')).toBe('true');
+      expect(popup.attributes('data-vean-snap-points')).toBe('true');
       expect(wrapper.emitted('update:fullscreen')!.at(-1)).toEqual([false]);
 
       wrapper.unmount();
@@ -515,14 +515,14 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-drawer-popup]');
+      const popup = wrapper.find('[data-vean-drawer-popup]');
 
       // Fullscreen fixes the panel's size to the viewport, so a resting snap
       // point below "fully open" would translate it back down and leave the half
       // beyond the anchored edge off-screen. Both the flag and the box cap the
       // panel is measured against have to drop with it.
-      expect(popup.attributes('data-soybean-snap-points')).toBe('false');
-      expect(popup.attributes('style')).not.toContain('--soybean-drawer-max-height');
+      expect(popup.attributes('data-vean-snap-points')).toBe('false');
+      expect(popup.attributes('style')).not.toContain('--vean-drawer-max-height');
 
       wrapper.unmount();
     });
@@ -541,10 +541,10 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-drawer-popup]');
+      const popup = wrapper.find('[data-vean-drawer-popup]');
 
-      expect(popup.attributes('data-soybean-snap-points')).toBe('true');
-      expect(popup.attributes('style')).toContain('--soybean-drawer-max-height');
+      expect(popup.attributes('data-vean-snap-points')).toBe('true');
+      expect(popup.attributes('style')).toContain('--vean-drawer-max-height');
 
       wrapper.unmount();
     });
@@ -566,16 +566,16 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-drawer-popup]');
+      const popup = wrapper.find('[data-vean-drawer-popup]');
 
-      expect(popup.attributes('data-soybean-snap-points')).toBe('true');
+      expect(popup.attributes('data-vean-snap-points')).toBe('true');
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
       expect(popup.attributes('data-fullscreen')).toBeDefined();
-      expect(popup.attributes('data-soybean-snap-points')).toBe('false');
-      expect(popup.attributes('style')).not.toContain('--soybean-drawer-max-height');
+      expect(popup.attributes('data-vean-snap-points')).toBe('false');
+      expect(popup.attributes('style')).not.toContain('--vean-drawer-max-height');
 
       wrapper.unmount();
     });
@@ -596,7 +596,7 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-handle]').trigger('click');
+      await wrapper.find('[data-vean-handle]').trigger('click');
       // The handle defers its cycle behind `DOUBLE_TAP_TIMEOUT` (120ms) so a long
       // press can still cancel it.
       await new Promise(resolve => setTimeout(resolve, 200));
@@ -626,20 +626,20 @@ describe('SDrawer', () => {
         await nextTick();
         await nextTick();
 
-        const viewport = wrapper.find('[data-soybean-drawer-viewport]');
+        const viewport = wrapper.find('[data-vean-drawer-viewport]');
 
         // 0.5 of 768 = 384 high, so the 600px box rests 216px down; 1 resolves to
         // the whole box and rests flush.
-        expect(viewport.attributes('data-soybean-snap-points')).toBe('true');
-        expect(viewport.attributes('data-soybean-snap-points-offset')).toBe('216,0');
+        expect(viewport.attributes('data-vean-snap-points')).toBe('true');
+        expect(viewport.attributes('data-vean-snap-points-offset')).toBe('216,0');
 
         await wrapper.setProps({ fullscreen: true });
         await nextTick();
 
         // A fullscreen drawer publishes no offsets, so a consumer reading the pair
         // of attributes never sees positions that are not being applied.
-        expect(viewport.attributes('data-soybean-snap-points')).toBe('false');
-        expect(viewport.attributes('data-soybean-snap-points-offset')).toBeUndefined();
+        expect(viewport.attributes('data-vean-snap-points')).toBe('false');
+        expect(viewport.attributes('data-vean-snap-points-offset')).toBeUndefined();
 
         wrapper.unmount();
       } finally {
@@ -668,7 +668,7 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-handle]').trigger('click');
+      await wrapper.find('[data-vean-handle]').trigger('click');
       await new Promise(resolve => setTimeout(resolve, 200));
 
       // Guard for the assertion above: this is the same gesture with snapping on.
@@ -697,11 +697,11 @@ describe('SDrawer', () => {
         attachTo: document.body
       });
 
-      await wrapper.get('[data-soybean-drawer-trigger]').trigger('click');
+      await wrapper.get('[data-vean-drawer-trigger]').trigger('click');
       await nextTick();
       await nextTick();
 
-      const popup = wrapper.find<HTMLElement>('[data-soybean-drawer-popup]').element;
+      const popup = wrapper.find<HTMLElement>('[data-vean-drawer-popup]').element;
 
       mockPointerCapture(popup);
       mockRect(popup, { width: 320, height: 760 });
@@ -723,8 +723,8 @@ describe('SDrawer', () => {
 
       // A frozen gesture writes nothing: no movement for the CSS to read, no
       // swiping state for the overlay to react to, and no progress reported.
-      expect(popup.style.getPropertyValue('--soybean-drawer-swipe-movement-y')).toBe('');
-      expect(popup.getAttribute('data-soybean-swiping')).toBeNull();
+      expect(popup.style.getPropertyValue('--vean-drawer-swipe-movement-y')).toBe('');
+      expect(popup.getAttribute('data-vean-swiping')).toBeNull();
       expect(wrapper.emitted('drag')).toBeUndefined();
 
       dispatchPointerEvent(popup, 'pointerup', { clientY: 160, pointerId: 1 });
@@ -743,8 +743,8 @@ describe('SDrawer', () => {
       await nextTick();
 
       // Guard for the frozen case: this is exactly what it must not produce.
-      expect(popup.style.getPropertyValue('--soybean-drawer-swipe-movement-y')).toBe('60px');
-      expect(popup.getAttribute('data-soybean-swiping')).toBe('true');
+      expect(popup.style.getPropertyValue('--vean-drawer-swipe-movement-y')).toBe('60px');
+      expect(popup.getAttribute('data-vean-swiping')).toBe('true');
       expect(wrapper.emitted('drag')).toHaveLength(1);
 
       dispatchPointerEvent(popup, 'pointerup', { clientY: 160, pointerId: 1 });
@@ -764,15 +764,15 @@ describe('SDrawer', () => {
       dragDown(popup, 60);
       await nextTick();
 
-      expect(popup.style.getPropertyValue('--soybean-drawer-swipe-movement-y')).toBe('60px');
+      expect(popup.style.getPropertyValue('--vean-drawer-swipe-movement-y')).toBe('60px');
 
       await wrapper.setProps({ fullscreen: true });
       await nextTick();
 
       // The gesture stops being enabled from here on, so nothing else would ever
       // clear the offset the abandoned drag already wrote: the switch has to.
-      expect(popup.style.getPropertyValue('--soybean-drawer-swipe-movement-y')).toBe('');
-      expect(popup.getAttribute('data-soybean-swiping')).toBeNull();
+      expect(popup.style.getPropertyValue('--vean-drawer-swipe-movement-y')).toBe('');
+      expect(popup.getAttribute('data-vean-swiping')).toBeNull();
 
       wrapper.unmount();
     });
@@ -794,11 +794,11 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-drawer-popup]');
+      const popup = wrapper.find('[data-vean-drawer-popup]');
 
       expect(popup.exists()).toBe(true);
-      expect(popup.attributes('data-soybean-snap-points')).toBe('true');
-      expect(popup.attributes('data-soybean-drawer-side')).toBe('bottom');
+      expect(popup.attributes('data-vean-snap-points')).toBe('true');
+      expect(popup.attributes('data-vean-drawer-side')).toBe('bottom');
 
       wrapper.unmount();
     });
@@ -812,7 +812,7 @@ describe('SDrawer', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-drawer-popup]').attributes('data-soybean-snap-points')).toBe('false');
+      expect(wrapper.find('[data-vean-drawer-popup]').attributes('data-vean-snap-points')).toBe('false');
 
       wrapper.unmount();
     });
@@ -844,11 +844,11 @@ describe('SDrawer', () => {
         await nextTick();
         await nextTick();
 
-        const popup = wrapper.find('[data-soybean-drawer-popup]');
+        const popup = wrapper.find('[data-vean-drawer-popup]');
 
         // Box: min(1000, 1000 − 32) = 968; offset: 968 − 0.5 × 1000 = 468.
-        expect(popup.attributes('style') ?? '').toMatch(/--soybean-drawer-height:\s*968px/);
-        expect(popup.attributes('style') ?? '').toMatch(/--soybean-drawer-snap-point-offset:\s*468px/);
+        expect(popup.attributes('style') ?? '').toMatch(/--vean-drawer-height:\s*968px/);
+        expect(popup.attributes('style') ?? '').toMatch(/--vean-drawer-snap-point-offset:\s*468px/);
 
         // A viewport change while open re-measures the box in the same tick. The
         // published height and the viewport-derived offset must never disagree,
@@ -859,8 +859,8 @@ describe('SDrawer', () => {
         await nextTick();
 
         // Box: min(1000, 1200 − 32) = 1000; offset: 1000 − 0.5 × 1200 = 400.
-        expect(popup.attributes('style') ?? '').toMatch(/--soybean-drawer-height:\s*1000px/);
-        expect(popup.attributes('style') ?? '').toMatch(/--soybean-drawer-snap-point-offset:\s*400px/);
+        expect(popup.attributes('style') ?? '').toMatch(/--vean-drawer-height:\s*1000px/);
+        expect(popup.attributes('style') ?? '').toMatch(/--vean-drawer-snap-point-offset:\s*400px/);
 
         wrapper.unmount();
       } finally {
@@ -878,12 +878,12 @@ describe('SDrawer', () => {
       const descriptor = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'offsetHeight');
 
       // Model the stylesheet: the box is its content height clamped by the cap the
-      // popup publishes, which is what `max-height: var(--soybean-drawer-max-height)`
+      // popup publishes, which is what `max-height: var(--vean-drawer-max-height)`
       // resolves to in a browser.
       Object.defineProperty(HTMLElement.prototype, 'offsetHeight', {
         configurable: true,
         get(this: HTMLElement) {
-          const cap = Number.parseFloat(this.style.getPropertyValue('--soybean-drawer-max-height'));
+          const cap = Number.parseFloat(this.style.getPropertyValue('--vean-drawer-max-height'));
 
           return Number.isFinite(cap)
             ? Math.min(cap, 1600)
@@ -909,7 +909,7 @@ describe('SDrawer', () => {
         await nextTick();
         await nextTick();
 
-        const style = wrapper.find('[data-soybean-drawer-popup]').attributes('style') ?? '';
+        const style = wrapper.find('[data-vean-drawer-popup]').attributes('style') ?? '';
 
         wrapper.unmount();
 
@@ -921,16 +921,16 @@ describe('SDrawer', () => {
         // the viewport edge (offset 0), so its whole scrolling window is on screen.
         const largest = await mountAt(0.75);
 
-        expect(largest).toMatch(/--soybean-drawer-max-height:\s*750px/);
-        expect(largest).toMatch(/--soybean-drawer-height:\s*750px/);
-        expect(largest).toMatch(/--soybean-drawer-snap-point-offset:\s*0px/);
+        expect(largest).toMatch(/--vean-drawer-max-height:\s*750px/);
+        expect(largest).toMatch(/--vean-drawer-height:\s*750px/);
+        expect(largest).toMatch(/--vean-drawer-snap-point-offset:\s*0px/);
 
         // A partial snap keeps the same visible extent as before the cap — it only
         // stops the box from hanging past the viewport edge: 750 − 250 = 0.5 × 1000.
         const half = await mountAt(0.5);
 
-        expect(half).toMatch(/--soybean-drawer-height:\s*750px/);
-        expect(half).toMatch(/--soybean-drawer-snap-point-offset:\s*250px/);
+        expect(half).toMatch(/--vean-drawer-height:\s*750px/);
+        expect(half).toMatch(/--vean-drawer-snap-point-offset:\s*250px/);
       } finally {
         innerHeightSpy.mockRestore();
 
@@ -961,10 +961,10 @@ describe('SDrawer', () => {
 
         await nextTick();
 
-        const style = wrapper.find('[data-soybean-drawer-popup]').attributes('style') ?? '';
+        const style = wrapper.find('[data-vean-drawer-popup]').attributes('style') ?? '';
 
-        expect(style).toMatch(/--soybean-drawer-max-width:\s*300px/);
-        expect(style).not.toMatch(/--soybean-drawer-max-height/);
+        expect(style).toMatch(/--vean-drawer-max-width:\s*300px/);
+        expect(style).not.toMatch(/--vean-drawer-max-height/);
 
         wrapper.unmount();
       } finally {

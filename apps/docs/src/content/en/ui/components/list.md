@@ -12,7 +12,7 @@ A semantic container for displaying a vertical list of items. `SList` and `SList
 
 Use it for user lists, settings/menu groups, notification feeds, or any simple vertical collection. Prefer `table` for tabular data with columns and sorting, `tree` for hierarchical data, and `select`/`combobox` for selectable option lists.
 
-There is no headless `list` family: a plain `ul`/`li` carries no keyboard, focus or ARIA-widget logic of its own, so it has no place in the headless layer. Interactive lists are served by the admitted `listbox` / `tree` families instead.
+There is no Aria `list` family: a plain `ul`/`li` carries no keyboard, focus or ARIA-widget logic of its own, so it has no place in the Aria layer. Interactive lists are served by the admitted `listbox` / `tree` families instead.
 
 ## Usage
 
@@ -20,8 +20,8 @@ There is no headless `list` family: a plain `ul`/`li` carries no keyboard, focus
 
 ## Features
 
-- 🧩 UI-only anatomy shell — `SList`/`SListItem` own the markup and share `listVariants` classes through a UI-level `provideListUi` context; no headless `list` family exists
-- 📋 Semantic markup — renders a real `<ul>`/`<li>` with `data-soybean-list-*` hooks
+- 🧩 UI-only anatomy shell — `SList`/`SListItem` own the markup and share `listVariants` classes through a UI-level `provideListUi` context; no Aria `list` family exists
+- 📋 Semantic markup — renders a real `<ul>`/`<li>` with `data-vean-list-*` hooks
 - 🏷️ Item composition — `SListItem` renders an optional `title` + `description` block via `title`/`description` props or slots
 - ↔️ Leading / trailing — `leading`/`trailing` slots on `SListItem` for icons, badges, avatars or actions
 - 🎨 6 sizes — xs–2xl `size` matching `ThemeSize`
@@ -45,16 +45,16 @@ There is no headless `list` family: a plain `ul`/`li` carries no keyboard, focus
 
 ### Architecture and benchmark differences
 
-`SList`/`SListItem` are UI-only: a plain `ul`/`li` anatomy shell failed the headless deletion test, so the family was removed from the headless layer and the markup now lives in the UI layer, with all styling in `listVariants` and the slot classes passed down through `provideListUi`. This mirrors shadcn/ui's composition-first approach, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a config-driven list (`dataSource`/`renderItem`). SoybeanUI deliberately keeps `SList` a presentational container — data iteration stays with the consumer — so very large data is handled by the standalone `virtualizer` component rather than a built-in virtual scroll. Interactive lists use `listbox` / `tree` instead of `SList`.
+`SList`/`SListItem` are UI-only: a plain `ul`/`li` anatomy shell failed the Aria deletion test, so the family was removed from the Aria layer and the markup now lives in the UI layer, with all styling in `listVariants` and the slot classes passed down through `provideListUi`. This mirrors shadcn/ui's composition-first approach, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a config-driven list (`dataSource`/`renderItem`). VeanUI deliberately keeps `SList` a presentational container — data iteration stays with the consumer — so very large data is handled by the standalone `virtualizer` component rather than a built-in virtual scroll. Interactive lists use `listbox` / `tree` instead of `SList`.
 
-| Capability                | SoybeanUI | shadcn/ui | Ant Design List | Element Plus | Mantine List | Naive UI |
-| :------------------------ | :-------: | :-------: | :-------------: | :----------: | :----------: | :------: |
-| Headless/styled split     |    ✅     |    ✅     |        —        |      —       |      —       |    —     |
-| Semantic `ul`/`li` markup |    ✅     |    ✅     |       ✅        |      ✅      |      ✅      |    ✅    |
-| Title + description item  |    ✅     |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
-| Leading / trailing slots  |    ✅     |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
-| Size variants (6)         |    ✅     |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
-| Built-in virtual scroll   |    ➕     |     —     |       ✅        |      —       |      ✅      |    ✅    |
+| Capability                | VeanUI | shadcn/ui | Ant Design List | Element Plus | Mantine List | Naive UI |
+| :------------------------ | :----: | :-------: | :-------------: | :----------: | :----------: | :------: |
+| Aria/styled split         |   ✅   |    ✅     |        —        |      —       |      —       |    —     |
+| Semantic `ul`/`li` markup |   ✅   |    ✅     |       ✅        |      ✅      |      ✅      |    ✅    |
+| Title + description item  |   ✅   |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
+| Leading / trailing slots  |   ✅   |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
+| Size variants (6)         |   ✅   |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
+| Built-in virtual scroll   |   ➕   |     —     |       ✅        |      —       |      ✅      |    ✅    |
 
 `—` = unsupported or a different interaction model; `➕` = valuable enhancement (delegated to `virtualizer`).
 

@@ -1,18 +1,18 @@
 ---
 head:
   title: 轮播图
-  description: 一个基于 Embla Carousel 构建的轮播组件，用于在有限空间内按水平或垂直方向浏览一组内容（图片、卡片、横幅等）。SCarousel 将 CarouselRoot 一族的 headless 基础组件（零样式）与 carouselVariants 样式配方（8 个槽位：root/content/container/item/control/navigation/previous/next，6 种尺寸 × 2 种方向）组合在一起。
+  description: 一个基于 Embla Carousel 构建的轮播组件，用于在有限空间内按水平或垂直方向浏览一组内容（图片、卡片、横幅等）。SCarousel 将 CarouselRoot 一族的 Aria 基础组件（零样式）与 carouselVariants 样式配方（8 个槽位：root/content/container/item/control/navigation/previous/next，6 种尺寸 × 2 种方向）组合在一起。
 ---
 
 # 轮播图
 
 ## 概述
 
-一个基于 Embla Carousel 构建的轮播组件，用于在有限空间内按水平或垂直方向浏览一组内容（图片、卡片、横幅等）。`SCarousel` 将 `CarouselRoot` 一族的 headless 基础组件（零样式）与 `carouselVariants` 样式配方（8 个槽位：root/content/container/item/control/navigation/previous/next，6 种尺寸 × 2 种方向）组合在一起。
+一个基于 Embla Carousel 构建的轮播组件，用于在有限空间内按水平或垂直方向浏览一组内容（图片、卡片、横幅等）。`SCarousel` 将 `CarouselRoot` 一族的 Aria 基础组件（零样式）与 `carouselVariants` 样式配方（8 个槽位：root/content/container/item/control/navigation/previous/next，6 种尺寸 × 2 种方向）组合在一起。
 
 需要多图走马灯、商品/文章轮播、图文 banner 或任意「一次看一屏、可前后翻页」的内容时使用。若只是静态网格或瀑布流布局，应优先使用 `list` 或 `layout` 而非轮播；若需要拖拽排序或虚拟滚动长列表，应分别使用 `tree`/`list` 配合 `virtualizer`。
 
-`SCarousel` 通过 `CarouselCompact` 聚合多个基础组件，暴露 `slides` 数据驱动用法；当需要完全自定义结构时，可回退到 `CarouselRoot`/`CarouselContent`/`CarouselContainer`/`CarouselItem`/`CarouselControl`/`CarouselNavigation`/`CarouselPrevious`/`CarouselNext` 的 headless 组合。
+`SCarousel` 通过 `CarouselCompact` 聚合多个基础组件，暴露 `slides` 数据驱动用法；当需要完全自定义结构时，可回退到 `CarouselRoot`/`CarouselContent`/`CarouselContainer`/`CarouselItem`/`CarouselControl`/`CarouselNavigation`/`CarouselPrevious`/`CarouselNext` 的 Aria 组合。
 
 ## 用法
 
@@ -20,7 +20,7 @@ head:
 
 ## 特性
 
-- 🧩 headless/样式拆分 — `CarouselCompact` 聚合 8 个基础组件并暴露 7 个 `*Props` 通道（content/container/item/control/navigation/previous/next）；`SCarousel` 只做样式注入与插槽/事件转发
+- 🧩 Aria/样式拆分 — `CarouselCompact` 聚合 8 个基础组件并暴露 7 个 `*Props` 通道（content/container/item/control/navigation/previous/next）；`SCarousel` 只做样式注入与插槽/事件转发
 - 🧭 水平 / 垂直 — `orientation` 切换滑动轴、方向键导航轴与布局方向
 - 🌐 感知书写方向 — `dir` 传入 Embla 并在 RTL 下交换左右箭头键语义（`ArrowLeft`/`ArrowRight` 反转）
 - ⌨️ 键盘可达 — 焦点在根区域时，方向键 / `ArrowLeft`/`ArrowRight` 前后翻页；`previous`/`next` 按钮在到达边界时自动 `disabled`
@@ -32,14 +32,14 @@ head:
 ## 组件家族
 
 - `SCarousel`（styled）— 入口包装；`carouselVariants` 配方配合动态插槽转发与 `useForwardListeners` 事件合并
-- `CarouselRoot`（headless）— 状态所有者：经 `useEmblaCarousel` 初始化/销毁 Embla 实例，派生 `canScrollNext`/`canScrollPrev`/`selectedIndex`/`scrollSnaps`/`progress`；渲染 `role="region"`、`data-orientation`、本地化 `aria-label` 回退与方向键导航
-- `CarouselContent`（headless）— 视口容器；持有 Embla 根元素引用，生成并与导航按钮共享 `id`
-- `CarouselContainer`（headless）— 滑动轨道；承载所有 `CarouselItem`
-- `CarouselItem`（headless）— 单张幻灯片；`role="group"` + `aria-roledescription="slide"`
-- `CarouselControl`（headless）— 控件区容器；承载导航或自定义控件
-- `CarouselNavigation`（headless）— 前后翻页按钮的容器
-- `CarouselPrevious` / `CarouselNext`（headless）— 基于 `Button` 的前一页/后一页按钮；默认图标经 `Icon` 渲染，默认文本经 `VisuallyHidden` 隐藏并本地化
-- `CarouselCompact`（headless）— 聚合复合组件；以 `slides` 数据驱动迭代 `CarouselItem`，暴露 `item`/`control`/`previous`/`next` 插槽
+- `CarouselRoot`（Aria）— 状态所有者：经 `useEmblaCarousel` 初始化/销毁 Embla 实例，派生 `canScrollNext`/`canScrollPrev`/`selectedIndex`/`scrollSnaps`/`progress`；渲染 `role="region"`、`data-orientation`、本地化 `aria-label` 回退与方向键导航
+- `CarouselContent`（Aria）— 视口容器；持有 Embla 根元素引用，生成并与导航按钮共享 `id`
+- `CarouselContainer`（Aria）— 滑动轨道；承载所有 `CarouselItem`
+- `CarouselItem`（Aria）— 单张幻灯片；`role="group"` + `aria-roledescription="slide"`
+- `CarouselControl`（Aria）— 控件区容器；承载导航或自定义控件
+- `CarouselNavigation`（Aria）— 前后翻页按钮的容器
+- `CarouselPrevious` / `CarouselNext`（Aria）— 基于 `Button` 的前一页/后一页按钮；默认图标经 `Icon` 渲染，默认文本经 `VisuallyHidden` 隐藏并本地化
+- `CarouselCompact`（Aria）— 聚合复合组件；以 `slides` 数据驱动迭代 `CarouselItem`，暴露 `item`/`control`/`previous`/`next` 插槽
 
 ## 演示
 
@@ -53,17 +53,17 @@ head:
 
 ### 架构与对标差异
 
-`CarouselRoot` 拥有 Embla 实例的完整生命周期（初始化/重初始化/销毁、`select`/`reInit` 事件同步滚动状态），所有基础组件保持零样式，仅 UI 包装注入 `carouselVariants` 类名。这与 shadcn/ui 的 headless/styled 分离一致，区别于 Ant Design、Element Plus、Mantine、Naive UI 等把轮播作为单一「带样式组件 + 配置 prop」的单包方案。SoybeanUI 刻意把 `autoplay`、`loop`、`align` 等行为交由 `options` 透传给 Embla 插件体系，而不是逐个声明为顶层 prop，从而保持 API 精简并让用户接入任意 Embla 插件。前后翻页按钮默认 `disabled` 在到达边界时由 `canScrollNext`/`canScrollPrev` 派生，而非依赖 `loop` 配置。
+`CarouselRoot` 拥有 Embla 实例的完整生命周期（初始化/重初始化/销毁、`select`/`reInit` 事件同步滚动状态），所有基础组件保持零样式，仅 UI 包装注入 `carouselVariants` 类名。这与 shadcn/ui 的 headless/styled 分离一致，区别于 Ant Design、Element Plus、Mantine、Naive UI 等把轮播作为单一「带样式组件 + 配置 prop」的单包方案。VeanUI 刻意把 `autoplay`、`loop`、`align` 等行为交由 `options` 透传给 Embla 插件体系，而不是逐个声明为顶层 prop，从而保持 API 精简并让用户接入任意 Embla 插件。前后翻页按钮默认 `disabled` 在到达边界时由 `canScrollNext`/`canScrollPrev` 派生，而非依赖 `loop` 配置。
 
-| 能力                           | SoybeanUI | shadcn/ui | Ant Design Carousel | Element Plus Carousel | Mantine Carousel | Naive UI Carousel |
-| :----------------------------- | :-------: | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: |
-| headless/样式拆分              |    ✅     |    ✅     |          —          |           —           |        —         |         —         |
-| 水平 / 垂直方向                |    ✅     |     —     |         ✅          |          ✅           |        ✅        |        ✅         |
-| 感知书写方向（RTL）            |    ✅     |    ✅     |         ✅          |           —           |        —         |         —         |
-| 方向键导航                     |    ✅     |     —     |         ✅          |          ✅           |        —         |         —         |
-| 本地化按钮 / 区域 `aria-label` |    ✅     |     —     |          —          |           —           |        —         |         —         |
-| `autoplay` / `loop` / 对齐     |  options  |  options  |        props        |         props         |      props       |       props       |
-| 复合组件 + 逐部件 props        |    ✅     |    ✅     |          —          |           —           |        —         |         —         |
+| 能力                           | VeanUI  | shadcn/ui | Ant Design Carousel | Element Plus Carousel | Mantine Carousel | Naive UI Carousel |
+| :----------------------------- | :-----: | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: |
+| Aria/样式拆分                  |   ✅    |    ✅     |          —          |           —           |        —         |         —         |
+| 水平 / 垂直方向                |   ✅    |     —     |         ✅          |          ✅           |        ✅        |        ✅         |
+| 感知书写方向（RTL）            |   ✅    |    ✅     |         ✅          |           —           |        —         |         —         |
+| 方向键导航                     |   ✅    |     —     |         ✅          |          ✅           |        —         |         —         |
+| 本地化按钮 / 区域 `aria-label` |   ✅    |     —     |          —          |           —           |        —         |         —         |
+| `autoplay` / `loop` / 对齐     | options |  options  |        props        |         props         |      props       |       props       |
+| 复合组件 + 逐部件 props        |   ✅    |    ✅     |          —          |           —           |        —         |         —         |
 
 `—` = 不支持或非同一交互模型（AntD/Element Plus/Mantine/Naive UI 为单包配置式轮播；shadcn/ui 的 Carousel 区块为复制源码的 headless 组合，但导航按钮文本硬编码且无方向键导航）。
 

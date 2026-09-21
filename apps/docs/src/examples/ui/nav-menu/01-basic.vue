@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SNavMenu, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { DataOrientation, Direction, NavMenuOptionData, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SNavMenu, SSelect, SSwitch } from '@vean/ui';
+import type { DataOrientation, Direction, NavMenuOptionData, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

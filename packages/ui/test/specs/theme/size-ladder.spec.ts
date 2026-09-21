@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { createGenerator } from 'unocss';
-import { presetUi } from '@soybeanjs/ui-uno';
+import { presetUi } from '@vean/unocss';
 import { anchorVariants } from '../../../src/styles/anchor';
 import { buttonIconVariants, buttonVariants } from '../../../src/styles/button';
 import { hoverCardVariants } from '../../../src/styles/hover-card';

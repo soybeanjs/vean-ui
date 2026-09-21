@@ -30,7 +30,7 @@ export const comboboxVariants = scv({
     clear: fieldClearReveal,
     cancel: 'shrink-0',
     positioner: '',
-    popup: ['relative z-base w-[--soybean-combobox-trigger-width]', overlaySurface, overlayShadow, ...overlayMotion],
+    popup: ['relative z-base w-[--vean-combobox-trigger-width]', overlaySurface, overlayShadow, ...overlayMotion],
     arrow: 'fill-popover',
     viewport: 'scrollbar-none overflow-x-hidden overflow-y-auto',
     inputRoot: 'group flex items-center border-b',

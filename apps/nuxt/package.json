@@ -1,5 +1,5 @@
 {
-  "name": "@soybeanjs/ui-nuxt",
+  "name": "@vean/nuxt",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,8 +11,6 @@
   "dependencies": {
     "@nuxt/icon": "2.5.1",
     "@nuxtjs/i18n": "10.6.0",
-    "@soybeanjs/theme": "workspace:^",
-    "@soybeanjs/ui": "workspace:^",
     "nuxt": "^4.6.0",
     "vue": "^3.5.43",
     "vue-router": "^5.3.1"

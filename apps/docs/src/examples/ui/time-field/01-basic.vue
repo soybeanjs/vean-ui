@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { createTime } from '@soybeanjs/headless/date';
-import type { HourCycle, TimeGranularity, TimeValue } from '@soybeanjs/headless/date';
-import { SButtonIcon, SSelect, SSwitch, STimeField } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { createTime } from '@vean/aria/date';
+import type { HourCycle, TimeGranularity, TimeValue } from '@vean/aria/date';
+import { SButtonIcon, SSelect, SSwitch, STimeField } from '@vean/ui';
+import type { SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

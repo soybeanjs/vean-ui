@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { PasswordCompact, providePasswordUi } from '@soybeanjs/headless/password';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useOmitProps } from '@vean/aria/composables';
+import { PasswordCompact, providePasswordUi } from '@vean/aria/password';
+import { keysOf } from '@vean/aria/shared';
 import { passwordVariants } from '@/styles/password';
 import type { PasswordProps, PasswordEmits, PasswordSlots } from './types';
 

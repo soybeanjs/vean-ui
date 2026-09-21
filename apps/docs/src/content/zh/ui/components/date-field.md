@@ -23,13 +23,13 @@ head:
 - 🕐 粒度与时间——`granularity`（day/hour/minute/second）、12/24 小时制 `hourCycle`、`dayPeriod` 分段
 - 📝 原生表单——视觉隐藏输入（`name`/`required`/`min`/`max`）随所属表单提交 ISO 值
 - 🚫 禁用 / 只读——两者都渲染正确的 `data-*`/`aria-*` 状态并阻止编辑
-- 🧩 可扩展——`leading`/`trailing` 插槽以及 `ui.root`/`ui.input` 类覆盖，构建于 headless `DateFieldRoot`/`DateFieldInput` 之上
+- 🧩 可扩展——`leading`/`trailing` 插槽以及 `ui.root`/`ui.input` 类覆盖，构建于 Aria `DateFieldRoot`/`DateFieldInput` 之上
 
 ## 组件族系
 
-- `SDateField`——样式包装层，透传 props 给 headless compact 并注入 `dateFieldVariants` 类
-- `DateFieldCompact`（headless）——由 `DateFieldRoot` + 逐分段 `DateFieldInput` 数据驱动组合；无样式使用时从 `@soybeanjs/headless/date-field` 导入
-- `DateFieldRoot` / `DateFieldInput`（headless）——状态所有者（分段、校验、隐藏输入）与单个可编辑分段
+- `SDateField`——样式包装层，透传 props 给 Aria compact 并注入 `dateFieldVariants` 类
+- `DateFieldCompact`（Aria）——由 `DateFieldRoot` + 逐分段 `DateFieldInput` 数据驱动组合；无样式使用时从 `@vean/aria/date-field` 导入
+- `DateFieldRoot` / `DateFieldInput`（Aria）——状态所有者（分段、校验、隐藏输入）与单个可编辑分段
 
 ## 演示
 
@@ -45,20 +45,20 @@ head:
 
 `DateFieldRoot` 通过 `useControllableState` 持有值，用 `Intl.DateTimeFormat` formatter 推导分段布局，并经 `isInvalid` 完成校验。每个 `DateFieldInput` 绑定 `useDateField` 组合式——它实现 per-part 键盘逻辑（增减/输入/自动前进/删除），由 `time-field` 族共享。编辑时原地变更 `segmentValues` shallowRef；root 在全部段填满后提交组装出的 `DateValue`。分段式日期输入模式源自 reka-ui（Radix）；各对标库的日期输入通常是纯文本框加选择弹层，而非分段形式。
 
-| 能力                      | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :------------------------ | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 可编辑分段                |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 受控 / 非受控             |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 键盘增减 / 键入           |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 分段间自动前进            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 范围校验                  |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`       |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 粒度（分/秒）             |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 12/24 小时制 `dayPeriod`  |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 禁用 / 只读               |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 原生表单提交              |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `leading`/`trailing` 插槽 |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| 能力                      | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :------------------------ | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离          |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 可编辑分段                |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 受控 / 非受控             |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 键盘增减 / 键入           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 分段间自动前进            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 范围校验                  |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`       |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 粒度（分/秒）             |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 12/24 小时制 `dayPeriod`  |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 禁用 / 只读               |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 原生表单提交              |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `leading`/`trailing` 插槽 |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### 使用注意
 
@@ -89,4 +89,4 @@ head:
 
 ### 如何自定义外观？
 
-用 `ui.root`/`ui.input` 做类覆盖，或用 `leading`/`trailing` 插槽在分段周围放置图标/单位。需要完全无样式控制时，从 `@soybeanjs/headless/date-field` 组合 `DateFieldRoot`/`DateFieldInput`。
+用 `ui.root`/`ui.input` 做类覆盖，或用 `leading`/`trailing` 插槽在分段周围放置图标/单位。需要完全无样式控制时，从 `@vean/aria/date-field` 组合 `DateFieldRoot`/`DateFieldInput`。

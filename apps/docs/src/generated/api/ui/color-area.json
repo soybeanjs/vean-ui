@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; area: ClassValue; thumb: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the ColorArea component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaui",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaui",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.areaprops",
             "default": null,
             "inheritedFrom": "areaProps",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAreaProps",
@@ -103,8 +103,8 @@
                 "type": "ColorAreaAreaProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ColorAreaArea component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -113,10 +113,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -124,10 +124,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -143,7 +143,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.thumbprops",
             "default": null,
             "inheritedFrom": "thumbProps",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaThumbProps",
@@ -151,8 +151,8 @@
                 "type": "ColorAreaThumbProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ColorAreaThumb component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -161,10 +161,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -172,10 +172,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -191,7 +191,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -202,7 +202,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -213,7 +213,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.colorspace",
             "default": null,
             "inheritedFrom": "colorSpace",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSpace",
@@ -221,8 +221,8 @@
                 "type": "'hsl' | 'hsv' | 'oklch'",
                 "resolvedType": "'hsl' | 'hsv' | 'oklch'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorspace",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorspace",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -238,7 +238,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.format",
             "default": null,
             "inheritedFrom": "format",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFormat",
@@ -246,8 +246,8 @@
                 "type": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "resolvedType": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorformat",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorformat",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -263,7 +263,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.xchannel",
             "default": null,
             "inheritedFrom": "xChannel",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAxisChannel",
@@ -271,8 +271,8 @@
                 "type": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "resolvedType": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "description": "Type information for ColorAreaAxisChannel.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaaxischannel",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaaxischannel",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -288,7 +288,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.ychannel",
             "default": null,
             "inheritedFrom": "yChannel",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAxisChannel",
@@ -296,8 +296,8 @@
                 "type": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "resolvedType": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "description": "Type information for ColorAreaAxisChannel.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaaxischannel",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaaxischannel",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -313,7 +313,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -324,7 +324,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.xname",
             "default": null,
             "inheritedFrom": "xName",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -335,7 +335,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.yname",
             "default": null,
             "inheritedFrom": "yName",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -346,7 +346,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -357,7 +357,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -368,7 +368,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -379,7 +379,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -426,7 +426,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -436,7 +436,7 @@
             "required": true,
             "description": "Emitted when the color value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaemits.callables.update_color",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "NormalizedColor",
@@ -444,8 +444,8 @@
                 "type": "import(\"@soybeanjs/colord\").RgbColor | import(\"@soybeanjs/colord\").HslColor | import(\"@soybeanjs/colord\").HsvColor | import(\"@soybeanjs/colord\").OklchColor",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.normalizedcolor",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.normalizedcolor",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -460,7 +460,7 @@
             "required": true,
             "description": "Emitted when change occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaemits.callables.change",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -470,7 +470,7 @@
             "required": true,
             "description": "Emitted when change end occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_color_area_types.colorareaemits.callables.changeend",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           }
         ],
@@ -478,11 +478,11 @@
           {
             "name": "ColorAreaRootEmits",
             "kind": "typeAlias",
-            "type": "{ 'update:modelValue': [value: string]; 'update:color': [value: import(\"@soybeanjs/headless/types\").NormalizedColor]; change: [value: string]; changeEnd: [value: string]; }",
+            "type": "{ 'update:modelValue': [value: string]; 'update:color': [value: import(\"@vean/aria/types\").NormalizedColor]; change: [value: string]; changeEnd: [value: string]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor]; change: [value: string]; changeEnd: [value: string] }",
             "description": "Events for the ColorAreaRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -493,8 +493,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               },
               {
@@ -503,8 +503,8 @@
                 "parameters": "value: NormalizedColor",
                 "required": true,
                 "description": "Emitted when the color value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.update_color",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.update_color",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               },
               {
@@ -513,8 +513,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.change",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               },
               {
@@ -523,8 +523,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when change end occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.changeend",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.changeend",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -539,8 +539,8 @@
         "type": "Interface ColorAreaAreaProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorAreaArea component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.props",
-        "sourcePath": "packages/headless/src/components/color-area/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.props",
+        "sourcePath": "packages/aria/src/components/color-area/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -548,10 +548,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -559,10 +559,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -599,8 +599,8 @@
         "type": "Interface ColorAreaCompactProps",
         "resolvedType": "{ areaProps?: ColorAreaAreaProps; thumbProps?: ColorAreaThumbProps; modelValue?: import(\"@soybeanjs/colord\").AnyColor; defaultValue?: import(\"@soybeanjs/colord\").AnyColor; colorSpace?: ColorSpace; format?: ColorFormat; xChannel?: ColorAreaAxisChannel; yChannel?: ColorAreaAxisChannel; disabled?: boolean; xName?: string; yName?: string; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorAreaCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.props",
-        "sourcePath": "packages/headless/src/components/color-area/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.props",
+        "sourcePath": "packages/aria/src/components/color-area/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -608,10 +608,10 @@
             "type": "ColorAreaAreaProps",
             "required": false,
             "description": "Properties forwarded to the area element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.areaprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.areaprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAreaProps",
@@ -619,8 +619,8 @@
                 "type": "ColorAreaAreaProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ColorAreaArea component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -629,10 +629,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -640,10 +640,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaareaprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaareaprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -656,10 +656,10 @@
             "type": "ColorAreaThumbProps",
             "required": false,
             "description": "Properties forwarded to the thumb element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.thumbprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.thumbprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaThumbProps",
@@ -667,8 +667,8 @@
                 "type": "ColorAreaThumbProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ColorAreaThumb component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -677,10 +677,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -688,10 +688,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -704,10 +704,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -715,10 +715,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Default value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -726,10 +726,10 @@
             "type": "ColorSpace",
             "required": false,
             "description": "Color space.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.colorspace",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.colorspace",
             "default": null,
             "inheritedFrom": "colorSpace",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSpace",
@@ -737,8 +737,8 @@
                 "type": "'hsl' | 'hsv' | 'oklch'",
                 "resolvedType": "'hsl' | 'hsv' | 'oklch'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorspace",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorspace",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -751,10 +751,10 @@
             "type": "ColorFormat",
             "required": false,
             "description": "Format.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.format",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.format",
             "default": null,
             "inheritedFrom": "format",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFormat",
@@ -762,8 +762,8 @@
                 "type": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "resolvedType": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorformat",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorformat",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -776,10 +776,10 @@
             "type": "ColorAreaAxisChannel",
             "required": false,
             "description": "X channel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.xchannel",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.xchannel",
             "default": null,
             "inheritedFrom": "xChannel",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAxisChannel",
@@ -787,8 +787,8 @@
                 "type": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "resolvedType": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "description": "Type information for ColorAreaAxisChannel.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaaxischannel",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaaxischannel",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -801,10 +801,10 @@
             "type": "ColorAreaAxisChannel",
             "required": false,
             "description": "Y channel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.ychannel",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.ychannel",
             "default": null,
             "inheritedFrom": "yChannel",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAxisChannel",
@@ -812,8 +812,8 @@
                 "type": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "resolvedType": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "description": "Type information for ColorAreaAxisChannel.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaaxischannel",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaaxischannel",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -826,10 +826,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -837,10 +837,10 @@
             "type": "string",
             "required": false,
             "description": "X name.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.xname",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.xname",
             "default": null,
             "inheritedFrom": "xName",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -848,10 +848,10 @@
             "type": "string",
             "required": false,
             "description": "Y name.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.yname",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.yname",
             "default": null,
             "inheritedFrom": "yName",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -859,10 +859,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -870,10 +870,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -881,10 +881,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -892,10 +892,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -930,8 +930,8 @@
         "type": "TypeAlias ColorAreaCompactEmits: ColorAreaRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor]; change: [value: string]; changeEnd: [value: string] }",
         "description": "Events for the ColorAreaCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactemits.emits",
-        "sourcePath": "packages/headless/src/components/color-area/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactemits.emits",
+        "sourcePath": "packages/aria/src/components/color-area/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -941,8 +941,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -951,8 +951,8 @@
             "parameters": "value: NormalizedColor",
             "required": true,
             "description": "Emitted when the color value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactemits.callables.update_color",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactemits.callables.update_color",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "NormalizedColor",
@@ -960,8 +960,8 @@
                 "type": "import(\"@soybeanjs/colord\").RgbColor | import(\"@soybeanjs/colord\").HslColor | import(\"@soybeanjs/colord\").HsvColor | import(\"@soybeanjs/colord\").OklchColor",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.normalizedcolor",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.normalizedcolor",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -975,8 +975,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactemits.callables.change",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactemits.callables.change",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -985,8 +985,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when change end occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareacompactemits.callables.changeend",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareacompactemits.callables.changeend",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           }
         ],
@@ -997,8 +997,8 @@
             "type": "{ 'update:modelValue': [value: string]; 'update:color': [value: NormalizedColor]; change: [value: string]; changeEnd: [value: string]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor]; change: [value: string]; changeEnd: [value: string] }",
             "description": "Events for the ColorAreaRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1009,8 +1009,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1019,8 +1019,8 @@
                 "parameters": "value: NormalizedColor",
                 "required": true,
                 "description": "Emitted when the color value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.update_color",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.update_color",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1029,8 +1029,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.change",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1039,8 +1039,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when change end occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.changeend",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.changeend",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1055,8 +1055,8 @@
         "type": "Interface ColorAreaRootProps",
         "resolvedType": "{ modelValue?: import(\"@soybeanjs/colord\").AnyColor; defaultValue?: import(\"@soybeanjs/colord\").AnyColor; colorSpace?: ColorSpace; format?: ColorFormat; xChannel?: ColorAreaAxisChannel; yChannel?: ColorAreaAxisChannel; disabled?: boolean; xName?: string; yName?: string; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorAreaRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.props",
-        "sourcePath": "packages/headless/src/components/color-area/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.props",
+        "sourcePath": "packages/aria/src/components/color-area/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1064,10 +1064,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1075,10 +1075,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Default value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1086,10 +1086,10 @@
             "type": "ColorSpace",
             "required": false,
             "description": "Color space.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.colorspace",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.colorspace",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSpace",
@@ -1097,8 +1097,8 @@
                 "type": "'hsl' | 'hsv' | 'oklch'",
                 "resolvedType": "'hsl' | 'hsv' | 'oklch'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorspace",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorspace",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1111,10 +1111,10 @@
             "type": "ColorFormat",
             "required": false,
             "description": "Format.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.format",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.format",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFormat",
@@ -1122,8 +1122,8 @@
                 "type": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "resolvedType": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorformat",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorformat",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1136,10 +1136,10 @@
             "type": "ColorAreaAxisChannel",
             "required": false,
             "description": "X channel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.xchannel",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.xchannel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAxisChannel",
@@ -1147,8 +1147,8 @@
                 "type": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "resolvedType": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "description": "Type information for ColorAreaAxisChannel.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaaxischannel",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaaxischannel",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1161,10 +1161,10 @@
             "type": "ColorAreaAxisChannel",
             "required": false,
             "description": "Y channel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.ychannel",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.ychannel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorAreaAxisChannel",
@@ -1172,8 +1172,8 @@
                 "type": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "resolvedType": "'hue' | 'saturation' | 'lightness' | 'brightness' | 'chroma'",
                 "description": "Type information for ColorAreaAxisChannel.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareaaxischannel",
-                "sourcePath": "packages/headless/src/components/color-area/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareaaxischannel",
+                "sourcePath": "packages/aria/src/components/color-area/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1186,10 +1186,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1197,10 +1197,10 @@
             "type": "string",
             "required": false,
             "description": "X name.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.xname",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.xname",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1208,10 +1208,10 @@
             "type": "string",
             "required": false,
             "description": "Y name.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.yname",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.yname",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1219,10 +1219,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1230,10 +1230,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1241,10 +1241,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1252,10 +1252,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1290,8 +1290,8 @@
         "type": "TypeAlias ColorAreaRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor]; change: [value: string]; changeEnd: [value: string] }",
         "description": "Events for the ColorAreaRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.emits",
-        "sourcePath": "packages/headless/src/components/color-area/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.emits",
+        "sourcePath": "packages/aria/src/components/color-area/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1301,8 +1301,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1311,8 +1311,8 @@
             "parameters": "value: NormalizedColor",
             "required": true,
             "description": "Emitted when the color value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.update_color",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.update_color",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": [
               {
                 "name": "NormalizedColor",
@@ -1320,8 +1320,8 @@
                 "type": "import(\"@soybeanjs/colord\").RgbColor | import(\"@soybeanjs/colord\").HslColor | import(\"@soybeanjs/colord\").HsvColor | import(\"@soybeanjs/colord\").OklchColor",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.normalizedcolor",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.normalizedcolor",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1335,8 +1335,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.change",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.change",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           },
           {
@@ -1345,8 +1345,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when change end occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorarearootemits.callables.changeend",
-            "sourcePath": "packages/headless/src/components/color-area/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorarearootemits.callables.changeend",
+            "sourcePath": "packages/aria/src/components/color-area/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1360,8 +1360,8 @@
         "type": "Interface ColorAreaThumbProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorAreaThumb component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.props",
-        "sourcePath": "packages/headless/src/components/color-area/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.props",
+        "sourcePath": "packages/aria/src/components/color-area/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1369,10 +1369,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1380,10 +1380,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_area_types.colorareathumbprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_area_types.colorareathumbprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

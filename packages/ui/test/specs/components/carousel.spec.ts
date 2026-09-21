@@ -109,8 +109,8 @@ describe('SCarousel', () => {
       await nextTick();
 
       expect(wrapper.text()).toContain('Slide 1');
-      expect(wrapper.findAll('[data-soybean-carousel-item]')).toHaveLength(3);
-      expect(wrapper.find('[data-soybean-carousel-root]').attributes('role')).toBe('region');
+      expect(wrapper.findAll('[data-vean-carousel-item]')).toHaveLength(3);
+      expect(wrapper.find('[data-vean-carousel-root]').attributes('role')).toBe('region');
       expect(wrapper.emitted('init')?.[0]?.[0]).toStrictEqual(emblaMock.api);
       wrapper.unmount();
     });
@@ -120,10 +120,10 @@ describe('SCarousel', () => {
       await nextTick();
 
       const options = emblaMock.options.current as Record<string, unknown>;
-      const container = wrapper.find('[data-soybean-carousel-container]');
-      const root = wrapper.find('[data-soybean-carousel-root]');
-      const previousButton = wrapper.find('[data-soybean-carousel-previous]');
-      const nextButton = wrapper.find('[data-soybean-carousel-next]');
+      const container = wrapper.find('[data-vean-carousel-container]');
+      const root = wrapper.find('[data-vean-carousel-root]');
+      const previousButton = wrapper.find('[data-vean-carousel-previous]');
+      const nextButton = wrapper.find('[data-vean-carousel-next]');
 
       expect(options.axis).toBe('y');
       expect(options.direction).toBe('rtl');
@@ -148,10 +148,10 @@ describe('SCarousel', () => {
       });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-carousel-root]').attributes('aria-label')).toBe('Carousel');
-      expect(wrapper.find('[data-soybean-carousel-previous]').attributes('aria-label')).toBe('Previous slide');
-      expect(wrapper.find('[data-soybean-carousel-next]').attributes('aria-label')).toBe('Next slide');
-      expect(wrapper.findAll('[data-soybean-visually-hidden]')).toHaveLength(2);
+      expect(wrapper.find('[data-vean-carousel-root]').attributes('aria-label')).toBe('Carousel');
+      expect(wrapper.find('[data-vean-carousel-previous]').attributes('aria-label')).toBe('Previous slide');
+      expect(wrapper.find('[data-vean-carousel-next]').attributes('aria-label')).toBe('Next slide');
+      expect(wrapper.findAll('[data-vean-visually-hidden]')).toHaveLength(2);
       wrapper.unmount();
     });
   });
@@ -161,8 +161,8 @@ describe('SCarousel', () => {
       const wrapper = mountCarousel();
       await nextTick();
 
-      const previousButton = wrapper.find('[data-soybean-carousel-previous]');
-      const nextButton = wrapper.find('[data-soybean-carousel-next]');
+      const previousButton = wrapper.find('[data-vean-carousel-previous]');
+      const nextButton = wrapper.find('[data-vean-carousel-next]');
 
       expect(previousButton.attributes('aria-disabled')).toBe('true');
       expect(nextButton.attributes('aria-disabled')).toBeUndefined();
@@ -175,8 +175,8 @@ describe('SCarousel', () => {
 
       await previousButton.trigger('click');
       await nextButton.trigger('click');
-      await wrapper.find('[data-soybean-carousel-root]').trigger('keydown', { key: 'ArrowLeft' });
-      await wrapper.find('[data-soybean-carousel-root]').trigger('keydown', { key: 'ArrowRight' });
+      await wrapper.find('[data-vean-carousel-root]').trigger('keydown', { key: 'ArrowLeft' });
+      await wrapper.find('[data-vean-carousel-root]').trigger('keydown', { key: 'ArrowRight' });
 
       expect(emblaMock.api.scrollPrev).toHaveBeenCalledTimes(2);
       expect(emblaMock.api.scrollNext).toHaveBeenCalledTimes(2);
@@ -189,8 +189,8 @@ describe('SCarousel', () => {
       const wrapper = mountCarousel({ dir: 'rtl' });
       await nextTick();
 
-      await wrapper.find('[data-soybean-carousel-root]').trigger('keydown', { key: 'ArrowLeft' });
-      await wrapper.find('[data-soybean-carousel-root]').trigger('keydown', { key: 'ArrowRight' });
+      await wrapper.find('[data-vean-carousel-root]').trigger('keydown', { key: 'ArrowLeft' });
+      await wrapper.find('[data-vean-carousel-root]').trigger('keydown', { key: 'ArrowRight' });
 
       expect(emblaMock.api.scrollNext).toHaveBeenCalledTimes(1);
       expect(emblaMock.api.scrollPrev).toHaveBeenCalledTimes(1);

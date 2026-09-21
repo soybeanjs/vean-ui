@@ -1,0 +1,149 @@
+{
+  "name": "@vean/aria",
+  "version": "0.50.0",
+  "description": "Vean Aria is a collection unstyled components for Vue 3. It is designed to be lightweight and easy to use.",
+  "homepage": "https://github.com/soybeanjs/vean-ui",
+  "bugs": {
+    "url": "https://github.com/soybeanjs/vean-ui/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Soybean",
+    "email": "soybeanjs@outlook.com",
+    "url": "https://github.com/soybeanjs"
+  },
+  "repository": {
+    "url": "https://github.com/soybeanjs/vean-ui.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./constants": "./src/constants/index.ts",
+    "./composables": "./src/composables/index.ts",
+    "./date": "./src/date/index.ts",
+    "./locale": "./src/locale/index.ts",
+    "./locale/*": "./src/locale/langs/*.ts",
+    "./shared": "./src/shared/index.ts",
+    "./nuxt": "./src/nuxt/index.ts",
+    "./resolver": "./src/resolver/index.ts",
+    "./namespaced": "./src/namespaced/index.ts",
+    "./types": "./src/types/index.ts",
+    "./*": "./src/components/*/index.ts"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "require": "./dist/index.js"
+      },
+      "./constants": {
+        "types": "./dist/constants/index.d.ts",
+        "import": "./dist/constants/index.js",
+        "require": "./dist/constants/index.js"
+      },
+      "./composables": {
+        "types": "./dist/composables/index.d.ts",
+        "import": "./dist/composables/index.js",
+        "require": "./dist/composables/index.js"
+      },
+      "./shared": {
+        "types": "./dist/shared/index.d.ts",
+        "import": "./dist/shared/index.js",
+        "require": "./dist/shared/index.js"
+      },
+      "./locale": {
+        "types": "./dist/locale/index.d.ts",
+        "import": "./dist/locale/index.js",
+        "require": "./dist/locale/index.js"
+      },
+      "./locale/*": {
+        "types": "./dist/locale/langs/*.d.ts",
+        "import": "./dist/locale/langs/*.js",
+        "require": "./dist/locale/langs/*.js"
+      },
+      "./date": {
+        "types": "./dist/date/index.d.ts",
+        "import": "./dist/date/index.js",
+        "require": "./dist/date/index.js"
+      },
+      "./nuxt": {
+        "types": "./dist/nuxt/index.d.ts",
+        "import": "./dist/nuxt/index.js",
+        "require": "./dist/nuxt/index.js"
+      },
+      "./resolver": {
+        "types": "./dist/resolver/index.d.ts",
+        "import": "./dist/resolver/index.js",
+        "require": "./dist/resolver/index.js"
+      },
+      "./namespaced": {
+        "types": "./dist/namespaced/index.d.ts",
+        "import": "./dist/namespaced/index.js",
+        "require": "./dist/namespaced/index.js"
+      },
+      "./types": {
+        "types": "./dist/types/index.d.ts",
+        "import": "./dist/types/index.js",
+        "require": "./dist/types/index.js"
+      },
+      "./*": {
+        "types": "./dist/components/*/index.d.ts",
+        "import": "./dist/components/*/index.js",
+        "require": "./dist/components/*/index.js"
+      }
+    },
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "test": "vp test run",
+    "test:watch": "vp test watch",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.8.0",
+    "@soybeanjs/colord": "^0.8.1",
+    "@tanstack/vue-form": "^1.33.5",
+    "@tanstack/vue-table": "^9.2.6",
+    "@tanstack/vue-virtual": "^3.13.39",
+    "@vueuse/core": "^15.0.0",
+    "date-fns": "^4.4.0",
+    "embla-carousel": "^8.6.0"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^2.5.1",
+    "nuxt": ">=4.6.0",
+    "typescript": "catalog:",
+    "unplugin-vue": "8.0.0",
+    "unplugin-vue-components": "^32.1.0",
+    "vite-plus": "catalog:",
+    "vue": "3.5.43",
+    "vue-router": "5.3.1",
+    "vue-tsc": "^3.3.12"
+  },
+  "peerDependencies": {
+    "nuxt": ">=4.0.0",
+    "unplugin-vue-components": "^31.0.0",
+    "vue": ">=3.2.0",
+    "vue-router": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "nuxt": {
+      "optional": true
+    },
+    "unplugin-vue-components": {
+      "optional": true
+    },
+    "vue-router": {
+      "optional": true
+    }
+  }
+}

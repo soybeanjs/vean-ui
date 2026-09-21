@@ -1,5 +1,5 @@
-import type { SliderCompactProps, SliderCompactEmits, SliderUi } from '@soybeanjs/headless/slider';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { SliderCompactProps, SliderCompactEmits, SliderUi } from '@vean/aria/slider';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeColor, ThemeSize } from '@/theme';
 
 /**

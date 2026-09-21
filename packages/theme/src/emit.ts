@@ -43,7 +43,7 @@ export function tokenVar(token: SemanticToken, prefix: TokenPrefix | undefined):
  *
  * A complete-color override is the one value that is not already a channel: the
  * token layer stores channels and the adapters consume them wrapped
- * (`hsl(var(--soybean-x) / <alpha>)`), so the color is encoded into the theme's
+ * (`hsl(var(--vean-x) / <alpha>)`), so the color is encoded into the theme's
  * format here. Emitting it verbatim would invalidate every consumption site and
  * silently drop the token (docs/theme.md §4.2).
  */

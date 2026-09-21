@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -103,8 +103,8 @@
                 "type": "{ root: ClassValue; label: ClassValue; indicator: ClassValue; track: ClassValue; circleSvg: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Progress component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressui",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressui",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressIndicatorProps",
@@ -128,8 +128,8 @@
                 "type": "ProgressIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ProgressIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -138,10 +138,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -149,10 +149,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -168,7 +168,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -176,8 +176,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -193,7 +193,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -204,7 +204,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -215,7 +215,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.getvaluelabel",
             "default": null,
             "inheritedFrom": "getValueLabel",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -226,7 +226,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.getvaluetext",
             "default": null,
             "inheritedFrom": "getValueText",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -237,7 +237,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -248,7 +248,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -295,7 +295,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -305,7 +305,7 @@
             "required": true,
             "description": "Emitted when the max value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressemits.callables.update_max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -316,8 +316,8 @@
             "type": "{ 'update:modelValue': [value: number | null | undefined]; 'update:max': [value: number]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
             "description": "Events for the ProgressRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -328,8 +328,8 @@
                 "parameters": "value: number | null | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               },
               {
@@ -338,8 +338,8 @@
                 "parameters": "value: number",
                 "required": true,
                 "description": "Emitted when the max value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_max",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_max",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -364,7 +364,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progressslots.callables.default",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressSlotProps",
@@ -372,8 +372,8 @@
                 "type": "ProgressSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Progress component family.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -386,11 +386,11 @@
           {
             "name": "ProgressCompactSlots",
             "kind": "typeAlias",
-            "type": "{ ProgressCircle?: (props: import(\"@soybeanjs/headless\").ProgressSlotProps) => any; }",
+            "type": "{ ProgressCircle?: (props: import(\"@vean/aria\").ProgressSlotProps) => any; }",
             "resolvedType": "{ ProgressCircle?: ((props: ProgressSlotProps) => any) }",
             "description": "Slots for the ProgressCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactslots",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactslots",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -401,8 +401,8 @@
                 "parameters": "((props: ProgressSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -415,8 +415,8 @@
         "type": "Interface ProgressSlotProps",
         "resolvedType": "{ modelValue: number | null | undefined; max: number; progressState: 'loading' | 'indeterminate' | 'complete'; valuePercent: number | null }",
         "description": "Slot properties for the Progress component family.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -424,10 +424,10 @@
             "type": "number | null | undefined",
             "required": true,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -435,10 +435,10 @@
             "type": "number",
             "required": true,
             "description": "Max used by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops.members.max",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -446,10 +446,10 @@
             "type": "'loading' | 'indeterminate' | 'complete'",
             "required": true,
             "description": "Progress state used by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops.members.progressstate",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops.members.progressstate",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressState",
@@ -457,8 +457,8 @@
                 "type": "'loading' | 'indeterminate' | 'complete'",
                 "resolvedType": "'loading' | 'indeterminate' | 'complete'",
                 "description": "State values for ProgressState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressstate",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressstate",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -471,10 +471,10 @@
             "type": "number | null",
             "required": true,
             "description": "Current progress percentage.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops.members.valuepercent",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops.members.valuepercent",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -509,8 +509,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -584,8 +584,8 @@
                 "type": "{ root: ClassValue; label: ClassValue; indicator: ClassValue; track: ClassValue; circleSvg: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Progress component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressui",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressui",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -601,7 +601,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.strokewidth",
             "default": null,
             "inheritedFrom": "strokeWidth",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -612,7 +612,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.circlesvgprops",
             "default": null,
             "inheritedFrom": "circleSvgProps",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressCircleSvgProps",
@@ -620,8 +620,8 @@
                 "type": "ProgressCircleSvgProps",
                 "resolvedType": "{ strokeWidth?: number }",
                 "description": "Properties for the ProgressCircleSvg component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclesvgprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclesvgprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -630,10 +630,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Stroke width.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclesvgprops.members.strokewidth",
+                    "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclesvgprops.members.strokewidth",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/progress/types.ts",
+                    "sourcePath": "packages/aria/src/components/progress/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -649,7 +649,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -657,8 +657,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -674,7 +674,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -685,7 +685,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -696,7 +696,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.getvaluelabel",
             "default": null,
             "inheritedFrom": "getValueLabel",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -707,7 +707,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.getvaluetext",
             "default": null,
             "inheritedFrom": "getValueText",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -718,7 +718,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -729,7 +729,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -776,7 +776,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -786,7 +786,7 @@
             "required": true,
             "description": "Emitted when the max value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleemits.callables.update_max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -797,8 +797,8 @@
             "type": "{ 'update:modelValue': [value: number | null | undefined]; 'update:max': [value: number]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
             "description": "Events for the ProgressRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -809,8 +809,8 @@
                 "parameters": "value: number | null | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               },
               {
@@ -819,8 +819,8 @@
                 "parameters": "value: number",
                 "required": true,
                 "description": "Emitted when the max value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_max",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_max",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -845,7 +845,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_progress_types.progresscircleslots.callables.default",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressSlotProps",
@@ -853,8 +853,8 @@
                 "type": "ProgressSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Progress component family.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -867,11 +867,11 @@
           {
             "name": "ProgressCircleCompactSlots",
             "kind": "typeAlias",
-            "type": "{ ProgressCircle?: (props: import(\"@soybeanjs/headless\").ProgressSlotProps) => any; }",
+            "type": "{ ProgressCircle?: (props: import(\"@vean/aria\").ProgressSlotProps) => any; }",
             "resolvedType": "{ ProgressCircle?: ((props: ProgressSlotProps) => any) }",
             "description": "Slots for the ProgressCircleCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactslots",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactslots",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -882,8 +882,8 @@
                 "parameters": "((props: ProgressSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -898,8 +898,8 @@
         "type": "Interface ProgressCircleCompactProps",
         "resolvedType": "{ strokeWidth?: number; circleSvgProps?: ProgressCircleSvgProps; dir?: Direction; modelValue?: number | null; max?: number; getValueLabel?: ((value: number | null, max: number) => string); getValueText?: ((value: number | null, max: number) => string); asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ProgressCircleCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.props",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.props",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -907,10 +907,10 @@
             "type": "number",
             "required": false,
             "description": "Stroke width.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.strokewidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.strokewidth",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -918,10 +918,10 @@
             "type": "ProgressCircleSvgProps",
             "required": false,
             "description": "Properties forwarded to the ProgressCircleSvg component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.circlesvgprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.circlesvgprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressCircleSvgProps",
@@ -929,8 +929,8 @@
                 "type": "ProgressCircleSvgProps",
                 "resolvedType": "{ strokeWidth?: number }",
                 "description": "Properties for the ProgressCircleSvg component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclesvgprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclesvgprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -939,10 +939,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Stroke width.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclesvgprops.members.strokewidth",
+                    "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclesvgprops.members.strokewidth",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/progress/types.ts",
+                    "sourcePath": "packages/aria/src/components/progress/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -955,10 +955,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -966,8 +966,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -980,10 +980,10 @@
             "type": "number | null",
             "required": false,
             "description": "The controlled progress value. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -991,10 +991,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1002,10 +1002,10 @@
             "type": "((value: number | null, max: number) => string)",
             "required": false,
             "description": "The accessible label of the current progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.getvaluelabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.getvaluelabel",
             "default": null,
             "inheritedFrom": "getValueLabel",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1013,10 +1013,10 @@
             "type": "((value: number | null, max: number) => string)",
             "required": false,
             "description": "The accessible text of the current progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.getvaluetext",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.getvaluetext",
             "default": null,
             "inheritedFrom": "getValueText",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1024,10 +1024,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1035,10 +1035,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1073,8 +1073,8 @@
         "type": "TypeAlias ProgressCircleCompactEmits: ProgressRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
         "description": "Events for the ProgressCircleCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactemits.emits",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactemits.emits",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1084,8 +1084,8 @@
             "parameters": "value: number | null | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1094,8 +1094,8 @@
             "parameters": "value: number",
             "required": true,
             "description": "Emitted when the max value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactemits.callables.update_max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactemits.callables.update_max",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1106,8 +1106,8 @@
             "type": "{ 'update:modelValue': [value: number | null | undefined]; 'update:max': [value: number]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
             "description": "Events for the ProgressRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1118,8 +1118,8 @@
                 "parameters": "value: number | null | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1128,8 +1128,8 @@
                 "parameters": "value: number",
                 "required": true,
                 "description": "Emitted when the max value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_max",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_max",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1142,8 +1142,8 @@
         "type": "TypeAlias ProgressCircleCompactSlots",
         "resolvedType": "{ ProgressCircle?: ((props: ProgressSlotProps) => any) }",
         "description": "Slots for the ProgressCircleCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactslots.slots",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactslots.slots",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1153,8 +1153,8 @@
             "parameters": "((props: ProgressSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclecompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclecompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressSlotProps",
@@ -1162,8 +1162,8 @@
                 "type": "ProgressSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Progress component family.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1182,8 +1182,8 @@
         "type": "Interface ProgressCircleSvgProps",
         "resolvedType": "{ strokeWidth?: number }",
         "description": "Properties for the ProgressCircleSvg component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclesvgprops.props",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclesvgprops.props",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1191,10 +1191,10 @@
             "type": "number",
             "required": false,
             "description": "Stroke width.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscirclesvgprops.members.strokewidth",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscirclesvgprops.members.strokewidth",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1209,8 +1209,8 @@
         "type": "Interface ProgressCompactProps",
         "resolvedType": "{ indicatorProps?: ProgressIndicatorProps; dir?: Direction; modelValue?: number | null; max?: number; getValueLabel?: ((value: number | null, max: number) => string); getValueText?: ((value: number | null, max: number) => string); asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ProgressCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.props",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.props",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1218,10 +1218,10 @@
             "type": "ProgressIndicatorProps",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressIndicatorProps",
@@ -1229,8 +1229,8 @@
                 "type": "ProgressIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ProgressIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1239,10 +1239,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1250,10 +1250,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1266,10 +1266,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1277,8 +1277,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1291,10 +1291,10 @@
             "type": "number | null",
             "required": false,
             "description": "The controlled progress value. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1302,10 +1302,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1313,10 +1313,10 @@
             "type": "((value: number | null, max: number) => string)",
             "required": false,
             "description": "The accessible label of the current progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.getvaluelabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.getvaluelabel",
             "default": null,
             "inheritedFrom": "getValueLabel",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1324,10 +1324,10 @@
             "type": "((value: number | null, max: number) => string)",
             "required": false,
             "description": "The accessible text of the current progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.getvaluetext",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.getvaluetext",
             "default": null,
             "inheritedFrom": "getValueText",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1335,10 +1335,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1346,10 +1346,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1384,8 +1384,8 @@
         "type": "TypeAlias ProgressCompactEmits: ProgressRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
         "description": "Events for the ProgressCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactemits.emits",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactemits.emits",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1395,8 +1395,8 @@
             "parameters": "value: number | null | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1405,8 +1405,8 @@
             "parameters": "value: number",
             "required": true,
             "description": "Emitted when the max value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactemits.callables.update_max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactemits.callables.update_max",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1417,8 +1417,8 @@
             "type": "{ 'update:modelValue': [value: number | null | undefined]; 'update:max': [value: number]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
             "description": "Events for the ProgressRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1429,8 +1429,8 @@
                 "parameters": "value: number | null | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1439,8 +1439,8 @@
                 "parameters": "value: number",
                 "required": true,
                 "description": "Emitted when the max value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_max",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_max",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1453,8 +1453,8 @@
         "type": "TypeAlias ProgressCompactSlots",
         "resolvedType": "{ ProgressCircle?: ((props: ProgressSlotProps) => any) }",
         "description": "Slots for the ProgressCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactslots.slots",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactslots.slots",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1464,8 +1464,8 @@
             "parameters": "((props: ProgressSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progresscompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progresscompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "ProgressSlotProps",
@@ -1473,8 +1473,8 @@
                 "type": "ProgressSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the Progress component family.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressslotprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressslotprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1493,8 +1493,8 @@
         "type": "Interface ProgressIndicatorProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ProgressIndicator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.props",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.props",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1502,10 +1502,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1513,10 +1513,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressindicatorprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressindicatorprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1553,8 +1553,8 @@
         "type": "Interface ProgressProviderProps",
         "resolvedType": "{ direction?: Direction; minimum?: number; maximum?: number; easing?: string; speed?: number; trickle?: boolean; trickleSpeed?: number }",
         "description": "Properties for the ProgressProvider component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.props",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.props",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1562,10 +1562,10 @@
             "type": "Direction",
             "required": false,
             "description": "Direction.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.direction",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.direction",
             "default": null,
             "inheritedFrom": "direction",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1573,8 +1573,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1587,10 +1587,10 @@
             "type": "number",
             "required": false,
             "description": "Minimum.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.minimum",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.minimum",
             "default": null,
             "inheritedFrom": "minimum",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1598,10 +1598,10 @@
             "type": "number",
             "required": false,
             "description": "Maximum.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.maximum",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.maximum",
             "default": null,
             "inheritedFrom": "maximum",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1609,10 +1609,10 @@
             "type": "string",
             "required": false,
             "description": "Easing.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.easing",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.easing",
             "default": null,
             "inheritedFrom": "easing",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1620,10 +1620,10 @@
             "type": "number",
             "required": false,
             "description": "Speed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.speed",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.speed",
             "default": null,
             "inheritedFrom": "speed",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1631,10 +1631,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether trickle.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.trickle",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.trickle",
             "default": null,
             "inheritedFrom": "trickle",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1642,10 +1642,10 @@
             "type": "number",
             "required": false,
             "description": "Trickle speed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops.members.tricklespeed",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops.members.tricklespeed",
             "default": null,
             "inheritedFrom": "trickleSpeed",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1660,8 +1660,8 @@
         "type": "Interface ProgressRootProps",
         "resolvedType": "{ dir?: Direction; modelValue?: number | null; max?: number; getValueLabel?: ((value: number | null, max: number) => string); getValueText?: ((value: number | null, max: number) => string); asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ProgressRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.props",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.props",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1669,10 +1669,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1680,8 +1680,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1694,10 +1694,10 @@
             "type": "number | null",
             "required": false,
             "description": "The controlled progress value. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1705,10 +1705,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.max",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1716,10 +1716,10 @@
             "type": "((value: number | null, max: number) => string)",
             "required": false,
             "description": "The accessible label of the current progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.getvaluelabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.getvaluelabel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1727,10 +1727,10 @@
             "type": "((value: number | null, max: number) => string)",
             "required": false,
             "description": "The accessible text of the current progress value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.getvaluetext",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.getvaluetext",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1738,10 +1738,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1749,10 +1749,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1787,8 +1787,8 @@
         "type": "TypeAlias ProgressRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: number | null | undefined]; \"update:max\": [value: number] }",
         "description": "Events for the ProgressRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.emits",
-        "sourcePath": "packages/headless/src/components/progress/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.emits",
+        "sourcePath": "packages/aria/src/components/progress/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1798,8 +1798,8 @@
             "parameters": "value: number | null | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           },
           {
@@ -1808,8 +1808,8 @@
             "parameters": "value: number",
             "required": true,
             "description": "Emitted when the max value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressrootemits.callables.update_max",
-            "sourcePath": "packages/headless/src/components/progress/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressrootemits.callables.update_max",
+            "sourcePath": "packages/aria/src/components/progress/types.ts",
             "referencedTypes": []
           }
         ],

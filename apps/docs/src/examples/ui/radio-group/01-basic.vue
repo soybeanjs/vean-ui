@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { resolveThemeColors } from '@soybeanjs/theme';
-import { SButtonIcon, SRadioGroup, SSelect, SSwitch, useTheme } from '@soybeanjs/ui';
-import type { DataOrientation, RadioGroupOptionData, SelectOptionData, ThemeColor, ThemeSize } from '@soybeanjs/ui';
+import { resolveThemeColors } from '@vean/theme';
+import { SButtonIcon, SRadioGroup, SSelect, SSwitch, useTheme } from '@vean/ui';
+import type { DataOrientation, RadioGroupOptionData, SelectOptionData, ThemeColor, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -14,7 +14,7 @@ defineProps<Props>();
 const { t } = useI18n();
 
 /**
- * `RadioGroupVariant` 未从 `@soybeanjs/ui` 导出，这里用本地字面量联合代替
+ * `RadioGroupVariant` 未从 `@vean/ui` 导出，这里用本地字面量联合代替
  * （与 `packages/ui/src/styles/radio-group.ts` 的 variant 定义一致）。
  */
 type RadioGroupVariant = 'dot' | 'outline';

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, inject } from 'vue';
-import { ButtonGroup } from '@soybeanjs/headless/button';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { toContext } from '@soybeanjs/headless/shared';
+import { ButtonGroup } from '@vean/aria/button';
+import { useOmitProps } from '@vean/aria/composables';
+import { toContext } from '@vean/aria/shared';
 import { buttonGroupVariants } from '@/styles/button';
 import { UI_CONFIG_PROVIDER_CONTEXT_KEY } from '../../constants';
 import type { ConfigProviderContext } from '../config-provider/types';

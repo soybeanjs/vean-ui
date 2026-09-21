@@ -25,7 +25,7 @@ describe('generateSchemaData (ADR-008)', () => {
   let schemaDir: string;
 
   beforeAll(async () => {
-    schemaDir = await mkdtemp(path.join(tmpdir(), 'sbean-schema-'));
+    schemaDir = await mkdtemp(path.join(tmpdir(), 'vean-schema-'));
     await generateSchemaData(schemaDir);
   });
 
@@ -37,7 +37,7 @@ describe('generateSchemaData (ADR-008)', () => {
 
   it('writes all three schema files', async () => {
     const files = await readdir(schemaDir);
-    expect(files.sort()).toEqual(['registry-item.json', 'registry.json', 'sbean.json']);
+    expect(files.sort()).toEqual(['registry-item.json', 'registry.json', 'vean.json']);
   });
 
   // -----------------------------------------------------------------------
@@ -54,7 +54,7 @@ describe('generateSchemaData (ADR-008)', () => {
 
     it('emits a top-level oneOf (valibot variant) with the wrapper description', () => {
       expect(Array.isArray(schema.oneOf)).toBe(true);
-      expect(schema.description).toMatch(/sbean registry/i);
+      expect(schema.description).toMatch(/vean registry/i);
     });
 
     it('propagates the `name` property description into EVERY variant branch', () => {
@@ -105,7 +105,7 @@ describe('generateSchemaData (ADR-008)', () => {
       const baseBranch = branches.find(branch => branch.properties?.type?.const === 'registry:base');
       expect(baseBranch, 'registry:base branch missing').toBeDefined();
       const configProp = baseBranch?.properties?.config;
-      expect(configProp?.description).toMatch(/Typed SoybeanUI base config/i);
+      expect(configProp?.description).toMatch(/Typed Vean base config/i);
       expect(configProp?.properties?.themePackage?.description).toMatch(/Theme token package/i);
     });
 
@@ -126,10 +126,10 @@ describe('generateSchemaData (ADR-008)', () => {
     });
   });
 
-  describe('sbean.json (project config)', () => {
+  describe('vean.json (project config)', () => {
     it('carries enrichment descriptions at the top level (no variant)', async () => {
-      const schema = await readJsonSchema(schemaDir, 'sbean.json');
-      expect(schema.description).toMatch(/SBean project configuration/i);
+      const schema = await readJsonSchema(schemaDir, 'vean.json');
+      expect(schema.description).toMatch(/Vean project configuration/i);
       expect(schema.properties?.style?.description).toMatch(/design style preset/i);
       expect(schema.properties?.uno?.properties?.base?.description).toMatch(/Base color palette/i);
     });

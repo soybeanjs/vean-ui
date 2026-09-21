@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import type { ThemeModePreference } from '@soybeanjs/theme';
+import { useOmitProps } from '@vean/aria/composables';
+import type { ThemeModePreference } from '@vean/theme';
 import { useTheme } from '../config-provider/use-theme';
 import SIcon from '../icon/icon.vue';
 import SSegment from '../segment/segment.vue';

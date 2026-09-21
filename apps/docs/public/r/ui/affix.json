@@ -1,22 +1,22 @@
 {
   "name": "ui/affix",
   "package": "ui",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "files": [
     {
       "path": "packages/ui/src/components/affix/affix.vue",
       "type": "registry:ui",
-      "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { AffixCompact, provideAffixUi } from '@soybeanjs/headless/affix';\nimport { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';\nimport { affixVariants } from '@/styles/affix';\nimport type { AffixProps, AffixEmits } from './types';\n\ndefineOptions({\n  name: 'SAffix'\n});\n\nconst props = defineProps<AffixProps>();\n\nconst emit = defineEmits<AffixEmits>();\n\nconst forwardedProps = useOmitProps(props, ['class', 'ui']);\n\nconst listeners = useForwardListeners(emit);\n\nconst ui = computed(() => affixVariants(undefined, props.ui, { content: props.class }));\n\nprovideAffixUi(ui);\n</script>\n\n<template>\n  <AffixCompact v-slot=\"slotProps\" v-bind=\"forwardedProps\" v-on=\"listeners\">\n    <slot v-bind=\"slotProps\" />\n  </AffixCompact>\n</template>\n"
+      "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { AffixCompact, provideAffixUi } from '@vean/aria/affix';\nimport { useForwardListeners, useOmitProps } from '@vean/aria/composables';\nimport { affixVariants } from '@/styles/affix';\nimport type { AffixProps, AffixEmits } from './types';\n\ndefineOptions({\n  name: 'SAffix'\n});\n\nconst props = defineProps<AffixProps>();\n\nconst emit = defineEmits<AffixEmits>();\n\nconst forwardedProps = useOmitProps(props, ['class', 'ui']);\n\nconst listeners = useForwardListeners(emit);\n\nconst ui = computed(() => affixVariants(undefined, props.ui, { content: props.class }));\n\nprovideAffixUi(ui);\n</script>\n\n<template>\n  <AffixCompact v-slot=\"slotProps\" v-bind=\"forwardedProps\" v-on=\"listeners\">\n    <slot v-bind=\"slotProps\" />\n  </AffixCompact>\n</template>\n"
     },
     {
       "path": "packages/ui/src/components/affix/types.ts",
       "type": "registry:lib",
-      "content": "import type { AffixCompactEmits, AffixCompactProps, AffixUi } from '@soybeanjs/headless/affix';\nimport type { ClassValue } from '@soybeanjs/headless/types';\n\n/**\n * Properties for the Affix component.\n */\nexport interface AffixProps extends AffixCompactProps {\n  /**\n   * Additional class names to apply to the content element.\n   */\n  class?: ClassValue;\n  /**\n   * Per-slot class overrides for the component.\n   */\n  ui?: Partial<AffixUi>;\n}\n\n/**\n * Events for the Affix component.\n */\nexport type AffixEmits = AffixCompactEmits;\n"
+      "content": "import type { AffixCompactEmits, AffixCompactProps, AffixUi } from '@vean/aria/affix';\nimport type { ClassValue } from '@vean/aria/types';\n\n/**\n * Properties for the Affix component.\n */\nexport interface AffixProps extends AffixCompactProps {\n  /**\n   * Additional class names to apply to the content element.\n   */\n  class?: ClassValue;\n  /**\n   * Per-slot class overrides for the component.\n   */\n  ui?: Partial<AffixUi>;\n}\n\n/**\n * Events for the Affix component.\n */\nexport type AffixEmits = AffixCompactEmits;\n"
     },
     {
       "path": "packages/ui/src/components/affix/index.ts",
       "type": "registry:lib",
-      "content": "export { default as SAffix } from './affix.vue';\n\nexport type * from '@soybeanjs/headless/affix';\nexport type * from './types';\n"
+      "content": "export { default as SAffix } from './affix.vue';\n\nexport type * from '@vean/aria/affix';\nexport type * from './types';\n"
     },
     {
       "path": "packages/ui/src/styles/affix.ts",

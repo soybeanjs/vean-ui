@@ -9,8 +9,8 @@ import {
   resolveThemeColors,
   resolveThemeMap,
   simpleColor
-} from '@soybeanjs/theme';
-import type { LiteralToken, PaletteKey, SimpleColorName, ThemeMode } from '@soybeanjs/theme';
+} from '@vean/theme';
+import type { LiteralToken, PaletteKey, SimpleColorName, ThemeMode } from '@vean/theme';
 
 /**
  * Design-token export for Figma (docs/figma.md).

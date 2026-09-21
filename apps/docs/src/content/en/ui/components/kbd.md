@@ -39,11 +39,11 @@ Use it in tooltips, help dialogs, or inline documentation to show shortcuts like
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits `Kbd` into a headless layer (`@soybeanjs/headless/kbd`) that owns the `<kbd>` element, symbolization logic (via the `useKbd` composable), and `data-group` state, and a styled layer (`@soybeanjs/ui`) that owns the `cv()` variant recipe (size/variant/raised). This follows the shadcn/ui headless/styled separation. The `useKbd` composable is a `createSharedComposable` singleton that detects macOS via `navigator.userAgent`.
+VeanUI splits `Kbd` into an Aria layer (`@vean/aria/kbd`) that owns the `<kbd>` element, symbolization logic (via the `useKbd` composable), and `data-group` state, and a styled layer (`@vean/ui`) that owns the `cv()` variant recipe (size/variant/raised). This follows the shadcn/ui headless/styled separation. The `useKbd` composable is a `createSharedComposable` singleton that detects macOS via `navigator.userAgent`.
 
-| Aspect         | SoybeanUI                                                      | shadcn/ui `Kbd` | Mantine `Kbd` | Ant Design |
+| Aspect         | VeanUI                                                         | shadcn/ui `Kbd` | Mantine `Kbd` | Ant Design |
 | :------------- | :------------------------------------------------------------- | :-------------- | :------------ | :--------- |
-| Architecture   | headless + styled split                                        | styled only     | styled only   | —          |
+| Architecture   | Aria + styled split                                            | styled only     | styled only   | —          |
 | Symbolization  | `useKbd` composable; 20 key symbols + platform-aware modifiers | —               | —             | —          |
 | Platform-aware | macOS / Windows modifier resolution via `navigator.userAgent`  | —               | —             | —          |
 | Variants       | `solid` / `outline` / `ghost`                                  | —               | —             | —          |

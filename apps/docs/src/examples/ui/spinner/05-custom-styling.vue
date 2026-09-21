@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SSpinner } from '@soybeanjs/ui';
+import { SSpinner } from '@vean/ui';
 
 const items = [
   { label: 'Primary', class: 'text-primary' },

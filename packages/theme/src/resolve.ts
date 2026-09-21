@@ -40,7 +40,7 @@ function resolveValue(value: TokenValue, format: ColorFormat): string {
 
   // 完整色覆盖：按需要转换格式（colord 与调色板层用的是同一套色彩管线）。
   // 自带 alpha 被丢弃：token 的不透明度由数值伴生变量表达，CSS 侧同样如此
-  // （`hsl(var(--soybean-x) / var(--x-alpha))`）——两边必须一致。
+  // （`hsl(var(--vean-x) / var(--x-alpha))`）——两边必须一致。
   const color = colord(value.value).alpha(1);
 
   if (!color.isValid()) {

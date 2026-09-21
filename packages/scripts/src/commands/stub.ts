@@ -1,9 +1,9 @@
 import { spawnSync } from 'node:child_process';
 import { writeFile } from 'node:fs/promises';
 import process from 'node:process';
-import headlessPkg from '../../../headless/package.json' with { type: 'json' };
+import ariaPkg from '../../../aria/package.json' with { type: 'json' };
 
-const headlessExports = {
+const ariaExports = {
   '.': './src/index.ts',
   './constants': './src/constants/index.ts',
   './composables': './src/composables/index.ts',
@@ -18,11 +18,11 @@ const headlessExports = {
   './*': './src/components/*/index.ts'
 };
 
-const pkgPath = 'packages/headless/package.json';
+const pkgPath = 'packages/aria/package.json';
 
 async function handleStub(reset?: boolean) {
-  const pkgExports = reset ? headlessPkg.publishConfig.exports : headlessExports;
-  const manifest = headlessPkg as Omit<typeof headlessPkg, 'exports'> & {
+  const pkgExports = reset ? ariaPkg.publishConfig.exports : ariaExports;
+  const manifest = ariaPkg as Omit<typeof ariaPkg, 'exports'> & {
     exports: Record<string, unknown>;
   };
 

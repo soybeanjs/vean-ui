@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButtonIcon, SInputNumber, SPagination, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SInputNumber, SPagination, SSelect, SSwitch } from '@vean/ui';
+import type { SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

@@ -8,9 +8,9 @@ const CLIENTS = {
     path: '.mcp.json',
     content: {
       mcpServers: {
-        sbean: {
+        vean: {
           command: 'npx',
-          args: ['sbean@latest', 'mcp']
+          args: ['@vean/cli@latest', 'mcp']
         }
       }
     }
@@ -19,9 +19,9 @@ const CLIENTS = {
     path: '.cursor/mcp.json',
     content: {
       mcpServers: {
-        sbean: {
+        vean: {
           command: 'npx',
-          args: ['sbean@latest', 'mcp']
+          args: ['@vean/cli@latest', 'mcp']
         }
       }
     }
@@ -30,25 +30,25 @@ const CLIENTS = {
     path: '.vscode/mcp.json',
     content: {
       servers: {
-        sbean: {
+        vean: {
           command: 'npx',
-          args: ['sbean@latest', 'mcp']
+          args: ['@vean/cli@latest', 'mcp']
         }
       }
     }
   },
   codex: {
     path: '.codex/config.toml',
-    content: '[mcp_servers.sbean]\ncommand = "npx"\nargs = ["sbean@latest", "mcp"]\n'
+    content: '[mcp_servers.vean]\ncommand = "npx"\nargs = ["@vean/cli@latest", "mcp"]\n'
   },
   opencode: {
     path: 'opencode.json',
     content: {
       $schema: 'https://opencode.ai/config.json',
       mcp: {
-        sbean: {
+        vean: {
           type: 'local',
-          command: ['npx', 'sbean@latest', 'mcp'],
+          command: ['npx', '@vean/cli@latest', 'mcp'],
           enabled: true
         }
       }
@@ -74,7 +74,7 @@ async function writeClientConfig(cwd: string, client: ClientName) {
 
 export const mcp = new Command()
   .name('mcp')
-  .description('run the SBean MCP server or initialize MCP client config')
+  .description('run the Vean MCP server or initialize MCP client config')
   .option('-c, --cwd <cwd>', 'the working directory', process.cwd())
   .action(async opts => {
     process.chdir(path.resolve(opts.cwd));

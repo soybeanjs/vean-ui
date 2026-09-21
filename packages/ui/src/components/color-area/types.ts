@@ -1,5 +1,5 @@
-import type { ColorAreaCompactEmits, ColorAreaCompactProps, ColorAreaUi } from '@soybeanjs/headless/color-area';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ColorAreaCompactEmits, ColorAreaCompactProps, ColorAreaUi } from '@vean/aria/color-area';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

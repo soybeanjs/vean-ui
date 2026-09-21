@@ -46,13 +46,13 @@ const zhLocaleModules = import.meta.glob<{ default: GeneratedMessages }>('../gen
 
 /**
  * `../generated/api/<pkg>/<name>.json` 的 glob key → 组件文档路由前缀。
- * headless 只有 headless-only 组件（如 visually-hidden），它们的文档页仍在
+ * aria 只有 aria-only 组件（如 visually-hidden），它们的文档页仍在
  * `ui` 文档区（`/components/<name>`）下，所以与 ui 共用同一前缀。
  */
 function routePrefix(path: string): string {
   const pkg = path.split('/').at(-2);
 
-  return pkg === 'ui' || pkg === 'headless' ? '/components' : `/${pkg}`;
+  return pkg === 'ui' || pkg === 'aria' ? '/components' : `/${pkg}`;
 }
 
 /**

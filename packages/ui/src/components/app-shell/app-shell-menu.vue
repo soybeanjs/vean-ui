@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { LayoutSide } from '@soybeanjs/headless/layout';
-import type { SplitNavMode, SplitNavOptionData } from '@soybeanjs/headless/split-nav';
-import type { TreeMenuExpandStrategy } from '@soybeanjs/headless/tree-menu';
+import type { LayoutSide } from '@vean/aria/layout';
+import type { SplitNavMode, SplitNavOptionData } from '@vean/aria/split-nav';
+import type { TreeMenuExpandStrategy } from '@vean/aria/tree-menu';
 import type { ThemeSize } from '@/theme';
 import SSplitNav from '../split-nav/split-nav.vue';
 import STreeMenu from '../tree-menu/tree-menu.vue';

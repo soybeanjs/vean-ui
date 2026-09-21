@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { NavMenuCompact, provideNavMenuUi } from '@soybeanjs/headless/nav-menu';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { NavMenuCompact, provideNavMenuUi } from '@vean/aria/nav-menu';
+import { keysOf } from '@vean/aria/shared';
 import { navMenuVariants } from '@/styles/nav-menu';
 import type { NavMenuProps, NavMenuEmits, NavMenuSlots } from './types';
 

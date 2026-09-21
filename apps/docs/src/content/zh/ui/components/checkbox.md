@@ -44,18 +44,18 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 以单一事实源的三态状态机构建复选框：`CheckboxRoot`（`useControllableState` + `CheckedState`）派生 `ariaChecked`（`indeterminate` → `mixed`）与 `dataState`（checked / indeterminate / unchecked），`CheckboxControl` 在 `role="checkbox"` 上双通道反射，`CheckboxIndicator` 经 `usePresence` 条件挂载。组值变更由 `CheckboxGroupRoot` 发出——它包装 `useRovingFocusGroup` 提供方向键导航，并渲染 `VisuallyHiddenInput` 表单代理。`scv()` 配方 `checkboxVariants` / `checkboxCardVariants` 声明 6 尺寸、8 颜色、2 形状；四层 Compact 持有迭代与默认组合，UI 包装器只注入变体类。
+VeanUI 以单一事实源的三态状态机构建复选框：`CheckboxRoot`（`useControllableState` + `CheckedState`）派生 `ariaChecked`（`indeterminate` → `mixed`）与 `dataState`（checked / indeterminate / unchecked），`CheckboxControl` 在 `role="checkbox"` 上双通道反射，`CheckboxIndicator` 经 `usePresence` 条件挂载。组值变更由 `CheckboxGroupRoot` 发出——它包装 `useRovingFocusGroup` 提供方向键导航，并渲染 `VisuallyHiddenInput` 表单代理。`scv()` 配方 `checkboxVariants` / `checkboxCardVariants` 声明 6 尺寸、8 颜色、2 形状；四层 Compact 持有迭代与默认组合，UI 包装器只注入变体类。
 
-| 能力                      | SoybeanUI | Ant Design `Checkbox` | Element Plus `Checkbox` | Mantine `Checkbox` | shadcn/ui `Checkbox` |
-| :------------------------ | :-------: | :-------------------: | :---------------------: | :----------------: | :------------------: |
-| headless/styled 分离      |    ✅     |           —           |            —            |         —          |          ✅          |
-| 三态（indeterminate）     |    ✅     |          ✅           |           ✅            |         ✅         |          ✅          |
-| 独立 `indeterminate` prop |    ➕     |          ✅           |           ✅            |         ✅         |          —           |
-| 表单 value 映射           |    ✅     |          ✅           |           ✅            |         ✅         |          ✅          |
-| 卡片变体（icon/描述）     |    ✅     |           —           |            —            |         —          |          —           |
-| 组 roving-focus 键盘导航  |    ✅     |          ✅           |           ✅            |         ✅         |          —           |
-| `button` variant          |    ➕     |          ✅           |           ✅            |         —          |          —           |
-| 全选/半选联动辅助         |    ➕     |          ✅           |            —            |         —          |          —           |
+| 能力                      | VeanUI | Ant Design `Checkbox` | Element Plus `Checkbox` | Mantine `Checkbox` | shadcn/ui `Checkbox` |
+| :------------------------ | :----: | :-------------------: | :---------------------: | :----------------: | :------------------: |
+| Aria/styled 分离          |   ✅   |           —           |            —            |         —          |          ✅          |
+| 三态（indeterminate）     |   ✅   |          ✅           |           ✅            |         ✅         |          ✅          |
+| 独立 `indeterminate` prop |   ➕   |          ✅           |           ✅            |         ✅         |          —           |
+| 表单 value 映射           |   ✅   |          ✅           |           ✅            |         ✅         |          ✅          |
+| 卡片变体（icon/描述）     |   ✅   |           —           |            —            |         —          |          —           |
+| 组 roving-focus 键盘导航  |   ✅   |          ✅           |           ✅            |         ✅         |          —           |
+| `button` variant          |   ➕   |          ✅           |           ✅            |         —          |          —           |
+| 全选/半选联动辅助         |   ➕   |          ✅           |            —            |         —          |          —           |
 
 ### 注意事项
 

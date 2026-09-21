@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { TimeFieldCompact, provideTimeFieldUi } from '@soybeanjs/headless/time-field';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { TimeFieldCompact, provideTimeFieldUi } from '@vean/aria/time-field';
 import { dateFieldVariants } from '@/styles/date-field';
 import type { TimeFieldProps, TimeFieldEmits, TimeFieldSlots } from './types';
 

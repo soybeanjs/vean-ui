@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SButton } from '@soybeanjs/ui';
-import type { ThemeColor } from '@soybeanjs/ui';
+import { SButton } from '@vean/ui';
+import type { ThemeColor } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewContrast'

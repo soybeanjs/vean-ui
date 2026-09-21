@@ -1,4 +1,4 @@
-import type { SplitNavBaseOptionData, SplitNavOptionData } from '@soybeanjs/ui';
+import type { SplitNavBaseOptionData, SplitNavOptionData } from '@vean/ui';
 
 export const splitNavItems: SplitNavOptionData<SplitNavBaseOptionData>[] = [
   {
@@ -17,8 +17,8 @@ export const splitNavItems: SplitNavOptionData<SplitNavBaseOptionData>[] = [
         icon: 'lucide:folder-kanban',
         children: [
           {
-            label: 'Soybean UI',
-            value: 'soybean-ui',
+            label: 'Vean',
+            value: 'vean',
             icon: 'lucide:book-open'
           },
           {

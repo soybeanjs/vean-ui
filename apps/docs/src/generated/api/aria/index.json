@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-22T11:10:53.570Z",
+  "schemaVersion": 4,
+  "components": {
+    "arrow": {
+      "component": "arrow",
+      "file": "arrow.json",
+      "symbols": ["Arrow"]
+    },
+    "popper": {
+      "component": "popper",
+      "file": "popper.json",
+      "symbols": [
+        "PopperAnchor",
+        "PopperArrow",
+        "PopperCompact",
+        "PopperPopup",
+        "PopperPortal",
+        "PopperPositioner",
+        "PopperPositionerImpl",
+        "PopperPositioningPopup",
+        "PopperPositioningPositioner",
+        "PopperPositioningRoot",
+        "PopperRoot",
+        "PopperSub",
+        "PopperSubTrigger",
+        "PopperTrigger"
+      ]
+    },
+    "primitive": {
+      "component": "primitive",
+      "file": "primitive.json",
+      "symbols": ["Primitive", "PrimitiveWithBase"]
+    },
+    "visually-hidden": {
+      "component": "visually-hidden",
+      "file": "visually-hidden.json",
+      "symbols": ["VisuallyHidden", "VisuallyHiddenInput"]
+    }
+  }
+}

@@ -12,8 +12,8 @@
 
 生态分层（ADR-0001）确立后，各包有明确容量边界：
 
-- 核心库 `@soybeanjs/ui`：桌面优先的通用原子组件；中后台壳复合已明确为核心内领域（见 [../ui-shell-roadmap.md](../ui-shell-roadmap.md)），其余复合型/小众组件延后至组件市场。
-- 组件市场（sbean registry）：源码分发的组合方案，用户自持代码。
+- 核心库 `@vean/ui`：桌面优先的通用原子组件；中后台壳复合已明确为核心内领域（见 [../ui-shell-roadmap.md](../ui-shell-roadmap.md)），其余复合型/小众组件延后至组件市场。
+- 组件市场（vean registry）：源码分发的组合方案，用户自持代码。
 
 上述渠道都覆盖不了的场景：**体量大、需要独立演进节奏、且不适合源码分发**的高级能力——这是增值方向的候选空间（2026-09 注：原方案的第三方即 `@soybeanjs/admin`，已取消，其壳能力改由核心内 shell 领域承载）。
 
@@ -22,8 +22,8 @@
 一个能力进入 ui-pro 须**全部**满足：
 
 1. **复合且重**：体量相当于一个子领域（如编辑器的 Tiptap 级、表单设计器级），经评估不适合进核心库（含壳领域，见 [../ui-shell-roadmap.md](../ui-shell-roadmap.md)）。
-2. **不适合源码分发**：需要持续安全 / 兼容维护，或依赖闭源协作，sbean registry 模式不合适。
-3. **不与现有方向重叠**：不落在壳组件收录范围内，也不属于图表（文档示例方向）或 AI 对话领域（AI/chat 组件属核心 headless/ui，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)）。
+2. **不适合源码分发**：需要持续安全 / 兼容维护，或依赖闭源协作，vean registry 模式不合适。
+3. **不与现有方向重叠**：不落在壳组件收录范围内，也不属于图表（文档示例方向）或 AI 对话领域（AI/chat 组件属核心 aria/ui，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)）。
 4. **通用无业务语义**：不含特定行业逻辑。
 
 ### 1.3 候选范围（按判据初筛，仅供立项讨论）
@@ -45,10 +45,10 @@ ui-pro 一旦立项，直接套用生态既有契约，无新架构发明：
 Layer 4  @soybeanjs/ui-pro ──► @soybeanjs/{ui, headless, theme}
 ```
 
-- **单包自治**（仅当形态选为独立包时）：领域逻辑与样式同居包内，不建中间 headless 层；并入核心 ui 则遵循 headless/ui 两层契约。
+- **单包自治**（仅当形态选为独立包时）：领域逻辑与样式同居包内，不建中间 aria 层；并入核心 ui 则遵循 aria/ui 两层契约。
 - **重依赖隔离**：图表能力不存在库内包（文档示例基于 TanStack Charts），消费者自行接入；任何重依赖须 peer 化，见 [README 立项决策清单](./README.md#立项时必须回答的问题)。
 - **前缀**：若并入核心库，统一 `S` 前缀（含回归核心的 AI 组件；原 ui-x 的 `Sx` 已随包移除）；独立增值包形态下候选 `Sp`（"soybean pro"）以示区分，立项时与社区评审定案。
-- **exports**（独立包形态）：`.`、`./nuxt`、`./resolver`、`./styles.css`、`./*`（组件子路径），与核心 `@soybeanjs/ui` 的出口形态对齐。
+- **exports**（独立包形态）：`.`、`./nuxt`、`./resolver`、`./styles.css`、`./*`（组件子路径），与核心 `@vean/ui` 的出口形态对齐。
 - **版本**：lockstep 同版本；**分发模式待立项评审**（开源同仓 lockstep vs 独立仓库 / 商业授权，见 §5）。
 
 ## 3. 核心功能（按候选范围展开，均为立项后事项）
@@ -67,7 +67,7 @@ Layer 4  @soybeanjs/ui-pro ──► @soybeanjs/{ui, headless, theme}
 |  2   | 先发组件（立项评审确定，候选表单设计器 / DataGrid）                    | 立项后 1–2 月    |
 |  3   | 文档 / registry（`ui-pro/*` 命名空间）/ playground 接线                | 随组件           |
 
-前置依赖：立项时先完成形态决策与接入契约演练（sbean registry 命名空间、构建、docs/playground 接线），见 [README 立项决策清单](./README.md#立项时必须回答的问题)。
+前置依赖：立项时先完成形态决策与接入契约演练（vean registry 命名空间、构建、docs/playground 接线），见 [README 立项决策清单](./README.md#立项时必须回答的问题)。
 
 ## 5. 技术选型（预研方向）
 
@@ -82,7 +82,7 @@ Layer 4  @soybeanjs/ui-pro ──► @soybeanjs/{ui, headless, theme}
 
 - **接入契约**：独立包形态须先过接入清单演练（骨架模板、前缀注册、registry `package` 元数据、构建与 docs/playground 命名空间）后才可开工；清单以 [README](./README.md) 立项决策问题为准。
 - **核心库依赖**：所有候选项均依赖尚在路线图中的核心组件（`Upload`、`Tour`、`Masonry` 等），立项时需核对核心组件交付状态。
-- **许可**：若走商业授权（模式 B/C），需与 sbean 源码分发链路（registry / MCP / 文档站）明确隔离策略。
+- **许可**：若走商业授权（模式 B/C），需与 vean 源码分发链路（registry / MCP / 文档站）明确隔离策略。
 
 ## 7. 风险
 

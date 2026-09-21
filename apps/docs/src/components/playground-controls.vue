@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import type { SegmentOptionData } from '@soybeanjs/ui';
+import type { SegmentOptionData } from '@vean/ui';
 import { playgroundDeviceMetas, playgroundDevices, playgroundTabs } from '~/constants/playground';
 import type { PlaygroundDevice, PlaygroundTab } from '~/constants/playground';
 

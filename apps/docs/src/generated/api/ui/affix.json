@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -53,8 +53,8 @@
                 "type": "{ root: ClassValue; content: ClassValue; placeholder: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Affix component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixui",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixui",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -70,7 +70,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_affix_types.affixprops.members.placeholderprops",
             "default": null,
             "inheritedFrom": "placeholderProps",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": [
               {
                 "name": "AffixPlaceholderProps",
@@ -78,8 +78,8 @@
                 "type": "AffixPlaceholderProps",
                 "resolvedType": null,
                 "description": "Properties for the AffixPlaceholder component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixplaceholderprops",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixplaceholderprops",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_affix_types.affixprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": [
               {
                 "name": "AffixContentProps",
@@ -103,8 +103,8 @@
                 "type": "AffixContentProps",
                 "resolvedType": null,
                 "description": "Properties for the AffixContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcontentprops",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcontentprops",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_affix_types.affixprops.members.offsettop",
             "default": "0",
             "inheritedFrom": "offsetTop",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_affix_types.affixprops.members.offsetbottom",
             "default": null,
             "inheritedFrom": "offsetBottom",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           },
           {
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_affix_types.affixprops.members.target",
             "default": "window",
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           }
         ],
@@ -167,7 +167,7 @@
             "required": true,
             "description": "Emitted when change occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_affix_types.affixemits.callables.change",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           }
         ],
@@ -178,8 +178,8 @@
             "type": "{ change: [affixed: boolean]; }",
             "resolvedType": "{ change: [affixed: boolean] }",
             "description": "Events for the AffixRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootemits",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootemits",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -190,8 +190,8 @@
                 "parameters": "affixed: boolean",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootemits.callables.change",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -206,8 +206,8 @@
         "type": "Interface AffixCompactProps",
         "resolvedType": "{ placeholderProps?: AffixPlaceholderProps; contentProps?: AffixContentProps; offsetTop?: number; offsetBottom?: number; target?: AffixTarget | null }",
         "description": "Properties for the AffixCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactprops.props",
-        "sourcePath": "packages/headless/src/components/affix/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactprops.props",
+        "sourcePath": "packages/aria/src/components/affix/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -215,10 +215,10 @@
             "type": "AffixPlaceholderProps",
             "required": false,
             "description": "Properties forwarded to the placeholder element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactprops.members.placeholderprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactprops.members.placeholderprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": [
               {
                 "name": "AffixPlaceholderProps",
@@ -226,8 +226,8 @@
                 "type": "AffixPlaceholderProps",
                 "resolvedType": null,
                 "description": "Properties for the AffixPlaceholder component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixplaceholderprops",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixplaceholderprops",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -240,10 +240,10 @@
             "type": "AffixContentProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": [
               {
                 "name": "AffixContentProps",
@@ -251,8 +251,8 @@
                 "type": "AffixContentProps",
                 "resolvedType": null,
                 "description": "Properties for the AffixContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcontentprops",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcontentprops",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -265,10 +265,10 @@
             "type": "number",
             "required": false,
             "description": "The offset from the top of the target container when the element becomes affixed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactprops.members.offsettop",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactprops.members.offsettop",
             "default": "0",
             "inheritedFrom": "offsetTop",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           },
           {
@@ -276,10 +276,10 @@
             "type": "number",
             "required": false,
             "description": "The offset from the bottom of the target container when the element becomes affixed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactprops.members.offsetbottom",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactprops.members.offsetbottom",
             "default": null,
             "inheritedFrom": "offsetBottom",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           },
           {
@@ -287,10 +287,10 @@
             "type": "AffixTarget | null",
             "required": false,
             "description": "The element that Affix listens to for scroll position updates.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactprops.members.target",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactprops.members.target",
             "default": "window",
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           }
         ],
@@ -303,8 +303,8 @@
         "type": "TypeAlias AffixCompactEmits: AffixRootEmits",
         "resolvedType": "{ change: [affixed: boolean] }",
         "description": "Events for the AffixCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/affix/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/affix/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -314,8 +314,8 @@
             "parameters": "affixed: boolean",
             "required": true,
             "description": "Emitted when change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcompactemits.callables.change",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcompactemits.callables.change",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           }
         ],
@@ -326,8 +326,8 @@
             "type": "{ change: [affixed: boolean]; }",
             "resolvedType": "{ change: [affixed: boolean] }",
             "description": "Events for the AffixRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootemits",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootemits",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -338,8 +338,8 @@
                 "parameters": "affixed: boolean",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootemits.callables.change",
-                "sourcePath": "packages/headless/src/components/affix/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/affix/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -354,8 +354,8 @@
         "type": "Interface AffixContentProps",
         "resolvedType": null,
         "description": "Properties for the AffixContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixcontentprops.props",
-        "sourcePath": "packages/headless/src/components/affix/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixcontentprops.props",
+        "sourcePath": "packages/aria/src/components/affix/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -369,8 +369,8 @@
         "type": "Interface AffixPlaceholderProps",
         "resolvedType": null,
         "description": "Properties for the AffixPlaceholder component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixplaceholderprops.props",
-        "sourcePath": "packages/headless/src/components/affix/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixplaceholderprops.props",
+        "sourcePath": "packages/aria/src/components/affix/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -384,8 +384,8 @@
         "type": "Interface AffixRootProps",
         "resolvedType": "{ offsetTop?: number; offsetBottom?: number; target?: AffixTarget | null }",
         "description": "Properties for the AffixRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootprops.props",
-        "sourcePath": "packages/headless/src/components/affix/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootprops.props",
+        "sourcePath": "packages/aria/src/components/affix/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -393,10 +393,10 @@
             "type": "number",
             "required": false,
             "description": "The offset from the top of the target container when the element becomes affixed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootprops.members.offsettop",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootprops.members.offsettop",
             "default": "0",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           },
           {
@@ -404,10 +404,10 @@
             "type": "number",
             "required": false,
             "description": "The offset from the bottom of the target container when the element becomes affixed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootprops.members.offsetbottom",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootprops.members.offsetbottom",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           },
           {
@@ -415,10 +415,10 @@
             "type": "AffixTarget | null",
             "required": false,
             "description": "The element that Affix listens to for scroll position updates.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootprops.members.target",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootprops.members.target",
             "default": "window",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           }
         ],
@@ -431,8 +431,8 @@
         "type": "TypeAlias AffixRootEmits",
         "resolvedType": "{ change: [affixed: boolean] }",
         "description": "Events for the AffixRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootemits.emits",
-        "sourcePath": "packages/headless/src/components/affix/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootemits.emits",
+        "sourcePath": "packages/aria/src/components/affix/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -442,8 +442,8 @@
             "parameters": "affixed: boolean",
             "required": true,
             "description": "Emitted when change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_affix_types.affixrootemits.callables.change",
-            "sourcePath": "packages/headless/src/components/affix/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_affix_types.affixrootemits.callables.change",
+            "sourcePath": "packages/aria/src/components/affix/types.ts",
             "referencedTypes": []
           }
         ],

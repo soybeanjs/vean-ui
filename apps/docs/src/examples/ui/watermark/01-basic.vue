@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SInput, SInputNumber, SSelect, SSwitch, SWatermark } from '@soybeanjs/ui';
-import type { SelectOptionData } from '@soybeanjs/ui';
+import { SButtonIcon, SInput, SInputNumber, SSelect, SSwitch, SWatermark } from '@vean/ui';
+import type { SelectOptionData } from '@vean/ui';
 
 interface Props {
   playgroundRegion?: string;

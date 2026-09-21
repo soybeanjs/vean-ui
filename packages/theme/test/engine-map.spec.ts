@@ -347,15 +347,15 @@ describe('semantic layer (Layer 2) emission', () => {
     const bare = emitThemeCss(resolveThemeMap(DEFAULTS));
     // 解析与发射必须用同一个前缀，否则字面量层的内部引用（`calc(var(--radius) * k)`）
     // 会指向不存在的变量
-    const prefixed = emitThemeCss(resolveThemeMap({ ...DEFAULTS, prefix: 'soybean' }), {
-      prefix: 'soybean'
+    const prefixed = emitThemeCss(resolveThemeMap({ ...DEFAULTS, prefix: 'vean' }), {
+      prefix: 'vean'
     });
 
     expect(bare).toContain('--background: var(--zinc-50);');
-    expect(bare).not.toContain('--soybean-background');
-    expect(prefixed).toContain('--soybean-background: var(--zinc-50);');
-    expect(prefixed).toContain('--soybean-radius: 0.5rem;');
-    expect(prefixed).toContain('--soybean-radius-md: var(--soybean-radius);');
+    expect(bare).not.toContain('--vean-background');
+    expect(prefixed).toContain('--vean-background: var(--zinc-50);');
+    expect(prefixed).toContain('--vean-radius: 0.5rem;');
+    expect(prefixed).toContain('--vean-radius-md: var(--vean-radius);');
   });
 
   it('keeps the semantic layer inside its size budget (§10: ≤ 10 KB raw)', () => {

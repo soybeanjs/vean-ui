@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { resolveThemeColors } from '@soybeanjs/theme';
-import { SAnchor, SButtonIcon, SInputNumber, SSelect, SSwitch, useTheme } from '@soybeanjs/ui';
-import type { DataOrientation, SelectOptionData, ThemeColor, ThemeSize } from '@soybeanjs/ui';
+import { resolveThemeColors } from '@vean/theme';
+import { SAnchor, SButtonIcon, SInputNumber, SSelect, SSwitch, useTheme } from '@vean/ui';
+import type { DataOrientation, SelectOptionData, ThemeColor, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 import { createAnchorItems, createAnchorSections } from './shared';
 

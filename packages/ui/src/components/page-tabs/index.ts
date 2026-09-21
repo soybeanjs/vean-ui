@@ -1,4 +1,4 @@
 export { default as SPageTabs } from './page-tabs.vue';
 
-export type * from '@soybeanjs/headless/page-tabs';
+export type * from '@vean/aria/page-tabs';
 export type * from './types';

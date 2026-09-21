@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends TreeMenuBaseOptionData = TreeMenuBaseOptionData">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import { TreeMenuCompact, provideTreeMenuUi } from '@soybeanjs/headless/tree-menu';
-import type { TreeMenuBaseOptionData } from '@soybeanjs/headless/tree-menu';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import { TreeMenuCompact, provideTreeMenuUi } from '@vean/aria/tree-menu';
+import type { TreeMenuBaseOptionData } from '@vean/aria/tree-menu';
 import { treeMenuVariants } from '@/styles/tree-menu';
 import { themeSizeMap, themeSizeRatio } from '@/theme';
 import { provideMenuUi } from '../menu/context';

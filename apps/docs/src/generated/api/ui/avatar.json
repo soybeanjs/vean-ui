@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; image: ClassValue; fallback: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Avatar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarui",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarui",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_avatar_types.avatarprops.members.src",
             "default": null,
             "inheritedFrom": "src",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_avatar_types.avatarprops.members.delayms",
             "default": "undefined",
             "inheritedFrom": "delayMs",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_avatar_types.avatarprops.members.fallbacklabel",
             "default": null,
             "inheritedFrom": "fallbackLabel",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -128,7 +128,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_avatar_types.avatarprops.members.imageprops",
             "default": null,
             "inheritedFrom": "imageProps",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "AvatarImageProps",
@@ -136,8 +136,8 @@
                 "type": "AvatarImageProps",
                 "resolvedType": "{ src: string; alt?: string; referrerpolicy?: ('' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'); crossorigin?: '' | 'anonymous' | 'use-credentials' }",
                 "description": "Properties for the AvatarImage component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -146,10 +146,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The image source URL",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.src",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.src",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -157,10 +157,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Alternate text for the image. When unset the avatar's fallback label is used so the loaded image keeps an\naccessible name; set to `''` to mark a purely decorative avatar.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.alt",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.alt",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -168,10 +168,10 @@
                     "type": "('' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url')",
                     "required": false,
                     "description": "The referrer policy for the image",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.referrerpolicy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.referrerpolicy",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -179,10 +179,10 @@
                     "type": "'' | 'anonymous' | 'use-credentials'",
                     "required": false,
                     "description": "The cross-origin setting for the image",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.crossorigin",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.crossorigin",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -198,7 +198,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_avatar_types.avatarprops.members.fallbackprops",
             "default": null,
             "inheritedFrom": "fallbackProps",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "AvatarFallbackProps",
@@ -206,8 +206,8 @@
                 "type": "AvatarFallbackProps",
                 "resolvedType": "{ delayMs?: number }",
                 "description": "Properties for the AvatarFallback component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarfallbackprops",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarfallbackprops",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -216,10 +216,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Useful for delaying rendering so it only appears for those with slower connections.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarfallbackprops.members.delayms",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarfallbackprops.members.delayms",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -249,7 +249,7 @@
             "required": true,
             "description": "Event handler called when the image loading status changes. This is useful for controlling what to render as the\nimage is loading.",
             "descriptionKey": "api.generated.packages_ui_src_components_avatar_types.avataremits.callables.loadingstatuschange",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "ImageLoadingStatus",
@@ -257,8 +257,8 @@
                 "type": "'idle' | 'loading' | 'loaded' | 'error'",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_dom.imageloadingstatus",
-                "sourcePath": "packages/headless/src/types/dom.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_dom.imageloadingstatus",
+                "sourcePath": "packages/aria/src/types/dom.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -271,11 +271,11 @@
           {
             "name": "AvatarImageEmits",
             "kind": "typeAlias",
-            "type": "{ loadingStatusChange: [status: import(\"@soybeanjs/headless\").ImageLoadingStatus]; }",
+            "type": "{ loadingStatusChange: [status: import(\"@vean/aria\").ImageLoadingStatus]; }",
             "resolvedType": "{ loadingStatusChange: [status: ImageLoadingStatus] }",
             "description": "Events for the AvatarImage component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageemits",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageemits",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -286,8 +286,8 @@
                 "parameters": "status: ImageLoadingStatus",
                 "required": true,
                 "description": "Event handler called when the image loading status changes. This is useful for controlling what to render as the\nimage is loading.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageemits.callables.loadingstatuschange",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageemits.callables.loadingstatuschange",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -302,8 +302,8 @@
         "type": "Interface AvatarCompactProps",
         "resolvedType": "{ src: string; delayMs?: number; fallbackLabel?: string; imageProps?: AvatarImageProps; fallbackProps?: AvatarFallbackProps }",
         "description": "Properties for the AvatarCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactprops.props",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactprops.props",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -311,10 +311,10 @@
             "type": "string",
             "required": true,
             "description": "The image source URL.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactprops.members.src",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactprops.members.src",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -322,10 +322,10 @@
             "type": "number",
             "required": false,
             "description": "Useful for delaying fallback rendering so it only appears for those with slower connections.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactprops.members.delayms",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactprops.members.delayms",
             "default": "undefined",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -333,10 +333,10 @@
             "type": "string",
             "required": false,
             "description": "Fallback text rendered when no custom fallback slot is provided.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactprops.members.fallbacklabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactprops.members.fallbacklabel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -344,10 +344,10 @@
             "type": "AvatarImageProps",
             "required": false,
             "description": "Properties forwarded to the image element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactprops.members.imageprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactprops.members.imageprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "AvatarImageProps",
@@ -355,8 +355,8 @@
                 "type": "AvatarImageProps",
                 "resolvedType": "{ src: string; alt?: string; referrerpolicy?: ('' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'); crossorigin?: '' | 'anonymous' | 'use-credentials' }",
                 "description": "Properties for the AvatarImage component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -365,10 +365,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The image source URL",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.src",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.src",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -376,10 +376,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Alternate text for the image. When unset the avatar's fallback label is used so the loaded image keeps an\naccessible name; set to `''` to mark a purely decorative avatar.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.alt",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.alt",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -387,10 +387,10 @@
                     "type": "('' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url')",
                     "required": false,
                     "description": "The referrer policy for the image",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.referrerpolicy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.referrerpolicy",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -398,10 +398,10 @@
                     "type": "'' | 'anonymous' | 'use-credentials'",
                     "required": false,
                     "description": "The cross-origin setting for the image",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.crossorigin",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.crossorigin",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -414,10 +414,10 @@
             "type": "AvatarFallbackProps",
             "required": false,
             "description": "Properties forwarded to the fallback element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactprops.members.fallbackprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactprops.members.fallbackprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "AvatarFallbackProps",
@@ -425,8 +425,8 @@
                 "type": "AvatarFallbackProps",
                 "resolvedType": "{ delayMs?: number }",
                 "description": "Properties for the AvatarFallback component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarfallbackprops",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarfallbackprops",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -435,10 +435,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Useful for delaying rendering so it only appears for those with slower connections.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarfallbackprops.members.delayms",
+                    "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarfallbackprops.members.delayms",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                    "sourcePath": "packages/aria/src/components/avatar/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -456,8 +456,8 @@
         "type": "TypeAlias AvatarCompactEmits: AvatarImageEmits",
         "resolvedType": "{ loadingStatusChange: [status: ImageLoadingStatus] }",
         "description": "Events for the AvatarCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -467,8 +467,8 @@
             "parameters": "status: ImageLoadingStatus",
             "required": true,
             "description": "Event handler called when the image loading status changes. This is useful for controlling what to render as the\nimage is loading.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactemits.callables.loadingstatuschange",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactemits.callables.loadingstatuschange",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "ImageLoadingStatus",
@@ -476,8 +476,8 @@
                 "type": "'idle' | 'loading' | 'loaded' | 'error'",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_dom.imageloadingstatus",
-                "sourcePath": "packages/headless/src/types/dom.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_dom.imageloadingstatus",
+                "sourcePath": "packages/aria/src/types/dom.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -493,8 +493,8 @@
             "type": "{ loadingStatusChange: [status: ImageLoadingStatus]; }",
             "resolvedType": "{ loadingStatusChange: [status: ImageLoadingStatus] }",
             "description": "Events for the AvatarImage component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageemits",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageemits",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -505,8 +505,8 @@
                 "parameters": "status: ImageLoadingStatus",
                 "required": true,
                 "description": "Event handler called when the image loading status changes. This is useful for controlling what to render as the\nimage is loading.",
-                "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageemits.callables.loadingstatuschange",
-                "sourcePath": "packages/headless/src/components/avatar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageemits.callables.loadingstatuschange",
+                "sourcePath": "packages/aria/src/components/avatar/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -519,8 +519,8 @@
         "type": "TypeAlias AvatarCompactSlots",
         "resolvedType": "{ AvatarFallback?: (() => any); image?: (() => any); fallback?: (() => any) }",
         "description": "Slots for the AvatarCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -530,8 +530,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -540,8 +540,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the image slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactslots.callables.image",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactslots.callables.image",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -550,8 +550,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the fallback slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarcompactslots.callables.fallback",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarcompactslots.callables.fallback",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           }
         ],
@@ -565,8 +565,8 @@
         "type": "Interface AvatarFallbackProps",
         "resolvedType": "{ delayMs?: number }",
         "description": "Properties for the AvatarFallback component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarfallbackprops.props",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarfallbackprops.props",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -574,10 +574,10 @@
             "type": "number",
             "required": false,
             "description": "Useful for delaying rendering so it only appears for those with slower connections.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarfallbackprops.members.delayms",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarfallbackprops.members.delayms",
             "default": "undefined",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           }
         ],
@@ -592,8 +592,8 @@
         "type": "Interface AvatarImageProps",
         "resolvedType": "{ src: string; alt?: string; referrerpolicy?: ('' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'); crossorigin?: '' | 'anonymous' | 'use-credentials' }",
         "description": "Properties for the AvatarImage component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.props",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.props",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -601,10 +601,10 @@
             "type": "string",
             "required": true,
             "description": "The image source URL",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.src",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.src",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -612,10 +612,10 @@
             "type": "string",
             "required": false,
             "description": "Alternate text for the image. When unset the avatar's fallback label is used so the loaded image keeps an\naccessible name; set to `''` to mark a purely decorative avatar.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.alt",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.alt",
             "default": "undefined",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": []
           },
           {
@@ -623,10 +623,10 @@
             "type": "('' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url')",
             "required": false,
             "description": "The referrer policy for the image",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.referrerpolicy",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.referrerpolicy",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "ImgHTMLAttributes",
@@ -648,10 +648,10 @@
             "type": "'' | 'anonymous' | 'use-credentials'",
             "required": false,
             "description": "The cross-origin setting for the image",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageprops.members.crossorigin",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageprops.members.crossorigin",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "ImgHTMLAttributes",
@@ -678,8 +678,8 @@
         "type": "TypeAlias AvatarImageEmits",
         "resolvedType": "{ loadingStatusChange: [status: ImageLoadingStatus] }",
         "description": "Events for the AvatarImage component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageemits.emits",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageemits.emits",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -689,8 +689,8 @@
             "parameters": "status: ImageLoadingStatus",
             "required": true,
             "description": "Event handler called when the image loading status changes. This is useful for controlling what to render as the\nimage is loading.",
-            "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarimageemits.callables.loadingstatuschange",
-            "sourcePath": "packages/headless/src/components/avatar/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarimageemits.callables.loadingstatuschange",
+            "sourcePath": "packages/aria/src/components/avatar/types.ts",
             "referencedTypes": [
               {
                 "name": "ImageLoadingStatus",
@@ -698,8 +698,8 @@
                 "type": "'idle' | 'loading' | 'loaded' | 'error'",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_dom.imageloadingstatus",
-                "sourcePath": "packages/headless/src/types/dom.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_dom.imageloadingstatus",
+                "sourcePath": "packages/aria/src/types/dom.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -718,8 +718,8 @@
         "type": "Interface AvatarRootProps",
         "resolvedType": null,
         "description": "Properties for the AvatarRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_avatar_types.avatarrootprops.props",
-        "sourcePath": "packages/headless/src/components/avatar/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_avatar_types.avatarrootprops.props",
+        "sourcePath": "packages/aria/src/components/avatar/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],

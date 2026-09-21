@@ -2,8 +2,8 @@ import { describe, expect, it, vi } from 'vitest';
 import { defineComponent, h, nextTick, ref } from 'vue';
 import type { Ref } from 'vue';
 import { flushPromises, mount } from '@vue/test-utils';
-import type { FormFieldValidate } from '@soybeanjs/headless/form';
 import { z } from 'zod';
+import type { FormFieldValidate } from '@vean/aria/form';
 import SFormFieldBase from '@/components/form/form-field-base.vue';
 import SForm from '@/components/form/form.vue';
 import { useForm } from '@/components/form/use-form';
@@ -167,7 +167,7 @@ describe('SForm', () => {
       const form = wrapper.find('form');
 
       expect(form.exists()).toBe(true);
-      expect(form.attributes('data-soybean-form')).toBeDefined();
+      expect(form.attributes('data-vean-form')).toBeDefined();
       expect(form.attributes('data-orientation')).toBe('vertical');
       wrapper.unmount();
     });
@@ -175,10 +175,10 @@ describe('SForm', () => {
     it('renders the field structure (label / description / control)', () => {
       const { wrapper } = mountFieldForm();
 
-      expect(wrapper.find('[data-soybean-form-label]').text()).toBe('Username');
-      expect(wrapper.find('[data-soybean-form-description]').text()).toBe('Enter your username');
-      expect(wrapper.find('[data-soybean-form-control]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-form-field]').attributes('data-field-type')).toBe('field');
+      expect(wrapper.find('[data-vean-form-label]').text()).toBe('Username');
+      expect(wrapper.find('[data-vean-form-description]').text()).toBe('Enter your username');
+      expect(wrapper.find('[data-vean-form-control]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-form-field]').attributes('data-field-type')).toBe('field');
       wrapper.unmount();
     });
 
@@ -186,7 +186,7 @@ describe('SForm', () => {
       const { wrapper } = mountFieldForm();
 
       expect(wrapper.find('form').classes()).toContain('grid');
-      expect(wrapper.find('[data-soybean-form-field]').classes()).toContain('group');
+      expect(wrapper.find('[data-vean-form-field]').classes()).toContain('group');
       wrapper.unmount();
     });
 
@@ -194,7 +194,7 @@ describe('SForm', () => {
       const { wrapper } = mountFieldForm({
         validate: value => (value ? undefined : 'custom error')
       });
-      const attrs = wrapper.find('[data-soybean-form-field]').attributes();
+      const attrs = wrapper.find('[data-vean-form-field]').attributes();
 
       expect(attrs.name).toBeUndefined();
       expect(attrs.validate).toBeUndefined();
@@ -204,15 +204,15 @@ describe('SForm', () => {
     it('renders the array field wrapper when isFieldArray', () => {
       const wrapper = mountArrayForm();
 
-      expect(wrapper.find('[data-soybean-form-field-array]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-form-field-array]').attributes('data-field-type')).toBe('array');
+      expect(wrapper.find('[data-vean-form-field-array]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-form-field-array]').attributes('data-field-type')).toBe('array');
       wrapper.unmount();
     });
 
     it('applies the class prop of SFormFieldArray to the array wrapper', () => {
       const wrapper = mountArrayForm();
 
-      expect(wrapper.find('[data-soybean-form-field-array]').classes()).toContain('emails-array');
+      expect(wrapper.find('[data-vean-form-field-array]').classes()).toContain('emails-array');
       wrapper.unmount();
     });
   });
@@ -246,7 +246,7 @@ describe('SForm', () => {
       });
 
       const wrapper = mount(Form);
-      const control = wrapper.find('[data-soybean-form-control]');
+      const control = wrapper.find('[data-vean-form-control]');
 
       expect(control.attributes('data-probe')).toBe('ctrl');
       expect(control.attributes('id')).toBe('ctrl-probe');
@@ -282,7 +282,7 @@ describe('SForm', () => {
 
       const wrapper = mount(Form);
 
-      expect(wrapper.find('[data-soybean-form-label]').attributes('data-probe')).toBe('label-probe');
+      expect(wrapper.find('[data-vean-form-label]').attributes('data-probe')).toBe('label-probe');
       wrapper.unmount();
     });
 
@@ -363,8 +363,8 @@ describe('SForm', () => {
       await clearInput(wrapper, 'input[placeholder="username"]');
       await submitForm(wrapper);
 
-      expect(wrapper.find('[data-soybean-form-error]').text()).toBe('Username is required');
-      expect(wrapper.find('[data-soybean-form-field]').attributes('data-error')).toBeDefined();
+      expect(wrapper.find('[data-vean-form-error]').text()).toBe('Username is required');
+      expect(wrapper.find('[data-vean-form-field]').attributes('data-error')).toBeDefined();
       wrapper.unmount();
     });
 
@@ -373,13 +373,13 @@ describe('SForm', () => {
 
       await clearInput(wrapper, 'input[placeholder="username"]');
       await submitForm(wrapper);
-      expect(wrapper.find('[data-soybean-form-error]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-form-error]').exists()).toBe(true);
 
       await wrapper.find('input[placeholder="username"]').setValue('soybean');
       await wrapper.find('input[placeholder="age"]').setValue(18);
       await submitForm(wrapper);
 
-      expect(wrapper.find('[data-soybean-form-error]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-form-error]').exists()).toBe(false);
       wrapper.unmount();
     });
 
@@ -564,7 +564,7 @@ describe('SForm', () => {
 
       await submitForm(wrapper);
 
-      expect(wrapper.find('[data-soybean-form-error]').text()).toBe('At least one email is required');
+      expect(wrapper.find('[data-vean-form-error]').text()).toBe('At least one email is required');
       wrapper.unmount();
     });
   });
@@ -625,7 +625,7 @@ describe('SForm', () => {
   describe('accessibility', () => {
     it('associates the label with the field input via for / id', () => {
       const { wrapper } = mountFieldForm();
-      const labelFor = wrapper.find('[data-soybean-form-label]').attributes('for');
+      const labelFor = wrapper.find('[data-vean-form-label]').attributes('for');
       const inputId = wrapper.find('input[placeholder="username"]').attributes('id');
 
       expect(labelFor).toBe(inputId);
@@ -639,7 +639,7 @@ describe('SForm', () => {
       const describedBy = input.attributes('aria-describedby');
 
       expect(describedBy).toMatch(/^form-field-description-/);
-      expect(wrapper.find(`#${describedBy}`).attributes('data-soybean-form-description')).toBeDefined();
+      expect(wrapper.find(`#${describedBy}`).attributes('data-vean-form-description')).toBeDefined();
       wrapper.unmount();
     });
 

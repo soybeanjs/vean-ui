@@ -1,4 +1,4 @@
-import type { ToastProviderProps as _ToastProviderProps, ToastUi } from '@soybeanjs/headless/toast';
+import type { ToastProviderProps as _ToastProviderProps, ToastUi } from '@vean/aria/toast';
 import type { ThemeSize } from '@/theme';
 
 /**

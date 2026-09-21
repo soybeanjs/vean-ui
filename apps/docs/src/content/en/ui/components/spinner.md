@@ -35,9 +35,9 @@ head:
 
 ### Architecture and benchmark differences
 
-`SSpinner` is a UI-only component — it has no headless layer because it is a thin preset over `SIcon` (which already has a headless layer). It applies the `spinnerVariants` `cv()` recipe (color/size) and forwards all other `IconProps` to `SIcon`. This matches the shadcn/ui `Spinner` approach of wrapping an icon with preset styling.
+`SSpinner` is a UI-only component — it has no Aria layer because it is a thin preset over `SIcon` (which already has an Aria layer). It applies the `spinnerVariants` `cv()` recipe (color/size) and forwards all other `IconProps` to `SIcon`. This matches the shadcn/ui `Spinner` approach of wrapping an icon with preset styling.
 
-| Aspect         | SoybeanUI                                     | shadcn/ui `Spinner` | MUI `CircularProgress` | Mantine `Loader`   | Ant Design `Spin`  |
+| Aspect         | VeanUI                                        | shadcn/ui `Spinner` | MUI `CircularProgress` | Mantine `Loader`   | Ant Design `Spin`  |
 | :------------- | :-------------------------------------------- | :------------------ | :--------------------- | :----------------- | :----------------- |
 | Architecture   | UI-only preset over `SIcon`                   | styled SVG          | styled SVG             | styled SVG         | component + tip    |
 | Icon source    | Iconify `svg-spinners` (swappable)            | inline SVG (fixed)  | inline SVG (fixed)     | inline SVG (fixed) | inline SVG (fixed) |
@@ -63,5 +63,5 @@ Yes. Pass any icon from the Iconify `svg-spinners` collection: `<SSpinner icon="
 **How do I control the spinner size beyond the `size` prop?**
 The `size` prop maps to fixed dimensions (`size-3` to `size-10`). For custom sizing, pass `width` and `height` props (forwarded to `SIcon`) or override with `class="w-8 h-8"`.
 
-**Why is there no headless layer for Spinner?**
-The spinner is a purely presentational icon preset — it has no state, interactivity, or ARIA logic beyond what `SIcon` already provides. Adding a headless layer would be unnecessary indirection. The headless/styled split lives in `SIcon` itself.
+**Why is there no Aria layer for Spinner?**
+The spinner is a purely presentational icon preset — it has no state, interactivity, or ARIA logic beyond what `SIcon` already provides. Adding an Aria layer would be unnecessary indirection. The Aria/styled split lives in `SIcon` itself.

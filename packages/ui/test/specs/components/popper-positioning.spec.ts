@@ -8,7 +8,7 @@ import {
   PopperPositioningPositioner,
   PopperPositioningRoot,
   providePopperUi
-} from '../../../../headless/src/components/popper';
+} from '../../../../aria/src/components/popper';
 
 const components = {
   PopperPositioningRoot,
@@ -34,10 +34,10 @@ describe('PopperPositioning primitives', () => {
   it('renders the full positioning stack without an interactive PopperRoot', () => {
     const wrapper = mount({ components, template }, { attachTo: document.body });
 
-    expect(wrapper.find('[data-soybean-popper-anchor]').exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-popper-positioning-positioner]').exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-popper-positioning-popup]').exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-popper-arrow]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-popper-anchor]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-popper-positioning-positioner]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-popper-positioning-popup]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-popper-arrow]').exists()).toBe(true);
     expect(wrapper.find('[data-content]').text()).toBe('positioned content');
 
     wrapper.unmount();
@@ -46,7 +46,7 @@ describe('PopperPositioning primitives', () => {
   it('reflects the default placement side and align on the popup', () => {
     const wrapper = mount({ components, template }, { attachTo: document.body });
 
-    const popup = wrapper.find('[data-soybean-popper-positioning-popup]');
+    const popup = wrapper.find('[data-vean-popper-positioning-popup]');
     expect(popup.attributes('data-side')).toBe('bottom');
     expect(popup.attributes('data-align')).toBe('center');
 
@@ -74,10 +74,10 @@ describe('PopperPositioning primitives', () => {
       { attachTo: document.body }
     );
 
-    expect(wrapper.find('[data-soybean-popper-anchor]').classes()).toContain('ui-anchor');
-    expect(wrapper.find('[data-soybean-popper-positioning-positioner]').classes()).toContain('ui-positioner');
-    expect(wrapper.find('[data-soybean-popper-positioning-popup]').classes()).toContain('ui-popup');
-    expect(wrapper.find('[data-soybean-popper-arrow]').classes()).toContain('ui-arrow');
+    expect(wrapper.find('[data-vean-popper-anchor]').classes()).toContain('ui-anchor');
+    expect(wrapper.find('[data-vean-popper-positioning-positioner]').classes()).toContain('ui-positioner');
+    expect(wrapper.find('[data-vean-popper-positioning-popup]').classes()).toContain('ui-popup');
+    expect(wrapper.find('[data-vean-popper-arrow]').classes()).toContain('ui-arrow');
 
     wrapper.unmount();
   });
@@ -87,7 +87,7 @@ describe('PopperPositioning primitives', () => {
 
     // The positioning stack must stay mount-independent of open state: no `data-state`,
     // no dismissable-layer attribute from the interactive shell.
-    const positioner = wrapper.find('[data-soybean-popper-positioning-positioner]');
+    const positioner = wrapper.find('[data-vean-popper-positioning-positioner]');
     expect(positioner.attributes('data-state')).toBeUndefined();
     expect(wrapper.find('[data-dismissable-layer]').exists()).toBe(false);
 
@@ -99,9 +99,9 @@ describe('PopperPositioning primitives', () => {
 
     // The shared anchor must register into the positioning tree's context: the positioner
     // consumes `anchorElement` as its floating reference, so it must not be empty.
-    const positioner = wrapper.find('[data-soybean-popper-positioning-positioner]');
+    const positioner = wrapper.find('[data-vean-popper-positioning-positioner]');
     expect(positioner.exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-popper-anchor]').find('button').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-popper-anchor]').find('button').exists()).toBe(true);
 
     wrapper.unmount();
   });

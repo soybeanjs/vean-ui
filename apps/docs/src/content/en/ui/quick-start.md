@@ -1,14 +1,14 @@
 ---
 head:
   title: Quick Start
-  description: SoybeanUI offers two ways to integrate components into your project. This guide covers both paths — choose the one that fits your workflow.
+  description: VeanUI offers two ways to integrate components into your project. This guide covers both paths — choose the one that fits your workflow.
 ---
 
 # Quick Start
 
-SoybeanUI offers two ways to integrate components into your project. This guide covers both paths — choose the one that fits your workflow.
+VeanUI offers two ways to integrate components into your project. This guide covers both paths — choose the one that fits your workflow.
 
-> **Which should I choose?** Use the **npm package** for quick integration with automatic updates. Use the **CLI (sbean)** when you want full control over source code — edit any file, customize anything. See the [Installation](/overview/installation) guide for a detailed comparison.
+> **Which should I choose?** Use the **npm package** for quick integration with automatic updates. Use the **CLI (vean)** when you want full control over source code — edit any file, customize anything. See the [Installation](/overview/installation) guide for a detailed comparison.
 
 ## Requirements
 
@@ -20,21 +20,21 @@ Before you start, make sure your project meets the following requirements:
 
 ## Path A: CLI · Copy-Paste (shadcn-style)
 
-Prefer owning your component source code? Use `sbean` to copy components directly into your project.
+Prefer owning your component source code? Use `vean` to copy components directly into your project.
 
 ### 1. Initialize your project
 
 ```bash
-npx sbean init
+npx @vean/cli@latest init
 ```
 
-This creates an `sbean.json` config and sets up UnoCSS. Follow the interactive prompts to choose your colors, font, icon library, and more.
+This creates a `vean.json` config and sets up UnoCSS. Follow the interactive prompts to choose your colors, font, icon library, and more.
 
 ### 2. Add components
 
 ```bash
-npx sbean add button
-npx sbean add dialog select
+npx @vean/cli@latest add button
+npx @vean/cli@latest add dialog select
 ```
 
 Components are copied to `src/ui/components/` — they're now part of your project. Import them using the `#ui` alias:
@@ -53,44 +53,44 @@ import SButton from '#ui/components/button';
 
 ```bash
 # See what changed upstream
-npx sbean diff button
+npx @vean/cli@latest diff button
 
 # Update to the latest version
-npx sbean add button --overwrite
+npx @vean/cli@latest add button --overwrite
 ```
 
-See the [CLI documentation](/sbean) for all available commands, configuration options, and project structure details.
+See the [CLI documentation](/cli) for all available commands, configuration options, and project structure details.
 
 ## Path B: npm Package
 
-If you prefer a traditional dependency workflow, install `@soybeanjs/ui`:
+If you prefer a traditional dependency workflow, install `@vean/ui`:
 
 ```bash
 # pnpm (recommended)
-pnpm add @soybeanjs/ui
+pnpm add @vean/ui
 
 # or npm
-npm install @soybeanjs/ui
+npm install @vean/ui
 
 # or yarn
-yarn add @soybeanjs/ui
+yarn add @vean/ui
 ```
 
-If you want to build your own design system, install `@soybeanjs/headless`:
+If you want to build your own design system, install `@vean/aria`:
 
 ```bash
-pnpm add @soybeanjs/headless
+pnpm add @vean/aria
 ```
 
 ## Path B (continued): Basic setup
 
 ### Import styles
 
-If you use `@soybeanjs/ui`, import the stylesheet in your project entry file:
+If you use `@vean/ui`, import the stylesheet in your project entry file:
 
 ```ts
 // main.ts or main.js
-import '@soybeanjs/ui/styles.css';
+import '@vean/ui/styles.css';
 ```
 
 ## Usage
@@ -113,7 +113,7 @@ In `vite.config.ts`:
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite';
-import UiResolver from '@soybeanjs/ui/resolver';
+import UiResolver from '@vean/ui/resolver';
 
 export default defineConfig({
   plugins: [
@@ -127,7 +127,7 @@ export default defineConfig({
 
 #### Use components
 
-After configuration, you can use SoybeanUI components in any Vue component without importing them manually:
+After configuration, you can use VeanUI components in any Vue component without importing them manually:
 
 ```vue
 <template>
@@ -145,7 +145,7 @@ You can also import the components you need manually:
 
 ```vue
 <script setup>
-import { SButton, SInput, SCard } from '@soybeanjs/ui';
+import { SButton, SInput, SCard } from '@vean/ui';
 </script>
 
 <template>
@@ -164,7 +164,7 @@ If you use Nuxt 4, you can use the official Nuxt module for simpler configuratio
 ### Install
 
 ```bash
-pnpm add @soybeanjs/ui
+pnpm add @vean/ui
 ```
 
 ### Configure
@@ -173,15 +173,15 @@ Add the module in `nuxt.config.ts`:
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@soybeanjs/ui/nuxt']
+  modules: ['@vean/ui/nuxt']
 });
 ```
 
-After that, you can use all SoybeanUI components in your Nuxt project without additional configuration.
+After that, you can use all VeanUI components in your Nuxt project without additional configuration.
 
-## Using Headless components
+## Using Aria components
 
-If you choose `@soybeanjs/headless`, you'll need to write your own styles. Headless components offer two usage patterns:
+If you choose `@vean/aria`, you'll need to write your own styles. Aria components offer two usage patterns:
 
 ### Option 1: Using Base Components (Fine-grained Control)
 
@@ -189,7 +189,7 @@ For scenarios that need complete control over structure and styling:
 
 ```vue
 <script setup>
-import { AccordionRoot, AccordionItem, AccordionTrigger, AccordionContent } from '@soybeanjs/headless';
+import { AccordionRoot, AccordionItem, AccordionTrigger, AccordionContent } from '@vean/aria';
 </script>
 
 <template>
@@ -216,7 +216,7 @@ For stable structures with data-driven scenarios, offering more concise code:
 
 ```vue
 <script setup>
-import { AccordionCompact } from '@soybeanjs/headless';
+import { AccordionCompact } from '@vean/aria';
 
 const items = [
   {
@@ -241,15 +241,15 @@ const items = [
 </style>
 ```
 
-> Compact components are managed by the headless layer for data iteration and default content rendering, letting you accomplish common tasks with less code.
+> Compact components are managed by the Aria layer for data iteration and default content rendering, letting you accomplish common tasks with less code.
 
 ## Theme configuration
 
-SoybeanUI supports flexible theming. You can configure the global theme using the `ConfigProvider` component:
+VeanUI supports flexible theming. You can configure the global theme using the `ConfigProvider` component:
 
 ```vue
 <script setup>
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 
 const themeConfig = {
   theme: {
@@ -270,7 +270,7 @@ const themeConfig = {
 
 ## RTL configuration
 
-SoybeanUI components support direction switching through `SConfigProvider`. Set `dir="rtl"` at the app root when your product needs right-to-left layouts:
+VeanUI components support direction switching through `SConfigProvider`. Set `dir="rtl"` at the app root when your product needs right-to-left layouts:
 
 ```vue
 <template>
@@ -289,7 +289,7 @@ Let’s create a simple example to verify your installation:
 ```vue
 <template>
   <div class="p-4 space-y-4">
-    <h1 class="text-2xl font-bold">SoybeanUI Example</h1>
+    <h1 class="text-2xl font-bold">VeanUI Example</h1>
 
     <SButton color="primary" @click="handleClick">Click</SButton>
 
@@ -322,12 +322,12 @@ function handleClick() {
 
 ### Styles are not applied?
 
-1. Make sure you imported the stylesheet: `import '@soybeanjs/ui/styles.css'`
+1. Make sure you imported the stylesheet: `import '@vean/ui/styles.css'`
 2. Check the browser console for errors
 
 ### TypeScript type errors?
 
-1. Make sure you installed the latest version of `@soybeanjs/ui`
+1. Make sure you installed the latest version of `@vean/ui`
 2. Check the type-related configuration in `tsconfig.json`
 3. Restart the TypeScript server
 
@@ -345,10 +345,10 @@ function handleClick() {
 
 ## Next steps
 
-Now that you’ve installed SoybeanUI, you can:
+Now that you’ve installed Vean, you can:
 
 1. Browse the [Component docs](/components) to see all available components
 2. Read the [Theme configuration](../theming) docs to customize theming
-3. Visit [GitHub](https://github.com/soybeanjs/soybean-ui) for source code and examples
+3. Visit [GitHub](https://github.com/soybeanjs/vean-ui) for source code and examples
 
 Enjoy! If you run into any issues, feel free to open an issue on GitHub.

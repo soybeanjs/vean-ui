@@ -12,7 +12,7 @@ head:
 
 适用于用户列表、设置/菜单分组、通知流，或任何简单的垂直集合。表格化、带列与排序的数据请优先使用 `table`；层级数据请优先使用 `tree`；可选的选项列表请优先使用 `select`/`combobox`。
 
-headless 层不存在 `list` 家族：纯 `ul`/`li` 不含自身的键盘、焦点或 ARIA widget 逻辑，不应留在 headless 层。需要交互的列表请改用已准入的 `listbox` / `tree` 家族。
+Aria 层不存在 `list` 家族：纯 `ul`/`li` 不含自身的键盘、焦点或 ARIA widget 逻辑，不应留在 Aria 层。需要交互的列表请改用已准入的 `listbox` / `tree` 家族。
 
 ## 用法
 
@@ -20,8 +20,8 @@ headless 层不存在 `list` 家族：纯 `ul`/`li` 不含自身的键盘、焦�
 
 ## 特性
 
-- 🧩 UI-only 解剖壳 — `SList`/`SListItem` 自持结构，通过 UI 层的 `provideListUi` 上下文共享 `listVariants` 类；headless 层没有 `list` 家族
-- 📋 语义化标记 — 渲染真实的 `<ul>`/`<li>`，带 `data-soybean-list-*` 钩子
+- 🧩 UI-only 解剖壳 — `SList`/`SListItem` 自持结构，通过 UI 层的 `provideListUi` 上下文共享 `listVariants` 类；Aria 层没有 `list` 家族
+- 📋 语义化标记 — 渲染真实的 `<ul>`/`<li>`，带 `data-vean-list-*` 钩子
 - 🏷️ 条目组合 — `SListItem` 通过 `title`/`description` prop 或插槽渲染可选的标题 + 描述区块
 - ↔️ 前导 / 尾随 — `SListItem` 上的 `leading`/`trailing` 插槽，用于图标、徽标、头像或操作
 - 🎨 6 种尺寸 — 匹配 `ThemeSize` 的 xs–2xl `size`
@@ -45,16 +45,16 @@ headless 层不存在 `list` 家族：纯 `ul`/`li` 不含自身的键盘、焦�
 
 ### 架构与对标差异
 
-`SList`/`SListItem` 是 UI-only 组件：纯 `ul`/`li` 解剖壳未通过 headless 删除测试，因此该家族已从 headless 层移除，结构留在 UI 层，样式全部收敛于 `listVariants`，槽位类通过 `provideListUi` 下发。这与 shadcn/ui 的「组合优先」一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供配置驱动的列表（`dataSource`/`renderItem`）。SoybeanUI 刻意将 `SList` 保持为展示型容器——数据迭代由使用者负责——因此超大数据的虚拟滚动由独立的 `virtualizer` 组件承担，而非内置虚拟滚动。需要交互的列表请使用 `listbox` / `tree`，而非 `SList`。
+`SList`/`SListItem` 是 UI-only 组件：纯 `ul`/`li` 解剖壳未通过 Aria 删除测试，因此该家族已从 Aria 层移除，结构留在 UI 层，样式全部收敛于 `listVariants`，槽位类通过 `provideListUi` 下发。这与 shadcn/ui 的「组合优先」一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供配置驱动的列表（`dataSource`/`renderItem`）。VeanUI 刻意将 `SList` 保持为展示型容器——数据迭代由使用者负责——因此超大数据的虚拟滚动由独立的 `virtualizer` 组件承担，而非内置虚拟滚动。需要交互的列表请使用 `listbox` / `tree`，而非 `SList`。
 
-| 能力              | SoybeanUI | shadcn/ui | Ant Design List | Element Plus | Mantine List | Naive UI |
-| :---------------- | :-------: | :-------: | :-------------: | :----------: | :----------: | :------: |
-| Headless/样式分离 |    ✅     |    ✅     |        —        |      —       |      —       |    —     |
-| 语义化 `ul`/`li`  |    ✅     |    ✅     |       ✅        |      ✅      |      ✅      |    ✅    |
-| 标题 + 描述条目   |    ✅     |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
-| 前导 / 尾随插槽   |    ✅     |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
-| 尺寸变体（6）     |    ✅     |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
-| 内置虚拟滚动      |    ➕     |     —     |       ✅        |      —       |      ✅      |    ✅    |
+| 能力             | VeanUI | shadcn/ui | Ant Design List | Element Plus | Mantine List | Naive UI |
+| :--------------- | :----: | :-------: | :-------------: | :----------: | :----------: | :------: |
+| Aria/样式分离    |   ✅   |    ✅     |        —        |      —       |      —       |    —     |
+| 语义化 `ul`/`li` |   ✅   |    ✅     |       ✅        |      ✅      |      ✅      |    ✅    |
+| 标题 + 描述条目  |   ✅   |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
+| 前导 / 尾随插槽  |   ✅   |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
+| 尺寸变体（6）    |   ✅   |     —     |       ✅        |      ✅      |      ✅      |    ✅    |
+| 内置虚拟滚动     |   ➕   |     —     |       ✅        |      —       |      ✅      |    ✅    |
 
 `—` = 不支持或采用不同交互模型；`➕` = 有价值增强项（交由 `virtualizer` 承担）。
 

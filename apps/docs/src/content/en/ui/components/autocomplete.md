@@ -37,19 +37,19 @@ An autocomplete that filters suggestion items from text input and quickly fills 
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds autocomplete by reusing the combobox component family (Anchor/Content/Item/Viewport/Trigger/Empty/Cancel) over the listbox base plus Popper positioning. `AutocompleteRoot` disables combobox's built-in filtering (`ignoreFilter`) and delegates matching to the compact layer's `useFuse`, so autocomplete and combobox share the same interaction kernel and differ only in filter and display strategy. The `scv()` recipe `autocompleteVariants` declares 17 slots and 7 size variants.
+VeanUI builds autocomplete by reusing the combobox component family (Anchor/Content/Item/Viewport/Trigger/Empty/Cancel) over the listbox base plus Popper positioning. `AutocompleteRoot` disables combobox's built-in filtering (`ignoreFilter`) and delegates matching to the compact layer's `useFuse`, so autocomplete and combobox share the same interaction kernel and differ only in filter and display strategy. The `scv()` recipe `autocompleteVariants` declares 17 slots and 7 size variants.
 
-| Capability                    | SoybeanUI | reka-ui `Combobox` | Algolia Autocomplete | Ant Design `AutoComplete` |
-| :---------------------------- | :-------: | :----------------: | :------------------: | :-----------------------: |
-| headless/styled split         |    ✅     |         ✅         |          —           |             —             |
-| Type-to-filter + fuzzy match  |    ✅     |         —          |          ✅          |            ✅             |
-| combobox/listbox roles        |    ✅     |         ✅         |          ✅          |            ✅             |
-| Keyboard nav + typeahead      |    ✅     |         ✅         |          ✅          |            ✅             |
-| Grouping + group labels       |    ✅     |         ✅         |          —           |             —             |
-| `openOnFocus` / `openOnClick` |    ✅     |         —          |          ✅          |            ✅             |
-| Clear button + empty state    |    ✅     |         ✅         |          —           |            ✅             |
-| Data-driven Compact API       |    ✅     |         —          |          —           |             —             |
-| axe-clean (open state)        |    ✅     |         —          |          —           |             —             |
+| Capability                    | VeanUI | reka-ui `Combobox` | Algolia Autocomplete | Ant Design `AutoComplete` |
+| :---------------------------- | :----: | :----------------: | :------------------: | :-----------------------: |
+| Aria/styled split             |   ✅   |         ✅         |          —           |             —             |
+| Type-to-filter + fuzzy match  |   ✅   |         —          |          ✅          |            ✅             |
+| combobox/listbox roles        |   ✅   |         ✅         |          ✅          |            ✅             |
+| Keyboard nav + typeahead      |   ✅   |         ✅         |          ✅          |            ✅             |
+| Grouping + group labels       |   ✅   |         ✅         |          —           |             —             |
+| `openOnFocus` / `openOnClick` |   ✅   |         —          |          ✅          |            ✅             |
+| Clear button + empty state    |   ✅   |         ✅         |          —           |            ✅             |
+| Data-driven Compact API       |   ✅   |         —          |          —           |             —             |
+| axe-clean (open state)        |   ✅   |         —          |          —           |             —             |
 
 ### Cautions
 

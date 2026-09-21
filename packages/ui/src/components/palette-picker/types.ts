@@ -1,5 +1,5 @@
 import type { PaletteColorLevel, SimplePaletteKey, TailwindPaletteKey } from '@soybeanjs/colord/palette';
-import type { ColorFormat, ColorValue } from '@soybeanjs/theme';
+import type { ColorFormat, ColorValue } from '@vean/theme';
 import type { ThemeSize } from '@/theme';
 
 /**

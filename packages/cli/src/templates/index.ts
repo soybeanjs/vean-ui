@@ -45,7 +45,7 @@ export interface ScaffoldOptions {
  * Scaffold a new project from a built-in template.
  *
  * Writes all template files, `package.json`, `pnpm-workspace.yaml`,
- * `uno.config.ts`, `tsconfig.json`, and copies the SBean resolver/Nuxt
+ * `uno.config.ts`, `tsconfig.json`, and copies the Vean resolver/Nuxt
  * module from the source package.
  */
 export async function scaffoldFromTemplate(
@@ -222,7 +222,7 @@ export async function ensureTypeScriptConfig(cwd: string, uiDir: string): Promis
 
 /**
  * Copy resolver, constants, and (for Nuxt) the Nuxt module from the
- * installed `@soybeanjs/ui` package into the project's ui directory.
+ * installed `@vean/ui` package into the project's ui directory.
  */
 export async function generatePackModules(cwd: string, uiDir: string, isNuxt = false): Promise<void> {
   const sourceRoot = findSourceRoot();
@@ -250,8 +250,8 @@ export async function generatePackModules(cwd: string, uiDir: string, isNuxt = f
     let content = await fs.readFile(src, 'utf-8');
     content = content.replaceAll('//---', '');
     content = `import { join } from 'node:path';\nimport { cwd } from 'node:process';\n${content}`;
-    content = content.replace("from: '@soybeanjs/ui'", `from: join(cwd(), '${uiDir}', 'components', path)`);
-    content = content.replace("filePath: '@soybeanjs/ui'", `filePath: join(cwd(), '${uiDir}', 'components', path)`);
+    content = content.replace("from: '@vean/ui'", `from: join(cwd(), '${uiDir}', 'components', path)`);
+    content = content.replace("filePath: '@vean/ui'", `filePath: join(cwd(), '${uiDir}', 'components', path)`);
 
     await fs.mkdir(path.dirname(dest), { recursive: true });
     await fs.writeFile(dest, content, 'utf-8');

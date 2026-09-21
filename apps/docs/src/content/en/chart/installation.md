@@ -1,7 +1,7 @@
 ---
 head:
   title: Installation
-  description: Install TanStack Charts and wire it into a SoybeanUI project.
+  description: Install TanStack Charts and wire it into a VeanUI project.
 ---
 
 # Installation
@@ -24,4 +24,4 @@ The polar entry is an opt-in subpath — when not imported, the package keeps a 
 
 ## Theme colors
 
-Make sure the SoybeanUI theme is available (`@soybeanjs/ui/styles.css` or the UnoCSS preset) so tokens like `--chart-1..5` exist and the demo colors follow light/dark mode.
+Make sure the VeanUI theme is available (`@vean/ui/styles.css` or the UnoCSS preset) so tokens like `--chart-1..5` exist and the demo colors follow light/dark mode.

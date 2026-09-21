@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { AffixCompact, provideAffixUi } from '@soybeanjs/headless/affix';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { AffixCompact, provideAffixUi } from '@vean/aria/affix';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { affixVariants } from '@/styles/affix';
 import type { AffixProps, AffixEmits } from './types';
 

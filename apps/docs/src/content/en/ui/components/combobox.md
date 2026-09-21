@@ -38,20 +38,20 @@ A combobox for searching and selecting values from an option list, with an expli
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds combobox by reusing the listbox base plus Popper positioning: `ComboboxRoot` (selection state + `useControllableState(open)` + three-state filter) → `ComboboxInput` (`role="combobox"` + `aria-autocomplete`) → `ComboboxTrigger` → `ComboboxContentImpl` (DismissableLayer + FocusScope + bodyLock) → `ComboboxItem` → `ListboxItem`. The `scv()` recipe `comboboxVariants` declares 16 slots and 7 size variants. This mirrors reka-ui / shadcn combobox semantics, with virtual scrolling and the data-driven compact API as SoybeanUI differentiators.
+VeanUI builds combobox by reusing the listbox base plus Popper positioning: `ComboboxRoot` (selection state + `useControllableState(open)` + three-state filter) → `ComboboxInput` (`role="combobox"` + `aria-autocomplete`) → `ComboboxTrigger` → `ComboboxContentImpl` (DismissableLayer + FocusScope + bodyLock) → `ComboboxItem` → `ListboxItem`. The `scv()` recipe `comboboxVariants` declares 16 slots and 7 size variants. This mirrors reka-ui / shadcn combobox semantics, with virtual scrolling and the data-driven compact API as VeanUI differentiators.
 
-| Capability                      | SoybeanUI | reka-ui `Combobox` | shadcn `Combobox` | Ant Design `Select` (showSearch) |
-| :------------------------------ | :-------: | :----------------: | :---------------: | :------------------------------: |
-| headless/styled split           |    ✅     |         ✅         |         —         |                —                 |
-| Type-to-filter + 3-state filter |    ✅     |         ✅         |        ✅         |                ✅                |
-| combobox/listbox roles          |    ✅     |         ✅         |        ✅         |                ✅                |
-| Keyboard nav + typeahead        |    ✅     |         ✅         |         —         |                ✅                |
-| Virtual scrolling               |    ✅     |         ✅         |         —         |                ✅                |
-| Grouping + group labels         |    ✅     |         ✅         |        ✅         |                ✅                |
-| Cancel button (clear)           |    ✅     |         ✅         |        ✅         |                ✅                |
-| Empty state                     |    ✅     |         ✅         |         —         |                —                 |
-| Data-driven Compact API         |    ✅     |         —          |         —         |                —                 |
-| axe-clean (open state)          |    ✅     |         —          |        ✅         |                —                 |
+| Capability                      | VeanUI | reka-ui `Combobox` | shadcn `Combobox` | Ant Design `Select` (showSearch) |
+| :------------------------------ | :----: | :----------------: | :---------------: | :------------------------------: |
+| Aria/styled split               |   ✅   |         ✅         |         —         |                —                 |
+| Type-to-filter + 3-state filter |   ✅   |         ✅         |        ✅         |                ✅                |
+| combobox/listbox roles          |   ✅   |         ✅         |        ✅         |                ✅                |
+| Keyboard nav + typeahead        |   ✅   |         ✅         |         —         |                ✅                |
+| Virtual scrolling               |   ✅   |         ✅         |         —         |                ✅                |
+| Grouping + group labels         |   ✅   |         ✅         |        ✅         |                ✅                |
+| Cancel button (clear)           |   ✅   |         ✅         |        ✅         |                ✅                |
+| Empty state                     |   ✅   |         ✅         |         —         |                —                 |
+| Data-driven Compact API         |   ✅   |         —          |         —         |                —                 |
+| axe-clean (open state)          |   ✅   |         —          |        ✅         |                —                 |
 
 ### Cautions
 

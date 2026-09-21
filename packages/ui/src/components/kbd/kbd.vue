@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { Kbd } from '@soybeanjs/headless/kbd';
+import { useOmitProps } from '@vean/aria/composables';
+import { Kbd } from '@vean/aria/kbd';
 import { kbdVariants } from '@/styles/kbd';
 import type { KbdProps } from './types';
 

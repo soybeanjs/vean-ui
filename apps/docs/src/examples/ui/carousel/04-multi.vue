@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SCard, SCarousel } from '@soybeanjs/ui';
+import { SCard, SCarousel } from '@vean/ui';
 
 const slides = ['A', 'B', 'C', 'D'];
 </script>

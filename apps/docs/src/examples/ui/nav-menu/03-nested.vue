@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SNavMenu } from '@soybeanjs/ui';
-import type { NavMenuOptionData } from '@soybeanjs/ui';
+import { SNavMenu } from '@vean/ui';
+import type { NavMenuOptionData } from '@vean/ui';
 
 const menus: NavMenuOptionData[] = [
   {
@@ -58,7 +58,7 @@ const menus: NavMenuOptionData[] = [
     value: 'github',
     label: 'GitHub',
     icon: 'lucide:github',
-    href: 'https://github.com/soybeanjs/soybean-ui'
+    href: 'https://github.com/soybeanjs/vean-ui'
   }
 ];
 </script>

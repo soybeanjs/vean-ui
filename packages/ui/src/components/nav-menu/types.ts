@@ -1,10 +1,5 @@
-import type {
-  NavMenuCompactEmits,
-  NavMenuCompactProps,
-  NavMenuCompactSlots,
-  NavMenuUi
-} from '@soybeanjs/headless/nav-menu';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { NavMenuCompactEmits, NavMenuCompactProps, NavMenuCompactSlots, NavMenuUi } from '@vean/aria/nav-menu';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { mount } from '@vue/test-utils';
-import { VisuallyHidden } from '@soybeanjs/headless/visually-hidden';
+import { VisuallyHidden } from '@vean/aria/visually-hidden';
 
 describe('VisuallyHidden', () => {
   describe('rendering', () => {

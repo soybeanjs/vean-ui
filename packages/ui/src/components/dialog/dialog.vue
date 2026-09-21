@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { DialogCompact, provideDialogUi } from '@soybeanjs/headless/dialog';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { DialogCompact, provideDialogUi } from '@vean/aria/dialog';
+import { keysOf } from '@vean/aria/shared';
 import { dialogVariants } from '@/styles/dialog';
 import type { DialogProps, DialogEmits, DialogSlots } from './types';
 

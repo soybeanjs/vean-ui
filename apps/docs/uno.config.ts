@@ -1,7 +1,7 @@
 import { defineConfig, transformerDirectives, transformerVariantGroup } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
-import { presetUi } from '@soybeanjs/ui-uno';
 import { presetSoybean } from '@soybeanjs/unocss-preset';
+import { presetUi } from '@vean/unocss';
 
 export default defineConfig<Theme>({
   content: {

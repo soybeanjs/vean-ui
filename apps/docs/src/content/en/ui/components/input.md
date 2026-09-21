@@ -41,19 +41,19 @@ A single-line text input that collects user input, supporting standard input att
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits the input into a headless layer (`@soybeanjs/headless/input`) that owns state, form proxying, and clear-button semantics, and a styled layer (`@soybeanjs/ui`) that owns variants and UnoCSS classes. The headless `InputCompact` composes `InputRoot` / `InputControl` / `InputClear` and exposes `leading` / `clear` / `trailing` slots, mirroring the headless/styled split of Radix and differing from single-package libraries such as Ant Design and Element Plus.
+VeanUI splits the input into an Aria layer (`@vean/aria/input`) that owns state, form proxying, and clear-button semantics, and a styled layer (`@vean/ui`) that owns variants and UnoCSS classes. The Aria `InputCompact` composes `InputRoot` / `InputControl` / `InputClear` and exposes `leading` / `clear` / `trailing` slots, mirroring the headless/styled split of Radix and differing from single-package libraries such as Ant Design and Element Plus.
 
-| Capability                     | SoybeanUI | Ant Design `Input` | Element Plus `Input` | Radix `TextField` |
-| :----------------------------- | :-------: | :----------------: | :------------------: | :---------------: |
-| headless/styled split          |    ✅     |         —          |          —           |        ✅         |
-| Controlled / uncontrolled      |    ✅     |         ✅         |          ✅          |        ✅         |
-| Clear button (hover reveal)    |    ✅     |         ✅         |          ✅          |         —         |
-| Clear button i18n `aria-label` |    ✅     |         ✅         |          —           |         —         |
-| Prefix / suffix slots          |    ✅     |         ✅         |          ✅          |        ✅         |
-| Native form proxying           |    ✅     |         —          |          —           |         —         |
-| Size variants                  |    ✅     |         ✅         |          ✅          |         —         |
-| `showCount` counter            |     —     |         ✅         |          ✅          |         —         |
-| `error` / `loading` state      |     —     |         ✅         |          ✅          |         —         |
+| Capability                     | VeanUI | Ant Design `Input` | Element Plus `Input` | Radix `TextField` |
+| :----------------------------- | :----: | :----------------: | :------------------: | :---------------: |
+| Aria/styled split              |   ✅   |         —          |          —           |        ✅         |
+| Controlled / uncontrolled      |   ✅   |         ✅         |          ✅          |        ✅         |
+| Clear button (hover reveal)    |   ✅   |         ✅         |          ✅          |         —         |
+| Clear button i18n `aria-label` |   ✅   |         ✅         |          —           |         —         |
+| Prefix / suffix slots          |   ✅   |         ✅         |          ✅          |        ✅         |
+| Native form proxying           |   ✅   |         —          |          —           |         —         |
+| Size variants                  |   ✅   |         ✅         |          ✅          |         —         |
+| `showCount` counter            |   —    |         ✅         |          ✅          |         —         |
+| `error` / `loading` state      |   —    |         ✅         |          ✅          |         —         |
 
 ### Cautions
 

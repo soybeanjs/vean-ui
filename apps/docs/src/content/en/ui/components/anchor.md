@@ -14,7 +14,7 @@ When the active item changes while scrolling, the hash in the address bar is als
 
 If the current URL already contains a hash on initial render, Anchor will scroll to the matching section after mount. When a custom scroll container becomes available later, Anchor will re-sync once that container is ready.
 
-> `SAnchor` now delegates recursive item rendering to headless `AnchorCompact`. The same six `ui` slots are available from both `SAnchor` and `@soybeanjs/headless/anchor`.
+> `SAnchor` now delegates recursive item rendering to Aria `AnchorCompact`. The same six `ui` slots are available from both `SAnchor` and `@vean/aria/anchor`.
 
 ## Features
 
@@ -22,20 +22,20 @@ If the current URL already contains a hash on initial render, Anchor will scroll
 - **Hash synchronization** — clicking a link writes the hash with `history.pushState` (or `history.replaceState` when `replace` is set); scroll-driven updates always `replaceState`; on mount the component scrolls to the hash that is already in the URL.
 - **Smooth in-page scrolling** — clicking a hash link scrolls the container with `behavior: 'smooth'` and suspends scroll-spy re-sync until the animation settles (300 ms guard).
 - **Custom scroll container** — `getContainer` returns any scrollable `HTMLElement`; anchor positions are measured relative to that container and re-synced when it replaces the initial `window` fallback.
-- **Offset control** — `offsetTop` (default `0`) and `targetOffset` (takes precedence) shift the scroll destination so headings land below sticky headers; the value is also exposed as `--soybean-anchor-offset-top` for the sticky root.
+- **Offset control** — `offsetTop` (default `0`) and `targetOffset` (takes precedence) shift the scroll destination so headings land below sticky headers; the value is also exposed as `--vean-anchor-offset-top` for the sticky root.
 - **Active detection tuning** — `bounds` (default `5`) is the pixel tolerance used to decide whether a section has been passed; `getCurrentAnchor` can remap the resolved href before it is emitted.
-- **Recursive data-driven composition** — `SAnchor` renders nested `items` (arbitrary depth) through the generic headless `AnchorCompact`; each level wraps its own `AnchorLink`, indicator, title, and nested `sub` list.
-- **Sticky rail** — `sticky` (default `true`) pins the anchor list to the top of the container with `top: var(--soybean-anchor-offset-top)` and caps its height to the viewport.
+- **Recursive data-driven composition** — `SAnchor` renders nested `items` (arbitrary depth) through the generic Aria `AnchorCompact`; each level wraps its own `AnchorLink`, indicator, title, and nested `sub` list.
+- **Sticky rail** — `sticky` (default `true`) pins the anchor list to the top of the container with `top: var(--vean-anchor-offset-top)` and caps its height to the viewport.
 - **Per-item and global link props** — `disabled` and `target` can be set per item or globally via `linkProps`; an explicit item value always wins, and `linkProps.href` is intentionally excluded because the item's `href` owns the target.
 - **Eight theme colors + six sizes** — `color` (primary…accent) and `size` (xs…2xl) variants from the `anchorVariants` `scv()` recipe, plus vertical / horizontal `orientation`.
 - **Accessible by default** — the root renders a `<nav>` landmark with a localized `aria-label` (overridable), disabled links carry `aria-disabled` and leave the tab order, and the indicator is `aria-hidden`.
-- **Headless composition** — `AnchorRoot` / `AnchorLink` / `AnchorCompact` / `AnchorItemCompact` are exported from `@soybeanjs/headless/anchor` for fully custom styled builds.
+- **Aria composition** — `AnchorRoot` / `AnchorLink` / `AnchorCompact` / `AnchorItemCompact` are exported from `@vean/aria/anchor` for fully custom styled builds.
 
 ## Usage
 
 <UsageCode component="anchor" />
 
-> `SAnchor` now delegates recursive item rendering to headless `AnchorCompact`. For unstyled, data-driven usage, import `AnchorCompact` from `@soybeanjs/headless/anchor`.
+> `SAnchor` now delegates recursive item rendering to Aria `AnchorCompact`. For unstyled, data-driven usage, import `AnchorCompact` from `@vean/aria/anchor`.
 
 ## Demos
 
@@ -49,23 +49,23 @@ If the current URL already contains a hash on initial render, Anchor will scroll
 
 ### Architecture and benchmark comparison
 
-| Concern                      | SoybeanUI                                                     | Ant Design `Anchor`             | Element Plus `Anchor` |
-| :--------------------------- | :------------------------------------------------------------ | :------------------------------ | :-------------------- |
-| Headless / styled separation | ✅ `@soybeanjs/headless/anchor` + `scv()`                     | ❌ single package               | ❌ single package     |
-| Data-driven compact API      | ✅ generic `AnchorCompact` + recursive `items`                | ✅ `items`                      | ✅ `items`            |
-| Scroll container             | ✅ `getContainer` (HTMLElement or window)                     | ✅ `getContainer`               | ✅ `container`        |
-| Scroll offset                | ✅ `offsetTop` + `targetOffset`                               | ✅ `offsetTop` + `targetOffset` | ✅ `offset`           |
-| Active bounds tolerance      | ✅ `bounds`                                                   | ✅ `bounds`                     | ✅ `bound`            |
-| Active href transform        | ✅ `getCurrentAnchor`                                         | ✅ `getCurrentAnchor`           | —                     |
-| Hash sync                    | ✅ pushState on click / replaceState on scroll                | ✅                              | ✅                    |
-| Initial hash scroll          | ✅                                                            | ✅                              | —                     |
-| Sticky rail                  | ✅ CSS `sticky` + offset var                                  | ✅ `affix` wrapper              | ✅ CSS sticky         |
-| Nested items                 | ✅ recursive (arbitrary depth)                                | ❌ flat                         | ✅ 2 levels           |
-| Disabled items               | ✅ per-item + `linkProps` fallback                            | ❌                              | ❌                    |
-| Custom link props            | ✅ `linkProps` / `indicatorProps` / `titleProps` / `subProps` | —                               | —                     |
-| Orientation                  | ✅ vertical / horizontal                                      | ❌ vertical only                | ✅ `direction`        |
-| Theme colors / sizes         | ✅ 8 colors × 6 sizes                                         | ❌                              | ❌                    |
-| Events                       | ✅ `activeChange` / `itemSelect`                              | ✅ `onChange` / `onClick`       | ✅ `change`           |
+| Concern                  | VeanUI                                                        | Ant Design `Anchor`             | Element Plus `Anchor` |
+| :----------------------- | :------------------------------------------------------------ | :------------------------------ | :-------------------- |
+| Aria / styled separation | ✅ `@vean/aria/anchor` + `scv()`                              | ❌ single package               | ❌ single package     |
+| Data-driven compact API  | ✅ generic `AnchorCompact` + recursive `items`                | ✅ `items`                      | ✅ `items`            |
+| Scroll container         | ✅ `getContainer` (HTMLElement or window)                     | ✅ `getContainer`               | ✅ `container`        |
+| Scroll offset            | ✅ `offsetTop` + `targetOffset`                               | ✅ `offsetTop` + `targetOffset` | ✅ `offset`           |
+| Active bounds tolerance  | ✅ `bounds`                                                   | ✅ `bounds`                     | ✅ `bound`            |
+| Active href transform    | ✅ `getCurrentAnchor`                                         | ✅ `getCurrentAnchor`           | —                     |
+| Hash sync                | ✅ pushState on click / replaceState on scroll                | ✅                              | ✅                    |
+| Initial hash scroll      | ✅                                                            | ✅                              | —                     |
+| Sticky rail              | ✅ CSS `sticky` + offset var                                  | ✅ `affix` wrapper              | ✅ CSS sticky         |
+| Nested items             | ✅ recursive (arbitrary depth)                                | ❌ flat                         | ✅ 2 levels           |
+| Disabled items           | ✅ per-item + `linkProps` fallback                            | ❌                              | ❌                    |
+| Custom link props        | ✅ `linkProps` / `indicatorProps` / `titleProps` / `subProps` | —                               | —                     |
+| Orientation              | ✅ vertical / horizontal                                      | ❌ vertical only                | ✅ `direction`        |
+| Theme colors / sizes     | ✅ 8 colors × 6 sizes                                         | ❌                              | ❌                    |
+| Events                   | ✅ `activeChange` / `itemSelect`                              | ✅ `onChange` / `onClick`       | ✅ `change`           |
 
 ### Runtime considerations
 
@@ -85,7 +85,7 @@ Pass `getContainer={() => myScrollableEl}`. Anchor positions are then measured r
 
 ### How do I keep headings below a sticky header?
 
-Set `offsetTop` to the header height. `SAnchor` scrolls to `elementTop - offsetTop` and exposes the same value as `--soybean-anchor-offset-top` so the sticky anchor rail also clears the header. Use `targetOffset` if the anchor offset must differ from the scroll offset.
+Set `offsetTop` to the header height. `SAnchor` scrolls to `elementTop - offsetTop` and exposes the same value as `--vean-anchor-offset-top` so the sticky anchor rail also clears the header. Use `targetOffset` if the anchor offset must differ from the scroll offset.
 
 ### Why does the address bar update on scroll?
 
@@ -101,4 +101,4 @@ Yes — each item supports `disabled` and `target`; global defaults go through `
 
 ### What does the nested composition look like?
 
-Each item renders an `AnchorLink` (indicator + title) and, when it has `children`, a `sub` container that recursively renders `AnchorItemCompact` levels. The wrapper carries `data-soybean-anchor-item` with a `data-state` reflecting whether the item or any of its descendants is active.
+Each item renders an `AnchorLink` (indicator + title) and, when it has `children`, a `sub` container that recursively renders `AnchorItemCompact` levels. The wrapper carries `data-vean-anchor-item` with a `data-state` reflecting whether the item or any of its descendants is active.

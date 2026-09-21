@@ -21,7 +21,7 @@ export const dialogVariants = scv({
       `group fixed start-1/2 top-1/2 z-base flex flex-col w-max lt-sm:w-full lt-sm:min-w-auto lt-sm:max-w-full border bg-popover shadow-lg outline-none duration-200 rounded-lg`,
       `-translate-x-1/2 -translate-y-1/2 [&[dir=rtl]]:translate-x-1/2`,
       `data-[dragging]:transition-none data-[dragging]:select-none`,
-      // Always present so the fullscreen visuals respond to the headless
+      // Always present so the fullscreen visuals respond to the Aria
       // `data-fullscreen` attribute in both controlled and uncontrolled modes.
       `data-[fullscreen]:w-screen data-[fullscreen]:h-screen`,
       `data-[fullscreen]:max-w-none data-[fullscreen]:rounded-none data-[fullscreen]:shadow-none`,

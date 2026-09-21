@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SAccordion } from '@soybeanjs/ui';
-import type { AccordionOptionData } from '@soybeanjs/ui';
+import { SAccordion } from '@vean/ui';
+import type { AccordionOptionData } from '@vean/ui';
 
 const single = ref('');
 

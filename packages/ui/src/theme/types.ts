@@ -1,6 +1,6 @@
-import type { SemanticToken, TokenOverride } from '@soybeanjs/theme';
+import type { SemanticToken, TokenOverride } from '@vean/theme';
 
-export type { ThemeSize } from '@soybeanjs/theme';
+export type { ThemeSize } from '@vean/theme';
 
 /**
  * the component `color` prop vocabulary — the v2 role families a component can

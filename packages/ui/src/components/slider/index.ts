@@ -1,4 +1,4 @@
 export { default as SSlider } from './slider.vue';
 
-export type * from '@soybeanjs/headless/slider';
+export type * from '@vean/aria/slider';
 export type * from './types';

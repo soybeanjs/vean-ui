@@ -26,7 +26,7 @@ head:
 - **尺寸缩放** — `size`（xs…2xl）通过 `splitterVariants` 缩放手柄视觉握柄宽度。
 - **自定义手柄内容** — 向 `SSplitterResizeHandle` 传入默认 slot 实现完全自定义握柄，或使用 `withHandle` 显示内置点状握柄。
 - **状态映射** — 面板输出 `data-state="collapsed|expanded"`（可折叠时）、`data-panel-size`、`data-panel-collapsible`；手柄输出 `data-state="drag|hover|inactive"`、`data-disabled`、`data-orientation`。
-- **Headless 组合** — `SplitterGroup`、`SplitterPanel`、`SplitterResizeHandle` 从 `@soybeanjs/headless/splitter` 导出，可用于自定义样式构建。
+- **Aria 组合** — `SplitterGroup`、`SplitterPanel`、`SplitterResizeHandle` 从 `@vean/aria/splitter` 导出，可用于自定义样式构建。
 
 ## 用法
 
@@ -44,9 +44,9 @@ head:
 
 ### 架构与行业对标
 
-| 关注点              | SoybeanUI                                                                                  | react-resizable-panels                                  | Ant Design `ResizeBox` / `Splitter` |
+| 关注点              | VeanUI                                                                                     | react-resizable-panels                                  | Ant Design `ResizeBox` / `Splitter` |
 | :------------------ | :----------------------------------------------------------------------------------------- | :------------------------------------------------------ | :---------------------------------- |
-| Headless / 样式分离 | ✅ `@soybeanjs/headless/splitter` 提供逻辑；`@soybeanjs/ui` 提供 `scv()` 配方              | ❌ 仅 React，无 headless 层                             | ❌ 单一样式包                       |
+| Aria / 样式分离     | ✅ `@vean/aria/splitter` 提供逻辑；`@vean/ui` 提供 `scv()` 配方                            | ❌ 仅 React，无 Aria 层                                 | ❌ 单一样式包                       |
 | 面板尺寸约束        | `defaultSize` / `minSize` / `maxSize` / `collapsedSize`                                    | `defaultSize` / `minSize` / `maxSize` / `collapsedSize` | `min` / `max`                       |
 | 可折叠面板          | `collapsible` + Enter 键 + 命令式 API                                                      | `collapsible` + `onCollapse` / `onExpand`               | —                                   |
 | 面板 `order`        | `order` prop 控制布局映射的逻辑顺序                                                        | `order` prop                                            | —                                   |
@@ -80,7 +80,7 @@ head:
 
 ### 如何持久化布局？
 
-监听 `SSplitterGroup` 的 `layout` 事件并保存数组（如存入 `localStorage`）。下次挂载时将保存的数组作为 `defaultLayout` 传入。与 react-resizable-panels 的 `autoSaveId` 不同，SoybeanUI 将持久化留给消费方以保持灵活性。
+监听 `SSplitterGroup` 的 `layout` 事件并保存数组（如存入 `localStorage`）。下次挂载时将保存的数组作为 `defaultLayout` 传入。与 react-resizable-panels 的 `autoSaveId` 不同，VeanUI 将持久化留给消费方以保持灵活性。
 
 ### 可以禁用调整手柄吗？
 

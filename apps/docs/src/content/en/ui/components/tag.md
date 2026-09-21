@@ -1,18 +1,18 @@
 ---
 head:
   title: Tag
-  description: 'A compact label used to categorize, filter, or mark content inline. STag combines the headless Tag primitive (zero styles) with the tagVariants style recipe (8 colors × 6 sizes × 5 variants × 2 shapes) and exposes leading/trailing/close slots.'
+  description: 'A compact label used to categorize, filter, or mark content inline. STag combines the Aria Tag primitive (zero styles) with the tagVariants style recipe (8 colors × 6 sizes × 5 variants × 2 shapes) and exposes leading/trailing/close slots.'
 ---
 
 # Tag
 
 ## Overview
 
-A compact label used to categorize, filter, or mark content inline. `STag` combines the headless `Tag` primitive (zero styles) with the `tagVariants` style recipe (8 colors × 6 sizes × 5 variants × 2 shapes) and exposes `leading`/`trailing`/`close` slots.
+A compact label used to categorize, filter, or mark content inline. `STag` combines the Aria `Tag` primitive (zero styles) with the `tagVariants` style recipe (8 colors × 6 sizes × 5 variants × 2 shapes) and exposes `leading`/`trailing`/`close` slots.
 
 Use it for status labels, category chips, keywords, or filterable metadata. Prefer `badge` when the label should overlay a host element as a count/notification bubble, and `alert` for larger contextual feedback.
 
-`STag` supports `v-model:open` for controlled visibility and a `closable` close button with a localized accessible label. The headless `Tag` primitive exposes the `close` action via slot props for fully custom compositions.
+`STag` supports `v-model:open` for controlled visibility and a `closable` close button with a localized accessible label. The Aria `Tag` primitive exposes the `close` action via slot props for fully custom compositions.
 
 ## Usage
 
@@ -20,7 +20,7 @@ Use it for status labels, category chips, keywords, or filterable metadata. Pref
 
 ## Features
 
-- 🧩 Headless/styled split — the headless `Tag` owns the `open`/`close` state; `STag` injects the `tagVariants` classes and the default close control
+- 🧩 Aria/styled split — the Aria `Tag` owns the `open`/`close` state; `STag` injects the `tagVariants` classes and the default close control
 - 🎨 8 colors — `ThemeColor` values (`primary`/`destructive`/`success`/`warning`/`info`/`carbon`/`secondary`/`accent`)
 - 🖌️ 5 variants — `solid`/`pure`/`outline`/`soft`/`ghost`/`raw` covering filled, bordered, and tinted looks
 - 📐 6 sizes — xs–2xl from `ThemeSize`
@@ -32,7 +32,7 @@ Use it for status labels, category chips, keywords, or filterable metadata. Pref
 ## Component family
 
 - `STag` (styled) — the entry wrapper; `tagVariants` recipe plus `leading`/`trailing`/`close` slots
-- `Tag` (headless) — the state primitive; owns `open` via `useControllableState` and exposes the `close` action through slot props
+- `Tag` (Aria) — the state primitive; owns `open` via `useControllableState` and exposes the `close` action through slot props
 
 ## Demos
 
@@ -46,19 +46,19 @@ Use it for status labels, category chips, keywords, or filterable metadata. Pref
 
 ### Architecture and benchmark differences
 
-The headless `Tag` is a minimal present/close state primitive, and `STag` keeps all styling in the `tagVariants` recipe while providing the default close control. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled tag with `closable`/`onClose` props. SoybeanUI's close button is a real focusable `<button>` whose `aria-label` is localized from `tag.remove` (e.g. `Remove {label}`), whereas several libraries rely on a plain `×` glyph that is less robust for screen readers.
+The Aria `Tag` is a minimal present/close state primitive, and `STag` keeps all styling in the `tagVariants` recipe while providing the default close control. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled tag with `closable`/`onClose` props. Vean's close button is a real focusable `<button>` whose `aria-label` is localized from `tag.remove` (e.g. `Remove {label}`), whereas several libraries rely on a plain `×` glyph that is less robust for screen readers.
 
-| Capability                     | SoybeanUI | shadcn/ui | Ant Design Tag | Element Plus Tag | Mantine Badge | Naive UI Tag |
-| :----------------------------- | :-------: | :-------: | :------------: | :--------------: | :-----------: | :----------: |
-| Headless/styled split          |    ✅     |    ✅     |       —        |        —         |       —       |      —       |
-| Color variants (8)             |    ✅     |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
-| Variants (solid/outline/soft)  |    ✅     |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
-| Size variants (6)              |    ✅     |     —     |       ✅       |        ✅        |      ✅       |      ✅      |
-| Shape (auto / pill)            |    ✅     |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
-| Closable tag                   |    ✅     |     —     |       ✅       |        ✅        |       —       |      ✅      |
-| Localized close `aria-label`   |    ✅     |     —     |       —        |        ✅        |       —       |      —       |
-| Controlled visibility (`open`) |    ✅     |     —     |       —        |        —         |       —       |      —       |
-| RTL-ready                      |    ✅     |    ✅     |       ✅       |        —         |       —       |      ✅      |
+| Capability                     | VeanUI | shadcn/ui | Ant Design Tag | Element Plus Tag | Mantine Badge | Naive UI Tag |
+| :----------------------------- | :----: | :-------: | :------------: | :--------------: | :-----------: | :----------: |
+| Aria/styled split              |   ✅   |    ✅     |       —        |        —         |       —       |      —       |
+| Color variants (8)             |   ✅   |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
+| Variants (solid/outline/soft)  |   ✅   |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
+| Size variants (6)              |   ✅   |     —     |       ✅       |        ✅        |      ✅       |      ✅      |
+| Shape (auto / pill)            |   ✅   |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
+| Closable tag                   |   ✅   |     —     |       ✅       |        ✅        |       —       |      ✅      |
+| Localized close `aria-label`   |   ✅   |     —     |       —        |        ✅        |       —       |      —       |
+| Controlled visibility (`open`) |   ✅   |     —     |       —        |        —         |       —       |      —       |
+| RTL-ready                      |   ✅   |    ✅     |       ✅       |        —         |       —       |      ✅      |
 
 `—` = unsupported or a different interaction model.
 

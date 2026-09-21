@@ -29,10 +29,10 @@ A monthly date grid that supports single or multiple selection, disabled and una
 
 ## Component family
 
-- `SCalendar` — the styled wrapper that forwards props to the headless compact and injects `calendarVariants` classes (12 slots, shared button icon recipes for prev/next)
-- `CalendarCompact` (headless) — data-driven composition of `CalendarRoot` + header (prev/heading/next) + one grid per month (grid head/body rows of `CalendarCellTrigger`); import from `@soybeanjs/headless/calendar` for unstyled usage
-- `CalendarRoot` (headless) — state owner: `useControllableState` for value/placeholder, `useCalendar` for grid/month pages and validation, `useCalendarState` for selected/invalid state
-- `CalendarCellTrigger` / `CalendarCell` / `CalendarGrid*` (headless) — the editable day button (keyboard handling, focus management, data attributes) and its semantic grid cell wrappers
+- `SCalendar` — the styled wrapper that forwards props to the Aria compact and injects `calendarVariants` classes (12 slots, shared button icon recipes for prev/next)
+- `CalendarCompact` (Aria) — data-driven composition of `CalendarRoot` + header (prev/heading/next) + one grid per month (grid head/body rows of `CalendarCellTrigger`); import from `@vean/aria/calendar` for unstyled usage
+- `CalendarRoot` (Aria) — state owner: `useControllableState` for value/placeholder, `useCalendar` for grid/month pages and validation, `useCalendarState` for selected/invalid state
+- `CalendarCellTrigger` / `CalendarCell` / `CalendarGrid*` (Aria) — the editable day button (keyboard handling, focus management, data attributes) and its semantic grid cell wrappers
 
 ## Demos
 
@@ -46,22 +46,22 @@ A monthly date grid that supports single or multiple selection, disabled and una
 
 ### Architecture and benchmark differences
 
-`CalendarRoot` owns the value via `useControllableState` (single date or array when `multiple`), keeps the placeholder for grid paging, and delegates grid creation to `useCalendar` (which rebuilds the grid on locale/week-start/placeholder changes and clamps pages with `minValue`/`maxValue`). `useCalendarState` derives selected/invalid state. `CalendarCellTrigger` is the only interactive piece: it reads the shared context, computes `data-focused`/`data-selected`/`data-today`/`data-unavailable`/`data-outside-view`, handles Arrow/Enter/Space keys with `dir`-aware direction (RTL flips ArrowLeft/ArrowRight), and pages to adjacent months when navigation crosses the grid boundary. The compact owns iteration over months/weeks/days and the header wiring (prev/heading/next with month/year Select controls). Most benchmark libraries ship a monolithic calendar panel; the headless/styled split, per-part `*Props` passthrough, and slot-driven cell rendering are the differentiators.
+`CalendarRoot` owns the value via `useControllableState` (single date or array when `multiple`), keeps the placeholder for grid paging, and delegates grid creation to `useCalendar` (which rebuilds the grid on locale/week-start/placeholder changes and clamps pages with `minValue`/`maxValue`). `useCalendarState` derives selected/invalid state. `CalendarCellTrigger` is the only interactive piece: it reads the shared context, computes `data-focused`/`data-selected`/`data-today`/`data-unavailable`/`data-outside-view`, handles Arrow/Enter/Space keys with `dir`-aware direction (RTL flips ArrowLeft/ArrowRight), and pages to adjacent months when navigation crosses the grid boundary. The compact owns iteration over months/weeks/days and the header wiring (prev/heading/next with month/year Select controls). Most benchmark libraries ship a monolithic calendar panel; the Aria/styled split, per-part `*Props` passthrough, and slot-driven cell rendering are the differentiators.
 
-| Capability                     | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :----------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled split          |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Single / multiple selection    |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Keyboard grid navigation       |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| RTL direction reversal         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `numberOfMonths` grid          |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| `minValue`/`maxValue` bounds   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateDisabled` / unavailable |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `fixedWeeks` / `weekStartsOn`  |    ✅     |     —      |      ✅      |   ✅    |    —     |   —    |
-| Month/year Select controls     |    ✅     |     ✅     |      ✅      |    —    |    —     |   —    |
-| Custom `prevPage`/`nextPage`   |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Per-part `*Props` passthrough  |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Localized `aria-label`s        |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   —    |
+| Capability                     | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :----------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled split              |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Single / multiple selection    |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Keyboard grid navigation       |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| RTL direction reversal         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `numberOfMonths` grid          |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| `minValue`/`maxValue` bounds   |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateDisabled` / unavailable |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `fixedWeeks` / `weekStartsOn`  |   ✅   |     —      |      ✅      |   ✅    |    —     |   —    |
+| Month/year Select controls     |   ✅   |     ✅     |      ✅      |    —    |    —     |   —    |
+| Custom `prevPage`/`nextPage`   |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Per-part `*Props` passthrough  |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Localized `aria-label`s        |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   —    |
 
 ### Cautions
 

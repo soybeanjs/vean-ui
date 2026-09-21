@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { defineComponent, h, nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { useTableEngine } from '@soybeanjs/headless/table';
+import { useTableEngine } from '@vean/aria/table';
 import SConfigProvider from '@/components/config-provider/config-provider.vue';
 import STable from '@/components/table/table.vue';
 import type { TableColumn } from '@/components/table/types';
@@ -172,7 +172,7 @@ describe('STable', () => {
       wrapper.unmount();
     });
 
-    it('forwards custom cell slots to the headless data table', () => {
+    it('forwards custom cell slots to the Aria data table', () => {
       const wrapper = mount(STable, {
         props: {
           columns,
@@ -1044,7 +1044,7 @@ describe('STable', () => {
   });
 
   describe('data attributes', () => {
-    it('renders data-soybean-table-* attributes without leaking as/asChild', () => {
+    it('renders data-vean-table-* attributes without leaking as/asChild', () => {
       const wrapper = mount(STable, {
         props: {
           columns,
@@ -1054,16 +1054,16 @@ describe('STable', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-table-root]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-scroll]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-content]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-header]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-body]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-row]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-head]')).toBeTruthy();
-      expect(wrapper.get('[data-soybean-table-cell]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-root]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-scroll]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-content]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-header]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-body]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-row]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-head]')).toBeTruthy();
+      expect(wrapper.get('[data-vean-table-cell]')).toBeTruthy();
 
-      const root = wrapper.get('[data-soybean-table-root]').element;
+      const root = wrapper.get('[data-vean-table-root]').element;
 
       expect(root.hasAttribute('aschild')).toBe(false);
       expect(root.hasAttribute('as')).toBe(false);
@@ -1349,7 +1349,7 @@ describe('STable rounded ladder', () => {
       props: { columns: [], data: [], rounded: true, size: 'xl' as const } as never
     });
 
-    expect(wrapper.get('[data-soybean-table-root]').classes()).toContain('[--rounded:1.625rem]');
+    expect(wrapper.get('[data-vean-table-root]').classes()).toContain('[--rounded:1.625rem]');
     wrapper.unmount();
   });
 });

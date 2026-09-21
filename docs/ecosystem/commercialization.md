@@ -1,4 +1,4 @@
-# SoybeanUI 生态商业化策略（editor / table / form）
+# Vean 生态商业化策略（editor / table / form）
 
 > 本文档针对 `@soybeanjs/editor`（富文本/块编辑器）、`@soybeanjs/table`（高级数据网格）、`@soybeanjs/form`（Schema 驱动表单）三个外围生态包，基于市场与商业先例调研，给出**分生态的商业化方向（每生态 3–5 个）**与横向执行建议。
 >
@@ -6,14 +6,14 @@
 > **本文档是分生态商业化方向与横向建议的唯一来源**（2026-09 起，research 报告中的同名小节已收敛至此）。
 > 状态：**策略建议**（非执行承诺）。所有方向需先经需求信号验证（GitHub issue/讨论、企业询单）再立项。
 >
-> **2026-09 前提变更：** 本文写于 editor/table/form 为「外围独立包」的规划时期；当前仓库无外围包（`@soybeanjs/ui-x` 已移除，AI 流式能力 `useStream` / `SSender` 改在核心 headless/ui 实现，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)；`@soybeanjs/admin` 已取消，壳方向见 [../ui-shell-roadmap.md](../ui-shell-roadmap.md)）。下文市场调研、定价先例与免费/付费边界结论仍然有效；包结构、lockstep 发布、跨包依赖等设定失效，商业化载体（核心内能力 / 独立增值包 / sbean 付费条目 / 模板资产）须在立项时按 [README §立项时必须回答的问题](./README.md#立项时必须回答的问题) 重新决策。
+> **2026-09 前提变更：** 本文写于 editor/table/form 为「外围独立包」的规划时期；当前仓库无外围包（`@soybeanjs/ui-x` 已移除，AI 流式能力 `useStream` / `SSender` 改在核心 aria/ui 实现，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)；`@soybeanjs/admin` 已取消，壳方向见 [../ui-shell-roadmap.md](../ui-shell-roadmap.md)）。下文市场调研、定价先例与免费/付费边界结论仍然有效；包结构、lockstep 发布、跨包依赖等设定失效，商业化载体（核心内能力 / 独立增值包 / vean 付费条目 / 模板资产）须在立项时按 [README §立项时必须回答的问题](./README.md#立项时必须回答的问题) 重新决策。
 
 ## 0. 总原则
 
-1. **核心永久 MIT**：`@soybeanjs/headless` / `ui` / `theme` 与外围包的基础能力保持宽松许可（对齐 Ant Design「MIT 永久免费」[官方](https://ant-design.antgroup.com/docs/react/sponsor-cn)）。
+1. **核心永久 MIT**：`@vean/aria` / `ui` / `theme` 与外围包的基础能力保持宽松许可（对齐 Ant Design「MIT 永久免费」[官方](https://ant-design.antgroup.com/docs/react/sponsor-cn)）。
 2. **付费 = 高级能力（Pro 包）/ 托管服务 / 企业服务 / 模板资产 / AI 用量**，且**付费能力独立成包或独立子路径**（`*-pro` 或 `*/pro`），与 MIT 源码分离，避免破坏「MIT = 干净」的品牌。
 3. **尽早明确免费/付费边界**：Handsontable 从 MIT 转专有（2018）与 Tiptap 移除免费云档（2025-06，二手）均引发社区反弹——从立项第一天就在 README/文档写明边界，并承诺已开源能力永久免费。
-4. **license key 本地校验（不联网）**：参考 Handsontable「build-date vs key-date」本地校验 [文档](https://handsontable.com/docs/15.1/react-data-grid/license-key)，成本低、离线可用、隐私友好；配合 sbean registry 分发。
+4. **license key 本地校验（不联网）**：参考 Handsontable「build-date vs key-date」本地校验 [文档](https://handsontable.com/docs/15.1/react-data-grid/license-key)，成本低、离线可用、隐私友好；配合 vean registry 分发。
 5. **中国市场特化是差异化**：私有化部署、信创适配（麒麟/统信/国产化浏览器）、等保/个保法合规、发票/合同流程、source escrow——国外竞品服务不好，是本土空白（参考 [Univer 案例](../research/commercialization-ecosystem.md) §2.10）。
 
 ## 1. 商业化先例速览
@@ -74,7 +74,7 @@
 - **目标客户**：需要「开箱即用编辑器页面」的中小团队、模板买家。
 - **价值主张**：简历编辑器、合同/文书编辑器、Markdown 文档、博客写作台、政务表单文书等**行业化预设 + 中文排版主题**，配 `SEditor` 一键嵌入。
 - **定价建议**：单模板 $19–$99、全量包 $199–$299 一次性（参考 Keenthemes Metronic $99–$299 [官方](https://keenthemes.com/products/metronic-composer)）。
-- **免费边界**：通用 preset（basic/docs/full）MIT；行业化模板/主题为付费资产（可走 sbean registry 付费条目，见 §5.3）。
+- **免费边界**：通用 preset（basic/docs/full）MIT；行业化模板/主题为付费资产（可走 vean registry 付费条目，见 §5.3）。
 - **风险**：模板市场利润低、易被复制；靠「持续更新 + 与主题 token 深度集成」维持付费意愿。
 
 ---
@@ -176,15 +176,15 @@
 ### 5.1 许可与双轨发布
 
 - **付费能力独立包/子路径**：`editor-pro` / `table-pro` / `form-pro`（或同包 `*/pro` 子路径），与免费包同 lockstep 版本但**源码分离**（私有 registry 或遮蔽），付费逻辑不混入 MIT 包。
-- **license key 本地校验**（不联网）：参考 Handsontable 机制，配合 sbean registry 分发。
+- **license key 本地校验**（不联网）：参考 Handsontable 机制，配合 vean registry 分发。
 - **CI 依赖审计**（延续 editor.md §6 的 OPT-F1 思路）：免费包 CI 强制检查依赖闭包不含付费内核（`ag-grid-enterprise`、`@tiptap/pro-*`），防止免费包误绑定付费能力与许可风险。
 - **双轨维护承诺**：免费包社区节奏；付费包 SLA（响应时效、安全补丁、支持窗口 12–24 个月）。
 
-### 5.2 sbean registry + 付费内容分发
+### 5.2 vean registry + 付费内容分发
 
 - 现有 registry 已命名空间化（当前仅有 `ui/*`；未来外围包按 `<package>/*` 扩展，见 [cli.md](./cli.md)）。扩展两级模式：
-  - **免费条目**：`sbean add <ns>/<name>` 直接拉源码。
-  - **付费条目**：`type: "registry:ui-paid"` + 元数据（price/license/支持窗口），`sbean add` 时触发 license key 本地校验；可复用 Zeta + Polar「registry + 自动发 key」思路 [GitHub](https://github.com/rbadillap/zeta/)。
+  - **免费条目**：`vean add <ns>/<name>` 直接拉源码。
+  - **付费条目**：`type: "registry:ui-paid"` + 元数据（price/license/支持窗口），`vean add` 时触发 license key 本地校验；可复用 Zeta + Polar「registry + 自动发 key」思路 [GitHub](https://github.com/rbadillap/zeta/)。
 - **文档站付费内容区**：docs 命名空间下新增 Pro 徽章 + 免费 vs 付费 feature matrix（参考 AG Grid Community vs Enterprise 对比 [官方](https://www.ag-grid.com/landing-pages/enterprise-data-grid/)），公开透明。
 - **注意**：付费条目源码进用户仓库后防拷贝极难（shadcn 模型下用户本就「拥有代码」）——**付费点放在托管服务/支持/AI 用量/持续更新承诺**，而非单纯卖源码。
 

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ trigger: ClassValue; anchor: ClassValue; close: ClassValue; positioner: ClassValue; popup: ClassValue; arrow: ClassValue; subTrigger: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Popover component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverui",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverui",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.placement",
             "default": null,
             "inheritedFrom": "placement",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.showarrow",
             "default": null,
             "inheritedFrom": "showArrow",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverTriggerProps",
@@ -125,8 +125,8 @@
                 "type": "PopoverTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the PopoverTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -135,10 +135,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -146,10 +146,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -157,10 +157,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -168,10 +168,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -187,7 +187,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.portalprops",
             "default": null,
             "inheritedFrom": "portalProps",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverPortalProps",
@@ -195,8 +195,8 @@
                 "type": "PopoverPortalProps",
                 "resolvedType": "{ to?: string | HTMLElement; disabled?: boolean; defer?: boolean; forceMount?: boolean }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops",
-                "sourcePath": "packages/headless/src/components/popover/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops",
+                "sourcePath": "packages/aria/src/components/popover/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -205,10 +205,10 @@
                     "type": "string | HTMLElement",
                     "required": false,
                     "description": "Vue native teleport component prop `:to`\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#basic-usage}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.to",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.to",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -216,10 +216,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Disable teleport and render the component inline\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#disabling-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -227,10 +227,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.defer",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.defer",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -238,10 +238,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -257,7 +257,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.positionerprops",
             "default": null,
             "inheritedFrom": "positionerProps",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverPositionerProps",
@@ -265,8 +265,8 @@
                 "type": "PopoverPositionerProps",
                 "resolvedType": "{ placement?: Placement; side?: Side; sideOffset?: number; sideFlip?: boolean; align?: Align; alignOffset?: number; alignFlip?: boolean; avoidCollisions?: boolean; collisionBoundary?: Element | (Element | null)[] | null; collisionPadding?: Padding; arrowPadding?: number; hideShiftedArrow?: boolean; sticky?: 'partial' | 'always'; hideWhenDetached?: boolean; positionStrategy?: 'fixed' | 'absolute'; updatePositionStrategy?: 'always' | 'optimized'; disableUpdateOnLayoutShift?: boolean; prioritizePosition?: boolean; reference?: ReferenceElement; trapFocus?: boolean; disableHoverableContent?: boolean; onGracePointerExit?: (() => void); forceMount?: boolean }",
                 "description": "Properties for the PopoverPositioner component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -275,10 +275,10 @@
                     "type": "Placement",
                     "required": false,
                     "description": "The placement of the floating element.\n\nIf used, it will override the `side` and `align` props.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.placement",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.placement",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -286,10 +286,10 @@
                     "type": "Side",
                     "required": false,
                     "description": "The preferred side of the trigger to render against when open. Will be reversed when collisions occur and\navoidCollisions is enabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.side",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.side",
                     "default": "'bottom'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -297,10 +297,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The distance in pixels from the trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sideoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -308,10 +308,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip to the opposite side when colliding with boundary.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sideflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sideflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -319,10 +319,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "The preferred alignment against the trigger. May change when collisions occur.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.align",
                     "default": "'center'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -330,10 +330,10 @@
                     "type": "number",
                     "required": false,
                     "description": "An offset in pixels from the `start` or `end` alignment options.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.alignoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.alignoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -341,10 +341,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip alignment when colliding with boundary.\nMay only occur when `prioritizePosition` is true.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.alignflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.alignflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -352,10 +352,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, overrides the side and align preferences to prevent collisions with boundary edges.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.avoidcollisions",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.avoidcollisions",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -363,10 +363,10 @@
                     "type": "Element | (Element | null)[] | null",
                     "required": false,
                     "description": "The element used as the collision boundary. By default this is the viewport, though you can provide additional\nelement(s) to be included in this check.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.collisionboundary",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.collisionboundary",
                     "default": "[ ]",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -374,10 +374,10 @@
                     "type": "Padding",
                     "required": false,
                     "description": "The distance in pixels from the boundary edges where collision detection should occur. Accepts a number (same for\nall sides), or a partial padding object, for example: { top: 20, left: 20 }.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.collisionpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.collisionpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -385,10 +385,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The padding between the arrow and the edges of the content. If your content has border-radius, this will prevent it\nfrom overflowing the corners.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.arrowpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.arrowpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -396,10 +396,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hides the arrow when it cannot be centered\nto the reference element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.hideshiftedarrow",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.hideshiftedarrow",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -407,10 +407,10 @@
                     "type": "'partial' | 'always'",
                     "required": false,
                     "description": "The sticky behavior on the align axis. `partial` will keep the content in the boundary as long as the trigger is at\nleast partially in the boundary whilst \"always\" will keep the content in the boundary regardless.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sticky",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sticky",
                     "default": "'partial'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -418,10 +418,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to hide the content when the trigger becomes fully occluded.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.hidewhendetached",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.hidewhendetached",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -429,10 +429,10 @@
                     "type": "'fixed' | 'absolute'",
                     "required": false,
                     "description": "The type of CSS position property to use.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.positionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.positionstrategy",
                     "default": "'fixed'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -440,10 +440,10 @@
                     "type": "'always' | 'optimized'",
                     "required": false,
                     "description": "Strategy to update the position of the floating element on every animation frame.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.updatepositionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.updatepositionstrategy",
                     "default": "'optimized'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -451,10 +451,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to disable the update position for the content when the layout shifted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.disableupdateonlayoutshift",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.disableupdateonlayoutshift",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -462,10 +462,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Force content to be position within the viewport. Might overlap the reference element, which may not be desired.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.prioritizeposition",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.prioritizeposition",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -473,10 +473,10 @@
                     "type": "ReferenceElement",
                     "required": false,
                     "description": "The custom element or virtual element that will be set as the reference to position the floating element. If\nprovided, it will replace the default anchor element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.reference",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.reference",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -484,10 +484,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.trapfocus",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.trapfocus",
                     "default": "modal",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -495,10 +495,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hovering the popup closes instead of keeping it open (the grace area is disabled,\nso leaving the trigger closes the layer immediately).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.disablehoverablecontent",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.disablehoverablecontent",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -506,10 +506,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -520,8 +520,8 @@
                     "parameters": "(() => void) | undefined",
                     "required": false,
                     "description": "Callback invoked when the pointer finally leaves the grace area. Lets an upper layer (e.g.\nTooltip) run area-scoped close logic without registering its own second grace area.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.callables.ongracepointerexit",
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.callables.ongracepointerexit",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   }
                 ]
@@ -536,7 +536,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.popupprops",
             "default": null,
             "inheritedFrom": "popupProps",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverPopupProps",
@@ -544,8 +544,8 @@
                 "type": "PopoverPopupProps",
                 "resolvedType": null,
                 "description": "Properties for the PopoverPopup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpopupprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpopupprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -561,7 +561,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.arrowprops",
             "default": null,
             "inheritedFrom": "arrowProps",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverArrowProps",
@@ -569,8 +569,8 @@
                 "type": "PopoverArrowProps",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverarrowprops",
-                "sourcePath": "packages/headless/src/components/popover/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverarrowprops",
+                "sourcePath": "packages/aria/src/components/popover/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -586,7 +586,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.closeprops",
             "default": null,
             "inheritedFrom": "closeProps",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverCloseProps",
@@ -594,8 +594,8 @@
                 "type": "PopoverCloseProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the PopoverClose component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -604,10 +604,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -615,10 +615,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -626,10 +626,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -637,10 +637,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -656,7 +656,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -664,8 +664,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -681,7 +681,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -692,7 +692,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -703,7 +703,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.modal",
             "default": null,
             "inheritedFrom": "modal",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -714,7 +714,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -739,7 +739,7 @@
             "required": true,
             "description": "Event handler called when the open state of the dialog changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/dialog/types.ts",
+            "sourcePath": "packages/aria/src/components/dialog/types.ts",
             "referencedTypes": []
           },
           {
@@ -749,7 +749,7 @@
             "required": true,
             "description": "Event handler called when the escape key is down. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.escapekeydown",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "KeyboardEvent",
@@ -773,7 +773,7 @@
             "required": true,
             "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.pointerdownoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "PointerDownOutsideEvent",
@@ -781,8 +781,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -797,7 +797,7 @@
             "required": true,
             "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.focusoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -805,8 +805,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -821,7 +821,7 @@
             "required": true,
             "description": "Event handler called when an interaction happens outside the `DismissableLayer`. Specifically, when a `pointerdown`\nevent happens outside or focus moves outside of it. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.interactoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -829,8 +829,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -842,8 +842,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -858,7 +858,7 @@
             "required": true,
             "description": "Event handler called when auto-focusing on open. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.openautofocus",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -882,7 +882,7 @@
             "required": true,
             "description": "Event handler called when auto-focusing on close. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.closeautofocus",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -906,7 +906,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoveremits.callables.placed",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -914,11 +914,11 @@
           {
             "name": "PopoverCompactEmits",
             "kind": "typeAlias",
-            "type": "import(\"@soybeanjs/headless\").DialogRootEmits & import(\"@soybeanjs/headless\").DismissableLayerEmits & import(\"@soybeanjs/headless\").FocusScopeEmits & { placed: []; }",
+            "type": "import(\"@vean/aria\").DialogRootEmits & import(\"@vean/aria\").DismissableLayerEmits & import(\"@vean/aria\").FocusScopeEmits & { placed: []; }",
             "resolvedType": "{ \"update:open\": [value: boolean]; escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent]; interactOutside: [event: PointerDownOutsideEvent | FocusOutsideEvent]; openAutoFocus: [event: Event]; closeAutoFocus: [event: Event]; placed: [] }",
             "description": "Events for the PopoverCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [
@@ -927,10 +927,10 @@
                 "type": "[]",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.members.placed",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.members.placed",
                 "default": null,
                 "inheritedFrom": null,
-                "sourcePath": "packages/headless/src/components/popper/types.ts",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
                 "referencedTypes": []
               }
             ],
@@ -941,8 +941,8 @@
                 "parameters": "value: boolean",
                 "required": true,
                 "description": "Event handler called when the open state of the dialog changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/dialog/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/dialog/types.ts",
                 "referencedTypes": []
               },
               {
@@ -951,8 +951,8 @@
                 "parameters": "event: KeyboardEvent",
                 "required": true,
                 "description": "Event handler called when the escape key is down. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.escapekeydown",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.escapekeydown",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -961,8 +961,8 @@
                 "parameters": "event: PointerDownOutsideEvent",
                 "required": true,
                 "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.pointerdownoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.pointerdownoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -971,8 +971,8 @@
                 "parameters": "event: FocusOutsideEvent",
                 "required": true,
                 "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.focusoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.focusoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -981,8 +981,8 @@
                 "parameters": "event: PointerDownOutsideEvent | FocusOutsideEvent",
                 "required": true,
                 "description": "Event handler called when an interaction happens outside the `DismissableLayer`. Specifically, when a `pointerdown`\nevent happens outside or focus moves outside of it. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.interactoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.interactoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -991,8 +991,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Event handler called when auto-focusing on open. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.openautofocus",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.openautofocus",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -1001,8 +1001,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Event handler called when auto-focusing on close. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.closeautofocus",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.closeautofocus",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               }
             ]
@@ -1027,7 +1027,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverslots.callables.default",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1035,8 +1035,8 @@
                 "type": "{ open: boolean; close: () => void; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.type",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.type",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1051,7 +1051,7 @@
             "required": false,
             "description": "Custom content for the trigger slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverslots.callables.trigger",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           },
           {
@@ -1061,7 +1061,7 @@
             "required": false,
             "description": "Custom content for the close slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_popover_types.popoverslots.callables.close",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1072,8 +1072,8 @@
             "type": "{ PopoverClose?: (props: { open: boolean; close: () => void; }) => any; trigger?: () => any; close?: () => any; }",
             "resolvedType": "{ PopoverClose?: ((props: { open: boolean; close: () => void; }) => any); trigger?: (() => any); close?: (() => any) }",
             "description": "Slots for the PopoverCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1084,8 +1084,8 @@
                 "parameters": "((props: { open: boolean; close: () => void; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1094,8 +1094,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the trigger slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.callables.trigger",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.callables.trigger",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1104,8 +1104,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the close slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.callables.close",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.callables.close",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1122,8 +1122,8 @@
         "type": "Interface PopoverCloseProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the PopoverClose component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.props",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.props",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1131,10 +1131,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -1142,8 +1142,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1156,10 +1156,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -1167,10 +1167,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1178,10 +1178,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1216,8 +1216,8 @@
         "type": "TypeAlias PopoverCloseEmits",
         "resolvedType": "{ close: [PointerEvent] }",
         "description": "Events for the PopoverClose component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseemits.emits",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseemits.emits",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1227,8 +1227,8 @@
             "parameters": "PointerEvent",
             "required": true,
             "description": "Emitted when close occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseemits.callables.close",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseemits.callables.close",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -1256,8 +1256,8 @@
         "type": "Interface PopoverCompactProps",
         "resolvedType": "{ placement?: import(\"@/index\").Placement; showArrow?: boolean; triggerProps?: PopoverTriggerProps; portalProps?: PopoverPortalProps; positionerProps?: PopoverPositionerProps; popupProps?: PopoverPopupProps; arrowProps?: PopoverArrowProps; closeProps?: PopoverCloseProps; dir?: Direction; open?: boolean; defaultOpen?: boolean; modal?: boolean; disabled?: boolean }",
         "description": "Properties for the PopoverCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.props",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.props",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1265,10 +1265,10 @@
             "type": "import(\"@/index\").Placement",
             "required": false,
             "description": "Placement.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.placement",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.placement",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           },
           {
@@ -1276,10 +1276,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to show an arrow.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.showarrow",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.showarrow",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           },
           {
@@ -1287,10 +1287,10 @@
             "type": "PopoverTriggerProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverTriggerProps",
@@ -1298,8 +1298,8 @@
                 "type": "PopoverTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the PopoverTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1308,10 +1308,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1319,10 +1319,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1330,10 +1330,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1341,10 +1341,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1357,10 +1357,10 @@
             "type": "PopoverPortalProps",
             "required": false,
             "description": "Properties forwarded to the portal element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.portalprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.portalprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverPortalProps",
@@ -1368,8 +1368,8 @@
                 "type": "PopoverPortalProps",
                 "resolvedType": "{ to?: string | HTMLElement; disabled?: boolean; defer?: boolean; forceMount?: boolean }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops",
-                "sourcePath": "packages/headless/src/components/popover/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops",
+                "sourcePath": "packages/aria/src/components/popover/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1378,10 +1378,10 @@
                     "type": "string | HTMLElement",
                     "required": false,
                     "description": "Vue native teleport component prop `:to`\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#basic-usage}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.to",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.to",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1389,10 +1389,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Disable teleport and render the component inline\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#disabling-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1400,10 +1400,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.defer",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.defer",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1411,10 +1411,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverportalprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverportalprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1427,10 +1427,10 @@
             "type": "PopoverPositionerProps",
             "required": false,
             "description": "Properties forwarded to the positioner element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.positionerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.positionerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverPositionerProps",
@@ -1438,8 +1438,8 @@
                 "type": "PopoverPositionerProps",
                 "resolvedType": "{ placement?: Placement; side?: Side; sideOffset?: number; sideFlip?: boolean; align?: Align; alignOffset?: number; alignFlip?: boolean; avoidCollisions?: boolean; collisionBoundary?: Element | (Element | null)[] | null; collisionPadding?: Padding; arrowPadding?: number; hideShiftedArrow?: boolean; sticky?: 'partial' | 'always'; hideWhenDetached?: boolean; positionStrategy?: 'fixed' | 'absolute'; updatePositionStrategy?: 'always' | 'optimized'; disableUpdateOnLayoutShift?: boolean; prioritizePosition?: boolean; reference?: ReferenceElement; trapFocus?: boolean; disableHoverableContent?: boolean; onGracePointerExit?: (() => void); forceMount?: boolean }",
                 "description": "Properties for the PopoverPositioner component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1448,10 +1448,10 @@
                     "type": "Placement",
                     "required": false,
                     "description": "The placement of the floating element.\n\nIf used, it will override the `side` and `align` props.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.placement",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.placement",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1459,10 +1459,10 @@
                     "type": "Side",
                     "required": false,
                     "description": "The preferred side of the trigger to render against when open. Will be reversed when collisions occur and\navoidCollisions is enabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.side",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.side",
                     "default": "'bottom'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1470,10 +1470,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The distance in pixels from the trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sideoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1481,10 +1481,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip to the opposite side when colliding with boundary.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sideflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sideflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1492,10 +1492,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "The preferred alignment against the trigger. May change when collisions occur.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.align",
                     "default": "'center'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1503,10 +1503,10 @@
                     "type": "number",
                     "required": false,
                     "description": "An offset in pixels from the `start` or `end` alignment options.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.alignoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.alignoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1514,10 +1514,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip alignment when colliding with boundary.\nMay only occur when `prioritizePosition` is true.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.alignflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.alignflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1525,10 +1525,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, overrides the side and align preferences to prevent collisions with boundary edges.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.avoidcollisions",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.avoidcollisions",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1536,10 +1536,10 @@
                     "type": "Element | (Element | null)[] | null",
                     "required": false,
                     "description": "The element used as the collision boundary. By default this is the viewport, though you can provide additional\nelement(s) to be included in this check.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.collisionboundary",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.collisionboundary",
                     "default": "[ ]",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1547,10 +1547,10 @@
                     "type": "Padding",
                     "required": false,
                     "description": "The distance in pixels from the boundary edges where collision detection should occur. Accepts a number (same for\nall sides), or a partial padding object, for example: { top: 20, left: 20 }.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.collisionpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.collisionpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1558,10 +1558,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The padding between the arrow and the edges of the content. If your content has border-radius, this will prevent it\nfrom overflowing the corners.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.arrowpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.arrowpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1569,10 +1569,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hides the arrow when it cannot be centered\nto the reference element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.hideshiftedarrow",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.hideshiftedarrow",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1580,10 +1580,10 @@
                     "type": "'partial' | 'always'",
                     "required": false,
                     "description": "The sticky behavior on the align axis. `partial` will keep the content in the boundary as long as the trigger is at\nleast partially in the boundary whilst \"always\" will keep the content in the boundary regardless.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sticky",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sticky",
                     "default": "'partial'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1591,10 +1591,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to hide the content when the trigger becomes fully occluded.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.hidewhendetached",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.hidewhendetached",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1602,10 +1602,10 @@
                     "type": "'fixed' | 'absolute'",
                     "required": false,
                     "description": "The type of CSS position property to use.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.positionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.positionstrategy",
                     "default": "'fixed'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1613,10 +1613,10 @@
                     "type": "'always' | 'optimized'",
                     "required": false,
                     "description": "Strategy to update the position of the floating element on every animation frame.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.updatepositionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.updatepositionstrategy",
                     "default": "'optimized'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1624,10 +1624,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to disable the update position for the content when the layout shifted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.disableupdateonlayoutshift",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.disableupdateonlayoutshift",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1635,10 +1635,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Force content to be position within the viewport. Might overlap the reference element, which may not be desired.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.prioritizeposition",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.prioritizeposition",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1646,10 +1646,10 @@
                     "type": "ReferenceElement",
                     "required": false,
                     "description": "The custom element or virtual element that will be set as the reference to position the floating element. If\nprovided, it will replace the default anchor element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.reference",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.reference",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1657,10 +1657,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.trapfocus",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.trapfocus",
                     "default": "modal",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1668,10 +1668,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hovering the popup closes instead of keeping it open (the grace area is disabled,\nso leaving the trigger closes the layer immediately).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.disablehoverablecontent",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.disablehoverablecontent",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1679,10 +1679,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1693,8 +1693,8 @@
                     "parameters": "(() => void) | undefined",
                     "required": false,
                     "description": "Callback invoked when the pointer finally leaves the grace area. Lets an upper layer (e.g.\nTooltip) run area-scoped close logic without registering its own second grace area.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.callables.ongracepointerexit",
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.callables.ongracepointerexit",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   }
                 ]
@@ -1706,10 +1706,10 @@
             "type": "PopoverPopupProps",
             "required": false,
             "description": "Properties forwarded to the popup element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.popupprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.popupprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverPopupProps",
@@ -1717,8 +1717,8 @@
                 "type": "PopoverPopupProps",
                 "resolvedType": null,
                 "description": "Properties for the PopoverPopup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpopupprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpopupprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1731,10 +1731,10 @@
             "type": "PopoverArrowProps",
             "required": false,
             "description": "Properties forwarded to the arrow element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.arrowprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.arrowprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverArrowProps",
@@ -1742,8 +1742,8 @@
                 "type": "PopoverArrowProps",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_index.popoverarrowprops",
-                "sourcePath": "packages/headless/src/components/popover/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_index.popoverarrowprops",
+                "sourcePath": "packages/aria/src/components/popover/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1756,10 +1756,10 @@
             "type": "PopoverCloseProps",
             "required": false,
             "description": "Properties forwarded to the close element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.closeprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.closeprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "PopoverCloseProps",
@@ -1767,8 +1767,8 @@
                 "type": "PopoverCloseProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the PopoverClose component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1777,10 +1777,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1788,10 +1788,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1799,10 +1799,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1810,10 +1810,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercloseprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercloseprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1826,10 +1826,10 @@
             "type": "Direction",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1837,8 +1837,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1851,10 +1851,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1862,10 +1862,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1873,10 +1873,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.modal",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.modal",
             "default": null,
             "inheritedFrom": "modal",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1884,10 +1884,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1900,8 +1900,8 @@
         "type": "TypeAlias PopoverCompactEmits: PopoverRootEmits & PopoverPositionerEmits",
         "resolvedType": "{ \"update:open\": [value: boolean]; escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent]; interactOutside: [event: PointerDownOutsideEvent | FocusOutsideEvent]; openAutoFocus: [event: Event]; closeAutoFocus: [event: Event]; placed: [] }",
         "description": "Events for the PopoverCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.emits",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.emits",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1911,8 +1911,8 @@
             "parameters": "value: boolean",
             "required": true,
             "description": "Event handler called when the open state of the dialog changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/dialog/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/dialog/types.ts",
             "referencedTypes": []
           },
           {
@@ -1921,8 +1921,8 @@
             "parameters": "event: KeyboardEvent",
             "required": true,
             "description": "Event handler called when the escape key is down. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.escapekeydown",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.escapekeydown",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "KeyboardEvent",
@@ -1945,8 +1945,8 @@
             "parameters": "event: PointerDownOutsideEvent",
             "required": true,
             "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.pointerdownoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.pointerdownoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "PointerDownOutsideEvent",
@@ -1954,8 +1954,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1969,8 +1969,8 @@
             "parameters": "event: FocusOutsideEvent",
             "required": true,
             "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.focusoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.focusoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -1978,8 +1978,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1993,8 +1993,8 @@
             "parameters": "event: PointerDownOutsideEvent | FocusOutsideEvent",
             "required": true,
             "description": "Event handler called when an interaction happens outside the `DismissableLayer`. Specifically, when a `pointerdown`\nevent happens outside or focus moves outside of it. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.interactoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.interactoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -2002,8 +2002,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2015,8 +2015,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2030,8 +2030,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Event handler called when auto-focusing on open. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.openautofocus",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.openautofocus",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -2054,8 +2054,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Event handler called when auto-focusing on close. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.closeautofocus",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.closeautofocus",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -2078,8 +2078,8 @@
             "parameters": null,
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactemits.callables.placed",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactemits.callables.placed",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2091,8 +2091,8 @@
         "type": "TypeAlias PopoverCompactSlots",
         "resolvedType": "{ PopoverClose?: ((props: { open: boolean; close: () => void; }) => any); trigger?: (() => any); close?: (() => any) }",
         "description": "Slots for the PopoverCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.slots",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.slots",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2102,8 +2102,8 @@
             "parameters": "((props: { open: boolean; close: () => void; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2111,8 +2111,8 @@
                 "type": "{ open: boolean; close: () => void; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popover_types.type",
-                "sourcePath": "packages/headless/src/components/popover/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popover_types.type",
+                "sourcePath": "packages/aria/src/components/popover/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2126,8 +2126,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the trigger slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.callables.trigger",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.callables.trigger",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           },
           {
@@ -2136,8 +2136,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the close slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovercompactslots.callables.close",
-            "sourcePath": "packages/headless/src/components/popover/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovercompactslots.callables.close",
+            "sourcePath": "packages/aria/src/components/popover/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2151,8 +2151,8 @@
         "type": "Interface PopoverPopupProps",
         "resolvedType": null,
         "description": "Properties for the PopoverPopup component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpopupprops.props",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpopupprops.props",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2167,8 +2167,8 @@
         "type": "Interface PopoverPositionerProps",
         "resolvedType": "{ placement?: Placement; side?: Side; sideOffset?: number; sideFlip?: boolean; align?: Align; alignOffset?: number; alignFlip?: boolean; avoidCollisions?: boolean; collisionBoundary?: Element | (Element | null)[] | null; collisionPadding?: Padding; arrowPadding?: number; hideShiftedArrow?: boolean; sticky?: 'partial' | 'always'; hideWhenDetached?: boolean; positionStrategy?: 'fixed' | 'absolute'; updatePositionStrategy?: 'always' | 'optimized'; disableUpdateOnLayoutShift?: boolean; prioritizePosition?: boolean; reference?: ReferenceElement; trapFocus?: boolean; disableHoverableContent?: boolean; onGracePointerExit?: (() => void); forceMount?: boolean }",
         "description": "Properties for the PopoverPositioner component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.props",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.props",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2176,10 +2176,10 @@
             "type": "Placement",
             "required": false,
             "description": "The placement of the floating element.\n\nIf used, it will override the `side` and `align` props.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.placement",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.placement",
             "default": "undefined",
             "inheritedFrom": "PopperPositionerProps.placement",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Placement",
@@ -2187,8 +2187,8 @@
                 "type": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
                 "resolvedType": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.placement",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.placement",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2201,10 +2201,10 @@
             "type": "Side",
             "required": false,
             "description": "The preferred side of the trigger to render against when open. Will be reversed when collisions occur and\navoidCollisions is enabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.side",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.side",
             "default": "'bottom'",
             "inheritedFrom": "PopperPositionerProps.side",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Side",
@@ -2226,10 +2226,10 @@
             "type": "number",
             "required": false,
             "description": "The distance in pixels from the trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sideoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sideoffset",
             "default": "0",
             "inheritedFrom": "PopperPositionerProps.sideOffset",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2237,10 +2237,10 @@
             "type": "boolean",
             "required": false,
             "description": "Flip to the opposite side when colliding with boundary.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sideflip",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sideflip",
             "default": "true",
             "inheritedFrom": "PopperPositionerProps.sideFlip",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2248,10 +2248,10 @@
             "type": "Align",
             "required": false,
             "description": "The preferred alignment against the trigger. May change when collisions occur.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.align",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.align",
             "default": "'center'",
             "inheritedFrom": "PopperPositionerProps.align",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Align",
@@ -2259,8 +2259,8 @@
                 "type": "'start' | 'center' | 'end'",
                 "resolvedType": "'start' | 'center' | 'end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.align",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.align",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2273,10 +2273,10 @@
             "type": "number",
             "required": false,
             "description": "An offset in pixels from the `start` or `end` alignment options.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.alignoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.alignoffset",
             "default": "0",
             "inheritedFrom": "PopperPositionerProps.alignOffset",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2284,10 +2284,10 @@
             "type": "boolean",
             "required": false,
             "description": "Flip alignment when colliding with boundary.\nMay only occur when `prioritizePosition` is true.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.alignflip",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.alignflip",
             "default": "true",
             "inheritedFrom": "PopperPositionerProps.alignFlip",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2295,10 +2295,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, overrides the side and align preferences to prevent collisions with boundary edges.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.avoidcollisions",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.avoidcollisions",
             "default": "true",
             "inheritedFrom": "PopperPositionerProps.avoidCollisions",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2306,10 +2306,10 @@
             "type": "Element | (Element | null)[] | null",
             "required": false,
             "description": "The element used as the collision boundary. By default this is the viewport, though you can provide additional\nelement(s) to be included in this check.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.collisionboundary",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.collisionboundary",
             "default": "[ ]",
             "inheritedFrom": "collisionBoundary",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Element",
@@ -2331,10 +2331,10 @@
             "type": "Padding",
             "required": false,
             "description": "The distance in pixels from the boundary edges where collision detection should occur. Accepts a number (same for\nall sides), or a partial padding object, for example: { top: 20, left: 20 }.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.collisionpadding",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.collisionpadding",
             "default": "0",
             "inheritedFrom": "PopperPositionerProps.collisionPadding",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Padding",
@@ -2356,10 +2356,10 @@
             "type": "number",
             "required": false,
             "description": "The padding between the arrow and the edges of the content. If your content has border-radius, this will prevent it\nfrom overflowing the corners.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.arrowpadding",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.arrowpadding",
             "default": "0",
             "inheritedFrom": "PopperPositionerProps.arrowPadding",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2367,10 +2367,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, hides the arrow when it cannot be centered\nto the reference element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.hideshiftedarrow",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.hideshiftedarrow",
             "default": "true",
             "inheritedFrom": "PopperPositionerProps.hideShiftedArrow",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2378,10 +2378,10 @@
             "type": "'partial' | 'always'",
             "required": false,
             "description": "The sticky behavior on the align axis. `partial` will keep the content in the boundary as long as the trigger is at\nleast partially in the boundary whilst \"always\" will keep the content in the boundary regardless.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.sticky",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.sticky",
             "default": "'partial'",
             "inheritedFrom": "sticky",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2389,10 +2389,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to hide the content when the trigger becomes fully occluded.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.hidewhendetached",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.hidewhendetached",
             "default": "false",
             "inheritedFrom": "PopperPositionerProps.hideWhenDetached",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2400,10 +2400,10 @@
             "type": "'fixed' | 'absolute'",
             "required": false,
             "description": "The type of CSS position property to use.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.positionstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.positionstrategy",
             "default": "'fixed'",
             "inheritedFrom": "positionStrategy",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2411,10 +2411,10 @@
             "type": "'always' | 'optimized'",
             "required": false,
             "description": "Strategy to update the position of the floating element on every animation frame.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.updatepositionstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.updatepositionstrategy",
             "default": "'optimized'",
             "inheritedFrom": "updatePositionStrategy",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2422,10 +2422,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to disable the update position for the content when the layout shifted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.disableupdateonlayoutshift",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.disableupdateonlayoutshift",
             "default": "false",
             "inheritedFrom": "PopperPositionerProps.disableUpdateOnLayoutShift",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2433,10 +2433,10 @@
             "type": "boolean",
             "required": false,
             "description": "Force content to be position within the viewport. Might overlap the reference element, which may not be desired.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.prioritizeposition",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.prioritizeposition",
             "default": "false",
             "inheritedFrom": "PopperPositionerProps.prioritizePosition",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2444,10 +2444,10 @@
             "type": "ReferenceElement",
             "required": false,
             "description": "The custom element or virtual element that will be set as the reference to position the floating element. If\nprovided, it will replace the default anchor element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.reference",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.reference",
             "default": null,
             "inheritedFrom": "PopperPositionerProps.reference",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "ReferenceElement",
@@ -2469,10 +2469,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.trapfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.trapfocus",
             "default": "modal",
             "inheritedFrom": "PopperPositionerProps.trapFocus",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2480,10 +2480,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, hovering the popup closes instead of keeping it open (the grace area is disabled,\nso leaving the trigger closes the layer immediately).",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.disablehoverablecontent",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.disablehoverablecontent",
             "default": "false",
             "inheritedFrom": "PopperPositionerProps.disableHoverableContent",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2491,10 +2491,10 @@
             "type": "(() => void)",
             "required": false,
             "description": "Callback invoked when the pointer finally leaves the grace area. Lets an upper layer (e.g.\nTooltip) run area-scoped close logic without registering its own second grace area.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.ongracepointerexit",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.ongracepointerexit",
             "default": null,
             "inheritedFrom": "PopperPositionerProps.onGracePointerExit",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2502,10 +2502,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositionerprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositionerprops.members.forcemount",
             "default": null,
             "inheritedFrom": "PopperPositionerProps.forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -2518,8 +2518,8 @@
         "type": "TypeAlias PopoverPositionerEmits: PopperPositionerEmits",
         "resolvedType": "{ escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent]; interactOutside: [event: PointerDownOutsideEvent | FocusOutsideEvent]; openAutoFocus: [event: Event]; closeAutoFocus: [event: Event]; placed: [] }",
         "description": "Events for the PopoverPositioner component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.emits",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.emits",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2529,8 +2529,8 @@
             "parameters": "event: KeyboardEvent",
             "required": true,
             "description": "Event handler called when the escape key is down. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.escapekeydown",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.escapekeydown",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "KeyboardEvent",
@@ -2553,8 +2553,8 @@
             "parameters": "event: PointerDownOutsideEvent",
             "required": true,
             "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.pointerdownoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.pointerdownoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "PointerDownOutsideEvent",
@@ -2562,8 +2562,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2577,8 +2577,8 @@
             "parameters": "event: FocusOutsideEvent",
             "required": true,
             "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.focusoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.focusoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -2586,8 +2586,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2601,8 +2601,8 @@
             "parameters": "event: PointerDownOutsideEvent | FocusOutsideEvent",
             "required": true,
             "description": "Event handler called when an interaction happens outside the `DismissableLayer`. Specifically, when a `pointerdown`\nevent happens outside or focus moves outside of it. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.interactoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.interactoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -2610,8 +2610,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2623,8 +2623,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2638,8 +2638,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Event handler called when auto-focusing on open. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.openautofocus",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.openautofocus",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -2662,8 +2662,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Event handler called when auto-focusing on close. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.closeautofocus",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.closeautofocus",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -2686,8 +2686,8 @@
             "parameters": null,
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverpositioneremits.callables.placed",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverpositioneremits.callables.placed",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2698,8 +2698,8 @@
             "type": "import(\"@/index\").DismissableLayerEmits & import(\"@/index\").FocusScopeEmits & { placed: []; }",
             "resolvedType": "{ escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent]; interactOutside: [event: PointerDownOutsideEvent | FocusOutsideEvent]; openAutoFocus: [event: Event]; closeAutoFocus: [event: Event]; placed: [] }",
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [
@@ -2708,10 +2708,10 @@
                 "type": "[]",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.members.placed",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.members.placed",
                 "default": null,
                 "inheritedFrom": null,
-                "sourcePath": "packages/headless/src/components/popper/types.ts",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
                 "referencedTypes": []
               }
             ],
@@ -2722,8 +2722,8 @@
                 "parameters": "event: KeyboardEvent",
                 "required": true,
                 "description": "Event handler called when the escape key is down. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.callables.escapekeydown",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.callables.escapekeydown",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2732,8 +2732,8 @@
                 "parameters": "event: PointerDownOutsideEvent",
                 "required": true,
                 "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.callables.pointerdownoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.callables.pointerdownoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2742,8 +2742,8 @@
                 "parameters": "event: FocusOutsideEvent",
                 "required": true,
                 "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.callables.focusoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.callables.focusoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2752,8 +2752,8 @@
                 "parameters": "event: PointerDownOutsideEvent | FocusOutsideEvent",
                 "required": true,
                 "description": "Event handler called when an interaction happens outside the `DismissableLayer`. Specifically, when a `pointerdown`\nevent happens outside or focus moves outside of it. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.callables.interactoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.callables.interactoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2762,8 +2762,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Event handler called when auto-focusing on open. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.callables.openautofocus",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.callables.openautofocus",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2772,8 +2772,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Event handler called when auto-focusing on close. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperpositioneremits.callables.closeautofocus",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioneremits.callables.closeautofocus",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               }
             ]
@@ -2788,8 +2788,8 @@
         "type": "Interface PopoverRootProps",
         "resolvedType": "{ dir?: Direction; open?: boolean; defaultOpen?: boolean; modal?: boolean; disabled?: boolean }",
         "description": "Properties for the PopoverRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootprops.props",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootprops.props",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2797,10 +2797,10 @@
             "type": "Direction",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootprops.members.dir",
             "default": null,
             "inheritedFrom": "PopperRootProps.dir",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2808,8 +2808,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2822,10 +2822,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootprops.members.open",
             "default": null,
             "inheritedFrom": "PopperRootProps.open",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2833,10 +2833,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "PopperRootProps.defaultOpen",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2844,10 +2844,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootprops.members.modal",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootprops.members.modal",
             "default": null,
             "inheritedFrom": "PopperRootProps.modal",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2855,10 +2855,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootprops.members.disabled",
             "default": null,
             "inheritedFrom": "PopperRootProps.disabled",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2871,8 +2871,8 @@
         "type": "TypeAlias PopoverRootEmits: DialogRootEmits",
         "resolvedType": "{ \"update:open\": [value: boolean] }",
         "description": "Events for the PopoverRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootemits.emits",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootemits.emits",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2882,8 +2882,8 @@
             "parameters": "value: boolean",
             "required": true,
             "description": "Event handler called when the open state of the dialog changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popoverrootemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/dialog/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popoverrootemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/dialog/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2894,8 +2894,8 @@
             "type": "{ 'update:open': [value: boolean]; }",
             "resolvedType": "{ \"update:open\": [value: boolean] }",
             "description": "Events for the DialogRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_dialog_types.dialogrootemits",
-            "sourcePath": "packages/headless/src/components/dialog/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_dialog_types.dialogrootemits",
+            "sourcePath": "packages/aria/src/components/dialog/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -2906,8 +2906,8 @@
                 "parameters": "value: boolean",
                 "required": true,
                 "description": "Event handler called when the open state of the dialog changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_dialog_types.dialogrootemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/dialog/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_dialog_types.dialogrootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/dialog/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -2922,8 +2922,8 @@
         "type": "Interface PopoverTriggerProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the PopoverTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.props",
-        "sourcePath": "packages/headless/src/components/popover/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.props",
+        "sourcePath": "packages/aria/src/components/popover/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2931,10 +2931,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -2942,8 +2942,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2956,10 +2956,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -2967,10 +2967,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2978,10 +2978,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_popover_types.popovertriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_popover_types.popovertriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

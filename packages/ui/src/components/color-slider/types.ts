@@ -1,5 +1,5 @@
-import type { ColorSliderCompactEmits, ColorSliderCompactProps, ColorSliderUi } from '@soybeanjs/headless/color-slider';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ColorSliderCompactEmits, ColorSliderCompactProps, ColorSliderUi } from '@vean/aria/color-slider';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeColor, ThemeSize } from '@/theme';
 
 /**

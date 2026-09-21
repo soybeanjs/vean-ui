@@ -1,4 +1,4 @@
 export { default as SAvatar } from './avatar.vue';
 
-export type * from '@soybeanjs/headless/avatar';
+export type * from '@vean/aria/avatar';
 export type * from './types';

@@ -1,6 +1,6 @@
 import path from 'path';
-import { THEME_RADIUS } from '@soybeanjs/theme';
 import * as v from 'valibot';
+import { THEME_RADIUS } from '@vean/theme';
 import { Command } from 'commander';
 import { PRESET_BASE_COLORS, PRESET_PRIMARY_COLORS, PRESET_RADII, PRESET_ICON_LIBRARIES } from '../registry/config';
 import { getConfig } from '../utils/get-config';
@@ -68,7 +68,7 @@ export const info = new Command()
     console.log();
 
     if (config) {
-      console.log('  sbean.json Config');
+      console.log('  vean.json Config');
       console.log('  ─────────────────');
 
       console.log(`  Base color:     ${config.uno.base}`);
@@ -102,7 +102,7 @@ export const info = new Command()
         console.log(`    ${pkg.padEnd(8)} ${alias.padEnd(10)} → ${dir}`);
       }
     } else {
-      console.log('  No sbean.json found. Run "sbean init" to create one.');
+      console.log('  No vean.json found. Run "vean init" to create one.');
     }
 
     console.log();

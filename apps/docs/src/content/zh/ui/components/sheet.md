@@ -1,16 +1,16 @@
 ---
 head:
   title: 侧边面板
-  description: 从屏幕边缘滑出的面板。它复用 SDialog 的声明式 API 与插槽契约（同一 headless DialogCompact 基座，相同的模态/焦点/可关闭行为），并新增 side 控制面板进入方向——top/bottom/left/right（默认 right）。
+  description: 从屏幕边缘滑出的面板。它复用 SDialog 的声明式 API 与插槽契约（同一 Aria DialogCompact 基座，相同的模态/焦点/可关闭行为），并新增 side 控制面板进入方向——top/bottom/left/right（默认 right）。
 ---
 
 # 侧边面板
 
 ## 概述
 
-从屏幕边缘滑出的面板。它复用 `SDialog` 的声明式 API 与插槽契约（同一 headless `DialogCompact` 基座，相同的模态/焦点/可关闭行为），并新增 `side` 控制面板进入方向——`top`/`bottom`/`left`/`right`（默认 `right`）。
+从屏幕边缘滑出的面板。它复用 `SDialog` 的声明式 API 与插槽契约（同一 Aria `DialogCompact` 基座，相同的模态/焦点/可关闭行为），并新增 `side` 控制面板进入方向——`top`/`bottom`/`left`/`right`（默认 `right`）。
 
-`SSheet` 组合 headless dialog 基础组件家族与 `sheetVariants` 样式配方（继承 `dialogVariants`，6 种尺寸 × 4 个方向）。
+`SSheet` 组合 Aria dialog 基础组件家族与 `sheetVariants` 样式配方（继承 `dialogVariants`，6 种尺寸 × 4 个方向）。
 
 > 需要带吸附点与滑动关闭的手势面板？那是 [Drawer](/components/drawer)——侧边面板刻意保持"带侧边的 dialog"定位。
 
@@ -33,7 +33,7 @@ head:
 ## 组件家族
 
 - `SSheet`（样式层）— 入口包装组件；`sheetVariants` 配方（`size` + `side`）配合动态插槽转发
-- 其余部分均来自 headless dialog 家族（见 `Dialog`）：`DialogRoot`、`DialogTrigger`、`DialogOverlay`、`DialogPopup`、`DialogHeader`、`DialogContent`、`DialogFooter`、`DialogTitle`、`DialogDescription`、`DialogClose`、`DialogCancel`、`DialogConfirm`、`DialogCompact`
+- 其余部分均来自 Aria dialog 家族（见 `Dialog`）：`DialogRoot`、`DialogTrigger`、`DialogOverlay`、`DialogPopup`、`DialogHeader`、`DialogContent`、`DialogFooter`、`DialogTitle`、`DialogDescription`、`DialogClose`、`DialogCancel`、`DialogConfirm`、`DialogCompact`
 
 ## 演示
 
@@ -47,17 +47,17 @@ head:
 
 ### 架构与对标差异
 
-`SSheet` 是薄样式包装组件：它把每个 prop/插槽/事件转发给 headless `DialogCompact`，仅提供继承 `dialogVariants` 并按方向定制 `popup` 类的 `sheetVariants` 配方。这使得侧边面板与对话框行为一致而仅表现不同——与 shadcn-ui/vaul 式面板相同的 headless/样式分离；而 Ant Design 的 `drawer`（带 `placement`/`width`/`closable`/`mask` prop 的单一样式化组件）及 Element Plus/Mantine/Naive UI 为另一模型。
+`SSheet` 是薄样式包装组件：它把每个 prop/插槽/事件转发给 Aria `DialogCompact`，仅提供继承 `dialogVariants` 并按方向定制 `popup` 类的 `sheetVariants` 配方。这使得侧边面板与对话框行为一致而仅表现不同——与 shadcn-ui/vaul 式面板相同的 headless/样式分离；而 Ant Design 的 `drawer`（带 `placement`/`width`/`closable`/`mask` prop 的单一样式化组件）及 Element Plus/Mantine/Naive UI 为另一模型。
 
-| 能力                    | SoybeanUI | shadcn/ui | Ant Design Drawer | Element Plus Drawer | Mantine Drawer | Naive UI Drawer |
-| :---------------------- | :-------: | :-------: | :---------------: | :-----------------: | :------------: | :-------------: |
-| 复用 dialog 基座        |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| Headless/样式分离       |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| 4 个方向（side）        |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| 模态（aria-modal+陷阱） |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| 关闭时焦点还原          |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| 尺寸（6）               |    ✅     |     —     |         —         |          —          |       —        |        —        |
-| 纯净（无头/底部）       |    ✅     |     —     |         —         |          —          |       —        |        —        |
+| 能力                    | VeanUI | shadcn/ui | Ant Design Drawer | Element Plus Drawer | Mantine Drawer | Naive UI Drawer |
+| :---------------------- | :----: | :-------: | :---------------: | :-----------------: | :------------: | :-------------: |
+| 复用 dialog 基座        |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| Aria/样式分离           |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| 4 个方向（side）        |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| 模态（aria-modal+陷阱） |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| 关闭时焦点还原          |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| 尺寸（6）               |   ✅   |     —     |         —         |          —          |       —        |        —        |
+| 纯净（无头/底部）       |   ✅   |     —     |         —         |          —          |       —        |        —        |
 
 `—` = 不支持或采用不同交互模型。
 
@@ -76,7 +76,7 @@ head:
 | 旧名                                          | 新名                                       |
 | :-------------------------------------------- | :----------------------------------------- |
 | `SDrawer`（侧边面板）                         | `SSheet`                                   |
-| `@soybeanjs/ui` → `SDrawer`                   | `@soybeanjs/ui` → `SSheet`                 |
+| `@vean/ui` → `SDrawer`                        | `@vean/ui` → `SSheet`                      |
 | `drawerVariants`                              | `sheetVariants`                            |
 | `DrawerProps` / `DrawerEmits` / `DrawerSlots` | `SheetProps` / `SheetEmits` / `SheetSlots` |
 

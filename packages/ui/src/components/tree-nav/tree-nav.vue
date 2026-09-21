@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import { TreeNavCompact, provideTreeNavUi } from '@soybeanjs/headless/tree-nav';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import { TreeNavCompact, provideTreeNavUi } from '@vean/aria/tree-nav';
 import { treeNavVariants } from '@/styles/tree-nav';
 import { provideMenuUi } from '../menu/context';
 import type { TreeNavProps, TreeNavEmits, TreeNavSlots } from './types';
@@ -15,7 +15,7 @@ const props = defineProps<TreeNavProps>();
 
 const emit = defineEmits<TreeNavEmits>();
 
-// Forwarded scopes resolve against headless internals; the slot contract is
+// Forwarded scopes resolve against aria internals; the slot contract is
 // the shared `MenuOptionsCompactSlots` + `more-trigger`.
 const slots = defineSlots<TreeNavSlots>();
 

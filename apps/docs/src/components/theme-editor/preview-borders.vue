@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SCard, SCheckbox, SInput, SRadioGroup, SSeparator, SSelect, SSwitch, STag, STextarea } from '@soybeanjs/ui';
-import type { RadioGroupOptionData, SelectOptionData } from '@soybeanjs/ui';
+import { SCard, SCheckbox, SInput, SRadioGroup, SSeparator, SSelect, SSwitch, STag, STextarea } from '@vean/ui';
+import type { RadioGroupOptionData, SelectOptionData } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewBorders'

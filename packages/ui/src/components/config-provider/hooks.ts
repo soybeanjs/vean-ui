@@ -1,5 +1,5 @@
 import { computed, onMounted, onUnmounted, watch } from 'vue';
-import { THEME_STORAGE_KEY, THEME_STYLE_ID, createThemeWriter } from '@soybeanjs/theme/storage';
+import { THEME_STORAGE_KEY, THEME_STYLE_ID, createThemeWriter } from '@vean/theme/storage';
 import { buildThemeCss } from '../../theme/adapter';
 import type { ConfigProviderProps } from './types';
 import { createThemeContext, provideThemeContext } from './use-theme';
@@ -9,7 +9,7 @@ import { createThemeContext, provideThemeContext } from './use-theme';
  * (created via `createThemeContext`), the derived theme CSS, the single runtime
  * style element and the cross-tab storage refresh.
  *
- * **Style application**: the runtime owns exactly one `<style id="soybean-theme">`
+ * **Style application**: the runtime owns exactly one `<style id="vean-theme">`
  * in `<head>`. The first-paint script may have created it (with the persisted
  * snapshot); the provider adopts that element, or creates it when absent, and
  * keeps its content in sync. Nothing is rendered into the component tree, so
@@ -18,7 +18,7 @@ import { createThemeContext, provideThemeContext } from './use-theme';
  * `:where(...)`-weakened, docs/theme.md §6.1 / §6.3).
  *
  * **Persistence**: one envelope, one writer. The derived payload (options +
- * mode + style snapshot + custom presets) goes into `__SOYBEAN_THEME` through a
+ * mode + style snapshot + custom presets) goes into `__VEAN_THEME` through a
  * single debounced writer; the theme context itself writes nothing.
  */
 export function useConfigProviderTheme(props: ConfigProviderProps) {
@@ -28,7 +28,7 @@ export function useConfigProviderTheme(props: ConfigProviderProps) {
   const themeOptions = computed(() => themeContext.theme.value);
   const themeCss = computed(() => buildThemeCss(themeOptions.value));
 
-  // —— 单一运行时样式元素：head 内的 #soybean-theme，由首帧脚本或此处创建 ——
+  // —— 单一运行时样式元素：head 内的 #vean-theme，由首帧脚本或此处创建 ——
   const styleElement = shallowStyleElement();
   const applyCss = (): void => {
     const element = styleElement.current() ?? styleElement.acquire(props.nonce);

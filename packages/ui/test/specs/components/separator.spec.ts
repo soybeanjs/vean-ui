@@ -10,7 +10,7 @@ describe('SSeparator', () => {
       const separator = wrapper.get('[role="separator"]');
 
       expect(separator.attributes('data-orientation')).toBe('horizontal');
-      expect(separator.attributes('data-soybean-separator-root')).toBe('');
+      expect(separator.attributes('data-vean-separator-root')).toBe('');
       wrapper.unmount();
     });
 
@@ -20,7 +20,7 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-label]').text()).toBe('Section');
+      expect(wrapper.get('[data-vean-separator-label]').text()).toBe('Section');
       wrapper.unmount();
     });
 
@@ -30,7 +30,7 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-label]').text()).toBe('Slot label');
+      expect(wrapper.get('[data-vean-separator-label]').text()).toBe('Slot label');
       wrapper.unmount();
     });
 
@@ -46,8 +46,8 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-root]').classes()).toContain('custom-root');
-      expect(wrapper.get('[data-soybean-separator-label]').classes()).toContain('custom-label');
+      expect(wrapper.get('[data-vean-separator-root]').classes()).toContain('custom-root');
+      expect(wrapper.get('[data-vean-separator-label]').classes()).toContain('custom-label');
       wrapper.unmount();
     });
   });
@@ -63,7 +63,7 @@ describe('SSeparator', () => {
       });
 
       expect(wrapper.get('[role="separator"]').attributes('data-orientation')).toBe('vertical');
-      expect(wrapper.find('[data-soybean-separator-label]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-separator-label]').exists()).toBe(false);
       wrapper.unmount();
     });
 
@@ -94,7 +94,7 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-root]').attributes('role')).toBe('none');
+      expect(wrapper.get('[data-vean-separator-root]').attributes('role')).toBe('none');
       wrapper.unmount();
     });
 
@@ -104,8 +104,8 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-root]').attributes('role')).toBe('none');
-      expect(wrapper.get('[data-soybean-separator-root]').attributes('aria-orientation')).toBeUndefined();
+      expect(wrapper.get('[data-vean-separator-root]').attributes('role')).toBe('none');
+      expect(wrapper.get('[data-vean-separator-root]').attributes('aria-orientation')).toBeUndefined();
       wrapper.unmount();
     });
   });
@@ -117,7 +117,7 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-root]').classes()).toContain('border-dashed');
+      expect(wrapper.get('[data-vean-separator-root]').classes()).toContain('border-dashed');
       wrapper.unmount();
     });
 
@@ -127,7 +127,7 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-root]').classes()).toContain('border-dotted');
+      expect(wrapper.get('[data-vean-separator-root]').classes()).toContain('border-dotted');
       wrapper.unmount();
     });
 
@@ -136,7 +136,7 @@ describe('SSeparator', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-separator-root]').classes()).toContain('border-solid');
+      expect(wrapper.get('[data-vean-separator-root]').classes()).toContain('border-solid');
       wrapper.unmount();
     });
   });

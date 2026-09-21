@@ -7,13 +7,13 @@ import type {
   FormFieldBaseCompactSlots,
   FormUi,
   FormFieldUi,
-  UseFormOptions as HeadlessUseFormOptions,
-  UseFormReturn as HeadlessUseFormReturn,
+  UseFormOptions as AriaUseFormOptions,
+  UseFormReturn as AriaUseFormReturn,
   FormFieldComponent,
   FormFieldArrayComponent,
   FormValues
-} from '@soybeanjs/headless/form';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/form';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 export interface FormProps extends FormCompactProps {
@@ -79,9 +79,9 @@ export interface FormFieldBaseProps extends FormFieldBaseCompactProps, FormField
  */
 export type FormFieldBaseSlots = FormFieldBaseCompactSlots;
 
-export type UseFormOptions<Values extends FormValues = FormValues> = HeadlessUseFormOptions<Values>;
+export type UseFormOptions<Values extends FormValues = FormValues> = AriaUseFormOptions<Values>;
 
-export interface UseFormReturn<Values extends FormValues = FormValues> extends HeadlessUseFormReturn<Values> {
+export interface UseFormReturn<Values extends FormValues = FormValues> extends AriaUseFormReturn<Values> {
   /**
    * Styled form field component bound to the form context and typed by the schema values.
    */

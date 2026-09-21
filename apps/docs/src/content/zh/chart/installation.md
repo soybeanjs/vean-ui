@@ -1,7 +1,7 @@
 ---
 head:
   title: 安装
-  description: 安装 TanStack Charts 并在 SoybeanUI 项目中接入。
+  description: 安装 TanStack Charts 并在 VeanUI 项目中接入。
 ---
 
 # 安装
@@ -24,4 +24,4 @@ pnpm add @tanstack/charts
 
 ## 主题色
 
-确保应用已引入 SoybeanUI 主题（`@soybeanjs/ui/styles.css` 或 UnoCSS preset），这样 `--chart-1..5` 等 token 才可用，示例颜色才能跟随明/暗主题。
+确保应用已引入 VeanUI 主题（`@vean/ui/styles.css` 或 UnoCSS preset），这样 `--chart-1..5` 等 token 才可用，示例颜色才能跟随明/暗主题。

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SButton, toast } from '@soybeanjs/ui';
+import { SButton, toast } from '@vean/ui';
 
 function openStackedToasts() {
   ['Queued job', 'Processing assets', 'Publishing build', 'Clearing cache'].forEach((title, index) => {

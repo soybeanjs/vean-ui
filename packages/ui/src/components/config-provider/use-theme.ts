@@ -1,7 +1,7 @@
 import { computed, onUnmounted, reactive, ref, watch } from 'vue';
 import type { ComputedRef, Ref, ShallowRef } from 'vue';
-import { useContext } from '@soybeanjs/headless/composables';
-import { DEFAULT_OPTIONS, resolveDocumentColorScheme } from '@soybeanjs/theme';
+import { useContext } from '@vean/aria/composables';
+import { DEFAULT_OPTIONS, resolveDocumentColorScheme } from '@vean/theme';
 import type {
   DarkSelectorValue,
   PaletteKey,
@@ -12,10 +12,10 @@ import type {
   ThemeRadiusValue,
   ThemeSizeValue,
   ThemeSpacingValue
-} from '@soybeanjs/theme';
-import { isServerRuntime } from '@soybeanjs/theme/ssr';
-import { readThemeEnvelope } from '@soybeanjs/theme/storage';
-import type { ThemeEnvelopeInput } from '@soybeanjs/theme/storage';
+} from '@vean/theme';
+import { isServerRuntime } from '@vean/theme/ssr';
+import { readThemeEnvelope } from '@vean/theme/storage';
+import type { ThemeEnvelopeInput } from '@vean/theme/storage';
 import type { ThemePresetColors, ThemePresetInput, ThemeSettingsState } from '@/theme';
 import type { ConfigProviderProps } from './types';
 

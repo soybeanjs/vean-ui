@@ -24,7 +24,7 @@ head:
 
 ```vue
 <script setup lang="ts">
-import { SIcon } from '@soybeanjs/ui';
+import { SIcon } from '@vean/ui';
 </script>
 
 <template>
@@ -45,7 +45,7 @@ import { SIcon } from '@soybeanjs/ui';
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider, SIcon } from '@soybeanjs/ui';
+import { SConfigProvider, SIcon } from '@vean/ui';
 </script>
 
 <template>
@@ -59,7 +59,7 @@ import { SConfigProvider, SIcon } from '@soybeanjs/ui';
 
 ```vue
 <script setup lang="ts">
-import { SIcon } from '@soybeanjs/ui';
+import { SIcon } from '@vean/ui';
 import CustomIcon from './CustomIcon.vue';
 </script>
 
@@ -91,11 +91,11 @@ import CustomIcon from './CustomIcon.vue';
 
 ### 架构与基准差异
 
-SoybeanUI 将图标拆分为 headless 层（`@soybeanjs/headless` 中的 `_icon`，提供 `IconValue` 类型和渲染钩子）和 styled 层（`@soybeanjs/ui` 中的 `SIcon`，封装 Iconify 渲染、尺寸继承和无障碍逻辑）。这不同于 Ant Design、Element Plus 等单包方案。
+VeanUI 将图标拆分为 Aria 层（`@vean/aria` 中的 `_icon`，提供 `IconValue` 类型和渲染钩子）和 styled 层（`@vean/ui` 中的 `SIcon`，封装 Iconify 渲染、尺寸继承和无障碍逻辑）。这不同于 Ant Design、Element Plus 等单包方案。
 
-| 方面     | SoybeanUI                                 | Ant Design / Element Plus / MUI / Mantine / Naive UI |
+| 方面     | VeanUI                                    | Ant Design / Element Plus / MUI / Mantine / Naive UI |
 | :------- | :---------------------------------------- | :--------------------------------------------------- |
-| 架构     | headless + styled 分层                    | 单包                                                 |
+| 架构     | Aria + styled 分层                        | 单包                                                 |
 | 图标来源 | Iconify（按需加载 200+ 图标集）           | 内置图标集 / 自定义 SVG                              |
 | 样式     | UnoCSS 工具类                             | CSS-in-JS / SCSS / CSS 变量                          |
 | 尺寸     | prop + `SConfigProvider` 全局继承         | prop / token                                         |

@@ -292,8 +292,8 @@
                 "type": "ProgressProviderProps",
                 "resolvedType": null,
                 "description": "Properties for the ProgressProvider component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_progress_types.progressproviderprops",
-                "sourcePath": "packages/headless/src/components/progress/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_progress_types.progressproviderprops",
+                "sourcePath": "packages/aria/src/components/progress/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -361,7 +361,7 @@
               {
                 "name": "ThemeEnvelopeInput",
                 "kind": "typeAlias",
-                "type": "{ style?: string | undefined; mode?: import(\"@soybeanjs/theme\").ThemeModePreference | undefined; options: ThemeOptions; presets?: Record<string, unknown> | undefined; appliedPreset?: string | undefined; }",
+                "type": "{ style?: string | undefined; mode?: import(\"@vean/theme\").ThemeModePreference | undefined; options: ThemeOptions; presets?: Record<string, unknown> | undefined; appliedPreset?: string | undefined; }",
                 "resolvedType": "{ style?: string; mode?: ThemeModePreference; options: ThemeOptions; presets?: Record<string, unknown>; appliedPreset?: string }",
                 "description": "what a caller hands to the writer; the version is added for them.",
                 "descriptionKey": "api.generated.packages_theme_src_storage.themeenvelopeinput",
@@ -373,7 +373,7 @@
                     "name": "style",
                     "type": "string",
                     "required": false,
-                    "description": "the style payload applied by the first-paint script (`#soybean-theme`).\n\nThe snapshot is what removes the theme flash on refresh: the head script\napplies it before any stylesheet is parsed, then the runtime provider\npatches the same element in place.",
+                    "description": "the style payload applied by the first-paint script (`#vean-theme`).\n\nThe snapshot is what removes the theme flash on refresh: the head script\napplies it before any stylesheet is parsed, then the runtime provider\npatches the same element in place.",
                     "descriptionKey": "api.generated.packages_theme_src_storage.themeenvelopeinput.members.style",
                     "default": null,
                     "inheritedFrom": null,
@@ -473,7 +473,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.dir",
             "default": null,
             "inheritedFrom": "_ConfigProviderProps.dir",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -481,8 +481,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -498,7 +498,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.locale",
             "default": "'en'",
             "inheritedFrom": "_ConfigProviderProps.locale",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": []
           },
           {
@@ -509,7 +509,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.nonce",
             "default": null,
             "inheritedFrom": "_ConfigProviderProps.nonce",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": []
           },
           {
@@ -520,7 +520,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.tooltip",
             "default": null,
             "inheritedFrom": "_ConfigProviderProps.tooltip",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": [
               {
                 "name": "TooltipProviderProps",
@@ -528,8 +528,8 @@
                 "type": "TooltipProviderProps",
                 "resolvedType": null,
                 "description": "Properties for the TooltipProvider component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tooltip_types.tooltipproviderprops",
-                "sourcePath": "packages/headless/src/components/tooltip/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tooltip_types.tooltipproviderprops",
+                "sourcePath": "packages/aria/src/components/tooltip/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -545,7 +545,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.iconrender",
             "default": null,
             "inheritedFrom": "_ConfigProviderProps.iconRender",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": [
               {
                 "name": "IconValue",
@@ -553,8 +553,8 @@
                 "type": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": null,
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -587,7 +587,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.linkcomponent",
             "default": null,
             "inheritedFrom": "_ConfigProviderProps.linkComponent",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -620,7 +620,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_config_provider_types.configproviderprops.members.messages",
             "default": null,
             "inheritedFrom": "_ConfigProviderProps.messages",
-            "sourcePath": "packages/headless/src/components/config-provider/types.ts",
+            "sourcePath": "packages/aria/src/components/config-provider/types.ts",
             "referencedTypes": [
               {
                 "name": "LocaleMessagesOverrides",
@@ -628,8 +628,8 @@
                 "type": "{ alert?: Partial<import(\"../../locale/types\").LocaleAlertMessages> | undefined; anchor?: Partial<import(\"../../locale/types\").LocaleAnchorMessages> | undefined; autocomplete?: Partial<import(\"../../locale/types\").LocaleAutocompleteMessages> | undefined; breadcrumb?: Partial<import(\"../../locale/types\").LocaleBreadcrumbMessages> | undefined; calendar?: Partial<import(\"../../locale/types\").LocaleCalendarMessages> | undefined; carousel?: Partial<import(\"../../locale/types\").LocaleCarouselMessages> | undefined; cascader?: Partial<import(\"../../locale/types\").LocaleCascaderMessages> | undefined; clipboard?: Partial<import(\"../../locale/types\").LocaleClipboardMessages> | undefined; combobox?: Partial<import(\"../../locale/types\").LocaleComboboxMessages> | undefined; command?: Partial<import(\"../../locale/types\").LocaleCommandMessages> | undefined; date?: Partial<import(\"../../locale/types\").LocaleDateMessages> | undefined; datePicker?: Partial<import(\"../../locale/types\").LocaleDatePickerMessages> | undefined; dateRangePicker?: Partial<import(\"../../locale/types\").LocaleDateRangePickerMessages> | undefined; dialog?: Partial<import(\"../../locale/types\").LocaleDialogMessages> | undefined; editable?: Partial<import(\"../../locale/types\").LocaleEditableMessages> | undefined; input?: Partial<import(\"../../locale/types\").LocaleInputMessages> | undefined; inputNumber?: Partial<import(\"../../locale/types\").LocaleInputNumberMessages> | undefined; layout?: Partial<import(\"../../locale/types\").LocaleLayoutMessages> | undefined; pagination?: Partial<import(\"../../locale/types\").LocalePaginationMessages> | undefined; pageTabs?: Partial<import(\"../../locale/types\").LocalePageTabsMessages> | undefined; password?: Partial<import(\"../../locale/types\").LocalePasswordMessages> | undefined; progress?: Partial<import(\"../../locale/types\").LocaleProgressMessages> | undefined; rating?: Partial<import(\"../../locale/types\").LocaleRatingMessages> | undefined; select?: Partial<import(\"../../locale/types\").LocaleSelectMessages> | undefined; slider?: Partial<import(\"../../locale/types\").LocaleSliderMessages> | undefined; stepper?: Partial<import(\"../../locale/types\").LocaleStepperMessages> | undefined; table?: Partial<import(\"../../locale/types\").LocaleTableMessages> | undefined; tag?: Partial<import(\"../../locale/types\").LocaleTagMessages> | undefined; tagsInput?: Partial<import(\"../../locale/types\").LocaleTagsInputMessages> | undefined; textarea?: Partial<import(\"../../locale/types\").LocaleTextareaMessages> | undefined; treeMenu?: Partial<import(\"../../locale/types\").LocaleTreeMenuMessages> | undefined; }",
                 "resolvedType": "{ alert?: Partial<LocaleAlertMessages>; anchor?: Partial<LocaleAnchorMessages>; autocomplete?: Partial<LocaleAutocompleteMessages>; breadcrumb?: Partial<LocaleBreadcrumbMessages>; calendar?: Partial<LocaleCalendarMessages>; carousel?: Partial<LocaleCarouselMessages>; cascader?: Partial<LocaleCascaderMessages>; clipboard?: Partial<LocaleClipboardMessages>; combobox?: Partial<LocaleComboboxMessages>; command?: Partial<LocaleCommandMessages>; date?: Partial<LocaleDateMessages>; datePicker?: Partial<LocaleDatePickerMessages>; dateRangePicker?: Partial<LocaleDateRangePickerMessages>; dialog?: Partial<LocaleDialogMessages>; editable?: Partial<LocaleEditableMessages>; input?: Partial<LocaleInputMessages>; inputNumber?: Partial<LocaleInputNumberMessages>; layout?: Partial<LocaleLayoutMessages>; pagination?: Partial<LocalePaginationMessages>; pageTabs?: Partial<LocalePageTabsMessages>; password?: Partial<LocalePasswordMessages>; progress?: Partial<LocaleProgressMessages>; rating?: Partial<LocaleRatingMessages>; select?: Partial<LocaleSelectMessages>; slider?: Partial<LocaleSliderMessages>; stepper?: Partial<LocaleStepperMessages>; table?: Partial<LocaleTableMessages>; tag?: Partial<LocaleTagMessages>; tagsInput?: Partial<LocaleTagsInputMessages>; textarea?: Partial<LocaleTextareaMessages>; treeMenu?: Partial<LocaleTreeMenuMessages> }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides",
-                "sourcePath": "packages/headless/src/locale/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides",
+                "sourcePath": "packages/aria/src/locale/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -638,10 +638,10 @@
                     "type": "Partial<LocaleAlertMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.alert",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.alert",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -649,10 +649,10 @@
                     "type": "Partial<LocaleAnchorMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.anchor",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.anchor",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -660,10 +660,10 @@
                     "type": "Partial<LocaleAutocompleteMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.autocomplete",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.autocomplete",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -671,10 +671,10 @@
                     "type": "Partial<LocaleBreadcrumbMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.breadcrumb",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.breadcrumb",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -682,10 +682,10 @@
                     "type": "Partial<LocaleCalendarMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.calendar",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.calendar",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -693,10 +693,10 @@
                     "type": "Partial<LocaleCarouselMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.carousel",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.carousel",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -704,10 +704,10 @@
                     "type": "Partial<LocaleCascaderMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.cascader",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.cascader",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -715,10 +715,10 @@
                     "type": "Partial<LocaleClipboardMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.clipboard",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.clipboard",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -726,10 +726,10 @@
                     "type": "Partial<LocaleComboboxMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.combobox",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.combobox",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -737,10 +737,10 @@
                     "type": "Partial<LocaleCommandMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.command",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.command",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -748,10 +748,10 @@
                     "type": "Partial<LocaleDateMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -759,10 +759,10 @@
                     "type": "Partial<LocaleDatePickerMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.datepicker",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.datepicker",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -770,10 +770,10 @@
                     "type": "Partial<LocaleDateRangePickerMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.daterangepicker",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.daterangepicker",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -781,10 +781,10 @@
                     "type": "Partial<LocaleDialogMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.dialog",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.dialog",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -792,10 +792,10 @@
                     "type": "Partial<LocaleEditableMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.editable",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.editable",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -803,10 +803,10 @@
                     "type": "Partial<LocaleInputMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.input",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.input",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -814,10 +814,10 @@
                     "type": "Partial<LocaleInputNumberMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.inputnumber",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.inputnumber",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -825,10 +825,10 @@
                     "type": "Partial<LocaleLayoutMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.layout",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.layout",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -836,10 +836,10 @@
                     "type": "Partial<LocalePaginationMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.pagination",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.pagination",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -847,10 +847,10 @@
                     "type": "Partial<LocalePageTabsMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.pagetabs",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.pagetabs",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -858,10 +858,10 @@
                     "type": "Partial<LocalePasswordMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.password",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.password",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -869,10 +869,10 @@
                     "type": "Partial<LocaleProgressMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.progress",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.progress",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -880,10 +880,10 @@
                     "type": "Partial<LocaleRatingMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.rating",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.rating",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -891,10 +891,10 @@
                     "type": "Partial<LocaleSelectMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.select",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.select",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -902,10 +902,10 @@
                     "type": "Partial<LocaleSliderMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.slider",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.slider",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -913,10 +913,10 @@
                     "type": "Partial<LocaleStepperMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.stepper",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.stepper",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -924,10 +924,10 @@
                     "type": "Partial<LocaleTableMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.table",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.table",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -935,10 +935,10 @@
                     "type": "Partial<LocaleTagMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.tag",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.tag",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -946,10 +946,10 @@
                     "type": "Partial<LocaleTagsInputMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.tagsinput",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.tagsinput",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -957,10 +957,10 @@
                     "type": "Partial<LocaleTextareaMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.textarea",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.textarea",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -968,10 +968,10 @@
                     "type": "Partial<LocaleTreeMenuMessages>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_locale_types.localemessagesoverrides.members.treemenu",
+                    "descriptionKey": "api.generated.packages_aria_src_locale_types.localemessagesoverrides.members.treemenu",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/locale/types.ts",
+                    "sourcePath": "packages/aria/src/locale/types.ts",
                     "referencedTypes": []
                   }
                 ],

@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="T extends TableBaseData = TableBaseData">
 import { computed } from 'vue';
-import { useLocaleMessages } from '@soybeanjs/headless';
-import { interpolate } from '@soybeanjs/headless/shared';
-import { getTableColumnLabel } from '@soybeanjs/headless/table';
+import { useLocaleMessages } from '@vean/aria';
+import { interpolate } from '@vean/aria/shared';
+import { getTableColumnLabel } from '@vean/aria/table';
 import { miniSizeMap } from '@/theme';
 import SButtonIcon from '../button/button-icon.vue';
 import SButton from '../button/button.vue';

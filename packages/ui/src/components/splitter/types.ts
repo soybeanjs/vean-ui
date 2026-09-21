@@ -1,19 +1,19 @@
 import type {
-  SplitterGroupEmits as HeadlessSplitterGroupEmits,
-  SplitterGroupProps as HeadlessSplitterGroupProps,
-  SplitterPanelEmits as HeadlessSplitterPanelEmits,
-  SplitterPanelProps as HeadlessSplitterPanelProps,
-  SplitterResizeHandleEmits as HeadlessSplitterResizeHandleEmits,
-  SplitterResizeHandleProps as HeadlessSplitterResizeHandleProps,
+  SplitterGroupEmits as AriaSplitterGroupEmits,
+  SplitterGroupProps as AriaSplitterGroupProps,
+  SplitterPanelEmits as AriaSplitterPanelEmits,
+  SplitterPanelProps as AriaSplitterPanelProps,
+  SplitterResizeHandleEmits as AriaSplitterResizeHandleEmits,
+  SplitterResizeHandleProps as AriaSplitterResizeHandleProps,
   SplitterUi
-} from '@soybeanjs/headless/splitter';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/splitter';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**
  * Properties for the SplitterGroup component.
  */
-export interface SplitterGroupProps extends HeadlessSplitterGroupProps {
+export interface SplitterGroupProps extends AriaSplitterGroupProps {
   /**
    * Additional class names applied to the root element.
    */
@@ -31,12 +31,12 @@ export interface SplitterGroupProps extends HeadlessSplitterGroupProps {
 /**
  * Events for the SplitterGroup component.
  */
-export type SplitterGroupEmits = HeadlessSplitterGroupEmits;
+export type SplitterGroupEmits = AriaSplitterGroupEmits;
 
 /**
  * Properties for the SplitterPanel component.
  */
-export interface SplitterPanelProps extends HeadlessSplitterPanelProps {
+export interface SplitterPanelProps extends AriaSplitterPanelProps {
   /**
    * Additional class names applied to the root element.
    */
@@ -46,12 +46,12 @@ export interface SplitterPanelProps extends HeadlessSplitterPanelProps {
 /**
  * Events for the SplitterPanel component.
  */
-export type SplitterPanelEmits = HeadlessSplitterPanelEmits;
+export type SplitterPanelEmits = AriaSplitterPanelEmits;
 
 /**
  * Properties for the SplitterResizeHandle component.
  */
-export interface SplitterResizeHandleProps extends HeadlessSplitterResizeHandleProps {
+export interface SplitterResizeHandleProps extends AriaSplitterResizeHandleProps {
   /**
    * Additional class names applied to the root element.
    */
@@ -65,7 +65,7 @@ export interface SplitterResizeHandleProps extends HeadlessSplitterResizeHandleP
 /**
  * Events for the SplitterResizeHandle component.
  */
-export type SplitterResizeHandleEmits = HeadlessSplitterResizeHandleEmits;
+export type SplitterResizeHandleEmits = AriaSplitterResizeHandleEmits;
 
 /**
  * Exposed methods for the SplitterPanel component.

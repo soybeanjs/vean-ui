@@ -5,7 +5,7 @@ import type { DarkSelectorValue } from './types';
 /**
  * First-paint helpers (docs/theme.md §6.3).
  *
- * The mechanism is a **single runtime `<style id="soybean-theme">` owned by the
+ * The mechanism is a **single runtime `<style id="vean-theme">` owned by the
  * head script and taken over by the provider**:
  *
  * - the static palette table + the default alias block ship with the preset

@@ -1,10 +1,5 @@
-import type {
-  StepperCompactProps,
-  StepperCompactEmits,
-  StepperCompactSlots,
-  StepperUi
-} from '@soybeanjs/headless/stepper';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { StepperCompactProps, StepperCompactEmits, StepperCompactSlots, StepperUi } from '@vean/aria/stepper';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeColor, ThemeSize } from '@/theme';
 
 /**

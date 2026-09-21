@@ -194,9 +194,9 @@ describe('SSplitNav (e2e)', () => {
       });
 
       await expect.element(page.getByRole('menuitem', { name: 'Workspace' })).toBeVisible();
-      expect(sider.querySelector('[data-soybean-split-nav-dual-vertical]')).toBeTruthy();
-      expect(sider.querySelector('[data-soybean-split-nav-vertical-first-level]')).toBeTruthy();
-      expect(sider.querySelector('[data-soybean-split-nav-sub-vertical]')).toBeTruthy();
+      expect(sider.querySelector('[data-vean-split-nav-dual-vertical]')).toBeTruthy();
+      expect(sider.querySelector('[data-vean-split-nav-vertical-first-level]')).toBeTruthy();
+      expect(sider.querySelector('[data-vean-split-nav-sub-vertical]')).toBeTruthy();
 
       unmount();
       sider.remove();
@@ -217,7 +217,7 @@ describe('SSplitNav (e2e)', () => {
       await expect.element(branch).toBeVisible();
       await waitForMountWindow();
 
-      const content = document.querySelector<HTMLElement>('[data-soybean-tree-menu-collapsible-content]');
+      const content = document.querySelector<HTMLElement>('[data-vean-tree-menu-collapsible-content]');
 
       if (!content) {
         throw new Error('expected the nested tree branch content to be rendered');
@@ -272,25 +272,22 @@ describe('SSplitNav (e2e)', () => {
 
       await expect
         .poll(() =>
-          offBy(
-            box('[data-soybean-split-nav-top-left]').width,
-            box('[data-soybean-split-nav-vertical-first-level]').width
-          )
+          offBy(box('[data-vean-split-nav-top-left]').width, box('[data-vean-split-nav-vertical-first-level]').width)
         )
         .toBeLessThanOrEqual(1);
       await expect
         .poll(() =>
-          offBy(box('[data-soybean-split-nav-top-right]').width, box('[data-soybean-split-nav-sub-vertical]').width)
+          offBy(box('[data-vean-split-nav-top-right]').width, box('[data-vean-split-nav-sub-vertical]').width)
         )
         .toBeLessThanOrEqual(1);
 
       // The rail cell closes the strip above the rail; the pane cell opens the
       // pane column it belongs to.
-      expect(box('[data-soybean-split-nav-top-left]').bottom).toBeLessThanOrEqual(
-        box('[data-soybean-split-nav-vertical-first-level]').top + 1
+      expect(box('[data-vean-split-nav-top-left]').bottom).toBeLessThanOrEqual(
+        box('[data-vean-split-nav-vertical-first-level]').top + 1
       );
       expect(
-        offBy(box('[data-soybean-split-nav-top-right]').top, box('[data-soybean-split-nav-sub-vertical]').top)
+        offBy(box('[data-vean-split-nav-top-right]').top, box('[data-vean-split-nav-sub-vertical]').top)
       ).toBeLessThanOrEqual(1);
 
       collapsed.value = true;
@@ -298,7 +295,7 @@ describe('SSplitNav (e2e)', () => {
 
       await expect
         .poll(() =>
-          offBy(box('[data-soybean-split-nav-top-right]').width, box('[data-soybean-split-nav-sub-vertical]').width)
+          offBy(box('[data-vean-split-nav-top-right]').width, box('[data-vean-split-nav-sub-vertical]').width)
         )
         .toBeLessThanOrEqual(1);
 
@@ -320,8 +317,8 @@ describe('SSplitNav (e2e)', () => {
 
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
 
-      const railElement = element('[data-soybean-split-nav-vertical-first-level]');
-      const paneElement = element('[data-soybean-split-nav-sub-vertical]');
+      const railElement = element('[data-vean-split-nav-vertical-first-level]');
+      const paneElement = element('[data-vean-split-nav-sub-vertical]');
       const rail = railElement.getBoundingClientRect();
       const pane = paneElement.getBoundingClientRect();
 
@@ -342,7 +339,7 @@ describe('SSplitNav (e2e)', () => {
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
 
       // Nothing precedes it: its edge stays the host's to draw.
-      expect(getComputedStyle(element('[data-soybean-split-nav-sub-vertical]')).borderLeftWidth).toBe('0px');
+      expect(getComputedStyle(element('[data-vean-split-nav-sub-vertical]')).borderLeftWidth).toBe('0px');
 
       unmount();
     });

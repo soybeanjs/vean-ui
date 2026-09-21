@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { pascalCase } from '@soybeanjs/headless/shared';
+import { pascalCase } from '@vean/aria/shared';
 import { useGeneratedI18n } from '~/composables/use-generated-i18n';
 import { resolveContentRoutePath } from '~/shared/content-route';
 import { getReleaseChangelogDocument } from '~/shared/generated-changelog';
@@ -98,7 +98,7 @@ const latestRelease = computed(() => displayedReleases.value[0] ?? null);
 const trackedReleaseCount = computed(() => displayedReleases.value.length);
 const hasComponentFilter = computed(() => Boolean(normalizedComponentQuery.value));
 
-const githubChangelogUrl = 'https://github.com/soybeanjs/soybean-ui/blob/main/CHANGELOG.md';
+const githubChangelogUrl = 'https://github.com/soybeanjs/vean-ui/blob/main/CHANGELOG.md';
 const highlightedEntryCount = 4;
 const highlightedComponentCount = 8;
 

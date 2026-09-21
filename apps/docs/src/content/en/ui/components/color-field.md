@@ -1,14 +1,14 @@
 ---
 head:
   title: Color Field
-  description: 'An input for editing either a full color string or a single channel, with support for hex, rgb, hsl, and oklch output. SColorField combines the headless ColorFieldRoot/ColorFieldInput primitives with the colorFieldVariants style recipe (2 slots, 6 sizes).'
+  description: 'An input for editing either a full color string or a single channel, with support for hex, rgb, hsl, and oklch output. SColorField combines the Aria ColorFieldRoot/ColorFieldInput primitives with the colorFieldVariants style recipe (2 slots, 6 sizes).'
 ---
 
 # Color Field
 
 ## Overview
 
-An input for editing either a full color string or a single channel, with support for `hex`, `rgb`, `hsl`, and `oklch` output. `SColorField` combines the headless `ColorFieldRoot`/`ColorFieldInput` primitives with the `colorFieldVariants` style recipe (2 slots, 6 sizes).
+An input for editing either a full color string or a single channel, with support for `hex`, `rgb`, `hsl`, and `oklch` output. `SColorField` combines the Aria `ColorFieldRoot`/`ColorFieldInput` primitives with the `colorFieldVariants` style recipe (2 slots, 6 sizes).
 
 Use a color field for typed color entry or for editing a single channel numerically inside a color picker (paired with `color-area`/`color-slider`).
 
@@ -18,7 +18,7 @@ Use a color field for typed color entry or for editing a single channel numerica
 
 ## Features
 
-- 🧩 Headless/styled split — `ColorFieldCompact` composes the root + input; `SColorField` only injects styles and forwards props/events
+- 🧩 Aria/styled split — `ColorFieldCompact` composes the root + input; `SColorField` only injects styles and forwards props/events
 - 🎨 Formats — `hex`/`rgb`/`hsl`/`oklch` output via `format`; `colorSpace` + `channel` for single-channel editing
 - ⌨️ Keyboard — ArrowUp/Down, PageUp/Down, Home/End increment/decrement the focused channel (with `step`)
 - 🖱️ Wheel — scroll adjusts the channel unless `disableWheelChange`
@@ -29,9 +29,9 @@ Use a color field for typed color entry or for editing a single channel numerica
 ## Component family
 
 - `SColorField` (styled) — the entry wrapper; `colorFieldVariants` recipe with dynamic slot forwarding
-- `ColorFieldRoot` (headless) — the state owner; `modelValue`/`color`, `format`/`colorSpace`/`channel`, keyboard/wheel increment helpers
-- `ColorFieldInput` (headless) — the text input bound to the color/channel
-- `ColorFieldCompact` (headless) — the aggregated composite; composes root + input
+- `ColorFieldRoot` (Aria) — the state owner; `modelValue`/`color`, `format`/`colorSpace`/`channel`, keyboard/wheel increment helpers
+- `ColorFieldInput` (Aria) — the text input bound to the color/channel
+- `ColorFieldCompact` (Aria) — the aggregated composite; composes root + input
 
 ## Demo
 
@@ -45,16 +45,16 @@ Use a color field for typed color entry or for editing a single channel numerica
 
 ### Architecture and benchmark differences
 
-`ColorFieldCompact` owns the root/input composition while every primitive stays style-free and only the UI wrapper injects the `colorFieldVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI ship a single color-picker with a hex input; SoybeanUI exposes a standalone color field with full format/channel control, keyboard/wheel editing and a native form input.
+`ColorFieldCompact` owns the root/input composition while every primitive stays style-free and only the UI wrapper injects the `colorFieldVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI ship a single color-picker with a hex input; VeanUI exposes a standalone color field with full format/channel control, keyboard/wheel editing and a native form input.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Multiple formats      |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Single-channel edit   |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Keyboard + wheel      |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Native form input     |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Sizes (6)             |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability          | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :------------------ | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Multiple formats    |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Single-channel edit |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Keyboard + wheel    |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Native form input   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Sizes (6)           |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

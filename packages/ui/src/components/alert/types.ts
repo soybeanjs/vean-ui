@@ -1,5 +1,5 @@
-import type { AlertUi, AlertCompactEmits, AlertCompactProps, AlertCompactSlots } from '@soybeanjs/headless/alert';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { AlertUi, AlertCompactEmits, AlertCompactProps, AlertCompactSlots } from '@vean/aria/alert';
+import type { ClassValue } from '@vean/aria/types';
 import type { AlertVariant } from '@/styles/alert';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

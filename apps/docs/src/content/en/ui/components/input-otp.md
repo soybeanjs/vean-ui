@@ -1,14 +1,14 @@
 ---
 head:
   title: InputOtp
-  description: 'A one-time-password (OTP / verification code) input built around a real native input. It keeps the robust selection, paste, and mobile autofill behavior of vue-input-otp while exposing a default SoybeanUI presentation and a fully custom scoped slot. Use it for SMS codes, email verification codes, two-factor authentication, or any fixed-length code entry.'
+  description: 'A one-time-password (OTP / verification code) input built around a real native input. It keeps the robust selection, paste, and mobile autofill behavior of vue-input-otp while exposing a default VeanUI presentation and a fully custom scoped slot. Use it for SMS codes, email verification codes, two-factor authentication, or any fixed-length code entry.'
 ---
 
 # InputOtp
 
 ## Overview
 
-A one-time-password (OTP / verification code) input built around a real native input. It keeps the robust selection, paste, and mobile autofill behavior of vue-input-otp while exposing a default SoybeanUI presentation and a fully custom scoped slot. Use it for SMS codes, email verification codes, two-factor authentication, or any fixed-length code entry.
+A one-time-password (OTP / verification code) input built around a real native input. It keeps the robust selection, paste, and mobile autofill behavior of vue-input-otp while exposing a default VeanUI presentation and a fully custom scoped slot. Use it for SMS codes, email verification codes, two-factor authentication, or any fixed-length code entry.
 
 ## Usage
 
@@ -37,22 +37,22 @@ A one-time-password (OTP / verification code) input built around a real native i
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits input-otp into a headless layer (`@soybeanjs/headless/input-otp`) that owns the transparent input overlay, selection mirroring, and validation, and a styled layer (`@soybeanjs/ui`) that owns variants and UnoCSS classes. The headless `InputOtpCompact` composes `InputOtpRoot` / `InputOtpPositioner` / `InputOtpInput`. This is a port of the vue-input-otp approach used by reka-ui and shadcn, with SoybeanUI's size variants and `align` states as differentiators.
+VeanUI splits input-otp into an Aria layer (`@vean/aria/input-otp`) that owns the transparent input overlay, selection mirroring, and validation, and a styled layer (`@vean/ui`) that owns variants and UnoCSS classes. The Aria `InputOtpCompact` composes `InputOtpRoot` / `InputOtpPositioner` / `InputOtpInput`. This is a port of the vue-input-otp approach used by reka-ui and shadcn, with Vean's size variants and `align` states as differentiators.
 
-| Capability                      | SoybeanUI | reka-ui `InputOtp` | shadcn `InputOTP` | Element Plus |
-| :------------------------------ | :-------: | :----------------: | :---------------: | :----------: |
-| headless/styled split           |    ✅     |         —          |         —         |      —       |
-| Controlled / uncontrolled       |    ✅     |         ✅         |        ✅         |      —       |
-| `maxlength` / `pattern`         |    ✅     |         ✅         |        ✅         |      —       |
-| Real input transparent overlay  |    ✅     |         ✅         |        ✅         |      —       |
-| Selection mirroring             |    ✅     |         ✅         |        ✅         |      —       |
-| Paste transformer               |    ✅     |         ✅         |        ✅         |      —       |
-| Password-manager badge handling |    ✅     |         ✅         |        ✅         |      —       |
-| iOS autofill                    |    ✅     |         ✅         |        ✅         |      —       |
-| `complete` event                |    ✅     |         ✅         |        ✅         |      —       |
-| Size variants (xs…2xl)          |    ✅     |         —          |         —         |      —       |
-| `align` states                  |    ✅     |         ✅         |        ✅         |      —       |
-| Custom visual slot (fake caret) |    ✅     |         ✅         |        ✅         |      —       |
+| Capability                      | VeanUI | reka-ui `InputOtp` | shadcn `InputOTP` | Element Plus |
+| :------------------------------ | :----: | :----------------: | :---------------: | :----------: |
+| Aria/styled split               |   ✅   |         —          |         —         |      —       |
+| Controlled / uncontrolled       |   ✅   |         ✅         |        ✅         |      —       |
+| `maxlength` / `pattern`         |   ✅   |         ✅         |        ✅         |      —       |
+| Real input transparent overlay  |   ✅   |         ✅         |        ✅         |      —       |
+| Selection mirroring             |   ✅   |         ✅         |        ✅         |      —       |
+| Paste transformer               |   ✅   |         ✅         |        ✅         |      —       |
+| Password-manager badge handling |   ✅   |         ✅         |        ✅         |      —       |
+| iOS autofill                    |   ✅   |         ✅         |        ✅         |      —       |
+| `complete` event                |   ✅   |         ✅         |        ✅         |      —       |
+| Size variants (xs…2xl)          |   ✅   |         —          |         —         |      —       |
+| `align` states                  |   ✅   |         ✅         |        ✅         |      —       |
+| Custom visual slot (fake caret) |   ✅   |         ✅         |        ✅         |      —       |
 
 ### Cautions
 

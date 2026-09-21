@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { ColorFieldCompact, provideColorFieldUi } from '@soybeanjs/headless/color-field';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { ColorFieldCompact, provideColorFieldUi } from '@vean/aria/color-field';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { colorFieldVariants } from '@/styles/color-field';
 import type { ColorFieldProps, ColorFieldEmits } from './types';
 

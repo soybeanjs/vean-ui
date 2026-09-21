@@ -4,8 +4,8 @@ import type {
   SplitNavRootProps,
   SplitNavRootSlots,
   SplitNavUi
-} from '@soybeanjs/headless/split-nav';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/split-nav';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

@@ -14,13 +14,13 @@ import { renderComponent } from './render';
  * targets so the capture-phase pipeline sees truthful hit testing.
  */
 
-export const POPUP_SELECTOR = '[data-soybean-drawer-popup]';
-export const SWIPE_AREA_SELECTOR = '[data-soybean-drawer-swipe-area]';
+export const POPUP_SELECTOR = '[data-vean-drawer-popup]';
+export const SWIPE_AREA_SELECTOR = '[data-vean-drawer-swipe-area]';
 
-export const SNAP_OFFSET_VAR = '--soybean-drawer-snap-point-offset';
-export const MOVEMENT_Y_VAR = '--soybean-drawer-swipe-movement-y';
-export const MOVEMENT_X_VAR = '--soybean-drawer-swipe-movement-x';
-export const HEIGHT_VAR = '--soybean-drawer-height';
+export const SNAP_OFFSET_VAR = '--vean-drawer-snap-point-offset';
+export const MOVEMENT_Y_VAR = '--vean-drawer-swipe-movement-y';
+export const MOVEMENT_X_VAR = '--vean-drawer-swipe-movement-x';
+export const HEIGHT_VAR = '--vean-drawer-height';
 
 export const sleep = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
@@ -39,7 +39,7 @@ export function popupDragPoint(popup: HTMLElement) {
   return { x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + 16) };
 }
 
-/** Popup measured height (`--soybean-drawer-height`), or 0 before the first measurement. */
+/** Popup measured height (`--vean-drawer-height`), or 0 before the first measurement. */
 export function popupHeight(popup: HTMLElement) {
   return Number.parseFloat(popup.style.getPropertyValue(HEIGHT_VAR)) || 0;
 }

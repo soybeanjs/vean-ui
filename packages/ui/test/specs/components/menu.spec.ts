@@ -133,7 +133,7 @@ describe('SMenuOptions', () => {
       expect(rootMenu.findAll('[role="menuitem"]')).toHaveLength(3);
       expect(rootMenu.findAll('[role="group"]')).toHaveLength(1);
       expect(rootMenu.find('[role="menuitem"]').attributes('aria-disabled')).toBeUndefined();
-      expect(wrapper.find('[role="menuitem"][data-soybean-menu-item]').exists()).toBe(true);
+      expect(wrapper.find('[role="menuitem"][data-vean-menu-item]').exists()).toBe(true);
 
       wrapper.unmount();
     });

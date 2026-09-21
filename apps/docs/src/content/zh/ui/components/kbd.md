@@ -39,11 +39,11 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将 `Kbd` 拆分为 headless 层（`@soybeanjs/headless/kbd`，负责 `<kbd>` 元素、符号化逻辑（`useKbd` 组合式函数）、`data-group` 状态）与 styled 层（`@soybeanjs/ui`，负责 `cv()` 变体配方（size/variant/raised））。这与 shadcn/ui 的 headless/styled 分离一致。`useKbd` 是 `createSharedComposable` 单例，通过 `navigator.userAgent` 检测 macOS。
+VeanUI 将 `Kbd` 拆分为 Aria 层（`@vean/aria/kbd`，负责 `<kbd>` 元素、符号化逻辑（`useKbd` 组合式函数）、`data-group` 状态）与 styled 层（`@vean/ui`，负责 `cv()` 变体配方（size/variant/raised））。这与 shadcn/ui 的 headless/styled 分离一致。`useKbd` 是 `createSharedComposable` 单例，通过 `navigator.userAgent` 检测 macOS。
 
-| 维度     | SoybeanUI                                              | shadcn/ui `Kbd` | Mantine `Kbd` | Ant Design |
+| 维度     | VeanUI                                                 | shadcn/ui `Kbd` | Mantine `Kbd` | Ant Design |
 | :------- | :----------------------------------------------------- | :-------------- | :------------ | :--------- |
-| 架构     | headless + styled 分离                                 | 仅 styled       | 仅 styled     | —          |
+| 架构     | Aria + styled 分离                                     | 仅 styled       | 仅 styled     | —          |
 | 符号化   | `useKbd` 组合式函数；20 个键符号 + 平台感知修饰键      | —               | —             | —          |
 | 平台感知 | 通过 `navigator.userAgent` 解析 macOS / Windows 修饰键 | —               | —             | —          |
 | 变体     | `solid` / `outline` / `ghost`                          | —               | —             | —          |

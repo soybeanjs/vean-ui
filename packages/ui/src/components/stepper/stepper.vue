@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import { StepperCompact, provideStepperUi } from '@soybeanjs/headless/stepper';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import { StepperCompact, provideStepperUi } from '@vean/aria/stepper';
 import { stepperVariants } from '@/styles/stepper';
 import type { StepperProps, StepperEmits, StepperSlots } from './types';
 
@@ -11,7 +11,7 @@ defineOptions({
 });
 
 const props = withDefaults(defineProps<StepperProps>(), {
-  // Mirror the headless default so an absent Boolean prop is not cast to `false`
+  // Mirror the Aria default so an absent Boolean prop is not cast to `false`
   // and then forwarded, which would override StepperRoot's `linear: true` default.
   linear: true
 });

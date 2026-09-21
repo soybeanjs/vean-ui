@@ -5,7 +5,7 @@ import { useMagicKeys } from '@vueuse/core';
 import { useI18n } from 'vue-i18n';
 import { localizePath } from 'ubean/client';
 import { useContentSearch } from '@ubean/content/vue';
-import type { CommandSingleOptionData, SelectEvent } from '@soybeanjs/ui';
+import type { CommandSingleOptionData, SelectEvent } from '@vean/ui';
 import { loadContentSearchSections } from '~/shared/api-search';
 import { resolveContentRoutePath } from '~/shared/content-route';
 import { createMatchSnippet, splitHighlight } from '~/shared/search-highlight';

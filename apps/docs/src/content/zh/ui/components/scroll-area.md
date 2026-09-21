@@ -20,7 +20,7 @@ head:
 - **键盘可访问视口** — 视口可聚焦（`tabindex="0"`）且带焦点环，方向键使用原生滚动。
 - **RTL 滚动归一化** — 每个 document 一次性探测浏览器三种 RTL `scrollLeft` 模式（`default` / `negative` / `reverse`），用 `WeakMap` 缓存并归一化为一致的 0 → max 坐标系，保证滑块数学与拖拽行为正确。
 - **完整 ARIA 语义** — 滚动条与滑块标记 `aria-hidden`（自定义滚动条对 AT 纯装饰性）；根元素通过 `useDirection` 暴露 `dir`。
-- **可组合结构** — `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb` / `ScrollAreaCorner` 均从 `@soybeanjs/headless/scroll-area` 导出，另有 `ScrollAreaCompact` 聚合。
+- **可组合结构** — `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb` / `ScrollAreaCorner` 均从 `@vean/aria/scroll-area` 导出，另有 `ScrollAreaCompact` 聚合。
 - **区域级属性透传** — compact 组件的 `viewportProps`、`verticalScrollbarProps`、`horizontalScrollbarProps`、`thumbProps`、`cornerProps` 透传属性到各区域。
 - **角渲染** — 仅当两个滚动条同时可见时渲染角落，尺寸由交叉滚动条厚度决定。
 - **尺寸缩放** — `size`（xs…2xl）通过 `scrollAreaVariants` 缩放滚动条粗细。
@@ -42,9 +42,9 @@ head:
 
 ### 架构与行业对标
 
-| 关注点                    | SoybeanUI                                                                                                 | Radix UI ScrollArea                    | Ant Design `ScrollBar`      |
+| 关注点                    | VeanUI                                                                                                    | Radix UI ScrollArea                    | Ant Design `ScrollBar`      |
 | :------------------------ | :-------------------------------------------------------------------------------------------------------- | :------------------------------------- | :-------------------------- |
-| Headless / 样式分离       | ✅ `@soybeanjs/headless/scroll-area` 提供逻辑；`@soybeanjs/ui` 提供 `scv()` 配方                          | ❌ 单一包（仅 headless 风格核心）      | ❌ 单一样式包               |
+| Aria / 样式分离           | ✅ `@vean/aria/scroll-area` 提供逻辑；`@vean/ui` 提供 `scv()` 配方                                        | ❌ 单一包（仅 Aria 风格核心）          | ❌ 单一样式包               |
 | 可见性模式                | `auto` / `always` / `hover` / `scroll` / `glimpse`                                                        | `auto` / `always` / `hover` / `scroll` | `auto` / `always` / `hover` |
 | 隐藏延迟控制              | `scrollHideDelay` prop（默认 600ms）                                                                      | `scrollHideDelay` prop（默认 600ms）   | —                           |
 | RTL `scrollLeft` 归一化   | ✅ 3 模式探测（`default` / `negative` / `reverse`）+ `WeakMap` 缓存                                       | ✅ 相同方案                            | —                           |
@@ -84,7 +84,7 @@ head:
 
 ### 可以自定义滚动条外观吗？
 
-可以 — 向 `SScrollArea` 传入 `ui`（区域级类），或通过 `verticalScrollbarProps` / `horizontalScrollbarProps` / `thumbProps` 透传属性。如需完全控制，可用 `@soybeanjs/headless/scroll-area` 自行组合 `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb`。
+可以 — 向 `SScrollArea` 传入 `ui`（区域级类），或通过 `verticalScrollbarProps` / `horizontalScrollbarProps` / `thumbProps` 透传属性。如需完全控制，可用 `@vean/aria/scroll-area` 自行组合 `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb`。
 
 ### 如何让视口键盘可聚焦？
 

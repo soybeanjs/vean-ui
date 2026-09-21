@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { defineComponent, nextTick, shallowRef } from 'vue';
 import { DOMWrapper, flushPromises, mount } from '@vue/test-utils';
-import { toISODateString } from '@soybeanjs/headless/date';
+import { toISODateString } from '@vean/aria/date';
 import { addMonths } from 'date-fns/addMonths';
 import SCalendar from '@/components/calendar/calendar.vue';
 import { getA11yViolations } from '../../shared/a11y';
@@ -14,7 +14,7 @@ function mountCalendar(props?: Record<string, unknown>) {
 }
 
 function focusableValue(wrapper: ReturnType<typeof mount>, value: string) {
-  return wrapper.get(`[data-soybean-calendar-cell-trigger][data-value="${value}"]`);
+  return wrapper.get(`[data-vean-calendar-cell-trigger][data-value="${value}"]`);
 }
 
 describe('SCalendar', () => {
@@ -37,7 +37,7 @@ describe('SCalendar', () => {
     it('renders multiple month grids when numberOfMonths is set', () => {
       const wrapper = mountCalendar({ numberOfMonths: 2 });
 
-      expect(wrapper.findAll('[data-soybean-calendar-grid]').length).toBe(2);
+      expect(wrapper.findAll('[data-vean-calendar-grid]').length).toBe(2);
       expect(wrapper.text()).toContain('May 2026');
       wrapper.unmount();
     });
@@ -48,7 +48,7 @@ describe('SCalendar', () => {
         defaultPlaceholder: new Date(2026, 2 - 1, 1)
       });
 
-      const bodyRows = wrapper.find('[data-soybean-calendar-grid-body]').findAll('tr');
+      const bodyRows = wrapper.find('[data-vean-calendar-grid-body]').findAll('tr');
 
       expect(bodyRows.length).toBe(6);
       wrapper.unmount();
@@ -187,11 +187,11 @@ describe('SCalendar', () => {
         attachTo: document.body
       });
 
-      await wrapper.get('[data-soybean-calendar-cell-trigger][data-value="2026-04-20"]').trigger('click');
+      await wrapper.get('[data-vean-calendar-cell-trigger][data-value="2026-04-20"]').trigger('click');
       await nextTick();
 
       const selected = wrapper
-        .findAll('[data-soybean-calendar-cell-trigger][data-selected]')
+        .findAll('[data-vean-calendar-cell-trigger][data-selected]')
         .map(node => node.attributes('data-value'));
 
       expect(selected).toEqual(['2026-04-18', '2026-04-20', '2026-04-21']);
@@ -348,7 +348,7 @@ describe('SCalendar', () => {
         isDateDisabled: (date: Date) => date.getDate() === 18
       });
 
-      const focused = wrapper.get('[data-soybean-calendar-cell-trigger][tabindex="0"]');
+      const focused = wrapper.get('[data-vean-calendar-cell-trigger][tabindex="0"]');
 
       expect(focused.attributes('data-value')).not.toBe('2026-04-18');
       wrapper.unmount();
@@ -359,7 +359,7 @@ describe('SCalendar', () => {
     it('moves to the next month when the next button is clicked', async () => {
       const wrapper = mountCalendar();
 
-      await wrapper.get('[data-soybean-calendar-next]').trigger('click');
+      await wrapper.get('[data-vean-calendar-next]').trigger('click');
       await nextTick();
 
       expect(wrapper.text()).toContain('May 2026');
@@ -369,7 +369,7 @@ describe('SCalendar', () => {
     it('moves to the previous month when the prev button is clicked', async () => {
       const wrapper = mountCalendar();
 
-      await wrapper.get('[data-soybean-calendar-prev]').trigger('click');
+      await wrapper.get('[data-vean-calendar-prev]').trigger('click');
       await nextTick();
 
       expect(wrapper.text()).toContain('March 2026');
@@ -382,8 +382,8 @@ describe('SCalendar', () => {
         maxValue: new Date(2026, 4 - 1, 30)
       });
 
-      expect((wrapper.get('[data-soybean-calendar-prev]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.get('[data-soybean-calendar-next]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.get('[data-vean-calendar-prev]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.get('[data-vean-calendar-next]').element as HTMLButtonElement).disabled).toBe(true);
       wrapper.unmount();
     });
 
@@ -392,7 +392,7 @@ describe('SCalendar', () => {
         prevProps: { prevPage: (date: Date) => addMonths(date, -2) }
       });
 
-      const prevButton = wrapper.get('[data-soybean-calendar-prev]');
+      const prevButton = wrapper.get('[data-vean-calendar-prev]');
 
       await prevButton.trigger('click');
       await nextTick();
@@ -408,16 +408,16 @@ describe('SCalendar', () => {
         nextProps: { 'aria-label': 'Go forward' }
       });
 
-      expect(wrapper.get('[data-soybean-calendar-prev]').attributes('aria-label')).toBe('Go back');
-      expect(wrapper.get('[data-soybean-calendar-next]').attributes('aria-label')).toBe('Go forward');
+      expect(wrapper.get('[data-vean-calendar-prev]').attributes('aria-label')).toBe('Go back');
+      expect(wrapper.get('[data-vean-calendar-next]').attributes('aria-label')).toBe('Go forward');
       wrapper.unmount();
     });
 
     it('provides default localized aria-labels for navigation buttons', () => {
       const wrapper = mountCalendar();
 
-      expect(wrapper.get('[data-soybean-calendar-prev]').attributes('aria-label')).toBe('Previous page');
-      expect(wrapper.get('[data-soybean-calendar-next]').attributes('aria-label')).toBe('Next page');
+      expect(wrapper.get('[data-vean-calendar-prev]').attributes('aria-label')).toBe('Previous page');
+      expect(wrapper.get('[data-vean-calendar-next]').attributes('aria-label')).toBe('Next page');
       wrapper.unmount();
     });
   });
@@ -454,7 +454,7 @@ describe('SCalendar', () => {
       const wrapper = mountCalendar({ disabled: true });
 
       expect(wrapper.attributes('data-disabled')).toBeDefined();
-      expect(wrapper.get('[data-soybean-calendar-grid]').attributes('aria-disabled')).toBe('true');
+      expect(wrapper.get('[data-vean-calendar-grid]').attributes('aria-disabled')).toBe('true');
       wrapper.unmount();
     });
   });

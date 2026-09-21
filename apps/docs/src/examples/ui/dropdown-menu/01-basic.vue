@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import type { Placement } from '@soybeanjs/headless/types';
-import { SButton, SButtonIcon, SDropdownMenu, SInputNumber, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { DropdownMenuTriggerType, MenuOptionData, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import type { Placement } from '@vean/aria/types';
+import { SButton, SButtonIcon, SDropdownMenu, SInputNumber, SSelect, SSwitch } from '@vean/ui';
+import type { DropdownMenuTriggerType, MenuOptionData, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

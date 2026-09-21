@@ -42,22 +42,22 @@ head:
 
 ### 架构与行业对标
 
-SoybeanUI 由 headless `ToggleGroupRoot`（`useSelection` + `useRovingFocusGroup` + 隐藏 input 表单代理）与 `ToggleGroupItem`（依据 `rovingFocus` 动态选择 `useRovingFocusGroupItem` 或 `Button` 基座）构成。UI 层 `SToggleGroup` 是仅计算 `toggleGroupVariants` 类名的薄透传包装；`data-state` 通过 UnoCSS `data-[state=on]:*` 选择器驱动按下样式。`toggle-group` 为 Radix/shadcn 原生模式；其余对标库以单选/按钮组或分段控件表达同一交互。
+VeanUI 由 Aria `ToggleGroupRoot`（`useSelection` + `useRovingFocusGroup` + 隐藏 input 表单代理）与 `ToggleGroupItem`（依据 `rovingFocus` 动态选择 `useRovingFocusGroupItem` 或 `Button` 基座）构成。UI 层 `SToggleGroup` 是仅计算 `toggleGroupVariants` 类名的薄透传包装；`data-state` 通过 UnoCSS `data-[state=on]:*` 选择器驱动按下样式。`toggle-group` 为 Radix/shadcn 原生模式；其余对标库以单选/按钮组或分段控件表达同一交互。
 
-| 能力                          | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn `ToggleGroup` |
-| :---------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :------------------: |
-| headless/styled 分离          |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| 单选 / 多选                   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
-| 受控 / 非受控                 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
-| Roving focus 方向键           |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| Loop 循环导航                 |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| RTL 方向感知                  |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| `aria-pressed` + `data-state` |    ✅     |     —      |      —       |    —    |    —     |          ✅          |
-| 方向（横排/竖排）             |    ✅     |     —      |      ✅      |   ✅    |    —     |          ✅          |
-| 变体 × 尺寸 × 颜色            |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          —           |
-| 隐藏 input 表单提交           |    ✅     |     —      |      —       |    —    |    —     |          —           |
-| 单选可取消选中                |    ✅     |     ✅     |      —       |    —    |    —     |          —           |
-| 禁用（组级 + 条目级）         |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
+| 能力                          | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn `ToggleGroup` |
+| :---------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :------------------: |
+| Aria/styled 分离              |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| 单选 / 多选                   |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
+| 受控 / 非受控                 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
+| Roving focus 方向键           |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| Loop 循环导航                 |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| RTL 方向感知                  |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| `aria-pressed` + `data-state` |   ✅   |     —      |      —       |    —    |    —     |          ✅          |
+| 方向（横排/竖排）             |   ✅   |     —      |      ✅      |   ✅    |    —     |          ✅          |
+| 变体 × 尺寸 × 颜色            |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          —           |
+| 隐藏 input 表单提交           |   ✅   |     —      |      —       |    —    |    —     |          —           |
+| 单选可取消选中                |   ✅   |     ✅     |      —       |    —    |    —     |          —           |
+| 禁用（组级 + 条目级）         |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |          ✅          |
 
 ### 使用注意
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SBreadcrumb, SButtonIcon, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { BreadcrumbOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SBreadcrumb, SButtonIcon, SSelect, SSwitch } from '@vean/ui';
+import type { BreadcrumbOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

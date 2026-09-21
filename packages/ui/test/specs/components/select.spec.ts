@@ -139,7 +139,7 @@ describe('SSelect', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-select-trigger]').classes()).toContain('h-9');
+      expect(wrapper.get('[data-vean-select-trigger]').classes()).toContain('h-9');
       wrapper.unmount();
     });
 
@@ -148,7 +148,7 @@ describe('SSelect', () => {
         props: { items },
         attachTo: document.body
       });
-      const trigger = wrapper.get('[data-soybean-select-trigger]');
+      const trigger = wrapper.get('[data-vean-select-trigger]');
 
       expect(trigger.attributes('role')).toBe('combobox');
       expect(trigger.attributes('aria-expanded')).toBe('false');
@@ -156,7 +156,7 @@ describe('SSelect', () => {
 
       await openListbox(wrapper);
 
-      expect(wrapper.get('[data-soybean-select-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.get('[data-vean-select-trigger]').attributes('aria-expanded')).toBe('true');
 
       wrapper.unmount();
     });
@@ -249,7 +249,7 @@ describe('SSelect', () => {
         attachTo: document.body
       });
 
-      const clearButton = wrapper.find('[data-soybean-select-clear]');
+      const clearButton = wrapper.find('[data-vean-select-clear]');
       expect(clearButton.exists()).toBe(true);
 
       await clearButton.trigger('click');
@@ -271,7 +271,7 @@ describe('SSelect', () => {
 
       expect(wrapper.get('button').text()).toContain('Apple');
 
-      await wrapper.find('[data-soybean-select-clear]').trigger('click');
+      await wrapper.find('[data-vean-select-clear]').trigger('click');
 
       expect(wrapper.get('button').text()).toContain('Select a fruit');
       wrapper.unmount();
@@ -286,7 +286,7 @@ describe('SSelect', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-select-clear]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-select-clear]').exists()).toBe(false);
       wrapper.unmount();
     });
 
@@ -300,7 +300,7 @@ describe('SSelect', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-select-clear]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-select-clear]').exists()).toBe(false);
       wrapper.unmount();
     });
 

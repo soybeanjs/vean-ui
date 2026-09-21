@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useOmitProps, useForwardListeners } from '@soybeanjs/headless/composables';
-import { DropdownMenuWrapperCompact } from '@soybeanjs/headless/dropdown-menu';
+import { useOmitProps, useForwardListeners } from '@vean/aria/composables';
+import { DropdownMenuWrapperCompact } from '@vean/aria/dropdown-menu';
 import { provideMenuUi } from '../menu/context';
 import type { DropdownMenuWrapperProps, DropdownMenuWrapperEmits } from './types';
 

@@ -73,7 +73,7 @@ describe('SSegment', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-segment-root]').attributes('data-orientation')).toBe('vertical');
+      expect(wrapper.find('[data-vean-segment-root]').attributes('data-orientation')).toBe('vertical');
       expect(wrapper.findAll('[role="tab"]')[0].attributes('data-orientation')).toBe('vertical');
       wrapper.unmount();
     });
@@ -147,7 +147,7 @@ describe('SSegment', () => {
 
       await flushIndicator(wrapper);
 
-      expect(wrapper.find('[data-soybean-segment-indicator]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-segment-indicator]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -159,7 +159,7 @@ describe('SSegment', () => {
 
       await flushIndicator(wrapper);
 
-      expect(wrapper.find('[data-soybean-segment-indicator]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-segment-indicator]').exists()).toBe(false);
       wrapper.unmount();
     });
 
@@ -278,7 +278,7 @@ describe('SSegment', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-segment-root]').classes()).toContain('items-stretch');
+      expect(wrapper.find('[data-vean-segment-root]').classes()).toContain('items-stretch');
       wrapper.unmount();
     });
 
@@ -288,7 +288,7 @@ describe('SSegment', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-segment-root]').classes()).toContain('text-base');
+      expect(wrapper.find('[data-vean-segment-root]').classes()).toContain('text-base');
       wrapper.unmount();
     });
 

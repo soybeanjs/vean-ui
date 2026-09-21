@@ -112,7 +112,7 @@ describe('SColorPicker', () => {
 
       await openPicker(wrapper);
 
-      const popup = document.body.querySelector('[data-soybean-popper-popup]');
+      const popup = document.body.querySelector('[data-vean-popper-popup]');
 
       expect(popup?.className).toContain('p-2');
       wrapper.unmount();
@@ -126,7 +126,7 @@ describe('SColorPicker', () => {
 
       await openPicker(wrapper);
 
-      const thumb = document.body.querySelector('[data-soybean-color-area-thumb]');
+      const thumb = document.body.querySelector('[data-vean-color-area-thumb]');
 
       expect(thumb?.className).toContain('data-test-area-thumb');
       wrapper.unmount();
@@ -144,7 +144,7 @@ describe('SColorPicker', () => {
       await openPicker(wrapper);
       await nextTick();
 
-      const indicator = document.body.querySelector('[data-soybean-segment-indicator]');
+      const indicator = document.body.querySelector('[data-vean-segment-indicator]');
       const indicatorContent = indicator?.firstElementChild;
 
       expect(indicator).toBeTruthy();

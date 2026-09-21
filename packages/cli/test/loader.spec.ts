@@ -12,7 +12,7 @@ describe('registry loader', () => {
   let tmpDir: string;
 
   beforeEach(async () => {
-    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-loader-'));
+    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-loader-'));
   });
 
   afterEach(async () => {

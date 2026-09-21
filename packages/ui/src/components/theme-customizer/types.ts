@@ -1,4 +1,4 @@
-import type { ClassValue, UiClass } from '@soybeanjs/headless/types';
+import type { ClassValue, UiClass } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { AlertCompact, provideAlertUi } from '@soybeanjs/headless/alert';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { AlertCompact, provideAlertUi } from '@vean/aria/alert';
+import { useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { alertVariants } from '@/styles/alert';
 import type { AlertProps, AlertEmits, AlertSlots } from './types';
 

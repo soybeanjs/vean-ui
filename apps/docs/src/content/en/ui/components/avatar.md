@@ -1,18 +1,18 @@
 ---
 head:
   title: Avatar
-  description: 'An image element with a fallback for representing the user. SAvatar combines a AvatarRoot/AvatarImage/AvatarFallback family of headless primitives (zero styles) with the avatarVariants style recipe (3 slots: root/image/fallback, 6 sizes xs–2xl).'
+  description: 'An image element with a fallback for representing the user. SAvatar combines a AvatarRoot/AvatarImage/AvatarFallback family of Aria primitives (zero styles) with the avatarVariants style recipe (3 slots: root/image/fallback, 6 sizes xs–2xl).'
 ---
 
 # Avatar
 
 ## Overview
 
-An image element with a fallback for representing the user. `SAvatar` combines a `AvatarRoot`/`AvatarImage`/`AvatarFallback` family of headless primitives (zero styles) with the `avatarVariants` style recipe (3 slots: root/image/fallback, 6 sizes xs–2xl).
+An image element with a fallback for representing the user. `SAvatar` combines a `AvatarRoot`/`AvatarImage`/`AvatarFallback` family of Aria primitives (zero styles) with the `avatarVariants` style recipe (3 slots: root/image/fallback, 6 sizes xs–2xl).
 
 Use it for user profiles, team/participant lists, or any spot that needs an identity image that degrades gracefully when the picture is slow, missing, or fails to load. Prefer `image` or `icon` for static or decorative imagery that has no identity fallback; prefer `skeleton` when you want to reserve space before content arrives.
 
-`SAvatar` aggregates the primitives through `AvatarCompact` and exposes a `src`-driven API with `fallback-label` and `delay-ms`. For fully custom compositions, fall back to the headless `AvatarRoot`/`AvatarImage`/`AvatarFallback` primitives.
+`SAvatar` aggregates the primitives through `AvatarCompact` and exposes a `src`-driven API with `fallback-label` and `delay-ms`. For fully custom compositions, fall back to the Aria `AvatarRoot`/`AvatarImage`/`AvatarFallback` primitives.
 
 ## Usage
 
@@ -20,7 +20,7 @@ Use it for user profiles, team/participant lists, or any spot that needs an iden
 
 ## Features
 
-- 🧩 Headless/styled split — `AvatarCompact` aggregates `AvatarRoot`/`AvatarImage`/`AvatarFallback` and exposes `image`/`fallback` slots; `SAvatar` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `AvatarCompact` aggregates `AvatarRoot`/`AvatarImage`/`AvatarFallback` and exposes `image`/`fallback` slots; `SAvatar` only injects styles and forwards slots/events
 - 🖼️ Graceful loading — the image is shown only once it has actually loaded; while loading or on error the fallback text/slot is rendered instead
 - 🎭 Fallback slot — a custom `fallback` slot replaces the text label for initials, icons, or any VNode
 - ⏱️ Delay control — `delay-ms` defers the fallback so it only appears for slower connections
@@ -31,10 +31,10 @@ Use it for user profiles, team/participant lists, or any spot that needs an iden
 ## Component family
 
 - `SAvatar` (styled) — the entry wrapper; `avatarVariants` recipe with dynamic slot forwarding
-- `AvatarRoot` (headless) — the container; owns the shared image-loading state via `provideAvatarRootContext`
-- `AvatarImage` (headless) — the `<img>`; tracked through `useImageLoadingStatus` and hidden until loaded
-- `AvatarFallback` (headless) — the fallback content; rendered only when the image is not loaded (and after `delay-ms`)
-- `AvatarCompact` (headless) — the aggregated composite; composes root/image/fallback and defaults the image `alt` to `fallback-label`
+- `AvatarRoot` (Aria) — the container; owns the shared image-loading state via `provideAvatarRootContext`
+- `AvatarImage` (Aria) — the `<img>`; tracked through `useImageLoadingStatus` and hidden until loaded
+- `AvatarFallback` (Aria) — the fallback content; rendered only when the image is not loaded (and after `delay-ms`)
+- `AvatarCompact` (Aria) — the aggregated composite; composes root/image/fallback and defaults the image `alt` to `fallback-label`
 
 ## Demos
 
@@ -48,16 +48,16 @@ Use it for user profiles, team/participant lists, or any spot that needs an iden
 
 ### Architecture and benchmark differences
 
-`AvatarCompact` owns the load-state orchestration (which part shows when) while every primitive stays style-free and only the UI wrapper injects the `avatarVariants` classes. This mirrors shadcn/ui's `Avatar`/`AvatarImage`/`AvatarFallback` headless trio and Radix's `Avatar` primitive, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled `Avatar` component with an `alt`/`src` prop. SoybeanUI deliberately routes the fallback text and image `alt` through the aggregate (`fallback-label`), so the loaded image keeps an accessible name without forcing consumers to repeat it.
+`AvatarCompact` owns the load-state orchestration (which part shows when) while every primitive stays style-free and only the UI wrapper injects the `avatarVariants` classes. This mirrors shadcn/ui's `Avatar`/`AvatarImage`/`AvatarFallback` headless trio and Radix's `Avatar` primitive, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled `Avatar` component with an `alt`/`src` prop. VeanUI deliberately routes the fallback text and image `alt` through the aggregate (`fallback-label`), so the loaded image keeps an accessible name without forcing consumers to repeat it.
 
-| Capability                    | SoybeanUI | shadcn/ui | Ant Design Avatar | Element Plus Avatar | Mantine Avatar | Naive UI Avatar |
-| :---------------------------- | :-------: | :-------: | :---------------: | :-----------------: | :------------: | :-------------: |
-| Headless/styled split         |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| Image + fallback text/slot    |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| Fallback delay (`delay-ms`)   |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| Accessible name auto-derived  |    ✅     |     —     |         —         |          —          |       —        |        —        |
-| Composite with per-part props |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| Configurable size (ThemeSize) |    ✅     |   class   |        ✅         |         ✅          |       ✅       |       ✅        |
+| Capability                    | VeanUI | shadcn/ui | Ant Design Avatar | Element Plus Avatar | Mantine Avatar | Naive UI Avatar |
+| :---------------------------- | :----: | :-------: | :---------------: | :-----------------: | :------------: | :-------------: |
+| Aria/styled split             |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| Image + fallback text/slot    |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| Fallback delay (`delay-ms`)   |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| Accessible name auto-derived  |   ✅   |     —     |         —         |          —          |       —        |        —        |
+| Composite with per-part props |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| Configurable size (ThemeSize) |   ✅   |   class   |        ✅         |         ✅          |       ✅       |       ✅        |
 
 `—` = unsupported or a different interaction model (AntD/Element Plus/Mantine/Naive UI ship a single styled component; shadcn/ui leaves the image `alt` to the consumer and provides no fallback delay).
 

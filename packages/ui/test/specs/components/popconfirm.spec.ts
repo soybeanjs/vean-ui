@@ -48,9 +48,9 @@ describe('SPopconfirm', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-popconfirm-popup]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-popconfirm-popup]').attributes('role')).toBe('dialog');
-      expect(wrapper.find('[data-soybean-popover-popup]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-popconfirm-popup]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-popconfirm-popup]').attributes('role')).toBe('dialog');
+      expect(wrapper.find('[data-vean-popover-popup]').exists()).toBe(false);
       wrapper.unmount();
     });
   });
@@ -84,7 +84,7 @@ describe('SPopconfirm', () => {
       });
 
       await nextTick();
-      await wrapper.get('[data-soybean-popconfirm-confirm]').trigger('click');
+      await wrapper.get('[data-vean-popconfirm-confirm]').trigger('click');
 
       expect(wrapper.emitted('confirm')).toBeTruthy();
       expect(wrapper.emitted('update:open')?.at(-1)?.[0]).toBe(false);
@@ -105,7 +105,7 @@ describe('SPopconfirm', () => {
       });
 
       await nextTick();
-      await wrapper.get('[data-soybean-popconfirm-cancel]').trigger('click');
+      await wrapper.get('[data-vean-popconfirm-cancel]').trigger('click');
 
       expect(wrapper.emitted('cancel')).toBeTruthy();
       expect(wrapper.emitted('update:open')?.at(-1)?.[0]).toBe(false);

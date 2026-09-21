@@ -42,7 +42,7 @@ export interface ResolvedRegistryItem {
  * ADR-006 — Deterministic topological sort of resolved registry items.
  *
  * Dependencies are emitted before dependents; ties are broken alphabetically
- * by item name so identical `sbean add` invocations produce identical write
+ * by item name so identical `vean add` invocations produce identical write
  * order (and therefore identical diffs). Cyclic nodes (already flagged as
  * invalid by `validateRegistryDependencies`) fall back to alphabetical order
  * at the tail — the sort stays total and deterministic regardless.
@@ -120,8 +120,8 @@ export function topologicallySortItems(items: ResolvedRegistryItem[]): ResolvedR
  * - diff: show differences between existing files and registry
  *
  * First tries the local registry.json, then falls back to remote fetching
- * from https://ui.soybeanjs.cn/r/<package>/<component>.json
- * (e.g. https://ui.soybeanjs.cn/r/ui/button.json).
+ * from https://veanui.com/r/<package>/<component>.json
+ * (e.g. https://veanui.com/r/ui/button.json).
  */
 export async function addComponents(
   componentNames: string[],
@@ -181,7 +181,12 @@ export async function addComponents(
 
     const registryNamespace = typeof item.meta?.registryNamespace === 'string' ? item.meta.registryNamespace : null;
 
-    if (!registryNamespace || registryNamespace === '@soybean' || registryNamespace === '@sbean') {
+    if (
+      !registryNamespace ||
+      registryNamespace === '@vean' ||
+      registryNamespace === '@soybean' ||
+      registryNamespace === '@sbean'
+    ) {
       return dependencyName;
     }
 
@@ -207,7 +212,7 @@ export async function addComponents(
     if (!item) {
       if (!silent) {
         console.warn(`  ⚠ Component "${componentName}" not found in local or remote registry.`);
-        console.warn(`    Run "sbean search" to see available components.`);
+        console.warn(`    Run "vean search" to see available components.`);
       }
       continue;
     }
@@ -264,7 +269,7 @@ export async function addComponents(
   }));
   const sortedItems = topologicallySortItems(resolvedForSort);
 
-  // Phase 3 — Write. Iterating in topological order so identical `sbean add`
+  // Phase 3 — Write. Iterating in topological order so identical `vean add`
   // runs produce identical file-write order (and therefore identical diffs).
   for (const { item, expandedFiles } of sortedItems) {
     collectPackageDependencies(item, allDeps, allDevDeps);
@@ -572,7 +577,7 @@ function resolveWithExtensions(basePath: string): string | null {
   // Strip Vite query params (?raw, ?inline, ?url, etc.)
   const cleaned = basePath.split('?')[0];
 
-  /** Extensions to try (most-to-least common in SoybeanUI projects). */
+  /** Extensions to try (most-to-least common in Vean projects). */
   const candidates = [
     `${cleaned}.ts`,
     `${cleaned}.vue`,

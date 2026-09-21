@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { kebabCase, pascalCase } from '@soybeanjs/headless/shared';
+import { kebabCase, pascalCase } from '@vean/aria/shared';
 import { menuData } from '~/constants/menus';
 import BackgroundDecoration from '~/motion/background-decoration.vue';
 
@@ -9,7 +9,7 @@ definePage({ layout: 'home' });
 const { t } = useI18n();
 
 const totalComponents = computed(() =>
-  menuData.reduce((total, group) => total + (group.value === 'headless' ? 0 : group.items.length), 0)
+  menuData.reduce((total, group) => total + (group.value === 'aria' ? 0 : group.items.length), 0)
 );
 
 const groupLabelMap = computed(() => new Map(menuData.map(group => [group.value, t(group.i18n)])));
@@ -21,7 +21,7 @@ const heroStats = computed(() => [
   },
   {
     label: t('components.home.stats.categories'),
-    value: menuData.filter(group => group.value !== 'headless').length
+    value: menuData.filter(group => group.value !== 'aria').length
   },
   {
     label: t('components.home.stats.packages'),
@@ -35,8 +35,8 @@ const heroStats = computed(() => [
 
 const features = computed(() => [
   {
-    title: t('components.home.features.headless_first.title'),
-    description: t('components.home.features.headless_first.desc'),
+    title: t('components.home.features.aria_first.title'),
+    description: t('components.home.features.aria_first.desc'),
     icon: 'lucide:code-xml',
     iconClass: 'text-primary bg-primary/10'
   },
@@ -209,7 +209,7 @@ const featuredGroupMeta = {
 
 const featuredGroups = computed(() =>
   menuData
-    .filter(group => group.value !== 'headless')
+    .filter(group => group.value !== 'aria')
     .slice(0, 4)
     .map(group => ({
       value: group.value,
@@ -278,7 +278,7 @@ const featuredGroups = computed(() =>
                 <SIcon icon="lucide:layout-grid" class="transition-transform duration-200 group-hover:translate-x-1" />
               </SButtonLink>
               <SButtonLink
-                href="https://github.com/soybeanjs/soybean-ui"
+                href="https://github.com/soybeanjs/vean-ui"
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"

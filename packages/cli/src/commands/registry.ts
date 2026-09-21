@@ -44,7 +44,7 @@ async function readOrCreateConfig(cwd: string) {
 
 const registryAdd = new Command()
   .name('add')
-  .description('add registries to sbean.json')
+  .description('add registries to vean.json')
   .argument('[registries...]', 'registries (@namespace=url)')
   .option('-c, --cwd <cwd>', 'the working directory', process.cwd())
   .action(async (registries: string[], opts) => {
@@ -54,7 +54,7 @@ const registryAdd = new Command()
     });
 
     if (!options.registries.length) {
-      console.log('Usage: sbean registry add @acme=https://example.com/r/{name}.json');
+      console.log('Usage: vean registry add @acme=https://example.com/r/{name}.json');
       process.exit(0);
     }
 
@@ -90,7 +90,7 @@ const registryAdd = new Command()
     });
 
     if (added.length) {
-      console.log(`✔ Added ${added.length} registr${added.length === 1 ? 'y' : 'ies'} to sbean.json`);
+      console.log(`✔ Added ${added.length} registr${added.length === 1 ? 'y' : 'ies'} to vean.json`);
       for (const name of added) {
         console.log(`  ${name} -> ${nextRegistries[name]}`);
       }

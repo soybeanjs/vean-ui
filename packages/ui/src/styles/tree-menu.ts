@@ -28,7 +28,7 @@ export const treeMenuVariants = scv({
     };
   },
   slots: {
-    root: 'group flex-1 flex flex-col w-full h-full overflow-auto text-sidebar-foreground data-[state=collapsed]:w-[--soybean-tree-menu-collapsed-width] transition-[width,height]-200 ease-[cubic-bezier(.16,1,.3,1)]',
+    root: 'group flex-1 flex flex-col w-full h-full overflow-auto text-sidebar-foreground data-[state=collapsed]:w-[--vean-tree-menu-collapsed-width] transition-[width,height]-200 ease-[cubic-bezier(.16,1,.3,1)]',
     groupRoot: 'group-data-[state=collapsed]:mb-0',
     group: 'flex flex-col m-0 p-0 list-none',
     groupLabel: `flex items-center text-sidebar-foreground/70 group-data-[state=collapsed]:size-0 group-data-[state=collapsed]:p-0 group-data-[state=collapsed]:opacity-0 group-data-[state=collapsed]:overflow-hidden transition-[height,padding,opacity]-200`,
@@ -54,7 +54,7 @@ export const treeMenuVariants = scv({
       'data-[state=open]:animate-collapsible-down data-[state=closed]:animate-collapsible-up'
     ],
     collapsibleIcon: `shrink-0 ms-auto text-muted-foreground transition-transform-200 group-data-[state=open]/button:rotate-90 group-data-[child-selected]/button:text-sidebar-primary`,
-    sub: 'flex flex-col m-0 list-none ms-[--soybean-tree-menu-indent] border-s border-sidebar-border border-solid',
+    sub: 'flex flex-col m-0 list-none ms-[--vean-tree-menu-indent] border-s border-sidebar-border border-solid',
     itemLabel: 'truncate',
     itemLinkIcon: `shrink-0 self-start text-muted-foreground rtl:rotate-270`,
     itemTag: `shrink-0 ms-auto inline-flex items-center rounded-sm bg-sidebar-accent-foreground/10 text-sidebar-accent-foreground`,

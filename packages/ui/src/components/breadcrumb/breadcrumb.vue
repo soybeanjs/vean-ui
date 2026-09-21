@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="T extends BreadcrumbOptionData = BreadcrumbOptionData">
 import { computed } from 'vue';
-import { BreadcrumbCompact, provideBreadcrumbUi } from '@soybeanjs/headless/breadcrumb';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { BreadcrumbCompact, provideBreadcrumbUi } from '@vean/aria/breadcrumb';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { breadcrumbVariants } from '@/styles/breadcrumb';
 import type { BreadcrumbProps, BreadcrumbEmits, BreadcrumbOptionData, BreadcrumbSlots } from './types';
 

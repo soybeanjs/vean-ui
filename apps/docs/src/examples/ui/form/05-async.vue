@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SButton, SForm, SFormFieldBase, SInput, useForm } from '@soybeanjs/ui';
 import { z } from 'zod';
+import { SButton, SForm, SFormFieldBase, SInput, useForm } from '@vean/ui';
 
 const user = z.object({
   username: z.string().nonempty('Username is required'),

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useLocaleMessages } from '@soybeanjs/headless';
-import { useControllableState } from '@soybeanjs/headless/composables';
+import { useLocaleMessages } from '@vean/aria';
+import { useControllableState } from '@vean/aria/composables';
 import { tagVariants } from '@/styles/tag';
 import Icon from '../icon/icon.vue';
 import type { TagProps, TagEmits } from './types';
@@ -50,7 +50,7 @@ const cls = computed(() =>
 </script>
 
 <template>
-  <div v-if="open" data-soybean-tag :class="cls">
+  <div v-if="open" data-vean-tag :class="cls">
     <slot name="leading" />
     <slot>{{ content }}</slot>
     <slot name="trailing" />

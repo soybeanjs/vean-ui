@@ -13,7 +13,7 @@ const shouldReserveOutlineSpace = computed(
   () => !['/', '/releases', '/playground', '/theme-editor'].includes(barePath.value)
 );
 const shouldShowSidebar = computed(() =>
-  ['/overview', '/components', '/chart', '/headless'].some(p => barePath.value.startsWith(p))
+  ['/overview', '/components', '/chart', '/aria'].some(p => barePath.value.startsWith(p))
 );
 
 const closeDrawer = () => {

@@ -2,8 +2,8 @@ import { describe, expect, it, vi } from 'vitest';
 import { defineComponent, h, nextTick, ref } from 'vue';
 import type { MaybeRefOrGetter } from 'vue';
 import { mount } from '@vue/test-utils';
-import { provideViewportContext } from '@soybeanjs/headless/composables';
-import { LayoutTrigger, LayoutRail } from '@soybeanjs/headless/layout';
+import { provideViewportContext } from '@vean/aria/composables';
+import { LayoutTrigger, LayoutRail } from '@vean/aria/layout';
 import type { LayoutProps } from '@/components/layout';
 import SLayout from '@/components/layout/layout.vue';
 
@@ -71,7 +71,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-layout-root]').exists()).toBe(true);
       expect(wrapper.find('[data-header]').exists()).toBe(true);
       expect(wrapper.find('[data-tab]').exists()).toBe(true);
       expect(wrapper.find('[data-sidebar]').exists()).toBe(true);
@@ -129,7 +129,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
       expect(root.attributes('data-orientation')).toBe('horizontal');
       expect(root.attributes('data-variant')).toBe('sidebar');
       expect(root.attributes('data-state')).toBe('expanded');
@@ -149,7 +149,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-orientation')).toBe('vertical');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-orientation')).toBe('vertical');
 
       wrapper.unmount();
     });
@@ -164,7 +164,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-scroll-behavior')).toBe('wrapper');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-scroll-behavior')).toBe('wrapper');
 
       wrapper.unmount();
     });
@@ -179,7 +179,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-fixed-top')).toBe('true');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-fixed-top')).toBe('true');
 
       wrapper.unmount();
     });
@@ -194,7 +194,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-fixed-footer')).toBe('true');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-fixed-footer')).toBe('true');
 
       wrapper.unmount();
     });
@@ -209,7 +209,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-stretch-footer')).toBe('false');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-stretch-footer')).toBe('false');
 
       wrapper.unmount();
     });
@@ -224,7 +224,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-state')).toBe('expanded');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-state')).toBe('expanded');
 
       wrapper.unmount();
     });
@@ -239,7 +239,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-state')).toBe('collapsed');
 
       wrapper.unmount();
     });
@@ -254,7 +254,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-side')).toBe('right');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-side')).toBe('right');
 
       wrapper.unmount();
     });
@@ -269,7 +269,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-variant')).toBe('floating');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-variant')).toBe('floating');
 
       wrapper.unmount();
     });
@@ -284,7 +284,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
       expect(root.attributes('data-state')).toBe('collapsed');
       expect(root.attributes('data-collapsible')).toBe('offcanvas');
 
@@ -308,7 +308,7 @@ describe('SLayout', () => {
 
       await nextTick();
 
-      const trigger = wrapper.find('[data-soybean-layout-trigger]');
+      const trigger = wrapper.find('[data-vean-layout-trigger]');
       await trigger.trigger('click');
       await nextTick();
 
@@ -329,10 +329,10 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
       expect(root.attributes('data-state')).toBe('collapsed');
 
-      await wrapper.find('[data-soybean-layout-trigger]').trigger('click');
+      await wrapper.find('[data-vean-layout-trigger]').trigger('click');
       await nextTick();
 
       expect(root.attributes('data-state')).toBe('expanded');
@@ -351,7 +351,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-variant')).toBe('sidebar');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-variant')).toBe('sidebar');
 
       wrapper.unmount();
     });
@@ -366,7 +366,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-variant')).toBe('floating');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-variant')).toBe('floating');
 
       wrapper.unmount();
     });
@@ -381,7 +381,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-variant')).toBe('inset');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-variant')).toBe('inset');
 
       wrapper.unmount();
     });
@@ -398,10 +398,10 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
-      const main = wrapper.find('[data-soybean-layout-main]');
+      const root = wrapper.find('[data-vean-layout-root]');
+      const main = wrapper.find('[data-vean-layout-main]');
       const sidebar = wrapper.find('[data-sidebar="sidebar"]');
-      const content = wrapper.find('[data-soybean-layout-content]');
+      const content = wrapper.find('[data-vean-layout-content]');
 
       // 页面基底由 root 声明；主列是纯结构列，不自己着色，让基底在列间隙透出；区域面由各自槽位声明
       expect(root.classes()).toContain('bg-background');
@@ -425,7 +425,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
 
       // 变体的区域面必须压过 slot 上的页面基底（tailwind-merge 只留最后一个）
       expect(root.classes()).toContain('bg-sidebar');
@@ -525,7 +525,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-full-content')).toBe('true');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-full-content')).toBe('true');
 
       wrapper.unmount();
     });
@@ -539,7 +539,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-full-content')).toBe('false');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-full-content')).toBe('false');
 
       wrapper.unmount();
     });
@@ -556,7 +556,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-mobile]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-layout-mobile]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -571,7 +571,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-mobile')).toBe('true');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-mobile')).toBe('true');
 
       wrapper.unmount();
     });
@@ -592,14 +592,14 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
 
-      expect(style).toContain('--soybean-layout-start-gap: 0px');
-      expect(style).toContain('--soybean-layout-header-start-gap: 0px');
-      expect(style).toContain('--soybean-layout-footer-start-gap: 0px');
-      expect(style).toContain('--soybean-layout-sidebar-top-gap: 0px');
-      expect(style).toContain('--soybean-layout-sidebar-bottom-gap: 0px');
-      expect(style).toContain('--soybean-layout-sidebar-height: 100%');
+      expect(style).toContain('--vean-layout-start-gap: 0px');
+      expect(style).toContain('--vean-layout-header-start-gap: 0px');
+      expect(style).toContain('--vean-layout-footer-start-gap: 0px');
+      expect(style).toContain('--vean-layout-sidebar-top-gap: 0px');
+      expect(style).toContain('--vean-layout-sidebar-bottom-gap: 0px');
+      expect(style).toContain('--vean-layout-sidebar-height: 100%');
 
       wrapper.unmount();
     });
@@ -619,10 +619,10 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
 
-      expect(style).toContain('--soybean-layout-sidebar-top-gap: 0px');
-      expect(style).toContain('--soybean-layout-sidebar-height: 100%');
+      expect(style).toContain('--vean-layout-sidebar-top-gap: 0px');
+      expect(style).toContain('--vean-layout-sidebar-height: 100%');
 
       wrapper.unmount();
     });
@@ -638,8 +638,8 @@ describe('SLayout', () => {
           attachTo: document.body
         });
 
-        const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-        expect(style).toContain('--soybean-layout-start-gap: 0px');
+        const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+        expect(style).toContain('--vean-layout-start-gap: 0px');
 
         wrapper.unmount();
       }
@@ -655,11 +655,11 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
       const style = root.attributes('style') || '';
 
       expect(root.attributes('data-mobile')).toBe('false');
-      expect(style).toContain('--soybean-layout-start-gap: 15rem');
+      expect(style).toContain('--vean-layout-start-gap: 15rem');
 
       wrapper.unmount();
     });
@@ -683,7 +683,7 @@ describe('SLayout', () => {
       // controlled prop lands.
       await nextTick();
 
-      expect(document.querySelector('[data-soybean-layout-mobile]')).not.toBeNull();
+      expect(document.querySelector('[data-vean-layout-mobile]')).not.toBeNull();
 
       wrapper.unmount();
     });
@@ -700,7 +700,7 @@ describe('SLayout', () => {
       });
 
       await nextTick();
-      await wrapper.find('[data-soybean-layout-trigger]').trigger('click');
+      await wrapper.find('[data-vean-layout-trigger]').trigger('click');
       await nextTick();
 
       expect(wrapper.emitted('update:mobileOpen')?.at(-1)).toEqual([true]);
@@ -727,14 +727,14 @@ describe('SLayout', () => {
           attachTo: document.body
         });
 
-        const root = wrapper.find('[data-soybean-layout-root]');
+        const root = wrapper.find('[data-vean-layout-root]');
 
         expect(root.attributes('data-mobile')).toBe('true');
         // No host spoke, so the styled `lt-md` fallback stays in charge.
         expect(root.attributes('data-mobile-source')).toBe('viewport');
-        expect(root.attributes('style') || '').toContain('--soybean-layout-start-gap: 0px');
+        expect(root.attributes('style') || '').toContain('--vean-layout-start-gap: 0px');
         // The desktop sidebar is replaced by the drawer, not merely styled away.
-        expect(wrapper.find('[data-soybean-layout-sidebar]').exists()).toBe(false);
+        expect(wrapper.find('[data-vean-layout-sidebar]').exists()).toBe(false);
 
         wrapper.unmount();
       } finally {
@@ -755,11 +755,11 @@ describe('SLayout', () => {
           attachTo: document.body
         });
 
-        const root = wrapper.find('[data-soybean-layout-root]');
+        const root = wrapper.find('[data-vean-layout-root]');
 
         expect(root.attributes('data-mobile')).toBe('false');
-        expect(root.attributes('style') || '').toContain('--soybean-layout-start-gap: 15rem');
-        expect(wrapper.find('[data-soybean-layout-sidebar]').exists()).toBe(true);
+        expect(root.attributes('style') || '').toContain('--vean-layout-start-gap: 15rem');
+        expect(wrapper.find('[data-vean-layout-sidebar]').exists()).toBe(true);
 
         wrapper.unmount();
       } finally {
@@ -777,13 +777,13 @@ describe('SLayout', () => {
     it('follows a simulated mobile viewport when isMobile is unset', () => {
       const wrapper = mountWithViewport(true);
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
 
       expect(root.attributes('data-mobile')).toBe('true');
       // A host asked for this mode, so the styled `lt-md` fallback has to stand down.
       expect(root.attributes('data-mobile-source')).toBe('explicit');
-      expect(root.attributes('style') || '').toContain('--soybean-layout-start-gap: 0px');
-      expect(wrapper.find('[data-soybean-layout-sidebar]').exists()).toBe(false);
+      expect(root.attributes('style') || '').toContain('--vean-layout-start-gap: 0px');
+      expect(wrapper.find('[data-vean-layout-sidebar]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -792,13 +792,13 @@ describe('SLayout', () => {
       const simulated = ref<boolean | undefined>(true);
       const wrapper = mountWithViewport(simulated);
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-mobile')).toBe('true');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-mobile')).toBe('true');
 
       simulated.value = false;
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-mobile')).toBe('false');
-      expect(wrapper.find('[data-soybean-layout-sidebar]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-mobile')).toBe('false');
+      expect(wrapper.find('[data-vean-layout-sidebar]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -806,8 +806,8 @@ describe('SLayout', () => {
     it('lets an explicit isMobile override the simulated viewport', () => {
       const wrapper = mountWithViewport(true, { isMobile: false });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-mobile')).toBe('false');
-      expect(wrapper.find('[data-soybean-layout-sidebar]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-mobile')).toBe('false');
+      expect(wrapper.find('[data-vean-layout-sidebar]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -900,8 +900,8 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-      expect(style).toContain('--soybean-layout-start-gap: 15rem');
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+      expect(style).toContain('--vean-layout-start-gap: 15rem');
 
       wrapper.unmount();
     });
@@ -916,8 +916,8 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-      expect(style).toContain('--soybean-layout-start-gap: 3.125rem');
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+      expect(style).toContain('--vean-layout-start-gap: 3.125rem');
 
       wrapper.unmount();
     });
@@ -932,8 +932,8 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-      expect(style).toContain('--soybean-layout-start-gap: 0rem');
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+      expect(style).toContain('--vean-layout-start-gap: 0rem');
 
       wrapper.unmount();
     });
@@ -949,8 +949,8 @@ describe('SLayout', () => {
           attachTo: document.body
         });
 
-        const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-        expect(style).toContain('--soybean-layout-start-gap: 15rem');
+        const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+        expect(style).toContain('--vean-layout-start-gap: 15rem');
 
         wrapper.unmount();
       }
@@ -966,8 +966,8 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-      expect(style).toContain('--soybean-layout-start-gap: 0px');
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+      expect(style).toContain('--vean-layout-start-gap: 0px');
 
       wrapper.unmount();
     });
@@ -992,7 +992,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-sidebar-flow')).toBe('true');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-sidebar-flow')).toBe('true');
 
       wrapper.unmount();
     });
@@ -1007,12 +1007,12 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-layout-root]');
+      const root = wrapper.find('[data-vean-layout-root]');
 
       expect(root.attributes('data-sidebar-flow')).toBe('false');
       // The region itself stays rendered: its mount targets host the panes the
       // split modes teleport, and the menu root inside it owns their top bar.
-      expect(wrapper.find('[data-soybean-layout-sidebar]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-layout-sidebar]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -1027,7 +1027,7 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-layout-root]').attributes('data-sidebar-flow')).toBe('false');
+      expect(wrapper.find('[data-vean-layout-root]').attributes('data-sidebar-flow')).toBe('false');
 
       wrapper.unmount();
     });
@@ -1044,8 +1044,8 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-      expect(style).toContain('--soybean-sidebar-width');
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+      expect(style).toContain('--vean-sidebar-width');
 
       wrapper.unmount();
     });
@@ -1060,8 +1060,8 @@ describe('SLayout', () => {
         attachTo: document.body
       });
 
-      const style = wrapper.find('[data-soybean-layout-root]').attributes('style') || '';
-      expect(style).toContain('--soybean-layout-header-height');
+      const style = wrapper.find('[data-vean-layout-root]').attributes('style') || '';
+      expect(style).toContain('--vean-layout-header-height');
 
       wrapper.unmount();
     });
@@ -1083,10 +1083,10 @@ describe('SLayout', () => {
 
       await nextTick();
 
-      const drawer = document.querySelector('[data-soybean-layout-mobile]');
+      const drawer = document.querySelector('[data-vean-layout-mobile]');
 
       expect(drawer).not.toBeNull();
-      expect(drawer?.getAttribute('style')).toContain('--soybean-layout-header-height: 3.5rem');
+      expect(drawer?.getAttribute('style')).toContain('--vean-layout-header-height: 3.5rem');
       expect(drawer?.className).toContain('[--sl-spacing:1rem]');
       expect(drawer?.className).toContain('[--sl-half-spacing:calc(var(--sl-spacing)/2)]');
 
@@ -1109,7 +1109,7 @@ describe('LayoutTrigger', () => {
 
     await nextTick();
 
-    const trigger = wrapper.find('[data-soybean-layout-trigger]');
+    const trigger = wrapper.find('[data-vean-layout-trigger]');
     expect(trigger.exists()).toBe(true);
     expect(trigger.attributes('aria-expanded')).toBe('true');
 
@@ -1129,7 +1129,7 @@ describe('LayoutTrigger', () => {
 
     await nextTick();
 
-    const trigger = wrapper.find('[data-soybean-layout-trigger]');
+    const trigger = wrapper.find('[data-vean-layout-trigger]');
     expect(trigger.attributes('aria-expanded')).toBe('false');
 
     wrapper.unmount();
@@ -1148,7 +1148,7 @@ describe('LayoutTrigger', () => {
 
     await nextTick();
 
-    const trigger = wrapper.find('[data-soybean-layout-trigger]');
+    const trigger = wrapper.find('[data-vean-layout-trigger]');
     expect(trigger.attributes('aria-expanded')).toBe('false');
 
     await trigger.trigger('click');
@@ -1176,7 +1176,7 @@ describe('LayoutTrigger', () => {
 
     await nextTick();
 
-    const trigger = wrapper.find('[data-soybean-layout-trigger]');
+    const trigger = wrapper.find('[data-vean-layout-trigger]');
     expect(trigger.attributes('aria-expanded')).toBe('false');
 
     await trigger.trigger('click');
@@ -1201,7 +1201,7 @@ describe('LayoutRail', () => {
 
     await nextTick();
 
-    const rail = wrapper.find('[data-soybean-layout-rail]');
+    const rail = wrapper.find('[data-vean-layout-rail]');
     expect(rail.exists()).toBe(true);
     expect(rail.attributes('aria-expanded')).toBe('true');
     expect(rail.attributes('tabindex')).toBe('-1');
@@ -1221,7 +1221,7 @@ describe('LayoutRail', () => {
 
     await nextTick();
 
-    const rail = wrapper.find('[data-soybean-layout-rail]');
+    const rail = wrapper.find('[data-vean-layout-rail]');
     expect(rail.attributes('aria-expanded')).toBe('false');
 
     wrapper.unmount();
@@ -1239,7 +1239,7 @@ describe('LayoutRail', () => {
 
     await nextTick();
 
-    const rail = wrapper.find('[data-soybean-layout-rail]');
+    const rail = wrapper.find('[data-vean-layout-rail]');
     expect(rail.attributes('aria-expanded')).toBe('true');
 
     await rail.trigger('click');

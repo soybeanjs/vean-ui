@@ -9,8 +9,8 @@ export const drawerVariants = scv({
     swipeArea: 'fixed z-40 touch-none',
     indent: [
       `relative transition-[transform,border-radius] duration-500 [transition-timing-function:cubic-bezier(0.32,0.72,0,1)]`,
-      `data-[active]:translate-y-[calc(var(--soybean-drawer-swipe-progress,0)*0.5rem_+_0.25rem)]`,
-      `data-[active]:scale-[calc(1_-_var(--soybean-drawer-swipe-progress,0)*0.05_-_0.02)]`,
+      `data-[active]:translate-y-[calc(var(--vean-drawer-swipe-progress,0)*0.5rem_+_0.25rem)]`,
+      `data-[active]:scale-[calc(1_-_var(--vean-drawer-swipe-progress,0)*0.05_-_0.02)]`,
       `data-[active]:rounded-b-2xl`
     ],
     indentBackground: 'fixed inset-0 z-40 bg-popover'

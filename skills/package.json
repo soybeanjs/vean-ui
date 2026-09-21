@@ -1,17 +1,17 @@
 {
-  "name": "@soybeanjs/ui-skills",
+  "name": "@vean/skills",
   "version": "0.50.0",
   "private": true,
-  "description": "Agent skills for SoybeanUI and SoybeanHeadless.",
+  "description": "Agent skills for Vean and Vean Aria.",
   "keywords": [
     "agentskills",
     "claude-code",
     "github-copilot",
-    "soybean-headless",
-    "soybean-ui",
+    "vean-aria",
+    "vean-ui",
     "vue"
   ],
-  "homepage": "https://github.com/soybeanjs/soybean-ui/tree/main/skills",
+  "homepage": "https://github.com/soybeanjs/vean-ui/tree/main/skills",
   "license": "MIT",
   "author": {
     "name": "Soybean",
@@ -19,7 +19,7 @@
     "url": "https://github.com/soybeanjs"
   },
   "repository": {
-    "url": "https://github.com/soybeanjs/soybean-ui.git"
+    "url": "https://github.com/soybeanjs/vean-ui.git"
   },
   "files": [
     "skills",

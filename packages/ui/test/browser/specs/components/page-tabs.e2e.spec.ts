@@ -12,7 +12,7 @@ import { renderComponent } from '../../shared/render';
  * press. The happy-dom unit spec cannot exercise this — it needs real pointer events plus the
  * layer's outside-`pointerdown` listener, which only a browser provides.
  */
-const ITEM = '[data-soybean-page-tabs-item]';
+const ITEM = '[data-vean-page-tabs-item]';
 
 const items = [
   { value: 'home', label: 'Home' },
@@ -31,7 +31,7 @@ function renderTabs() {
 }
 
 // The tab strip is intentionally role-less (a roving focus container, not a tablist), so the
-// documented `data-soybean-page-tabs-item` hook is the only stable locator.
+// documented `data-vean-page-tabs-item` hook is the only stable locator.
 function tabAt(index: number) {
   const element = document.querySelectorAll<HTMLElement>(ITEM)[index];
 

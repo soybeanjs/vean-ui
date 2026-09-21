@@ -135,20 +135,20 @@ describe('resolvePublishedSpecifier', () => {
   it('resolves the real workspace packages to their published dist output, never to src', () => {
     const manifests = discoverWorkspacePackages(repoRoot);
     const ui = readManifest(join(repoRoot, 'packages/ui'));
-    const headless = readManifest(join(repoRoot, 'packages/headless'));
+    const aria = readManifest(join(repoRoot, 'packages/aria'));
 
     expect(manifests.length).toBeGreaterThan(0);
 
-    if (!ui || !headless) {
-      throw new Error('expected packages/ui and packages/headless manifests to be readable');
+    if (!ui || !aria) {
+      throw new Error('expected packages/ui and packages/aria manifests to be readable');
     }
 
-    expect(resolvePublishedSpecifier(ui, '@soybeanjs/ui')).toBe(join(repoRoot, 'packages/ui/dist/index.js'));
-    expect(resolvePublishedSpecifier(ui, '@soybeanjs/ui/button')).toBe(
+    expect(resolvePublishedSpecifier(ui, '@vean/ui')).toBe(join(repoRoot, 'packages/ui/dist/index.js'));
+    expect(resolvePublishedSpecifier(ui, '@vean/ui/button')).toBe(
       join(repoRoot, 'packages/ui/dist/components/button/index.js')
     );
-    expect(resolvePublishedSpecifier(headless, '@soybeanjs/headless/composables')).toBe(
-      join(repoRoot, 'packages/headless/dist/composables/index.js')
+    expect(resolvePublishedSpecifier(aria, '@vean/aria/composables')).toBe(
+      join(repoRoot, 'packages/aria/dist/composables/index.js')
     );
 
     // The in-repo `exports` maps point at `./src/*.ts`; a regression here would

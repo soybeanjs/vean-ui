@@ -150,7 +150,7 @@ describe('SAnchor', () => {
 
       const root = wrapper.find('nav');
       expect(root.classes()).toContain('sticky');
-      expect(root.element.style.getPropertyValue('--soybean-anchor-offset-top')).toBe('64px');
+      expect(root.element.style.getPropertyValue('--vean-anchor-offset-top')).toBe('64px');
 
       wrapper.unmount();
     });
@@ -394,7 +394,7 @@ describe('SAnchor', () => {
       await wrapper.find('a[href="#api"]').trigger('click');
 
       expect(container.scrollTo).toHaveBeenCalledWith(expect.objectContaining({ top: 440 }));
-      expect(wrapper.find('nav').element.style.getPropertyValue('--soybean-anchor-offset-top')).toBe('80px');
+      expect(wrapper.find('nav').element.style.getPropertyValue('--vean-anchor-offset-top')).toBe('80px');
 
       wrapper.unmount();
       cleanup(previousHash, overview.element, usage.element, api.element, container);
@@ -678,7 +678,7 @@ describe('SAnchor', () => {
         attachTo: document.body
       });
 
-      const wrappers = wrapper.findAll('[data-soybean-anchor-item]');
+      const wrappers = wrapper.findAll('[data-vean-anchor-item]');
       expect(wrappers).toHaveLength(3);
       expect(wrappers[0].attributes('data-state')).toBe('inactive');
       expect(wrappers[1].attributes('data-state')).toBe('active');

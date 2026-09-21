@@ -8,10 +8,10 @@
   "
 >
 import { computed, useTemplateRef } from 'vue';
-import { useLocaleMessages } from '@soybeanjs/headless';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { provideTableUi, TableCompact } from '@soybeanjs/headless/table';
-import type { TableEngineTable, TableSortOrder } from '@soybeanjs/headless/table';
+import { useLocaleMessages } from '@vean/aria';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { provideTableUi, TableCompact } from '@vean/aria/table';
+import type { TableEngineTable, TableSortOrder } from '@vean/aria/table';
 import { tableVariants } from '@/styles/table';
 import { miniSizeMap } from '@/theme';
 import SButtonIcon from '../button/button-icon.vue';

@@ -2,7 +2,7 @@
   "name": "input",
   "type": "registry:ui",
   "description": "Displays a form input field or a textarea.",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "registryDependencies": ["utils"],
   "categories": ["form", "input"],
   "meta": {

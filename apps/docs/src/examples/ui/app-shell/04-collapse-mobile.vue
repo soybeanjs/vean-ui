@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, shallowRef } from 'vue';
 import { useMediaQuery } from '@vueuse/core';
-import { SAppShell, SIcon, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { AppShellMode, SelectOptionData } from '@soybeanjs/ui';
+import { SAppShell, SIcon, SSelect, SSwitch } from '@vean/ui';
+import type { AppShellMode, SelectOptionData } from '@vean/ui';
 import { appShellItems } from './menu';
 
 const open = ref(true);
@@ -52,7 +52,7 @@ const active = ref('overview');
           <SIcon icon="lucide:hexagon" class="size-6 text-primary" />
         </template>
         <template #title>
-          <span class="truncate font-semibold">Soybean UI</span>
+          <span class="truncate font-semibold">Vean UI</span>
         </template>
         <div class="p-4">
           <p class="text-muted-foreground">

@@ -1,14 +1,14 @@
 ---
 head:
   title: 弹出层
-  description: 用于在 portal 中展示与触发元素相关联的丰富内容，由按钮触发。SPopover 组合 headless PopoverRoot/PopoverTrigger/PopoverPositioner/PopoverPopup/PopoverArrow/PopoverClose 基础组件家族（构建于共享 Popper + dialog 式可关闭/焦点层之上）与 popoverVariants 样式配方（5 个槽、6 种尺寸）。
+  description: 用于在 portal 中展示与触发元素相关联的丰富内容，由按钮触发。SPopover 组合 Aria PopoverRoot/PopoverTrigger/PopoverPositioner/PopoverPopup/PopoverArrow/PopoverClose 基础组件家族（构建于共享 Popper + dialog 式可关闭/焦点层之上）与 popoverVariants 样式配方（5 个槽、6 种尺寸）。
 ---
 
 # 弹出层
 
 ## 概述
 
-用于在 portal 中展示与触发元素相关联的丰富内容，由按钮触发。`SPopover` 组合 headless `PopoverRoot`/`PopoverTrigger`/`PopoverPositioner`/`PopoverPopup`/`PopoverArrow`/`PopoverClose` 基础组件家族（构建于共享 `Popper` + dialog 式可关闭/焦点层之上）与 `popoverVariants` 样式配方（5 个槽、6 种尺寸）。
+用于在 portal 中展示与触发元素相关联的丰富内容，由按钮触发。`SPopover` 组合 Aria `PopoverRoot`/`PopoverTrigger`/`PopoverPositioner`/`PopoverPopup`/`PopoverArrow`/`PopoverClose` 基础组件家族（构建于共享 `Popper` + dialog 式可关闭/焦点层之上）与 `popoverVariants` 样式配方（5 个槽、6 种尺寸）。
 
 弹出层适合非关键、上下文相关的丰富内容（操作菜单、设置、帮助）。导航菜单请用 `dropdown-menu`；小的悬停提示请用 `tooltip`；阻塞性确认请用 `popconfirm` 或 `dialog`。
 
@@ -18,7 +18,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `PopoverCompact` 聚合 popper 定位器、弹层、箭头与关闭；`SPopover` 只注入样式并转发插槽/事件
+- 🧩 Aria/样式分离 — `PopoverCompact` 聚合 popper 定位器、弹层、箭头与关闭；`SPopover` 只注入样式并转发插槽/事件
 - 🎯 定位 — 完整 popper `placement` 控制（12 个方向），带碰撞避免与按侧滑入动画
 - 🎭 模态切换 — `modal` 控制外部指针拦截、`useHideOthers`、body 滚动锁定与焦点陷阱
 - 🔽 箭头 — `showArrow` 渲染定位箭头；经 `arrowProps` 可配置
@@ -29,13 +29,13 @@ head:
 ## 组件家族
 
 - `SPopover`（样式层）— 入口包装组件；`popoverVariants` 配方配合动态插槽转发
-- `PopoverRoot`（headless）— 状态持有者；经 `useControllableState` 维护 `open`，提供 `dir`/`modal`/`disabled` 与 popper root
-- `PopoverTrigger`（headless）— 切换弹出层的 `Button`
-- `PopoverPositioner` / `PopoverPositionerImpl`（headless）— 焦点陷阱、可关闭、定位表面（构建于 `PopperPositioner`）
-- `PopoverPopup`（headless）— 弹层主体
-- `PopoverArrow`（headless）— popper 箭头
-- `PopoverClose`（headless）— 关闭 `<button>`，发出 `close` 并切换 `open`
-- `PopoverCompact`（headless）— 聚合组件；组合定位器/弹层/箭头/关闭并暴露各插槽
+- `PopoverRoot`（Aria）— 状态持有者；经 `useControllableState` 维护 `open`，提供 `dir`/`modal`/`disabled` 与 popper root
+- `PopoverTrigger`（Aria）— 切换弹出层的 `Button`
+- `PopoverPositioner` / `PopoverPositionerImpl`（Aria）— 焦点陷阱、可关闭、定位表面（构建于 `PopperPositioner`）
+- `PopoverPopup`（Aria）— 弹层主体
+- `PopoverArrow`（Aria）— popper 箭头
+- `PopoverClose`（Aria）— 关闭 `<button>`，发出 `close` 并切换 `open`
+- `PopoverCompact`（Aria）— 聚合组件；组合定位器/弹层/箭头/关闭并暴露各插槽
 
 ## 演示
 
@@ -49,17 +49,17 @@ head:
 
 ### 架构与对标差异
 
-`PopoverCompact` 负责定位器/弹层/箭头/关闭组合，所有基础组件保持零样式，仅由 UI 包装组件注入 `popoverVariants` 类。这与 radix-ui/shadcn-ui 的 headless/样式分离一致，构建于共享 `Popper` 基础组件之上。Ant Design、Element Plus、Mantine、Naive UI 提供带 `placement`/`trigger`/`width` prop 的单一样式化弹出层；SoybeanUI 额外暴露逐槽 `*Props`、`size` 尺寸体系、箭头开关与单包库弹出层通常缺失的 `modal` 模式。
+`PopoverCompact` 负责定位器/弹层/箭头/关闭组合，所有基础组件保持零样式，仅由 UI 包装组件注入 `popoverVariants` 类。这与 radix-ui/shadcn-ui 的 headless/样式分离一致，构建于共享 `Popper` 基础组件之上。Ant Design、Element Plus、Mantine、Naive UI 提供带 `placement`/`trigger`/`width` prop 的单一样式化弹出层；VeanUI 额外暴露逐槽 `*Props`、`size` 尺寸体系、箭头开关与单包库弹出层通常缺失的 `modal` 模式。
 
-| 能力              | SoybeanUI | shadcn/ui | Ant Design Popover | Element Plus Popover | Mantine Popover | Naive UI Popover |
-| :---------------- | :-------: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
-| Headless/样式分离 |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Popper 定位（12） |    ✅     |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
-| 箭头              |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| 模态模式          |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| 关闭按钮          |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| 尺寸（6）         |    ✅     |     —     |         —          |          —           |        —        |        —         |
-| 焦点陷阱 + 循环   |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
+| 能力              | VeanUI | shadcn/ui | Ant Design Popover | Element Plus Popover | Mantine Popover | Naive UI Popover |
+| :---------------- | :----: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
+| Aria/样式分离     |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Popper 定位（12） |   ✅   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
+| 箭头              |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| 模态模式          |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| 关闭按钮          |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| 尺寸（6）         |   ✅   |     —     |         —          |          —           |        —        |        —         |
+| 焦点陷阱 + 循环   |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
 
 `—` = 不支持或采用不同交互模型。
 

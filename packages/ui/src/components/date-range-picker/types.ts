@@ -1,10 +1,10 @@
-import type { CalendarRangeUi } from '@soybeanjs/headless/calendar-range';
+import type { CalendarRangeUi } from '@vean/aria/calendar-range';
 import type {
   DateRangePickerCompactProps,
   DateRangePickerCompactEmits,
   DateRangePickerUi
-} from '@soybeanjs/headless/date-range-picker';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/date-range-picker';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

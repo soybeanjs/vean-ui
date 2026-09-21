@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "'start' | 'center' | 'end'",
                 "resolvedType": "'start' | 'center' | 'end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.align",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.align",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -103,8 +103,8 @@
                 "type": "{ root: ClassValue; placeholder: ClassValue; input: ClassValue; group: ClassValue; positioner: ClassValue; slot: ClassValue; char: ClassValue; caret: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the InputOtp component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpui",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpui",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.autocomplete",
             "default": null,
             "inheritedFrom": "autocomplete",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.autofocus",
             "default": null,
             "inheritedFrom": "autofocus",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -153,7 +153,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -164,7 +164,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.minlength",
             "default": null,
             "inheritedFrom": "minlength",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -175,7 +175,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -186,7 +186,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -197,7 +197,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.arialabel",
             "default": null,
             "inheritedFrom": "ariaLabel",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -208,7 +208,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -219,7 +219,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -230,7 +230,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxlength",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -241,7 +241,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.inputmode",
             "default": null,
             "inheritedFrom": "inputmode",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpInputMode",
@@ -249,8 +249,8 @@
                 "type": "'text' | 'numeric'",
                 "resolvedType": "'text' | 'numeric'",
                 "description": "Type information for InputOtpInputMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpinputmode",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpinputmode",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -266,7 +266,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.pattern",
             "default": null,
             "inheritedFrom": "pattern",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -277,7 +277,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.pushpasswordmanagerstrategy",
             "default": null,
             "inheritedFrom": "pushPasswordManagerStrategy",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpPushPasswordManagerStrategy",
@@ -285,8 +285,8 @@
                 "type": "'none' | 'increase-width'",
                 "resolvedType": "'none' | 'increase-width'",
                 "description": "Type information for InputOtpPushPasswordManagerStrategy.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotppushpasswordmanagerstrategy",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotppushpasswordmanagerstrategy",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -302,7 +302,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.pastetransformer",
             "default": null,
             "inheritedFrom": "pasteTransformer",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -313,7 +313,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -324,7 +324,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -349,7 +349,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -359,7 +359,7 @@
             "required": true,
             "description": "Emitted when complete occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.complete",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -369,7 +369,7 @@
             "required": true,
             "description": "Emitted when input occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.input",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -379,7 +379,7 @@
             "required": true,
             "description": "Emitted when change occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.change",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -403,7 +403,7 @@
             "required": true,
             "description": "Emitted when select occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.select",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -427,7 +427,7 @@
             "required": true,
             "description": "Emitted when focus occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.focus",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "FocusEvent",
@@ -451,7 +451,7 @@
             "required": true,
             "description": "Emitted when blur occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.blur",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "FocusEvent",
@@ -475,7 +475,7 @@
             "required": true,
             "description": "Emitted when mouseover occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.mouseover",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "MouseEvent",
@@ -499,7 +499,7 @@
             "required": true,
             "description": "Emitted when mouseleave occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.mouseleave",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "MouseEvent",
@@ -523,7 +523,7 @@
             "required": true,
             "description": "Emitted when paste occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpemits.callables.paste",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardEvent",
@@ -548,8 +548,8 @@
             "type": "{ 'update:modelValue': [value: string]; complete: [value: string]; input: [value: string]; change: [event: Event]; select: [event: Event]; focus: [event: FocusEvent]; blur: [event: FocusEvent]; mouseover: [event: MouseEvent]; mouseleave: [event: MouseEvent]; paste: [event: ClipboardEvent]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; complete: [value: string]; input: [value: string]; change: [event: Event]; select: [event: Event]; focus: [event: FocusEvent]; blur: [event: FocusEvent]; mouseover: [event: MouseEvent]; mouseleave: [event: MouseEvent]; paste: [event: ClipboardEvent] }",
             "description": "Events for the InputOtpRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -560,8 +560,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -570,8 +570,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when complete occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.complete",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.complete",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -580,8 +580,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when input occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.input",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.input",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -590,8 +590,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.change",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -600,8 +600,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Emitted when select occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.select",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.select",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -610,8 +610,8 @@
                 "parameters": "event: FocusEvent",
                 "required": true,
                 "description": "Emitted when focus occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.focus",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.focus",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -620,8 +620,8 @@
                 "parameters": "event: FocusEvent",
                 "required": true,
                 "description": "Emitted when blur occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.blur",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.blur",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -630,8 +630,8 @@
                 "parameters": "event: MouseEvent",
                 "required": true,
                 "description": "Emitted when mouseover occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.mouseover",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.mouseover",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -640,8 +640,8 @@
                 "parameters": "event: MouseEvent",
                 "required": true,
                 "description": "Emitted when mouseleave occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.mouseleave",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.mouseleave",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -650,8 +650,8 @@
                 "parameters": "event: ClipboardEvent",
                 "required": true,
                 "description": "Emitted when paste occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.paste",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.paste",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -676,7 +676,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_otp_types.inputotpslots.callables.default",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpRootSlotProps",
@@ -684,8 +684,8 @@
                 "type": "InputOtpRootSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputOtpRoot component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootslotprops",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootslotprops",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -698,11 +698,11 @@
           {
             "name": "InputOtpCompactSlots",
             "kind": "typeAlias",
-            "type": "{ InputOtpRoot?: (props: import(\"@soybeanjs/headless\").InputOtpRootSlotProps) => any; }",
+            "type": "{ InputOtpRoot?: (props: import(\"@vean/aria\").InputOtpRootSlotProps) => any; }",
             "resolvedType": "{ InputOtpRoot?: ((props: InputOtpRootSlotProps) => any) }",
             "description": "Slots for the InputOtpCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactslots",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactslots",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -713,8 +713,8 @@
                 "parameters": "((props: InputOtpRootSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -727,8 +727,8 @@
         "type": "Interface InputOtpSlotProps",
         "resolvedType": "{ char: string | null; placeholderChar: string | null; isActive: boolean; hasFakeCaret: boolean }",
         "description": "Slot properties for the InputOtp component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -736,10 +736,10 @@
             "type": "string | null",
             "required": true,
             "description": "The typed character at the current slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpslotprops.members.char",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpslotprops.members.char",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -747,10 +747,10 @@
             "type": "string | null",
             "required": true,
             "description": "Placeholder character rendered when the slot is empty.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpslotprops.members.placeholderchar",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpslotprops.members.placeholderchar",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -758,10 +758,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the slot is covered by the current selection or caret.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpslotprops.members.isactive",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpslotprops.members.isactive",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -769,10 +769,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the slot should render a fake caret.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpslotprops.members.hasfakecaret",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpslotprops.members.hasfakecaret",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           }
         ],
@@ -787,8 +787,8 @@
         "type": "TypeAlias InputOtpCompactEmits: InputOtpRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; complete: [value: string]; input: [value: string]; change: [event: Event]; select: [event: Event]; focus: [event: FocusEvent]; blur: [event: FocusEvent]; mouseover: [event: MouseEvent]; mouseleave: [event: MouseEvent]; paste: [event: ClipboardEvent] }",
         "description": "Events for the InputOtpCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -798,8 +798,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -808,8 +808,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when complete occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.complete",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.complete",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -818,8 +818,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when input occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.input",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.input",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -828,8 +828,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Emitted when change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.change",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.change",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -852,8 +852,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Emitted when select occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.select",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.select",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -876,8 +876,8 @@
             "parameters": "event: FocusEvent",
             "required": true,
             "description": "Emitted when focus occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.focus",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.focus",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "FocusEvent",
@@ -900,8 +900,8 @@
             "parameters": "event: FocusEvent",
             "required": true,
             "description": "Emitted when blur occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.blur",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.blur",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "FocusEvent",
@@ -924,8 +924,8 @@
             "parameters": "event: MouseEvent",
             "required": true,
             "description": "Emitted when mouseover occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.mouseover",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.mouseover",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "MouseEvent",
@@ -948,8 +948,8 @@
             "parameters": "event: MouseEvent",
             "required": true,
             "description": "Emitted when mouseleave occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.mouseleave",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.mouseleave",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "MouseEvent",
@@ -972,8 +972,8 @@
             "parameters": "event: ClipboardEvent",
             "required": true,
             "description": "Emitted when paste occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactemits.callables.paste",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactemits.callables.paste",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardEvent",
@@ -998,8 +998,8 @@
             "type": "{ 'update:modelValue': [value: string]; complete: [value: string]; input: [value: string]; change: [event: Event]; select: [event: Event]; focus: [event: FocusEvent]; blur: [event: FocusEvent]; mouseover: [event: MouseEvent]; mouseleave: [event: MouseEvent]; paste: [event: ClipboardEvent]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; complete: [value: string]; input: [value: string]; change: [event: Event]; select: [event: Event]; focus: [event: FocusEvent]; blur: [event: FocusEvent]; mouseover: [event: MouseEvent]; mouseleave: [event: MouseEvent]; paste: [event: ClipboardEvent] }",
             "description": "Events for the InputOtpRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1010,8 +1010,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1020,8 +1020,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when complete occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.complete",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.complete",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1030,8 +1030,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when input occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.input",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.input",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1040,8 +1040,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.change",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1050,8 +1050,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Emitted when select occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.select",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.select",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1060,8 +1060,8 @@
                 "parameters": "event: FocusEvent",
                 "required": true,
                 "description": "Emitted when focus occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.focus",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.focus",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1070,8 +1070,8 @@
                 "parameters": "event: FocusEvent",
                 "required": true,
                 "description": "Emitted when blur occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.blur",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.blur",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1080,8 +1080,8 @@
                 "parameters": "event: MouseEvent",
                 "required": true,
                 "description": "Emitted when mouseover occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.mouseover",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.mouseover",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1090,8 +1090,8 @@
                 "parameters": "event: MouseEvent",
                 "required": true,
                 "description": "Emitted when mouseleave occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.mouseleave",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.mouseleave",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1100,8 +1100,8 @@
                 "parameters": "event: ClipboardEvent",
                 "required": true,
                 "description": "Emitted when paste occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.paste",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.paste",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1114,8 +1114,8 @@
         "type": "Interface InputOtpCompactProps",
         "resolvedType": "{ id?: string; autocomplete?: string; autofocus?: boolean; disabled?: boolean; minlength?: number; placeholder?: string; readonly?: boolean; ariaLabel?: string; modelValue?: string; defaultValue?: string; maxlength: number; inputmode?: InputOtpInputMode; pattern?: string | RegExp; pushPasswordManagerStrategy?: InputOtpPushPasswordManagerStrategy; pasteTransformer?: ((pasted: string) => string); name?: string; required?: boolean }",
         "description": "Properties for the InputOtpCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.props",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.props",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1123,10 +1123,10 @@
             "type": "string",
             "required": false,
             "description": "The id of the native input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1134,10 +1134,10 @@
             "type": "string",
             "required": false,
             "description": "Autocomplete hint passed to the native input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.autocomplete",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.autocomplete",
             "default": null,
             "inheritedFrom": "autocomplete",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1145,10 +1145,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the input should be focused on mount.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.autofocus",
             "default": null,
             "inheritedFrom": "autofocus",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1156,10 +1156,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the input is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1167,10 +1167,10 @@
             "type": "number",
             "required": false,
             "description": "Minimum length forwarded to the native input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.minlength",
             "default": null,
             "inheritedFrom": "minlength",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1178,10 +1178,10 @@
             "type": "string",
             "required": false,
             "description": "Placeholder characters used by the visual slots.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1189,10 +1189,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the input is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1200,10 +1200,10 @@
             "type": "string",
             "required": false,
             "description": "Accessible label forwarded to the native input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.arialabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.arialabel",
             "default": null,
             "inheritedFrom": "ariaLabel",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1211,10 +1211,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the OTP input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1222,10 +1222,10 @@
             "type": "string",
             "required": false,
             "description": "The uncontrolled default value of the OTP input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1233,10 +1233,10 @@
             "type": "number",
             "required": true,
             "description": "The number of OTP slots.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxlength",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1244,10 +1244,10 @@
             "type": "InputOtpInputMode",
             "required": false,
             "description": "Virtual keyboard mode for mobile devices.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.inputmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.inputmode",
             "default": null,
             "inheritedFrom": "inputmode",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpInputMode",
@@ -1255,8 +1255,8 @@
                 "type": "'text' | 'numeric'",
                 "resolvedType": "'text' | 'numeric'",
                 "description": "Type information for InputOtpInputMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpinputmode",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpinputmode",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1269,10 +1269,10 @@
             "type": "string | RegExp",
             "required": false,
             "description": "Pattern used to validate the whole OTP value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.pattern",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.pattern",
             "default": null,
             "inheritedFrom": "pattern",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1280,10 +1280,10 @@
             "type": "InputOtpPushPasswordManagerStrategy",
             "required": false,
             "description": "Strategy used to avoid overlapping password manager badges.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.pushpasswordmanagerstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.pushpasswordmanagerstrategy",
             "default": null,
             "inheritedFrom": "pushPasswordManagerStrategy",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpPushPasswordManagerStrategy",
@@ -1291,8 +1291,8 @@
                 "type": "'none' | 'increase-width'",
                 "resolvedType": "'none' | 'increase-width'",
                 "description": "Type information for InputOtpPushPasswordManagerStrategy.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotppushpasswordmanagerstrategy",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotppushpasswordmanagerstrategy",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1305,10 +1305,10 @@
             "type": "((pasted: string) => string)",
             "required": false,
             "description": "Transform pasted content before it is inserted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.pastetransformer",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.pastetransformer",
             "default": null,
             "inheritedFrom": "pasteTransformer",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1316,10 +1316,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1327,10 +1327,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1343,8 +1343,8 @@
         "type": "TypeAlias InputOtpCompactSlots",
         "resolvedType": "{ InputOtpRoot?: ((props: InputOtpRootSlotProps) => any) }",
         "description": "Slots for the InputOtpCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1354,8 +1354,8 @@
             "parameters": "((props: InputOtpRootSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpRootSlotProps",
@@ -1363,8 +1363,8 @@
                 "type": "InputOtpRootSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputOtpRoot component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootslotprops",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootslotprops",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1383,8 +1383,8 @@
         "type": "Interface InputOtpInputProps",
         "resolvedType": null,
         "description": "Properties for the InputOtpInput component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpinputprops.props",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpinputprops.props",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1398,8 +1398,8 @@
         "type": "Interface InputOtpPositionerProps",
         "resolvedType": null,
         "description": "Properties for the InputOtpPositioner component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotppositionerprops.props",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotppositionerprops.props",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1413,8 +1413,8 @@
         "type": "TypeAlias InputOtpRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; complete: [value: string]; input: [value: string]; change: [event: Event]; select: [event: Event]; focus: [event: FocusEvent]; blur: [event: FocusEvent]; mouseover: [event: MouseEvent]; mouseleave: [event: MouseEvent]; paste: [event: ClipboardEvent] }",
         "description": "Events for the InputOtpRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.emits",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.emits",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1424,8 +1424,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1434,8 +1434,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when complete occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.complete",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.complete",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1444,8 +1444,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when input occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.input",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.input",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1454,8 +1454,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Emitted when change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.change",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.change",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -1478,8 +1478,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Emitted when select occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.select",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.select",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -1502,8 +1502,8 @@
             "parameters": "event: FocusEvent",
             "required": true,
             "description": "Emitted when focus occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.focus",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.focus",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "FocusEvent",
@@ -1526,8 +1526,8 @@
             "parameters": "event: FocusEvent",
             "required": true,
             "description": "Emitted when blur occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.blur",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.blur",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "FocusEvent",
@@ -1550,8 +1550,8 @@
             "parameters": "event: MouseEvent",
             "required": true,
             "description": "Emitted when mouseover occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.mouseover",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.mouseover",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "MouseEvent",
@@ -1574,8 +1574,8 @@
             "parameters": "event: MouseEvent",
             "required": true,
             "description": "Emitted when mouseleave occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.mouseleave",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.mouseleave",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "MouseEvent",
@@ -1598,8 +1598,8 @@
             "parameters": "event: ClipboardEvent",
             "required": true,
             "description": "Emitted when paste occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootemits.callables.paste",
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootemits.callables.paste",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "ClipboardEvent",
@@ -1625,8 +1625,8 @@
         "type": "Interface InputOtpRootProps",
         "resolvedType": "{ id?: string; autocomplete?: string; autofocus?: boolean; disabled?: boolean; minlength?: number; placeholder?: string; readonly?: boolean; ariaLabel?: string; modelValue?: string; defaultValue?: string; maxlength: number; inputmode?: InputOtpInputMode; pattern?: string | RegExp; pushPasswordManagerStrategy?: InputOtpPushPasswordManagerStrategy; pasteTransformer?: ((pasted: string) => string); name?: string; required?: boolean }",
         "description": "Properties for the InputOtpRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.props",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.props",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1634,10 +1634,10 @@
             "type": "string",
             "required": false,
             "description": "The id of the native input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.id",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1645,10 +1645,10 @@
             "type": "string",
             "required": false,
             "description": "Autocomplete hint passed to the native input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.autocomplete",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.autocomplete",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1656,10 +1656,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the input should be focused on mount.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.autofocus",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1667,10 +1667,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the input is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1678,10 +1678,10 @@
             "type": "number",
             "required": false,
             "description": "Minimum length forwarded to the native input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.minlength",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1689,10 +1689,10 @@
             "type": "string",
             "required": false,
             "description": "Placeholder characters used by the visual slots.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.placeholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1700,10 +1700,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the input is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.readonly",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1711,10 +1711,10 @@
             "type": "string",
             "required": false,
             "description": "Accessible label forwarded to the native input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.arialabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.arialabel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1722,10 +1722,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the OTP input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1733,10 +1733,10 @@
             "type": "string",
             "required": false,
             "description": "The uncontrolled default value of the OTP input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1744,10 +1744,10 @@
             "type": "number",
             "required": true,
             "description": "The number of OTP slots.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.maxlength",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1755,10 +1755,10 @@
             "type": "InputOtpInputMode",
             "required": false,
             "description": "Virtual keyboard mode for mobile devices.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.inputmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.inputmode",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpInputMode",
@@ -1766,8 +1766,8 @@
                 "type": "'text' | 'numeric'",
                 "resolvedType": "'text' | 'numeric'",
                 "description": "Type information for InputOtpInputMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotpinputmode",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotpinputmode",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1780,10 +1780,10 @@
             "type": "string | RegExp",
             "required": false,
             "description": "Pattern used to validate the whole OTP value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.pattern",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.pattern",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1791,10 +1791,10 @@
             "type": "InputOtpPushPasswordManagerStrategy",
             "required": false,
             "description": "Strategy used to avoid overlapping password manager badges.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.pushpasswordmanagerstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.pushpasswordmanagerstrategy",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": [
               {
                 "name": "InputOtpPushPasswordManagerStrategy",
@@ -1802,8 +1802,8 @@
                 "type": "'none' | 'increase-width'",
                 "resolvedType": "'none' | 'increase-width'",
                 "description": "Type information for InputOtpPushPasswordManagerStrategy.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotppushpasswordmanagerstrategy",
-                "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotppushpasswordmanagerstrategy",
+                "sourcePath": "packages/aria/src/components/input-otp/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1816,10 +1816,10 @@
             "type": "((pasted: string) => string)",
             "required": false,
             "description": "Transform pasted content before it is inserted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.pastetransformer",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.pastetransformer",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1827,10 +1827,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1838,10 +1838,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1854,8 +1854,8 @@
         "type": "Interface InputOtpRootSlotProps",
         "resolvedType": "{ slots: InputOtpSlotProps[]; isFocused: boolean; isHovering: boolean }",
         "description": "Slot properties for the InputOtpRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/input-otp/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1863,10 +1863,10 @@
             "type": "InputOtpSlotProps[]",
             "required": true,
             "description": "Slots exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootslotprops.members.slots",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootslotprops.members.slots",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1874,10 +1874,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the item is focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootslotprops.members.isfocused",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootslotprops.members.isfocused",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           },
           {
@@ -1885,10 +1885,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the item is hovered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_otp_types.inputotprootslotprops.members.ishovering",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_otp_types.inputotprootslotprops.members.ishovering",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input-otp/types.ts",
+            "sourcePath": "packages/aria/src/components/input-otp/types.ts",
             "referencedTypes": []
           }
         ],

@@ -44,18 +44,18 @@ A control that lets the user select or clear an option, with an indeterminate ha
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds checkbox with a single-source tri-state state machine: `CheckboxRoot` (`useControllableState` + `CheckedState`) derives `ariaChecked` (`indeterminate` → `mixed`) and `dataState` (checked / indeterminate / unchecked), which `CheckboxControl` reflects on `role="checkbox"` while `CheckboxIndicator` mounts conditionally via `usePresence`. Group value changes are emitted by `CheckboxGroupRoot`, which wraps `useRovingFocusGroup` for arrow-key navigation and renders a `VisuallyHiddenInput` form proxy. The `scv()` recipes `checkboxVariants` / `checkboxCardVariants` declare 6 sizes, 8 colors, and 2 shapes; all four Compact layers own iteration and default composition while the UI wrappers only inject variant classes.
+VeanUI builds checkbox with a single-source tri-state state machine: `CheckboxRoot` (`useControllableState` + `CheckedState`) derives `ariaChecked` (`indeterminate` → `mixed`) and `dataState` (checked / indeterminate / unchecked), which `CheckboxControl` reflects on `role="checkbox"` while `CheckboxIndicator` mounts conditionally via `usePresence`. Group value changes are emitted by `CheckboxGroupRoot`, which wraps `useRovingFocusGroup` for arrow-key navigation and renders a `VisuallyHiddenInput` form proxy. The `scv()` recipes `checkboxVariants` / `checkboxCardVariants` declare 6 sizes, 8 colors, and 2 shapes; all four Compact layers own iteration and default composition while the UI wrappers only inject variant classes.
 
-| Capability                       | SoybeanUI | Ant Design `Checkbox` | Element Plus `Checkbox` | Mantine `Checkbox` | shadcn/ui `Checkbox` |
-| :------------------------------- | :-------: | :-------------------: | :---------------------: | :----------------: | :------------------: |
-| headless/styled split            |    ✅     |           —           |            —            |         —          |          ✅          |
-| Tri-state (indeterminate)        |    ✅     |          ✅           |           ✅            |         ✅         |          ✅          |
-| Independent `indeterminate` prop |    ➕     |          ✅           |           ✅            |         ✅         |          —           |
-| Form value mapping               |    ✅     |          ✅           |           ✅            |         ✅         |          ✅          |
-| Card variant (icon/description)  |    ✅     |           —           |            —            |         —          |          —           |
-| Group roving-focus keyboard nav  |    ✅     |          ✅           |           ✅            |         ✅         |          —           |
-| `button` variant                 |    ➕     |          ✅           |           ✅            |         —          |          —           |
-| Select-all / half-check helper   |    ➕     |          ✅           |            —            |         —          |          —           |
+| Capability                       | VeanUI | Ant Design `Checkbox` | Element Plus `Checkbox` | Mantine `Checkbox` | shadcn/ui `Checkbox` |
+| :------------------------------- | :----: | :-------------------: | :---------------------: | :----------------: | :------------------: |
+| Aria/styled split                |   ✅   |           —           |            —            |         —          |          ✅          |
+| Tri-state (indeterminate)        |   ✅   |          ✅           |           ✅            |         ✅         |          ✅          |
+| Independent `indeterminate` prop |   ➕   |          ✅           |           ✅            |         ✅         |          —           |
+| Form value mapping               |   ✅   |          ✅           |           ✅            |         ✅         |          ✅          |
+| Card variant (icon/description)  |   ✅   |           —           |            —            |         —          |          —           |
+| Group roving-focus keyboard nav  |   ✅   |          ✅           |           ✅            |         ✅         |          —           |
+| `button` variant                 |   ➕   |          ✅           |           ✅            |         —          |          —           |
+| Select-all / half-check helper   |   ➕   |          ✅           |            —            |         —          |          —           |
 
 ### Cautions
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { pascalCase } from '@soybeanjs/headless/shared';
+import { pascalCase } from '@vean/aria/shared';
 import { chartMenuData } from '~/constants/menus';
 
 definePage({ layout: 'default' });

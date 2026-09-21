@@ -1,5 +1,5 @@
-import type { LinkProps as _LinkProps } from '@soybeanjs/headless/link';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { LinkProps as _LinkProps } from '@vean/aria/link';
+import type { ClassValue } from '@vean/aria/types';
 
 /**
  * Properties for the Link component.

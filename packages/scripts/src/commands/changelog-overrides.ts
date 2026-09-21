@@ -8,7 +8,7 @@ export const componentChangelogOverrides: Record<string, ComponentChangelogOverr
     components: ['drawer']
   },
   'v0.16.0:6cbdc': {
-    // `navigation-menu` was dropped here: the family was removed in v0.50.0.
+    // `navigation-menu` was dropped here: the family was removed in v0.50.0 (superseded by `nav-menu`).
     components: ['card', 'editable', 'hover-card', 'pagination', 'popover', 'stepper']
   }
 };

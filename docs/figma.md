@@ -1,6 +1,6 @@
 # Figma 设计资源：`sui gen figma`
 
-> 定位：把 `@soybeanjs/theme` 的 **token** 与 `@soybeanjs/ui` 的**组件取值词汇**导出成 Figma 可直接导入的产物（`apps/docs/public/figma/`），回答"组件库怎么变出对应的设计资源"。读者：设计维护者、前端维护者、**AI Agent**。
+> 定位：把 `@vean/theme` 的 **token** 与 `@vean/ui` 的**组件取值词汇**导出成 Figma 可直接导入的产物（`apps/docs/public/figma/`），回答"组件库怎么变出对应的设计资源"。读者：设计维护者、前端维护者、**AI Agent**。
 > 状态：✅ 已实施。生成物随 `pnpm sui gen figma` 提交，受 `pnpm check:generated` 漂移闸门约束。真相源是 [`packages/scripts/src/commands/figma-tokens.ts`](../packages/scripts/src/commands/figma-tokens.ts)（token 投影）、[`figma-components.ts`](../packages/scripts/src/commands/figma-components.ts)（prop 词汇表）、[`figma.ts`](../packages/scripts/src/commands/figma.ts)（写入编排）。
 > 基线：2026-10-03 · 分支 `main` · 版本 `0.50.0-beta.3`
 > 相关：[theme.md](./theme.md)（三层 token 契约与引擎 API）· [space-control-scale.md](./space-control-scale.md)（spacing / radius 两族刻度）· [ecosystem/commercialization.md](./ecosystem/commercialization.md)（完整 kit 的商业化位）
@@ -141,7 +141,7 @@ DTCG 嵌套分组用 `/` 连接（`color.accent.light` → `color/accent/light`�
 
 ```bash
 pnpm sui gen figma                              # 第二次执行必须是 no-op（不打印 generated）
-pnpm --filter @soybeanjs/scripts test figma      # token 投影 + 组件词汇表的 9 个用例
+pnpm --filter @vean/scripts test figma      # token 投影 + 组件词汇表的 9 个用例
 pnpm sui check generated                         # 覆盖 apps/docs/public/figma（已登记进 generatedDataPaths）
 ```
 

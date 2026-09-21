@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -103,8 +103,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; trigger: ClassValue; description: ClassValue; title: ClassValue; indicator: ClassValue; separator: ClassValue; itemContent: ClassValue; indicatorIcon: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Stepper component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperui",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperui",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperItemProps",
@@ -139,8 +139,8 @@
                 "type": "StepperItemProps",
                 "resolvedType": null,
                 "description": "Properties for the StepperItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperTriggerProps",
@@ -164,8 +164,8 @@
                 "type": "StepperTriggerProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -174,10 +174,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -185,10 +185,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -204,7 +204,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperIndicatorProps",
@@ -212,8 +212,8 @@
                 "type": "StepperIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -222,10 +222,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -233,10 +233,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -252,7 +252,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.separatorprops",
             "default": null,
             "inheritedFrom": "separatorProps",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "SeparatorRootProps",
@@ -260,8 +260,8 @@
                 "type": "SeparatorRootProps",
                 "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
                 "description": "Properties for the SeparatorRoot component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops",
-                "sourcePath": "packages/headless/src/components/separator/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops",
+                "sourcePath": "packages/aria/src/components/separator/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -270,10 +270,10 @@
                     "type": "DataOrientation",
                     "required": false,
                     "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops.members.orientation",
+                    "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops.members.orientation",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -281,10 +281,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops.members.decorative",
+                    "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops.members.decorative",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -300,7 +300,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.titleprops",
             "default": null,
             "inheritedFrom": "titleProps",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperTitleProps",
@@ -308,8 +308,8 @@
                 "type": "StepperTitleProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperTitle component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -318,10 +318,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -329,10 +329,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -348,7 +348,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": "descriptionProps",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperDescriptionProps",
@@ -356,8 +356,8 @@
                 "type": "StepperDescriptionProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -366,10 +366,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -377,10 +377,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -396,7 +396,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.defaultvalue",
             "default": "1",
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -407,7 +407,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -418,7 +418,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.orientation",
             "default": "'horizontal'",
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -426,8 +426,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -443,7 +443,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -451,8 +451,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -468,7 +468,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.linear",
             "default": "true",
             "inheritedFrom": "linear",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -479,7 +479,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -490,7 +490,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -537,7 +537,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -548,8 +548,8 @@
             "type": "{ 'update:modelValue': [payload: number]; }",
             "resolvedType": "{ \"update:modelValue\": [payload: number] }",
             "description": "Events for the StepperRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootemits",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootemits",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -560,8 +560,8 @@
                 "parameters": "payload: number",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -586,7 +586,7 @@
             "required": false,
             "description": "Custom content for the item slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperslots.callables.item",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -594,8 +594,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -607,8 +607,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -623,7 +623,7 @@
             "required": false,
             "description": "Custom content for the indicator slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperslots.callables.indicator",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -631,8 +631,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -644,8 +644,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -660,7 +660,7 @@
             "required": false,
             "description": "Custom content for the title slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperslots.callables.title",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -668,8 +668,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -681,8 +681,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -697,7 +697,7 @@
             "required": false,
             "description": "Custom content for the description slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperslots.callables.description",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -705,8 +705,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -718,8 +718,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -734,7 +734,7 @@
             "required": false,
             "description": "Custom content for the separator slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_stepper_types.stepperslots.callables.separator",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -742,8 +742,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -755,8 +755,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -769,11 +769,11 @@
           {
             "name": "StepperCompactSlots",
             "kind": "typeAlias",
-            "type": "{ item?: (props: import(\"@soybeanjs/headless\").StepperItemData & { step: number; state: import(\"@soybeanjs/headless\").StepperState; }) => any; indicator?: (props: import(\"@soybeanjs/headless\").StepperItemData & { step: number; state: import(\"@soybeanjs/headless\").StepperState; }) => any; title?: (props: import(\"@soybeanjs/headless\").StepperItemData & { step: number; state: import(\"@soybeanjs/headless\").StepperState; }) => any; description?: (props: import(\"@soybeanjs/headless\").StepperItemData & { step: number; state: import(\"@soybeanjs/headless\").StepperState; }) => any; separator?: (props: import(\"@soybeanjs/headless\").StepperItemData & { step: number; state: import(\"@soybeanjs/headless\").StepperState; }) => any; }",
+            "type": "{ item?: (props: import(\"@vean/aria\").StepperItemData & { step: number; state: import(\"@vean/aria\").StepperState; }) => any; indicator?: (props: import(\"@vean/aria\").StepperItemData & { step: number; state: import(\"@vean/aria\").StepperState; }) => any; title?: (props: import(\"@vean/aria\").StepperItemData & { step: number; state: import(\"@vean/aria\").StepperState; }) => any; description?: (props: import(\"@vean/aria\").StepperItemData & { step: number; state: import(\"@vean/aria\").StepperState; }) => any; separator?: (props: import(\"@vean/aria\").StepperItemData & { step: number; state: import(\"@vean/aria\").StepperState; }) => any; }",
             "resolvedType": "{ item?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); indicator?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); title?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); description?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); separator?: ((props: StepperItemData & { step: number; state: StepperState; }) => any) }",
             "description": "Slots for the StepperCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -784,8 +784,8 @@
                 "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the item slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.item",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.item",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               },
               {
@@ -794,8 +794,8 @@
                 "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the indicator slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.indicator",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.indicator",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               },
               {
@@ -804,8 +804,8 @@
                 "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the title slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.title",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.title",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               },
               {
@@ -814,8 +814,8 @@
                 "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the description slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.description",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.description",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               },
               {
@@ -824,8 +824,8 @@
                 "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the separator slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.separator",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.separator",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -840,8 +840,8 @@
         "type": "Interface StepperCompactProps",
         "resolvedType": "{ items: StepperItemData[]; itemProps?: Omit<StepperItemProps, 'step'>; triggerProps?: StepperTriggerProps; indicatorProps?: StepperIndicatorProps; separatorProps?: SeparatorRootProps; titleProps?: StepperTitleProps; descriptionProps?: StepperDescriptionProps; defaultValue?: number; modelValue?: number; orientation?: DataOrientation; dir?: Direction; linear?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -849,10 +849,10 @@
             "type": "StepperItemData[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -860,10 +860,10 @@
             "type": "Omit<StepperItemProps, 'step'>",
             "required": false,
             "description": "Properties forwarded to the item element. The `step` is derived from the item order and cannot be overridden.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperItemProps",
@@ -871,8 +871,8 @@
                 "type": "StepperItemProps",
                 "resolvedType": null,
                 "description": "Properties for the StepperItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -885,10 +885,10 @@
             "type": "StepperTriggerProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperTriggerProps",
@@ -896,8 +896,8 @@
                 "type": "StepperTriggerProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -906,10 +906,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -917,10 +917,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -933,10 +933,10 @@
             "type": "StepperIndicatorProps",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperIndicatorProps",
@@ -944,8 +944,8 @@
                 "type": "StepperIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -954,10 +954,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -965,10 +965,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -981,10 +981,10 @@
             "type": "SeparatorRootProps",
             "required": false,
             "description": "Properties forwarded to the separator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.separatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.separatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "SeparatorRootProps",
@@ -992,8 +992,8 @@
                 "type": "SeparatorRootProps",
                 "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
                 "description": "Properties for the SeparatorRoot component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops",
-                "sourcePath": "packages/headless/src/components/separator/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops",
+                "sourcePath": "packages/aria/src/components/separator/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1002,10 +1002,10 @@
                     "type": "DataOrientation",
                     "required": false,
                     "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops.members.orientation",
+                    "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops.members.orientation",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1013,10 +1013,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops.members.decorative",
+                    "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops.members.decorative",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1029,10 +1029,10 @@
             "type": "StepperTitleProps",
             "required": false,
             "description": "Properties forwarded to the title element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.titleprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.titleprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperTitleProps",
@@ -1040,8 +1040,8 @@
                 "type": "StepperTitleProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperTitle component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1050,10 +1050,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1061,10 +1061,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1077,10 +1077,10 @@
             "type": "StepperDescriptionProps",
             "required": false,
             "description": "Properties forwarded to the description element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.descriptionprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "StepperDescriptionProps",
@@ -1088,8 +1088,8 @@
                 "type": "StepperDescriptionProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the StepperDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1098,10 +1098,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1109,10 +1109,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1125,10 +1125,10 @@
             "type": "number",
             "required": false,
             "description": "The value of the step that should be active when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.defaultvalue",
             "default": "1",
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1136,10 +1136,10 @@
             "type": "number",
             "required": false,
             "description": "The controlled value of the step to activate. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1147,10 +1147,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the stepper.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.orientation",
             "default": "'horizontal'",
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1158,8 +1158,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1172,10 +1172,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the stepper.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1183,8 +1183,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1197,10 +1197,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the steps must be completed in order.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.linear",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.linear",
             "default": "true",
             "inheritedFrom": "linear",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1208,10 +1208,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1219,10 +1219,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1257,8 +1257,8 @@
         "type": "TypeAlias StepperCompactEmits: StepperRootEmits",
         "resolvedType": "{ \"update:modelValue\": [payload: number] }",
         "description": "Events for the StepperCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactemits.emits",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactemits.emits",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1268,8 +1268,8 @@
             "parameters": "payload: number",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1280,8 +1280,8 @@
             "type": "{ 'update:modelValue': [payload: number]; }",
             "resolvedType": "{ \"update:modelValue\": [payload: number] }",
             "description": "Events for the StepperRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootemits",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootemits",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1292,8 +1292,8 @@
                 "parameters": "payload: number",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1306,8 +1306,8 @@
         "type": "TypeAlias StepperCompactSlots",
         "resolvedType": "{ item?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); indicator?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); title?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); description?: ((props: StepperItemData & { step: number; state: StepperState; }) => any); separator?: ((props: StepperItemData & { step: number; state: StepperState; }) => any) }",
         "description": "Slots for the StepperCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.slots",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.slots",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1317,8 +1317,8 @@
             "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the item slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.item",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.item",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1326,8 +1326,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1339,8 +1339,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1354,8 +1354,8 @@
             "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the indicator slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.indicator",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.indicator",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1363,8 +1363,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1376,8 +1376,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1391,8 +1391,8 @@
             "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the title slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.title",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.title",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1400,8 +1400,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1413,8 +1413,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1428,8 +1428,8 @@
             "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the description slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.description",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.description",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1437,8 +1437,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1450,8 +1450,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1465,8 +1465,8 @@
             "parameters": "((props: StepperItemData & { step: number; state: StepperState; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the separator slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppercompactslots.callables.separator",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppercompactslots.callables.separator",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1474,8 +1474,8 @@
                 "type": "{ step: number; state: StepperState; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.type",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.type",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1487,8 +1487,8 @@
                 "type": "StepperItemData",
                 "resolvedType": null,
                 "description": "Type information for StepperItemData.",
-                "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemdata",
-                "sourcePath": "packages/headless/src/components/stepper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemdata",
+                "sourcePath": "packages/aria/src/components/stepper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1507,8 +1507,8 @@
         "type": "Interface StepperDescriptionProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperDescription component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1516,10 +1516,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1527,10 +1527,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperdescriptionprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperdescriptionprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1567,8 +1567,8 @@
         "type": "Interface StepperIndicatorProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperIndicator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1576,10 +1576,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1587,10 +1587,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperindicatorprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperindicatorprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1627,8 +1627,8 @@
         "type": "Interface StepperItemProps",
         "resolvedType": "{ step: number; disabled?: boolean; completed?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1636,10 +1636,10 @@
             "type": "number",
             "required": true,
             "description": "The step index, starting from `1`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops.members.step",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1647,10 +1647,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1658,10 +1658,10 @@
             "type": "boolean",
             "required": false,
             "description": "Shows whether the step is completed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops.members.completed",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops.members.completed",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1669,10 +1669,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1680,10 +1680,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperitemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperitemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1720,8 +1720,8 @@
         "type": "Interface StepperRootProps",
         "resolvedType": "{ defaultValue?: number; modelValue?: number; orientation?: DataOrientation; dir?: Direction; linear?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1729,10 +1729,10 @@
             "type": "number",
             "required": false,
             "description": "The value of the step that should be active when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.defaultvalue",
             "default": "1",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1740,10 +1740,10 @@
             "type": "number",
             "required": false,
             "description": "The controlled value of the step to activate. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1751,10 +1751,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the stepper.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.orientation",
             "default": "'horizontal'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1762,8 +1762,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1776,10 +1776,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the stepper.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1787,8 +1787,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1801,10 +1801,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the steps must be completed in order.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.linear",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.linear",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1812,10 +1812,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1823,10 +1823,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1861,8 +1861,8 @@
         "type": "TypeAlias StepperRootEmits",
         "resolvedType": "{ \"update:modelValue\": [payload: number] }",
         "description": "Events for the StepperRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootemits.emits",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootemits.emits",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1872,8 +1872,8 @@
             "parameters": "payload: number",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/stepper/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/stepper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1887,8 +1887,8 @@
         "type": "TypeAlias StepperSeparatorProps: ContextMenuSeparatorProps",
         "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
         "description": "Properties for the StepperSeparator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperseparatorprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperseparatorprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1896,10 +1896,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperseparatorprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperseparatorprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/separator/types.ts",
+            "sourcePath": "packages/aria/src/components/separator/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1907,8 +1907,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1921,10 +1921,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.stepperseparatorprops.members.decorative",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.stepperseparatorprops.members.decorative",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/separator/types.ts",
+            "sourcePath": "packages/aria/src/components/separator/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1936,8 +1936,8 @@
             "type": "SeparatorRootProps",
             "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
             "description": "Properties for the SeparatorRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops",
-            "sourcePath": "packages/headless/src/components/separator/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops",
+            "sourcePath": "packages/aria/src/components/separator/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [
@@ -1946,10 +1946,10 @@
                 "type": "DataOrientation",
                 "required": false,
                 "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-                "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops.members.orientation",
+                "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops.members.orientation",
                 "default": null,
                 "inheritedFrom": null,
-                "sourcePath": "packages/headless/src/components/separator/types.ts",
+                "sourcePath": "packages/aria/src/components/separator/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1957,10 +1957,10 @@
                 "type": "boolean",
                 "required": false,
                 "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-                "descriptionKey": "api.generated.packages_headless_src_components_separator_types.separatorrootprops.members.decorative",
+                "descriptionKey": "api.generated.packages_aria_src_components_separator_types.separatorrootprops.members.decorative",
                 "default": null,
                 "inheritedFrom": null,
-                "sourcePath": "packages/headless/src/components/separator/types.ts",
+                "sourcePath": "packages/aria/src/components/separator/types.ts",
                 "referencedTypes": []
               }
             ],
@@ -1976,8 +1976,8 @@
         "type": "Interface StepperTitleProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperTitle component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1985,10 +1985,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1996,10 +1996,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertitleprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertitleprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2036,8 +2036,8 @@
         "type": "Interface StepperTriggerProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the StepperTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.props",
-        "sourcePath": "packages/headless/src/components/stepper/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.props",
+        "sourcePath": "packages/aria/src/components/stepper/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2045,10 +2045,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2056,10 +2056,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_stepper_types.steppertriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_stepper_types.steppertriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

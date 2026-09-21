@@ -9,7 +9,7 @@ import {
   PALETTE_LEVELS,
   ROLE_RAMP_ROLES,
   SEMANTIC_TOKENS
-} from '@soybeanjs/theme';
+} from '@vean/theme';
 import { presetUi } from '../src/preset';
 
 /**
@@ -22,7 +22,7 @@ import { presetUi } from '../src/preset';
  * unstyled. This scan collects every utility in the library and the docs app
  * whose value is a real token name and asserts the adapter resolves each one.
  *
- * Not a duplicate of `@soybeanjs/theme`'s naming scan: that one proves the *names*
+ * Not a duplicate of `@vean/theme`'s naming scan: that one proves the *names*
  * in the source are the current vocabulary; this one proves the *adapter* can
  * turn them into CSS (a name can be current and still unmapped — e.g. a token
  * added to `semantic.ts` but missing from a `theme.colors` family).

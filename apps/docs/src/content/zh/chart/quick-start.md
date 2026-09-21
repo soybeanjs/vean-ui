@@ -1,7 +1,7 @@
 ---
 head:
   title: 快速开始
-  description: 用 defineChart 描述图表，再用 Vue 的 Chart 组件渲染，并接入 SoybeanUI 主题色。
+  description: 用 defineChart 描述图表，再用 Vue 的 Chart 组件渲染，并接入 VeanUI 主题色。
 ---
 
 # 快速开始

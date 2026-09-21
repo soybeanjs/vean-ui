@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends DefinedValue, M extends boolean = false, P extends boolean = false">
 import { computed } from 'vue';
-import { CascaderCompact, provideCascaderUi } from '@soybeanjs/headless/cascader';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import type { DefinedValue } from '@soybeanjs/headless/types';
+import { CascaderCompact, provideCascaderUi } from '@vean/aria/cascader';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import type { DefinedValue } from '@vean/aria/types';
 import { cascaderVariants } from '@/styles/cascader';
 import type { CascaderProps, CascaderEmits, CascaderSlots } from './types';
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SColorPicker } from '@soybeanjs/ui';
+import { SColorPicker } from '@vean/ui';
 
 const color = ref('oklch(62% 0.22 312)');
 </script>

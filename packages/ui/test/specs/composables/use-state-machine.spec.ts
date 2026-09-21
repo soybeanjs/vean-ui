@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { useStateMachine } from '../../../../headless/src/composables/use-state-machine';
+import { useStateMachine } from '../../../../aria/src/composables/use-state-machine';
 
 describe('useStateMachine', () => {
   it('should initialize with the initial state', () => {

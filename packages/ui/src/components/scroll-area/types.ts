@@ -1,5 +1,5 @@
-import type { ScrollAreaCompactEmits, ScrollAreaCompactProps, ScrollAreaUi } from '@soybeanjs/headless/scroll-area';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ScrollAreaCompactEmits, ScrollAreaCompactProps, ScrollAreaUi } from '@vean/aria/scroll-area';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

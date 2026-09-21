@@ -92,7 +92,7 @@ export async function runInit(opts: InitActionOptions) {
   // Check existing config
   const existingConfig = await getConfig(cwd);
   if (existingConfig && !opts.force) {
-    console.log('⚠ sbean.json already exists. Use --force to overwrite.');
+    console.log('⚠ vean.json already exists. Use --force to overwrite.');
     return;
   }
 
@@ -107,7 +107,7 @@ export async function runInit(opts: InitActionOptions) {
   if (opts.preset) {
     if (!isPresetCode(opts.preset)) {
       console.error(`Invalid preset code: ${opts.preset}`);
-      console.log('Generate one at https://ui.soybeanjs.cn/create (coming soon)');
+      console.log('Generate one at https://veanui.com/create (coming soon)');
       process.exit(1);
     }
     const preset = decodePreset(opts.preset);
@@ -142,7 +142,7 @@ export async function runInit(opts: InitActionOptions) {
     });
   }
 
-  // Write sbean.json with all config values
+  // Write vean.json with all config values
   const config = await createDefaultConfig(cwd, {
     iconLibrary: (opts.iconLibrary as (typeof PRESET_ICON_LIBRARIES)[number]) || 'lucide',
     uno: {
@@ -156,7 +156,7 @@ export async function runInit(opts: InitActionOptions) {
   await writeConfig(cwd, config);
 
   if (!opts.silent) {
-    console.log('✔ Created sbean.json');
+    console.log('✔ Created vean.json');
   }
 
   // For existing projects (no scaffolding), still ensure infra files exist
@@ -166,7 +166,7 @@ export async function runInit(opts: InitActionOptions) {
     await generatePackModules(cwd, opts.uiDir, isNuxt);
   }
 
-  console.log('\nDone! Run "sbean add <component>" to add components.');
+  console.log('\nDone! Run "vean add <component>" to add components.');
 }
 
 // ---------------------------------------------------------------------------

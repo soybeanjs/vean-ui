@@ -11,7 +11,7 @@ import { collectDocsRoutes } from './docs-routes';
  *
  * Hostname comes from `DOCS_SITE_URL` (default: production origin).
  */
-const SITE_URL = (process.env.DOCS_SITE_URL || 'https://ui.soybeanjs.cn').replace(/\/+$/u, '');
+const SITE_URL = (process.env.DOCS_SITE_URL || 'https://veanui.com').replace(/\/+$/u, '');
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(appRoot, 'dist/public');
 

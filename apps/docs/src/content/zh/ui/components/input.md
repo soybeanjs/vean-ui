@@ -41,19 +41,19 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将输入框拆分为负责状态、表单代理与清除按钮语义的 headless 层（`@soybeanjs/headless/input`），以及负责变体与 UnoCSS 样式的 styled 层（`@soybeanjs/ui`）。headless `InputCompact` 组合 `InputRoot` / `InputControl` / `InputClear` 并暴露 `leading` / `clear` / `trailing` 插槽，与 Radix 的 headless/styled 分离一致，区别于 Ant Design、Element Plus 等单包方案。
+VeanUI 将输入框拆分为负责状态、表单代理与清除按钮语义的 Aria 层（`@vean/aria/input`），以及负责变体与 UnoCSS 样式的 styled 层（`@vean/ui`）。Aria `InputCompact` 组合 `InputRoot` / `InputControl` / `InputClear` 并暴露 `leading` / `clear` / `trailing` 插槽，与 Radix 的 headless/styled 分离一致，区别于 Ant Design、Element Plus 等单包方案。
 
-| 能力                 | SoybeanUI | Ant Design `Input` | Element Plus `Input` | Radix `TextField` |
-| :------------------- | :-------: | :----------------: | :------------------: | :---------------: |
-| headless/styled 分离 |    ✅     |         —          |          —           |        ✅         |
-| 受控/非受控          |    ✅     |         ✅         |          ✅          |        ✅         |
-| 清除按钮（悬停显示） |    ✅     |         ✅         |          ✅          |         —         |
-| 清除按钮 i18n 标签   |    ✅     |         ✅         |          —           |         —         |
-| 前缀/后缀插槽        |    ✅     |         ✅         |          ✅          |        ✅         |
-| 原生表单代理         |    ✅     |         —          |          —           |         —         |
-| 尺寸变体             |    ✅     |         ✅         |          ✅          |         —         |
-| `showCount` 计数器   |     —     |         ✅         |          ✅          |         —         |
-| `error` / `loading`  |     —     |         ✅         |          ✅          |         —         |
+| 能力                 | VeanUI | Ant Design `Input` | Element Plus `Input` | Radix `TextField` |
+| :------------------- | :----: | :----------------: | :------------------: | :---------------: |
+| Aria/styled 分离     |   ✅   |         —          |          —           |        ✅         |
+| 受控/非受控          |   ✅   |         ✅         |          ✅          |        ✅         |
+| 清除按钮（悬停显示） |   ✅   |         ✅         |          ✅          |         —         |
+| 清除按钮 i18n 标签   |   ✅   |         ✅         |          —           |         —         |
+| 前缀/后缀插槽        |   ✅   |         ✅         |          ✅          |        ✅         |
+| 原生表单代理         |   ✅   |         —          |          —           |         —         |
+| 尺寸变体             |   ✅   |         ✅         |          ✅          |         —         |
+| `showCount` 计数器   |   —    |         ✅         |          ✅          |         —         |
+| `error` / `loading`  |   —    |         ✅         |          ✅          |         —         |
 
 ### 注意事项
 

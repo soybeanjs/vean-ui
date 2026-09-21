@@ -1,14 +1,14 @@
 ---
 head:
   title: Theming
-  description: 'SoybeanUI ships a three-layer theme engine: a static palette layer, a semantic token layer and a literal layer. Configure it through SConfigProvider, or drive the engine directly when you need the CSS yourself.'
+  description: 'VeanUI ships a three-layer theme engine: a static palette layer, a semantic token layer and a literal layer. Configure it through SConfigProvider, or drive the engine directly when you need the CSS yourself.'
 ---
 
 # Theming
 
 ## Overview
 
-Soybean UI provides a flexible theming system that allows you to customize the appearance of components to match your application's design requirements. You can easily adjust colors, radius and global size settings.
+VeanUI provides a flexible theming system that allows you to customize the appearance of components to match your application's design requirements. You can easily adjust colors, radius and global size settings.
 
 Open the [theme editor](/theme-editor) to change every option against a live gallery of components — the panel there is the same `SThemeCustomizer` an application embeds for its users.
 
@@ -34,7 +34,7 @@ Pass a theme object to `SConfigProvider` at the root of your application:
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 </script>
 
 <template>
@@ -78,7 +78,7 @@ import { SConfigProvider } from '@soybeanjs/ui';
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 </script>
 
 <template>
@@ -118,14 +118,14 @@ import { SConfigProvider } from '@soybeanjs/ui';
 
 Keys are the **token names** (`background`, `card-foreground`, `sidebar-ring`, …) — the same names the utility classes use, in kebab case. An override value takes one of five forms (the `TokenOverride` type): a palette level reference (`stone.950`), a simple key (`white` / `black`), an `hsl(...)` / `oklch(...)` colour in CSS Color 4 syntax (with an optional `/ <alpha>`), or a **token reference** `token.${name}` (e.g. `ring: 'token.primary'` — the map copies the target token's value at resolve time; colour values land before references). Colour components always carry a `%` — `hsl(238.732 83.529% 66.667%)`, `oklch(60% 0.2 250)` — never the unitless spelling (it must stay the same shape as the palette layer's channels). Raw channel triples (`0 0% 100%`) and hex / `rgb()` are outside the type — the former are format-ambiguous, and for the latter convert first with `colord(...).toHslString()` / `toOklchString()`.
 
-**A complete colour is encoded into the theme format's channels** (a token is consumed as `hsl(var(--soybean-x) / <alpha>)`, so a complete colour would invalidate every declaration): `border: 'oklch(100% 0 0 / 0.1)'` puts the channels into `--border` and the `0.1` into `--border-alpha`. An alpha written into a token that has no companion variable is dropped (use the `/N` utility modifier for transparency). A value that is neither a valid reference nor parseable (`transparent` / `inherit` / an unknown palette / **a self-reference such as `primary: 'token.primary'`** / `token.ghost` / a cyclic `token.*` chain) is **ignored**, and the token keeps its nominal value; so is a key that is not a token — a stale or hand-written key can neither reach the stylesheet nor break it.
+**A complete colour is encoded into the theme format's channels** (a token is consumed as `hsl(var(--vean-x) / <alpha>)`, so a complete colour would invalidate every declaration): `border: 'oklch(100% 0 0 / 0.1)'` puts the channels into `--border` and the `0.1` into `--border-alpha`. An alpha written into a token that has no companion variable is dropped (use the `/N` utility modifier for transparency). A value that is neither a valid reference nor parseable (`transparent` / `inherit` / an unknown palette / **a self-reference such as `primary: 'token.primary'`** / `token.ghost` / a cyclic `token.*` chain) is **ignored**, and the token keeps its nominal value; so is a key that is not a token — a stale or hand-written key can neither reach the stylesheet nor break it.
 
 **Notes and caveats:**
 
 - **Light and dark are independent.** An override applies to the mode you put it in: `dark` keeps its own declared levels rather than being derived from `light`. Write both sides when you want both.
 - **An override is applied verbatim.** It is not measured, corrected or reported — the engine has no opinion about readability (nothing walks a level on your behalf since decision #26).
 - **Overrides are per token, not per role.** To recolour the whole brand, change `primary` (the palette) rather than every token that reads it.
-- **The engine is a pure function.** Nothing here touches the DOM: the provider resolves the map, emits the alias block and patches its own `<style id="soybean-theme">`.
+- **The engine is a pure function.** Nothing here touches the DOM: the provider resolves the map, emits the alias block and patches its own `<style id="vean-theme">`.
 
 ## Saved presets (`theme.preset`)
 
@@ -153,8 +153,8 @@ An inline preset is just an `overrides` object split by mode (`preset: { light: 
 The provider is the normal path — it owns the `<style>` element, the persisted envelope and the cross-tab sync. When you need the CSS yourself (an SSR pass, a static build, a screenshot service), the pipeline underneath is public:
 
 ```ts
-import { emitThemeCss, generatePaletteCss, resolveThemeMap, resolveTokenColor } from '@soybeanjs/theme';
-import { buildThemeCss } from '@soybeanjs/ui';
+import { emitThemeCss, generatePaletteCss, resolveThemeMap, resolveTokenColor } from '@vean/theme';
+import { buildThemeCss } from '@vean/ui';
 
 // resolve + emit in one call (what SConfigProvider inlines)
 const css = buildThemeCss({ base: 'gray', primary: 'violet' });
@@ -171,7 +171,7 @@ resolveThemeColors({}, 'light'); // every token of a mode
 
 `map` is the single intermediate representation: its `light` / `dark` maps hold one `palette.level` reference per token, and `Object.keys(map.light)` is the contract's token count.
 
-With **[UnoCSS](/overview/installation)**, `presetUi()` (or `presetSbean()` when the theme lives in `sbean.json`) ships the palette layer and the default alias block as its preflight, so the tokens resolve with no runtime JavaScript; `@soybeanjs/ui/styles.css` is the equivalent prebuilt stylesheet. The adapter maps every token to a utility (`bg-card`, `text-card-foreground`, `border-input`, `bg-chart-1`), the palettes to `bg-indigo-500`-style rungs, and the roles to `bg-primary-500` / `text-destructive-100` style ramps.
+With **[UnoCSS](/overview/installation)**, `presetUi()` (or `presetVean()` when the theme lives in `vean.json`) ships the palette layer and the default alias block as its preflight, so the tokens resolve with no runtime JavaScript; `@vean/ui/styles.css` is the equivalent prebuilt stylesheet. The adapter maps every token to a utility (`bg-card`, `text-card-foreground`, `border-input`, `bg-chart-1`), the palettes to `bg-indigo-500`-style rungs, and the roles to `bg-primary-500` / `text-destructive-100` style ramps.
 
 ### Colors
 
@@ -189,7 +189,7 @@ Multi-slot components support overriding each slot's style classes via the `ui` 
 
 ```vue
 <script setup lang="ts">
-import { SAccordion } from '@soybeanjs/ui';
+import { SAccordion } from '@vean/ui';
 
 const items = [
   { title: 'Title 1', value: 'item-1', description: 'Content 1' },

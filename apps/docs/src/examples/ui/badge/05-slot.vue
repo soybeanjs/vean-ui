@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SBadge, SButton } from '@soybeanjs/ui';
+import { SBadge, SButton } from '@vean/ui';
 </script>
 
 <template>

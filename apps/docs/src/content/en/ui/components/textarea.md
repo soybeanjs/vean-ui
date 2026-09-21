@@ -42,19 +42,19 @@ A multi-line text input for longer free-form content, supporting auto-resizing, 
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits the textarea into a headless layer (`@soybeanjs/headless/textarea`) that owns state, autosize measurement, and form proxying, and a styled layer (`@soybeanjs/ui`) that owns variants and UnoCSS classes. The headless `TextareaCompact` composes `TextareaRoot` / `TextareaControl` / `TextareaClear` / `TextareaCounter` and exposes `clear` / `counter` / `footer` slots. This mirrors the headless/styled split of Radix and differs from single-package libraries such as Ant Design, Element Plus, and Mantine.
+VeanUI splits the textarea into an Aria layer (`@vean/aria/textarea`) that owns state, autosize measurement, and form proxying, and a styled layer (`@vean/ui`) that owns variants and UnoCSS classes. The Aria `TextareaCompact` composes `TextareaRoot` / `TextareaControl` / `TextareaClear` / `TextareaCounter` and exposes `clear` / `counter` / `footer` slots. This mirrors the headless/styled split of Radix and differs from single-package libraries such as Ant Design, Element Plus, and Mantine.
 
-| Capability                    | SoybeanUI | Ant Design `Input.TextArea` | Element Plus `Input` | Mantine `Textarea` |
-| :---------------------------- | :-------: | :-------------------------: | :------------------: | :----------------: |
-| headless/styled split         |    ✅     |              —              |          —           |         —          |
-| Controlled / uncontrolled     |    ✅     |             ✅              |          ✅          |         ✅         |
-| Autosize (min/max rows)       |    ✅     |             ✅              |          ✅          |         ✅         |
-| Clear button (hover reveal)   |    ✅     |              —              |          ✅          |         —          |
-| Character counter `count/max` |    ✅     |             ✅              |          ✅          |         —          |
-| `resize` control              |    ✅     |              —              |          ✅          |         ✅         |
-| Native form proxying          |    ✅     |              —              |          —           |         —          |
-| `footer` slot                 |    ✅     |              —              |          —           |         —          |
-| `error` state                 |     —     |              —              |          ✅          |         ✅         |
+| Capability                    | VeanUI | Ant Design `Input.TextArea` | Element Plus `Input` | Mantine `Textarea` |
+| :---------------------------- | :----: | :-------------------------: | :------------------: | :----------------: |
+| Aria/styled split             |   ✅   |              —              |          —           |         —          |
+| Controlled / uncontrolled     |   ✅   |             ✅              |          ✅          |         ✅         |
+| Autosize (min/max rows)       |   ✅   |             ✅              |          ✅          |         ✅         |
+| Clear button (hover reveal)   |   ✅   |              —              |          ✅          |         —          |
+| Character counter `count/max` |   ✅   |             ✅              |          ✅          |         —          |
+| `resize` control              |   ✅   |              —              |          ✅          |         ✅         |
+| Native form proxying          |   ✅   |              —              |          —           |         —          |
+| `footer` slot                 |   ✅   |              —              |          —           |         —          |
+| `error` state                 |   —    |              —              |          ✅          |         ✅         |
 
 ### Cautions
 

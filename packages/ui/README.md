@@ -1,34 +1,34 @@
 <p align="center">
-  <a href="https://github.com/soybeanjs/soybean-ui">
-    <img src="https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144" alt="Logo" width="150" />
+  <a href="https://github.com/soybeanjs/vean-ui">
+    <img src="https://r2.veanui.com/imgs/logo-vean-ui.svg?v=202609141212" alt="Logo" width="150" />
   </a>
 </p>
 
-# @soybeanjs/ui
+# @vean/ui
 
 English | [中文](./README.zh-CN.md)
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](../../LICENSE)
-[![npm version](https://img.shields.io/npm/v/@soybeanjs/ui)](https://www.npmjs.com/package/@soybeanjs/ui)
-[![npm downloads](https://img.shields.io/npm/dt/@soybeanjs/ui)](https://www.npmjs.com/package/@soybeanjs/ui)
-[![github stars](https://img.shields.io/github/stars/soybeanjs/soybean-ui)](https://github.com/soybeanjs/soybean-ui)
+[![npm version](https://img.shields.io/npm/v/@vean/ui)](https://www.npmjs.com/package/@vean/ui)
+[![npm downloads](https://img.shields.io/npm/dt/@vean/ui)](https://www.npmjs.com/package/@vean/ui)
+[![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-An elegant, modern, accessible UI component library with shadcn-like design for Vue 3, built on top of `@soybeanjs/headless`.
+An elegant, modern, accessible UI component library with shadcn-like design for Vue 3, built on top of `@vean/aria`.
 
 ## 📖 Introduction
 
-`@soybeanjs/ui` provides ready-to-use styled components powered by UnoCSS and `@soybeanjs/cva` class-variance recipes. Each component is an `S`-prefixed wrapper around the corresponding `@soybeanjs/headless` primitive, following the **style injection** pattern: styled wrappers compute classes and inject them via `provide{Name}Ui`, which headless components read through `useUiContext()`.
+`@vean/ui` provides ready-to-use styled components powered by UnoCSS and `@soybeanjs/cva` class-variance recipes. Each component is an `S`-prefixed wrapper around the corresponding `@vean/aria` primitive, following the **style injection** pattern: styled wrappers compute classes and inject them via `provide{Name}Ui`, which aria components read through `useUiContext()`.
 
 ```ts
 // Style injection — one-way data flow
 const ui = computed(() => accordionVariants({ size: props.size }, props.ui, { root: props.class }));
-provideAccordionUi(ui); // headless reads this via useAccordionUi()
+provideAccordionUi(ui); // aria reads this via useAccordionUi()
 ```
 
 ## 📦 Installation
 
 ```bash
-pnpm add @soybeanjs/ui
+pnpm add @vean/ui
 ```
 
 ## 🚀 Usage
@@ -38,7 +38,7 @@ pnpm add @soybeanjs/ui
 Import the pre-built UnoCSS stylesheet in your main entry file (e.g., `main.ts`):
 
 ```ts
-import '@soybeanjs/ui/styles.css';
+import '@vean/ui/styles.css';
 ```
 
 ### 2. On-demand Import (Recommended)
@@ -48,7 +48,7 @@ Use `unplugin-vue-components` with the built-in resolver for auto-importing:
 ```ts
 // vite.config.ts
 import Components from 'unplugin-vue-components/vite';
-import UiResolver from '@soybeanjs/ui/resolver';
+import UiResolver from '@vean/ui/resolver';
 
 export default defineConfig({
   plugins: [
@@ -64,7 +64,7 @@ export default defineConfig({
 ```ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@soybeanjs/ui/nuxt']
+  modules: ['@vean/ui/nuxt']
 });
 ```
 
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
 
 ```vue
 <script setup>
-import { SButton, SDialog } from '@soybeanjs/ui';
+import { SButton, SDialog } from '@vean/ui';
 </script>
 
 <template>
@@ -85,7 +85,7 @@ import { SButton, SDialog } from '@soybeanjs/ui';
 ## ✨ Features
 
 - **shadcn-like design**: Modern, clean aesthetic inspired by shadcn/ui.
-- **Accessible**: Built on `@soybeanjs/headless` primitives with full WAI-ARIA support.
+- **Accessible**: Built on `@vean/aria` primitives with full WAI-ARIA support.
 - **RTL ready**: Switch between LTR and RTL layouts with `ConfigProvider`.
 - **Customizable at every level**: Override individual slot classes via the `ui` prop, or swap the entire style layer.
 - **Theme system**: 8 semantic colors and 6 sizes, controlled via `ConfigProvider`.
@@ -122,7 +122,7 @@ import { SButton, SDialog } from '@soybeanjs/ui';
 
 ```vue
 <script setup>
-import { SConfigProvider, SButton } from '@soybeanjs/ui';
+import { SConfigProvider, SButton } from '@vean/ui';
 </script>
 
 <template>
@@ -134,7 +134,7 @@ import { SConfigProvider, SButton } from '@soybeanjs/ui';
 
 ## 🌐 Locale Support
 
-`@soybeanjs/ui` inherits locale support from `@soybeanjs/headless` via `ConfigProvider`:
+`@vean/ui` inherits locale support from `@vean/aria` via `ConfigProvider`:
 
 | Code    | Language            |
 | ------- | ------------------- |
@@ -176,14 +176,14 @@ packages/ui/src/
 ### Package Exports
 
 ```ts
-import { SButton, SAccordion } from '@soybeanjs/ui'; // all components
-import '@soybeanjs/ui/styles.css'; // pre-built UnoCSS stylesheet
-// Also: @soybeanjs/ui/nuxt · @soybeanjs/ui/resolver
+import { SButton, SAccordion } from '@vean/ui'; // all components
+import '@vean/ui/styles.css'; // pre-built UnoCSS stylesheet
+// Also: @vean/ui/nuxt · @vean/ui/resolver
 ```
 
 ## 🧩 Components
 
-`@soybeanjs/ui` ships 86 `S`-prefixed styled components, each wrapping a `@soybeanjs/headless` primitive:
+`@vean/ui` ships 86 `S`-prefixed styled components, each wrapping a `@vean/aria` primitive:
 
 | Category        | Components                                                          |
 | --------------- | ------------------------------------------------------------------- |
@@ -213,7 +213,7 @@ Override individual slot classes via the `ui` prop:
 
 ## 📖 Documentation
 
-For full documentation, playground examples, and component API references, visit the [SoybeanUI docs site](https://ui.soybeanjs.cn).
+For full documentation, playground examples, and component API references, visit the [Vean docs site](https://veanui.com).
 
 ## 💝 Credits
 

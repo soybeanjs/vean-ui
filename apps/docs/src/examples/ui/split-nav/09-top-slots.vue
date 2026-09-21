@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SIcon, SSplitNav, SSwitch } from '@soybeanjs/ui';
+import { SIcon, SSplitNav, SSwitch } from '@vean/ui';
 import { splitNavItems } from './data';
 
-const active = shallowRef('soybean-ui');
+const active = shallowRef('vean-ui');
 
 /** Whether the nested pane is folded; the menu keeps it, the cells read it. */
 const collapsed = shallowRef(false);

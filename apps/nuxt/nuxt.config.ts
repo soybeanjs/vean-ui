@@ -1,4 +1,4 @@
-import { createThemeInitScript } from '@soybeanjs/theme/ssr';
+import { createThemeInitScript } from '@vean/theme/ssr';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: 'https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144'
+          href: 'https://r2.veanui.com/imgs/logo-vean-ui.svg?v=202609141212'
         }
       ],
       // Applies the persisted theme (from localStorage) to <html> before first
@@ -18,11 +18,11 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  css: ['@soybeanjs/ui/styles.css'],
-  modules: ['@nuxt/icon', '@nuxtjs/i18n', '@unocss/nuxt', '@soybeanjs/ui/nuxt'],
+  css: ['@vean/ui/styles.css'],
+  modules: ['@nuxt/icon', '@nuxtjs/i18n', '@unocss/nuxt', '@vean/ui/nuxt'],
   imports: {
     transform: {
-      exclude: [/headless\/dist\//]
+      exclude: [/aria\/dist\//]
     }
   },
   i18n: {

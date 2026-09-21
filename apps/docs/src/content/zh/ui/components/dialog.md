@@ -10,7 +10,7 @@ head:
 
 覆盖在主窗口或其他对话框之上、并使其下层内容失效的窗口。
 
-`SDialog` 是用于内联场景的声明式包装组件。`dialog(...)` 是用于以编程方式创建警告式对话框的命令式 API。它组合 `DialogRoot`/`DialogTrigger`/`DialogOverlay`/`DialogPopup`/`DialogHeader`/`DialogContent`/`DialogFooter`/`DialogTitle`/`DialogDescription`/`DialogClose`/`DialogFullscreen`/`DialogCancel`/`DialogConfirm` 这一系列 headless 基础组件（零样式）与 `dialogVariants` 样式配方（12 个槽、6 种尺寸）。
+`SDialog` 是用于内联场景的声明式包装组件。`dialog(...)` 是用于以编程方式创建警告式对话框的命令式 API。它组合 `DialogRoot`/`DialogTrigger`/`DialogOverlay`/`DialogPopup`/`DialogHeader`/`DialogContent`/`DialogFooter`/`DialogTitle`/`DialogDescription`/`DialogClose`/`DialogFullscreen`/`DialogCancel`/`DialogConfirm` 这一系列 Aria 基础组件（零样式）与 `dialogVariants` 样式配方（12 个槽、6 种尺寸）。
 
 调用命令式 `dialog(...)` API 前，请在应用根部附近挂载一次 `SDialogProvider`。
 
@@ -25,7 +25,7 @@ head:
 ```vue
 <script setup lang="ts">
 import { h } from 'vue';
-import { SButton, SDialogProvider, dialog } from '@soybeanjs/ui';
+import { SButton, SDialogProvider, dialog } from '@vean/ui';
 
 function openWarningDialog() {
   dialog.warning('删除项目', {
@@ -45,7 +45,7 @@ function openWarningDialog() {
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `DialogCompact` 聚合基础组件并组合遮罩/弹层/头部/内容/底部；`SDialog` 只注入样式并转发插槽/事件
+- 🧩 Aria/样式分离 — `DialogCompact` 聚合基础组件并组合遮罩/弹层/头部/内容/底部；`SDialog` 只注入样式并转发插槽/事件
 - 🖱️ 声明式 + 命令式 — 带触发器的内联 `SDialog`，或由 `SDialogProvider` 驱动的 `dialog.*` API
 - 🎭 默认模态 — `modal` 渲染 `aria-modal`、`useHideOthers`、外部指针拦截与焦点陷阱；用 `modal={false}` 切换
 - ⚠️ 警告模式 — `isAlert` 切换为 `role="alertdialog"`，并加入类型图标与 `aria-live`（`polite`/`assertive`）
@@ -62,16 +62,16 @@ function openWarningDialog() {
 
 - `SDialog`（样式层）— 入口包装组件；`dialogVariants` 配方配合动态插槽转发
 - `SDialogProvider`（样式层）— 承载命令式 `dialog(...)` API；订阅 `DialogState`
-- `DialogRoot`（headless）— 状态持有者；经 `useControllableState` 维护 `open`，提供 `dir`/`modal` 与 `provideDialogRootContext`
-- `DialogTrigger`（headless）— 打开对话框的 `Button`
-- `DialogOverlay`（headless）— 变暗的背景遮罩
-- `DialogPopup` / `DialogPopupImpl`（headless）— 承载对话框主体的可关闭、焦点陷阱表面
-- `DialogTitle` / `DialogDescription`（headless）— 用于标注/描述的元素
-- `DialogClose`（headless）— 关闭控件，切换 `open` 并发出 `close`
-- `DialogFullscreen`（headless）— 全屏切换按钮，切换 `fullscreen` 状态并发出 `fullscreen`
-- `DialogCancel` / `DialogConfirm`（headless）— 底部操作，发出 `cancel`/`confirm`
-- `DialogHeader` / `DialogContent` / `DialogFooter`（headless）— 布局分区
-- `DialogCompact`（headless）— 聚合组件；组合所有基础组件并暴露各分区插槽
+- `DialogRoot`（Aria）— 状态持有者；经 `useControllableState` 维护 `open`，提供 `dir`/`modal` 与 `provideDialogRootContext`
+- `DialogTrigger`（Aria）— 打开对话框的 `Button`
+- `DialogOverlay`（Aria）— 变暗的背景遮罩
+- `DialogPopup` / `DialogPopupImpl`（Aria）— 承载对话框主体的可关闭、焦点陷阱表面
+- `DialogTitle` / `DialogDescription`（Aria）— 用于标注/描述的元素
+- `DialogClose`（Aria）— 关闭控件，切换 `open` 并发出 `close`
+- `DialogFullscreen`（Aria）— 全屏切换按钮，切换 `fullscreen` 状态并发出 `fullscreen`
+- `DialogCancel` / `DialogConfirm`（Aria）— 底部操作，发出 `cancel`/`confirm`
+- `DialogHeader` / `DialogContent` / `DialogFooter`（Aria）— 布局分区
+- `DialogCompact`（Aria）— 聚合组件；组合所有基础组件并暴露各分区插槽
 
 ## 演示
 
@@ -85,18 +85,18 @@ function openWarningDialog() {
 
 ### 架构与对标差异
 
-`DialogCompact` 负责遮罩/弹层/头部/内容/底部组合与命令式 `dialog(...)` 状态流，所有基础组件保持零样式，仅由 UI 包装组件注入 `dialogVariants` 类。这与 radix-ui/shadcn-ui 的 headless/样式分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供带 `mask`/`closable`/`keyboard`/`width` prop 的单一样式化对话框；SoybeanUI 额外暴露逐槽 `*Props` 通道、`size` 尺寸体系，以及单包库通常收敛为静态服务的命令式 provider API（`dialog.*`）。
+`DialogCompact` 负责遮罩/弹层/头部/内容/底部组合与命令式 `dialog(...)` 状态流，所有基础组件保持零样式，仅由 UI 包装组件注入 `dialogVariants` 类。这与 radix-ui/shadcn-ui 的 headless/样式分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供带 `mask`/`closable`/`keyboard`/`width` prop 的单一样式化对话框；VeanUI 额外暴露逐槽 `*Props` 通道、`size` 尺寸体系，以及单包库通常收敛为静态服务的命令式 provider API（`dialog.*`）。
 
-| 能力                    | SoybeanUI | shadcn/ui | Ant Design Modal | Element Plus Dialog | Mantine Modal | Naive UI Dialog |
-| :---------------------- | :-------: | :-------: | :--------------: | :-----------------: | :-----------: | :-------------: |
-| Headless/样式分离       |    ✅     |    ✅     |        —         |          —          |       —       |        —        |
-| 命令式 API              |    ✅     |     —     |        ✅        |         ✅          |      ✅       |       ✅        |
-| 模态（aria-modal+陷阱） |    ✅     |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
-| 警告模式（alertdialog） |    ✅     |    ✅     |        ✅        |          —          |       —       |       ✅        |
-| 关闭时焦点还原          |    ✅     |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
-| 尺寸（6）               |    ✅     |     —     |        —         |          —          |       —       |        —        |
-| 本地化取消/确认文本     |    ✅     |     —     |        —         |          —          |       —       |        —        |
-| 纯净（无头/底部）       |    ✅     |     —     |        —         |          —          |       —       |        —        |
+| 能力                    | VeanUI | shadcn/ui | Ant Design Modal | Element Plus Dialog | Mantine Modal | Naive UI Dialog |
+| :---------------------- | :----: | :-------: | :--------------: | :-----------------: | :-----------: | :-------------: |
+| Aria/样式分离           |   ✅   |    ✅     |        —         |          —          |       —       |        —        |
+| 命令式 API              |   ✅   |     —     |        ✅        |         ✅          |      ✅       |       ✅        |
+| 模态（aria-modal+陷阱） |   ✅   |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
+| 警告模式（alertdialog） |   ✅   |    ✅     |        ✅        |          —          |       —       |       ✅        |
+| 关闭时焦点还原          |   ✅   |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
+| 尺寸（6）               |   ✅   |     —     |        —         |          —          |       —       |        —        |
+| 本地化取消/确认文本     |   ✅   |     —     |        —         |          —          |       —       |        —        |
+| 纯净（无头/底部）       |   ✅   |     —     |        —         |          —          |       —       |        —        |
 
 `—` = 不支持或采用不同交互模型。
 
@@ -134,7 +134,7 @@ function openWarningDialog() {
 挂载一次 `SDialogProvider`，然后在任意位置调用 `dialog.*`（完整示例见「概述」）：
 
 ```ts
-import { dialog } from '@soybeanjs/ui';
+import { dialog } from '@vean/ui';
 dialog.warning('磁盘已满', { description: '请释放空间。' });
 ```
 

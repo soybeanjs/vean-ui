@@ -55,7 +55,7 @@ describe('template command --framework scaffolding (ADR-010)', () => {
   let tmpDir: string;
 
   beforeEach(async () => {
-    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-tpl-'));
+    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-tpl-'));
   });
 
   afterEach(async () => {

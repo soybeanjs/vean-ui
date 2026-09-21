@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SCombobox } from '@soybeanjs/ui';
-import type { ComboboxOptionData } from '@soybeanjs/ui';
+import { SCombobox } from '@vean/ui';
+import type { ComboboxOptionData } from '@vean/ui';
 
 const value = ref('vue');
 

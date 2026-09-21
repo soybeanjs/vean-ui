@@ -27,9 +27,9 @@ A segmented date range input that renders two groups of keyboard-editable date s
 
 ## Component family
 
-- `SDateRangeField` — the styled wrapper that forwards props to the headless compact and injects `dateRangeFieldVariants` (extending `dateFieldVariants`) classes
-- `DateRangeFieldCompact` (headless) — data-driven composition of `DateRangeFieldRoot` + per-segment `DateRangeFieldInput` for both groups, plus `leading`/`trailing`/`separator` slots; import from `@soybeanjs/headless/date-range-field` for unstyled usage
-- `DateRangeFieldRoot` / `DateRangeFieldInput` (headless) — the state owner (dual segment values, validation, hidden inputs, cross-group focus) and a single editable segment bound to the shared `useDateField` composable
+- `SDateRangeField` — the styled wrapper that forwards props to the Aria compact and injects `dateRangeFieldVariants` (extending `dateFieldVariants`) classes
+- `DateRangeFieldCompact` (Aria) — data-driven composition of `DateRangeFieldRoot` + per-segment `DateRangeFieldInput` for both groups, plus `leading`/`trailing`/`separator` slots; import from `@vean/aria/date-range-field` for unstyled usage
+- `DateRangeFieldRoot` / `DateRangeFieldInput` (Aria) — the state owner (dual segment values, validation, hidden inputs, cross-group focus) and a single editable segment bound to the shared `useDateField` composable
 
 ## Demos
 
@@ -45,20 +45,20 @@ A segmented date range input that renders two groups of keyboard-editable date s
 
 `DateRangeFieldRoot` owns the `{ start, end }` value via `useControllableState`, keeps separate `startSegmentValues`/`endSegmentValues` shallowRefs for the two groups, and runs validation through `isInvalid` (including a start-later-than-end check). Each `DateRangeFieldInput` binds the same `useDateField` composable used by the `time-field` family for per-part keydown logic. Cross-group movement is handled by the root's `moveFocus`: at the physical end of the start group the next arrow moves into the end group, and at the beginning of the end group the previous arrow returns, with the physical key mapped from the `dir` so RTL swaps `ArrowLeft`/`ArrowRight`. Most benchmark libraries implement a range as two separate text inputs or one text input with a separator; the dual segmented-field pattern with cross-group keyboard focus comes from the reka-ui (Radix) date-field lineage.
 
-| Capability                     | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :----------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled split          |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Dual segmented editable groups |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Cross-group focus movement     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| RTL direction reversal         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Controlled / uncontrolled      |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Keyboard increment/typing      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Range validation (start ≤ end) |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Granularity (minute/second)    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Dual native form values        |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   —    |
-| Disabled / readonly            |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Separator prop / slot          |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| Capability                     | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :----------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled split              |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Dual segmented editable groups |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Cross-group focus movement     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| RTL direction reversal         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Controlled / uncontrolled      |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Keyboard increment/typing      |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Range validation (start ≤ end) |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Granularity (minute/second)    |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Dual native form values        |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   —    |
+| Disabled / readonly            |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Separator prop / slot          |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### Cautions
 

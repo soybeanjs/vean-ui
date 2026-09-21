@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; trigger: ClassValue; content: ClassValue; triggerIcon: ClassValue; link: ClassValue; list: ClassValue; itemIcon: ClassValue; positioner: ClassValue; arrow: ClassValue; subTrigger: ClassValue; viewport: ClassValue; subTriggerIcon: ClassValue; subLink: ClassValue; subLinkContent: ClassValue; subLinkLabel: ClassValue; subLinkDescription: ClassValue; subList: ClassValue; subContent: ClassValue; linkIcon: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the NavMenu component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuui",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuui",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -128,7 +128,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -136,8 +136,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -153,7 +153,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -161,8 +161,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -178,7 +178,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.delayduration",
             "default": "200",
             "inheritedFrom": "delayDuration",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -189,7 +189,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.skipdelayduration",
             "default": "300",
             "inheritedFrom": "skipDelayDuration",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -200,7 +200,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.disableclicktrigger",
             "default": "false",
             "inheritedFrom": "disableClickTrigger",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -211,7 +211,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.disablehovertrigger",
             "default": "false",
             "inheritedFrom": "disableHoverTrigger",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -222,7 +222,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.disablepointerleaveclose",
             "default": "false",
             "inheritedFrom": "disablePointerLeaveClose",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -233,7 +233,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuItemProps",
@@ -241,8 +241,8 @@
                 "type": "NavMenuItemProps",
                 "resolvedType": "{ value?: string }",
                 "description": "Properties for the NavMenuItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -251,10 +251,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Value associated with the current item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -270,7 +270,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.linkprops",
             "default": null,
             "inheritedFrom": "linkProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "LinkBasePropsKey",
@@ -278,8 +278,8 @@
                 "type": "'href' | 'to' | 'external' | 'target'",
                 "resolvedType": null,
                 "description": "Type information for LinkBasePropsKey.",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbasepropskey",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbasepropskey",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -291,8 +291,8 @@
                 "type": "NavMenuLinkProps",
                 "resolvedType": null,
                 "description": "Properties for the NavMenuLink component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -308,7 +308,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.subtriggerprops",
             "default": null,
             "inheritedFrom": "subTriggerProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuSubTriggerProps",
@@ -316,8 +316,8 @@
                 "type": "NavMenuSubTriggerProps",
                 "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the NavMenuSubTrigger component (the trigger of a nested flyout).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -326,10 +326,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the trigger is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -337,10 +337,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -348,10 +348,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -367,7 +367,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.subcontentprops",
             "default": null,
             "inheritedFrom": "subContentProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuSubContentProps",
@@ -375,8 +375,8 @@
                 "type": "NavMenuSubContentProps",
                 "resolvedType": "{ sideOffset?: number; forceMount?: boolean }",
                 "description": "Properties for the NavMenuSubContent component (the nested flyout surface).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -385,10 +385,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Distance in pixels between the sub trigger and the nested flyout.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -396,10 +396,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -415,7 +415,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuTriggerProps",
@@ -423,8 +423,8 @@
                 "type": "NavMenuTriggerProps",
                 "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the NavMenuTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -433,10 +433,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the trigger is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -444,10 +444,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -455,10 +455,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -474,7 +474,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuContentProps",
@@ -482,8 +482,8 @@
                 "type": "NavMenuContentProps",
                 "resolvedType": "{ forceMount?: boolean }",
                 "description": "Properties for the NavMenuContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -492,10 +492,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -511,7 +511,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.listprops",
             "default": null,
             "inheritedFrom": "listProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuListProps",
@@ -519,8 +519,8 @@
                 "type": "NavMenuListProps",
                 "resolvedType": null,
                 "description": "Properties for the NavMenuList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulistprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulistprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -536,7 +536,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuprops.members.viewportprops",
             "default": null,
             "inheritedFrom": "viewportProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuViewportProps",
@@ -544,8 +544,8 @@
                 "type": "NavMenuViewportProps",
                 "resolvedType": "{ align?: Align; sideOffset?: number; forceMount?: boolean }",
                 "description": "Properties for the NavMenuViewport component (the shared floating surface).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -554,10 +554,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "Align the viewport against the active trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.align",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -565,10 +565,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Distance in pixels between the trigger and the viewport.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -576,10 +576,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -609,7 +609,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -619,7 +619,7 @@
             "required": true,
             "description": "Emitted when a link is selected.",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuemits.callables.select",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -654,11 +654,11 @@
           {
             "name": "NavMenuCompactEmits",
             "kind": "typeAlias",
-            "type": "import(\"@soybeanjs/headless\").NavMenuRootEmits & import(\"@soybeanjs/headless\").NavMenuLinkEmits",
+            "type": "import(\"@vean/aria\").NavMenuRootEmits & import(\"@vean/aria\").NavMenuLinkEmits",
             "resolvedType": "{ \"update:modelValue\": [value: string]; select: [payload: CustomEvent<{ originalEvent: Event; }>] }",
             "description": "Events for the NavMenuCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactemits",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactemits",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -669,8 +669,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -679,8 +679,8 @@
                 "parameters": "payload: CustomEvent<{ originalEvent: Event; }>",
                 "required": true,
                 "description": "Emitted when a link is selected.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactemits.callables.select",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactemits.callables.select",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -705,7 +705,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuslots.callables.item",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -713,8 +713,8 @@
                 "type": "{ item: NavMenuOptionData; isTrigger?: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -729,7 +729,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -737,8 +737,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -753,7 +753,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -761,8 +761,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -777,7 +777,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuslots.callables.item_link_icon",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -785,8 +785,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -801,7 +801,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuslots.callables.item_trigger_icon",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -809,8 +809,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -825,7 +825,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_nav_menu_types.navmenuslots.callables.item_children",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -833,8 +833,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -847,11 +847,11 @@
           {
             "name": "NavMenuCompactSlots",
             "kind": "typeAlias",
-            "type": "{ item: (props: { item: import(\"@soybeanjs/headless\").NavMenuOptionData; isTrigger?: boolean; }) => any; 'item-leading': (props: { item: import(\"@soybeanjs/headless\").NavMenuOptionData; }) => any; 'item-trailing': (props: { item: import(\"@soybeanjs/headless\").NavMenuOptionData; }) => any; 'item-link-icon': (props: { item: import(\"@soybeanjs/headless\").NavMenuOptionData; }) => any; 'item-trigger-icon': (props: { item: import(\"@soybeanjs/headless\").NavMenuOptionData; }) => any; 'item-children': (props: { item: import(\"@soybeanjs/headless\").NavMenuOptionData; }) => any; }",
+            "type": "{ item: (props: { item: import(\"@vean/aria\").NavMenuOptionData; isTrigger?: boolean; }) => any; 'item-leading': (props: { item: import(\"@vean/aria\").NavMenuOptionData; }) => any; 'item-trailing': (props: { item: import(\"@vean/aria\").NavMenuOptionData; }) => any; 'item-link-icon': (props: { item: import(\"@vean/aria\").NavMenuOptionData; }) => any; 'item-trigger-icon': (props: { item: import(\"@vean/aria\").NavMenuOptionData; }) => any; 'item-children': (props: { item: import(\"@vean/aria\").NavMenuOptionData; }) => any; }",
             "resolvedType": "{ item: (props: { item: NavMenuOptionData; isTrigger?: boolean; }) => any; \"item-leading\": (props: { item: NavMenuOptionData; }) => any; \"item-trailing\": (props: { item: NavMenuOptionData; }) => any; \"item-link-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-trigger-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-children\": (props: { item: NavMenuOptionData; }) => any }",
             "description": "Slots for the NavMenuCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -862,8 +862,8 @@
                 "parameters": "props: { item: NavMenuOptionData; isTrigger?: boolean; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -872,8 +872,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_leading",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_leading",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -882,8 +882,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_trailing",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_trailing",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -892,8 +892,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_link_icon",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_link_icon",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -902,8 +902,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_trigger_icon",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_trigger_icon",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -912,8 +912,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_children",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_children",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -928,8 +928,8 @@
         "type": "Interface NavMenuCompactProps",
         "resolvedType": "{ items: NavMenuOptionData[]; modelValue?: string; defaultValue?: string; dir?: Direction; orientation?: DataOrientation; delayDuration?: number; skipDelayDuration?: number; disableClickTrigger?: boolean; disableHoverTrigger?: boolean; disablePointerLeaveClose?: boolean; itemProps?: NavMenuItemProps; linkProps?: Omit<NavMenuLinkProps, LinkBasePropsKey>; subTriggerProps?: NavMenuSubTriggerProps; subContentProps?: NavMenuSubContentProps; triggerProps?: NavMenuTriggerProps; contentProps?: NavMenuContentProps; listProps?: NavMenuListProps; viewportProps?: NavMenuViewportProps }",
         "description": "Properties for the NavMenuCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -937,10 +937,10 @@
             "type": "NavMenuOptionData[]",
             "required": true,
             "description": "The items to render in the navigation menu.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -948,10 +948,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the active item. Can be used as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -959,10 +959,10 @@
             "type": "string",
             "required": false,
             "description": "The value of the item that should be active when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -970,10 +970,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the menu.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -981,8 +981,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -995,10 +995,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the menu.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1006,8 +1006,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1020,10 +1020,10 @@
             "type": "number",
             "required": false,
             "description": "The duration from when the pointer enters the trigger until the submenu opens.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.delayduration",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.delayduration",
             "default": "200",
             "inheritedFrom": "delayDuration",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1031,10 +1031,10 @@
             "type": "number",
             "required": false,
             "description": "How much time a user has to enter another trigger without incurring a delay again.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.skipdelayduration",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.skipdelayduration",
             "default": "300",
             "inheritedFrom": "skipDelayDuration",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1042,10 +1042,10 @@
             "type": "boolean",
             "required": false,
             "description": "If `true`, the menu cannot be opened by clicking a trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.disableclicktrigger",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.disableclicktrigger",
             "default": "false",
             "inheritedFrom": "disableClickTrigger",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1053,10 +1053,10 @@
             "type": "boolean",
             "required": false,
             "description": "If `true`, the menu cannot be opened by hovering a trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.disablehovertrigger",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.disablehovertrigger",
             "default": "false",
             "inheritedFrom": "disableHoverTrigger",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1064,10 +1064,10 @@
             "type": "boolean",
             "required": false,
             "description": "If `true`, the menu will not close when the pointer leaves the content.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.disablepointerleaveclose",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.disablepointerleaveclose",
             "default": "false",
             "inheritedFrom": "disablePointerLeaveClose",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1075,10 +1075,10 @@
             "type": "NavMenuItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuItemProps",
@@ -1086,8 +1086,8 @@
                 "type": "NavMenuItemProps",
                 "resolvedType": "{ value?: string }",
                 "description": "Properties for the NavMenuItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1096,10 +1096,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Value associated with the current item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1112,10 +1112,10 @@
             "type": "Omit<NavMenuLinkProps, LinkBasePropsKey>",
             "required": false,
             "description": "Properties forwarded to the link element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.linkprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.linkprops",
             "default": null,
             "inheritedFrom": "linkProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "LinkBasePropsKey",
@@ -1123,8 +1123,8 @@
                 "type": "'href' | 'to' | 'external' | 'target'",
                 "resolvedType": null,
                 "description": "Type information for LinkBasePropsKey.",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbasepropskey",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbasepropskey",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1136,8 +1136,8 @@
                 "type": "NavMenuLinkProps",
                 "resolvedType": null,
                 "description": "Properties for the NavMenuLink component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1150,10 +1150,10 @@
             "type": "NavMenuSubTriggerProps",
             "required": false,
             "description": "Properties forwarded to the nested flyout trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.subtriggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.subtriggerprops",
             "default": null,
             "inheritedFrom": "subTriggerProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuSubTriggerProps",
@@ -1161,8 +1161,8 @@
                 "type": "NavMenuSubTriggerProps",
                 "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the NavMenuSubTrigger component (the trigger of a nested flyout).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1171,10 +1171,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the trigger is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1182,10 +1182,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1193,10 +1193,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1209,10 +1209,10 @@
             "type": "NavMenuSubContentProps",
             "required": false,
             "description": "Properties forwarded to the nested flyout content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.subcontentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.subcontentprops",
             "default": null,
             "inheritedFrom": "subContentProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuSubContentProps",
@@ -1220,8 +1220,8 @@
                 "type": "NavMenuSubContentProps",
                 "resolvedType": "{ sideOffset?: number; forceMount?: boolean }",
                 "description": "Properties for the NavMenuSubContent component (the nested flyout surface).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1230,10 +1230,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Distance in pixels between the sub trigger and the nested flyout.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1241,10 +1241,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1257,10 +1257,10 @@
             "type": "NavMenuTriggerProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuTriggerProps",
@@ -1268,8 +1268,8 @@
                 "type": "NavMenuTriggerProps",
                 "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the NavMenuTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1278,10 +1278,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the trigger is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1289,10 +1289,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1300,10 +1300,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1316,10 +1316,10 @@
             "type": "NavMenuContentProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuContentProps",
@@ -1327,8 +1327,8 @@
                 "type": "NavMenuContentProps",
                 "resolvedType": "{ forceMount?: boolean }",
                 "description": "Properties for the NavMenuContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1337,10 +1337,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1353,10 +1353,10 @@
             "type": "NavMenuListProps",
             "required": false,
             "description": "Properties forwarded to the list element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.listprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.listprops",
             "default": null,
             "inheritedFrom": "listProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuListProps",
@@ -1364,8 +1364,8 @@
                 "type": "NavMenuListProps",
                 "resolvedType": null,
                 "description": "Properties for the NavMenuList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulistprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulistprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1378,10 +1378,10 @@
             "type": "NavMenuViewportProps",
             "required": false,
             "description": "Properties forwarded to the viewport element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactprops.members.viewportprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactprops.members.viewportprops",
             "default": null,
             "inheritedFrom": "viewportProps",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuViewportProps",
@@ -1389,8 +1389,8 @@
                 "type": "NavMenuViewportProps",
                 "resolvedType": "{ align?: Align; sideOffset?: number; forceMount?: boolean }",
                 "description": "Properties for the NavMenuViewport component (the shared floating surface).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1399,10 +1399,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "Align the viewport against the active trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.align",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1410,10 +1410,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Distance in pixels between the trigger and the viewport.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1421,10 +1421,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1442,8 +1442,8 @@
         "type": "TypeAlias NavMenuCompactEmits: NavMenuRootEmits & NavMenuLinkEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; select: [payload: CustomEvent<{ originalEvent: Event; }>] }",
         "description": "Events for the NavMenuCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactemits.emits",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactemits.emits",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1453,8 +1453,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1463,8 +1463,8 @@
             "parameters": "payload: CustomEvent<{ originalEvent: Event; }>",
             "required": true,
             "description": "Emitted when a link is selected.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactemits.callables.select",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactemits.callables.select",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -1503,8 +1503,8 @@
         "type": "TypeAlias NavMenuCompactSlots",
         "resolvedType": "{ item: (props: { item: NavMenuOptionData; isTrigger?: boolean; }) => any; \"item-leading\": (props: { item: NavMenuOptionData; }) => any; \"item-trailing\": (props: { item: NavMenuOptionData; }) => any; \"item-link-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-trigger-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-children\": (props: { item: NavMenuOptionData; }) => any }",
         "description": "Slots for the NavMenuCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.slots",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.slots",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1514,8 +1514,8 @@
             "parameters": "props: { item: NavMenuOptionData; isTrigger?: boolean; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1523,8 +1523,8 @@
                 "type": "{ item: NavMenuOptionData; isTrigger?: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1538,8 +1538,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_leading",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1547,8 +1547,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1562,8 +1562,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_trailing",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1571,8 +1571,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1586,8 +1586,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_link_icon",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_link_icon",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1595,8 +1595,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1610,8 +1610,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_trigger_icon",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_trigger_icon",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1619,8 +1619,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1634,8 +1634,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_children",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_children",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1643,8 +1643,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1663,8 +1663,8 @@
         "type": "Interface NavMenuContentProps",
         "resolvedType": "{ forceMount?: boolean }",
         "description": "Properties for the NavMenuContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1672,10 +1672,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1688,8 +1688,8 @@
         "type": "TypeAlias NavMenuContentEmits: {}",
         "resolvedType": "{}",
         "description": "Events for the NavMenuContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentemits.emits",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentemits.emits",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1703,8 +1703,8 @@
         "type": "Interface NavMenuItemProps",
         "resolvedType": "{ value?: string }",
         "description": "Properties for the NavMenuItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1712,10 +1712,10 @@
             "type": "string",
             "required": false,
             "description": "Value associated with the current item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1730,8 +1730,8 @@
         "type": "Interface NavMenuLinkProps",
         "resolvedType": "{ selected?: boolean; sub?: boolean; replace?: boolean; disabled?: boolean; asChild?: boolean; as?: AsTag | Component; href?: string; to?: string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric; activeClass?: string; exactActiveClass?: string; inactiveClass?: string; prefetchedClass?: string; external?: boolean; ariaCurrentValue?: 'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'; viewTransition?: boolean; target?: (string & {}) | '_blank' | '_parent' | '_self' | '_top' | null; rel?: (string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null; noRel?: boolean; prefetch?: boolean; prefetchOn?: 'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>; noPrefetch?: boolean; trailingSlash?: 'append' | 'remove' }",
         "description": "Properties for the NavMenuLink component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1739,10 +1739,10 @@
             "type": "boolean",
             "required": false,
             "description": "Marks the link as the currently selected page.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.selected",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.selected",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1750,10 +1750,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the link is rendered inside a submenu. When `true`, the `subLink` UI slot is\nused instead of `link` (mirroring the root/sub split of the list).",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.sub",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.sub",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -1761,10 +1761,10 @@
             "type": "boolean",
             "required": false,
             "description": "Calls `router.replace` instead of `router.push`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.replace",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.replace",
             "default": null,
             "inheritedFrom": "replace",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1772,10 +1772,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the link is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1783,10 +1783,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1794,10 +1794,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1827,10 +1827,10 @@
             "type": "string",
             "required": false,
             "description": "The URL the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.href",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.href",
             "default": null,
             "inheritedFrom": "href",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1838,10 +1838,10 @@
             "type": "string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric",
             "required": false,
             "description": "Route Location the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.to",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.to",
             "default": null,
             "inheritedFrom": "to",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "RouteLocationRaw",
@@ -1863,10 +1863,10 @@
             "type": "string",
             "required": false,
             "description": "Class to apply when the link is active",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.activeclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.activeclass",
             "default": null,
             "inheritedFrom": "activeClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1874,10 +1874,10 @@
             "type": "string",
             "required": false,
             "description": "Class to apply when the link is exact active",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.exactactiveclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.exactactiveclass",
             "default": null,
             "inheritedFrom": "exactActiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1885,10 +1885,10 @@
             "type": "string",
             "required": false,
             "description": "The class to apply to the link when it is inactive.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.inactiveclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.inactiveclass",
             "default": null,
             "inheritedFrom": "inactiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1896,10 +1896,10 @@
             "type": "string",
             "required": false,
             "description": "A class to apply to links that have been prefetched.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.prefetchedclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.prefetchedclass",
             "default": null,
             "inheritedFrom": "prefetchedClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1907,10 +1907,10 @@
             "type": "boolean",
             "required": false,
             "description": "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.external",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.external",
             "default": null,
             "inheritedFrom": "external",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1918,10 +1918,10 @@
             "type": "'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'",
             "required": false,
             "description": "Value passed to the attribute `aria-current` when the link is exact active.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.ariacurrentvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.ariacurrentvalue",
             "default": "`'page'`",
             "inheritedFrom": "ariaCurrentValue",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1929,10 +1929,10 @@
             "type": "boolean",
             "required": false,
             "description": "Pass the returned promise of `router.push()` to `document.startViewTransition()` if supported.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.viewtransition",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.viewtransition",
             "default": null,
             "inheritedFrom": "viewTransition",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1940,10 +1940,10 @@
             "type": "(string & {}) | '_blank' | '_parent' | '_self' | '_top' | null",
             "required": false,
             "description": "Where to display the linked URL, as the name for a browsing context.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.target",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.target",
             "default": null,
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1951,10 +1951,10 @@
             "type": "(string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null",
             "required": false,
             "description": "A rel attribute value to apply on the link. Defaults to \"noopener noreferrer\" for external links.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.rel",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.rel",
             "default": "'noopener noreferrer'",
             "inheritedFrom": "rel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1962,10 +1962,10 @@
             "type": "boolean",
             "required": false,
             "description": "If set to true, no rel attribute will be added to the link",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.norel",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.norel",
             "default": null,
             "inheritedFrom": "noRel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1973,10 +1973,10 @@
             "type": "boolean",
             "required": false,
             "description": "When enabled will prefetch middleware, layouts and payloads of links in the viewport.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.prefetch",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.prefetch",
             "default": null,
             "inheritedFrom": "prefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1984,10 +1984,10 @@
             "type": "'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>",
             "required": false,
             "description": "Allows controlling when to prefetch links. By default, prefetch is triggered only on visibility.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.prefetchon",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.prefetchon",
             "default": null,
             "inheritedFrom": "Omit.prefetchOn",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1995,8 +1995,8 @@
                 "type": "{ visibility: boolean; interaction: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.type",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.type",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2009,10 +2009,10 @@
             "type": "boolean",
             "required": false,
             "description": "Escape hatch to disable `prefetch` attribute.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.noprefetch",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.noprefetch",
             "default": null,
             "inheritedFrom": "noPrefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -2020,10 +2020,10 @@
             "type": "'append' | 'remove'",
             "required": false,
             "description": "An option to either add or remove trailing slashes in the `href` for this specific link.\nOverrides the global `trailingSlash` option if provided.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops.members.trailingslash",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops.members.trailingslash",
             "default": null,
             "inheritedFrom": "trailingSlash",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2036,8 +2036,8 @@
         "type": "TypeAlias NavMenuLinkEmits",
         "resolvedType": "{ select: [payload: CustomEvent<{ originalEvent: Event; }>] }",
         "description": "Events for the NavMenuLink component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkemits.emits",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkemits.emits",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2047,8 +2047,8 @@
             "parameters": "payload: CustomEvent<{ originalEvent: Event; }>",
             "required": true,
             "description": "Emitted when a link is selected.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkemits.callables.select",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkemits.callables.select",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -2089,8 +2089,8 @@
         "type": "Interface NavMenuListProps",
         "resolvedType": null,
         "description": "Properties for the NavMenuList component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulistprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulistprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2104,8 +2104,8 @@
         "type": "Interface NavMenuOptionCompactProps",
         "resolvedType": "{ item: NavMenuOptionData; itemProps?: NavMenuItemProps; linkProps?: Omit<NavMenuLinkProps, LinkBasePropsKey>; triggerProps?: NavMenuTriggerProps; contentProps?: NavMenuContentProps; viewportProps?: NavMenuViewportProps; listProps?: NavMenuListProps; subTriggerProps?: NavMenuSubTriggerProps; subContentProps?: NavMenuSubContentProps }",
         "description": "Properties for the NavMenuOptionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2113,10 +2113,10 @@
             "type": "NavMenuOptionData",
             "required": true,
             "description": "Current item data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.item",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.item",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuOptionData",
@@ -2124,8 +2124,8 @@
                 "type": "NavMenuOptionData",
                 "resolvedType": "{ value: string; label: string; description?: string; icon?: string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null; hidden?: boolean; disabled?: boolean; selected?: boolean; children?: NavMenuOptionData[]; href?: string; to?: string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric; external?: boolean; target?: (string & {}) | '_blank' | '_parent' | '_self' | '_top' | null }",
                 "description": "Option data for the NavMenu component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2134,10 +2134,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The value of the option.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2145,10 +2145,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The label to display in the option.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.label",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.label",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2156,10 +2156,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The description of the option.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.description",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.description",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2167,10 +2167,10 @@
                     "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null",
                     "required": false,
                     "description": "The icon of the option.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.icon",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.icon",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2178,10 +2178,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the option is hidden.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.hidden",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.hidden",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2189,10 +2189,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the option is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2200,10 +2200,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the option is selected.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.selected",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.selected",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2211,10 +2211,10 @@
                     "type": "NavMenuOptionData[]",
                     "required": false,
                     "description": "The children of the option (rendered as links inside the submenu).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.children",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.children",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2222,10 +2222,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The URL the link should navigate to when clicked on.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.href",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.href",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2233,10 +2233,10 @@
                     "type": "string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric",
                     "required": false,
                     "description": "Route Location the link should navigate to when clicked on.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.to",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.to",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2244,10 +2244,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.external",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.external",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2255,10 +2255,10 @@
                     "type": "(string & {}) | '_blank' | '_parent' | '_self' | '_top' | null",
                     "required": false,
                     "description": "Where to display the linked URL, as the name for a browsing context.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptiondata.members.target",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptiondata.members.target",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2271,10 +2271,10 @@
             "type": "NavMenuItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuItemProps",
@@ -2282,8 +2282,8 @@
                 "type": "NavMenuItemProps",
                 "resolvedType": "{ value?: string }",
                 "description": "Properties for the NavMenuItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2292,10 +2292,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Value associated with the current item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2308,10 +2308,10 @@
             "type": "Omit<NavMenuLinkProps, LinkBasePropsKey>",
             "required": false,
             "description": "Properties forwarded to the link element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.linkprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.linkprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "LinkBasePropsKey",
@@ -2319,8 +2319,8 @@
                 "type": "'href' | 'to' | 'external' | 'target'",
                 "resolvedType": null,
                 "description": "Type information for LinkBasePropsKey.",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbasepropskey",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbasepropskey",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2332,8 +2332,8 @@
                 "type": "NavMenuLinkProps",
                 "resolvedType": null,
                 "description": "Properties for the NavMenuLink component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2346,10 +2346,10 @@
             "type": "NavMenuTriggerProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuTriggerProps",
@@ -2357,8 +2357,8 @@
                 "type": "NavMenuTriggerProps",
                 "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the NavMenuTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2367,10 +2367,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the trigger is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2378,10 +2378,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2389,10 +2389,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2405,10 +2405,10 @@
             "type": "NavMenuContentProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuContentProps",
@@ -2416,8 +2416,8 @@
                 "type": "NavMenuContentProps",
                 "resolvedType": "{ forceMount?: boolean }",
                 "description": "Properties for the NavMenuContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2426,10 +2426,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2442,10 +2442,10 @@
             "type": "NavMenuViewportProps",
             "required": false,
             "description": "Properties forwarded to the viewport element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.viewportprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.viewportprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuViewportProps",
@@ -2453,8 +2453,8 @@
                 "type": "NavMenuViewportProps",
                 "resolvedType": "{ align?: Align; sideOffset?: number; forceMount?: boolean }",
                 "description": "Properties for the NavMenuViewport component (the shared floating surface).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2463,10 +2463,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "Align the viewport against the active trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.align",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2474,10 +2474,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Distance in pixels between the trigger and the viewport.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2485,10 +2485,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2501,10 +2501,10 @@
             "type": "NavMenuListProps",
             "required": false,
             "description": "Properties forwarded to the list element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.listprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.listprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuListProps",
@@ -2512,8 +2512,8 @@
                 "type": "NavMenuListProps",
                 "resolvedType": null,
                 "description": "Properties for the NavMenuList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulistprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulistprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2526,10 +2526,10 @@
             "type": "NavMenuSubTriggerProps",
             "required": false,
             "description": "Properties forwarded to the nested flyout trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.subtriggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.subtriggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuSubTriggerProps",
@@ -2537,8 +2537,8 @@
                 "type": "NavMenuSubTriggerProps",
                 "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the NavMenuSubTrigger component (the trigger of a nested flyout).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2547,10 +2547,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the trigger is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2558,10 +2558,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2569,10 +2569,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2585,10 +2585,10 @@
             "type": "NavMenuSubContentProps",
             "required": false,
             "description": "Properties forwarded to the nested flyout content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactprops.members.subcontentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactprops.members.subcontentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "NavMenuSubContentProps",
@@ -2596,8 +2596,8 @@
                 "type": "NavMenuSubContentProps",
                 "resolvedType": "{ sideOffset?: number; forceMount?: boolean }",
                 "description": "Properties for the NavMenuSubContent component (the nested flyout surface).",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2606,10 +2606,10 @@
                     "type": "number",
                     "required": false,
                     "description": "Distance in pixels between the sub trigger and the nested flyout.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                    "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2617,10 +2617,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2638,8 +2638,8 @@
         "type": "TypeAlias NavMenuOptionCompactEmits: NavMenuLinkEmits",
         "resolvedType": "{ select: [payload: CustomEvent<{ originalEvent: Event; }>] }",
         "description": "Events for the NavMenuOptionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactemits.emits",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactemits.emits",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2649,8 +2649,8 @@
             "parameters": "payload: CustomEvent<{ originalEvent: Event; }>",
             "required": true,
             "description": "Emitted when a link is selected.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactemits.callables.select",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactemits.callables.select",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -2688,8 +2688,8 @@
             "type": "{ select: [payload: CustomEvent<{ originalEvent: Event; }>]; }",
             "resolvedType": "{ select: [payload: CustomEvent<{ originalEvent: Event; }>] }",
             "description": "Events for the NavMenuLink component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkemits",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkemits",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -2700,8 +2700,8 @@
                 "parameters": "payload: CustomEvent<{ originalEvent: Event; }>",
                 "required": true,
                 "description": "Emitted when a link is selected.",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenulinkemits.callables.select",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenulinkemits.callables.select",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -2714,8 +2714,8 @@
         "type": "TypeAlias NavMenuOptionCompactSlots: NavMenuCompactSlots",
         "resolvedType": "{ item: (props: { item: NavMenuOptionData; isTrigger?: boolean; }) => any; \"item-leading\": (props: { item: NavMenuOptionData; }) => any; \"item-trailing\": (props: { item: NavMenuOptionData; }) => any; \"item-link-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-trigger-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-children\": (props: { item: NavMenuOptionData; }) => any }",
         "description": "Slots for the NavMenuOptionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.slots",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.slots",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2725,8 +2725,8 @@
             "parameters": "props: { item: NavMenuOptionData; isTrigger?: boolean; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2734,8 +2734,8 @@
                 "type": "{ item: NavMenuOptionData; isTrigger?: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2749,8 +2749,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_leading",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2758,8 +2758,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2773,8 +2773,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_trailing",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2782,8 +2782,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2797,8 +2797,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_link_icon",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_link_icon",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2806,8 +2806,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2821,8 +2821,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_trigger_icon",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_trigger_icon",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2830,8 +2830,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2845,8 +2845,8 @@
             "parameters": "props: { item: NavMenuOptionData; }",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_children",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuoptioncompactslots.callables.item_children",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -2854,8 +2854,8 @@
                 "type": "{ item: NavMenuOptionData; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.type",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.type",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2871,8 +2871,8 @@
             "type": "{ item: (props: { item: NavMenuOptionData; isTrigger?: boolean; }) => any; 'item-leading': (props: { item: NavMenuOptionData; }) => any; 'item-trailing': (props: { item: NavMenuOptionData; }) => any; 'item-link-icon': (props: { item: NavMenuOptionData; }) => any; 'item-trigger-icon': (props: { item: NavMenuOptionData; }) => any; 'item-children': (props: { item: NavMenuOptionData; }) => any; }",
             "resolvedType": "{ item: (props: { item: NavMenuOptionData; isTrigger?: boolean; }) => any; \"item-leading\": (props: { item: NavMenuOptionData; }) => any; \"item-trailing\": (props: { item: NavMenuOptionData; }) => any; \"item-link-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-trigger-icon\": (props: { item: NavMenuOptionData; }) => any; \"item-children\": (props: { item: NavMenuOptionData; }) => any }",
             "description": "Slots for the NavMenuCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -2883,8 +2883,8 @@
                 "parameters": "props: { item: NavMenuOptionData; isTrigger?: boolean; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -2893,8 +2893,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_leading",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_leading",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -2903,8 +2903,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_trailing",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_trailing",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -2913,8 +2913,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_link_icon",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_link_icon",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -2923,8 +2923,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_trigger_icon",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_trigger_icon",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               },
               {
@@ -2933,8 +2933,8 @@
                 "parameters": "props: { item: NavMenuOptionData; }",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenucompactslots.callables.item_children",
-                "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenucompactslots.callables.item_children",
+                "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -2949,8 +2949,8 @@
         "type": "Interface NavMenuRootProps",
         "resolvedType": "{ modelValue?: string; defaultValue?: string; dir?: Direction; orientation?: DataOrientation; delayDuration?: number; skipDelayDuration?: number; disableClickTrigger?: boolean; disableHoverTrigger?: boolean; disablePointerLeaveClose?: boolean }",
         "description": "Properties for the NavMenuRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2958,10 +2958,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the active item. Can be used as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -2969,10 +2969,10 @@
             "type": "string",
             "required": false,
             "description": "The value of the item that should be active when initially rendered.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -2980,10 +2980,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the menu.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2991,8 +2991,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -3005,10 +3005,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the menu.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -3016,8 +3016,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -3030,10 +3030,10 @@
             "type": "number",
             "required": false,
             "description": "The duration from when the pointer enters the trigger until the submenu opens.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.delayduration",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.delayduration",
             "default": "200",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3041,10 +3041,10 @@
             "type": "number",
             "required": false,
             "description": "How much time a user has to enter another trigger without incurring a delay again.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.skipdelayduration",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.skipdelayduration",
             "default": "300",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3052,10 +3052,10 @@
             "type": "boolean",
             "required": false,
             "description": "If `true`, the menu cannot be opened by clicking a trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.disableclicktrigger",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.disableclicktrigger",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3063,10 +3063,10 @@
             "type": "boolean",
             "required": false,
             "description": "If `true`, the menu cannot be opened by hovering a trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.disablehovertrigger",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.disablehovertrigger",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3074,10 +3074,10 @@
             "type": "boolean",
             "required": false,
             "description": "If `true`, the menu will not close when the pointer leaves the content.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootprops.members.disablepointerleaveclose",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootprops.members.disablepointerleaveclose",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           }
         ],
@@ -3090,8 +3090,8 @@
         "type": "TypeAlias NavMenuRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string] }",
         "description": "Events for the NavMenuRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootemits.emits",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootemits.emits",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -3101,8 +3101,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenurootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenurootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           }
         ],
@@ -3116,8 +3116,8 @@
         "type": "Interface NavMenuSubContentProps",
         "resolvedType": "{ sideOffset?: number; forceMount?: boolean }",
         "description": "Properties for the NavMenuSubContent component (the nested flyout surface).",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -3125,10 +3125,10 @@
             "type": "number",
             "required": false,
             "description": "Distance in pixels between the sub trigger and the nested flyout.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.sideoffset",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3136,10 +3136,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubcontentprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -3154,8 +3154,8 @@
         "type": "Interface NavMenuSubTriggerProps",
         "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the NavMenuSubTrigger component (the trigger of a nested flyout).",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -3163,10 +3163,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the trigger is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3174,10 +3174,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -3185,10 +3185,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenusubtriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -3225,8 +3225,8 @@
         "type": "Interface NavMenuTriggerProps",
         "resolvedType": "{ disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the NavMenuTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -3234,10 +3234,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the trigger is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3245,10 +3245,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -3256,10 +3256,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenutriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenutriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -3296,8 +3296,8 @@
         "type": "Interface NavMenuViewportProps",
         "resolvedType": "{ align?: Align; sideOffset?: number; forceMount?: boolean }",
         "description": "Properties for the NavMenuViewport component (the shared floating surface).",
-        "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.props",
-        "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.props",
+        "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -3305,10 +3305,10 @@
             "type": "Align",
             "required": false,
             "description": "Align the viewport against the active trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.align",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.align",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": [
               {
                 "name": "Align",
@@ -3316,8 +3316,8 @@
                 "type": "'start' | 'center' | 'end'",
                 "resolvedType": "'start' | 'center' | 'end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.align",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.align",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -3330,10 +3330,10 @@
             "type": "number",
             "required": false,
             "description": "Distance in pixels between the trigger and the viewport.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.sideoffset",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/nav-menu/types.ts",
+            "sourcePath": "packages/aria/src/components/nav-menu/types.ts",
             "referencedTypes": []
           },
           {
@@ -3341,10 +3341,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_nav_menu_types.navmenuviewportprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],

@@ -12,12 +12,12 @@
 
 ### 1.1 结论摘要（TL;DR）
 
-1. **「免费核心 + 付费高级能力」是最被验证的组件库商业模式**：AG Grid（社区 MIT / 企业版 $999 每开发者）、Handsontable（非商业免费 / 商业 $999）、Tiptap（编辑器 MIT / Cloud $49–$999 月）三个最接近 SoybeanUI 定位的先例全部采用此模型，且**「收费的恰恰是那些难做、可量化、面向企业级场景的高级功能」**——协同、文档转换、服务端渲染、AI、导出。
+1. **「免费核心 + 付费高级能力」是最被验证的组件库商业模式**：AG Grid（社区 MIT / 企业版 $999 每开发者）、Handsontable（非商业免费 / 商业 $999）、Tiptap（编辑器 MIT / Cloud $49–$999 月）三个最接近 Vean 定位的先例全部采用此模型，且**「收费的恰恰是那些难做、可量化、面向企业级场景的高级功能」**——协同、文档转换、服务端渲染、AI、导出。
 2. **三个生态中，editor 的变现路径最清晰**（直接对标 Tiptap Cloud / Pro 扩展），**table 的变现天花板最高**（对标 AG Grid，$999/开发者、对 Fortune 500 渗透），**form 的差异化机会在「托管表单设计器 SaaS + 低代码联动」**（对标 Jotform/Retool 与 Formily Designable）。
-3. **商业化必须与「开源免费边界」严格切割**：SoybeanUI 核心（headless/ui/theme）保持 MIT；外围包的**基础能力保持 MIT**，**付费能力放入独立包/独立子路径**（如 `*-pro` 或 `*/pro` 子路径），用 license key 本地校验（参考 Handsontable/Zeta 先例），不破坏开源信任。
+3. **商业化必须与「开源免费边界」严格切割**：Vean 核心（headless/ui/theme）保持 MIT；外围包的**基础能力保持 MIT**，**付费能力放入独立包/独立子路径**（如 `*-pro` 或 `*/pro` 子路径），用 license key 本地校验（参考 Handsontable/Zeta 先例），不破坏开源信任。
 4. **中国背景 = 差异化机会也是约束**：中国政企市场（私有化部署、信创、等保、发票合规、source escrow）是国外商业组件库服务不到/服务不好的空白；同时中国市场对「开源免费」的支付意愿低于欧美，需要**本地化定价（人民币）+ 企业服务**补足（参考 Univer 与 Element Plus 赞助模式）。
 5. **「赞助 + 生态位」只能作为起步收入**：Element Plus / Naive UI / TanStack 的赞助收入规模有限（Element Plus GitHub Sponsors 当前仅 3 个 sponsor 在档），TanStack 依赖企业合作赞助；真正的可持续收入必须来自企业付费产品/服务，而不是捐赠。
-6. **AI 是 2025–2026 年所有先例都在追加的付费点**：AG Grid 新出 AI Toolkit/MCP Server（企业版内）、Tiptap 的 AI Toolkit 为 add-on、Retool 卖 AI credits、Jotform 卖 AI Agent——SoybeanUI 可复用核心 headless/ui 的流式 AI 能力（`useStream` / `SSender`，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)），把「AI 功能订阅」作为横切付费项。
+6. **AI 是 2025–2026 年所有先例都在追加的付费点**：AG Grid 新出 AI Toolkit/MCP Server（企业版内）、Tiptap 的 AI Toolkit 为 add-on、Retool 卖 AI credits、Jotform 卖 AI Agent——Vean 可复用核心 headless/ui 的流式 AI 能力（`useStream` / `SSender`，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)），把「AI 功能订阅」作为横切付费项。
 7. **风险预警**：头部先例（Tiptap）已在 2025-06 移除免费云计划并持续抬高付费墙（二手来源）；组件库赛道同质化严重，免费替代品（Lexical/BlockNote 等）众多；付费产品一旦上线，维护承诺（SLA、安全补丁、source escrow）会显著抬高运营成本，**需要先验证需求信号再投入**。
 
 ### 1.2 先例商业模式汇总表
@@ -55,7 +55,7 @@
 - **企业版 gating 的高级功能**：AI Toolkit + MCP Server、集成图表（Integrated Charts）、Sparklines、AG Charts Enterprise、Set Filter / Multi Filter / Advanced Filter、单元格范围选择与填充柄、公式（Formulas）、查找（Find）、单元格批注（Cell Notes）、行分组与聚合、透视（Pivoting）、Master/Detail、服务端行模型（Server-Side Row Model）、Excel 导出、右键上下文菜单 [官方对比表](https://www.ag-grid.com/landing-pages/enterprise-data-grid/)。
 - **市场数据（官方自述）**：90% 的 Fortune 500 使用、每周 1M+ npm 下载、GitHub 13K+ stars [官方定价页](https://www.ag-grid.com/license-pricing/)。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
 - 数据表格是**企业级采购意愿最高**的组件品类之一（Fortune 500 渗透），按开发者收费被市场验证多年。
 - 「免费做基础（排序/过滤/分页/编辑），收费做高级（分组/透视/服务端/导出/AI）」是成熟可照搬的 gating 模板。
@@ -77,7 +77,7 @@
 - **Pro 扩展需订阅**：`@tiptap-pro/extension-*`（AI、FileHandler、NodeRange、UniqueID 等）需有效付费订阅；AI/Pro 扩展「需要订阅验证，但可不依赖 Cloud 文档运行」[二手综述](https://eddyter.com/blogs/tiptap-alternative)、[foresightiq 情报](https://www.foresightiq.co/competitive-landscape/tiptap)。
 - **历史变化（二手）**：免费 Cloud 计划于 2025-06 移除，仅剩 30 天试用 [二手综述](https://eddyter.com/blogs/tiptap-vs-quill-2026)；2024 年营收约 $2.3M、团队规模小（二手情报，置信度标记 UNCERTAIN）[inkeep 证据文档](https://github.com/inkeep/open-knowledge-legacy/blob/bffda4d6c330c65b84f7b732520ea077b428b4b8/reports/tiptap-2026-direction-overlap/evidence/d1-product-business.md)。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
 - Tiptap 证明**「MIT 编辑器 + 收费的托管协同/转换/AI/官方 UI」能同时成立**——且 2025-06 把 8 个原 Pro 扩展转 MIT 后，UI 层（正是我们要自建的部分）成为官方唯一保留的付费 UI 资产，这给了我们**自建 Vue3 + UnoCSS UI 层的市场空间**（详见 `docs/ecosystem/editor.md` §1.1）。
 - 计价上「文档数/连接数」适合托管服务；「开发者席位 add-on」适合工具型订阅。
@@ -101,7 +101,7 @@
 
 **为什么团队愿意付费（归纳）**：一次性买到「大量成熟控件 + 年度更新 + 官方支持 + 合规（EULA/发票）」，省下自研数月的成本；「每个开发者都要持证 + 纯订阅 + 强制续费」保证了可持续收入。
 
-**对 SoybeanUI 的启示**：纯商业套件模式收入天花板高但社区信任成本高（无免费层）；SoybeanUI 应走「有免费层的混合模式」，但在企业客户侧可借鉴 Syncfusion 的「项目级订阅（覆盖整个团队）」与 DevExpress 的「多开发者阶梯折扣」。
+**对 Vean 的启示**：纯商业套件模式收入天花板高但社区信任成本高（无免费层）；Vean 应走「有免费层的混合模式」，但在企业客户侧可借鉴 Syncfusion 的「项目级订阅（覆盖整个团队）」与 DevExpress 的「多开发者阶梯折扣」。
 
 ### 2.4 Handsontable — 非商业免费 + 商业订阅（license key 校验范本）
 
@@ -114,11 +114,11 @@
 - **历史**：2018-12-19 的 6.2.2 是最后一个 MIT 版本，之后转为专有双许可 [文档](https://handsontable.com/docs/15.0/javascript-data-grid/software-license)。
 - **支持计划细节**：支持版本范围（Standard/Priority 12 个月、Enterprise 24 个月）、代码评审小时数（2h/5h 每年）、转卖商网络 [购买页](https://dev.handsontable.com/pricing)。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
 - **「免费功能 + 付费支持」也是一种可行模型**，且实现成本最低（不 gate 功能，只 gate 支持）。
-- **license key 本地校验（不联网）**是实现付费功能的低成本、隐私友好、离线可用的机制——非常适合开源项目做 Pro 门控，SoybeanUI 可参考（配合 sbean registry 分发）。
-- 警示：从 MIT 转为专有的先例（Handsontable、部分 Tiptap Pro 扩展）会引发社区反弹，SoybeanUI 若要做 Pro，应在**立项时就明确免费/付费边界**，避免「事后收窄」。
+- **license key 本地校验（不联网）**是实现付费功能的低成本、隐私友好、离线可用的机制——非常适合开源项目做 Pro 门控，Vean 可参考（配合 vean registry 分发）。
+- 警示：从 MIT 转为专有的先例（Handsontable、部分 Tiptap Pro 扩展）会引发社区反弹，Vean 若要做 Pro，应在**立项时就明确免费/付费边界**，避免「事后收窄」。
 
 ### 2.5 Formily / form-create / Formily Designable — 阿里系 OSS 表单生态
 
@@ -129,11 +129,11 @@
 - 社区衍生包 `@formily-design/formily-designer` 提供开箱即用的 React 表单设计器组件（拖拽 + Schema 编辑 + 预览三视图）[npm](https://www.npmjs.com/package/@formily-design/formily-designer)。
 - **Monetization 观察（推断 + 二手）**：Formily 本身**无直接收费**——它是阿里「低代码/中后台体系」的生态资产，价值在内部复用与对外品牌，变现落在**基于它的企业服务、低代码平台（如钉钉宜搭类产品）与咨询**上。这是「大厂 OSS = 生态飞轮，而非收入中心」的典型形态。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
 - **表单 Schema 本身几乎无法直接收费**（MIT 竞争激烈：Formily、React Hook Form、VueUse form 生态皆免费）——价值在**设计器体验、渲染能力、联动复杂度、与后台/工作流集成**。
 - 中国低代码/表单市场巨大（Jotform 类产品本地化弱），**「开源 Formily 式内核 + 商业化托管表单设计器 SaaS」**是已验证的组合（详见 §3.3）。
-- 复用 Formily 生态经验：UI 适配层多、协议标准（JSON Schema 扩展）是生态护城河；SoybeanUI 的 `@soybeanjs/form` 应以标准 Schema + 强类型为核心卖点。
+- 复用 Formily 生态经验：UI 适配层多、协议标准（JSON Schema 扩展）是生态护城河；Vean 的 `@soybeanjs/form` 应以标准 Schema + 强类型为核心卖点。
 
 ### 2.6 shadcn/ui registry / Radix UI / TanStack — headless 开源生态
 
@@ -145,11 +145,11 @@
 - **TanStack**：明确「forever free、无 VC、无付费产品」；收入 = 企业合作赞助 + GitHub Sponsors + 直接企业协作；2025-10 Cloudflare/Netlify/Webflow 联合赞助（Netlify 赞助 TanStack）[官方](https://tanstack.com/ads)、[ethos](https://tanstack.com/ethos)、[Cloudflare 公告](https://blog.cloudflare.com/cloudflare-astro-tanstack/)。
 - **Radix UI**：MIT 开源（WorkOS 团队维护），本身不收费（本调研未直接核实其财务结构，列为一般性观察）。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
-- **registry = 分发与商业化的天然载体**：SoybeanUI 已有 `sbean` registry 且已命名空间化（见 [docs/ecosystem/cli.md](../ecosystem/cli.md)），可扩展为「免费条目 + 付费条目（license key 校验）」两级 registry——这是 shadcn 生态（Zeta/Polar）已验证、但国内尚无玩家做到位的位点。
+- **registry = 分发与商业化的天然载体**：Vean 已有 `vean` registry 且已命名空间化（见 [docs/ecosystem/cli.md](../ecosystem/cli.md)），可扩展为「免费条目 + 付费条目（license key 校验）」两级 registry——这是 shadcn 生态（Zeta/Polar）已验证、但国内尚无玩家做到位的位点。
 - 「免费做基础组件/源码，收费做设计资产/模板/高级 registry 内容」对 headless-first 项目尤其顺滑——因为用户已习惯「源码进仓库」，付费点自然落在「更高级的源码包与配套服务」。
-- 纯赞助（TanStack 路线）只适合极少数头部项目，不适合作为 SoybeanUI 的长期收入支柱。
+- 纯赞助（TanStack 路线）只适合极少数头部项目，不适合作为 Vean 的长期收入支柱。
 
 ### 2.7 Element Plus / Ant Design Pro / Naive UI — 免费 Vue 生态的资金来源
 
@@ -162,7 +162,7 @@
 
 **归纳**：头部免费 Vue 生态的资金来源 = **大厂赞助/雇工（Ant/Element 背后是蚂蚁与社区）+ 赞助商位 + 个人 Sponsors**，规模普遍不大；「模板类」生态靠免费引流、不直接收费。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
 - 赞助只能作为「品牌与运营收入的补充」，不能作为商业计划的支柱。
 - 但**赞助商位**对国内 SaaS/低代码厂商有真实投放价值（Element Plus 的 JNPF/CRMEB 即为明证）——可作为早期收入与生态联动。
@@ -176,11 +176,11 @@
 - **许可分层**：ThemeForest Standard（单项目）、Keenthemes **All-in License**（无限终端产品含 SaaS、可转移给客户、不可开源）、Getbootstrap 系（Standard/Multisite/Extended）[同上](https://keenthemes.com/products/metronic-composer)。
 - 一次买断、无订阅、30 天退款保证；卖的是**完整源码** [同上](https://keenthemes.com/products/metronic-composer)。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
-- 模板市场是「一次性收入 + 大量长尾客户」的成熟形态；SoybeanUI 的 `@soybeanjs/admin` 生态（SAppLayout 等）天然可产出「基于 SoybeanUI 的中后台壳模板」售卖给想快速起盘的中小团队。
+- 模板市场是「一次性收入 + 大量长尾客户」的成熟形态；Vean 的 `@soybeanjs/admin` 生态（SAppLayout 等）天然可产出「基于 Vean 的中后台壳模板」售卖给想快速起盘的中小团队。
 - 定价参考：单项目 $19–$99、全许可 $99–$299（一次性）——**远低于组件库订阅**，但适合作为生态包的冷启动收入与品牌曝光。
-- 注意：模板市场客户对「开源免费」高度敏感，SoybeanUI 的免费核心 + 付费模板/壳产品是可行组合（很多用户愿为「开箱即用的完整壳 + 免费更新」买单）。
+- 注意：模板市场客户对「开源免费」高度敏感，Vean 的免费核心 + 付费模板/壳产品是可行组合（很多用户愿为「开箱即用的完整壳 + 免费更新」买单）。
 
 ### 2.9 开发者工具商业模式（hosted SaaS / per-seat / design-to-code / AI builder）
 
@@ -190,11 +190,11 @@
 - **低代码平台**：Retool Free → Team **$12/构建者/月 + $7/内部用户/月** → Business $65 + $18 → Enterprise 定制；外部用户按量 $10→$5/月；**AI credits** 作为叠加计费单元 [官网定价](https://retool.com/pricing)。
 - **design-to-code / AI builder**：Figma 官方 MCP 正在吞并独立 design-to-code 插件的市场（第三方图库作者观点）；付费 kits 主打「design-to-code 插件、主题适配、pro blocks、视频教程」[Obra 分析](https://shadcn.obra.studio/blog/our-business-model-a-few-words-about-other-shadcn-ui-kits)。
 
-**对 SoybeanUI 的启示**：
+**对 Vean 的启示**：
 
-- **per-seat（IDE/构建者席位）与 usage（提交数/文档数/credits）是开发者工具的两种成熟计费**；SoybeanUI 的付费产品可混合使用（Pro 席位 + 用量额度）。
+- **per-seat（IDE/构建者席位）与 usage（提交数/文档数/credits）是开发者工具的两种成熟计费**；Vean 的付费产品可混合使用（Pro 席位 + 用量额度）。
 - **hosted SaaS 是「组件库知识资产」的第二变现曲线**：组件免费引流 → 托管服务（表单托管、表格数据托管、编辑器协同）按用量收费——这正是 Jotform/Retool/Tiptap Cloud 的路径，且与开源免费边界不冲突（卖的是托管与运维，不是代码）。
-- AI builder / design-to-code 是当前增量热点，但竞争激烈（Figma MCP、Vercel v0 等），SoybeanUI 应把 AI 作为**付费附加能力**而非主卖点。
+- AI builder / design-to-code 是当前增量热点，但竞争激烈（Figma MCP、Vercel v0 等），Vean 应把 AI 作为**付费附加能力**而非主卖点。
 
 ### 2.10 补充案例：Univer（中国 OSS 商业化）与 Novel（Tiptap 之上的编辑器）
 
@@ -210,7 +210,7 @@
 | 原方向                                                                                            | 现维护位置                                                                                |
 | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------- |
 | editor：E1 Pro 能力订阅 · E2 Editor Cloud · E3 AI 写作/编辑 · E4 企业定制与支持 · E5 行业模板市场 | [commercialization.md §2](../ecosystem/commercialization.md#2-soybeanjseditor-商业化方向) |
-| table：T1 Table Pro · T2 Table Cloud · T3 企业性能与支持 · T4 行业套件包 · T5 AI 数据网格         | [commercialization.md §3](../ecosystem/commercialization.md#3-soybeanjstable-商业化方向)  |
+| table：T1 Table Pro · T2 Table Cloud · T3 企业性能与支持 · T4 行业套件包 · T5 AI 数据网格         | [commercialization.md §3](../ecosystem/commercialization.md#3-soybeanjsstable-商业化方向) |
 | form：F1 托管表单设计器 SaaS · F2 Form Pro · F3 企业/低代码集成 · F4 行业方案包 · F5 AI 表单生成  | [commercialization.md §4](../ecosystem/commercialization.md#4-soybeanjsform-商业化方向)   |
 
 ## 4. 横向建议（cross-cutting）
@@ -277,6 +277,6 @@
 
 ### 仓库内既有资料
 
-- [docs/ecosystem/cli.md](../ecosystem/cli.md) — sbean registry 命名空间机制
+- [docs/ecosystem/cli.md](../ecosystem/cli.md) — vean registry 命名空间机制
 - [docs/ecosystem/editor.md](../ecosystem/editor.md) — editor 提案（含 Tiptap 收费边界调研）
 - [docs/adr/0001-peripheral-package-layering.md](../adr/0001-peripheral-package-layering.md) — 外围包分层模型 ADR（已 superseded，仅历史参考）

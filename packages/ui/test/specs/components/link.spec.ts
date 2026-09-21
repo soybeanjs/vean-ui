@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { defineComponent, h } from 'vue';
 import { mount } from '@vue/test-utils';
-import { CONFIG_PROVIDER_CONTEXT_KEY } from '@soybeanjs/headless/constants';
+import { CONFIG_PROVIDER_CONTEXT_KEY } from '@vean/aria/constants';
 import SLink from '@/components/link/link.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -21,13 +21,13 @@ describe('SLink', () => {
       wrapper.unmount();
     });
 
-    it('renders with data-soybean-link attribute', () => {
+    it('renders with data-vean-link attribute', () => {
       const wrapper = mount(SLink, {
         props: { href: 'https://example.com' },
         attachTo: document.body
       });
 
-      expect(wrapper.find('a').attributes('data-soybean-link')).toBeDefined();
+      expect(wrapper.find('a').attributes('data-vean-link')).toBeDefined();
 
       wrapper.unmount();
     });

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; link: ClassValue; ellipsis: ClassValue; list: ClassValue; page: ClassValue; separator: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Breadcrumb component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbui",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbui",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.ellipsis",
             "default": null,
             "inheritedFrom": "ellipsis",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.listprops",
             "default": null,
             "inheritedFrom": "listProps",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbListProps",
@@ -125,8 +125,8 @@
                 "type": "BreadcrumbListProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblistprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblistprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbItemProps",
@@ -150,8 +150,8 @@
                 "type": "BreadcrumbItemProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbitemprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbitemprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.linkprops",
             "default": null,
             "inheritedFrom": "linkProps",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "LinkExtraProps",
@@ -175,8 +175,8 @@
                 "type": "LinkExtraProps",
                 "resolvedType": "{ replace?: boolean; disabled?: boolean; asChild?: boolean; as?: AsTag | Component; activeClass?: string; exactActiveClass?: string; inactiveClass?: string; prefetchedClass?: string; ariaCurrentValue?: 'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'; viewTransition?: boolean; rel?: (string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null; noRel?: boolean; prefetch?: boolean; prefetchOn?: 'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>; noPrefetch?: boolean; trailingSlash?: 'append' | 'remove' }",
                 "description": "Properties for the LinkExtra component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -185,10 +185,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Calls `router.replace` instead of `router.push`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.replace",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.replace",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -196,10 +196,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the link is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -207,10 +207,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -218,10 +218,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -229,10 +229,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Class to apply when the link is active",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.activeclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.activeclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -240,10 +240,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Class to apply when the link is exact active",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.exactactiveclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.exactactiveclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -251,10 +251,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The class to apply to the link when it is inactive.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.inactiveclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.inactiveclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -262,10 +262,10 @@
                     "type": "string",
                     "required": false,
                     "description": "A class to apply to links that have been prefetched.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetchedclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetchedclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -273,10 +273,10 @@
                     "type": "'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'",
                     "required": false,
                     "description": "Value passed to the attribute `aria-current` when the link is exact active.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.ariacurrentvalue",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.ariacurrentvalue",
                     "default": "`'page'`",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -284,10 +284,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Pass the returned promise of `router.push()` to `document.startViewTransition()` if supported.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.viewtransition",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.viewtransition",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -295,10 +295,10 @@
                     "type": "(string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null",
                     "required": false,
                     "description": "A rel attribute value to apply on the link. Defaults to \"noopener noreferrer\" for external links.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.rel",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.rel",
                     "default": "'noopener noreferrer'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -306,10 +306,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "If set to true, no rel attribute will be added to the link",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.norel",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.norel",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -317,10 +317,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When enabled will prefetch middleware, layouts and payloads of links in the viewport.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetch",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetch",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -328,10 +328,10 @@
                     "type": "'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>",
                     "required": false,
                     "description": "Allows controlling when to prefetch links. By default, prefetch is triggered only on visibility.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetchon",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetchon",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -339,10 +339,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Escape hatch to disable `prefetch` attribute.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.noprefetch",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.noprefetch",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -350,10 +350,10 @@
                     "type": "'append' | 'remove'",
                     "required": false,
                     "description": "An option to either add or remove trailing slashes in the `href` for this specific link.\nOverrides the global `trailingSlash` option if provided.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.trailingslash",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.trailingslash",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -369,7 +369,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.pageprops",
             "default": null,
             "inheritedFrom": "pageProps",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbPageProps",
@@ -377,8 +377,8 @@
                 "type": "BreadcrumbPageProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbPage component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbpageprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbpageprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -394,7 +394,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.separatorprops",
             "default": null,
             "inheritedFrom": "separatorProps",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbSeparatorProps",
@@ -402,8 +402,8 @@
                 "type": "BreadcrumbSeparatorProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbSeparator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbseparatorprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbseparatorprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -419,7 +419,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbprops.members.ellipsisprops",
             "default": null,
             "inheritedFrom": "ellipsisProps",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbEllipsisProps",
@@ -427,8 +427,8 @@
                 "type": "BreadcrumbEllipsisProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbEllipsis component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbellipsisprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbellipsisprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -458,7 +458,7 @@
             "required": true,
             "description": "Emitted when click occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbemits.callables.click",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           }
         ],
@@ -482,7 +482,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.default",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -490,8 +490,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -506,7 +506,7 @@
             "required": false,
             "description": "Custom content for the ellipsis slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.ellipsis",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactEllipsisSlotProps",
@@ -514,8 +514,8 @@
                 "type": "BreadcrumbCompactEllipsisSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactEllipsis component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -530,7 +530,7 @@
             "required": false,
             "description": "Custom content for the ellipsis icon slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.ellipsis_icon",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -540,7 +540,7 @@
             "required": false,
             "description": "Custom content for the separator slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.separator",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -550,7 +550,7 @@
             "required": false,
             "description": "Custom content for the item leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -558,8 +558,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -574,7 +574,7 @@
             "required": false,
             "description": "Custom content for the item link slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.item_link",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -582,8 +582,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -598,7 +598,7 @@
             "required": false,
             "description": "Custom content for the item label slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.item_label",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -606,8 +606,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -622,7 +622,7 @@
             "required": false,
             "description": "Custom content for the item trailing slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_breadcrumb_types.breadcrumbslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -630,8 +630,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -650,8 +650,8 @@
         "type": "Interface BreadcrumbCompactProps<T>",
         "resolvedType": "{ items: T[]; ellipsis?: true | [number, number] | null; listProps?: BreadcrumbListProps; itemProps?: BreadcrumbItemProps; linkProps?: LinkExtraProps; pageProps?: BreadcrumbPageProps; separatorProps?: BreadcrumbSeparatorProps; ellipsisProps?: BreadcrumbEllipsisProps }",
         "description": "Properties for the BreadcrumbCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -659,10 +659,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -670,10 +670,10 @@
             "type": "true | [number, number] | null",
             "required": false,
             "description": "The range of items to show ellipsis.\n\nWhen the item count is greater than 4, we will show ellipsis.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.ellipsis",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.ellipsis",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -681,10 +681,10 @@
             "type": "BreadcrumbListProps",
             "required": false,
             "description": "Properties forwarded to the list element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.listprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.listprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbListProps",
@@ -692,8 +692,8 @@
                 "type": "BreadcrumbListProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblistprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblistprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -706,10 +706,10 @@
             "type": "BreadcrumbItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbItemProps",
@@ -717,8 +717,8 @@
                 "type": "BreadcrumbItemProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbitemprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbitemprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -731,10 +731,10 @@
             "type": "LinkExtraProps",
             "required": false,
             "description": "Properties forwarded to the link element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.linkprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.linkprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "LinkExtraProps",
@@ -742,8 +742,8 @@
                 "type": "LinkExtraProps",
                 "resolvedType": "{ replace?: boolean; disabled?: boolean; asChild?: boolean; as?: AsTag | Component; activeClass?: string; exactActiveClass?: string; inactiveClass?: string; prefetchedClass?: string; ariaCurrentValue?: 'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'; viewTransition?: boolean; rel?: (string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null; noRel?: boolean; prefetch?: boolean; prefetchOn?: 'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>; noPrefetch?: boolean; trailingSlash?: 'append' | 'remove' }",
                 "description": "Properties for the LinkExtra component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -752,10 +752,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Calls `router.replace` instead of `router.push`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.replace",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.replace",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -763,10 +763,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the link is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -774,10 +774,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -785,10 +785,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -796,10 +796,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Class to apply when the link is active",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.activeclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.activeclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -807,10 +807,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Class to apply when the link is exact active",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.exactactiveclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.exactactiveclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -818,10 +818,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The class to apply to the link when it is inactive.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.inactiveclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.inactiveclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -829,10 +829,10 @@
                     "type": "string",
                     "required": false,
                     "description": "A class to apply to links that have been prefetched.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetchedclass",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetchedclass",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -840,10 +840,10 @@
                     "type": "'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'",
                     "required": false,
                     "description": "Value passed to the attribute `aria-current` when the link is exact active.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.ariacurrentvalue",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.ariacurrentvalue",
                     "default": "`'page'`",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -851,10 +851,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Pass the returned promise of `router.push()` to `document.startViewTransition()` if supported.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.viewtransition",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.viewtransition",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -862,10 +862,10 @@
                     "type": "(string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null",
                     "required": false,
                     "description": "A rel attribute value to apply on the link. Defaults to \"noopener noreferrer\" for external links.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.rel",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.rel",
                     "default": "'noopener noreferrer'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -873,10 +873,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "If set to true, no rel attribute will be added to the link",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.norel",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.norel",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -884,10 +884,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When enabled will prefetch middleware, layouts and payloads of links in the viewport.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetch",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetch",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -895,10 +895,10 @@
                     "type": "'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>",
                     "required": false,
                     "description": "Allows controlling when to prefetch links. By default, prefetch is triggered only on visibility.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetchon",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetchon",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -906,10 +906,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Escape hatch to disable `prefetch` attribute.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.noprefetch",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.noprefetch",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -917,10 +917,10 @@
                     "type": "'append' | 'remove'",
                     "required": false,
                     "description": "An option to either add or remove trailing slashes in the `href` for this specific link.\nOverrides the global `trailingSlash` option if provided.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.trailingslash",
+                    "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.trailingslash",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -933,10 +933,10 @@
             "type": "BreadcrumbPageProps",
             "required": false,
             "description": "Properties forwarded to the page element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.pageprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.pageprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbPageProps",
@@ -944,8 +944,8 @@
                 "type": "BreadcrumbPageProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbPage component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbpageprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbpageprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -958,10 +958,10 @@
             "type": "BreadcrumbSeparatorProps",
             "required": false,
             "description": "Properties forwarded to the separator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.separatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.separatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbSeparatorProps",
@@ -969,8 +969,8 @@
                 "type": "BreadcrumbSeparatorProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbSeparator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbseparatorprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbseparatorprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -983,10 +983,10 @@
             "type": "BreadcrumbEllipsisProps",
             "required": false,
             "description": "Properties forwarded to the ellipsis element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactprops.members.ellipsisprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactprops.members.ellipsisprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbEllipsisProps",
@@ -994,8 +994,8 @@
                 "type": "BreadcrumbEllipsisProps",
                 "resolvedType": null,
                 "description": "Properties for the BreadcrumbEllipsis component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbellipsisprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbellipsisprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1013,8 +1013,8 @@
         "type": "TypeAlias BreadcrumbCompactEmits<T>",
         "resolvedType": "{ click: [item: T] }",
         "description": "Events for the BreadcrumbCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -1024,8 +1024,8 @@
             "parameters": "item: T",
             "required": true,
             "description": "Emitted when click occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactemits.callables.click",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactemits.callables.click",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1037,8 +1037,8 @@
         "type": "TypeAlias BreadcrumbCompactSlots<T>",
         "resolvedType": "{ BreadcrumbEllipsis?: ((props: BreadcrumbCompactItemSlotProps<T>) => any); ellipsis?: ((props: BreadcrumbCompactEllipsisSlotProps<T>) => any); \"ellipsis-icon\"?: (() => any); separator?: (() => any); \"item-leading\"?: ((props: BreadcrumbCompactItemSlotProps<T>) => any); \"item-link\"?: ((props: BreadcrumbCompactItemSlotProps<T>) => any); \"item-label\"?: ((props: BreadcrumbCompactItemSlotProps<T>) => any); \"item-trailing\"?: ((props: BreadcrumbCompactItemSlotProps<T>) => any) }",
         "description": "Slots for the BreadcrumbCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -1048,8 +1048,8 @@
             "parameters": "((props: BreadcrumbCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -1057,8 +1057,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -1072,8 +1072,8 @@
             "parameters": "((props: BreadcrumbCompactEllipsisSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the ellipsis slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.ellipsis",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.ellipsis",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactEllipsisSlotProps",
@@ -1081,8 +1081,8 @@
                 "type": "BreadcrumbCompactEllipsisSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactEllipsis component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -1096,8 +1096,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the ellipsis icon slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.ellipsis_icon",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.ellipsis_icon",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -1106,8 +1106,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the separator slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.separator",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.separator",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -1116,8 +1116,8 @@
             "parameters": "((props: BreadcrumbCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_leading",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -1125,8 +1125,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -1140,8 +1140,8 @@
             "parameters": "((props: BreadcrumbCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item link slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_link",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_link",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -1149,8 +1149,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -1164,8 +1164,8 @@
             "parameters": "((props: BreadcrumbCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item label slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_label",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_label",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -1173,8 +1173,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -1188,8 +1188,8 @@
             "parameters": "((props: BreadcrumbCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item trailing slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactslots.callables.item_trailing",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": [
               {
                 "name": "BreadcrumbCompactItemSlotProps",
@@ -1197,8 +1197,8 @@
                 "type": "BreadcrumbCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the BreadcrumbCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
                 "typeParameters": ["T extends BreadcrumbOptionData = BreadcrumbOptionData"],
                 "external": false,
                 "members": [],
@@ -1217,8 +1217,8 @@
         "type": "Interface BreadcrumbCompactEllipsisSlotProps<T>",
         "resolvedType": "{ ellipsisItems: T[] }",
         "description": "Slot properties for the BreadcrumbCompactEllipsis component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1226,10 +1226,10 @@
             "type": "T[]",
             "required": true,
             "description": "Ellipsis items exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops.members.ellipsisitems",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactellipsisslotprops.members.ellipsisitems",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1244,8 +1244,8 @@
         "type": "Interface BreadcrumbCompactItemSlotProps<T>",
         "resolvedType": "{ item: T; index: number }",
         "description": "Slot properties for the BreadcrumbCompactItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1253,10 +1253,10 @@
             "type": "T",
             "required": true,
             "description": "Current item data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops.members.item",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops.members.item",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           },
           {
@@ -1264,10 +1264,10 @@
             "type": "number",
             "required": true,
             "description": "Index of the current item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbcompactitemslotprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbcompactitemslotprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+            "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1282,8 +1282,8 @@
         "type": "Interface BreadcrumbEllipsisProps",
         "resolvedType": null,
         "description": "Properties for the BreadcrumbEllipsis component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbellipsisprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbellipsisprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1297,8 +1297,8 @@
         "type": "Interface BreadcrumbItemProps",
         "resolvedType": null,
         "description": "Properties for the BreadcrumbItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbitemprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbitemprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1312,8 +1312,8 @@
         "type": "Interface BreadcrumbLinkProps",
         "resolvedType": "{ to?: string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric; replace?: boolean; href?: string; disabled?: boolean; activeClass?: string; exactActiveClass?: string; inactiveClass?: string; prefetchedClass?: string; external?: boolean; ariaCurrentValue?: 'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'; viewTransition?: boolean; target?: (string & {}) | '_blank' | '_parent' | '_self' | '_top' | null; rel?: (string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null; noRel?: boolean; prefetch?: boolean; prefetchOn?: 'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>; noPrefetch?: boolean; trailingSlash?: 'append' | 'remove'; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the BreadcrumbLink component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1321,10 +1321,10 @@
             "type": "string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric",
             "required": false,
             "description": "Route Location the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.to",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.to",
             "default": null,
             "inheritedFrom": "LinkProps.to",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "RouteLocationRaw",
@@ -1346,10 +1346,10 @@
             "type": "boolean",
             "required": false,
             "description": "Calls `router.replace` instead of `router.push`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.replace",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.replace",
             "default": null,
             "inheritedFrom": "LinkProps.replace",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1357,10 +1357,10 @@
             "type": "string",
             "required": false,
             "description": "The URL the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.href",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.href",
             "default": null,
             "inheritedFrom": "LinkProps.href",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1368,10 +1368,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the link is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.disabled",
             "default": null,
             "inheritedFrom": "LinkProps.disabled",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1379,10 +1379,10 @@
             "type": "string",
             "required": false,
             "description": "Class to apply when the link is active",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.activeclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.activeclass",
             "default": null,
             "inheritedFrom": "LinkProps.activeClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1390,10 +1390,10 @@
             "type": "string",
             "required": false,
             "description": "Class to apply when the link is exact active",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.exactactiveclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.exactactiveclass",
             "default": null,
             "inheritedFrom": "LinkProps.exactActiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1401,10 +1401,10 @@
             "type": "string",
             "required": false,
             "description": "The class to apply to the link when it is inactive.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.inactiveclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.inactiveclass",
             "default": null,
             "inheritedFrom": "LinkProps.inactiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1412,10 +1412,10 @@
             "type": "string",
             "required": false,
             "description": "A class to apply to links that have been prefetched.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.prefetchedclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.prefetchedclass",
             "default": null,
             "inheritedFrom": "LinkProps.prefetchedClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1423,10 +1423,10 @@
             "type": "boolean",
             "required": false,
             "description": "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.external",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.external",
             "default": null,
             "inheritedFrom": "LinkProps.external",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1434,10 +1434,10 @@
             "type": "'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'",
             "required": false,
             "description": "Value passed to the attribute `aria-current` when the link is exact active.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.ariacurrentvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.ariacurrentvalue",
             "default": "`'page'`",
             "inheritedFrom": "ariaCurrentValue",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1445,10 +1445,10 @@
             "type": "boolean",
             "required": false,
             "description": "Pass the returned promise of `router.push()` to `document.startViewTransition()` if supported.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.viewtransition",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.viewtransition",
             "default": null,
             "inheritedFrom": "LinkProps.viewTransition",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1456,10 +1456,10 @@
             "type": "(string & {}) | '_blank' | '_parent' | '_self' | '_top' | null",
             "required": false,
             "description": "Where to display the linked URL, as the name for a browsing context.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.target",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.target",
             "default": null,
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1467,10 +1467,10 @@
             "type": "(string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null",
             "required": false,
             "description": "A rel attribute value to apply on the link. Defaults to \"noopener noreferrer\" for external links.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.rel",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.rel",
             "default": "'noopener noreferrer'",
             "inheritedFrom": "rel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1478,10 +1478,10 @@
             "type": "boolean",
             "required": false,
             "description": "If set to true, no rel attribute will be added to the link",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.norel",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.norel",
             "default": null,
             "inheritedFrom": "LinkProps.noRel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1489,10 +1489,10 @@
             "type": "boolean",
             "required": false,
             "description": "When enabled will prefetch middleware, layouts and payloads of links in the viewport.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.prefetch",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.prefetch",
             "default": null,
             "inheritedFrom": "LinkProps.prefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1500,10 +1500,10 @@
             "type": "'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>",
             "required": false,
             "description": "Allows controlling when to prefetch links. By default, prefetch is triggered only on visibility.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.prefetchon",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.prefetchon",
             "default": null,
             "inheritedFrom": "LinkProps.prefetchOn",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1511,8 +1511,8 @@
                 "type": "{ visibility: boolean; interaction: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.type",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.type",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1525,10 +1525,10 @@
             "type": "boolean",
             "required": false,
             "description": "Escape hatch to disable `prefetch` attribute.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.noprefetch",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.noprefetch",
             "default": null,
             "inheritedFrom": "LinkProps.noPrefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1536,10 +1536,10 @@
             "type": "'append' | 'remove'",
             "required": false,
             "description": "An option to either add or remove trailing slashes in the `href` for this specific link.\nOverrides the global `trailingSlash` option if provided.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.trailingslash",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.trailingslash",
             "default": null,
             "inheritedFrom": "trailingSlash",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1547,10 +1547,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.aschild",
             "default": null,
             "inheritedFrom": "LinkProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1558,10 +1558,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblinkprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblinkprops.members.as",
             "default": "'div'",
             "inheritedFrom": "LinkProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1598,8 +1598,8 @@
         "type": "Interface BreadcrumbListProps",
         "resolvedType": null,
         "description": "Properties for the BreadcrumbList component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumblistprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumblistprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1613,8 +1613,8 @@
         "type": "Interface BreadcrumbPageProps",
         "resolvedType": null,
         "description": "Properties for the BreadcrumbPage component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbpageprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbpageprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1628,8 +1628,8 @@
         "type": "Interface BreadcrumbRootProps",
         "resolvedType": null,
         "description": "Properties for the BreadcrumbRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbrootprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbrootprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1643,8 +1643,8 @@
         "type": "Interface BreadcrumbSeparatorProps",
         "resolvedType": null,
         "description": "Properties for the BreadcrumbSeparator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_breadcrumb_types.breadcrumbseparatorprops.props",
-        "sourcePath": "packages/headless/src/components/breadcrumb/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_breadcrumb_types.breadcrumbseparatorprops.props",
+        "sourcePath": "packages/aria/src/components/breadcrumb/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],

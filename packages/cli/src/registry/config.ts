@@ -1,8 +1,8 @@
-import { NEUTRAL_PALETTES, PALETTE_KEYS, themeSizeKeys, themeRadiusKeys, themeFontKeys } from '@soybeanjs/theme';
 import * as v from 'valibot';
+import { NEUTRAL_PALETTES, PALETTE_KEYS, themeSizeKeys, themeRadiusKeys, themeFontKeys } from '@vean/theme';
 
 // ---------------------------------------------------------------------------
-// SBean config (sbean.json) — the user-facing project config
+// Vean config (vean.json) — the user-facing project config
 // ---------------------------------------------------------------------------
 
 export const PRESET_ICON_LIBRARIES = ['lucide', 'material-symbols', 'ph', 'tabler', 'solar', 'radix-icons'] as const;
@@ -16,7 +16,7 @@ export const PRESET_PRIMARY_COLORS = PALETTE_KEYS;
 export const PRESET_SIZES = themeSizeKeys;
 
 /**
- * The preset families `sbean.json` accepts, taken straight from the theme
+ * The preset families `vean.json` accepts, taken straight from the theme
  * engine so a family added to the engine reaches the CLI without a second edit.
  *
  * The engine's `themeFontKeys` is the loadable catalog (sans → mono → serif,

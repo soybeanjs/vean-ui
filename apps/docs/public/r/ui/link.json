@@ -1,22 +1,22 @@
 {
   "name": "ui/link",
   "package": "ui",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "files": [
     {
       "path": "packages/ui/src/components/link/link.vue",
       "type": "registry:ui",
-      "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { useOmitProps } from '@soybeanjs/headless/composables';\nimport { Link } from '@soybeanjs/headless/link';\nimport { linkVariants } from '@/styles/link';\nimport type { LinkProps } from './types';\n\ndefineOptions({\n  name: 'SLink'\n});\n\nconst props = withDefaults(defineProps<LinkProps>(), {\n  disabled: undefined,\n  external: undefined,\n  noRel: undefined,\n  prefetch: undefined,\n  noPrefetch: undefined,\n  viewTransition: undefined,\n  replace: undefined\n});\n\nconst forwardedProps = useOmitProps(props, ['class']);\n\nconst cls = computed(() => linkVariants(undefined, props.class));\n</script>\n\n<template>\n  <Link v-slot=\"slotProps\" v-bind=\"forwardedProps\" :class=\"cls\">\n    <slot v-bind=\"slotProps\" />\n  </Link>\n</template>\n"
+      "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { useOmitProps } from '@vean/aria/composables';\nimport { Link } from '@vean/aria/link';\nimport { linkVariants } from '@/styles/link';\nimport type { LinkProps } from './types';\n\ndefineOptions({\n  name: 'SLink'\n});\n\nconst props = withDefaults(defineProps<LinkProps>(), {\n  disabled: undefined,\n  external: undefined,\n  noRel: undefined,\n  prefetch: undefined,\n  noPrefetch: undefined,\n  viewTransition: undefined,\n  replace: undefined\n});\n\nconst forwardedProps = useOmitProps(props, ['class']);\n\nconst cls = computed(() => linkVariants(undefined, props.class));\n</script>\n\n<template>\n  <Link v-slot=\"slotProps\" v-bind=\"forwardedProps\" :class=\"cls\">\n    <slot v-bind=\"slotProps\" />\n  </Link>\n</template>\n"
     },
     {
       "path": "packages/ui/src/components/link/types.ts",
       "type": "registry:lib",
-      "content": "import type { LinkProps as _LinkProps } from '@soybeanjs/headless/link';\nimport type { ClassValue } from '@soybeanjs/headless/types';\n\n/**\n * Properties for the Link component.\n */\nexport interface LinkProps extends _LinkProps {\n  /**\n   * Additional class names applied to the root element.\n   */\n  class?: ClassValue;\n}\n"
+      "content": "import type { LinkProps as _LinkProps } from '@vean/aria/link';\nimport type { ClassValue } from '@vean/aria/types';\n\n/**\n * Properties for the Link component.\n */\nexport interface LinkProps extends _LinkProps {\n  /**\n   * Additional class names applied to the root element.\n   */\n  class?: ClassValue;\n}\n"
     },
     {
       "path": "packages/ui/src/components/link/index.ts",
       "type": "registry:lib",
-      "content": "export { default as SLink } from './link.vue';\n\nexport type { LinkBaseProps, LinkExtraProps } from '@soybeanjs/headless/link';\nexport type * from './types';\n"
+      "content": "export { default as SLink } from './link.vue';\n\nexport type { LinkBaseProps, LinkExtraProps } from '@vean/aria/link';\nexport type * from './types';\n"
     },
     {
       "path": "packages/ui/src/styles/link.ts",

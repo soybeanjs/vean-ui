@@ -51,7 +51,7 @@ async function drag(from: { x: number; y: number }, to: { x: number; y: number }
 }
 
 function getPopups() {
-  return Array.from(document.querySelectorAll('[data-soybean-drawer-popup]')) as HTMLElement[];
+  return Array.from(document.querySelectorAll('[data-vean-drawer-popup]')) as HTMLElement[];
 }
 
 function popupDragPoint(popup: HTMLElement) {
@@ -72,7 +72,7 @@ describe('SDrawer drag (e2e)', () => {
       }
     });
 
-    document.querySelector<HTMLButtonElement>('[data-soybean-drawer-trigger]')?.click();
+    document.querySelector<HTMLButtonElement>('[data-vean-drawer-trigger]')?.click();
     await sleep(600);
 
     const popup = getPopups()[0];
@@ -102,7 +102,7 @@ describe('SDrawer drag (e2e)', () => {
     await sleep(600);
 
     const popup = getPopups()[0];
-    const overlay = document.querySelector('[data-soybean-overlay]') as HTMLElement | null;
+    const overlay = document.querySelector('[data-vean-overlay]') as HTMLElement | null;
 
     expect(popup).toBeTruthy();
     expect(overlay).toBeTruthy();
@@ -110,7 +110,7 @@ describe('SDrawer drag (e2e)', () => {
     // The overlay is fully visible at rest on any snap point.
     expect(window.getComputedStyle(overlay!).opacity).toBe('1');
 
-    const initialOffset = Number.parseFloat(popup.style.getPropertyValue('--soybean-drawer-snap-point-offset'));
+    const initialOffset = Number.parseFloat(popup.style.getPropertyValue('--vean-drawer-snap-point-offset'));
 
     expect(initialOffset).toBeGreaterThan(0);
 
@@ -120,9 +120,7 @@ describe('SDrawer drag (e2e)', () => {
     await drag(from, { x: from.x, y: Math.max(from.y - 500, 40) });
     await sleep(700);
 
-    const settledOffset = Number.parseFloat(
-      getPopups()[0]!.style.getPropertyValue('--soybean-drawer-snap-point-offset')
-    );
+    const settledOffset = Number.parseFloat(getPopups()[0]!.style.getPropertyValue('--vean-drawer-snap-point-offset'));
 
     expect(settledOffset).toBeLessThan(initialOffset);
 
@@ -164,8 +162,8 @@ describe('SDrawer drag (e2e)', () => {
     }
 
     // Mid-drag: a frozen panel has not moved and reports no gesture.
-    expect(popup.style.getPropertyValue('--soybean-drawer-swipe-movement-y')).toBe('');
-    expect(popup.getAttribute('data-soybean-swiping')).toBeNull();
+    expect(popup.style.getPropertyValue('--vean-drawer-swipe-movement-y')).toBe('');
+    expect(popup.getAttribute('data-vean-swiping')).toBeNull();
     expect(Math.round(popup.getBoundingClientRect().top)).toBeLessThan(1);
 
     dispatchPointer('pointerup', from.x, from.y + 400);
@@ -190,15 +188,13 @@ describe('SDrawer drag (e2e)', () => {
 
     const popup = getPopups()[0]!;
 
-    const firstFrameOffset = Number.parseFloat(popup.style.getPropertyValue('--soybean-drawer-snap-point-offset'));
+    const firstFrameOffset = Number.parseFloat(popup.style.getPropertyValue('--vean-drawer-snap-point-offset'));
 
     expect(firstFrameOffset).not.toBeNaN();
 
     await sleep(700);
 
-    const settledOffset = Number.parseFloat(
-      getPopups()[0]!.style.getPropertyValue('--soybean-drawer-snap-point-offset')
-    );
+    const settledOffset = Number.parseFloat(getPopups()[0]!.style.getPropertyValue('--vean-drawer-snap-point-offset'));
 
     expect(settledOffset).toBeCloseTo(firstFrameOffset, 0);
 
@@ -244,10 +240,10 @@ describe('SDrawer drag (e2e)', () => {
     expect(seenSnapPoints).toHaveLength(0);
 
     const popup = getPopups()[0]!;
-    const popupHeightValue = Number.parseFloat(popup.style.getPropertyValue('--soybean-drawer-height'));
+    const popupHeightValue = Number.parseFloat(popup.style.getPropertyValue('--vean-drawer-height'));
     const expectedOffset = (fraction: number) => popupHeightValue - fraction * window.innerHeight;
 
-    expect(Number.parseFloat(popup.style.getPropertyValue('--soybean-drawer-snap-point-offset'))).toBeCloseTo(
+    expect(Number.parseFloat(popup.style.getPropertyValue('--vean-drawer-snap-point-offset'))).toBeCloseTo(
       expectedOffset(0.5),
       0
     );
@@ -259,7 +255,7 @@ describe('SDrawer drag (e2e)', () => {
     await sleep(700);
 
     expect(seenSnapPoints.at(-1)).toBe(0.25);
-    expect(Number.parseFloat(getPopups()[0]!.style.getPropertyValue('--soybean-drawer-snap-point-offset'))).toBeCloseTo(
+    expect(Number.parseFloat(getPopups()[0]!.style.getPropertyValue('--vean-drawer-snap-point-offset'))).toBeCloseTo(
       expectedOffset(0.25),
       0
     );
@@ -279,7 +275,7 @@ describe('SDrawer drag (e2e)', () => {
 
     await sleep(600);
 
-    const overlay = document.querySelector('[data-soybean-overlay]') as HTMLElement;
+    const overlay = document.querySelector('[data-vean-overlay]') as HTMLElement;
 
     const popup = getPopups()[0];
     const from = popupDragPoint(popup);
@@ -348,7 +344,7 @@ describe('SDrawer drag (e2e)', () => {
 
     const { unmount } = await renderComponent(NestedHarness);
 
-    document.querySelector<HTMLButtonElement>('[data-soybean-drawer-trigger]')?.click();
+    document.querySelector<HTMLButtonElement>('[data-vean-drawer-trigger]')?.click();
     await sleep(600);
 
     expect(getPopups()).toHaveLength(1);
@@ -381,7 +377,7 @@ describe('SDrawer drag (e2e)', () => {
       }
     });
 
-    const trigger = document.querySelector<HTMLButtonElement>('[data-soybean-drawer-trigger]');
+    const trigger = document.querySelector<HTMLButtonElement>('[data-vean-drawer-trigger]');
 
     trigger?.click();
     await sleep(600);
@@ -488,23 +484,23 @@ describe('SDrawer drag (e2e)', () => {
 
     const { unmount } = await renderComponent(NestedButtonHarness);
 
-    document.querySelector<HTMLButtonElement>('[data-soybean-drawer-trigger]')?.click();
+    document.querySelector<HTMLButtonElement>('[data-vean-drawer-trigger]')?.click();
     await sleep(600);
 
     const parent = getPopups()[0]!;
 
-    expect(parent.style.getPropertyValue('--soybean-drawer-nested-scale')).toBe('');
+    expect(parent.style.getPropertyValue('--vean-drawer-nested-scale')).toBe('');
 
     document.querySelector<HTMLButtonElement>('[data-child-opener]')?.click();
     await sleep(600);
 
-    expect(Number.parseFloat(parent.style.getPropertyValue('--soybean-drawer-nested-scale'))).toBeLessThan(1);
+    expect(Number.parseFloat(parent.style.getPropertyValue('--vean-drawer-nested-scale'))).toBeLessThan(1);
 
     document.querySelector<HTMLButtonElement>('[data-child-closer]')?.click();
     await sleep(600);
 
     expect(getPopups()).toHaveLength(1);
-    expect(parent.style.getPropertyValue('--soybean-drawer-nested-scale')).toBe('');
+    expect(parent.style.getPropertyValue('--vean-drawer-nested-scale')).toBe('');
 
     unmount();
   });

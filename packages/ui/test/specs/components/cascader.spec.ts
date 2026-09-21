@@ -454,7 +454,7 @@ describe('SCascader', () => {
       await nextTick();
       await nextTick();
 
-      const removeButton = document.body.querySelector('[data-soybean-cascader-tag] button');
+      const removeButton = document.body.querySelector('[data-vean-cascader-tag] button');
       expect(removeButton).toBeTruthy();
       // Default locale is `en`: the template substitutes `{label}` with the node label.
       expect(removeButton?.getAttribute('aria-label')).toBe('Remove 浙江');
@@ -487,7 +487,7 @@ describe('SCascader', () => {
       expect(wrapper.emitted('update:modelValue')?.at(-1)).toEqual([['zhejiang', 'jiangsu']]);
 
       // Remove the 浙江 tag: the 江苏 selection remains.
-      const zhejiangRemove = Array.from(document.body.querySelectorAll('[data-soybean-cascader-tag] button')).find(
+      const zhejiangRemove = Array.from(document.body.querySelectorAll('[data-vean-cascader-tag] button')).find(
         button => button.getAttribute('aria-label') === 'Remove 浙江'
       );
       await new DOMWrapper(zhejiangRemove as Element).trigger('click');
@@ -517,9 +517,9 @@ describe('SCascader', () => {
       await nextTick();
       await nextTick();
 
-      expect(document.body.querySelector('[data-soybean-cascader-tag]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-cascader-tag]')).toBeTruthy();
 
-      const clearButton = document.body.querySelector('[data-soybean-cascader-clear]');
+      const clearButton = document.body.querySelector('[data-vean-cascader-clear]');
       expect(clearButton).toBeTruthy();
       await new DOMWrapper(clearButton as Element).trigger('click');
       await flushPromises();
@@ -527,7 +527,7 @@ describe('SCascader', () => {
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)).toEqual([[]]);
       expect(wrapper.emitted('clear')).toHaveLength(1);
-      expect(document.body.querySelector('[data-soybean-cascader-tag]')).toBeNull();
+      expect(document.body.querySelector('[data-vean-cascader-tag]')).toBeNull();
       wrapper.unmount();
     });
 
@@ -545,7 +545,7 @@ describe('SCascader', () => {
 
       const zhejiang = findTreeItem('浙江');
       expect(zhejiang).toBeTruthy();
-      const arrow = zhejiang?.querySelector('[data-soybean-cascader-option-arrow]');
+      const arrow = zhejiang?.querySelector('[data-vean-cascader-option-arrow]');
       expect(arrow).toBeTruthy();
 
       await new DOMWrapper(arrow as Element).trigger('click');
@@ -554,7 +554,7 @@ describe('SCascader', () => {
       // The children column is expanded...
       expect(document.body.textContent).toContain('杭州');
       // ...but the click on the expand icon must not toggle the selection.
-      expect(document.body.querySelector('[data-soybean-cascader-tag]')).toBeNull();
+      expect(document.body.querySelector('[data-vean-cascader-tag]')).toBeNull();
       expect(wrapper.emitted('update:modelValue')).toBeUndefined();
       wrapper.unmount();
     });
@@ -633,13 +633,13 @@ describe('SCascader', () => {
       await nextTick();
 
       // Expand 浙江 and 杭州 via their arrows (expanding must not select).
-      await new DOMWrapper(
-        findTreeItem('浙江')?.querySelector('[data-soybean-cascader-option-arrow]') as Element
-      ).trigger('click');
+      await new DOMWrapper(findTreeItem('浙江')?.querySelector('[data-vean-cascader-option-arrow]') as Element).trigger(
+        'click'
+      );
       await nextTick();
-      await new DOMWrapper(
-        findTreeItem('杭州')?.querySelector('[data-soybean-cascader-option-arrow]') as Element
-      ).trigger('click');
+      await new DOMWrapper(findTreeItem('杭州')?.querySelector('[data-vean-cascader-option-arrow]') as Element).trigger(
+        'click'
+      );
       await nextTick();
 
       // Select a single leaf.
@@ -695,7 +695,7 @@ describe('SCascader', () => {
       await wrapper.get('[role="combobox"]').trigger('click');
       await nextTick();
 
-      const input = document.body.querySelector<HTMLInputElement>('[data-soybean-cascader-search-input]');
+      const input = document.body.querySelector<HTMLInputElement>('[data-vean-cascader-search-input]');
       expect(input).toBeTruthy();
 
       await new DOMWrapper(input as Element).setValue('西湖');
@@ -731,7 +731,7 @@ describe('SCascader', () => {
       await wrapper.get('[role="combobox"]').trigger('click');
       await nextTick();
 
-      const input = document.body.querySelector<HTMLInputElement>('[data-soybean-cascader-search-input]');
+      const input = document.body.querySelector<HTMLInputElement>('[data-vean-cascader-search-input]');
       expect(input).toBeTruthy();
       // Default locale is `en`.
       expect(input?.getAttribute('aria-label')).toBe('Search');
@@ -803,9 +803,9 @@ describe('SCascader', () => {
       await nextTick();
 
       // Default locale is `en`.
-      expect(document.body.querySelector('[data-soybean-cascader-empty]')?.textContent).toContain('No data');
+      expect(document.body.querySelector('[data-vean-cascader-empty]')?.textContent).toContain('No data');
       // The empty state replaces the menu columns so it can center in the panel.
-      expect(document.body.querySelector('[data-soybean-cascader-menu]')).toBeNull();
+      expect(document.body.querySelector('[data-vean-cascader-menu]')).toBeNull();
       wrapper.unmount();
     });
 
@@ -827,7 +827,7 @@ describe('SCascader', () => {
       await flushPromises();
       await nextTick();
 
-      expect(document.body.querySelector('[data-soybean-cascader-empty]')?.textContent).toContain('没有匹配项');
+      expect(document.body.querySelector('[data-vean-cascader-empty]')?.textContent).toContain('没有匹配项');
       wrapper.unmount();
     });
   });
@@ -853,7 +853,7 @@ describe('SCascader', () => {
       await wrapper.get('[role="combobox"]').trigger('click');
       await nextTick();
 
-      const menu = document.body.querySelector('[data-soybean-cascader-menu]');
+      const menu = document.body.querySelector('[data-vean-cascader-menu]');
       expect(menu).toBeTruthy();
       // ceil(240 / 34) + 2 = 10 rendered rows out of 50 root options.
       expect(menu?.querySelectorAll('[role="treeitem"]').length).toBe(10);
@@ -874,7 +874,7 @@ describe('SCascader', () => {
       await wrapper.get('[role="combobox"]').trigger('click');
       await nextTick();
 
-      const menu = document.body.querySelector<HTMLElement>('[data-soybean-cascader-menu]');
+      const menu = document.body.querySelector<HTMLElement>('[data-vean-cascader-menu]');
       expect(menu).toBeTruthy();
       // The bottom spacer covers the 40 unrendered rows: 40 * 34 = 1360px.
       const spacers = menu?.querySelectorAll('div[aria-hidden="true"]');
@@ -905,7 +905,7 @@ describe('SCascader', () => {
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)).toEqual(['zhejiang']);
 
-      const clearButton = document.body.querySelector<HTMLButtonElement>('[data-soybean-cascader-clear]');
+      const clearButton = document.body.querySelector<HTMLButtonElement>('[data-vean-cascader-clear]');
       expect(clearButton).toBeTruthy();
       // Default locale is `en`.
       expect(clearButton?.getAttribute('aria-label')).toBe('Clear value');
@@ -938,7 +938,7 @@ describe('SCascader', () => {
       await nextTick();
       await nextTick();
 
-      const clearButton = document.body.querySelector<HTMLButtonElement>('[data-soybean-cascader-clear]');
+      const clearButton = document.body.querySelector<HTMLButtonElement>('[data-vean-cascader-clear]');
       expect(clearButton?.getAttribute('aria-label')).toBe('清空选择');
       wrapper.unmount();
     });

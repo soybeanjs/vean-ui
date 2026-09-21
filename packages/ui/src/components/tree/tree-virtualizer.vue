@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends TreeItemData, U extends MaybeArray<string> | undefined, M extends boolean">
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { TreeVirtualizerRoot } from '@soybeanjs/headless/tree';
-import type { TreeItemData } from '@soybeanjs/headless/tree';
-import type { MaybeArray } from '@soybeanjs/headless/types';
-import { VirtualizerContent } from '@soybeanjs/headless/virtualizer';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { TreeVirtualizerRoot } from '@vean/aria/tree';
+import type { TreeItemData } from '@vean/aria/tree';
+import type { MaybeArray } from '@vean/aria/types';
+import { VirtualizerContent } from '@vean/aria/virtualizer';
 import STreeVirtualizerAnimated from './tree-virtualizer-animated.vue';
 import type { TreeVirtualizerProps, TreeVirtualizerEmits } from './types';
 
@@ -12,7 +12,7 @@ defineOptions({
 });
 
 const props = withDefaults(defineProps<TreeVirtualizerProps<T, U, M>>(), {
-  // Mirror the loop: true default of headless TreeRoot to avoid the missing Boolean prop being cast to false and overriding it when passed through
+  // Mirror the loop: true default of Aria TreeRoot to avoid the missing Boolean prop being cast to false and overriding it when passed through
   loop: true,
   animated: false
 });

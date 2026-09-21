@@ -11,7 +11,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      const wrapperEl = wrapper.get('[data-soybean-aspect-ratio-wrapper]');
+      const wrapperEl = wrapper.get('[data-vean-aspect-ratio-wrapper]');
       // 1:1 ratio → paddingBottom = (1/1) * 100 = 100%
       expect(wrapperEl.attributes('style')).toContain('padding-bottom: 100%');
 
@@ -25,7 +25,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      const wrapperEl = wrapper.get('[data-soybean-aspect-ratio-wrapper]');
+      const wrapperEl = wrapper.get('[data-vean-aspect-ratio-wrapper]');
       // 16:9 ratio → paddingBottom = (9/16) * 100 ≈ 56.25%
       expect(wrapperEl.attributes('style')).toContain('padding-bottom: 56.25%');
 
@@ -39,7 +39,7 @@ describe('SAspectRatio', () => {
       });
 
       expect(wrapper.find('[data-child]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-aspect-ratio]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-aspect-ratio]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -50,7 +50,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      const wrapperEl = wrapper.get('[data-soybean-aspect-ratio-wrapper]');
+      const wrapperEl = wrapper.get('[data-vean-aspect-ratio-wrapper]');
       expect(wrapperEl.attributes('style')).toContain('position: relative');
 
       wrapper.unmount();
@@ -62,7 +62,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      const contentEl = wrapper.get('[data-soybean-aspect-ratio]');
+      const contentEl = wrapper.get('[data-vean-aspect-ratio]');
       expect(contentEl.attributes('style')).toContain('position: absolute');
 
       wrapper.unmount();
@@ -76,7 +76,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-aspect-ratio]').element.tagName).toBe('DIV');
+      expect(wrapper.get('[data-vean-aspect-ratio]').element.tagName).toBe('DIV');
 
       wrapper.unmount();
     });
@@ -88,7 +88,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-aspect-ratio]').element.tagName).toBe('SECTION');
+      expect(wrapper.get('[data-vean-aspect-ratio]').element.tagName).toBe('SECTION');
 
       wrapper.unmount();
     });
@@ -124,7 +124,7 @@ describe('SAspectRatio', () => {
         attachTo: document.body
       });
 
-      const contentEl = wrapper.get('[data-soybean-aspect-ratio]');
+      const contentEl = wrapper.get('[data-vean-aspect-ratio]');
       expect(contentEl.classes()).toContain('rounded-lg');
       expect(contentEl.classes()).toContain('overflow-hidden');
 

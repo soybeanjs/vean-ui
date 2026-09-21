@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { useOmitProps } from '@vean/aria/composables';
 import { useListUi } from './context';
 import type { ListItemProps, ListItemSlots } from './types';
 
@@ -30,16 +30,16 @@ const itemClass = computed(() => [itemUi.value, props.class]);
 </script>
 
 <template>
-  <li v-bind="forwardedProps" data-soybean-list-item :class="itemClass">
+  <li v-bind="forwardedProps" data-vean-list-item :class="itemClass">
     <slot name="leading" />
-    <div v-bind="contentProps" data-soybean-list-content :class="contentUi">
-      <h3 v-if="slots.title || title" v-bind="titleProps" data-soybean-list-title :class="titleUi">
+    <div v-bind="contentProps" data-vean-list-content :class="contentUi">
+      <h3 v-if="slots.title || title" v-bind="titleProps" data-vean-list-title :class="titleUi">
         <slot name="title">{{ title }}</slot>
       </h3>
       <p
         v-if="slots.description || description"
         v-bind="descriptionProps"
-        data-soybean-list-description
+        data-vean-list-description
         :class="descriptionUi"
       >
         <slot name="description">{{ description }}</slot>

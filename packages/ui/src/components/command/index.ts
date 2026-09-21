@@ -1,4 +1,4 @@
 export { default as SCommand } from './command.vue';
 
-export type * from '@soybeanjs/headless/command';
+export type * from '@vean/aria/command';
 export type * from './types';

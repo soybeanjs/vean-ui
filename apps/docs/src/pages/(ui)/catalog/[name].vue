@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
-import { kebabCase, pascalCase } from '@soybeanjs/headless/shared';
+import { kebabCase, pascalCase } from '@vean/aria/shared';
 import { menuData } from '~/constants/menus';
 import { getComponentChangelogMeta } from '~/shared/generated-changelog';
 import { toHeadingId } from '~/shared/heading';
@@ -104,7 +104,7 @@ function onLoaded(isSuccess: boolean) {
             <div class="space-y-4">
               <div class="flex flex-wrap items-center gap-2.5">
                 <span class="text-sm font-medium text-muted-foreground">{{ currentGroupLabel }}</span>
-                <div class="code-btn-outline">@soybeanjs/ui</div>
+                <div class="code-btn-outline">@vean/ui</div>
                 <div class="code-btn-outline">{{ importName }}</div>
               </div>
 

@@ -10,9 +10,9 @@ head:
 
 Menubar 用于构建常驻应用顶部的横向菜单栏：顶层为一组可横向漫游焦点的触发器，点击或悬停展开下拉菜单，支持任意层级嵌套子菜单与完整键盘导航。
 
-`SMenubar` 是数据驱动的聚合组件：传入 `items` 数组即可渲染完整的 `role="menubar"` 结构、触发器、下拉内容与嵌套子菜单。顶层项既可以是"展开下拉"的触发器，也可以是直接跳转的链接（提供 `href` / `to` 即可）。逻辑与无障碍语义由 headless `MenubarCompact` 承载，样式通过 `scv()` 配方注入。
+`SMenubar` 是数据驱动的聚合组件：传入 `items` 数组即可渲染完整的 `role="menubar"` 结构、触发器、下拉内容与嵌套子菜单。顶层项既可以是"展开下拉"的触发器，也可以是直接跳转的链接（提供 `href` / `to` 即可）。逻辑与无障碍语义由 Aria `MenubarCompact` 承载，样式通过 `scv()` 配方注入。
 
-> `SMenubar` 把全部结构组合委托给 headless `MenubarCompact`。无样式的数据驱动用法可导入 `@soybeanjs/headless/menubar`；下拉菜单部分复用 `@soybeanjs/headless/menu` 的 `MenuOptionsCompact`。
+> `SMenubar` 把全部结构组合委托给 Aria `MenubarCompact`。无样式的数据驱动用法可导入 `@vean/aria/menubar`；下拉菜单部分复用 `@vean/aria/menu` 的 `MenuOptionsCompact`。
 
 ## 功能特性
 
@@ -30,7 +30,7 @@ Menubar 用于构建常驻应用顶部的横向菜单栏：顶层为一组可横
 - **双向方向** — `dir` 支持 LTR / RTL，方向键与子菜单滑入方向均按逻辑方向处理；`portalProps` 控制内容是否传送到 body。
 - **六种尺寸** — `size`（xs…2xl）变体覆盖根节点与触发器的间距、内边距与字号。
 - **菜单槽位透传** — `item-leading` / `item-trailing` / `trigger` / `item-link-icon` 等插槽透传至菜单层，可按项定制内容；`ui` prop 覆盖根节点与触发器槽位。
-- **Headless 组合** — `MenubarRoot` / `MenubarMenu` / `MenubarTrigger` / `MenubarContent` / `MenubarSubTrigger` / `MenubarSubContent` 及 `Compact` 均可从 `@soybeanjs/headless/menubar` 导出，菜单基础件复用 `@soybeanjs/headless/menu`。
+- **Aria 组合** — `MenubarRoot` / `MenubarMenu` / `MenubarTrigger` / `MenubarContent` / `MenubarSubTrigger` / `MenubarSubContent` 及 `Compact` 均可从 `@vean/aria/menubar` 导出，菜单基础件复用 `@vean/aria/menu`。
 
 ## 用法
 
@@ -48,9 +48,9 @@ Menubar 用于构建常驻应用顶部的横向菜单栏：顶层为一组可横
 
 ### 架构与行业对标
 
-| 能力                 | SoybeanUI                                             | Ant Design `Menu`              | Element Plus `Menu` | Radix `Menubar`              |
+| 能力                 | VeanUI                                                | Ant Design `Menu`              | Element Plus `Menu` | Radix `Menubar`              |
 | :------------------- | :---------------------------------------------------- | :----------------------------- | :------------------ | :--------------------------- |
-| headless/styled 分离 | ✅ `@soybeanjs/headless/menubar` + `scv()`            | ❌ 单包                        | ❌ 单包             | ✅ `@radix-ui/react-menubar` |
+| Aria/styled 分离     | ✅ `@vean/aria/menubar` + `scv()`                     | ❌ 单包                        | ❌ 单包             | ✅ `@radix-ui/react-menubar` |
 | 数据驱动 compact API | ✅ `MenubarCompact` + 嵌套 `items`                    | ✅ `items`                     | ✅ `items`          | ❌ 面向 JSX 组合             |
 | 顶层触发             | ✅ 点击 / 悬停切换 + 方向键                           | ✅ 点击 / 悬停                 | ✅ 点击 / 悬停      | ✅ 点击 / 悬停 + 方向键      |
 | 横向键盘漫游         | ✅ Roving Focus + `loop`                              | ✅                             | ✅                  | ✅                           |

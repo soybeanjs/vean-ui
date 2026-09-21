@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { h, nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { StepperRoot, StepperItem, StepperTrigger } from '@soybeanjs/headless/stepper';
+import { StepperRoot, StepperItem, StepperTrigger } from '@vean/aria/stepper';
 import SConfigProvider from '@/components/config-provider/config-provider.vue';
 import SStepper from '@/components/stepper/stepper.vue';
 import { getA11yViolations } from '../../shared/a11y';
@@ -78,7 +78,7 @@ describe('SStepper', () => {
         props: { items },
         attachTo: document.body
       });
-      const root = wrapper.find('[data-soybean-stepper-root]');
+      const root = wrapper.find('[data-vean-stepper-root]');
 
       expect(root.attributes('data-orientation')).toBe('horizontal');
       expect(root.attributes('data-linear')).toBe('');
@@ -198,7 +198,7 @@ describe('SStepper', () => {
       wrapper.unmount();
     });
 
-    it('exposes nextStep / prevStep / goToStep via the headless root slot', async () => {
+    it('exposes nextStep / prevStep / goToStep via the Aria root slot', async () => {
       const wrapper = mount(StepperRoot, {
         props: { defaultValue: 2 },
         slots: {
@@ -229,7 +229,7 @@ describe('SStepper', () => {
   describe('disabled state', () => {
     it('disables inaccessible future steps with the default linear mode', () => {
       // `linear` is not passed: verifies the wrapper does not forward an
-      // absent Boolean prop as `false`, which would override the headless
+      // absent Boolean prop as `false`, which would override the Aria
       // `linear: true` default and make every step focusable.
       const wrapper = mount(SStepper, {
         props: { items, modelValue: 1 },
@@ -339,7 +339,7 @@ describe('SStepper', () => {
         props: { items, itemProps: { class: 'custom-item', 'data-test': 'step-item' } },
         attachTo: document.body
       });
-      const item = wrapper.find('[data-soybean-stepper-item]');
+      const item = wrapper.find('[data-vean-stepper-item]');
 
       expect(item.classes()).toContain('custom-item');
       expect(item.attributes('data-test')).toBe('step-item');
@@ -415,7 +415,7 @@ describe('SStepper', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-stepper-indicator]').classes()).toContain('size-6');
+      expect(wrapper.find('[data-vean-stepper-indicator]').classes()).toContain('size-6');
       wrapper.unmount();
     });
 
@@ -425,7 +425,7 @@ describe('SStepper', () => {
         attachTo: document.body
       });
 
-      const indicators = wrapper.findAll('[data-soybean-stepper-indicator]');
+      const indicators = wrapper.findAll('[data-vean-stepper-indicator]');
 
       expect(indicators.length).toBeGreaterThan(0);
       expect(indicators[0].element.tagName).toBe('SPAN');
@@ -471,8 +471,8 @@ describe('SStepper', () => {
       const labelledBy = firstTrigger.attributes('aria-labelledby');
       const describedBy = firstTrigger.attributes('aria-describedby');
 
-      expect(labelledBy).toMatch(/^soybean-stepper-title-/);
-      expect(describedBy).toMatch(/^soybean-stepper-description-/);
+      expect(labelledBy).toMatch(/^vean-stepper-title-/);
+      expect(describedBy).toMatch(/^vean-stepper-description-/);
       expect(wrapper.find(`#${labelledBy}`).text()).toBe('Account');
       expect(wrapper.find(`#${describedBy}`).text()).toBe('Set up your account');
       wrapper.unmount();

@@ -12,7 +12,7 @@ Breadcrumbs allow users to navigate through the hierarchy of pages. It displays 
 
 ## Features
 
-- **Data-driven compact composition** — `SBreadcrumb` renders items from an `items` array; the headless `BreadcrumbCompact` owns iteration, default content, and internal composition (root → list → items → separators).
+- **Data-driven compact composition** — `SBreadcrumb` renders items from an `items` array; the Aria `BreadcrumbCompact` owns iteration, default content, and internal composition (root → list → items → separators).
 - **Link vs. current page** — items with `to` / `href` render as `BreadcrumbLink` (reusing the Link primitive); the trailing item without a destination renders as `BreadcrumbPage` with `aria-current="page"` and `aria-disabled`.
 - **Ellipsis collapsing** — `ellipsis: true` collapses all middle items into an ellipsis when there are 5+ items; `ellipsis: [start, end]` allows a custom collapse range (normalized so `start 0 → 1` and `end length → length - 1`).
 - **Click events with item data** — the `click` event emits the full activated item object; disabled items never emit.
@@ -22,13 +22,13 @@ Breadcrumbs allow users to navigate through the hierarchy of pages. It displays 
 - **Icon support** — each item can carry an `icon` (rendered via the `item-leading` slot default) with `IconValue` typing.
 - **Disabled items** — `disabled: true` on an item disables the link and suppresses click emission.
 - **Size scaling** — `size` (xs…2xl) scales typography and spacing via `breadcrumbVariants`.
-- **Headless composition** — `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis` are exported from `@soybeanjs/headless/breadcrumb` for fully custom styled builds.
+- **Aria composition** — `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis` are exported from `@vean/aria/breadcrumb` for fully custom styled builds.
 
 ## Usage
 
 <UsageCode component="breadcrumb" />
 
-> `SBreadcrumb` delegates its list aggregation to headless `BreadcrumbCompact`. For unstyled, data-driven composition, import `BreadcrumbCompact` from `@soybeanjs/headless/breadcrumb`.
+> `SBreadcrumb` delegates its list aggregation to Aria `BreadcrumbCompact`. For unstyled, data-driven composition, import `BreadcrumbCompact` from `@vean/aria/breadcrumb`.
 
 ## Demos
 
@@ -42,9 +42,9 @@ Breadcrumbs allow users to navigate through the hierarchy of pages. It displays 
 
 ### Architecture and benchmark comparison
 
-| Concern                       | SoybeanUI                                             | shadcn-vue `Breadcrumb`                       | Ant Design `Breadcrumb`            | Element Plus `Breadcrumb`     |
+| Concern                       | VeanUI                                                | shadcn-vue `Breadcrumb`                       | Ant Design `Breadcrumb`            | Element Plus `Breadcrumb`     |
 | :---------------------------- | :---------------------------------------------------- | :-------------------------------------------- | :--------------------------------- | :---------------------------- |
-| Headless / styled separation  | ✅ `@soybeanjs/headless/breadcrumb` + `scv()`         | ❌ single package                             | ❌ single package                  | ❌ single package             |
+| Aria / styled separation      | ✅ `@vean/aria/breadcrumb` + `scv()`                  | ❌ single package                             | ❌ single package                  | ❌ single package             |
 | Data-driven compact API       | ✅ `items` + `ellipsis` + `click`                     | ❌ slot/component composition only            | ✅ `routes` / `items`              | ✅ `breadcrumb-item` loop     |
 | Ellipsis collapsing           | ✅ `true` (5+ items) or custom `[start, end]`         | ❌ manual ellipsis item                       | ✅ `ellipsis` (4+ count)           | ❌ manual                     |
 | Link vs. current page         | ✅ `to`/`href` → Link; trailing → `aria-current` page | ✅ separate `BreadcrumbLink`/`BreadcrumbPage` | ✅ `BreadcrumbItem` last = current | ✅ last item auto current     |
@@ -92,4 +92,4 @@ Yes — the root is a `nav` with a localized `aria-label`, the list is an `ol`, 
 
 ### Can I build a fully custom breadcrumb?
 
-Yes — compose `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis` from `@soybeanjs/headless/breadcrumb` and inject styles via `provideBreadcrumbUi` (or `SBreadcrumb`'s `ui` prop).
+Yes — compose `BreadcrumbRoot` / `BreadcrumbList` / `BreadcrumbItem` / `BreadcrumbLink` / `BreadcrumbPage` / `BreadcrumbSeparator` / `BreadcrumbEllipsis` from `@vean/aria/breadcrumb` and inject styles via `provideBreadcrumbUi` (or `SBreadcrumb`'s `ui` prop).

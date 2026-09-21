@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { DateFieldCompact, provideDateFieldUi } from '@soybeanjs/headless/date-field';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { DateFieldCompact, provideDateFieldUi } from '@vean/aria/date-field';
 import { dateFieldVariants } from '@/styles/date-field';
 import type { DateFieldProps, DateFieldEmits } from './types';
 

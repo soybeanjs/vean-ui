@@ -1,14 +1,14 @@
 ---
 head:
   title: 树形菜单
-  description: 用于展示可折叠侧边导航树形菜单的组件。STreeMenu 将 headless 层 TreeMenuCompact 一族组合组件（TreeMenuRoot/TreeMenuOptionCompact/TreeMenuSlotCompact 等，零样式）与 TreeMenuRoot 上下文（受控/非受控激活与展开、折叠侧边栏模式、折叠时子菜单弹出、操作菜单）组合；UI 层仅注入 8 档尺寸配方与插槽类。items 递归数据模型内建 icon/badge/tag/actions/isGroup/链接等字段，节点内容可经 item/item-leading/item-trailing 插槽自由定制。
+  description: 用于展示可折叠侧边导航树形菜单的组件。STreeMenu 将 Aria 层 TreeMenuCompact 一族组合组件（TreeMenuRoot/TreeMenuOptionCompact/TreeMenuSlotCompact 等，零样式）与 TreeMenuRoot 上下文（受控/非受控激活与展开、折叠侧边栏模式、折叠时子菜单弹出、操作菜单）组合；UI 层仅注入 8 档尺寸配方与插槽类。items 递归数据模型内建 icon/badge/tag/actions/isGroup/链接等字段，节点内容可经 item/item-leading/item-trailing 插槽自由定制。
 ---
 
 # 树形菜单
 
 ## 概述
 
-用于展示可折叠侧边导航树形菜单的组件。`STreeMenu` 将 headless 层 `TreeMenuCompact` 一族组合组件（`TreeMenuRoot`/`TreeMenuOptionCompact`/`TreeMenuSlotCompact` 等，零样式）与 `TreeMenuRoot` 上下文（受控/非受控激活与展开、折叠侧边栏模式、折叠时子菜单弹出、操作菜单）组合；UI 层仅注入 8 档尺寸配方与插槽类。`items` 递归数据模型内建 `icon`/`badge`/`tag`/`actions`/`isGroup`/链接等字段，节点内容可经 `item`/`item-leading`/`item-trailing` 插槽自由定制。
+用于展示可折叠侧边导航树形菜单的组件。`STreeMenu` 将 Aria 层 `TreeMenuCompact` 一族组合组件（`TreeMenuRoot`/`TreeMenuOptionCompact`/`TreeMenuSlotCompact` 等，零样式）与 `TreeMenuRoot` 上下文（受控/非受控激活与展开、折叠侧边栏模式、折叠时子菜单弹出、操作菜单）组合；UI 层仅注入 8 档尺寸配方与插槽类。`items` 递归数据模型内建 `icon`/`badge`/`tag`/`actions`/`isGroup`/链接等字段，节点内容可经 `item`/`item-leading`/`item-trailing` 插槽自由定制。
 
 ## 用法
 
@@ -26,18 +26,18 @@ head:
 - 🗂️ 分组 — `isGroup` 分组 + `group-label` 插槽；`top`/`bottom` 插槽承载菜单首尾内容
 - 🎨 8 档尺寸 + 样式注入 — `size` xs~2xl，`class`/`ui` 按 20+ 命名插槽覆盖样式
 - ⌨️ 键盘导航 — 遵循 WAI-ARIA tree 模式：根元素为单一 Tab 停留点并携带 `role="tree"`，↑/↓ 在可见条目间漫游，→ 展开分支或进入首个子项，← 折叠分支或回到父项，Home/End 跳转首尾项，Enter/Space 显式激活（方向键只漫游焦点，不改变选中项）
-- ♿ 无障碍 — `role="tree"`/`treeitem` 语义 + `aria-expanded`/`aria-controls`/`aria-selected`、roving tabindex、`data-soybean-tree-menu-*` 数据属性，axe 扫描零违规
+- ♿ 无障碍 — `role="tree"`/`treeitem` 语义 + `aria-expanded`/`aria-controls`/`aria-selected`、roving tabindex、`data-vean-tree-menu-*` 数据属性，axe 扫描零违规
 
 ## 组件家族
 
 - `STreeMenu`（styled）— 入口包装；`TreeMenuCompact` 组合 + `treeMenuVariants` 尺寸配方 + `provideTreeMenuUi` 注入插槽类，`useForwardListeners` 合并事件
 - `STreeMenuStyledItem`（styled）— 用菜单项配方画出的单独一行，供非菜单节点的内容使用（品牌区、触发器、页脚行）；经 `Primitive` 渲染，因此 `as` / `asChild` 可指定元素、`disabled` 可标记禁用
-- `TreeMenuCompact`（headless）— 组合根；`TreeMenuRoot` 状态根 + `TreeMenuOptionsCompact` 分组/递归渲染 + `top`/`bottom` 插槽
-- `TreeMenuRoot`（headless）— 状态根；`useControllableState` 管理激活/展开/折叠，折叠时 `backupExpanded` 暂存展开状态并在恢复时还原
-- `TreeMenuOptionsCompact`（headless）— 分组/递归渲染；`expandStrategy="selected"` 时按选中菜单路径同步展开状态
-- `TreeMenuOptionCompact`（headless）— 单节点组合；叶子渲染按钮/链接 + 操作菜单，父项渲染 `TreeMenuCollapsible` 触发器 + `TreeMenuSub` 递归 + 折叠弹出 `DropdownMenuCompact`
-- `TreeMenuSlotCompact`（headless）— 节点内容编排（图标/标签/badge/tag/外链图标/chevron）
-- 基础原语（headless）— `TreeMenuButton`/`TreeMenuItem`/`TreeMenuCollapsible`/`TreeMenuSub`/`TreeMenuGroup`/`TreeMenuGroupLabel`/`TreeMenuTooltipCompact`，全部零样式
+- `TreeMenuCompact`（Aria）— 组合根；`TreeMenuRoot` 状态根 + `TreeMenuOptionsCompact` 分组/递归渲染 + `top`/`bottom` 插槽
+- `TreeMenuRoot`（Aria）— 状态根；`useControllableState` 管理激活/展开/折叠，折叠时 `backupExpanded` 暂存展开状态并在恢复时还原
+- `TreeMenuOptionsCompact`（Aria）— 分组/递归渲染；`expandStrategy="selected"` 时按选中菜单路径同步展开状态
+- `TreeMenuOptionCompact`（Aria）— 单节点组合；叶子渲染按钮/链接 + 操作菜单，父项渲染 `TreeMenuCollapsible` 触发器 + `TreeMenuSub` 递归 + 折叠弹出 `DropdownMenuCompact`
+- `TreeMenuSlotCompact`（Aria）— 节点内容编排（图标/标签/badge/tag/外链图标/chevron）
+- 基础原语（Aria）— `TreeMenuButton`/`TreeMenuItem`/`TreeMenuCollapsible`/`TreeMenuSub`/`TreeMenuGroup`/`TreeMenuGroupLabel`/`TreeMenuTooltipCompact`，全部零样式
 
 ## 演示
 
@@ -53,18 +53,18 @@ head:
 
 ### 架构与对标差异
 
-`TreeMenuRoot` 持有全部状态（激活/展开/折叠经 `useControllableState` 受控/非受控双通道）；折叠切换时用 `backupExpanded` 暂存展开分支、清空展开并触发折叠弹出菜单，恢复折叠时原样还原——折叠/展开无损往返。紧凑组合在 headless 层完成：`TreeMenuOptionCompact` 编排叶子（按钮/链接 + 操作菜单）与父项（Collapsible 触发器 + 递归 `TreeMenuSub` + 折叠弹出菜单），UI 层 `STreeMenu` 只注入尺寸配方与插槽类，不承载任何状态。操作菜单与折叠弹出菜单均复用数据驱动的 `DropdownMenuCompact`（`MenuOptions` 渲染）。根元素遵循 WAI-ARIA tree 模式——单一 roving 停留点、`role="tree"`、`treeitem` 条目与 `group` 子列表，axe 扫描零违规。对比主流侧边菜单库，SoybeanUI 在 headless 分离、内建操作菜单、折叠弹出、外链项与 13 语言本地化上更完整。
+`TreeMenuRoot` 持有全部状态（激活/展开/折叠经 `useControllableState` 受控/非受控双通道）；折叠切换时用 `backupExpanded` 暂存展开分支、清空展开并触发折叠弹出菜单，恢复折叠时原样还原——折叠/展开无损往返。紧凑组合在 Aria 层完成：`TreeMenuOptionCompact` 编排叶子（按钮/链接 + 操作菜单）与父项（Collapsible 触发器 + 递归 `TreeMenuSub` + 折叠弹出菜单），UI 层 `STreeMenu` 只注入尺寸配方与插槽类，不承载任何状态。操作菜单与折叠弹出菜单均复用数据驱动的 `DropdownMenuCompact`（`MenuOptions` 渲染）。根元素遵循 WAI-ARIA tree 模式——单一 roving 停留点、`role="tree"`、`treeitem` 条目与 `group` 子列表，axe 扫描零违规。对比主流侧边菜单库，VeanUI 在 Aria 分离、内建操作菜单、折叠弹出、外链项与 13 语言本地化上更完整。
 
-| 能力                         | SoybeanUI | Ant Design | Element Plus | Naive UI |
-| :--------------------------- | :-------: | :--------: | :----------: | :------: |
-| headless/样式分离            |    ✅     |     —      |      —       |    —     |
-| 受控激活/展开/折叠           |    ✅     |     ✅     |      ✅      |    ✅    |
-| 折叠侧边栏（collapsed 宽度） |    ✅     |     ✅     |      ✅      |    ⚠️    |
-| 折叠时子菜单弹出             |    ✅     |     ✅     |      ✅      |    ⚠️    |
-| 内建操作菜单（actions）      |    ✅     |     —      |      —       |    —     |
-| 徽标/标签（badge/tag）       |    ✅     |     ⚠️     |      —       |    —     |
-| 分组/图标/外链               |    ✅     |     ✅     |      ✅      |    ✅    |
-| 本地化 aria-label            |    ✅     |     ✅     |      ✅      |    ✅    |
+| 能力                         | VeanUI | Ant Design | Element Plus | Naive UI |
+| :--------------------------- | :----: | :--------: | :----------: | :------: |
+| Aria/样式分离                |   ✅   |     —      |      —       |    —     |
+| 受控激活/展开/折叠           |   ✅   |     ✅     |      ✅      |    ✅    |
+| 折叠侧边栏（collapsed 宽度） |   ✅   |     ✅     |      ✅      |    ⚠️    |
+| 折叠时子菜单弹出             |   ✅   |     ✅     |      ✅      |    ⚠️    |
+| 内建操作菜单（actions）      |   ✅   |     —      |      —       |    —     |
+| 徽标/标签（badge/tag）       |   ✅   |     ⚠️     |      —       |    —     |
+| 分组/图标/外链               |   ✅   |     ✅     |      ✅      |    ✅    |
+| 本地化 aria-label            |   ✅   |     ✅     |      ✅      |    ✅    |
 
 `⚠️` = 部分支持（Naive UI 折叠弹出需额外配置 `collapsed` + 自定义弹出内容；Ant Design 的徽标经 `label` 自定义节点实现）。
 
@@ -79,7 +79,7 @@ head:
 - 节点 `disabled` 阻止激活/展开/操作；禁用项渲染 `data-disabled` 与原生 `disabled` 语义。
 - 叶子项点击激活并派发 `update:modelValue`；含子项点击切换展开并派发 `update:expanded`。
 - `expandStrategy="selected"` 时，展开状态会在选中项变化或切换到 `selected` 策略时按选中菜单路径重新同步；此前手动展开的非选中分支会保持到下一次选中。
-- 数据属性仅使用 `data-soybean-tree-menu-*`（D1-07），不附加冗余属性。
+- 数据属性仅使用 `data-vean-tree-menu-*`（D1-07），不附加冗余属性。
 - `size` 支持 xs~2xl 8 档；样式覆盖经 `ui`（20+ 命名插槽）与根 `class` 注入。
 
 ## 常见问题
@@ -139,8 +139,7 @@ console.log('select', action.value) }
 ### 如何添加链接项？
 
 ```vue
-{ label: 'Soybean UI', value: 'soybean-ui', href: 'https://ui.soybeanjs.cn' } { label: 'About', value: 'about', to:
-'/about' }
+{ label: 'Vean', value: 'vean', href: 'https://veanui.com' } { label: 'About', value: 'about', to: '/about' }
 ```
 
 外链自动显示跳转图标；`external: true` 强制按外链处理。

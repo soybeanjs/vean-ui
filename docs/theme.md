@@ -1,8 +1,8 @@
-# 主题引擎：@soybeanjs/theme 与旧版引擎的差异
+# 主题引擎：@vean/theme 与旧版引擎的差异
 
-> 定位：`@soybeanjs/theme`（本分支）的**唯一权威文档**——它相对**旧版引擎**（`main` 上的第一代 `packages/theme`）在**产物、契约、机制、接线**四个层面上的差异与优势，以及新版当前的完整 token 契约、引擎 API、运行时接线与验收标准。读者：主题维护者、组件作者、**AI Agent**。
+> 定位：`@vean/theme`（本分支）的**唯一权威文档**——它相对**旧版引擎**（`main` 上的第一代 `packages/theme`）在**产物、契约、机制、接线**四个层面上的差异与优势，以及新版当前的完整 token 契约、引擎 API、运行时接线与验收标准。读者：主题维护者、组件作者、**AI Agent**。
 > 读法：第 0 节是速览与对照表；第 1–2 节回答"新版比旧版好在哪、代价是什么"；第 3 节起是新版自身的规格（token 表 / 机制 / 接线 / 验收）。旧版的实测数字来自 [theme-system-audit.md](./info/theme-system-audit.md)（重构前的审计快照，仅作**证据**保留，不代表现状）。
-> 基线：2026-09-22 · 分支 `SoybeanUI` · `@soybeanjs/theme@0.50.0-beta.1`
+> 基线：2026-09-22 · 分支 `vean` · `@vean/theme@0.50.0-beta.1`
 
 ---
 
@@ -16,7 +16,7 @@
 
 ### 0.1 实测对照
 
-| 维度            | 旧版（`main`）                                                                                                                      | 新版（`@soybeanjs/theme`）                                                                                                                 | 差异                                    |
+| 维度            | 旧版（`main`）                                                                                                                      | 新版（`@vean/theme`）                                                                                                                      | 差异                                    |
 | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
 | 颜色 token 数   | 40 个颜色 + 3 个 alpha                                                                                                              | **41 个语义 token** + 4 个 alpha                                                                                                           | +1 语义、+1 alpha（`mask`）             |
 | 非颜色 token    | 只有 `--size` / `--radius`                                                                                                          | 26 条字面量 + 角色 ramp 引用                                                                                                               | 新增一整个字面量族                      |
@@ -28,11 +28,11 @@
 | 区域皮肤        | 8 条，`sidebarDerive: false` 时**整段删除**（产物里 `--sidebar*` 出现 0 次）                                                        | 8 条**镜像**，恒输出                                                                                                                       | 不再有"开关删变量"的失败模式            |
 | 图表色          | 独立 chart scheme（5 套 × 明暗），可与品牌色互相矛盾                                                                                | 由 `primary` 派生（`CHART_RAMP` = 600/500/400/300/200，模式无关）                                                                          | 一个旋钮                                |
 | 输入校验        | `size: 'huge'` → `--size: huge`；`borderOpacity: 5` → `--border-alpha: 5`；oklch 下 `borderOpacity` 静默失效；override 的引用不校验 | 逐字段白名单 + colord 成员表校验 + 未知键忽略                                                                                              | 坏值不再进产物                          |
-| 持久化          | 4 个键（`__SOYBEAN_THEME{,_CSS,_PRESETS,_APPLIED_PRESET}`）、3 个写入者、状态写入无防抖、跨标签监听漏项、**全有或全无**             | 单键 `__SOYBEAN_THEME`、单防抖写入者（250 ms）、逐字段校验、**版本门 + 词汇迁移**                                                          | 一个信封说清一切                        |
+| 持久化          | 4 个键（`__SOYBEAN_THEME{,_CSS,_PRESETS,_APPLIED_PRESET}`）、3 个写入者、状态写入无防抖、跨标签监听漏项、**全有或全无**             | 单键 `__VEAN_THEME`、单防抖写入者（250 ms）、逐字段校验、**版本门 + 词汇迁移**                                                             | 一个信封说清一切                        |
 | 首帧            | 弱化静态块 + 持久化快照注入（两代共有，旧版还会"注入再移除"）                                                                       | 同左，且快照由 provider 改写同一元素（**无 `!important`、无二次注入**）                                                                    | 链路更短                                |
-| API             | `createTheme(options)` / `createThemeCss` / `generateThemePreset` / 运行期 preset registry                                          | `resolveThemeMap` / `emitThemeCss` / `generatePaletteCss` / `buildThemeCss`（`@soybeanjs/ui`）                                             | 纯函数流水线，无 registry               |
+| API             | `createTheme(options)` / `createThemeCss` / `generateThemePreset` / 运行期 preset registry                                          | `resolveThemeMap` / `emitThemeCss` / `generatePaletteCss` / `buildThemeCss`（`@vean/ui`）                                                  | 纯函数流水线，无 registry               |
 | token 词汇      | shadcn 原名、**无前缀**                                                                                                             | **同名**（无前缀）+ `mask` / `mask-alpha`                                                                                                  | 迁移面为 0（见 §3.12）                  |
-| 组件作用域变量  | `--soybean-*`                                                                                                                       | `--soybean-*`（组件自己的变量，与主题 token 分属两个面）                                                                                   | 只换品牌前缀                            |
+| 组件作用域变量  | `--soybean-*`                                                                                                                       | `--vean-*`（组件自己的变量，与主题 token 分属两个面）                                                                                      | 只换品牌前缀                            |
 | 主题 token 前缀 | 无前缀                                                                                                                              | **无前缀**（`prefix` 选项可加命名空间，默认关闭）                                                                                          | 与 shadcn 可原样互抄                    |
 
 ### 0.2 代码地图
@@ -46,10 +46,10 @@
 | `packages/theme/src/resolve.ts`                  | JS 侧解析：`resolveTokenColor` / `resolveThemeColors` / `resolveColorRef` / `valueRef`（与 CSS 同源）                                             |
 | `packages/theme/src/literals.ts` / `defaults.ts` | 字面量层（半径 / 间距 / 层次 / 线宽 / 字体）与默认选项 / 键表                                                                                     |
 | `packages/theme/src/schemes.ts`                  | feedback scheme 数据（纯 `palette.level` 引用；图表色不设方案，由 primary 派生）                                                                  |
-| `packages/theme/src/storage.ts` / `ssr.ts`       | 持久化信封（`__SOYBEAN_THEME`，版本门 + 词汇迁移）与首帧脚本                                                                                      |
+| `packages/theme/src/storage.ts` / `ssr.ts`       | 持久化信封（`__VEAN_THEME`，版本门 + 词汇迁移）与首帧脚本                                                                                         |
 | `packages/unocss/src/theme.ts`                   | **唯一 UnoCSS 适配器**：theme.colors / theme 键映射 / token preflight                                                                             |
 | `packages/ui/src/theme/`                         | UI 层：`adapter.ts`（运行时别名块）、`use-theme-settings.ts`（面板状态）、`use-theme-variants.ts`（逐 token 覆盖）、`types.ts`（`ThemeColor` 等） |
-| `packages/ui/src/components/config-provider/`    | 运行时：`<style id="soybean-theme">` 独占、单信封写入者、跨标签同步、`useTheme()` 上下文                                                          |
+| `packages/ui/src/components/config-provider/`    | 运行时：`<style id="vean-theme">` 独占、单信封写入者、跨标签同步、`useTheme()` 上下文                                                             |
 | `packages/ui/src/components/theme-customizer/`   | 定制面板（选板 / scheme / surfaceStyle / size / radius / spacing / 逐 token 覆盖）                                                                |
 
 ### 0.3 引擎 API 速查
@@ -62,7 +62,7 @@ generatePaletteCss({ format, styleTarget, weakSelectors }): string   // Layer 1 
 resolveTokenColor(options, token, mode, format?)             // 单个 token → 完整色
 resolveThemeColors(options, mode, format?)                   // 一个模式全部 token → 完整色
 resolveColorRef('indigo.600' | 'white' | 'hsl(...)', format?) // 独立色引用 → 完整色
-buildThemeCss(options, emit?)                                // @soybeanjs/ui：解析 + 发射一步到位（provider 用的就是它）
+buildThemeCss(options, emit?)                                // @vean/ui：解析 + 发射一步到位（provider 用的就是它）
 
 // 令牌与数据
 SEMANTIC_TOKENS / CORE_RULES / STATUS_NAMES / ROLE_RAMP_ROLES / STATUS_FOREGROUND_LEVELS
@@ -74,8 +74,8 @@ valueRef(value) / isPaletteLevelRef(ref) / isSemanticToken(name)   // 显示引�
 // TokenOverride = ColorValue | `token.${SemanticToken}`           // 覆盖可引用另一语义 token（解析期拷贝）
 
 // 运行时
-readThemeEnvelope() / writeThemeEnvelope() / clearThemeEnvelope() / createThemeWriter()   // @soybeanjs/theme/storage
-createThemeInitScript() / isServerRuntime()                                               // @soybeanjs/theme/ssr
+readThemeEnvelope() / writeThemeEnvelope() / clearThemeEnvelope() / createThemeWriter()   // @vean/theme/storage
+createThemeInitScript() / isServerRuntime()                                               // @vean/theme/ssr
 ```
 
 ### 0.4 消费方式（三条，别绕开）
@@ -89,15 +89,15 @@ createThemeInitScript() / isServerRuntime()                                     
 1. **语义层不存颜色值**，只存对调色板档位的引用；要完整色走 §0.4-3 的函数。
 2. **不手写色板清单与档位数组**：键表取 colord 的 `tailwindPaletteKeys` / `tailwindNeutralPaletteKeys` / `paletteColorLevels`。
 3. **不加 `!important`**：静态默认层用 `:where()` 降权到零特异性，普通选择器即可胜出（§5.3）。
-4. **只有一个写入者**：`__SOYBEAN_THEME` 信封由 provider 的防抖写入者独占；组件里别直接写 localStorage（`useThemeSettings` 默认 `persist: false`）。
+4. **只有一个写入者**：`__VEAN_THEME` 信封由 provider 的防抖写入者独占；组件里别直接写 localStorage（`useThemeSettings` 默认 `persist: false`）。
 5. **改档位改 `CORE_RULES`**，不要改发射逻辑或快照；引擎不会替你修正档位，改完看默认主题的快照 diff。
 6. **维度刻度**：`radius-*` 改 `LITERAL_DEFAULTS`（UnoCSS 映射由 `RADIUS_RUNG_KEYS` 派生）；**`spacing` 档位改 `SPACING_GRID_COEFFICIENTS`**（档位是网格单位的系数，不进 CSS 变量；与 UnoCSS 同名的 12 档必须同名同值，有回归测试守住）；半径刻度必须以**种子的正系数倍**发射（`calc(var(--radius) * k)`）。
 7. **`control` 有歧义**：它是**插槽名**（switch / checkbox / radio-group / carousel / form / input / textarea / tags-input / input-number 的 `control` 槽），与填充 token 无关，批量改名必须避开。
 8. **对比度不由引擎保证**：档位都是声明的，引擎不测量、不修正、不报告；`overrides` 原样生效。换成明亮主色（yellow / lime / emerald…）时请自己确认文字可读（面板 / axe / 显式覆盖）。
-9. **改 `packages/theme` 或 headless 源码后先 `pnpm build:libs` 再 typecheck**，否则下游读到旧 dist。
+9. **改 `packages/theme` 或 aria 源码后先 `pnpm build:libs` 再 typecheck**，否则下游读到旧 dist。
 10. **`vp fmt` 会漂移在途示例**：`apps/docs/src/examples/ui/app-shell/*` 与 `split-nav/08-*` 属 SAppShell 在途工作，格式化后 `git checkout` 还原它们。
 11. **生成物门禁**：改公共导出 / 组件类型后用 `pnpm sui gen all` 重跑，`pnpm sui check generated` 必须同步（CI 门禁）。
-12. **主题 token 不带前缀，库自己的组件变量带 `--soybean-`**：引擎发射的语义 token 与字面量是裸名（`var(--background)` / `bg-card` / `--radius`）；headless / UI 层 / UnoCSS 预设设置在元素上的组件作用域变量（`--soybean-sidebar-width`、`--soybean-layout-header-height`、`--soybean-scrollbar-*`）保留 `--soybean-`。前者是**主题契约**（与 shadcn 同名、宿主可覆盖），后者是**库的私有实现面**。
+12. **主题 token 不带前缀，库自己的组件变量带 `--vean-`**：引擎发射的语义 token 与字面量是裸名（`var(--background)` / `bg-card` / `--radius`）；aria / UI 层 / UnoCSS 预设设置在元素上的组件作用域变量（`--vean-sidebar-width`、`--vean-layout-header-height`、`--vean-scrollbar-*`）保留 `--vean-`。前者是**主题契约**（与 shadcn 同名、宿主可覆盖），后者是**库的私有实现面**。
 
 ### 0.6 常见任务
 
@@ -119,9 +119,9 @@ createThemeInitScript() / isServerRuntime()                                     
 ```bash
 pnpm build:libs                      # 改 theme/aria 后必须先跑（dist 缓存）
 pnpm typecheck && pnpm lint
-pnpm --filter @soybeanjs/theme test       # 层级不变量 / 映射快照 / 发射契约 / 预算断言（≤10 KB raw）
-pnpm --filter @soybeanjs/ui-uno test      # 工具类与 alpha / ramp / preflight + 工具类解析门禁
-pnpm --filter @soybeanjs/ui test          # provider 契约 / 尺寸刻度 / 面板
+pnpm --filter @vean/theme test       # 层级不变量 / 映射快照 / 发射契约 / 预算断言（≤10 KB raw）
+pnpm --filter @vean/unocss test      # 工具类与 alpha / ramp / preflight + 工具类解析门禁
+pnpm --filter @vean/ui test          # provider 契约 / 尺寸刻度 / 面板
 pnpm build:docs                      # 端到端 SSG 构建 + registry 重新生成
 pnpm sui gen all && pnpm sui check generated   # 生成物同步门禁
 cd packages/theme && pnpm exec vitest run -u   # 有意识地更新映射快照
@@ -164,8 +164,8 @@ cd packages/theme && pnpm exec vitest run -u   # 有意识地更新映射快照
 └──────────────────────────────────────────────────────────────────────────┘
                                  ▲ 消费
 ┌─ Layer 3 · Adapters ─────────────────────────────────────────────────────┐
-│  @soybeanjs/ui-uno：theme.colors / borderRadius / fontSize / spacing / …       │
-│  @soybeanjs/ui   ：SConfigProvider 注入 Layer 2（默认主题已在 preflight 里）   │
+│  @vean/unocss：theme.colors / borderRadius / fontSize / spacing / …       │
+│  @vean/ui   ：SConfigProvider 注入 Layer 2（默认主题已在 preflight 里）   │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -225,14 +225,14 @@ cd packages/theme && pnpm exec vitest run -u   # 有意识地更新映射快照
 ### 2.8 持久化与首帧：4 键 3 写入者 → 单信封 + 版本门
 
 - **旧版**：4 个键（`__SOYBEAN_THEME` / `_CSS` / `_PRESETS` / `_APPLIED_PRESET`）、3 个写入者、主题状态写入**无防抖**、跨标签监听只覆盖其中 2 个键；payload 全有或全无；CSS 快照与 options 分开存，可以互相错位。
-- **新版**：**一个**键 `__SOYBEAN_THEME`、**一个**防抖写入者（250 ms）、带 `v` 的信封（`options` + `mode` + `style` 快照 + `presets` + `appliedPreset`）、逐字段校验、**未来版本拒读**、**旧词汇自动迁移**（`surface` → `card` 等，已删除的 token 丢弃，旧快照丢弃由 provider 重发）。
-- **首帧**：弱化静态块（`:where()` 零特异性）+ 持久化快照注入是两代共有的思路；新版把"注入再移除"去掉——脚本创建/改写**同一个** `<style id="soybean-theme">`，provider 接管它，因此没有 `!important`、没有二次注入、也没有 SSR/客户端样式内容不一致。
+- **新版**：**一个**键 `__VEAN_THEME`、**一个**防抖写入者（250 ms）、带 `v` 的信封（`options` + `mode` + `style` 快照 + `presets` + `appliedPreset`）、逐字段校验、**未来版本拒读**、**旧词汇自动迁移**（`surface` → `card` 等，已删除的 token 丢弃，旧快照丢弃由 provider 重发）。
+- **首帧**：弱化静态块（`:where()` 零特异性）+ 持久化快照注入是两代共有的思路；新版把"注入再移除"去掉——脚本创建/改写**同一个** `<style id="vean-theme">`，provider 接管它，因此没有 `!important`、没有二次注入、也没有 SSR/客户端样式内容不一致。
 - **优势**：一个键、一个写入者、一个版本号说清"这份主题是哪一代的形状"；升级路径明确（迁移或回落），不是"全丢"或"半读"。
 
-### 2.9 词汇与 API：`createTheme` / `--soybean-*` → 纯函数流水线 / `--soybean-*`（token 名不变）
+### 2.9 词汇与 API：`createTheme` / `--soybean-*` → 纯函数流水线 / `--vean-*`（token 名不变）
 
 - **旧版**：API 是 `createTheme(options)` / `createThemeCss` / `generateThemePreset` / `resolveTheme`，配一个**运行期 preset registry**；组件作用域变量是 `--soybean-*`；主题 token 用 shadcn 原名、无前缀。
-- **新版**：API 是纯函数流水线（`resolveThemeMap` → `emitThemeCss`，或 `@soybeanjs/ui` 的 `buildThemeCss` 一步到位），没有 registry、没有"生成整份 CSS"的入口；组件作用域变量改品牌前缀 `--soybean-*`；**主题 token 名与旧版完全一致**（无前缀），另加 `mask` / `mask-alpha`。
+- **新版**：API 是纯函数流水线（`resolveThemeMap` → `emitThemeCss`，或 `@vean/ui` 的 `buildThemeCss` 一步到位），没有 registry、没有"生成整份 CSS"的入口；组件作用域变量改品牌前缀 `--vean-*`；**主题 token 名与旧版完全一致**（无前缀），另加 `mask` / `mask-alpha`。
 - **优势**：引擎只做"数据 → 数据"（映射表）与"数据 → 字符串"（发射），可单测、可快照、可在 SSR/worker 里跑；词汇与 shadcn 同名，文档、示例、主题 JSON 可以互相搬运。
 
 ---
@@ -404,8 +404,8 @@ cd packages/theme && pnpm exec vitest run -u   # 有意识地更新映射快照
 | 图表            | `chart-1` … `chart-5`                                                        | 同左                                                      | **同名**；旧版来自 chart scheme，新版由 `primary` 派生        |
 | 非颜色          | `size` / `radius`                                                            | 同左 + 半径 9 档 + `spacing-unit` + 层次 / 线宽 / 字体    | **超集**                                                      |
 | **新增**        | —                                                                            | `mask` + `mask-alpha`                                     | 遮罩成为可主题化的 token                                      |
-| 组件作用域变量  | `--soybean-*`                                                                | `--soybean-*`                                             | 只换品牌前缀（这些不是主题 token）                            |
-| 持久化键        | `__SOYBEAN_THEME`（+3 个遗留键）                                             | `__SOYBEAN_THEME`（单信封；旧键不再读取）                 | 品牌改名 + 信封化                                             |
+| 组件作用域变量  | `--soybean-*`                                                                | `--vean-*`                                                | 只换品牌前缀（这些不是主题 token）                            |
+| 持久化键        | `__SOYBEAN_THEME`（+3 个遗留键）                                             | `__VEAN_THEME`（单信封；旧键不再读取）                    | 品牌改名 + 信封化                                             |
 
 ---
 
@@ -446,7 +446,7 @@ token 名与 shadcn 完全同名且**不带前缀**，因此 shadcn 的片段、
 
 代价：裸名意味着**可能与宿主或第三方同名**（`--radius` / `--size` 这类通用词尤甚），谁后加载谁生效。接受这个风险是因为前缀给不了真正的隔离（UnoCSS 类名本来就会冲突），真要隔离应整体换词表。
 
-**边界**：这条结论只覆盖**主题契约**（语义 token、alpha 伴生、字面量）。库自己的组件作用域变量（headless 的测量/布局变量、UI 的 `--soybean-layout-*` / `--soybean-drawer-*`、UnoCSS 预设的 `--soybean-scrollbar-*` / `--soybean-enter-*`）保留 `--soybean-`——它们不是主题契约，加前缀正好划清"宿主可覆盖的主题面"与"库的私有实现面"。
+**边界**：这条结论只覆盖**主题契约**（语义 token、alpha 伴生、字面量）。库自己的组件作用域变量（aria 的测量/布局变量、UI 的 `--vean-layout-*` / `--vean-drawer-*`、UnoCSS 预设的 `--vean-scrollbar-*` / `--vean-enter-*`）保留 `--vean-`——它们不是主题契约，加前缀正好划清"宿主可覆盖的主题面"与"库的私有实现面"。
 
 ---
 
@@ -456,7 +456,7 @@ token 名与 shadcn 完全同名且**不带前缀**，因此 shadcn 的片段、
 
 ### 5.1 theme key 归属表
 
-| UnoCSS theme key                                               | 归属                            | SoybeanUI 侧映射                                                                                                              |
+| UnoCSS theme key                                               | 归属                            | Vean 侧映射                                                                                                                   |
 | :------------------------------------------------------------- | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
 | `colors`                                                       | **主题拥有**                    | 语义色 → `hsl(var(--{token}) / <alpha-value>)`；26 调色板 → 同名通道引用；5 条角色 ramp                                       |
 | `borderRadius`                                                 | **主题拥有**                    | `2xs`…`4xl` 全 9 档 + `none` / `full` → `var(--radius-*)`，`DEFAULT` → `var(--radius)`                                        |
@@ -495,11 +495,11 @@ token 名与 shadcn 完全同名且**不带前缀**，因此 shadcn 的片段、
 
 ### 6.1 Provider 与样式元素
 
-`SConfigProvider` 独占 `<head>` 里的**单一** `<style id="soybean-theme">`：首帧脚本可能已创建它，provider 接管同一个元素（存在即复用、不存在则创建），响应式更新其内容。组件树里不渲染任何 `<style>`，因此没有 SSR/客户端样式内容不一致的问题，也不需要 `!important`——优先级来自**特异性**（静态默认层用 `:where()` 降权到零特异性）。
+`SConfigProvider` 独占 `<head>` 里的**单一** `<style id="vean-theme">`：首帧脚本可能已创建它，provider 接管同一个元素（存在即复用、不存在则创建），响应式更新其内容。组件树里不渲染任何 `<style>`，因此没有 SSR/客户端样式内容不一致的问题，也不需要 `!important`——优先级来自**特异性**（静态默认层用 `:where()` 降权到零特异性）。
 
 ### 6.2 持久化信封
 
-- 一个键 `__SOYBEAN_THEME`，一个信封：`{ v, options, mode, style, presets, appliedPreset }`。
+- 一个键 `__VEAN_THEME`，一个信封：`{ v, options, mode, style, presets, appliedPreset }`。
 - **一个防抖写入者**（250 ms）独占写入；跨标签同步通过 `storage` 事件重读整份信封。
 - **版本门**：`v` 高于当前 → 拒读（回落默认）；**低于当前 → 迁移**（词汇翻译：`surface` → `card` 等；已删除的 token 与未知键丢弃；`presets` 同规则；旧词汇的 `style` 快照丢弃，由 provider 挂载后重发并写回）。
 - 逐字段校验：坏字段只丢自己、其余保留（不再"一个未知枚举丢掉整份配置"）。
@@ -508,7 +508,7 @@ token 名与 shadcn 完全同名且**不带前缀**，因此 shadcn 的片段、
 ### 6.3 首帧（无 FOUC）
 
 1. 静态层（Layer 1 + 默认 Layer 2 别名块）随预设 preflight 下发，位于样式表内 —— 默认主题**零 JS 即正确**。
-2. `<head>` 最前的内联脚本（`createThemeInitScript()`）读信封：切换 `<html>` 的暗色类（`mode: 'auto'` 按 `prefers-color-scheme` 解析）、设置 `documentElement.style.colorScheme`、把快照写进 `<style id="soybean-theme">`。
+2. `<head>` 最前的内联脚本（`createThemeInitScript()`）读信封：切换 `<html>` 的暗色类（`mode: 'auto'` 按 `prefers-color-scheme` 解析）、设置 `documentElement.style.colorScheme`、把快照写进 `<style id="vean-theme">`。
 3. hydration 后 provider 接管同一元素并按当前状态重发。
 
 脚本必须是 `<head>` 里**第一个** `<script>`，并在有 CSP 时带上 `nonce`；读写存储全部 `try/catch`（存储被禁时静默降级到静态默认主题）。
@@ -534,7 +534,7 @@ token 名与 shadcn 完全同名且**不带前缀**，因此 shadcn 的片段、
 11. **z-index 纪律**：库内样式除 `--z-layout` / `--z-base` / `--z-toast` / `--z-max` 外不得出现字面量 z-index（可用静态扫描断言）。
 12. **sidebar 完整性**：8 个区域 token 在两种 `surfaceStyle`、两种模式、任意 scheme 下都存在，且八条默认值等于各自的全局镜像；**暗色**的 `--sidebar` 还必须不等于主画布 `card`（一条断言，防"侧栏与主体同色"复发；亮色按设计取页面基底 `background`，由 `sidebar-border` 区分）。
 13. **通道约定**：库内与 docs 的样式/示例中不得出现以裸 `var(--*)` 作颜色值（正则可判）；产物里不得出现完整色变量。
-14. **无遗留命名**：全仓不得出现旧引擎的组件变量前缀（`--soybean-*`）或主题 token 被写成带前缀的形式（`--soybean-background`）；组件作用域变量则**必须**带 `--soybean-`。两条扫描守这条线：`@soybeanjs/theme` 的 `token-usage.spec.ts`（名字）与 `@soybeanjs/ui-uno` 的 `token-utilities.spec.ts`（能否解析出 CSS）。
+14. **无遗留命名**：全仓不得出现旧引擎的组件变量前缀（`--soybean-*`）或主题 token 被写成带前缀的形式（`--vean-background`）；组件作用域变量则**必须**带 `--vean-`。两条扫描守这条线：`@vean/theme` 的 `token-usage.spec.ts`（名字）与 `@vean/unocss` 的 `token-utilities.spec.ts`（能否解析出 CSS）。
 
 ---
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SProgressCircle } from '@soybeanjs/ui';
+import { SProgressCircle } from '@vean/ui';
 
 const items = [
   { color: 'primary', value: 25 },

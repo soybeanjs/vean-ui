@@ -1,5 +1,5 @@
-import type { DateFieldCompactProps, DateFieldCompactEmits, DateFieldUi } from '@soybeanjs/headless/date-field';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { DateFieldCompactProps, DateFieldCompactEmits, DateFieldUi } from '@vean/aria/date-field';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

@@ -93,18 +93,18 @@ describe('SCollapsible', () => {
 
       await flushPromises();
 
-      const content = wrapper.find<HTMLElement>('[data-soybean-collapsible-content]').element;
+      const content = wrapper.find<HTMLElement>('[data-vean-collapsible-content]').element;
 
       // Mounting open freezes the enter keyframe, so the panel does not animate in.
       expect(content.style.animationName).toBe('none');
 
-      await wrapper.find('[data-soybean-collapsible-trigger]').trigger('click');
+      await wrapper.find('[data-vean-collapsible-trigger]').trigger('click');
       await flushPromises();
 
       // The first toggle must hand the element back to the class-driven keyframes.
       // A leaked `none` is what made an already-open branch collapse instantly and
       // never animate again.
-      expect(wrapper.find('[data-soybean-collapsible-content]').attributes('data-state')).toBe('closed');
+      expect(wrapper.find('[data-vean-collapsible-content]').attributes('data-state')).toBe('closed');
       expect(content.style.animationName).toBe('');
 
       wrapper.unmount();

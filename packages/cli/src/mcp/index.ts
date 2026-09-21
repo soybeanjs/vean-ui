@@ -2,7 +2,7 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
 import type { CallToolResult, Tool } from '@modelcontextprotocol/sdk/types.js';
-import { BUILTIN_REGISTRIES } from '../registry/constants';
+import { BUILTIN_REGISTRIES, DEFAULT_REGISTRY_NAMESPACE } from '../registry/constants';
 import { getConfig } from '../utils/get-config';
 import { scanInstalledComponents } from '../utils/scan-installed';
 import { fetchRegistryCatalog, fetchRegistryItem } from '../registry/fetcher';
@@ -20,7 +20,7 @@ function createTextResult(text: string, isError = false): CallToolResult {
 export const TOOLS: Tool[] = [
   {
     name: 'get_project_registries',
-    description: 'List configured registry namespaces from sbean.json.',
+    description: 'List configured registry namespaces from vean.json.',
     inputSchema: { type: 'object', properties: {} }
   },
   {
@@ -86,7 +86,7 @@ export const TOOLS: Tool[] = [
   },
   {
     name: 'get_add_command_for_items',
-    description: 'Return the sbean add command for the given items.',
+    description: 'Return the vean add command for the given items.',
     inputSchema: {
       type: 'object',
       required: ['items'],
@@ -100,7 +100,7 @@ export const TOOLS: Tool[] = [
   },
   {
     name: 'get_audit_checklist',
-    description: 'Return a short post-generation checklist for SBean projects.',
+    description: 'Return a short post-generation checklist for Vean projects.',
     inputSchema: { type: 'object', properties: {} }
   },
   {
@@ -121,7 +121,7 @@ export const TOOLS: Tool[] = [
 function getItemRegistry(item: Awaited<ReturnType<typeof fetchRegistryCatalog>>[number]): string {
   const namespace = item.meta?.registryNamespace;
 
-  return typeof namespace === 'string' ? namespace : '@soybean';
+  return typeof namespace === 'string' ? namespace : DEFAULT_REGISTRY_NAMESPACE;
 }
 
 function sliceResults<T>(items: T[], limit?: number, offset?: number): T[] {
@@ -162,7 +162,7 @@ async function resolveConfig() {
 /** Max missing-component names listed in the gap report. */
 const MAX_MISSING_LISTED = 50;
 
-/** Max component names in the suggested `sbean add` batch. */
+/** Max component names in the suggested `vean add` batch. */
 const MAX_ADD_BATCH = 5;
 
 type GapItem = { name: string; description?: string };
@@ -196,7 +196,7 @@ function formatGapReport(installed: string[], missing: GapItem[]): string {
   lines.push(
     '',
     `Add missing components:`,
-    `  npx sbean@latest add ${addBatch}${missing.length > MAX_ADD_BATCH ? ' ...' : ''}`
+    `  npx @vean/cli@latest add ${addBatch}${missing.length > MAX_ADD_BATCH ? ' ...' : ''}`
   );
 
   return lines.join('\n');
@@ -222,7 +222,7 @@ export async function handleToolCall(name: string, args: Record<string, unknown>
         ...config?.registries
       };
 
-      return createTextResult(Object.keys(registries).join('\n') || '@soybean');
+      return createTextResult(Object.keys(registries).join('\n') || DEFAULT_REGISTRY_NAMESPACE);
     }
 
     case 'list_items_in_registries': {
@@ -325,16 +325,16 @@ export async function handleToolCall(name: string, args: Record<string, unknown>
         return createTextResult('Invalid arguments for get_add_command_for_items.', true);
       }
 
-      return createTextResult(`npx sbean@latest add ${items.join(' ')}`);
+      return createTextResult(`npx @vean/cli@latest add ${items.join(' ')}`);
     }
 
     case 'get_audit_checklist': {
       return createTextResult(
         [
-          '- Run sbean info --json to confirm aliases and registries.',
-          '- Run sbean search or sbean view on the added items to verify registry resolution.',
+          '- Run vean info --json to confirm aliases and registries.',
+          '- Run vean search or vean view on the added items to verify registry resolution.',
           '- Run your project typecheck/build to confirm copied files compile.',
-          '- If you changed theme settings, review sbean.json and uno.config.ts together.'
+          '- If you changed theme settings, review vean.json and uno.config.ts together.'
         ].join('\n')
       );
     }
@@ -349,7 +349,7 @@ export async function handleToolCall(name: string, args: Record<string, unknown>
       const config = await resolveConfig();
 
       if (!config) {
-        return createTextResult('No sbean.json found. Run `sbean init` first to configure the project.');
+        return createTextResult('No vean.json found. Run `vean init` first to configure the project.');
       }
 
       const uiDirs = Object.values(config.resolvedPaths.packages);
@@ -374,12 +374,12 @@ export async function handleToolCall(name: string, args: Record<string, unknown>
 }
 
 /**
- * Start the SBean MCP server over stdio using the official
+ * Start the Vean MCP server over stdio using the official
  * `@modelcontextprotocol/sdk` transport (ADR-011).
  */
 export async function startMcpServer(): Promise<void> {
   const server = new Server(
-    { name: 'sbean', version: '1.0.0' },
+    { name: 'vean', version: '1.0.0' },
     {
       capabilities: {
         tools: {}

@@ -6,8 +6,8 @@ import type {
   ProgressCircleCompactEmits,
   ProgressCircleCompactSlots,
   ProgressUi
-} from '@soybeanjs/headless/progress';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/progress';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeColor, ThemeSize } from '@/theme';
 
 /**

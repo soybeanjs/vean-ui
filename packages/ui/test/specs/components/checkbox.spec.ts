@@ -128,7 +128,7 @@ describe('SCheckbox', () => {
         attachTo: document.body
       });
 
-      const input = wrapper.find('[data-soybean-visually-hidden-input]');
+      const input = wrapper.find('[data-vean-visually-hidden-input]');
       expect(input.exists()).toBe(true);
       expect(input.attributes('name')).toBe('terms');
       expect(input.attributes('value')).toBe('on');
@@ -142,7 +142,7 @@ describe('SCheckbox', () => {
         attachTo: document.body
       });
 
-      const input = wrapper.find('[data-soybean-visually-hidden-input]');
+      const input = wrapper.find('[data-vean-visually-hidden-input]');
       expect(input.attributes('value')).toBe('custom-value');
       wrapper.unmount();
     });

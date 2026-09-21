@@ -11,8 +11,8 @@ import {
   getWeekStartsOn,
   isMonthBetweenInclusive,
   parseStringToDateValue
-} from '@soybeanjs/headless/date';
-import { chunk } from '@soybeanjs/headless/shared';
+} from '@vean/aria/date';
+import { chunk } from '@vean/aria/shared';
 
 describe('shared date helpers', () => {
   it('creates a fixed six-week month grid', () => {

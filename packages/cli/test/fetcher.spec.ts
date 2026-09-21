@@ -113,7 +113,7 @@ describe('registry fetcher (integration)', () => {
       const item = await fetchRegistryItem('dialog', undefined, server.url);
 
       expect(item).not.toBeNull();
-      expect(item!.dependencies).toContain('@soybeanjs/headless');
+      expect(item!.dependencies).toContain('@vean/aria');
       expect(item!.registryDependencies).toContain('utils');
       expect(item!.registryDependencies).toContain('button');
     });
@@ -122,7 +122,7 @@ describe('registry fetcher (integration)', () => {
       const item = await fetchRegistryItem('button', undefined, server.url);
 
       expect(item!.meta).toBeDefined();
-      expect(item!.meta!.registryNamespace).toBe('@soybean');
+      expect(item!.meta!.registryNamespace).toBe('@vean');
       expect(item!.meta!.registryUrl).toBeDefined();
     });
   });

@@ -1,4 +1,4 @@
-import { THEME_FONT_HEADING, THEME_FONT_MONO, THEME_FONT_SANS, THEME_FONT_SERIF } from '@soybeanjs/theme';
+import { THEME_FONT_HEADING, THEME_FONT_MONO, THEME_FONT_SANS, THEME_FONT_SERIF } from '@vean/theme';
 
 /**
  * The docs' font loading: one Google Fonts stylesheet carrying every family the

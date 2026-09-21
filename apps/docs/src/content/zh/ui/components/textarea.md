@@ -42,19 +42,19 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将文本域拆分为负责状态、自动高度测量与表单代理的 headless 层（`@soybeanjs/headless/textarea`），以及负责变体与 UnoCSS 样式的 styled 层（`@soybeanjs/ui`）。headless `TextareaCompact` 组合 `TextareaRoot` / `TextareaControl` / `TextareaClear` / `TextareaCounter` 并暴露 `clear` / `counter` / `footer` 插槽。这与 Radix 的 headless/styled 分离一致，区别于 Ant Design、Element Plus、Mantine 等单包方案。
+VeanUI 将文本域拆分为负责状态、自动高度测量与表单代理的 Aria 层（`@vean/aria/textarea`），以及负责变体与 UnoCSS 样式的 styled 层（`@vean/ui`）。Aria `TextareaCompact` 组合 `TextareaRoot` / `TextareaControl` / `TextareaClear` / `TextareaCounter` 并暴露 `clear` / `counter` / `footer` 插槽。这与 Radix 的 headless/styled 分离一致，区别于 Ant Design、Element Plus、Mantine 等单包方案。
 
-| 能力                   | SoybeanUI | Ant Design `Input.TextArea` | Element Plus `Input` | Mantine `Textarea` |
-| :--------------------- | :-------: | :-------------------------: | :------------------: | :----------------: |
-| headless/styled 分离   |    ✅     |              —              |          —           |         —          |
-| 受控/非受控            |    ✅     |             ✅              |          ✅          |         ✅         |
-| autosize（min/max 行） |    ✅     |             ✅              |          ✅          |         ✅         |
-| 清除按钮（悬停显示）   |    ✅     |              —              |          ✅          |         —          |
-| 字符计数器 `count/max` |    ✅     |             ✅              |          ✅          |         —          |
-| `resize` 控制          |    ✅     |              —              |          ✅          |         ✅         |
-| 原生表单代理           |    ✅     |              —              |          —           |         —          |
-| `footer` 插槽          |    ✅     |              —              |          —           |         —          |
-| `error` 态             |     —     |              —              |          ✅          |         ✅         |
+| 能力                   | VeanUI | Ant Design `Input.TextArea` | Element Plus `Input` | Mantine `Textarea` |
+| :--------------------- | :----: | :-------------------------: | :------------------: | :----------------: |
+| Aria/styled 分离       |   ✅   |              —              |          —           |         —          |
+| 受控/非受控            |   ✅   |             ✅              |          ✅          |         ✅         |
+| autosize（min/max 行） |   ✅   |             ✅              |          ✅          |         ✅         |
+| 清除按钮（悬停显示）   |   ✅   |              —              |          ✅          |         —          |
+| 字符计数器 `count/max` |   ✅   |             ✅              |          ✅          |         —          |
+| `resize` 控制          |   ✅   |              —              |          ✅          |         ✅         |
+| 原生表单代理           |   ✅   |              —              |          —           |         —          |
+| `footer` 插槽          |   ✅   |              —              |          —           |         —          |
+| `error` 态             |   —    |              —              |          ✅          |         ✅         |
 
 ### 注意事项
 

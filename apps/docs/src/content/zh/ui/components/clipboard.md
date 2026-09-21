@@ -27,7 +27,7 @@ head:
 - 🎨 复用 `SButton` 的 8 种变体、8 种颜色、6 种尺寸、4 种形状
 - 🔌 继承 `SButton` 的 `as`/`asChild` 多态与 `class` 覆盖
 - 🛡️ 异步 Clipboard API 不可用时自动降级到 `execCommand('copy')`（可通过 `legacy` 关闭）
-- ♿ 在 headless 层保留按钮语义、禁用行为与 `data-state`
+- ♿ 在 Aria 层保留按钮语义、禁用行为与 `data-state`
 - 🎯 TypeScript 类型安全，`ClipboardSlotProps` 提供完整插槽参数类型
 
 ## 演示
@@ -42,11 +42,11 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将 clipboard 拆分为 headless 层（`@soybeanjs/headless/clipboard`，负责复制状态、按钮语义与插槽参数）和 styled 层（`@soybeanjs/ui`，复用 button 的 variant recipe）。这与 `shadcn/ui` 的 headless/styled 分离思路一致，不同于 Ant Design、Element Plus、MUI、Mantine、Naive UI 等单包组件库。
+VeanUI 将 clipboard 拆分为 Aria 层（`@vean/aria/clipboard`，负责复制状态、按钮语义与插槽参数）和 styled 层（`@vean/ui`，复用 button 的 variant recipe）。这与 `shadcn/ui` 的 headless/styled 分离思路一致，不同于 Ant Design、Element Plus、MUI、Mantine、Naive UI 等单包组件库。
 
-| 维度 | SoybeanUI                                                                | Ant Design / Element Plus / MUI / Mantine / Naive UI |
+| 维度 | VeanUI                                                                   | Ant Design / Element Plus / MUI / Mantine / Naive UI |
 | :--- | :----------------------------------------------------------------------- | :--------------------------------------------------- |
-| 架构 | 基于 `Button` 的 headless + styled 分离                                  | 单包 `CopyButton` / `Typography.Paragraph copyable`  |
+| 架构 | 基于 `Button` 的 Aria + styled 分离                                      | 单包 `CopyButton` / `Typography.Paragraph copyable`  |
 | 样式 | 通过共享 `buttonVariants` recipe 使用 UnoCSS                             | CSS-in-JS / SCSS / CSS 变量                          |
 | 定制 | `class`、`as` / `asChild`、`leading` / `default` / `trailing` 插槽       | `icon`、`text`、`format`、组件覆写                   |
 | 降级 | `legacy` 属性启用自实现的 `execCommand('copy')` 回退（位于 `shared.ts`） | 各库自有降级策略                                     |

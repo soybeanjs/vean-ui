@@ -12,7 +12,7 @@ A lightweight empty-state component that highlights missing content and guides t
 
 Use it for "no results", empty inboxes, blank tables, or onboarding prompts. Prefer `alert` for inline feedback about state, and `skeleton` when content is still loading rather than absent.
 
-There is no headless `empty` family: an empty state carries no keyboard, focus, ARIA or state logic that would need to be shared across wrappers, so the whole assembly lives in the UI layer and keeps `data-soybean-empty-*` attributes for styling and tests.
+There is no Aria `empty` family: an empty state carries no keyboard, focus, ARIA or state logic that would need to be shared across wrappers, so the whole assembly lives in the UI layer and keeps `data-vean-empty-*` attributes for styling and tests.
 
 ## Usage
 
@@ -20,7 +20,7 @@ There is no headless `empty` family: an empty state carries no keyboard, focus, 
 
 ## Features
 
-- 🧩 UI-only anatomy shell — `SEmpty` owns the header/media/title/description orchestration and stays style-driven; there is no headless `empty` family to compose
+- 🧩 UI-only anatomy shell — `SEmpty` owns the header/media/title/description orchestration and stays style-driven; there is no Aria `empty` family to compose
 - 🖼️ Media / icon — `icon` prop or the `media` slot for an illustration, emoji or custom graphic
 - 🏷️ Title + description — `title`/`description` props or the matching slots
 - ⚡ Action area — `content`/`default` slots for buttons or follow-up guidance
@@ -30,7 +30,7 @@ There is no headless `empty` family: an empty state carries no keyboard, focus, 
 
 ## Component family
 
-`SEmpty` is a single export. It renders the whole anatomy itself and exposes `data-soybean-empty-root` / `-header` / `-media` / `-title` / `-description` / `-content` on the matching nodes, so `class`/`ui` and per-part `*Props` reach every part.
+`SEmpty` is a single export. It renders the whole anatomy itself and exposes `data-vean-empty-root` / `-header` / `-media` / `-title` / `-description` / `-content` on the matching nodes, so `class`/`ui` and per-part `*Props` reach every part.
 
 ## Demos
 
@@ -44,17 +44,17 @@ There is no headless `empty` family: an empty state carries no keyboard, focus, 
 
 ### Architecture and benchmark differences
 
-`SEmpty` owns the header/media/title/description orchestration in the UI layer — the empty state is an anatomy shell with no behavior behind it, so it deliberately has no headless family. This mirrors shadcn/ui's composition-first approach, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled `Empty` with `image`/`description` props. SoybeanUI exposes a full per-part `*Props` channel set and a `size` scale the single-package libraries generally omit, and renders the default media through `SIcon`.
+`SEmpty` owns the header/media/title/description orchestration in the UI layer — the empty state is an anatomy shell with no behavior behind it, so it deliberately has no Aria family. This mirrors shadcn/ui's composition-first approach, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled `Empty` with `image`/`description` props. VeanUI exposes a full per-part `*Props` channel set and a `size` scale the single-package libraries generally omit, and renders the default media through `SIcon`.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design Empty | Element Plus Empty | Mantine | Naive UI Empty |
-| :-------------------- | :-------: | :-------: | :--------------: | :----------------: | :-----: | :------------: |
-| Headless/styled split |    ✅     |    ✅     |        —         |         —          |    —    |       —        |
-| Media / icon          |    ✅     |    ✅     |        ✅        |         ✅         |   ✅    |       ✅       |
-| Title                 |    ✅     |     —     |        ✅        |         ✅         |   ✅    |       ✅       |
-| Description           |    ✅     |     —     |        ✅        |         ✅         |   ✅    |       ✅       |
-| Action / content slot |    ✅     |     —     |        ✅        |         ✅         |   ✅    |       ✅       |
-| Size variants (6)     |    ✅     |     —     |        —         |         —          |    —    |       —        |
-| Per-part `*Props`     |    ✅     |    ✅     |        —         |         —          |    —    |       —        |
+| Capability            | VeanUI | shadcn/ui | Ant Design Empty | Element Plus Empty | Mantine | Naive UI Empty |
+| :-------------------- | :----: | :-------: | :--------------: | :----------------: | :-----: | :------------: |
+| Aria/styled split     |   ✅   |    ✅     |        —         |         —          |    —    |       —        |
+| Media / icon          |   ✅   |    ✅     |        ✅        |         ✅         |   ✅    |       ✅       |
+| Title                 |   ✅   |     —     |        ✅        |         ✅         |   ✅    |       ✅       |
+| Description           |   ✅   |     —     |        ✅        |         ✅         |   ✅    |       ✅       |
+| Action / content slot |   ✅   |     —     |        ✅        |         ✅         |   ✅    |       ✅       |
+| Size variants (6)     |   ✅   |     —     |        —         |         —          |    —    |       —        |
+| Per-part `*Props`     |   ✅   |    ✅     |        —         |         —          |    —    |       —        |
 
 `—` = unsupported or a different interaction model.
 

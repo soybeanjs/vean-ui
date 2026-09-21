@@ -1,12 +1,12 @@
-import type { PrimitiveWithBaseProps } from '@soybeanjs/headless/primitive';
+import type { PrimitiveWithBaseProps } from '@vean/aria/primitive';
 import type {
   TreeMenuBaseOptionData,
   TreeMenuCompactEmits,
   TreeMenuCompactProps,
   TreeMenuCompactSlots,
   TreeMenuUiSlot
-} from '@soybeanjs/headless/tree-menu';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/tree-menu';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

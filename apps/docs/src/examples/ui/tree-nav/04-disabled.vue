@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SButton, STreeNav } from '@soybeanjs/ui';
-import type { TreeNavOptionData } from '@soybeanjs/ui';
+import { SButton, STreeNav } from '@vean/ui';
+import type { TreeNavOptionData } from '@vean/ui';
 
 const disabled = ref(false);
 
@@ -10,7 +10,7 @@ const items: TreeNavOptionData[] = [
     value: 'products',
     label: 'Products',
     disabled: true,
-    children: [{ value: 'ui', label: 'SoybeanUI' }]
+    children: [{ value: 'ui', label: 'VeanUI' }]
   },
   {
     value: 'resources',

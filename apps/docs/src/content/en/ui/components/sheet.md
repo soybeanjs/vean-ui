@@ -1,16 +1,16 @@
 ---
 head:
   title: Sheet
-  description: 'A panel that slides out from the edge of the screen. It reuses the declarative API and slot contract of SDialog (same headless DialogCompact base, same modal/focus/dismissable behavior), and adds side to control where the panel enters — top/bottom/left/right (default right).'
+  description: 'A panel that slides out from the edge of the screen. It reuses the declarative API and slot contract of SDialog (same Aria DialogCompact base, same modal/focus/dismissable behavior), and adds side to control where the panel enters — top/bottom/left/right (default right).'
 ---
 
 # Sheet
 
 ## Overview
 
-A panel that slides out from the edge of the screen. It reuses the declarative API and slot contract of `SDialog` (same headless `DialogCompact` base, same modal/focus/dismissable behavior), and adds `side` to control where the panel enters — `top`/`bottom`/`left`/`right` (default `right`).
+A panel that slides out from the edge of the screen. It reuses the declarative API and slot contract of `SDialog` (same Aria `DialogCompact` base, same modal/focus/dismissable behavior), and adds `side` to control where the panel enters — `top`/`bottom`/`left`/`right` (default `right`).
 
-`SSheet` combines the headless dialog primitive family with the `sheetVariants` style recipe (extends `dialogVariants`, 6 sizes × 4 sides).
+`SSheet` combines the Aria dialog primitive family with the `sheetVariants` style recipe (extends `dialogVariants`, 6 sizes × 4 sides).
 
 > Looking for a gesture-driven panel with snap points and swipe dismiss? That is [Drawer](/components/drawer) — the sheet is deliberately "a dialog with a side".
 
@@ -33,7 +33,7 @@ A panel that slides out from the edge of the screen. It reuses the declarative A
 ## Component family
 
 - `SSheet` (styled) — the entry wrapper; `sheetVariants` recipe (`size` + `side`) with dynamic slot forwarding
-- All other parts come from the headless dialog family (see `Dialog`): `DialogRoot`, `DialogTrigger`, `DialogOverlay`, `DialogPopup`, `DialogHeader`, `DialogContent`, `DialogFooter`, `DialogTitle`, `DialogDescription`, `DialogClose`, `DialogCancel`, `DialogConfirm`, `DialogCompact`
+- All other parts come from the Aria dialog family (see `Dialog`): `DialogRoot`, `DialogTrigger`, `DialogOverlay`, `DialogPopup`, `DialogHeader`, `DialogContent`, `DialogFooter`, `DialogTitle`, `DialogDescription`, `DialogClose`, `DialogCancel`, `DialogConfirm`, `DialogCompact`
 
 ## Demos
 
@@ -47,17 +47,17 @@ A panel that slides out from the edge of the screen. It reuses the declarative A
 
 ### Architecture and benchmark differences
 
-`SSheet` is a thin styled wrapper: it forwards every prop/slot/event to the headless `DialogCompact` and only supplies the `sheetVariants` recipe that extends `dialogVariants` with side-specific `popup` classes. This keeps sheet and dialog behavior identical while varying only presentation — the same headless/styled split as shadcn-ui/vaul-style panels, versus Ant Design's `drawer` (single styled component with `placement`/`width`/`closable`/`mask` props) and Element Plus/Mantine/Naive UI equivalents.
+`SSheet` is a thin styled wrapper: it forwards every prop/slot/event to the Aria `DialogCompact` and only supplies the `sheetVariants` recipe that extends `dialogVariants` with side-specific `popup` classes. This keeps sheet and dialog behavior identical while varying only presentation — the same headless/styled split as shadcn-ui/vaul-style panels, versus Ant Design's `drawer` (single styled component with `placement`/`width`/`closable`/`mask` props) and Element Plus/Mantine/Naive UI equivalents.
 
-| Capability                | SoybeanUI | shadcn/ui | Ant Design Drawer | Element Plus Drawer | Mantine Drawer | Naive UI Drawer |
-| :------------------------ | :-------: | :-------: | :---------------: | :-----------------: | :------------: | :-------------: |
-| Reuses dialog base        |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| Headless/styled split     |    ✅     |    ✅     |         —         |          —          |       —        |        —        |
-| 4 placements (side)       |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| Modal (aria-modal + trap) |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| Focus return on close     |    ✅     |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
-| Sizes (6)                 |    ✅     |     —     |         —         |          —          |       —        |        —        |
-| Pure (no header/footer)   |    ✅     |     —     |         —         |          —          |       —        |        —        |
+| Capability                | VeanUI | shadcn/ui | Ant Design Drawer | Element Plus Drawer | Mantine Drawer | Naive UI Drawer |
+| :------------------------ | :----: | :-------: | :---------------: | :-----------------: | :------------: | :-------------: |
+| Reuses dialog base        |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| Aria/styled split         |   ✅   |    ✅     |         —         |          —          |       —        |        —        |
+| 4 placements (side)       |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| Modal (aria-modal + trap) |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| Focus return on close     |   ✅   |    ✅     |        ✅         |         ✅          |       ✅       |       ✅        |
+| Sizes (6)                 |   ✅   |     —     |         —         |          —          |       —        |        —        |
+| Pure (no header/footer)   |   ✅   |     —     |         —         |          —          |       —        |        —        |
 
 `—` = unsupported or a different interaction model.
 
@@ -76,7 +76,7 @@ The name `SDrawer` now belongs to the gesture-driven [Drawer](/components/drawer
 | Before                                        | After                                      |
 | :-------------------------------------------- | :----------------------------------------- |
 | `SDrawer` (side panel)                        | `SSheet`                                   |
-| `@soybeanjs/ui` → `SDrawer`                   | `@soybeanjs/ui` → `SSheet`                 |
+| `@vean/ui` → `SDrawer`                        | `@vean/ui` → `SSheet`                      |
 | `drawerVariants`                              | `sheetVariants`                            |
 | `DrawerProps` / `DrawerEmits` / `DrawerSlots` | `SheetProps` / `SheetEmits` / `SheetSlots` |
 

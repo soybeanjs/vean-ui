@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SAutocomplete } from '@soybeanjs/ui';
-import type { AutocompleteOptionData } from '@soybeanjs/ui';
+import { SAutocomplete } from '@vean/ui';
+import type { AutocompleteOptionData } from '@vean/ui';
 
 const items: AutocompleteOptionData[] = [
   {

@@ -22,7 +22,7 @@ A set of checkable radio buttons where no more than one button can be checked at
 - 📋 Native form proxy — a visually hidden input carries the current value with `name` / `required`
 - 🃏 Card variant (`SRadioGroupCard`) with icon, label, and description content
 - 🎨 6 sizes, 8 colors, and dot/outline variants via `radioGroupVariants`
-- 📊 Data-driven `RadioGroupCompact` / `RadioGroupCardCompact` aggregation in headless
+- 📊 Data-driven `RadioGroupCompact` / `RadioGroupCardCompact` aggregation in Aria
 - ♿ `role="radiogroup"` + `role="radio"` with `aria-checked` / `data-state` dual reflection, axe-clean
 
 ## Component family
@@ -42,19 +42,19 @@ A set of checkable radio buttons where no more than one button can be checked at
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds the radio group from headless `RadioGroupRoot` (`useControllableState` + `useRovingFocusGroup`) → `RadioGroupItem` (checked derivation + `VisuallyHiddenInput` form proxy) → `RadioGroupControl` (`Button` base + `role="radio"` + `aria-checked`/`data-state`, focus-derived selection) → `RadioGroupIndicator` (`usePresence` conditional mount) → `RadioGroupLabel` (`for` ↔ control `id`). `RadioGroupCompact` / `RadioGroupCardCompact` own item iteration and default composition while the UI wrappers only inject variant classes. The `scv()` recipes `radioGroupVariants` / `radioGroupCardVariants` declare 6 sizes, 8 colors, and dot/outline variants.
+VeanUI builds the radio group from Aria `RadioGroupRoot` (`useControllableState` + `useRovingFocusGroup`) → `RadioGroupItem` (checked derivation + `VisuallyHiddenInput` form proxy) → `RadioGroupControl` (`Button` base + `role="radio"` + `aria-checked`/`data-state`, focus-derived selection) → `RadioGroupIndicator` (`usePresence` conditional mount) → `RadioGroupLabel` (`for` ↔ control `id`). `RadioGroupCompact` / `RadioGroupCardCompact` own item iteration and default composition while the UI wrappers only inject variant classes. The `scv()` recipes `radioGroupVariants` / `radioGroupCardVariants` declare 6 sizes, 8 colors, and dot/outline variants.
 
-| Capability                      | SoybeanUI | Ant Design `Radio` | Element Plus `Radio` | Mantine `Radio` | Naive UI `Radio` | shadcn `RadioGroup` |
-| :------------------------------ | :-------: | :----------------: | :------------------: | :-------------: | :--------------: | :-----------------: |
-| headless/styled split           |    ✅     |         —          |          —           |        —        |        —         |         ✅          |
-| Single-choice exclusive         |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| Roving-focus keyboard nav       |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| Controlled/uncontrolled         |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| Card variant (icon/description) |    ✅     |         —          |          —           |        —        |        —         |          —          |
-| `button` variant                |    ➕     |         ✅         |          ✅          |        —        |        —         |          —          |
-| `Radio.Button` composite        |    ➕     |         ✅         |          —           |        —        |        —         |          —          |
-| Form proxy / `name` submit      |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| Axe-clean (group + card)        |    ✅     |         —          |          —           |        —        |        —         |          —          |
+| Capability                      | VeanUI | Ant Design `Radio` | Element Plus `Radio` | Mantine `Radio` | Naive UI `Radio` | shadcn `RadioGroup` |
+| :------------------------------ | :----: | :----------------: | :------------------: | :-------------: | :--------------: | :-----------------: |
+| Aria/styled split               |   ✅   |         —          |          —           |        —        |        —         |         ✅          |
+| Single-choice exclusive         |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| Roving-focus keyboard nav       |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| Controlled/uncontrolled         |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| Card variant (icon/description) |   ✅   |         —          |          —           |        —        |        —         |          —          |
+| `button` variant                |   ➕   |         ✅         |          ✅          |        —        |        —         |          —          |
+| `Radio.Button` composite        |   ➕   |         ✅         |          —           |        —        |        —         |          —          |
+| Form proxy / `name` submit      |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| Axe-clean (group + card)        |   ✅   |         —          |          —           |        —        |        —         |          —          |
 
 ### Cautions
 

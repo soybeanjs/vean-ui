@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, useSlots } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { SeparatorCompact, provideSeparatorUi } from '@soybeanjs/headless/separator';
+import { useOmitProps } from '@vean/aria/composables';
+import { SeparatorCompact, provideSeparatorUi } from '@vean/aria/separator';
 import { separatorVariants } from '@/styles/separator';
 import type { SeparatorProps } from './types';
 

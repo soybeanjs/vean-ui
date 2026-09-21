@@ -21,8 +21,8 @@ const items = [
         icon: 'lucide:folder-kanban',
         children: [
           {
-            value: 'soybean-ui',
-            label: 'Soybean UI'
+            value: 'vean',
+            label: 'Vean'
           }
         ]
       },
@@ -65,7 +65,7 @@ const expandItems = [
       {
         value: 'projects',
         label: 'Projects',
-        children: [{ value: 'soybean-ui', label: 'Soybean UI' }]
+        children: [{ value: 'vean-ui', label: 'Vean UI' }]
       },
       {
         value: 'tasks',
@@ -106,13 +106,13 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-root]').attributes('data-mode')).toBe('dual-vertical');
-      expect(wrapper.find('[data-soybean-split-nav-root]').element.tagName).toBe('NAV');
-      expect(wrapper.find('[data-soybean-split-nav-dual-vertical]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-vertical-first-level]').exists()).toBe(true);
-      expect(wrapper.findAll('[data-soybean-split-nav-first-level-item]')).toHaveLength(3);
-      expect(wrapper.find('[data-soybean-split-nav-first-level-item]').attributes('data-orientation')).toBe('vertical');
+      expect(wrapper.find('[data-vean-split-nav-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-root]').attributes('data-mode')).toBe('dual-vertical');
+      expect(wrapper.find('[data-vean-split-nav-root]').element.tagName).toBe('NAV');
+      expect(wrapper.find('[data-vean-split-nav-dual-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-vertical-first-level]').exists()).toBe(true);
+      expect(wrapper.findAll('[data-vean-split-nav-first-level-item]')).toHaveLength(3);
+      expect(wrapper.find('[data-vean-split-nav-first-level-item]').attributes('data-orientation')).toBe('vertical');
 
       wrapper.unmount();
     });
@@ -127,10 +127,10 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-root]').exists()).toBe(false);
-      expect(wrapper.find('[data-soybean-split-nav-horizontal-first-level]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-dual-vertical]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-vertical-first-level]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-root]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-horizontal-first-level]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-dual-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-vertical-first-level]').exists()).toBe(true);
       expect(wrapper.text()).toContain('Projects');
       expect(wrapper.text()).toContain('Tasks');
 
@@ -147,14 +147,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-root]').exists()).toBe(false);
-      expect(wrapper.find('[data-soybean-split-nav-horizontal-first-level]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-first-level-item]').attributes('data-orientation')).toBe(
-        'horizontal'
-      );
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-tree-menu-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').text()).toContain('Projects');
+      expect(wrapper.find('[data-vean-split-nav-root]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-horizontal-first-level]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-first-level-item]').attributes('data-orientation')).toBe('horizontal');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tree-menu-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').text()).toContain('Projects');
 
       wrapper.unmount();
     });
@@ -169,12 +167,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-root]').exists()).toBe(false);
-      expect(wrapper.find('[data-soybean-split-nav-vertical-first-level]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-sub-horizontal]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-tree-nav]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-sub-horizontal]').text()).toContain('Projects');
-      expect(wrapper.find('[data-soybean-split-nav-sub-horizontal]').text()).toContain('Tasks');
+      expect(wrapper.find('[data-vean-split-nav-root]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-vertical-first-level]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-horizontal]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tree-nav]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-horizontal]').text()).toContain('Projects');
+      expect(wrapper.find('[data-vean-split-nav-sub-horizontal]').text()).toContain('Tasks');
 
       wrapper.unmount();
     });
@@ -210,7 +208,7 @@ describe('SSplitNav', () => {
       const wrapper = mount(SSplitNav, {
         props: {
           items,
-          modelValue: 'soybean-ui'
+          modelValue: 'vean'
         },
         slots: {
           'top-left': () => h('span', { class: 'top-left-slot' }, 'Mark'),
@@ -219,18 +217,16 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const topLeft = wrapper.find('[data-soybean-split-nav-vertical-rail] [data-soybean-split-nav-top-left]');
+      const topLeft = wrapper.find('[data-vean-split-nav-vertical-rail] [data-vean-split-nav-top-left]');
 
       expect(topLeft.find('.top-left-slot').exists()).toBe(true);
       // The cell is the rail column's own first child, stacked above the box the
       // rail fills.
       expect(topLeft.element.nextElementSibling).toBe(
-        wrapper.find('[data-soybean-split-nav-vertical-first-level]').element.parentElement
+        wrapper.find('[data-vean-split-nav-vertical-first-level]').element.parentElement
       );
       expect(
-        wrapper
-          .find('[data-soybean-split-nav-sub-vertical] [data-soybean-split-nav-top-right] .top-right-slot')
-          .exists()
+        wrapper.find('[data-vean-split-nav-sub-vertical] [data-vean-split-nav-top-right] .top-right-slot').exists()
       ).toBe(true);
 
       wrapper.unmount();
@@ -251,8 +247,8 @@ describe('SSplitNav', () => {
 
       // The active first-level menu has no children: the sidebar is the rail
       // alone, so only its cell has a column to sit on.
-      expect(wrapper.find('[data-soybean-split-nav-top-left]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-top-right]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-top-left]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-top-right]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -261,7 +257,7 @@ describe('SSplitNav', () => {
       const wrapper = mount(SSplitNav, {
         props: {
           items,
-          modelValue: 'soybean-ui',
+          modelValue: 'vean',
           collapsed: true
         },
         slots: {
@@ -286,15 +282,13 @@ describe('SSplitNav', () => {
       const dualVertical = mount(SSplitNav, {
         props: {
           items,
-          modelValue: 'soybean-ui'
+          modelValue: 'vean'
         },
         attachTo: document.body
       });
 
       expect(
-        dualVertical
-          .find('[data-soybean-split-nav-sub-vertical]')
-          .attributes('data-soybean-split-nav-dual-vertical-pane')
+        dualVertical.find('[data-vean-split-nav-sub-vertical]').attributes('data-vean-split-nav-dual-vertical-pane')
       ).toBeDefined();
 
       dualVertical.unmount();
@@ -303,14 +297,14 @@ describe('SSplitNav', () => {
         props: {
           items,
           mode: 'horizontal-vertical',
-          modelValue: 'soybean-ui'
+          modelValue: 'vean'
         },
         attachTo: document.body
       });
 
       // Nothing precedes a lone pane, so its edge stays the host's to draw.
       expect(
-        lonePane.find('[data-soybean-split-nav-sub-vertical]').attributes('data-soybean-split-nav-dual-vertical-pane')
+        lonePane.find('[data-vean-split-nav-sub-vertical]').attributes('data-vean-split-nav-dual-vertical-pane')
       ).toBeUndefined();
 
       lonePane.unmount();
@@ -325,7 +319,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-dual-vertical]').classes()).toContain('custom-pane');
+      expect(wrapper.find('[data-vean-split-nav-dual-vertical]').classes()).toContain('custom-pane');
 
       wrapper.unmount();
     });
@@ -356,7 +350,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const selectedItem = wrapper.find('[data-soybean-split-nav-first-level-item][data-selected="true"]');
+      const selectedItem = wrapper.find('[data-vean-split-nav-first-level-item][data-selected="true"]');
 
       expect(selectedItem.exists()).toBe(true);
       expect(selectedItem.text()).toContain('Overview');
@@ -373,7 +367,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const leaf = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="overview"]');
+      const leaf = wrapper.find('[data-vean-split-nav-first-level-item][data-value="overview"]');
 
       await leaf.trigger('click');
 
@@ -395,15 +389,15 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const leaf = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="overview"]');
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const leaf = wrapper.find('[data-vean-split-nav-first-level-item][data-value="overview"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeFalsy();
       expect(leaf.attributes('data-selected')).toBe('true');
       expect(parent.attributes('data-state')).toBe('open');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -425,15 +419,15 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const projectsB = wrapperB.find('[data-soybean-tree-menu-button][data-value="projects"]');
+      const projectsB = wrapperB.find('[data-vean-tree-menu-button][data-value="projects"]');
       expect(projectsB.exists()).toBe(true);
 
       await projectsB.trigger('keydown', { key: 'ArrowLeft' });
 
-      const workspaceB = wrapperB.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const workspaceB = wrapperB.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
       expect(document.activeElement).toBe(workspaceB.element);
 
-      const workspaceA = wrapperA.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const workspaceA = wrapperA.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
       expect(document.activeElement).not.toBe(workspaceA.element);
 
       wrapperA.unmount();
@@ -449,7 +443,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('click');
 
@@ -457,10 +451,10 @@ describe('SSplitNav', () => {
       expect(wrapper.emitted('select')).toBeFalsy();
       expect(parent.attributes('data-state')).toBe('open');
       expect(parent.attributes('aria-expanded')).toBe('true');
-      expect(wrapper.find('[data-soybean-tree-menu-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').attributes('data-state')).toBe('expanded');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').text()).toContain('Projects');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').text()).toContain('Tasks');
+      expect(wrapper.find('[data-vean-tree-menu-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').attributes('data-state')).toBe('expanded');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').text()).toContain('Projects');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').text()).toContain('Tasks');
 
       wrapper.unmount();
     });
@@ -470,16 +464,16 @@ describe('SSplitNav', () => {
         props: {
           items,
           mode: 'dual-vertical',
-          modelValue: 'soybean-ui'
+          modelValue: 'vean'
         },
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       expect(parent.attributes('data-state')).toBe('open');
       expect(parent.attributes('data-child-selected')).toBeDefined();
-      expect(wrapper.find('[data-soybean-split-nav-first-level-item][data-selected="true"]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-first-level-item][data-selected="true"]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -493,13 +487,13 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('keydown', { key: 'ArrowDown' });
 
       expect(parent.attributes('data-state')).toBe('closed');
       expect(parent.attributes('data-selected')).toBe('false');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -513,12 +507,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('keydown', { key: 'ArrowLeft' });
 
       expect(parent.attributes('data-state')).toBe('closed');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(false);
       expect(wrapper.emitted('update:modelValue')).toBeFalsy();
 
       wrapper.unmount();
@@ -533,12 +527,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('keydown', { key: 'ArrowRight' });
 
       expect(parent.attributes('data-state')).toBe('open');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(true);
       expect(wrapper.emitted('update:modelValue')).toBeFalsy();
 
       wrapper.unmount();
@@ -553,12 +547,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('keydown', { key: 'ArrowDown' });
 
       expect(parent.attributes('data-state')).toBe('open');
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(true);
       expect(wrapper.emitted('update:modelValue')).toBeFalsy();
 
       wrapper.unmount();
@@ -575,13 +569,13 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').attributes('data-state')).toBe('expanded');
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('expanded');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').attributes('data-state')).toBe('expanded');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('expanded');
 
       await wrapper.setProps({ collapsed: true });
 
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').attributes('data-state')).toBe('collapsed');
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
 
       wrapper.unmount();
     });
@@ -597,7 +591,7 @@ describe('SSplitNav', () => {
       });
 
       const tasks = wrapper
-        .find('[data-soybean-tree-nav]')
+        .find('[data-vean-tree-nav]')
         .findAll('button')
         .find(button => button.text() === 'Tasks');
 
@@ -641,12 +635,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').attributes('data-state')).toBe('expanded');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').attributes('data-state')).toBe('expanded');
 
       await wrapper.find('[data-test="toggle-collapsed"]').trigger('click');
 
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').attributes('data-state')).toBe('collapsed');
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
 
       wrapper.unmount();
     });
@@ -658,17 +652,17 @@ describe('SSplitNav', () => {
         props: {
           items: expandItems,
           mode: 'dual-vertical',
-          defaultValue: 'soybean-ui'
+          defaultValue: 'vean-ui'
         },
         attachTo: document.body
       });
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'true'
       );
-      expect(wrapper.text()).toContain('Soybean UI');
+      expect(wrapper.text()).toContain('Vean UI');
 
       wrapper.unmount();
     });
@@ -683,22 +677,22 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'false'
       );
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'true'
       );
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="tasks"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="tasks"]').trigger('click');
       await nextTick();
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)?.[0]).toBe('tasks');
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'true'
       );
 
@@ -715,24 +709,24 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').trigger('click');
       await nextTick();
 
-      await wrapper.find('[data-soybean-split-nav-first-level-item][data-value="system"]').trigger('click');
+      await wrapper.find('[data-vean-split-nav-first-level-item][data-value="system"]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').exists()).toBe(false);
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="users"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="users"]').attributes('aria-expanded')).toBe(
         'false'
       );
 
-      await wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workbench"]').trigger('click');
+      await wrapper.find('[data-vean-split-nav-first-level-item][data-value="workbench"]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'true'
       );
-      expect(wrapper.text()).toContain('Soybean UI');
+      expect(wrapper.text()).toContain('Vean UI');
 
       wrapper.unmount();
     });
@@ -742,7 +736,7 @@ describe('SSplitNav', () => {
         props: {
           items: expandItems,
           mode: 'dual-vertical',
-          defaultValue: 'soybean-ui',
+          defaultValue: 'vean-ui',
           expandStrategy: 'selected'
         },
         attachTo: document.body
@@ -750,10 +744,10 @@ describe('SSplitNav', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'true'
       );
-      expect(wrapper.text()).toContain('Soybean UI');
+      expect(wrapper.text()).toContain('Vean UI');
 
       wrapper.unmount();
     });
@@ -769,20 +763,20 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'true'
       );
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="tasks"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="tasks"]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'false'
       );
-      expect(wrapper.text()).not.toContain('Soybean UI');
+      expect(wrapper.text()).not.toContain('Vean UI');
 
       wrapper.unmount();
     });
@@ -798,13 +792,13 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').trigger('click');
       await nextTick();
 
-      await wrapper.find('[data-soybean-tree-menu-button][data-value="tasks"]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-button][data-value="tasks"]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
+      expect(wrapper.find('[data-vean-tree-menu-button][data-value="projects"]').attributes('aria-expanded')).toBe(
         'false'
       );
 
@@ -820,7 +814,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-split-nav-root]').attributes('expandstrategy')).toBeUndefined();
+      expect(wrapper.find('[data-vean-split-nav-root]').attributes('expandstrategy')).toBeUndefined();
 
       wrapper.unmount();
     });
@@ -836,7 +830,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('click');
 
@@ -861,7 +855,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const leaf = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="overview"]');
+      const leaf = wrapper.find('[data-vean-split-nav-first-level-item][data-value="overview"]');
 
       await leaf.trigger('click');
 
@@ -880,7 +874,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const parent = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]');
+      const parent = wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]');
 
       await parent.trigger('keydown', { key: 'ArrowRight' });
 
@@ -925,15 +919,13 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]').trigger('click');
+      await wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]').trigger('click');
 
       expect(wrapper.find('[data-test="active"]').text()).toBe('projects');
       expect(
-        wrapper
-          .find('[data-soybean-split-nav-first-level-item][data-value="workspace"]')
-          .attributes('data-child-selected')
+        wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]').attributes('data-child-selected')
       ).toBeDefined();
-      expect(wrapper.find('[data-soybean-split-nav-sub-vertical]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-split-nav-sub-vertical]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -960,12 +952,12 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-split-nav-first-level-item]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-split-nav-first-level-item]')).toHaveLength(2);
       expect(wrapper.text()).not.toContain('Secret');
 
-      await wrapper.find('[data-soybean-split-nav-first-level-item][data-value="workspace"]').trigger('click');
+      await wrapper.find('[data-vean-split-nav-first-level-item][data-value="workspace"]').trigger('click');
 
-      const pane = wrapper.find('[data-soybean-split-nav-sub-vertical]');
+      const pane = wrapper.find('[data-vean-split-nav-sub-vertical]');
       expect(pane.text()).toContain('Projects');
       expect(pane.text()).not.toContain('Internal');
 
@@ -982,7 +974,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const locked = wrapper.find('[data-soybean-split-nav-first-level-item][data-value="locked"]');
+      const locked = wrapper.find('[data-vean-split-nav-first-level-item][data-value="locked"]');
 
       expect(locked.attributes('data-disabled')).toBeDefined();
 
@@ -1012,12 +1004,12 @@ describe('SSplitNav', () => {
 
       await new Promise(resolve => setTimeout(resolve, 0));
 
-      expect(siderEl.querySelector('[data-soybean-split-nav-dual-vertical]')).toBeTruthy();
-      expect(siderEl.querySelector('[data-soybean-split-nav-root]')).toBe(
-        siderEl.querySelector('[data-soybean-split-nav-dual-vertical]')
+      expect(siderEl.querySelector('[data-vean-split-nav-dual-vertical]')).toBeTruthy();
+      expect(siderEl.querySelector('[data-vean-split-nav-root]')).toBe(
+        siderEl.querySelector('[data-vean-split-nav-dual-vertical]')
       );
-      expect(siderEl.querySelector('[data-soybean-split-nav-vertical-first-level]')).toBeTruthy();
-      expect(siderEl.querySelector('[data-soybean-split-nav-sub-vertical]')).toBeTruthy();
+      expect(siderEl.querySelector('[data-vean-split-nav-vertical-first-level]')).toBeTruthy();
+      expect(siderEl.querySelector('[data-vean-split-nav-sub-vertical]')).toBeTruthy();
 
       wrapper.unmount();
       siderEl.remove();
@@ -1044,8 +1036,8 @@ describe('SSplitNav', () => {
 
       await new Promise(resolve => setTimeout(resolve, 0));
 
-      expect(headerEl.querySelector('[data-soybean-split-nav-horizontal-first-level]')).toBeTruthy();
-      expect(siderEl.querySelector('[data-soybean-split-nav-sub-vertical]')).toBeTruthy();
+      expect(headerEl.querySelector('[data-vean-split-nav-horizontal-first-level]')).toBeTruthy();
+      expect(siderEl.querySelector('[data-vean-split-nav-sub-vertical]')).toBeTruthy();
 
       wrapper.unmount();
       headerEl.remove();
@@ -1073,11 +1065,11 @@ describe('SSplitNav', () => {
 
       await new Promise(resolve => setTimeout(resolve, 0));
 
-      expect(siderEl.querySelector('[data-soybean-split-nav-vertical-first-level]')).toBeTruthy();
-      expect(headerEl.querySelector('[data-soybean-split-nav-sub-horizontal]')).toBeTruthy();
-      expect(headerEl.querySelector('[data-soybean-tree-nav]')).toBeTruthy();
-      expect(siderEl.querySelector('[data-soybean-split-nav-sub-horizontal]')).toBeNull();
-      expect(headerEl.querySelector('[data-soybean-split-nav-vertical-first-level]')).toBeNull();
+      expect(siderEl.querySelector('[data-vean-split-nav-vertical-first-level]')).toBeTruthy();
+      expect(headerEl.querySelector('[data-vean-split-nav-sub-horizontal]')).toBeTruthy();
+      expect(headerEl.querySelector('[data-vean-tree-nav]')).toBeTruthy();
+      expect(siderEl.querySelector('[data-vean-split-nav-sub-horizontal]')).toBeNull();
+      expect(headerEl.querySelector('[data-vean-split-nav-vertical-first-level]')).toBeNull();
 
       wrapper.unmount();
       headerEl.remove();
@@ -1094,7 +1086,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const violations = await getA11yViolations(wrapper.find('[data-soybean-split-nav-dual-vertical]').element);
+      const violations = await getA11yViolations(wrapper.find('[data-vean-split-nav-dual-vertical]').element);
 
       expect(violations).toHaveLength(0);
 
@@ -1110,7 +1102,7 @@ describe('SSplitNav', () => {
         attachTo: document.body
       });
 
-      const violations = await getA11yViolations(wrapper.find('[data-soybean-split-nav-dual-vertical]').element);
+      const violations = await getA11yViolations(wrapper.find('[data-vean-split-nav-dual-vertical]').element);
 
       expect(violations).toHaveLength(0);
 

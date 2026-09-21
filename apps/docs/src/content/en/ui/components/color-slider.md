@@ -1,14 +1,14 @@
 ---
 head:
   title: Color Slider
-  description: 'A single-channel color slider for hue, alpha, and individual RGB/HSL/HSV/OKLCH channels. SColorSlider combines the headless ColorSliderRoot/ColorSliderTrack/ColorSliderThumb primitives with the shared sliderVariants style recipe (via sliderVariants).'
+  description: 'A single-channel color slider for hue, alpha, and individual RGB/HSL/HSV/OKLCH channels. SColorSlider combines the Aria ColorSliderRoot/ColorSliderTrack/ColorSliderThumb primitives with the shared sliderVariants style recipe (via sliderVariants).'
 ---
 
 # Color Slider
 
 ## Overview
 
-A single-channel color slider for hue, alpha, and individual RGB/HSL/HSV/OKLCH channels. `SColorSlider` combines the headless `ColorSliderRoot`/`ColorSliderTrack`/`ColorSliderThumb` primitives with the shared `sliderVariants` style recipe (via `sliderVariants`).
+A single-channel color slider for hue, alpha, and individual RGB/HSL/HSV/OKLCH channels. `SColorSlider` combines the Aria `ColorSliderRoot`/`ColorSliderTrack`/`ColorSliderThumb` primitives with the shared `sliderVariants` style recipe (via `sliderVariants`).
 
 Use a color slider for a single color channel — typically the hue or alpha channel inside a color picker (paired with `color-area`).
 
@@ -18,7 +18,7 @@ Use a color slider for a single color channel — typically the hue or alpha cha
 
 ## Features
 
-- 🧩 Headless/styled split — `ColorSliderCompact` composes track + thumb; `SColorSlider` only injects styles and forwards props/events
+- 🧩 Aria/styled split — `ColorSliderCompact` composes track + thumb; `SColorSlider` only injects styles and forwards props/events
 - 🎚️ Single channel — `channel` picks `hue`/`alpha`/`saturation`/`lightness`/`red`/`green`/`blue`/… across color spaces
 - 🎨 Color spaces — `colorSpace` (e.g. `hsl`, `rgb`) with `format` for the emitted string
 - ⌨️ Keyboard — ArrowLeft/Right, PageUp/Down, Home/End adjust the channel; `role="slider"`
@@ -30,10 +30,10 @@ Use a color slider for a single color channel — typically the hue or alpha cha
 ## Component family
 
 - `SColorSlider` (styled) — the entry wrapper; `sliderVariants` recipe with dynamic slot forwarding
-- `ColorSliderRoot` (headless) — the state owner; `modelValue`/`color`, `channel`/`colorSpace`/`format`, value + commit
-- `ColorSliderTrack` (headless) — the channel gradient track
-- `ColorSliderThumb` (headless) — the draggable position indicator
-- `ColorSliderCompact` (headless) — the aggregated composite; composes track + thumb
+- `ColorSliderRoot` (Aria) — the state owner; `modelValue`/`color`, `channel`/`colorSpace`/`format`, value + commit
+- `ColorSliderTrack` (Aria) — the channel gradient track
+- `ColorSliderThumb` (Aria) — the draggable position indicator
+- `ColorSliderCompact` (Aria) — the aggregated composite; composes track + thumb
 
 ## Demo
 
@@ -47,16 +47,16 @@ Use a color slider for a single color channel — typically the hue or alpha cha
 
 ### Architecture and benchmark differences
 
-`ColorSliderCompact` owns the track/thumb composition while every primitive stays style-free and only the UI wrapper injects the shared `sliderVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI embed the hue/alpha slider inside the color-picker; SoybeanUI exposes a standalone single-channel slider with color-space/channel control, keyboard interaction, native form input and a `size` scale.
+`ColorSliderCompact` owns the track/thumb composition while every primitive stays style-free and only the UI wrapper injects the shared `sliderVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI embed the hue/alpha slider inside the color-picker; VeanUI exposes a standalone single-channel slider with color-space/channel control, keyboard interaction, native form input and a `size` scale.
 
-| Capability               | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :----------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split    |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Any channel (hue/alpha…) |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Multiple color spaces    |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Keyboard interaction     |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Native form input        |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Sizes (6)                |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability               | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :----------------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split        |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Any channel (hue/alpha…) |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Multiple color spaces    |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Keyboard interaction     |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Native form input        |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Sizes (6)                |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

@@ -1,5 +1,5 @@
-import type { DialogCompactProps, DialogCompactEmits, DialogCompactSlots, DialogUi } from '@soybeanjs/headless/dialog';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { DialogCompactProps, DialogCompactEmits, DialogCompactSlots, DialogUi } from '@vean/aria/dialog';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

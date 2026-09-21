@@ -1,14 +1,14 @@
 ---
 head:
   title: Hover Card
-  description: 'Displays a richer preview card when the trigger is hovered or receives focus. SHoverCard combines the headless HoverCardRoot/HoverCardTrigger/HoverCardPositioner/HoverCardPopup/HoverCardArrow primitive family (built on the shared Popper) with the hoverCardVariants style recipe (3 slots, 6 sizes).'
+  description: 'Displays a richer preview card when the trigger is hovered or receives focus. SHoverCard combines the Aria HoverCardRoot/HoverCardTrigger/HoverCardPositioner/HoverCardPopup/HoverCardArrow primitive family (built on the shared Popper) with the hoverCardVariants style recipe (3 slots, 6 sizes).'
 ---
 
 # Hover Card
 
 ## Overview
 
-Displays a richer preview card when the trigger is hovered or receives focus. `SHoverCard` combines the headless `HoverCardRoot`/`HoverCardTrigger`/`HoverCardPositioner`/`HoverCardPopup`/`HoverCardArrow` primitive family (built on the shared `Popper`) with the `hoverCardVariants` style recipe (3 slots, 6 sizes).
+Displays a richer preview card when the trigger is hovered or receives focus. `SHoverCard` combines the Aria `HoverCardRoot`/`HoverCardTrigger`/`HoverCardPositioner`/`HoverCardPopup`/`HoverCardArrow` primitive family (built on the shared `Popper`) with the `hoverCardVariants` style recipe (3 slots, 6 sizes).
 
 Use a hover card for a non-blocking, hover-triggered preview (user profiles, repository previews, inline metadata). For a small text hint use `tooltip`; for click-triggered rich content use `popover`.
 
@@ -18,7 +18,7 @@ Use a hover card for a non-blocking, hover-triggered preview (user profiles, rep
 
 ## Features
 
-- 🧩 Headless/styled split — `HoverCardCompact` aggregates the popper trigger, positioner, popup and arrow; `SHoverCard` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `HoverCardCompact` aggregates the popper trigger, positioner, popup and arrow; `SHoverCard` only injects styles and forwards slots/events
 - ⏱️ Open/close delay — `openDelay` (default 700ms) / `closeDelay` (default 300ms) tune the hover latency
 - 🎯 Placement — full popper `placement` control with collision avoidance and side-aware slide animations
 - 🔽 Arrow — `showArrow` renders a positioned arrow; configurable via `arrowProps`
@@ -29,12 +29,12 @@ Use a hover card for a non-blocking, hover-triggered preview (user profiles, rep
 ## Component family
 
 - `SHoverCard` (styled) — the entry wrapper; `hoverCardVariants` recipe with dynamic slot forwarding
-- `HoverCardRoot` (headless) — the state owner; `open` via `useControllableState`, `openDelay`/`closeDelay`, provides the popper root
-- `HoverCardTrigger` (headless) — the anchor that opens the card on hover/focus
-- `HoverCardPositioner` / `HoverCardPositionerImpl` (headless) — the dismissable, positioned surface (built on `PopperPositioner`)
-- `HoverCardPopup` (headless) — the popup body
-- `HoverCardArrow` (headless) — the popper arrow
-- `HoverCardCompact` (headless) — the aggregated composite; composes trigger/positioner/popup/arrow and exposes the slots
+- `HoverCardRoot` (Aria) — the state owner; `open` via `useControllableState`, `openDelay`/`closeDelay`, provides the popper root
+- `HoverCardTrigger` (Aria) — the anchor that opens the card on hover/focus
+- `HoverCardPositioner` / `HoverCardPositionerImpl` (Aria) — the dismissable, positioned surface (built on `PopperPositioner`)
+- `HoverCardPopup` (Aria) — the popup body
+- `HoverCardArrow` (Aria) — the popper arrow
+- `HoverCardCompact` (Aria) — the aggregated composite; composes trigger/positioner/popup/arrow and exposes the slots
 
 ## Demo
 
@@ -48,16 +48,16 @@ Use a hover card for a non-blocking, hover-triggered preview (user profiles, rep
 
 ### Architecture and benchmark differences
 
-`HoverCardCompact` owns the trigger/positioner/popup/arrow composition while every primitive stays style-free and only the UI wrapper injects the `hoverCardVariants` classes. This mirrors radix-ui/shadcn-ui's headless split, built on the shared `Popper` primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single styled popover used for hover previews; SoybeanUI exposes a dedicated hover-card with configurable `openDelay`/`closeDelay`, per-slot `*Props`, an arrow toggle and a `size` scale the single-package libraries generally omit.
+`HoverCardCompact` owns the trigger/positioner/popup/arrow composition while every primitive stays style-free and only the UI wrapper injects the `hoverCardVariants` classes. This mirrors radix-ui/shadcn-ui's headless split, built on the shared `Popper` primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single styled popover used for hover previews; VeanUI exposes a dedicated hover-card with configurable `openDelay`/`closeDelay`, per-slot `*Props`, an arrow toggle and a `size` scale the single-package libraries generally omit.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Open/close delay      |    ✅     |    ✅     |     —      |      —       |   ✅    |    —     |
-| Popper placement (12) |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
-| Arrow                 |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Sizes (6)             |    ✅     |     —     |     —      |      —       |    —    |    —     |
-| Focus trigger         |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
+| Capability            | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :-------------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split     |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Open/close delay      |   ✅   |    ✅     |     —      |      —       |   ✅    |    —     |
+| Popper placement (12) |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
+| Arrow                 |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Sizes (6)             |   ✅   |     —     |     —      |      —       |    —    |    —     |
+| Focus trigger         |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
 
 `—` = unsupported or a different interaction model (hover previews fold into the generic popover).
 

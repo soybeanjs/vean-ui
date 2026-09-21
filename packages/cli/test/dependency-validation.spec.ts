@@ -66,7 +66,7 @@ describe('validateRegistryDependencies', () => {
   });
 
   it('tracks package dependencies as edges', () => {
-    const items: RegistryItem[] = [makeItem({ name: 'button', dependencies: ['@soybeanjs/headless'] })];
+    const items: RegistryItem[] = [makeItem({ name: 'button', dependencies: ['@vean/aria'] })];
 
     const result = validateRegistryDependencies(items);
     // Package dependencies are informational only, not validated

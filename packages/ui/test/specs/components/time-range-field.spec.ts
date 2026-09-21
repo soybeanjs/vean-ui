@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import type { TimeRange } from '@soybeanjs/headless/date';
+import type { TimeRange } from '@vean/aria/date';
 import STimeRangeField from '@/components/time-range-field/time-range-field.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -40,7 +40,7 @@ describe('STimeRangeField', () => {
       const wrapper = mountRangeField({ class: 'test-time-range-field' });
 
       expect(wrapper.classes()).toContain('test-time-range-field');
-      expect(wrapper.findAll('[data-soybean-date-field-segment]').length).toBeGreaterThanOrEqual(6);
+      expect(wrapper.findAll('[data-vean-date-field-segment]').length).toBeGreaterThanOrEqual(6);
       expect(partOf(wrapper, 'start').exists()).toBe(true);
       expect(partOf(wrapper, 'end').exists()).toBe(true);
       wrapper.unmount();
@@ -211,7 +211,7 @@ describe('STimeRangeField', () => {
       await hour.trigger('keydown', { key: 'ArrowRight', preventDefault() {} });
       await nextTick();
 
-      expect(document.activeElement?.getAttribute('data-soybean-date-field-segment')).not.toBe('hour');
+      expect(document.activeElement?.getAttribute('data-vean-date-field-segment')).not.toBe('hour');
       wrapper.unmount();
     });
 
@@ -327,9 +327,9 @@ describe('STimeRangeField', () => {
         }
       });
 
-      expect(wrapper.find('[data-soybean-time-range-field-input]').classes()).toContain('custom-input-class');
+      expect(wrapper.find('[data-vean-time-range-field-input]').classes()).toContain('custom-input-class');
       expect(wrapper.find('[data-time-range-field-part="start"]').classes()).not.toContain('custom-input-class');
-      expect(wrapper.findAll('[data-soybean-time-range-field-input]')[1].classes()).toContain('custom-input-class');
+      expect(wrapper.findAll('[data-vean-time-range-field-input]')[1].classes()).toContain('custom-input-class');
       expect(wrapper.text()).toContain('–');
       wrapper.unmount();
     });

@@ -1,5 +1,5 @@
-import type { RatingRootEmits, RatingRootProps as _RatingRootProps } from '@soybeanjs/headless/rating';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { RatingRootEmits, RatingRootProps as _RatingRootProps } from '@vean/aria/rating';
+import type { ClassValue } from '@vean/aria/types';
 import type { RatingVariant } from '@/styles/rating';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { CollapsibleRoot, provideCollapsibleUi } from '@soybeanjs/headless/collapsible';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { CollapsibleRoot, provideCollapsibleUi } from '@vean/aria/collapsible';
+import { useOmitProps } from '@vean/aria/composables';
 import { collapsibleVariants } from '@/styles/collapsible';
 import type { CollapsibleProps, CollapsibleEmits } from './types';
 

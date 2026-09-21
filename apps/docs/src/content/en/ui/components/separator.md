@@ -39,16 +39,16 @@ For layout-level spacing between sections, prefer the [`SCard`](/components/card
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits `Separator` into a headless layer (`@soybeanjs/headless/separator`) that owns `SeparatorRoot` (role/aria/orientation), `SeparatorLabel`, and `SeparatorCompact` (composition + label visibility logic), and a styled layer (`@soybeanjs/ui`) that owns the `scv()` variant recipe (size/orientation/align/border) and class injection via `provideSeparatorUi`. This follows the shadcn/ui headless/styled separation.
+VeanUI splits `Separator` into an Aria layer (`@vean/aria/separator`) that owns `SeparatorRoot` (role/aria/orientation), `SeparatorLabel`, and `SeparatorCompact` (composition + label visibility logic), and a styled layer (`@vean/ui`) that owns the `scv()` variant recipe (size/orientation/align/border) and class injection via `provideSeparatorUi`. This follows the shadcn/ui headless/styled separation.
 
-| Aspect       | SoybeanUI                                                                     | Ant Design `Divider` | Element Plus `ElDivider` | MUI `Divider`    | Mantine `Divider` | shadcn/ui `Separator` |
-| :----------- | :---------------------------------------------------------------------------- | :------------------- | :----------------------- | :--------------- | :---------------- | :-------------------- |
-| Architecture | headless + styled split, `SeparatorUiSlot` (root/label) + Compact aggregation | single component     | single component         | single component | single component  | headless + styled     |
-| Label        | `label` prop + default slot; `align` (start/center/end)                       | `orientation` prop   | `content-position`       | —                | `labelPosition`   | —                     |
-| Border style | `border` (solid/dashed/dotted)                                                | `dashed` prop        | `border-style` prop      | —                | `variant`         | —                     |
-| Size scaling | `size` (xs–2xl) controls label typography + spacing                           | —                    | —                        | —                | `size`            | —                     |
-| Decorative   | `decorative` → `role="none"`                                                  | —                    | —                        | —                | —                 | `decorative`          |
-| RTL          | `rtl:translate-x` + logical `start-*` positioning                             | —                    | —                        | —                | —                 | —                     |
+| Aspect       | VeanUI                                                                    | Ant Design `Divider` | Element Plus `ElDivider` | MUI `Divider`    | Mantine `Divider` | shadcn/ui `Separator` |
+| :----------- | :------------------------------------------------------------------------ | :------------------- | :----------------------- | :--------------- | :---------------- | :-------------------- |
+| Architecture | Aria + styled split, `SeparatorUiSlot` (root/label) + Compact aggregation | single component     | single component         | single component | single component  | Aria + styled         |
+| Label        | `label` prop + default slot; `align` (start/center/end)                   | `orientation` prop   | `content-position`       | —                | `labelPosition`   | —                     |
+| Border style | `border` (solid/dashed/dotted)                                            | `dashed` prop        | `border-style` prop      | —                | `variant`         | —                     |
+| Size scaling | `size` (xs–2xl) controls label typography + spacing                       | —                    | —                        | —                | `size`            | —                     |
+| Decorative   | `decorative` → `role="none"`                                              | —                    | —                        | —                | —                 | `decorative`          |
+| RTL          | `rtl:translate-x` + logical `start-*` positioning                         | —                    | —                        | —                | —                 | —                     |
 
 ### Runtime cautions
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { ColorSwatchPickerCompact, provideColorSwatchPickerUi } from '@soybeanjs/headless/color-swatch-picker';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { ColorSwatchPickerCompact, provideColorSwatchPickerUi } from '@vean/aria/color-swatch-picker';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { colorSwatchPickerVariants } from '@/styles/color-swatch-picker';
 import type { ColorSwatchPickerProps, ColorSwatchPickerEmits } from './types';
 

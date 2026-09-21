@@ -1,5 +1,5 @@
-import type { DrawerCompactProps, DrawerCompactEmits, DrawerCompactSlots, DrawerUi } from '@soybeanjs/headless/drawer';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { DrawerCompactProps, DrawerCompactEmits, DrawerCompactSlots, DrawerUi } from '@vean/aria/drawer';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

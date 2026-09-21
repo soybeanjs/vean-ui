@@ -1,25 +1,25 @@
-# Soybean Skills
+# Vean Skills
 
-Agent skills for `@soybeanjs/ui` and `@soybeanjs/headless`.
+Agent skills for `@vean/ui` and `@vean/aria`.
 
 ## Installation
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills
+npx skills add soybeanjs/vean-ui/skills
 ```
 
 The `skills` CLI installs every skill shipped in the package and places them into the correct agent-specific skills directory.
 
 ## Included Skills
 
-- `soybean-ui`: Styled SoybeanUI usage, theming, docs, and component references
-- `soybean-headless`: Headless primitives, Compact patterns, and composition guidance
+- `vean-ui`: Styled Vean usage, theming, docs, and component references
+- `vean-aria`: Aria primitives, Compact patterns, and composition guidance
 
 ## Claude Code Marketplace
 
 ```bash
-/plugin marketplace add soybean-ui-skills
-/plugin install soybean-ui-skills@soybean-ui-skills
+/plugin marketplace add vean-skills
+/plugin install vean-skills@vean-skills
 ```
 
 ## Development

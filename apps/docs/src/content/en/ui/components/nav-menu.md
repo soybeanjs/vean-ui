@@ -12,7 +12,7 @@ NavMenu builds site-level horizontal or vertical navigation with a single shared
 
 `SNavMenu` is a data-driven composite: pass an `items` array and it renders the `nav > ul > li` structure, trigger/content pairs, indicator, and the floating viewport. Styles are injected through an `scv()` recipe.
 
-> For an unstyled, data-driven usage, import `@soybeanjs/headless/nav-menu`.
+> For an unstyled, data-driven usage, import `@vean/aria/nav-menu`.
 
 ## Features
 
@@ -27,7 +27,7 @@ NavMenu builds site-level horizontal or vertical navigation with a single shared
 - **Controlled / uncontrolled** — with `modelValue`, highlight follows the prop and `update:modelValue` fires; otherwise `defaultValue` seeds the initial open item.
 - **Bidirectional** — `orientation` supports horizontal / vertical; `dir` supports LTR / RTL with logical placement.
 - **Six sizes** — `size` (xs…2xl) variants cover spacing and type scale across the list, trigger, viewport, and links.
-- **Headless composition** — `NavMenuRoot` / `List` / `Item` / `Trigger` / `Content` / `Link` / `Viewport` plus the `Compact` series are exported from `@soybeanjs/headless/nav-menu`.
+- **Aria composition** — `NavMenuRoot` / `List` / `Item` / `Trigger` / `Content` / `Link` / `Viewport` plus the `Compact` series are exported from `@vean/aria/nav-menu`.
 
 ## Usage
 

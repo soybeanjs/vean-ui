@@ -2,8 +2,8 @@ import type {
   ButtonEmits,
   ButtonGroupProps as _ButtonGroupProps,
   ButtonProps as _ButtonProps
-} from '@soybeanjs/headless/button';
-import type { Align, ClassValue, ToContext } from '@soybeanjs/headless/types';
+} from '@vean/aria/button';
+import type { Align, ClassValue, ToContext } from '@vean/aria/types';
 import type { ButtonShadow, ButtonShape, ButtonVariant } from '@/styles/button';
 import type { ThemeColor, ThemeSize } from '@/theme';
 import type { IconValue, IconProps } from '../icon/types';

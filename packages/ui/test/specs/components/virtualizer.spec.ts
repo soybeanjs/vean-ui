@@ -20,7 +20,7 @@ describe('SVirtualizer', () => {
       });
 
       // Virtualizer root element should exist
-      expect(wrapper.find('[data-soybean-virtualizer-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-virtualizer-root]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -39,7 +39,7 @@ describe('SVirtualizer', () => {
       });
 
       // Virtualizer root renders even if items are virtualized
-      expect(wrapper.find('[data-soybean-virtualizer-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-virtualizer-root]').exists()).toBe(true);
 
       wrapper.unmount();
     });

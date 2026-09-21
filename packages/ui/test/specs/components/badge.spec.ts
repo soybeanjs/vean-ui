@@ -16,8 +16,8 @@ describe('SBadge', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-badge-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-badge-content]').text()).toBe('99+');
+      expect(wrapper.find('[data-vean-badge-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-badge-content]').text()).toBe('99+');
       expect(wrapper.text()).toContain('Inbox');
 
       wrapper.unmount();
@@ -33,7 +33,7 @@ describe('SBadge', () => {
       });
 
       expect(wrapper.find('[data-testid="content-slot"]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-badge-content]').text()).toContain('New!');
+      expect(wrapper.find('[data-vean-badge-content]').text()).toContain('New!');
 
       wrapper.unmount();
     });
@@ -50,7 +50,7 @@ describe('SBadge', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-badge-root]').classes()).toContain('my-badge');
+      expect(wrapper.find('[data-vean-badge-root]').classes()).toContain('my-badge');
 
       wrapper.unmount();
     });
@@ -68,7 +68,7 @@ describe('SBadge', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-badge-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-badge-content]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -85,7 +85,7 @@ describe('SBadge', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-badge-content]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-badge-content]').exists()).toBe(false);
 
       wrapper.unmount();
     });

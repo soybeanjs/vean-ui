@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { DOMWrapper, mount } from '@vue/test-utils';
-import { ListboxContent, ListboxItem, ListboxRoot } from '@soybeanjs/headless/listbox';
+import { ListboxContent, ListboxItem, ListboxRoot } from '@vean/aria/listbox';
 
 const mountListbox = () =>
   mount(
@@ -49,7 +49,7 @@ describe('Listbox highlightOnHover', () => {
     expect(isHighlighted(apple)).toBe(false);
 
     // Moving the pointer away clears the highlight.
-    const rootEl = document.body.querySelector('[data-soybean-listbox-root]') as HTMLElement;
+    const rootEl = document.body.querySelector('[data-vean-listbox-root]') as HTMLElement;
     await new DOMWrapper(rootEl).trigger('pointerleave');
     await nextTick();
 

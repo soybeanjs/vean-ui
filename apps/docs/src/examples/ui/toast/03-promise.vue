@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SButton, toast } from '@soybeanjs/ui';
+import { SButton, toast } from '@vean/ui';
 
 function createRequest(shouldFail: boolean) {
   return new Promise<string>((resolve, reject) => {

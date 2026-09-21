@@ -1,5 +1,5 @@
 /**
- * Enhanced registry search system for SBean CLI.
+ * Enhanced registry search system for Vean CLI.
  *
  * Supports:
  * - Full-text search by component name and description

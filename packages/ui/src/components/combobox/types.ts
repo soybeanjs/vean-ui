@@ -1,10 +1,5 @@
-import type {
-  ComboboxCompactEmits,
-  ComboboxCompactProps,
-  ComboboxCompactSlots,
-  ComboboxUi
-} from '@soybeanjs/headless/combobox';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ComboboxCompactEmits, ComboboxCompactProps, ComboboxCompactSlots, ComboboxUi } from '@vean/aria/combobox';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

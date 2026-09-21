@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -103,8 +103,8 @@
                 "type": "{ root: ClassValue; range: ClassValue; thumb: ClassValue; track: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Slider component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderui",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderui",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.trackprops",
             "default": null,
             "inheritedFrom": "trackProps",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderTrackProps",
@@ -128,8 +128,8 @@
                 "type": "SliderTrackProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the SliderTrack component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -138,10 +138,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -149,10 +149,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -168,7 +168,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.rangeprops",
             "default": null,
             "inheritedFrom": "rangeProps",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderRangeProps",
@@ -176,8 +176,8 @@
                 "type": "SliderRangeProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the SliderRange component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -186,10 +186,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -197,10 +197,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -216,7 +216,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.thumbprops",
             "default": null,
             "inheritedFrom": "thumbProps",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -224,8 +224,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -241,7 +241,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -252,7 +252,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -263,7 +263,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -274,7 +274,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -282,8 +282,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -299,7 +299,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -307,8 +307,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -324,7 +324,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.inverted",
             "default": null,
             "inheritedFrom": "inverted",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -335,7 +335,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.min",
             "default": null,
             "inheritedFrom": "min",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -346,7 +346,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -357,7 +357,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -368,7 +368,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.minstepsbetweenthumbs",
             "default": null,
             "inheritedFrom": "minStepsBetweenThumbs",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -379,7 +379,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.thumbalignment",
             "default": null,
             "inheritedFrom": "thumbAlignment",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderThumbAlignment",
@@ -387,8 +387,8 @@
                 "type": "'overflow' | 'contain'",
                 "resolvedType": "'overflow' | 'contain'",
                 "description": "Type information for SliderThumbAlignment.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbalignment",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbalignment",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -404,7 +404,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -415,7 +415,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -426,7 +426,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -437,7 +437,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.sliderprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -484,7 +484,7 @@
             "required": true,
             "description": "Event handler called when the slider value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.slideremits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -494,7 +494,7 @@
             "required": true,
             "description": "Event handler called when a slider interaction is committed.",
             "descriptionKey": "api.generated.packages_ui_src_components_slider_types.slideremits.callables.valuecommit",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           }
         ],
@@ -505,8 +505,8 @@
             "type": "{ 'update:modelValue': [value: number[]]; valueCommit: [value: number[]]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number[]]; valueCommit: [value: number[]] }",
             "description": "Events for the SliderRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -517,8 +517,8 @@
                 "parameters": "value: number[]",
                 "required": true,
                 "description": "Event handler called when the slider value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "referencedTypes": []
               },
               {
@@ -527,8 +527,8 @@
                 "parameters": "value: number[]",
                 "required": true,
                 "description": "Event handler called when a slider interaction is committed.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.callables.valuecommit",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.callables.valuecommit",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -543,8 +543,8 @@
         "type": "Interface SliderCompactProps",
         "resolvedType": "{ trackProps?: SliderTrackProps; rangeProps?: SliderRangeProps; thumbProps?: BaseProps; modelValue?: number[]; defaultValue?: number[]; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; inverted?: boolean; min?: number; max?: number; step?: number; minStepsBetweenThumbs?: number; thumbAlignment?: SliderThumbAlignment; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the SliderCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.props",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.props",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -552,10 +552,10 @@
             "type": "SliderTrackProps",
             "required": false,
             "description": "Properties forwarded to the track element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.trackprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.trackprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderTrackProps",
@@ -563,8 +563,8 @@
                 "type": "SliderTrackProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the SliderTrack component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -573,10 +573,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -584,10 +584,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -600,10 +600,10 @@
             "type": "SliderRangeProps",
             "required": false,
             "description": "Properties forwarded to the range element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.rangeprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.rangeprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderRangeProps",
@@ -611,8 +611,8 @@
                 "type": "SliderRangeProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the SliderRange component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -621,10 +621,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -632,10 +632,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -648,10 +648,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the thumb element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.thumbprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.thumbprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -659,8 +659,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -673,10 +673,10 @@
             "type": "number[]",
             "required": false,
             "description": "The controlled value of the slider. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -684,10 +684,10 @@
             "type": "number[]",
             "required": false,
             "description": "The initial value of the slider when uncontrolled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -695,10 +695,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the slider is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -706,10 +706,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the slider.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -717,8 +717,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -731,10 +731,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the slider.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -742,8 +742,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -756,10 +756,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the slider value direction is inverted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.inverted",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.inverted",
             "default": null,
             "inheritedFrom": "inverted",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -767,10 +767,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.min",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.min",
             "default": null,
             "inheritedFrom": "min",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -778,10 +778,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.max",
             "default": null,
             "inheritedFrom": "max",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -789,10 +789,10 @@
             "type": "number",
             "required": false,
             "description": "The stepping interval.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -800,10 +800,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum permitted steps between multiple thumbs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.minstepsbetweenthumbs",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.minstepsbetweenthumbs",
             "default": null,
             "inheritedFrom": "minStepsBetweenThumbs",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -811,10 +811,10 @@
             "type": "SliderThumbAlignment",
             "required": false,
             "description": "Whether thumbs stay within the track bounds or may overflow it.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.thumbalignment",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.thumbalignment",
             "default": null,
             "inheritedFrom": "thumbAlignment",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderThumbAlignment",
@@ -822,8 +822,8 @@
                 "type": "'overflow' | 'contain'",
                 "resolvedType": "'overflow' | 'contain'",
                 "description": "Type information for SliderThumbAlignment.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbalignment",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbalignment",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -836,10 +836,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -847,10 +847,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -858,10 +858,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -869,10 +869,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -907,8 +907,8 @@
         "type": "TypeAlias SliderCompactEmits: SliderRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: number[]]; valueCommit: [value: number[]] }",
         "description": "Events for the SliderCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactemits.emits",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactemits.emits",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -918,8 +918,8 @@
             "parameters": "value: number[]",
             "required": true,
             "description": "Event handler called when the slider value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -928,8 +928,8 @@
             "parameters": "value: number[]",
             "required": true,
             "description": "Event handler called when a slider interaction is committed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactemits.callables.valuecommit",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactemits.callables.valuecommit",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           }
         ],
@@ -940,8 +940,8 @@
             "type": "{ 'update:modelValue': [value: number[]]; valueCommit: [value: number[]]; }",
             "resolvedType": "{ \"update:modelValue\": [value: number[]]; valueCommit: [value: number[]] }",
             "description": "Events for the SliderRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -952,8 +952,8 @@
                 "parameters": "value: number[]",
                 "required": true,
                 "description": "Event handler called when the slider value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "referencedTypes": []
               },
               {
@@ -962,8 +962,8 @@
                 "parameters": "value: number[]",
                 "required": true,
                 "description": "Event handler called when a slider interaction is committed.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.callables.valuecommit",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.callables.valuecommit",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -976,8 +976,8 @@
         "type": "TypeAlias SliderCompactSlots",
         "resolvedType": "{ SliderThumb?: ((props: SliderCompactSlotProps) => any) }",
         "description": "Slots for the SliderCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslots.slots",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslots.slots",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -987,8 +987,8 @@
             "parameters": "((props: SliderCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderCompactSlotProps",
@@ -996,8 +996,8 @@
                 "type": "SliderCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the SliderCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslotprops",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslotprops",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1014,8 +1014,8 @@
         "type": "Interface SliderCompactSlotProps",
         "resolvedType": "{ modelValue: number[]; index: number; value: number }",
         "description": "Slot properties for the SliderCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1023,10 +1023,10 @@
             "type": "number[]",
             "required": true,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1034,10 +1034,10 @@
             "type": "number",
             "required": true,
             "description": "Current thumb index.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslotprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslotprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1045,10 +1045,10 @@
             "type": "number",
             "required": true,
             "description": "Current thumb value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidercompactslotprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidercompactslotprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1063,8 +1063,8 @@
         "type": "Interface SliderRangeProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the SliderRange component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.props",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.props",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1072,10 +1072,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1083,10 +1083,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrangeprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrangeprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1123,8 +1123,8 @@
         "type": "Interface SliderRootProps",
         "resolvedType": "{ modelValue?: number[]; defaultValue?: number[]; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; inverted?: boolean; min?: number; max?: number; step?: number; minStepsBetweenThumbs?: number; thumbAlignment?: SliderThumbAlignment; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the SliderRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.props",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.props",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1132,10 +1132,10 @@
             "type": "number[]",
             "required": false,
             "description": "The controlled value of the slider. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1143,10 +1143,10 @@
             "type": "number[]",
             "required": false,
             "description": "The initial value of the slider when uncontrolled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1154,10 +1154,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the slider is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1165,10 +1165,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the slider.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1176,8 +1176,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1190,10 +1190,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the slider.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1201,8 +1201,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1215,10 +1215,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the slider value direction is inverted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.inverted",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.inverted",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1226,10 +1226,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.min",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.min",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1237,10 +1237,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.max",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.max",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1248,10 +1248,10 @@
             "type": "number",
             "required": false,
             "description": "The stepping interval.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.step",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1259,10 +1259,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum permitted steps between multiple thumbs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.minstepsbetweenthumbs",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.minstepsbetweenthumbs",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1270,10 +1270,10 @@
             "type": "SliderThumbAlignment",
             "required": false,
             "description": "Whether thumbs stay within the track bounds or may overflow it.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.thumbalignment",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.thumbalignment",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": [
               {
                 "name": "SliderThumbAlignment",
@@ -1281,8 +1281,8 @@
                 "type": "'overflow' | 'contain'",
                 "resolvedType": "'overflow' | 'contain'",
                 "description": "Type information for SliderThumbAlignment.",
-                "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbalignment",
-                "sourcePath": "packages/headless/src/components/slider/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbalignment",
+                "sourcePath": "packages/aria/src/components/slider/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1295,10 +1295,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1306,10 +1306,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1317,10 +1317,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1328,10 +1328,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1366,8 +1366,8 @@
         "type": "TypeAlias SliderRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: number[]]; valueCommit: [value: number[]] }",
         "description": "Events for the SliderRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.emits",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.emits",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1377,8 +1377,8 @@
             "parameters": "value: number[]",
             "required": true,
             "description": "Event handler called when the slider value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1387,8 +1387,8 @@
             "parameters": "value: number[]",
             "required": true,
             "description": "Event handler called when a slider interaction is committed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderrootemits.callables.valuecommit",
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderrootemits.callables.valuecommit",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1402,8 +1402,8 @@
         "type": "Interface SliderThumbProps",
         "resolvedType": "{ index: number; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the SliderThumb component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbprops.props",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbprops.props",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1411,10 +1411,10 @@
             "type": "number",
             "required": true,
             "description": "The thumb index in the current slider value array.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/slider/types.ts",
+            "sourcePath": "packages/aria/src/components/slider/types.ts",
             "referencedTypes": []
           },
           {
@@ -1422,10 +1422,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1433,10 +1433,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.sliderthumbprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.sliderthumbprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1473,8 +1473,8 @@
         "type": "Interface SliderTrackProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the SliderTrack component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.props",
-        "sourcePath": "packages/headless/src/components/slider/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.props",
+        "sourcePath": "packages/aria/src/components/slider/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1482,10 +1482,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1493,10 +1493,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_slider_types.slidertrackprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_slider_types.slidertrackprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

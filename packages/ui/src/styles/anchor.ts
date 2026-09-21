@@ -105,7 +105,7 @@ export const anchorVariants = scv({
     },
     sticky: {
       true: {
-        root: 'sticky self-start top-[var(--soybean-anchor-offset-top,0px)] max-h-[calc(100vh-var(--soybean-anchor-offset-top,0px))] overflow-auto pe-1'
+        root: 'sticky self-start top-[var(--vean-anchor-offset-top,0px)] max-h-[calc(100vh-var(--vean-anchor-offset-top,0px))] overflow-auto pe-1'
       },
       false: {}
     }

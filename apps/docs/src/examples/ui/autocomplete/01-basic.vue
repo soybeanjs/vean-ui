@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SAutocomplete, SButtonIcon, SInput, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { AutocompleteOptionData, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SAutocomplete, SButtonIcon, SInput, SSelect, SSwitch } from '@vean/ui';
+import type { AutocompleteOptionData, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

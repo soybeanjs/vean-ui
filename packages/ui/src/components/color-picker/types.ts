@@ -1,5 +1,5 @@
-import type { ColorPickerCompactProps, ColorPickerCompactEmits, ColorPickerUi } from '@soybeanjs/headless/color-picker';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ColorPickerCompactProps, ColorPickerCompactEmits, ColorPickerUi } from '@vean/aria/color-picker';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

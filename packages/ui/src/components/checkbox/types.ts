@@ -11,8 +11,8 @@ import type {
   CheckboxCardGroupOptionData,
   CheckboxUi,
   CheckboxCardUi
-} from '@soybeanjs/headless/checkbox';
-import type { ClassValue, DefinedValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/checkbox';
+import type { ClassValue, DefinedValue } from '@vean/aria/types';
 import type { CheckboxShape } from '@/styles/checkbox';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

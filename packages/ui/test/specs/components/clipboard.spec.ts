@@ -4,7 +4,7 @@ import { mount, flushPromises } from '@vue/test-utils';
 import SClipboard from '@/components/clipboard/clipboard.vue';
 import type { ClipboardProps, ClipboardSlotProps } from '@/components/clipboard/types';
 import SConfigProvider from '@/components/config-provider/config-provider.vue';
-import { copyTextToClipboard } from '../../../../headless/src/components/clipboard/shared';
+import { copyTextToClipboard } from '../../../../aria/src/components/clipboard/shared';
 import { getA11yViolations } from '../../shared/a11y';
 
 const writeText = vi.fn(async () => undefined);
@@ -27,7 +27,7 @@ function mountClipboard(props: Partial<ClipboardProps> = {}, slots: ClipboardTes
   return mount(SClipboard, {
     attachTo: document.body,
     props: {
-      value: 'soybean-ui',
+      value: 'vean-ui',
       ...props
     },
     slots
@@ -67,16 +67,16 @@ describe('clipboard shared', () => {
   it('falls back to legacy copy when writeText fails', async () => {
     writeText.mockRejectedValueOnce(new Error('permission denied'));
 
-    await copyTextToClipboard('soybean-ui', true);
+    await copyTextToClipboard('vean-ui', true);
 
-    expect(writeText).toHaveBeenCalledWith('soybean-ui');
+    expect(writeText).toHaveBeenCalledWith('vean-ui');
     expect(execCommand).toHaveBeenCalledWith('copy');
   });
 });
 
 describe('SClipboard', () => {
   describe('rendering', () => {
-    it('renders default icon/text content from the headless layer', () => {
+    it('renders default icon/text content from the Aria layer', () => {
       const wrapper = mount(
         {
           components: {
@@ -90,7 +90,7 @@ describe('SClipboard', () => {
           },
           template: `
             <SConfigProvider :icon-render="iconRender">
-              <SClipboard value="soybean-ui" />
+              <SClipboard value="vean-ui" />
             </SConfigProvider>
           `
         },
@@ -118,7 +118,7 @@ describe('SClipboard', () => {
           },
           template: `
             <SConfigProvider :icon-render="iconRender">
-              <SClipboard value="soybean-ui" copy-icon="lucide:clipboard" copied-icon="lucide:badge-check" />
+              <SClipboard value="vean-ui" copy-icon="lucide:clipboard" copied-icon="lucide:badge-check" />
             </SConfigProvider>
           `
         },
@@ -191,7 +191,7 @@ describe('SClipboard', () => {
           },
           template: `
             <SConfigProvider :icon-render="iconRender" v-bind="providerProps">
-              <SClipboard value="soybean-ui" v-bind="componentProps">
+              <SClipboard value="vean-ui" v-bind="componentProps">
                 ${defaultSlot}
               </SClipboard>
             </SConfigProvider>
@@ -260,7 +260,7 @@ describe('SClipboard', () => {
 
       expect(wrapper.find('button').attributes('data-state')).toBe('copied');
       expect(wrapper.text()).toContain('Copied');
-      expect(wrapper.emitted('copied')?.[0]).toEqual(['soybean-ui']);
+      expect(wrapper.emitted('copied')?.[0]).toEqual(['vean-ui']);
       wrapper.unmount();
     });
 
@@ -284,10 +284,10 @@ describe('SClipboard', () => {
       await wrapper.find('button').trigger('click');
       await flushPromises();
 
-      expect(writeText).toHaveBeenCalledWith('soybean-ui');
+      expect(writeText).toHaveBeenCalledWith('vean-ui');
       expect(execCommand).toHaveBeenCalledWith('copy');
       expect(wrapper.find('button').attributes('data-state')).toBe('copied');
-      expect(wrapper.emitted('copied')?.[0]).toEqual(['soybean-ui']);
+      expect(wrapper.emitted('copied')?.[0]).toEqual(['vean-ui']);
       wrapper.unmount();
     });
 

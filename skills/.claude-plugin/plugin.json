@@ -3,11 +3,11 @@
     "email": "soybeanjs@outlook.com",
     "name": "Soybean"
   },
-  "description": "Agent skills for SoybeanUI and SoybeanHeadless.",
-  "homepage": "https://github.com/soybeanjs/soybean-ui/tree/main/skills",
-  "keywords": ["agentskills", "soybean-ui", "soybean-headless", "vue", "github-copilot", "claude-code"],
+  "description": "Agent skills for Vean and Vean Aria.",
+  "homepage": "https://github.com/soybeanjs/vean-ui/tree/main/skills",
+  "keywords": ["agentskills", "vean-ui", "vean-aria", "vue", "github-copilot", "claude-code"],
   "license": "MIT",
-  "name": "soybean-ui-skills",
-  "repository": "https://github.com/soybeanjs/soybean-ui.git",
+  "name": "vean-skills",
+  "repository": "https://github.com/soybeanjs/vean-ui.git",
   "version": "0.50.0"
 }

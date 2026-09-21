@@ -10,7 +10,7 @@ head:
 
 TreeNav 是一个数据驱动的水平导航栏，携带持久选择态：顶层条目横向排列，分支项默认悬停展开弹层，选中任意叶子后整条祖先链持续高亮。
 
-`STreeNav` 是 `STreeMenu` 的横向版本：两者消费同一份树形 `items` 数据（`TreeNavOptionData`）并基于选中值派生高亮，区别在于 TreeNav 的分支渲染为 DropdownMenu 弹层而非折叠分组。逻辑与无障碍语义由 headless `TreeNavCompact` 承载，样式通过 `scv()` 配方注入。
+`STreeNav` 是 `STreeMenu` 的横向版本：两者消费同一份树形 `items` 数据（`TreeNavOptionData`）并基于选中值派生高亮，区别在于 TreeNav 的分支渲染为 DropdownMenu 弹层而非折叠分组。逻辑与无障碍语义由 Aria `TreeNavCompact` 承载，样式通过 `scv()` 配方注入。
 
 > 与 Menubar（瞬态"哪个菜单正打开"的命令菜单模型）不同，TreeNav 建模的是**选择**：打开弹层永远不会激活任何条目——只有叶子被选中才会。选中叶子的祖先链会持续携带高亮标记。
 
@@ -28,7 +28,7 @@ TreeNav 是一个数据驱动的水平导航栏，携带持久选择态：顶层
 - **隐藏项** — `item.hidden` 将条目及其子树从导航栏与弹层中移除；子项全部隐藏的分支按普通叶子渲染。
 - **六种尺寸与两种变体** — `size`（xs…2xl）加 `variant="default"`（浅色卡片底）或 `variant="nav"`（纯净无框）。
 - **插槽透传** — `item` / `item-leading` / `item-trailing` / `item-trigger-icon` / `item-link-icon` 同时透传到顶层与弹层内部。
-- **Headless 组合** — 无样式数据驱动用法可导入 `@soybeanjs/headless/tree-nav`；弹层选项复用 `MenuOptionsCompact`。
+- **Aria 组合** — 无样式数据驱动用法可导入 `@vean/aria/tree-nav`；弹层选项复用 `MenuOptionsCompact`。
 
 ## 用法
 

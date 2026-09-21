@@ -1,8 +1,5 @@
 export { default as SPopconfirm } from './popconfirm.vue';
-export {
-  PopconfirmConfirm as SPopconfirmConfirm,
-  PopconfirmCancel as SPopconfirmCancel
-} from '@soybeanjs/headless/popconfirm';
+export { PopconfirmConfirm as SPopconfirmConfirm, PopconfirmCancel as SPopconfirmCancel } from '@vean/aria/popconfirm';
 
 export type {
   PopconfirmRootProps,
@@ -16,6 +13,6 @@ export type {
   PopconfirmPortalProps,
   PopconfirmArrowProps,
   PopconfirmCloseEmits
-} from '@soybeanjs/headless/popconfirm';
+} from '@vean/aria/popconfirm';
 
 export type * from './types';

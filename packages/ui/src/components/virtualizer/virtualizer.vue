@@ -1,6 +1,6 @@
 <script setup lang="ts" generic="T extends Record<string, any>">
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { VirtualizerContent, VirtualizerRoot } from '@soybeanjs/headless/virtualizer';
+import { useOmitProps } from '@vean/aria/composables';
+import { VirtualizerContent, VirtualizerRoot } from '@vean/aria/virtualizer';
 import type { VirtualizerProps } from './types';
 
 defineOptions({

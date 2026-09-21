@@ -27,9 +27,9 @@ head:
 
 ## 组件族系
 
-- `SDateRangePicker`——样式包装层：透传 props 给 headless compact，注入 `dateRangePickerVariants`（扩展 `dateFieldVariants`），并在弹层内渲染 `SCalendarRange`
-- `DateRangePickerCompact`（headless）——由 `DateRangeFieldCompact` + `PopoverCompact`（日历图标触发器）数据驱动组合，通过 default 插槽暴露弹层状态与 `calendarRangeProps`；无样式使用时从 `@soybeanjs/headless/date-range-picker` 导入
-- `DateRangeFieldCompact` / `PopoverCompact` / `CalendarRangeCompact`（headless）——支撑选择器的双段字段、Popover 机制与范围日历网格
+- `SDateRangePicker`——样式包装层：透传 props 给 Aria compact，注入 `dateRangePickerVariants`（扩展 `dateFieldVariants`），并在弹层内渲染 `SCalendarRange`
+- `DateRangePickerCompact`（Aria）——由 `DateRangeFieldCompact` + `PopoverCompact`（日历图标触发器）数据驱动组合，通过 default 插槽暴露弹层状态与 `calendarRangeProps`；无样式使用时从 `@vean/aria/date-range-picker` 导入
+- `DateRangeFieldCompact` / `PopoverCompact` / `CalendarRangeCompact`（Aria）——支撑选择器的双段字段、Popover 机制与范围日历网格
 
 ## 演示
 
@@ -43,29 +43,29 @@ head:
 
 ### 架构与行业对标差异
 
-`SDateRangePicker` 将 props 透传给 `DateRangePickerCompact`，后者组合 `DateRangeFieldCompact`（双段 + 校验）与 `PopoverCompact`（`lucide:calendar` 图标触发器，带 `aria-haspopup="dialog"`）。样式层通过 `provideDateRangePickerUi` 注入 `dateRangePickerVariants` 类，使嵌套的 Popover 部分获得 `trigger`/`positioner`/`popup` 样式，再在 default 插槽中用透传的 `calendarRangeProps` 渲染 `SCalendarRange`。选中开始与结束两天后触发 `update:modelValue`，两端齐备即关闭弹层。弹层为 `role="dialog"`，默认可访问名称来自 locale `popupLabel` 消息；开关按钮的默认名称来自 `toggle`。多数对标库是「两个纯文本框 + 范围面板」形态；「双段字段 + Popover 组合」、跨组键盘焦点与 headless/styled 分离是差异点。
+`SDateRangePicker` 将 props 透传给 `DateRangePickerCompact`，后者组合 `DateRangeFieldCompact`（双段 + 校验）与 `PopoverCompact`（`lucide:calendar` 图标触发器，带 `aria-haspopup="dialog"`）。样式层通过 `provideDateRangePickerUi` 注入 `dateRangePickerVariants` 类，使嵌套的 Popover 部分获得 `trigger`/`positioner`/`popup` 样式，再在 default 插槽中用透传的 `calendarRangeProps` 渲染 `SCalendarRange`。选中开始与结束两天后触发 `update:modelValue`，两端齐备即关闭弹层。弹层为 `role="dialog"`，默认可访问名称来自 locale `popupLabel` 消息；开关按钮的默认名称来自 `toggle`。多数对标库是「两个纯文本框 + 范围面板」形态；「双段字段 + Popover 组合」、跨组键盘焦点与 Aria/styled 分离是差异点。
 
-| 能力                         | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :--------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 双段字段 + 范围弹层          |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 值受控 / 非受控              |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 弹层受控 / 非受控            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 键盘分段编辑                 |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 跨组焦点移动                 |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 日历键盘导航                 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| 范围校验                     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`          |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 禁用状态                     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| locale 驱动的可访问名称      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `leading` / `separator` 插槽 |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 独立的 `calendarRangeUi`     |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| 能力                         | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :--------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离             |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 双段字段 + 范围弹层          |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 值受控 / 非受控              |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 弹层受控 / 非受控            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 键盘分段编辑                 |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 跨组焦点移动                 |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 日历键盘导航                 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| 范围校验                     |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`          |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 禁用状态                     |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| locale 驱动的可访问名称      |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `leading` / `separator` 插槽 |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 独立的 `calendarRangeUi`     |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### 使用注意
 
 - 值是 `DateRange`——由 `DateValue` 构成的 `{ start, end }` 对象，不是 `string`——请与 `SDateRangeField`、`SCalendarRange` 及日期族系其他组件搭配使用。
 - `defaultValue`/`defaultOpen` 仅在挂载时读取——外部控制请使用 `v-model`/`open`。
-- 开关按钮就是日历图标；其默认 `aria-label`（locale `toggle`）可通过 `triggerProps['aria-label']` 覆盖。图标本身固定——需要自定义触发器时，请用 `@soybeanjs/headless/date-range-picker` 组合 `DateRangePickerCompact` 并自行渲染 Popover 内容。
+- 开关按钮就是日历图标；其默认 `aria-label`（locale `toggle`）可通过 `triggerProps['aria-label']` 覆盖。图标本身固定——需要自定义触发器时，请用 `@vean/aria/date-range-picker` 组合 `DateRangePickerCompact` 并自行渲染 Popover 内容。
 - 弹层 `role="dialog"` 的可访问名称来自 locale `popupLabel` 消息；可通过 `popupProps['aria-label']` 覆盖。
 - 通过 `dateFieldProps`（如 `placeholder`、`locale`、`granularity`）配置内嵌双段字段；字段与日历共享 `minValue`/`maxValue`/`isDateUnavailable`。
 - `calendarRangeUi` 被内嵌日历消费、不会到达 DOM——`dateFieldProps` 同理。
@@ -87,7 +87,7 @@ Tab 进入任一分段组并键入数字或用方向键，或按下日历开关�
 
 ### 如何自定义日历外观？
 
-`calendarRangeUi` 独立于 `ui` 覆盖范围日历各槽位类。需要更深层定制时，default 插槽会收到 `calendarRangeProps`（外加 `open`/`close`），可以用 `@soybeanjs/headless/calendar-range` 的 `CalendarRangeCompact` 渲染自己的弹层内容。
+`calendarRangeUi` 独立于 `ui` 覆盖范围日历各槽位类。需要更深层定制时，default 插槽会收到 `calendarRangeProps`（外加 `open`/`close`），可以用 `@vean/aria/calendar-range` 的 `CalendarRangeCompact` 渲染自己的弹层内容。
 
 ### `SDateRangePicker` 与 `SDateRangeField` 有什么区别？
 

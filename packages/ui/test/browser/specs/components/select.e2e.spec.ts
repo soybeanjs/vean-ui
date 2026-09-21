@@ -74,7 +74,7 @@ describe('SSelect (e2e)', () => {
       `
     });
 
-    const trigger = document.querySelector<HTMLElement>('[data-soybean-select-trigger]');
+    const trigger = document.querySelector<HTMLElement>('[data-vean-select-trigger]');
     if (!trigger) throw new Error('select trigger not rendered');
 
     // The trigger must sit below the fold: opening the content locks the body scroll, which is

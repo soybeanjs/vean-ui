@@ -15,10 +15,10 @@ describe('SInputOtp', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-input-otp-slot]')).toHaveLength(6);
+      expect(wrapper.findAll('[data-vean-input-otp-slot]')).toHaveLength(6);
       expect(
         wrapper
-          .findAll('[data-soybean-input-otp-placeholder]')
+          .findAll('[data-vean-input-otp-placeholder]')
           .map(node => node.text())
           .join('')
       ).toBe('123456');
@@ -35,7 +35,7 @@ describe('SInputOtp', () => {
         attachTo: document.body
       });
 
-      const chars = wrapper.findAll('[data-soybean-input-otp-char]');
+      const chars = wrapper.findAll('[data-vean-input-otp-char]');
 
       expect(chars).toHaveLength(2);
       expect(chars.map(node => node.text()).join('')).toBe('12');
@@ -66,7 +66,7 @@ describe('SInputOtp', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-otp-slot]').classes()).toContain('h-11');
+      expect(wrapper.find('[data-vean-input-otp-slot]').classes()).toContain('h-11');
       wrapper.unmount();
     });
 
@@ -80,8 +80,8 @@ describe('SInputOtp', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-otp-slot]').classes()).toContain('border-input');
-      expect(wrapper.find('[data-soybean-input-otp-placeholder]').classes()).toContain('text-muted-foreground/45');
+      expect(wrapper.find('[data-vean-input-otp-slot]').classes()).toContain('border-input');
+      expect(wrapper.find('[data-vean-input-otp-placeholder]').classes()).toContain('text-muted-foreground/45');
       wrapper.unmount();
     });
 
@@ -95,7 +95,7 @@ describe('SInputOtp', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-otp-input]').classes()).toContain('text-center');
+      expect(wrapper.find('[data-vean-input-otp-input]').classes()).toContain('text-center');
       wrapper.unmount();
     });
 
@@ -110,7 +110,7 @@ describe('SInputOtp', () => {
 
       await wrapper.find('input').trigger('focus');
 
-      expect(wrapper.find('[data-soybean-input-otp-root]').attributes('data-focused')).toBeDefined();
+      expect(wrapper.find('[data-vean-input-otp-root]').attributes('data-focused')).toBeDefined();
       expect(wrapper.emitted('focus')).toBeTruthy();
       wrapper.unmount();
     });
@@ -343,7 +343,7 @@ describe('SInputOtp', () => {
 
       const input = wrapper.find('input');
       expect((input.element as HTMLInputElement).disabled).toBe(true);
-      expect(wrapper.find('[data-soybean-input-otp-root]').attributes('data-disabled')).toBeDefined();
+      expect(wrapper.find('[data-vean-input-otp-root]').attributes('data-disabled')).toBeDefined();
 
       (input.element as HTMLInputElement).value = '9999';
       await input.trigger('input');

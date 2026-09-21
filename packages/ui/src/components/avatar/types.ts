@@ -1,5 +1,5 @@
-import type { AvatarCompactProps, AvatarImageEmits, AvatarUi } from '@soybeanjs/headless/avatar';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { AvatarCompactProps, AvatarImageEmits, AvatarUi } from '@vean/aria/avatar';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

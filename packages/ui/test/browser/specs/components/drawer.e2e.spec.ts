@@ -22,7 +22,7 @@ describe('SDrawer (e2e)', () => {
   };
 
   const popupElement = () => {
-    const found = document.querySelector<HTMLElement>('[data-soybean-drawer-popup]');
+    const found = document.querySelector<HTMLElement>('[data-vean-drawer-popup]');
 
     if (!found) {
       throw new Error('expected the drawer popup to be rendered');
@@ -108,7 +108,7 @@ describe('SDrawer (e2e)', () => {
       await expect
         .poll(() => Math.round(popupElement().getBoundingClientRect().height))
         .toBeGreaterThanOrEqual(height - 1);
-      expect(popupElement().getAttribute('data-soybean-snap-points')).toBe('false');
+      expect(popupElement().getAttribute('data-vean-snap-points')).toBe('false');
 
       unmount();
     });
@@ -155,7 +155,7 @@ describe('SDrawer (e2e)', () => {
 
         // Every step has to start from a fresh mount: the defect only shows up
         // when the panel is measured again after the fullscreen box is gone.
-        expect(document.querySelector('[data-soybean-drawer-popup]')).toBeNull();
+        expect(document.querySelector('[data-vean-drawer-popup]')).toBeNull();
 
         return height;
       };
@@ -188,7 +188,7 @@ describe('SDrawer (e2e)', () => {
 
       // Guard for the assertion above: this is what the panel does when snapping
       // is genuinely active.
-      expect(popupElement().getAttribute('data-soybean-snap-points')).toBe('true');
+      expect(popupElement().getAttribute('data-vean-snap-points')).toBe('true');
       expect(Math.round(popupElement().getBoundingClientRect().top)).toBeGreaterThan(1);
 
       unmount();
@@ -204,8 +204,8 @@ describe('SDrawer (e2e)', () => {
     await userEvent.click(page.getByRole('button', { name: 'Open Drawer' }));
     await expect.element(page.getByRole('dialog')).toBeVisible();
 
-    const trigger = document.querySelector('[data-soybean-drawer-trigger]');
-    const popup = document.querySelector('[data-soybean-drawer-popup]');
+    const trigger = document.querySelector('[data-vean-drawer-trigger]');
+    const popup = document.querySelector('[data-vean-drawer-popup]');
 
     expect(trigger?.getAttribute('aria-controls')).toBe(popup?.getAttribute('id'));
     expect(trigger?.getAttribute('aria-expanded')).toBe('true');

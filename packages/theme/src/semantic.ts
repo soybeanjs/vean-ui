@@ -327,7 +327,7 @@ export const CORE_RULES: Record<CoreToken, TokenRule> = {
  *
  * Dark mode draws hairline whites (`oklch(100% 0 0 / 0.1)` before the refactor),
  * which cannot carry alpha inside a single channel variable
- * (`hsl(var(--soybean-x) / a)` requires `--soybean-x` to be alpha-free), hence a separate
+ * (`hsl(var(--vean-x) / a)` requires `--vean-x` to be alpha-free), hence a separate
  * numeric variable (docs/theme.md §4.4). `borderOpacity` scales the border
  * family; the mask's concentration is a design value of its own (0.25 light /
  * 0.30 dark) and is deliberately not tied to that knob.

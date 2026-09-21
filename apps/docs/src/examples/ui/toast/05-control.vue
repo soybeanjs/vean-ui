@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SButton, toast } from '@soybeanjs/ui';
+import { SButton, toast } from '@vean/ui';
 
 const activeToastId = ref<number | string | null>(null);
 

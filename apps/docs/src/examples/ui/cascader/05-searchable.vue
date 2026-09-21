@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SCascader } from '@soybeanjs/ui';
-import type { CascaderOptionData } from '@soybeanjs/ui';
+import { SCascader } from '@vean/ui';
+import type { CascaderOptionData } from '@vean/ui';
 
 const value = ref<string>();
 

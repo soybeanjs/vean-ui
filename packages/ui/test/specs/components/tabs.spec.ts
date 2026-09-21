@@ -164,10 +164,10 @@ describe('STabs', () => {
       await wrapper.setProps({ modelValue: 'tab-2' });
       await nextTick();
 
-      const indicator = wrapper.find('[data-soybean-tabs-indicator]');
+      const indicator = wrapper.find('[data-vean-tabs-indicator]');
 
-      expect(indicator.attributes('style')).toContain('--soybean-tabs-indicator-size: 90px;');
-      expect(indicator.attributes('style')).toContain('--soybean-tabs-indicator-position: 100px;');
+      expect(indicator.attributes('style')).toContain('--vean-tabs-indicator-size: 90px;');
+      expect(indicator.attributes('style')).toContain('--vean-tabs-indicator-position: 100px;');
 
       wrapper.unmount();
     });
@@ -192,10 +192,10 @@ describe('STabs', () => {
       await wrapper.setProps({ modelValue: 'tab-2' });
       await nextTick();
 
-      const indicator = wrapper.find('[data-soybean-tabs-indicator]');
+      const indicator = wrapper.find('[data-vean-tabs-indicator]');
 
-      expect(indicator.attributes('style')).toContain('--soybean-tabs-indicator-size: 90px;');
-      expect(indicator.attributes('style')).toContain('--soybean-tabs-indicator-position: 110px;');
+      expect(indicator.attributes('style')).toContain('--vean-tabs-indicator-size: 90px;');
+      expect(indicator.attributes('style')).toContain('--vean-tabs-indicator-position: 110px;');
 
       wrapper.unmount();
     });
@@ -391,9 +391,9 @@ describe('STabs', () => {
       const firstTab = wrapper.findAll('[role="tab"]')[0];
       const firstPanel = wrapper.findAll('[role="tabpanel"]')[0];
 
-      expect(firstTab.attributes('aria-controls')).toBe('soybean-tabs-content-tab-1');
-      expect(firstPanel.attributes('id')).toBe('soybean-tabs-content-tab-1');
-      expect(firstPanel.attributes('aria-labelledby')).toBe('soybean-tabs-trigger-tab-1');
+      expect(firstTab.attributes('aria-controls')).toBe('vean-tabs-content-tab-1');
+      expect(firstPanel.attributes('id')).toBe('vean-tabs-content-tab-1');
+      expect(firstPanel.attributes('aria-labelledby')).toBe('vean-tabs-trigger-tab-1');
 
       wrapper.unmount();
     });
@@ -406,7 +406,7 @@ describe('STabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tabs-indicator]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tabs-indicator]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -427,7 +427,7 @@ describe('STabs', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tabs-indicator]').find('.custom-indicator').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tabs-indicator]').find('.custom-indicator').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -441,13 +441,13 @@ describe('STabs', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tabs-indicator]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tabs-indicator]').exists()).toBe(false);
 
       // Activating a tab causes the indicator to appear via a normal reactive update
       await wrapper.findAll('[role="tab"]')[0].trigger('mousedown', { button: 0 });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tabs-indicator]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tabs-indicator]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -460,12 +460,12 @@ describe('STabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tabs-indicator]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tabs-indicator]').exists()).toBe(false);
 
       // After the mounted reactive flush, the indicator pops in
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tabs-indicator]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tabs-indicator]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -500,14 +500,14 @@ describe('STabs', () => {
         attachTo: document.body
       });
 
-      expect(full.find('[data-soybean-tabs-root]').classes()).toContain('items-stretch');
+      expect(full.find('[data-vean-tabs-root]').classes()).toContain('items-stretch');
 
       const auto = mount(STabs, {
         props: { items, modelValue: 'tab-1', fill: 'auto' },
         attachTo: document.body
       });
 
-      expect(auto.find('[data-soybean-tabs-root]').classes()).toContain('items-start');
+      expect(auto.find('[data-vean-tabs-root]').classes()).toContain('items-start');
 
       full.unmount();
       auto.unmount();
@@ -519,7 +519,7 @@ describe('STabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tabs-root]').classes()).toContain('text-base');
+      expect(wrapper.find('[data-vean-tabs-root]').classes()).toContain('text-base');
 
       wrapper.unmount();
     });

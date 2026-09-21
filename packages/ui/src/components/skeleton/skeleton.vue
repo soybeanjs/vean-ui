@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, useAttrs } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { Primitive } from '@soybeanjs/headless/primitive';
+import { useOmitProps } from '@vean/aria/composables';
+import { Primitive } from '@vean/aria/primitive';
 import { skeletonVariants } from '@/styles/skeleton';
 import type { SkeletonProps } from './types';
 
@@ -32,7 +32,7 @@ const cls = computed(() =>
 </script>
 
 <template>
-  <Primitive v-bind="forwardedProps" data-soybean-skeleton :class="cls" :aria-hidden="ariaHidden">
+  <Primitive v-bind="forwardedProps" data-vean-skeleton :class="cls" :aria-hidden="ariaHidden">
     <slot />
   </Primitive>
 </template>

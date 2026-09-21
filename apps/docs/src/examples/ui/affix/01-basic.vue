@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SAffix, SButtonIcon, SInputNumber } from '@soybeanjs/ui';
+import { SAffix, SButtonIcon, SInputNumber } from '@vean/ui';
 
 interface Props {
   playgroundRegion?: string;

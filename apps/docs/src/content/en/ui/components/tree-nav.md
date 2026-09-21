@@ -10,7 +10,7 @@ head:
 
 TreeNav is a data-driven horizontal navigation bar with a persistent selection state: top-level entries sit in a row, branch entries open dropdown popups (hover by default), and selecting any leaf keeps the whole ancestor chain highlighted.
 
-`STreeNav` is the horizontal counterpart of `STreeMenu`: both consume the same tree-shaped `items` data (`TreeNavOptionData`) and derive highlights from the selected value, but TreeNav renders branches as DropdownMenu popups instead of collapsible sections. Logic and accessibility semantics live in the headless `TreeNavCompact`; styles are injected through an `scv()` recipe.
+`STreeNav` is the horizontal counterpart of `STreeMenu`: both consume the same tree-shaped `items` data (`TreeNavOptionData`) and derive highlights from the selected value, but TreeNav renders branches as DropdownMenu popups instead of collapsible sections. Logic and accessibility semantics live in the Aria `TreeNavCompact`; styles are injected through an `scv()` recipe.
 
 > Unlike Menubar (a transient "which menu is open" command-menu model), TreeNav models **selection**: opening a popup never marks anything active — only selection does. Selected leaves carry `data-selected`, and ancestors of the selected leaf carry `data-child-selected`.
 
@@ -28,7 +28,7 @@ TreeNav is a data-driven horizontal navigation bar with a persistent selection s
 - **Hidden items** — `item.hidden` drops the entry and its subtree from the bar and its popup; a branch whose children are all hidden renders as a plain leaf.
 - **Six sizes & two variants** — `size` (xs…2xl) plus `variant="default"` (subtle card surface) or `variant="nav"` (bare bar).
 - **Slot passthrough** — `item` / `item-leading` / `item-trailing` / `item-trigger-icon` / `item-link-icon` forward into both the top level and popups.
-- **Headless composition** — import from `@soybeanjs/headless/tree-nav` for unstyled data-driven usage; popup options reuse `MenuOptionsCompact`.
+- **Aria composition** — import from `@vean/aria/tree-nav` for unstyled data-driven usage; popup options reuse `MenuOptionsCompact`.
 
 ## Usage
 

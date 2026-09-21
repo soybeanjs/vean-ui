@@ -3,8 +3,8 @@ import type {
   InputOtpCompactProps,
   InputOtpCompactSlots,
   InputOtpUi
-} from '@soybeanjs/headless/input-otp';
-import type { ClassValue, Align } from '@soybeanjs/headless/types';
+} from '@vean/aria/input-otp';
+import type { ClassValue, Align } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

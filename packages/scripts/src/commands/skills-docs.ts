@@ -49,7 +49,7 @@ type GenerateSkillDocsOptions = {
   skillsRootDir?: string;
 };
 
-const siteBaseUrl = 'https://ui.soybeanjs.cn';
+const siteBaseUrl = 'https://veanui.com';
 const llmOnlyRegex = /<llm-only>([\s\S]*?)<\/llm-only>/giu;
 const llmExcludeRegex = /<llm-exclude>[\s\S]*?<\/llm-exclude>/giu;
 const htmlCommentRegex = /<!--([\s\S]*?)-->/gu;
@@ -102,23 +102,23 @@ export async function generateSkillDocs(options: GenerateSkillDocsOptions = {}):
   const docs = await collectSourceDocs();
   const sortedDocs = docs.sort((left, right) => left.slug.localeCompare(right.slug));
 
-  await rm(outputPaths.soybeanUiComponentsOutputDir, { recursive: true, force: true });
-  await mkdir(outputPaths.soybeanUiComponentsOutputDir, { recursive: true });
-  await mkdir(outputPaths.soybeanUiReferencesOutputDir, { recursive: true });
-  await mkdir(outputPaths.soybeanHeadlessReferencesOutputDir, { recursive: true });
+  await rm(outputPaths.veanUiComponentsOutputDir, { recursive: true, force: true });
+  await mkdir(outputPaths.veanUiComponentsOutputDir, { recursive: true });
+  await mkdir(outputPaths.veanUiReferencesOutputDir, { recursive: true });
+  await mkdir(outputPaths.veanAriaReferencesOutputDir, { recursive: true });
 
   await Promise.all(
     sortedDocs.map(doc =>
-      writeFile(path.resolve(outputPaths.soybeanUiComponentsOutputDir, doc.fileName), doc.output, 'utf8')
+      writeFile(path.resolve(outputPaths.veanUiComponentsOutputDir, doc.fileName), doc.output, 'utf8')
     )
   );
 
   await Promise.all([
-    writeFile(outputPaths.soybeanUiComponentsIndexPath, createComponentsIndex(sortedDocs), 'utf8'),
-    writeFile(outputPaths.soybeanHeadlessComponentsIndexPath, createHeadlessComponentsIndex(sortedDocs), 'utf8')
+    writeFile(outputPaths.veanUiComponentsIndexPath, createComponentsIndex(sortedDocs), 'utf8'),
+    writeFile(outputPaths.veanAriaComponentsIndexPath, createAriaComponentsIndex(sortedDocs), 'utf8')
   ]);
 
-  console.log(`Generated SoybeanUI skill docs for ${sortedDocs.length} components.`);
+  console.log(`Generated Vean skill docs for ${sortedDocs.length} components.`);
 }
 
 async function collectSourceDocs(): Promise<SkillComponentDoc[]> {
@@ -134,20 +134,20 @@ async function collectSourceDocs(): Promise<SkillComponentDoc[]> {
 }
 
 function resolveSkillOutputPaths(skillsRootDir: string) {
-  const soybeanUiSkillRootDir = path.resolve(skillsRootDir, 'soybean-ui');
-  const soybeanUiComponentsOutputDir = path.resolve(soybeanUiSkillRootDir, 'components');
-  const soybeanUiReferencesOutputDir = path.resolve(soybeanUiSkillRootDir, 'references');
-  const soybeanUiComponentsIndexPath = path.resolve(soybeanUiReferencesOutputDir, 'components.md');
-  const soybeanHeadlessSkillRootDir = path.resolve(skillsRootDir, 'soybean-headless');
-  const soybeanHeadlessReferencesOutputDir = path.resolve(soybeanHeadlessSkillRootDir, 'references');
-  const soybeanHeadlessComponentsIndexPath = path.resolve(soybeanHeadlessReferencesOutputDir, 'components.md');
+  const veanUiSkillRootDir = path.resolve(skillsRootDir, 'vean-ui');
+  const veanUiComponentsOutputDir = path.resolve(veanUiSkillRootDir, 'components');
+  const veanUiReferencesOutputDir = path.resolve(veanUiSkillRootDir, 'references');
+  const veanUiComponentsIndexPath = path.resolve(veanUiReferencesOutputDir, 'components.md');
+  const veanAriaSkillRootDir = path.resolve(skillsRootDir, 'vean-aria');
+  const veanAriaReferencesOutputDir = path.resolve(veanAriaSkillRootDir, 'references');
+  const veanAriaComponentsIndexPath = path.resolve(veanAriaReferencesOutputDir, 'components.md');
 
   return {
-    soybeanHeadlessComponentsIndexPath,
-    soybeanHeadlessReferencesOutputDir,
-    soybeanUiComponentsIndexPath,
-    soybeanUiComponentsOutputDir,
-    soybeanUiReferencesOutputDir
+    veanAriaComponentsIndexPath,
+    veanAriaReferencesOutputDir,
+    veanUiComponentsIndexPath,
+    veanUiComponentsOutputDir,
+    veanUiReferencesOutputDir
   };
 }
 
@@ -254,7 +254,7 @@ function createComponentsIndex(docs: SkillComponentDoc[]): string {
     '',
     '> Auto-generated. Run `pnpm sui gen skills` to update.',
     '',
-    'Component index for the SoybeanUI consumer skill. Each file is generated from the English component docs plus build-time API metadata.',
+    'Component index for the Vean consumer skill. Each file is generated from the English component docs plus build-time API metadata.',
     '',
     ...sections
   ]
@@ -262,7 +262,7 @@ function createComponentsIndex(docs: SkillComponentDoc[]): string {
     .trimEnd()}\n`;
 }
 
-function createHeadlessComponentsIndex(docs: SkillComponentDoc[]): string {
+function createAriaComponentsIndex(docs: SkillComponentDoc[]): string {
   const groupedDocs = new Map<string, SkillComponentDoc[]>();
 
   for (const doc of docs) {
@@ -285,9 +285,9 @@ function createHeadlessComponentsIndex(docs: SkillComponentDoc[]): string {
       '| Component | Description | Shared File |',
       '| --- | --- | --- |',
       ...categoryDocs.map(doc => {
-        const description = doc.description || 'Headless component documentation and generated API summary.';
+        const description = doc.description || 'Aria component documentation and generated API summary.';
 
-        return `| **${doc.slug}** | ${escapeTableText(description)} | [soybean-ui/components/${doc.fileName}](../../soybean-ui/components/${doc.fileName}) |`;
+        return `| **${doc.slug}** | ${escapeTableText(description)} | [vean-ui/components/${doc.fileName}](../../vean-ui/components/${doc.fileName}) |`;
       }),
       ''
     ];
@@ -298,8 +298,8 @@ function createHeadlessComponentsIndex(docs: SkillComponentDoc[]): string {
     '',
     '> Auto-generated. Run `pnpm sui gen skills` to update.',
     '',
-    'Shared component index for the SoybeanHeadless consumer skill.',
-    'Links point to the SoybeanUI generated component reference files because those files already include headless exports such as `Root`, `Trigger`, `Content`, and `Compact` symbols from the generated API metadata.',
+    'Shared component index for the Vean Aria consumer skill.',
+    'Links point to the Vean generated component reference files because those files already include aria exports such as `Root`, `Trigger`, `Content`, and `Compact` symbols from the generated API metadata.',
     '',
     ...sections
   ]

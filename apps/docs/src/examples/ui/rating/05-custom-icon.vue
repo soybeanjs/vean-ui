@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SRating } from '@soybeanjs/ui';
+import { SRating } from '@vean/ui';
 
 const value = ref(3);
 </script>

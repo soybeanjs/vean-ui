@@ -1,41 +1,41 @@
 ---
 head:
   title: 介绍
-  description: SoybeanUI 是一个优雅、现代、可访问且高质量的 UI 组件系统，专为 Vue 3 设计。它支持两种分发模式 — 作为传统的 npm 包安装，或通过 sbean CLI 将源码直接复制到你的项目中（shadcn 风格）。构建在强大的 Headless 基础之上，提供了一套全面、可访问、可定制且高性能的组件，帮助开发者快速构建现代化的 Web 应用。
+  description: VeanUI 是一个优雅、现代、可访问且高质量的 UI 组件系统，专为 Vue 3 设计。它支持两种分发模式 — 作为传统的 npm 包安装，或通过 vean CLI 将源码直接复制到你的项目中（shadcn 风格）。构建在强大的 Aria 基础之上，提供了一套全面、可访问、可定制且高性能的组件，帮助开发者快速构建现代化的 Web 应用。
 ---
 
 # 介绍
 
-SoybeanUI 是一个优雅、现代、可访问且高质量的 UI 组件系统，专为 Vue 3 设计。它支持**两种分发模式** — 作为传统的 npm 包安装，或通过 `sbean` CLI 将源码直接复制到你的项目中（shadcn 风格）。构建在强大的 Headless 基础之上，提供了一套全面、可访问、可定制且高性能的组件，帮助开发者快速构建现代化的 Web 应用。
+VeanUI 是一个优雅、现代、可访问且高质量的 UI 组件系统，专为 Vue 3 设计。它支持**两种分发模式** — 作为传统的 npm 包安装，或通过 `vean` CLI 将源码直接复制到你的项目中（shadcn 风格）。构建在强大的 Aria 基础之上，提供了一套全面、可访问、可定制且高性能的组件，帮助开发者快速构建现代化的 Web 应用。
 
 ## 两种使用方式
 
-SoybeanUI 让你自由选择组件在项目中的存在方式：
+VeanUI 让你自由选择组件在项目中的存在方式：
 
 ### npm 包 — 快速集成
 
-将 `@soybeanjs/ui` 作为依赖安装，几分钟即可上手。通过 `unplugin-vue-components` 自动导入、Tree-shaking 优化体积，以及包管理器无缝升级。这是大多数项目的推荐方式。
+将 `@vean/ui` 作为依赖安装，几分钟即可上手。通过 `unplugin-vue-components` 自动导入、Tree-shaking 优化体积，以及包管理器无缝升级。这是大多数项目的推荐方式。
 
 ```bash
-pnpm add @soybeanjs/ui
+pnpm add @vean/ui
 ```
 
 ### CLI · 复制粘贴 — 完全掌控源码
 
-想要完全拥有源码？使用 `sbean` CLI 将组件直接复制到你的项目中。可编辑任何文件，完全自定义 — 代码属于你。随时通过 `sbean diff` 查看上游更新并按需合并。
+想要完全拥有源码？使用 `vean` CLI 将组件直接复制到你的项目中。可编辑任何文件，完全自定义 — 代码属于你。随时通过 `vean diff` 查看上游更新并按需合并。
 
 ```bash
-npx sbean init
-npx sbean add button
+npx @vean/cli@latest init
+npx @vean/cli@latest add button
 ```
 
-查看[安装指南](/overview/installation)了解详细对比，或直接跳转到 [CLI 文档](/sbean)。
+查看[安装指南](/overview/installation)了解详细对比，或直接跳转到 [CLI 文档](/cli)。
 
-## 为什么选择 SoybeanUI？
+## 为什么选择 Vean？
 
 ### 🎨 优雅的设计
 
-SoybeanUI 采用现代化的设计语言，组件外观精美，交互流畅。每个组件都经过精心设计，确保在不同场景下都能提供出色的用户体验。
+VeanUI 采用现代化的设计语言，组件外观精美，交互流畅。每个组件都经过精心设计，确保在不同场景下都能提供出色的用户体验。
 
 ### ♿ 可访问性优先
 
@@ -43,10 +43,10 @@ SoybeanUI 采用现代化的设计语言，组件外观精美，交互流畅。�
 
 ### 🏗️ 灵活的架构
 
-SoybeanUI 采用 Headless 架构，将逻辑层和表现层完全分离。这意味着你可以：
+VeanUI 采用 Aria 架构，将逻辑层和表现层完全分离。这意味着你可以：
 
-- **使用现成的样式组件**：直接使用 `@soybeanjs/ui`，开箱即用
-- **自定义样式**：使用 `@soybeanjs/headless` 构建完全属于自己的设计系统
+- **使用现成的样式组件**：直接使用 `@vean/ui`，开箱即用
+- **自定义样式**：使用 `@vean/aria` 构建完全属于自己的设计系统
 - **混合使用**：在同一个项目中同时使用两种方式
 
 ### 🎯 类型安全
@@ -63,26 +63,26 @@ SoybeanUI 采用 Headless 架构，将逻辑层和表现层完全分离。这意
 
 ## 架构设计
 
-SoybeanUI 的组件运行时采用严格的 **双层分离** 架构模型。下图中的箭头表示
+VeanUI 的组件运行时采用严格的 **双层分离** 架构模型。下图中的箭头表示
 “依赖于”：
 
 ```text
-应用 ──> @soybeanjs/ui ──> @soybeanjs/headless
+应用 ──> @vean/ui ──> @vean/aria
                   │
-                  └─────> @soybeanjs/theme
+                  └─────> @vean/theme
 
-UnoCSS 配置 ──> @soybeanjs/ui-uno
-                  └─────> @soybeanjs/theme
+UnoCSS 配置 ──> @vean/unocss
+                  └─────> @vean/theme
 ```
 
-编译期依赖保持单向：`@soybeanjs/ui` 只从
-`@soybeanjs/headless` 的公共入口导入，headless 不会反向导入 UI。运行时由样式
-包装组件通过 `provideXUi(computedUi)` 注入插槽类名映射，再由被包装的 headless
+编译期依赖保持单向：`@vean/ui` 只从
+`@vean/aria` 的公共入口导入，Aria 不会反向导入 UI。运行时由样式
+包装组件通过 `provideXUi(computedUi)` 注入插槽类名映射，再由被包装的 Aria
 分片通过 `useUiContext()` 读取。
 
-### @soybeanjs/headless - 逻辑层
+### @vean/aria - 逻辑层
 
-这是 SoybeanUI 的核心基础，负责处理所有业务逻辑：
+这是 VeanUI 的核心基础，负责处理所有业务逻辑：
 
 - **状态管理**：组件内部状态的完整管理
 - **可访问性 (A11y)**：完整的 WAI-ARIA 支持
@@ -91,13 +91,13 @@ UnoCSS 配置 ──> @soybeanjs/ui-uno
 - **事件处理**：统一的事件处理机制
 - **Compact 聚合组件**：为数据驱动场景提供开箱即用的聚合组件
 
-Headless 组件不携带视觉主题，给你最大的自由度来构建自己的设计系统。定位与交互
+Aria 组件不携带视觉主题，给你最大的自由度来构建自己的设计系统。定位与交互
 所需的 CSS 变量或内联布局值仍可能存在。如果你想要完全控制组件的外观，或者需要
-构建一个独特的设计系统，Headless 包是你的最佳选择。
+构建一个独特的设计系统，Aria 包是你的最佳选择。
 
-### @soybeanjs/ui - 表现层
+### @vean/ui - 表现层
 
-这是基于 Headless 构建的带样式组件库：
+这是基于 Aria 构建的带样式组件库：
 
 - **精美的样式**：使用 UnoCSS 和 `@soybeanjs/cva` 构建的现代化样式
 - **开箱即用**：无需额外配置即可使用
@@ -105,17 +105,17 @@ Headless 组件不携带视觉主题，给你最大的自由度来构建自己�
 - **响应式设计**：所有组件都针对不同屏幕尺寸进行了优化
 - **灵活定制**：通过 `ui` prop 覆盖任意插槽的样式类
 
-如果你想要快速开始项目，或者喜欢 SoybeanUI 的默认设计风格，直接使用 `@soybeanjs/ui` 是最佳选择。
+如果你想要快速开始项目，或者喜欢 VeanUI 的默认设计风格，直接使用 `@vean/ui` 是最佳选择。
 
 ### 组件模式
 
-SoybeanUI 支持三种组件模式：
+VeanUI 支持三种组件模式：
 
 #### 1. 多插槽基础组件
 
 适用于需要精细控制每个部分的复杂组件（如 Accordion、Dialog、Card）：
 
-- Headless 暴露多个分片组件（Root、Trigger、Content 等）
+- Aria 暴露多个分片组件（Root、Trigger、Content 等）
 - 使用 `UiSlot` + `UiClass` 定义样式槽位
 - UI 层通过 `provide{Name}Ui(ui)` 注入样式
 
@@ -123,7 +123,7 @@ SoybeanUI 支持三种组件模式：
 
 适用于数据驱动且结构稳定的场景（如列表、表格、表单组）：
 
-- Headless 负责数据遍历、默认内容和结构组合
+- Aria 负责数据遍历、默认内容和结构组合
 - 暴露 `{Name}Compact` 组件和对应的 Props/Emits/Slots 类型
 - UI wrapper 专注于样式变体和 props/slots 转发
 - 例如：`AccordionCompact`、`TableCompact`、`CheckboxGroupCompact`
@@ -141,7 +141,7 @@ SoybeanUI 支持三种组件模式：
 
 ### ✨ 丰富的组件生态
 
-SoybeanUI 提供了 80+ 高质量组件，覆盖了 Web 应用开发中的大部分场景：
+VeanUI 提供了 80+ 高质量组件，覆盖了 Web 应用开发中的大部分场景：
 
 - **基础组件**：Button、Input、Card、Badge 等
 - **表单组件**：Form、Select、Checkbox、RadioGroup、Switch 等
@@ -152,7 +152,7 @@ SoybeanUI 提供了 80+ 高质量组件，覆盖了 Web 应用开发中的大部
 
 ### 🎨 主题系统
 
-SoybeanUI 内置了强大的主题系统，支持：
+VeanUI 内置了强大的主题系统，支持：
 
 - **8 种语义颜色**：`primary` · `destructive` · `success` · `warning` · `info` · `carbon` · `secondary` · `accent`
 - **6 种尺寸**：`xs` · `sm` · `md` · `lg` · `xl` · `2xl`（基准 `md` = 16px）
@@ -177,17 +177,17 @@ SoybeanUI 内置了强大的主题系统，支持：
 
 ## 适用场景
 
-SoybeanUI 适用于各种类型的 Vue 3 项目：
+VeanUI 适用于各种类型的 Vue 3 项目：
 
 - **企业级应用**：提供完整的组件生态和可访问性支持
 - **管理后台**：丰富的表单和数据展示组件
 - **内容网站**：优雅的展示组件和布局系统
 - **移动端应用**：响应式设计，适配各种屏幕尺寸
-- **设计系统**：Headless 架构支持构建自定义设计系统
+- **设计系统**：Aria 架构支持构建自定义设计系统
 
 ## 技术栈
 
-SoybeanUI 基于以下技术构建：
+VeanUI 基于以下技术构建：
 
 - **Vue 3**：使用 Composition API 和 `<script setup>` 语法
 - **TypeScript**：完整的类型支持
@@ -196,13 +196,13 @@ SoybeanUI 基于以下技术构建：
 
 ## 开始使用
 
-如果你已经准备好开始使用 SoybeanUI，可以查看 [快速开始](./quick-start) 文档，了解如何安装和配置 SoybeanUI。
+如果你已经准备好开始使用 Vean，可以查看 [快速开始](./quick-start) 文档，了解如何安装和配置 Vean。
 
 如果你想要了解更多关于组件的信息，可以浏览 [组件文档](/components/button)，每个组件都有详细的 API 文档和使用示例。
 
 ## 社区与支持
 
-- **GitHub**：[soybeanjs/soybean-ui](https://github.com/soybeanjs/soybean-ui)
+- **GitHub**：[soybeanjs/vean-ui](https://github.com/soybeanjs/vean-ui)
 - **问题反馈**：欢迎在 GitHub Issues 中提出问题
 - **功能建议**：欢迎提交 Pull Request
 

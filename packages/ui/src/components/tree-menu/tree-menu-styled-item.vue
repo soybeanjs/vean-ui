@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { Primitive } from '@soybeanjs/headless/primitive';
+import { useOmitProps } from '@vean/aria/composables';
+import { Primitive } from '@vean/aria/primitive';
 import { treeMenuVariants } from '@/styles/tree-menu';
 import type { TreeMenuStyledItemProps, TreeMenuStyledItemSlots } from './types';
 
@@ -48,8 +48,8 @@ const rowProps = computed(() => ({ ...forwardedProps.value, ...rowBindings.value
 </script>
 
 <template>
-  <div :class="ui.item" data-soybean-tree-menu-styled-item>
-    <Primitive v-bind="rowProps" data-soybean-tree-menu-styled-item-button :class="ui.button">
+  <div :class="ui.item" data-vean-tree-menu-styled-item>
+    <Primitive v-bind="rowProps" data-vean-tree-menu-styled-item-button :class="ui.button">
       <slot />
     </Primitive>
   </div>

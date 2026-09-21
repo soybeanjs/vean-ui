@@ -2,8 +2,8 @@
 import { computed, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { ClientOnly } from 'ubean/client';
-import { SSegment, SThemeCustomizer, SThemeModeSwitch } from '@soybeanjs/ui';
-import type { SegmentOptionData } from '@soybeanjs/ui';
+import { SSegment, SThemeCustomizer, SThemeModeSwitch } from '@vean/ui';
+import type { SegmentOptionData } from '@vean/ui';
 import SectionCard from './section-card.vue';
 import { THEME_EDITOR_SECTIONS } from './sections';
 import type { ThemeEditorGroup } from './types';

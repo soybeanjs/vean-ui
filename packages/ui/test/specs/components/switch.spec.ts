@@ -31,7 +31,7 @@ describe('SSwitch', () => {
         },
         attachTo: document.body
       });
-      expect(wrapper.find('[data-soybean-switch-thumb] [data-testid="thumb-slot"]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-switch-thumb] [data-testid="thumb-slot"]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -50,8 +50,8 @@ describe('SSwitch', () => {
         attachTo: document.body
       });
       expect(wrapper.find('[role="switch"]').attributes('data-state')).toBe('checked');
-      expect(wrapper.find('[data-soybean-switch-thumb]').attributes('data-state')).toBe('checked');
-      expect(wrapper.find('[data-soybean-switch-root]').attributes('data-state')).toBe('checked');
+      expect(wrapper.find('[data-vean-switch-thumb]').attributes('data-state')).toBe('checked');
+      expect(wrapper.find('[data-vean-switch-root]').attributes('data-state')).toBe('checked');
       wrapper.unmount();
     });
   });
@@ -151,7 +151,7 @@ describe('SSwitch', () => {
         props: { name: 'dark-mode', value: 'on', modelValue: true, class: 'form' },
         attachTo: document.body
       });
-      const input = wrapper.find('[data-soybean-visually-hidden-input]');
+      const input = wrapper.find('[data-vean-visually-hidden-input]');
       expect(input.exists()).toBe(true);
       expect(input.attributes('name')).toBe('dark-mode');
       expect(input.attributes('value')).toBe('on');
@@ -169,7 +169,7 @@ describe('SSwitch', () => {
         },
         attachTo: document.body
       });
-      const input = wrapper.find('[data-soybean-visually-hidden-input]');
+      const input = wrapper.find('[data-vean-visually-hidden-input]');
       expect((input.element as HTMLInputElement).checked).toBe(false);
       wrapper.unmount();
     });
@@ -185,7 +185,7 @@ describe('SSwitch', () => {
         },
         attachTo: document.body
       });
-      const input = wrapper.find('[data-soybean-visually-hidden-input]');
+      const input = wrapper.find('[data-vean-visually-hidden-input]');
       expect((input.element as HTMLInputElement).checked).toBe(true);
       wrapper.unmount();
     });

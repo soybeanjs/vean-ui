@@ -1,5 +1,5 @@
-import type { ToggleEmits, ToggleProps as _ToggleProps } from '@soybeanjs/headless/toggle';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ToggleEmits, ToggleProps as _ToggleProps } from '@vean/aria/toggle';
+import type { ClassValue } from '@vean/aria/types';
 import type { ToggleVariant, ToggleShape } from '@/styles/toggle';
 import type { ThemeSize, ThemeColor } from '@/theme';
 

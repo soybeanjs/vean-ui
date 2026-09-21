@@ -37,20 +37,20 @@ A cascader for selecting values from hierarchical tree data. It renders a linked
 
 ### Architecture and benchmark differences
 
-SoybeanUI implements cascader with a self-developed data engine (`useCascaderData`) rather than reusing the listbox selection/collection bases, whose flat single-value model does not fit tree cascading: `shallowReactive` node trees cache `pathValues` / `pathLabels` / `level` for O(1) lookups, the `menus` computed derives the visible columns, and cascading checks run `setCheckedDeep` / `recomputeAncestors` / `collectCheckedNodes`. `CascaderOption` dispatches cancellable `select` / `expand` custom events (reka-ui style). The `scv()` recipe `cascaderVariants` declares 16 slots and 7 size variants.
+VeanUI implements cascader with a self-developed data engine (`useCascaderData`) rather than reusing the listbox selection/collection bases, whose flat single-value model does not fit tree cascading: `shallowReactive` node trees cache `pathValues` / `pathLabels` / `level` for O(1) lookups, the `menus` computed derives the visible columns, and cascading checks run `setCheckedDeep` / `recomputeAncestors` / `collectCheckedNodes`. `CascaderOption` dispatches cancellable `select` / `expand` custom events (reka-ui style). The `scv()` recipe `cascaderVariants` declares 16 slots and 7 size variants.
 
-| Capability                        | SoybeanUI | Ant Design `Cascader` | reka-ui `Cascader` | Element Plus `Cascader` |
-| :-------------------------------- | :-------: | :-------------------: | :----------------: | :---------------------: |
-| headless/styled split             |    ✅     |           —           |         ✅         |            —            |
-| Multi-column panel                |    ✅     |          ✅           |         ✅         |           ✅            |
-| Cascading checks + half-check     |    ✅     |          ✅           |         —          |           ✅            |
-| Lazy loading / remote search      |    ✅     |          ✅           |         ✅         |           ✅            |
-| `showCheckedStrategy`             |    ✅     |          ✅           |         —          |            —            |
-| `pathMode` (path values)          |    ✅     |          ✅           |         —          |            —            |
-| Virtual scrolling                 |    ✅     |           —           |         —          |            —            |
-| Cancellable custom events         |    ✅     |           —           |         ✅         |            —            |
-| Localized strings (not hardcoded) |    ✅     |           —           |         —          |           ✅            |
-| axe-clean (open state)            |    ✅     |           —           |         —          |            —            |
+| Capability                        | VeanUI | Ant Design `Cascader` | reka-ui `Cascader` | Element Plus `Cascader` |
+| :-------------------------------- | :----: | :-------------------: | :----------------: | :---------------------: |
+| Aria/styled split                 |   ✅   |           —           |         ✅         |            —            |
+| Multi-column panel                |   ✅   |          ✅           |         ✅         |           ✅            |
+| Cascading checks + half-check     |   ✅   |          ✅           |         —          |           ✅            |
+| Lazy loading / remote search      |   ✅   |          ✅           |         ✅         |           ✅            |
+| `showCheckedStrategy`             |   ✅   |          ✅           |         —          |            —            |
+| `pathMode` (path values)          |   ✅   |          ✅           |         —          |            —            |
+| Virtual scrolling                 |   ✅   |           —           |         —          |            —            |
+| Cancellable custom events         |   ✅   |           —           |         ✅         |            —            |
+| Localized strings (not hardcoded) |   ✅   |           —           |         —          |           ✅            |
+| axe-clean (open state)            |   ✅   |           —           |         —          |            —            |
 
 ### Cautions
 

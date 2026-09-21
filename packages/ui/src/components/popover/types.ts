@@ -1,10 +1,5 @@
-import type {
-  PopoverCompactProps,
-  PopoverCompactEmits,
-  PopoverCompactSlots,
-  PopoverUi
-} from '@soybeanjs/headless/popover';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { PopoverCompactProps, PopoverCompactEmits, PopoverCompactSlots, PopoverUi } from '@vean/aria/popover';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

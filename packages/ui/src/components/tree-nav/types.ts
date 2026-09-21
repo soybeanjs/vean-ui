@@ -1,10 +1,5 @@
-import type {
-  TreeNavCompactProps,
-  TreeNavCompactEmits,
-  TreeNavCompactSlots,
-  TreeNavUi
-} from '@soybeanjs/headless/tree-nav';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { TreeNavCompactProps, TreeNavCompactEmits, TreeNavCompactSlots, TreeNavUi } from '@vean/aria/tree-nav';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

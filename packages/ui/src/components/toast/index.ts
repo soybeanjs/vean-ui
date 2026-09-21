@@ -1,4 +1,4 @@
-export { toast } from '@soybeanjs/headless/toast';
+export { toast } from '@vean/aria/toast';
 export { default as SToastProvider } from './toast-provider.vue';
 
 export type {
@@ -9,5 +9,5 @@ export type {
   ToasterProps,
   ToastUiSlot,
   ToastUi
-} from '@soybeanjs/headless/toast';
+} from '@vean/aria/toast';
 export type * from './types';

@@ -213,15 +213,6 @@ importers:
       '@soybeanjs/colord':
         specifier: ^0.8.1
         version: 0.8.1
-      '@soybeanjs/headless':
-        specifier: workspace:^
-        version: link:../../packages/headless
-      '@soybeanjs/theme':
-        specifier: workspace:^
-        version: link:../../packages/theme
-      '@soybeanjs/ui':
-        specifier: workspace:^
-        version: link:../../packages/ui
       '@tanstack/charts':
         specifier: ^1.0.0
         version: 1.0.0(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
@@ -231,6 +222,15 @@ importers:
       '@unhead/vue':
         specifier: ^3.4.2
         version: 3.4.2(@oxc-project/types@0.153.0)(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(lightningcss@1.33.0)(oxc-parser@0.150.0)(rolldown@1.2.12)(rollup@4.64.1)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0))(yaml@2.9.1)
+      '@vean/aria':
+        specifier: workspace:^
+        version: link:../../packages/aria
+      '@vean/theme':
+        specifier: workspace:^
+        version: link:../../packages/theme
+      '@vean/ui':
+        specifier: workspace:^
+        version: link:../../packages/ui
       '@vueuse/core':
         specifier: ^15.0.0
         version: 15.0.0(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
@@ -245,7 +245,7 @@ importers:
         version: 4.5.0
       ubean:
         specifier: ^0.6.0
-        version: 0.6.0(786ff5e01b9f7d39529eeab1001b03e0)
+        version: 0.6.0(2c578446c4f2a5c0bce5af6cd04f441b)
       valibot:
         specifier: ^1.5.0
         version: 1.5.0(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)
@@ -262,15 +262,15 @@ importers:
         specifier: ^4.6.5
         version: 4.6.5
     devDependencies:
-      '@soybeanjs/ui-uno':
-        specifier: workspace:^
-        version: link:../../packages/unocss
       '@soybeanjs/unocss-preset':
         specifier: ^0.2.0
         version: 0.2.0(@unocss/webpack@66.10.5(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.64.1)(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0)))(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(cac@7.0.0)(rolldown@1.2.12)(rollup@4.64.1)(srvx@1.0.5)
       '@types/d3-shape':
         specifier: ^3.2.0
         version: 3.2.0
+      '@vean/unocss':
+        specifier: workspace:^
+        version: link:../../packages/unocss
       '@vitejs/plugin-vue-jsx':
         specifier: ^5.1.6
         version: 5.1.6(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(supports-color@10.2.2)(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
@@ -292,12 +292,6 @@ importers:
       '@nuxtjs/i18n':
         specifier: 10.6.0
         version: 10.6.0(4cde166fd0916353c798ecd65767b362)
-      '@soybeanjs/theme':
-        specifier: workspace:^
-        version: link:../../packages/theme
-      '@soybeanjs/ui':
-        specifier: workspace:^
-        version: link:../../packages/ui
       nuxt:
         specifier: ^4.6.0
         version: 4.6.0(77f4a402481f803037e74a47b47d3bf2)
@@ -314,6 +308,61 @@ importers:
       unocss:
         specifier: ^66.10.5
         version: 66.10.5(@unocss/webpack@66.10.5(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.64.1)(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0)))(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(cac@7.0.0)(rolldown@1.2.12)(rollup@4.64.1)(srvx@1.0.5)
+
+  packages/aria:
+    dependencies:
+      '@floating-ui/dom':
+        specifier: ^1.8.0
+        version: 1.8.0
+      '@soybeanjs/colord':
+        specifier: ^0.8.1
+        version: 0.8.1
+      '@tanstack/vue-form':
+        specifier: ^1.33.5
+        version: 1.33.5(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
+      '@tanstack/vue-table':
+        specifier: ^9.2.6
+        version: 9.2.6(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
+      '@tanstack/vue-virtual':
+        specifier: ^3.13.39
+        version: 3.13.39(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
+      '@vueuse/core':
+        specifier: ^15.0.0
+        version: 15.0.0(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
+      date-fns:
+        specifier: ^4.4.0
+        version: 4.4.0
+      embla-carousel:
+        specifier: ^8.6.0
+        version: 8.6.0
+    devDependencies:
+      '@vue/test-utils':
+        specifier: ^2.5.1
+        version: 2.5.1(@vue/compiler-dom@3.5.43)(@vue/server-renderer@3.5.43)(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
+      nuxt:
+        specifier: '>=4.6.0'
+        version: 4.6.0(99e0859d53bafb84e7e8d48ef1d6a2a5)
+      typescript:
+        specifier: npm:typescript-native-bridge@latest
+        version: typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2
+      unplugin-vue:
+        specifier: 8.0.0
+        version: 8.0.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(rolldown@1.2.12)(rollup@4.64.1)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0))(yaml@2.9.1)
+      unplugin-vue-components:
+        specifier: ^32.1.0
+        version: 32.1.0(f07f083ddd85dba383cb2ddd1b2d936b)
+      vite-plus:
+        specifier: 'catalog:'
+        version: 1.1.0(@types/node@26.6.4)(@vitest/browser-playwright@5.0.3)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(happy-dom@20.14.5)(jiti@2.7.0)(playwright@1.63.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1)
+      vue:
+        specifier: 3.5.43
+        version: 3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)
+      vue-router:
+        specifier: 5.3.1
+        version: 5.3.1(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/compiler-sfc@3.5.43)(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(rolldown@1.2.12)(rollup@4.64.1)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0))(yaml@2.9.1)
+      vue-tsc:
+        specifier: ^3.3.12
+        version: 3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)
 
   packages/cli:
     dependencies:
@@ -376,72 +425,17 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(@types/node@26.6.4)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(happy-dom@20.14.5)
 
-  packages/headless:
-    dependencies:
-      '@floating-ui/dom':
-        specifier: ^1.8.0
-        version: 1.8.0
-      '@soybeanjs/colord':
-        specifier: ^0.8.1
-        version: 0.8.1
-      '@tanstack/vue-form':
-        specifier: ^1.33.5
-        version: 1.33.5(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
-      '@tanstack/vue-table':
-        specifier: ^9.2.6
-        version: 9.2.6(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
-      '@tanstack/vue-virtual':
-        specifier: ^3.13.39
-        version: 3.13.39(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
-      '@vueuse/core':
-        specifier: ^15.0.0
-        version: 15.0.0(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
-      date-fns:
-        specifier: ^4.4.0
-        version: 4.4.0
-      embla-carousel:
-        specifier: ^8.6.0
-        version: 8.6.0
-    devDependencies:
-      '@vue/test-utils':
-        specifier: ^2.5.1
-        version: 2.5.1(@vue/compiler-dom@3.5.43)(@vue/server-renderer@3.5.43)(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
-      nuxt:
-        specifier: '>=4.6.0'
-        version: 4.6.0(99e0859d53bafb84e7e8d48ef1d6a2a5)
-      typescript:
-        specifier: npm:typescript-native-bridge@latest
-        version: typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2
-      unplugin-vue:
-        specifier: 8.0.0
-        version: 8.0.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(rolldown@1.2.12)(rollup@4.64.1)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0))(yaml@2.9.1)
-      unplugin-vue-components:
-        specifier: ^32.1.0
-        version: 32.1.0(f07f083ddd85dba383cb2ddd1b2d936b)
-      vite-plus:
-        specifier: 'catalog:'
-        version: 1.1.0(@types/node@26.6.4)(@vitest/browser-playwright@5.0.3)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(happy-dom@20.14.5)(jiti@2.7.0)(playwright@1.63.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1)
-      vue:
-        specifier: 3.5.43
-        version: 3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)
-      vue-router:
-        specifier: 5.3.1
-        version: 5.3.1(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/compiler-sfc@3.5.43)(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(rolldown@1.2.12)(rollup@4.64.1)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0))(yaml@2.9.1)
-      vue-tsc:
-        specifier: ^3.3.12
-        version: 3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)
-
   packages/scripts:
     devDependencies:
       '@soybeanjs/colord':
         specifier: ^0.8.1
         version: 0.8.1
-      '@soybeanjs/theme':
-        specifier: workspace:^
-        version: link:../theme
       '@types/node':
         specifier: ^26.6.4
         version: 26.6.4
+      '@vean/theme':
+        specifier: workspace:^
+        version: link:../theme
       cac:
         specifier: ^7.0.0
         version: 7.0.0
@@ -503,22 +497,22 @@ importers:
       '@soybeanjs/cva':
         specifier: ^0.1.1
         version: 0.1.1
-      '@soybeanjs/headless':
+      '@vean/aria':
         specifier: workspace:^
-        version: link:../headless
-      '@soybeanjs/theme':
+        version: link:../aria
+      '@vean/theme':
         specifier: workspace:^
         version: link:../theme
     devDependencies:
-      '@soybeanjs/ui-uno':
-        specifier: workspace:^
-        version: link:../unocss
       '@types/node':
         specifier: ^26.6.4
         version: 26.6.4
       '@unocss/cli':
         specifier: ^66.10.5
         version: 66.10.5
+      '@vean/unocss':
+        specifier: workspace:^
+        version: link:../unocss
       '@vitest/browser':
         specifier: ^5.0.3
         version: 5.0.3(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vitest@5.0.0)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1)
@@ -573,12 +567,12 @@ importers:
 
   packages/unocss:
     dependencies:
-      '@soybeanjs/theme':
-        specifier: workspace:^
-        version: link:../theme
       '@unocss/preset-mini':
         specifier: ^66.10.5
         version: 66.10.5
+      '@vean/theme':
+        specifier: workspace:^
+        version: link:../theme
       unocss:
         specifier: ^66.10.5
         version: 66.10.5(@unocss/webpack@66.10.5(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.64.1)(webpack@5.111.1(cssnano@9.3.2(postcss@8.5.29))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(svgo@4.1.0)))(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(cac@7.0.0)(rolldown@1.2.12)(rollup@4.64.1)(srvx@1.0.5)
@@ -12069,7 +12063,7 @@ snapshots:
       '@ubean/shared': 0.6.0
       hono: 4.13.12
 
-  '@ubean/integrations@0.6.0(ab6879afce5eed8f868237e5e62e1c44)':
+  '@ubean/integrations@0.6.0(345b954a7126146f82fbadc6edc9ce20)':
     dependencies:
       '@ubean/build': 0.6.0(0db999c7aa29645f8d1d4c5a7a2336c4)
       defu: 6.1.7
@@ -12078,6 +12072,7 @@ snapshots:
       vite-plugin-electron: 1.1.2(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))
       vite-plugin-pwa: 1.3.0(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(supports-color@10.2.2)(workbox-build@7.4.1(supports-color@10.2.2))(workbox-window@7.4.1)
     optionalDependencies:
+      '@vean/ui': link:packages/ui
       vue: 3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -17564,7 +17559,7 @@ snapshots:
       '@typescript-native-bridge/win32-arm64': 6.0.3-bridge.18.tsgo.7.0.2
       '@typescript-native-bridge/win32-x64': 6.0.3-bridge.18.tsgo.7.0.2
 
-  ubean@0.6.0(786ff5e01b9f7d39529eeab1001b03e0):
+  ubean@0.6.0(2c578446c4f2a5c0bce5af6cd04f441b):
     dependencies:
       '@hono/standard-validator': 0.4.0(@standard-schema/spec@1.1.0)(hono@4.13.12)
       '@standard-community/standard-json': 0.3.6(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(@valibot/to-json-schema@1.8.0(valibot@1.5.0(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)))(valibot@1.5.0(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(zod-to-json-schema@3.25.2(zod@4.6.5))(zod@4.6.5)
@@ -17575,7 +17570,7 @@ snapshots:
       '@ubean/client': 0.6.0(f83a372fef36588011928bf3f73758f6)
       '@ubean/config': 0.6.0(@types/node@26.6.4)(@ubean/content@0.6.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1))(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(dotenv@17.4.2)(esbuild@0.28.2)(giget@3.3.1)(hono@4.13.12)(magicast@0.5.5)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1)
       '@ubean/i18n': 0.6.0
-      '@ubean/integrations': 0.6.0(ab6879afce5eed8f868237e5e62e1c44)
+      '@ubean/integrations': 0.6.0(345b954a7126146f82fbadc6edc9ce20)
       '@ubean/islands': 0.6.0(@types/node@26.6.4)(@volar/typescript@2.4.28(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(@vue/language-core@3.3.12)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2)(vue-tsc@3.3.12(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))(yaml@2.9.1)
       '@ubean/markdown': 0.6.0(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))
       '@ubean/pages': 0.6.0(vue@3.5.43(typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2))

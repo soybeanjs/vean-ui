@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SAppShell, SButtonIcon, SIcon, SSelect, SSwitch } from '@soybeanjs/ui';
+import { SAppShell, SButtonIcon, SIcon, SSelect, SSwitch } from '@vean/ui';
 import type {
   AppShellLogoPlacement,
   AppShellMode,
@@ -12,7 +12,7 @@ import type {
   SelectOptionData,
   ThemeSize,
   TreeMenuExpandStrategy
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 import { appShellItems } from './menu';
 
@@ -286,13 +286,13 @@ const reset = (): void => {
         <SIcon icon="lucide:hexagon" class="size-6 text-primary" />
       </template>
       <template #title>
-        <span class="truncate font-semibold">Soybean UI</span>
+        <span class="truncate font-semibold">Vean UI</span>
       </template>
       <template #header-end>
         <SButtonIcon icon="lucide:bell" />
         <SButtonIcon icon="lucide:sun-medium" />
       </template>
-      <template #footer>© 2026 Soybean UI</template>
+      <template #footer>© 2026 Vean UI</template>
       <div class="p-4">
         <p class="text-muted-foreground">Active menu: {{ active }}</p>
         <p v-for="row in CONTENT_ROWS" :key="row" class="mt-2 text-muted-foreground text-sm">Content row {{ row }}</p>

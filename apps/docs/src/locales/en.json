@@ -9,7 +9,7 @@
     "timeline": "This site redirects in Nov 2026; the {'@'}soybeanjs packages are deprecated in Apr 2027."
   },
   "playground": {
-    "title": "SoybeanUI Playground",
+    "title": "VeanUI Playground",
     "loading": "Loading...",
     "empty": {
       "title": "No examples yet",
@@ -564,13 +564,13 @@
       "theme": "Theme",
       "theme_configurator": "Theme Configurator",
       "language": "Language",
-      "headless": "Headless"
+      "aria": "Aria"
     }
   },
   "components": {
     "catalog": {
       "title": "Component Catalog",
-      "description": "Browse every Soybean UI component by category and jump straight into the dedicated docs page for each one.",
+      "description": "Browse every VeanUI component by category and jump straight into the dedicated docs page for each one.",
       "helper": "Use the category view below or press Command + K to jump to a component directly.",
       "kicker": "Component catalog and entry points",
       "group_count": "{count} components",
@@ -595,7 +595,7 @@
         },
         "introduction": {
           "title": "Understand the layers",
-          "desc": "Learn the headless and UI split first so component choices stay intentional."
+          "desc": "Learn the aria and UI split first so component choices stay intentional."
         },
         "theming": {
           "title": "Review theming early",
@@ -616,8 +616,8 @@
       }
     },
     "home": {
-      "title": "SoybeanUI",
-      "description": "A powerful, elegant Vue 3 component system with headless primitives and ready-to-use styled wrappers.",
+      "title": "VeanUI",
+      "description": "A powerful, elegant Vue 3 component system with aria primitives and ready-to-use styled wrappers.",
       "kicker": "Vue 3 Component System",
       "actions": {
         "start": "Get Started",
@@ -632,13 +632,9 @@
         "guides": "Guides"
       },
       "features": {
-        "headless_first": {
-          "title": "Headless First",
-          "desc": "{'@'}soybeanjs/headless focuses on state, behavior, and accessibility semantics without shipping any visual styling."
-        },
         "styled_wrappers": {
           "title": "Styled Wrappers",
-          "desc": "{'@'}soybeanjs/ui ships S-prefixed styled components so common product surfaces can be delivered without rebuilding presentation from scratch."
+          "desc": "{'@'}vean/ui ships S-prefixed styled components so common product surfaces can be delivered without rebuilding presentation from scratch."
         },
         "accessible": {
           "title": "Accessibility Built In",
@@ -663,6 +659,10 @@
         "ecosystem": {
           "title": "Vue Ecosystem Friendly",
           "desc": "Works smoothly with Nuxt, auto-import workflows, and living examples that shorten adoption time."
+        },
+        "aria_first": {
+          "title": "Aria First",
+          "desc": "{'@'}vean/aria focuses on state, behavior, and accessibility semantics without shipping any visual styling."
         }
       },
       "quick_links": {
@@ -672,7 +672,7 @@
         },
         "introduction": {
           "title": "Understand the Split",
-          "desc": "Review how the unstyled headless layer and the styled UI layer divide responsibility before choosing an integration strategy."
+          "desc": "Review how the unstyled aria layer and the styled UI layer divide responsibility before choosing an integration strategy."
         },
         "components": {
           "title": "Browse the Catalog",
@@ -688,12 +688,12 @@
           "title": "Core Features"
         },
         "two_modes": {
-          "title": "Two Ways to Use SoybeanUI",
+          "title": "Two Ways to Use VeanUI",
           "description": "Choose the distribution mode that fits your workflow — npm package for quick integration, or CLI copy-paste for full source control.",
           "npm": {
             "title": "NPM Package",
             "subtitle": "Traditional dependency",
-            "description": "Install {'@'}soybeanjs/ui as a dependency. Auto-import, tree-shaking, and seamless updates via your package manager.",
+            "description": "Install {'@'}vean/ui as a dependency. Auto-import, tree-shaking, and seamless updates via your package manager.",
             "feature_0": "One-command install",
             "feature_1": "Auto-import with unplugin-vue-components",
             "feature_2": "Tree-shaking — only bundle what you use",
@@ -704,10 +704,10 @@
           "cli": {
             "title": "CLI · Copy-Paste",
             "subtitle": "shadcn-style",
-            "description": "Copy source code into your project with sbean CLI. Full control, full customization — you own the code.",
+            "description": "Copy source code into your project with the vean CLI. Full control, full customization — you own the code.",
             "feature_0": "Components live in your source tree",
             "feature_1": "Edit any file — full customization",
-            "feature_2": "sbean diff to review upstream changes",
+            "feature_2": "vean diff to review upstream changes",
             "feature_3": "Only the components you add exist",
             "feature_4": "Perfect for custom design systems",
             "cta": "Try the CLI"
@@ -747,8 +747,8 @@
     "utilities": "Utilities",
     "installation": "Installation",
     "cli": "CLI",
-    "headless": "Headless",
-    "migration": "Upgrade Guides"
+    "migration": "Upgrade Guides",
+    "aria": "Aria"
   },
   "migration": {
     "kicker": "Upgrade Guide",
@@ -757,7 +757,6 @@
   },
   "api": {
     "ui_layer": "UI Layer",
-    "headless_layer": "Headless Layer",
     "chart_layer": "Chart Layer",
     "admin_layer": "Admin Layer",
     "props": "Props",
@@ -775,7 +774,8 @@
     },
     "actions": {
       "open_full_type": "Open full type"
-    }
+    },
+    "aria_layer": "Aria Layer"
   },
   "changelog": {
     "actions": {
@@ -907,15 +907,6 @@
       "scatter": "Scatter chart: correlation between two numeric dimensions."
     }
   },
-  "headless": {
-    "catalog": {
-      "title": "Headless",
-      "notice": {
-        "title": "Documentation in progress",
-        "description": "Headless documentation is being written. Meanwhile, browse the styled API reference under Components."
-      }
-    }
-  },
   "themeEditor": {
     "title": "Theme editor",
     "description": "Tune the theme on the left and every component below follows. The panel is the real SThemeCustomizer — colors, radius, size, spacing, fonts, surfaces, borders and the per-token overrides apply to this page as you change them.",
@@ -989,5 +980,14 @@
   },
   "button": {
     "back_to_home": "Back to Home"
+  },
+  "aria": {
+    "catalog": {
+      "title": "Aria",
+      "notice": {
+        "title": "Documentation in progress",
+        "description": "Aria documentation is being written. Meanwhile, browse the styled API reference under Components."
+      }
+    }
   }
 }

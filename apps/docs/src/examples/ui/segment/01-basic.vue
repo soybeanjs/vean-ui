@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SSegment, SSelect, SSwitch } from '@soybeanjs/ui';
+import { SSegment, SSelect, SSwitch } from '@vean/ui';
 import type {
   DataOrientation,
   SegmentFill,
@@ -8,7 +8,7 @@ import type {
   SegmentShape,
   SelectOptionData,
   ThemeSize
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

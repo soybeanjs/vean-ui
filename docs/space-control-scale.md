@@ -1,6 +1,6 @@
 # 维度刻度：spacing 与 radius
 
-> 定位：`@soybeanjs/theme` 字面量层里两条**刻度族**的当前契约——取值、单位、与 UnoCSS 的关系、消费面——以及一条判断准则：**哪些维度不该成为刻度族**（控件高度 / 图标 / 字号 / 阴影动效）。
+> 定位：`@vean/theme` 字面量层里两条**刻度族**的当前契约——取值、单位、与 UnoCSS 的关系、消费面——以及一条判断准则：**哪些维度不该成为刻度族**（控件高度 / 图标 / 字号 / 阴影动效）。
 > 状态：✅ 与代码同步。真相源是 [`packages/theme/src/literals.ts`](../packages/theme/src/literals.ts) 与 [`packages/unocss/src/theme.ts`](../packages/unocss/src/theme.ts)；实测数据的口径与复现方式见 §4。
 > 相关：[theme.md](./theme.md) §3.11（字面量全表）· §5.1（UnoCSS theme key 归属）· §5.3（三处不回主题的刻度）
 

@@ -1,12 +1,12 @@
 {
   "name": "test-registry",
-  "homepage": "https://ui.soybeanjs.cn",
+  "homepage": "https://veanui.com",
   "items": [
     {
       "name": "button",
       "type": "registry:ui",
       "description": "Displays a button or a component that looks like a button.",
-      "dependencies": ["@soybeanjs/headless", "@soybeanjs/cva"],
+      "dependencies": ["@vean/aria", "@soybeanjs/cva"],
       "registryDependencies": ["utils"],
       "categories": ["form", "action"],
       "files": [
@@ -20,7 +20,7 @@
       "name": "dialog",
       "type": "registry:ui",
       "description": "A modal dialog that interrupts the user with important content.",
-      "dependencies": ["@soybeanjs/headless", "@soybeanjs/cva"],
+      "dependencies": ["@vean/aria", "@soybeanjs/cva"],
       "registryDependencies": ["utils", "button"],
       "categories": ["overlay", "feedback"],
       "files": [
@@ -34,7 +34,7 @@
       "name": "accordion",
       "type": "registry:ui",
       "description": "A vertically stacked set of interactive headings.",
-      "dependencies": ["@soybeanjs/headless"],
+      "dependencies": ["@vean/aria"],
       "registryDependencies": ["utils"],
       "categories": ["layout", "disclosure"],
       "files": [
@@ -48,7 +48,7 @@
       "name": "input",
       "type": "registry:ui",
       "description": "Displays a form input field or a textarea.",
-      "dependencies": ["@soybeanjs/headless"],
+      "dependencies": ["@vean/aria"],
       "registryDependencies": ["utils"],
       "categories": ["form", "input"],
       "meta": {
@@ -78,7 +78,7 @@
         }
       },
       "uno": {
-        "presets": ["@soybeanjs/ui-uno"],
+        "presets": ["@vean/unocss"],
         "shortcuts": {
           "focus-ring": "outline-none ring-2 ring-offset-2"
         },
@@ -95,7 +95,7 @@
     {
       "name": "test-base-typed",
       "type": "registry:base",
-      "description": "Typed SoybeanUI base config (ADR-009).",
+      "description": "Typed Vean base config (ADR-009).",
       "config": {
         "uno": {
           "base": "zinc",
@@ -109,7 +109,7 @@
           "components": "@/components",
           "composables": "@/composables"
         },
-        "themePackage": "@soybeanjs/theme",
+        "themePackage": "@vean/theme",
         "resolver": "./src/ui/resolver",
         "iconLibrary": "lucide",
         "rtl": false,

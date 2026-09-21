@@ -1,14 +1,14 @@
 ---
 head:
   title: 表单
-  description: '面向表单构建与校验交互的组合式组件层，采用 headless 核心 + 样式封装的结构。useForm 组合式函数由 TanStack Form 引擎（@tanstack/vue-form）驱动，承接字段级订阅、字段数组与提交生命周期，直接接受任意 Standard Schema 校验器（Zod、Valibot、ArkType、Yup 等），并返回携带 SFormField / SFormFieldArray 的上下文用于渲染表单。字段通过插槽注册，因此任何 SoybeanUI 输入组件（SInput、SSelect、SCheckbox、SSwitch、SRadioGroup 等）或自定义控件都能直接接入，无需逐控件适配。'
+  description: '面向表单构建与校验交互的组合式组件层，采用 Aria 核心 + 样式封装的结构。useForm 组合式函数由 TanStack Form 引擎（@tanstack/vue-form）驱动，承接字段级订阅、字段数组与提交生命周期，直接接受任意 Standard Schema 校验器（Zod、Valibot、ArkType、Yup 等），并返回携带 SFormField / SFormFieldArray 的上下文用于渲染表单。字段通过插槽注册，因此任何 VeanUI 输入组件（SInput、SSelect、SCheckbox、SSwitch、SRadioGroup 等）或自定义控件都能直接接入，无需逐控件适配。'
 ---
 
 # 表单
 
 ## 概述
 
-面向表单构建与校验交互的组合式组件层，采用 headless 核心 + 样式封装的结构。`useForm` 组合式函数由 **TanStack Form 引擎**（`@tanstack/vue-form`）驱动——字段级订阅、字段数组与提交生命周期均来自引擎——并直接接受任意 **Standard Schema** 校验器（Zod、Valibot、ArkType、Yup 等）。它返回携带 `SFormField` / `SFormFieldArray` 的上下文对象用于渲染表单。字段通过插槽注册，因此任何 SoybeanUI 输入组件（`SInput`、`SSelect`、`SCheckbox`、`SSwitch`、`SRadioGroup` 等）或自定义控件都能直接接入，无需逐控件适配。
+面向表单构建与校验交互的组合式组件层，采用 Aria 核心 + 样式封装的结构。`useForm` 组合式函数由 **TanStack Form 引擎**（`@tanstack/vue-form`）驱动——字段级订阅、字段数组与提交生命周期均来自引擎——并直接接受任意 **Standard Schema** 校验器（Zod、Valibot、ArkType、Yup 等）。它返回携带 `SFormField` / `SFormFieldArray` 的上下文对象用于渲染表单。字段通过插槽注册，因此任何 VeanUI 输入组件（`SInput`、`SSelect`、`SCheckbox`、`SSwitch`、`SRadioGroup` 等）或自定义控件都能直接接入，无需逐控件适配。
 
 ## 用法
 
@@ -21,7 +21,7 @@ head:
 - ✅ 字段级规则 —— 每个字段的 `validate` 接受同步/异步函数或 Standard Schema 校验器，由引擎与 schema 错误合并；经 Ref / ComputedRef 传入可响应式换规则
 - 🔁 校验时机 —— `validateMode` 设定 schema 与字段校验器的运行时机（`blur` | `change` | `submit`），`validateOnMounted` 挂载即校验；校验器注册在引擎的异步槽上，每次触发只执行一次，并支持异步 Standard Schema
 - 📦 字段数组 —— `append` / `prepend` / `remove` / `insert` / `swap` / `move` / `update` / `replace`，嵌套路径注册（`social[0].name`，TanStack 规范格式）
-- 🧩 headless/styled 分离 —— `@soybeanjs/headless` 中的 `useForm`/`FormCompact`（零样式）；`SForm*` 封装注入 `formVariants` 样式（6 个插槽：field/fieldArray/label/control/description/error）；错误进出场动画位于 UI 层
+- 🧩 Aria/styled 分离 —— `@vean/aria` 中的 `useForm`/`FormCompact`（零样式）；`SForm*` 封装注入 `formVariants` 样式（6 个插槽：field/fieldArray/label/control/description/error）；错误进出场动画位于 UI 层
 - ♿ 开箱即用的无障碍 —— label `<label :for>` 关联、错误时 `aria-invalid`、`aria-describedby` 将描述与错误链接到控件
 - 🎨 可组合布局 —— `label` / `control` / `description` / `error` 插槽 + `*Props` 透传；`SFormFieldBase` 支持自定义行
 - 🧰 控件无关 —— 字段通过插槽转发 `model-value` 与无障碍属性，任何具备值的控件均可集成
@@ -29,11 +29,11 @@ head:
 ## 组件家族
 
 - `useForm`（styled）—— 入口组合式函数；返回携带 `form`（TanStack `FormApi`）、`isSubmitting`、`handleSubmit`/`handleReset` 的上下文，以及绑定的 `SFormField` / `SFormFieldArray` 组件
-- `SForm` / `FormCompact`（headless）—— `<form>` 元素属主；经 context 向下传递 `orientation`/`fieldProps`/`fieldArrayProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps`
-- `SFormField` / `FormFieldCompact`（headless）—— 按 `name` 注册单个字段；持有字段错误/meta 并渲染 label + description + control + error
-- `SFormFieldArray` / `FormFieldArrayCompact`（headless）—— 注册字段数组；默认插槽接收 `fields`/`append`/`prepend`/`remove`/`insert`/`swap`/`move`/`update`/`replace`
-- `SFormFieldBase` / `FormFieldBaseCompact`（headless）—— 自定义行的布局包装器；向插槽提供 `formFieldId` / `ariaDescribedBy` / `ariaInvalid`
-- `FormField` / `FormLabel` / `FormControl` / `FormDescription` / `FormError`（headless）—— 底层原语，compact 内部使用（也供自定义组合导出）
+- `SForm` / `FormCompact`（Aria）—— `<form>` 元素属主；经 context 向下传递 `orientation`/`fieldProps`/`fieldArrayProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps`
+- `SFormField` / `FormFieldCompact`（Aria）—— 按 `name` 注册单个字段；持有字段错误/meta 并渲染 label + description + control + error
+- `SFormFieldArray` / `FormFieldArrayCompact`（Aria）—— 注册字段数组；默认插槽接收 `fields`/`append`/`prepend`/`remove`/`insert`/`swap`/`move`/`update`/`replace`
+- `SFormFieldBase` / `FormFieldBaseCompact`（Aria）—— 自定义行的布局包装器；向插槽提供 `formFieldId` / `ariaDescribedBy` / `ariaInvalid`
+- `FormField` / `FormLabel` / `FormControl` / `FormDescription` / `FormError`（Aria）—— 底层原语，compact 内部使用（也供自定义组合导出）
 - 核心引擎 —— `@tanstack/vue-form`（`FormApi` + Vue 的 `Field` / `Subscribe` / `useSelector`）；原自研 `useHeadlessForm` / `useFormState` / `useFieldArray` 已于 v0.50.0 退役
 
 ## 演示
@@ -56,21 +56,21 @@ head:
 
 ### 架构与竞品差异
 
-`useForm` 封装 TanStack 的 `useForm`：schema 注册为 form 级校验器，字段级 `validate` 注册为字段校验器，值、字段 meta、按路径的错误分发与提交生命周期全部由引擎承接。`validateMode` 映射到 TanStack 校验时机（`onChange` / `onBlur` / `onSubmit`）；schema 注册在异步槽上（异步槽同样接受同步返回），每个校验触发源只执行一次，因此支持异步 Standard Schema。提交时机的字段槽始终挂载，`handleSubmit` 会等待字段校验完成。`useFieldArray` 暴露基于引擎数组操作（`pushFieldValue`、`insertFieldValue`、`removeFieldValue`、`swapFieldValues`、`moveFieldValues`、`replaceFieldValue`）的变更助手。`FormFieldBaseCompact` 合并表单 context 中的 `fieldProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps`，并向控件插槽注入无障碍状态（`aria-invalid`、`aria-describedby`）；错误进出场的高度塌缩动画由 UI 层组合。多数竞品把校验器绑定在框架专属的规则对象上；Standard Schema 接口 + 主流引擎之上的 headless/styled 分离是本库的差异点。
+`useForm` 封装 TanStack 的 `useForm`：schema 注册为 form 级校验器，字段级 `validate` 注册为字段校验器，值、字段 meta、按路径的错误分发与提交生命周期全部由引擎承接。`validateMode` 映射到 TanStack 校验时机（`onChange` / `onBlur` / `onSubmit`）；schema 注册在异步槽上（异步槽同样接受同步返回），每个校验触发源只执行一次，因此支持异步 Standard Schema。提交时机的字段槽始终挂载，`handleSubmit` 会等待字段校验完成。`useFieldArray` 暴露基于引擎数组操作（`pushFieldValue`、`insertFieldValue`、`removeFieldValue`、`swapFieldValues`、`moveFieldValues`、`replaceFieldValue`）的变更助手。`FormFieldBaseCompact` 合并表单 context 中的 `fieldProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps`，并向控件插槽注入无障碍状态（`aria-invalid`、`aria-describedby`）；错误进出场的高度塌缩动画由 UI 层组合。多数竞品把校验器绑定在框架专属的规则对象上；Standard Schema 接口 + 主流引擎之上的 Aria/styled 分离是本库的差异点。
 
-| 能力                                | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | React Hook Form |
-| :---------------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :-------------: |
-| headless/styled 分离                |    ✅     |     —      |      —       |    —    |    —     |        —        |
-| Standard Schema（Zod/Valibot…）     |    ✅     |     ⚠️     |      —       |   ✅    |    —     |       ✅        |
-| 字段级同步/异步规则                 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |       ✅        |
-| `validateMode`                      |    ✅     |     ⚠️     |      ✅      |    —    |    ✅    |        —        |
-| 字段数组（append/remove/move）      |    ✅     |     ✅     |      —       |   ✅    |    —     |       ✅        |
-| 嵌套路径注册                        |    ✅     |     ✅     |      —       |    —    |    —     |       ✅        |
-| 提交状态（`isSubmitting`）          |    ✅     |     —      |      —       |   ✅    |    —     |       ✅        |
-| `aria-invalid` + `aria-describedby` |    ✅     |     —      |      —       |   ✅    |    —     |        —        |
-| 逐部分插槽 + `*Props`               |    ✅     |     ⚠️     |      —       |    —    |    —     |        —        |
+| 能力                                | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | React Hook Form |
+| :---------------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :-------------: |
+| Aria/styled 分离                    |   ✅   |     —      |      —       |    —    |    —     |        —        |
+| Standard Schema（Zod/Valibot…）     |   ✅   |     ⚠️     |      —       |   ✅    |    —     |       ✅        |
+| 字段级同步/异步规则                 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |       ✅        |
+| `validateMode`                      |   ✅   |     ⚠️     |      ✅      |    —    |    ✅    |        —        |
+| 字段数组（append/remove/move）      |   ✅   |     ✅     |      —       |   ✅    |    —     |       ✅        |
+| 嵌套路径注册                        |   ✅   |     ✅     |      —       |    —    |    —     |       ✅        |
+| 提交状态（`isSubmitting`）          |   ✅   |     —      |      —       |   ✅    |    —     |       ✅        |
+| `aria-invalid` + `aria-describedby` |   ✅   |     —      |      —       |   ✅    |    —     |        —        |
+| 逐部分插槽 + `*Props`               |   ✅   |     ⚠️     |      —       |    —    |    —     |        —        |
 
-`⚠️` = 部分支持（Ant Design 经 `rules`/`validateTrigger` 覆盖大部分规则但没有 Standard Schema；其 `required`/`colon`/`labelAlign`/`labelWidth`/`layout` 属于样式层便捷项，SoybeanUI 不将其引入核心）。
+`⚠️` = 部分支持（Ant Design 经 `rules`/`validateTrigger` 覆盖大部分规则但没有 Standard Schema；其 `required`/`colon`/`labelAlign`/`labelWidth`/`layout` 属于样式层便捷项，VeanUI 不将其引入核心）。
 
 ### 从 v0.4x 迁移（`useHeadlessForm` → TanStack Form）
 
@@ -101,7 +101,7 @@ v0.50.0 用 `@tanstack/vue-form` 替换了自研 `useHeadlessForm` 引擎。组�
 - 数组单项错误按方括号路径键（`emails[0]`）存储，不上浮到数组根——在数组层校验整体（如 `min(1)`），或用嵌套 `SFormField` 以方括号路径渲染逐项错误。
 - Zod v4 中 `z.number()` 不做字符串 coercion——文本输入会报 `"Invalid input: expected number"`。当控件是 `<input type="text">` 时请用 `z.coerce.number()`（或先解析再校验）。
 - 控件插槽与值无关：字段转发 `model-value`（及 `aria-invalid`/`aria-describedby`）。自定义控件必须接收并 emit `modelValue`。
-- `<form>` 元素本身只渲染 `data-soybean-form`/`data-orientation`——校验样式在 field/control/error 部分，通过 `SForm` 的 `ui`/`class` 设置。
+- `<form>` 元素本身只渲染 `data-vean-form`/`data-orientation`——校验样式在 field/control/error 部分，通过 `SForm` 的 `ui`/`class` 设置。
 - 字段级 `validate` 与 schema 在引擎的错误映射中合并——传函数（返回 `undefined` 表示通过）或 Standard Schema 校验器；经 Ref / ComputedRef 传入可响应式换规则。
 - 禁用是控件层的：输入框 `disabled` 阻断交互，但字段在提交时仍会校验，除非同时拦截值。
 

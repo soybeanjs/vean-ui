@@ -37,20 +37,20 @@ A numeric input field that only accepts numeric values, with increment/decrement
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits the input-number into a headless layer (`@soybeanjs/headless/input-number`) that owns state, number parsing/formatting, boundary logic, and form proxying, and a styled layer (`@soybeanjs/ui`) that owns variants and UnoCSS classes. The headless `InputNumberCompact` composes `InputNumberRoot` / `InputNumberControl` / `InputNumberIncrement` / `InputNumberDecrement` / `InputNumberClear` and exposes `increment` / `decrement` / `clear` slots. This mirrors the headless/styled split and differs from single-package libraries such as Ant Design, Element Plus, and Mantine.
+VeanUI splits the input-number into an Aria layer (`@vean/aria/input-number`) that owns state, number parsing/formatting, boundary logic, and form proxying, and a styled layer (`@vean/ui`) that owns variants and UnoCSS classes. The Aria `InputNumberCompact` composes `InputNumberRoot` / `InputNumberControl` / `InputNumberIncrement` / `InputNumberDecrement` / `InputNumberClear` and exposes `increment` / `decrement` / `clear` slots. This mirrors the Aria/styled split and differs from single-package libraries such as Ant Design, Element Plus, and Mantine.
 
-| Capability                       | SoybeanUI | Ant Design `InputNumber` | Element Plus `input-number` | Mantine `NumberInput` |
-| :------------------------------- | :-------: | :----------------------: | :-------------------------: | :-------------------: |
-| headless/styled split            |    ✅     |            —             |              —              |           —           |
-| Controlled / uncontrolled        |    ✅     |            ✅            |             ✅              |          ✅           |
-| step / min / max / precision     |    ✅     |            ✅            |             ✅              |          ✅           |
-| Keyboard Arrow/Page/Home/End     |    ✅     |            ✅            |             ✅              |          ✅           |
-| Press-and-hold acceleration      |    ✅     |            ✅            |              —              |           —           |
-| Boundary button disabling        |    ✅     |            —             |             ✅              |           —           |
-| Clear button (i18n `aria-label`) |    ✅     |            —             |             ✅              |           —           |
-| Locale-aware format (Intl)       |    ✅     |            —             |              —              |           —           |
-| Size variants (xs…2xl)           |    ✅     |            —             |              —              |          ✅           |
-| `center` layout                  |    ✅     |            ✅            |             ✅              |           —           |
+| Capability                       | VeanUI | Ant Design `InputNumber` | Element Plus `input-number` | Mantine `NumberInput` |
+| :------------------------------- | :----: | :----------------------: | :-------------------------: | :-------------------: |
+| Aria/styled split                |   ✅   |            —             |              —              |           —           |
+| Controlled / uncontrolled        |   ✅   |            ✅            |             ✅              |          ✅           |
+| step / min / max / precision     |   ✅   |            ✅            |             ✅              |          ✅           |
+| Keyboard Arrow/Page/Home/End     |   ✅   |            ✅            |             ✅              |          ✅           |
+| Press-and-hold acceleration      |   ✅   |            ✅            |              —              |           —           |
+| Boundary button disabling        |   ✅   |            —             |             ✅              |           —           |
+| Clear button (i18n `aria-label`) |   ✅   |            —             |             ✅              |           —           |
+| Locale-aware format (Intl)       |   ✅   |            —             |              —              |           —           |
+| Size variants (xs…2xl)           |   ✅   |            —             |              —              |          ✅           |
+| `center` layout                  |   ✅   |            ✅            |             ✅              |           —           |
 
 ### Cautions
 

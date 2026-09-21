@@ -161,7 +161,7 @@ function requireComplete(map: Partial<Record<SemanticToken, TokenValue>>): Recor
     .filter(token => map[token] === undefined);
 
   if (missing.length > 0) {
-    throw new Error(`[@soybeanjs/theme] theme map is missing tokens: ${missing.join(', ')}`);
+    throw new Error(`[@vean/theme] theme map is missing tokens: ${missing.join(', ')}`);
   }
 
   return map as Record<SemanticToken, TokenValue>;
@@ -243,7 +243,7 @@ function parseTokenRef(value: string, source: SemanticToken): SemanticToken | un
  *   (`var(--white)`), which is what the channels live in;
  * - any other **complete color** is kept as-is for the JS resolver and is turned
  *   into channels at emission time — a token is
- *   consumed as `hsl(var(--soybean-x) / <alpha>)`, so emitting a complete color
+ *   consumed as `hsl(var(--vean-x) / <alpha>)`, so emitting a complete color
  *   verbatim makes every one of those declarations invalid;
  * - `token.${name}` never reaches this function (handled as a reference in
  *   `applyOverrides`);

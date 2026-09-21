@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SIcon, STreeVirtualizer, STreeVirtualizerItem, SCheckbox } from '@soybeanjs/ui';
-import type { TreeItemData } from '@soybeanjs/ui';
+import { SIcon, STreeVirtualizer, STreeVirtualizerItem, SCheckbox } from '@vean/ui';
+import type { TreeItemData } from '@vean/ui';
 
 type DemoTree = TreeItemData<{
   value: string;

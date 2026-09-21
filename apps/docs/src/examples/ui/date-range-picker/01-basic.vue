@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { createDate } from '@soybeanjs/headless/date';
-import type { DateRange } from '@soybeanjs/headless/date';
-import type { Placement } from '@soybeanjs/headless/types';
-import { SButtonIcon, SDateRangePicker, SInputNumber, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { createDate } from '@vean/aria/date';
+import type { DateRange } from '@vean/aria/date';
+import type { Placement } from '@vean/aria/types';
+import { SButtonIcon, SDateRangePicker, SInputNumber, SSelect, SSwitch } from '@vean/ui';
+import type { SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

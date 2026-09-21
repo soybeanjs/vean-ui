@@ -115,7 +115,7 @@ export const selectVariants = scv({
     position: {
       popper: {
         popup: `data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1`,
-        viewport: `h-[--soybean-select-trigger-height] w-full min-w-[--soybean-select-trigger-width]`
+        viewport: `h-[--vean-select-trigger-height] w-full min-w-[--vean-select-trigger-width]`
       },
       'item-aligned': {}
     }

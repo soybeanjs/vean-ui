@@ -5,7 +5,7 @@ import { getA11yViolations } from '../../shared/a11y';
 
 describe('SToggle', () => {
   describe('rendering', () => {
-    it('renders a button element with data-soybean-toggle', () => {
+    it('renders a button element with data-vean-toggle', () => {
       const wrapper = mount(SToggle, {
         attachTo: document.body
       });
@@ -13,7 +13,7 @@ describe('SToggle', () => {
       const button = wrapper.find('button');
 
       expect(button.exists()).toBe(true);
-      expect(button.attributes('data-soybean-toggle')).toBeDefined();
+      expect(button.attributes('data-vean-toggle')).toBeDefined();
       wrapper.unmount();
     });
 

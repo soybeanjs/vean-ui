@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SCheckboxCard } from '@soybeanjs/ui';
-import type { CheckedState } from '@soybeanjs/ui';
+import { SCheckboxCard } from '@vean/ui';
+import type { CheckedState } from '@vean/ui';
 
 const model = ref<CheckedState | null>(null);
 </script>

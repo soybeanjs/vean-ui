@@ -24,7 +24,7 @@ export interface TranslationEntry {
 
 /**
  * Surfaces `sui translate` can fill: the two generated docs datasets and the
- * headless locale bundles.
+ * aria locale bundles.
  */
 export type TranslateTargetKey = 'api' | 'changelog' | 'locale';
 

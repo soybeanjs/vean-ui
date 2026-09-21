@@ -2,7 +2,7 @@
 import { nextTick, onBeforeUnmount, onServerPrefetch, shallowRef, watchEffect } from 'vue';
 import type { Component } from 'vue';
 import { ClientOnly } from 'ubean/client';
-import type { AnchorOptionData } from '@soybeanjs/headless/anchor';
+import type { AnchorOptionData } from '@vean/aria/anchor';
 import { useDocOutline } from '~/composables/use-doc-outline';
 import { toHeadingId } from '~/shared/heading';
 

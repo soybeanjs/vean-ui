@@ -1,4 +1,4 @@
-import type { ThemeModePreference } from '@soybeanjs/theme';
+import type { ThemeModePreference } from '@vean/theme';
 import type { SegmentOptionData, SegmentProps } from '../segment/types';
 
 /**

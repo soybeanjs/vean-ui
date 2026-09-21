@@ -872,7 +872,7 @@ describe('Splitter', () => {
         { attachTo: document.body }
       );
 
-      expect(wrapper.find('[data-soybean-splitter-group]').attributes('dir')).toBe('rtl');
+      expect(wrapper.find('[data-vean-splitter-group]').attributes('dir')).toBe('rtl');
       wrapper.unmount();
     });
   });

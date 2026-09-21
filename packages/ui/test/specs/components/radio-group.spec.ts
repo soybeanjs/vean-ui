@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { RadioGroupControl, RadioGroupItem, RadioGroupRoot } from '@soybeanjs/headless/radio-group';
+import { RadioGroupControl, RadioGroupItem, RadioGroupRoot } from '@vean/aria/radio-group';
 import SRadioGroup from '@/components/radio-group/radio-group.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -186,7 +186,7 @@ describe('SRadioGroup', () => {
         attachTo: document.body
       });
 
-      const input = wrapper.find('[data-soybean-visually-hidden-input]');
+      const input = wrapper.find('[data-vean-visually-hidden-input]');
       expect(input.exists()).toBe(true);
       expect(input.attributes('name')).toBe('favorite');
       expect(input.attributes('value')).toBe('option-1');

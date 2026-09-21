@@ -4,8 +4,8 @@ import type {
   AccordionCompactSlots,
   AccordionOptionData,
   AccordionUi
-} from '@soybeanjs/headless/accordion';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/accordion';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

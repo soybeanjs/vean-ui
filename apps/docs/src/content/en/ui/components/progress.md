@@ -1,14 +1,14 @@
 ---
 head:
   title: Progress
-  description: 'A progress indicator for determinate or indeterminate task completion. SProgress combines the headless ProgressRoot/ProgressIndicator primitives with the progressVariants style recipe, and SProgressCircle offers a circular variant via progressCircleVariants. Both share an imperative API (progress.start()/done()) surfaced through SProgressProvider.'
+  description: 'A progress indicator for determinate or indeterminate task completion. SProgress combines the Aria ProgressRoot/ProgressIndicator primitives with the progressVariants style recipe, and SProgressCircle offers a circular variant via progressCircleVariants. Both share an imperative API (progress.start()/done()) surfaced through SProgressProvider.'
 ---
 
 # Progress
 
 ## Overview
 
-A progress indicator for determinate or indeterminate task completion. `SProgress` combines the headless `ProgressRoot`/`ProgressIndicator` primitives with the `progressVariants` style recipe, and `SProgressCircle` offers a circular variant via `progressCircleVariants`. Both share an imperative API (`progress.start()`/`done()`) surfaced through `SProgressProvider`.
+A progress indicator for determinate or indeterminate task completion. `SProgress` combines the Aria `ProgressRoot`/`ProgressIndicator` primitives with the `progressVariants` style recipe, and `SProgressCircle` offers a circular variant via `progressCircleVariants`. Both share an imperative API (`progress.start()`/`done()`) surfaced through `SProgressProvider`.
 
 Use it for uploads, downloads, multi-step flows, or top-of-page loading bars. Prefer `spinner` for an indefinite wait, and `skeleton` for reserving content space before it loads.
 
@@ -18,7 +18,7 @@ Use it for uploads, downloads, multi-step flows, or top-of-page loading bars. Pr
 
 ## Features
 
-- 🧩 Headless/styled split — `ProgressRoot`/`ProgressIndicator` own state, `role="progressbar"` ARIA and derived values; `SProgress` injects `progressVariants`
+- 🧩 Aria/styled split — `ProgressRoot`/`ProgressIndicator` own state, `role="progressbar"` ARIA and derived values; `SProgress` injects `progressVariants`
 - 🔢 Determinate / indeterminate — `modelValue` shows a concrete value; omitting it shows an indeterminate bar
 - 🎨 8 colors — `ThemeColor` values on the indicator
 - 📐 6 sizes — xs–2xl `size`
@@ -32,9 +32,9 @@ Use it for uploads, downloads, multi-step flows, or top-of-page loading bars. Pr
 - `SProgress` (styled) — the linear wrapper; `progressVariants` recipe
 - `SProgressCircle` (styled) — the circular wrapper; `progressCircleVariants` recipe
 - `SProgressProvider` (styled) — mounts the imperative progress layer
-- `ProgressRoot` (headless) — the state owner; normalizes `modelValue`/`max`, derives state/value percent, renders `role="progressbar"`
-- `ProgressIndicator` (headless) — the fill; sizes via CSS vars/transform per `dir`
-- `ProgressCircleCompact` / `ProgressCompact` (headless) — the aggregated composites
+- `ProgressRoot` (Aria) — the state owner; normalizes `modelValue`/`max`, derives state/value percent, renders `role="progressbar"`
+- `ProgressIndicator` (Aria) — the fill; sizes via CSS vars/transform per `dir`
+- `ProgressCircleCompact` / `ProgressCompact` (Aria) — the aggregated composites
 - `progress` (imperative) — the shared `start`/`set`/`inc`/`done`/`configure` controller
 
 ## Demos
@@ -45,7 +45,7 @@ Use it for uploads, downloads, multi-step flows, or top-of-page loading bars. Pr
 
 ```vue
 <script setup lang="ts">
-import { SProgressCircle } from '@soybeanjs/ui';
+import { SProgressCircle } from '@vean/ui';
 </script>
 
 <template>
@@ -67,7 +67,7 @@ Mount `SProgressProvider` once near your app root before calling the imperative 
 
 ```vue
 <script setup lang="ts">
-import { SButton, SProgressProvider, progress } from '@soybeanjs/ui';
+import { SButton, SProgressProvider, progress } from '@vean/ui';
 
 const handleClick = () => {
   progress.start();
@@ -111,18 +111,18 @@ const handleClick = () => {
 
 ### Architecture and benchmark differences
 
-`ProgressRoot` owns the value normalization (`getValidMax`/`getValidModelValue`), state derivation (`indeterminate`/`loading`/`complete`) and the `role="progressbar"` ARIA contract, while the primitives stay style-free and only the UI wrapper injects the recipe classes. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single config-driven progress. SoybeanUI's distinguishing feature is the `nprogress`-style imperative controller (`progress.start()`/`done()`) and the `SProgressCircle` gauge, both of which the single-package libraries handle as separate components or omit.
+`ProgressRoot` owns the value normalization (`getValidMax`/`getValidModelValue`), state derivation (`indeterminate`/`loading`/`complete`) and the `role="progressbar"` ARIA contract, while the primitives stay style-free and only the UI wrapper injects the recipe classes. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single config-driven progress. Vean's distinguishing feature is the `nprogress`-style imperative controller (`progress.start()`/`done()`) and the `SProgressCircle` gauge, both of which the single-package libraries handle as separate components or omit.
 
-| Capability                      | SoybeanUI | shadcn/ui | Ant Design Progress | Element Plus Progress | Mantine Progress | Naive UI Progress |
-| :------------------------------ | :-------: | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: |
-| Linear progress                 |    ✅     |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
-| Circle progress                 |    ✅     |     —     |         ✅          |          ✅           |        ✅        |        ✅         |
-| Indeterminate                   |    ✅     |     —     |         ✅          |          ✅           |        ✅        |        ✅         |
-| Imperative API (`start`/`done`) |    ✅     |     —     |          —          |           —           |        —         |         —         |
-| Color variants (8)              |    ✅     |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
-| Size variants (6)               |    ✅     |     —     |          —          |           —           |        —         |         —         |
-| `role="progressbar"` ARIA       |    ✅     |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
-| Custom value label              |    ✅     |     —     |          —          |          ✅           |        ✅        |        ✅         |
+| Capability                      | VeanUI | shadcn/ui | Ant Design Progress | Element Plus Progress | Mantine Progress | Naive UI Progress |
+| :------------------------------ | :----: | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: |
+| Linear progress                 |   ✅   |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
+| Circle progress                 |   ✅   |     —     |         ✅          |          ✅           |        ✅        |        ✅         |
+| Indeterminate                   |   ✅   |     —     |         ✅          |          ✅           |        ✅        |        ✅         |
+| Imperative API (`start`/`done`) |   ✅   |     —     |          —          |           —           |        —         |         —         |
+| Color variants (8)              |   ✅   |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
+| Size variants (6)               |   ✅   |     —     |          —          |           —           |        —         |         —         |
+| `role="progressbar"` ARIA       |   ✅   |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
+| Custom value label              |   ✅   |     —     |          —          |          ✅           |        ✅        |        ✅         |
 
 `—` = unsupported or a different interaction model.
 

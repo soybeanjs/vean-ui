@@ -1,4 +1,4 @@
-import type { AnchorOptionData, ThemeSize } from '@soybeanjs/ui';
+import type { AnchorOptionData, ThemeSize } from '@vean/ui';
 
 export const anchorItems: AnchorOptionData[] = [
   {

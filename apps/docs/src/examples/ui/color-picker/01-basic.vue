@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import type { ColorFormat, ColorSpace } from '@soybeanjs/headless/types';
-import { SButtonIcon, SColorPicker, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { ThemeSize } from '@soybeanjs/ui';
+import type { ColorFormat, ColorSpace } from '@vean/aria/types';
+import { SButtonIcon, SColorPicker, SSelect, SSwitch } from '@vean/ui';
+import type { ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

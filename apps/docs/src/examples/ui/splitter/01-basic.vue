@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SSelect, SSplitterGroup, SSplitterPanel, SSplitterResizeHandle, SSwitch } from '@soybeanjs/ui';
-import type { DataOrientation, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SSelect, SSplitterGroup, SSplitterPanel, SSplitterResizeHandle, SSwitch } from '@vean/ui';
+import type { DataOrientation, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

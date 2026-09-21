@@ -1,33 +1,33 @@
 ---
 head:
-  title: SoybeanUI CLI
-  description: 'sbean is the command-line tool for SoybeanUI. It helps you initialize projects, add components, and manage your UI configuration.'
+  title: VeanUI CLI
+  description: 'vean is the command-line tool for VeanUI. It helps you initialize projects, add components, manage your UI configuration, and migrate a project to Vean.'
 ---
 
-# SoybeanUI CLI
+# VeanUI CLI
 
-`sbean` is the command-line tool for SoybeanUI. It helps you initialize projects, add components, and manage your UI configuration.
+`vean` is the command-line tool for VeanUI. It helps you initialize projects, add components, manage your UI configuration, and migrate a project to VeanUI.
 
 ## Installation
 
 ```bash
-pnpm add -D sbean
+pnpm add -D @vean/cli
 ```
 
 Or run directly:
 
 ```bash
-npx sbean init
+npx @vean/cli@latest init
 ```
 
 ## Commands
 
-### `sbean init`
+### `vean init`
 
-Initialize a new SoybeanUI project or add configuration to an existing one.
+Initialize a new VeanUI project or add configuration to an existing one.
 
 ```bash
-sbean init [options]
+vean init [options]
 ```
 
 | Option                  | Description                                                                 | Default                                      |
@@ -49,12 +49,12 @@ sbean init [options]
 
 Interactive prompts will guide you through the configuration when no options are provided.
 
-### `sbean add`
+### `vean add`
 
 Add components to your project.
 
 ```bash
-sbean add <component...> [options]
+vean add <component...> [options]
 ```
 
 | Option              | Description                              |
@@ -68,24 +68,24 @@ sbean add <component...> [options]
 | `-a, --all`         | Add all available components             |
 | `-s, --silent`      | Mute output                              |
 
-### `sbean build`
+### `vean build`
 
 Build registry JSON files from a registry.json manifest.
 
 ```bash
-sbean build [registry] [options]
+vean build [registry] [options]
 ```
 
 | Option                | Description      | Default      |
 | --------------------- | ---------------- | ------------ |
 | `-o, --output <path>` | Output directory | `./public/r` |
 
-### `sbean search`
+### `vean search`
 
 Search for available components.
 
 ```bash
-sbean search [query] [options]
+vean search [query] [options]
 ```
 
 | Option                  | Description                                            |
@@ -95,12 +95,12 @@ sbean search [query] [options]
 | `-l, --limit <limit>`   | Max results (default: 50)                              |
 | `-o, --offset <offset>` | Pagination offset                                      |
 
-### `sbean list`
+### `vean list`
 
 List registry items, optionally filtered by package.
 
 ```bash
-sbean list [options]
+vean list [options]
 ```
 
 | Option             | Description                                                                                                   |
@@ -110,32 +110,32 @@ sbean list [options]
 
 Items are namespaced by package (currently `ui/button`, `ui/accordion`, …; future peripheral packages follow `<package>/<component>`).
 
-### `sbean view`
+### `vean view`
 
 View a component's source code.
 
 ```bash
-sbean view <component>
+vean view <component>
 ```
 
-### `sbean info`
+### `vean info`
 
 Show project configuration and available preset values.
 
 ```bash
-sbean info [options]
+vean info [options]
 ```
 
 | Option   | Description    |
 | -------- | -------------- |
 | `--json` | Output as JSON |
 
-### `sbean template`
+### `vean template`
 
 Scaffold a new project from a template.
 
 ```bash
-sbean template [name] [options]
+vean template [name] [options]
 ```
 
 | Option               | Description              |
@@ -145,17 +145,62 @@ sbean template [name] [options]
 
 Available templates: `vue-vite`, `nuxt`.
 
-### `sbean preset`
+### `vean preset`
 
 Manage configuration presets.
 
 ```bash
-sbean preset <preset>
+vean preset <preset>
 ```
+
+### `vean migrate`
+
+Migrate a **SoybeanUI-era** project — one depending on `@soybeanjs/*` or using the `sbean` CLI — to
+VeanUI (`@vean/*`).
+
+```bash
+vean migrate [migration] [options]
+```
+
+| Option                     | Description                                                                     | Default     |
+| -------------------------- | ------------------------------------------------------------------------------- | ----------- |
+| `-c, --cwd <cwd>`          | Working directory                                                               | Current dir |
+| `-w, --write`              | Apply the changes (without it the run is a dry run)                             | `false`     |
+| `--runtime-contract`       | Also rewrite `data-soybean-*` attributes and `--soybean-*` CSS variables        | `false`     |
+| `--cli`                    | Also rewrite `sbean` CLI references and rename `sbean.json` to `vean.json`      | `false`     |
+| `--new-domain <host>`      | Also rewrite `ui.soybeanjs.cn` to `<host>` (CDN target becomes `assets.<host>`) | —           |
+| `--new-cdn <host>`         | Rewrite only the `r2.soybeanjs.tech` CDN host                                   | —           |
+| `--repo-slug <owner/repo>` | Rewrite only `github.com/soybeanjs/soybean-ui`                                  | —           |
+| `-f, --force`              | Run even when the project shows no SoybeanUI-era trace                          | `false`     |
+| `-q, --quiet`              | Print the summary only, without per-file previews                               | `false`     |
+
+Available migrations: `rebrand` (SoybeanUI → Vean). Package specifier rewrites always apply; the
+runtime-contract, CLI and hostname tiers are opt-in, and `--new-domain`, `--new-cdn` and
+`--repo-slug` are independent of each other.
+
+```bash
+vean migrate rebrand                       # preview
+vean migrate rebrand --write               # apply
+vean migrate rebrand -w --runtime-contract --cli --new-domain veanui.com
+```
+
+**Preflight.** After scanning, the command looks for SoybeanUI-era traces: `@soybeanjs/*`
+dependencies in `package.json`, a `sbean.json`, `@soybeanjs/*` specifiers in source, `data-soybean-*`
+/ `--soybean-*` contracts and `sbean` invocations. When **none** are found — the directory is wrong,
+or the project is already migrated — it refuses to run, exits 1 and writes nothing. A project with
+only old hostname links is refused too, unless you asked for a hostname rewrite explicitly. Use
+`--force` to run regardless.
+
+Every run ends with two project-specific blocks: **Worth adding** (opt-in flags that still match
+something in the project, e.g. "12 `data-soybean-*` references → add `--runtime-contract`") and
+**Still manual** (only the steps that apply, such as a dependency swap built from the actual
+`package.json`). Lock files, `node_modules`, build output and `CHANGELOG.md` are never rewritten, and
+the run is idempotent. See the **[brand migration guide](/overview/migration/rebrand)** for the
+complete walkthrough.
 
 ## Configuration
 
-The `sbean.json` file stores your project configuration:
+The `vean.json` file stores your project configuration:
 
 ```json
 {
@@ -203,7 +248,7 @@ project/
 │       ├── constants/
 │       ├── resolver/
 │       └── nuxt/
-├── sbean.json
+├── vean.json
 ├── tsconfig.json
 └── uno.config.ts
 ```
@@ -220,7 +265,7 @@ project/
 │       ├── constants/
 │       ├── resolver/
 │       └── nuxt/
-├── sbean.json
+├── vean.json
 ├── tsconfig.json
 ├── uno.config.ts
 └── pnpm-workspace.yaml
@@ -228,7 +273,7 @@ project/
 
 ## Alias System
 
-SBean uses the `#ui` TypeScript path alias for all component imports:
+VeanUI uses the `#ui` TypeScript path alias for all component imports:
 
 ```json
 // tsconfig.json
@@ -250,4 +295,4 @@ import { buttonVariants } from '#ui/styles/button';
 
 ## Registry
 
-Sbean fetches component source from the SoybeanUI registry at `https://ui.soybeanjs.cn/r/<package>/<component>.json` — the core `ui` package from `r/ui/{name}.json` (e.g. `r/ui/button.json`) and the catalog index from `r/registry.json`. Registry items are **namespaced by package**, so `{name}` in a registry URL template is the qualified item name (`ui/button`), not the bare component name. Core `ui` components can be referenced without a prefix (`sbean add button`); components from any future peripheral package will require the namespace prefix (`sbean add <package>/<component>`). A local cache (`~/.sbean/cache`) is maintained with 24-hour TTL and ETag support for efficient updates.
+Vean fetches component source from the VeanUI registry at `https://veanui.com/r/<package>/<component>.json` — the core `ui` package from `r/ui/{name}.json` (e.g. `r/ui/button.json`) and the catalog index from `r/registry.json`. Registry items are **namespaced by package**, so `{name}` in a registry URL template is the qualified item name (`ui/button`), not the bare component name. Core `ui` components can be referenced without a prefix (`vean add button`); components from any future peripheral package will require the namespace prefix (`vean add <package>/<component>`). A local cache (`~/.vean/cache`) is maintained with 24-hour TTL and ETag support for efficient updates.

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useOmitProps, usePickProps } from '@soybeanjs/headless/composables';
+import { useOmitProps, usePickProps } from '@vean/aria/composables';
 import Link from '../link/link.vue';
 import Button from './button.vue';
 import type { ButtonLinkProps } from './types';

@@ -35,9 +35,9 @@ head:
 
 ### 架构与对标差异
 
-`SSpinner` 是 UI-only 组件——无 headless 层，因为它是 `SIcon`（已有 headless 层）的轻量预设。它应用 `spinnerVariants` `cv()` 配方（color/size）并将其他 `IconProps` 转发给 `SIcon`。这与 shadcn/ui `Spinner` 以图标封装预设样式的做法一致。
+`SSpinner` 是 UI-only 组件——无 Aria 层，因为它是 `SIcon`（已有 Aria 层）的轻量预设。它应用 `spinnerVariants` `cv()` 配方（color/size）并将其他 `IconProps` 转发给 `SIcon`。这与 shadcn/ui `Spinner` 以图标封装预设样式的做法一致。
 
-| 维度       | SoybeanUI                                 | shadcn/ui `Spinner` | MUI `CircularProgress` | Mantine `Loader` | Ant Design `Spin` |
+| 维度       | VeanUI                                    | shadcn/ui `Spinner` | MUI `CircularProgress` | Mantine `Loader` | Ant Design `Spin` |
 | :--------- | :---------------------------------------- | :------------------ | :--------------------- | :--------------- | :---------------- |
 | 架构       | UI-only 预设，封装 `SIcon`                | styled SVG          | styled SVG             | styled SVG       | 组件 + 提示文字   |
 | 图标来源   | Iconify `svg-spinners`（可替换）          | 内联 SVG（固定）    | 内联 SVG（固定）       | 内联 SVG（固定） | 内联 SVG（固定）  |
@@ -63,5 +63,5 @@ head:
 **如何超越 `size` prop 控制 spinner 尺寸？**
 `size` prop 映射到固定尺寸（`size-3` 到 `size-10`）。如需自定义尺寸，传入 `width` 和 `height` props（透传到 `SIcon`）或用 `class="w-8 h-8"` 覆盖。
 
-**为什么 Spinner 没有 headless 层？**
-Spinner 是纯展示性图标预设——无状态、无交互、无超出 `SIcon` 已有能力的 ARIA 逻辑。添加 headless 层是不必要的间接层。headless/styled 分离已在 `SIcon` 中实现。
+**为什么 Spinner 没有 Aria 层？**
+Spinner 是纯展示性图标预设——无状态、无交互、无超出 `SIcon` 已有能力的 ARIA 逻辑。添加 Aria 层是不必要的间接层。Aria/styled 分离已在 `SIcon` 中实现。

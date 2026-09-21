@@ -9,7 +9,7 @@
 
 # Contributing
 
-Thanks for your interest in contributing to SoybeanUI! This guide covers how to set up the project,
+Thanks for your interest in contributing to Vean! This guide covers how to set up the project,
 follow our conventions, and submit a pull request.
 
 ## Table of Contents
@@ -26,16 +26,16 @@ follow our conventions, and submit a pull request.
 
 ## Project Overview
 
-SoybeanUI is a Vue 3 component library built on a **headless / styled separation**:
+Vean is a Vue 3 component library built on a **aria / styled separation**:
 
-| Package               | Path                 | Responsibility                                                    |
-| --------------------- | -------------------- | ----------------------------------------------------------------- |
-| `@soybeanjs/headless` | `packages/headless/` | Logic, state, accessibility, composables. **Zero styles.**        |
-| `@soybeanjs/ui`       | `packages/ui/`       | Styled wrappers (UnoCSS). Variants, theme, UI injection.          |
-| Docs                  | `apps/docs/`         | Bilingual docs (en / zh). ubean SSG site; owns interactive demos. |
+| Package      | Path             | Responsibility                                                    |
+| ------------ | ---------------- | ----------------------------------------------------------------- |
+| `@vean/aria` | `packages/aria/` | Logic, state, accessibility, composables. **Zero styles.**        |
+| `@vean/ui`   | `packages/ui/`   | Styled wrappers (UnoCSS). Variants, theme, UI injection.          |
+| Docs         | `apps/docs/`     | Bilingual docs (en / zh). ubean SSG site; owns interactive demos. |
 
-Data flows one way: `headless` → `ui` (never reverse). The UI layer injects styles via
-`provideXUi(ui)`; headless reads them through `useUiContext`.
+Data flows one way: `aria` → `ui` (never reverse). The UI layer injects styles via
+`provideXUi(ui)`; aria reads them through `useUiContext`.
 
 **Tech stack:** Vue 3 + TypeScript (strict) + UnoCSS + Vitest + pnpm workspaces.
 
@@ -49,8 +49,8 @@ Data flows one way: `headless` → `ui` (never reverse). The UI layer injects st
 ### Install
 
 ```bash
-git clone https://github.com/soybeanjs/soybean-ui.git
-cd soybean-ui
+git clone https://github.com/soybeanjs/vean-ui.git
+cd vean
 pnpm install
 ```
 
@@ -71,12 +71,12 @@ Open the docs URL shown in the terminal to preview your changes in real time.
 | Command                       | Purpose                                             |
 | ----------------------------- | --------------------------------------------------- |
 | `pnpm dev`                    | Start docs site dev server                          |
-| `pnpm build`                  | Build libs (theme, ui-uno) → headless → ui → sbean  |
+| `pnpm build`                  | Build libs (theme, unocss) → aria → ui → vean       |
 | `pnpm lint`                   | vp lint --fix + eslint (Vue)                        |
 | `pnpm fmt`                    | vp fmt (formatter)                                  |
 | `pnpm test`                   | recursive workspace tests (pnpm -r run test)        |
 | `pnpm typecheck`              | recursive typecheck (pnpm -r typecheck)             |
-| `pnpm sui gen catalog`        | Regenerate headless + UI barrel constants           |
+| `pnpm sui gen catalog`        | Regenerate aria + UI barrel constants               |
 | `pnpm sui gen api`            | Regenerate API reference data                       |
 | `pnpm sui gen changelog`      | Regenerate changelog data                           |
 | `pnpm sui translate <target>` | Translate pending locale entries (DeepL)            |
@@ -102,21 +102,21 @@ consistently.
 
 ### Project-Local Skill
 
-| Skill                 | Trigger                                                     | What it does                                                                                                                                                                    |
-| --------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$soybean-ui-develop` | Any component work (new, migrate, fix, extend, standardize) | Classifies the component pattern, enforces headless/UI split, guides through all six delivery phases, and checks boundary rules. Lives at `.agents/skills/soybean-ui-develop/`. |
+| Skill              | Trigger                                                     | What it does                                                                                                                                                             |
+| ------------------ | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `$vean-ui-develop` | Any component work (new, migrate, fix, extend, standardize) | Classifies the component pattern, enforces aria/UI split, guides through all six delivery phases, and checks boundary rules. Lives at `.agents/skills/vean-ui-develop/`. |
 
-When you invoke `$soybean-ui-develop`, the skill:
+When you invoke `$vean-ui-develop`, the skill:
 
 - Classifies the task (new component / migration / standards alignment).
 - Determines the component pattern (multi-slot / compact / single-class).
-- Enforces the correct phase order: headless → UI → exports → delivery surfaces → verification.
-- Prevents boundary violations (no styles in headless, no ARIA in UI).
+- Enforces the correct phase order: aria → UI → exports → delivery surfaces → verification.
+- Prevents boundary violations (no styles in aria, no ARIA in UI).
 
-### System Skills Useful for SoybeanUI
+### System Skills Useful for Vean
 
 These skills are available in your Codex environment and are especially useful during
-SoybeanUI development:
+Vean development:
 
 | Skill                  | Use when                                                                          |
 | ---------------------- | --------------------------------------------------------------------------------- |
@@ -153,27 +153,27 @@ specialized review.
 ## Coding Conventions
 
 Normative component rules live in the project skill at
-`.agents/skills/soybean-ui-develop/` (`SKILL.md` + `layers.md` + `surfaces.md` +
+`.agents/skills/vean-ui-develop/` (`SKILL.md` + `layers.md` + `surfaces.md` +
 `process.md`). TypeScript functional style and Vue SFC structure are owned by the global
 `typescript-functional-style` and `vue-sfc-structure` skills (loaded automatically per file type).
 
-| Skill section                                | Applies to                          |
-| -------------------------------------------- | ----------------------------------- |
-| `typescript-functional-style` (global skill) | All `.ts`, `.tsx`, `.vue` files     |
-| `vue-sfc-structure` (global skill)           | All `.vue` files                    |
-| `process.md` -> Git commit convention        | Commit messages, changelogs         |
-| `SKILL.md` + `layers.md`                     | Component tasks                     |
-| `layers.md` -> Headless                      | `packages/headless/src/components/` |
-| `layers.md` -> UI layer                      | `packages/ui/src/components/`       |
-| `layers.md` -> A11y and RTL                  | ARIA, keyboard, RTL                 |
-| `surfaces.md` -> Testing                     | `packages/ui/test/`                 |
-| `surfaces.md` -> Playground / Docs           | `apps/docs/`                        |
-| `process.md` -> Finish checklist             | Component completion checklist      |
+| Skill section                                | Applies to                      |
+| -------------------------------------------- | ------------------------------- |
+| `typescript-functional-style` (global skill) | All `.ts`, `.tsx`, `.vue` files |
+| `vue-sfc-structure` (global skill)           | All `.vue` files                |
+| `process.md` -> Git commit convention        | Commit messages, changelogs     |
+| `SKILL.md` + `layers.md`                     | Component tasks                 |
+| `layers.md` -> Aria                          | `packages/aria/src/components/` |
+| `layers.md` -> UI layer                      | `packages/ui/src/components/`   |
+| `layers.md` -> A11y and RTL                  | ARIA, keyboard, RTL             |
+| `surfaces.md` -> Testing                     | `packages/ui/test/`             |
+| `surfaces.md` -> Playground / Docs           | `apps/docs/`                    |
+| `process.md` -> Finish checklist             | Component completion checklist  |
 
 ### Key Rules
 
-- **No styles in headless.** Not even `hidden` or `sr-only`.
-- **No ARIA / keyboard logic in UI.** That belongs in headless.
+- **No styles in aria.** Not even `hidden` or `sr-only`.
+- **No ARIA / keyboard logic in UI.** That belongs in aria.
 - **UnoCSS utility classes only.** No raw CSS / SCSS.
 - **No `as any`, `@ts-ignore`, or `@ts-expect-error`.**
 - **Prefer pure functions.** Extract pure logic into `shared.ts` or composables.
@@ -183,23 +183,23 @@ Normative component rules live in the project skill at
 ## Component Development
 
 A new component goes through six phases. See
-`.agents/skills/soybean-ui-develop/SKILL.md` for the full specification.
+`.agents/skills/vean-ui-develop/SKILL.md` for the full specification.
 
 ### Phase 0 — Determine Mode & Scope
 
 Decide which pattern the component follows:
 
 - **Multi-slot** (badge, dialog, accordion…) — uses `UiSlot`, `UiClass`, `provideXUi`.
-- **Compact aggregation** (AccordionCompact, TableCompact…) — headless owns iteration and structure.
+- **Compact aggregation** (AccordionCompact, TableCompact…) — aria owns iteration and structure.
 - **Single-class** (button, link…) — no UiContext, direct variant call.
 
 ### Phase 1 — Reference Study
 
-Study at least one existing component of the same pattern in both `headless` and `ui`.
+Study at least one existing component of the same pattern in both `aria` and `ui`.
 
-### Phase 2 — Headless Implementation
+### Phase 2 — Aria Implementation
 
-Files in `packages/headless/src/components/<name>/`, in order:
+Files in `packages/aria/src/components/<name>/`, in order:
 
 1. `types.ts` — slots, props, emits, context.
 2. `context.ts` — provide/inject, reactive context values.
@@ -214,7 +214,7 @@ Files in `packages/ui/src/components/<name>/`:
 1. `packages/ui/src/styles/<name>.ts` — style recipe (first line: `// @unocss-include`).
 2. `types.ts` — wrapper props.
 3. Wrapper `.vue` — injects styles, forwards props/slots.
-4. `index.ts` — re-exports (including headless types).
+4. `index.ts` — re-exports (including aria types).
 
 ### Phase 4 — Barrel Exports & Generated Files
 
@@ -245,7 +245,7 @@ pnpm test
 ```
 
 If any step fails, fix it before opening a PR. See the full checklist in
-`.agents/skills/soybean-ui-develop/process.md`.
+`.agents/skills/vean-ui-develop/process.md`.
 
 ## Testing
 
@@ -260,7 +260,7 @@ If any step fails, fix it before opening a PR. See the full checklist in
 pnpm test
 
 # Run a specific component test
-pnpm --filter @soybeanjs/ui exec vitest run test/specs/components/button.spec.ts
+pnpm --filter @vean/ui exec vitest run test/specs/components/button.spec.ts
 ```
 
 ## Documentation
@@ -297,12 +297,12 @@ Examples:
 **Types:** `feat`, `fix`, `perf`, `refactor`, `docs`, `chore`
 
 **Scope:** prefer the exact component name (e.g., `button`, `dialog`). Use broader scopes
-(`ui`, `headless`, `composables`, `shared`, `docs`, `build`, `deps`) only when the change
+(`ui`, `aria`, `composables`, `shared`, `docs`, `build`, `deps`) only when the change
 is truly cross-cutting.
 
 **Subject:** imperative, specific, and outcome-oriented. No trailing period.
 
-Full rules: `.agents/skills/soybean-ui-develop/process.md`.
+Full rules: `.agents/skills/vean-ui-develop/process.md`.
 
 ### Pull Request Guidelines
 
@@ -316,7 +316,7 @@ Full rules: `.agents/skills/soybean-ui-develop/process.md`.
 
 # 参与贡献
 
-感谢你对 SoybeanUI 的关注！本指南涵盖项目搭建、规范遵循和 PR 提交流程。
+感谢你对 Vean 的关注！本指南涵盖项目搭建、规范遵循和 PR 提交流程。
 
 ## 目录
 
@@ -332,16 +332,16 @@ Full rules: `.agents/skills/soybean-ui-develop/process.md`.
 
 ## 项目概览
 
-SoybeanUI 是一个基于 **headless / styled 分层架构** 的 Vue 3 组件库：
+Vean 是一个基于 **aria / styled 分层架构** 的 Vue 3 组件库：
 
-| 包                    | 路径                 | 职责                                         |
-| --------------------- | -------------------- | -------------------------------------------- |
-| `@soybeanjs/headless` | `packages/headless/` | 逻辑、状态、无障碍、composable。**零样式。** |
-| `@soybeanjs/ui`       | `packages/ui/`       | 样式包装（UnoCSS）。变体、主题、UI 注入。    |
-| Docs                  | `apps/docs/`         | 中英文档（ubean SSG），同时承载交互式示例。  |
+| 包           | 路径             | 职责                                         |
+| ------------ | ---------------- | -------------------------------------------- |
+| `@vean/aria` | `packages/aria/` | 逻辑、状态、无障碍、composable。**零样式。** |
+| `@vean/ui`   | `packages/ui/`   | 样式包装（UnoCSS）。变体、主题、UI 注入。    |
+| Docs         | `apps/docs/`     | 中英文档（ubean SSG），同时承载交互式示例。  |
 
-数据流单向：`headless` → `ui`（不可反向）。UI 层通过 `provideXUi(ui)` 注入样式；
-headless 通过 `useUiContext` 读取。
+数据流单向：`aria` → `ui`（不可反向）。UI 层通过 `provideXUi(ui)` 注入样式；
+aria 通过 `useUiContext` 读取。
 
 **技术栈：** Vue 3 + TypeScript (strict) + UnoCSS + Vitest + pnpm workspaces。
 
@@ -355,8 +355,8 @@ headless 通过 `useUiContext` 读取。
 ### 安装
 
 ```bash
-git clone https://github.com/soybeanjs/soybean-ui.git
-cd soybean-ui
+git clone https://github.com/soybeanjs/vean-ui.git
+cd vean
 pnpm install
 ```
 
@@ -374,19 +374,19 @@ pnpm dev
 
 ### 常用命令
 
-| 命令                          | 用途                                              |
-| ----------------------------- | ------------------------------------------------- |
-| `pnpm dev`                    | 启动文档站开发服务器                              |
-| `pnpm build`                  | 构建 libs（theme、ui-uno）→ headless → ui → sbean |
-| `pnpm lint`                   | vp lint --fix + eslint（Vue）                     |
-| `pnpm fmt`                    | vp fmt（格式化）                                  |
-| `pnpm test`                   | 递归运行各 workspace 测试（pnpm -r run test）     |
-| `pnpm typecheck`              | 递归类型检查（pnpm -r typecheck）                 |
-| `pnpm sui gen catalog`        | 重新生成 headless + UI barrel 常量                |
-| `pnpm sui gen api`            | 重新生成 API 参考数据                             |
-| `pnpm sui gen changelog`      | 重新生成 changelog 数据                           |
-| `pnpm sui translate <target>` | 翻译待译条目（DeepL）                             |
-| `pnpm sui check generated`    | 校验生成数据与源码是否一致                        |
+| 命令                          | 用途                                          |
+| ----------------------------- | --------------------------------------------- |
+| `pnpm dev`                    | 启动文档站开发服务器                          |
+| `pnpm build`                  | 构建 libs（theme、unocss）→ aria → ui → vean  |
+| `pnpm lint`                   | vp lint --fix + eslint（Vue）                 |
+| `pnpm fmt`                    | vp fmt（格式化）                              |
+| `pnpm test`                   | 递归运行各 workspace 测试（pnpm -r run test） |
+| `pnpm typecheck`              | 递归类型检查（pnpm -r typecheck）             |
+| `pnpm sui gen catalog`        | 重新生成 aria + UI barrel 常量                |
+| `pnpm sui gen api`            | 重新生成 API 参考数据                         |
+| `pnpm sui gen changelog`      | 重新生成 changelog 数据                       |
+| `pnpm sui translate <target>` | 翻译待译条目（DeepL）                         |
+| `pnpm sui check generated`    | 校验生成数据与源码是否一致                    |
 
 ## 开发流程
 
@@ -407,20 +407,20 @@ pnpm dev
 
 ### 项目本地 Skill
 
-| Skill                 | 触发条件                                       | 功能                                                                                                                           |
-| --------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `$soybean-ui-develop` | 任何组件工作（新建、迁移、修复、扩展、规范化） | 分类组件模式，强制执行 headless/UI 分层，引导完成全部六个交付阶段，并检查边界规则。位于 `.agents/skills/soybean-ui-develop/`。 |
+| Skill              | 触发条件                                       | 功能                                                                                                                    |
+| ------------------ | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `$vean-ui-develop` | 任何组件工作（新建、迁移、修复、扩展、规范化） | 分类组件模式，强制执行 aria/UI 分层，引导完成全部六个交付阶段，并检查边界规则。位于 `.agents/skills/vean-ui-develop/`。 |
 
-当你调用 `$soybean-ui-develop` 时，该 skill 会：
+当你调用 `$vean-ui-develop` 时，该 skill 会：
 
 - 分类任务（新建组件 / 迁移 / 规范化对齐）。
 - 确定组件模式（多 slot / compact 聚合 / 单类名）。
-- 强制执行正确的阶段顺序：headless → UI → 导出 → 交付面 → 验证。
-- 防止边界违规（headless 中无样式，UI 中无 ARIA）。
+- 强制执行正确的阶段顺序：aria → UI → 导出 → 交付面 → 验证。
+- 防止边界违规（aria 中无样式，UI 中无 ARIA）。
 
-### SoybeanUI 开发相关的系统 Skill
+### Vean 开发相关的系统 Skill
 
-以下 skills 在你的 Codex 环境中可用，在 SoybeanUI 开发中尤其有用：
+以下 skills 在你的 Codex 环境中可用，在 Vean 开发中尤其有用：
 
 | Skill                  | 使用场景                                                   |
 | ---------------------- | ---------------------------------------------------------- |
@@ -453,25 +453,25 @@ Codex 提供专门的 **agent 角色**（prompt 面），你可以将复杂子�
 
 ## 编码规范
 
-组件规范统一位于项目 skill `.agents/skills/soybean-ui-develop/`（`SKILL.md` + `layers.md` + `surfaces.md` + `process.md`）。TypeScript 函数式风格与 Vue SFC 结构由全局 skill `typescript-functional-style` 和 `vue-sfc-structure` 负责（按文件类型自动加载）。
+组件规范统一位于项目 skill `.agents/skills/vean-ui-develop/`（`SKILL.md` + `layers.md` + `surfaces.md` + `process.md`）。TypeScript 函数式风格与 Vue SFC 结构由全局 skill `typescript-functional-style` 和 `vue-sfc-structure` 负责（按文件类型自动加载）。
 
-| Skill 章节                                  | 适用范围                            |
-| ------------------------------------------- | ----------------------------------- |
-| `typescript-functional-style`（全局 skill） | 所有 `.ts`、`.tsx`、`.vue` 文件     |
-| `vue-sfc-structure`（全局 skill）           | 所有 `.vue` 文件                    |
-| `process.md` -> Git commit 规范             | Commit message、changelog           |
-| `SKILL.md` + `layers.md`                    | 组件任务                            |
-| `layers.md` -> Headless                     | `packages/headless/src/components/` |
-| `layers.md` -> UI layer                     | `packages/ui/src/components/`       |
-| `layers.md` -> A11y and RTL                 | ARIA、键盘、RTL                     |
-| `surfaces.md` -> Testing                    | `packages/ui/test/`                 |
-| `surfaces.md` -> Playground / Docs          | `apps/docs/`                        |
-| `process.md` -> Finish checklist            | 组件完成清单                        |
+| Skill 章节                                  | 适用范围                        |
+| ------------------------------------------- | ------------------------------- |
+| `typescript-functional-style`（全局 skill） | 所有 `.ts`、`.tsx`、`.vue` 文件 |
+| `vue-sfc-structure`（全局 skill）           | 所有 `.vue` 文件                |
+| `process.md` -> Git commit 规范             | Commit message、changelog       |
+| `SKILL.md` + `layers.md`                    | 组件任务                        |
+| `layers.md` -> Aria                         | `packages/aria/src/components/` |
+| `layers.md` -> UI layer                     | `packages/ui/src/components/`   |
+| `layers.md` -> A11y and RTL                 | ARIA、键盘、RTL                 |
+| `surfaces.md` -> Testing                    | `packages/ui/test/`             |
+| `surfaces.md` -> Playground / Docs          | `apps/docs/`                    |
+| `process.md` -> Finish checklist            | 组件完成清单                    |
 
 ### 核心规则
 
-- **headless 中禁止样式。** 连 `hidden` 或 `sr-only` 也不行。
-- **UI 层禁止 ARIA / 键盘逻辑。** 这些属于 headless。
+- **aria 中禁止样式。** 连 `hidden` 或 `sr-only` 也不行。
+- **UI 层禁止 ARIA / 键盘逻辑。** 这些属于 aria。
 - **仅使用 UnoCSS 工具类。** 禁止裸 CSS / SCSS。
 - **禁止 `as any`、`@ts-ignore`、`@ts-expect-error`。**
 - **优先纯函数。** 将纯逻辑提取到 `shared.ts` 或 composable。
@@ -480,23 +480,23 @@ Codex 提供专门的 **agent 角色**（prompt 面），你可以将复杂子�
 
 ## 组件开发
 
-一个新组件经过六个阶段。详见 `.agents/skills/soybean-ui-develop/SKILL.md`。
+一个新组件经过六个阶段。详见 `.agents/skills/vean-ui-develop/SKILL.md`。
 
 ### Phase 0 — 确定模式与范围
 
 判断组件属于哪种模式：
 
 - **多 slot**（badge、dialog、accordion…）—— 使用 `UiSlot`、`UiClass`、`provideXUi`。
-- **Compact 聚合**（AccordionCompact、TableCompact…）—— headless 负责迭代与结构。
+- **Compact 聚合**（AccordionCompact、TableCompact…）—— aria 负责迭代与结构。
 - **单类名**（button、link…）—— 无 UiContext，直接调用 variant。
 
 ### Phase 1 — 参照学习
 
-至少阅读一个同模式的 headless 参考和一个 UI 参考。
+至少阅读一个同模式的 aria 参考和一个 UI 参考。
 
-### Phase 2 — Headless 实现
+### Phase 2 — Aria 实现
 
-文件在 `packages/headless/src/components/<name>/`，按顺序：
+文件在 `packages/aria/src/components/<name>/`，按顺序：
 
 1. `types.ts` — slots、props、emits、context。
 2. `context.ts` — provide/inject，响应式 context 值。
@@ -511,7 +511,7 @@ Codex 提供专门的 **agent 角色**（prompt 面），你可以将复杂子�
 1. `packages/ui/src/styles/<name>.ts` — 样式配方（首行：`// @unocss-include`）。
 2. `types.ts` — wrapper props。
 3. wrapper `.vue` — 注入样式，转发 props/slots。
-4. `index.ts` — 重导出（含 headless 类型）。
+4. `index.ts` — 重导出（含 aria 类型）。
 
 ### Phase 4 — Barrel 导出与生成文件
 
@@ -542,7 +542,7 @@ pnpm test
 ```
 
 任一步骤失败，请在提 PR 前修复。完整清单见
-`.agents/skills/soybean-ui-develop/process.md`。
+`.agents/skills/vean-ui-develop/process.md`。
 
 ## 测试
 
@@ -557,7 +557,7 @@ pnpm test
 pnpm test
 
 # 运行指定组件测试
-pnpm --filter @soybeanjs/ui exec vitest run test/specs/components/button.spec.ts
+pnpm --filter @vean/ui exec vitest run test/specs/components/button.spec.ts
 ```
 
 ## 文档
@@ -592,11 +592,11 @@ pnpm sui gen api --force            # 即使指纹匹配也重新抽取
 **类型：** `feat`、`fix`、`perf`、`refactor`、`docs`、`chore`
 
 **Scope：** 优先精确组件名（如 `button`、`dialog`）。仅在真正跨领域时使用宽 scope
-（`ui`、`headless`、`composables`、`shared`、`docs`、`build`、`deps`）。
+（`ui`、`aria`、`composables`、`shared`、`docs`、`build`、`deps`）。
 
 **Subject：** 祈使语气，具体，面向结果。不以句号结尾。
 
-完整规范：`.agents/skills/soybean-ui-develop/process.md`。
+完整规范：`.agents/skills/vean-ui-develop/process.md`。
 
 ### Pull Request 指南
 

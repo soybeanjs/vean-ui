@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import { TimeRangeFieldCompact, provideTimeRangeFieldUi } from '@soybeanjs/headless/time-range-field';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import { TimeRangeFieldCompact, provideTimeRangeFieldUi } from '@vean/aria/time-range-field';
 import { timeRangeFieldVariants } from '@/styles/time-range-field';
 import type { TimeRangeFieldProps, TimeRangeFieldEmits, TimeRangeFieldSlots } from './types';
 

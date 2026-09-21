@@ -74,7 +74,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-close]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-dialog-close]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -93,7 +93,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-close]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-dialog-close]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -111,7 +111,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-fullscreen]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-dialog-fullscreen]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -130,7 +130,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-fullscreen]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-dialog-fullscreen]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -189,7 +189,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -208,7 +208,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
 
       expect(wrapper.emitted('update:fullscreen')).toBeTruthy();
       expect(wrapper.emitted('update:fullscreen')![0][0]).toBe(true);
@@ -230,16 +230,16 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-dialog-popup]');
+      const popup = wrapper.find('[data-vean-dialog-popup]');
 
       expect(popup.attributes('data-fullscreen')).toBeUndefined();
       expect(popup.classes()).toContain('data-[fullscreen]:w-screen');
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
       expect(popup.attributes('data-fullscreen')).toBeDefined();
-      expect(wrapper.find('[data-soybean-dialog-fullscreen]').attributes('aria-pressed')).toBe('true');
+      expect(wrapper.find('[data-vean-dialog-fullscreen]').attributes('aria-pressed')).toBe('true');
 
       wrapper.unmount();
     });
@@ -257,10 +257,10 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').classes()).toContain(
+      expect(wrapper.find('[data-vean-dialog-popup]').classes()).toContain(
         'data-[fullscreen]:data-[state=closed]:slide-out-to-top-1/2'
       );
-      expect(wrapper.find('[data-soybean-dialog-popup]').classes()).toContain(
+      expect(wrapper.find('[data-vean-dialog-popup]').classes()).toContain(
         'data-[fullscreen]:data-[state=open]:slide-in-from-top-1/2'
       );
 
@@ -281,17 +281,17 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
 
       await wrapper.setProps({ open: false });
       await wrapper.setProps({ open: true });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeUndefined();
-      expect(wrapper.find('[data-soybean-dialog-fullscreen]').attributes('aria-pressed')).toBe('false');
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeUndefined();
+      expect(wrapper.find('[data-vean-dialog-fullscreen]').attributes('aria-pressed')).toBe('false');
       expect(wrapper.emitted('update:fullscreen')!.at(-1)).toEqual([false]);
 
       wrapper.unmount();
@@ -311,13 +311,13 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
 
       await wrapper.setProps({ open: false });
       await wrapper.setProps({ open: true });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -354,7 +354,7 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-header]').attributes('data-draggable')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-header]').attributes('data-draggable')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -364,22 +364,22 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      firePointer(wrapper.find('[data-soybean-dialog-header]').element, 'pointerdown', 100, 100);
+      firePointer(wrapper.find('[data-vean-dialog-header]').element, 'pointerdown', 100, 100);
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-dragging')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-dragging')).toBeDefined();
 
       firePointer(window, 'pointermove', 110, 105);
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-dialog-popup]').element as HTMLElement;
+      const popup = wrapper.find('[data-vean-dialog-popup]').element as HTMLElement;
 
       expect(popup.style.translate).toBe('10px 5px');
 
       firePointer(window, 'pointerup', 110, 105);
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-dragging')).toBeUndefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-dragging')).toBeUndefined();
 
       wrapper.unmount();
     });
@@ -389,8 +389,8 @@ describe('SDialog', () => {
 
       await nextTick();
 
-      const header = wrapper.find('[data-soybean-dialog-header]').element;
-      const getPopup = () => wrapper.find('[data-soybean-dialog-popup]').element as HTMLElement;
+      const header = wrapper.find('[data-vean-dialog-header]').element;
+      const getPopup = () => wrapper.find('[data-vean-dialog-popup]').element as HTMLElement;
 
       firePointer(header, 'pointerdown', 100, 100);
       firePointer(window, 'pointermove', 110, 105);

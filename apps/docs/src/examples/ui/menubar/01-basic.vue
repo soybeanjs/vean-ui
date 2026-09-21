@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import type { AlignSide } from '@soybeanjs/headless/types';
-import { SButtonIcon, SMenubar, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { Direction, MenubarTriggerType, MenuOptionData, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import type { AlignSide } from '@vean/aria/types';
+import { SButtonIcon, SMenubar, SSelect, SSwitch } from '@vean/ui';
+import type { Direction, MenubarTriggerType, MenuOptionData, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -90,7 +90,7 @@ const items: MenuOptionData<string>[] = [
   {
     value: 'github',
     label: 'GitHub',
-    href: 'https://github.com/soybeanjs/soybean-ui'
+    href: 'https://github.com/soybeanjs/vean-ui'
   }
 ];
 

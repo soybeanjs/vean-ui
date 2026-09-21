@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -45,7 +45,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.to",
             "default": null,
             "inheritedFrom": "_LinkProps.to",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "RouteLocationRaw",
@@ -70,7 +70,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.replace",
             "default": null,
             "inheritedFrom": "_LinkProps.replace",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -81,7 +81,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.href",
             "default": null,
             "inheritedFrom": "_LinkProps.href",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -92,7 +92,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.disabled",
             "default": null,
             "inheritedFrom": "_LinkProps.disabled",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -103,7 +103,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.activeclass",
             "default": null,
             "inheritedFrom": "_LinkProps.activeClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -114,7 +114,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.exactactiveclass",
             "default": null,
             "inheritedFrom": "_LinkProps.exactActiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -125,7 +125,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.inactiveclass",
             "default": null,
             "inheritedFrom": "_LinkProps.inactiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -136,7 +136,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.prefetchedclass",
             "default": null,
             "inheritedFrom": "_LinkProps.prefetchedClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -147,7 +147,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.external",
             "default": null,
             "inheritedFrom": "_LinkProps.external",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -158,7 +158,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.ariacurrentvalue",
             "default": "`'page'`",
             "inheritedFrom": "ariaCurrentValue",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -169,7 +169,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.viewtransition",
             "default": null,
             "inheritedFrom": "_LinkProps.viewTransition",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -180,7 +180,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.target",
             "default": null,
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -191,7 +191,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.rel",
             "default": "'noopener noreferrer'",
             "inheritedFrom": "rel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -202,7 +202,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.norel",
             "default": null,
             "inheritedFrom": "_LinkProps.noRel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -213,7 +213,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.prefetch",
             "default": null,
             "inheritedFrom": "_LinkProps.prefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -224,7 +224,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.prefetchon",
             "default": null,
             "inheritedFrom": "_LinkProps.prefetchOn",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -232,8 +232,8 @@
                 "type": "{ visibility: boolean; interaction: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.type",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.type",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -249,7 +249,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.noprefetch",
             "default": null,
             "inheritedFrom": "_LinkProps.noPrefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -260,7 +260,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.trailingslash",
             "default": null,
             "inheritedFrom": "trailingSlash",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -271,7 +271,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.aschild",
             "default": null,
             "inheritedFrom": "_LinkProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -282,7 +282,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_link_types.linkprops.members.as",
             "default": "'div'",
             "inheritedFrom": "_LinkProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -319,8 +319,8 @@
         "type": "Interface LinkBaseProps",
         "resolvedType": "{ href?: string; to?: string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric; external?: boolean; target?: (string & {}) | '_blank' | '_parent' | '_self' | '_top' | null }",
         "description": "Properties for the LinkBase component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbaseprops.props",
-        "sourcePath": "packages/headless/src/components/link/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbaseprops.props",
+        "sourcePath": "packages/aria/src/components/link/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -328,10 +328,10 @@
             "type": "string",
             "required": false,
             "description": "The URL the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbaseprops.members.href",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbaseprops.members.href",
             "default": null,
             "inheritedFrom": "href",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -339,10 +339,10 @@
             "type": "string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric",
             "required": false,
             "description": "Route Location the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbaseprops.members.to",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbaseprops.members.to",
             "default": null,
             "inheritedFrom": "to",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "RouteLocationRaw",
@@ -364,10 +364,10 @@
             "type": "boolean",
             "required": false,
             "description": "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbaseprops.members.external",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbaseprops.members.external",
             "default": null,
             "inheritedFrom": "external",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -375,10 +375,10 @@
             "type": "(string & {}) | '_blank' | '_parent' | '_self' | '_top' | null",
             "required": false,
             "description": "Where to display the linked URL, as the name for a browsing context.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkbaseprops.members.target",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkbaseprops.members.target",
             "default": null,
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           }
         ],
@@ -393,8 +393,8 @@
         "type": "Interface LinkExtraProps",
         "resolvedType": "{ replace?: boolean; disabled?: boolean; asChild?: boolean; as?: AsTag | Component; activeClass?: string; exactActiveClass?: string; inactiveClass?: string; prefetchedClass?: string; ariaCurrentValue?: 'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'; viewTransition?: boolean; rel?: (string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null; noRel?: boolean; prefetch?: boolean; prefetchOn?: 'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>; noPrefetch?: boolean; trailingSlash?: 'append' | 'remove' }",
         "description": "Properties for the LinkExtra component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.props",
-        "sourcePath": "packages/headless/src/components/link/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.props",
+        "sourcePath": "packages/aria/src/components/link/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -402,10 +402,10 @@
             "type": "boolean",
             "required": false,
             "description": "Calls `router.replace` instead of `router.push`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.replace",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.replace",
             "default": null,
             "inheritedFrom": "replace",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -413,10 +413,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the link is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -424,10 +424,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -435,10 +435,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -468,10 +468,10 @@
             "type": "string",
             "required": false,
             "description": "Class to apply when the link is active",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.activeclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.activeclass",
             "default": null,
             "inheritedFrom": "activeClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -479,10 +479,10 @@
             "type": "string",
             "required": false,
             "description": "Class to apply when the link is exact active",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.exactactiveclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.exactactiveclass",
             "default": null,
             "inheritedFrom": "exactActiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -490,10 +490,10 @@
             "type": "string",
             "required": false,
             "description": "The class to apply to the link when it is inactive.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.inactiveclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.inactiveclass",
             "default": null,
             "inheritedFrom": "inactiveClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -501,10 +501,10 @@
             "type": "string",
             "required": false,
             "description": "A class to apply to links that have been prefetched.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetchedclass",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetchedclass",
             "default": null,
             "inheritedFrom": "prefetchedClass",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -512,10 +512,10 @@
             "type": "'true' | 'false' | 'page' | 'date' | 'time' | 'step' | 'location'",
             "required": false,
             "description": "Value passed to the attribute `aria-current` when the link is exact active.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.ariacurrentvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.ariacurrentvalue",
             "default": "`'page'`",
             "inheritedFrom": "ariaCurrentValue",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -523,10 +523,10 @@
             "type": "boolean",
             "required": false,
             "description": "Pass the returned promise of `router.push()` to `document.startViewTransition()` if supported.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.viewtransition",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.viewtransition",
             "default": null,
             "inheritedFrom": "viewTransition",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -534,10 +534,10 @@
             "type": "(string & {}) | 'noopener' | 'noreferrer' | 'nofollow' | 'sponsored' | 'ugc' | null",
             "required": false,
             "description": "A rel attribute value to apply on the link. Defaults to \"noopener noreferrer\" for external links.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.rel",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.rel",
             "default": "'noopener noreferrer'",
             "inheritedFrom": "rel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -545,10 +545,10 @@
             "type": "boolean",
             "required": false,
             "description": "If set to true, no rel attribute will be added to the link",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.norel",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.norel",
             "default": null,
             "inheritedFrom": "noRel",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -556,10 +556,10 @@
             "type": "boolean",
             "required": false,
             "description": "When enabled will prefetch middleware, layouts and payloads of links in the viewport.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetch",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetch",
             "default": null,
             "inheritedFrom": "prefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -567,10 +567,10 @@
             "type": "'visibility' | 'interaction' | Partial<{ visibility: boolean; interaction: boolean; }>",
             "required": false,
             "description": "Allows controlling when to prefetch links. By default, prefetch is triggered only on visibility.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.prefetchon",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.prefetchon",
             "default": null,
             "inheritedFrom": "Omit.prefetchOn",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -578,8 +578,8 @@
                 "type": "{ visibility: boolean; interaction: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.type",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.type",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -592,10 +592,10 @@
             "type": "boolean",
             "required": false,
             "description": "Escape hatch to disable `prefetch` attribute.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.noprefetch",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.noprefetch",
             "default": null,
             "inheritedFrom": "noPrefetch",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -603,10 +603,10 @@
             "type": "'append' | 'remove'",
             "required": false,
             "description": "An option to either add or remove trailing slashes in the `href` for this specific link.\nOverrides the global `trailingSlash` option if provided.",
-            "descriptionKey": "api.generated.packages_headless_src_components_link_types.linkextraprops.members.trailingslash",
+            "descriptionKey": "api.generated.packages_aria_src_components_link_types.linkextraprops.members.trailingslash",
             "default": null,
             "inheritedFrom": "trailingSlash",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           }
         ],

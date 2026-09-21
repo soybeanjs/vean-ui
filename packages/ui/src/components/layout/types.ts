@@ -7,8 +7,8 @@ import type {
   LayoutCollapsible,
   LayoutSide,
   LayoutScrollBehavior
-} from '@soybeanjs/headless/layout';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/layout';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

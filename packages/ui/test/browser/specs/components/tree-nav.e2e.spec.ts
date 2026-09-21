@@ -53,8 +53,8 @@ describe('STreeNav (e2e)', () => {
     await expect.element(page.getByText('More')).toBeVisible();
 
     // The bar content always fits inside the measurement wrapper.
-    const rootEl = document.querySelector('[data-soybean-tree-nav]');
-    const wrapperEl = rootEl?.closest('[data-soybean-tree-nav-overflow]');
+    const rootEl = document.querySelector('[data-vean-tree-nav]');
+    const wrapperEl = rootEl?.closest('[data-vean-tree-nav-overflow]');
     expect(rootEl).not.toBeNull();
     expect(wrapperEl).not.toBeNull();
     if (rootEl && wrapperEl) {
@@ -76,7 +76,7 @@ describe('STreeNav (e2e)', () => {
     // collapsible mode, so the "more" branch survived while the full list was
     // rendered right next to it.
     await expect.element(page.getByText('More')).not.toBeInTheDocument();
-    expect(document.querySelector('[data-soybean-tree-nav-overflow]')).toBeNull();
+    expect(document.querySelector('[data-vean-tree-nav-overflow]')).toBeNull();
     await expect.element(page.getByText('Support')).toBeInTheDocument();
 
     unmount();

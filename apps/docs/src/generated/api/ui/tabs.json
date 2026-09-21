@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; trigger: ClassValue; content: ClassValue; indicator: ClassValue; list: ClassValue; indicatorContent: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Tabs component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsui",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsui",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.enableindicator",
             "default": null,
             "inheritedFrom": "enableIndicator",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.listprops",
             "default": null,
             "inheritedFrom": "listProps",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsListProps",
@@ -175,8 +175,8 @@
                 "type": "TabsListProps",
                 "resolvedType": null,
                 "description": "Properties for the TabsList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabslistprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabslistprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsTriggerProps",
@@ -200,8 +200,8 @@
                 "type": "TabsTriggerProps",
                 "resolvedType": "{ value: string | number; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the TabsTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -210,10 +210,10 @@
                     "type": "string | number",
                     "required": true,
                     "description": "A unique value that associates the trigger with a content.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -221,10 +221,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the tab.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -232,10 +232,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -243,10 +243,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -262,7 +262,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsContentProps",
@@ -270,8 +270,8 @@
                 "type": "TabsContentProps",
                 "resolvedType": "{ value: string | number; forceMount?: boolean }",
                 "description": "Properties for the TabsContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -280,10 +280,10 @@
                     "type": "string | number",
                     "required": true,
                     "description": "A unique value that associates the content with a trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -291,10 +291,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -310,7 +310,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsIndicatorProps",
@@ -318,8 +318,8 @@
                 "type": "TabsIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the TabsIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -328,10 +328,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -339,10 +339,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -358,7 +358,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -369,7 +369,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -380,7 +380,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.activationmode",
             "default": "automatic",
             "inheritedFrom": "activationMode",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsActivationMode",
@@ -388,8 +388,8 @@
                 "type": "'automatic' | 'manual'",
                 "resolvedType": "'automatic' | 'manual'",
                 "description": "Type information for TabsActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsactivationmode",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsactivationmode",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -405,7 +405,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -416,7 +416,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -424,8 +424,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -441,7 +441,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.loop",
             "default": "false",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -452,7 +452,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -460,8 +460,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -491,7 +491,7 @@
             "required": true,
             "description": "Event handler called when the value changes",
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -515,7 +515,7 @@
             "required": false,
             "description": "Custom content for the trigger slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsslots.callables.trigger",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -523,8 +523,8 @@
                 "type": "{ selected: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.type",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.type",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -539,7 +539,7 @@
             "required": false,
             "description": "Custom content for the content slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsslots.callables.content",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -547,8 +547,8 @@
                 "type": "{ selected: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.type",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.type",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -563,7 +563,7 @@
             "required": false,
             "description": "Custom content for the indicator slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_tabs_types.tabsslots.callables.indicator",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -577,8 +577,8 @@
         "type": "Interface TabsCompactProps<T>",
         "resolvedType": "{ items: T[]; enableIndicator?: boolean; listProps?: TabsListProps; triggerProps?: TabsTriggerProps; contentProps?: TabsContentProps; indicatorProps?: TabsIndicatorProps; modelValue?: T['value'] | null; defaultValue?: T['value'] | null; activationMode?: TabsActivationMode; unmountOnHide?: boolean; dir?: Direction; loop?: boolean; orientation?: DataOrientation }",
         "description": "Properties for the TabsCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.props",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.props",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -586,10 +586,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -597,10 +597,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to enable indicator.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.enableindicator",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.enableindicator",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -608,10 +608,10 @@
             "type": "TabsListProps",
             "required": false,
             "description": "Properties forwarded to the list element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.listprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.listprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsListProps",
@@ -619,8 +619,8 @@
                 "type": "TabsListProps",
                 "resolvedType": null,
                 "description": "Properties for the TabsList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabslistprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabslistprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -633,10 +633,10 @@
             "type": "TabsTriggerProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsTriggerProps",
@@ -644,8 +644,8 @@
                 "type": "TabsTriggerProps",
                 "resolvedType": "{ value: string | number; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the TabsTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -654,10 +654,10 @@
                     "type": "string | number",
                     "required": true,
                     "description": "A unique value that associates the trigger with a content.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -665,10 +665,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the tab.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -676,10 +676,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -687,10 +687,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -703,10 +703,10 @@
             "type": "TabsContentProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsContentProps",
@@ -714,8 +714,8 @@
                 "type": "TabsContentProps",
                 "resolvedType": "{ value: string | number; forceMount?: boolean }",
                 "description": "Properties for the TabsContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -724,10 +724,10 @@
                     "type": "string | number",
                     "required": true,
                     "description": "A unique value that associates the content with a trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -735,10 +735,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -751,10 +751,10 @@
             "type": "TabsIndicatorProps",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsIndicatorProps",
@@ -762,8 +762,8 @@
                 "type": "TabsIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the TabsIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -772,10 +772,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -783,10 +783,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -799,10 +799,10 @@
             "type": "T['value'] | null",
             "required": false,
             "description": "The controlled value of the tab to activate. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -810,10 +810,10 @@
             "type": "T['value'] | null",
             "required": false,
             "description": "The value of the tab that should be active when initially rendered. Use when you do not need to control the state\nof the tabs",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -821,10 +821,10 @@
             "type": "TabsActivationMode",
             "required": false,
             "description": "Whether a tab is activated automatically (on focus) or manually (on click).",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.activationmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.activationmode",
             "default": "automatic",
             "inheritedFrom": "activationMode",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsActivationMode",
@@ -832,8 +832,8 @@
                 "type": "'automatic' | 'manual'",
                 "resolvedType": "'automatic' | 'manual'",
                 "description": "Type information for TabsActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsactivationmode",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsactivationmode",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -846,10 +846,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the element will be unmounted on closed state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.unmountonhide",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -857,10 +857,10 @@
             "type": "Direction",
             "required": false,
             "description": "The direction of navigation between items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -868,8 +868,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -882,10 +882,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether keyboard navigation should loop around",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.loop",
             "default": "false",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -893,10 +893,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the group. Mainly so arrow navigation is done accordingly (left & right vs. up & down)",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -904,8 +904,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -923,8 +923,8 @@
         "type": "TypeAlias TabsCompactEmits<T>: TabsRootEmits<T>",
         "resolvedType": "{ \"update:modelValue\": [payload: Exclude<T, undefined>] }",
         "description": "Events for the TabsCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactemits.emits",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactemits.emits",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -934,8 +934,8 @@
             "parameters": "payload: Exclude<T, undefined>",
             "required": true,
             "description": "Event handler called when the value changes",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -947,8 +947,8 @@
         "type": "TypeAlias TabsCompactSlots<T>",
         "resolvedType": "{ trigger?: ((props: T & { selected: boolean; }) => any); content?: ((props: T & { selected: boolean; }) => any); indicator?: (() => any) }",
         "description": "Slots for the TabsCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactslots.slots",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactslots.slots",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -958,8 +958,8 @@
             "parameters": "((props: T & { selected: boolean; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the trigger slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactslots.callables.trigger",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactslots.callables.trigger",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -967,8 +967,8 @@
                 "type": "{ selected: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.type",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.type",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -982,8 +982,8 @@
             "parameters": "((props: T & { selected: boolean; }) => any) | undefined",
             "required": false,
             "description": "Custom content for the content slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactslots.callables.content",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactslots.callables.content",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -991,8 +991,8 @@
                 "type": "{ selected: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.type",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.type",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1006,8 +1006,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the indicator slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscompactslots.callables.indicator",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscompactslots.callables.indicator",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1021,8 +1021,8 @@
         "type": "Interface TabsContentProps",
         "resolvedType": "{ value: string | number; forceMount?: boolean }",
         "description": "Properties for the TabsContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.props",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.props",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1030,10 +1030,10 @@
             "type": "string | number",
             "required": true,
             "description": "A unique value that associates the content with a trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "DefinedValue",
@@ -1041,8 +1041,8 @@
                 "type": "string | number",
                 "resolvedType": "string | number",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.definedvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.definedvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1055,10 +1055,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabscontentprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabscontentprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1073,8 +1073,8 @@
         "type": "Interface TabsIndicatorProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the TabsIndicator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.props",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.props",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1082,10 +1082,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1093,10 +1093,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsindicatorprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsindicatorprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1133,8 +1133,8 @@
         "type": "Interface TabsListProps",
         "resolvedType": null,
         "description": "Properties for the TabsList component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabslistprops.props",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabslistprops.props",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1148,8 +1148,8 @@
         "type": "Interface TabsRootProps<T>",
         "resolvedType": "{ modelValue?: T; defaultValue?: T; activationMode?: TabsActivationMode; unmountOnHide?: boolean; dir?: Direction; loop?: boolean; orientation?: DataOrientation }",
         "description": "Properties for the TabsRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.props",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.props",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1157,10 +1157,10 @@
             "type": "T",
             "required": false,
             "description": "The controlled value of the tab to activate. Can be bind as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1168,10 +1168,10 @@
             "type": "T",
             "required": false,
             "description": "The value of the tab that should be active when initially rendered. Use when you do not need to control the state\nof the tabs",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1179,10 +1179,10 @@
             "type": "TabsActivationMode",
             "required": false,
             "description": "Whether a tab is activated automatically (on focus) or manually (on click).",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.activationmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.activationmode",
             "default": "automatic",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsActivationMode",
@@ -1190,8 +1190,8 @@
                 "type": "'automatic' | 'manual'",
                 "resolvedType": "'automatic' | 'manual'",
                 "description": "Type information for TabsActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsactivationmode",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsactivationmode",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1204,10 +1204,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the element will be unmounted on closed state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.unmountonhide",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1215,10 +1215,10 @@
             "type": "Direction",
             "required": false,
             "description": "The direction of navigation between items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.dir",
             "default": null,
             "inheritedFrom": "Omit.dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1226,8 +1226,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1240,10 +1240,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether keyboard navigation should loop around",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.loop",
             "default": "false",
             "inheritedFrom": "Omit.loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -1251,10 +1251,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the group. Mainly so arrow navigation is done accordingly (left & right vs. up & down)",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootprops.members.orientation",
             "default": null,
             "inheritedFrom": "Omit.orientation",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1262,8 +1262,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1281,8 +1281,8 @@
         "type": "TypeAlias TabsRootEmits<T>",
         "resolvedType": "{ \"update:modelValue\": [payload: Exclude<T, undefined>] }",
         "description": "Events for the TabsRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootemits.emits",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootemits.emits",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -1292,8 +1292,8 @@
             "parameters": "payload: Exclude<T, undefined>",
             "required": true,
             "description": "Event handler called when the value changes",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1307,8 +1307,8 @@
         "type": "Interface TabsTriggerProps",
         "resolvedType": "{ value: string | number; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the TabsTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.props",
-        "sourcePath": "packages/headless/src/components/tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.props",
+        "sourcePath": "packages/aria/src/components/tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1316,10 +1316,10 @@
             "type": "string | number",
             "required": true,
             "description": "A unique value that associates the trigger with a content.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "DefinedValue",
@@ -1327,8 +1327,8 @@
                 "type": "string | number",
                 "resolvedType": "string | number",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.definedvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.definedvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1341,10 +1341,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the tab.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1352,10 +1352,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1363,10 +1363,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabstriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabstriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

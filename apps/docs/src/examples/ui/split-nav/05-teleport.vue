@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SSplitNav } from '@soybeanjs/ui';
+import { SSplitNav } from '@vean/ui';
 import { splitNavItems } from './data';
 
 const active = ref('');

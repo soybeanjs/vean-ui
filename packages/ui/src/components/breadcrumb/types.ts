@@ -4,8 +4,8 @@ import type {
   BreadcrumbCompactSlots,
   BreadcrumbOptionData,
   BreadcrumbUi
-} from '@soybeanjs/headless/breadcrumb';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/breadcrumb';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**
@@ -38,4 +38,4 @@ export type BreadcrumbEmits<T extends BreadcrumbOptionData = BreadcrumbOptionDat
  */
 export type BreadcrumbSlots<T extends BreadcrumbOptionData = BreadcrumbOptionData> = BreadcrumbCompactSlots<T>;
 
-export type { BreadcrumbOptionData } from '@soybeanjs/headless/breadcrumb';
+export type { BreadcrumbOptionData } from '@vean/aria/breadcrumb';

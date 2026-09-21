@@ -31,7 +31,7 @@ describe('command integration tests', () => {
   });
 
   beforeEach(async () => {
-    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-cmd-'));
+    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-cmd-'));
   });
 
   afterEach(async () => {
@@ -164,7 +164,7 @@ describe('command integration tests', () => {
     });
   });
 
-  describe('config flow (sbean.json)', () => {
+  describe('config flow (vean.json)', () => {
     it('creates, writes, and reads config roundtrip', async () => {
       const config = await createDefaultConfig(tmpDir, {
         uno: { base: 'stone', primary: 'green', radius: 'lg' }
@@ -217,7 +217,7 @@ describe('command integration tests', () => {
       expect(files).toContain('vite.config.ts');
       expect(files).toContain('tsconfig.json');
       expect(files).toContain('uno.config.ts');
-      expect(files).toContain('sbean.json');
+      expect(files).toContain('vean.json');
       expect(files).toContain('index.html');
 
       const srcFiles = await fs.readdir(path.join(outputDir, 'src'));
@@ -232,7 +232,7 @@ describe('command integration tests', () => {
       const files = await fs.readdir(outputDir);
       expect(files).toContain('nuxt.config.ts');
       expect(files).toContain('uno.config.ts');
-      expect(files).toContain('sbean.json');
+      expect(files).toContain('vean.json');
       expect(files).toContain('app.vue');
     });
 
@@ -248,7 +248,7 @@ describe('command integration tests', () => {
 
       const item = await fetchRegistryItem('button', undefined, server.url);
       expect(item).not.toBeNull();
-      expect(item!.dependencies).toContain('@soybeanjs/headless');
+      expect(item!.dependencies).toContain('@vean/aria');
       expect(item!.categories).toContain('form');
       expect(item!.files!.length).toBeGreaterThan(0);
     });

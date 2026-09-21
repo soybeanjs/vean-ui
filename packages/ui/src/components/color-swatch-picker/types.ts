@@ -2,8 +2,8 @@ import type {
   ColorSwatchPickerCompactEmits,
   ColorSwatchPickerCompactProps,
   ColorSwatchPickerUiSlot
-} from '@soybeanjs/headless/color-swatch-picker';
-import type { ClassValue, UiClass } from '@soybeanjs/headless/types';
+} from '@vean/aria/color-swatch-picker';
+import type { ClassValue, UiClass } from '@vean/aria/types';
 import type { ColorSwatchPickerShape } from '@/styles/color-swatch-picker';
 import type { ThemeSize } from '@/theme';
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButton, SButtonIcon, SPopconfirm, SInput, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { Placement, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SButton, SButtonIcon, SPopconfirm, SInput, SSelect, SSwitch } from '@vean/ui';
+import type { Placement, SelectOptionData, ThemeSize } from '@vean/ui';
 
 interface Props {
   playgroundRegion?: string;
@@ -12,7 +12,7 @@ defineProps<Props>();
 const { t } = useI18n();
 
 /**
- * `PopconfirmType` 未从 `@soybeanjs/ui` 导出，这里用本地字面量联合代替
+ * `PopconfirmType` 未从 `@vean/ui` 导出，这里用本地字面量联合代替
  * （与 headless `packages/headless/src/components/popconfirm/types.ts` 的定义一致）。
  */
 type PopconfirmType = 'error' | 'success' | 'warning' | 'info';

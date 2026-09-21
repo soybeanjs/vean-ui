@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { FormFieldBaseCompact, provideFormFieldUi } from '@soybeanjs/headless/form';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useOmitProps } from '@vean/aria/composables';
+import { FormFieldBaseCompact, provideFormFieldUi } from '@vean/aria/form';
+import { keysOf } from '@vean/aria/shared';
 import { formVariants } from '@/styles/form';
 import FormErrorMotion from './form-error-motion.vue';
 import type { FormFieldBaseProps, FormFieldBaseSlots } from './types';

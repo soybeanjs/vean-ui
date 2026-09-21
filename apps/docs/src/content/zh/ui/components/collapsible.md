@@ -1,14 +1,14 @@
 ---
 head:
   title: 折叠面板
-  description: 用于展开/收起面板的交互组件。SCollapsible 包裹 headless 层 CollapsibleRoot，并注入 collapsibleVariants 样式配方（3 个槽：root/trigger/content；6 种尺寸）；headless 层 CollapsibleTrigger/CollapsibleContent 基础组件提供切换按钮与带动画的面板。
+  description: 用于展开/收起面板的交互组件。SCollapsible 包裹 Aria 层 CollapsibleRoot，并注入 collapsibleVariants 样式配方（3 个槽：root/trigger/content；6 种尺寸）；Aria 层 CollapsibleTrigger/CollapsibleContent 基础组件提供切换按钮与带动画的面板。
 ---
 
 # 折叠面板
 
 ## 概述
 
-用于展开/收起面板的交互组件。`SCollapsible` 包裹 headless 层 `CollapsibleRoot`，并注入 `collapsibleVariants` 样式配方（3 个槽：root/trigger/content；6 种尺寸）；headless 层 `CollapsibleTrigger`/`CollapsibleContent` 基础组件提供切换按钮与带动画的面板。
+用于展开/收起面板的交互组件。`SCollapsible` 包裹 Aria 层 `CollapsibleRoot`，并注入 `collapsibleVariants` 样式配方（3 个槽：root/trigger/content；6 种尺寸）；Aria 层 `CollapsibleTrigger`/`CollapsibleContent` 基础组件提供切换按钮与带动画的面板。
 
 适用于单个「展开显示」区块、FAQ 项或内联可折叠筛选。需要多个协调区块（单开/多开）时请优先使用 `accordion`；浮动表面请优先使用 `dialog`/`popover`。
 
@@ -18,7 +18,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `SCollapsible` 注入 `collapsibleVariants`；headless 基础组件负责状态、无障碍与动画
+- 🧩 Aria/样式分离 — `SCollapsible` 注入 `collapsibleVariants`；Aria 基础组件负责状态、无障碍与动画
 - 🎛️ 受控 / 非受控 — `v-model:open` 或 `defaultOpen`
 - 📜 带动画面板 — `CollapsibleContent` 测量真实尺寸，并依据 `data-state` 播放展开/收起动画
 - 🗑️ `unmountOnHide` — 移除已关闭的内容，或保持其挂载（隐藏）
@@ -29,9 +29,9 @@ head:
 ## 组件家族
 
 - `SCollapsible`（样式层）— 根包装组件；`collapsibleVariants` 配方与 `provideCollapsibleUi`
-- `CollapsibleRoot`（headless）— 状态所有者；`useControllableState` + `provideCollapsibleRootContext`
-- `CollapsibleTrigger`（headless）— 基于 `Button` 的触发器；`aria-expanded`/`aria-controls`/`data-state`
-- `CollapsibleContent`（headless）— 带动画面板；基于 presence 的尺寸测量与 `data-state`
+- `CollapsibleRoot`（Aria）— 状态所有者；`useControllableState` + `provideCollapsibleRootContext`
+- `CollapsibleTrigger`（Aria）— 基于 `Button` 的触发器；`aria-expanded`/`aria-controls`/`data-state`
+- `CollapsibleContent`（Aria）— 带动画面板；基于 presence 的尺寸测量与 `data-state`
 
 ## 演示
 
@@ -45,17 +45,17 @@ head:
 
 ### 架构与对标差异
 
-`SCollapsible` 是薄样式包装；headless 基础组件负责打开状态（`useControllableState`）、presence/动画循环（`usePresence` + `getBoundingClientRect` 尺寸测量）与无障碍接线（`aria-expanded`/`aria-controls`/`data-state`）。这与 shadcn/ui 及 Radix 的 headless `Collapsible` 一致；而 Ant Design、Element Plus、Mantine 则提供配置驱动的折叠。SoybeanUI 将触发器接入其 `Button` 基础组件，从而复用样式化 `Button` 变体，而非自造切换控件。
+`SCollapsible` 是薄样式包装；Aria 基础组件负责打开状态（`useControllableState`）、presence/动画循环（`usePresence` + `getBoundingClientRect` 尺寸测量）与无障碍接线（`aria-expanded`/`aria-controls`/`data-state`）。这与 shadcn/ui 及 Radix 的 headless `Collapsible` 一致；而 Ant Design、Element Plus、Mantine 则提供配置驱动的折叠。VeanUI 将触发器接入其 `Button` 基础组件，从而复用样式化 `Button` 变体，而非自造切换控件。
 
-| 能力              | SoybeanUI | shadcn/ui | Radix Collapsible | Ant Design | Element Plus | Mantine |
-| :---------------- | :-------: | :-------: | :---------------: | :--------: | :----------: | :-----: |
-| Headless/样式分离 |    ✅     |    ✅     |        ✅         |     —      |      —       |    —    |
-| 受控 / 非受控     |    ✅     |    ✅     |        ✅         |     ✅     |      ✅      |   ✅    |
-| 高度动画          |    ✅     |    ✅     |        ✅         |     ✅     |      ✅      |   ✅    |
-| `unmountOnHide`   |    ✅     |    ✅     |        ✅         |     —      |      —       |    —    |
-| `forceMount`      |    ✅     |    ✅     |        ✅         |     —      |      —       |    —    |
-| `as`/`asChild`    |    ✅     |    ✅     |        ✅         |     —      |      —       |    —    |
-| 触发器复用 Button |    ✅     |     —     |         —         |     —      |      —       |    —    |
+| 能力              | VeanUI | shadcn/ui | Radix Collapsible | Ant Design | Element Plus | Mantine |
+| :---------------- | :----: | :-------: | :---------------: | :--------: | :----------: | :-----: |
+| Aria/样式分离     |   ✅   |    ✅     |        ✅         |     —      |      —       |    —    |
+| 受控 / 非受控     |   ✅   |    ✅     |        ✅         |     ✅     |      ✅      |   ✅    |
+| 高度动画          |   ✅   |    ✅     |        ✅         |     ✅     |      ✅      |   ✅    |
+| `unmountOnHide`   |   ✅   |    ✅     |        ✅         |     —      |      —       |    —    |
+| `forceMount`      |   ✅   |    ✅     |        ✅         |     —      |      —       |    —    |
+| `as`/`asChild`    |   ✅   |    ✅     |        ✅         |     —      |      —       |    —    |
+| 触发器复用 Button |   ✅   |     —     |         —         |     —      |      —       |    —    |
 
 `—` = 不支持或采用不同交互模型。
 
@@ -64,7 +64,7 @@ head:
 - 折叠动画用 `getBoundingClientRect` 测量真实尺寸，因此仅在客户端运行；SSR 下首帧直接渲染开/合状态而不播放动画。
 - `unmountOnHide: true`（默认）会从 DOM 移除已关闭内容；`false` 时保持挂载但隐藏（`hidden="until-found"`）。
 - `forceMount` 关闭时仍保留内容元素——请配合自己的动画/过渡来控制展示。
-- 请通过 headless 层 `CollapsibleTrigger`（`Button`）接线触发器，以保持 `aria-expanded`/`aria-controls` 正确；自定义按钮需手动设置这些属性。
+- 请通过 Aria 层 `CollapsibleTrigger`（`Button`）接线触发器，以保持 `aria-expanded`/`aria-controls` 正确；自定义按钮需手动设置这些属性。
 - 内容元素带有 `data-state`/`data-disabled`，配方的 `data-[state=open]:animate-*` 类驱动过渡。
 
 ### Roadmap
@@ -75,7 +75,7 @@ head:
 
 ### 如何构建带切换按钮的折叠面板？
 
-使用 `SCollapsible` 与 headless 层 `CollapsibleTrigger`（样式化按钮触发器）：
+使用 `SCollapsible` 与 Aria 层 `CollapsibleTrigger`（样式化按钮触发器）：
 
 ```vue
 <SCollapsible v-model:open="open">

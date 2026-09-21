@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SRadioGroupCard } from '@soybeanjs/ui';
-import type { RadioGroupCardOptionData } from '@soybeanjs/ui';
+import { SRadioGroupCard } from '@vean/ui';
+import type { RadioGroupCardOptionData } from '@vean/ui';
 
 const selected = ref<string>('apple');
 

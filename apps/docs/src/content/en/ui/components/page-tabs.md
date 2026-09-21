@@ -12,24 +12,24 @@ A tabbed interface designed for navigating between different pages or views. It 
 
 ## Features
 
-- **Data-driven compact composition** — `SPageTabs` delegates the whole structure to the headless generic `PageTabsCompact<T>`, which owns tab iteration, pin sorting, close semantics, context-menu wiring, and the default item body (icon + label + pin + close + indicator).
+- **Data-driven compact composition** — `SPageTabs` delegates the whole structure to the Aria generic `PageTabsCompact<T>`, which owns tab iteration, pin sorting, close semantics, context-menu wiring, and the default item body (icon + label + pin + close + indicator).
 - **Controlled or uncontrolled state** — `modelValue` / `items` support `v-model` / `v-model:items` (controlled); omitting them falls back to internal state via `useControllableState`.
 - **Closable tabs with async guard** — every non-pinned tab renders a close button; `beforeClose` may return `false` or a promise resolving to `false` to block closing. Closing the active tab activates the next (or previous) sibling; closing via keyboard `Backspace` and middle-click (`middleClickClose`) work out of the box.
 - **Pin / unpin with auto-sorting** — pinned tabs sort to the front on any change (pinned group first, then normal tabs; `hidePinnedIcon` is display-only and never affects ordering); the inline pin button toggles pinned state and the context menu provides `Pin` / `Unpin`.
-- **Drag-to-reorder** — with `draggable` enabled, tabs can be dragged horizontally to change their position. Reordering is zone-restricted, matching browser tab bars (Chrome / VS Code): tabs only reorder within their own zone — the pinned group first, then unpinned — so an unpinned tab halts at the pinned boundary in real time and never lands before pinned tabs. A tab item with an explicit `draggable: false` is locked in place: it cannot be dragged and it acts as a barrier, so no other tab can be inserted at its position (e.g. a home tab pinned to the very first slot). Dragging is driven by the headless `useSortableList` hook: the dragged tab keeps its own slot as the placeholder and follows the cursor with `transform` only, while the sibling tabs slide out of the way with FLIP; on drop the new order is applied (emitting `update:items`) and the dragged tab slides into its final slot. Keyboard sorting works too — focus a tab, press `Space` to pick it up, move it with the arrow keys, drop with `Space` / `Enter`, abort with `Escape`. `tabDragStart` / `tabDragMove` / `tabDragEnd` emit the live drag state `{ item, index }`.
+- **Drag-to-reorder** — with `draggable` enabled, tabs can be dragged horizontally to change their position. Reordering is zone-restricted, matching browser tab bars (Chrome / VS Code): tabs only reorder within their own zone — the pinned group first, then unpinned — so an unpinned tab halts at the pinned boundary in real time and never lands before pinned tabs. A tab item with an explicit `draggable: false` is locked in place: it cannot be dragged and it acts as a barrier, so no other tab can be inserted at its position (e.g. a home tab pinned to the very first slot). Dragging is driven by the Aria `useSortableList` hook: the dragged tab keeps its own slot as the placeholder and follows the cursor with `transform` only, while the sibling tabs slide out of the way with FLIP; on drop the new order is applied (emitting `update:items`) and the dragged tab slides into its final slot. Keyboard sorting works too — focus a tab, press `Space` to pick it up, move it with the arrow keys, drop with `Space` / `Enter`, abort with `Escape`. `tabDragStart` / `tabDragMove` / `tabDragEnd` emit the live drag state `{ item, index }`.
 - **Context-menu factory** — `menuFactory(tab, state)` receives the hovered tab plus a `PageTabsState` (close, closeLeft, closeRight, closeOther, closeAll, pin, unpin and their per-action `*Closable` booleans) to build custom menus; `selectContextMenu` emits the chosen action and tab.
 - **Full keyboard support** — the `useRovingFocusGroup` hook provides arrow-key movement; `Enter` activates a tab, `Backspace` closes it, and `Space` picks a tab up for keyboard reordering.
 - **Auto-scroll active tab** — `usePageTabsScroll` keeps the active tab horizontally centered (`scrollTo` smooth) and converts the vertical wheel into horizontal scrolling.
 - **Three visual variants** — `variant` (`chrome` / `card` / `slider`) with per-variant indicators (chrome corner SVGs / slider underline) and `size` (xs…2xl) via the `pageTabsVariants` `scv()` recipe.
 - **Six customization slots** — `item` (scoped `{ item, index, active, closable }`), `icon`, `label`, `indicator`, `pin-icon`, `close-icon`.
 - **Localized accessibility text** — the close / pin buttons fall back to localized `aria-label`s (`closeTab` / `pinTab` / `unpinTab`) across 13 built-in languages, overridable per button via `aria-label`.
-- **Headless composition** — `PageTabsRoot` / `PageTabsItem` / `PageTabsClose` / `PageTabsPin` / `PageTabsCompact` are exported from `@soybeanjs/headless/page-tabs` for fully custom styled builds.
+- **Aria composition** — `PageTabsRoot` / `PageTabsItem` / `PageTabsClose` / `PageTabsPin` / `PageTabsCompact` are exported from `@vean/aria/page-tabs` for fully custom styled builds.
 
 ## Usage
 
 <UsageCode component="page-tabs" />
 
-> `SPageTabs` delegates its tab management to headless `PageTabsCompact`. For unstyled, data-driven composition, import `PageTabsCompact` from `@soybeanjs/headless/page-tabs`.
+> `SPageTabs` delegates its tab management to Aria `PageTabsCompact`. For unstyled, data-driven composition, import `PageTabsCompact` from `@vean/aria/page-tabs`.
 
 ## Demos
 
@@ -43,9 +43,9 @@ A tabbed interface designed for navigating between different pages or views. It 
 
 ### Architecture and benchmark comparison
 
-| Concern                                   | SoybeanUI                                        | Ant Design `Tabs`                   | Element Plus `Tabs`            | tags-view (vue-element-admin style) |
+| Concern                                   | VeanUI                                           | Ant Design `Tabs`                   | Element Plus `Tabs`            | tags-view (vue-element-admin style) |
 | :---------------------------------------- | :----------------------------------------------- | :---------------------------------- | :----------------------------- | :---------------------------------- |
-| Headless / styled separation              | ✅ `@soybeanjs/headless/page-tabs` + `scv()`     | ❌ single package                   | ❌ single package              | ❌ custom per app                   |
+| Aria / styled separation                  | ✅ `@vean/aria/page-tabs` + `scv()`              | ❌ single package                   | ❌ single package              | ❌ custom per app                   |
 | Data-driven compact API                   | ✅ generic `PageTabsCompact<T>` + `items`        | ✅ config-driven (items)            | ✅ config-driven               | ✅ per app                          |
 | Controlled / uncontrolled                 | ✅ `modelValue`/`items` + `useControllableState` | ✅ `activeKey` / `defaultActiveKey` | ✅ `v-model`                   | —                                   |
 | Closable + async guard                    | ✅ `beforeClose` (false / Promise\<false>)       | ✅ `onEdit` + `beforeChange`        | ✅ `closable` / `before-leave` | ✅ `before-close`                   |
@@ -94,7 +94,7 @@ Arrow keys move focus through tabs (roving focus), `Enter` activates the focused
 
 ### Can I build a fully custom page tabs?
 
-Yes — compose `PageTabsRoot` / `PageTabsItem` / `PageTabsClose` / `PageTabsPin` / `PageTabsCompact` from `@soybeanjs/headless/page-tabs` and inject styles via `providePageTabsUi` (or `SPageTabs`'s `ui` prop). The `item` slot receives `{ item, index, active, closable }` scoped props for per-tab rendering.
+Yes — compose `PageTabsRoot` / `PageTabsItem` / `PageTabsClose` / `PageTabsPin` / `PageTabsCompact` from `@vean/aria/page-tabs` and inject styles via `providePageTabsUi` (or `SPageTabs`'s `ui` prop). The `item` slot receives `{ item, index, active, closable }` scoped props for per-tab rendering.
 
 ### How do I enable drag-to-reorder?
 

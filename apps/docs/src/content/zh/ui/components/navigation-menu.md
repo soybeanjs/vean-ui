@@ -12,30 +12,30 @@ head:
 
 ## 移除范围
 
-| 公开面                                       | 状态                                        |
-| :------------------------------------------- | :------------------------------------------ |
-| `@soybeanjs/headless/navigation-menu` 子路径 | 已移除 —— 全部 `NavigationMenu*` 原语与类型 |
-| headless 根导出的 `NavigationMenu*` 符号     | 已移除（`Headless.*` 命名空间导出同步移除） |
-| `@soybeanjs/ui` 的 `SNavigationMenu`         | 已移除 —— 不再提供样式层对应组件            |
-| `provideNavigationMenuUi`                    | 已移除 —— 使用 `provideNavMenuUi`           |
-| 文档示例、组件 API 数据、组件 changelog 页   | 已移除                                      |
-| `sbean` 注册表项 `ui/navigation-menu`        | 已移除                                      |
+| 公开面                                     | 状态                                        |
+| :----------------------------------------- | :------------------------------------------ |
+| `@vean/aria/navigation-menu` 子路径        | 已移除 —— 全部 `NavigationMenu*` 原语与类型 |
+| headless 根导出的 `NavigationMenu*` 符号   | 已移除（`Headless.*` 命名空间导出同步移除） |
+| `@vean/ui` 的 `SNavigationMenu`            | 已移除 —— 不再提供样式层对应组件            |
+| `provideNavigationMenuUi`                  | 已移除 —— 使用 `provideNavMenuUi`           |
+| 文档示例、组件 API 数据、组件 changelog 页 | 已移除                                      |
+| `vean` 注册表项 `ui/navigation-menu`       | 已移除                                      |
 
 ## 迁移到 NavMenu
 
 [`NavMenu`](/components/nav-menu) 建模同一领域 —— 站点级导航、悬停/点击双触发、键盘导航、定位视口与数据驱动 `items` API —— 但建立在单一共享 Popper 表面上：整个 viewport 就是单个 `PopperPositioner`，其 reference 动态切换到激活触发器，悬停时序由单个共享状态机驱动。Root props 基本同构（`modelValue` / `defaultValue`、`orientation`、`dir`、`delayDuration`、`skipDelayDuration`、`disableClickTrigger`、`disableHoverTrigger`、`disablePointerLeaveClose`）。
 
 ```diff
-- import { SNavigationMenu } from '@soybeanjs/ui';
-+ import { SNavMenu } from '@soybeanjs/ui';
+- import { SNavigationMenu } from '@vean/ui';
++ import { SNavMenu } from '@vean/ui';
 
 - <SNavigationMenu :items="items" />
 + <SNavMenu :items="items" />
 ```
 
 ```diff
-- import { NavigationMenuRoot, NavigationMenuItem } from '@soybeanjs/headless/navigation-menu';
-+ import { NavMenuRoot, NavMenuItem } from '@soybeanjs/headless/nav-menu';
+- import { NavigationMenuRoot, NavigationMenuItem } from '@vean/aria/navigation-menu';
++ import { NavMenuRoot, NavMenuItem } from '@vean/aria/nav-menu';
 ```
 
 ### 组件映射

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; input: ClassValue; area: ClassValue; preview: ClassValue; controls: ClassValue; editTrigger: ClassValue; submitTrigger: ClassValue; cancelTrigger: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Editable component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableui",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableui",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.areaprops",
             "default": null,
             "inheritedFrom": "areaProps",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableAreaProps",
@@ -103,8 +103,8 @@
                 "type": "EditableAreaProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableArea component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -113,10 +113,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -124,10 +124,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -143,7 +143,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.previewprops",
             "default": null,
             "inheritedFrom": "previewProps",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditablePreviewProps",
@@ -151,8 +151,8 @@
                 "type": "EditablePreviewProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditablePreview component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -161,10 +161,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -172,10 +172,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -191,7 +191,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.inputprops",
             "default": null,
             "inheritedFrom": "inputProps",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableInputProps",
@@ -199,8 +199,8 @@
                 "type": "EditableInputProps",
                 "resolvedType": "{ id?: string; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -209,10 +209,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -220,10 +220,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -231,10 +231,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -250,7 +250,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.edittriggerprops",
             "default": null,
             "inheritedFrom": "editTriggerProps",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableEditTriggerProps",
@@ -258,8 +258,8 @@
                 "type": "EditableEditTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableEditTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -268,10 +268,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -279,10 +279,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -290,10 +290,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -301,10 +301,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -320,7 +320,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.submittriggerprops",
             "default": null,
             "inheritedFrom": "submitTriggerProps",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableSubmitTriggerProps",
@@ -328,8 +328,8 @@
                 "type": "EditableSubmitTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableSubmitTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -338,10 +338,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -349,10 +349,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -360,10 +360,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -371,10 +371,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -390,7 +390,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.canceltriggerprops",
             "default": null,
             "inheritedFrom": "cancelTriggerProps",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCancelTriggerProps",
@@ -398,8 +398,8 @@
                 "type": "EditableCancelTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableCancelTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -408,10 +408,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -419,10 +419,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -430,10 +430,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -441,10 +441,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -460,7 +460,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -471,7 +471,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -482,7 +482,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditablePlaceholder",
@@ -490,8 +490,8 @@
                 "type": "EditablePlaceholder",
                 "resolvedType": "{ edit?: string; preview?: string }",
                 "description": "Type information for EditablePlaceholder.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -500,10 +500,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Edit.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder.members.edit",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder.members.edit",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -511,10 +511,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Preview.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder.members.preview",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder.members.preview",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -530,7 +530,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -538,8 +538,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -555,7 +555,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -566,7 +566,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -577,7 +577,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.activationmode",
             "default": null,
             "inheritedFrom": "activationMode",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableActivationMode",
@@ -585,8 +585,8 @@
                 "type": "'none' | 'focus' | 'dblclick'",
                 "resolvedType": "'none' | 'focus' | 'dblclick'",
                 "description": "Type information for EditableActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableactivationmode",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableactivationmode",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -602,7 +602,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.selectonfocus",
             "default": null,
             "inheritedFrom": "selectOnFocus",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -613,7 +613,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.submitmode",
             "default": null,
             "inheritedFrom": "submitMode",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableSubmitMode",
@@ -621,8 +621,8 @@
                 "type": "'none' | 'enter' | 'both' | 'blur'",
                 "resolvedType": "'none' | 'enter' | 'both' | 'blur'",
                 "description": "Type information for EditableSubmitMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmitmode",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmitmode",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -638,7 +638,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.startwitheditmode",
             "default": null,
             "inheritedFrom": "startWithEditMode",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -649,7 +649,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxLength",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -660,7 +660,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.autoresize",
             "default": null,
             "inheritedFrom": "autoResize",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -671,7 +671,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -682,7 +682,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -693,7 +693,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -704,7 +704,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -715,7 +715,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -762,7 +762,7 @@
             "required": true,
             "description": "Event handler called whenever the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -772,7 +772,7 @@
             "required": true,
             "description": "Event handler called when a value is submitted.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableemits.callables.submit",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -782,7 +782,7 @@
             "required": true,
             "description": "Event handler called when the editable field changes state.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableemits.callables.update_state",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableEventState",
@@ -790,8 +790,8 @@
                 "type": "'submit' | 'cancel' | 'edit'",
                 "resolvedType": null,
                 "description": "State values for EditableEventState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableeventstate",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableeventstate",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -804,11 +804,11 @@
           {
             "name": "EditableRootEmits",
             "kind": "typeAlias",
-            "type": "{ 'update:modelValue': [value: string]; submit: [value: string]; 'update:state': [state: import(\"@soybeanjs/headless\").EditableEventState]; }",
+            "type": "{ 'update:modelValue': [value: string]; submit: [value: string]; 'update:state': [state: import(\"@vean/aria\").EditableEventState]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; submit: [value: string]; \"update:state\": [state: EditableEventState] }",
             "description": "Events for the EditableRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -819,8 +819,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Event handler called whenever the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -829,8 +829,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Event handler called when a value is submitted.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.submit",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.submit",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -839,8 +839,8 @@
                 "parameters": "state: EditableEventState",
                 "required": true,
                 "description": "Event handler called when the editable field changes state.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.update_state",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.update_state",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -865,7 +865,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableslots.callables.default",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -873,8 +873,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -889,7 +889,7 @@
             "required": false,
             "description": "Custom content for the preview slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableslots.callables.preview",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -897,8 +897,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -913,7 +913,7 @@
             "required": false,
             "description": "Custom content for the input slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableslots.callables.input",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -921,8 +921,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -937,7 +937,7 @@
             "required": false,
             "description": "Custom content for the edit trigger slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableslots.callables.edit_trigger",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -945,8 +945,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -961,7 +961,7 @@
             "required": false,
             "description": "Custom content for the submit trigger slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableslots.callables.submit_trigger",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -969,8 +969,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -985,7 +985,7 @@
             "required": false,
             "description": "Custom content for the cancel trigger slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_editable_types.editableslots.callables.cancel_trigger",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -993,8 +993,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1007,11 +1007,11 @@
           {
             "name": "EditableCompactSlots",
             "kind": "typeAlias",
-            "type": "{ EditableCompact?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/editable/types\").EditableCompactSlotProps) => any; preview?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/editable/types\").EditableCompactSlotProps) => any; input?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/editable/types\").EditableCompactSlotProps) => any; 'edit-trigger'?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/editable/types\").EditableCompactSlotProps) => any; 'submit-trigger'?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/editable/types\").EditableCompactSlotProps) => any; 'cancel-trigger'?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/editable/types\").EditableCompactSlotProps) => any; }",
+            "type": "{ EditableCompact?: (props: import(\"../../../node_modules/@vean/aria/src/components/editable/types\").EditableCompactSlotProps) => any; preview?: (props: import(\"../../../node_modules/@vean/aria/src/components/editable/types\").EditableCompactSlotProps) => any; input?: (props: import(\"../../../node_modules/@vean/aria/src/components/editable/types\").EditableCompactSlotProps) => any; 'edit-trigger'?: (props: import(\"../../../node_modules/@vean/aria/src/components/editable/types\").EditableCompactSlotProps) => any; 'submit-trigger'?: (props: import(\"../../../node_modules/@vean/aria/src/components/editable/types\").EditableCompactSlotProps) => any; 'cancel-trigger'?: (props: import(\"../../../node_modules/@vean/aria/src/components/editable/types\").EditableCompactSlotProps) => any; }",
             "resolvedType": "{ EditableCompact?: ((props: EditableCompactSlotProps) => any); preview?: ((props: EditableCompactSlotProps) => any); input?: ((props: EditableCompactSlotProps) => any); \"edit-trigger\"?: ((props: EditableCompactSlotProps) => any); \"submit-trigger\"?: ((props: EditableCompactSlotProps) => any); \"cancel-trigger\"?: ((props: EditableCompactSlotProps) => any) }",
             "description": "Slots for the EditableCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1022,8 +1022,8 @@
                 "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1032,8 +1032,8 @@
                 "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the preview slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.preview",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.preview",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1042,8 +1042,8 @@
                 "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the input slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.input",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.input",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1052,8 +1052,8 @@
                 "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the edit trigger slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.edit_trigger",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.edit_trigger",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1062,8 +1062,8 @@
                 "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the submit trigger slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.submit_trigger",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.submit_trigger",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1072,8 +1072,8 @@
                 "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the cancel trigger slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.cancel_trigger",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.cancel_trigger",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1088,8 +1088,8 @@
         "type": "Interface EditableAreaProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableArea component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1097,10 +1097,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1108,10 +1108,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1148,8 +1148,8 @@
         "type": "Interface EditableCancelTriggerProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableCancelTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1157,10 +1157,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -1168,8 +1168,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1182,10 +1182,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -1193,10 +1193,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1204,10 +1204,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1244,8 +1244,8 @@
         "type": "Interface EditableCompactProps",
         "resolvedType": "{ areaProps?: EditableAreaProps; previewProps?: EditablePreviewProps; inputProps?: EditableInputProps; editTriggerProps?: EditableEditTriggerProps; submitTriggerProps?: EditableSubmitTriggerProps; cancelTriggerProps?: EditableCancelTriggerProps; defaultValue?: string; modelValue?: string; placeholder?: string | EditablePlaceholder; dir?: Direction; disabled?: boolean; readonly?: boolean; activationMode?: EditableActivationMode; selectOnFocus?: boolean; submitMode?: EditableSubmitMode; startWithEditMode?: boolean; maxLength?: number; autoResize?: boolean; id?: string; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1253,10 +1253,10 @@
             "type": "EditableAreaProps",
             "required": false,
             "description": "Properties forwarded to the area element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.areaprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.areaprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableAreaProps",
@@ -1264,8 +1264,8 @@
                 "type": "EditableAreaProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableArea component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1274,10 +1274,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1285,10 +1285,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableareaprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableareaprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1301,10 +1301,10 @@
             "type": "EditablePreviewProps",
             "required": false,
             "description": "Properties forwarded to the preview element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.previewprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.previewprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditablePreviewProps",
@@ -1312,8 +1312,8 @@
                 "type": "EditablePreviewProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditablePreview component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1322,10 +1322,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1333,10 +1333,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1349,10 +1349,10 @@
             "type": "EditableInputProps",
             "required": false,
             "description": "Properties forwarded to the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.inputprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.inputprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableInputProps",
@@ -1360,8 +1360,8 @@
                 "type": "EditableInputProps",
                 "resolvedType": "{ id?: string; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1370,10 +1370,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1381,10 +1381,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1392,10 +1392,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1408,10 +1408,10 @@
             "type": "EditableEditTriggerProps",
             "required": false,
             "description": "Properties forwarded to the edit trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.edittriggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.edittriggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableEditTriggerProps",
@@ -1419,8 +1419,8 @@
                 "type": "EditableEditTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableEditTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1429,10 +1429,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1440,10 +1440,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1451,10 +1451,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1462,10 +1462,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1478,10 +1478,10 @@
             "type": "EditableSubmitTriggerProps",
             "required": false,
             "description": "Properties forwarded to the submit trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.submittriggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.submittriggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableSubmitTriggerProps",
@@ -1489,8 +1489,8 @@
                 "type": "EditableSubmitTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableSubmitTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1499,10 +1499,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1510,10 +1510,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1521,10 +1521,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1532,10 +1532,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1548,10 +1548,10 @@
             "type": "EditableCancelTriggerProps",
             "required": false,
             "description": "Properties forwarded to the cancel trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.canceltriggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.canceltriggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCancelTriggerProps",
@@ -1559,8 +1559,8 @@
                 "type": "EditableCancelTriggerProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the EditableCancelTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1569,10 +1569,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1580,10 +1580,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1591,10 +1591,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1602,10 +1602,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecanceltriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecanceltriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1618,10 +1618,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1629,10 +1629,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1640,10 +1640,10 @@
             "type": "string | EditablePlaceholder",
             "required": false,
             "description": "The placeholder for the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditablePlaceholder",
@@ -1651,8 +1651,8 @@
                 "type": "EditablePlaceholder",
                 "resolvedType": "{ edit?: string; preview?: string }",
                 "description": "Type information for EditablePlaceholder.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1661,10 +1661,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Edit.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder.members.edit",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder.members.edit",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1672,10 +1672,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Preview.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder.members.preview",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder.members.preview",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1688,10 +1688,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the editable field when applicable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1699,8 +1699,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1713,10 +1713,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1724,10 +1724,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from editing the value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1735,10 +1735,10 @@
             "type": "EditableActivationMode",
             "required": false,
             "description": "The activation event of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.activationmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.activationmode",
             "default": null,
             "inheritedFrom": "activationMode",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableActivationMode",
@@ -1746,8 +1746,8 @@
                 "type": "'none' | 'focus' | 'dblclick'",
                 "resolvedType": "'none' | 'focus' | 'dblclick'",
                 "description": "Type information for EditableActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableactivationmode",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableactivationmode",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1760,10 +1760,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to select the text in the input when it is focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.selectonfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.selectonfocus",
             "default": null,
             "inheritedFrom": "selectOnFocus",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1771,10 +1771,10 @@
             "type": "EditableSubmitMode",
             "required": false,
             "description": "The submit event of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.submitmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.submitmode",
             "default": null,
             "inheritedFrom": "submitMode",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableSubmitMode",
@@ -1782,8 +1782,8 @@
                 "type": "'none' | 'enter' | 'both' | 'blur'",
                 "resolvedType": "'none' | 'enter' | 'both' | 'blur'",
                 "description": "Type information for EditableSubmitMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmitmode",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmitmode",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1796,10 +1796,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to start with the edit mode active.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.startwitheditmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.startwitheditmode",
             "default": null,
             "inheritedFrom": "startWithEditMode",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1807,10 +1807,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxLength",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1818,10 +1818,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the editable field should auto resize.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.autoresize",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.autoresize",
             "default": null,
             "inheritedFrom": "autoResize",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1829,10 +1829,10 @@
             "type": "string",
             "required": false,
             "description": "The id of the field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1840,10 +1840,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1851,10 +1851,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1862,10 +1862,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1873,10 +1873,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1911,8 +1911,8 @@
         "type": "TypeAlias EditableCompactEmits: EditableRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; submit: [value: string]; \"update:state\": [state: EditableEventState] }",
         "description": "Events for the EditableCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactemits.emits",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactemits.emits",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1922,8 +1922,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Event handler called whenever the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1932,8 +1932,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Event handler called when a value is submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactemits.callables.submit",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactemits.callables.submit",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -1942,8 +1942,8 @@
             "parameters": "state: EditableEventState",
             "required": true,
             "description": "Event handler called when the editable field changes state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactemits.callables.update_state",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactemits.callables.update_state",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableEventState",
@@ -1951,8 +1951,8 @@
                 "type": "'submit' | 'cancel' | 'edit'",
                 "resolvedType": null,
                 "description": "State values for EditableEventState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableeventstate",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableeventstate",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1968,8 +1968,8 @@
             "type": "{ 'update:modelValue': [value: string]; submit: [value: string]; 'update:state': [state: EditableEventState]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; submit: [value: string]; \"update:state\": [state: EditableEventState] }",
             "description": "Events for the EditableRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1980,8 +1980,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Event handler called whenever the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1990,8 +1990,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Event handler called when a value is submitted.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.submit",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.submit",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               },
               {
@@ -2000,8 +2000,8 @@
                 "parameters": "state: EditableEventState",
                 "required": true,
                 "description": "Event handler called when the editable field changes state.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.update_state",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.update_state",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -2014,8 +2014,8 @@
         "type": "TypeAlias EditableCompactSlots",
         "resolvedType": "{ EditableCompact?: ((props: EditableCompactSlotProps) => any); preview?: ((props: EditableCompactSlotProps) => any); input?: ((props: EditableCompactSlotProps) => any); \"edit-trigger\"?: ((props: EditableCompactSlotProps) => any); \"submit-trigger\"?: ((props: EditableCompactSlotProps) => any); \"cancel-trigger\"?: ((props: EditableCompactSlotProps) => any) }",
         "description": "Slots for the EditableCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.slots",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.slots",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2025,8 +2025,8 @@
             "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -2034,8 +2034,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2049,8 +2049,8 @@
             "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the preview slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.preview",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.preview",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -2058,8 +2058,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2073,8 +2073,8 @@
             "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the input slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.input",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.input",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -2082,8 +2082,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2097,8 +2097,8 @@
             "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the edit trigger slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.edit_trigger",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.edit_trigger",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -2106,8 +2106,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2121,8 +2121,8 @@
             "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the submit trigger slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.submit_trigger",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.submit_trigger",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -2130,8 +2130,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2145,8 +2145,8 @@
             "parameters": "((props: EditableCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the cancel trigger slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslots.callables.cancel_trigger",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslots.callables.cancel_trigger",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableCompactSlotProps",
@@ -2154,8 +2154,8 @@
                 "type": "EditableCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the EditableCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2172,8 +2172,8 @@
         "type": "Interface EditableCompactSlotProps",
         "resolvedType": "{ modelValue: string | undefined; inputValue: string; isEditing: boolean; isEmpty: boolean; edit: () => void; cancel: () => void; submit: () => void }",
         "description": "Slot properties for the EditableCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2181,10 +2181,10 @@
             "type": "string | undefined",
             "required": true,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2192,10 +2192,10 @@
             "type": "string",
             "required": true,
             "description": "Input value exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.inputvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.inputvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2203,10 +2203,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether an editing.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.isediting",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.isediting",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2214,10 +2214,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether an empty.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.isempty",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.isempty",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2225,10 +2225,10 @@
             "type": "() => void",
             "required": true,
             "description": "Edit exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.edit",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.edit",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2236,10 +2236,10 @@
             "type": "() => void",
             "required": true,
             "description": "Whether the component can cel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.cancel",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.cancel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2247,10 +2247,10 @@
             "type": "() => void",
             "required": true,
             "description": "Submit exposed in the slot scope.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablecompactslotprops.members.submit",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablecompactslotprops.members.submit",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2265,8 +2265,8 @@
         "type": "Interface EditableEditTriggerProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableEditTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2274,10 +2274,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -2285,8 +2285,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2299,10 +2299,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -2310,10 +2310,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2321,10 +2321,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableedittriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableedittriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2361,8 +2361,8 @@
         "type": "Interface EditableInputProps",
         "resolvedType": "{ id?: string; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableInput component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2370,10 +2370,10 @@
             "type": "string",
             "required": false,
             "description": "Id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.id",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2381,10 +2381,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2392,10 +2392,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableinputprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableinputprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2432,8 +2432,8 @@
         "type": "Interface EditablePreviewProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditablePreview component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2441,10 +2441,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2452,10 +2452,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablepreviewprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablepreviewprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2492,8 +2492,8 @@
         "type": "TypeAlias EditableRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; submit: [value: string]; \"update:state\": [state: EditableEventState] }",
         "description": "Events for the EditableRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.emits",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.emits",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2503,8 +2503,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Event handler called whenever the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2513,8 +2513,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Event handler called when a value is submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.submit",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.submit",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2523,8 +2523,8 @@
             "parameters": "state: EditableEventState",
             "required": true,
             "description": "Event handler called when the editable field changes state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootemits.callables.update_state",
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootemits.callables.update_state",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableEventState",
@@ -2532,8 +2532,8 @@
                 "type": "'submit' | 'cancel' | 'edit'",
                 "resolvedType": null,
                 "description": "State values for EditableEventState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableeventstate",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableeventstate",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2550,8 +2550,8 @@
         "type": "Interface EditableRootProps",
         "resolvedType": "{ defaultValue?: string; modelValue?: string; placeholder?: string | EditablePlaceholder; dir?: Direction; disabled?: boolean; readonly?: boolean; activationMode?: EditableActivationMode; selectOnFocus?: boolean; submitMode?: EditableSubmitMode; startWithEditMode?: boolean; maxLength?: number; autoResize?: boolean; id?: string; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2559,10 +2559,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2570,10 +2570,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2581,10 +2581,10 @@
             "type": "string | EditablePlaceholder",
             "required": false,
             "description": "The placeholder for the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.placeholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditablePlaceholder",
@@ -2592,8 +2592,8 @@
                 "type": "EditablePlaceholder",
                 "resolvedType": "{ edit?: string; preview?: string }",
                 "description": "Type information for EditablePlaceholder.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2602,10 +2602,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Edit.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder.members.edit",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder.members.edit",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2613,10 +2613,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Preview.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableplaceholder.members.preview",
+                    "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableplaceholder.members.preview",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/editable/types.ts",
+                    "sourcePath": "packages/aria/src/components/editable/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2629,10 +2629,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the editable field when applicable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2640,8 +2640,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2654,10 +2654,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2665,10 +2665,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from editing the value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.readonly",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2676,10 +2676,10 @@
             "type": "EditableActivationMode",
             "required": false,
             "description": "The activation event of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.activationmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.activationmode",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableActivationMode",
@@ -2687,8 +2687,8 @@
                 "type": "'none' | 'focus' | 'dblclick'",
                 "resolvedType": "'none' | 'focus' | 'dblclick'",
                 "description": "Type information for EditableActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editableactivationmode",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editableactivationmode",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2701,10 +2701,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to select the text in the input when it is focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.selectonfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.selectonfocus",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2712,10 +2712,10 @@
             "type": "EditableSubmitMode",
             "required": false,
             "description": "The submit event of the editable field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.submitmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.submitmode",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": [
               {
                 "name": "EditableSubmitMode",
@@ -2723,8 +2723,8 @@
                 "type": "'none' | 'enter' | 'both' | 'blur'",
                 "resolvedType": "'none' | 'enter' | 'both' | 'blur'",
                 "description": "Type information for EditableSubmitMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmitmode",
-                "sourcePath": "packages/headless/src/components/editable/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmitmode",
+                "sourcePath": "packages/aria/src/components/editable/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2737,10 +2737,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to start with the edit mode active.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.startwitheditmode",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.startwitheditmode",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2748,10 +2748,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.maxlength",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2759,10 +2759,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the editable field should auto resize.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.autoresize",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.autoresize",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2770,10 +2770,10 @@
             "type": "string",
             "required": false,
             "description": "The id of the field.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.id",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/editable/types.ts",
+            "sourcePath": "packages/aria/src/components/editable/types.ts",
             "referencedTypes": []
           },
           {
@@ -2781,10 +2781,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2792,10 +2792,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2803,10 +2803,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2814,10 +2814,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablerootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablerootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2854,8 +2854,8 @@
         "type": "Interface EditableSubmitTriggerProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the EditableSubmitTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.props",
-        "sourcePath": "packages/headless/src/components/editable/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.props",
+        "sourcePath": "packages/aria/src/components/editable/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2863,10 +2863,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -2874,8 +2874,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2888,10 +2888,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -2899,10 +2899,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2910,10 +2910,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_editable_types.editablesubmittriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_editable_types.editablesubmittriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

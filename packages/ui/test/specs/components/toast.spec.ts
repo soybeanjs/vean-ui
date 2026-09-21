@@ -11,19 +11,13 @@ describe('Toaster', () => {
   it('pre-renders toast containers for all positions', () => {
     const wrapper = mount(SToastProvider);
 
-    expect(wrapper.findAll('[data-soybean-toaster]')).toHaveLength(6);
-    expect(wrapper.find('[data-soybean-toaster][data-y-position="top"][data-x-position="right"]').exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-toaster][data-y-position="top"][data-x-position="left"]').exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-toaster][data-y-position="top"][data-x-position="center"]').exists()).toBe(true);
-    expect(wrapper.find('[data-soybean-toaster][data-y-position="bottom"][data-x-position="right"]').exists()).toBe(
-      true
-    );
-    expect(wrapper.find('[data-soybean-toaster][data-y-position="bottom"][data-x-position="left"]').exists()).toBe(
-      true
-    );
-    expect(wrapper.find('[data-soybean-toaster][data-y-position="bottom"][data-x-position="center"]').exists()).toBe(
-      true
-    );
+    expect(wrapper.findAll('[data-vean-toaster]')).toHaveLength(6);
+    expect(wrapper.find('[data-vean-toaster][data-y-position="top"][data-x-position="right"]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-toaster][data-y-position="top"][data-x-position="left"]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-toaster][data-y-position="top"][data-x-position="center"]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-toaster][data-y-position="bottom"][data-x-position="right"]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-toaster][data-y-position="bottom"][data-x-position="left"]').exists()).toBe(true);
+    expect(wrapper.find('[data-vean-toaster][data-y-position="bottom"][data-x-position="center"]').exists()).toBe(true);
 
     wrapper.unmount();
   });
@@ -52,7 +46,7 @@ describe('Toaster', () => {
     document.dispatchEvent(new KeyboardEvent('keydown', { altKey: true, code: 'KeyT' }));
     await nextTick();
 
-    const targetList = wrapper.find('[data-soybean-toaster][data-y-position="bottom"][data-x-position="left"]');
+    const targetList = wrapper.find('[data-vean-toaster][data-y-position="bottom"][data-x-position="left"]');
 
     expect(document.activeElement).toBe(targetList.element);
 
@@ -77,7 +71,7 @@ describe('Toaster', () => {
     await vi.runAllTimersAsync();
     await nextTick();
 
-    const toastElement = wrapper.find('[data-soybean-toast]');
+    const toastElement = wrapper.find('[data-vean-toast]');
     expect(toastElement.exists()).toBe(true);
     expect(toastElement.text()).toContain('Hello toast');
 
@@ -85,7 +79,7 @@ describe('Toaster', () => {
     await vi.runAllTimersAsync();
     await nextTick();
 
-    expect(wrapper.find('[data-soybean-toast]').exists()).toBe(false);
+    expect(wrapper.find('[data-vean-toast]').exists()).toBe(false);
 
     wrapper.unmount();
   });
@@ -118,8 +112,8 @@ describe('Toaster', () => {
     const defaultToast = wrapper.find('[data-testid="close-by-default"]');
     const optedOutToast = wrapper.find('[data-testid="close-opted-out"]');
 
-    expect(defaultToast.find('[data-soybean-toast-close]').exists()).toBe(true);
-    expect(optedOutToast.find('[data-soybean-toast-close]').exists()).toBe(false);
+    expect(defaultToast.find('[data-vean-toast-close]').exists()).toBe(true);
+    expect(optedOutToast.find('[data-vean-toast-close]').exists()).toBe(false);
 
     toast.dismiss(defaultToastId);
     toast.dismiss(optedOutToastId);
@@ -140,7 +134,7 @@ describe('Toaster', () => {
     await vi.runAllTimersAsync();
     await nextTick();
 
-    const toastNode = wrapper.find('[data-soybean-toast]');
+    const toastNode = wrapper.find('[data-vean-toast]');
     expect(toastNode.exists()).toBe(true);
 
     const text = toastNode.text();

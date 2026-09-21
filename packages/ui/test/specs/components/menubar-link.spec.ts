@@ -14,7 +14,7 @@ const items: MenuOptionData<string>[] = [
   {
     value: 'github',
     label: 'GitHub',
-    href: 'https://github.com/soybeanjs/soybean-ui'
+    href: 'https://github.com/soybeanjs/vean-ui'
   }
 ];
 
@@ -51,7 +51,7 @@ function waitForDismissableLayer() {
 describe('SMenubar link trigger', () => {
   it('does not prevent default on pointerdown for link triggers', async () => {
     const wrapper = mountMenubar();
-    const linkTrigger = wrapper.find('[data-soybean-menubar-trigger][data-value="github"]');
+    const linkTrigger = wrapper.find('[data-vean-menubar-trigger][data-value="github"]');
     const event = new PointerEvent('pointerdown', { bubbles: true, cancelable: true, button: 0 });
 
     linkTrigger.element.dispatchEvent(event);
@@ -64,7 +64,7 @@ describe('SMenubar link trigger', () => {
 
   it('keeps focus on the link trigger when hovering from an open menu', async () => {
     const wrapper = mountMenubar();
-    const triggers = wrapper.findAll('[data-soybean-menubar-trigger]');
+    const triggers = wrapper.findAll('[data-vean-menubar-trigger]');
     const fileTrigger = triggers[0];
     const linkTrigger = triggers[1];
 
@@ -87,7 +87,7 @@ describe('SMenubar link trigger', () => {
 
   it('keeps focus on the link trigger when arrow navigation leaves an open menu', async () => {
     const wrapper = mountMenubar();
-    const triggers = wrapper.findAll('[data-soybean-menubar-trigger]');
+    const triggers = wrapper.findAll('[data-vean-menubar-trigger]');
     const fileTrigger = triggers[0];
     const linkTrigger = triggers[1];
 

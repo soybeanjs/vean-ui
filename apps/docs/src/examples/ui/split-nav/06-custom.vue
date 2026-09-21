@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SIcon, SSplitNav } from '@soybeanjs/ui';
+import { SIcon, SSplitNav } from '@vean/ui';
 import { splitNavItems } from './data';
 
-const active = ref('soybean-ui');
+const active = ref('vean-ui');
 </script>
 
 <template>

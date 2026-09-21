@@ -38,9 +38,9 @@ describe('SButton', () => {
       expect(wrapper.find('[data-testid="trailing"]').exists()).toBe(true);
     });
 
-    it('carries the data-soybean-button attribute', () => {
+    it('carries the data-vean-button attribute', () => {
       const wrapper = mount(SButton);
-      expect(wrapper.find('button').attributes('data-soybean-button')).toBeDefined();
+      expect(wrapper.find('button').attributes('data-vean-button')).toBeDefined();
     });
   });
 
@@ -52,14 +52,14 @@ describe('SButton', () => {
 
     it('applies aria-disabled when disabled prop is true', () => {
       const wrapper = mount(SButton, { props: { disabled: true } });
-      // Headless Button uses aria-disabled (not native disabled) to preserve focusability
+      // Aria Button uses aria-disabled (not native disabled) to preserve focusability
       expect(wrapper.find('button').attributes('aria-disabled')).toBe('true');
     });
 
     it('does not emit click event when disabled', async () => {
       const wrapper = mount(SButton, { props: { disabled: true } });
       await wrapper.find('button').trigger('click');
-      // SButton emits 'click' only when headless Button is not disabled
+      // SButton emits 'click' only when Aria Button is not disabled
       expect(wrapper.emitted('click')).toBeFalsy();
     });
   });
@@ -350,9 +350,9 @@ describe('SButtonGroup', () => {
     wrapper.unmount();
   });
 
-  it('carries the data-soybean-button-group attribute', () => {
+  it('carries the data-vean-button-group attribute', () => {
     const wrapper = mountGroup();
-    expect(wrapper.find('.group-root').attributes('data-soybean-button-group')).toBeDefined();
+    expect(wrapper.find('.group-root').attributes('data-vean-button-group')).toBeDefined();
     wrapper.unmount();
   });
 

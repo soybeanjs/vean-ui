@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { EditableCompact, provideEditableUi } from '@soybeanjs/headless/editable';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { EditableCompact, provideEditableUi } from '@vean/aria/editable';
+import { keysOf } from '@vean/aria/shared';
 import { editableVariants } from '@/styles/editable';
 import type { EditableProps, EditableEmits, EditableSlots } from './types';
 

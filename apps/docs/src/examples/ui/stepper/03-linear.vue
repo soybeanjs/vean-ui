@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { SButton, SStepper } from '@soybeanjs/ui';
+import { SButton, SStepper } from '@vean/ui';
 
 const value = ref(1);
 

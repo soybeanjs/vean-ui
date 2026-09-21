@@ -37,19 +37,19 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 通过复用 combobox 组件族（Anchor/Content/Item/Viewport/Trigger/Empty/Cancel，全部基于 listbox 基座 + Popper 定位）构建自动完成。`AutocompleteRoot` 关闭 combobox 内置过滤（`ignoreFilter`），把匹配委托给 compact 层的 `useFuse`，使 autocomplete 与 combobox 共享同一套交互内核，仅过滤与展示策略不同。`scv()` 配方 `autocompleteVariants` 声明 17 个插槽与 7 个尺寸变体。
+VeanUI 通过复用 combobox 组件族（Anchor/Content/Item/Viewport/Trigger/Empty/Cancel，全部基于 listbox 基座 + Popper 定位）构建自动完成。`AutocompleteRoot` 关闭 combobox 内置过滤（`ignoreFilter`），把匹配委托给 compact 层的 `useFuse`，使 autocomplete 与 combobox 共享同一套交互内核，仅过滤与展示策略不同。`scv()` 配方 `autocompleteVariants` 声明 17 个插槽与 7 个尺寸变体。
 
-| 能力                          | SoybeanUI | reka-ui `Combobox` | Algolia Autocomplete | Ant Design `AutoComplete` |
-| :---------------------------- | :-------: | :----------------: | :------------------: | :-----------------------: |
-| headless/styled 分离          |    ✅     |         ✅         |          —           |             —             |
-| 输入即过滤 + 模糊匹配         |    ✅     |         —          |          ✅          |            ✅             |
-| combobox/listbox 角色         |    ✅     |         ✅         |          ✅          |            ✅             |
-| 键盘导航 + typeahead          |    ✅     |         ✅         |          ✅          |            ✅             |
-| 分组 + 组标签                 |    ✅     |         ✅         |          —           |             —             |
-| `openOnFocus` / `openOnClick` |    ✅     |         —          |          ✅          |            ✅             |
-| 清空按钮 + 空态               |    ✅     |         ✅         |          —           |            ✅             |
-| 数据驱动 Compact API          |    ✅     |         —          |          —           |             —             |
-| axe 零违规（打开态）          |    ✅     |         —          |          —           |             —             |
+| 能力                          | VeanUI | reka-ui `Combobox` | Algolia Autocomplete | Ant Design `AutoComplete` |
+| :---------------------------- | :----: | :----------------: | :------------------: | :-----------------------: |
+| Aria/styled 分离              |   ✅   |         ✅         |          —           |             —             |
+| 输入即过滤 + 模糊匹配         |   ✅   |         —          |          ✅          |            ✅             |
+| combobox/listbox 角色         |   ✅   |         ✅         |          ✅          |            ✅             |
+| 键盘导航 + typeahead          |   ✅   |         ✅         |          ✅          |            ✅             |
+| 分组 + 组标签                 |   ✅   |         ✅         |          —           |             —             |
+| `openOnFocus` / `openOnClick` |   ✅   |         —          |          ✅          |            ✅             |
+| 清空按钮 + 空态               |   ✅   |         ✅         |          —           |            ✅             |
+| 数据驱动 Compact API          |   ✅   |         —          |          —           |             —             |
+| axe 零违规（打开态）          |   ✅   |         —          |          —           |             —             |
 
 ### 注意事项
 

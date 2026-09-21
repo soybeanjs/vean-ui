@@ -38,8 +38,8 @@ const items = [
         icon: 'lucide:folder-kanban',
         children: [
           {
-            value: 'soybean-ui',
-            label: 'Soybean UI',
+            value: 'vean-ui',
+            label: 'Vean UI',
             icon: 'lucide:book-open'
           },
           {
@@ -182,11 +182,11 @@ function query(selector: string): Element | null {
  * The menu trigger of a breadcrumb entry.
  *
  * The sidebar renders a menu entry with the same label, so the role locator
- * alone is ambiguous; the documented `data-soybean-breadcrumb-item` hook is the
+ * alone is ambiguous; the documented `data-vean-breadcrumb-item` hook is the
  * stable scope for the header crumb.
  */
 function crumbTrigger(index: number) {
-  const item = document.querySelectorAll<HTMLElement>('[data-soybean-breadcrumb-item]')[index];
+  const item = document.querySelectorAll<HTMLElement>('[data-vean-breadcrumb-item]')[index];
   const trigger = item?.querySelector<HTMLElement>('[aria-haspopup="menu"]');
 
   if (!trigger) {
@@ -234,10 +234,10 @@ function requireGeometry(value: number | null, what: string): number {
  * one pass keeps the numbers internally consistent.
  */
 function geometry(): ShellGeometry {
-  const railElement = query('[data-soybean-split-nav-vertical-first-level]');
+  const railElement = query('[data-vean-split-nav-vertical-first-level]');
   const rail = railElement?.getBoundingClientRect();
-  const sidebar = element('[data-soybean-app-shell-sidebar]').getBoundingClientRect();
-  const paneElement = query('[data-soybean-split-nav-sub-vertical]');
+  const sidebar = element('[data-vean-app-shell-sidebar]').getBoundingClientRect();
+  const paneElement = query('[data-vean-split-nav-sub-vertical]');
   const paneRect = paneElement?.getBoundingClientRect();
 
   return {
@@ -392,7 +392,7 @@ describe('SAppShell (e2e)', () => {
         const active = shallowRef('overview');
         const { unmount } = await renderComponent(createRouteHarness(mode, active));
 
-        for (const value of ['overview', 'workbench', 'tasks', 'soybean-ui', 'settings', 'projects']) {
+        for (const value of ['overview', 'workbench', 'tasks', 'vean-ui', 'settings', 'projects']) {
           active.value = value;
           await waitForStableGeometry();
 
@@ -470,7 +470,7 @@ describe('SAppShell (e2e)', () => {
       await expect.element(branch).toBeVisible();
       await userEvent.hover(branch);
 
-      await expect.element(page.getByRole('menuitem', { name: 'Soybean UI' })).toBeVisible();
+      await expect.element(page.getByRole('menuitem', { name: 'Vean UI' })).toBeVisible();
 
       unmount();
     });
@@ -553,8 +553,8 @@ describe('SAppShell (e2e)', () => {
         await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
 
         await vi.waitFor(() => {
-          const main = element('[data-soybean-layout-main]');
-          const root = element('[data-soybean-layout-root]');
+          const main = element('[data-vean-layout-main]');
+          const root = element('[data-vean-layout-root]');
 
           expect(getComputedStyle(main).marginInlineStart).toBe(`${gapPx}px`);
           expect(Math.abs(main.getBoundingClientRect().left - root.getBoundingClientRect().left)).toBeLessThanOrEqual(
@@ -564,7 +564,7 @@ describe('SAppShell (e2e)', () => {
 
         // A column with no width paints nothing: no client rects at all, unlike the
         // zero-width strip that still drew its card's border and shadow.
-        expect(element('[data-soybean-app-shell-sidebar]').getClientRects()).toHaveLength(0);
+        expect(element('[data-vean-app-shell-sidebar]').getClientRects()).toHaveLength(0);
 
         unmount();
       }
@@ -624,7 +624,7 @@ describe('SAppShell (e2e)', () => {
 
     const brandSlots = {
       logo: () => h('span', { 'data-shell-mark': '' }, 'Mark'),
-      title: () => h('span', { 'data-shell-title': '' }, 'Soybean UI')
+      title: () => h('span', { 'data-shell-title': '' }, 'Vean UI')
     };
 
     /**
@@ -643,12 +643,12 @@ describe('SAppShell (e2e)', () => {
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
       await waitForStableGeometry();
 
-      const rail = element('[data-soybean-split-nav-vertical-first-level]').getBoundingClientRect();
-      const pane = element('[data-soybean-split-nav-sub-vertical]').getBoundingClientRect();
+      const rail = element('[data-vean-split-nav-vertical-first-level]').getBoundingClientRect();
+      const pane = element('[data-vean-split-nav-sub-vertical]').getBoundingClientRect();
       const mark = element('[data-shell-mark]').getBoundingClientRect();
       const title = element('[data-shell-title]').getBoundingClientRect();
 
-      expect(query('[data-soybean-app-shell-logo]')).toBeNull();
+      expect(query('[data-vean-app-shell-logo]')).toBeNull();
       expect(Math.abs(center(mark) - center(rail))).toBeLessThanOrEqual(1);
       expect(Math.abs(center(title) - center(pane))).toBeLessThanOrEqual(1);
 
@@ -667,9 +667,9 @@ describe('SAppShell (e2e)', () => {
       await waitForStableGeometry();
 
       const expandedRow = element(
-        '[data-soybean-app-shell-logo-mark] [data-soybean-tree-menu-styled-item-button]'
+        '[data-vean-app-shell-logo-mark] [data-vean-tree-menu-styled-item-button]'
       ).getBoundingClientRect();
-      const expandedItem = element('[data-soybean-tree-menu-button]').getBoundingClientRect();
+      const expandedItem = element('[data-vean-tree-menu-button]').getBoundingClientRect();
 
       expect(Math.abs(expandedRow.left - expandedItem.left)).toBeLessThanOrEqual(1);
       expect(Math.abs(expandedRow.width - expandedItem.width)).toBeLessThanOrEqual(1);
@@ -683,9 +683,9 @@ describe('SAppShell (e2e)', () => {
       await waitForStableGeometry();
 
       const collapsedRow = element(
-        '[data-soybean-app-shell-logo-mark] [data-soybean-tree-menu-styled-item-button]'
+        '[data-vean-app-shell-logo-mark] [data-vean-tree-menu-styled-item-button]'
       ).getBoundingClientRect();
-      const collapsedItem = element('[data-soybean-tree-menu-button]').getBoundingClientRect();
+      const collapsedItem = element('[data-vean-tree-menu-button]').getBoundingClientRect();
       const collapsedMark = element('[data-shell-mark]').getBoundingClientRect();
 
       // The folded state is the one that used to center the mark in the narrow
@@ -717,9 +717,9 @@ describe('SAppShell (e2e)', () => {
         await waitForStableGeometry();
 
         const brandRow = element(
-          '[data-soybean-app-shell-logo-mark] [data-soybean-tree-menu-styled-item-button]'
+          '[data-vean-app-shell-logo-mark] [data-vean-tree-menu-styled-item-button]'
         ).getBoundingClientRect();
-        const menuRow = element('[data-soybean-tree-menu-button]').getBoundingClientRect();
+        const menuRow = element('[data-vean-tree-menu-button]').getBoundingClientRect();
 
         expect(Math.abs(brandRow.left - menuRow.left)).toBeLessThanOrEqual(1);
         expect(Math.abs(brandRow.width - menuRow.width)).toBeLessThanOrEqual(1);
@@ -734,9 +734,9 @@ describe('SAppShell (e2e)', () => {
       await expect.element(page.getByText('Mark')).toBeVisible();
       await waitForStableGeometry();
 
-      const sidebar = element('[data-soybean-app-shell-sidebar]').getBoundingClientRect();
-      const menu = element('[data-soybean-app-shell-menu-sidebar]').getBoundingClientRect();
-      const brand = element('[data-soybean-app-shell-logo]').getBoundingClientRect();
+      const sidebar = element('[data-vean-app-shell-sidebar]').getBoundingClientRect();
+      const menu = element('[data-vean-app-shell-menu-sidebar]').getBoundingClientRect();
+      const brand = element('[data-vean-app-shell-logo]').getBoundingClientRect();
 
       expect(Math.abs(brand.bottom - sidebar.bottom)).toBeLessThanOrEqual(1);
       expect(brand.top).toBeGreaterThanOrEqual(menu.bottom - 1);
@@ -750,8 +750,8 @@ describe('SAppShell (e2e)', () => {
 
       expect(
         Math.abs(
-          element('[data-soybean-app-shell-logo]').getBoundingClientRect().top -
-            element('[data-soybean-app-shell-sidebar]').getBoundingClientRect().top
+          element('[data-vean-app-shell-logo]').getBoundingClientRect().top -
+            element('[data-vean-app-shell-sidebar]').getBoundingClientRect().top
         )
       ).toBeLessThanOrEqual(1);
 
@@ -772,10 +772,10 @@ describe('SAppShell (e2e)', () => {
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
       await waitForStableGeometry();
 
-      const railElement = element('[data-soybean-split-nav-vertical-first-level]');
-      const cellElement = element('[data-soybean-split-nav-top-left]');
-      const paneElement = element('[data-soybean-split-nav-sub-vertical]');
-      const menu = element('[data-soybean-app-shell-menu-sidebar]').getBoundingClientRect();
+      const railElement = element('[data-vean-split-nav-vertical-first-level]');
+      const cellElement = element('[data-vean-split-nav-top-left]');
+      const paneElement = element('[data-vean-split-nav-sub-vertical]');
+      const menu = element('[data-vean-app-shell-menu-sidebar]').getBoundingClientRect();
       const rail = railElement.getBoundingClientRect();
       const cell = cellElement.getBoundingClientRect();
       const pane = paneElement.getBoundingClientRect();
@@ -788,7 +788,7 @@ describe('SAppShell (e2e)', () => {
 
       // The brand cell is the rail's own top cell, with the mark in it.
       expect(Math.abs(cell.width - rail.width)).toBeLessThanOrEqual(1);
-      expect(cellElement.contains(element('[data-soybean-app-shell-logo-mark]'))).toBe(true);
+      expect(cellElement.contains(element('[data-vean-app-shell-logo-mark]'))).toBe(true);
 
       // With no region above the menu, both columns open at the sidebar's own top
       // and the divider spans that whole band.
@@ -813,16 +813,16 @@ describe('SAppShell (e2e)', () => {
 
     it('pins the trigger to the sidebar bottom corner for horizontal-vertical', async () => {
       const { unmount } = await renderComponent(
-        createHarness({ items, mode: 'horizontal-vertical', modelValue: 'soybean-ui' })
+        createHarness({ items, mode: 'horizontal-vertical', modelValue: 'vean-ui' })
       );
 
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
       await waitForStableGeometry();
 
-      const sidebar = element('[data-soybean-app-shell-sidebar]').getBoundingClientRect();
-      const trigger = element('[data-soybean-layout-trigger]').getBoundingClientRect();
+      const sidebar = element('[data-vean-app-shell-sidebar]').getBoundingClientRect();
+      const trigger = element('[data-vean-layout-trigger]').getBoundingClientRect();
 
-      expect(query('[data-soybean-app-shell-header] [data-soybean-layout-trigger]')).toBeNull();
+      expect(query('[data-vean-app-shell-header] [data-vean-layout-trigger]')).toBeNull();
       expect(sidebar.bottom - trigger.bottom).toBeLessThanOrEqual(24);
       expect(sidebar.right - trigger.right).toBeLessThanOrEqual(24);
       expect(sidebar.bottom - trigger.bottom).toBeGreaterThanOrEqual(0);
@@ -835,16 +835,16 @@ describe('SAppShell (e2e)', () => {
         createHarness({
           items,
           mode: 'horizontal-dual-vertical',
-          modelValue: 'soybean-ui',
+          modelValue: 'vean-ui',
           defaultOpen: false
         })
       );
 
       await waitForStableGeometry();
 
-      const sidebar = element('[data-soybean-app-shell-sidebar]').getBoundingClientRect();
-      const foldedPane = element('[data-soybean-split-nav-sub-vertical]').getBoundingClientRect();
-      const trigger = element('[data-soybean-layout-trigger]').getBoundingClientRect();
+      const sidebar = element('[data-vean-app-shell-sidebar]').getBoundingClientRect();
+      const foldedPane = element('[data-vean-split-nav-sub-vertical]').getBoundingClientRect();
+      const trigger = element('[data-vean-layout-trigger]').getBoundingClientRect();
 
       // The sidebar is the rail plus the folded pane: the trigger centers over
       // the folded column, not over both.
@@ -856,16 +856,16 @@ describe('SAppShell (e2e)', () => {
 
     it('continues the rail divider into the trigger row', async () => {
       const { unmount } = await renderComponent(
-        createHarness({ items, mode: 'horizontal-dual-vertical', modelValue: 'soybean-ui' })
+        createHarness({ items, mode: 'horizontal-dual-vertical', modelValue: 'vean-ui' })
       );
 
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
       await waitForStableGeometry();
 
-      const railElement = element('[data-soybean-split-nav-vertical-first-level]');
-      const paneElement = element('[data-soybean-split-nav-sub-vertical]');
-      const railCell = element('[data-soybean-app-shell-trigger-rail]');
-      const sidebar = element('[data-soybean-app-shell-sidebar]').getBoundingClientRect();
+      const railElement = element('[data-vean-split-nav-vertical-first-level]');
+      const paneElement = element('[data-vean-split-nav-sub-vertical]');
+      const railCell = element('[data-vean-app-shell-trigger-rail]');
+      const sidebar = element('[data-vean-app-shell-sidebar]').getBoundingClientRect();
       const railBox = railElement.getBoundingClientRect();
       const cellBox = railCell.getBoundingClientRect();
       const paneBox = paneElement.getBoundingClientRect();
@@ -888,33 +888,33 @@ describe('SAppShell (e2e)', () => {
 
       await waitForStableGeometry();
 
-      expect(query('[data-soybean-app-shell-trigger-row]')).toBeNull();
+      expect(query('[data-vean-app-shell-trigger-row]')).toBeNull();
 
       closed.unmount();
 
       const open = await renderComponent(
-        createHarness({ items, mode: 'horizontal-dual-vertical', modelValue: 'soybean-ui' })
+        createHarness({ items, mode: 'horizontal-dual-vertical', modelValue: 'vean-ui' })
       );
 
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
       await waitForStableGeometry();
 
-      expect(query('[data-soybean-app-shell-trigger-row]')).not.toBeNull();
+      expect(query('[data-vean-app-shell-trigger-row]')).not.toBeNull();
 
       open.unmount();
     });
 
     it('stretches the sidebar columns to the menu region in horizontal-dual-vertical', async () => {
       const { unmount } = await renderComponent(
-        createHarness({ items, mode: 'horizontal-dual-vertical', modelValue: 'soybean-ui' })
+        createHarness({ items, mode: 'horizontal-dual-vertical', modelValue: 'vean-ui' })
       );
 
       await expect.element(page.getByRole('menuitem', { name: 'Overview' })).toBeVisible();
       await waitForStableGeometry();
 
-      const menu = element('[data-soybean-app-shell-menu-sidebar]').getBoundingClientRect();
-      const railElement = element('[data-soybean-split-nav-vertical-first-level]');
-      const paneElement = element('[data-soybean-split-nav-sub-vertical]');
+      const menu = element('[data-vean-app-shell-menu-sidebar]').getBoundingClientRect();
+      const railElement = element('[data-vean-split-nav-vertical-first-level]');
+      const paneElement = element('[data-vean-split-nav-sub-vertical]');
       const rail = railElement.getBoundingClientRect();
       const pane = paneElement.getBoundingClientRect();
 
@@ -927,13 +927,13 @@ describe('SAppShell (e2e)', () => {
       unmount();
 
       const railLess = await renderComponent(
-        createHarness({ items, mode: 'horizontal-vertical', modelValue: 'soybean-ui' })
+        createHarness({ items, mode: 'horizontal-vertical', modelValue: 'vean-ui' })
       );
 
       await waitForStableGeometry();
 
-      const railLessMenu = element('[data-soybean-app-shell-menu-sidebar]').getBoundingClientRect();
-      const railLessPaneElement = element('[data-soybean-split-nav-sub-vertical]');
+      const railLessMenu = element('[data-vean-app-shell-menu-sidebar]').getBoundingClientRect();
+      const railLessPaneElement = element('[data-vean-split-nav-sub-vertical]');
       const railLessPane = railLessPaneElement.getBoundingClientRect();
 
       // The rail-less mode has the same single pane to stretch — and no column
@@ -953,8 +953,8 @@ describe('SAppShell (e2e)', () => {
 
       await expect.element(page.getByRole('menuitem', { name: 'Workbench' })).toBeVisible();
 
-      expect(query('[data-soybean-layout-header] [data-soybean-split-nav-horizontal-first-level]')).not.toBeNull();
-      expect(query('[data-soybean-app-shell-sidebar] [data-soybean-split-nav-sub-vertical]')).not.toBeNull();
+      expect(query('[data-vean-layout-header] [data-vean-split-nav-horizontal-first-level]')).not.toBeNull();
+      expect(query('[data-vean-app-shell-sidebar] [data-vean-split-nav-sub-vertical]')).not.toBeNull();
 
       unmount();
     });
@@ -966,11 +966,11 @@ describe('SAppShell (e2e)', () => {
 
       await expect.element(page.getByRole('menuitem', { name: 'Workbench' })).toBeVisible();
 
-      const sidebar = query('[data-soybean-app-shell-sidebar]');
+      const sidebar = query('[data-vean-app-shell-sidebar]');
 
-      expect(query('[data-soybean-layout-header] [data-soybean-split-nav-horizontal-first-level]')).not.toBeNull();
-      expect(sidebar?.querySelector('[data-soybean-split-nav-dual-vertical]')).not.toBeNull();
-      expect(sidebar?.querySelector('[data-soybean-split-nav-vertical-first-level]')).not.toBeNull();
+      expect(query('[data-vean-layout-header] [data-vean-split-nav-horizontal-first-level]')).not.toBeNull();
+      expect(sidebar?.querySelector('[data-vean-split-nav-dual-vertical]')).not.toBeNull();
+      expect(sidebar?.querySelector('[data-vean-split-nav-vertical-first-level]')).not.toBeNull();
 
       unmount();
     });
@@ -984,14 +984,14 @@ describe('SAppShell (e2e)', () => {
     it('lays the menu bar out as a row inside the header', async () => {
       const { unmount } = await renderComponent(createHarness({ items, mode: 'top' }));
 
-      const bar = element('[data-soybean-tree-nav]');
+      const bar = element('[data-vean-tree-nav]');
 
       await expect.element(page.getByText('Overview')).toBeVisible();
 
       // No sidebar in this mode, so the geometry wait does not apply here.
       expect(getComputedStyle(bar).flexDirection).toBe('row');
       expect(bar.getBoundingClientRect().height).toBeLessThanOrEqual(
-        element('[data-soybean-layout-header]').getBoundingClientRect().height + 1
+        element('[data-vean-layout-header]').getBoundingClientRect().height + 1
       );
 
       unmount();
@@ -1032,7 +1032,7 @@ describe('SAppShell (e2e)', () => {
     it('marks the active top bar entry', async () => {
       const { unmount } = await renderComponent(createHarness({ items, mode: 'top', modelValue: 'overview' }));
 
-      const active = '[data-soybean-tree-nav] [data-selected="true"]';
+      const active = '[data-vean-tree-nav] [data-selected="true"]';
 
       await expect.poll(() => document.querySelector(active)?.textContent).toBe('Overview');
 
@@ -1076,7 +1076,7 @@ describe('SAppShell (e2e)', () => {
     it('opens the submenu of a parent entry in an ancestor crumb', async () => {
       const onUpdate = vi.fn();
       const { unmount } = await renderComponent(
-        createHarness({ items, mode: 'sidebar', modelValue: 'soybean-ui' }, undefined, {
+        createHarness({ items, mode: 'sidebar', modelValue: 'vean-ui' }, undefined, {
           'onUpdate:modelValue': onUpdate
         })
       );
@@ -1111,14 +1111,14 @@ describe('SAppShell (e2e)', () => {
     await page.viewport(390, 800);
 
     const { unmount } = await renderComponent(
-      createHarness({ items, modelValue: 'soybean-ui', breadcrumbs: longTrail }, { 'header-end': trailingActions })
+      createHarness({ items, modelValue: 'vean-ui', breadcrumbs: longTrail }, { 'header-end': trailingActions })
     );
 
     await expect.element(page.getByRole('button', { name: 'Toggle Sidebar' })).toBeVisible();
 
-    const crumb = element('[data-soybean-breadcrumb-root]');
+    const crumb = element('[data-vean-breadcrumb-root]');
     const actions = element('[data-header-actions]');
-    const header = element('[data-soybean-app-shell-header]');
+    const header = element('[data-vean-app-shell-header]');
 
     expect(getComputedStyle(crumb).display).toBe('none');
     expect(actions.getBoundingClientRect().right).toBeLessThanOrEqual(window.innerWidth);
@@ -1137,7 +1137,7 @@ describe('SAppShell (e2e)', () => {
     await page.viewport(768, 900);
 
     const { unmount } = await renderComponent(
-      createHarness({ items, modelValue: 'soybean-ui', breadcrumbs: longTrail }, { 'header-end': trailingActions })
+      createHarness({ items, modelValue: 'vean-ui', breadcrumbs: longTrail }, { 'header-end': trailingActions })
     );
 
     // The rail carries the same label as the trigger on this width, so the crumb
@@ -1146,10 +1146,10 @@ describe('SAppShell (e2e)', () => {
     // The label is text, so measure with the font the assertion was written against.
     await document.fonts.ready;
 
-    const crumb = element('[data-soybean-breadcrumb-root]');
+    const crumb = element('[data-vean-breadcrumb-root]');
     const actions = element('[data-header-actions]');
-    const header = element('[data-soybean-app-shell-header]');
-    const pages = document.querySelectorAll<HTMLElement>('[data-soybean-breadcrumb-page]');
+    const header = element('[data-vean-app-shell-header]');
+    const pages = document.querySelectorAll<HTMLElement>('[data-vean-breadcrumb-page]');
     const current = pages[pages.length - 1];
 
     // Rendered here, unlike on a phone.
@@ -1178,7 +1178,7 @@ describe('SAppShell (e2e)', () => {
 
       await expect.element(page.getByRole('dialog')).toBeVisible();
       await expect.element(page.getByRole('treeitem', { name: 'Overview' })).toBeVisible();
-      expect(query('[data-soybean-layout-mobile] [data-shell-logo]')).not.toBeNull();
+      expect(query('[data-vean-layout-mobile] [data-shell-logo]')).not.toBeNull();
       await expect.element(page.getByText('Logo')).toBeVisible();
 
       unmount();
@@ -1199,7 +1199,7 @@ describe('SAppShell (e2e)', () => {
       await userEvent.click(trigger);
 
       await expect.element(page.getByRole('dialog')).toBeVisible();
-      expect(query('[data-soybean-layout-mobile]')).not.toBeNull();
+      expect(query('[data-vean-layout-mobile]')).not.toBeNull();
 
       unmount();
     });
@@ -1212,18 +1212,18 @@ describe('SAppShell (e2e)', () => {
     it('switches to the drawer skeleton with the viewport and back', async () => {
       const { unmount } = await renderComponent(createHarness({ items, mode: 'dual-vertical' }));
 
-      const mobile = () => document.querySelector('[data-soybean-app-shell]')?.getAttribute('data-mobile');
+      const mobile = () => document.querySelector('[data-vean-app-shell]')?.getAttribute('data-mobile');
 
       expect(mobile()).toBe('false');
-      expect(query('[data-soybean-split-nav-root]')).not.toBeNull();
+      expect(query('[data-vean-split-nav-root]')).not.toBeNull();
 
       await page.viewport(390, 800);
       await expect.poll(mobile).toBe('true');
-      await expect.poll(() => query('[data-soybean-split-nav-root]')).toBeNull();
+      await expect.poll(() => query('[data-vean-split-nav-root]')).toBeNull();
 
       await page.viewport(1280, 900);
       await expect.poll(mobile).toBe('false');
-      await expect.poll(() => query('[data-soybean-split-nav-root]')).not.toBeNull();
+      await expect.poll(() => query('[data-vean-split-nav-root]')).not.toBeNull();
 
       unmount();
     });
@@ -1245,10 +1245,10 @@ describe('SAppShell (e2e)', () => {
       await expect.element(page.getByRole('dialog')).toBeVisible();
 
       // The shape is the shell's business; the mode stays the host's.
-      expect(document.querySelector('[data-soybean-app-shell]')?.getAttribute('data-mode')).toBe('top');
-      expect(query('[data-soybean-tree-nav]')).toBeNull();
-      expect(query('[data-soybean-layout-mobile] [data-soybean-tree-menu-root]')).not.toBeNull();
-      expect(query('[data-soybean-layout-mobile] [data-soybean-split-nav-root]')).toBeNull();
+      expect(document.querySelector('[data-vean-app-shell]')?.getAttribute('data-mode')).toBe('top');
+      expect(query('[data-vean-tree-nav]')).toBeNull();
+      expect(query('[data-vean-layout-mobile] [data-vean-tree-menu-root]')).not.toBeNull();
+      expect(query('[data-vean-layout-mobile] [data-vean-split-nav-root]')).toBeNull();
       await expect.element(page.getByRole('treeitem', { name: 'Overview' })).toBeVisible();
       await expect.element(page.getByRole('treeitem', { name: 'Workbench' })).toBeVisible();
       await expect.element(page.getByRole('treeitem', { name: 'Settings' })).toBeVisible();
@@ -1265,13 +1265,13 @@ describe('SAppShell (e2e)', () => {
       const { unmount } = await renderComponent(
         createHarness(
           { items, isMobile: true, open: false, mobileOpen: true },
-          { logo: () => h('span', { 'data-shell-logo': '' }, 'Logo'), title: () => h('span', 'Soybean UI') }
+          { logo: () => h('span', { 'data-shell-logo': '' }, 'Logo'), title: () => h('span', 'Vean UI') }
         )
       );
 
       await expect.element(page.getByRole('dialog')).toBeVisible();
-      expect(query('[data-soybean-layout-mobile] [data-soybean-app-shell-logo][data-collapsed]')).toBeNull();
-      await expect.element(page.getByText('Soybean UI')).toBeVisible();
+      expect(query('[data-vean-layout-mobile] [data-vean-app-shell-logo][data-collapsed]')).toBeNull();
+      await expect.element(page.getByText('Vean UI')).toBeVisible();
       await expect.element(page.getByRole('treeitem', { name: 'Overview' })).toBeVisible();
 
       unmount();
@@ -1286,15 +1286,15 @@ describe('SAppShell (e2e)', () => {
       const { unmount } = await renderComponent(
         createHarness(
           { items, isMobile: true, mobileOpen: true },
-          { logo: () => h('span', 'Logo'), title: () => h('span', 'Soybean UI') }
+          { logo: () => h('span', 'Logo'), title: () => h('span', 'Vean UI') }
         )
       );
 
       await expect.element(page.getByRole('dialog')).toBeVisible();
 
-      const brand = element('[data-soybean-layout-mobile] [data-soybean-app-shell-logo]');
+      const brand = element('[data-vean-layout-mobile] [data-vean-app-shell-logo]');
 
-      // 3.5rem: the default header band (`--soybean-layout-header-height`) the brand mirrors.
+      // 3.5rem: the default header band (`--vean-layout-header-height`) the brand mirrors.
       expect(getComputedStyle(brand).height).toBe('56px');
 
       unmount();
@@ -1321,7 +1321,7 @@ describe('SAppShell (e2e)', () => {
 
       await expect.element(page.getByRole('dialog')).toBeVisible();
 
-      const probe = element('[data-soybean-layout-mobile] [data-spacing-probe]');
+      const probe = element('[data-vean-layout-mobile] [data-spacing-probe]');
       const probeStyle = getComputedStyle(probe);
 
       // `md`: the 1rem spacing step and its 0.5rem half.
@@ -1341,7 +1341,7 @@ describe('SAppShell (e2e)', () => {
      * - The layout sidebar is a plain `div` with no landmark, so anything the
      *   shell injects around the menu (the logo slot, `sidebar-start` /
      *   `sidebar-end`) sits outside a landmark and trips axe's `region` rule.
-     *   Landmarks belong to the headless layout family, not to this UI wrapper.
+     *   Landmarks belong to the Aria layout family, not to this UI wrapper.
      */
     it('has no axe violations including color-contrast', async () => {
       const { unmount } = await renderComponent(

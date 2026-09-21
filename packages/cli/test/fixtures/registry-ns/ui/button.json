@@ -3,7 +3,7 @@
   "package": "ui",
   "type": "registry:ui",
   "description": "Displays a button or a component that looks like a button.",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "files": [
     {
       "path": "components/button/button.vue",

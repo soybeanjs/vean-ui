@@ -12,15 +12,15 @@ import {
   emitThemeCss,
   generatePaletteCss,
   resolveThemeMap
-} from '@soybeanjs/theme';
-import type { ColorFormat, EmitThemeOptions, RoleRampRole, ThemeOptions, SemanticToken } from '@soybeanjs/theme';
+} from '@vean/theme';
+import type { ColorFormat, EmitThemeOptions, RoleRampRole, ThemeOptions, SemanticToken } from '@vean/theme';
 
 /**
  * The token adapter (docs/theme.md §5).
  *
  * Two rules that the emitted utilities depend on:
  *
- * 1. **colors are `hsl(var(--soybean-x) / <alpha-value>)`** — a bare `var()` makes
+ * 1. **colors are `hsl(var(--vean-x) / <alpha-value>)`** — a bare `var()` makes
  *    UnoCSS drop the opacity modifier silently, so the function wrapper (and the
  *    `<alpha-value>` slot) is mandatory;
  * 2. **the palette layer + the default alias block ship in the preflight**, so
@@ -28,7 +28,7 @@ import type { ColorFormat, EmitThemeOptions, RoleRampRole, ThemeOptions, Semanti
  *    (non-default) configuration is injected later on top of them.
  */
 
-/** the CSS-variable name prefix of a token (`acme` → `--acme-x`, `false` → `--soybean-x`, the default). */
+/** the CSS-variable name prefix of a token (`acme` → `--acme-x`, `false` → `--vean-x`, the default). */
 const varPrefixOf = (prefix: string | false | undefined): string =>
   prefix === false ? '' : `${prefix ?? DEFAULT_OPTIONS.prefix}-`;
 

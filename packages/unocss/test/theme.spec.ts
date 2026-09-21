@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { createGenerator } from 'unocss';
 import { theme as unoTheme } from '@unocss/preset-mini';
-import { SPACING_GRID_COEFFICIENTS, SPACING_RUNGS } from '@soybeanjs/theme';
-import type { SpacingRung } from '@soybeanjs/theme';
+import { SPACING_GRID_COEFFICIENTS, SPACING_RUNGS } from '@vean/theme';
+import type { SpacingRung } from '@vean/theme';
 import { presetUi } from '../src/preset';
 import { buildThemeColors, buildThemeEntries } from '../src/theme';
 
@@ -25,7 +25,7 @@ const generate = async (options: Parameters<typeof presetUi>[0], classes: string
 };
 
 const preflightOf = (options: Parameters<typeof presetUi>[0]): string => {
-  const preset = presetUi(options).find(item => item.name === 'soybean-ui-uno') as {
+  const preset = presetUi(options).find(item => item.name === 'vean-uno') as {
     preflights: { getCSS: () => string }[];
   };
 

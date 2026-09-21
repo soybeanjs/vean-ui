@@ -1,21 +1,21 @@
 {
   "name": "ui/watermark",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "files": [
     {
       "path": "packages/ui/src/components/watermark/watermark.vue",
       "type": "registry:ui",
-      "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { useOmitProps } from '@soybeanjs/headless/composables';\nimport { WatermarkCompact, provideWatermarkUi } from '@soybeanjs/headless/watermark';\nimport { watermarkVariants } from '@/styles/watermark';\nimport type { WatermarkProps } from './types';\n\ndefineOptions({\n  name: 'SWatermark'\n});\n\nconst props = defineProps<WatermarkProps>();\n\nconst forwardedProps = useOmitProps(props, ['class', 'ui', 'fullscreen']);\n\nconst ui = computed(() =>\n  watermarkVariants(\n    {\n      fullscreen: props.fullscreen\n    },\n    props.ui,\n    { root: props.class }\n  )\n);\n\nprovideWatermarkUi(ui);\n</script>\n\n<template>\n  <WatermarkCompact v-bind=\"forwardedProps\">\n    <slot />\n  </WatermarkCompact>\n</template>\n"
+      "content": "<script setup lang=\"ts\">\nimport { computed } from 'vue';\nimport { useOmitProps } from '@vean/aria/composables';\nimport { WatermarkCompact, provideWatermarkUi } from '@vean/aria/watermark';\nimport { watermarkVariants } from '@/styles/watermark';\nimport type { WatermarkProps } from './types';\n\ndefineOptions({\n  name: 'SWatermark'\n});\n\nconst props = defineProps<WatermarkProps>();\n\nconst forwardedProps = useOmitProps(props, ['class', 'ui', 'fullscreen']);\n\nconst ui = computed(() =>\n  watermarkVariants(\n    {\n      fullscreen: props.fullscreen\n    },\n    props.ui,\n    { root: props.class }\n  )\n);\n\nprovideWatermarkUi(ui);\n</script>\n\n<template>\n  <WatermarkCompact v-bind=\"forwardedProps\">\n    <slot />\n  </WatermarkCompact>\n</template>\n"
     },
     {
       "path": "packages/ui/src/components/watermark/types.ts",
       "type": "registry:lib",
-      "content": "import type { ClassValue } from '@soybeanjs/headless/types';\nimport type { WatermarkCompactProps, WatermarkUi } from '@soybeanjs/headless/watermark';\n\n/**\n * Properties for the SWatermark component.\n */\nexport interface WatermarkProps extends WatermarkCompactProps {\n  /**\n   * The class attribute for the root element.\n   */\n  class?: ClassValue;\n  /**\n   * UI class overrides for each slot.\n   */\n  ui?: Partial<WatermarkUi>;\n  /**\n   * When true, the watermark overlay is fixed to the viewport instead of the parent container.\n   *\n   * @defaultValue false\n   */\n  fullscreen?: boolean;\n}\n"
+      "content": "import type { ClassValue } from '@vean/aria/types';\nimport type { WatermarkCompactProps, WatermarkUi } from '@vean/aria/watermark';\n\n/**\n * Properties for the SWatermark component.\n */\nexport interface WatermarkProps extends WatermarkCompactProps {\n  /**\n   * The class attribute for the root element.\n   */\n  class?: ClassValue;\n  /**\n   * UI class overrides for each slot.\n   */\n  ui?: Partial<WatermarkUi>;\n  /**\n   * When true, the watermark overlay is fixed to the viewport instead of the parent container.\n   *\n   * @defaultValue false\n   */\n  fullscreen?: boolean;\n}\n"
     },
     {
       "path": "packages/ui/src/components/watermark/index.ts",
       "type": "registry:lib",
-      "content": "export { default as SWatermark } from './watermark.vue';\n\nexport type * from '@soybeanjs/headless/watermark';\nexport type { WatermarkProps } from './types';\n"
+      "content": "export { default as SWatermark } from './watermark.vue';\n\nexport type * from '@vean/aria/watermark';\nexport type { WatermarkProps } from './types';\n"
     },
     {
       "path": "packages/ui/src/styles/watermark.ts",

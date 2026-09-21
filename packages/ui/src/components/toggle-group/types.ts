@@ -1,9 +1,9 @@
 import type {
-  ToggleGroupRootEmits as HeadlessToggleGroupRootEmits,
-  ToggleGroupRootProps as HeadlessToggleGroupRootProps,
+  ToggleGroupRootEmits as AriaToggleGroupRootEmits,
+  ToggleGroupRootProps as AriaToggleGroupRootProps,
   ToggleGroupUi
-} from '@soybeanjs/headless/toggle-group';
-import type { ClassValue, DefinedValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/toggle-group';
+import type { ClassValue, DefinedValue } from '@vean/aria/types';
 import type { ToggleGroupVariant } from '@/styles/toggle-group';
 import type { ThemeColor, ThemeSize } from '@/theme';
 
@@ -13,7 +13,7 @@ import type { ThemeColor, ThemeSize } from '@/theme';
 export interface ToggleGroupProps<
   M extends boolean = false,
   T extends DefinedValue = string
-> extends HeadlessToggleGroupRootProps<M, T> {
+> extends AriaToggleGroupRootProps<M, T> {
   /**
    * Additional class names applied to the root element.
    */
@@ -39,7 +39,7 @@ export interface ToggleGroupProps<
 /**
  * Events for the ToggleGroup component.
  */
-export type ToggleGroupEmits<M extends boolean = false, T extends DefinedValue = string> = HeadlessToggleGroupRootEmits<
+export type ToggleGroupEmits<M extends boolean = false, T extends DefinedValue = string> = AriaToggleGroupRootEmits<
   M,
   T
 >;

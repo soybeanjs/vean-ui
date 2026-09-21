@@ -1,4 +1,4 @@
-import type { CollapsibleRootEmits, CollapsibleRootProps, CollapsibleUi } from '@soybeanjs/headless/collapsible';
+import type { CollapsibleRootEmits, CollapsibleRootProps, CollapsibleUi } from '@vean/aria/collapsible';
 import type { ThemeSize } from '@/theme';
 
 /**

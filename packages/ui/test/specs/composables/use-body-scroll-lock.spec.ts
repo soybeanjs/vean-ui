@@ -9,8 +9,8 @@ async function loadLock() {
   vi.resetModules();
 
   const [{ useBodyScrollLock }, { refreshIOSDetection }] = await Promise.all([
-    import('../../../../headless/src/composables/use-body-scroll-lock'),
-    import('../../../../headless/src/shared/env')
+    import('../../../../aria/src/composables/use-body-scroll-lock'),
+    import('../../../../aria/src/shared/env')
   ]);
 
   return { useBodyScrollLock, refreshIOSDetection };

@@ -1,5 +1,5 @@
-import { DEFAULT_OPTIONS, emitThemeCss, resolveThemeMap } from '@soybeanjs/theme';
-import type { EmitThemeOptions, ThemeOptions } from '@soybeanjs/theme';
+import { DEFAULT_OPTIONS, emitThemeCss, resolveThemeMap } from '@vean/theme';
+import type { EmitThemeOptions, ThemeOptions } from '@vean/theme';
 
 /**
  * Bridge from the runtime theme state to the token engine.

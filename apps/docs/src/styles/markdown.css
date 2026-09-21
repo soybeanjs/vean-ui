@@ -73,7 +73,7 @@
     --uno: 'my-0 max-w-full overflow-x-auto rounded-none bg-transparent px-5 py-5 text-[13px] leading-6';
   }
 
-  a:not([data-soybean-link]) {
+  a:not([data-vean-link]) {
     --uno: 'font-medium text-primary decoration-primary/40 underline underline-offset-4 transition-colors duration-200 hover:text-primary/80';
   }
 

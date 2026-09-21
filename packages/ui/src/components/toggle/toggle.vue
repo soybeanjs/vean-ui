@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { Toggle } from '@soybeanjs/headless/toggle';
+import { useOmitProps } from '@vean/aria/composables';
+import { Toggle } from '@vean/aria/toggle';
 import { toggleVariants } from '@/styles/toggle';
 import type { ToggleProps, ToggleEmits } from './types';
 

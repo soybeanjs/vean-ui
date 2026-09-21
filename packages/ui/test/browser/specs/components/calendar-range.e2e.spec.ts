@@ -17,7 +17,7 @@ function dayButton(label: string) {
 }
 
 function rangeCell(label: string) {
-  const cell = dayButton(label).element().closest('[data-soybean-calendar-range-cell]');
+  const cell = dayButton(label).element().closest('[data-vean-calendar-range-cell]');
 
   if (!(cell instanceof HTMLElement)) {
     throw new Error(`No range cell found for ${label}`);

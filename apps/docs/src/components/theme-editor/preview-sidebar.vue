@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SAvatar, SButton, SInput, SLayout, SProgress, STreeMenu } from '@soybeanjs/ui';
-import type { TreeMenuOptionData } from '@soybeanjs/ui';
+import { SAvatar, SButton, SInput, SLayout, SProgress, STreeMenu } from '@vean/ui';
+import type { TreeMenuOptionData } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewSidebar'
@@ -54,7 +54,11 @@ const regionTiles = [
         <div class="space-y-4 p-4">
           <div class="flex items-center gap-3">
             <SInput placeholder="Search" size="sm" class="w-40" />
+            <<<<<<< HEAD
             <SAvatar size="sm" src="https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202609141212" fallback-label="V" />
+            =======
+            <SAvatar size="sm" src="https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212" fallback-label="V" />
+            >>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean)
           </div>
           <SProgress :model-value="68" />
           <div class="flex flex-wrap gap-2">

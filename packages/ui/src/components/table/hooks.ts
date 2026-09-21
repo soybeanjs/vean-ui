@@ -1,6 +1,6 @@
 import { computed, ref, shallowRef, watch } from 'vue';
 import type { Component, Ref, VNode } from 'vue';
-import { getTableColumnKey, getTableLeafColumns, isTableGroupColumn } from '@soybeanjs/headless/table';
+import { getTableColumnKey, getTableLeafColumns, isTableGroupColumn } from '@vean/aria/table';
 import type { TableBaseData, TableColumn, TableColumnType } from './types';
 
 export type TableColumnCheckTitle = VNode | Component | string;

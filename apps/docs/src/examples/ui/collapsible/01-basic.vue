@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SCollapsible, SCollapsibleContent, SCollapsibleTrigger, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SCollapsible, SCollapsibleContent, SCollapsibleTrigger, SSelect, SSwitch } from '@vean/ui';
+import type { ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -76,9 +76,9 @@ const reset = (): void => {
           <SButtonIcon :icon="open ? 'lucide:chevron-up' : 'lucide:chevron-down'" />
         </SCollapsibleTrigger>
       </div>
-      <div class="border rounded-md px-4 py-3 text-sm font-mono">soybean-headless</div>
+      <div class="border rounded-md px-4 py-3 text-sm font-mono">vean-aria</div>
       <SCollapsibleContent>
-        <div class="border rounded-md px-4 py-3 text-sm font-mono">soybean-ui</div>
+        <div class="border rounded-md px-4 py-3 text-sm font-mono">vean-ui</div>
         <div class="border rounded-md px-4 py-3 text-sm font-mono">soybean-market</div>
       </SCollapsibleContent>
     </SCollapsible>

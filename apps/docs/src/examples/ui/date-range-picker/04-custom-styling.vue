@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SDateRangePicker } from '@soybeanjs/ui';
+import { SDateRangePicker } from '@vean/ui';
 </script>
 
 <template>

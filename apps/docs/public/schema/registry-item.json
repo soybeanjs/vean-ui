@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "description": "A single item in the sbean registry. Represents a component, style, utility, or theme.",
+  "description": "A single item in the vean registry. Represents a component, style, utility, or theme.",
   "oneOf": [
     {
       "type": "object",
@@ -14,7 +14,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The name of the item. Unique within the registry. This is the identifier used by `sbean add <name>`."
+          "description": "The name of the item. Unique within the registry. This is the identifier used by `vean add <name>`."
         },
         "package": {
           "type": "string"
@@ -102,7 +102,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Preset module specifiers to load (e.g. \"@soybeanjs/ui-uno\")."
+              "description": "Preset module specifiers to load (e.g. \"@vean/unocss\")."
             },
             "rules": {
               "type": "array",
@@ -147,7 +147,7 @@
             }
           },
           "required": [],
-          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `sbean add`."
+          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `vean add`."
         },
         "cssVars": {
           "type": "object",
@@ -322,7 +322,7 @@
             },
             "themePackage": {
               "type": "string",
-              "description": "Theme token package, e.g. \"@soybeanjs/theme\"."
+              "description": "Theme token package, e.g. \"@vean/theme\"."
             },
             "resolver": {
               "type": "string",
@@ -344,11 +344,11 @@
             }
           },
           "required": [],
-          "description": "Typed SoybeanUI base config (ADR-009). Only present on `registry:base` items. Deep-partial of sbeanBaseConfigSchema — any subset of the SoybeanUI project shape (uno palette, aliases, themePackage, resolver, iconLibrary, rtl, pointer) can be declared."
+          "description": "Typed Vean base config (ADR-009). Only present on `registry:base` items. Deep-partial of veanBaseConfigSchema — any subset of the Vean project shape (uno palette, aliases, themePackage, resolver, iconLibrary, rtl, pointer) can be declared."
         }
       },
       "required": ["name", "type"],
-      "description": "A single item in the sbean registry. Represents a component, style, utility, or theme."
+      "description": "A single item in the vean registry. Represents a component, style, utility, or theme."
     },
     {
       "type": "object",
@@ -362,7 +362,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The name of the item. Unique within the registry. This is the identifier used by `sbean add <name>`."
+          "description": "The name of the item. Unique within the registry. This is the identifier used by `vean add <name>`."
         },
         "package": {
           "type": "string"
@@ -450,7 +450,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Preset module specifiers to load (e.g. \"@soybeanjs/ui-uno\")."
+              "description": "Preset module specifiers to load (e.g. \"@vean/unocss\")."
             },
             "rules": {
               "type": "array",
@@ -495,7 +495,7 @@
             }
           },
           "required": [],
-          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `sbean add`."
+          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `vean add`."
         },
         "cssVars": {
           "type": "object",
@@ -607,7 +607,7 @@
         }
       },
       "required": ["name", "type", "font"],
-      "description": "A single item in the sbean registry. Represents a component, style, utility, or theme."
+      "description": "A single item in the vean registry. Represents a component, style, utility, or theme."
     },
     {
       "type": "object",
@@ -621,7 +621,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The name of the item. Unique within the registry. This is the identifier used by `sbean add <name>`."
+          "description": "The name of the item. Unique within the registry. This is the identifier used by `vean add <name>`."
         },
         "package": {
           "type": "string"
@@ -709,7 +709,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Preset module specifiers to load (e.g. \"@soybeanjs/ui-uno\")."
+              "description": "Preset module specifiers to load (e.g. \"@vean/unocss\")."
             },
             "rules": {
               "type": "array",
@@ -754,7 +754,7 @@
             }
           },
           "required": [],
-          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `sbean add`."
+          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `vean add`."
         },
         "cssVars": {
           "type": "object",
@@ -849,7 +849,7 @@
         }
       },
       "required": ["name", "type", "target"],
-      "description": "A single item in the sbean registry. Represents a component, style, utility, or theme."
+      "description": "A single item in the vean registry. Represents a component, style, utility, or theme."
     },
     {
       "type": "object",
@@ -863,7 +863,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The name of the item. Unique within the registry. This is the identifier used by `sbean add <name>`."
+          "description": "The name of the item. Unique within the registry. This is the identifier used by `vean add <name>`."
         },
         "package": {
           "type": "string"
@@ -951,7 +951,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Preset module specifiers to load (e.g. \"@soybeanjs/ui-uno\")."
+              "description": "Preset module specifiers to load (e.g. \"@vean/unocss\")."
             },
             "rules": {
               "type": "array",
@@ -996,7 +996,7 @@
             }
           },
           "required": [],
-          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `sbean add`."
+          "description": "UnoCSS config fragment (ADR-005). A JSON-serializable slice of UnoCSS UserConfig — presets, rules, shortcuts, theme, safelist — that ships declaratively with the item and merges during `vean add`."
         },
         "cssVars": {
           "type": "object",
@@ -1100,7 +1100,7 @@
         }
       },
       "required": ["name", "type"],
-      "description": "A single item in the sbean registry. Represents a component, style, utility, or theme."
+      "description": "A single item in the vean registry. Represents a component, style, utility, or theme."
     }
   ]
 }

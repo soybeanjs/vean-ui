@@ -1,4 +1,4 @@
-import type { ThemeColor, ThemeSize } from '@soybeanjs/ui';
+import type { ThemeColor, ThemeSize } from '@vean/ui';
 import { transformRecordToOption } from '../shared';
 
 export const themeSizeRatioMap: Record<ThemeSize, number> = {

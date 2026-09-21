@@ -12,7 +12,7 @@ import { defineConfig } from 'vitest/config';
  * `vite.config.ts`. Uses `defineConfig` from `vitest/config` (not `vite-plus`)
  * because this is a test-only config and must not carry the `pack` field.
  *
- * Run with `pnpm test:e2e` (or `pnpm --filter @soybeanjs/ui test:e2e`).
+ * Run with `pnpm test:e2e` (or `pnpm --filter @vean/ui test:e2e`).
  */
 export default defineConfig({
   plugins: [vue(), UnoCSS()],

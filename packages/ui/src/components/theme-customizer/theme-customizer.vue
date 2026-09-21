@@ -13,7 +13,7 @@ import {
   themeFontMonoKeys,
   themeFontSansKeys,
   themeFontSerifKeys
-} from '@soybeanjs/theme';
+} from '@vean/theme';
 import type {
   FeedbackSchemeKey,
   PaletteKey,
@@ -23,7 +23,7 @@ import type {
   ThemeRadius,
   ThemeSize,
   ThemeSpacing
-} from '@soybeanjs/theme';
+} from '@vean/theme';
 import { themeCustomizerVariants } from '@/styles/theme-customizer';
 import { useThemeSettings } from '@/theme/use-theme-settings';
 import { useThemeVariants } from '@/theme/use-theme-variants';
@@ -69,7 +69,7 @@ const theme = useTheme('ThemeCustomizer');
 
 // —— 状态核心：初始化自当前主题，改动即时 commit 到运行时 ——
 // 持久化由 SConfigProvider 的单一信封写入者负责（apply → setThemeState → 派生
-// 载荷写入 `__SOYBEAN_THEME`），这里不再自行写存储，避免多写者竞争。
+// 载荷写入 `__VEAN_THEME`），这里不再自行写存储，避免多写者竞争。
 const settings = useThemeSettings({
   initial: {
     ...theme.theme.value,
@@ -345,7 +345,7 @@ watch(
 </script>
 
 <template>
-  <div data-soybean-theme-customizer :class="ui.root">
+  <div data-vean-theme-customizer :class="ui.root">
     <!-- 顶层 Tabs：Theme（常规设置） / Custom（高级自定义） -->
     <STabs
       v-model="mainTab"

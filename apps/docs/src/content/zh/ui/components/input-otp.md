@@ -1,14 +1,14 @@
 ---
 head:
   title: InputOtp
-  description: 基于真实原生 input 的一次性密码（OTP / 验证码）输入组件。它保留了 vue-input-otp 中成熟的选区、粘贴、移动端自动填充与密码管理器适配行为，同时提供 SoybeanUI 默认样式和可完全自定义的 scoped slot。适用于短信验证码、邮箱验证码、双因素认证等任意定长验证码输入场景。
+  description: 基于真实原生 input 的一次性密码（OTP / 验证码）输入组件。它保留了 vue-input-otp 中成熟的选区、粘贴、移动端自动填充与密码管理器适配行为，同时提供 VeanUI 默认样式和可完全自定义的 scoped slot。适用于短信验证码、邮箱验证码、双因素认证等任意定长验证码输入场景。
 ---
 
 # InputOtp
 
 ## 概述
 
-基于真实原生 input 的一次性密码（OTP / 验证码）输入组件。它保留了 vue-input-otp 中成熟的选区、粘贴、移动端自动填充与密码管理器适配行为，同时提供 SoybeanUI 默认样式和可完全自定义的 scoped slot。适用于短信验证码、邮箱验证码、双因素认证等任意定长验证码输入场景。
+基于真实原生 input 的一次性密码（OTP / 验证码）输入组件。它保留了 vue-input-otp 中成熟的选区、粘贴、移动端自动填充与密码管理器适配行为，同时提供 VeanUI 默认样式和可完全自定义的 scoped slot。适用于短信验证码、邮箱验证码、双因素认证等任意定长验证码输入场景。
 
 ## 用法
 
@@ -37,22 +37,22 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将 input-otp 拆分为负责透明输入叠加、选区镜像与校验的 headless 层（`@soybeanjs/headless/input-otp`），以及负责变体与 UnoCSS 样式的 styled 层（`@soybeanjs/ui`）。headless `InputOtpCompact` 组合 `InputOtpRoot` / `InputOtpPositioner` / `InputOtpInput`。这是 reka-ui 与 shadcn 所用 vue-input-otp 方案的移植，尺寸变体与 `align` 三态为 SoybeanUI 的差异化增强。
+VeanUI 将 input-otp 拆分为负责透明输入叠加、选区镜像与校验的 Aria 层（`@vean/aria/input-otp`），以及负责变体与 UnoCSS 样式的 styled 层（`@vean/ui`）。Aria `InputOtpCompact` 组合 `InputOtpRoot` / `InputOtpPositioner` / `InputOtpInput`。这是 reka-ui 与 shadcn 所用 vue-input-otp 方案的移植，尺寸变体与 `align` 三态为 VeanUI 的差异化增强。
 
-| 能力                       | SoybeanUI | reka-ui `InputOtp` | shadcn `InputOTP` | Element Plus |
-| :------------------------- | :-------: | :----------------: | :---------------: | :----------: |
-| headless/styled 分离       |    ✅     |         —          |         —         |      —       |
-| 受控/非受控                |    ✅     |         ✅         |        ✅         |      —       |
-| `maxlength` / `pattern`    |    ✅     |         ✅         |        ✅         |      —       |
-| 真实 input 透明叠加        |    ✅     |         ✅         |        ✅         |      —       |
-| 选区镜像                   |    ✅     |         ✅         |        ✅         |      —       |
-| 粘贴转换                   |    ✅     |         ✅         |        ✅         |      —       |
-| 密码管理器 badge 适配      |    ✅     |         ✅         |        ✅         |      —       |
-| iOS 自动填充               |    ✅     |         ✅         |        ✅         |      —       |
-| `complete` 事件            |    ✅     |         ✅         |        ✅         |      —       |
-| 尺寸变体（xs…2xl）         |    ✅     |         —          |         —         |      —       |
-| `align` 三态               |    ✅     |         ✅         |        ✅         |      —       |
-| 自定义视觉槽（fake caret） |    ✅     |         ✅         |        ✅         |      —       |
+| 能力                       | VeanUI | reka-ui `InputOtp` | shadcn `InputOTP` | Element Plus |
+| :------------------------- | :----: | :----------------: | :---------------: | :----------: |
+| Aria/styled 分离           |   ✅   |         —          |         —         |      —       |
+| 受控/非受控                |   ✅   |         ✅         |        ✅         |      —       |
+| `maxlength` / `pattern`    |   ✅   |         ✅         |        ✅         |      —       |
+| 真实 input 透明叠加        |   ✅   |         ✅         |        ✅         |      —       |
+| 选区镜像                   |   ✅   |         ✅         |        ✅         |      —       |
+| 粘贴转换                   |   ✅   |         ✅         |        ✅         |      —       |
+| 密码管理器 badge 适配      |   ✅   |         ✅         |        ✅         |      —       |
+| iOS 自动填充               |   ✅   |         ✅         |        ✅         |      —       |
+| `complete` 事件            |   ✅   |         ✅         |        ✅         |      —       |
+| 尺寸变体（xs…2xl）         |   ✅   |         —          |         —         |      —       |
+| `align` 三态               |   ✅   |         ✅         |        ✅         |      —       |
+| 自定义视觉槽（fake caret） |   ✅   |         ✅         |        ✅         |      —       |
 
 ### 注意事项
 

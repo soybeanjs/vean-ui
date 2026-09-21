@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef, watch } from 'vue';
-import { SSelect, SSwitch } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SSelect, SSwitch } from '@vean/ui';
+import type { SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

@@ -1,5 +1,5 @@
-import type { SelectCompactEmits, SelectCompactProps, SelectCompactSlots, SelectUi } from '@soybeanjs/headless/select';
-import type { ClassValue, DefinedValue } from '@soybeanjs/headless/types';
+import type { SelectCompactEmits, SelectCompactProps, SelectCompactSlots, SelectUi } from '@vean/aria/select';
+import type { ClassValue, DefinedValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**
@@ -38,4 +38,4 @@ export type {
   SelectGroupOptionData,
   SelectOptionData,
   SelectItemEvent
-} from '@soybeanjs/headless/select';
+} from '@vean/aria/select';

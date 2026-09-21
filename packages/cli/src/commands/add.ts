@@ -74,26 +74,26 @@ export const add = new Command()
 
     // Ensure components were specified (unless viewing or using --all)
     if (!options.components.length && !options.all && !options.view) {
-      console.log('Usage: sbean add <component...>');
-      console.log('\nRun "sbean search" to find available components.');
+      console.log('Usage: vean add <component...>');
+      console.log('\nRun "vean search" to find available components.');
       process.exit(0);
     }
 
-    // Read sbean.json
+    // Read vean.json
     let config: Config | null;
 
     try {
       config = await getConfig(options.cwd);
     } catch {
       if (!options.silent) {
-        console.error('No sbean.json found. Run "sbean init" first.');
+        console.error('No vean.json found. Run "vean init" first.');
       }
       process.exit(1);
     }
 
     if (!config) {
       if (!options.silent) {
-        console.error('No sbean.json found. Run "sbean init" first.');
+        console.error('No vean.json found. Run "vean init" first.');
       }
       process.exit(1);
     }
@@ -144,7 +144,7 @@ export const add = new Command()
   .on('--help', () => {
     console.log('');
     console.log('  Component naming:');
-    console.log('    Core ui components can be referenced without a prefix: "sbean add button".');
-    console.log('    Other packages require the namespace prefix: "sbean add admin/layout".');
-    console.log('    Run "sbean list" to see all available components.');
+    console.log('    Core ui components can be referenced without a prefix: "vean add button".');
+    console.log('    Other packages require the namespace prefix: "vean add admin/layout".');
+    console.log('    Run "vean list" to see all available components.');
   });

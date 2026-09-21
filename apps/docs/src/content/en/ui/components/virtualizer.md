@@ -1,14 +1,14 @@
 ---
 head:
   title: Virtualizer
-  description: 'A virtual scrolling component that efficiently renders large lists by only rendering items currently in the viewport. SVirtualizer wraps the headless VirtualizerRoot/VirtualizerContent primitives (built on @tanstack/vue-virtual) — only the visible window of items is mounted into the DOM, keeping large lists fast.'
+  description: 'A virtual scrolling component that efficiently renders large lists by only rendering items currently in the viewport. SVirtualizer wraps the Aria VirtualizerRoot/VirtualizerContent primitives (built on @tanstack/vue-virtual) — only the visible window of items is mounted into the DOM, keeping large lists fast.'
 ---
 
 # Virtualizer
 
 ## Overview
 
-A virtual scrolling component that efficiently renders large lists by only rendering items currently in the viewport. `SVirtualizer` wraps the headless `VirtualizerRoot`/`VirtualizerContent` primitives (built on `@tanstack/vue-virtual`) — only the visible window of items is mounted into the DOM, keeping large lists fast.
+A virtual scrolling component that efficiently renders large lists by only rendering items currently in the viewport. `SVirtualizer` wraps the Aria `VirtualizerRoot`/`VirtualizerContent` primitives (built on `@tanstack/vue-virtual`) — only the visible window of items is mounted into the DOM, keeping large lists fast.
 
 Use a virtualizer for long lists/tables where rendering all rows would be slow. For a listbox/tree with virtual scrolling, see the higher-level integrations (e.g. `select`, `tree`).
 
@@ -30,9 +30,9 @@ Use a virtualizer for long lists/tables where rendering all rows would be slow. 
 ## Component family
 
 - `SVirtualizer` (styled) — the entry wrapper; iterates `virtualItems` into the `item` slot
-- `VirtualizerRoot` (headless) — the scroll container; owns the `useVirtualizer` instance, computes `virtualItems`/`totalSize`/`contentStyle`
-- `VirtualizerContent` (headless) — the sized inner content that positions virtual items
-- `VirtualizerItem` (headless) — a positioned virtual item (used by advanced custom builds)
+- `VirtualizerRoot` (Aria) — the scroll container; owns the `useVirtualizer` instance, computes `virtualItems`/`totalSize`/`contentStyle`
+- `VirtualizerContent` (Aria) — the sized inner content that positions virtual items
+- `VirtualizerItem` (Aria) — a positioned virtual item (used by advanced custom builds)
 
 ## Demos
 
@@ -46,15 +46,15 @@ Use a virtualizer for long lists/tables where rendering all rows would be slow. 
 
 ### Architecture and benchmark differences
 
-`VirtualizerRoot` owns the `@tanstack/vue-virtual` instance and computes `virtualItems`/`totalSize`/`contentStyle`, while `SVirtualizer` only iterates the virtual items into the `item` slot. This delegates the measurement/positioning engine to the industry-standard TanStack Virtual (the same engine used by shadcn-ui/TanStack). Ant Design (`rc-virtual-list`), Element Plus (`el-table-v2`), Mantine (`ListVirtualization`) and Naive UI (`virtual-list`) provide their own virtual engines; SoybeanUI exposes a thin, engine-agnostic wrapper so any `@tanstack/vue-virtual` option can flow through.
+`VirtualizerRoot` owns the `@tanstack/vue-virtual` instance and computes `virtualItems`/`totalSize`/`contentStyle`, while `SVirtualizer` only iterates the virtual items into the `item` slot. This delegates the measurement/positioning engine to the industry-standard TanStack Virtual (the same engine used by shadcn-ui/TanStack). Ant Design (`rc-virtual-list`), Element Plus (`el-table-v2`), Mantine (`ListVirtualization`) and Naive UI (`virtual-list`) provide their own virtual engines; VeanUI exposes a thin, engine-agnostic wrapper so any `@tanstack/vue-virtual` option can flow through.
 
-| Capability          | SoybeanUI | TanStack | Ant Design | Element Plus | Mantine | Naive UI |
-| :------------------ | :-------: | :------: | :--------: | :----------: | :-----: | :------: |
-| Virtual engine      |    ✅     |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
-| Data-driven items   |    ✅     |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
-| Horizontal mode     |    ✅     |    ✅    |     ✅     |      ✅      |    —    |    —     |
-| Dynamic measurement |    ✅     |    ✅    |     —      |      —       |    —    |    —     |
-| Full engine options |    ✅     |    ✅    |     —      |      —       |    —    |    —     |
+| Capability          | VeanUI | TanStack | Ant Design | Element Plus | Mantine | Naive UI |
+| :------------------ | :----: | :------: | :--------: | :----------: | :-----: | :------: |
+| Virtual engine      |   ✅   |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
+| Data-driven items   |   ✅   |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
+| Horizontal mode     |   ✅   |    ✅    |     ✅     |      ✅      |    —    |    —     |
+| Dynamic measurement |   ✅   |    ✅    |     —      |      —       |    —    |    —     |
+| Full engine options |   ✅   |    ✅    |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

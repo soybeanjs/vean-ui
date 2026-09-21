@@ -1,5 +1,5 @@
-import type { AnchorCompactEmits, AnchorCompactProps, AnchorUiSlot } from '@soybeanjs/headless/anchor';
-import type { ClassValue, UiClass } from '@soybeanjs/headless/types';
+import type { AnchorCompactEmits, AnchorCompactProps, AnchorUiSlot } from '@vean/aria/anchor';
+import type { ClassValue, UiClass } from '@vean/aria/types';
 import type { ThemeColor, ThemeSize } from '@/theme';
 
 /**

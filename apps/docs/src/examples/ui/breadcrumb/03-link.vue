@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SBreadcrumb } from '@soybeanjs/ui';
-import type { BreadcrumbOptionData } from '@soybeanjs/ui';
+import { SBreadcrumb } from '@vean/ui';
+import type { BreadcrumbOptionData } from '@vean/ui';
 
 const items = [
   {
@@ -12,8 +12,8 @@ const items = [
     href: 'https://vuejs.org'
   },
   {
-    label: 'SoybeanUI',
-    href: 'https://ui.soybeanjs.cn'
+    label: 'VeanUI',
+    href: 'https://veanui.com'
   }
 ] satisfies BreadcrumbOptionData[];
 </script>

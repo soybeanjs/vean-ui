@@ -10,7 +10,7 @@
  *   `scrollbar-{width|height|background-color|border-radius}-*`、
  *   `scrollbar-{w|h|radius|track-radius|thumb-radius}-*`
  *
- * 样式值经宿主元素上的 CSS 变量（默认 `--soybean-scrollbar-*`，`varPrefix` 可覆盖）
+ * 样式值经宿主元素上的 CSS 变量（默认 `--vean-scrollbar-*`，`varPrefix` 可覆盖）
  * 下发，伪元素通过 `var()` 继承，因此颜色、尺寸均可被单个工具类覆盖。
  * `compatible: true` 时启用标准属性 `scrollbar-color` / `scrollbar-width`（Firefox）；
  * 注意一旦使用 `scrollbar-color`，`::-webkit-scrollbar` 定制按规范整体失效，
@@ -63,7 +63,7 @@ export interface PresetScrollbarOptions {
   /**
    * CSS 变量前缀，生成 `--{prefix}-scrollbar-*`。
    *
-   * @default 'soybean'
+   * @default 'vean'
    */
   varPrefix?: string;
 }
@@ -75,7 +75,7 @@ const DEFAULT_OPTIONS: Required<PresetScrollbarOptions> = {
   scrollbarThumbRadius: '4px',
   scrollbarTrackColor: '#f5f5f5',
   scrollbarThumbColor: '#ddd',
-  varPrefix: 'soybean'
+  varPrefix: 'vean'
 };
 
 /** 语义别名 → 写入的 CSS 变量（`scrollbar-radius-*` 同时写 track/thumb 两个圆角变量） */
@@ -98,7 +98,7 @@ const SCROLLBAR_VARIANT_RE = /^(scrollbar(-track|-thumb)?):.+$/;
  * ```ts
  * // uno.config.ts
  * import { defineConfig } from 'unocss'
- * import { presetScrollbar } from '@soybeanjs/ui-uno'
+ * import { presetScrollbar } from '@vean/unocss'
  *
  * export default defineConfig({
  *   presets: [presetScrollbar({ compatible: true })]
@@ -110,7 +110,7 @@ export function presetScrollbar(options: PresetScrollbarOptions = {}): Preset<Th
   const resolveVar = (name: string) => `--${config.varPrefix ? `${config.varPrefix}-` : ''}scrollbar-${name}`;
 
   return {
-    name: 'soybean-ui-uno-scrollbar',
+    name: 'vean-uno-scrollbar',
     shortcuts: [
       [
         'scrollbar',

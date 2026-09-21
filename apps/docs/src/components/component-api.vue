@@ -20,7 +20,7 @@ provideTypeRenderContext(() => ({
 
 const layerTitleMap: Record<string, string> = {
   ui: 'api.ui_layer',
-  headless: 'api.headless_layer',
+  aria: 'api.aria_layer',
   chart: 'api.chart_layer',
   admin: 'api.admin_layer'
 };

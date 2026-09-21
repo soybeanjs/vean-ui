@@ -1,8 +1,8 @@
-# SoybeanUI 主题系统深度分析与优化报告
+# Vean 主题系统深度分析与优化报告
 
-> 定位：对 `packages/theme`（`@soybeanjs/theme`）及其消费面（`@soybeanjs/ui-uno`、`@soybeanjs/ui` 的 `SConfigProvider` / `SThemeCustomizer`）做一次工程级审计：架构、token 完整性、派生正确性、可访问性、持久化与首帧策略；同时与 11 个主流组件库的主题实现横向对比，并吸收 [nuxt-theme.md](../research/nuxt-theme.md) 的既有调研结论。
+> 定位：对 `packages/theme`（`@vean/theme`）及其消费面（`@vean/unocss`、`@vean/ui` 的 `SConfigProvider` / `SThemeCustomizer`）做一次工程级审计：架构、token 完整性、派生正确性、可访问性、持久化与首帧策略；同时与 11 个主流组件库的主题实现横向对比，并吸收 [nuxt-theme.md](../research/nuxt-theme.md) 的既有调研结论。
 > 状态：📄 审计快照——描述的是**重构前**的引擎，结论针对旧实现，**不代表现状**（现状以 [theme.md](../theme.md) 为准）
-> 基线：2026-09-18 · 分支 `vean` · `@soybeanjs/theme@0.50.0-beta.1`
+> 基线：2026-09-18 · 分支 `vean` · `@vean/theme@0.50.0-beta.1`
 > 方法：源码精读 + 引擎实测（本文所有数字均由附录 A 的脚本在本地跑出，非估算）+ 官方文档/源码检索（引用 URL 见附录 C）
 >
 > **后续：** 本报告是那次重构的输入，方案已落在 [theme.md](../theme.md)（三层架构 / token 契约 / 无对比度护栏 / 与新旧的逐项对照）。本报告为审计快照，落盘后不再更新。
@@ -52,7 +52,7 @@
 - **B（低风险，立即可做）**：修正档位表，使不变量成立——`card` / `popover` 从 `LIGHT_SURFACE` 中移出（保持最浅端），light 只有"页面层 + 弱表面层"随档位移动；补一条断言测试：`lightLevel` 任一档位下 `background ≠ card`、`muted ≠ border`。同时把 `LightLevelOffset` / `DarkLevelOffset` 的语义在类型注释里改成"页面层染色档位"，别再宣称"整体调暗"。
 - **A（目标形态）**：把它降格为**具名表面阶梯**，而不是数值偏移。核心模板给出真正的 elevation 阶梯（例如 `background / subtle / surface / raised / overlay`），档位旋钮退化为 `surface: 'flat' | 'tinted' | 'layered'` 三态预设。这样 token 数量可控（不引入 3×4 组合）、SSR/持久化状态更少、和主流语义对齐，且 `SThemeCustomizer` 的 UI 从滑块变成三选一，产品语义更清楚。
 
-> 若最终决定保留数值旋钮，请把它的"哲学依据"写进 ADR：这是 SoybeanUI 相对主流的**差异化能力**（用户可整体调节明暗倾向），而不是"层级调节"。当前文档没有对此表态，是评审时的第一个争议点。
+> 若最终决定保留数值旋钮，请把它的"哲学依据"写进 ADR：这是 Vean 相对主流的**差异化能力**（用户可整体调节明暗倾向），而不是"层级调节"。当前文档没有对此表态，是评审时的第一个争议点。
 
 ### 1.2 不考虑 shadcn 的设计，当前 token 是否合理、是否冗余？
 
@@ -73,7 +73,7 @@
 
 **（b）缺失 —— 与主流对比后最明显的三块洞（§3.3）：**
 
-| 家族        | SoybeanUI 现状                                                         | 主流参照                                                                               |
+| 家族        | Vean 现状                                                              | 主流参照                                                                               |
 | :---------- | :--------------------------------------------------------------------- | :------------------------------------------------------------------------------------- |
 | 尺寸 / 密度 | **无**。只有 `--size` = 根字号缩放（`html{font-size:var(--size)}`）    | Ant `sizeUnit` / `controlHeight(SM/LG)`；Mantine spacing scale；PrimeVue `formField.*` |
 | 阴影 / 层级 | **无阴影 token**。32 处 `shadow-*` 用 UnoCSS 默认值                    | Ant `boxShadow/boxShadowSecondary`；Semi `--semi-shadow-elevated`                      |
@@ -102,10 +102,10 @@
 | SPA                               | 不能                 | `<head>` **第一个**内联脚本读 localStorage                                          | 不需要          | 需要                 |
 | SSG（docs 现状）                  | 不能（HTML 共享）    | 同上；cookie 在 SSG 下**无收益**（HTML 无法按请求变化）                             | 无意义          | 需要                 |
 
-对 SoybeanUI 的具体建议（可分批落地）：
+对 Vean 的具体建议（可分批落地）：
 
 1. **单信箱**：把 `__SOYBEAN_THEME` / `__SOYBEAN_THEME_CSS` / `__SOYBEAN_THEME_PRESETS` / `__SOYBEAN_THEME_APPLIED_PRESET` 合并为**一个带 `v` 字段的信封**（`{ v: 2, mode, config, presets, appliedPreset, css? }`），**一个防抖 250ms 的写入者**（Nuxt UI 的 `nuxt-ui-theme` 就是这么做的，见 [nuxt-theme.md](../research/nuxt-theme.md) §3.6）。这直接消灭第 6 条结论里的全部问题：写入竞争、跨标签漏听、`Object.assign` 清不掉字段。
-2. **cookie 镜像**（仅在 SSR 场景启用）：`soybean-theme=dark`（`Path=/; Max-Age=31536000; SameSite=Lax; Secure`，**不要 `HttpOnly`**），服务端读它 → 渲染 `<html class style="color-scheme">` + 用同一份 config 调 `createTheme()` 产出正确 CSS。**这样 `injectCss` + `!important` 那套补丁在 SSR 下可以整体删掉**（[docs/theme.md §9.4](../theme.md) 已论证过这条路径，本报告补充：cookie 会让 HTML 变为 per-user，`Vary: Cookie` 会摧毁 CDN 缓存命中率，所以只在 SSR 档启用，SSG 档继续用快照）。
+2. **cookie 镜像**（仅在 SSR 场景启用）：`vean-theme=dark`（`Path=/; Max-Age=31536000; SameSite=Lax; Secure`，**不要 `HttpOnly`**），服务端读它 → 渲染 `<html class style="color-scheme">` + 用同一份 config 调 `createTheme()` 产出正确 CSS。**这样 `injectCss` + `!important` 那套补丁在 SSR 下可以整体删掉**（[docs/theme.md §9.4](../theme.md) 已论证过这条路径，本报告补充：cookie 会让 HTML 变为 per-user，`Vary: Cookie` 会摧毁 CDN 缓存命中率，所以只在 SSR 档启用，SSG 档继续用快照）。
 3. **`color-scheme` 必须落到两处**：`<meta name="color-scheme" content="light dark">`（head 最前，防画布/滚动条首帧闪白）与 `html { color-scheme: light }` / `.dark { color-scheme: dark }`（引擎生成，或由脚本设 `style.colorScheme`）。这不是锦上添花：主流 4 个实现里 next-themes（`enableColorScheme`）、Mantine、MUI、Starlight 至少有一个在做，而**没有任何一家靠 `.dark class` 解决原生控件配色**。当前 docs 站被迫在 `apps/docs/src/styles/global.css:77` 写 `.dark * { color-scheme: dark }`，就是这条缺失的账单。
 4. **首帧脚本的工程细节**：必须是 `<head>` 里**第一个** `<script>`（先于任何样式表与其他脚本），支持 `nonce`，读存储全部包 `try/catch`（Firefox 第三方上下文里访问 `localStorage` 会抛 `SecurityError`）。当前脚本已是 IIFE + try/catch（`ssr.ts:125-169`），但**缺 nonce**，且 `storage.ts:306-312` 的 `getStorage()` 用 `typeof window.localStorage === 'undefined'` 判断——**读属性本身就会抛**，必须包 try/catch。
 5. **`auto` 三态维持现状**：显式存 `'auto'`（而不是 Tailwind 那种"键不存在 = system"）是对的，跨标签/跨设备语义更清晰。但要补上：`storage` 事件要覆盖**全部**键（现状只监听 2 个）、`matchMedia` 变更监听（现状已实现，`use-theme.ts:204-217`，✅）。
@@ -121,7 +121,7 @@
             ┌──────────────────── 消费者 ────────────────────┐
             │                                                │
   ┌─────────┴──────────┐                        ┌────────────┴──────────────┐
-  │ @soybeanjs/ui-uno       │                        │ @soybeanjs/ui                  │
+  │ @vean/unocss       │                        │ @vean/ui                  │
   │ presetUi()   │                        │ SConfigProvider           │
   │  ├ buildThemeColors│◄─── COLOR_VARIABLES ───│  ├ theme = computed(...)  │
   │  ├ borderRadius{}  │      (token 单一权威)   │  ├ createTheme(theme)     │
@@ -130,7 +130,7 @@
   └────────────────────┘                        └───────────────────────────┘
                                                             │
                        ┌────────────────────────────────────┴───────────────────────┐
-                       │ @soybeanjs/theme（纯函数，无 DOM）                              │
+                       │ @vean/theme（纯函数，无 DOM）                              │
                        │                                                            │
    ThemeOptions ──► core.ts createTheme ──► preset.ts resolveTheme ──► css.ts generateCss ──► string
                        │      (defu 默认值)      │  derive.ts 派生        │  · base 块（--size/--radius）
@@ -164,11 +164,11 @@
 
 ### 2.3 公开 API 面与真实消费
 
-`@soybeanjs/theme` 导出面（`index.ts`）里，被外部真实消费的是：`createTheme`、`resolveTheme`、`DEFAULT_PRESET_OPTIONS`、`COLOR_VARIABLES`、`PALETTE_COLOR_KEYS`、`EXTENDED_THEME_VARIABLES`、`ALPHA_COLOR_VARIABLES`、`SIZE_VARIABLE`、`RADIUS_VARIABLE`、`THEME_SIZE`/`THEME_RADIUS` + `themeSizeKeys`/`themeRadiusKeys`、`resolveColorValue`、`getRegistry`、`paletteColorLevels`、`builtinBasePresetKeys`/`builtinPrimaryPresetKeys`。
+`@vean/theme` 导出面（`index.ts`）里，被外部真实消费的是：`createTheme`、`resolveTheme`、`DEFAULT_PRESET_OPTIONS`、`COLOR_VARIABLES`、`PALETTE_COLOR_KEYS`、`EXTENDED_THEME_VARIABLES`、`ALPHA_COLOR_VARIABLES`、`SIZE_VARIABLE`、`RADIUS_VARIABLE`、`THEME_SIZE`/`THEME_RADIUS` + `themeSizeKeys`/`themeRadiusKeys`、`resolveColorValue`、`getRegistry`、`paletteColorLevels`、`builtinBasePresetKeys`/`builtinPrimaryPresetKeys`。
 
 无消费：`builtinFeedbackSchemeKeys`、`builtinChartSchemeKeys`、`builtinSidebarSchemeKeys`（§3.4.5）。
 
-`@soybeanjs/ui` 侧真正决定主题的代码路径：`SConfigProvider`（`components/config-provider/hooks.ts`）→ `createTheme(themeContext.theme)` → `<style id="__SoybeanUI_theme">` 内联渲染（SSR 与客户端都渲染，靠 hydration 后重写 `textContent` 修正）；同时 `watch(themeCss)` 把 CSS 快照写进 localStorage。
+`@vean/ui` 侧真正决定主题的代码路径：`SConfigProvider`（`components/config-provider/hooks.ts`）→ `createTheme(themeContext.theme)` → `<style id="__Vean_theme">` 内联渲染（SSR 与客户端都渲染，靠 hydration 后重写 `textContent` 修正）；同时 `watch(themeCss)` 把 CSS 快照写进 localStorage。
 
 ### 2.4 生成物度量（实测）
 
@@ -197,16 +197,16 @@
 
 **3.1.2 缺一层：语义层与组件层之间是断的**
 
-主流的分层是 **primitive → semantic → (component)**；SoybeanUI 有 primitive（colord 色板）、有 semantic（40 token），但**没有 component 层**，也没有"语义 → 组件"的桥。后果：
+主流的分层是 **primitive → semantic → (component)**；Vean 有 primitive（colord 色板）、有 semantic（40 token），但**没有 component 层**，也没有"语义 → 组件"的桥。后果：
 
 - 消费者想改单个组件的视觉，只能通过 `ui` prop 注入类名（shadcn 式），**无法通过 token 覆盖**（Ant 的 `theme.components.Button`、PrimeVue 的 90 个组件 token 集就是干这个的）。
 - 组件作者写样式时用 `bg-sidebar-accent/15`、`shadow-lg`、`z-50` 这类"半 token"值（§3.3），这些值既不在 token 契约里，也不可被主题覆盖。
 
-这不一定要照抄 Ant（组件 token 会让引擎与 UI 实现耦合，代价很大），但**至少要显式选边**并写入 ADR：SoybeanUI 的策略是"token 到语义层为止，组件级定制交给 `ui` prop + 类名"。当前没有这个声明，导致"为什么没有组件 token"变成一个反复被问的问题（也导致 shadow/z-index 这类**跨组件共享**的维度被漏掉——它们其实属于语义层，不该丢）。
+这不一定要照抄 Ant（组件 token 会让引擎与 UI 实现耦合，代价很大），但**至少要显式选边**并写入 ADR：Vean 的策略是"token 到语义层为止，组件级定制交给 `ui` prop + 类名"。当前没有这个声明，导致"为什么没有组件 token"变成一个反复被问的问题（也导致 shadow/z-index 这类**跨组件共享**的维度被漏掉——它们其实属于语义层，不该丢）。
 
-**3.1.3 `@soybeanjs/ui` 与 `@soybeanjs/theme` 的耦合面偏厚**
+**3.1.3 `@vean/ui` 与 `@vean/theme` 的耦合面偏厚**
 
-`use-theme.ts`（467 行）同时承担：主题状态、持久化、SSR 注入、preset 解析、跨标签同步、暗色 class 切换、过渡禁用。其中至少三块应该下沉到 `@soybeanjs/theme`：
+`use-theme.ts`（467 行）同时承担：主题状态、持久化、SSR 注入、preset 解析、跨标签同步、暗色 class 切换、过渡禁用。其中至少三块应该下沉到 `@vean/theme`：
 
 - **`disableTransition` 逻辑**（`use-theme.ts:259-271`，内联实现 VueUse 的做法）→ 应成为 theme 包的公共工具（并修掉它"reflow 后同步移除"的脆弱点：若 `appendChild` 与 `removeChild` 之间抛异常会永久禁用全站过渡）。
 - **`getDarkClass` 与 `darkSelector` 解析**（`use-theme.ts:115-125`）与 `ssr.ts` 里的同名逻辑重复（`ssr.ts:158-161` 用正则去点）→ 两处实现必须保持行为一致，应合并。
@@ -249,9 +249,9 @@ if (!alphaVariable || format === 'oklch' || isUnTransformedColor(...)) return { 
 
 ### 3.3 Token 完整性（对齐主流）
 
-主流语义层规模：Ant 106 map + 93 alias（≈199 非 seed 字段）、PrimeVue 227、Semi 168、Chakra 120、shadcn 29。**SoybeanUI 40 个颜色 token 属于"偏少但可用"**；真正的差距不在颜色，而在**其他维度完全缺席**：
+主流语义层规模：Ant 106 map + 93 alias（≈199 非 seed 字段）、PrimeVue 227、Semi 168、Chakra 120、shadcn 29。**Vean 40 个颜色 token 属于"偏少但可用"**；真正的差距不在颜色，而在**其他维度完全缺席**：
 
-| 维度         | SoybeanUI                        | 主流                                                                | 现状代价                                                                   |
+| 维度         | Vean                             | 主流                                                                | 现状代价                                                                   |
 | :----------- | :------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------- |
 | spacing/尺寸 | 无（`--size` 是根字号缩放）      | Ant `sizeUnit=4` + `controlHeight{SM,LG}`；Mantine spacing xs..xl   | 密度不可主题化；`size:'xs'` 把 1rem 变 12px，撞 iOS 补丁、覆盖用户字号偏好 |
 | 阴影         | 无                               | Ant `boxShadow/Secondary`；Semi `--semi-shadow-elevated`            | 32 处 `shadow-lg/sm/md` 写死 UnoCSS 默认值，无法跟随主题；层级与阴影脱钩   |
@@ -313,7 +313,7 @@ sidebarRing === ring              ? true
 **P0 缺陷：`sidebarDerive: false` 会删掉变量而不是回落。**
 `preset.ts:249-251` 在 `sidebarDerive === false` 时直接返回不含 sidebar 键的 preset，`css.ts` 对每个 `COLOR_VARIABLES` 键只在 `preset[key]` 有值时才输出 → **`--sidebar*` 变量完全不生成**。而 `types.ts:483-489` 的文档承诺"fall back to the base background/foreground/border tokens"。实际后果：`bg-sidebar` 编译成 `hsl(var(--sidebar))` → 变量不存在 → 声明在计算值阶段失效 → **侧栏背景变透明**。这是"文档承诺 vs 实现"的直接冲突，且默认开启（`DEFAULT_PRESET_OPTIONS.sidebarDerive: true`）掩盖了它。
 
-→ 修复（三选一）：(a) `sidebarDerive: false` 时仍输出变量、值等于 base 对应 token（推荐，与文档一致）；(b) 让 unocss 的映射带 fallback（`var(--sidebar, var(--background))`）——注意 `colors.ts:16-22` 目前对 hsl 是 `hsl(var(--soybean-x))`，无法表达"整条 fallback"，需要改成 `hsl(var(--sidebar, var(--background)))`；(c) 删除该开关。
+→ 修复（三选一）：(a) `sidebarDerive: false` 时仍输出变量、值等于 base 对应 token（推荐，与文档一致）；(b) 让 unocss 的映射带 fallback（`var(--sidebar, var(--background))`）——注意 `colors.ts:16-22` 目前对 hsl 是 `hsl(var(--vean-x))`，无法表达"整条 fallback"，需要改成 `hsl(var(--sidebar, var(--background)))`；(c) 删除该开关。
 
 **结论**：sidebar 命名空间**作为能力应保留**（区域皮肤是真实需求，主流只有 shadcn 有），但需要收敛：去掉 `sidebarRing`（或让它真正被消费）、`derived` 方案改为"不输出/输出等值变量"二选一并修正语义、把这 8 个键的文档从"独立皮肤"改成"默认等值、按需分化"。
 
@@ -390,7 +390,7 @@ light 三者同为 `{p}.100`，dark 同为 `{p}.800`；`secondaryForeground` lig
 | Nuxt UI            | dark 下 primary 固定 `500 → 400` 指针平移                                                         | 否（内部规则）              |
 | Material 3（规范） | `surface-container-{lowest,low,high,highest}`                                                     | 否                          |
 
-**唯一"数值可调"的先例是 Mantine 的 `primaryShade`**（选一个色阶索引当主色），且它是**每模式一个值**，不像 SoybeanUI 是"沿表前移 N 格"。这佐证了 §1.1 的建议：要么改成具名档位，要么保留数值但明确它只是"页面染色"。
+**唯一"数值可调"的先例是 Mantine 的 `primaryShade`**（选一个色阶索引当主色），且它是**每模式一个值**，不像 Vean 是"沿表前移 N 格"。这佐证了 §1.1 的建议：要么改成具名档位，要么保留数值但明确它只是"页面染色"。
 
 ### 3.7 持久化与首帧
 
@@ -438,16 +438,16 @@ const getStorage = (): Storage | null => {
 `typeof window.localStorage` **本身就是一次属性访问**，在"阻止持久化/第三方跟踪"上下文（Firefox 的 Storage Access Policy、禁用 cookie 的浏览器）会抛 `SecurityError`；`setItem` 在配额/隐私模式下会抛 `QuotaExceededError`。首帧脚本里有 try/catch，**应用层的每条读写路径都没有**。`use-theme.ts:317-320` 更是直接裸调用。
 → 修复：`getStorage` 整体包 try/catch 并返回 `null`（降级为内存态）；写路径包 try/catch 并返回布尔；`APPLIED_PRESET_KEY` 的读写收敛进 `storage.ts`。
 
-### 3.8 与 `@soybeanjs/ui` 的耦合面
+### 3.8 与 `@vean/ui` 的耦合面
 
 - `getDarkClass`（ui）与首帧脚本的 class 推导（theme/ssr）是**两份实现**，`darkSelector` 语义变化时必须同时改。
 - `disableTransition` 内联在 `use-theme.ts`（复刻 VueUse），是"实现细节泄漏到应用层"的典型；且它在 `appendChild` 与 `removeChild` 之间**没有 try/finally**，异常会导致全站过渡永久失效。
 - `watch(themeCss)` 写 CSS 快照没有防抖，且 `onMounted` 再补写一次（同一帧两次 7KB 写）。
-- 时间维度：主题切换**每次都会重算整段 CSS（7.2KB）并重写 `<style>` 的 `textContent`**，触发全量样式重算。主流做法（MUI/Ant/Chakra）是把"变量值"与"样式规则"分离：切换模式只改属性或只重算变量，不重算规则。对 SoybeanUI 而言，**把 ramp 移出运行时（§3.4.2）就能把每次切换的重算量从 7.2KB 降到 ~2.3KB**，这是同一处改动的第二份收益。
+- 时间维度：主题切换**每次都会重算整段 CSS（7.2KB）并重写 `<style>` 的 `textContent`**，触发全量样式重算。主流做法（MUI/Ant/Chakra）是把"变量值"与"样式规则"分离：切换模式只改属性或只重算变量，不重算规则。对 Vean 而言，**把 ramp 移出运行时（§3.4.2）就能把每次切换的重算量从 7.2KB 降到 ~2.3KB**，这是同一处改动的第二份收益。
 
 ### 3.9 命名与文档债
 
-1. **品牌前缀不一致**：`THEME_STORAGE_KEY = '__SOYBEAN_THEME'`、`THEME_INIT_STYLE_ID = '__SOYBEAN_THEME_INIT'`（`ssr.ts:32`）vs 运行时 `<style id="__SoybeanUI_theme">`（`hooks.ts:47`）vs UI 层的 `--soybean-sidebar-width` / `--soybean-layout-*-z-index`（23 + 18 + 若干处）。最近一次提交整体改名 SoybeanUI → SoybeanUI（`ba2780547`），前缀应统一（存储键改名需带迁移：读旧键 → 写新键 → 删旧键）。
+1. **品牌前缀不一致**：`THEME_STORAGE_KEY = '__SOYBEAN_THEME'`、`THEME_INIT_STYLE_ID = '__SOYBEAN_THEME_INIT'`（`ssr.ts:32`）vs 运行时 `<style id="__Vean_theme">`（`hooks.ts:47`）vs UI 层的 `--soybean-sidebar-width` / `--soybean-layout-*-z-index`（23 + 18 + 若干处）。最近一次提交整体改名 SoybeanUI → Vean（`ba2780547`），前缀应统一（存储键改名需带迁移：读旧键 → 写新键 → 删旧键）。
 2. **README 过时**（`packages/theme/README.md`）：仍在描述 `createTheme({ preset })` 选项（现为 `overrides`）、`/ssr` 的 `cookie 解析` 与 `createThemeStore`（不存在）、`MenuColor` / `MenuAccent` 类型（已删除）。`docs/theme.md` §3 已自认这一点，但 README 未改。
 3. **代码注释引用已删除的规格编号**：`§3.1` / `§3.2` / `§4.2` / `§5.6` / `§5.8.2` / `D7` / `D8` / `ADR-4` / `ADR-5` 大量出现在 `derive.ts` / `tokens.ts` / `preset.ts` / `use-theme.ts` 的注释与测试名里，而 `docs/theme-refactor-plan.md`、`docs/adr/000{7,8,9}-*` 已于 `7943bc0eb` 删除。**读者无法解析这些引用**。建议：要么恢复为 `docs/adr/0002-theme-engine.md` 之类的**现存** ADR（把 level 表、D8 不偏移规则、对比度契约写进去），要么把注释改写成自解释的散文。
 4. **没有 token 参考文档**：40 个 token 的语义散在 `types.ts` 的 JSDoc 里（质量不错），但没有面向消费者的"token 表 + 各 token 在明暗下的值 + 用途"页面；主题能力（format/schemes/levels/overrides）只在 `SThemeCustomizer` 的交互面板里可发现。
@@ -472,20 +472,20 @@ const getStorage = (): Storage | null => {
 | Semi Design          | primitive(222) → semantic CSS 变量（167/155）         | ≈168                                               | **`--semi-color-bg-0..4`（5 级带语义）** + `overlay-bg` + `nav-bg` | 手写 `body[theme-mode="dark"]`               | CSS 变量 + theme 包           | SCSS 变量（无 `--semi-<组件>-*`） | 声称支持 Next/Gatsby/Remix                                  |
 | Nuxt UI v4           | 组件 theme 工厂 + 两层 CSS 变量                       | 语义层手写（`--ui-bg/text/border-*`）              | 无阶梯（语义变量手写）                                             | dark 下 primary 指针 `500→400`               | CSS 变量 + `app.config`       | 每组件 theme 工厂                 | 单 key 原子写 + FOUC 脚本 + `?doc=` 分享                    |
 
-### 4.2 对 SoybeanUI 有价值的五条 / 不适用的一条
+### 4.2 对 Vean 有价值的五条 / 不适用的一条
 
 **值得借鉴：**
 
-1. **Ant / Semi 的"具名 elevation 阶梯"**——直接替换 SoybeanUI 的数值档位（§3.6）。Semi 的 `bg-0..4` 语义命名（页面/提升内容/模态/Toast/特殊）可原样借用为 `background/raised/overlay/…`。
-2. **PrimeVue 的 primitive → semantic → component 三层命名法**——SoybeanUI 已有前两层，第三层即使不实现，也应用"组件 token 表"的形式在文档里明确"哪些值属于组件契约"（Ant 的 70 个组件 token 也是这么被消费者理解的）。
-3. **Radix 的 step 语义契约**（1–2 背景 / 3–5 组件背景 / 6–8 边框 / 9–10 实心 / 11–12 文本，且 11/12 保证 Lc60/Lc90 对比度）——SoybeanUI 的 10 级 ramp 可以照此**给每一级写死用途并保证对比度**，把"级别"从"亮度刻度"升级为"用途契约"。
-4. **MUI 的 `*Channel` token**——与 SoybeanUI 的 `--border-alpha` 思路一致，但 MUI 是**为每个颜色自动生成 channel**，SoybeanUI 只给 3 个边框类 token。若要支持 `bg-primary/12` 这类任意透明度，channel 化是标准解法（UnoCSS 侧可映射为 `hsl(var(--primary) / <alpha>)`）。
-5. **Nuxt UI 的"单 key 原子写 + 稀疏 ThemeDoc"**——前者修 §3.7.1，后者是主题分享/编辑器的现成 schema（`{version, preset, colors, tokens, style, components}` 稀疏文档：缺省即继承，序列化即最小导出）。SoybeanUI 的 `ThemeConfigState` + `overrides` 已经是稀疏形态，**可以直接升级为分享链接的载荷**（传输用 `deflate-raw` + base64url，Nuxt UI 已验证 ~3–5× 压缩，见 [nuxt-theme.md](../research/nuxt-theme.md) §3.2）。
+1. **Ant / Semi 的"具名 elevation 阶梯"**——直接替换 Vean 的数值档位（§3.6）。Semi 的 `bg-0..4` 语义命名（页面/提升内容/模态/Toast/特殊）可原样借用为 `background/raised/overlay/…`。
+2. **PrimeVue 的 primitive → semantic → component 三层命名法**——Vean 已有前两层，第三层即使不实现，也应用"组件 token 表"的形式在文档里明确"哪些值属于组件契约"（Ant 的 70 个组件 token 也是这么被消费者理解的）。
+3. **Radix 的 step 语义契约**（1–2 背景 / 3–5 组件背景 / 6–8 边框 / 9–10 实心 / 11–12 文本，且 11/12 保证 Lc60/Lc90 对比度）——Vean 的 10 级 ramp 可以照此**给每一级写死用途并保证对比度**，把"级别"从"亮度刻度"升级为"用途契约"。
+4. **MUI 的 `*Channel` token**——与 Vean 的 `--border-alpha` 思路一致，但 MUI 是**为每个颜色自动生成 channel**，Vean 只给 3 个边框类 token。若要支持 `bg-primary/12` 这类任意透明度，channel 化是标准解法（UnoCSS 侧可映射为 `hsl(var(--primary) / <alpha>)`）。
+5. **Nuxt UI 的"单 key 原子写 + 稀疏 ThemeDoc"**——前者修 §3.7.1，后者是主题分享/编辑器的现成 schema（`{version, preset, colors, tokens, style, components}` 稀疏文档：缺省即继承，序列化即最小导出）。Vean 的 `ThemeConfigState` + `overrides` 已经是稀疏形态，**可以直接升级为分享链接的载荷**（传输用 `deflate-raw` + base64url，Nuxt UI 已验证 ~3–5× 压缩，见 [nuxt-theme.md](../research/nuxt-theme.md) §3.2）。
 
 **不适用（明确不做）：**
 
-- **CSS-in-JS 运行时**（Ant/Naive 的路线）：SoybeanUI 的静态 CSS + 变量模型对 SSG/无 JS 场景更优，且体积与首帧表现更好。Ant v6 引入 `zeroRuntime`、Naive 提供 `inline-theme-disabled` 都是在往这个方向补课——SoybeanUI 起点就在终点，不应回头。
-- **组件 theme 工厂 + `tv()` 运行时合并**（Nuxt UI）：需要 Tailwind 生态与构建期模板生成，且会把主题逻辑绑进组件实现。SoybeanUI 的 `scv()` recipe 已在 UI 层静态化，代价是不能像 Nuxt UI 那样在 `app.config` 里按 slot 覆盖——这是**用可定制性换体积与确定性**的自觉取舍，建议写进 ADR 而不是照抄。
+- **CSS-in-JS 运行时**（Ant/Naive 的路线）：Vean 的静态 CSS + 变量模型对 SSG/无 JS 场景更优，且体积与首帧表现更好。Ant v6 引入 `zeroRuntime`、Naive 提供 `inline-theme-disabled` 都是在往这个方向补课——Vean 起点就在终点，不应回头。
+- **组件 theme 工厂 + `tv()` 运行时合并**（Nuxt UI）：需要 Tailwind 生态与构建期模板生成，且会把主题逻辑绑进组件实现。Vean 的 `scv()` recipe 已在 UI 层静态化，代价是不能像 Nuxt UI 那样在 `app.config` 里按 slot 覆盖——这是**用可定制性换体积与确定性**的自觉取舍，建议写进 ADR 而不是照抄。
 
 ### 4.3 Nuxt UI 专题（结合既有调研）
 
@@ -535,7 +535,7 @@ const getStorage = (): Storage | null => {
 | P2-6  | 死导出 `builtin{Feedback,Chart,Sidebar}SchemeKeys`                             | `registry.ts:309-319`、`index.ts:14-16`                                  |
 | P2-7  | 派生规则双写（模板 vs `deriveDarkFromLight`）                                  | `core-template.ts` vs `derive.ts:114-152`                                |
 | P2-8  | 全程字符串类型；"palette.level 判定"三处重复                                   | `derive.ts:44-87`、`shared.ts:29-31`、`storage.ts:389-398`               |
-| P2-9  | 品牌前缀不一致（`__SOYBEAN_*` / `__SoybeanUI_theme` / `--soybean-*`）          | `storage.ts:159,342,376`、`ssr.ts:32`、`hooks.ts:47`、`styles/layout.ts` |
+| P2-9  | 品牌前缀不一致（`__SOYBEAN_*` / `__Vean_theme` / `--soybean-*`）               | `storage.ts:159,342,376`、`ssr.ts:32`、`hooks.ts:47`、`styles/layout.ts` |
 | P2-10 | README / 注释引用已删除规格（`§/D/ADR` 编号 + `createThemeStore`/`menuColor`） | `packages/theme/README.md`、多文件注释                                   |
 
 ---

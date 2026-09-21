@@ -3,23 +3,23 @@
  * （https://github.com/xsjcTony/unocss-preset-animations）实现。
  *
  * 只实现 UI 样式实际用到的工具类：
- * - `animate-in` / `animate-out`（shortcut，含 `keyframes-soybean-in/out`）
+ * - `animate-in` / `animate-out`（shortcut，含 `keyframes-vean-in/out`）
  * - `fade-in/out[-n]`、`zoom-in/out[-n]`、`slide-in-from-*` / `slide-out-to-*`
  *
- * CSS 变量（`--soybean-enter-opacity` / `--soybean-exit-scale` …）沿用 `--soybean-` 命名空间
+ * CSS 变量（`--vean-enter-opacity` / `--vean-exit-scale` …）沿用 `--vean-` 命名空间
  * —— 前缀只从**主题 token 层**移除（`--background` / `--radius` 等），组件与预设自己的变量保留，
- * keyframe 名 `soybean-in` / `soybean-out` 沿用 tailwindcss-animate 的生态约定。
+ * keyframe 名 `vean-in` / `vean-out` 沿用 tailwindcss-animate 的生态约定。
  */
 import type { CSSObject, Preset, Rule, Shortcut } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
 
 // ---- constants -------------------------------------------------------------
 
-const CSS_VARIABLE_PREFIX = '--soybean';
-const ENTER_ANIMATION_NAME = 'soybean-in';
-const EXIT_ANIMATION_NAME = 'soybean-out';
+const CSS_VARIABLE_PREFIX = '--vean';
+const ENTER_ANIMATION_NAME = 'vean-in';
+const EXIT_ANIMATION_NAME = 'vean-out';
 const DEFAULT_SLIDE_TRANSLATE = '100%';
-const ANIMATION_LAYER = 'soybean-base';
+const ANIMATION_LAYER = 'vean-base';
 
 // ---- value handlers（@unocss/preset-mini `h.cssvar.*` 的最小等价实现） -------
 
@@ -230,7 +230,7 @@ function buildShortcuts(options: PresetAnimationsOptions): Shortcut<Theme>[] {
 
 // ---- theme -----------------------------------------------------------------
 
-/** enter/exit 的 @keyframes 定义，与 `--soybean-enter-*` / `--soybean-exit-*` 变量联动 */
+/** enter/exit 的 @keyframes 定义，与 `--vean-enter-*` / `--vean-exit-*` 变量联动 */
 const ANIMATION_THEME = {
   animation: {
     keyframes: {
@@ -246,12 +246,12 @@ const ANIMATION_THEME = {
  * 动画 preset，接入 `presetUi` 后提供 `animate-in/out`、`fade-*`、
  * `zoom-*`、`slide-in-from-*` / `slide-out-to-*` 工具类。
  *
- * `animate-in` / `animate-out` 位于 `soybean-base` 层（低优先级），
+ * `animate-in` / `animate-out` 位于 `vean-base` 层（低优先级），
  * 允许默认 utilities（如 `duration-500`）覆盖其动画时长。
  */
 export function presetAnimations(options: PresetAnimationsOptions = {}): Preset {
   return {
-    name: 'soybean-ui-uno-animations',
+    name: 'vean-uno-animations',
     theme: ANIMATION_THEME,
     layers: { [ANIMATION_LAYER]: -999 },
     shortcuts: buildShortcuts(options),

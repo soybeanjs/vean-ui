@@ -55,8 +55,8 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-textarea-root]').classes()).toContain('text-base');
-      expect(wrapper.find('[data-soybean-textarea-control]').classes()).toContain('min-h-9');
+      expect(wrapper.find('[data-vean-textarea-root]').classes()).toContain('text-base');
+      expect(wrapper.find('[data-vean-textarea-control]').classes()).toContain('min-h-9');
 
       wrapper.unmount();
     });
@@ -88,7 +88,7 @@ describe('STextarea', () => {
         props: { name: 'message' },
         attachTo: document.body
       });
-      const hiddenInputs = wrapper.findAll('[data-soybean-visually-hidden-input]');
+      const hiddenInputs = wrapper.findAll('[data-vean-visually-hidden-input]');
 
       expect(hiddenInputs).toHaveLength(1);
       expect(hiddenInputs[0].attributes('name')).toBe('message');
@@ -99,7 +99,7 @@ describe('STextarea', () => {
     it('does not render a visually hidden input without a name', () => {
       const wrapper = mount(STextarea, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-visually-hidden-input]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-visually-hidden-input]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -110,7 +110,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-textarea-counter]').text()).toBe('5 / 10');
+      expect(wrapper.find('[data-vean-textarea-counter]').text()).toBe('5 / 10');
 
       wrapper.unmount();
     });
@@ -121,7 +121,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-textarea-counter]').text()).toBe('3');
+      expect(wrapper.find('[data-vean-textarea-counter]').text()).toBe('3');
 
       wrapper.unmount();
     });
@@ -129,7 +129,7 @@ describe('STextarea', () => {
     it('renders the clear trigger only when clearable', () => {
       const wrapper = mount(STextarea, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-textarea-clearable]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-textarea-clearable]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -144,7 +144,7 @@ describe('STextarea', () => {
 
       await flushPromises();
 
-      const style = wrapper.find('[data-soybean-textarea-control]').attributes('style');
+      const style = wrapper.find('[data-vean-textarea-control]').attributes('style');
       expect(style).toContain('resize: none');
       expect(style).toContain('overflow-y: hidden');
 
@@ -154,7 +154,7 @@ describe('STextarea', () => {
     it('does not apply inline resize styles when autosize is disabled', () => {
       const wrapper = mount(STextarea, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-textarea-control]').attributes('style')).toBeUndefined();
+      expect(wrapper.find('[data-vean-textarea-control]').attributes('style')).toBeUndefined();
 
       wrapper.unmount();
     });
@@ -214,7 +214,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-textarea-clearable]').trigger('click');
+      await wrapper.find('[data-vean-textarea-clearable]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')![0]).toEqual(['']);
@@ -260,7 +260,7 @@ describe('STextarea', () => {
       });
 
       expect(wrapper.find('textarea').element.disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-textarea-clearable]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-textarea-clearable]').element as HTMLButtonElement).disabled).toBe(true);
 
       wrapper.unmount();
     });
@@ -275,7 +275,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      const clearButton = wrapper.find('[data-soybean-textarea-clearable]');
+      const clearButton = wrapper.find('[data-vean-textarea-clearable]');
       expect((clearButton.element as HTMLButtonElement).disabled).toBe(true);
 
       await clearButton.trigger('click');
@@ -294,7 +294,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      expect((wrapper.find('[data-soybean-textarea-clearable]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-textarea-clearable]').element as HTMLButtonElement).disabled).toBe(true);
 
       wrapper.unmount();
     });
@@ -307,7 +307,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-textarea-clearable]').attributes('aria-label')).toBe('Clear textarea');
+      expect(wrapper.find('[data-vean-textarea-clearable]').attributes('aria-label')).toBe('Clear textarea');
 
       wrapper.unmount();
     });
@@ -321,7 +321,7 @@ describe('STextarea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-textarea-clearable]').attributes('aria-label')).toBe('Empty the field');
+      expect(wrapper.find('[data-vean-textarea-clearable]').attributes('aria-label')).toBe('Empty the field');
 
       wrapper.unmount();
     });

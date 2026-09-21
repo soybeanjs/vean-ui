@@ -4,8 +4,8 @@ import type {
   PageTabsCompactSlots,
   PageTabsOptionData,
   PageTabsUi
-} from '@soybeanjs/headless/page-tabs';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/page-tabs';
+import type { ClassValue } from '@vean/aria/types';
 import type { PageTabsVariant } from '@/styles/page-tabs';
 import type { ThemeSize } from '@/theme';
 

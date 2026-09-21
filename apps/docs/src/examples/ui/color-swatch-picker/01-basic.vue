@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SColorSwatch, SColorSwatchPicker, SSelect, SSeparator } from '@soybeanjs/ui';
-import type { ColorSwatchPickerShape, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SColorSwatch, SColorSwatchPicker, SSelect, SSeparator } from '@vean/ui';
+import type { ColorSwatchPickerShape, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

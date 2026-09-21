@@ -1,7 +1,7 @@
 ---
 head:
   title: Quick Start
-  description: Describe a chart with defineChart, render it with the Vue Chart component, and wire in SoybeanUI theme colors.
+  description: Describe a chart with defineChart, render it with the Vue Chart component, and wire in VeanUI theme colors.
 ---
 
 # Quick Start

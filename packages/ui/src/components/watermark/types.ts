@@ -1,5 +1,5 @@
-import type { ClassValue } from '@soybeanjs/headless/types';
-import type { WatermarkCompactProps, WatermarkUi } from '@soybeanjs/headless/watermark';
+import type { ClassValue } from '@vean/aria/types';
+import type { WatermarkCompactProps, WatermarkUi } from '@vean/aria/watermark';
 
 /**
  * Properties for the SWatermark component.

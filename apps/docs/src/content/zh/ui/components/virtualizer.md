@@ -1,14 +1,14 @@
 ---
 head:
   title: 虚拟列表
-  description: '虚拟滚动组件：仅渲染视口内的条目，从而高效渲染超长列表。SVirtualizer 包装 headless VirtualizerRoot/VirtualizerContent 基础组件（构建于 @tanstack/vue-virtual）——只把当前可见窗口的条目挂载进 DOM，使长列表保持流畅。'
+  description: '虚拟滚动组件：仅渲染视口内的条目，从而高效渲染超长列表。SVirtualizer 包装 Aria VirtualizerRoot/VirtualizerContent 基础组件（构建于 @tanstack/vue-virtual）——只把当前可见窗口的条目挂载进 DOM，使长列表保持流畅。'
 ---
 
 # 虚拟列表
 
 ## 概述
 
-虚拟滚动组件：仅渲染视口内的条目，从而高效渲染超长列表。`SVirtualizer` 包装 headless `VirtualizerRoot`/`VirtualizerContent` 基础组件（构建于 `@tanstack/vue-virtual`）——只把当前可见窗口的条目挂载进 DOM，使长列表保持流畅。
+虚拟滚动组件：仅渲染视口内的条目，从而高效渲染超长列表。`SVirtualizer` 包装 Aria `VirtualizerRoot`/`VirtualizerContent` 基础组件（构建于 `@tanstack/vue-virtual`）——只把当前可见窗口的条目挂载进 DOM，使长列表保持流畅。
 
 虚拟列表适合行数过多、全部渲染会变慢的长列表/表格。listbox/树的虚拟滚动请使用更上层的集成组件（如 `select`、`tree`）。
 
@@ -30,9 +30,9 @@ head:
 ## 组件家族
 
 - `SVirtualizer`（样式层）— 入口包装组件；将 `virtualItems` 迭代进 `item` 插槽
-- `VirtualizerRoot`（headless）— 滚动容器；持有 `useVirtualizer` 实例，计算 `virtualItems`/`totalSize`/`contentStyle`
-- `VirtualizerContent`（headless）— 定位虚拟条目的带尺寸内层内容
-- `VirtualizerItem`（headless）— 定位的虚拟条目（用于高级自定义构建）
+- `VirtualizerRoot`（Aria）— 滚动容器；持有 `useVirtualizer` 实例，计算 `virtualItems`/`totalSize`/`contentStyle`
+- `VirtualizerContent`（Aria）— 定位虚拟条目的带尺寸内层内容
+- `VirtualizerItem`（Aria）— 定位的虚拟条目（用于高级自定义构建）
 
 ## 演示
 
@@ -46,15 +46,15 @@ head:
 
 ### 架构与对标差异
 
-`VirtualizerRoot` 持有 `@tanstack/vue-virtual` 实例并计算 `virtualItems`/`totalSize`/`contentStyle`，`SVirtualizer` 只把虚拟条目迭代进 `item` 插槽。这把测量/定位引擎委托给行业标准的 TanStack Virtual（shadcn-ui/TanStack 亦采用同一引擎）。Ant Design（`rc-virtual-list`）、Element Plus（`el-table-v2`）、Mantine（`ListVirtualization`）与 Naive UI（`virtual-list`）提供各自虚拟引擎；SoybeanUI 暴露薄封装、引擎无关的包装组件，任意 `@tanstack/vue-virtual` 选项均可透传。
+`VirtualizerRoot` 持有 `@tanstack/vue-virtual` 实例并计算 `virtualItems`/`totalSize`/`contentStyle`，`SVirtualizer` 只把虚拟条目迭代进 `item` 插槽。这把测量/定位引擎委托给行业标准的 TanStack Virtual（shadcn-ui/TanStack 亦采用同一引擎）。Ant Design（`rc-virtual-list`）、Element Plus（`el-table-v2`）、Mantine（`ListVirtualization`）与 Naive UI（`virtual-list`）提供各自虚拟引擎；VeanUI 暴露薄封装、引擎无关的包装组件，任意 `@tanstack/vue-virtual` 选项均可透传。
 
-| 能力         | SoybeanUI | TanStack | Ant Design | Element Plus | Mantine | Naive UI |
-| :----------- | :-------: | :------: | :--------: | :----------: | :-----: | :------: |
-| 虚拟引擎     |    ✅     |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
-| 数据驱动条目 |    ✅     |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
-| 水平模式     |    ✅     |    ✅    |     ✅     |      ✅      |    —    |    —     |
-| 动态测量     |    ✅     |    ✅    |     —      |      —       |    —    |    —     |
-| 完整引擎选项 |    ✅     |    ✅    |     —      |      —       |    —    |    —     |
+| 能力         | VeanUI | TanStack | Ant Design | Element Plus | Mantine | Naive UI |
+| :----------- | :----: | :------: | :--------: | :----------: | :-----: | :------: |
+| 虚拟引擎     |   ✅   |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
+| 数据驱动条目 |   ✅   |    ✅    |     ✅     |      ✅      |   ✅    |    ✅    |
+| 水平模式     |   ✅   |    ✅    |     ✅     |      ✅      |    —    |    —     |
+| 动态测量     |   ✅   |    ✅    |     —      |      —       |    —    |    —     |
+| 完整引擎选项 |   ✅   |    ✅    |     —      |      —       |    —    |    —     |
 
 `—` = 不支持或采用不同交互模型。
 

@@ -28,12 +28,12 @@ A composable multi-value input for adding, displaying, and removing tags. Suppor
 
 ## Component family
 
-- `STagsInput` — the styled wrapper that forwards props to the headless compact and injects `tagsInputVariants` classes (6 slots: root/item/itemText/itemDelete/control/clear)
-- `TagsInputCompact` (headless) — data-driven composition of `TagsInputRoot` + one `TagsInputItem` per value (default item text/delete) + `Control` + `Clear` (gated by `clearable`); import from `@soybeanjs/headless/tags-input` for unstyled usage
-- `TagsInputRoot` (headless) — state owner: `useControllableState` for the value array, collection registration, keydown/removal/clear logic, and the visually hidden form input
-- `TagsInputControl` (headless) — the committed input: delimiter typing, paste splitting, `Enter`/`Tab`/blur commit, composition guard
-- `TagsInputItem` / `TagsInputItemText` / `TagsInputItemDelete` (headless) — a registered collection item with its label span and keyboard-reachable delete button
-- `TagsInputClear` (headless) — the clear-all button, hidden until the root has a value (styling) and gated by `clearable` (rendering)
+- `STagsInput` — the styled wrapper that forwards props to the Aria compact and injects `tagsInputVariants` classes (6 slots: root/item/itemText/itemDelete/control/clear)
+- `TagsInputCompact` (Aria) — data-driven composition of `TagsInputRoot` + one `TagsInputItem` per value (default item text/delete) + `Control` + `Clear` (gated by `clearable`); import from `@vean/aria/tags-input` for unstyled usage
+- `TagsInputRoot` (Aria) — state owner: `useControllableState` for the value array, collection registration, keydown/removal/clear logic, and the visually hidden form input
+- `TagsInputControl` (Aria) — the committed input: delimiter typing, paste splitting, `Enter`/`Tab`/blur commit, composition guard
+- `TagsInputItem` / `TagsInputItemText` / `TagsInputItemDelete` (Aria) — a registered collection item with its label span and keyboard-reachable delete button
+- `TagsInputClear` (Aria) — the clear-all button, hidden until the root has a value (styling) and gated by `clearable` (rendering)
 
 ## Demos
 
@@ -47,21 +47,21 @@ A composable multi-value input for adding, displaying, and removing tags. Suppor
 
 ### Architecture and benchmark differences
 
-`TagsInputRoot` owns the value via `useControllableState` and the collection registry (each `Item` registers through `useCollectionItem`). `TagsInputControl` only commits values: it watches delimiter/paste/Enter/Tab/blur, trims and validates through the root's `onAddValue`, and reports rejections via the `invalid` event. Keyboard selection state (`selectedElement`) lives on the root so the control's keydown handler can move selection with arrow keys (logical direction, RTL-aware) and remove tags with `Backspace`/`Delete`/`Home`/`End`. The compact iterates the value array with an `index-value` key so duplicated values stay stable without in-place value patching. Most benchmark libraries expose tags as a mode of a single select; the headless/styled split, per-part `*Props` passthrough, slot-driven item rendering, and the `invalid`/`addTag`/`removeTag` event surface are the differentiators.
+`TagsInputRoot` owns the value via `useControllableState` and the collection registry (each `Item` registers through `useCollectionItem`). `TagsInputControl` only commits values: it watches delimiter/paste/Enter/Tab/blur, trims and validates through the root's `onAddValue`, and reports rejections via the `invalid` event. Keyboard selection state (`selectedElement`) lives on the root so the control's keydown handler can move selection with arrow keys (logical direction, RTL-aware) and remove tags with `Backspace`/`Delete`/`Home`/`End`. The compact iterates the value array with an `index-value` key so duplicated values stay stable without in-place value patching. Most benchmark libraries expose tags as a mode of a single select; the Aria/styled split, per-part `*Props` passthrough, slot-driven item rendering, and the `invalid`/`addTag`/`removeTag` event surface are the differentiators.
 
-| Capability                       | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :------------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled split            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Controlled / uncontrolled        |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| Enter / delimiter / paste add    |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| Keyboard tag selection + removal |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| RTL direction reversal           |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `max` / `duplicate` constraints  |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `RegExp` delimiter               |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Per-part `*Props` passthrough    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Custom item slot                 |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   ✅   |
-| Form hidden-input serialization  |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Localized `aria-label`s          |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Capability                       | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :------------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled split                |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Controlled / uncontrolled        |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| Enter / delimiter / paste add    |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| Keyboard tag selection + removal |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| RTL direction reversal           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `max` / `duplicate` constraints  |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `RegExp` delimiter               |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Per-part `*Props` passthrough    |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Custom item slot                 |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   ✅   |
+| Form hidden-input serialization  |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Localized `aria-label`s          |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
 
 ### Cautions
 

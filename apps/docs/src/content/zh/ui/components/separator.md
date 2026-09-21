@@ -39,16 +39,16 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将 `Separator` 拆分为 headless 层（`@soybeanjs/headless/separator`，负责 `SeparatorRoot`（role/aria/方向）、`SeparatorLabel`、`SeparatorCompact`（组合 + 标签可见性逻辑））与 styled 层（`@soybeanjs/ui`，负责 `scv()` 变体配方（size/orientation/align/border）与类注入 `provideSeparatorUi`）。这与 shadcn/ui 的 headless/styled 分离一致。
+VeanUI 将 `Separator` 拆分为 Aria 层（`@vean/aria/separator`，负责 `SeparatorRoot`（role/aria/方向）、`SeparatorLabel`、`SeparatorCompact`（组合 + 标签可见性逻辑））与 styled 层（`@vean/ui`，负责 `scv()` 变体配方（size/orientation/align/border）与类注入 `provideSeparatorUi`）。这与 shadcn/ui 的 headless/styled 分离一致。
 
-| 维度     | SoybeanUI                                                             | Ant Design `Divider` | Element Plus `ElDivider` | MUI `Divider` | Mantine `Divider` | shadcn/ui `Separator` |
-| :------- | :-------------------------------------------------------------------- | :------------------- | :----------------------- | :------------ | :---------------- | :-------------------- |
-| 架构     | headless + styled 分离，`SeparatorUiSlot`（root/label）+ Compact 聚合 | 单组件               | 单组件                   | 单组件        | 单组件            | headless + styled     |
-| 标签     | `label` prop + 默认插槽；`align`（start/center/end）                  | `orientation` prop   | `content-position`       | —             | `labelPosition`   | —                     |
-| 边框样式 | `border`（solid/dashed/dotted）                                       | `dashed` prop        | `border-style` prop      | —             | `variant`         | —                     |
-| 尺寸缩放 | `size`（xs–2xl）控制标签字号 + 间距                                   | —                    | —                        | —             | `size`            | —                     |
-| 装饰模式 | `decorative` → `role="none"`                                          | —                    | —                        | —             | —                 | `decorative`          |
-| RTL      | `rtl:translate-x` + 逻辑 `start-*` 定位                               | —                    | —                        | —             | —                 | —                     |
+| 维度     | VeanUI                                                            | Ant Design `Divider` | Element Plus `ElDivider` | MUI `Divider` | Mantine `Divider` | shadcn/ui `Separator` |
+| :------- | :---------------------------------------------------------------- | :------------------- | :----------------------- | :------------ | :---------------- | :-------------------- |
+| 架构     | Aria + styled 分离，`SeparatorUiSlot`（root/label）+ Compact 聚合 | 单组件               | 单组件                   | 单组件        | 单组件            | Aria + styled         |
+| 标签     | `label` prop + 默认插槽；`align`（start/center/end）              | `orientation` prop   | `content-position`       | —             | `labelPosition`   | —                     |
+| 边框样式 | `border`（solid/dashed/dotted）                                   | `dashed` prop        | `border-style` prop      | —             | `variant`         | —                     |
+| 尺寸缩放 | `size`（xs–2xl）控制标签字号 + 间距                               | —                    | —                        | —             | `size`            | —                     |
+| 装饰模式 | `decorative` → `role="none"`                                      | —                    | —                        | —             | —                 | `decorative`          |
+| RTL      | `rtl:translate-x` + 逻辑 `start-*` 定位                           | —                    | —                        | —             | —                 | —                     |
 
 ### 运行时注意事项
 

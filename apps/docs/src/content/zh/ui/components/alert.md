@@ -1,14 +1,14 @@
 ---
 head:
   title: 提示
-  description: 用于突出重要、有时效性信息——警告、错误或确认——并在其相关内容附近的提示框。SAlert 组合 AlertRoot/AlertTitle/AlertDescription/AlertClose 这一系列 headless 基础组件（零样式）与 alertVariants 样式配方（6 个槽、8 种颜色 × 5 种变体 × 6 种尺寸）。
+  description: 用于突出重要、有时效性信息——警告、错误或确认——并在其相关内容附近的提示框。SAlert 组合 AlertRoot/AlertTitle/AlertDescription/AlertClose 这一系列 Aria 基础组件（零样式）与 alertVariants 样式配方（6 个槽、8 种颜色 × 5 种变体 × 6 种尺寸）。
 ---
 
 # 提示
 
 ## 概述
 
-用于突出重要、有时效性信息——警告、错误或确认——并在其相关内容附近的提示框。`SAlert` 组合 `AlertRoot`/`AlertTitle`/`AlertDescription`/`AlertClose` 这一系列 headless 基础组件（零样式）与 `alertVariants` 样式配方（6 个槽、8 种颜色 × 5 种变体 × 6 种尺寸）。
+用于突出重要、有时效性信息——警告、错误或确认——并在其相关内容附近的提示框。`SAlert` 组合 `AlertRoot`/`AlertTitle`/`AlertDescription`/`AlertClose` 这一系列 Aria 基础组件（零样式）与 `alertVariants` 样式配方（6 个槽、8 种颜色 × 5 种变体 × 6 种尺寸）。
 
 适用于不容错过的内联反馈。短暂、全局的通知请优先使用 `toast`；阻塞性确认请优先使用 `dialog`。全宽横幅（Banner）变体见 roadmap 中的 `Banner` 项。
 
@@ -18,7 +18,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `AlertCompact` 聚合基础组件并组合默认图标/标题/描述/关闭；`SAlert` 只注入样式并转发插槽/事件
+- 🧩 Aria/样式分离 — `AlertCompact` 聚合基础组件并组合默认图标/标题/描述/关闭；`SAlert` 只注入样式并转发插槽/事件
 - 🏷️ 标题 + 描述 — `title`/`description` prop 或对应插槽
 - ❌ 可关闭 — `closable` 渲染带本地化 `aria-label` 的关闭 `<button>`，由 `v-model:open` 驱动
 - 🎨 8 种颜色 — `ThemeColor` 值（`primary`/`destructive`/`success`/`warning`/`info`/`carbon`/`secondary`/`accent`）
@@ -30,12 +30,12 @@ head:
 ## 组件家族
 
 - `SAlert`（样式层）— 入口包装组件；`alertVariants` 配方配合动态插槽转发
-- `AlertRoot`（headless）— 容器；经 `useControllableState` 维护 `open` 并通过 `provideAlertRootContext` 下发
-- `AlertContent`（headless）— 承载标题/描述的内容区
-- `AlertTitle`（headless）— 标题
-- `AlertDescription`（headless）— 描述
-- `AlertClose`（headless）— 关闭 `<button>`；本地化 `aria-label`，发出 `close` 并切换 `open`
-- `AlertCompact`（headless）— 聚合组件；组合图标/标题/描述/关闭并暴露各插槽
+- `AlertRoot`（Aria）— 容器；经 `useControllableState` 维护 `open` 并通过 `provideAlertRootContext` 下发
+- `AlertContent`（Aria）— 承载标题/描述的内容区
+- `AlertTitle`（Aria）— 标题
+- `AlertDescription`（Aria）— 描述
+- `AlertClose`（Aria）— 关闭 `<button>`；本地化 `aria-label`，发出 `close` 并切换 `open`
+- `AlertCompact`（Aria）— 聚合组件；组合图标/标题/描述/关闭并暴露各插槽
 
 ## 演示
 
@@ -49,18 +49,18 @@ head:
 
 ### 架构与对标差异
 
-`AlertCompact` 负责图标/标题/描述/关闭的默认装配，所有基础组件保持零样式，仅由 UI 包装组件注入 `alertVariants` 类。这与 shadcn/ui 的 headless/样式分离一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供带 `type`/`closable`/`showIcon` prop 的单一样式化提示。SoybeanUI 暴露完整的逐槽 `*Props` 通道与单包库通常缺失的 `size` 尺寸体系，并将关闭按钮的 `aria-label` 本地化（`alert.close`），而非依赖纯 `×` 字形。
+`AlertCompact` 负责图标/标题/描述/关闭的默认装配，所有基础组件保持零样式，仅由 UI 包装组件注入 `alertVariants` 类。这与 shadcn/ui 的 headless/样式分离一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供带 `type`/`closable`/`showIcon` prop 的单一样式化提示。VeanUI 暴露完整的逐槽 `*Props` 通道与单包库通常缺失的 `size` 尺寸体系，并将关闭按钮的 `aria-label` 本地化（`alert.close`），而非依赖纯 `×` 字形。
 
-| 能力                     | SoybeanUI | shadcn/ui | Ant Design Alert | Element Plus Alert | Mantine Alert | Naive UI Alert |
-| :----------------------- | :-------: | :-------: | :--------------: | :----------------: | :-----------: | :------------: |
-| Headless/样式分离        |    ✅     |    ✅     |        —         |         —          |       —       |       —        |
-| 标题 + 描述              |    ✅     |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
-| 可关闭                   |    ✅     |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
-| 前导图标                 |    ✅     |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
-| 变体（solid/soft/ghost） |    ✅     |    ✅     |        —         |         —          |       —       |       —        |
-| 颜色（8）                |    ✅     |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
-| 尺寸（6）                |    ✅     |     —     |        —         |         —          |       —       |       —        |
-| 本地化关闭标签           |    ✅     |     —     |        —         |         ✅         |       —       |       —        |
+| 能力                     | VeanUI | shadcn/ui | Ant Design Alert | Element Plus Alert | Mantine Alert | Naive UI Alert |
+| :----------------------- | :----: | :-------: | :--------------: | :----------------: | :-----------: | :------------: |
+| Aria/样式分离            |   ✅   |    ✅     |        —         |         —          |       —       |       —        |
+| 标题 + 描述              |   ✅   |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
+| 可关闭                   |   ✅   |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
+| 前导图标                 |   ✅   |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
+| 变体（solid/soft/ghost） |   ✅   |    ✅     |        —         |         —          |       —       |       —        |
+| 颜色（8）                |   ✅   |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
+| 尺寸（6）                |   ✅   |     —     |        —         |         —          |       —       |       —        |
+| 本地化关闭标签           |   ✅   |     —     |        —         |         ✅         |       —       |       —        |
 
 `—` = 不支持或采用不同交互模型。
 

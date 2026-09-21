@@ -37,20 +37,20 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将数字输入框拆分为负责状态、数字解析/格式化、边界逻辑与表单代理的 headless 层（`@soybeanjs/headless/input-number`），以及负责变体与 UnoCSS 样式的 styled 层（`@soybeanjs/ui`）。headless `InputNumberCompact` 组合 `InputNumberRoot` / `InputNumberControl` / `InputNumberIncrement` / `InputNumberDecrement` / `InputNumberClear` 并暴露 `increment` / `decrement` / `clear` 插槽。这与 headless/styled 分离一致，区别于 Ant Design、Element Plus、Mantine 等单包方案。
+VeanUI 将数字输入框拆分为负责状态、数字解析/格式化、边界逻辑与表单代理的 Aria 层（`@vean/aria/input-number`），以及负责变体与 UnoCSS 样式的 styled 层（`@vean/ui`）。Aria `InputNumberCompact` 组合 `InputNumberRoot` / `InputNumberControl` / `InputNumberIncrement` / `InputNumberDecrement` / `InputNumberClear` 并暴露 `increment` / `decrement` / `clear` 插槽。这与 Aria/styled 分离一致，区别于 Ant Design、Element Plus、Mantine 等单包方案。
 
-| 能力                     | SoybeanUI | Ant Design `InputNumber` | Element Plus `input-number` | Mantine `NumberInput` |
-| :----------------------- | :-------: | :----------------------: | :-------------------------: | :-------------------: |
-| headless/styled 分离     |    ✅     |            —             |              —              |           —           |
-| 受控/非受控              |    ✅     |            ✅            |             ✅              |          ✅           |
-| step / min / max / 精度  |    ✅     |            ✅            |             ✅              |          ✅           |
-| 键盘 Arrow/Page/Home/End |    ✅     |            ✅            |             ✅              |          ✅           |
-| 按住触发加速             |    ✅     |            ✅            |              —              |           —           |
-| 边界按钮禁用             |    ✅     |            —             |             ✅              |           —           |
-| 清除按钮（i18n 标签）    |    ✅     |            —             |             ✅              |           —           |
-| 本地化数字格式（Intl）   |    ✅     |            —             |              —              |           —           |
-| 尺寸变体（xs…2xl）       |    ✅     |            —             |              —              |          ✅           |
-| `center` 布局            |    ✅     |            ✅            |             ✅              |           —           |
+| 能力                     | VeanUI | Ant Design `InputNumber` | Element Plus `input-number` | Mantine `NumberInput` |
+| :----------------------- | :----: | :----------------------: | :-------------------------: | :-------------------: |
+| Aria/styled 分离         |   ✅   |            —             |              —              |           —           |
+| 受控/非受控              |   ✅   |            ✅            |             ✅              |          ✅           |
+| step / min / max / 精度  |   ✅   |            ✅            |             ✅              |          ✅           |
+| 键盘 Arrow/Page/Home/End |   ✅   |            ✅            |             ✅              |          ✅           |
+| 按住触发加速             |   ✅   |            ✅            |              —              |           —           |
+| 边界按钮禁用             |   ✅   |            —             |             ✅              |           —           |
+| 清除按钮（i18n 标签）    |   ✅   |            —             |             ✅              |           —           |
+| 本地化数字格式（Intl）   |   ✅   |            —             |              —              |           —           |
+| 尺寸变体（xs…2xl）       |   ✅   |            —             |              —              |          ✅           |
+| `center` 布局            |   ✅   |            ✅            |             ✅              |           —           |
 
 ### 注意事项
 

@@ -1,6 +1,6 @@
-import type { CalendarUi } from '@soybeanjs/headless/calendar';
-import type { DatePickerUi, DatePickerCompactProps, DatePickerCompactEmits } from '@soybeanjs/headless/date-picker';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { CalendarUi } from '@vean/aria/calendar';
+import type { DatePickerUi, DatePickerCompactProps, DatePickerCompactEmits } from '@vean/aria/date-picker';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

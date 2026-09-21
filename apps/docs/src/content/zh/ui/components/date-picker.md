@@ -27,9 +27,9 @@ head:
 
 ## 组件族系
 
-- `SDatePicker`——样式包装层：透传 props 给 headless compact，注入 `datePickerVariants`（扩展 `dateFieldVariants`），并在弹层内渲染 `SCalendar`
-- `DatePickerCompact`（headless）——由 `DateFieldCompact` + `PopoverCompact`（日历图标触发器）数据驱动组合，通过 default 插槽暴露弹层状态与 `calendarProps`；无样式使用时从 `@soybeanjs/headless/date-picker` 导入
-- `DateFieldCompact` / `PopoverCompact` / `CalendarCompact`（headless）——支撑选择器的分段字段、Popover 机制与日历网格
+- `SDatePicker`——样式包装层：透传 props 给 Aria compact，注入 `datePickerVariants`（扩展 `dateFieldVariants`），并在弹层内渲染 `SCalendar`
+- `DatePickerCompact`（Aria）——由 `DateFieldCompact` + `PopoverCompact`（日历图标触发器）数据驱动组合，通过 default 插槽暴露弹层状态与 `calendarProps`；无样式使用时从 `@vean/aria/date-picker` 导入
+- `DateFieldCompact` / `PopoverCompact` / `CalendarCompact`（Aria）——支撑选择器的分段字段、Popover 机制与日历网格
 
 ## 演示
 
@@ -43,28 +43,28 @@ head:
 
 ### 架构与行业对标差异
 
-`SDatePicker` 将 props 透传给 `DatePickerCompact`，后者组合 `DateFieldCompact`（分段 + 校验）与 `PopoverCompact`（`lucide:calendar` 图标触发器，带 `aria-haspopup="dialog"`）。样式层通过 `provideDatePickerUi` 注入 `datePickerVariants` 类，使嵌套的 Popover 部分获得 `trigger`/`positioner`/`popup` 样式，再在 default 插槽中用透传的 `calendarProps` 渲染 `SCalendar`。选中某天后触发 `update:modelValue` 并关闭弹层。弹层为 `role="dialog"`，默认可访问名称来自 locale `popupLabel` 消息；开关按钮的默认名称来自 `toggle`。多数对标库是「纯文本框 + 选择面板」形态；「分段字段 + Popover 组合」与 headless/styled 分离是差异点。
+`SDatePicker` 将 props 透传给 `DatePickerCompact`，后者组合 `DateFieldCompact`（分段 + 校验）与 `PopoverCompact`（`lucide:calendar` 图标触发器，带 `aria-haspopup="dialog"`）。样式层通过 `provideDatePickerUi` 注入 `datePickerVariants` 类，使嵌套的 Popover 部分获得 `trigger`/`positioner`/`popup` 样式，再在 default 插槽中用透传的 `calendarProps` 渲染 `SCalendar`。选中某天后触发 `update:modelValue` 并关闭弹层。弹层为 `role="dialog"`，默认可访问名称来自 locale `popupLabel` 消息；开关按钮的默认名称来自 `toggle`。多数对标库是「纯文本框 + 选择面板」形态；「分段字段 + Popover 组合」与 Aria/styled 分离是差异点。
 
-| 能力                    | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :---------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 分段字段 + 日历弹层     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 值受控 / 非受控         |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 弹层受控 / 非受控       |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 键盘分段编辑            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 日历键盘导航            |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| 范围校验                |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 禁用状态                |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| locale 驱动的可访问名称 |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `leading` 插槽          |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 独立的 `calendarUi`     |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| 能力                    | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :---------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 分段字段 + 日历弹层     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 值受控 / 非受控         |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 弹层受控 / 非受控       |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 键盘分段编辑            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 日历键盘导航            |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| 范围校验                |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 禁用状态                |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| locale 驱动的可访问名称 |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `leading` 插槽          |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 独立的 `calendarUi`     |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### 使用注意
 
 - 值是 `DateValue`（`Date` 或 `{ date, time? }`），不是 `string`——请与 `SDateField`、`SCalendar` 及日期族系其他组件搭配使用。
 - `defaultValue`/`defaultOpen` 仅在挂载时读取——外部控制请使用 `v-model`/`open`。
-- 开关按钮就是日历图标；其默认 `aria-label`（locale `toggle`）可通过 `triggerProps['aria-label']` 覆盖。图标本身固定——需要自定义触发器时，请用 `@soybeanjs/headless/date-picker` 组合 `DatePickerCompact` 并自行渲染 Popover 内容。
+- 开关按钮就是日历图标；其默认 `aria-label`（locale `toggle`）可通过 `triggerProps['aria-label']` 覆盖。图标本身固定——需要自定义触发器时，请用 `@vean/aria/date-picker` 组合 `DatePickerCompact` 并自行渲染 Popover 内容。
 - 弹层 `role="dialog"` 的可访问名称来自 locale `popupLabel` 消息；可通过 `popupProps['aria-label']` 覆盖。
 - 通过 `dateFieldProps`（如 `placeholder`、`locale`、`granularity`）配置内嵌分段字段；字段与日历共享 `minValue`/`maxValue`/`isDateUnavailable`。
 - `calendarUi` 被内嵌日历消费、不会到达 DOM——`dateFieldProps` 同理。
@@ -85,7 +85,7 @@ Tab 进入分段字段并键入数字或用方向键，或按下日历开关后�
 
 ### 如何自定义日历外观？
 
-`calendarUi` 独立于 `ui` 覆盖日历各槽位类。需要更深层定制时，default 插槽会收到 `calendarProps`（外加 `open`/`close`），可以用 `@soybeanjs/headless/calendar` 的 `CalendarCompact` 渲染自己的弹层内容。
+`calendarUi` 独立于 `ui` 覆盖日历各槽位类。需要更深层定制时，default 插槽会收到 `calendarProps`（外加 `open`/`close`），可以用 `@vean/aria/calendar` 的 `CalendarCompact` 渲染自己的弹层内容。
 
 ### `SDatePicker` 与 `SDateField` 有什么区别？
 

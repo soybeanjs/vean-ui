@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { Link } from '@soybeanjs/headless/link';
+import { useOmitProps } from '@vean/aria/composables';
+import { Link } from '@vean/aria/link';
 import { linkVariants } from '@/styles/link';
 import type { LinkProps } from './types';
 

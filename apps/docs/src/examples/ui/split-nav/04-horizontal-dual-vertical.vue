@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SSplitNav } from '@soybeanjs/ui';
+import { SButtonIcon, SSplitNav } from '@vean/ui';
 import { splitNavItems } from './data';
 
-const active = shallowRef('soybean-ui');
+const active = shallowRef('vean-ui');
 const collapsed = shallowRef(false);
 
 function handleToggleCollapsed() {

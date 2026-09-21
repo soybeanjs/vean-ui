@@ -1,14 +1,14 @@
 ---
 head:
   title: 气泡确认框
-  description: 基于 Popper 的确认框组件，用于轻量级的二次确认操作。SPopconfirm 组合 headless PopconfirmCompact（构建于 popper 基础组件之上）与 popconfirmVariants 样式配方（13 个槽、6 种尺寸 × 4 种类型）。
+  description: 基于 Popper 的确认框组件，用于轻量级的二次确认操作。SPopconfirm 组合 Aria PopconfirmCompact（构建于 popper 基础组件之上）与 popconfirmVariants 样式配方（13 个槽、6 种尺寸 × 4 种类型）。
 ---
 
 # 气泡确认框
 
 ## 概述
 
-基于 `Popper` 的确认框组件，用于轻量级的二次确认操作。`SPopconfirm` 组合 headless `PopconfirmCompact`（构建于 popper 基础组件之上）与 `popconfirmVariants` 样式配方（13 个槽、6 种尺寸 × 4 种类型）。
+基于 `Popper` 的确认框组件，用于轻量级的二次确认操作。`SPopconfirm` 组合 Aria `PopconfirmCompact`（构建于 popper 基础组件之上）与 `popconfirmVariants` 样式配方（13 个槽、6 种尺寸 × 4 种类型）。
 
 适用于触发器旁快速的内联确认（删除、破坏性操作）。更丰富的阻塞性确认请用 `dialog`；不打扰的提示请用 `tooltip`。
 
@@ -30,10 +30,10 @@ head:
 ## 组件家族
 
 - `SPopconfirm`（样式层）— 入口包装组件；`popconfirmVariants` 配方配合动态插槽转发
-- `PopconfirmCompact`（headless）— 构建于 `PopperRoot`/`PopperTrigger`/`PopperPositioner`/`PopperPopup` 之上的聚合组件
-- `PopconfirmHeader` / `PopconfirmContent` / `PopconfirmFooter`（headless）— 布局分区
-- `PopconfirmTitle` / `PopconfirmDescription`（headless）— 标题/描述
-- `PopconfirmConfirm` / `PopconfirmCancel`（headless）— 底部 `<button>`，发出 `confirm`/`cancel`
+- `PopconfirmCompact`（Aria）— 构建于 `PopperRoot`/`PopperTrigger`/`PopperPositioner`/`PopperPopup` 之上的聚合组件
+- `PopconfirmHeader` / `PopconfirmContent` / `PopconfirmFooter`（Aria）— 布局分区
+- `PopconfirmTitle` / `PopconfirmDescription`（Aria）— 标题/描述
+- `PopconfirmConfirm` / `PopconfirmCancel`（Aria）— 底部 `<button>`，发出 `confirm`/`cancel`
 
 ## 演示
 
@@ -47,17 +47,17 @@ head:
 
 ### 架构与对标差异
 
-`PopconfirmCompact` 组合 popper 触发器/定位器/弹层与确认式头部、内容、底部，所有基础组件保持零样式，仅由 UI 包装组件注入 `popconfirmVariants` 类。这与 radix-ui/shadcn-ui 的 headless 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供带 `title`/`description`/`okText`/`cancelText`/`onConfirm` prop 的单一样式化气泡确认框；SoybeanUI 额外暴露逐槽 `*Props`、`size` 尺寸体系、`type` 颜色/图标系统与本地化操作标签。
+`PopconfirmCompact` 组合 popper 触发器/定位器/弹层与确认式头部、内容、底部，所有基础组件保持零样式，仅由 UI 包装组件注入 `popconfirmVariants` 类。这与 radix-ui/shadcn-ui 的 headless 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供带 `title`/`description`/`okText`/`cancelText`/`onConfirm` prop 的单一样式化气泡确认框；VeanUI 额外暴露逐槽 `*Props`、`size` 尺寸体系、`type` 颜色/图标系统与本地化操作标签。
 
-| 能力              | SoybeanUI | shadcn/ui | Ant Design Popconfirm | Element Plus Popconfirm | Mantine Popconfirm | Naive UI Popconfirm |
-| :---------------- | :-------: | :-------: | :-------------------: | :---------------------: | :----------------: | :-----------------: |
-| 基于 Popper       |    ✅     |    ✅     |           —           |            —            |         —          |          —          |
-| Headless/样式分离 |    ✅     |    ✅     |           —           |            —            |         —          |          —          |
-| 类型图标 + 颜色   |    ✅     |     —     |           —           |           ✅            |         —          |          —          |
-| 标题 + 描述       |    ✅     |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
-| 本地化确认/取消   |    ✅     |     —     |           —           |            —            |         —          |          —          |
-| 尺寸（6）         |    ✅     |     —     |           —           |            —            |         —          |          —          |
-| 定位（popper）    |    ✅     |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
+| 能力            | VeanUI | shadcn/ui | Ant Design Popconfirm | Element Plus Popconfirm | Mantine Popconfirm | Naive UI Popconfirm |
+| :-------------- | :----: | :-------: | :-------------------: | :---------------------: | :----------------: | :-----------------: |
+| 基于 Popper     |   ✅   |    ✅     |           —           |            —            |         —          |          —          |
+| Aria/样式分离   |   ✅   |    ✅     |           —           |            —            |         —          |          —          |
+| 类型图标 + 颜色 |   ✅   |     —     |           —           |           ✅            |         —          |          —          |
+| 标题 + 描述     |   ✅   |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
+| 本地化确认/取消 |   ✅   |     —     |           —           |            —            |         —          |          —          |
+| 尺寸（6）       |   ✅   |     —     |           —           |            —            |         —          |          —          |
+| 定位（popper）  |   ✅   |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
 
 `—` = 不支持或采用不同交互模型。
 

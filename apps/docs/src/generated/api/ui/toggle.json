@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_types.toggleprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "_ToggleProps.defaultValue",
-            "sourcePath": "packages/headless/src/components/toggle/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_types.toggleprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "_ToggleProps.modelValue",
-            "sourcePath": "packages/headless/src/components/toggle/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_types.toggleprops.members.type",
             "default": "'button'",
             "inheritedFrom": "_ToggleProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -175,8 +175,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_types.toggleprops.members.disabled",
             "default": null,
             "inheritedFrom": "_ToggleProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -203,7 +203,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_types.toggleprops.members.aschild",
             "default": null,
             "inheritedFrom": "_ToggleProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -214,7 +214,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_types.toggleprops.members.as",
             "default": "'div'",
             "inheritedFrom": "_ToggleProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -249,8 +249,8 @@
         "type": "TypeAlias ToggleEmits",
         "resolvedType": "{ \"update:modelValue\": [value: boolean] }",
         "description": "Events for the Toggle component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_toggle_types.toggleemits.emits",
-        "sourcePath": "packages/headless/src/components/toggle/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_toggle_types.toggleemits.emits",
+        "sourcePath": "packages/aria/src/components/toggle/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -260,8 +260,8 @@
             "parameters": "value: boolean",
             "required": true,
             "description": "Event handler called when the pressed state changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_types.toggleemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/toggle/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_types.toggleemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/toggle/types.ts",
             "referencedTypes": []
           }
         ],

@@ -118,7 +118,7 @@ describe('SBreadcrumb', () => {
       expect(text).toContain('Home');
       expect(text).toContain('Components');
       expect(text).toContain('Breadcrumb');
-      expect(wrapper.find('[data-soybean-breadcrumb-ellipsis]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-breadcrumb-ellipsis]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -269,8 +269,8 @@ describe('SBreadcrumb', () => {
         items: ellipsisItems
       });
 
-      const separators = wrapper.findAll('[data-soybean-breadcrumb-separator]');
-      const ellipsis = wrapper.find('[data-soybean-breadcrumb-ellipsis]');
+      const separators = wrapper.findAll('[data-vean-breadcrumb-separator]');
+      const ellipsis = wrapper.find('[data-vean-breadcrumb-ellipsis]');
 
       expect(separators.every(separator => separator.attributes('aria-hidden') === 'true')).toBe(true);
       expect(separators.every(separator => separator.attributes('role') === 'presentation')).toBe(true);

@@ -1,6 +1,6 @@
 # editor — 富文本编辑器技术方案（提案）
 
-> **2026-09 前提变更：** 本文写于「外围包单包自治」时期，标题中的 `@soybeanjs/editor` 是当时设想的包名；当前仓库无外围包，文中包结构、lockstep、跨包依赖等设定已不适用。**市场调研结论与能力设计仍然有效**；立项时须先按 [README §立项时必须回答的问题](./README.md#立项时必须回答的问题) 确定落地形态（并入核心 headless/ui、独立包、或 sbean 源码配方）。
+> **2026-09 前提变更：** 本文写于「外围包单包自治」时期，标题中的 `@soybeanjs/editor` 是当时设想的包名；当前仓库无外围包，文中包结构、lockstep、跨包依赖等设定已不适用。**市场调研结论与能力设计仍然有效**；立项时须先按 [README §立项时必须回答的问题](./README.md#立项时必须回答的问题) 确定落地形态（并入核心 aria/ui、独立包、或 vean 源码配方）。
 
 > 定位（提案）：提供与主题 token 深度集成的**富文本 / 块编辑器**组件——基于 Tiptap 内核的 styled 封装层，对标社区 shadcn + Tiptap 方案（NiazMorhed2007/shadcn-tiptap、minimal-tiptap、Novel）在 Vue 3 + UnoCSS 体系下的等价物。
 >
@@ -43,7 +43,7 @@
 
 | 候选                      | Vue 3 支持                                                      |    许可     | 判断                                                                            |
 | :------------------------ | :-------------------------------------------------------------- | :---------: | :------------------------------------------------------------------------------ |
-| **Tiptap**（ProseMirror） | **官方一等公民**（`@tiptap/vue-3`，Tiptap 起家即 Vue 项目）     |  核心 MIT   | **首选**：headless 架构与 SoybeanUI 理念同构，扩展生态最大                      |
+| **Tiptap**（ProseMirror） | **官方一等公民**（`@tiptap/vue-3`，Tiptap 起家即 Vue 项目）     |  核心 MIT   | **首选**：headless 架构与 Vean 理念同构，扩展生态最大                           |
 | Milkdown（ProseMirror）   | 有 Vue 绑定                                                     |     MIT     | 备选：Markdown-first，适合文档/笔记场景；社区较小。可作为 `markdown` 模式的参考 |
 | Lexical（Meta）           | 仅社区 [lexical-vue](https://github.com/wobsoriano/lexical-vue) |     MIT     | 不推荐：官方绑定 React-only，第三方维护是长期风险                               |
 | BlockNote（ProseMirror）  | React only                                                      |     MIT     | 排除：无 Vue 支持                                                               |
@@ -56,7 +56,7 @@
 
 1. **源码分发不合适**：编辑器需要跟随 Tiptap 上游持续适配（扩展 API 变更频繁），市场模式的「复制源码自持」会让用户背负升级成本。
 2. **体量是子领域级**：工具栏、气泡菜单、slash 命令、图片上传、表格交互、markdown 双向——相当于一个完整组件族（预计 15+ 导出），超出单条市场条目的合理粒度。
-3. **与生态包协同**：图片上传挂接核心库 `Upload`、数学公式复用 `Equation`（KaTeX peer）、主题走 `@soybeanjs/theme` token——正外围包形态。
+3. **与生态包协同**：图片上传挂接核心库 `Upload`、数学公式复用 `Equation`（KaTeX peer）、主题走 `@vean/theme` token——正外围包形态。
 
 ## 2. 架构设计
 
@@ -66,7 +66,7 @@
 Layer 4  @soybeanjs/editor ──► @soybeanjs/{ui, headless, theme}
 ```
 
-- 单包自治（ADR-0001）：不建 headless-editor 中间层——Tiptap 本身就是 headless 内核，本包是「styled + 组合」层，角色类似 `packages/ui` 之于 headless，但内生于单包。
+- 单包自治（ADR-0001）：不建 headless-editor 中间层——Tiptap 本身就是 headless 内核，本包是「styled + 组合」层，角色类似 `packages/ui` 之于 aria，但内生于单包。
 - 跨包依赖：默认无；未来若需在 admin 表单中嵌入，由 admin 声明 `editor` optional peerDep（需先在 CONTEXT.md 白名单加边）。
 - **内核 peer 策略**：`@tiptap/core`、`@tiptap/vue-3` 为 peer dependency（用户自选版本）；`@tiptap/starter-kit` 等扩展按需 peer 或 optional peer（对齐核心 AI markdown 组件对 shiki/mermaid 的 optional peer 模式，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)）。
 
@@ -131,15 +131,15 @@ packages/editor/
 
 ## 5. 技术选型
 
-| 选型        | 决策                                                                              | 理由                                                  |
-| :---------- | :-------------------------------------------------------------------------------- | :---------------------------------------------------- |
-| 内核        | Tiptap（peer dep，锁定主版本兼容矩阵）                                            | Vue 3 官方支持 + headless 同构 + 最大扩展生态（§1.3） |
-| UI 底座     | `@soybeanjs/ui` 原子组件（SButton / SIcon / SPopover / SDropdownMenu / combobox） | 与 admin 的复用规范一致：查询优先、禁止重复造原子     |
-| 蓝本        | shadcn-tiptap（扩展集与工具栏）+ minimal-tiptap（组件切分）+ Novel（交互范式）    | 全 MIT，规避官方付费 UI 组件的代码风险                |
-| Markdown    | markdown-it 系 MIT 方案封装为 `useEditorMarkdown`                                 | Conversion 付费，自建覆盖 90% 场景                    |
-| 数学        | KaTeX（peer）复用核心库 `Equation` 组件路线                                       | 不重复实现                                            |
-| 样式        | `scv()` + prose 主题类由 `@soybeanjs/theme` token 派生                            | 亮暗联动，禁原始 CSS                                  |
-| 构建 / 测试 | `vp pack` + vitest + Playwright + axe（编辑器键盘可达性是重点）                   | 对齐 packages/ui                                      |
+| 选型        | 决策                                                                           | 理由                                                  |
+| :---------- | :----------------------------------------------------------------------------- | :---------------------------------------------------- |
+| 内核        | Tiptap（peer dep，锁定主版本兼容矩阵）                                         | Vue 3 官方支持 + headless 同构 + 最大扩展生态（§1.3） |
+| UI 底座     | `@vean/ui` 原子组件（SButton / SIcon / SPopover / SDropdownMenu / combobox）   | 与 admin 的复用规范一致：查询优先、禁止重复造原子     |
+| 蓝本        | shadcn-tiptap（扩展集与工具栏）+ minimal-tiptap（组件切分）+ Novel（交互范式） | 全 MIT，规避官方付费 UI 组件的代码风险                |
+| Markdown    | markdown-it 系 MIT 方案封装为 `useEditorMarkdown`                              | Conversion 付费，自建覆盖 90% 场景                    |
+| 数学        | KaTeX（peer）复用核心库 `Equation` 组件路线                                    | 不重复实现                                            |
+| 样式        | `scv()` + prose 主题类由 `@vean/theme` token 派生                              | 亮暗联动，禁原始 CSS                                  |
+| 构建 / 测试 | `vp pack` + vitest + Playwright + axe（编辑器键盘可达性是重点）                | 对齐 packages/ui                                      |
 
 ## 6. 兼容性考虑
 

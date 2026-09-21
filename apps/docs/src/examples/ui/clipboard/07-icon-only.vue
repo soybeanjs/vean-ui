@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SClipboard } from '@soybeanjs/ui';
+import { SClipboard } from '@vean/ui';
 
 const value = 'icon-only-example';
 </script>

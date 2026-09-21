@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="T extends TreeItemData, U extends MaybeArray<string> | undefined, M extends boolean">
-import { useForwardListeners } from '@soybeanjs/headless/composables';
-import { isTreeMotionItem, TreeRoot } from '@soybeanjs/headless/tree';
-import type { TreeRootProps, TreeItemData, TreeRootEmits } from '@soybeanjs/headless/tree';
-import type { MaybeArray } from '@soybeanjs/headless/types';
+import { useForwardListeners } from '@vean/aria/composables';
+import { isTreeMotionItem, TreeRoot } from '@vean/aria/tree';
+import type { TreeRootProps, TreeItemData, TreeRootEmits } from '@vean/aria/tree';
+import type { MaybeArray } from '@vean/aria/types';
 import STreeMotionBlock from './tree-motion-block.vue';
 import type { TreeSlots } from './types';
 

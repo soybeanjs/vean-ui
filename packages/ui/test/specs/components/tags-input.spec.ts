@@ -100,7 +100,7 @@ describe('STagsInput', () => {
     it('shows the clear trigger by default', () => {
       const wrapper = mountCompactTagsInput();
 
-      expect(wrapper.find('[data-soybean-tags-input-clear]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tags-input-clear]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -108,7 +108,7 @@ describe('STagsInput', () => {
     it('hides the clear trigger when clearable is false', () => {
       const wrapper = mountCompactTagsInput({ clearable: false });
 
-      expect(wrapper.find('[data-soybean-tags-input-clear]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tags-input-clear]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -116,7 +116,7 @@ describe('STagsInput', () => {
     it('applies the size variant class to the root', () => {
       const wrapper = mountCompactTagsInput({ size: 'lg' });
 
-      expect(wrapper.find('[data-soybean-tags-input-root]').classes()).toContain('min-h-9');
+      expect(wrapper.find('[data-vean-tags-input-root]').classes()).toContain('min-h-9');
 
       wrapper.unmount();
     });
@@ -128,9 +128,9 @@ describe('STagsInput', () => {
         itemDeleteProps: { class: 'custom-delete' }
       });
 
-      expect(wrapper.find('[data-soybean-tags-input-item]').classes()).toContain('custom-item');
-      expect(wrapper.find('[data-soybean-tags-input-item-text]').classes()).toContain('custom-text');
-      expect(wrapper.find('[data-soybean-tags-input-item-delete]').classes()).toContain('custom-delete');
+      expect(wrapper.find('[data-vean-tags-input-item]').classes()).toContain('custom-item');
+      expect(wrapper.find('[data-vean-tags-input-item-text]').classes()).toContain('custom-text');
+      expect(wrapper.find('[data-vean-tags-input-item-delete]').classes()).toContain('custom-delete');
 
       wrapper.unmount();
     });
@@ -202,7 +202,7 @@ describe('STagsInput', () => {
     it('skips adding on blur when focus moves inside the tag list', async () => {
       const wrapper = mountCompactTagsInput({ addOnBlur: true, id: 'ti' });
       const input = wrapper.find('input');
-      const deleteButton = wrapper.find('[data-soybean-tags-input-item-delete]');
+      const deleteButton = wrapper.find('[data-vean-tags-input-item-delete]');
 
       await input.setValue('Half');
       await input.trigger('blur', { relatedTarget: deleteButton.element });
@@ -278,7 +278,7 @@ describe('STagsInput', () => {
       await input.trigger('keydown.enter');
 
       expect(wrapper.emitted('addTag')?.[0]).toEqual(['Vue']);
-      expect(wrapper.findAll('[data-soybean-tags-input-item]')).toHaveLength(3);
+      expect(wrapper.findAll('[data-vean-tags-input-item]')).toHaveLength(3);
 
       wrapper.unmount();
     });
@@ -301,7 +301,7 @@ describe('STagsInput', () => {
 
       expect((wrapper.find('input').element as HTMLInputElement).readOnly).toBe(true);
 
-      await wrapper.findAll('[data-soybean-tags-input-item-delete]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-tags-input-item-delete]')[0].trigger('click');
 
       expect(wrapper.emitted('removeTag')?.[0]).toEqual(['Vue']);
 
@@ -311,7 +311,7 @@ describe('STagsInput', () => {
     it('clears all tags when clear is clicked', async () => {
       const wrapper = mountCompactTagsInput();
 
-      await wrapper.find('[data-soybean-tags-input-clear]').trigger('click');
+      await wrapper.find('[data-vean-tags-input-clear]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')?.[0]).toEqual([[]]);
 
@@ -321,7 +321,7 @@ describe('STagsInput', () => {
     it('removes the first tag on delete click without recursive updates', async () => {
       const wrapper = mount(ControlledCompactTagsInput, { attachTo: document.body });
 
-      await wrapper.findAll('[data-soybean-tags-input-item-delete]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-tags-input-item-delete]')[0].trigger('click');
 
       expect(wrapper.text()).not.toContain('Vue');
       expect(wrapper.text()).toContain('React');
@@ -412,7 +412,7 @@ describe('STagsInput', () => {
     it('does not clear when disabled', async () => {
       const wrapper = mountCompactTagsInput({ disabled: true });
 
-      await wrapper.find('[data-soybean-tags-input-clear]').trigger('click');
+      await wrapper.find('[data-vean-tags-input-clear]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeFalsy();
 
@@ -422,9 +422,9 @@ describe('STagsInput', () => {
     it('disables item delete buttons and marks items when disabled', () => {
       const wrapper = mountCompactTagsInput({ disabled: true });
 
-      const deleteButton = wrapper.find('[data-soybean-tags-input-item-delete]').element as HTMLButtonElement;
+      const deleteButton = wrapper.find('[data-vean-tags-input-item-delete]').element as HTMLButtonElement;
       expect(deleteButton.disabled).toBe(true);
-      expect(wrapper.find('[data-soybean-tags-input-item]').attributes('data-disabled')).toBeDefined();
+      expect(wrapper.find('[data-vean-tags-input-item]').attributes('data-disabled')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -456,7 +456,7 @@ describe('STagsInput', () => {
       const wrapper = mountCompactTagsInput({ id: 'tags-x' });
 
       expect(wrapper.find('input').attributes('aria-controls')).toBe('tags-x-tags-list');
-      expect(wrapper.get('[data-soybean-tags-input-root]').attributes('id')).toBe('tags-x-tags-list');
+      expect(wrapper.get('[data-vean-tags-input-root]').attributes('id')).toBe('tags-x-tags-list');
 
       wrapper.unmount();
     });
@@ -477,7 +477,7 @@ describe('STagsInput', () => {
       await nextTick();
       await flushPromises();
 
-      const item = wrapper.find('[data-soybean-tags-input-item]');
+      const item = wrapper.find('[data-vean-tags-input-item]');
       const labelId = item.attributes('aria-labelledby');
 
       expect(labelId).toBeTruthy();

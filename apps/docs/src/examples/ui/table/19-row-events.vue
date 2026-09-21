@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { STable } from '@soybeanjs/ui';
-import type { TableColumn, TableRowEventPayload } from '@soybeanjs/ui';
+import { STable } from '@vean/ui';
+import type { TableColumn, TableRowEventPayload } from '@vean/ui';
 
 interface TableData {
   id: number;

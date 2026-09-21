@@ -12,7 +12,7 @@ describe('SLabel', () => {
       });
 
       const label = wrapper.get('label');
-      expect(label.attributes('data-soybean-label')).toBe('');
+      expect(label.attributes('data-vean-label')).toBe('');
       expect(label.text()).toBe('Email address');
 
       wrapper.unmount();

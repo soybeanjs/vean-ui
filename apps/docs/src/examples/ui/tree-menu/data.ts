@@ -1,4 +1,4 @@
-import type { TreeMenuBaseOptionData, TreeMenuOptionData } from '@soybeanjs/ui';
+import type { TreeMenuBaseOptionData, TreeMenuOptionData } from '@vean/ui';
 
 interface TreeMenuExtendedOptionData extends TreeMenuBaseOptionData {
   customProp?: string;
@@ -197,10 +197,10 @@ export const treeMenuItems: TreeMenuOptionData<TreeMenuExtendedOptionData>[] = [
     isGroup: true,
     children: [
       {
-        label: 'Soybean UI',
-        value: 'soybean-ui',
+        label: 'VeanUI',
+        value: 'vean-ui',
         icon: 'lucide:book-open',
-        href: 'https://ui.soybeanjs.cn'
+        href: 'https://veanui.com'
       },
       {
         label: 'Route About',

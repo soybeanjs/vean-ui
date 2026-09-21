@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h } from 'vue';
-import { SButton, toast } from '@soybeanjs/ui';
+import { SButton, toast } from '@vean/ui';
 
 function openActionToast() {
   toast('Project archived', {

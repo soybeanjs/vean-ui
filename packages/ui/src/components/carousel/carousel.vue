@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends DefinedValue = DefinedValue">
 import { computed } from 'vue';
-import { CarouselCompact, provideCarouselUi } from '@soybeanjs/headless/carousel';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
-import type { DefinedValue } from '@soybeanjs/headless/types';
+import { CarouselCompact, provideCarouselUi } from '@vean/aria/carousel';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
+import type { DefinedValue } from '@vean/aria/types';
 import { carouselVariants } from '@/styles/carousel';
 import type { CarouselProps, CarouselEmits, CarouselSlots } from './types';
 

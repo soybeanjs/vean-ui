@@ -1,4 +1,4 @@
-import type { BaseProps, ClassValue } from '@soybeanjs/headless/types';
+import type { BaseProps, ClassValue } from '@vean/aria/types';
 import type { TagShape, TagVariant } from '@/styles/tag';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

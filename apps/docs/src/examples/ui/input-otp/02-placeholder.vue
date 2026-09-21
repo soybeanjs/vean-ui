@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { REGEXP_ONLY_DIGITS_AND_CHARS } from '@soybeanjs/headless/constants';
-import { SInputOtp } from '@soybeanjs/ui';
+import { REGEXP_ONLY_DIGITS_AND_CHARS } from '@vean/aria/constants';
+import { SInputOtp } from '@vean/ui';
 
 const otp = ref('A3F');
 </script>

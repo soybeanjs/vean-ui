@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { SliderCompact, provideSliderUi } from '@soybeanjs/headless/slider';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { SliderCompact, provideSliderUi } from '@vean/aria/slider';
 import { sliderVariants } from '@/styles/slider';
 import type { SliderProps, SliderEmits } from './types';
 

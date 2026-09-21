@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SScrollArea } from '@soybeanjs/ui';
+import { SScrollArea } from '@vean/ui';
 
 const cards = Array.from({ length: 12 }, (_, index) => ({
   title: `Card ${index + 1}`,

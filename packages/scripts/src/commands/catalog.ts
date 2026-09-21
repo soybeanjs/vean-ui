@@ -19,7 +19,7 @@ import {
   writeGenerationFingerprint
 } from '../shared/generation-cache';
 
-export type CatalogTarget = 'headless' | 'ui';
+export type CatalogTarget = 'aria' | 'ui';
 
 interface CatalogDocument {
   /** output file, relative to the package src dir */
@@ -35,8 +35,8 @@ interface CatalogTargetConfig {
 }
 
 const CONFIG: Record<CatalogTarget, CatalogTargetConfig> = {
-  headless: {
-    srcDir: 'packages/headless/src',
+  aria: {
+    srcDir: 'packages/aria/src',
     isGroupExport: isFamilyExport,
     buildDocuments: groups => [
       { file: 'constants/components.ts', code: emitComponentsModule(groups) },
@@ -52,7 +52,7 @@ const CONFIG: Record<CatalogTarget, CatalogTargetConfig> = {
 
 /** Output-file shapes only (used before groups are known); `code` stays empty. */
 const OUTPUT_SHAPES: Record<CatalogTarget, string[]> = {
-  headless: ['constants/components.ts', 'namespaced/index.ts'],
+  aria: ['constants/components.ts', 'namespaced/index.ts'],
   ui: ['constants/components.ts']
 };
 

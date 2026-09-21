@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { SplitterGroup, provideSplitterUi } from '@soybeanjs/headless/splitter';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { SplitterGroup, provideSplitterUi } from '@vean/aria/splitter';
 import { splitterVariants } from '@/styles/splitter';
 import type { SplitterGroupProps, SplitterGroupEmits } from './types';
 

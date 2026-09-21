@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { ColorSwatchCompact, provideColorSwatchUi } from '@soybeanjs/headless/color-swatch';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { ColorSwatchCompact, provideColorSwatchUi } from '@vean/aria/color-swatch';
+import { useOmitProps } from '@vean/aria/composables';
 import { colorSwatchVariants } from '@/styles/color-swatch';
 import type { ColorSwatchProps, ColorSwatchSlots } from './types';
 

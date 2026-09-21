@@ -9,8 +9,8 @@ import { renderComponent } from '../../shared/render';
  * The shell must keep one box while switching between the Theme and Custom tabs:
  * a scrollbar appearing on the longer Custom panel used to resize the host popover.
  */
-const ROOT = '[data-soybean-theme-customizer]';
-const SELECTED_CONTENT = '[data-soybean-tabs-content][data-selected="true"]';
+const ROOT = '[data-vean-theme-customizer]';
+const SELECTED_CONTENT = '[data-vean-tabs-content][data-selected="true"]';
 
 const boxOf = (selector: string): DOMRect => {
   const node = document.querySelector<HTMLElement>(selector);

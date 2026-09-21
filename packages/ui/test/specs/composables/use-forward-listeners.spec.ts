@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { defineComponent } from 'vue';
 import { mount } from '@vue/test-utils';
-import { useForwardListeners } from '../../../../headless/src/composables/use-forward-listeners';
+import { useForwardListeners } from '../../../../aria/src/composables/use-forward-listeners';
 
 describe('useForwardListeners', () => {
   it('should return empty object when no emits are defined', () => {

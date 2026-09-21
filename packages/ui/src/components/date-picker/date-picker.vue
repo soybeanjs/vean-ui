@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import type { DateValue } from '@soybeanjs/headless/date';
-import { DatePickerCompact, provideDatePickerUi } from '@soybeanjs/headless/date-picker';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import type { DateValue } from '@vean/aria/date';
+import { DatePickerCompact, provideDatePickerUi } from '@vean/aria/date-picker';
 import { datePickerVariants } from '@/styles/date-picker';
 import Calendar from '../calendar/calendar.vue';
 import type { DatePickerProps, DatePickerEmits, DatePickerSlots } from './types';

@@ -27,9 +27,9 @@ A date picker that pairs a keyboard-editable segmented date field with a calenda
 
 ## Component family
 
-- `SDatePicker` — the styled wrapper that forwards props to the headless compact, injects `datePickerVariants` (extending `dateFieldVariants`), and renders `SCalendar` inside the popup
-- `DatePickerCompact` (headless) — data-driven composition of `DateFieldCompact` + `PopoverCompact` (calendar-icon trigger) that exposes the popup state and `calendarProps` through its default slot; import from `@soybeanjs/headless/date-picker` for unstyled usage
-- `DateFieldCompact` / `PopoverCompact` / `CalendarCompact` (headless) — the segmented field, the popover mechanics, and the calendar grid that back the picker
+- `SDatePicker` — the styled wrapper that forwards props to the Aria compact, injects `datePickerVariants` (extending `dateFieldVariants`), and renders `SCalendar` inside the popup
+- `DatePickerCompact` (Aria) — data-driven composition of `DateFieldCompact` + `PopoverCompact` (calendar-icon trigger) that exposes the popup state and `calendarProps` through its default slot; import from `@vean/aria/date-picker` for unstyled usage
+- `DateFieldCompact` / `PopoverCompact` / `CalendarCompact` (Aria) — the segmented field, the popover mechanics, and the calendar grid that back the picker
 
 ## Demos
 
@@ -43,28 +43,28 @@ A date picker that pairs a keyboard-editable segmented date field with a calenda
 
 ### Architecture and benchmark differences
 
-`SDatePicker` forwards props to `DatePickerCompact`, which wires `DateFieldCompact` (segments + validation) and `PopoverCompact` (a `lucide:calendar` icon trigger with `aria-haspopup="dialog"`). The styled layer injects `datePickerVariants` classes through `provideDatePickerUi` so the nested popover parts get `trigger`/`positioner`/`popup` styling, then renders `SCalendar` in the default slot with the forwarded `calendarProps`. Selecting a day emits `update:modelValue` and closes the popup. The popup is a `role="dialog"` with a default accessible name from the locale `popupLabel` message; the toggle gets `toggle`. Most benchmark libraries ship a plain text input plus a picker panel; the segmented-field-plus-popover combo and the headless/styled split are the differentiators.
+`SDatePicker` forwards props to `DatePickerCompact`, which wires `DateFieldCompact` (segments + validation) and `PopoverCompact` (a `lucide:calendar` icon trigger with `aria-haspopup="dialog"`). The styled layer injects `datePickerVariants` classes through `provideDatePickerUi` so the nested popover parts get `trigger`/`positioner`/`popup` styling, then renders `SCalendar` in the default slot with the forwarded `calendarProps`. Selecting a day emits `update:modelValue` and closes the popup. The popup is a `role="dialog"` with a default accessible name from the locale `popupLabel` message; the toggle gets `toggle`. Most benchmark libraries ship a plain text input plus a picker panel; the segmented-field-plus-popover combo and the Aria/styled split are the differentiators.
 
-| Capability                       | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :------------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled split            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Segmented field + calendar popup |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Controlled / uncontrolled value  |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Controlled / uncontrolled open   |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Keyboard segment editing         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Calendar keyboard navigation     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| Range validation                 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`              |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Disabled state                   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Locale-driven accessible names   |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `leading` slot                   |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Independent `calendarUi`         |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| Capability                       | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :------------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled split                |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Segmented field + calendar popup |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Controlled / uncontrolled value  |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Controlled / uncontrolled open   |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Keyboard segment editing         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Calendar keyboard navigation     |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| Range validation                 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`              |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Disabled state                   |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Locale-driven accessible names   |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `leading` slot                   |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Independent `calendarUi`         |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### Cautions
 
 - The value is a `DateValue` (`Date` or `{ date, time? }`) — not a `string`. Use it with `SDateField`, `SCalendar`, and the other date-family components.
 - `defaultValue`/`defaultOpen` are only read on mount — use `v-model`/`open` for external control.
-- The toggle button is the calendar icon; its default `aria-label` (locale `toggle`) can be overridden through `triggerProps['aria-label']`. The icon itself is fixed — to render a custom trigger, compose `DatePickerCompact` from `@soybeanjs/headless/date-picker` with your own popover content.
+- The toggle button is the calendar icon; its default `aria-label` (locale `toggle`) can be overridden through `triggerProps['aria-label']`. The icon itself is fixed — to render a custom trigger, compose `DatePickerCompact` from `@vean/aria/date-picker` with your own popover content.
 - The popup `role="dialog"` gets its accessible name from the locale `popupLabel` message; override it through `popupProps['aria-label']`.
 - Pass `dateFieldProps` (e.g. `placeholder`, `locale`, `granularity`) to configure the embedded segmented field; field and calendar share `minValue`/`maxValue`/`isDateUnavailable`.
 - `calendarUi` is consumed by the embedded calendar and never reaches the DOM — the same applies to `dateFieldProps`.
@@ -85,7 +85,7 @@ Use `dateFieldProps` — for example `{ placeholder }`, `{ locale }`, `{ granula
 
 ### How do I customize the calendar look?
 
-`calendarUi` overrides the calendar's per-slot classes independently of `ui`. For deeper customization, the default slot receives `calendarProps` (plus `open`/`close`) so you can render your own popup content with `CalendarCompact` from `@soybeanjs/headless/calendar`.
+`calendarUi` overrides the calendar's per-slot classes independently of `ui`. For deeper customization, the default slot receives `calendarProps` (plus `open`/`close`) so you can render your own popup content with `CalendarCompact` from `@vean/aria/calendar`.
 
 ### How is `SDatePicker` different from `SDateField`?
 

@@ -1,12 +1,12 @@
 ---
 head:
   title: Chart Demos
-  description: shadcn-styled chart demos built with TanStack Charts and SoybeanUI theme tokens.
+  description: shadcn-styled chart demos built with TanStack Charts and VeanUI theme tokens.
 ---
 
 # Charts
 
-These charts render directly with [TanStack Charts](https://tanstack.com/charts), following the same usage as the [shadcn chart collection](https://tanstack.com/charts/catalog/collections/shadcn). SoybeanUI **no longer ships a dedicated chart wrapper package** — TanStack Charts is already a framework-agnostic chart grammar, and using it directly lets you follow the official upgrade path without being locked into an extra abstraction.
+These charts render directly with [TanStack Charts](https://tanstack.com/charts), following the same usage as the [shadcn chart collection](https://tanstack.com/charts/catalog/collections/shadcn). VeanUI **no longer ships a dedicated chart wrapper package** — TanStack Charts is already a framework-agnostic chart grammar, and using it directly lets you follow the official upgrade path without being locked into an extra abstraction.
 
 ## How theming works
 

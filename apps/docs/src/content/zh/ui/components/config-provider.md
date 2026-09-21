@@ -1,14 +1,14 @@
 ---
 head:
   title: 全局配置
-  description: SConfigProvider 组件是 SoybeanUI 库的根配置提供者。它管理全局主题、本地化、图标设置以及其他上下文感知功能。它应包裹整个应用程序或需要隔离配置的特定部分。
+  description: SConfigProvider 组件是 VeanUI 库的根配置提供者。它管理全局主题、本地化、图标设置以及其他上下文感知功能。它应包裹整个应用程序或需要隔离配置的特定部分。
 ---
 
 # 全局配置
 
 ## 概述
 
-`SConfigProvider` 组件是 SoybeanUI 库的根配置提供者。它管理全局主题、本地化、图标设置以及其他上下文感知功能。它应包裹整个应用程序或需要隔离配置的特定部分。
+`SConfigProvider` 组件是 VeanUI 库的根配置提供者。它管理全局主题、本地化、图标设置以及其他上下文感知功能。它应包裹整个应用程序或需要隔离配置的特定部分。
 
 ## 功能
 
@@ -26,7 +26,7 @@ head:
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 </script>
 
 <template>
@@ -63,7 +63,7 @@ import { SConfigProvider } from '@soybeanjs/ui';
 
 ## 国际化 / Locale
 
-SoybeanUI 目前提供以下 13 套内置组件文案，用于驱动无障碍标签、空状态文案等内置文字。
+VeanUI 目前提供以下 13 套内置组件文案，用于驱动无障碍标签、空状态文案等内置文字。
 
 | 代码    | 语言         |
 | ------- | ------------ |
@@ -81,7 +81,7 @@ SoybeanUI 目前提供以下 13 套内置组件文案，用于驱动无障碍标
 | `tr`    | 土耳其语     |
 | `id`    | 印度尼西亚语 |
 
-默认只有 `en` 和 `zh-CN` 会被预注册。其余受支持的 locale 文件需要从 `@soybeanjs/headless/locale/{code}` 导入后手动注册。
+默认只有 `en` 和 `zh-CN` 会被预注册。其余受支持的 locale 文件需要从 `@vean/aria/locale/{code}` 导入后手动注册。
 
 当未显式传入 `dir` 时，`ConfigProvider` 会自动跟随 `locale` 对应的方向。例如 `locale="ar"` 会推导出 `dir="rtl"`，`locale="en"` 会推导出 `dir="ltr"`。如果你需要覆盖该规则，仍然可以显式传入 `dir`。
 
@@ -105,8 +105,8 @@ SoybeanUI 目前提供以下 13 套内置组件文案，用于驱动无障碍标
 把语言文件按默认导入方式引入，在应用初始化时注册一次，然后再把同样的 locale 代码传给 `SConfigProvider`：
 
 ```ts
-import { registerLocale } from '@soybeanjs/headless/locale';
-import ar from '@soybeanjs/headless/locale/ar';
+import { registerLocale } from '@vean/aria/locale';
+import ar from '@vean/aria/locale/ar';
 
 registerLocale(ar);
 ```
@@ -117,7 +117,7 @@ registerLocale(ar);
 </SConfigProvider>
 ```
 
-如果你想基于某个受支持的 locale 做扩展，也可以从 `@soybeanjs/headless/locale/{code}` 对应子路径导入语言文件作为基础。
+如果你想基于某个受支持的 locale 做扩展，也可以从 `@vean/aria/locale/{code}` 对应子路径导入语言文件作为基础。
 
 ### 覆盖部分文案
 
@@ -125,7 +125,7 @@ registerLocale(ar);
 
 ```vue
 <script setup lang="ts">
-import type { LocaleMessagesOverrides } from '@soybeanjs/headless';
+import type { LocaleMessagesOverrides } from '@vean/aria';
 
 const messages: LocaleMessagesOverrides = {
   table: {
@@ -147,8 +147,8 @@ const messages: LocaleMessagesOverrides = {
 以 `en` 这个基础注册表为起点，从 `en.messages` 展开并覆盖所需键，然后用简写形式注册为自定义名称：
 
 ```ts
-import { registerLocale, en } from '@soybeanjs/headless/locale';
-import type { LocaleMessages } from '@soybeanjs/headless/locale';
+import { registerLocale, en } from '@vean/aria/locale';
+import type { LocaleMessages } from '@vean/aria/locale';
 
 const myLocale: LocaleMessages = {
   ...en.messages,
@@ -213,30 +213,30 @@ registerLocale('custom', myLocale);
 
 ### 架构与对标差异
 
-SoybeanUI 将 `ConfigProvider` 拆分为 headless 层（`@soybeanjs/headless/config-provider`，负责 locale、方向、tooltip 与文案上下文）与 styled 层（`@soybeanjs/ui`，负责主题 CSS 注入、图标渲染与 provider 组合：toast / dialog / progress）。这与 `shadcn/ui` 的 headless/styled 分离一致，区别于 Ant Design、Element Plus、MUI、Mantine、Naive UI 等单包 ConfigProvider。
+VeanUI 将 `ConfigProvider` 拆分为 Aria 层（`@vean/aria/config-provider`，负责 locale、方向、tooltip 与文案上下文）与 styled 层（`@vean/ui`，负责主题 CSS 注入、图标渲染与 provider 组合：toast / dialog / progress）。这与 `shadcn/ui` 的 headless/styled 分离一致，区别于 Ant Design、Element Plus、MUI、Mantine、Naive UI 等单包 ConfigProvider。
 
-| 维度          | SoybeanUI                                                                                       | Ant Design / Element Plus / MUI / Mantine / Naive UI |
-| :------------ | :---------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
-| 架构          | headless + styled 分离，双 `provide/inject` 上下文                                              | 单包，单一 ConfigProvider                            |
-| 主题注入      | `buildThemeCss()`（`@soybeanjs/ui` → `@soybeanjs/theme`）写入 `<style id="soybean-theme">` 标签 | CSS 变量 / 主题对象 / `ConfigProvider.theme`         |
-| 暗色模式      | `theme.darkSelector`（`'class'` → `.dark`、`'media'` → 系统、自定义）；切换 `.dark` 类          | `theme.dark`、`dark-mode` 类、`colorScheme`          |
-| RTL           | `dir` prop + `useDirection`；按 `locale` 自动推导，并带 RTL 前缀兜底                            | `direction` prop、`dir` 属性、主题方向               |
-| 国际化        | `locale` + `messages` 覆盖；`registerLocale` 注册其他 locale                                    | `locale` prop / `LocalizationProvider`               |
-| Provider 组合 | 默认插槽内自动渲染 `ToastProvider`、`DialogProvider`、`ProgressProvider`                        | 由用户自行挂载独立 provider                          |
+| 维度          | VeanUI                                                                                 | Ant Design / Element Plus / MUI / Mantine / Naive UI |
+| :------------ | :------------------------------------------------------------------------------------- | :--------------------------------------------------- |
+| 架构          | Aria + styled 分离，双 `provide/inject` 上下文                                         | 单包，单一 ConfigProvider                            |
+| 主题注入      | `buildThemeCss()`（`@vean/ui` → `@vean/theme`）写入 `<style id="vean-theme">` 标签     | CSS 变量 / 主题对象 / `ConfigProvider.theme`         |
+| 暗色模式      | `theme.darkSelector`（`'class'` → `.dark`、`'media'` → 系统、自定义）；切换 `.dark` 类 | `theme.dark`、`dark-mode` 类、`colorScheme`          |
+| RTL           | `dir` prop + `useDirection`；按 `locale` 自动推导，并带 RTL 前缀兜底                   | `direction` prop、`dir` 属性、主题方向               |
+| 国际化        | `locale` + `messages` 覆盖；`registerLocale` 注册其他 locale                           | `locale` prop / `LocalizationProvider`               |
+| Provider 组合 | 默认插槽内自动渲染 `ToastProvider`、`DialogProvider`、`ProgressProvider`               | 由用户自行挂载独立 provider                          |
 
 ### 运行时注意事项
 
-- **SSR**：主题不会渲染进组件树——provider 独占 `<head>` 里的一个真实元素（`<style id="soybean-theme">`，挂载时创建或接管首帧脚本建好的那个）并保持其内容同步，因此不存在服务端/客户端的样式内容不一致。首屏即携带正确主题，靠的是预设一起下发的静态默认块（`:where()` 零特异性层）与首帧脚本在浏览器绘制前应用持久化快照。`SIcon` 接收 `ssr: import.meta.env.SSR`，图标渲染对 SSR 安全。
-- **样式标签生命周期**：`<style id="soybean-theme">`（主题）与 `<style id="__SoybeanHeadless_Styles">`（headless 层）在页面生命周期内常驻 `<head>`。它们是响应式的——修改 `theme` prop 会原地更新 CSS 内容。卸载 provider 不会移除它们（全局设计如此）。
-- **Locale 注册**：默认仅预注册 `en` 与 `zh-CN`。其他 locale（如 `ar`、`ja`、`fr`）需从 `@soybeanjs/headless/locale/{code}` 导入并在应用初始化时调用 `registerLocale(...)` 注册一次。方向（`dir`）即使未注册 locale 也会兜底到内置 RTL 前缀表（`ar`、`he`、`fa`、`ur` 等），因此 `locale="ar"` 开箱即得 `dir="rtl"`。
-- **嵌套**：`SConfigProvider` 支持嵌套。内层 provider 会覆盖外层在其子树的上下文。headless 与 UI 是两套独立的 injection key，因此仅消费 headless 的组件（如 `useDirection`）读取 headless 上下文，而 UI 消费者（如 `SIcon` 的 iconify 默认值）读取 UI 上下文。
+- **SSR**：主题不会渲染进组件树——provider 独占 `<head>` 里的一个真实元素（`<style id="vean-theme">`，挂载时创建或接管首帧脚本建好的那个）并保持其内容同步，因此不存在服务端/客户端的样式内容不一致。首屏即携带正确主题，靠的是预设一起下发的静态默认块（`:where()` 零特异性层）与首帧脚本在浏览器绘制前应用持久化快照。`SIcon` 接收 `ssr: import.meta.env.SSR`，图标渲染对 SSR 安全。
+- **样式标签生命周期**：`<style id="vean-theme">`（主题）与 `<style id="__Vean_Aria_Styles">`（Aria 层）在页面生命周期内常驻 `<head>`。它们是响应式的——修改 `theme` prop 会原地更新 CSS 内容。卸载 provider 不会移除它们（全局设计如此）。
+- **Locale 注册**：默认仅预注册 `en` 与 `zh-CN`。其他 locale（如 `ar`、`ja`、`fr`）需从 `@vean/aria/locale/{code}` 导入并在应用初始化时调用 `registerLocale(...)` 注册一次。方向（`dir`）即使未注册 locale 也会兜底到内置 RTL 前缀表（`ar`、`he`、`fa`、`ur` 等），因此 `locale="ar"` 开箱即得 `dir="rtl"`。
+- **嵌套**：`SConfigProvider` 支持嵌套。内层 provider 会覆盖外层在其子树的上下文。Aria 与 UI 是两套独立的 injection key，因此仅消费 Aria 的组件（如 `useDirection`）读取 Aria 上下文，而 UI 消费者（如 `SIcon` 的 iconify 默认值）读取 UI 上下文。
 
 ### SSR 主题一致性（刷新无闪烁）
 
-主题只持久化在 `localStorage`（不下发 cookie）。仅客户端生效的样式注入会在水合后才应用已保存的主题，刷新时会产生默认主题闪烁。`@soybeanjs/theme` 提供了 SSR 安全的首帧内联脚本（位于 `@soybeanjs/theme/ssr` 子路径），在首帧绘制前应用已保存的主题：
+主题只持久化在 `localStorage`（不下发 cookie）。仅客户端生效的样式注入会在水合后才应用已保存的主题，刷新时会产生默认主题闪烁。`@vean/theme` 提供了 SSR 安全的首帧内联脚本（位于 `@vean/theme/ssr` 子路径），在首帧绘制前应用已保存的主题：
 
-- **`createThemeInitScript()`** — 返回一段可内联到 `<head>` 的小型 IIFE。在首帧绘制前从 `localStorage` 读取主题信封，在 `<html>` 上切换暗色类（`mode: 'auto'` 按 `prefers-color-scheme` 解析）、设置 `color-scheme`，并把快照写入 `<style id="soybean-theme">` 元素。服务端渲染默认主题，脚本在浏览器绘制前将其纠正——无闪烁。旧词汇写下的载荷会在读取时被迁移，而其快照（属于旧词汇的引擎产物）会被丢弃、由 provider 在挂载后重发。
-- **`readThemeEnvelope()` / `writeThemeEnvelope()` / `clearThemeEnvelope()`** — 持久化辅助函数；另有 `parseThemeEnvelope()`（校验并迁移原始字符串）、`parseThemeOptions()`（只校验选项）与 `createThemeWriter()`（防抖单写入者）——都在 `@soybeanjs/theme/storage` 子路径下。
+- **`createThemeInitScript()`** — 返回一段可内联到 `<head>` 的小型 IIFE。在首帧绘制前从 `localStorage` 读取主题信封，在 `<html>` 上切换暗色类（`mode: 'auto'` 按 `prefers-color-scheme` 解析）、设置 `color-scheme`，并把快照写入 `<style id="vean-theme">` 元素。服务端渲染默认主题，脚本在浏览器绘制前将其纠正——无闪烁。旧词汇写下的载荷会在读取时被迁移，而其快照（属于旧词汇的引擎产物）会被丢弃、由 provider 在挂载后重发。
+- **`readThemeEnvelope()` / `writeThemeEnvelope()` / `clearThemeEnvelope()`** — 持久化辅助函数；另有 `parseThemeEnvelope()`（校验并迁移原始字符串）、`parseThemeOptions()`（只校验选项）与 `createThemeWriter()`（防抖单写入者）——都在 `@vean/theme/storage` 子路径下。
 
 Nuxt 中的接线方式非常精简：
 
@@ -255,7 +255,7 @@ export default defineNuxtConfig({
 ```vue
 // app.vue —— 只需传递环境标志
 <script setup lang="ts">
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 
 const isServer = import.meta.server;
 </script>
@@ -267,7 +267,7 @@ const isServer = import.meta.server;
 </template>
 ```
 
-`SConfigProvider` 在客户端从 `localStorage` 读取持久化主题；在服务端从默认主题开始，由内联脚本在首帧前纠正。主题状态（base / primary / radius / size / mode）与自定义 preset 由 provider 内部管理，并通过 `@soybeanjs/ui` 的 `useTheme()` 暴露给后代组件——无需 prop drilled，也无需应用层 store。
+`SConfigProvider` 在客户端从 `localStorage` 读取持久化主题；在服务端从默认主题开始，由内联脚本在首帧前纠正。主题状态（base / primary / radius / size / mode）与自定义 preset 由 provider 内部管理，并通过 `@vean/ui` 的 `useTheme()` 暴露给后代组件——无需 prop drilled，也无需应用层 store。
 
 ### 常见问题
 
@@ -287,4 +287,4 @@ const isServer = import.meta.server;
 可以。嵌套是受支持的——内层 provider 的上下文对其子树覆盖外层。适用于在 LTR 应用中嵌入 RTL 区块，或为微前端使用不同主题。
 
 **如何自定义 toast 渲染？**
-传入 `customToast` 以跳过默认 `ToastProvider`：`<SConfigProvider customToast>`。然后自行导入 `SToastProvider`（或 headless `ToastProvider`）渲染自定义 toast 内容。`toast()` 命令式 API 仍然可用，因为 headless toast 状态与渲染 UI 相互独立。
+传入 `customToast` 以跳过默认 `ToastProvider`：`<SConfigProvider customToast>`。然后自行导入 `SToastProvider`（或 Aria `ToastProvider`）渲染自定义 toast 内容。`toast()` 命令式 API 仍然可用，因为 Aria toast 状态与渲染 UI 相互独立。

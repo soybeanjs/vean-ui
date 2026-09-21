@@ -4,8 +4,8 @@ import type {
   AutocompleteCompactSlots,
   AutocompleteSingleOptionData,
   AutocompleteUi
-} from '@soybeanjs/headless/autocomplete';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/autocomplete';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

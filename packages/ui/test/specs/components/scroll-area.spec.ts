@@ -9,16 +9,16 @@ import {
   ScrollAreaScrollbar,
   ScrollAreaThumb,
   ScrollAreaViewport
-} from '@soybeanjs/headless/scroll-area';
+} from '@vean/aria/scroll-area';
 import SScrollArea from '@/components/scroll-area/scroll-area.vue';
-import { getScrollPosition, setViewportScroll } from '../../../../headless/src/components/scroll-area/shared';
+import { getScrollPosition, setViewportScroll } from '../../../../aria/src/components/scroll-area/shared';
 import { getA11yViolations } from '../../shared/a11y';
 
 function mockOverflowMetrics(wrapper: VueWrapper) {
-  const viewport = wrapper.find('[data-soybean-scroll-area-viewport]').element as HTMLElement;
+  const viewport = wrapper.find('[data-vean-scroll-area-viewport]').element as HTMLElement;
   const content = viewport.firstElementChild;
-  const scrollbars = wrapper.findAll('[data-soybean-scroll-area-scrollbar]');
-  const thumbs = wrapper.findAll('[data-soybean-scroll-area-thumb]');
+  const scrollbars = wrapper.findAll('[data-vean-scroll-area-scrollbar]');
+  const thumbs = wrapper.findAll('[data-vean-scroll-area-thumb]');
 
   if (!(content instanceof HTMLElement) || scrollbars.length < 2 || thumbs.length < 2) {
     throw new Error('ScrollArea test elements are missing.');
@@ -157,19 +157,19 @@ describe('SScrollArea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-scroll-area-viewport]').exists()).toBe(true);
-      expect(wrapper.findAll('[data-soybean-scroll-area-scrollbar]')).toHaveLength(2);
+      expect(wrapper.find('[data-vean-scroll-area-viewport]').exists()).toBe(true);
+      expect(wrapper.findAll('[data-vean-scroll-area-scrollbar]')).toHaveLength(2);
       wrapper.unmount();
     });
 
-    it('renders the headless compact structure', () => {
+    it('renders the Aria compact structure', () => {
       const wrapper = mount(ScrollAreaCompact, {
         slots: { default: '<div>Scrollable Content</div>' },
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-scroll-area-viewport]').exists()).toBe(true);
-      expect(wrapper.findAll('[data-soybean-scroll-area-scrollbar]')).toHaveLength(2);
+      expect(wrapper.find('[data-vean-scroll-area-viewport]').exists()).toBe(true);
+      expect(wrapper.findAll('[data-vean-scroll-area-scrollbar]')).toHaveLength(2);
       wrapper.unmount();
     });
 
@@ -187,7 +187,7 @@ describe('SScrollArea', () => {
         attachTo: document.body
       });
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
       expect(viewport.attributes('id')).toBe('viewport-id');
       expect(viewport.attributes('as')).toBeUndefined();
       expect(viewport.attributes('as-child')).toBeUndefined();
@@ -206,7 +206,7 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const [verticalScrollbar, horizontalScrollbar] = wrapper.findAll('[data-soybean-scroll-area-scrollbar]');
+      const [verticalScrollbar, horizontalScrollbar] = wrapper.findAll('[data-vean-scroll-area-scrollbar]');
       expect(verticalScrollbar.attributes('data-state')).toBe('visible');
       expect(horizontalScrollbar.attributes('data-state')).toBe('visible');
       wrapper.unmount();
@@ -222,7 +222,7 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const [verticalScrollbar] = wrapper.findAll('[data-soybean-scroll-area-scrollbar]');
+      const [verticalScrollbar] = wrapper.findAll('[data-vean-scroll-area-scrollbar]');
       expect(verticalScrollbar.attributes('data-state')).toBe('hidden');
       wrapper.unmount();
     });
@@ -237,8 +237,8 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const verticalScrollbar = wrapper.findAll('[data-soybean-scroll-area-scrollbar]')[0];
-      const verticalThumb = wrapper.findAll('[data-soybean-scroll-area-thumb]')[0];
+      const verticalScrollbar = wrapper.findAll('[data-vean-scroll-area-scrollbar]')[0];
+      const verticalThumb = wrapper.findAll('[data-vean-scroll-area-thumb]')[0];
 
       await verticalThumb.trigger('pointerdown', { button: 0, clientY: 30 });
       expect(verticalScrollbar.attributes('data-state')).toBe('visible');
@@ -334,7 +334,7 @@ describe('SScrollArea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-scroll-area-root]').attributes('dir')).toBe('rtl');
+      expect(wrapper.find('[data-vean-scroll-area-root]').attributes('dir')).toBe('rtl');
       wrapper.unmount();
     });
 
@@ -345,7 +345,7 @@ describe('SScrollArea', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-scroll-area-root]').attributes('dir')).toBe('ltr');
+      expect(wrapper.find('[data-vean-scroll-area-root]').attributes('dir')).toBe('ltr');
       wrapper.unmount();
     });
   });
@@ -358,7 +358,7 @@ describe('SScrollArea', () => {
         attachTo: document.body
       });
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
       expect(viewport.attributes('tabindex')).toBe('0');
       expect(viewport.attributes('aria-hidden')).toBeUndefined();
       wrapper.unmount();
@@ -383,10 +383,10 @@ describe('SScrollArea', () => {
       vi.advanceTimersByTime(150);
       await nextTick();
 
-      const [verticalScrollbar] = wrapper.findAll('[data-soybean-scroll-area-scrollbar]');
+      const [verticalScrollbar] = wrapper.findAll('[data-vean-scroll-area-scrollbar]');
       expect(verticalScrollbar.attributes('data-state')).toBe('hidden');
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
       viewport.element.dispatchEvent(new Event('scroll'));
       await nextTick();
 
@@ -411,8 +411,8 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const root = wrapper.find('[data-soybean-scroll-area-root]');
-      const [verticalScrollbar] = wrapper.findAll('[data-soybean-scroll-area-scrollbar]');
+      const root = wrapper.find('[data-vean-scroll-area-root]');
+      const [verticalScrollbar] = wrapper.findAll('[data-vean-scroll-area-scrollbar]');
       expect(verticalScrollbar.attributes('data-state')).toBe('hidden');
 
       await root.trigger('pointerenter');
@@ -439,8 +439,8 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
-      const verticalThumb = wrapper.findAll('[data-soybean-scroll-area-thumb]')[0];
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
+      const verticalThumb = wrapper.findAll('[data-vean-scroll-area-thumb]')[0];
 
       await verticalThumb.trigger('pointerdown', { button: 0, clientY: 30 });
       window.dispatchEvent(new PointerEvent('pointermove', { clientY: 60, pointerId: 1 }));
@@ -462,7 +462,7 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const verticalThumb = wrapper.findAll('[data-soybean-scroll-area-thumb]')[0];
+      const verticalThumb = wrapper.findAll('[data-vean-scroll-area-thumb]')[0];
 
       await verticalThumb.trigger('pointerdown', { button: 0, clientY: 30 });
       window.dispatchEvent(new PointerEvent('pointerup', { clientY: 40, pointerId: 1 }));
@@ -485,8 +485,8 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
-      const [verticalScrollbar] = wrapper.findAll('[data-soybean-scroll-area-scrollbar]');
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
+      const [verticalScrollbar] = wrapper.findAll('[data-vean-scroll-area-scrollbar]');
 
       // Click on the scrollbar track (not the thumb)
       await verticalScrollbar.trigger('pointerdown', { button: 0, clientY: 80 });
@@ -506,8 +506,8 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
-      const verticalThumb = wrapper.findAll('[data-soybean-scroll-area-thumb]')[0];
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
+      const verticalThumb = wrapper.findAll('[data-vean-scroll-area-thumb]')[0];
 
       // pointerdown on thumb should start dragging instead of jumping
       await verticalThumb.trigger('pointerdown', { button: 0, clientY: 30 });
@@ -530,7 +530,7 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const corner = wrapper.find('[data-soybean-scroll-area-corner]');
+      const corner = wrapper.find('[data-vean-scroll-area-corner]');
       expect(corner.exists()).toBe(true);
       expect(corner.attributes('aria-hidden')).toBe('true');
       wrapper.unmount();
@@ -554,7 +554,7 @@ describe('SScrollArea', () => {
         { attachTo: document.body }
       );
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]').element as HTMLElement;
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]').element as HTMLElement;
       Object.defineProperties(viewport, {
         clientHeight: { configurable: true, value: 120 },
         clientWidth: { configurable: true, value: 180 },
@@ -564,7 +564,7 @@ describe('SScrollArea', () => {
       viewport.dispatchEvent(new Event('scroll'));
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-scroll-area-corner]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-scroll-area-corner]').exists()).toBe(false);
       wrapper.unmount();
     });
 
@@ -606,12 +606,12 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-scroll-area-corner]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-scroll-area-corner]').exists()).toBe(true);
 
       showVertical.value = false;
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-scroll-area-corner]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-scroll-area-corner]').exists()).toBe(false);
       wrapper.unmount();
     });
   });
@@ -629,7 +629,7 @@ describe('SScrollArea', () => {
       mockOverflowMetrics(wrapper);
       await nextTick();
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]');
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]');
       viewport.element.dispatchEvent(new Event('scroll'));
       await nextTick();
 
@@ -648,7 +648,7 @@ describe('SScrollArea', () => {
         attachTo: document.body
       });
 
-      const viewport = wrapper.find('[data-soybean-scroll-area-viewport]').element as HTMLElement;
+      const viewport = wrapper.find('[data-vean-scroll-area-viewport]').element as HTMLElement;
       const removeListenerSpy = vi.spyOn(viewport, 'removeEventListener');
 
       wrapper.unmount();

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -103,8 +103,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; close: ClassValue; pin: ClassValue; itemText: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the PageTabs component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsui",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsui",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.menufactory",
             "default": null,
             "inheritedFrom": "menuFactory",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsState",
@@ -139,8 +139,8 @@
                 "type": "PageTabsState",
                 "resolvedType": null,
                 "description": "State values for PageTabsState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsstate",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsstate",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.beforeclose",
             "default": null,
             "inheritedFrom": "beforeClose",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "MaybePromise",
@@ -164,8 +164,8 @@
                 "type": "boolean | void | Promise<boolean | void>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.maybepromise",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.maybepromise",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [],
@@ -181,7 +181,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -189,8 +189,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -206,7 +206,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.pinprops",
             "default": null,
             "inheritedFrom": "pinProps",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -214,8 +214,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -231,7 +231,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.closeprops",
             "default": null,
             "inheritedFrom": "closeProps",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -239,8 +239,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -256,7 +256,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.contextmenuprops",
             "default": null,
             "inheritedFrom": "contextMenuProps",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "ContextMenuCompactProps",
@@ -264,8 +264,8 @@
                 "type": "ContextMenuCompactProps<import(\"@/index\").DefinedValue>",
                 "resolvedType": null,
                 "description": "Properties for the ContextMenuCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_context_menu_types.contextmenucompactprops",
-                "sourcePath": "packages/headless/src/components/context-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_context_menu_types.contextmenucompactprops",
+                "sourcePath": "packages/aria/src/components/context-menu/types.ts",
                 "typeParameters": ["T extends DefinedValue = DefinedValue"],
                 "external": false,
                 "members": [],
@@ -281,7 +281,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -292,7 +292,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.middleclickclose",
             "default": null,
             "inheritedFrom": "middleClickClose",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -303,7 +303,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.draggable",
             "default": null,
             "inheritedFrom": "draggable",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -314,7 +314,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -325,7 +325,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -358,7 +358,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -366,8 +366,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -383,7 +383,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.loop",
             "default": "false",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -394,7 +394,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.currenttabstopid",
             "default": null,
             "inheritedFrom": "currentTabStopId",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -405,7 +405,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.defaultcurrenttabstopid",
             "default": null,
             "inheritedFrom": "defaultCurrentTabStopId",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -416,7 +416,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsprops.members.preventscrollonentryfocus",
             "default": null,
             "inheritedFrom": "preventScrollOnEntryFocus",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           }
         ],
@@ -454,7 +454,7 @@
             "required": false,
             "description": "Custom content for the default tab item body.",
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsslots.callables.item",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -462,8 +462,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -478,7 +478,7 @@
             "required": false,
             "description": "Custom content for the tab icon.",
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsslots.callables.icon",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -486,8 +486,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -502,7 +502,7 @@
             "required": false,
             "description": "Custom content for the tab label.",
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsslots.callables.label",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -510,8 +510,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -526,7 +526,7 @@
             "required": false,
             "description": "Custom content for the tab indicator.",
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsslots.callables.indicator",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -534,8 +534,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -550,7 +550,7 @@
             "required": false,
             "description": "Custom content for the pin icon.",
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsslots.callables.pin_icon",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -560,7 +560,7 @@
             "required": false,
             "description": "Custom content for the close icon.",
             "descriptionKey": "api.generated.packages_ui_src_components_page_tabs_types.pagetabsslots.callables.close_icon",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -574,8 +574,8 @@
         "type": "Interface PageTabsCloseProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the PageTabsClose component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscloseprops.props",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscloseprops.props",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -583,10 +583,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscloseprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscloseprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -594,8 +594,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -608,10 +608,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscloseprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscloseprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -619,10 +619,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscloseprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscloseprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -630,10 +630,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscloseprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscloseprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -670,8 +670,8 @@
         "type": "Interface PageTabsCompactProps<T>",
         "resolvedType": "{ items: T[]; menuFactory?: ((tab: T, state: PageTabsState) => PageTabsContextMenuOptionData[]); beforeClose?: ((value: string) => MaybePromise<boolean | void>); itemProps?: BaseProps; pinProps?: BaseProps; closeProps?: BaseProps; contextMenuProps?: Omit<ContextMenuCompactProps<import(\"@/index\").DefinedValue>, 'options'>; modelValue?: string; middleClickClose?: boolean; draggable?: boolean; asChild?: boolean; as?: AsTag | Component; dir?: Direction; loop?: boolean; currentTabStopId?: string | null; defaultCurrentTabStopId?: string; preventScrollOnEntryFocus?: boolean }",
         "description": "Properties for the PageTabsCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.props",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.props",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -679,10 +679,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -690,10 +690,10 @@
             "type": "((tab: T, state: PageTabsState) => PageTabsContextMenuOptionData[])",
             "required": false,
             "description": "A factory function to generate context menu options for each tab.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.menufactory",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.menufactory",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsState",
@@ -701,8 +701,8 @@
                 "type": "PageTabsState",
                 "resolvedType": null,
                 "description": "State values for PageTabsState.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsstate",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsstate",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -715,10 +715,10 @@
             "type": "((value: string) => MaybePromise<boolean | void>)",
             "required": false,
             "description": "Callback invoked before closing the tab. Return `false` or a promise that resolves to `false` to prevent closing.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.beforeclose",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.beforeclose",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "MaybePromise",
@@ -726,8 +726,8 @@
                 "type": "boolean | void | Promise<boolean | void>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.maybepromise",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.maybepromise",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [],
@@ -740,10 +740,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Per-slot class overrides for the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -751,8 +751,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -765,10 +765,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Per-slot class overrides for the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.pinprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.pinprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -776,8 +776,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -790,10 +790,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Per-slot class overrides for the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.closeprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.closeprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -801,8 +801,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -815,10 +815,10 @@
             "type": "Omit<ContextMenuCompactProps<import(\"@/index\").DefinedValue>, 'options'>",
             "required": false,
             "description": "Additional props for the context menu component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.contextmenuprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.contextmenuprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "ContextMenuCompactProps",
@@ -826,8 +826,8 @@
                 "type": "ContextMenuCompactProps<import(\"@/index\").DefinedValue>",
                 "resolvedType": null,
                 "description": "Properties for the ContextMenuCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_context_menu_types.contextmenucompactprops",
-                "sourcePath": "packages/headless/src/components/context-menu/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_context_menu_types.contextmenucompactprops",
+                "sourcePath": "packages/aria/src/components/context-menu/types.ts",
                 "typeParameters": ["T extends DefinedValue = DefinedValue"],
                 "external": false,
                 "members": [],
@@ -840,10 +840,10 @@
             "type": "string",
             "required": false,
             "description": "The active tab value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -851,10 +851,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether middle-clicking a tab closes it.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.middleclickclose",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.middleclickclose",
             "default": null,
             "inheritedFrom": "middleClickClose",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -862,10 +862,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether tabs can be reordered by dragging. Tabs only reorder within\ntheir own zone — the pinned group always stays in front. A tab item\nwith an explicit `draggable: false` is locked in place.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.draggable",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.draggable",
             "default": null,
             "inheritedFrom": "draggable",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -873,10 +873,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -884,10 +884,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -917,10 +917,10 @@
             "type": "Direction",
             "required": false,
             "description": "The direction of navigation between items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -928,8 +928,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -942,10 +942,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether keyboard navigation should loop around",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.loop",
             "default": "false",
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -953,10 +953,10 @@
             "type": "string | null",
             "required": false,
             "description": "The controlled value of the current stop item. Can be bound as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.currenttabstopid",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.currenttabstopid",
             "default": null,
             "inheritedFrom": "currentTabStopId",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -964,10 +964,10 @@
             "type": "string",
             "required": false,
             "description": "The value of the current stop item.\n\nUse when you do not need to control the state of the stop item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.defaultcurrenttabstopid",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.defaultcurrenttabstopid",
             "default": null,
             "inheritedFrom": "defaultCurrentTabStopId",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -975,10 +975,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, will prevent scrolling to the focus item when focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactprops.members.preventscrollonentryfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactprops.members.preventscrollonentryfocus",
             "default": null,
             "inheritedFrom": "preventScrollOnEntryFocus",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           }
         ],
@@ -991,8 +991,8 @@
         "type": "TypeAlias PageTabsCompactEmits<T>: PageTabsRootEmits & { (e: \"update:items\", items: T[]): void; (e: \"click\", tab: T): void; (e: \"close\", tab: T): void; (e: \"pin\", tab: T): void; (e: \"contextmenu\", tab: T): void; (e: \"selectContextMenu\", menu: PageTabsContextMenuOptionData, tab: T): void; (e: \"tabDragStart\", tab: PageTabsDragEvent<T>): void; (e: \"tabDragMove\", tab: PageTabsDragEvent<T>): void; (e: \"tabDragReorder\", tab: PageTabsDragEvent<T>): void; (e: \"tabDragEnd\", tab: PageTabsDragEvent<T>): void }",
         "resolvedType": "(e: 'update:modelValue', value: string) => void | (e: 'update:items', items: T[]) => void | (e: 'click', tab: T) => void | (e: 'close', tab: T) => void | (e: 'pin', tab: T) => void | (e: 'contextmenu', tab: T) => void | (e: 'selectContextMenu', menu: PageTabsContextMenuOptionData, tab: T) => void | (e: 'tabDragStart', tab: PageTabsDragEvent<T>) => void | (e: 'tabDragMove', tab: PageTabsDragEvent<T>) => void | (e: 'tabDragReorder', tab: PageTabsDragEvent<T>) => void | (e: 'tabDragEnd', tab: PageTabsDragEvent<T>) => void",
         "description": "Events for the PageTabsCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactemits.emits",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactemits.emits",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [],
@@ -1004,8 +1004,8 @@
         "type": "TypeAlias PageTabsCompactSlots<T>",
         "resolvedType": "{ item?: ((props: PageTabsCompactItemSlotProps<T>) => any); icon?: ((props: PageTabsCompactItemSlotProps<T>) => any); label?: ((props: PageTabsCompactItemSlotProps<T>) => any); indicator?: ((props: PageTabsCompactItemSlotProps<T>) => any); \"pin-icon\"?: (() => void); \"close-icon\"?: (() => void) }",
         "description": "Slots for the PageTabsCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.slots",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.slots",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -1015,8 +1015,8 @@
             "parameters": "((props: PageTabsCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the default tab item body.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.callables.item",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.callables.item",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -1024,8 +1024,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -1039,8 +1039,8 @@
             "parameters": "((props: PageTabsCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the tab icon.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.callables.icon",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.callables.icon",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -1048,8 +1048,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -1063,8 +1063,8 @@
             "parameters": "((props: PageTabsCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the tab label.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.callables.label",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.callables.label",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -1072,8 +1072,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -1087,8 +1087,8 @@
             "parameters": "((props: PageTabsCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the tab indicator.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.callables.indicator",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.callables.indicator",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "PageTabsCompactItemSlotProps",
@@ -1096,8 +1096,8 @@
                 "type": "PageTabsCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot props for a compact page tab item.",
-                "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
                 "typeParameters": ["T extends PageTabsOptionData = PageTabsOptionData"],
                 "external": false,
                 "members": [],
@@ -1111,8 +1111,8 @@
             "parameters": "(() => void) | undefined",
             "required": false,
             "description": "Custom content for the pin icon.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.callables.pin_icon",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.callables.pin_icon",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1121,8 +1121,8 @@
             "parameters": "(() => void) | undefined",
             "required": false,
             "description": "Custom content for the close icon.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactslots.callables.close_icon",
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactslots.callables.close_icon",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1136,8 +1136,8 @@
         "type": "Interface PageTabsCompactItemSlotProps<T>",
         "resolvedType": "{ item: T; index: number; selected: boolean; closable: boolean }",
         "description": "Slot props for a compact page tab item.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1145,10 +1145,10 @@
             "type": "T",
             "required": true,
             "description": "Current item data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops.members.item",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops.members.item",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1156,10 +1156,10 @@
             "type": "number",
             "required": true,
             "description": "Index of the current item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1167,10 +1167,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the current item is selected.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops.members.selected",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops.members.selected",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1178,10 +1178,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the current item can be closed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabscompactitemslotprops.members.closable",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabscompactitemslotprops.members.closable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1196,8 +1196,8 @@
         "type": "Interface PageTabsItemProps",
         "resolvedType": "{ value: string; pinned?: boolean; draggable?: boolean; index?: number }",
         "description": "Properties for the PageTabsItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsitemprops.props",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsitemprops.props",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1205,10 +1205,10 @@
             "type": "string",
             "required": true,
             "description": "The unique value of the tab.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1216,10 +1216,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the tab is pinned.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsitemprops.members.pinned",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsitemprops.members.pinned",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1227,10 +1227,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether drag reordering is enabled for this tab. A non-draggable tab is\nlocked in place: it cannot be dragged and other tabs cannot be dropped\nonto it. Pinned tabs reorder within the pinned zone only.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsitemprops.members.draggable",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsitemprops.members.draggable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1238,10 +1238,10 @@
             "type": "number",
             "required": false,
             "description": "Index of the tab within `items`, used to build the drag payload.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsitemprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsitemprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1254,8 +1254,8 @@
         "type": "TypeAlias PageTabsItemEmits: { (e: \"click\"): void; (e: \"close\"): void; (e: \"pin\", pinned: boolean): void; (e: \"tabDragStart\"): void; (e: \"tabDragMove\"): void; (e: \"tabDragReorder\"): void; (e: \"tabDragEnd\"): void }",
         "resolvedType": "(e: 'click') => void | (e: 'close') => void | (e: 'pin', pinned: boolean) => void | (e: 'tabDragStart') => void | (e: 'tabDragMove') => void | (e: 'tabDragReorder') => void | (e: 'tabDragEnd') => void",
         "description": "Events for the PageTabsItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsitememits.emits",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsitememits.emits",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1269,8 +1269,8 @@
         "type": "Interface PageTabsPinProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the PageTabsPin component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabspinprops.props",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabspinprops.props",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1278,10 +1278,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabspinprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabspinprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -1289,8 +1289,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1303,10 +1303,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabspinprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabspinprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -1314,10 +1314,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabspinprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabspinprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1325,10 +1325,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabspinprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabspinprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1365,8 +1365,8 @@
         "type": "Interface PageTabsRootProps",
         "resolvedType": "{ modelValue?: string; middleClickClose?: boolean; draggable?: boolean; asChild?: boolean; as?: AsTag | Component; dir?: Direction; loop?: boolean; currentTabStopId?: string | null; defaultCurrentTabStopId?: string; preventScrollOnEntryFocus?: boolean }",
         "description": "Properties for the PageTabsRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.props",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.props",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1374,10 +1374,10 @@
             "type": "string",
             "required": false,
             "description": "The active tab value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1385,10 +1385,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether middle-clicking a tab closes it.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.middleclickclose",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.middleclickclose",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1396,10 +1396,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether tabs can be reordered by dragging. Tabs only reorder within\ntheir own zone — the pinned group always stays in front. A tab item\nwith an explicit `draggable: false` is locked in place.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.draggable",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.draggable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -1407,10 +1407,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1418,10 +1418,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1451,10 +1451,10 @@
             "type": "Direction",
             "required": false,
             "description": "The direction of navigation between items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.dir",
             "default": null,
             "inheritedFrom": "Pick.dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1462,8 +1462,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1476,10 +1476,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether keyboard navigation should loop around",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.loop",
             "default": "false",
             "inheritedFrom": "Pick.loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -1487,10 +1487,10 @@
             "type": "string | null",
             "required": false,
             "description": "The controlled value of the current stop item. Can be bound as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.currenttabstopid",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.currenttabstopid",
             "default": null,
             "inheritedFrom": "Pick.currentTabStopId",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -1498,10 +1498,10 @@
             "type": "string",
             "required": false,
             "description": "The value of the current stop item.\n\nUse when you do not need to control the state of the stop item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.defaultcurrenttabstopid",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.defaultcurrenttabstopid",
             "default": null,
             "inheritedFrom": "Pick.defaultCurrentTabStopId",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -1509,10 +1509,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, will prevent scrolling to the focus item when focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootprops.members.preventscrollonentryfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootprops.members.preventscrollonentryfocus",
             "default": null,
             "inheritedFrom": "Pick.preventScrollOnEntryFocus",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           }
         ],
@@ -1525,8 +1525,8 @@
         "type": "TypeAlias PageTabsRootEmits: (e: \"update:modelValue\", value: string) => void",
         "resolvedType": "(e: 'update:modelValue', value: string) => void",
         "description": "Events for the PageTabsRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_page_tabs_types.pagetabsrootemits.emits",
-        "sourcePath": "packages/headless/src/components/page-tabs/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_page_tabs_types.pagetabsrootemits.emits",
+        "sourcePath": "packages/aria/src/components/page-tabs/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],

@@ -30,7 +30,7 @@ const items: TreeNavOptionData[] = [
   },
   { value: 'pricing', label: 'Pricing' },
   { value: 'private', label: 'Private', disabled: true },
-  { value: 'github', label: 'GitHub', href: 'https://github.com/soybeanjs/soybean-ui' }
+  { value: 'github', label: 'GitHub', href: 'https://github.com/soybeanjs/vean-ui' }
 ];
 
 function mountTreeNav(props: Record<string, unknown> = {}) {
@@ -62,16 +62,16 @@ describe('STreeNav', () => {
     it('renders the nav root with branch triggers, plain leaves and link leaves', () => {
       const wrapper = mountTreeNav();
 
-      expect(wrapper.find('[data-soybean-tree-nav]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tree-nav]').exists()).toBe(true);
       // Branch entries render dropdown triggers for "docs" and "blog".
-      expect(wrapper.findAll('[data-soybean-dropdown-menu-trigger]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-dropdown-menu-trigger]')).toHaveLength(2);
       // Plain leaf and disabled leaf render as buttons.
       expect(findLeafButton(wrapper, 'Pricing')).toBeTruthy();
       const privateLeaf = findLeafButton(wrapper, 'Private');
       expect(privateLeaf).toBeTruthy();
       expect(privateLeaf?.attributes('aria-disabled')).toBe('true');
       // Link leaf renders an anchor.
-      expect(wrapper.find('a[href="https://github.com/soybeanjs/soybean-ui"]').exists()).toBe(true);
+      expect(wrapper.find('a[href="https://github.com/soybeanjs/vean-ui"]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -79,7 +79,7 @@ describe('STreeNav', () => {
     it('applies the size variant class to the root', () => {
       const wrapper = mountTreeNav({ size: 'sm' });
 
-      expect(wrapper.find('[data-soybean-tree-nav]').classes()).toContain('text-xs');
+      expect(wrapper.find('[data-vean-tree-nav]').classes()).toContain('text-xs');
 
       wrapper.unmount();
     });
@@ -87,7 +87,7 @@ describe('STreeNav', () => {
     it('renders a chevron icon inside branch triggers', () => {
       const wrapper = mountTreeNav();
 
-      const docsTrigger = wrapper.find('[data-soybean-dropdown-menu-trigger]');
+      const docsTrigger = wrapper.find('[data-vean-dropdown-menu-trigger]');
       expect(docsTrigger.find('svg').exists()).toBe(true);
 
       wrapper.unmount();
@@ -117,7 +117,7 @@ describe('STreeNav', () => {
       expect(wrapper.text()).toContain('Visible');
       expect(wrapper.text()).not.toContain('Hidden');
 
-      const branchTrigger = wrapper.find('[data-soybean-dropdown-menu-trigger]');
+      const branchTrigger = wrapper.find('[data-vean-dropdown-menu-trigger]');
       await branchTrigger.trigger('click');
       await nextTick();
       await nextTick();
@@ -152,7 +152,7 @@ describe('STreeNav', () => {
       });
 
       // No dropdown trigger is left for a branch with nothing visible to show.
-      expect(wrapper.findAll('[data-soybean-dropdown-menu-trigger]')).toHaveLength(0);
+      expect(wrapper.findAll('[data-vean-dropdown-menu-trigger]')).toHaveLength(0);
 
       const leaf = wrapper.findAll('button').find(button => button.text() === 'Hidden Only Branch');
       expect(leaf).toBeTruthy();
@@ -174,7 +174,7 @@ describe('STreeNav', () => {
       expect(pricing?.attributes('data-child-selected')).toBeUndefined();
 
       // Siblings are marked inactive.
-      const githubLink = wrapper.find('a[href="https://github.com/soybeanjs/soybean-ui"]');
+      const githubLink = wrapper.find('a[href="https://github.com/soybeanjs/vean-ui"]');
       expect(githubLink.attributes('data-selected')).toBe('false');
 
       wrapper.unmount();
@@ -183,7 +183,7 @@ describe('STreeNav', () => {
     it('highlights the ancestor chain of a selected nested leaf via data-child-selected', () => {
       const wrapper = mountTreeNav({ defaultValue: 'button' });
 
-      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       expect(docsTrigger.attributes('data-child-selected')).toBe('');
       expect(blogTrigger.attributes('data-child-selected')).toBeUndefined();
 
@@ -194,7 +194,7 @@ describe('STreeNav', () => {
       // Container nodes carry no selected state, aligned with TreeMenu.
       const wrapper = mountTreeNav({ defaultValue: 'docs' });
 
-      const docsTrigger = wrapper.find('[data-soybean-dropdown-menu-trigger]');
+      const docsTrigger = wrapper.find('[data-vean-dropdown-menu-trigger]');
       expect(docsTrigger.attributes('data-selected')).toBe('false');
 
       wrapper.unmount();
@@ -244,7 +244,7 @@ describe('STreeNav', () => {
         attachTo: document.body
       });
 
-      const githubLink = wrapper.find('a[href="https://github.com/soybeanjs/soybean-ui"]');
+      const githubLink = wrapper.find('a[href="https://github.com/soybeanjs/vean-ui"]');
       await githubLink.trigger('click');
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)).toEqual(['github']);
@@ -262,7 +262,7 @@ describe('STreeNav', () => {
         attachTo: document.body
       });
 
-      const docsTrigger = wrapper.find('[data-soybean-dropdown-menu-trigger]');
+      const docsTrigger = wrapper.find('[data-vean-dropdown-menu-trigger]');
       await docsTrigger.trigger('click');
       await nextTick();
       await nextTick();
@@ -289,11 +289,11 @@ describe('STreeNav', () => {
     it('renders the overflow measurement container when collapsible', () => {
       const wrapper = mountTreeNav({ collapsible: true });
 
-      expect(wrapper.find('[data-soybean-tree-nav-overflow]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tree-nav-overflow]').exists()).toBe(true);
 
       // In the test environment content does not overflow, so no "more"
       // trigger is rendered and all items stay visible.
-      expect(wrapper.findAll('[data-soybean-dropdown-menu-trigger]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-dropdown-menu-trigger]')).toHaveLength(2);
       expect(wrapper.text()).toContain('Pricing');
       expect(wrapper.text()).toContain('GitHub');
 
@@ -303,7 +303,7 @@ describe('STreeNav', () => {
     it('does not render the overflow container without collapsible', () => {
       const wrapper = mountTreeNav();
 
-      expect(wrapper.find('[data-soybean-tree-nav-overflow]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tree-nav-overflow]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -320,8 +320,8 @@ describe('STreeNav', () => {
         attachTo: document.body
       });
 
-      const container = wrapper.find('[data-soybean-tree-nav-overflow]').element as HTMLElement;
-      const root = wrapper.find('[data-soybean-tree-nav]').element as HTMLElement;
+      const container = wrapper.find('[data-vean-tree-nav-overflow]').element as HTMLElement;
+      const root = wrapper.find('[data-vean-tree-nav]').element as HTMLElement;
 
       // happy-dom performs no layout, so force the measured overflow the reflow
       // loop reads: the bar always overflows its container.
@@ -340,10 +340,10 @@ describe('STreeNav', () => {
       // Regression guard: the measured overflow count leaked out of collapsible
       // mode and kept rendering the "more" branch over a bar that now holds
       // every entry.
-      expect(wrapper.find('[data-soybean-tree-nav-overflow]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tree-nav-overflow]').exists()).toBe(false);
       expect(wrapper.text()).not.toContain('More');
       expect(findLeafButton(wrapper, 'Pricing')).toBeTruthy();
-      expect(wrapper.findAll('[data-soybean-dropdown-menu-trigger]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-dropdown-menu-trigger]')).toHaveLength(2);
 
       wrapper.unmount();
     });
@@ -353,7 +353,7 @@ describe('STreeNav', () => {
     it('turns the top level into a single roving tab stop', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const root = wrapper.find('[data-soybean-tree-nav]');
+      const root = wrapper.find('[data-vean-tree-nav]');
 
       // The group's tabbability settles after the items register themselves.
       await nextTick();
@@ -372,7 +372,7 @@ describe('STreeNav', () => {
     it('focuses the selected item when the bar receives focus', async () => {
       const wrapper = mountTreeNav({ trigger: 'click', defaultValue: 'pricing' });
 
-      await wrapper.find('[data-soybean-tree-nav]').trigger('focus');
+      await wrapper.find('[data-vean-tree-nav]').trigger('focus');
       await nextTick();
 
       expect(document.activeElement?.textContent).toContain('Pricing');
@@ -414,7 +414,7 @@ describe('STreeNav', () => {
     it('roams across branch triggers with ←/→ without opening popups', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       (docsTrigger.element as HTMLElement).focus();
 
       // Branch triggers are roam targets like any other entry: → moves on.
@@ -436,7 +436,7 @@ describe('STreeNav', () => {
     it('opens a branch popup with ArrowDown and keeps popup keys with the menu', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const docsTrigger = wrapper.find('[data-soybean-dropdown-menu-trigger]');
+      const docsTrigger = wrapper.find('[data-vean-dropdown-menu-trigger]');
       (docsTrigger.element as HTMLElement).focus();
 
       // Opening stays on the explicit keys: ArrowDown (or Enter/Space).
@@ -464,7 +464,7 @@ describe('STreeNav', () => {
     it('switches branch popups with ←/→ from inside an open popup', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       (docsTrigger.element as HTMLElement).focus();
 
       await docsTrigger.trigger('keydown', { key: 'ArrowDown' });
@@ -498,7 +498,7 @@ describe('STreeNav', () => {
     it('closes the popup and focuses a following leaf with ArrowRight', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const [, blogTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [, blogTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       (blogTrigger.element as HTMLElement).focus();
 
       await blogTrigger.trigger('keydown', { key: 'ArrowDown' });
@@ -523,14 +523,14 @@ describe('STreeNav', () => {
     it('lets a submenu trigger own ArrowRight to expand its own submenu', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       (docsTrigger.element as HTMLElement).focus();
 
       await docsTrigger.trigger('keydown', { key: 'ArrowDown' });
       await nextTick();
       await nextTick();
 
-      const subTrigger = wrapper.findAll('[data-soybean-menu-sub-trigger]').find(item => item.text() === 'Components');
+      const subTrigger = wrapper.findAll('[data-vean-menu-sub-trigger]').find(item => item.text() === 'Components');
       expect(subTrigger).toBeTruthy();
 
       await subTrigger!.trigger('keydown', { key: 'ArrowRight' });
@@ -548,14 +548,14 @@ describe('STreeNav', () => {
     it('switches to the next trigger from inside an open submenu with ArrowRight', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [docsTrigger, blogTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       (docsTrigger.element as HTMLElement).focus();
 
       await docsTrigger.trigger('keydown', { key: 'ArrowDown' });
       await nextTick();
       await nextTick();
 
-      const subTrigger = wrapper.findAll('[data-soybean-menu-sub-trigger]').find(item => item.text() === 'Components');
+      const subTrigger = wrapper.findAll('[data-vean-menu-sub-trigger]').find(item => item.text() === 'Components');
       await subTrigger!.trigger('keydown', { key: 'ArrowRight' });
       await nextTick();
       await nextTick();
@@ -580,14 +580,14 @@ describe('STreeNav', () => {
     it('closes only the submenu with ArrowLeft inside it', async () => {
       const wrapper = mountTreeNav({ trigger: 'click' });
 
-      const [docsTrigger] = wrapper.findAll('[data-soybean-dropdown-menu-trigger]');
+      const [docsTrigger] = wrapper.findAll('[data-vean-dropdown-menu-trigger]');
       (docsTrigger.element as HTMLElement).focus();
 
       await docsTrigger.trigger('keydown', { key: 'ArrowDown' });
       await nextTick();
       await nextTick();
 
-      const subTrigger = wrapper.findAll('[data-soybean-menu-sub-trigger]').find(item => item.text() === 'Components');
+      const subTrigger = wrapper.findAll('[data-vean-menu-sub-trigger]').find(item => item.text() === 'Components');
       await subTrigger!.trigger('keydown', { key: 'ArrowRight' });
       await nextTick();
       await nextTick();

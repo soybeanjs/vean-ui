@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SSelect, STable, SSwitch } from '@soybeanjs/ui';
-import type { SelectOptionData, TableColumn, ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SSelect, STable, SSwitch } from '@vean/ui';
+import type { SelectOptionData, TableColumn, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -14,7 +14,7 @@ const { t } = useI18n();
 
 /**
  * `TableVariant` lives in the UI package's style recipe (`styles/table.ts`) and is
- * not re-exported from `@soybeanjs/ui`, so the customizer tracks it with a local
+ * not re-exported from `@vean/ui`, so the customizer tracks it with a local
  * literal union instead of reaching into package internals.
  */
 type TableVariantOption = 'default' | 'simple';

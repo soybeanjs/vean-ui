@@ -138,9 +138,9 @@ export const menuData: MenuData[] = [
     items: ['visuallyHidden']
   },
   {
-    // headless product line — placeholder until headless docs land (D8)
-    value: 'headless',
-    i18n: 'sidebar.headless',
+    // aria product line — placeholder until the aria docs land (D8)
+    value: 'aria',
+    i18n: 'sidebar.aria',
     items: []
   }
 ];

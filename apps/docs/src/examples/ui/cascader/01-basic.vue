@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SCascader, SButtonIcon, SInput, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { CascaderOptionData, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SCascader, SButtonIcon, SInput, SSelect, SSwitch } from '@vean/ui';
+import type { CascaderOptionData, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

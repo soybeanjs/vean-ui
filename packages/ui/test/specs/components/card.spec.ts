@@ -44,12 +44,12 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-card-header]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-card-title-root]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-card-title]').text()).toBe('Card Title');
-      expect(wrapper.find('[data-soybean-card-description]').text()).toBe('Card description');
-      expect(wrapper.find('[data-soybean-card-content]').text()).toContain('Body');
-      expect(wrapper.find('[data-soybean-card-footer]').text()).toContain('Footer');
+      expect(wrapper.find('[data-vean-card-header]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-card-title-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-card-title]').text()).toBe('Card Title');
+      expect(wrapper.find('[data-vean-card-description]').text()).toBe('Card description');
+      expect(wrapper.find('[data-vean-card-content]').text()).toContain('Body');
+      expect(wrapper.find('[data-vean-card-footer]').text()).toContain('Footer');
       expect(wrapper.find('[data-extra]').exists()).toBe(true);
 
       wrapper.unmount();
@@ -61,13 +61,13 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.get('[data-soybean-card-root]');
+      const root = wrapper.get('[data-vean-card-root]');
 
-      expect(root.attributes('data-soybean-collapsible-root')).toBe('');
+      expect(root.attributes('data-vean-collapsible-root')).toBe('');
       expect(root.attributes('data-header-visible')).toBe('true');
       expect(root.attributes('data-footer-visible')).toBe('false');
-      expect(wrapper.get('[data-soybean-card-content]').attributes('data-soybean-collapsible-content')).toBe('');
-      expect(wrapper.get('[data-soybean-card-content]').attributes('tabindex')).toBe('-1');
+      expect(wrapper.get('[data-vean-card-content]').attributes('data-vean-collapsible-content')).toBe('');
+      expect(wrapper.get('[data-vean-card-content]').attributes('tabindex')).toBe('-1');
 
       wrapper.unmount();
     });
@@ -78,9 +78,9 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-card-header]').exists()).toBe(false);
-      expect(wrapper.find('[data-soybean-card-footer]').exists()).toBe(false);
-      expect(wrapper.get('[data-soybean-card-root]').attributes('data-header-visible')).toBe('false');
+      expect(wrapper.find('[data-vean-card-header]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-card-footer]').exists()).toBe(false);
+      expect(wrapper.get('[data-vean-card-root]').attributes('data-header-visible')).toBe('false');
 
       wrapper.unmount();
     });
@@ -95,7 +95,7 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-card-root]').classes()).toContain('my-card');
+      expect(wrapper.find('[data-vean-card-root]').classes()).toContain('my-card');
 
       wrapper.unmount();
     });
@@ -111,8 +111,8 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-card-title]').classes()).toContain('my-title');
-      expect(wrapper.get('[data-soybean-card-content]').classes()).toContain('my-content');
+      expect(wrapper.get('[data-vean-card-title]').classes()).toContain('my-title');
+      expect(wrapper.get('[data-vean-card-content]').classes()).toContain('my-content');
 
       wrapper.unmount();
     });
@@ -125,7 +125,7 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-card-root]').attributes('data-state')).toBe('open');
+      expect(wrapper.get('[data-vean-card-root]').attributes('data-state')).toBe('open');
 
       wrapper.unmount();
     });
@@ -137,7 +137,7 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.get('[data-soybean-card-root]').attributes('data-state')).toBe('closed');
+      expect(wrapper.get('[data-vean-card-root]').attributes('data-state')).toBe('closed');
 
       wrapper.unmount();
     });
@@ -152,14 +152,14 @@ describe('SCard', () => {
         attachTo: document.body
       });
 
-      const trigger = wrapper.get('[data-soybean-collapsible-trigger]');
+      const trigger = wrapper.get('[data-vean-collapsible-trigger]');
 
       expect(trigger.attributes('aria-expanded')).toBe('true');
 
       await trigger.trigger('click');
 
       expect(wrapper.emitted('update:open')?.[0]).toEqual([false]);
-      expect(wrapper.get('[data-soybean-card-root]').attributes('data-state')).toBe('closed');
+      expect(wrapper.get('[data-vean-card-root]').attributes('data-state')).toBe('closed');
 
       wrapper.unmount();
     });

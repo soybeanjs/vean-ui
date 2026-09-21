@@ -1,5 +1,5 @@
-import type { SwitchCompactEmits, SwitchCompactProps, SwitchCompactSlots, SwitchUi } from '@soybeanjs/headless/switch';
-import type { AcceptableBooleanValue, ClassValue } from '@soybeanjs/headless/types';
+import type { SwitchCompactEmits, SwitchCompactProps, SwitchCompactSlots, SwitchUi } from '@vean/aria/switch';
+import type { AcceptableBooleanValue, ClassValue } from '@vean/aria/types';
 import type { SwitchShape } from '@/styles/switch';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { nextTick, defineComponent, h, shallowRef } from 'vue';
 import { mount } from '@vue/test-utils';
 import type { VueWrapper } from '@vue/test-utils';
-import { useDismissableLayer } from '../../../../headless/src/composables/use-dismissable-layer';
+import { useDismissableLayer } from '../../../../aria/src/composables/use-dismissable-layer';
 
 // Minimal layer that wires the composable to a real element. `present` controls whether the
 // layer element is rendered (mirroring how popup impls are gated by `v-if="isPresent"`).

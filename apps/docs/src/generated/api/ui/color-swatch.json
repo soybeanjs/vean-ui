@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; fill: ClassValue; checker: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI classes for the ColorSwatch component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchui",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchui",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchprops.members.checkerprops",
             "default": null,
             "inheritedFrom": "checkerProps",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchCheckerProps",
@@ -128,8 +128,8 @@
                 "type": "ColorSwatchCheckerProps",
                 "resolvedType": null,
                 "description": "Events for the ColorSwatch component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcheckerprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcheckerprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchprops.members.fillprops",
             "default": null,
             "inheritedFrom": "fillProps",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchFillProps",
@@ -153,8 +153,8 @@
                 "type": "ColorSwatchFillProps",
                 "resolvedType": null,
                 "description": "Events for the ColorSwatch component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchfillprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchfillprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -170,7 +170,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchprops.members.color",
             "default": null,
             "inheritedFrom": "color",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -181,7 +181,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchprops.members.label",
             "default": null,
             "inheritedFrom": "label",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -203,7 +203,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -250,7 +250,7 @@
             "required": false,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_color_swatch_types.colorswatchslots.callables.default",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchSlotProps",
@@ -258,8 +258,8 @@
                 "type": "ColorSwatchSlotProps",
                 "resolvedType": null,
                 "description": "Properties for the ColorSwatch component slots.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchslotprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchslotprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -272,11 +272,11 @@
           {
             "name": "ColorSwatchRootSlots",
             "kind": "typeAlias",
-            "type": "{ ColorSwatchFill?: (props: import(\"../../../node_modules/@soybeanjs/headless/src/components/color-swatch/types\").ColorSwatchSlotProps) => any; }",
+            "type": "{ ColorSwatchFill?: (props: import(\"../../../node_modules/@vean/aria/src/components/color-swatch/types\").ColorSwatchSlotProps) => any; }",
             "resolvedType": "{ ColorSwatchFill?: ((props: ColorSwatchSlotProps) => any) }",
             "description": "Slots for the ColorSwatch component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootslots",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootslots",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -287,8 +287,8 @@
                 "parameters": "((props: ColorSwatchSlotProps) => any) | undefined",
                 "required": false,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootslots.callables.default",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootslots.callables.default",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -301,8 +301,8 @@
         "type": "Interface ColorSwatchSlotProps",
         "resolvedType": "{ color: string; alpha: number }",
         "description": "Properties for the ColorSwatch component slots.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -310,10 +310,10 @@
             "type": "string",
             "required": true,
             "description": "Color value in RGB format, e.g., \"rgb(255, 0, 0)\".",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchslotprops.members.color",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchslotprops.members.color",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -321,10 +321,10 @@
             "type": "number",
             "required": true,
             "description": "Alpha value of the color, ranging from 0 to 1.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchslotprops.members.alpha",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchslotprops.members.alpha",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           }
         ],
@@ -339,8 +339,8 @@
         "type": "Interface ColorSwatchCheckerProps",
         "resolvedType": null,
         "description": "Events for the ColorSwatch component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcheckerprops.props",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcheckerprops.props",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -354,8 +354,8 @@
         "type": "Interface ColorSwatchCompactProps",
         "resolvedType": "{ checkerProps?: ColorSwatchCheckerProps; fillProps?: ColorSwatchFillProps; color?: import(\"@soybeanjs/colord\").AnyColor; label?: string; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorSwatch component in compact mode.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.props",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.props",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -363,10 +363,10 @@
             "type": "ColorSwatchCheckerProps",
             "required": false,
             "description": "Props for the checker element of the ColorSwatch component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.members.checkerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.members.checkerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchCheckerProps",
@@ -374,8 +374,8 @@
                 "type": "ColorSwatchCheckerProps",
                 "resolvedType": null,
                 "description": "Events for the ColorSwatch component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcheckerprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcheckerprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -388,10 +388,10 @@
             "type": "ColorSwatchFillProps",
             "required": false,
             "description": "Props for the fill element of the ColorSwatch component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.members.fillprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.members.fillprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchFillProps",
@@ -399,8 +399,8 @@
                 "type": "ColorSwatchFillProps",
                 "resolvedType": null,
                 "description": "Events for the ColorSwatch component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchfillprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchfillprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -413,10 +413,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Theme color of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.members.color",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.members.color",
             "default": null,
             "inheritedFrom": "color",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -424,10 +424,10 @@
             "type": "string",
             "required": false,
             "description": "Label text rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.members.label",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.members.label",
             "default": null,
             "inheritedFrom": "label",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -435,10 +435,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -446,10 +446,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -484,8 +484,8 @@
         "type": "TypeAlias ColorSwatchCompactSlots: ColorSwatchRootSlots",
         "resolvedType": "{ ColorSwatchFill?: ((props: ColorSwatchSlotProps) => any) }",
         "description": "Slots for the ColorSwatch component in compact mode.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -495,8 +495,8 @@
             "parameters": "((props: ColorSwatchSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchSlotProps",
@@ -504,8 +504,8 @@
                 "type": "ColorSwatchSlotProps",
                 "resolvedType": null,
                 "description": "Properties for the ColorSwatch component slots.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchslotprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchslotprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -521,8 +521,8 @@
             "type": "{ ColorSwatchFill?: (props: ColorSwatchSlotProps) => any; }",
             "resolvedType": "{ ColorSwatchFill?: ((props: ColorSwatchSlotProps) => any) }",
             "description": "Slots for the ColorSwatch component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootslots",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootslots",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -533,8 +533,8 @@
                 "parameters": "((props: ColorSwatchSlotProps) => any) | undefined",
                 "required": false,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootslots.callables.default",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootslots.callables.default",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -549,8 +549,8 @@
         "type": "Interface ColorSwatchFillProps",
         "resolvedType": null,
         "description": "Events for the ColorSwatch component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchfillprops.props",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchfillprops.props",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -564,8 +564,8 @@
         "type": "Interface ColorSwatchRootProps",
         "resolvedType": "{ color?: import(\"@soybeanjs/colord\").AnyColor; label?: string; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorSwatch component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootprops.props",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootprops.props",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -573,10 +573,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Theme color of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootprops.members.color",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootprops.members.color",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -584,10 +584,10 @@
             "type": "string",
             "required": false,
             "description": "Label text rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootprops.members.label",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootprops.members.label",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": []
           },
           {
@@ -595,10 +595,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -606,10 +606,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -644,8 +644,8 @@
         "type": "TypeAlias ColorSwatchRootSlots",
         "resolvedType": "{ ColorSwatchFill?: ((props: ColorSwatchSlotProps) => any) }",
         "description": "Slots for the ColorSwatch component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootslots.slots",
-        "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootslots.slots",
+        "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -655,8 +655,8 @@
             "parameters": "((props: ColorSwatchSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchrootslots.callables.default",
-            "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchrootslots.callables.default",
+            "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSwatchSlotProps",
@@ -664,8 +664,8 @@
                 "type": "ColorSwatchSlotProps",
                 "resolvedType": null,
                 "description": "Properties for the ColorSwatch component slots.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_swatch_types.colorswatchslotprops",
-                "sourcePath": "packages/headless/src/components/color-swatch/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_swatch_types.colorswatchslotprops",
+                "sourcePath": "packages/aria/src/components/color-swatch/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

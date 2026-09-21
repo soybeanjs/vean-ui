@@ -1,33 +1,33 @@
 ---
 head:
-  title: SoybeanUI CLI
-  description: sbean 是 SoybeanUI 的命令行工具，用于初始化项目、添加组件和管理 UI 配置。
+  title: VeanUI CLI
+  description: vean 是 VeanUI 的命令行工具，用于初始化项目、添加组件、管理 UI 配置与迁移项目。
 ---
 
-# SoybeanUI CLI
+# VeanUI CLI
 
-`sbean` 是 SoybeanUI 的命令行工具，用于初始化项目、添加组件和管理 UI 配置。
+`vean` 是 VeanUI 的命令行工具，用于初始化项目、添加组件、管理 UI 配置与迁移项目。
 
 ## 安装
 
 ```bash
-pnpm add -D sbean
+pnpm add -D @vean/cli
 ```
 
 或直接运行：
 
 ```bash
-npx sbean init
+npx @vean/cli@latest init
 ```
 
 ## 命令
 
-### `sbean init`
+### `vean init`
 
-初始化 SoybeanUI 项目或为现有项目添加配置。
+初始化 VeanUI 项目或为现有项目添加配置。
 
 ```bash
-sbean init [options]
+vean init [options]
 ```
 
 | 选项                    | 描述                                                                  | 默认值                                        |
@@ -49,12 +49,12 @@ sbean init [options]
 
 不提供选项时将进入交互式引导。
 
-### `sbean add`
+### `vean add`
 
 向项目添加组件。
 
 ```bash
-sbean add <component...> [options]
+vean add <component...> [options]
 ```
 
 | 选项                | 描述                               |
@@ -68,24 +68,24 @@ sbean add <component...> [options]
 | `-a, --all`         | 添加所有可用组件                   |
 | `-s, --silent`      | 静默输出                           |
 
-### `sbean build`
+### `vean build`
 
 从 registry.json 构建注册表 JSON 文件。
 
 ```bash
-sbean build [registry] [options]
+vean build [registry] [options]
 ```
 
 | 选项                  | 描述     | 默认值       |
 | --------------------- | -------- | ------------ |
 | `-o, --output <path>` | 输出目录 | `./public/r` |
 
-### `sbean search`
+### `vean search`
 
 搜索可用组件。
 
 ```bash
-sbean search [query] [options]
+vean search [query] [options]
 ```
 
 | 选项                    | 描述                                               |
@@ -95,12 +95,12 @@ sbean search [query] [options]
 | `-l, --limit <limit>`   | 最大结果数（默认：50）                             |
 | `-o, --offset <offset>` | 分页偏移量                                         |
 
-### `sbean list`
+### `vean list`
 
 列出 registry 中的条目，可按包过滤。
 
 ```bash
-sbean list [options]
+vean list [options]
 ```
 
 | 选项               | 描述                                                          |
@@ -110,32 +110,32 @@ sbean list [options]
 
 条目按包命名空间区分（当前为 `ui/button`、`ui/accordion`、…；未来外围包遵循 `<package>/<component>`）。
 
-### `sbean view`
+### `vean view`
 
 查看组件源码。
 
 ```bash
-sbean view <component>
+vean view <component>
 ```
 
-### `sbean info`
+### `vean info`
 
 显示项目配置和可用的预设值。
 
 ```bash
-sbean info [options]
+vean info [options]
 ```
 
 | 选项     | 描述             |
 | -------- | ---------------- |
 | `--json` | 以 JSON 格式输出 |
 
-### `sbean template`
+### `vean template`
 
 从模板快速创建项目。
 
 ```bash
-sbean template [name] [options]
+vean template [name] [options]
 ```
 
 | 选项                 | 描述         |
@@ -145,17 +145,49 @@ sbean template [name] [options]
 
 可用模板：`vue-vite`、`nuxt`。
 
-### `sbean preset`
+### `vean preset`
 
 管理配置预设。
 
 ```bash
-sbean preset <preset>
+vean preset <preset>
 ```
+
+### `vean migrate`
+
+把 **SoybeanUI 时代**的项目（依赖 `@soybeanjs/*`、或使用 `sbean` CLI）迁移到 Vean（`@vean/*`）。
+
+```bash
+vean migrate [migration] [options]
+```
+
+| 选项                       | 描述                                                                       | 默认值   |
+| -------------------------- | -------------------------------------------------------------------------- | -------- |
+| `-c, --cwd <cwd>`          | 工作目录                                                                   | 当前目录 |
+| `-w, --write`              | 写入改动（不加时只预览，不落盘）                                           | `false`  |
+| `--runtime-contract`       | 同时改写 `data-soybean-*` 属性与 `--soybean-*` CSS 变量                    | `false`  |
+| `--cli`                    | 同时改写 `sbean` CLI 引用，并把 `sbean.json` 重命名为 `vean.json`          | `false`  |
+| `--new-domain <host>`      | 同时把 `ui.soybeanjs.cn` 改写为 `<host>`（CDN 目标随之为 `assets.<host>`） | —        |
+| `--new-cdn <host>`         | 只改写 `r2.soybeanjs.tech` CDN 主机                                        | —        |
+| `--repo-slug <owner/repo>` | 只改写 `github.com/soybeanjs/soybean-ui`                                   | —        |
+| `-f, --force`              | 项目里没有任何 SoybeanUI 痕迹时也照常运行                                  | `false`  |
+| `-q, --quiet`              | 只输出汇总，不逐文件打印 diff                                              | `false`  |
+
+可用迁移：`rebrand`（SoybeanUI → Vean）。包名 / import 改写始终生效；运行时契约、CLI 引用、域名三类需显式开启，`--new-domain`、`--new-cdn`、`--repo-slug` 三者各自独立、可单独使用。
+
+```bash
+vean migrate rebrand                       # 预览
+vean migrate rebrand --write               # 落地
+vean migrate rebrand -w --runtime-contract --cli --new-domain veanui.com
+```
+
+**preflight（先判断该不该迁移）**：扫描后先看项目里有没有 SoybeanUI 时代的痕迹——`package.json` 里的 `@soybeanjs/*` 依赖、`sbean.json`、源码里的 `@soybeanjs/*` 标识符、`data-soybean-*` / `--soybean-*` 契约、`sbean` 调用。**都没有**（例如目录指错了，或项目已经迁移完）就拒绝执行、退出码 1、不写任何文件；只匹配到旧域名链接时也拒绝，除非你明确传了域名类选项。确实要强制运行用 `--force`。
+
+运行结束还会给出两组按项目实际情况生成的提示：**Worth adding**（本次没开启、但项目里确实还有对应改动的开关，如「检测到 12 处 `data-soybean-*` → 加 `--runtime-contract`」）与 **Still manual**（只列真正适用的人工步骤，例如按 `package.json` 实际依赖拼出的换包命令）。lockfile、`node_modules`、构建产物与 `CHANGELOG.md` 永不改写，且命令是幂等的。完整步骤见**[品牌迁移指南](/overview/migration/rebrand)**。
 
 ## 配置
 
-`sbean.json` 存储项目配置：
+`vean.json` 存储项目配置：
 
 ```json
 {
@@ -203,7 +235,7 @@ project/
 │       ├── constants/
 │       ├── resolver/
 │       └── nuxt/
-├── sbean.json
+├── vean.json
 ├── tsconfig.json
 └── uno.config.ts
 ```
@@ -220,7 +252,7 @@ project/
 │       ├── constants/
 │       ├── resolver/
 │       └── nuxt/
-├── sbean.json
+├── vean.json
 ├── tsconfig.json
 ├── uno.config.ts
 └── pnpm-workspace.yaml
@@ -228,7 +260,7 @@ project/
 
 ## 别名系统
 
-SBean 使用 `#ui` TypeScript 路径别名进行所有组件导入：
+VeanUI 使用 `#ui` TypeScript 路径别名进行所有组件导入：
 
 ```json
 // tsconfig.json
@@ -250,4 +282,4 @@ import { buttonVariants } from '#ui/styles/button';
 
 ## 注册表
 
-Sbean 从 SoybeanUI 注册表获取组件源码，地址为 `https://ui.soybeanjs.cn/r/<package>/<component>.json`——核心 `ui` 包由 `r/ui/{name}.json` 提供（如 `r/ui/button.json`），目录索引在 `r/registry.json`。注册表条目**按包命名空间区分**，因此注册表 URL 模板里的 `{name}` 是带命名空间的条目名（`ui/button`），而不是裸组件名。核心 `ui` 组件可省略前缀（`sbean add button`）；未来外围包的组件必须带命名空间前缀（`sbean add <package>/<component>`）。本地缓存（`~/.sbean/cache`）保持 24 小时 TTL 并支持 ETag 条件请求。
+Vean 从 VeanUI 注册表获取组件源码，地址为 `https://veanui.com/r/<package>/<component>.json`——核心 `ui` 包由 `r/ui/{name}.json` 提供（如 `r/ui/button.json`），目录索引在 `r/registry.json`。注册表条目**按包命名空间区分**，因此注册表 URL 模板里的 `{name}` 是带命名空间的条目名（`ui/button`），而不是裸组件名。核心 `ui` 组件可省略前缀（`vean add button`）；未来外围包的组件必须带命名空间前缀（`vean add <package>/<component>`）。本地缓存（`~/.vean/cache`）保持 24 小时 TTL 并支持 ETag 条件请求。

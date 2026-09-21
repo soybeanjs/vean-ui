@@ -16,8 +16,8 @@ import {
   STextarea,
   SToggleGroup,
   SToggleGroupItem
-} from '@soybeanjs/ui';
-import type { CheckboxGroupOptionData, RadioGroupOptionData, SegmentOptionData, SelectOptionData } from '@soybeanjs/ui';
+} from '@vean/ui';
+import type { CheckboxGroupOptionData, RadioGroupOptionData, SegmentOptionData, SelectOptionData } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewForms'

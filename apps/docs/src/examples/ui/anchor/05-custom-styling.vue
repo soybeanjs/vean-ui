@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SAnchor } from '@soybeanjs/ui';
+import { SAnchor } from '@vean/ui';
 import { anchorItems } from './shared';
 </script>
 

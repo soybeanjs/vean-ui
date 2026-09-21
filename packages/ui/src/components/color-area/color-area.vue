@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { ColorAreaCompact, provideColorAreaUi } from '@soybeanjs/headless/color-area';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { ColorAreaCompact, provideColorAreaUi } from '@vean/aria/color-area';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { colorAreaVariants } from '@/styles/color-area';
 import type { ColorAreaProps, ColorAreaEmits } from './types';
 

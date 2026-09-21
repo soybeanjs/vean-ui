@@ -1,11 +1,11 @@
-import { useContext } from '@soybeanjs/headless/composables';
+import { useContext } from '@vean/aria/composables';
 import { UI_CONFIG_PROVIDER_CONTEXT_KEY } from '../../constants';
 import type { ConfigProviderContext } from './types';
 
 /**
  * UI-level ConfigProvider context.
  *
- * Separate from the headless `ConfigProvider` context (different inject key): it
+ * Separate from the Aria `ConfigProvider` context (different inject key): it
  * carries the resolved theme options so consumers can read the active theme
  * without prop drilling.
  */

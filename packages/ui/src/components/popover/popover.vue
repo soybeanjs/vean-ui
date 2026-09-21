@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { PopoverCompact, providePopoverUi } from '@soybeanjs/headless/popover';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { PopoverCompact, providePopoverUi } from '@vean/aria/popover';
+import { keysOf } from '@vean/aria/shared';
 import { popoverVariants } from '@/styles/popover';
 import type { PopoverProps, PopoverEmits, PopoverSlots } from './types';
 

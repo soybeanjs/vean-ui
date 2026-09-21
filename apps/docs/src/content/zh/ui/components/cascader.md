@@ -37,20 +37,20 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 以自研数据引擎（`useCascaderData`）实现级联选择，不复用 listbox 的 selection/collection 基座（其单选值 + 扁平列表模型不适合树形级联）：`shallowReactive` 节点树缓存 `pathValues` / `pathLabels` / `level` 使查找 O(1)，`menus` computed 计算可见列，级联勾选走 `setCheckedDeep` / `recomputeAncestors` / `collectCheckedNodes`。`CascaderOption` 通过可取消的自定义事件（`select` / `expand`）派发交互（对齐 reka-ui）。`scv()` 配方 `cascaderVariants` 声明 16 个插槽与 7 个尺寸变体。
+VeanUI 以自研数据引擎（`useCascaderData`）实现级联选择，不复用 listbox 的 selection/collection 基座（其单选值 + 扁平列表模型不适合树形级联）：`shallowReactive` 节点树缓存 `pathValues` / `pathLabels` / `level` 使查找 O(1)，`menus` computed 计算可见列，级联勾选走 `setCheckedDeep` / `recomputeAncestors` / `collectCheckedNodes`。`CascaderOption` 通过可取消的自定义事件（`select` / `expand`）派发交互（对齐 reka-ui）。`scv()` 配方 `cascaderVariants` 声明 16 个插槽与 7 个尺寸变体。
 
-| 能力                    | SoybeanUI | Ant Design `Cascader` | reka-ui `Cascader` | Element Plus `Cascader` |
-| :---------------------- | :-------: | :-------------------: | :----------------: | :---------------------: |
-| headless/styled 分离    |    ✅     |           —           |         ✅         |            —            |
-| 多列面板                |    ✅     |          ✅           |         ✅         |           ✅            |
-| 级联复选 + 半选状态     |    ✅     |          ✅           |         —          |           ✅            |
-| 懒加载 / 远程搜索       |    ✅     |          ✅           |         ✅         |           ✅            |
-| showCheckedStrategy     |    ✅     |          ✅           |         —          |            —            |
-| pathMode（路径值）      |    ✅     |          ✅           |         —          |            —            |
-| 虚拟滚动                |    ✅     |           —           |         —          |            —            |
-| 可取消自定义事件        |    ✅     |           —           |         ✅         |            —            |
-| locale 文案（非硬编码） |    ✅     |           —           |         —          |           ✅            |
-| axe 零违规（打开态）    |    ✅     |           —           |         —          |            —            |
+| 能力                    | VeanUI | Ant Design `Cascader` | reka-ui `Cascader` | Element Plus `Cascader` |
+| :---------------------- | :----: | :-------------------: | :----------------: | :---------------------: |
+| Aria/styled 分离        |   ✅   |           —           |         ✅         |            —            |
+| 多列面板                |   ✅   |          ✅           |         ✅         |           ✅            |
+| 级联复选 + 半选状态     |   ✅   |          ✅           |         —          |           ✅            |
+| 懒加载 / 远程搜索       |   ✅   |          ✅           |         ✅         |           ✅            |
+| showCheckedStrategy     |   ✅   |          ✅           |         —          |            —            |
+| pathMode（路径值）      |   ✅   |          ✅           |         —          |            —            |
+| 虚拟滚动                |   ✅   |           —           |         —          |            —            |
+| 可取消自定义事件        |   ✅   |           —           |         ✅         |            —            |
+| locale 文案（非硬编码） |   ✅   |           —           |         —          |           ✅            |
+| axe 零违规（打开态）    |   ✅   |           —           |         —          |            —            |
 
 ### 注意事项
 

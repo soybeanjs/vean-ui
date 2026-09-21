@@ -31,7 +31,7 @@ describe('SSheet (e2e)', () => {
   });
 
   function popup(): HTMLElement {
-    const found = document.querySelector<HTMLElement>('[data-soybean-dialog-popup]');
+    const found = document.querySelector<HTMLElement>('[data-vean-dialog-popup]');
 
     if (!found) {
       throw new Error('expected the sheet popup to be rendered');
@@ -114,7 +114,7 @@ describe('SSheet (e2e)', () => {
     const { width, height } = viewportSize();
 
     // A non-fullscreen bottom panel is capped by
-    // `max-h-[var(--soybean-drawer-max-height,calc(100dvh-2rem))]`, which is what
+    // `max-h-[var(--vean-drawer-max-height,calc(100dvh-2rem))]`, which is what
     // this case regresses to if `data-[fullscreen]:max-h-none` is missing.
     await expect.poll(() => covers(popup().getBoundingClientRect().height, height)).toBe(true);
     await expect.poll(() => covers(popup().getBoundingClientRect().width, width)).toBe(true);

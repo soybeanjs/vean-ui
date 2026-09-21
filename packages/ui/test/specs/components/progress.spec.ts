@@ -98,7 +98,7 @@ describe('SProgress', () => {
       );
 
       const progressbar = wrapper.get('[role="progressbar"]');
-      const label = wrapper.get('[data-soybean-progress-label]');
+      const label = wrapper.get('[data-vean-progress-label]');
       const violations = await getA11yViolations(wrapper.element);
 
       expect(progressbar.classes()).toContain('my-circle-progress');

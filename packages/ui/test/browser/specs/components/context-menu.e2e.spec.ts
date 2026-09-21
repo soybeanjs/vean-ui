@@ -21,7 +21,7 @@ const items = [
   { value: 'paste', label: 'Paste' }
 ];
 
-const CONTENT = '[data-soybean-context-menu-content]';
+const CONTENT = '[data-vean-context-menu-content]';
 
 // The fixture keeps the generic component out of `renderComponent`'s signature (mirrors the
 // menu spec); the trigger's nested element covers the whole trigger box so a press at the

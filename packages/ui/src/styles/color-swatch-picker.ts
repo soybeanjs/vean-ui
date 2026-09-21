@@ -18,7 +18,7 @@ export const colorSwatchPickerVariants = scv({
       'hover:scale-110 data-[disabled]:opacity-50'
     ],
     itemIndicator: `pointer-events-none absolute inset-0 flex justify-center items-center text-muted`,
-    swatchRoot: 'group-data-[state=checked]:border-[--soybean-color-swatch-color]',
+    swatchRoot: 'group-data-[state=checked]:border-[--vean-color-swatch-color]',
     swatchChecker: '',
     swatchFill: 'transition-transform group-data-[state=checked]:scale-77'
   },

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -128,8 +128,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the ToggleGroup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupui",
-                "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupui",
+                "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.rovingfocus",
             "default": null,
             "inheritedFrom": "rovingFocus",
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -175,8 +175,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -200,8 +200,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -217,7 +217,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.loop",
             "default": null,
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -228,7 +228,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -239,7 +239,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -250,7 +250,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -261,7 +261,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.clearable",
             "default": null,
             "inheritedFrom": "clearable",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -272,7 +272,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -280,8 +280,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -297,7 +297,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -308,7 +308,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -319,7 +319,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -330,7 +330,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -377,7 +377,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_toggle_group_types.togglegroupemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           }
         ],
@@ -391,8 +391,8 @@
         "type": "Interface ToggleGroupItemProps<T>",
         "resolvedType": "{ value: T; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ToggleGroupItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupitemprops.props",
-        "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupitemprops.props",
+        "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -400,10 +400,10 @@
             "type": "T",
             "required": true,
             "description": "A unique value that identifies the item inside the group.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -411,10 +411,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupitemprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupitemprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -422,8 +422,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -436,10 +436,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupitemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupitemprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -447,10 +447,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupitemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupitemprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -458,10 +458,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegroupitemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegroupitemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -498,8 +498,8 @@
         "type": "Interface ToggleGroupRootProps<M, T>",
         "resolvedType": "{ rovingFocus?: boolean; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; loop?: boolean; modelValue?: (M extends true ? T[] : T); defaultValue?: (M extends true ? T[] : T); multiple?: M; clearable?: boolean; selectionBehavior?: SelectionBehavior; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ToggleGroupRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.props",
-        "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.props",
+        "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
         "typeParameters": ["TypeParameter M", "TypeParameter T"],
         "members": [
           {
@@ -507,10 +507,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `false`, navigating through items with arrow keys is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.rovingfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.rovingfocus",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -518,10 +518,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents interaction with all items in the group.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -529,10 +529,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -540,8 +540,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -554,10 +554,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the group when applicable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -565,8 +565,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -579,10 +579,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, keyboard navigation loops from last to first item, and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.loop",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+            "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -590,10 +590,10 @@
             "type": "(M extends true ? T[] : T)",
             "required": false,
             "description": "The controlled value of the selected item(s).\n\nUse this when you need to control the state of the items. Can be bound with `v-model`",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -601,10 +601,10 @@
             "type": "(M extends true ? T[] : T)",
             "required": false,
             "description": "The default value of the selected item(s).\n\nUse this when you need to set the initial state of the items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -612,10 +612,10 @@
             "type": "M",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.\n\nThis prop will overwrite the inferred type from `modelValue` and `defaultValue`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -623,10 +623,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether selected item can be cleared when `multiple` is false.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.clearable",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.clearable",
             "default": null,
             "inheritedFrom": "clearable",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -634,10 +634,10 @@
             "type": "SelectionBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -645,8 +645,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -659,10 +659,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -670,10 +670,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -681,10 +681,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -692,10 +692,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -730,8 +730,8 @@
         "type": "TypeAlias ToggleGroupRootEmits<M, T>: SelectionEmits<M, T>",
         "resolvedType": "{ \"update:modelValue\": [value: M extends true ? T[] : T] }",
         "description": "Events for the ToggleGroupRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootemits.emits",
-        "sourcePath": "packages/headless/src/components/toggle-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootemits.emits",
+        "sourcePath": "packages/aria/src/components/toggle-group/types.ts",
         "typeParameters": ["TypeParameter M", "TypeParameter T"],
         "members": [],
         "callables": [
@@ -741,8 +741,8 @@
             "parameters": "value: M extends true ? T[] : T",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_toggle_group_types.togglegrouprootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_toggle_group_types.togglegrouprootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           }
         ],

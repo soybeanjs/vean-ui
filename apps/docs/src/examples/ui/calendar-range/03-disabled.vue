@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { createDate } from '@soybeanjs/headless/date';
-import { SCalendarRange } from '@soybeanjs/ui';
+import { createDate } from '@vean/aria/date';
+import { SCalendarRange } from '@vean/ui';
 
 const value = {
   start: createDate(2026, 4, 18),

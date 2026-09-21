@@ -1,5 +1,5 @@
 import type { ComponentResolver } from 'unplugin-vue-components';
-import { keysOf, kebabCase, pascalCase } from '@soybeanjs/headless/shared';
+import { keysOf, kebabCase, pascalCase } from '@vean/aria/shared';
 import { components } from '../constants/components';
 
 function createResolver() {
@@ -26,7 +26,7 @@ function createResolver() {
 
       return {
         name,
-        from: `@soybeanjs/ui/${path}`
+        from: `@vean/ui/${path}`
       };
     }
   };

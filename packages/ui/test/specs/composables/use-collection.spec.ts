@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { createMockElement } from '../../shared';
-import { useCollection } from '../../../../headless/src/composables/use-collection';
+import { useCollection } from '../../../../aria/src/composables/use-collection';
 
 describe('useCollection', () => {
   describe('basic functionality', () => {
@@ -109,7 +109,7 @@ describe('useCollection', () => {
 
       // Simulate the actual getOrderedItems implementation
       const mockGetOrderedItems = () => {
-        const domOrderedElements = Array.from(mockContainer.querySelectorAll('[data-soybean-collection-item]'));
+        const domOrderedElements = Array.from(mockContainer.querySelectorAll('[data-vean-collection-item]'));
         const orderedItems: any[] = [];
 
         for (const element of domOrderedElements) {
@@ -128,7 +128,7 @@ describe('useCollection', () => {
       expect(orderedItems[0].data.id).toBe('first');
       expect(orderedItems[1].data.id).toBe('second');
       expect(orderedItems[2].data.id).toBe('third');
-      expect(mockContainer.querySelectorAll).toHaveBeenCalledWith('[data-soybean-collection-item]');
+      expect(mockContainer.querySelectorAll).toHaveBeenCalledWith('[data-vean-collection-item]');
     });
 
     it('should filter disabled elements when excludeDisabled is true', () => {
@@ -197,7 +197,7 @@ describe('useCollection', () => {
 
       // Simulate getOrderedItems implementation
       const mockGetOrderedItems = () => {
-        const domOrderedElements = Array.from(mockContainer.querySelectorAll('[data-soybean-collection-item]'));
+        const domOrderedElements = Array.from(mockContainer.querySelectorAll('[data-vean-collection-item]'));
         const orderedItems: any[] = [];
 
         for (const element of domOrderedElements) {
@@ -315,7 +315,7 @@ describe('useCollection', () => {
 
     it('should handle collection item attributes', () => {
       const element = createMockElement('div');
-      const COLLECTION_ITEM_ATTRIBUTE = 'data-soybean-collection-item';
+      const COLLECTION_ITEM_ATTRIBUTE = 'data-vean-collection-item';
 
       // Test attribute setting
       element.setAttribute(COLLECTION_ITEM_ATTRIBUTE, 'true');
@@ -440,9 +440,9 @@ describe('useCollection', () => {
       // Test empty querySelectorAll result
       mockContainer.querySelectorAll = vi.fn().mockReturnValue([]);
 
-      const result = mockContainer.querySelectorAll('[data-soybean-collection-item]');
+      const result = mockContainer.querySelectorAll('[data-vean-collection-item]');
       expect(result).toEqual([]);
-      expect(mockContainer.querySelectorAll).toHaveBeenCalledWith('[data-soybean-collection-item]');
+      expect(mockContainer.querySelectorAll).toHaveBeenCalledWith('[data-vean-collection-item]');
     });
 
     it('should handle non-existent registry entries', () => {

@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="M extends boolean = false">
 import { computed } from 'vue';
-import { useLocaleMessages } from '@soybeanjs/headless';
-import { CalendarCompact, provideCalendarUi } from '@soybeanjs/headless/calendar';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { useLocaleMessages } from '@vean/aria';
+import { CalendarCompact, provideCalendarUi } from '@vean/aria/calendar';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { calendarVariants } from '@/styles/calendar';
 import { miniSizeMap } from '@/theme';
 import Icon from '../icon/icon.vue';

@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="M extends boolean = false">
 import { computed } from 'vue';
-import { ComboboxCompact, provideComboboxUi } from '@soybeanjs/headless/combobox';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { ComboboxCompact, provideComboboxUi } from '@vean/aria/combobox';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { comboboxVariants } from '@/styles/combobox';
 import type { ComboboxProps, ComboboxEmits, ComboboxSlots } from './types';
 

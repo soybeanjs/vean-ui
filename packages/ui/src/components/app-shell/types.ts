@@ -1,21 +1,16 @@
-import type { BreadcrumbCompactProps, BreadcrumbOptionData, BreadcrumbUi } from '@soybeanjs/headless/breadcrumb';
-import type { LayoutCompactProps, LayoutSide, LayoutUi } from '@soybeanjs/headless/layout';
+import type { BreadcrumbCompactProps, BreadcrumbOptionData, BreadcrumbUi } from '@vean/aria/breadcrumb';
+import type { LayoutCompactProps, LayoutSide, LayoutUi } from '@vean/aria/layout';
 import type {
   PageTabsCompactProps,
   PageTabsContextMenuOptionData,
   PageTabsDragEvent,
   PageTabsOptionData,
   PageTabsUi
-} from '@soybeanjs/headless/page-tabs';
-import type {
-  SplitNavBaseOptionData,
-  SplitNavMode,
-  SplitNavRootProps,
-  SplitNavUi
-} from '@soybeanjs/headless/split-nav';
-import type { TreeMenuCompactProps, TreeMenuExpandStrategy, TreeMenuUi } from '@soybeanjs/headless/tree-menu';
-import type { TreeNavCompactProps, TreeNavUi } from '@soybeanjs/headless/tree-nav';
-import type { ClassValue, UiClass } from '@soybeanjs/headless/types';
+} from '@vean/aria/page-tabs';
+import type { SplitNavBaseOptionData, SplitNavMode, SplitNavRootProps, SplitNavUi } from '@vean/aria/split-nav';
+import type { TreeMenuCompactProps, TreeMenuExpandStrategy, TreeMenuUi } from '@vean/aria/tree-menu';
+import type { TreeNavCompactProps, TreeNavUi } from '@vean/aria/tree-nav';
+import type { ClassValue, UiClass } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

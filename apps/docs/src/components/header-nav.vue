@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { extractLocaleFromPath } from 'ubean/client';
-import type { NavMenuOptionData, SNavMenu } from '@soybeanjs/ui';
+import type { NavMenuOptionData, SNavMenu } from '@vean/ui';
 
 interface Props {
   orientation?: 'horizontal' | 'vertical';

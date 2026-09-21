@@ -2,7 +2,7 @@
   "name": "dialog",
   "type": "registry:ui",
   "description": "A modal dialog that interrupts the user with important content.",
-  "dependencies": ["@soybeanjs/headless", "@soybeanjs/cva"],
+  "dependencies": ["@vean/aria", "@soybeanjs/cva"],
   "registryDependencies": ["utils", "button"],
   "categories": ["overlay", "feedback"],
   "files": [

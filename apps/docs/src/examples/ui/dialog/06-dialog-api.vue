@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h } from 'vue';
-import { dialog } from '@soybeanjs/ui';
+import { dialog } from '@vean/ui';
 
 const openWarning = () => {
   dialog.warning('Dialog Title', {

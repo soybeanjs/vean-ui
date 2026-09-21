@@ -9,11 +9,11 @@ async function createTemporaryDirectory(prefix: string): Promise<string> {
 }
 
 /**
- * Minimal `packages/headless/src` fixture: a barrel re-exporting one component
+ * Minimal `packages/aria/src` fixture: a barrel re-exporting one component
  * dir, whose index exports a family root (`Button`).
  */
 async function createFixture(rootDir: string): Promise<{ srcDir: string; barrelPath: string }> {
-  const srcDir = path.join(rootDir, 'packages/headless/src');
+  const srcDir = path.join(rootDir, 'packages/aria/src');
   const barrelPath = path.join(srcDir, 'index.ts');
 
   await mkdir(path.join(srcDir, 'components/button'), { recursive: true });
@@ -33,7 +33,7 @@ describe('generateCatalog', () => {
     const { srcDir } = await createFixture(rootDir);
 
     try {
-      const written = await generateCatalog('headless', rootDir, { format: false });
+      const written = await generateCatalog('aria', rootDir, { format: false });
 
       expect(written).toHaveLength(2);
 
@@ -51,7 +51,7 @@ describe('generateCatalog', () => {
     const outputPath = path.join(srcDir, 'constants/components.ts');
 
     try {
-      await generateCatalog('headless', rootDir, { format: false });
+      await generateCatalog('aria', rootDir, { format: false });
 
       const before = await stat(outputPath);
 
@@ -59,7 +59,7 @@ describe('generateCatalog', () => {
       // be produced by the skipped pass at all.
       await new Promise(resolve => setTimeout(resolve, 20));
 
-      const written = await generateCatalog('headless', rootDir, { format: false });
+      const written = await generateCatalog('aria', rootDir, { format: false });
       const after = await stat(outputPath);
 
       expect(written).toEqual([]);
@@ -75,7 +75,7 @@ describe('generateCatalog', () => {
     const outputPath = path.join(srcDir, 'constants/components.ts');
 
     try {
-      await generateCatalog('headless', rootDir, { format: false });
+      await generateCatalog('aria', rootDir, { format: false });
 
       await writeFile(
         path.join(srcDir, 'components/button/index.ts'),
@@ -83,7 +83,7 @@ describe('generateCatalog', () => {
         'utf8'
       );
 
-      const written = await generateCatalog('headless', rootDir, { format: false });
+      const written = await generateCatalog('aria', rootDir, { format: false });
       const components = await readFile(outputPath, 'utf8');
 
       expect(written).toContain(path.join(srcDir, 'constants/components.ts'));

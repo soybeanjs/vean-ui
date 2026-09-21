@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SSplitNav } from '@soybeanjs/ui';
-import type { SplitNavOptionData } from '@soybeanjs/ui';
+import { SSplitNav } from '@vean/ui';
+import type { SplitNavOptionData } from '@vean/ui';
 import { splitNavItems } from './data';
 
 const active = shallowRef('');

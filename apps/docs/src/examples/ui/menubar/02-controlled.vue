@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SMenubar } from '@soybeanjs/ui';
-import type { MenuOptionData } from '@soybeanjs/ui';
+import { SMenubar } from '@vean/ui';
+import type { MenuOptionData } from '@vean/ui';
 
 const currentMenu = ref('');
 

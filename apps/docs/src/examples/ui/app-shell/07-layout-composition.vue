@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SBreadcrumb, SIcon, SLayout, SLayoutTrigger, STreeMenu } from '@soybeanjs/ui';
-import type { BreadcrumbOptionData } from '@soybeanjs/ui';
+import { SBreadcrumb, SIcon, SLayout, SLayoutTrigger, STreeMenu } from '@vean/ui';
+import type { BreadcrumbOptionData } from '@vean/ui';
 import { appShellItems } from './menu';
 
 const open = ref(true);
@@ -26,7 +26,7 @@ const breadcrumbs: BreadcrumbOptionData[] = [
   <div class="h-120 w-full border border-border border-solid rounded-md overflow-hidden">
     <!--
  The same shell assembled by hand: layout regions, trigger, menu, breadcrumb,
-         widths, and region classes are all composed by the caller. 
+         widths, and region classes are all composed by the caller.
 -->
     <SLayout
       v-model:open="open"
@@ -37,9 +37,9 @@ const breadcrumbs: BreadcrumbOptionData[] = [
       }"
     >
       <template #sidebar="{ collapsed, collapsedSidebarWidth }">
-        <div class="flex h-[--soybean-layout-header-height] shrink-0 items-center gap-2 px-[--sl-spacing]">
+        <div class="flex h-[--vean-layout-header-height] shrink-0 items-center gap-2 px-[--sl-spacing]">
           <SIcon icon="lucide:hexagon" class="size-6 shrink-0 text-primary" />
-          <span v-if="!collapsed" class="truncate font-semibold">Soybean UI</span>
+          <span v-if="!collapsed" class="truncate font-semibold">Vean UI</span>
         </div>
         <STreeMenu
           v-model="active"

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { DrawerCompact, provideDrawerUi } from '@soybeanjs/headless/drawer';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { DrawerCompact, provideDrawerUi } from '@vean/aria/drawer';
+import { keysOf } from '@vean/aria/shared';
 import { drawerVariants } from '@/styles/drawer';
 import type { DrawerProps, DrawerEmits, DrawerSlots } from './types';
 

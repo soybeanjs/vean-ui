@@ -1,22 +1,22 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { useFocusGuards } from '../../../../headless/src/composables/use-focus-guards';
+import { useFocusGuards } from '../../../../aria/src/composables/use-focus-guards';
 
 // Mock the shared/env module
-vi.mock('../../../../headless/src/shared/env', () => ({
+vi.mock('../../../../aria/src/shared/env', () => ({
   isClient: true
 }));
 
 describe('useFocusGuards', () => {
   beforeEach(() => {
     // Clean up any existing focus guards before each test
-    document.querySelectorAll('[data-soybean-focus-guard]').forEach(guard => guard.remove());
+    document.querySelectorAll('[data-vean-focus-guard]').forEach(guard => guard.remove());
   });
 
   afterEach(() => {
     // Clean up any remaining focus guards after each test
-    document.querySelectorAll('[data-soybean-focus-guard]').forEach(guard => guard.remove());
+    document.querySelectorAll('[data-vean-focus-guard]').forEach(guard => guard.remove());
     vi.clearAllMocks();
   });
 
@@ -33,7 +33,7 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       // Check that guards are positioned correctly
@@ -53,11 +53,11 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
 
       guards.forEach(guard => {
         const element = guard as HTMLElement;
-        expect(element.getAttribute('data-soybean-focus-guard')).toBe('');
+        expect(element.getAttribute('data-vean-focus-guard')).toBe('');
         expect(element.tabIndex).toBe(0);
         expect(element.style.opacity).toBe('0');
         expect(element.style.position).toBe('fixed');
@@ -90,7 +90,7 @@ describe('useFocusGuards', () => {
       mount(TestComponent1);
       await nextTick();
 
-      let guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      let guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       // Mount second component
@@ -98,7 +98,7 @@ describe('useFocusGuards', () => {
       await nextTick();
 
       // Should still have only 2 guards (reused)
-      guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
     });
 
@@ -116,7 +116,7 @@ describe('useFocusGuards', () => {
       const wrapper2 = mount(TestComponent);
       await nextTick();
 
-      let guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      let guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       // Unmount first component
@@ -124,7 +124,7 @@ describe('useFocusGuards', () => {
       await nextTick();
 
       // Guards should still exist because wrapper2 is still mounted
-      guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       // Verify wrapper2 is still active
@@ -139,9 +139,9 @@ describe('useFocusGuards', () => {
     it('should handle guards that are already in DOM', async () => {
       // Manually create existing guards
       const existingGuard1 = document.createElement('span');
-      existingGuard1.setAttribute('data-soybean-focus-guard', '');
+      existingGuard1.setAttribute('data-vean-focus-guard', '');
       const existingGuard2 = document.createElement('span');
-      existingGuard2.setAttribute('data-soybean-focus-guard', '');
+      existingGuard2.setAttribute('data-vean-focus-guard', '');
 
       document.body.insertAdjacentElement('afterbegin', existingGuard1);
       document.body.insertAdjacentElement('beforeend', existingGuard2);
@@ -158,7 +158,7 @@ describe('useFocusGuards', () => {
       await nextTick();
 
       // Should still have only 2 guards (reused existing ones)
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
       expect(guards[0]).toBe(existingGuard1);
       expect(guards[1]).toBe(existingGuard2);
@@ -178,13 +178,13 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       guards.forEach(guard => {
         const element = guard as HTMLElement;
         expect(element.tagName).toBe('SPAN');
-        expect(element.getAttribute('data-soybean-focus-guard')).toBe('');
+        expect(element.getAttribute('data-vean-focus-guard')).toBe('');
         expect(element.tabIndex).toBe(0);
 
         // Check styles
@@ -207,7 +207,7 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       // Check positioning
@@ -229,11 +229,11 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       guards.forEach(guard => {
-        expect(guard.getAttribute('data-soybean-focus-guard')).toBe('');
+        expect(guard.getAttribute('data-vean-focus-guard')).toBe('');
       });
     });
 
@@ -249,7 +249,7 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
 
       guards.forEach(guard => {
         const element = guard as HTMLElement;
@@ -269,7 +269,7 @@ describe('useFocusGuards', () => {
       mount(TestComponent);
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
 
       guards.forEach(guard => {
         const element = guard as HTMLElement;
@@ -296,7 +296,7 @@ describe('useFocusGuards', () => {
         mount(TestComponent);
       }).not.toThrow();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards.length).toBeGreaterThanOrEqual(0);
     });
 
@@ -320,7 +320,7 @@ describe('useFocusGuards', () => {
 
       await nextTick();
 
-      const guards = document.querySelectorAll('[data-soybean-focus-guard]');
+      const guards = document.querySelectorAll('[data-vean-focus-guard]');
       expect(guards).toHaveLength(2);
 
       // Cleanup for this test

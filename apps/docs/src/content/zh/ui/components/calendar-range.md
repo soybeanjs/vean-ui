@@ -30,10 +30,10 @@ CalendarRange 会渲染一个或多个按月排列的日期网格，用户可直
 
 ## 组件系列
 
-- `SCalendarRange` — 样式包装层：向 headless compact 转发 props、注入 `calendarRangeVariants` 样式（12 slots，prev/next 复用按钮图标配方），并在 heading 中渲染默认的月/年 Select 控件
-- `CalendarRangeCompact`（headless）— 数据驱动聚合：`CalendarRangeRoot` + 头部（prev/heading/next）+ 每月一个网格（grid head/body 行由 `CalendarRangeCellTrigger` 组成）；无样式用法从 `@soybeanjs/headless/calendar-range` 引入
-- `CalendarRangeRoot`（headless）— 状态所有者：`useControllableState` 管理 `DateRange`/placeholder，`useCalendar` 生成网格与翻页，`useCalendarRangeState` 派生选中/高亮/无效状态并提供候选范围校验
-- `CalendarRangeCellTrigger` / `CalendarRangeCell` / `CalendarRangeGrid*`（headless）— 可编辑日期按钮（键盘处理、焦点管理、范围 data 属性）及其语义化网格单元格包装
+- `SCalendarRange` — 样式包装层：向 Aria compact 转发 props、注入 `calendarRangeVariants` 样式（12 slots，prev/next 复用按钮图标配方），并在 heading 中渲染默认的月/年 Select 控件
+- `CalendarRangeCompact`（Aria）— 数据驱动聚合：`CalendarRangeRoot` + 头部（prev/heading/next）+ 每月一个网格（grid head/body 行由 `CalendarRangeCellTrigger` 组成）；无样式用法从 `@vean/aria/calendar-range` 引入
+- `CalendarRangeRoot`（Aria）— 状态所有者：`useControllableState` 管理 `DateRange`/placeholder，`useCalendar` 生成网格与翻页，`useCalendarRangeState` 派生选中/高亮/无效状态并提供候选范围校验
+- `CalendarRangeCellTrigger` / `CalendarRangeCell` / `CalendarRangeGrid*`（Aria）— 可编辑日期按钮（键盘处理、焦点管理、范围 data 属性）及其语义化网格单元格包装
 
 ## 演示
 
@@ -47,23 +47,23 @@ CalendarRange 会渲染一个或多个按月排列的日期网格，用户可直
 
 ### 架构与对标差异
 
-`CalendarRangeRoot` 经 `useControllableState` 持有值（`DateRange` = `{ start, end }`），placeholder 驱动网格翻页，网格生成委托给与 `calendar` 共享的 `useCalendar`。`useCalendarRangeState` 派生选中/高亮状态，并暴露 `isRangeInvalid(start, end)`——候选范围校验器，同时供派生 `data-invalid` 状态与 `onDateChange` 提交新范围时使用（因此「非连续范围拒绝」基于**候选范围**判定，而非此前已提交的状态）。`CalendarRangeCellTrigger` 是唯一交互部件：读取共享 context，计算 `data-selection-start`/`data-selection-end`/`data-highlighted`/`data-selected`/`data-today`/`data-unavailable`/`data-outside-view`，处理方向键（`dir` 感知方向，RTL 反转 ArrowLeft/ArrowRight）与 Enter/Space，并在导航跨越网格边界时翻页到相邻月份。`CalendarRangeCell` 为已完成范围内的日期带上 `data-in-range`，样式条带正是以它为锚点——仅选中起点时只有 `data-selected`、不绘制条带，因此条带只会在两端都选定后出现。多数对标库提供的是整体式范围面板；headless/styled 分离、逐部件 `*Props` 透传、悬停预览与候选范围校验是本组件差异点。
+`CalendarRangeRoot` 经 `useControllableState` 持有值（`DateRange` = `{ start, end }`），placeholder 驱动网格翻页，网格生成委托给与 `calendar` 共享的 `useCalendar`。`useCalendarRangeState` 派生选中/高亮状态，并暴露 `isRangeInvalid(start, end)`——候选范围校验器，同时供派生 `data-invalid` 状态与 `onDateChange` 提交新范围时使用（因此「非连续范围拒绝」基于**候选范围**判定，而非此前已提交的状态）。`CalendarRangeCellTrigger` 是唯一交互部件：读取共享 context，计算 `data-selection-start`/`data-selection-end`/`data-highlighted`/`data-selected`/`data-today`/`data-unavailable`/`data-outside-view`，处理方向键（`dir` 感知方向，RTL 反转 ArrowLeft/ArrowRight）与 Enter/Space，并在导航跨越网格边界时翻页到相邻月份。`CalendarRangeCell` 为已完成范围内的日期带上 `data-in-range`，样式条带正是以它为锚点——仅选中起点时只有 `data-selected`、不绘制条带，因此条带只会在两端都选定后出现。多数对标库提供的是整体式范围面板；Aria/styled 分离、逐部件 `*Props` 透传、悬停预览与候选范围校验是本组件差异点。
 
-| 能力                       | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离       |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 范围选择（起 + 止）        |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 悬停范围预览               |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| 键盘网格导航               |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| RTL 方向反转               |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `numberOfMonths` 多网格    |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| `allowNonContiguousRanges` |    ✅     |     —      |      ✅      |   ✅    |    —     |   —    |
-| `maximumDays` 跨度上限     |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| `fixedDate` 固定端点       |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `minValue`/`maxValue` 边界 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateDisabled` / 不可用  |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 月/年 Select 控件          |    ✅     |     ✅     |      ✅      |    —    |    —     |   —    |
-| 候选范围校验               |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| 能力                       | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 范围选择（起 + 止）        |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 悬停范围预览               |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| 键盘网格导航               |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| RTL 方向反转               |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `numberOfMonths` 多网格    |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| `allowNonContiguousRanges` |   ✅   |     —      |      ✅      |   ✅    |    —     |   —    |
+| `maximumDays` 跨度上限     |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| `fixedDate` 固定端点       |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `minValue`/`maxValue` 边界 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateDisabled` / 不可用  |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 月/年 Select 控件          |   ✅   |     ✅     |      ✅      |    —    |    —     |   —    |
+| 候选范围校验               |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### Cautions
 

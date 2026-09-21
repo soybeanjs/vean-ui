@@ -38,20 +38,20 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 基于完整 ComboBox 基座构建选择器：`SelectRoot` → `SelectTrigger`（`role="combobox"`）→ `SelectValue`（collection 标签查找）→ `SelectContentImpl`（DismissableLayer + FocusScope + typeahead + 键盘导航）→ `SelectItem`，并由 `SelectBubbleSelect` 代理原生表单提交。`scv()` 配方 `selectVariants` 声明 16 个插槽与 7 个尺寸变体。这与 reka-ui / shadcn 的 select 语义一致，数据驱动 `SelectCompact` 聚合为 SoybeanUI 的差异化增强。
+VeanUI 基于完整 ComboBox 基座构建选择器：`SelectRoot` → `SelectTrigger`（`role="combobox"`）→ `SelectValue`（collection 标签查找）→ `SelectContentImpl`（DismissableLayer + FocusScope + typeahead + 键盘导航）→ `SelectItem`，并由 `SelectBubbleSelect` 代理原生表单提交。`scv()` 配方 `selectVariants` 声明 16 个插槽与 7 个尺寸变体。这与 reka-ui / shadcn 的 select 语义一致，数据驱动 `SelectCompact` 聚合为 VeanUI 的差异化增强。
 
-| 能力                     | SoybeanUI | reka-ui `Select` | shadcn `Select` | Element Plus `el-select` |
-| :----------------------- | :-------: | :--------------: | :-------------: | :----------------------: |
-| headless/styled 分离     |    ✅     |        ✅        |        —        |            —             |
-| combobox 角色 + 键盘导航 |    ✅     |        ✅        |       ✅        |            ✅            |
-| typeahead 搜索           |    ✅     |        ✅        |        —        |            ✅            |
-| 受控/非受控 + 多选       |    ✅     |        ✅        |        —        |            ✅            |
-| 分组 + 组标签            |    ✅     |        ✅        |       ✅        |            ✅            |
-| 表单代理（BubbleSelect） |    ✅     |        ✅        |        —        |            ✅            |
-| 选中项对齐定位           |    ✅     |        ✅        |        —        |            —             |
-| 数据驱动 Compact API     |    ✅     |        —         |        —        |            —             |
-| 虚拟滚动                 |     —     |        —         |        —        |            ✅            |
-| axe 零违规（打开态）     |    ✅     |        —         |       ✅        |            —             |
+| 能力                     | VeanUI | reka-ui `Select` | shadcn `Select` | Element Plus `el-select` |
+| :----------------------- | :----: | :--------------: | :-------------: | :----------------------: |
+| Aria/styled 分离         |   ✅   |        ✅        |        —        |            —             |
+| combobox 角色 + 键盘导航 |   ✅   |        ✅        |       ✅        |            ✅            |
+| typeahead 搜索           |   ✅   |        ✅        |        —        |            ✅            |
+| 受控/非受控 + 多选       |   ✅   |        ✅        |        —        |            ✅            |
+| 分组 + 组标签            |   ✅   |        ✅        |       ✅        |            ✅            |
+| 表单代理（BubbleSelect） |   ✅   |        ✅        |        —        |            ✅            |
+| 选中项对齐定位           |   ✅   |        ✅        |        —        |            —             |
+| 数据驱动 Compact API     |   ✅   |        —         |        —        |            —             |
+| 虚拟滚动                 |   —    |        —         |        —        |            ✅            |
+| axe 零违规（打开态）     |   ✅   |        —         |       ✅        |            —             |
 
 ### 注意事项
 

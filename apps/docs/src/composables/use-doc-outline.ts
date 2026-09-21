@@ -1,6 +1,6 @@
 import { inject, provide, shallowRef } from 'vue';
 import type { InjectionKey, ShallowRef } from 'vue';
-import type { AnchorOptionData } from '@soybeanjs/headless/anchor';
+import type { AnchorOptionData } from '@vean/aria/anchor';
 
 const DOC_OUTLINE_KEY: InjectionKey<ShallowRef<AnchorOptionData[]>> = Symbol('doc-outline');
 

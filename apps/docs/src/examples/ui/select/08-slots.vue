@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SSelect } from '@soybeanjs/ui';
-import type { SelectOptionData } from '@soybeanjs/ui';
+import { SSelect } from '@vean/ui';
+import type { SelectOptionData } from '@vean/ui';
 
 const fruits = [
   'apple',

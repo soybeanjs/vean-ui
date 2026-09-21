@@ -77,7 +77,7 @@ describe('SAlert', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-alert-root]').attributes('role')).toBe('alert');
+      expect(wrapper.find('[data-vean-alert-root]').attributes('role')).toBe('alert');
       wrapper.unmount();
     });
 
@@ -90,7 +90,7 @@ describe('SAlert', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-alert-root]').attributes('role')).toBe('status');
+      expect(wrapper.find('[data-vean-alert-root]').attributes('role')).toBe('status');
       wrapper.unmount();
     });
 

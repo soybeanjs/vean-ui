@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SButton, progress } from '@soybeanjs/ui';
+import { SButton, progress } from '@vean/ui';
 
 function start() {
   progress.start();

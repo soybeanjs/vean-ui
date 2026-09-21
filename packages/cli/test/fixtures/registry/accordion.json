@@ -2,7 +2,7 @@
   "name": "accordion",
   "type": "registry:ui",
   "description": "A vertically stacked set of interactive headings.",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "registryDependencies": ["utils"],
   "categories": ["layout", "disclosure"],
   "files": [

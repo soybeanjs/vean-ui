@@ -1,5 +1,5 @@
-import type { LabelProps as _LabelProps } from '@soybeanjs/headless/label';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { LabelProps as _LabelProps } from '@vean/aria/label';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

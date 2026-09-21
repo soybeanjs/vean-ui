@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SDialog, SDrawer, SDropdownMenu, SPopconfirm, SPopover, SSheet, STooltip, SButton } from '@soybeanjs/ui';
-import type { MenuOptionData } from '@soybeanjs/ui';
+import { SDialog, SDrawer, SDropdownMenu, SPopconfirm, SPopover, SSheet, STooltip, SButton } from '@vean/ui';
+import type { MenuOptionData } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewOverlay'

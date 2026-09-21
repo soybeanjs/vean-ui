@@ -10,8 +10,8 @@ import {
   SToolbarToggleItem
 } from '@/components/toolbar';
 import { getA11yViolations } from '../../shared/a11y';
-import { registerLocale } from '../../../../headless/src/locale';
-import arLocale from '../../../../headless/src/locale/langs/ar';
+import { registerLocale } from '../../../../aria/src/locale';
+import arLocale from '../../../../aria/src/locale/langs/ar';
 
 function mountToolbar(props?: Record<string, unknown>, configProviderProps?: Record<string, unknown>) {
   return mount(

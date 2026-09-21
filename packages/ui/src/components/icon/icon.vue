@@ -91,12 +91,12 @@ function isIconifyIcon(icon: IconValue): icon is IconifyIcon | string {
 </script>
 
 <template>
-  <Iconify v-if="iconifyProps" v-bind="iconifyProps" class="shrink-0" data-soybean-icon />
+  <Iconify v-if="iconifyProps" v-bind="iconifyProps" class="shrink-0" data-vean-icon />
   <component
     :is="icon"
     v-else-if="icon"
     class="shrink-0"
-    data-soybean-icon
+    data-vean-icon
     v-bind="forwardedProps"
     :style="{
       width: iconifySize.width,

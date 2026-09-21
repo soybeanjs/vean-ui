@@ -130,7 +130,7 @@ const generatedApiModules = import.meta.glob<GeneratedApiDocument>('../../genera
 });
 
 const sourceTypeModules = {
-  ...import.meta.glob<string>('../../../../headless/src/**/*.ts', {
+  ...import.meta.glob<string>('../../../../aria/src/**/*.ts', {
     eager: true,
     query: '?raw',
     import: 'default'
@@ -173,8 +173,8 @@ const sourceTypeFiles = Object.fromEntries(
 const sourceTypePreviewCache = new Map<string, GeneratedApiTypePreview | null>();
 const externalTypeImportRegistry = buildExternalTypeImportRegistry();
 
-const workspaceTypePathPattern = /^(headless|src)\//u;
-const componentScopedTypePathPattern = /^(headless|src)\/src\/components\//u;
+const workspaceTypePathPattern = /^(aria|src)\//u;
+const componentScopedTypePathPattern = /^(aria|src)\/src\/components\//u;
 
 const commonTypeRegistry = buildCommonTypeRegistry();
 const componentLocalTypePreviewRegistry = buildComponentLocalTypePreviewRegistry();
@@ -523,7 +523,12 @@ function collectExternalImportedTypes(source: string) {
 }
 
 function isExternalImportSource(importSource: string) {
-  return !importSource.startsWith('.') && !importSource.startsWith('~/') && !importSource.startsWith('@soybeanjs/');
+  return (
+    !importSource.startsWith('.') &&
+    !importSource.startsWith('~/') &&
+    !importSource.startsWith('@vean/') &&
+    !importSource.startsWith('@soybeanjs/')
+  );
 }
 
 function normalizeSourceModulePath(path: string) {
@@ -1408,7 +1413,7 @@ export function getComponentApiSections(component: string): GeneratedApiLayerSec
 
   if (pkg === 'ui') {
     const uiSymbols = symbolSections.filter((_, index) => isUiSymbol(document.symbols[orderedSymbols[index]]));
-    const headlessSymbols = symbolSections.filter((_, index) => !isUiSymbol(document.symbols[orderedSymbols[index]]));
+    const ariaSymbols = symbolSections.filter((_, index) => !isUiSymbol(document.symbols[orderedSymbols[index]]));
 
     return [
       {
@@ -1416,8 +1421,8 @@ export function getComponentApiSections(component: string): GeneratedApiLayerSec
         symbols: uiSymbols
       },
       {
-        key: 'headless',
-        symbols: headlessSymbols
+        key: 'aria',
+        symbols: ariaSymbols
       }
     ].filter(layer => layer.symbols.length);
   }

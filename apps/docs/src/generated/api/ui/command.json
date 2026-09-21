@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; list: ClassValue; separator: ClassValue; groupLabel: ClassValue; group: ClassValue; itemLabel: ClassValue; inputRoot: ClassValue; inputControl: ClassValue; empty: ClassValue; inputIcon: ClassValue; inputClearable: ClassValue; itemContent: ClassValue; itemDescription: ClassValue; shortcut: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Command component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandui",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandui",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.searchterm",
             "default": null,
             "inheritedFrom": "searchTerm",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -128,7 +128,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.externalfilter",
             "default": null,
             "inheritedFrom": "externalFilter",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -139,7 +139,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.clearable",
             "default": null,
             "inheritedFrom": "clearable",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -150,7 +150,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.fuseoptions",
             "default": null,
             "inheritedFrom": "fuseOptions",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "UseFuseOptions",
@@ -158,8 +158,8 @@
                 "type": "UseFuseOptions<CommandSearchOptionData<T>>",
                 "resolvedType": "{ fuseOptions?: FuseOptions<T>; resultLimit?: number; matchAllWhenSearchEmpty?: boolean }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions",
-                "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions",
+                "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [
@@ -168,10 +168,10 @@
                     "type": "FuseOptions<T>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions.members.fuseoptions",
+                    "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions.members.fuseoptions",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                    "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                     "referencedTypes": []
                   },
                   {
@@ -179,10 +179,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions.members.resultlimit",
+                    "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions.members.resultlimit",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                    "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                     "referencedTypes": []
                   },
                   {
@@ -190,10 +190,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions.members.matchallwhensearchempty",
+                    "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions.members.matchallwhensearchempty",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                    "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -209,7 +209,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.listprops",
             "default": null,
             "inheritedFrom": "listProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxContentProps",
@@ -217,8 +217,8 @@
                 "type": "CommandListProps",
                 "resolvedType": null,
                 "description": "Properties for the ListboxContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxcontentprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxcontentprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -234,7 +234,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxItemProps",
@@ -242,8 +242,8 @@
                 "type": "CommandItemProps",
                 "resolvedType": "{ value: string; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ListboxItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -252,10 +252,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The value given as data when submitted with a `name`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -263,10 +263,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -274,10 +274,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -285,10 +285,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -304,7 +304,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.itemlabelprops",
             "default": null,
             "inheritedFrom": "itemLabelProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandItemLabelProps",
@@ -312,8 +312,8 @@
                 "type": "CommandItemLabelProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandItemLabel component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanditemlabelprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanditemlabelprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -329,7 +329,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.itemcontentprops",
             "default": null,
             "inheritedFrom": "itemContentProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandItemContentProps",
@@ -337,8 +337,8 @@
                 "type": "CommandItemContentProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandItemContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanditemcontentprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanditemcontentprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -354,7 +354,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.itemdescriptionprops",
             "default": null,
             "inheritedFrom": "itemDescriptionProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandDescriptionProps",
@@ -362,8 +362,8 @@
                 "type": "CommandDescriptionProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanddescriptionprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanddescriptionprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -379,7 +379,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.groupprops",
             "default": null,
             "inheritedFrom": "groupProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxGroupProps",
@@ -387,8 +387,8 @@
                 "type": "CommandGroupProps",
                 "resolvedType": null,
                 "description": "Properties for the ListboxGroup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxgroupprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxgroupprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -404,7 +404,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.grouplabelprops",
             "default": null,
             "inheritedFrom": "groupLabelProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxGroupLabelProps",
@@ -412,8 +412,8 @@
                 "type": "CommandGroupLabelProps",
                 "resolvedType": null,
                 "description": "Properties for the ListboxGroupLabel component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxgrouplabelprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxgrouplabelprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -429,7 +429,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.shortcutprops",
             "default": null,
             "inheritedFrom": "shortcutProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandShortcutProps",
@@ -437,8 +437,8 @@
                 "type": "CommandShortcutProps",
                 "resolvedType": "{ symbolize?: boolean }",
                 "description": "Properties for the CommandShortcut component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandshortcutprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandshortcutprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -447,10 +447,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to convert the command value to symbol representation.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandshortcutprops.members.symbolize",
+                    "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandshortcutprops.members.symbolize",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/kbd/types.ts",
+                    "sourcePath": "packages/aria/src/components/kbd/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -466,7 +466,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.separatorprops",
             "default": null,
             "inheritedFrom": "separatorProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandSeparatorProps",
@@ -474,8 +474,8 @@
                 "type": "CommandSeparatorProps",
                 "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
                 "description": "Properties for the CommandSeparator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -484,10 +484,10 @@
                     "type": "DataOrientation",
                     "required": false,
                     "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.members.orientation",
+                    "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.members.orientation",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -495,10 +495,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.members.decorative",
+                    "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.members.decorative",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -514,7 +514,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.inputprops",
             "default": null,
             "inheritedFrom": "inputProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxFilterProps",
@@ -522,8 +522,8 @@
                 "type": "CommandInputProps",
                 "resolvedType": "{ inputRef?: ((el: HTMLInputElement) => void); controlProps?: InputControlProps; defaultValue?: string; modelValue?: string; disabled?: boolean; readonly?: boolean; rootProps?: BaseProps; name?: string; required?: boolean; id?: string; autofocus?: boolean; autocomplete?: 'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'; maxlength?: number; minlength?: number; pattern?: string; placeholder?: string; type?: InputTypeHTMLAttribute }",
                 "description": "Properties for the ListboxFilter component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -532,10 +532,10 @@
                     "type": "InputControlProps",
                     "required": false,
                     "description": "The props of the input extra props.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.controlprops",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.controlprops",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -543,10 +543,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The default value of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.defaultvalue",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.defaultvalue",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -554,10 +554,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The controlled value of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.modelvalue",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.modelvalue",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -565,10 +565,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the input.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -576,10 +576,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the input is read-only.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.readonly",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.readonly",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -587,10 +587,10 @@
                     "type": "BaseProps",
                     "required": false,
                     "description": "Properties forwarded to the root element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.rootprops",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.rootprops",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -598,10 +598,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.name",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.name",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -609,10 +609,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.required",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.required",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -620,10 +620,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id of the input element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -631,10 +631,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the input is auto-focused.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.autofocus",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.autofocus",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -642,10 +642,10 @@
                     "type": "'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'",
                     "required": false,
                     "description": "The autocomplete attribute of the input.\n\nSupports the HTML autofill tokens (including password-manager values such as\n`current-password` / `new-password`), in addition to the `on` / `off` switches.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.autocomplete",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.autocomplete",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -653,10 +653,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The maximum number of characters allowed in the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.maxlength",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.maxlength",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -664,10 +664,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The minimum number of characters allowed in the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.minlength",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.minlength",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -675,10 +675,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The pattern attribute of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.pattern",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.pattern",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -686,10 +686,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The placeholder of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.placeholder",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.placeholder",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -697,10 +697,10 @@
                     "type": "InputTypeHTMLAttribute",
                     "required": false,
                     "description": "The type of the input element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.type",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -711,8 +711,8 @@
                     "parameters": "((el: HTMLInputElement) => void) | undefined",
                     "required": false,
                     "description": "The function to set the input element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.callables.inputref",
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.callables.inputref",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   }
                 ]
@@ -727,7 +727,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.emptyprops",
             "default": null,
             "inheritedFrom": "emptyProps",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandEmptyProps",
@@ -735,8 +735,8 @@
                 "type": "CommandEmptyProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandEmpty component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandemptyprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandemptyprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -752,7 +752,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.emptylabel",
             "default": null,
             "inheritedFrom": "emptyLabel",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -763,7 +763,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -774,7 +774,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -785,7 +785,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -796,7 +796,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -804,8 +804,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -821,7 +821,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -832,7 +832,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -840,8 +840,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -857,7 +857,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -865,8 +865,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -882,7 +882,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -893,7 +893,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.highlightonhover",
             "default": null,
             "inheritedFrom": "highlightOnHover",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -904,7 +904,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -929,7 +929,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -939,7 +939,7 @@
             "required": true,
             "description": "Event handler when highlighted element changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandemits.callables.highlight",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "CollectionItemData",
@@ -947,8 +947,8 @@
                 "type": "CollectionItemData<ListboxCollectionItemData>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_composables_use_collection.collectionitemdata",
-                "sourcePath": "packages/headless/src/composables/use-collection.ts",
+                "descriptionKey": "api.generated.packages_aria_src_composables_use_collection.collectionitemdata",
+                "sourcePath": "packages/aria/src/composables/use-collection.ts",
                 "typeParameters": ["ItemData = Record<string, any>"],
                 "external": false,
                 "members": [],
@@ -963,7 +963,7 @@
             "required": true,
             "description": "Event handler called when container is being focused. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandemits.callables.entryfocus",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -987,7 +987,7 @@
             "required": true,
             "description": "Event handler called when the mouse leave the container",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandemits.callables.leave",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -1011,7 +1011,7 @@
             "required": true,
             "description": "Event handler called when the selecting item. <br> It can be prevented by calling `event.preventDefault`.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandemits.callables.select",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "SelectEvent",
@@ -1019,8 +1019,8 @@
                 "type": "CustomEvent<{ originalEvent: MouseEvent; value?: string | undefined; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.selectevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.selectevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [],
@@ -1035,7 +1035,7 @@
             "required": true,
             "description": "Emitted when the search term value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandemits.callables.update_searchterm",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1043,11 +1043,11 @@
           {
             "name": "CommandCompactEmits",
             "kind": "typeAlias",
-            "type": "import(\"@soybeanjs/headless\").SelectionEmits<false> & { highlight: [payload?: import(\"@soybeanjs/headless/composables\").CollectionItemData<import(\"@soybeanjs/headless\").ListboxCollectionItemData>]; entryFocus: [event: CustomEvent]; leave: [event: Event]; } & import(\"@soybeanjs/headless\").CommandItemEmits & import(\"../../../node_modules/@soybeanjs/headless/src/components/command/types\").CommandSearchTermEmits",
+            "type": "import(\"@vean/aria\").SelectionEmits<false> & { highlight: [payload?: import(\"@vean/aria/composables\").CollectionItemData<import(\"@vean/aria\").ListboxCollectionItemData>]; entryFocus: [event: CustomEvent]; leave: [event: Event]; } & import(\"@vean/aria\").CommandItemEmits & import(\"../../../node_modules/@vean/aria/src/components/command/types\").CommandSearchTermEmits",
             "resolvedType": "{ \"update:modelValue\": [value: string]; highlight: [payload?: CollectionItemData<ListboxCollectionItemData> | undefined]; entryFocus: [event: CustomEvent<any>]; leave: [event: Event]; select: [event: SelectEvent<string>]; \"update:searchTerm\": [value: string] }",
             "description": "Events for the CommandCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1058,8 +1058,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "referencedTypes": []
               },
               {
@@ -1068,8 +1068,8 @@
                 "parameters": "payload?: CollectionItemData<ListboxCollectionItemData> | undefined",
                 "required": true,
                 "description": "Event handler when highlighted element changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.highlight",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.highlight",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1078,8 +1078,8 @@
                 "parameters": "event: CustomEvent<any>",
                 "required": true,
                 "description": "Event handler called when container is being focused. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.entryfocus",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.entryfocus",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1088,8 +1088,8 @@
                 "parameters": "event: Event",
                 "required": true,
                 "description": "Event handler called when the mouse leave the container",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.leave",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.leave",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1098,8 +1098,8 @@
                 "parameters": "event: SelectEvent<string>",
                 "required": true,
                 "description": "Event handler called when the selecting item. <br> It can be prevented by calling `event.preventDefault`.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.select",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.select",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1108,8 +1108,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the search term value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.update_searchterm",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.update_searchterm",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1134,7 +1134,7 @@
             "required": false,
             "description": "Custom content for the input leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.input_leading",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactInputSlotProps",
@@ -1142,8 +1142,8 @@
                 "type": "CommandCompactInputSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactinputslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactinputslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1158,7 +1158,7 @@
             "required": false,
             "description": "Custom content for the input trailing slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.input_trailing",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactInputSlotProps",
@@ -1166,8 +1166,8 @@
                 "type": "CommandCompactInputSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactinputslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactinputslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1182,7 +1182,7 @@
             "required": false,
             "description": "Custom content for the empty slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.empty",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1192,7 +1192,7 @@
             "required": false,
             "description": "Custom content for the item leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -1200,8 +1200,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -1216,7 +1216,7 @@
             "required": false,
             "description": "Custom content for the item trailing slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -1224,8 +1224,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -1240,7 +1240,7 @@
             "required": false,
             "description": "Custom content for the item label slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.item_label",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -1248,8 +1248,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -1264,7 +1264,7 @@
             "required": false,
             "description": "Custom content for the item description slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.item_description",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -1272,8 +1272,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -1288,7 +1288,7 @@
             "required": false,
             "description": "Custom content for the bottom slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_command_types.commandslots.callables.bottom",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1302,8 +1302,8 @@
         "type": "Interface CommandCompactProps<T>",
         "resolvedType": "{ items: CommandOptionData<T>[]; placeholder?: string; searchTerm?: string; externalFilter?: boolean; clearable?: boolean; fuseOptions?: UseFuseOptions<CommandSearchOptionData<T>>; listProps?: CommandListProps; itemProps?: CommandItemProps; itemLabelProps?: CommandItemLabelProps; itemContentProps?: CommandItemContentProps; itemDescriptionProps?: CommandDescriptionProps; groupProps?: CommandGroupProps; groupLabelProps?: CommandGroupLabelProps; shortcutProps?: CommandShortcutProps; separatorProps?: CommandSeparatorProps; inputProps?: CommandInputProps; emptyProps?: CommandEmptyProps; emptyLabel?: string; modelValue?: string; defaultValue?: string; multiple?: false; selectionBehavior?: SelectionBehavior; disabled?: boolean; dir?: Direction; orientation?: DataOrientation; name?: string; highlightOnHover?: boolean; required?: boolean }",
         "description": "Properties for the CommandCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1311,10 +1311,10 @@
             "type": "CommandOptionData<T>[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1322,10 +1322,10 @@
             "type": "string",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1333,10 +1333,10 @@
             "type": "string",
             "required": false,
             "description": "Search term.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.searchterm",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.searchterm",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1344,10 +1344,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the items are already filtered and ranked by an external engine\n(e.g. full-text content search). When true, the built-in fuzzy filter is\nskipped and all `items` render as-is; `searchTerm` still syncs via\n`update:searchTerm` so the caller can drive its own search.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.externalfilter",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.externalfilter",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1355,10 +1355,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether clearable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.clearable",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.clearable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1366,10 +1366,10 @@
             "type": "UseFuseOptions<CommandSearchOptionData<T>>",
             "required": false,
             "description": "Fuse options.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.fuseoptions",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.fuseoptions",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "UseFuseOptions",
@@ -1377,8 +1377,8 @@
                 "type": "UseFuseOptions<CommandSearchOptionData<T>>",
                 "resolvedType": "{ fuseOptions?: FuseOptions<T>; resultLimit?: number; matchAllWhenSearchEmpty?: boolean }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions",
-                "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions",
+                "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [
@@ -1387,10 +1387,10 @@
                     "type": "FuseOptions<T>",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions.members.fuseoptions",
+                    "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions.members.fuseoptions",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                    "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1398,10 +1398,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions.members.resultlimit",
+                    "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions.members.resultlimit",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                    "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1409,10 +1409,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_composables_use_fuse.usefuseoptions.members.matchallwhensearchempty",
+                    "descriptionKey": "api.generated.packages_aria_src_composables_use_fuse.usefuseoptions.members.matchallwhensearchempty",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/composables/use-fuse.ts",
+                    "sourcePath": "packages/aria/src/composables/use-fuse.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1425,10 +1425,10 @@
             "type": "CommandListProps",
             "required": false,
             "description": "Properties forwarded to the list element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.listprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.listprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxContentProps",
@@ -1436,8 +1436,8 @@
                 "type": "CommandListProps",
                 "resolvedType": null,
                 "description": "Properties for the ListboxContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxcontentprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxcontentprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1450,10 +1450,10 @@
             "type": "CommandItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxItemProps",
@@ -1461,8 +1461,8 @@
                 "type": "CommandItemProps",
                 "resolvedType": "{ value: string; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the ListboxItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1471,10 +1471,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The value given as data when submitted with a `name`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1482,10 +1482,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1493,10 +1493,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1504,10 +1504,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1520,10 +1520,10 @@
             "type": "CommandItemLabelProps",
             "required": false,
             "description": "Properties forwarded to the item label element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.itemlabelprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.itemlabelprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandItemLabelProps",
@@ -1531,8 +1531,8 @@
                 "type": "CommandItemLabelProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandItemLabel component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanditemlabelprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanditemlabelprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1545,10 +1545,10 @@
             "type": "CommandItemContentProps",
             "required": false,
             "description": "Properties forwarded to the item content element (wraps label + description).",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.itemcontentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.itemcontentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandItemContentProps",
@@ -1556,8 +1556,8 @@
                 "type": "CommandItemContentProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandItemContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanditemcontentprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanditemcontentprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1570,10 +1570,10 @@
             "type": "CommandDescriptionProps",
             "required": false,
             "description": "Properties forwarded to the item description element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.itemdescriptionprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.itemdescriptionprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandDescriptionProps",
@@ -1581,8 +1581,8 @@
                 "type": "CommandDescriptionProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanddescriptionprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanddescriptionprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1595,10 +1595,10 @@
             "type": "CommandGroupProps",
             "required": false,
             "description": "Properties forwarded to the group element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.groupprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.groupprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxGroupProps",
@@ -1606,8 +1606,8 @@
                 "type": "CommandGroupProps",
                 "resolvedType": null,
                 "description": "Properties for the ListboxGroup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxgroupprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxgroupprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1620,10 +1620,10 @@
             "type": "CommandGroupLabelProps",
             "required": false,
             "description": "Properties forwarded to the group label element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.grouplabelprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.grouplabelprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxGroupLabelProps",
@@ -1631,8 +1631,8 @@
                 "type": "CommandGroupLabelProps",
                 "resolvedType": null,
                 "description": "Properties for the ListboxGroupLabel component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxgrouplabelprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxgrouplabelprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1645,10 +1645,10 @@
             "type": "CommandShortcutProps",
             "required": false,
             "description": "Properties forwarded to the shortcut element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.shortcutprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.shortcutprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandShortcutProps",
@@ -1656,8 +1656,8 @@
                 "type": "CommandShortcutProps",
                 "resolvedType": "{ symbolize?: boolean }",
                 "description": "Properties for the CommandShortcut component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandshortcutprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandshortcutprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1666,10 +1666,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to convert the command value to symbol representation.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandshortcutprops.members.symbolize",
+                    "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandshortcutprops.members.symbolize",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/kbd/types.ts",
+                    "sourcePath": "packages/aria/src/components/kbd/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1682,10 +1682,10 @@
             "type": "CommandSeparatorProps",
             "required": false,
             "description": "Properties forwarded to the separator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.separatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.separatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandSeparatorProps",
@@ -1693,8 +1693,8 @@
                 "type": "CommandSeparatorProps",
                 "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
                 "description": "Properties for the CommandSeparator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1703,10 +1703,10 @@
                     "type": "DataOrientation",
                     "required": false,
                     "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.members.orientation",
+                    "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.members.orientation",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1714,10 +1714,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.members.decorative",
+                    "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.members.decorative",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/separator/types.ts",
+                    "sourcePath": "packages/aria/src/components/separator/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1730,10 +1730,10 @@
             "type": "CommandInputProps",
             "required": false,
             "description": "Properties forwarded to the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.inputprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.inputprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxFilterProps",
@@ -1741,8 +1741,8 @@
                 "type": "CommandInputProps",
                 "resolvedType": "{ inputRef?: ((el: HTMLInputElement) => void); controlProps?: InputControlProps; defaultValue?: string; modelValue?: string; disabled?: boolean; readonly?: boolean; rootProps?: BaseProps; name?: string; required?: boolean; id?: string; autofocus?: boolean; autocomplete?: 'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'; maxlength?: number; minlength?: number; pattern?: string; placeholder?: string; type?: InputTypeHTMLAttribute }",
                 "description": "Properties for the ListboxFilter component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1751,10 +1751,10 @@
                     "type": "InputControlProps",
                     "required": false,
                     "description": "The props of the input extra props.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.controlprops",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.controlprops",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1762,10 +1762,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The default value of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.defaultvalue",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.defaultvalue",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1773,10 +1773,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The controlled value of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.modelvalue",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.modelvalue",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1784,10 +1784,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the input.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1795,10 +1795,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the input is read-only.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.readonly",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.readonly",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1806,10 +1806,10 @@
                     "type": "BaseProps",
                     "required": false,
                     "description": "Properties forwarded to the root element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.rootprops",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.rootprops",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1817,10 +1817,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.name",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.name",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1828,10 +1828,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.required",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.required",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1839,10 +1839,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id of the input element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1850,10 +1850,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the input is auto-focused.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.autofocus",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.autofocus",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1861,10 +1861,10 @@
                     "type": "'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'",
                     "required": false,
                     "description": "The autocomplete attribute of the input.\n\nSupports the HTML autofill tokens (including password-manager values such as\n`current-password` / `new-password`), in addition to the `on` / `off` switches.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.autocomplete",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.autocomplete",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1872,10 +1872,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The maximum number of characters allowed in the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.maxlength",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.maxlength",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1883,10 +1883,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The minimum number of characters allowed in the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.minlength",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.minlength",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1894,10 +1894,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The pattern attribute of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.pattern",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.pattern",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1905,10 +1905,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The placeholder of the input",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.placeholder",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.placeholder",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1916,10 +1916,10 @@
                     "type": "InputTypeHTMLAttribute",
                     "required": false,
                     "description": "The type of the input element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.type",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/input/types.ts",
+                    "sourcePath": "packages/aria/src/components/input/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1930,8 +1930,8 @@
                     "parameters": "((el: HTMLInputElement) => void) | undefined",
                     "required": false,
                     "description": "The function to set the input element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.callables.inputref",
-                    "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                    "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.callables.inputref",
+                    "sourcePath": "packages/aria/src/components/listbox/types.ts",
                     "referencedTypes": []
                   }
                 ]
@@ -1943,10 +1943,10 @@
             "type": "CommandEmptyProps",
             "required": false,
             "description": "Properties forwarded to the empty element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.emptyprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.emptyprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandEmptyProps",
@@ -1954,8 +1954,8 @@
                 "type": "CommandEmptyProps",
                 "resolvedType": null,
                 "description": "Properties for the CommandEmpty component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandemptyprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandemptyprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1968,10 +1968,10 @@
             "type": "string",
             "required": false,
             "description": "Empty label.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.emptylabel",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.emptylabel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -1979,10 +1979,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the selected item(s).\n\nUse this when you need to control the state of the items. Can be bound with `v-model`",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "Omit.modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1990,10 +1990,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the selected item(s).\n\nUse this when you need to set the initial state of the items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "Omit.defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -2001,10 +2001,10 @@
             "type": "false",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.\n\nThis prop will overwrite the inferred type from `modelValue` and `defaultValue`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.multiple",
             "default": null,
             "inheritedFrom": "Omit.multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -2012,10 +2012,10 @@
             "type": "SelectionBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -2023,8 +2023,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2037,10 +2037,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with listbox",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -2048,10 +2048,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the listbox when applicable. <br> If omitted, inherits globally from `ConfigProvider` or\nassumes LTR (left-to-right) reading mode.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2059,8 +2059,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2073,10 +2073,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the listbox. <br>Mainly so arrow navigation is done accordingly (left & right vs. up & down)",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -2084,8 +2084,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2098,10 +2098,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2109,10 +2109,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, hover over item will trigger highlight",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.highlightonhover",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.highlightonhover",
             "default": null,
             "inheritedFrom": "highlightOnHover",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -2120,10 +2120,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -2136,8 +2136,8 @@
         "type": "TypeAlias CommandCompactEmits: CommandRootEmits & CommandItemEmits & CommandSearchTermEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; highlight: [payload?: CollectionItemData<ListboxCollectionItemData> | undefined]; entryFocus: [event: CustomEvent<any>]; leave: [event: Event]; select: [event: SelectEvent<string>]; \"update:searchTerm\": [value: string] }",
         "description": "Events for the CommandCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2147,8 +2147,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -2157,8 +2157,8 @@
             "parameters": "payload?: CollectionItemData<ListboxCollectionItemData> | undefined",
             "required": true,
             "description": "Event handler when highlighted element changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.highlight",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.highlight",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "CollectionItemData",
@@ -2166,8 +2166,8 @@
                 "type": "CollectionItemData<ListboxCollectionItemData>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_composables_use_collection.collectionitemdata",
-                "sourcePath": "packages/headless/src/composables/use-collection.ts",
+                "descriptionKey": "api.generated.packages_aria_src_composables_use_collection.collectionitemdata",
+                "sourcePath": "packages/aria/src/composables/use-collection.ts",
                 "typeParameters": ["ItemData = Record<string, any>"],
                 "external": false,
                 "members": [],
@@ -2181,8 +2181,8 @@
             "parameters": "event: CustomEvent<any>",
             "required": true,
             "description": "Event handler called when container is being focused. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.entryfocus",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.entryfocus",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -2205,8 +2205,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Event handler called when the mouse leave the container",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.leave",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.leave",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -2229,8 +2229,8 @@
             "parameters": "event: SelectEvent<string>",
             "required": true,
             "description": "Event handler called when the selecting item. <br> It can be prevented by calling `event.preventDefault`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.select",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.select",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "SelectEvent",
@@ -2238,8 +2238,8 @@
                 "type": "CustomEvent<{ originalEvent: MouseEvent; value?: string | undefined; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.selectevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.selectevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [],
@@ -2253,8 +2253,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the search term value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactemits.callables.update_searchterm",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactemits.callables.update_searchterm",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2266,8 +2266,8 @@
         "type": "TypeAlias CommandCompactSlots<T>",
         "resolvedType": "{ \"input-leading\"?: ((props: CommandCompactInputSlotProps) => any); \"input-trailing\"?: ((props: CommandCompactInputSlotProps) => any); empty?: (() => any); \"item-leading\"?: ((props: CommandCompactItemSlotProps<T>) => any); \"item-trailing\"?: ((props: CommandCompactItemSlotProps<T>) => any); \"item-label\"?: ((props: CommandCompactItemSlotProps<T>) => any); \"item-description\"?: ((props: CommandCompactItemSlotProps<T>) => any); bottom?: (() => any) }",
         "description": "Slots for the CommandCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -2277,8 +2277,8 @@
             "parameters": "((props: CommandCompactInputSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the input leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.input_leading",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.input_leading",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactInputSlotProps",
@@ -2286,8 +2286,8 @@
                 "type": "CommandCompactInputSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactinputslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactinputslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2301,8 +2301,8 @@
             "parameters": "((props: CommandCompactInputSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the input trailing slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.input_trailing",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.input_trailing",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactInputSlotProps",
@@ -2310,8 +2310,8 @@
                 "type": "CommandCompactInputSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactinputslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactinputslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2325,8 +2325,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the empty slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.empty",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.empty",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           },
           {
@@ -2335,8 +2335,8 @@
             "parameters": "((props: CommandCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.item_leading",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.item_leading",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -2344,8 +2344,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -2359,8 +2359,8 @@
             "parameters": "((props: CommandCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item trailing slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.item_trailing",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.item_trailing",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -2368,8 +2368,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -2383,8 +2383,8 @@
             "parameters": "((props: CommandCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item label slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.item_label",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.item_label",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -2392,8 +2392,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -2407,8 +2407,8 @@
             "parameters": "((props: CommandCompactItemSlotProps<T>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item description slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.item_description",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.item_description",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": [
               {
                 "name": "CommandCompactItemSlotProps",
@@ -2416,8 +2416,8 @@
                 "type": "CommandCompactItemSlotProps<T>",
                 "resolvedType": null,
                 "description": "Slot properties for the CommandCompactItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactitemslotprops",
-                "sourcePath": "packages/headless/src/components/command/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactitemslotprops",
+                "sourcePath": "packages/aria/src/components/command/types.ts",
                 "typeParameters": ["T extends CommandSingleOptionData = CommandSingleOptionData"],
                 "external": false,
                 "members": [],
@@ -2431,8 +2431,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the bottom slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandcompactslots.callables.bottom",
-            "sourcePath": "packages/headless/src/components/command/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandcompactslots.callables.bottom",
+            "sourcePath": "packages/aria/src/components/command/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2446,8 +2446,8 @@
         "type": "Interface CommandDescriptionProps",
         "resolvedType": null,
         "description": "Properties for the CommandDescription component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanddescriptionprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanddescriptionprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2461,8 +2461,8 @@
         "type": "Interface CommandEmptyProps",
         "resolvedType": null,
         "description": "Properties for the CommandEmpty component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandemptyprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandemptyprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2476,8 +2476,8 @@
         "type": "Interface CommandItemContentProps",
         "resolvedType": null,
         "description": "Properties for the CommandItemContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanditemcontentprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanditemcontentprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2491,8 +2491,8 @@
         "type": "Interface CommandItemLabelProps",
         "resolvedType": null,
         "description": "Properties for the CommandItemLabel component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commanditemlabelprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commanditemlabelprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -2506,8 +2506,8 @@
         "type": "Interface CommandSeparatorProps",
         "resolvedType": "{ orientation?: DataOrientation; decorative?: boolean }",
         "description": "Properties for the CommandSeparator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2515,10 +2515,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "Orientation of the component.\n\nEither `vertical` or `horizontal`. Defaults to `horizontal`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/separator/types.ts",
+            "sourcePath": "packages/aria/src/components/separator/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -2526,8 +2526,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2540,10 +2540,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandseparatorprops.members.decorative",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandseparatorprops.members.decorative",
             "default": null,
             "inheritedFrom": "decorative",
-            "sourcePath": "packages/headless/src/components/separator/types.ts",
+            "sourcePath": "packages/aria/src/components/separator/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2558,8 +2558,8 @@
         "type": "Interface CommandShortcutProps",
         "resolvedType": "{ symbolize?: boolean }",
         "description": "Properties for the CommandShortcut component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandshortcutprops.props",
-        "sourcePath": "packages/headless/src/components/command/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandshortcutprops.props",
+        "sourcePath": "packages/aria/src/components/command/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2567,10 +2567,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to convert the command value to symbol representation.",
-            "descriptionKey": "api.generated.packages_headless_src_components_command_types.commandshortcutprops.members.symbolize",
+            "descriptionKey": "api.generated.packages_aria_src_components_command_types.commandshortcutprops.members.symbolize",
             "default": "true",
             "inheritedFrom": "symbolize",
-            "sourcePath": "packages/headless/src/components/kbd/types.ts",
+            "sourcePath": "packages/aria/src/components/kbd/types.ts",
             "referencedTypes": []
           }
         ],

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { Backtop } from '@soybeanjs/headless/backtop';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { Backtop } from '@vean/aria/backtop';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { backtopVariants } from '@/styles/backtop';
 import Icon from '../icon/icon.vue';
 import type { BacktopProps, BacktopEmits } from './types';

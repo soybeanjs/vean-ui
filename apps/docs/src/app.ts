@@ -1,7 +1,7 @@
 import { defineApp } from 'ubean/client';
-import { createThemeInitScript } from '@soybeanjs/theme/ssr';
-import { progress } from '@soybeanjs/ui';
-// import '@soybeanjs/ui/styles.css';
+import { createThemeInitScript } from '@vean/theme/ssr';
+import { progress } from '@vean/ui';
+// import '@vean/ui/styles.css';
 import 'uno.css';
 import { docsFontLinks } from './shared/fonts';
 import './styles/global.css';
@@ -9,7 +9,7 @@ import './styles/global.css';
 export default defineApp({
   rootId: 'app',
   head: {
-    title: 'SoybeanUI Documentation',
+    title: 'VeanUI Documentation',
     htmlAttrs: { lang: 'en' },
     meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     // The customizer swaps `--font-*` at runtime, so every family it can select

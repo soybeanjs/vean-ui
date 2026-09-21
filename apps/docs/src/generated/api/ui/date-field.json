@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; input: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the DateField component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldui",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldui",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.inputprops",
             "default": null,
             "inheritedFrom": "inputProps",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateFieldInputProps",
@@ -103,8 +103,8 @@
                 "type": "DateFieldInputProps",
                 "resolvedType": "{ part: import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the DateFieldInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -113,10 +113,10 @@
                     "type": "import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart",
                     "required": true,
                     "description": "Part.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.part",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.part",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                    "sourcePath": "packages/aria/src/components/date-field/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -124,10 +124,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -135,10 +135,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -154,7 +154,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -165,7 +165,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.granularity",
             "default": null,
             "inheritedFrom": "granularity",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "Granularity",
@@ -173,8 +173,8 @@
                 "type": "'day' | import(\"../../date\").TimeGranularity",
                 "resolvedType": "'day' | TimeGranularity",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.granularity",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.granularity",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -190,7 +190,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.hourcycle",
             "default": null,
             "inheritedFrom": "hourCycle",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "HourCycle",
@@ -198,8 +198,8 @@
                 "type": "12 | 24 | undefined",
                 "resolvedType": "12 | 24 | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.hourcycle",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.hourcycle",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -215,7 +215,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateStep",
@@ -223,8 +223,8 @@
                 "type": "DateStep",
                 "resolvedType": "{ year?: number; month?: number; day?: number; hour?: number; minute?: number; second?: number; millisecond?: number }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datestep",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datestep",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -233,10 +233,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.year",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.year",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -244,10 +244,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.month",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.month",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -255,10 +255,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.day",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.day",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -266,10 +266,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.hour",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.hour",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -277,10 +277,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.minute",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.minute",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -288,10 +288,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.second",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.second",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -299,10 +299,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.millisecond",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.millisecond",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -318,7 +318,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.hidetimezone",
             "default": null,
             "inheritedFrom": "hideTimeZone",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -329,7 +329,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -340,7 +340,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -351,7 +351,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "CalendarModelValue",
@@ -359,8 +359,8 @@
                 "type": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "resolvedType": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "description": "Model value type for the calendar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_calendar_types.calendarmodelvalue",
-                "sourcePath": "packages/headless/src/components/calendar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_calendar_types.calendarmodelvalue",
+                "sourcePath": "packages/aria/src/components/calendar/types.ts",
                 "typeParameters": ["M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -372,8 +372,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -382,10 +382,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -393,10 +393,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -412,7 +412,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "CalendarModelValue",
@@ -420,8 +420,8 @@
                 "type": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "resolvedType": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "description": "Model value type for the calendar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_calendar_types.calendarmodelvalue",
-                "sourcePath": "packages/headless/src/components/calendar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_calendar_types.calendarmodelvalue",
+                "sourcePath": "packages/aria/src/components/calendar/types.ts",
                 "typeParameters": ["M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -433,8 +433,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -443,10 +443,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -454,10 +454,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -473,7 +473,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -484,7 +484,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -492,8 +492,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -509,7 +509,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -517,8 +517,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -527,10 +527,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -538,10 +538,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -553,8 +553,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -570,7 +570,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -581,7 +581,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.locale",
             "default": null,
             "inheritedFrom": "locale",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -592,7 +592,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.defaultplaceholder",
             "default": null,
             "inheritedFrom": "defaultPlaceholder",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -600,8 +600,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -610,10 +610,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -621,10 +621,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -636,8 +636,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -653,7 +653,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.maxvalue",
             "default": null,
             "inheritedFrom": "maxValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -661,8 +661,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -671,10 +671,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -682,10 +682,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -697,8 +697,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -714,7 +714,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.minvalue",
             "default": null,
             "inheritedFrom": "minValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -722,8 +722,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -732,10 +732,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -743,10 +743,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -758,8 +758,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -775,7 +775,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.isdateunavailable",
             "default": null,
             "inheritedFrom": "isDateUnavailable",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateMatcher",
@@ -783,8 +783,8 @@
                 "type": "(date: Date) => boolean",
                 "resolvedType": "(date: Date) => boolean",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datematcher",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datematcher",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -800,7 +800,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -811,7 +811,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -858,7 +858,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -866,8 +866,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -882,7 +882,7 @@
             "required": true,
             "description": "Emitted when the placeholder value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_date_field_types.datefieldemits.callables.update_placeholder",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -890,8 +890,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -903,8 +903,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -917,11 +917,11 @@
           {
             "name": "DateFieldRootEmits",
             "kind": "typeAlias",
-            "type": "{ 'update:modelValue': [value: import(\"@soybeanjs/headless/date\").DateValue | undefined]; 'update:placeholder': [value: import(\"@soybeanjs/headless/date\").DateValue]; }",
+            "type": "{ 'update:modelValue': [value: import(\"@vean/aria/date\").DateValue | undefined]; 'update:placeholder': [value: import(\"@vean/aria/date\").DateValue]; }",
             "resolvedType": "{ \"update:modelValue\": [value: DateValue | undefined]; \"update:placeholder\": [value: DateValue] }",
             "description": "Events for the DateFieldRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -932,8 +932,8 @@
                 "parameters": "value: DateValue | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "referencedTypes": []
               },
               {
@@ -942,8 +942,8 @@
                 "parameters": "value: DateValue",
                 "required": true,
                 "description": "Emitted when the placeholder value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.callables.update_placeholder",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.callables.update_placeholder",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -958,8 +958,8 @@
         "type": "Interface DateFieldCompactProps",
         "resolvedType": "{ inputProps?: DateFieldInputProps; id?: string; granularity?: Granularity; hourCycle?: 12 | 24; step?: DateStep; hideTimeZone?: boolean; name?: string; required?: boolean; modelValue?: DateValue; defaultValue?: DateValue; disabled?: boolean; dir?: Direction; placeholder?: DateValue; readonly?: boolean; locale?: string; defaultPlaceholder?: DateValue; maxValue?: DateValue; minValue?: DateValue; isDateUnavailable?: DateMatcher; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the DateFieldCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.props",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.props",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -967,10 +967,10 @@
             "type": "DateFieldInputProps",
             "required": false,
             "description": "Properties forwarded to the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.inputprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.inputprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateFieldInputProps",
@@ -978,8 +978,8 @@
                 "type": "DateFieldInputProps",
                 "resolvedType": "{ part: import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the DateFieldInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -988,10 +988,10 @@
                     "type": "import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart",
                     "required": true,
                     "description": "Part.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.part",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.part",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                    "sourcePath": "packages/aria/src/components/date-field/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -999,10 +999,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1010,10 +1010,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1026,10 +1026,10 @@
             "type": "string",
             "required": false,
             "description": "Id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1037,10 +1037,10 @@
             "type": "Granularity",
             "required": false,
             "description": "Granularity.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.granularity",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.granularity",
             "default": null,
             "inheritedFrom": "granularity",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "Granularity",
@@ -1048,8 +1048,8 @@
                 "type": "'day' | import(\"../../date\").TimeGranularity",
                 "resolvedType": "'day' | TimeGranularity",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.granularity",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.granularity",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1062,10 +1062,10 @@
             "type": "12 | 24",
             "required": false,
             "description": "Hour cycle.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.hourcycle",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.hourcycle",
             "default": null,
             "inheritedFrom": "hourCycle",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "HourCycle",
@@ -1073,8 +1073,8 @@
                 "type": "12 | 24 | undefined",
                 "resolvedType": "12 | 24 | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.hourcycle",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.hourcycle",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1087,10 +1087,10 @@
             "type": "DateStep",
             "required": false,
             "description": "Step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateStep",
@@ -1098,8 +1098,8 @@
                 "type": "DateStep",
                 "resolvedType": "{ year?: number; month?: number; day?: number; hour?: number; minute?: number; second?: number; millisecond?: number }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datestep",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datestep",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1108,10 +1108,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.year",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.year",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1119,10 +1119,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.month",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.month",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1130,10 +1130,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.day",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.day",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1141,10 +1141,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.hour",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.hour",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1152,10 +1152,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.minute",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.minute",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1163,10 +1163,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.second",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.second",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1174,10 +1174,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.millisecond",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.millisecond",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1190,10 +1190,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether hide time zone.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.hidetimezone",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.hidetimezone",
             "default": null,
             "inheritedFrom": "hideTimeZone",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1201,10 +1201,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1212,10 +1212,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1223,10 +1223,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "CalendarModelValue",
@@ -1234,8 +1234,8 @@
                 "type": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "resolvedType": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "description": "Model value type for the calendar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_calendar_types.calendarmodelvalue",
-                "sourcePath": "packages/headless/src/components/calendar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_calendar_types.calendarmodelvalue",
+                "sourcePath": "packages/aria/src/components/calendar/types.ts",
                 "typeParameters": ["M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1247,8 +1247,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1257,10 +1257,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1268,10 +1268,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1284,10 +1284,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Default value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "CalendarModelValue",
@@ -1295,8 +1295,8 @@
                 "type": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "resolvedType": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "description": "Model value type for the calendar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_calendar_types.calendarmodelvalue",
-                "sourcePath": "packages/headless/src/components/calendar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_calendar_types.calendarmodelvalue",
+                "sourcePath": "packages/aria/src/components/calendar/types.ts",
                 "typeParameters": ["M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1308,8 +1308,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1318,10 +1318,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1329,10 +1329,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1345,10 +1345,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1356,10 +1356,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1367,8 +1367,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1381,10 +1381,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -1392,8 +1392,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1402,10 +1402,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1413,10 +1413,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1428,8 +1428,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1442,10 +1442,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1453,10 +1453,10 @@
             "type": "string",
             "required": false,
             "description": "Locale.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.locale",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.locale",
             "default": null,
             "inheritedFrom": "locale",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -1464,10 +1464,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Default placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.defaultplaceholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.defaultplaceholder",
             "default": null,
             "inheritedFrom": "defaultPlaceholder",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -1475,8 +1475,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1485,10 +1485,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1496,10 +1496,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1511,8 +1511,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1525,10 +1525,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Max value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.maxvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.maxvalue",
             "default": null,
             "inheritedFrom": "maxValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -1536,8 +1536,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1546,10 +1546,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1557,10 +1557,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1572,8 +1572,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1586,10 +1586,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Min value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.minvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.minvalue",
             "default": null,
             "inheritedFrom": "minValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -1597,8 +1597,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1607,10 +1607,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1618,10 +1618,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1633,8 +1633,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1647,10 +1647,10 @@
             "type": "DateMatcher",
             "required": false,
             "description": "Whether the date is unavailable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.isdateunavailable",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.isdateunavailable",
             "default": null,
             "inheritedFrom": "isDateUnavailable",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateMatcher",
@@ -1658,8 +1658,8 @@
                 "type": "(date: Date) => boolean",
                 "resolvedType": "(date: Date) => boolean",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datematcher",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datematcher",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1672,10 +1672,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1683,10 +1683,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1721,8 +1721,8 @@
         "type": "TypeAlias DateFieldCompactEmits: DateFieldRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: DateValue | undefined]; \"update:placeholder\": [value: DateValue] }",
         "description": "Events for the DateFieldCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1732,8 +1732,8 @@
             "parameters": "value: DateValue | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -1741,8 +1741,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1756,8 +1756,8 @@
             "parameters": "value: DateValue",
             "required": true,
             "description": "Emitted when the placeholder value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldcompactemits.callables.update_placeholder",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldcompactemits.callables.update_placeholder",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -1765,8 +1765,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1778,8 +1778,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1795,8 +1795,8 @@
             "type": "{ 'update:modelValue': [value: DateValue | undefined]; 'update:placeholder': [value: DateValue]; }",
             "resolvedType": "{ \"update:modelValue\": [value: DateValue | undefined]; \"update:placeholder\": [value: DateValue] }",
             "description": "Events for the DateFieldRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -1807,8 +1807,8 @@
                 "parameters": "value: DateValue | undefined",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "referencedTypes": []
               },
               {
@@ -1817,8 +1817,8 @@
                 "parameters": "value: DateValue",
                 "required": true,
                 "description": "Emitted when the placeholder value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.callables.update_placeholder",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.callables.update_placeholder",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -1833,8 +1833,8 @@
         "type": "Interface DateFieldInputProps",
         "resolvedType": "{ part: import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the DateFieldInput component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.props",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.props",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1842,10 +1842,10 @@
             "type": "import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart",
             "required": true,
             "description": "Part.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.part",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.part",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "SegmentPart",
@@ -1853,8 +1853,8 @@
                 "type": "import(\"../../date\").EditableSegmentPart | import(\"../../date\").NonEditableSegmentPart",
                 "resolvedType": "EditableSegmentPart | NonEditableSegmentPart",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.segmentpart",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.segmentpart",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1867,10 +1867,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1878,10 +1878,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldinputprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldinputprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1918,8 +1918,8 @@
         "type": "Interface DateFieldRootProps",
         "resolvedType": "{ id?: string; granularity?: Granularity; hourCycle?: 12 | 24; step?: DateStep; hideTimeZone?: boolean; name?: string; required?: boolean; modelValue?: DateValue; defaultValue?: DateValue; disabled?: boolean; dir?: Direction; placeholder?: DateValue; readonly?: boolean; locale?: string; defaultPlaceholder?: DateValue; maxValue?: DateValue; minValue?: DateValue; isDateUnavailable?: DateMatcher; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the DateFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.props",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.props",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1927,10 +1927,10 @@
             "type": "string",
             "required": false,
             "description": "Id.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.id",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1938,10 +1938,10 @@
             "type": "Granularity",
             "required": false,
             "description": "Granularity.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.granularity",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.granularity",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "Granularity",
@@ -1949,8 +1949,8 @@
                 "type": "'day' | import(\"../../date\").TimeGranularity",
                 "resolvedType": "'day' | TimeGranularity",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.granularity",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.granularity",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1963,10 +1963,10 @@
             "type": "12 | 24",
             "required": false,
             "description": "Hour cycle.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.hourcycle",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.hourcycle",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "HourCycle",
@@ -1974,8 +1974,8 @@
                 "type": "12 | 24 | undefined",
                 "resolvedType": "12 | 24 | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.hourcycle",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.hourcycle",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1988,10 +1988,10 @@
             "type": "DateStep",
             "required": false,
             "description": "Step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.step",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateStep",
@@ -1999,8 +1999,8 @@
                 "type": "DateStep",
                 "resolvedType": "{ year?: number; month?: number; day?: number; hour?: number; minute?: number; second?: number; millisecond?: number }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datestep",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datestep",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2009,10 +2009,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.year",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.year",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2020,10 +2020,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.month",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.month",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2031,10 +2031,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.day",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.day",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2042,10 +2042,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.hour",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.hour",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2053,10 +2053,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.minute",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.minute",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2064,10 +2064,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.second",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.second",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2075,10 +2075,10 @@
                     "type": "number",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datestep.members.millisecond",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datestep.members.millisecond",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2091,10 +2091,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether hide time zone.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.hidetimezone",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.hidetimezone",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -2102,10 +2102,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2113,10 +2113,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2124,10 +2124,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "Pick.modelValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "CalendarModelValue",
@@ -2135,8 +2135,8 @@
                 "type": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "resolvedType": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "description": "Model value type for the calendar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_calendar_types.calendarmodelvalue",
-                "sourcePath": "packages/headless/src/components/calendar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_calendar_types.calendarmodelvalue",
+                "sourcePath": "packages/aria/src/components/calendar/types.ts",
                 "typeParameters": ["M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -2148,8 +2148,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2158,10 +2158,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2169,10 +2169,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2185,10 +2185,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Default value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "Pick.defaultValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "CalendarModelValue",
@@ -2196,8 +2196,8 @@
                 "type": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "resolvedType": "M extends true ? DateValue[] | undefined : DateValue | undefined",
                 "description": "Model value type for the calendar component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_calendar_types.calendarmodelvalue",
-                "sourcePath": "packages/headless/src/components/calendar/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_calendar_types.calendarmodelvalue",
+                "sourcePath": "packages/aria/src/components/calendar/types.ts",
                 "typeParameters": ["M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -2209,8 +2209,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2219,10 +2219,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2230,10 +2230,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2246,10 +2246,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -2257,10 +2257,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2268,8 +2268,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2282,10 +2282,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2293,8 +2293,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2303,10 +2303,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2314,10 +2314,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2329,8 +2329,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2343,10 +2343,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -2354,10 +2354,10 @@
             "type": "string",
             "required": false,
             "description": "Locale.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.locale",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.locale",
             "default": null,
             "inheritedFrom": "locale",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": []
           },
           {
@@ -2365,10 +2365,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Default placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.defaultplaceholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.defaultplaceholder",
             "default": null,
             "inheritedFrom": "defaultPlaceholder",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2376,8 +2376,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2386,10 +2386,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2397,10 +2397,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2412,8 +2412,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2426,10 +2426,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Max value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.maxvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.maxvalue",
             "default": null,
             "inheritedFrom": "maxValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2437,8 +2437,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2447,10 +2447,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2458,10 +2458,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2473,8 +2473,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2487,10 +2487,10 @@
             "type": "DateValue",
             "required": false,
             "description": "Min value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.minvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.minvalue",
             "default": null,
             "inheritedFrom": "minValue",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2498,8 +2498,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2508,10 +2508,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2519,10 +2519,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2534,8 +2534,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": "Date | DateTimeValue",
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2548,10 +2548,10 @@
             "type": "DateMatcher",
             "required": false,
             "description": "Whether the date is unavailable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.isdateunavailable",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.isdateunavailable",
             "default": null,
             "inheritedFrom": "isDateUnavailable",
-            "sourcePath": "packages/headless/src/components/calendar/types.ts",
+            "sourcePath": "packages/aria/src/components/calendar/types.ts",
             "referencedTypes": [
               {
                 "name": "DateMatcher",
@@ -2559,8 +2559,8 @@
                 "type": "(date: Date) => boolean",
                 "resolvedType": "(date: Date) => boolean",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datematcher",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datematcher",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2573,10 +2573,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2584,10 +2584,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2622,8 +2622,8 @@
         "type": "TypeAlias DateFieldRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: DateValue | undefined]; \"update:placeholder\": [value: DateValue] }",
         "description": "Events for the DateFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.emits",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.emits",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2633,8 +2633,8 @@
             "parameters": "value: DateValue | undefined",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2642,8 +2642,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2657,8 +2657,8 @@
             "parameters": "value: DateValue",
             "required": true,
             "description": "Emitted when the placeholder value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootemits.callables.update_placeholder",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootemits.callables.update_placeholder",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2666,8 +2666,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2679,8 +2679,8 @@
                 "type": "Date | import(\"../../date\").DateTimeValue",
                 "resolvedType": null,
                 "description": "Public date value model: a plain `Date` for day-granularity values (local\n00:00), or `{ date, time? }` when a time part is present.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2697,8 +2697,8 @@
         "type": "TypeAlias DateFieldRootSlots",
         "resolvedType": "{ DateFieldInput?: ((props: DateFieldRootSlotProps) => any) }",
         "description": "Slots for the DateFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslots.slots",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslots.slots",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2708,8 +2708,8 @@
             "parameters": "((props: DateFieldRootSlotProps) => any) | undefined",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslots.callables.default",
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslots.callables.default",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateFieldRootSlotProps",
@@ -2717,8 +2717,8 @@
                 "type": "DateFieldRootSlotProps",
                 "resolvedType": null,
                 "description": "Properties for the DateFieldRoot slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslotprops",
-                "sourcePath": "packages/headless/src/components/date-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslotprops",
+                "sourcePath": "packages/aria/src/components/date-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2735,8 +2735,8 @@
         "type": "Interface DateFieldRootSlotProps",
         "resolvedType": "{ modelValue: DateValue | undefined; segments: DateFieldSegment[]; isInvalid: boolean }",
         "description": "Properties for the DateFieldRoot slot.",
-        "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/date-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/date-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2744,10 +2744,10 @@
             "type": "DateValue | undefined",
             "required": true,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": [
               {
                 "name": "DateTimeValue",
@@ -2755,8 +2755,8 @@
                 "type": "import(\"../../date\").DateTimeValue",
                 "resolvedType": "{ date: Date; time?: Date }",
                 "description": "A date with an optional time-of-day part. `date` carries the calendar day\n(local 00:00 by convention); `time` carries the time-of-day when the value\nhas time granularity.",
-                "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue",
-                "sourcePath": "packages/headless/src/date/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue",
+                "sourcePath": "packages/aria/src/date/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -2765,10 +2765,10 @@
                     "type": "Date",
                     "required": true,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.date",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.date",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -2776,10 +2776,10 @@
                     "type": "Date",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_date_types.datetimevalue.members.time",
+                    "descriptionKey": "api.generated.packages_aria_src_date_types.datetimevalue.members.time",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/date/types.ts",
+                    "sourcePath": "packages/aria/src/date/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -2792,10 +2792,10 @@
             "type": "DateFieldSegment[]",
             "required": true,
             "description": "Segments used by the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslotprops.members.segments",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslotprops.members.segments",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -2803,10 +2803,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the current value is invalid.",
-            "descriptionKey": "api.generated.packages_headless_src_components_date_field_types.datefieldrootslotprops.members.isinvalid",
+            "descriptionKey": "api.generated.packages_aria_src_components_date_field_types.datefieldrootslotprops.members.isinvalid",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/date-field/types.ts",
+            "sourcePath": "packages/aria/src/components/date-field/types.ts",
             "referencedTypes": []
           }
         ],

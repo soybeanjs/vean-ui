@@ -27,7 +27,7 @@ export const list = new Command()
     const config = await getConfig(options.cwd);
 
     if (!config) {
-      console.error('No sbean.json found. Run "sbean init" first.');
+      console.error('No vean.json found. Run "vean init" first.');
       process.exit(1);
     }
 
@@ -94,6 +94,6 @@ export const list = new Command()
     }
 
     console.log(`  ${filtered.length} item(s) total`);
-    console.log(`  Run "sbean list --package <name>" to filter by package.`);
+    console.log(`  Run "vean list --package <name>" to filter by package.`);
     console.log();
   });

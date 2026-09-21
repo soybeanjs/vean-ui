@@ -68,7 +68,7 @@ describe('SPopover', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-arrow]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-arrow]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -86,7 +86,7 @@ describe('SPopover', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-arrow]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-arrow]').exists()).toBe(false);
 
       wrapper.unmount();
     });

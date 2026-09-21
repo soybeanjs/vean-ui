@@ -9,7 +9,7 @@ import {
   SToolbar,
   SToolbarButton,
   SToolbarSeparator
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewSpacing'

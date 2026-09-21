@@ -27,9 +27,9 @@ head:
 
 ## 组件族系
 
-- `SDateRangeField`——样式包装层，透传 props 给 headless compact 并注入 `dateRangeFieldVariants`（扩展 `dateFieldVariants`）类
-- `DateRangeFieldCompact`（headless）——由 `DateRangeFieldRoot` + 两组逐分段 `DateRangeFieldInput` 数据驱动组合，并带 `leading`/`trailing`/`separator` 插槽；无样式使用时从 `@soybeanjs/headless/date-range-field` 导入
-- `DateRangeFieldRoot` / `DateRangeFieldInput`（headless）——状态所有者（双组分段值、校验、隐藏输入、跨组焦点）与绑定共享 `useDateField` 组合式的单个可编辑分段
+- `SDateRangeField`——样式包装层，透传 props 给 Aria compact 并注入 `dateRangeFieldVariants`（扩展 `dateFieldVariants`）类
+- `DateRangeFieldCompact`（Aria）——由 `DateRangeFieldRoot` + 两组逐分段 `DateRangeFieldInput` 数据驱动组合，并带 `leading`/`trailing`/`separator` 插槽；无样式使用时从 `@vean/aria/date-range-field` 导入
+- `DateRangeFieldRoot` / `DateRangeFieldInput`（Aria）——状态所有者（双组分段值、校验、隐藏输入、跨组焦点）与绑定共享 `useDateField` 组合式的单个可编辑分段
 
 ## 演示
 
@@ -45,20 +45,20 @@ head:
 
 `DateRangeFieldRoot` 通过 `useControllableState` 持有 `{ start, end }` 值，为两组维护独立的 `startSegmentValues`/`endSegmentValues` shallowRef，并经 `isInvalid` 完成校验（含开始晚于结束的检查）。每个 `DateRangeFieldInput` 绑定与 `time-field` 族共享的 `useDateField` 组合式实现 per-part 键盘逻辑。跨组移动由 root 的 `moveFocus` 处理：在 start 组物理末尾按前进方向移入 end 组，在 end 组开头按后退方向返回 start 组，物理按键依据 `dir` 映射，因此 RTL 下 `ArrowLeft`/`ArrowRight` 互换。大多数对标库把范围实现为两个独立文本框或一个带分隔符的文本框；双组分段加跨组键盘焦点的模式源自 reka-ui（Radix）的 date-field 一脉。
 
-| 能力                    | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :---------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 双组分段可编辑组        |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 跨组焦点移动            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| RTL 方向反转            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 受控 / 非受控           |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 键盘增减 / 键入         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 范围校验（start ≤ end） |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 粒度（分/秒）           |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 双原生表单值            |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   —    |
-| 禁用 / 只读             |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 分隔符 prop / 插槽      |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| 能力                    | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :---------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 双组分段可编辑组        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 跨组焦点移动            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| RTL 方向反转            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 受控 / 非受控           |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 键盘增减 / 键入         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 范围校验（start ≤ end） |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 粒度（分/秒）           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 双原生表单值            |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   —    |
+| 禁用 / 只读             |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 分隔符 prop / 插槽      |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### 使用注意
 

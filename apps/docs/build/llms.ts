@@ -55,7 +55,7 @@ const genericVueTagRegex = /^<\/?[A-Z][^>]*>$/gmu;
  * llms.txt generation for the ubean docs site.
  *
  * Content now lives in `src/content/{en,zh}` with section folders
- * (`ui` / `admin` / `chart` / `sbean` / `headless`), and route mapping
+ * (`ui` / `chart` / `vean` / `aria`), and route mapping
  * is shared with prerender/sitemap via `build/docs-routes.ts`.
  *
  * Dev: middleware answers `/llms.txt`, `/llms-full.txt`, and per-page `<route>.md`.
@@ -67,7 +67,7 @@ export function docsLlmsPlugin(): Plugin {
   let isSsrBuild = false;
 
   return {
-    name: 'soybean-docs-llms',
+    name: 'vean-docs-llms',
 
     configResolved(resolvedConfig) {
       config = resolvedConfig;
@@ -209,9 +209,9 @@ function createLlmsIndex(docFiles: DocFile[]): string {
   });
 
   return `${[
-    '# SoybeanUI Docs',
+    '# Vean Docs',
     '',
-    'English LLM-friendly documentation index for the SoybeanUI docs site.',
+    'English LLM-friendly documentation index for the Vean docs site.',
     '',
     '## Details',
     '',
@@ -239,13 +239,7 @@ function createLlmsFull(docFiles: DocFile[]): string {
     ''
   ]);
 
-  return `${[
-    '# SoybeanUI Docs',
-    '',
-    'English LLM-friendly documentation bundle for the SoybeanUI docs site.',
-    '',
-    ...sections
-  ]
+  return `${['# Vean Docs', '', 'English LLM-friendly documentation bundle for the Vean docs site.', '', ...sections]
     .join('\n')
     .trimEnd()}\n`;
 }

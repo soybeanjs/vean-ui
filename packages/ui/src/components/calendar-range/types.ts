@@ -3,8 +3,8 @@ import type {
   CalendarRangeCompactEmits,
   CalendarRangeCompactSlots,
   CalendarRangeUi
-} from '@soybeanjs/headless/calendar-range';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/calendar-range';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

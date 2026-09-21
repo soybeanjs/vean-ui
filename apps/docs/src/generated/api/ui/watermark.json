@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -53,8 +53,8 @@
                 "type": "{ root: ClassValue; overlay: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Watermark component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkui",
-                "sourcePath": "packages/headless/src/components/watermark/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkui",
+                "sourcePath": "packages/aria/src/components/watermark/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -81,7 +81,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.overlayprops",
             "default": null,
             "inheritedFrom": "overlayProps",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": [
               {
                 "name": "WatermarkOverlayProps",
@@ -89,8 +89,8 @@
                 "type": "WatermarkOverlayProps",
                 "resolvedType": null,
                 "description": "Properties for the WatermarkOverlay component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkoverlayprops",
-                "sourcePath": "packages/headless/src/components/watermark/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkoverlayprops",
+                "sourcePath": "packages/aria/src/components/watermark/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.content",
             "default": null,
             "inheritedFrom": "content",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.image",
             "default": null,
             "inheritedFrom": "image",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -128,7 +128,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.fontsize",
             "default": "16",
             "inheritedFrom": "fontSize",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -139,7 +139,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.fontfamily",
             "default": "'sans-serif'",
             "inheritedFrom": "fontFamily",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -150,7 +150,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.fontcolor",
             "default": "'rgba(0, 0, 0, 0.15)'",
             "inheritedFrom": "fontColor",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -161,7 +161,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.fontweight",
             "default": "'normal'",
             "inheritedFrom": "fontWeight",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -172,7 +172,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.rotate",
             "default": "-22",
             "inheritedFrom": "rotate",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -183,7 +183,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.gap",
             "default": "[100, 100]",
             "inheritedFrom": "gap",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -194,7 +194,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.offset",
             "default": "[0, 0]",
             "inheritedFrom": "offset",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -205,7 +205,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.width",
             "default": null,
             "inheritedFrom": "width",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -216,7 +216,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.height",
             "default": null,
             "inheritedFrom": "height",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -227,7 +227,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.cross",
             "default": "false",
             "inheritedFrom": "cross",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -238,7 +238,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_watermark_types.watermarkprops.members.defense",
             "default": "false",
             "inheritedFrom": "defense",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           }
         ],
@@ -253,8 +253,8 @@
         "type": "Interface WatermarkCompactProps",
         "resolvedType": "{ overlayProps?: WatermarkOverlayProps; content?: string; image?: string; fontSize?: number; fontFamily?: string; fontColor?: string; fontWeight?: string | number; rotate?: number; gap?: [number, number]; offset?: [number, number]; width?: number; height?: number; cross?: boolean; defense?: boolean }",
         "description": "Properties for the WatermarkCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.props",
-        "sourcePath": "packages/headless/src/components/watermark/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.props",
+        "sourcePath": "packages/aria/src/components/watermark/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -262,10 +262,10 @@
             "type": "WatermarkOverlayProps",
             "required": false,
             "description": "Properties forwarded to the overlay element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.overlayprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.overlayprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": [
               {
                 "name": "WatermarkOverlayProps",
@@ -273,8 +273,8 @@
                 "type": "WatermarkOverlayProps",
                 "resolvedType": null,
                 "description": "Properties for the WatermarkOverlay component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkoverlayprops",
-                "sourcePath": "packages/headless/src/components/watermark/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkoverlayprops",
+                "sourcePath": "packages/aria/src/components/watermark/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -287,10 +287,10 @@
             "type": "string",
             "required": false,
             "description": "The text content of the watermark.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.content",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.content",
             "default": null,
             "inheritedFrom": "content",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -298,10 +298,10 @@
             "type": "string",
             "required": false,
             "description": "The image URL of the watermark.\nWhen both content and image are provided, image takes priority.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.image",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.image",
             "default": null,
             "inheritedFrom": "image",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -309,10 +309,10 @@
             "type": "number",
             "required": false,
             "description": "The font size of the watermark text in pixels.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.fontsize",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.fontsize",
             "default": "16",
             "inheritedFrom": "fontSize",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -320,10 +320,10 @@
             "type": "string",
             "required": false,
             "description": "The font family of the watermark text.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.fontfamily",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.fontfamily",
             "default": "'sans-serif'",
             "inheritedFrom": "fontFamily",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -331,10 +331,10 @@
             "type": "string",
             "required": false,
             "description": "The font color of the watermark text.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.fontcolor",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.fontcolor",
             "default": "'rgba(0, 0, 0, 0.15)'",
             "inheritedFrom": "fontColor",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -342,10 +342,10 @@
             "type": "string | number",
             "required": false,
             "description": "The font weight of the watermark text.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.fontweight",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.fontweight",
             "default": "'normal'",
             "inheritedFrom": "fontWeight",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -353,10 +353,10 @@
             "type": "number",
             "required": false,
             "description": "The rotation angle of the watermark in degrees.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.rotate",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.rotate",
             "default": "-22",
             "inheritedFrom": "rotate",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -364,10 +364,10 @@
             "type": "[number, number]",
             "required": false,
             "description": "The gap between watermark tiles in pixels, as [x, y].",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.gap",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.gap",
             "default": "[100, 100]",
             "inheritedFrom": "gap",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -375,10 +375,10 @@
             "type": "[number, number]",
             "required": false,
             "description": "The offset of the watermark within each tile in pixels, as [x, y].",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.offset",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.offset",
             "default": "[0, 0]",
             "inheritedFrom": "offset",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -386,10 +386,10 @@
             "type": "number",
             "required": false,
             "description": "The width of a single watermark tile in pixels.\nWhen not provided, it is calculated automatically based on text dimensions and gap.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.width",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.width",
             "default": null,
             "inheritedFrom": "width",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -397,10 +397,10 @@
             "type": "number",
             "required": false,
             "description": "The height of a single watermark tile in pixels.\nWhen not provided, it is calculated automatically based on text dimensions and gap.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.height",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.height",
             "default": null,
             "inheritedFrom": "height",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -408,10 +408,10 @@
             "type": "boolean",
             "required": false,
             "description": "When true, renders a diagonal cross pattern with two overlapping watermarks.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.cross",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.cross",
             "default": "false",
             "inheritedFrom": "cross",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -419,10 +419,10 @@
             "type": "boolean",
             "required": false,
             "description": "When true, observes and restores the watermark overlay if it is tampered with or removed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkcompactprops.members.defense",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkcompactprops.members.defense",
             "default": "false",
             "inheritedFrom": "defense",
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           }
         ],
@@ -437,8 +437,8 @@
         "type": "Interface WatermarkOverlayProps",
         "resolvedType": null,
         "description": "Properties for the WatermarkOverlay component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkoverlayprops.props",
-        "sourcePath": "packages/headless/src/components/watermark/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkoverlayprops.props",
+        "sourcePath": "packages/aria/src/components/watermark/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -452,8 +452,8 @@
         "type": "Interface WatermarkRootProps",
         "resolvedType": "{ content?: string; image?: string; fontSize?: number; fontFamily?: string; fontColor?: string; fontWeight?: string | number; rotate?: number; gap?: [number, number]; offset?: [number, number]; width?: number; height?: number; cross?: boolean; defense?: boolean }",
         "description": "Properties for the WatermarkRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.props",
-        "sourcePath": "packages/headless/src/components/watermark/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.props",
+        "sourcePath": "packages/aria/src/components/watermark/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -461,10 +461,10 @@
             "type": "string",
             "required": false,
             "description": "The text content of the watermark.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.content",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.content",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -472,10 +472,10 @@
             "type": "string",
             "required": false,
             "description": "The image URL of the watermark.\nWhen both content and image are provided, image takes priority.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.image",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.image",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -483,10 +483,10 @@
             "type": "number",
             "required": false,
             "description": "The font size of the watermark text in pixels.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.fontsize",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.fontsize",
             "default": "16",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -494,10 +494,10 @@
             "type": "string",
             "required": false,
             "description": "The font family of the watermark text.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.fontfamily",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.fontfamily",
             "default": "'sans-serif'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -505,10 +505,10 @@
             "type": "string",
             "required": false,
             "description": "The font color of the watermark text.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.fontcolor",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.fontcolor",
             "default": "'rgba(0, 0, 0, 0.15)'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -516,10 +516,10 @@
             "type": "string | number",
             "required": false,
             "description": "The font weight of the watermark text.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.fontweight",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.fontweight",
             "default": "'normal'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -527,10 +527,10 @@
             "type": "number",
             "required": false,
             "description": "The rotation angle of the watermark in degrees.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.rotate",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.rotate",
             "default": "-22",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -538,10 +538,10 @@
             "type": "[number, number]",
             "required": false,
             "description": "The gap between watermark tiles in pixels, as [x, y].",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.gap",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.gap",
             "default": "[100, 100]",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -549,10 +549,10 @@
             "type": "[number, number]",
             "required": false,
             "description": "The offset of the watermark within each tile in pixels, as [x, y].",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.offset",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.offset",
             "default": "[0, 0]",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -560,10 +560,10 @@
             "type": "number",
             "required": false,
             "description": "The width of a single watermark tile in pixels.\nWhen not provided, it is calculated automatically based on text dimensions and gap.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.width",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.width",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -571,10 +571,10 @@
             "type": "number",
             "required": false,
             "description": "The height of a single watermark tile in pixels.\nWhen not provided, it is calculated automatically based on text dimensions and gap.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.height",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.height",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -582,10 +582,10 @@
             "type": "boolean",
             "required": false,
             "description": "When true, renders a diagonal cross pattern with two overlapping watermarks.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.cross",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.cross",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           },
           {
@@ -593,10 +593,10 @@
             "type": "boolean",
             "required": false,
             "description": "When true, observes and restores the watermark overlay if it is tampered with or removed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_watermark_types.watermarkrootprops.members.defense",
+            "descriptionKey": "api.generated.packages_aria_src_components_watermark_types.watermarkrootprops.members.defense",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/watermark/types.ts",
+            "sourcePath": "packages/aria/src/components/watermark/types.ts",
             "referencedTypes": []
           }
         ],

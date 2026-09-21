@@ -8,8 +8,8 @@ import type {
   RadioGroupCardOptionData,
   RadioGroupUi,
   RadioGroupCardUi
-} from '@soybeanjs/headless/radio-group';
-import type { DefinedWithBooleanValue, ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/radio-group';
+import type { DefinedWithBooleanValue, ClassValue } from '@vean/aria/types';
 import type { RadioGroupVariant } from '@/styles/radio-group';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

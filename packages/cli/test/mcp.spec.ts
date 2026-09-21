@@ -1,5 +1,5 @@
 /**
- * Tests for the SBean MCP server (ADR-011).
+ * Tests for the Vean MCP server (ADR-011).
  *
  * Covers the 8-tool surface (7 parity + explain_gap), the SDK-based
  * transport wiring, and the project installed-components scanner.
@@ -64,12 +64,15 @@ describe('MCP handleToolCall (integration)', () => {
   });
 
   beforeEach(async () => {
-    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-mcp-'));
+    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-mcp-'));
     process.chdir(tmpDir);
 
-    // Write a sbean.json that points both built-in registries at the test server
+    // Write a vean.json that points every built-in registry at the test server.
+    // `@vean` is the default namespace; overriding only the legacy aliases would
+    // leave the catalog resolving against the real remote registry.
     const config = await createDefaultConfig(tmpDir);
     config.registries = {
+      '@vean': `${server.url}/{name}.json`,
       '@soybean': `${server.url}/{name}.json`,
       '@sbean': `${server.url}/{name}.json`
     };
@@ -87,6 +90,7 @@ describe('MCP handleToolCall (integration)', () => {
       expect(result.isError).toBeFalsy();
       expect(result.content[0].type).toBe('text');
       const text = textOf(result);
+      expect(text).toContain('@vean');
       expect(text).toContain('@soybean');
       expect(text).toContain('@sbean');
     });
@@ -148,7 +152,7 @@ describe('MCP handleToolCall (integration)', () => {
         items: ['button', 'dialog']
       });
       const text = textOf(result);
-      expect(text).toBe('npx sbean@latest add button dialog');
+      expect(text).toBe('npx @vean/cli@latest add button dialog');
     });
 
     it('rejects empty items array', async () => {
@@ -161,7 +165,7 @@ describe('MCP handleToolCall (integration)', () => {
     it('returns a checklist', async () => {
       const result = await handleToolCall('get_audit_checklist', {});
       const text = textOf(result);
-      expect(text).toContain('sbean info');
+      expect(text).toContain('vean info');
       expect(text).toContain('typecheck');
     });
   });
@@ -183,7 +187,7 @@ describe('MCP handleToolCall (integration)', () => {
       // button should NOT appear as missing
       expect(text).not.toMatch(/^- button$/m);
       // Should suggest the add command
-      expect(text).toContain('npx sbean@latest add');
+      expect(text).toContain('npx @vean/cli@latest add');
     });
 
     it('reports all components missing when none installed', async () => {
@@ -213,15 +217,15 @@ describe('MCP handleToolCall (integration)', () => {
       expect(text).not.toContain('test-font');
     });
 
-    it('reports no config found when sbean.json is absent', async () => {
-      // Move to a dir without sbean.json
-      const bareDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-bare-'));
+    it('reports no config found when vean.json is absent', async () => {
+      // Move to a dir without vean.json
+      const bareDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-bare-'));
       process.chdir(bareDir);
 
       try {
         const result = await handleToolCall('explain_gap', {});
         const text = textOf(result);
-        expect(text).toContain('No sbean.json found');
+        expect(text).toContain('No vean.json found');
       } finally {
         process.chdir(tmpDir);
         await fs.rm(bareDir, { recursive: true, force: true });
@@ -241,7 +245,7 @@ describe('scanInstalledComponents', () => {
   let tmpDir: string;
 
   beforeEach(async () => {
-    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-scan-'));
+    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-scan-'));
   });
 
   afterEach(async () => {

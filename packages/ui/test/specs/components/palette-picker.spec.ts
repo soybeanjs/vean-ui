@@ -139,7 +139,7 @@ const switchControlOf = (rootSelector: string): Element => {
   const root = document.body.querySelector(rootSelector);
   expect(root, `switch "${rootSelector}" should be rendered`).toBeTruthy();
 
-  const control = root?.querySelector('[data-soybean-switch-control]');
+  const control = root?.querySelector('[data-vean-switch-control]');
   expect(control, `switch control "${rootSelector}" should be rendered`).toBeTruthy();
 
   return control as Element;

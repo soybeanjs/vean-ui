@@ -1,14 +1,14 @@
 ---
 head:
   title: DropdownMenu
-  description: 'Displays a menu to the user—such as a set of actions or functions—triggered by a button. SDropdownMenu is a data-driven menu built on the headless menu primitives (MenuOptions/MenuItem/…), rendered through the shared popover portal. The family also ships checkbox (SDropdownMenuCheckbox, multi-select), radio (SDropdownMenuRadio, single-select) and custom (SDropdownMenuWrapper) variants.'
+  description: 'Displays a menu to the user—such as a set of actions or functions—triggered by a button. SDropdownMenu is a data-driven menu built on the Aria menu primitives (MenuOptions/MenuItem/…), rendered through the shared popover portal. The family also ships checkbox (SDropdownMenuCheckbox, multi-select), radio (SDropdownMenuRadio, single-select) and custom (SDropdownMenuWrapper) variants.'
 ---
 
 # DropdownMenu
 
 ## Overview
 
-Displays a menu to the user—such as a set of actions or functions—triggered by a button. `SDropdownMenu` is a data-driven menu built on the headless menu primitives (`MenuOptions`/`MenuItem`/…), rendered through the shared popover portal. The family also ships checkbox (`SDropdownMenuCheckbox`, multi-select), radio (`SDropdownMenuRadio`, single-select) and custom (`SDropdownMenuWrapper`) variants.
+Displays a menu to the user—such as a set of actions or functions—triggered by a button. `SDropdownMenu` is a data-driven menu built on the Aria menu primitives (`MenuOptions`/`MenuItem`/…), rendered through the shared popover portal. The family also ships checkbox (`SDropdownMenuCheckbox`, multi-select), radio (`SDropdownMenuRadio`, single-select) and custom (`SDropdownMenuWrapper`) variants.
 
 Use a dropdown for a compact action menu. For navigation menus use `nav-menu`; for a rich hover preview use `hover-card`.
 
@@ -18,7 +18,7 @@ Use a dropdown for a compact action menu. For navigation menus use `nav-menu`; f
 
 ## Features
 
-- 🧩 Headless/menu based — built on the shared menu primitives with full keyboard navigation (arrow/Home/End/PageUp/PageDown), typeahead and roving focus
+- 🧩 Aria/menu based — built on the shared menu primitives with full keyboard navigation (arrow/Home/End/PageUp/PageDown), typeahead and roving focus
 - 🖱️ Trigger modes — `trigger="click"` or `"hover"`; `delayDuration`/`skipDelayDuration` tune hover latency
 - 📊 Data-driven — pass `items` (with `value`/`label`/`icon`/`disabled`/`hidden`/`separator`…) or use the item slots
 - ☑️ Checkbox variant — `SDropdownMenuCheckbox` for multi-select with `v-model`
@@ -36,8 +36,8 @@ Use a dropdown for a compact action menu. For navigation menus use `nav-menu`; f
 - `SDropdownMenuCheckbox` (styled) — multi-select menu with `v-model`
 - `SDropdownMenuRadio` (styled) — single-select menu with `v-model`
 - `SDropdownMenuWrapper` (styled) — custom-content menu
-- `DropdownMenuCompact` / `DropdownMenuWrapperCompact` / `DropdownMenuCheckboxCompact` / `DropdownMenuRadioCompact` (headless) — the aggregated composites
-- `MenuOptions`/`MenuItem`/… (headless) — the shared menu primitives (roving focus, keyboard nav, submenus)
+- `DropdownMenuCompact` / `DropdownMenuWrapperCompact` / `DropdownMenuCheckboxCompact` / `DropdownMenuRadioCompact` (Aria) — the aggregated composites
+- `MenuOptions`/`MenuItem`/… (Aria) — the shared menu primitives (roving focus, keyboard nav, submenus)
 
 ## Demos
 
@@ -51,17 +51,17 @@ Use a dropdown for a compact action menu. For navigation menus use `nav-menu`; f
 
 ### Architecture and benchmark differences
 
-The dropdown-menu family composes the shared `menu` primitives (`MenuOptions`/`MenuItem`) inside a popover portal; the UI wrappers only inject the shared `menuVariants` classes (via `provideMenuUi`) and forward props/slots. This mirrors radix-ui/shadcn-ui's headless menu split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled dropdown with `items`/`onSelect` props; SoybeanUI additionally exposes dedicated checkbox/radio/wrapper variants, a `size` scale, and full keyboard/typeahead behavior through the shared menu layer.
+The dropdown-menu family composes the shared `menu` primitives (`MenuOptions`/`MenuItem`) inside a popover portal; the UI wrappers only inject the shared `menuVariants` classes (via `provideMenuUi`) and forward props/slots. This mirrors radix-ui/shadcn-ui's headless menu split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled dropdown with `items`/`onSelect` props; VeanUI additionally exposes dedicated checkbox/radio/wrapper variants, a `size` scale, and full keyboard/typeahead behavior through the shared menu layer.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design Dropdown | Element Plus Dropdown | Mantine Menu | Naive UI Dropdown |
-| :-------------------- | :-------: | :-------: | :-----------------: | :-------------------: | :----------: | :---------------: |
-| Headless/styled split |    ✅     |    ✅     |          —          |           —           |      —       |         —         |
-| Data-driven items     |    ✅     |    ✅     |         ✅          |          ✅           |      ✅      |        ✅         |
-| Checkbox / radio      |    ✅     |    ✅     |          —          |           —           |      ✅      |         —         |
-| Trigger click/hover   |    ✅     |    ✅     |         ✅          |          ✅           |      ✅      |        ✅         |
-| Keyboard + typeahead  |    ✅     |    ✅     |          —          |           —           |      —       |         —         |
-| Submenu               |    ✅     |    ✅     |         ✅          |          ✅           |      ✅      |        ✅         |
-| Sizes (6)             |    ✅     |     —     |          —          |           —           |      —       |         —         |
+| Capability           | VeanUI | shadcn/ui | Ant Design Dropdown | Element Plus Dropdown | Mantine Menu | Naive UI Dropdown |
+| :------------------- | :----: | :-------: | :-----------------: | :-------------------: | :----------: | :---------------: |
+| Aria/styled split    |   ✅   |    ✅     |          —          |           —           |      —       |         —         |
+| Data-driven items    |   ✅   |    ✅     |         ✅          |          ✅           |      ✅      |        ✅         |
+| Checkbox / radio     |   ✅   |    ✅     |          —          |           —           |      ✅      |         —         |
+| Trigger click/hover  |   ✅   |    ✅     |         ✅          |          ✅           |      ✅      |        ✅         |
+| Keyboard + typeahead |   ✅   |    ✅     |          —          |           —           |      —       |         —         |
+| Submenu              |   ✅   |    ✅     |         ✅          |          ✅           |      ✅      |        ✅         |
+| Sizes (6)            |   ✅   |     —     |          —          |           —           |      —       |         —         |
 
 `—` = unsupported or a different interaction model.
 

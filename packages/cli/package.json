@@ -1,10 +1,10 @@
 {
-  "name": "sbean",
+  "name": "@vean/cli",
   "version": "0.50.0",
-  "description": "CLI tool for adding SoybeanUI components to your Vue apps — copy-paste, like shadcn/ui.",
-  "homepage": "https://github.com/soybeanjs/soybean-ui/tree/main/packages/cli",
+  "description": "CLI tool for adding Vean components to your Vue apps — copy-paste, like shadcn/ui.",
+  "homepage": "https://github.com/soybeanjs/vean-ui/tree/main/packages/cli",
   "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-ui/issues"
+    "url": "https://github.com/soybeanjs/vean-ui/issues"
   },
   "license": "MIT",
   "author": {
@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/soybeanjs/soybean-ui.git",
+    "url": "https://github.com/soybeanjs/vean-ui.git",
     "directory": "packages/cli"
   },
   "bin": {
-    "sbean": "./src/bin.js"
+    "vean": "./src/bin.js"
   },
   "files": [
     "dist"
@@ -34,7 +34,7 @@
   },
   "publishConfig": {
     "bin": {
-      "sbean": "./dist/index.js"
+      "vean": "./dist/index.js"
     },
     "exports": {
       ".": {

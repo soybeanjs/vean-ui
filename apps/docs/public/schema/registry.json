@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "description": "A sbean registry of components, styles, utilities, and themes.",
+  "description": "A vean registry of components, styles, utilities, and themes.",
   "type": "object",
   "properties": {
     "$schema": {
       "type": "string",
-      "description": "JSON Schema reference for this registry. Set to \"https://ui.soybeanjs.cn/schema/registry.json\" for validation."
+      "description": "JSON Schema reference for this registry. Set to \"https://veanui.com/schema/registry.json\" for validation."
     },
     "name": {
       "type": "string",

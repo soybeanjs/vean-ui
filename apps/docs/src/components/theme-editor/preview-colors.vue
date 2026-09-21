@@ -13,8 +13,8 @@ import {
   SSlider,
   SSwitch,
   STag
-} from '@soybeanjs/ui';
-import type { ButtonVariant, ThemeColor } from '@soybeanjs/ui';
+} from '@vean/ui';
+import type { ButtonVariant, ThemeColor } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewColors'
@@ -81,7 +81,11 @@ const page = ref(2);
       <SSlider v-model="sliderValue" class="w-40" :thumb-props="{ 'aria-label': 'Progress' }" />
       <SProgress :model-value="64" class="w-40" />
       <SRating v-model="ratingValue" />
+      <<<<<<< HEAD
       <SAvatar src="https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202609141212" fallback-label="S" />
+      =======
+      <SAvatar src="https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212" fallback-label="S" />
+      >>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean)
       <SPagination v-model:page="page" :total="120" :items-per-page="10" />
     </div>
   </div>

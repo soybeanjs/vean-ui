@@ -16,7 +16,7 @@ export const appShellVariants = scv({
     root: 'h-full',
     sidebar: 'flex flex-col w-full h-full min-h-0',
     logo: [
-      'flex shrink-0 items-center h-[--soybean-layout-header-height] px-[--sl-spacing] overflow-hidden',
+      'flex shrink-0 items-center h-[--vean-layout-header-height] px-[--sl-spacing] overflow-hidden',
       // Aligned to the sidebar's columns: the cells carry the width and the
       // centering, so the row contributes no gap or padding of its own.
       'data-[aligned=true]:gap-0 data-[aligned=true]:px-0',
@@ -30,8 +30,8 @@ export const appShellVariants = scv({
     // that is the same token the region is tall, so the row is unchanged; in the
     // menu's `top-left` / `top-right` cells there is no region, and the cells are
     // what keeps the brand band as tall as the header it lines up with.
-    logoMark: 'flex h-[--soybean-layout-header-height] shrink-0 items-center justify-center',
-    logoTitle: 'flex h-[--soybean-layout-header-height] min-w-0 items-center justify-center',
+    logoMark: 'flex h-[--vean-layout-header-height] shrink-0 items-center justify-center',
+    logoTitle: 'flex h-[--vean-layout-header-height] min-w-0 items-center justify-center',
     menuSidebar: 'flex-1 min-h-0 min-w-0 flex flex-col overflow-hidden',
     // Mount target of the menu panes that teleport out of their renderer: it has
     // to stretch, or the pane inside it sizes to its content and the column

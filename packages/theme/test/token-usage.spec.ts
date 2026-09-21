@@ -6,10 +6,10 @@ import { ALPHA_TOKENS, LITERAL_DEFAULTS, PALETTE_LEVELS, ROLE_RAMP_ROLES, SEMANT
 /**
  * The token naming contract, enforced across the workspace (docs/theme.md §4.4,
  * acceptance §7-14): the **theme engine's** token vocabulary is unprefixed —
- * `--background`, `--card`, `--radius`, `--chart-1` — so a `var(--soybean-background)`
+ * `--background`, `--card`, `--radius`, `--chart-1` — so a `var(--vean-background)`
  * is a stale reference. The prefix removal is scoped to that layer: the library's
- * own component-scoped variables (`--soybean-sidebar-width`, `--soybean-layout-header-height`,
- * `--soybean-scrollbar-*`, headless's measurement variables) keep the `--soybean-` namespace,
+ * own component-scoped variables (`--vean-sidebar-width`, `--vean-layout-header-height`,
+ * `--vean-scrollbar-*`, aria's measurement variables) keep the `--vean-` namespace,
  * which is why this scan only flags *token* names and not the prefix itself. A stale reference is an invalid computed value, so the declaration
  * is dropped **silently** (that is how the docs' chart series once ended up
  * stroked with `stroke: none`); this scan keeps the realignment from drifting
@@ -17,7 +17,7 @@ import { ALPHA_TOKENS, LITERAL_DEFAULTS, PALETTE_LEVELS, ROLE_RAMP_ROLES, SEMANT
  *
  * The palette layer (`--indigo-500`, `--white`) and third-party namespaces
  * (`--color-*`, `--un-*`, `--ts-*`) are never flagged; the storage key and the
- * style element id (`__SOYBEAN_THEME`, `soybean-theme`) are not variables at all and
+ * style element id (`__VEAN_THEME`, `vean-theme`) are not variables at all and
  * are out of scope. `docs/theme.md` (outside the scanned roots) is where the
  * migration quotes the pre-realignment names.
  *
@@ -45,7 +45,7 @@ const findRoot = (): string => {
 const ROOT = findRoot();
 
 /** the authored surfaces: what a consumer reads and copies. */
-const SCANNED = ['packages/headless/src', 'packages/ui/src', 'packages/unocss/src', 'apps/docs/src'];
+const SCANNED = ['packages/aria/src', 'packages/ui/src', 'packages/unocss/src', 'apps/docs/src'];
 
 /** derived data, not hand-written: the generator may embed old snippets. */
 const SKIPPED = ['apps/docs/src/generated'];
@@ -61,7 +61,7 @@ const COLOR_SCANNED = [...SCANNED, 'packages/theme/src'];
 const SUFFIXES = ['.ts', '.vue', '.md', '.css'];
 
 /** the engine prefix that the realignment removed. */
-const LEGACY_PREFIX = 'soybean';
+const LEGACY_PREFIX = 'vean';
 
 /** every token name the legacy prefixed form would have used. */
 const LEGACY_NAMES = new Set<string>(
@@ -84,7 +84,7 @@ const filesUnder = (dir: string): string[] =>
     return SUFFIXES.some(suffix => entry.name.endsWith(suffix)) ? [path] : [];
   });
 
-/** `file:line var(--soybean-token)` for every legacy-prefixed reference. */
+/** `file:line var(--vean-token)` for every legacy-prefixed reference. */
 const legacyReferencesIn = (file: string): string[] =>
   readFileSync(file, 'utf8')
     .split('\n')
@@ -125,7 +125,7 @@ const offFormatColorsIn = (file: string): string[] =>
     );
 
 describe('token naming contract (§4.4 / acceptance §7-14)', () => {
-  it('references every token unprefixed (no legacy --soybean-* references)', () => {
+  it('references every token unprefixed (no legacy --vean-* references)', () => {
     const violations = SCANNED.flatMap(dir => filesUnder(join(ROOT, dir)))
       .filter(file => !SKIPPED.some(skip => file.includes(skip)))
       .flatMap(legacyReferencesIn);

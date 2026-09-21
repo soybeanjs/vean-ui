@@ -44,7 +44,7 @@ describe('SInputNumber', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-number-root]').classes()).toContain('h-9');
+      expect(wrapper.find('[data-vean-input-number-root]').classes()).toContain('h-9');
 
       wrapper.unmount();
     });
@@ -54,7 +54,7 @@ describe('SInputNumber', () => {
         props: { name: 'amount', modelValue: 5 },
         attachTo: document.body
       });
-      const hiddenInputs = wrapper.findAll('[data-soybean-visually-hidden-input]');
+      const hiddenInputs = wrapper.findAll('[data-vean-visually-hidden-input]');
 
       expect(hiddenInputs).toHaveLength(1);
       expect(hiddenInputs[0].attributes('name')).toBe('amount');
@@ -65,7 +65,7 @@ describe('SInputNumber', () => {
     it('does not render a visually hidden input without a name', () => {
       const wrapper = mount(SInputNumber, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-visually-hidden-input]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-visually-hidden-input]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -73,8 +73,8 @@ describe('SInputNumber', () => {
     it('renders increment and decrement triggers with i18n aria-labels', () => {
       const wrapper = mount(SInputNumber, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-input-number-increment]').attributes('aria-label')).toBe('Increase');
-      expect(wrapper.find('[data-soybean-input-number-decrement]').attributes('aria-label')).toBe('Decrease');
+      expect(wrapper.find('[data-vean-input-number-increment]').attributes('aria-label')).toBe('Increase');
+      expect(wrapper.find('[data-vean-input-number-decrement]').attributes('aria-label')).toBe('Decrease');
 
       wrapper.unmount();
     });
@@ -111,7 +111,7 @@ describe('SInputNumber', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-number-increment]').trigger('pointerdown', { button: 0 });
+      await wrapper.find('[data-vean-input-number-increment]').trigger('pointerdown', { button: 0 });
 
       expect(wrapper.emitted('update:modelValue')![0]).toEqual([3]);
 
@@ -124,7 +124,7 @@ describe('SInputNumber', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-number-decrement]').trigger('pointerdown', { button: 0 });
+      await wrapper.find('[data-vean-input-number-decrement]').trigger('pointerdown', { button: 0 });
 
       expect(wrapper.emitted('update:modelValue')![0]).toEqual([-1]);
 
@@ -207,7 +207,7 @@ describe('SInputNumber', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-number-clear]').trigger('click');
+      await wrapper.find('[data-vean-input-number-clear]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')![0]).toEqual([null]);
@@ -221,13 +221,13 @@ describe('SInputNumber', () => {
         attachTo: document.body
       });
 
-      expect((wrapper.find('[data-soybean-input-number-decrement]').element as HTMLButtonElement).disabled).toBe(false);
-      expect((wrapper.find('[data-soybean-input-number-increment]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-input-number-decrement]').element as HTMLButtonElement).disabled).toBe(false);
+      expect((wrapper.find('[data-vean-input-number-increment]').element as HTMLButtonElement).disabled).toBe(true);
 
       await wrapper.setProps({ modelValue: 0 });
 
-      expect((wrapper.find('[data-soybean-input-number-decrement]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-input-number-increment]').element as HTMLButtonElement).disabled).toBe(false);
+      expect((wrapper.find('[data-vean-input-number-decrement]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-input-number-increment]').element as HTMLButtonElement).disabled).toBe(false);
 
       wrapper.unmount();
     });
@@ -246,7 +246,7 @@ describe('SInputNumber', () => {
       expect(wrapper.find('input').element.disabled).toBe(true);
       expect((wrapper.find('[aria-label="Increase"]').element as HTMLButtonElement).disabled).toBe(true);
       expect((wrapper.find('[aria-label="Decrease"]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-input-number-clear]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-input-number-clear]').element as HTMLButtonElement).disabled).toBe(true);
 
       wrapper.unmount();
     });
@@ -264,7 +264,7 @@ describe('SInputNumber', () => {
       expect(wrapper.find('input').attributes('readonly')).toBeDefined();
       expect((wrapper.find('[aria-label="Increase"]').element as HTMLButtonElement).disabled).toBe(true);
       expect((wrapper.find('[aria-label="Decrease"]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-input-number-clear]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-input-number-clear]').element as HTMLButtonElement).disabled).toBe(true);
 
       wrapper.unmount();
     });

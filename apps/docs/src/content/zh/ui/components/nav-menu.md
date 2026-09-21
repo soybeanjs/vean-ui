@@ -12,7 +12,7 @@ NavMenu 用于构建站点级横向或纵向导航,共享一个浮层表面。�
 
 `SNavMenu` 是数据驱动组合:传 `items` 数组即可渲染 `nav > ul > li` 结构、触发器/内容对、指示器与浮动 viewport。样式通过 `scv()` recipe 注入。
 
-> 需要无样式、数据驱动的用法时,导入 `@soybeanjs/headless/nav-menu`。
+> 需要无样式、数据驱动的用法时,导入 `@vean/aria/nav-menu`。
 
 ## 功能特性
 
@@ -27,7 +27,7 @@ NavMenu 用于构建站点级横向或纵向导航,共享一个浮层表面。�
 - **受控 / 非受控** — 提供 `modelValue` 时高亮跟随 prop 并触发 `update:modelValue`;否则用 `defaultValue` 做非受控初始值。
 - **双向支持** — `orientation` 支持横向 / 纵向;`dir` 支持 LTR / RTL 逻辑定位。
 - **六档尺寸** — `size`(xs…2xl)覆盖列表、触发器、viewport 与链接的间距和字号。
-- **Headless 组合** — `NavMenuRoot` / `List` / `Item` / `Trigger` / `Content` / `Link` / `Viewport` 及 `Compact` 系列由 `@soybeanjs/headless/nav-menu` 导出。
+- **Aria 组合** — `NavMenuRoot` / `List` / `Item` / `Trigger` / `Content` / `Link` / `Viewport` 及 `Compact` 系列由 `@vean/aria/nav-menu` 导出。
 
 ## 用法
 

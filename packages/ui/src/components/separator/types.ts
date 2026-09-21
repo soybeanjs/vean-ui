@@ -1,5 +1,5 @@
-import type { SeparatorCompactProps, SeparatorUi } from '@soybeanjs/headless/separator';
-import type { Align, ClassValue } from '@soybeanjs/headless/types';
+import type { SeparatorCompactProps, SeparatorUi } from '@vean/aria/separator';
+import type { Align, ClassValue } from '@vean/aria/types';
 import type { SeparatorBorder } from '@/styles/separator';
 import type { ThemeSize } from '@/theme';
 

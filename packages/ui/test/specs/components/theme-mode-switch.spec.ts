@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { mount } from '@vue/test-utils';
-import { THEME_STORAGE_KEY } from '@soybeanjs/theme/storage';
+import { THEME_STORAGE_KEY } from '@vean/theme/storage';
 import SConfigProvider from '@/components/config-provider/config-provider.vue';
 import SThemeModeSwitch from '@/components/theme-mode-switch/theme-mode-switch.vue';
 
@@ -31,7 +31,7 @@ describe('SThemeModeSwitch', () => {
     it('is unchecked and shows an icon in light mode', () => {
       const wrapper = mountInProvider();
       expect(wrapper.find('[role="switch"]').attributes('aria-checked')).toBe('false');
-      expect(wrapper.find('[data-soybean-switch-thumb] [data-soybean-icon]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-switch-thumb] [data-vean-icon]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -39,7 +39,7 @@ describe('SThemeModeSwitch', () => {
       window.localStorage.setItem(THEME_STORAGE_KEY, JSON.stringify({ mode: 'dark' }));
       const wrapper = mountInProvider(true);
       expect(wrapper.find('[role="switch"]').attributes('aria-checked')).toBe('true');
-      expect(wrapper.find('[data-soybean-switch-thumb] [data-soybean-icon]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-switch-thumb] [data-vean-icon]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -57,7 +57,7 @@ describe('SThemeModeSwitch', () => {
         },
         { attachTo: document.body }
       );
-      expect(wrapper.find('[data-soybean-switch-thumb] [data-soybean-icon]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-switch-thumb] [data-vean-icon]').exists()).toBe(false);
       wrapper.unmount();
     });
   });

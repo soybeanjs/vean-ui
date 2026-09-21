@@ -39,13 +39,13 @@ describe('SToggleGroup', () => {
 
     it('applies custom class to the group root', () => {
       const wrapper = mountToggleGroup({ class: 'my-group-cls' });
-      expect(wrapper.find('[data-soybean-toggle-group-root]').classes()).toContain('my-group-cls');
+      expect(wrapper.find('[data-vean-toggle-group-root]').classes()).toContain('my-group-cls');
       wrapper.unmount();
     });
 
     it('falls back to a plain group when rovingFocus is disabled', async () => {
       const wrapper = mountToggleGroup({ rovingFocus: false, modelValue: 'bold' });
-      const root = wrapper.find('[data-soybean-toggle-group-root]');
+      const root = wrapper.find('[data-vean-toggle-group-root]');
       expect(root.attributes('role')).toBe('group');
       expect(root.attributes('data-loop')).toBeUndefined();
       await wrapper.findAll('button')[1].trigger('click');
@@ -202,7 +202,7 @@ describe('SToggleGroup', () => {
 
     it('marks the root with data-disabled and disables every item', () => {
       const wrapper = mountToggleGroup({ disabled: true });
-      expect(wrapper.find('[data-soybean-toggle-group-root]').attributes('data-disabled')).toBeDefined();
+      expect(wrapper.find('[data-vean-toggle-group-root]').attributes('data-disabled')).toBeDefined();
       wrapper.findAll('button').forEach(button => {
         expect(button.attributes('disabled')).toBeDefined();
       });

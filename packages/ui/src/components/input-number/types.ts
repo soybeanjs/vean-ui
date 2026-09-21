@@ -3,8 +3,8 @@ import type {
   InputNumberCompactProps,
   InputNumberCompactSlots,
   InputNumberUi
-} from '@soybeanjs/headless/input-number';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/input-number';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

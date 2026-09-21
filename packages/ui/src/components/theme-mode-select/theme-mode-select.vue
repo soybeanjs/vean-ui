@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { ThemeModePreference } from '@soybeanjs/theme';
+import type { ThemeModePreference } from '@vean/theme';
 import { useTheme } from '../config-provider/use-theme';
 import SIcon from '../icon/icon.vue';
 import SSelect from '../select/select.vue';

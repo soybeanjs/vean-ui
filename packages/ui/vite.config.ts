@@ -2,7 +2,7 @@ import { globSync } from 'node:fs';
 import { defineConfig } from 'vite-plus';
 import vue from '@vitejs/plugin-vue';
 import unpluginVue from 'unplugin-vue/rolldown';
-import headlessPkg from '../headless/package.json' with { type: 'json' };
+import ariaPkg from '../aria/package.json' with { type: 'json' };
 
 export default defineConfig({
   resolve: {
@@ -13,7 +13,7 @@ export default defineConfig({
     entry: [...globSync('src/components/**/index.ts'), 'src/index.ts', 'src/nuxt/index.ts', 'src/resolver/index.ts'],
     platform: 'browser',
     deps: {
-      neverBundle: ['@nuxt/kit', '@nuxt/schema', ...Object.keys(headlessPkg.dependencies)]
+      neverBundle: ['@nuxt/kit', '@nuxt/schema', ...Object.keys(ariaPkg.dependencies)]
     },
     dts: {
       vue: true

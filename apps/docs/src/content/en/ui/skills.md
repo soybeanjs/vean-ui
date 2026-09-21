@@ -1,12 +1,12 @@
 ---
 head:
   title: Skills
-  description: 'Install SoybeanUI skills to give AI coding agents deep knowledge of components, theming, headless composition patterns, and generated references.'
+  description: 'Install VeanUI skills to give AI coding agents deep knowledge of components, theming, aria composition patterns, and generated references.'
 ---
 
 # Skills
 
-> Install SoybeanUI skills to give AI coding agents deep knowledge of components, theming, headless composition patterns, and generated references.
+> Install VeanUI skills to give AI coding agents deep knowledge of components, theming, aria composition patterns, and generated references.
 
 ## What are Skills?
 
@@ -14,45 +14,47 @@ Skills are structured knowledge files for AI coding agents. They package library
 
 Unlike MCP servers, skills do not provide live tools. They provide curated instructions and references directly in the model context.
 
-SoybeanUI currently ships two public skills:
+VeanUI currently ships two public skills:
 
-- **soybean-ui** - styled package usage, theming, docs navigation, and generated component references
-- **soybean-headless** - headless primitives, Compact patterns, composition guidance, and shared component references
+- **vean-ui** - styled package usage, theming, docs navigation, and generated component references
+- **vean-aria** - aria primitives, Compact patterns, composition guidance, and shared component references
 
-## What the SoybeanUI skills cover
+## What the VeanUI skills cover
 
 The bundled skills help agents answer tasks such as:
 
-- when to choose `@soybeanjs/ui` versus `@soybeanjs/headless`
+- when to choose `@vean/ui` versus `@vean/aria`
 - how to set up theming, locale, and direction
 - how to use component APIs and generated references efficiently
-- how to compose headless primitives into custom-styled wrappers
+- how to compose aria primitives into custom-styled wrappers
 - how to navigate the docs and generated references without loading the whole site
 
 ## Usage
+
+> **Repository rename not yet live.** Every installation path on this page resolves skills from GitHub, so the commands below only work once the repository rename `soybeanjs/soybean-ui` → `soybeanjs/vean-ui` has landed. Until then `github.com/soybeanjs/vean-ui` returns 404 — use the current slug `soybeanjs/soybean-ui` instead, for example `npx skills add soybeanjs/soybean-ui/skills`.
 
 ### Skills CLI
 
 The easiest installation path is the `skills` CLI:
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills
+npx skills add soybeanjs/vean-ui/skills
 ```
 
 You can target a specific agent:
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills --agent cursor
-npx skills add soybeanjs/soybean-ui/skills --agent claude-code
+npx skills add soybeanjs/vean-ui/skills --agent cursor
+npx skills add soybeanjs/vean-ui/skills --agent claude-code
 ```
 
 Or install globally so the skills are available across projects:
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills --global
+npx skills add soybeanjs/vean-ui/skills --global
 ```
 
-Installing the package adds both `soybean-ui` and `soybean-headless`.
+Installing the package adds both `vean-ui` and `vean-aria`.
 
 ### Skills URL
 
@@ -61,13 +63,13 @@ If your tool supports direct skill URLs, you can point it at the public GitHub s
 For the styled UI skill:
 
 ```text
-https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui
+https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui
 ```
 
-For the headless skill:
+For the aria skill:
 
 ```text
-https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
+https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria
 ```
 
 ### Claude Code
@@ -75,8 +77,8 @@ https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
 Claude Code can install an individual skill directly from the GitHub directory:
 
 ```bash
-claude skill add https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui
-claude skill add https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
+claude skill add https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui
+claude skill add https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria
 ```
 
 The repository also ships Claude marketplace metadata inside the published skills package.
@@ -85,16 +87,16 @@ The repository also ships Claude marketplace metadata inside the published skill
 
 Any tool that supports GitHub-hosted skill folders or custom instruction directories can use the same sources.
 
-- **SoybeanUI skill entry**: https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui/SKILL.md
-- **SoybeanUI skill directory**: https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui
-- **SoybeanHeadless skill entry**: https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless/SKILL.md
-- **SoybeanHeadless skill directory**: https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
+- **VeanUI skill entry**: https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui/SKILL.md
+- **VeanUI skill directory**: https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui
+- **VeanAria skill entry**: https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria/SKILL.md
+- **VeanAria skill directory**: https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria
 
 ## Practical recommendations
 
-1. Install the full `@soybeanjs/ui-skills` package when you work with both styled and headless packages.
-2. Use `soybean-ui` when you need component usage, theming, and docs navigation help.
-3. Use `soybean-headless` when you need composition guidance or custom-styled wrapper patterns.
+1. Install the full `@vean/skills` package when you work with both styled and aria packages.
+2. Use `vean-ui` when you need component usage, theming, and docs navigation help.
+3. Use `vean-aria` when you need composition guidance or custom-styled wrapper patterns.
 4. Keep `llms.txt` as a complementary source when you need docs-wide context instead of packaged skill context.
 
 ## Related pages

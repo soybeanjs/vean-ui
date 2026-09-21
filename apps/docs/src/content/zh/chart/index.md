@@ -1,12 +1,12 @@
 ---
 head:
   title: 图表示例
-  description: 基于 TanStack Charts、贴合 SoybeanUI 主题 token 的 shadcn 风格图表示例。
+  description: 基于 TanStack Charts、贴合 VeanUI 主题 token 的 shadcn 风格图表示例。
 ---
 
 # 图表
 
-这里的图表直接基于 [TanStack Charts](https://tanstack.com/charts) 渲染，并采用与 [shadcn 图表](https://tanstack.com/charts/catalog/collections/shadcn) 一致的用法。SoybeanUI **不**再提供独立的图表封装包——TanStack Charts 本身就是与框架解耦的图表语法层，直接使用可以让你跟随官方升级路径，而不会被额外抽象锁定。
+这里的图表直接基于 [TanStack Charts](https://tanstack.com/charts) 渲染，并采用与 [shadcn 图表](https://tanstack.com/charts/catalog/collections/shadcn) 一致的用法。VeanUI **不**再提供独立的图表封装包——TanStack Charts 本身就是与框架解耦的图表语法层，直接使用可以让你跟随官方升级路径，而不会被额外抽象锁定。
 
 ## 主题色如何接入
 

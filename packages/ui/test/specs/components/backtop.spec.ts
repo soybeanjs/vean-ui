@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { Backtop } from '@soybeanjs/headless/backtop';
+import { Backtop } from '@vean/aria/backtop';
 import SBacktop from '@/components/backtop/backtop.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
@@ -97,7 +97,7 @@ describe('SBacktop', () => {
       wrapper.unmount();
     });
 
-    it('supports direct headless composition', async () => {
+    it('supports direct Aria composition', async () => {
       const { target, setScrollTop } = createMockScrollTarget(0);
 
       const wrapper = mount(
@@ -109,8 +109,8 @@ describe('SBacktop', () => {
             return { target };
           },
           template: `
-            <Backtop :target="target" :visibility-height="100" class="headless-backtop">
-              Headless
+            <Backtop :target="target" :visibility-height="100" class="aria-backtop">
+              Aria
             </Backtop>
           `
         },
@@ -125,8 +125,8 @@ describe('SBacktop', () => {
 
       const button = wrapper.find('button');
 
-      expect(button.classes()).toContain('headless-backtop');
-      expect(button.attributes('data-soybean-backtop')).toBe('');
+      expect(button.classes()).toContain('aria-backtop');
+      expect(button.attributes('data-vean-backtop')).toBe('');
 
       wrapper.unmount();
       target.remove();

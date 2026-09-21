@@ -121,7 +121,7 @@ describe('SSlider', () => {
       });
 
       expect(wrapper.find('[role="slider"]').classes()).toContain('custom-thumb-class');
-      expect(wrapper.find('[data-soybean-slider-range]').classes()).toContain('custom-range-class');
+      expect(wrapper.find('[data-vean-slider-range]').classes()).toContain('custom-range-class');
       wrapper.unmount();
     });
 
@@ -131,7 +131,7 @@ describe('SSlider', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-slider-root]').attributes('data-orientation')).toBe('vertical');
+      expect(wrapper.find('[data-vean-slider-root]').attributes('data-orientation')).toBe('vertical');
       expect(wrapper.find('[role="slider"]').attributes('aria-orientation')).toBe('vertical');
       wrapper.unmount();
     });

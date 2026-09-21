@@ -12,7 +12,7 @@ A small status/notification marker that overlays a trigger (button, avatar, nav 
 
 Use it for unread counts, notification badges, status dots, or any small label anchored to the top-right (or another corner) of a host element. Prefer `tag` for standalone inline category labels, and `alert` for contextual feedback with more content.
 
-`SBadge` exposes a `content`-driven API with `v-model:open` control over the bubble's visibility. There is no headless `badge` family: the only logic is a controlled `open` flag, which the UI layer owns directly through `useControllableState`.
+`SBadge` exposes a `content`-driven API with `v-model:open` control over the bubble's visibility. There is no Aria `badge` family: the only logic is a controlled `open` flag, which the UI layer owns directly through `useControllableState`.
 
 ## Usage
 
@@ -20,7 +20,7 @@ Use it for unread counts, notification badges, status dots, or any small label a
 
 ## Features
 
-- 🧩 UI-only thin shell — `SBadge` owns markup and the controlled `open` state (`useControllableState`); no headless `badge` family exists
+- 🧩 UI-only thin shell — `SBadge` owns markup and the controlled `open` state (`useControllableState`); no Aria `badge` family exists
 - 🔢 `content` prop / slot — a plain string or arbitrary VNode inside the bubble via the `content` slot
 - 🎛️ Controlled visibility — `v-model:open` toggles whether the bubble renders (`useControllableState`, default `true`)
 - 🎨 8 colors — `primary`/`destructive`/`success`/`warning`/`info`/`carbon`/`secondary`/`accent` from `ThemeColor`
@@ -31,7 +31,7 @@ Use it for unread counts, notification badges, status dots, or any small label a
 
 ## Component family
 
-`SBadge` is a single export. It renders the `data-soybean-badge-root` container and, while `open`, the `data-soybean-badge-content` bubble; `class`/`ui` and `contentProps` reach both nodes.
+`SBadge` is a single export. It renders the `data-vean-badge-root` container and, while `open`, the `data-vean-badge-content` bubble; `class`/`ui` and `contentProps` reach both nodes.
 
 ## Demos
 
@@ -45,19 +45,19 @@ Use it for unread counts, notification badges, status dots, or any small label a
 
 ### Architecture and benchmark differences
 
-`SBadge` owns the visibility orchestration in the UI layer — a badge is a thin shell whose only logic is a controlled `open` flag, so it deliberately has no headless family. This mirrors shadcn/ui's composition-first approach (a plain styled label there) and Radix's `Badge` primitive, unlike Ant Design, Element Plus and Naive UI which ship a single styled `Badge` with `count`/`max`/`dot`/`offset` props. SoybeanUI exposes the bubble through a `content` prop/slot and a controlled `open` state, leaving count formatting (`max`) and dot/offset convenience out of the core — see the enhancement list below.
+`SBadge` owns the visibility orchestration in the UI layer — a badge is a thin shell whose only logic is a controlled `open` flag, so it deliberately has no Aria family. This mirrors shadcn/ui's composition-first approach (a plain styled label there) and Radix's `Badge` primitive, unlike Ant Design, Element Plus and Naive UI which ship a single styled `Badge` with `count`/`max`/`dot`/`offset` props. VeanUI exposes the bubble through a `content` prop/slot and a controlled `open` state, leaving count formatting (`max`) and dot/offset convenience out of the core — see the enhancement list below.
 
-| Capability                     | SoybeanUI | shadcn/ui | Ant Design Badge | Element Plus Badge | Mantine Badge | Naive UI Badge |
-| :----------------------------- | :-------: | :-------: | :--------------: | :----------------: | :-----------: | :------------: |
-| Headless/styled split          |    ✅     |    ✅     |        —         |         —          |       —       |       —        |
-| Content / notification bubble  |    ✅     |     —     |        ✅        |         ✅         |       —       |       ✅       |
-| Position (corner placement)    |    ✅     |     —     |        ✅        |         ✅         |       —       |       ✅       |
-| Color variants (8)             |    ✅     |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
-| Size variants (6)              |    ✅     |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
-| RTL-aware placement            |    ✅     |     —     |        —         |         —          |       —       |       —        |
-| Controlled visibility (`open`) |    ✅     |     —     |        ✅        |         ✅         |       —       |       ✅       |
-| `max` count cap (99+)          |    ➕     |     —     |        ✅        |         ✅         |       —       |       ✅       |
-| `dot` mode / `offset`          |    ➕     |     —     |        ✅        |         ✅         |       —       |       ✅       |
+| Capability                     | VeanUI | shadcn/ui | Ant Design Badge | Element Plus Badge | Mantine Badge | Naive UI Badge |
+| :----------------------------- | :----: | :-------: | :--------------: | :----------------: | :-----------: | :------------: |
+| Aria/styled split              |   ✅   |    ✅     |        —         |         —          |       —       |       —        |
+| Content / notification bubble  |   ✅   |     —     |        ✅        |         ✅         |       —       |       ✅       |
+| Position (corner placement)    |   ✅   |     —     |        ✅        |         ✅         |       —       |       ✅       |
+| Color variants (8)             |   ✅   |    ✅     |        ✅        |         ✅         |      ✅       |       ✅       |
+| Size variants (6)              |   ✅   |     —     |        ✅        |         ✅         |      ✅       |       ✅       |
+| RTL-aware placement            |   ✅   |     —     |        —         |         —          |       —       |       —        |
+| Controlled visibility (`open`) |   ✅   |     —     |        ✅        |         ✅         |       —       |       ✅       |
+| `max` count cap (99+)          |   ➕   |     —     |        ✅        |         ✅         |       —       |       ✅       |
+| `dot` mode / `offset`          |   ➕   |     —     |        ✅        |         ✅         |       —       |       ✅       |
 
 `—` = unsupported or a different interaction model; `➕` = valuable enhancement not yet provided (see below).
 

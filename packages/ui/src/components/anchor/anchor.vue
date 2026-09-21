@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { CSSProperties } from 'vue';
-import { AnchorCompact, provideAnchorUi } from '@soybeanjs/headless/anchor';
-import { useOmitProps, useForwardListeners } from '@soybeanjs/headless/composables';
+import { AnchorCompact, provideAnchorUi } from '@vean/aria/anchor';
+import { useOmitProps, useForwardListeners } from '@vean/aria/composables';
 import { anchorVariants } from '@/styles/anchor';
 import type { AnchorProps, AnchorEmits } from './types';
 
@@ -22,7 +22,7 @@ const forwardedProps = useOmitProps(props, ['color', 'size', 'ui', 'class', 'sti
 const events = useForwardListeners(emit);
 
 const style = computed<CSSProperties>(() => ({
-  '--soybean-anchor-offset-top': `${props.offsetTop}px`
+  '--vean-anchor-offset-top': `${props.offsetTop}px`
 }));
 
 const ui = computed(() =>

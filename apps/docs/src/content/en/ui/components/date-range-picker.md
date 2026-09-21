@@ -27,9 +27,9 @@ A date range picker that pairs a keyboard-editable dual segmented date range fie
 
 ## Component family
 
-- `SDateRangePicker` — the styled wrapper that forwards props to the headless compact, injects `dateRangePickerVariants` (extending `dateFieldVariants`), and renders `SCalendarRange` inside the popup
-- `DateRangePickerCompact` (headless) — data-driven composition of `DateRangeFieldCompact` + `PopoverCompact` (calendar-icon trigger) that exposes the popup state and `calendarRangeProps` through its default slot; import from `@soybeanjs/headless/date-range-picker` for unstyled usage
-- `DateRangeFieldCompact` / `PopoverCompact` / `CalendarRangeCompact` (headless) — the dual segmented field, the popover mechanics, and the range calendar grid that back the picker
+- `SDateRangePicker` — the styled wrapper that forwards props to the Aria compact, injects `dateRangePickerVariants` (extending `dateFieldVariants`), and renders `SCalendarRange` inside the popup
+- `DateRangePickerCompact` (Aria) — data-driven composition of `DateRangeFieldCompact` + `PopoverCompact` (calendar-icon trigger) that exposes the popup state and `calendarRangeProps` through its default slot; import from `@vean/aria/date-range-picker` for unstyled usage
+- `DateRangeFieldCompact` / `PopoverCompact` / `CalendarRangeCompact` (Aria) — the dual segmented field, the popover mechanics, and the range calendar grid that back the picker
 
 ## Demos
 
@@ -43,29 +43,29 @@ A date range picker that pairs a keyboard-editable dual segmented date range fie
 
 ### Architecture and benchmark differences
 
-`SDateRangePicker` forwards props to `DateRangePickerCompact`, which wires `DateRangeFieldCompact` (dual segments + validation) and `PopoverCompact` (a `lucide:calendar` icon trigger with `aria-haspopup="dialog"`). The styled layer injects `dateRangePickerVariants` classes through `provideDateRangePickerUi` so the nested popover parts get `trigger`/`positioner`/`popup` styling, then renders `SCalendarRange` in the default slot with the forwarded `calendarRangeProps`. Selecting a start and an end day emits `update:modelValue` and closes the popup once both ends are set. The popup is a `role="dialog"` with a default accessible name from the locale `popupLabel` message; the toggle gets `toggle`. Most benchmark libraries ship two plain text inputs plus a range panel; the dual-segmented-field-plus-popover combo, the cross-group keyboard focus, and the headless/styled split are the differentiators.
+`SDateRangePicker` forwards props to `DateRangePickerCompact`, which wires `DateRangeFieldCompact` (dual segments + validation) and `PopoverCompact` (a `lucide:calendar` icon trigger with `aria-haspopup="dialog"`). The styled layer injects `dateRangePickerVariants` classes through `provideDateRangePickerUi` so the nested popover parts get `trigger`/`positioner`/`popup` styling, then renders `SCalendarRange` in the default slot with the forwarded `calendarRangeProps`. Selecting a start and an end day emits `update:modelValue` and closes the popup once both ends are set. The popup is a `role="dialog"` with a default accessible name from the locale `popupLabel` message; the toggle gets `toggle`. Most benchmark libraries ship two plain text inputs plus a range panel; the dual-segmented-field-plus-popover combo, the cross-group keyboard focus, and the Aria/styled split are the differentiators.
 
-| Capability                         | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :--------------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled split              |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Dual segmented field + range popup |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Controlled / uncontrolled value    |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Controlled / uncontrolled open     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Keyboard segment editing           |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Cross-group focus movement         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Calendar keyboard navigation       |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| Range validation                   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateUnavailable`                |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Disabled state                     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Locale-driven accessible names     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `leading` / `separator` slots      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Independent `calendarRangeUi`      |    ✅     |     —      |      —       |    —    |    —     |   —    |
+| Capability                         | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :--------------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled split                  |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Dual segmented field + range popup |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Controlled / uncontrolled value    |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Controlled / uncontrolled open     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Keyboard segment editing           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Cross-group focus movement         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Calendar keyboard navigation       |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| Range validation                   |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateUnavailable`                |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Disabled state                     |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Locale-driven accessible names     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `leading` / `separator` slots      |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Independent `calendarRangeUi`      |   ✅   |     —      |      —       |    —    |    —     |   —    |
 
 ### Cautions
 
 - The value is a `DateRange` — an object `{ start, end }` of `DateValue`s, not a `string`. Use it with `SDateRangeField`, `SCalendarRange`, and the other date-family components.
 - `defaultValue`/`defaultOpen` are only read on mount — use `v-model`/`open` for external control.
-- The toggle button is the calendar icon; its default `aria-label` (locale `toggle`) can be overridden through `triggerProps['aria-label']`. The icon itself is fixed — to render a custom trigger, compose `DateRangePickerCompact` from `@soybeanjs/headless/date-range-picker` with your own popover content.
+- The toggle button is the calendar icon; its default `aria-label` (locale `toggle`) can be overridden through `triggerProps['aria-label']`. The icon itself is fixed — to render a custom trigger, compose `DateRangePickerCompact` from `@vean/aria/date-range-picker` with your own popover content.
 - The popup `role="dialog"` gets its accessible name from the locale `popupLabel` message; override it through `popupProps['aria-label']`.
 - Pass `dateFieldProps` (e.g. `placeholder`, `locale`, `granularity`) to configure the embedded dual segmented field; field and calendar share `minValue`/`maxValue`/`isDateUnavailable`.
 - `calendarRangeUi` is consumed by the embedded calendar and never reaches the DOM — the same applies to `dateFieldProps`.
@@ -87,7 +87,7 @@ Use `dateFieldProps` — for example `{ placeholder }`, `{ locale }`, `{ granula
 
 ### How do I customize the calendar look?
 
-`calendarRangeUi` overrides the range calendar's per-slot classes independently of `ui`. For deeper customization, the default slot receives `calendarRangeProps` (plus `open`/`close`) so you can render your own popup content with `CalendarRangeCompact` from `@soybeanjs/headless/calendar-range`.
+`calendarRangeUi` overrides the range calendar's per-slot classes independently of `ui`. For deeper customization, the default slot receives `calendarRangeProps` (plus `open`/`close`) so you can render your own popup content with `CalendarRangeCompact` from `@vean/aria/calendar-range`.
 
 ### How is `SDateRangePicker` different from `SDateRangeField`?
 

@@ -10,9 +10,9 @@ head:
 
 Menubar builds a persistent horizontal menu bar for application chrome: a row of triggers with roving focus that open dropdown menus on click or hover, with arbitrarily nested submenus and full keyboard navigation.
 
-`SMenubar` is a data-driven aggregation component: pass an `items` array and it renders the full `role="menubar"` structure, triggers, dropdown content, and nested submenus. A top-level item can be either a trigger that opens a dropdown or a link that navigates (set `href` / `to`). Logic and accessibility semantics live in the headless `MenubarCompact`; styles are injected through a `scv()` recipe.
+`SMenubar` is a data-driven aggregation component: pass an `items` array and it renders the full `role="menubar"` structure, triggers, dropdown content, and nested submenus. A top-level item can be either a trigger that opens a dropdown or a link that navigates (set `href` / `to`). Logic and accessibility semantics live in the Aria `MenubarCompact`; styles are injected through a `scv()` recipe.
 
-> `SMenubar` delegates all structural composition to the headless `MenubarCompact`. For unstyled data-driven usage, import from `@soybeanjs/headless/menubar`; the dropdown layer reuses `MenuOptionsCompact` from `@soybeanjs/headless/menu`.
+> `SMenubar` delegates all structural composition to the Aria `MenubarCompact`. For unstyled data-driven usage, import from `@vean/aria/menubar`; the dropdown layer reuses `MenuOptionsCompact` from `@vean/aria/menu`.
 
 ## Features
 
@@ -30,7 +30,7 @@ Menubar builds a persistent horizontal menu bar for application chrome: a row of
 - **Bidirectional direction** — `dir` supports LTR / RTL; arrow keys and submenu slide direction follow logical direction; `portalProps` controls whether content teleports to `body`.
 - **Six sizes** — `size` (xs…2xl) variants cover root and trigger spacing, padding, and font size.
 - **Menu slot passthrough** — `item-leading` / `item-trailing` / `trigger` / `item-link-icon` slots forward to the menu layer for per-item customization; the `ui` prop overrides root and trigger slots.
-- **Headless composition** — `MenubarRoot` / `MenubarMenu` / `MenubarTrigger` / `MenubarContent` / `MenubarSubTrigger` / `MenubarSubContent` and `Compact` are all exported from `@soybeanjs/headless/menubar`; menu primitives are reused from `@soybeanjs/headless/menu`.
+- **Aria composition** — `MenubarRoot` / `MenubarMenu` / `MenubarTrigger` / `MenubarContent` / `MenubarSubTrigger` / `MenubarSubContent` and `Compact` are all exported from `@vean/aria/menubar`; menu primitives are reused from `@vean/aria/menu`.
 
 ## Usage
 
@@ -48,9 +48,9 @@ Menubar builds a persistent horizontal menu bar for application chrome: a row of
 
 ### Architecture & benchmark comparison
 
-| Capability              | SoybeanUI                                               | Ant Design `Menu`              | Element Plus `Menu` | Radix `Menubar`              |
+| Capability              | VeanUI                                                  | Ant Design `Menu`              | Element Plus `Menu` | Radix `Menubar`              |
 | :---------------------- | :------------------------------------------------------ | :----------------------------- | :------------------ | :--------------------------- |
-| headless/styled split   | ✅ `@soybeanjs/headless/menubar` + `scv()`              | ❌ single package              | ❌ single package   | ✅ `@radix-ui/react-menubar` |
+| Aria/styled split       | ✅ `@vean/aria/menubar` + `scv()`                       | ❌ single package              | ❌ single package   | ✅ `@radix-ui/react-menubar` |
 | Data-driven compact API | ✅ `MenubarCompact` + nested `items`                    | ✅ `items`                     | ✅ `items`          | ❌ JSX composition           |
 | Top-level triggers      | ✅ click / hover switch + arrows                        | ✅ click / hover               | ✅ click / hover    | ✅ click / hover + arrows    |
 | Horizontal roving       | ✅ Roving Focus + `loop`                                | ✅                             | ✅                  | ✅                           |

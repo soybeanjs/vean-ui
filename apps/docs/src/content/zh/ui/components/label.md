@@ -35,11 +35,11 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 将 `Label` 拆分为 headless 层（`@soybeanjs/headless/label`，负责 `<label>` 元素、`for` 关联、双击阻止文本选中）与 styled 层（`@soybeanjs/ui`，负责 `cv()` 变体配方（size））。这与 shadcn/ui 的 headless/styled 分离一致，后者源自 Radix UI 的 Label 原语。
+VeanUI 将 `Label` 拆分为 Aria 层（`@vean/aria/label`，负责 `<label>` 元素、`for` 关联、双击阻止文本选中）与 styled 层（`@vean/ui`，负责 `cv()` 变体配方（size））。这与 shadcn/ui 的 headless/styled 分离一致，后者源自 Radix UI 的 Label 原语。
 
-| 维度           | SoybeanUI                     | shadcn/ui `Label` | Ant Design `Form.Label` | Element Plus `FormLabel` | MUI `InputLabel` |
+| 维度           | VeanUI                        | shadcn/ui `Label` | Ant Design `Form.Label` | Element Plus `FormLabel` | MUI `InputLabel` |
 | :------------- | :---------------------------- | :---------------- | :---------------------- | :----------------------- | :--------------- |
-| 架构           | headless + styled 分离        | headless + styled | 表单耦合                | 表单耦合                 | 仅 styled        |
+| 架构           | Aria + styled 分离            | Aria + styled     | 表单耦合                | 表单耦合                 | 仅 styled        |
 | 原生 `<label>` | ✅                            | ✅                | ✅（Form 内）           | ✅（Form 内）            | ✅               |
 | `for` 关联     | ✅ 独立使用                   | ✅ 独立使用       | Form 自动关联           | Form 自动关联            | Form 自动关联    |
 | 尺寸缩放       | `xs`–`2xl`                    | —                 | —                       | —                        | `size`           |
@@ -64,4 +64,4 @@ SoybeanUI 将 `Label` 拆分为 headless 层（`@soybeanjs/headless/label`，负
 基础类包含 `peer-disabled:opacity-50`。当同级输入框（带 `peer` 类）禁用时，标签透明度降为 50%。这是 shadcn/ui 的 UX 约定。
 
 **如何取消双击阻止选中的行为？**
-阻止选中逻辑内置于 headless 层。如需标准文本选中行为，直接使用 headless `Label` 并省略 `@mousedown` 处理器，或在自定义 wrapper 中覆盖。
+阻止选中逻辑内置于 Aria 层。如需标准文本选中行为，直接使用 Aria `Label` 并省略 `@mousedown` 处理器，或在自定义 wrapper 中覆盖。

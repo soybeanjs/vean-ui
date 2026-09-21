@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SProgress } from '@soybeanjs/ui';
+import { SProgress } from '@vean/ui';
 </script>
 
 <template>

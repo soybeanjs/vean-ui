@@ -37,20 +37,20 @@ A password input field with a toggle button to show/hide the entered value. Use 
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds the password input by reusing the input family base: `PasswordCompact` composes `InputRoot` / `InputControl` / `InputClear` and adds a default `visible` slot backed by `useControllableState`. The styled layer extends `inputVariants` with a `visible` slot override styled as a mini icon button. This mirrors the headless/styled split of reka-ui and shadcn, differing from single-package libraries such as Element Plus.
+VeanUI builds the password input by reusing the input family base: `PasswordCompact` composes `InputRoot` / `InputControl` / `InputClear` and adds a default `visible` slot backed by `useControllableState`. The styled layer extends `inputVariants` with a `visible` slot override styled as a mini icon button. This mirrors the headless/styled split of reka-ui and shadcn, differing from single-package libraries such as Element Plus.
 
-| Capability                          | SoybeanUI | reka-ui `PasswordInput` | shadcn | Element Plus `el-input` |
-| :---------------------------------- | :-------: | :---------------------: | :----: | :---------------------: |
-| headless/styled split               |    ✅     |            —            |   —    |            —            |
-| Controlled / uncontrolled `visible` |    ✅     |           ✅            |   —    |            —            |
-| Show/hide toggle (icon)             |    ✅     |           ✅            |   ✅   |           ✅            |
-| i18n toggle label                   |    ✅     |            —            |   —    |           ✅            |
-| `aria-pressed` semantics            |    ✅     |            —            |   —    |            —            |
-| Clearable mode                      |    ✅     |            —            |   ✅   |           ✅            |
-| `disabled` / `readonly` guards      |    ✅     |           ✅            |   ✅   |           ✅            |
-| Size variants (xs…2xl)              |    ✅     |            —            |   —    |            —            |
-| Custom `visible` slot               |    ✅     |            —            |   —    |            —            |
-| Form proxying (hidden input)        |    ✅     |            —            |   —    |            —            |
+| Capability                          | VeanUI | reka-ui `PasswordInput` | shadcn | Element Plus `el-input` |
+| :---------------------------------- | :----: | :---------------------: | :----: | :---------------------: |
+| Aria/styled split                   |   ✅   |            —            |   —    |            —            |
+| Controlled / uncontrolled `visible` |   ✅   |           ✅            |   —    |            —            |
+| Show/hide toggle (icon)             |   ✅   |           ✅            |   ✅   |           ✅            |
+| i18n toggle label                   |   ✅   |            —            |   —    |           ✅            |
+| `aria-pressed` semantics            |   ✅   |            —            |   —    |            —            |
+| Clearable mode                      |   ✅   |            —            |   ✅   |           ✅            |
+| `disabled` / `readonly` guards      |   ✅   |           ✅            |   ✅   |           ✅            |
+| Size variants (xs…2xl)              |   ✅   |            —            |   —    |            —            |
+| Custom `visible` slot               |   ✅   |            —            |   —    |            —            |
+| Form proxying (hidden input)        |   ✅   |            —            |   —    |            —            |
 
 ### Cautions
 

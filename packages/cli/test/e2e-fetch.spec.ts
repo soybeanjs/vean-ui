@@ -2,8 +2,8 @@
  * End-to-end verification: directly fetch component JSON from a local server
  * using the native fetch API, confirming the full JSON fetching flow.
  *
- * This test mirrors exactly what "sbean search", "sbean view", and
- * "sbean add" do when interacting with the remote registry.
+ * This test mirrors exactly what "vean search", "vean view", and
+ * "vean add" do when interacting with the remote registry.
  */
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { startRegistryServer } from './helpers/server';
@@ -29,7 +29,7 @@ describe('end-to-end: component JSON fetching flow', () => {
     const data = (await response.json()) as Record<string, any>;
     expect(data).toBeDefined();
     expect(data.name).toBe('test-registry');
-    expect(data.homepage).toBe('https://ui.soybeanjs.cn');
+    expect(data.homepage).toBe('https://veanui.com');
     expect(Array.isArray(data.items)).toBe(true);
     expect(data.items.length).toBeGreaterThanOrEqual(5);
   });
@@ -44,7 +44,7 @@ describe('end-to-end: component JSON fetching flow', () => {
     expect(data.name).toBe('button');
     expect(data.type).toBe('registry:ui');
     expect(data.description).toBeTruthy();
-    expect(data.dependencies).toContain('@soybeanjs/headless');
+    expect(data.dependencies).toContain('@vean/aria');
     expect(data.registryDependencies).toContain('utils');
     expect(data.files).toBeDefined();
     expect(data.files.length).toBeGreaterThan(0);

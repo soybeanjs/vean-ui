@@ -41,7 +41,7 @@ export async function applyPresetToProject(presetArg: string, cwd: string): Prom
   const existingConfig = await getConfig(cwd);
 
   if (!existingConfig) {
-    console.error('No sbean.json found. Run "sbean init" first.');
+    console.error('No vean.json found. Run "vean init" first.');
     process.exit(1);
   }
 
@@ -57,8 +57,8 @@ export async function applyPresetToProject(presetArg: string, cwd: string): Prom
   };
 
   await writeConfig(cwd, updated);
-  console.log(`✔ Applied preset "${presetArg}" to sbean.json`);
-  console.log('  Run "sbean info" to see the updated config.');
+  console.log(`✔ Applied preset "${presetArg}" to vean.json`);
+  console.log('  Run "vean info" to see the updated config.');
 }
 
 export const preset = new Command()
@@ -94,7 +94,7 @@ export const preset = new Command()
           console.log();
         }
 
-        console.log(`  Use "sbean init <name>" to apply a preset.`);
+        console.log(`  Use "vean init <name>" to apply a preset.`);
         console.log();
       })
   )
@@ -122,7 +122,7 @@ export const preset = new Command()
         console.log();
         console.log(`  Preset code:   ${encodePreset(config)}`);
         console.log();
-        console.log(`  Apply:  sbean init --preset ${encodePreset(config)}`);
+        console.log(`  Apply:  vean init --preset ${encodePreset(config)}`);
         console.log();
       })
   )

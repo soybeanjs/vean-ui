@@ -12,7 +12,7 @@ describe('SList', () => {
       });
 
       const ul = wrapper.get('ul');
-      expect(ul.attributes('data-soybean-list-root')).toBe('');
+      expect(ul.attributes('data-vean-list-root')).toBe('');
       expect(ul.findAll('li')).toHaveLength(2);
 
       wrapper.unmount();

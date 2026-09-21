@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, onUnmounted, shallowRef, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { useBodyScrollLock, useEscapeKeyDown } from '@soybeanjs/headless/composables';
-import { isClient, pascalCase } from '@soybeanjs/headless/shared';
+import { useBodyScrollLock, useEscapeKeyDown } from '@vean/aria/composables';
+import { isClient, pascalCase } from '@vean/aria/shared';
 import { getOrderedPlaygroundExamples } from '~/constants/globs';
 import { defaultPlaygroundDevice } from '~/constants/playground';
 import type { PlaygroundDevice, PlaygroundTab } from '~/constants/playground';

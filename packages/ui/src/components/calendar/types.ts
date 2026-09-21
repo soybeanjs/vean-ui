@@ -1,10 +1,5 @@
-import type {
-  CalendarCompactProps,
-  CalendarCompactEmits,
-  CalendarCompactSlots,
-  CalendarUi
-} from '@soybeanjs/headless/calendar';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { CalendarCompactProps, CalendarCompactEmits, CalendarCompactSlots, CalendarUi } from '@vean/aria/calendar';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -128,8 +128,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; label: ClassValue; indicator: ClassValue; control: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the RadioGroup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupui",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupui",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupItemProps",
@@ -164,8 +164,8 @@
                 "type": "RadioGroupItemProps",
                 "resolvedType": "{ value: boolean | import(\"@/index\").DefinedValue; disabled?: boolean; name?: string; required?: boolean }",
                 "description": "Properties for the RadioGroupItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -174,10 +174,10 @@
                     "type": "boolean | import(\"@/index\").DefinedValue",
                     "required": true,
                     "description": "The value given as data when submitted with a `name`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -185,10 +185,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the radio item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -196,10 +196,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.name",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.name",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -207,10 +207,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.required",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.required",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -226,7 +226,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.controlprops",
             "default": null,
             "inheritedFrom": "controlProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupControlProps",
@@ -234,8 +234,8 @@
                 "type": "RadioGroupControlProps",
                 "resolvedType": "{ id?: string; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -244,10 +244,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id of the element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -255,10 +255,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -266,10 +266,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -277,10 +277,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -288,10 +288,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -307,7 +307,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupIndicatorProps",
@@ -315,8 +315,8 @@
                 "type": "RadioGroupIndicatorProps",
                 "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -325,10 +325,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -336,10 +336,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -347,10 +347,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -366,7 +366,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.labelprops",
             "default": null,
             "inheritedFrom": "labelProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "LabelProps",
@@ -374,8 +374,8 @@
                 "type": "RadioGroupLabelProps",
                 "resolvedType": "{ for?: string }",
                 "description": "Properties for the Label component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops",
-                "sourcePath": "packages/headless/src/components/label/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops",
+                "sourcePath": "packages/aria/src/components/label/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -384,10 +384,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The id of the element the label is associated with.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops.members.for",
+                    "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops.members.for",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/label/types.ts",
+                    "sourcePath": "packages/aria/src/components/label/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -403,7 +403,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -414,7 +414,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -425,7 +425,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -436,7 +436,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -444,8 +444,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -461,7 +461,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -469,8 +469,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -486,7 +486,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.loop",
             "default": null,
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -497,7 +497,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -508,7 +508,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -533,7 +533,7 @@
             "required": true,
             "description": "Event handler called when the radio group value changes",
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           }
         ],
@@ -567,8 +567,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -667,8 +667,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; content: ClassValue; description: ClassValue; label: ClassValue; icon: ClassValue; indicator: ClassValue; control: ClassValue; textContent: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the RadioGroupCard component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardui",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardui",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -684,7 +684,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -692,8 +692,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -709,7 +709,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.textcontentprops",
             "default": null,
             "inheritedFrom": "textContentProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -717,8 +717,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -734,7 +734,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": "descriptionProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -742,8 +742,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -759,7 +759,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -770,7 +770,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupItemProps",
@@ -778,8 +778,8 @@
                 "type": "RadioGroupItemProps",
                 "resolvedType": "{ value: boolean | import(\"@/index\").DefinedValue; disabled?: boolean; name?: string; required?: boolean }",
                 "description": "Properties for the RadioGroupItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -788,10 +788,10 @@
                     "type": "boolean | import(\"@/index\").DefinedValue",
                     "required": true,
                     "description": "The value given as data when submitted with a `name`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -799,10 +799,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the radio item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -810,10 +810,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.name",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.name",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -821,10 +821,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.required",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.required",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -840,7 +840,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.controlprops",
             "default": null,
             "inheritedFrom": "controlProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupControlProps",
@@ -848,8 +848,8 @@
                 "type": "RadioGroupControlProps",
                 "resolvedType": "{ id?: string; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -858,10 +858,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id of the element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -869,10 +869,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -880,10 +880,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -891,10 +891,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -902,10 +902,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -921,7 +921,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupIndicatorProps",
@@ -929,8 +929,8 @@
                 "type": "RadioGroupIndicatorProps",
                 "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -939,10 +939,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -950,10 +950,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -961,10 +961,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -980,7 +980,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.labelprops",
             "default": null,
             "inheritedFrom": "labelProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "LabelProps",
@@ -988,8 +988,8 @@
                 "type": "RadioGroupLabelProps",
                 "resolvedType": "{ for?: string }",
                 "description": "Properties for the Label component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops",
-                "sourcePath": "packages/headless/src/components/label/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops",
+                "sourcePath": "packages/aria/src/components/label/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -998,10 +998,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The id of the element the label is associated with.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops.members.for",
+                    "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops.members.for",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/label/types.ts",
+                    "sourcePath": "packages/aria/src/components/label/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1017,7 +1017,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1028,7 +1028,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1039,7 +1039,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1050,7 +1050,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1058,8 +1058,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1075,7 +1075,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1083,8 +1083,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1100,7 +1100,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.loop",
             "default": null,
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1111,7 +1111,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1122,7 +1122,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1147,7 +1147,7 @@
             "required": true,
             "description": "Event handler called when the radio group value changes",
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1171,7 +1171,7 @@
             "required": false,
             "description": "Slot for rendering custom description content within the radio card.",
             "descriptionKey": "api.generated.packages_ui_src_components_radio_group_types.radiogroupcardslots.callables.description",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1179,8 +1179,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.type",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.type",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1199,8 +1199,8 @@
         "type": "Interface RadioGroupCardCompactProps<T>",
         "resolvedType": "{ contentProps?: BaseProps; textContentProps?: BaseProps; descriptionProps?: BaseProps; items: T[]; itemProps?: RadioGroupItemProps; controlProps?: RadioGroupControlProps; indicatorProps?: RadioGroupIndicatorProps; labelProps?: RadioGroupLabelProps; modelValue?: T['value'] | null; defaultValue?: T['value']; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; loop?: boolean; name?: string; required?: boolean }",
         "description": "Properties for the RadioGroupCard component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.props",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.props",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1208,10 +1208,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -1219,8 +1219,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -1233,10 +1233,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the text content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.textcontentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.textcontentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -1244,8 +1244,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -1258,10 +1258,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the description element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.descriptionprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -1269,8 +1269,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -1283,10 +1283,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1294,10 +1294,10 @@
             "type": "RadioGroupItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupItemProps",
@@ -1305,8 +1305,8 @@
                 "type": "RadioGroupItemProps",
                 "resolvedType": "{ value: boolean | import(\"@/index\").DefinedValue; disabled?: boolean; name?: string; required?: boolean }",
                 "description": "Properties for the RadioGroupItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1315,10 +1315,10 @@
                     "type": "boolean | import(\"@/index\").DefinedValue",
                     "required": true,
                     "description": "The value given as data when submitted with a `name`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1326,10 +1326,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the radio item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1337,10 +1337,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.name",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.name",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1348,10 +1348,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.required",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.required",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1364,10 +1364,10 @@
             "type": "RadioGroupControlProps",
             "required": false,
             "description": "Properties forwarded to the control element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.controlprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.controlprops",
             "default": null,
             "inheritedFrom": "controlProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupControlProps",
@@ -1375,8 +1375,8 @@
                 "type": "RadioGroupControlProps",
                 "resolvedType": "{ id?: string; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1385,10 +1385,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id of the element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1396,10 +1396,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1407,10 +1407,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1418,10 +1418,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1429,10 +1429,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1445,10 +1445,10 @@
             "type": "RadioGroupIndicatorProps",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupIndicatorProps",
@@ -1456,8 +1456,8 @@
                 "type": "RadioGroupIndicatorProps",
                 "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1466,10 +1466,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1477,10 +1477,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1488,10 +1488,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1504,10 +1504,10 @@
             "type": "RadioGroupLabelProps",
             "required": false,
             "description": "Properties forwarded to the label element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.labelprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.labelprops",
             "default": null,
             "inheritedFrom": "labelProps",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "LabelProps",
@@ -1515,8 +1515,8 @@
                 "type": "RadioGroupLabelProps",
                 "resolvedType": "{ for?: string }",
                 "description": "Properties for the Label component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops",
-                "sourcePath": "packages/headless/src/components/label/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops",
+                "sourcePath": "packages/aria/src/components/label/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1525,10 +1525,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The id of the element the label is associated with.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops.members.for",
+                    "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops.members.for",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/label/types.ts",
+                    "sourcePath": "packages/aria/src/components/label/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1541,10 +1541,10 @@
             "type": "T['value'] | null",
             "required": false,
             "description": "The controlled value of the radio item to check. Can be bound as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1552,10 +1552,10 @@
             "type": "T['value']",
             "required": false,
             "description": "The value of the radio item that should be checked when initially rendered. Use when you do not need to control the\nstate of the radio items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1563,10 +1563,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with radio items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1574,10 +1574,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1585,8 +1585,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1599,10 +1599,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the radio group when applicable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1610,8 +1610,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1624,10 +1624,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, keyboard navigation will loop from last item to first, and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.loop",
             "default": null,
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1635,10 +1635,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1646,10 +1646,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1662,8 +1662,8 @@
         "type": "TypeAlias RadioGroupCardCompactEmits<T>: RadioGroupCompactEmits<T>",
         "resolvedType": "{ \"update:modelValue\": [payload: T | null] }",
         "description": "Events for the RadioGroupCardCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -1673,8 +1673,8 @@
             "parameters": "payload: T | null",
             "required": true,
             "description": "Event handler called when the radio group value changes",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1686,8 +1686,8 @@
         "type": "TypeAlias RadioGroupCardCompactSlots<T>",
         "resolvedType": "{ description?: ((props: { item: T; }) => any) }",
         "description": "Slots for the RadioGroupCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -1697,8 +1697,8 @@
             "parameters": "((props: { item: T; }) => any) | undefined",
             "required": false,
             "description": "Slot for rendering custom description content within the radio card.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcardcompactslots.callables.description",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcardcompactslots.callables.description",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1706,8 +1706,8 @@
                 "type": "{ item: T; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.type",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.type",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1726,8 +1726,8 @@
         "type": "Interface RadioGroupCompactProps<T>",
         "resolvedType": "{ items: T[]; itemProps?: RadioGroupItemProps; controlProps?: RadioGroupControlProps; indicatorProps?: RadioGroupIndicatorProps; labelProps?: RadioGroupLabelProps; modelValue?: T['value'] | null; defaultValue?: T['value']; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; loop?: boolean; name?: string; required?: boolean }",
         "description": "Properties for the RadioGroupCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.props",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.props",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -1735,10 +1735,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -1746,10 +1746,10 @@
             "type": "RadioGroupItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupItemProps",
@@ -1757,8 +1757,8 @@
                 "type": "RadioGroupItemProps",
                 "resolvedType": "{ value: boolean | import(\"@/index\").DefinedValue; disabled?: boolean; name?: string; required?: boolean }",
                 "description": "Properties for the RadioGroupItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1767,10 +1767,10 @@
                     "type": "boolean | import(\"@/index\").DefinedValue",
                     "required": true,
                     "description": "The value given as data when submitted with a `name`.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1778,10 +1778,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the radio item.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1789,10 +1789,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.name",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.name",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1800,10 +1800,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.required",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.required",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1816,10 +1816,10 @@
             "type": "RadioGroupControlProps",
             "required": false,
             "description": "Properties forwarded to the control element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.controlprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.controlprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupControlProps",
@@ -1827,8 +1827,8 @@
                 "type": "RadioGroupControlProps",
                 "resolvedType": "{ id?: string; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1837,10 +1837,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Id of the element",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.id",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.id",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                    "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1848,10 +1848,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1859,10 +1859,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1870,10 +1870,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1881,10 +1881,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1897,10 +1897,10 @@
             "type": "RadioGroupIndicatorProps",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioGroupIndicatorProps",
@@ -1908,8 +1908,8 @@
                 "type": "RadioGroupIndicatorProps",
                 "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the RadioGroupIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1918,10 +1918,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1929,10 +1929,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1940,10 +1940,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1956,10 +1956,10 @@
             "type": "RadioGroupLabelProps",
             "required": false,
             "description": "Properties forwarded to the label element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.labelprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.labelprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "LabelProps",
@@ -1967,8 +1967,8 @@
                 "type": "RadioGroupLabelProps",
                 "resolvedType": "{ for?: string }",
                 "description": "Properties for the Label component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops",
-                "sourcePath": "packages/headless/src/components/label/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops",
+                "sourcePath": "packages/aria/src/components/label/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1977,10 +1977,10 @@
                     "type": "string",
                     "required": false,
                     "description": "The id of the element the label is associated with.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_label_types.labelprops.members.for",
+                    "descriptionKey": "api.generated.packages_aria_src_components_label_types.labelprops.members.for",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/label/types.ts",
+                    "sourcePath": "packages/aria/src/components/label/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1993,10 +1993,10 @@
             "type": "T['value'] | null",
             "required": false,
             "description": "The controlled value of the radio item to check. Can be bound as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2004,10 +2004,10 @@
             "type": "T['value']",
             "required": false,
             "description": "The value of the radio item that should be checked when initially rendered. Use when you do not need to control the\nstate of the radio items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2015,10 +2015,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with radio items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2026,10 +2026,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -2037,8 +2037,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2051,10 +2051,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the radio group when applicable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2062,8 +2062,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2076,10 +2076,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, keyboard navigation will loop from last item to first, and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.loop",
             "default": null,
             "inheritedFrom": "loop",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2087,10 +2087,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2098,10 +2098,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -2114,8 +2114,8 @@
         "type": "TypeAlias RadioGroupCompactEmits<T>: RadioGroupRootEmits<T>",
         "resolvedType": "{ \"update:modelValue\": [payload: T | null] }",
         "description": "Events for the RadioGroupCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -2125,8 +2125,8 @@
             "parameters": "payload: T | null",
             "required": true,
             "description": "Event handler called when the radio group value changes",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2140,8 +2140,8 @@
         "type": "Interface RadioGroupControlProps",
         "resolvedType": "{ id?: string; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the RadioGroupControl component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.props",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.props",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2149,10 +2149,10 @@
             "type": "string",
             "required": false,
             "description": "Id of the element",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.id",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2160,10 +2160,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -2171,8 +2171,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2185,10 +2185,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -2196,10 +2196,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2207,10 +2207,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupcontrolprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupcontrolprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2247,8 +2247,8 @@
         "type": "Interface RadioGroupIndicatorProps",
         "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the RadioGroupIndicator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.props",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.props",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2256,10 +2256,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2267,10 +2267,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -2278,10 +2278,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupindicatorprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupindicatorprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -2318,8 +2318,8 @@
         "type": "Interface RadioGroupItemProps",
         "resolvedType": "{ value: boolean | import(\"@/index\").DefinedValue; disabled?: boolean; name?: string; required?: boolean }",
         "description": "Properties for the RadioGroupItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.props",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.props",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2327,10 +2327,10 @@
             "type": "boolean | import(\"@/index\").DefinedValue",
             "required": true,
             "description": "The value given as data when submitted with a `name`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DefinedWithBooleanValue",
@@ -2338,8 +2338,8 @@
                 "type": "boolean | import(\"@/index\").DefinedValue",
                 "resolvedType": "boolean | DefinedValue",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.definedwithbooleanvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.definedwithbooleanvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2352,10 +2352,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the radio item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2363,10 +2363,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2374,10 +2374,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitemprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitemprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -2390,8 +2390,8 @@
         "type": "TypeAlias RadioGroupItemEmits",
         "resolvedType": "{ select: [event: RadioSelectEvent] }",
         "description": "Events for the RadioGroupItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitememits.emits",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitememits.emits",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2401,8 +2401,8 @@
             "parameters": "event: RadioSelectEvent",
             "required": true,
             "description": "Event handler called when the radio item is selected",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogroupitememits.callables.select",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogroupitememits.callables.select",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "RadioSelectEvent",
@@ -2410,8 +2410,8 @@
                 "type": "CustomEvent<{ originalEvent: MouseEvent | KeyboardEvent; value: DefinedWithBooleanValue; }>",
                 "resolvedType": null,
                 "description": "Type information for RadioSelectEvent.",
-                "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radioselectevent",
-                "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radioselectevent",
+                "sourcePath": "packages/aria/src/components/radio-group/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2431,8 +2431,8 @@
         "type": "Interface RadioGroupRootProps<T>",
         "resolvedType": "{ modelValue?: T | null; defaultValue?: T; disabled?: boolean; orientation?: DataOrientation; dir?: Direction; loop?: boolean; name?: string; required?: boolean }",
         "description": "Properties for the RadioGroupRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.props",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.props",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [
           {
@@ -2440,10 +2440,10 @@
             "type": "T | null",
             "required": false,
             "description": "The controlled value of the radio item to check. Can be bound as `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2451,10 +2451,10 @@
             "type": "T",
             "required": false,
             "description": "The value of the radio item that should be checked when initially rendered. Use when you do not need to control the\nstate of the radio items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2462,10 +2462,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with radio items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2473,10 +2473,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -2484,8 +2484,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2498,10 +2498,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the radio group when applicable.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2509,8 +2509,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2523,10 +2523,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, keyboard navigation will loop from last item to first, and vice versa.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.loop",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.loop",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           },
           {
@@ -2534,10 +2534,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -2545,10 +2545,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -2561,8 +2561,8 @@
         "type": "TypeAlias RadioGroupRootEmits<T>",
         "resolvedType": "{ \"update:modelValue\": [payload: T | null] }",
         "description": "Events for the RadioGroupRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootemits.emits",
-        "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootemits.emits",
+        "sourcePath": "packages/aria/src/components/radio-group/types.ts",
         "typeParameters": ["TypeParameter T"],
         "members": [],
         "callables": [
@@ -2572,8 +2572,8 @@
             "parameters": "payload: T | null",
             "required": true,
             "description": "Event handler called when the radio group value changes",
-            "descriptionKey": "api.generated.packages_headless_src_components_radio_group_types.radiogrouprootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/radio-group/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_radio_group_types.radiogrouprootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/radio-group/types.ts",
             "referencedTypes": []
           }
         ],

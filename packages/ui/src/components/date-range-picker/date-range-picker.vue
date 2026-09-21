@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { DateRangePickerCompact, provideDateRangePickerUi } from '@soybeanjs/headless/date-range-picker';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { DateRangePickerCompact, provideDateRangePickerUi } from '@vean/aria/date-range-picker';
 import { dateRangePickerVariants } from '@/styles/date-range-picker';
 import CalendarRange from '../calendar-range/calendar-range.vue';
 import type { DateRangePickerProps, DateRangePickerEmits, DateRangePickerSlots } from './types';

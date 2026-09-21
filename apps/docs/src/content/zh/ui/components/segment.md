@@ -18,7 +18,7 @@ head:
 
 - 🎯 互斥单选——同一时刻只有一个分段处于选中态，由 `useControllableState` 支撑
 - 🎚 受控 / 非受控——`v-model` 与 `defaultValue`（泛型值通过 `T extends SegmentOptionData` 获得类型安全）
-- 🧩 数据驱动组合——传入 `items`，由 headless `SegmentCompact` 负责遍历与指示器布局
+- 🧩 数据驱动组合——传入 `items`，由 Aria `SegmentCompact` 负责遍历与指示器布局
 - ✨ 可选滑动指示器——`enableIndicator`（默认 `true`），可通过 `indicator` 插槽完全自定义
 - ⌨️ Roving focus 键盘导航——方向键在分段间移动焦点，`loop` 循环回绕，RTL 下方向自动反转
 - 🎨 6 尺寸 × 2 方向 × 2 形状（square/rounded）× 2 填充（auto/full）——由 `segmentVariants` 提供
@@ -27,9 +27,9 @@ head:
 
 ## 组件族系
 
-- `SSegment`——样式包装层，透传 props 给 headless compact 并注入 `segmentVariants` 类
-- `SegmentRoot` / `SegmentList` / `SegmentTrigger` / `SegmentIndicator`（headless）— 包装 Tabs 的领域基元；DOM 使用 `data-soybean-segment-*`
-- `SegmentCompact`（headless）——由上述基元数据驱动组合；无样式使用时从 `@soybeanjs/headless/segment` 导入
+- `SSegment`——样式包装层，透传 props 给 Aria compact 并注入 `segmentVariants` 类
+- `SegmentRoot` / `SegmentList` / `SegmentTrigger` / `SegmentIndicator`（Aria）— 包装 Tabs 的领域基元；DOM 使用 `data-vean-segment-*`
+- `SegmentCompact`（Aria）——由上述基元数据驱动组合；无样式使用时从 `@vean/aria/segment` 导入
 
 ## 演示
 
@@ -43,22 +43,22 @@ head:
 
 ### 架构与行业对标差异
 
-`SegmentCompact` 组合了 headless 的 `SegmentRoot`/`SegmentList`/`SegmentTrigger`/`SegmentIndicator` 基元（各自包装对应的 Tabs 部件）：负责遍历 `items`、转发 `listProps`/`triggerProps`/`indicatorProps`，并暴露 `item`/`indicator` 插槽。`SegmentTrigger` 沿用 Tabs 的 ARIA 模式（`role="tab"` + 焦点漫游），因此 `loop` 与 `dir`（RTL）行为与 Tabs 完全一致。`SSegment` 是薄包装层，仅计算 `segmentVariants`（`tabsVariants` 的别名）并调用 `provideSegmentUi`。指示器通过异步布局测量定位（resize observer + post-flush watch），因此在挂载后一帧出现。`segment` 对应分段控件模式；各对标库原生提供该模式，唯一例外是 shadcn，通常以 Tabs 替代。
+`SegmentCompact` 组合了 Aria 的 `SegmentRoot`/`SegmentList`/`SegmentTrigger`/`SegmentIndicator` 基元（各自包装对应的 Tabs 部件）：负责遍历 `items`、转发 `listProps`/`triggerProps`/`indicatorProps`，并暴露 `item`/`indicator` 插槽。`SegmentTrigger` 沿用 Tabs 的 ARIA 模式（`role="tab"` + 焦点漫游），因此 `loop` 与 `dir`（RTL）行为与 Tabs 完全一致。`SSegment` 是薄包装层，仅计算 `segmentVariants`（`tabsVariants` 的别名）并调用 `provideSegmentUi`。指示器通过异步布局测量定位（resize observer + post-flush watch），因此在挂载后一帧出现。`segment` 对应分段控件模式；各对标库原生提供该模式，唯一例外是 shadcn，通常以 Tabs 替代。
 
-| 能力                    | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :---------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 单选（互斥）            |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 受控 / 非受控           |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 数据驱动 items          |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 滑动指示器              |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| Roving focus 方向键     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   —    |
-| Loop 循环导航           |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| RTL 方向感知            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 方向（竖排）            |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| 尺寸 × 形状 × 填充      |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| 条目级禁用              |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 自定义条目 / 指示器插槽 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 能力                    | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :---------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 单选（互斥）            |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 受控 / 非受控           |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 数据驱动 items          |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 滑动指示器              |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Roving focus 方向键     |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   —    |
+| Loop 循环导航           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| RTL 方向感知            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 方向（竖排）            |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| 尺寸 × 形状 × 填充      |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| 条目级禁用              |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 自定义条目 / 指示器插槽 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
 
 ### 使用注意
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { SCheckbox, SCheckboxCardGroup } from '@soybeanjs/ui';
-import type { CheckboxCardGroupOptionData, CheckedState } from '@soybeanjs/ui';
+import { SCheckbox, SCheckboxCardGroup } from '@vean/ui';
+import type { CheckboxCardGroupOptionData, CheckedState } from '@vean/ui';
 
 const selected = ref<string[]>(['apple', 'orange']);
 

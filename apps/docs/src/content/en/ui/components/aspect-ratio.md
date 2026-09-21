@@ -35,15 +35,15 @@ head:
 
 ### Architecture
 
-`SAspectRatio` is a headless primitive — the UI layer re-exports the headless component directly. It uses the padding-bottom aspect-ratio technique: a wrapper `<div>` with `position: relative; width: 100%` and `paddingBottom: (1/ratio) * 100%`, and an inner element (via `Primitive`) with `position: absolute; inset: 0` that fills the wrapper. The inner element's `paddingBottom` is reactive — changing `ratio` updates the layout instantly.
+`SAspectRatio` is an Aria primitive — the UI layer re-exports the Aria component directly. It uses the padding-bottom aspect-ratio technique: a wrapper `<div>` with `position: relative; width: 100%` and `paddingBottom: (1/ratio) * 100%`, and an inner element (via `Primitive`) with `position: absolute; inset: 0` that fills the wrapper. The inner element's `paddingBottom` is reactive — changing `ratio` updates the layout instantly.
 
 The inline positioning styles (`position: relative`, `position: absolute; inset: 0`) are structural — they are essential to the padding-bottom technique and are not decorative. This matches the Radix UI / shadcn-ui AspectRatio implementation.
 
 ### Benchmark differences
 
-| Aspect       | SoybeanUI                 | shadcn/ui `AspectRatio`   | MUI `AspectRatio`         | Ant Design |
+| Aspect       | VeanUI                    | shadcn/ui `AspectRatio`   | MUI `AspectRatio`         | Ant Design |
 | :----------- | :------------------------ | :------------------------ | :------------------------ | :--------- |
-| Architecture | headless + UI re-export   | headless + styled         | styled only               | —          |
+| Architecture | Aria + UI re-export       | Aria + styled             | styled only               | —          |
 | Technique    | padding-bottom + absolute | padding-bottom + absolute | padding-bottom + absolute | —          |
 | Polymorphic  | `as` prop via `Primitive` | —                         | —                         | —          |
 | Slot scope   | `aspect` percentage       | —                         | —                         | —          |
@@ -57,8 +57,8 @@ Pass `:ratio="16/9"` (note the `:` for Vue expression binding): `<SAspectRatio :
 **Can I render the inner element as something other than a div?**
 Yes. Use the `as` prop: `<SAspectRatio as="section">...</SAspectRatio>` renders the inner element as a `<section>`.
 
-**Why are there inline styles in the headless layer?**
-The `position: relative` on the wrapper and `position: absolute; inset: 0` on the inner element are structural — they are required for the padding-bottom technique to work. Without them, the aspect ratio cannot be maintained. This is an accepted deviation from the "no styles in headless" rule, consistent with Radix UI and shadcn/ui.
+**Why are there inline styles in the Aria layer?**
+The `position: relative` on the wrapper and `position: absolute; inset: 0` on the inner element are structural — they are required for the padding-bottom technique to work. Without them, the aspect ratio cannot be maintained. This is an accepted deviation from the "no styles in Aria" rule, consistent with Radix UI and shadcn/ui.
 
 **What is the `aspect` slot prop?**
 The default slot receives `aspect` — the computed padding percentage (e.g., `56.25` for 16:9). You can use it for debugging or custom layout logic: `<SAspectRatio v-slot="{ aspect }">...</SAspectRatio>`.

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ trigger: ClassValue; anchor: ClassValue; positioner: ClassValue; popup: ClassValue; arrow: ClassValue; subTrigger: ClassValue; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardui",
-                "sourcePath": "packages/headless/src/components/hover-card/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardui",
+                "sourcePath": "packages/aria/src/components/hover-card/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.placement",
             "default": null,
             "inheritedFrom": "placement",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.showarrow",
             "default": null,
             "inheritedFrom": "showArrow",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "PopperAnchorProps",
@@ -125,8 +125,8 @@
                 "type": "PopperAnchorProps",
                 "resolvedType": "{ reference?: ReferenceElement; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the anchor (reference) element, optionally overriding the reference.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops",
-                "sourcePath": "packages/headless/src/components/popper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -135,10 +135,10 @@
                     "type": "ReferenceElement",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops.members.reference",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops.members.reference",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -146,10 +146,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -157,10 +157,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -176,7 +176,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.portalprops",
             "default": null,
             "inheritedFrom": "portalProps",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardPortalProps",
@@ -184,8 +184,8 @@
                 "type": "HoverCardPortalProps",
                 "resolvedType": "{ to?: string | HTMLElement; disabled?: boolean; defer?: boolean; forceMount?: boolean }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops",
-                "sourcePath": "packages/headless/src/components/hover-card/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops",
+                "sourcePath": "packages/aria/src/components/hover-card/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -194,10 +194,10 @@
                     "type": "string | HTMLElement",
                     "required": false,
                     "description": "Vue native teleport component prop `:to`\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#basic-usage}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.to",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.to",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -205,10 +205,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Disable teleport and render the component inline\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#disabling-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -216,10 +216,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.defer",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.defer",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -227,10 +227,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -246,7 +246,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.positionerprops",
             "default": null,
             "inheritedFrom": "positionerProps",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardPositionerProps",
@@ -254,8 +254,8 @@
                 "type": "HoverCardPositionerProps",
                 "resolvedType": "{ placement?: Placement; side?: Side; sideOffset?: number; sideFlip?: boolean; align?: Align; alignOffset?: number; alignFlip?: boolean; avoidCollisions?: boolean; collisionBoundary?: Element | (Element | null)[] | null; collisionPadding?: Padding; arrowPadding?: number; hideShiftedArrow?: boolean; sticky?: 'partial' | 'always'; hideWhenDetached?: boolean; positionStrategy?: 'fixed' | 'absolute'; updatePositionStrategy?: 'always' | 'optimized'; disableUpdateOnLayoutShift?: boolean; prioritizePosition?: boolean; reference?: ReferenceElement; trapFocus?: boolean; disableHoverableContent?: boolean; onGracePointerExit?: (() => void); forceMount?: boolean }",
                 "description": "Properties for the HoverCardPositioner component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -264,10 +264,10 @@
                     "type": "Placement",
                     "required": false,
                     "description": "The placement of the floating element.\n\nIf used, it will override the `side` and `align` props.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.placement",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.placement",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -275,10 +275,10 @@
                     "type": "Side",
                     "required": false,
                     "description": "The preferred side of the trigger to render against when open. Will be reversed when collisions occur and\navoidCollisions is enabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.side",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.side",
                     "default": "'bottom'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -286,10 +286,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The distance in pixels from the trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sideoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -297,10 +297,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip to the opposite side when colliding with boundary.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sideflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sideflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -308,10 +308,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "The preferred alignment against the trigger. May change when collisions occur.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.align",
                     "default": "'center'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -319,10 +319,10 @@
                     "type": "number",
                     "required": false,
                     "description": "An offset in pixels from the `start` or `end` alignment options.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.alignoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.alignoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -330,10 +330,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip alignment when colliding with boundary.\nMay only occur when `prioritizePosition` is true.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.alignflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.alignflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -341,10 +341,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, overrides the side and align preferences to prevent collisions with boundary edges.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.avoidcollisions",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.avoidcollisions",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -352,10 +352,10 @@
                     "type": "Element | (Element | null)[] | null",
                     "required": false,
                     "description": "The element used as the collision boundary. By default this is the viewport, though you can provide additional\nelement(s) to be included in this check.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.collisionboundary",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.collisionboundary",
                     "default": "[ ]",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -363,10 +363,10 @@
                     "type": "Padding",
                     "required": false,
                     "description": "The distance in pixels from the boundary edges where collision detection should occur. Accepts a number (same for\nall sides), or a partial padding object, for example: { top: 20, left: 20 }.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.collisionpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.collisionpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -374,10 +374,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The padding between the arrow and the edges of the content. If your content has border-radius, this will prevent it\nfrom overflowing the corners.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.arrowpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.arrowpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -385,10 +385,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hides the arrow when it cannot be centered\nto the reference element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.hideshiftedarrow",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.hideshiftedarrow",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -396,10 +396,10 @@
                     "type": "'partial' | 'always'",
                     "required": false,
                     "description": "The sticky behavior on the align axis. `partial` will keep the content in the boundary as long as the trigger is at\nleast partially in the boundary whilst \"always\" will keep the content in the boundary regardless.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sticky",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sticky",
                     "default": "'partial'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -407,10 +407,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to hide the content when the trigger becomes fully occluded.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.hidewhendetached",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.hidewhendetached",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -418,10 +418,10 @@
                     "type": "'fixed' | 'absolute'",
                     "required": false,
                     "description": "The type of CSS position property to use.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.positionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.positionstrategy",
                     "default": "'fixed'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -429,10 +429,10 @@
                     "type": "'always' | 'optimized'",
                     "required": false,
                     "description": "Strategy to update the position of the floating element on every animation frame.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.updatepositionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.updatepositionstrategy",
                     "default": "'optimized'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -440,10 +440,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to disable the update position for the content when the layout shifted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.disableupdateonlayoutshift",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.disableupdateonlayoutshift",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -451,10 +451,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Force content to be position within the viewport. Might overlap the reference element, which may not be desired.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.prioritizeposition",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.prioritizeposition",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -462,10 +462,10 @@
                     "type": "ReferenceElement",
                     "required": false,
                     "description": "The custom element or virtual element that will be set as the reference to position the floating element. If\nprovided, it will replace the default anchor element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.reference",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.reference",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -473,10 +473,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.trapfocus",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.trapfocus",
                     "default": "modal",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -484,10 +484,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hovering the popup closes instead of keeping it open (the grace area is disabled,\nso leaving the trigger closes the layer immediately).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.disablehoverablecontent",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.disablehoverablecontent",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -495,10 +495,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -509,8 +509,8 @@
                     "parameters": "(() => void) | undefined",
                     "required": false,
                     "description": "Callback invoked when the pointer finally leaves the grace area. Lets an upper layer (e.g.\nTooltip) run area-scoped close logic without registering its own second grace area.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.callables.ongracepointerexit",
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.callables.ongracepointerexit",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   }
                 ]
@@ -525,7 +525,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.popupprops",
             "default": null,
             "inheritedFrom": "popupProps",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardPopupProps",
@@ -533,8 +533,8 @@
                 "type": "HoverCardPopupProps",
                 "resolvedType": null,
                 "description": "Properties for the HoverCardPopup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpopupprops",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpopupprops",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -550,7 +550,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.arrowprops",
             "default": null,
             "inheritedFrom": "arrowProps",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardArrowProps",
@@ -558,8 +558,8 @@
                 "type": "HoverCardArrowProps",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardarrowprops",
-                "sourcePath": "packages/headless/src/components/hover-card/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardarrowprops",
+                "sourcePath": "packages/aria/src/components/hover-card/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -575,7 +575,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -586,7 +586,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -597,7 +597,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.opendelay",
             "default": null,
             "inheritedFrom": "openDelay",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -608,7 +608,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.closedelay",
             "default": null,
             "inheritedFrom": "closeDelay",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -619,7 +619,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -627,8 +627,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -644,7 +644,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.modal",
             "default": null,
             "inheritedFrom": "modal",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -655,7 +655,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -680,7 +680,7 @@
             "required": true,
             "description": "Event handler called when the open state of the hover card changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -690,7 +690,7 @@
             "required": true,
             "description": "Event handler called when the escape key is down. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardemits.callables.escapekeydown",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "KeyboardEvent",
@@ -714,7 +714,7 @@
             "required": true,
             "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardemits.callables.pointerdownoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "PointerDownOutsideEvent",
@@ -722,8 +722,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -738,7 +738,7 @@
             "required": true,
             "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardemits.callables.focusoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -746,8 +746,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -760,11 +760,11 @@
           {
             "name": "HoverCardCompactEmits",
             "kind": "typeAlias",
-            "type": "import(\"@soybeanjs/headless\").HoverCardRootEmits & import(\"../../../node_modules/@soybeanjs/headless/src/components/hover-card/types\").HoverCardPositionerImplEmits",
+            "type": "import(\"@vean/aria\").HoverCardRootEmits & import(\"../../../node_modules/@vean/aria/src/components/hover-card/types\").HoverCardPositionerImplEmits",
             "resolvedType": "{ \"update:open\": [value: boolean, reason?: PopperOpenChangeReason | undefined]; escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent] }",
             "description": "Events for the HoverCardCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -775,8 +775,8 @@
                 "parameters": "value: boolean, reason?: PopperOpenChangeReason | undefined",
                 "required": true,
                 "description": "Event handler called when the open state of the hover card changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "referencedTypes": []
               },
               {
@@ -785,8 +785,8 @@
                 "parameters": "event: KeyboardEvent",
                 "required": true,
                 "description": "Event handler called when the escape key is down. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.escapekeydown",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.escapekeydown",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -795,8 +795,8 @@
                 "parameters": "event: PointerDownOutsideEvent",
                 "required": true,
                 "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.pointerdownoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.pointerdownoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -805,8 +805,8 @@
                 "parameters": "event: FocusOutsideEvent",
                 "required": true,
                 "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.focusoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.focusoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               }
             ]
@@ -831,7 +831,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardslots.callables.default",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -841,7 +841,7 @@
             "required": false,
             "description": "Custom content for the trigger slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_hover_card_types.hovercardslots.callables.trigger",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           }
         ],
@@ -852,8 +852,8 @@
             "type": "{ HoverCardCompact?: () => any; trigger?: () => any; }",
             "resolvedType": "{ HoverCardCompact?: (() => any); trigger?: (() => any) }",
             "description": "Slots for the HoverCardCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactslots",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactslots",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -864,8 +864,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "referencedTypes": []
               },
               {
@@ -874,8 +874,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the trigger slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactslots.callables.trigger",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactslots.callables.trigger",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -891,8 +891,8 @@
         "type": "Interface HoverCardCompactProps",
         "resolvedType": "{ placement?: import(\"@/index\").Placement; showArrow?: boolean; triggerProps?: PopperAnchorProps; portalProps?: HoverCardPortalProps; positionerProps?: HoverCardPositionerProps; popupProps?: HoverCardPopupProps; arrowProps?: HoverCardArrowProps; defaultOpen?: boolean; open?: boolean; openDelay?: number; closeDelay?: number; dir?: Direction; modal?: boolean; disabled?: boolean }",
         "description": "Properties for the HoverCardCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.props",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.props",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -900,10 +900,10 @@
             "type": "import(\"@/index\").Placement",
             "required": false,
             "description": "Placement.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.placement",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.placement",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -911,10 +911,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to show an arrow.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.showarrow",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.showarrow",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -922,10 +922,10 @@
             "type": "PopperAnchorProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "PopperAnchorProps",
@@ -933,8 +933,8 @@
                 "type": "PopperAnchorProps",
                 "resolvedType": "{ reference?: ReferenceElement; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the anchor (reference) element, optionally overriding the reference.",
-                "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops",
-                "sourcePath": "packages/headless/src/components/popper/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -943,10 +943,10 @@
                     "type": "ReferenceElement",
                     "required": false,
                     "description": "",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops.members.reference",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops.members.reference",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -954,10 +954,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -965,10 +965,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_popper_types.popperanchorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperanchorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -981,10 +981,10 @@
             "type": "HoverCardPortalProps",
             "required": false,
             "description": "Properties forwarded to the portal element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.portalprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.portalprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardPortalProps",
@@ -992,8 +992,8 @@
                 "type": "HoverCardPortalProps",
                 "resolvedType": "{ to?: string | HTMLElement; disabled?: boolean; defer?: boolean; forceMount?: boolean }",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops",
-                "sourcePath": "packages/headless/src/components/hover-card/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops",
+                "sourcePath": "packages/aria/src/components/hover-card/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1002,10 +1002,10 @@
                     "type": "string | HTMLElement",
                     "required": false,
                     "description": "Vue native teleport component prop `:to`\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#basic-usage}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.to",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.to",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1013,10 +1013,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Disable teleport and render the component inline\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#disabling-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1024,10 +1024,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.defer",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.defer",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/portal/types.ts",
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1035,10 +1035,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardportalprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardportalprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1051,10 +1051,10 @@
             "type": "HoverCardPositionerProps",
             "required": false,
             "description": "Properties forwarded to the positioner element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.positionerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.positionerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardPositionerProps",
@@ -1062,8 +1062,8 @@
                 "type": "HoverCardPositionerProps",
                 "resolvedType": "{ placement?: Placement; side?: Side; sideOffset?: number; sideFlip?: boolean; align?: Align; alignOffset?: number; alignFlip?: boolean; avoidCollisions?: boolean; collisionBoundary?: Element | (Element | null)[] | null; collisionPadding?: Padding; arrowPadding?: number; hideShiftedArrow?: boolean; sticky?: 'partial' | 'always'; hideWhenDetached?: boolean; positionStrategy?: 'fixed' | 'absolute'; updatePositionStrategy?: 'always' | 'optimized'; disableUpdateOnLayoutShift?: boolean; prioritizePosition?: boolean; reference?: ReferenceElement; trapFocus?: boolean; disableHoverableContent?: boolean; onGracePointerExit?: (() => void); forceMount?: boolean }",
                 "description": "Properties for the HoverCardPositioner component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1072,10 +1072,10 @@
                     "type": "Placement",
                     "required": false,
                     "description": "The placement of the floating element.\n\nIf used, it will override the `side` and `align` props.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.placement",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.placement",
                     "default": "undefined",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1083,10 +1083,10 @@
                     "type": "Side",
                     "required": false,
                     "description": "The preferred side of the trigger to render against when open. Will be reversed when collisions occur and\navoidCollisions is enabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.side",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.side",
                     "default": "'bottom'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1094,10 +1094,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The distance in pixels from the trigger.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sideoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sideoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1105,10 +1105,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip to the opposite side when colliding with boundary.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sideflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sideflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1116,10 +1116,10 @@
                     "type": "Align",
                     "required": false,
                     "description": "The preferred alignment against the trigger. May change when collisions occur.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.align",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.align",
                     "default": "'center'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1127,10 +1127,10 @@
                     "type": "number",
                     "required": false,
                     "description": "An offset in pixels from the `start` or `end` alignment options.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.alignoffset",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.alignoffset",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1138,10 +1138,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Flip alignment when colliding with boundary.\nMay only occur when `prioritizePosition` is true.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.alignflip",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.alignflip",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1149,10 +1149,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, overrides the side and align preferences to prevent collisions with boundary edges.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.avoidcollisions",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.avoidcollisions",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1160,10 +1160,10 @@
                     "type": "Element | (Element | null)[] | null",
                     "required": false,
                     "description": "The element used as the collision boundary. By default this is the viewport, though you can provide additional\nelement(s) to be included in this check.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.collisionboundary",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.collisionboundary",
                     "default": "[ ]",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1171,10 +1171,10 @@
                     "type": "Padding",
                     "required": false,
                     "description": "The distance in pixels from the boundary edges where collision detection should occur. Accepts a number (same for\nall sides), or a partial padding object, for example: { top: 20, left: 20 }.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.collisionpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.collisionpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1182,10 +1182,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The padding between the arrow and the edges of the content. If your content has border-radius, this will prevent it\nfrom overflowing the corners.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.arrowpadding",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.arrowpadding",
                     "default": "0",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1193,10 +1193,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hides the arrow when it cannot be centered\nto the reference element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.hideshiftedarrow",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.hideshiftedarrow",
                     "default": "true",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1204,10 +1204,10 @@
                     "type": "'partial' | 'always'",
                     "required": false,
                     "description": "The sticky behavior on the align axis. `partial` will keep the content in the boundary as long as the trigger is at\nleast partially in the boundary whilst \"always\" will keep the content in the boundary regardless.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sticky",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sticky",
                     "default": "'partial'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1215,10 +1215,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to hide the content when the trigger becomes fully occluded.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.hidewhendetached",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.hidewhendetached",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1226,10 +1226,10 @@
                     "type": "'fixed' | 'absolute'",
                     "required": false,
                     "description": "The type of CSS position property to use.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.positionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.positionstrategy",
                     "default": "'fixed'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1237,10 +1237,10 @@
                     "type": "'always' | 'optimized'",
                     "required": false,
                     "description": "Strategy to update the position of the floating element on every animation frame.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.updatepositionstrategy",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.updatepositionstrategy",
                     "default": "'optimized'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1248,10 +1248,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether to disable the update position for the content when the layout shifted.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.disableupdateonlayoutshift",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.disableupdateonlayoutshift",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1259,10 +1259,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Force content to be position within the viewport. Might overlap the reference element, which may not be desired.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.prioritizeposition",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.prioritizeposition",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1270,10 +1270,10 @@
                     "type": "ReferenceElement",
                     "required": false,
                     "description": "The custom element or virtual element that will be set as the reference to position the floating element. If\nprovided, it will replace the default anchor element.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.reference",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.reference",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1281,10 +1281,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.trapfocus",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.trapfocus",
                     "default": "modal",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1292,10 +1292,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, hovering the popup closes instead of keeping it open (the grace area is disabled,\nso leaving the trigger closes the layer immediately).",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.disablehoverablecontent",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.disablehoverablecontent",
                     "default": "false",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1303,10 +1303,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1317,8 +1317,8 @@
                     "parameters": "(() => void) | undefined",
                     "required": false,
                     "description": "Callback invoked when the pointer finally leaves the grace area. Lets an upper layer (e.g.\nTooltip) run area-scoped close logic without registering its own second grace area.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.callables.ongracepointerexit",
-                    "sourcePath": "packages/headless/src/components/popper/types.ts",
+                    "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.callables.ongracepointerexit",
+                    "sourcePath": "packages/aria/src/components/popper/types.ts",
                     "referencedTypes": []
                   }
                 ]
@@ -1330,10 +1330,10 @@
             "type": "HoverCardPopupProps",
             "required": false,
             "description": "Properties forwarded to the popup element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.popupprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.popupprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardPopupProps",
@@ -1341,8 +1341,8 @@
                 "type": "HoverCardPopupProps",
                 "resolvedType": null,
                 "description": "Properties for the HoverCardPopup component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpopupprops",
-                "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpopupprops",
+                "sourcePath": "packages/aria/src/components/hover-card/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1355,10 +1355,10 @@
             "type": "HoverCardArrowProps",
             "required": false,
             "description": "Properties forwarded to the arrow element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.arrowprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.arrowprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": [
               {
                 "name": "HoverCardArrowProps",
@@ -1366,8 +1366,8 @@
                 "type": "HoverCardArrowProps",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_index.hovercardarrowprops",
-                "sourcePath": "packages/headless/src/components/hover-card/index.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_index.hovercardarrowprops",
+                "sourcePath": "packages/aria/src/components/hover-card/index.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1380,10 +1380,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the hover card when it is initially rendered. Use when you do not need to control its open state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -1391,10 +1391,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the hover card.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -1402,10 +1402,10 @@
             "type": "number",
             "required": false,
             "description": "The duration from when the pointer enters the trigger until the hover card opens.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.opendelay",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.opendelay",
             "default": null,
             "inheritedFrom": "openDelay",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -1413,10 +1413,10 @@
             "type": "number",
             "required": false,
             "description": "The duration from when the pointer leaves the trigger or popup until the hover card closes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.closedelay",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.closedelay",
             "default": null,
             "inheritedFrom": "closeDelay",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -1424,10 +1424,10 @@
             "type": "Direction",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1435,8 +1435,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1449,10 +1449,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.modal",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.modal",
             "default": null,
             "inheritedFrom": "modal",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1460,10 +1460,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1476,8 +1476,8 @@
         "type": "TypeAlias HoverCardCompactEmits: HoverCardRootEmits & HoverCardPositionerEmits",
         "resolvedType": "{ \"update:open\": [value: boolean, reason?: PopperOpenChangeReason | undefined]; escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent] }",
         "description": "Events for the HoverCardCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1487,8 +1487,8 @@
             "parameters": "value: boolean, reason?: PopperOpenChangeReason | undefined",
             "required": true,
             "description": "Event handler called when the open state of the hover card changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -1497,8 +1497,8 @@
             "parameters": "event: KeyboardEvent",
             "required": true,
             "description": "Event handler called when the escape key is down. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.escapekeydown",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.escapekeydown",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "KeyboardEvent",
@@ -1521,8 +1521,8 @@
             "parameters": "event: PointerDownOutsideEvent",
             "required": true,
             "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.pointerdownoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.pointerdownoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "PointerDownOutsideEvent",
@@ -1530,8 +1530,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1545,8 +1545,8 @@
             "parameters": "event: FocusOutsideEvent",
             "required": true,
             "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactemits.callables.focusoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactemits.callables.focusoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -1554,8 +1554,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1572,8 +1572,8 @@
         "type": "TypeAlias HoverCardCompactSlots",
         "resolvedType": "{ HoverCardCompact?: (() => any); trigger?: (() => any) }",
         "description": "Slots for the HoverCardCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1583,8 +1583,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -1593,8 +1593,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the trigger slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardcompactslots.callables.trigger",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardcompactslots.callables.trigger",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1608,8 +1608,8 @@
         "type": "Interface HoverCardPopupProps",
         "resolvedType": null,
         "description": "Properties for the HoverCardPopup component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpopupprops.props",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpopupprops.props",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1624,8 +1624,8 @@
         "type": "Interface HoverCardPositionerProps",
         "resolvedType": "{ placement?: Placement; side?: Side; sideOffset?: number; sideFlip?: boolean; align?: Align; alignOffset?: number; alignFlip?: boolean; avoidCollisions?: boolean; collisionBoundary?: Element | (Element | null)[] | null; collisionPadding?: Padding; arrowPadding?: number; hideShiftedArrow?: boolean; sticky?: 'partial' | 'always'; hideWhenDetached?: boolean; positionStrategy?: 'fixed' | 'absolute'; updatePositionStrategy?: 'always' | 'optimized'; disableUpdateOnLayoutShift?: boolean; prioritizePosition?: boolean; reference?: ReferenceElement; trapFocus?: boolean; disableHoverableContent?: boolean; onGracePointerExit?: (() => void); forceMount?: boolean }",
         "description": "Properties for the HoverCardPositioner component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.props",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.props",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1633,10 +1633,10 @@
             "type": "Placement",
             "required": false,
             "description": "The placement of the floating element.\n\nIf used, it will override the `side` and `align` props.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.placement",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.placement",
             "default": "undefined",
             "inheritedFrom": "HoverCardPositionerImplProps.placement",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Placement",
@@ -1644,8 +1644,8 @@
                 "type": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
                 "resolvedType": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.placement",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.placement",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1658,10 +1658,10 @@
             "type": "Side",
             "required": false,
             "description": "The preferred side of the trigger to render against when open. Will be reversed when collisions occur and\navoidCollisions is enabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.side",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.side",
             "default": "'bottom'",
             "inheritedFrom": "HoverCardPositionerImplProps.side",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Side",
@@ -1683,10 +1683,10 @@
             "type": "number",
             "required": false,
             "description": "The distance in pixels from the trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sideoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sideoffset",
             "default": "0",
             "inheritedFrom": "HoverCardPositionerImplProps.sideOffset",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1694,10 +1694,10 @@
             "type": "boolean",
             "required": false,
             "description": "Flip to the opposite side when colliding with boundary.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sideflip",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sideflip",
             "default": "true",
             "inheritedFrom": "HoverCardPositionerImplProps.sideFlip",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1705,10 +1705,10 @@
             "type": "Align",
             "required": false,
             "description": "The preferred alignment against the trigger. May change when collisions occur.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.align",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.align",
             "default": "'center'",
             "inheritedFrom": "HoverCardPositionerImplProps.align",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Align",
@@ -1716,8 +1716,8 @@
                 "type": "'start' | 'center' | 'end'",
                 "resolvedType": "'start' | 'center' | 'end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.align",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.align",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1730,10 +1730,10 @@
             "type": "number",
             "required": false,
             "description": "An offset in pixels from the `start` or `end` alignment options.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.alignoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.alignoffset",
             "default": "0",
             "inheritedFrom": "HoverCardPositionerImplProps.alignOffset",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1741,10 +1741,10 @@
             "type": "boolean",
             "required": false,
             "description": "Flip alignment when colliding with boundary.\nMay only occur when `prioritizePosition` is true.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.alignflip",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.alignflip",
             "default": "true",
             "inheritedFrom": "HoverCardPositionerImplProps.alignFlip",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1752,10 +1752,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, overrides the side and align preferences to prevent collisions with boundary edges.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.avoidcollisions",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.avoidcollisions",
             "default": "true",
             "inheritedFrom": "HoverCardPositionerImplProps.avoidCollisions",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1763,10 +1763,10 @@
             "type": "Element | (Element | null)[] | null",
             "required": false,
             "description": "The element used as the collision boundary. By default this is the viewport, though you can provide additional\nelement(s) to be included in this check.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.collisionboundary",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.collisionboundary",
             "default": "[ ]",
             "inheritedFrom": "HoverCardPositionerImplProps.collisionBoundary",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Element",
@@ -1788,10 +1788,10 @@
             "type": "Padding",
             "required": false,
             "description": "The distance in pixels from the boundary edges where collision detection should occur. Accepts a number (same for\nall sides), or a partial padding object, for example: { top: 20, left: 20 }.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.collisionpadding",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.collisionpadding",
             "default": "0",
             "inheritedFrom": "HoverCardPositionerImplProps.collisionPadding",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Padding",
@@ -1813,10 +1813,10 @@
             "type": "number",
             "required": false,
             "description": "The padding between the arrow and the edges of the content. If your content has border-radius, this will prevent it\nfrom overflowing the corners.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.arrowpadding",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.arrowpadding",
             "default": "0",
             "inheritedFrom": "HoverCardPositionerImplProps.arrowPadding",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1824,10 +1824,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, hides the arrow when it cannot be centered\nto the reference element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.hideshiftedarrow",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.hideshiftedarrow",
             "default": "true",
             "inheritedFrom": "HoverCardPositionerImplProps.hideShiftedArrow",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1835,10 +1835,10 @@
             "type": "'partial' | 'always'",
             "required": false,
             "description": "The sticky behavior on the align axis. `partial` will keep the content in the boundary as long as the trigger is at\nleast partially in the boundary whilst \"always\" will keep the content in the boundary regardless.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.sticky",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.sticky",
             "default": "'partial'",
             "inheritedFrom": "HoverCardPositionerImplProps.sticky",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1846,10 +1846,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to hide the content when the trigger becomes fully occluded.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.hidewhendetached",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.hidewhendetached",
             "default": "false",
             "inheritedFrom": "HoverCardPositionerImplProps.hideWhenDetached",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1857,10 +1857,10 @@
             "type": "'fixed' | 'absolute'",
             "required": false,
             "description": "The type of CSS position property to use.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.positionstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.positionstrategy",
             "default": "'fixed'",
             "inheritedFrom": "HoverCardPositionerImplProps.positionStrategy",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1868,10 +1868,10 @@
             "type": "'always' | 'optimized'",
             "required": false,
             "description": "Strategy to update the position of the floating element on every animation frame.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.updatepositionstrategy",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.updatepositionstrategy",
             "default": "'optimized'",
             "inheritedFrom": "HoverCardPositionerImplProps.updatePositionStrategy",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1879,10 +1879,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to disable the update position for the content when the layout shifted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.disableupdateonlayoutshift",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.disableupdateonlayoutshift",
             "default": "false",
             "inheritedFrom": "HoverCardPositionerImplProps.disableUpdateOnLayoutShift",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1890,10 +1890,10 @@
             "type": "boolean",
             "required": false,
             "description": "Force content to be position within the viewport. Might overlap the reference element, which may not be desired.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.prioritizeposition",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.prioritizeposition",
             "default": "false",
             "inheritedFrom": "HoverCardPositionerImplProps.prioritizePosition",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1901,10 +1901,10 @@
             "type": "ReferenceElement",
             "required": false,
             "description": "The custom element or virtual element that will be set as the reference to position the floating element. If\nprovided, it will replace the default anchor element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.reference",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.reference",
             "default": null,
             "inheritedFrom": "HoverCardPositionerImplProps.reference",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "ReferenceElement",
@@ -1926,10 +1926,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.trapfocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.trapfocus",
             "default": "modal",
             "inheritedFrom": "HoverCardPositionerImplProps.trapFocus",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1937,10 +1937,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, hovering the popup closes instead of keeping it open (the grace area is disabled,\nso leaving the trigger closes the layer immediately).",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.disablehoverablecontent",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.disablehoverablecontent",
             "default": "false",
             "inheritedFrom": "HoverCardPositionerImplProps.disableHoverableContent",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1948,10 +1948,10 @@
             "type": "(() => void)",
             "required": false,
             "description": "Callback invoked when the pointer finally leaves the grace area. Lets an upper layer (e.g.\nTooltip) run area-scoped close logic without registering its own second grace area.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.ongracepointerexit",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.ongracepointerexit",
             "default": null,
             "inheritedFrom": "HoverCardPositionerImplProps.onGracePointerExit",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -1959,10 +1959,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1975,8 +1975,8 @@
         "type": "TypeAlias HoverCardPositionerEmits: HoverCardPositionerImplEmits",
         "resolvedType": "{ escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent] }",
         "description": "Events for the HoverCardPositioner component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositioneremits.emits",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositioneremits.emits",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1986,8 +1986,8 @@
             "parameters": "event: KeyboardEvent",
             "required": true,
             "description": "Event handler called when the escape key is down. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositioneremits.callables.escapekeydown",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositioneremits.callables.escapekeydown",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "KeyboardEvent",
@@ -2010,8 +2010,8 @@
             "parameters": "event: PointerDownOutsideEvent",
             "required": true,
             "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositioneremits.callables.pointerdownoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositioneremits.callables.pointerdownoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "PointerDownOutsideEvent",
@@ -2019,8 +2019,8 @@
                 "type": "CustomEvent<{ originalEvent: PointerEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.pointerdownoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.pointerdownoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2034,8 +2034,8 @@
             "parameters": "event: FocusOutsideEvent",
             "required": true,
             "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositioneremits.callables.focusoutside",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositioneremits.callables.focusoutside",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": [
               {
                 "name": "FocusOutsideEvent",
@@ -2043,8 +2043,8 @@
                 "type": "CustomEvent<{ originalEvent: FocusEvent; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.focusoutsideevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.focusoutsideevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2060,8 +2060,8 @@
             "type": "{ escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: import(\"@/index\").PointerDownOutsideEvent]; focusOutside: [event: import(\"@/index\").FocusOutsideEvent]; }",
             "resolvedType": "{ escapeKeyDown: [event: KeyboardEvent]; pointerDownOutside: [event: PointerDownOutsideEvent]; focusOutside: [event: FocusOutsideEvent] }",
             "description": "Events for the HoverCardPositionerImpl component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerimplemits",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerimplemits",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -2072,8 +2072,8 @@
                 "parameters": "event: KeyboardEvent",
                 "required": true,
                 "description": "Event handler called when the escape key is down. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerimplemits.callables.escapekeydown",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerimplemits.callables.escapekeydown",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2082,8 +2082,8 @@
                 "parameters": "event: PointerDownOutsideEvent",
                 "required": true,
                 "description": "Event handler called when a `pointerdown` event happens outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerimplemits.callables.pointerdownoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerimplemits.callables.pointerdownoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               },
               {
@@ -2092,8 +2092,8 @@
                 "parameters": "event: FocusOutsideEvent",
                 "required": true,
                 "description": "Event handler called when the focus moves outside of the `DismissableLayer`. Can be prevented.",
-                "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardpositionerimplemits.callables.focusoutside",
-                "sourcePath": "packages/headless/src/types/component.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardpositionerimplemits.callables.focusoutside",
+                "sourcePath": "packages/aria/src/types/component.ts",
                 "referencedTypes": []
               }
             ]
@@ -2108,8 +2108,8 @@
         "type": "Interface HoverCardRootProps",
         "resolvedType": "{ defaultOpen?: boolean; open?: boolean; openDelay?: number; closeDelay?: number; dir?: Direction; modal?: boolean; disabled?: boolean }",
         "description": "Properties for the HoverCardRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.props",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.props",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -2117,10 +2117,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the hover card when it is initially rendered. Use when you do not need to control its open state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.defaultopen",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -2128,10 +2128,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the hover card.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.open",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -2139,10 +2139,10 @@
             "type": "number",
             "required": false,
             "description": "The duration from when the pointer enters the trigger until the hover card opens.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.opendelay",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.opendelay",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -2150,10 +2150,10 @@
             "type": "number",
             "required": false,
             "description": "The duration from when the pointer leaves the trigger or popup until the hover card closes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.closedelay",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.closedelay",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           },
           {
@@ -2161,10 +2161,10 @@
             "type": "Direction",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.dir",
             "default": null,
             "inheritedFrom": "PopperRootProps.dir",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -2172,8 +2172,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -2186,10 +2186,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.modal",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.modal",
             "default": null,
             "inheritedFrom": "PopperRootProps.modal",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           },
           {
@@ -2197,10 +2197,10 @@
             "type": "boolean",
             "required": false,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootprops.members.disabled",
             "default": null,
             "inheritedFrom": "PopperRootProps.disabled",
-            "sourcePath": "packages/headless/src/components/popper/types.ts",
+            "sourcePath": "packages/aria/src/components/popper/types.ts",
             "referencedTypes": []
           }
         ],
@@ -2213,8 +2213,8 @@
         "type": "Interface HoverCardRootEmits",
         "resolvedType": "{ \"update:open\": [value: boolean, reason?: PopperOpenChangeReason | undefined] }",
         "description": "Events for the HoverCardRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootemits.emits",
-        "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootemits.emits",
+        "sourcePath": "packages/aria/src/components/hover-card/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -2224,8 +2224,8 @@
             "parameters": "value: boolean, reason?: PopperOpenChangeReason | undefined",
             "required": true,
             "description": "Event handler called when the open state of the hover card changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_hover_card_types.hovercardrootemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/hover-card/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_hover_card_types.hovercardrootemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/hover-card/types.ts",
             "referencedTypes": []
           }
         ],

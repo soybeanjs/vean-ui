@@ -41,7 +41,7 @@ export const search = new Command()
     const config = await getConfig(options.cwd);
 
     if (!config) {
-      console.error('No sbean.json found. Run "sbean init" first.');
+      console.error('No vean.json found. Run "vean init" first.');
       process.exit(1);
     }
 
@@ -59,12 +59,12 @@ export const search = new Command()
     }
 
     if (items.length === 0) {
-      console.log('  Fetching registry catalog from ui.soybeanjs.cn...');
+      console.log('  Fetching registry catalog from veanui.com...');
       items = await fetchRegistryCatalog(config);
 
       if (items.length === 0) {
         console.log('  No components found in remote registry either.');
-        console.log('  Run "sbean init" first to create sbean.json, then try again.');
+        console.log('  Run "vean init" first to create vean.json, then try again.');
         console.log();
         process.exit(0);
       }
@@ -146,8 +146,8 @@ export const search = new Command()
     }
 
     console.log();
-    console.log(`  Run "sbean add <name>" to add a component.`);
-    console.log(`  Run "sbean view <name>" to see its source code.`);
+    console.log(`  Run "vean add <name>" to add a component.`);
+    console.log(`  Run "vean view <name>" to see its source code.`);
     console.log();
   });
 

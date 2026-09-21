@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { h } from 'vue';
-import { isTreeMotionItem, TreeItem, TreeVirtualizerItem } from '@soybeanjs/headless/tree';
-import type { FlattenedItem, TreeItemData, TreeMotionListItem } from '@soybeanjs/headless/tree';
+import { isTreeMotionItem, TreeItem, TreeVirtualizerItem } from '@vean/aria/tree';
+import type { FlattenedItem, TreeItemData, TreeMotionListItem } from '@vean/aria/tree';
 import { render } from 'vitest-browser-vue';
 import { userEvent } from 'vitest/browser';
 import STreeVirtualizer from '@/components/tree/tree-virtualizer.vue';
@@ -72,7 +72,7 @@ const mountOptions = {
 };
 
 async function clickFirstItem(container: HTMLElement) {
-  const item = container.querySelectorAll('[data-soybean-tree-item]')[0] as HTMLElement;
+  const item = container.querySelectorAll('[data-vean-tree-item]')[0] as HTMLElement;
 
   await userEvent.click(item);
 }
@@ -82,7 +82,7 @@ async function waitForSettled(container: HTMLElement, options: { childVisible?: 
 
   await vi.waitFor(
     () => {
-      expect(container.querySelector('[data-soybean-tree-motion]')).toBeNull();
+      expect(container.querySelector('[data-vean-tree-motion]')).toBeNull();
 
       if (options.childVisible) {
         expect(container.textContent).toContain(options.childVisible);
@@ -103,11 +103,11 @@ describe('STree (e2e)', () => {
 
     await clickFirstItem(container);
     await waitForSettled(container, { childVisible: 'Item 1-1' });
-    expect(container.querySelectorAll('[data-soybean-tree-item]').length).toBe(6);
+    expect(container.querySelectorAll('[data-vean-tree-item]').length).toBe(6);
 
     await clickFirstItem(container);
     await waitForSettled(container);
-    expect(container.querySelectorAll('[data-soybean-tree-item]').length).toBe(2);
+    expect(container.querySelectorAll('[data-vean-tree-item]').length).toBe(2);
 
     wrapper.unmount();
   });
@@ -124,7 +124,7 @@ describe('STreeVirtualizer (e2e)', () => {
 
     await clickFirstItem(container);
     await waitForSettled(container, { childVisible: 'Item 1-1' });
-    expect(container.querySelectorAll('[data-soybean-tree-item]').length).toBeGreaterThan(2);
+    expect(container.querySelectorAll('[data-vean-tree-item]').length).toBeGreaterThan(2);
     // The windowed item keys survive the motion swap, so the clicked element
     // must keep DOM focus instead of being rebuilt (focus ring stays).
     expect(container.contains(document.activeElement)).toBe(true);
@@ -149,7 +149,7 @@ describe('STreeVirtualizer (e2e)', () => {
 
     // Windowed rendering must keep the mounted item count near the viewport
     // size, not the full 2002-item flattened list.
-    const rendered = container.querySelectorAll('[data-soybean-tree-item]').length;
+    const rendered = container.querySelectorAll('[data-vean-tree-item]').length;
 
     expect(rendered).toBeGreaterThan(1);
     expect(rendered).toBeLessThan(100);

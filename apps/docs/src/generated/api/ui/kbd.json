@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_kbd_types.kbdprops.members.value",
             "default": null,
             "inheritedFrom": "value",
-            "sourcePath": "packages/headless/src/components/kbd/types.ts",
+            "sourcePath": "packages/aria/src/components/kbd/types.ts",
             "referencedTypes": []
           },
           {
@@ -117,7 +117,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_kbd_types.kbdprops.members.symbolize",
             "default": "true",
             "inheritedFrom": "_KbdProps.symbolize",
-            "sourcePath": "packages/headless/src/components/kbd/types.ts",
+            "sourcePath": "packages/aria/src/components/kbd/types.ts",
             "referencedTypes": []
           }
         ],

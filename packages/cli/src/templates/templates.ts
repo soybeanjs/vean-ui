@@ -1,7 +1,7 @@
 /**
- * SBean project templates.
+ * Vean project templates.
  *
- * Vite + Nuxt 3 — ready for sbean components.
+ * Vite + Nuxt 3 — ready for vean components.
  *
  * Template file content may contain `{{variable}}` placeholders that are
  * resolved at scaffold time by {@link scaffoldFromTemplate}.
@@ -9,13 +9,13 @@
  * Supported placeholders:
  *   - `{{projectName}}`    — the project name
  *   - `{{uiDir}}`          — the component output directory (e.g. "src/ui")
- *   - `{{resolverPath}}`   — relative import path for the SBean resolver
+ *   - `{{resolverPath}}`   — relative import path for the Vean resolver
  *
- * @soybeanjs/* package versions are pinned to `{@link SOYBEAN_VERSION}` and
+ * @soybeanjs/* package versions are pinned to `{@link VEAN_VERSION}` and
  * kept in sync during release via `scripts/sync-template-versions.ts`.
  */
 
-import { SOYBEAN_VERSION } from './versions';
+import { VEAN_VERSION } from './versions';
 
 export type FrameworkType = 'vue-vite' | 'nuxt';
 
@@ -42,18 +42,18 @@ export interface TemplateVariables {
 // ---------------------------------------------------------------------------
 
 const UNO_CONFIG_CONTENT = `import { defineConfig } from 'unocss'
-import { presetSbean } from '@soybeanjs/ui-uno'
+import { presetVean } from '@vean/unocss'
 
 export default defineConfig({
-  presets: [presetSbean()]
+  presets: [presetVean()]
 })
 `;
 
 // ---------------------------------------------------------------------------
-// Shared snippet: sbean.json (used by both templates)
+// Shared snippet: vean.json (used by both templates)
 // ---------------------------------------------------------------------------
 
-const SBEAN_JSON_CONTENT = `{
+const VEAN_JSON_CONTENT = `{
   "iconLibrary": "lucide",
   "uno": {
     "size": "md",
@@ -121,7 +121,7 @@ export default defineConfig({
   "exclude": ["node_modules", "dist", "src/typings"]
 }
 `,
-    'sbean.json': SBEAN_JSON_CONTENT,
+    'vean.json': VEAN_JSON_CONTENT,
     'src/main.ts': `import { createApp } from 'vue'
 import 'uno.css'
 import App from './App.vue'
@@ -134,9 +134,9 @@ app.mount('#app')
 <template>
   <SConfigProvider>
     <div>
-      <h1>Welcome to SoybeanUI</h1>
-      <p>Run <code>sbean add &lt;component&gt;</code> to add components.</p>
-      <SButton>SoybeanUI</SButton>
+      <h1>Welcome to Vean</h1>
+      <p>Run <code>vean add &lt;component&gt;</code> to add components.</p>
+      <SButton>Vean</SButton>
     </div>
   </SConfigProvider>
 </template>
@@ -164,14 +164,14 @@ app.mount('#app')
   dependencies: {
     '@iconify/vue': '^5.0.1',
     '@soybeanjs/cva': `^0.0.9`,
-    '@soybeanjs/headless': `^${SOYBEAN_VERSION}`,
+    '@vean/aria': `^${VEAN_VERSION}`,
     '@soybeanjs/hooks': `^0.3.0`,
-    '@soybeanjs/theme': `^${SOYBEAN_VERSION}`,
+    '@vean/theme': `^${VEAN_VERSION}`,
     vue: '^3.5.41',
     'vue-router': '^5.2.0'
   },
   devDependencies: {
-    '@soybeanjs/ui-uno': `^${SOYBEAN_VERSION}`,
+    '@vean/unocss': `^${VEAN_VERSION}`,
     '@vitejs/plugin-vue': '^6.0.7',
     typescript: '^6.0.3',
     unocss: '^66.7.2',
@@ -210,7 +210,7 @@ export default defineNuxtConfig({
   }
 }
 `,
-    'sbean.json': SBEAN_JSON_CONTENT,
+    'vean.json': VEAN_JSON_CONTENT,
     'app.vue': `<template>
   <div>
     <NuxtPage />
@@ -222,9 +222,9 @@ export default defineNuxtConfig({
 <template>
   <SConfigProvider>
     <div>
-      <h1>Welcome to SoybeanUI + Nuxt</h1>
-      <p>Run <code>sbean add &lt;component&gt;</code> to add components.</p>
-      <SButton>SoybeanUI</SButton>
+      <h1>Welcome to Vean + Nuxt</h1>
+      <p>Run <code>vean add &lt;component&gt;</code> to add components.</p>
+      <SButton>Vean</SButton>
     </div>
   </SConfigProvider>
 </template>
@@ -233,9 +233,9 @@ export default defineNuxtConfig({
   dependencies: {
     '@iconify/vue': '^5.0.1',
     '@soybeanjs/cva': `^0.0.9`,
-    '@soybeanjs/headless': `^${SOYBEAN_VERSION}`,
+    '@vean/aria': `^${VEAN_VERSION}`,
     '@soybeanjs/hooks': `^0.3.0`,
-    '@soybeanjs/theme': `^${SOYBEAN_VERSION}`,
+    '@vean/theme': `^${VEAN_VERSION}`,
     nuxt: '^4.4.8'
   },
   devDependencies: {

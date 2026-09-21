@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="T extends TreeItemData">
 import { computed, watchEffect } from 'vue';
-import type { FlattenedItem, TreeItemData, TreeMotionState } from '@soybeanjs/headless/tree';
-import type { MaybeArray } from '@soybeanjs/headless/types';
 import type { VirtualItem } from '@tanstack/vue-virtual';
+import type { FlattenedItem, TreeItemData, TreeMotionState } from '@vean/aria/tree';
+import type { MaybeArray } from '@vean/aria/types';
 import STreeMotionBlock from './tree-motion-block.vue';
 
 defineOptions({

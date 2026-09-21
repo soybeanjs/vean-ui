@@ -20,7 +20,7 @@ head:
 - ♿ `aria-pressed` + `data-state`（`on`/`off`）双通道反射，axe 零违规
 - ⌨️ 键盘可操作 — Enter 与 Space 通过 button 原生行为切换
 - 🎨 通过 `toggleVariants` 提供 3 种变体（outline/soft/ghost）× 6 尺寸 × 8 颜色 × 4 形状
-- 🧩 经 headless `Toggle` 完整复用 `SButton` prop 面（图标插槽、`asChild`、按钮 loading 等）
+- 🧩 经 Aria `Toggle` 完整复用 `SButton` prop 面（图标插槽、`asChild`、按钮 loading 等）
 - 📦 插槽暴露 `modelValue` / `pressed` / `state` / `disabled` 参数用于自定义内容
 - 🚫 禁用态提供 `disabled` + `aria-disabled` 与守卫点击处理
 
@@ -36,20 +36,20 @@ head:
 
 ### 架构与行业对标
 
-SoybeanUI 由 headless 层 `Toggle`（`useControllableState` + `Button` 基座 + `aria-pressed`/`data-state` 反射 + 禁用守卫点击）与薄包装 `SToggle`（仅计算 `toggleVariants` 类并转发 `update:modelValue`）组成。`data-state` 属性通过 UnoCSS `data-[state=on]:*` 选择器驱动按下态样式，状态与视觉解耦。`toggle` 是 Radix/shadcn 原生模式；其余对标库多以「按钮 + 状态」或分段控件表达相同交互。
+VeanUI 由 Aria 层 `Toggle`（`useControllableState` + `Button` 基座 + `aria-pressed`/`data-state` 反射 + 禁用守卫点击）与薄包装 `SToggle`（仅计算 `toggleVariants` 类并转发 `update:modelValue`）组成。`data-state` 属性通过 UnoCSS `data-[state=on]:*` 选择器驱动按下态样式，状态与视觉解耦。`toggle` 是 Radix/shadcn 原生模式；其余对标库多以「按钮 + 状态」或分段控件表达相同交互。
 
-| 能力                          | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn `Toggle` |
-| :---------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :-------------: |
-| headless/styled 分离          |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| 按下/未按下状态               |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| 受控/非受控                   |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| `aria-pressed` + `data-state` |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| 变体（outline/soft/ghost）    |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| 尺寸/形状（6 尺寸 × 4）       |    ✅     |     —      |      —       |    —    |    —     |        —        |
-| 键盘（Enter/Space）           |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| 禁用态                        |    ✅     |     —      |      —       |    —    |    —     |       ✅        |
-| axe 零违规                    |    ✅     |     —      |      —       |    —    |    —     |        —        |
-| 按下态图标动画                |    ➕     |     ✅     |      —       |    —    |    —     |        —        |
+| 能力                          | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn `Toggle` |
+| :---------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :-------------: |
+| Aria/styled 分离              |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| 按下/未按下状态               |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| 受控/非受控                   |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| `aria-pressed` + `data-state` |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| 变体（outline/soft/ghost）    |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| 尺寸/形状（6 尺寸 × 4）       |   ✅   |     —      |      —       |    —    |    —     |        —        |
+| 键盘（Enter/Space）           |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| 禁用态                        |   ✅   |     —      |      —       |    —    |    —     |       ✅        |
+| axe 零违规                    |   ✅   |     —      |      —       |    —    |    —     |        —        |
+| 按下态图标动画                |   ➕   |     ✅     |      —       |    —    |    —     |        —        |
 
 ### 使用注意
 

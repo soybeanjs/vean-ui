@@ -11,7 +11,7 @@ describe('STag', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tag]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tag]').exists()).toBe(true);
       expect(wrapper.text()).toContain('New');
 
       wrapper.unmount();
@@ -34,7 +34,7 @@ describe('STag', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tag]').classes()).toContain('my-tag');
+      expect(wrapper.find('[data-vean-tag]').classes()).toContain('my-tag');
 
       wrapper.unmount();
     });
@@ -88,7 +88,7 @@ describe('STag', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tag]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tag]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -99,7 +99,7 @@ describe('STag', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tag]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-tag]').exists()).toBe(false);
 
       wrapper.unmount();
     });

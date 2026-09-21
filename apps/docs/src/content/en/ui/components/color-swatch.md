@@ -1,14 +1,14 @@
 ---
 head:
   title: Color Swatch
-  description: 'A read-only color preview block with support for transparent and OKLCH values. SColorSwatch combines the headless ColorSwatchRoot/ColorSwatchChecker/ColorSwatchFill primitives with the colorSwatchVariants style recipe (3 slots, 6 sizes × 2 shapes).'
+  description: 'A read-only color preview block with support for transparent and OKLCH values. SColorSwatch combines the Aria ColorSwatchRoot/ColorSwatchChecker/ColorSwatchFill primitives with the colorSwatchVariants style recipe (3 slots, 6 sizes × 2 shapes).'
 ---
 
 # Color Swatch
 
 ## Overview
 
-A read-only color preview block with support for transparent and OKLCH values. `SColorSwatch` combines the headless `ColorSwatchRoot`/`ColorSwatchChecker`/`ColorSwatchFill` primitives with the `colorSwatchVariants` style recipe (3 slots, 6 sizes × 2 shapes).
+A read-only color preview block with support for transparent and OKLCH values. `SColorSwatch` combines the Aria `ColorSwatchRoot`/`ColorSwatchChecker`/`ColorSwatchFill` primitives with the `colorSwatchVariants` style recipe (3 slots, 6 sizes × 2 shapes).
 
 Use a color swatch to display a color value (with an optional transparency checker) inside pickers, tables, or labels.
 
@@ -18,7 +18,7 @@ Use a color swatch to display a color value (with an optional transparency check
 
 ## Features
 
-- 🧩 Headless/styled split — `ColorSwatchCompact` composes checker + fill; `SColorSwatch` only injects styles and forwards props/slots
+- 🧩 Aria/styled split — `ColorSwatchCompact` composes checker + fill; `SColorSwatch` only injects styles and forwards props/slots
 - 🖼️ Transparency checker — renders a checkerboard behind translucent/alpha colors
 - 🎨 OKLCH + transparent support — accepts any `ColorValue`, including `oklch` and alpha colors
 - 🏷️ Accessible label — `role="img"` with `aria-label` from `label`; empty colors marked `data-no-color`
@@ -29,10 +29,10 @@ Use a color swatch to display a color value (with an optional transparency check
 ## Component family
 
 - `SColorSwatch` (styled) — the entry wrapper; `colorSwatchVariants` recipe with dynamic slot forwarding
-- `ColorSwatchRoot` (headless) — the accessible preview root (`role="img"`, `color`/`label`)
-- `ColorSwatchChecker` (headless) — the transparency checkerboard
-- `ColorSwatchFill` (headless) — the solid color fill
-- `ColorSwatchCompact` (headless) — the aggregated composite; composes checker + fill
+- `ColorSwatchRoot` (Aria) — the accessible preview root (`role="img"`, `color`/`label`)
+- `ColorSwatchChecker` (Aria) — the transparency checkerboard
+- `ColorSwatchFill` (Aria) — the solid color fill
+- `ColorSwatchCompact` (Aria) — the aggregated composite; composes checker + fill
 
 ## Demo
 
@@ -46,16 +46,16 @@ Use a color swatch to display a color value (with an optional transparency check
 
 ### Architecture and benchmark differences
 
-`ColorSwatchCompact` owns the checker/fill composition while every primitive stays style-free and only the UI wrapper injects the `colorSwatchVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI render a plain colored `<span>` for swatches; SoybeanUI exposes an accessible `role="img"` preview with a transparency checker, shape/size control and a slot scope exposing the parsed color/alpha.
+`ColorSwatchCompact` owns the checker/fill composition while every primitive stays style-free and only the UI wrapper injects the `colorSwatchVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split. Ant Design, Element Plus, Mantine and Naive UI render a plain colored `<span>` for swatches; VeanUI exposes an accessible `role="img"` preview with a transparency checker, shape/size control and a slot scope exposing the parsed color/alpha.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/styled split |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Transparency checker  |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| OKLCH / alpha support |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Accessible role/img   |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Shape (square/circle) |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Sizes (6)             |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability            | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :-------------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/styled split     |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Transparency checker  |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| OKLCH / alpha support |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Accessible role/img   |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Shape (square/circle) |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Sizes (6)             |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

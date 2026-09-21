@@ -105,17 +105,17 @@ The divider belongs to the column that follows: `SSplitNav` leads the pane with 
 
 ### Architecture and benchmark comparison
 
-| Concern           | SoybeanUI `SAppShell`                                                                  | Ant Design Pro `ProLayout`               | Element Plus          | shadcn/ui                 |
-| :---------------- | :------------------------------------------------------------------------------------- | :--------------------------------------- | :-------------------- | :------------------------ |
-| Layer split       | Styled aggregation over the headless `layout` family; `SLayout` still ships standalone | Single styled package                    | Single styled package | Copy-in block, no library |
-| Modes             | 6 (`sidebar`, `top`, + 4 split shapes) driven by one `mode`                            | 6 (`side`/`top`/`mix` + header variants) | —                     | 1                         |
-| Menu tree         | One `items` tree, rendered by `STreeMenu` / `STreeNav` / `SSplitNav` per mode          | Routes/props                             | `el-menu` config      | Composed by hand          |
-| Sidebar geometry  | Derived from `mode` + `size`, aligned to the menu panes                                | Numeric props                            | Numeric props         | Hand-written CSS          |
-| Brand             | `#logo` / `#title` slots, aligned to the menu columns                                  | `logo` / `title` props                   | `el-aside` content    | Composed by hand          |
-| Breadcrumb / tabs | `breadcrumbs` / `tabs` data props, rendered by `SBreadcrumb` / `SPageTabs`             | `menu` config + `PageContainer`          | Composed by hand      | Composed by hand          |
-| Router dependency | None — data in, events out                                                             | Vue Router assumed                       | None                  | None                      |
-| Overrides         | `ui` / `layoutUi` / `menuUi` + a slot per region                                       | `token` / slots                          | CSS vars              | Edit the copied source    |
-| Accessibility     | Owned by the composed headless families                                                | Package-level                            | Package-level         | Manual                    |
+| Concern           | SoybeanUI `SAppShell`                                                              | Ant Design Pro `ProLayout`               | Element Plus          | shadcn/ui                 |
+| :---------------- | :--------------------------------------------------------------------------------- | :--------------------------------------- | :-------------------- | :------------------------ |
+| Layer split       | Styled aggregation over the Aria `layout` family; `SLayout` still ships standalone | Single styled package                    | Single styled package | Copy-in block, no library |
+| Modes             | 6 (`sidebar`, `top`, + 4 split shapes) driven by one `mode`                        | 6 (`side`/`top`/`mix` + header variants) | —                     | 1                         |
+| Menu tree         | One `items` tree, rendered by `STreeMenu` / `STreeNav` / `SSplitNav` per mode      | Routes/props                             | `el-menu` config      | Composed by hand          |
+| Sidebar geometry  | Derived from `mode` + `size`, aligned to the menu panes                            | Numeric props                            | Numeric props         | Hand-written CSS          |
+| Brand             | `#logo` / `#title` slots, aligned to the menu columns                              | `logo` / `title` props                   | `el-aside` content    | Composed by hand          |
+| Breadcrumb / tabs | `breadcrumbs` / `tabs` data props, rendered by `SBreadcrumb` / `SPageTabs`         | `menu` config + `PageContainer`          | Composed by hand      | Composed by hand          |
+| Router dependency | None — data in, events out                                                         | Vue Router assumed                       | None                  | None                      |
+| Overrides         | `ui` / `layoutUi` / `menuUi` + a slot per region                                   | `token` / slots                          | CSS vars              | Edit the copied source    |
+| Accessibility     | Owned by the composed Aria families                                                | Package-level                            | Package-level         | Manual                    |
 
 ### Cautions
 

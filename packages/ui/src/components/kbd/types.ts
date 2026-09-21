@@ -1,5 +1,5 @@
-import type { KbdProps as _KbdProps } from '@soybeanjs/headless/kbd';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { KbdProps as _KbdProps } from '@vean/aria/kbd';
+import type { ClassValue } from '@vean/aria/types';
 import type { KbdVariant } from '@/styles/kbd';
 import type { ThemeSize } from '@/theme';
 

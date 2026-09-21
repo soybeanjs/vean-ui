@@ -19,7 +19,7 @@ describe('config management', () => {
   let tmpDir: string;
 
   beforeEach(async () => {
-    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-test-'));
+    tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-test-'));
   });
 
   afterEach(async () => {
@@ -72,7 +72,7 @@ describe('config management', () => {
       expect(read!.uno.radius).toBe('xs');
     });
 
-    it('returns null when no sbean.json exists', async () => {
+    it('returns null when no vean.json exists', async () => {
       const config = await getConfig(tmpDir);
       expect(config).toBeNull();
     });
@@ -80,7 +80,7 @@ describe('config management', () => {
     it('rejects invalid icon library', async () => {
       // Write an invalid config manually
       await fs.writeFile(
-        path.join(tmpDir, 'sbean.json'),
+        path.join(tmpDir, 'vean.json'),
         JSON.stringify({
           iconLibrary: 'invalid-library',
           uno: { base: 'zinc', primary: 'indigo', radius: 'md' },
@@ -96,7 +96,7 @@ describe('config management', () => {
       const config = await createDefaultConfig(tmpDir);
       await writeConfig(tmpDir, config);
 
-      const raw = JSON.parse(await fs.readFile(path.join(tmpDir, 'sbean.json'), 'utf-8'));
+      const raw = JSON.parse(await fs.readFile(path.join(tmpDir, 'vean.json'), 'utf-8'));
       expect(raw.resolvedPaths).toBeUndefined();
     });
   });

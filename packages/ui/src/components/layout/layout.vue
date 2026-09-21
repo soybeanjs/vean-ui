@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { LayoutCompact, provideLayoutUi } from '@soybeanjs/headless/layout';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useOmitProps } from '@vean/aria/composables';
+import { LayoutCompact, provideLayoutUi } from '@vean/aria/layout';
+import { keysOf } from '@vean/aria/shared';
 import { layoutVariants } from '@/styles/layout';
 import { themeSizeMap, themeSizeRatio } from '@/theme';
 import type { LayoutProps, LayoutEmits, LayoutSlots } from './types';

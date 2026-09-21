@@ -5,19 +5,19 @@ import { describe, it, expect } from 'vitest';
 import { createGenerator } from 'unocss';
 import type { Preset } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
-import { presetSbean, presetUi } from '../src/index';
+import { presetVean, presetUi } from '../src/index';
 import type { UiUnocssOptions } from '../src/options';
 
 /**
  * Extract the generated theme CSS out of the self preset's preflight.
  *
- * The self preset (`soybean-ui-uno`) carries the theme layer as a preflight
+ * The self preset (`vean-uno`) carries the theme layer as a preflight
  * whose `getCSS()` returns the (unminified) CSS string produced by
  * `buildThemePreflight` (palette layer + light/dark token blocks). The preset
  * does not minify on purpose — the final bundle is minified at build time.
  */
 function getThemeCss(presets: Preset<Theme>[]): string {
-  const self = presets.find(p => p.name === 'soybean-ui-uno');
+  const self = presets.find(p => p.name === 'vean-uno');
   const preflights = (self as unknown as { preflights?: { getCSS: () => string }[] })?.preflights;
   return preflights?.[0]?.getCSS() ?? '';
 }
@@ -28,7 +28,7 @@ describe('presetUi', () => {
     const names = presets.map(p => p.name);
     // wind3 + animations + self theme
     expect(presets.length).toBeGreaterThanOrEqual(3);
-    expect(names).toContain('soybean-ui-uno');
+    expect(names).toContain('vean-uno');
   });
 
   it('applies size/radius base tokens to the generated theme CSS', () => {
@@ -91,19 +91,19 @@ describe('presetScrollbar', () => {
 
   it('is included in the presetUi stack', () => {
     const names = presetUi().map(p => p.name);
-    expect(names).toContain('soybean-ui-uno-scrollbar');
+    expect(names).toContain('vean-uno-scrollbar');
   });
 
   it('`scrollbar` shortcut declares css variables and styles webkit pseudo elements', async () => {
     const css = await generateCss(['scrollbar']);
-    expect(css).toContain('--soybean-scrollbar-track:#f5f5f5');
-    expect(css).toContain('--soybean-scrollbar-thumb:#ddd');
-    expect(css).toContain('--soybean-scrollbar-width:8px');
+    expect(css).toContain('--vean-scrollbar-track:#f5f5f5');
+    expect(css).toContain('--vean-scrollbar-thumb:#ddd');
+    expect(css).toContain('--vean-scrollbar-width:8px');
     expect(css).toContain('.scrollbar{');
     expect(css).toContain('overflow:auto;');
-    expect(css).toContain('.scrollbar::-webkit-scrollbar{width:var(--soybean-scrollbar-width);');
-    expect(css).toContain('.scrollbar::-webkit-scrollbar-track{background-color:var(--soybean-scrollbar-track);');
-    expect(css).toContain('.scrollbar::-webkit-scrollbar-thumb{background-color:var(--soybean-scrollbar-thumb);');
+    expect(css).toContain('.scrollbar::-webkit-scrollbar{width:var(--vean-scrollbar-width);');
+    expect(css).toContain('.scrollbar::-webkit-scrollbar-track{background-color:var(--vean-scrollbar-track);');
+    expect(css).toContain('.scrollbar::-webkit-scrollbar-thumb{background-color:var(--vean-scrollbar-thumb);');
   });
 
   it('`scrollbar-none` hides the scrollbar', async () => {
@@ -115,25 +115,25 @@ describe('presetScrollbar', () => {
   it('`scrollbar-rounded` applies radius variables to track and thumb', async () => {
     const css = await generateCss(['scrollbar-rounded']);
     expect(css).toContain(
-      '.scrollbar-rounded::-webkit-scrollbar-track{border-radius:var(--soybean-scrollbar-track-radius);'
+      '.scrollbar-rounded::-webkit-scrollbar-track{border-radius:var(--vean-scrollbar-track-radius);'
     );
     expect(css).toContain(
-      '.scrollbar-rounded::-webkit-scrollbar-thumb{border-radius:var(--soybean-scrollbar-thumb-radius);'
+      '.scrollbar-rounded::-webkit-scrollbar-thumb{border-radius:var(--vean-scrollbar-thumb-radius);'
     );
   });
 
   it('resolves thumb/track colors from the theme with the variant pseudo elements', async () => {
     const css = await generateCss(['scrollbar-thumb-color-primary', 'scrollbar-track-op-50']);
     // 迁移期：共享名（primary 等）已指向 v2 通道变量，故此处读 `--primary`（P3）
-    expect(css).toContain('--soybean-scrollbar-thumb:hsl(var(--primary)');
-    expect(css).toContain('--soybean-scrollbar-track-opacity:0.5');
+    expect(css).toContain('--vean-scrollbar-thumb:hsl(var(--primary)');
+    expect(css).toContain('--vean-scrollbar-track-opacity:0.5');
   });
 
   it('maps size aliases to scrollbar css variables', async () => {
     const css = await generateCss(['scrollbar-w-12px', 'scrollbar-radius-6px']);
-    expect(css).toContain('--soybean-scrollbar-width:12px');
-    expect(css).toContain('--soybean-scrollbar-track-radius:6px');
-    expect(css).toContain('--soybean-scrollbar-thumb-radius:6px');
+    expect(css).toContain('--vean-scrollbar-width:12px');
+    expect(css).toContain('--vean-scrollbar-track-radius:6px');
+    expect(css).toContain('--vean-scrollbar-thumb-radius:6px');
   });
 
   it('supports arbitrary utilities on the webkit pseudo element variants', async () => {
@@ -148,9 +148,9 @@ describe('presetScrollbar', () => {
     expect(compatibleCss).toContain('scrollbar-color:red');
     expect(compatibleCss).toContain('scrollbar-width:thin');
 
-    // 默认命名空间是 `--soybean-`（组件/预设自己的变量，不随主题 token 去前缀）
+    // 默认命名空间是 `--vean-`（组件/预设自己的变量，不随主题 token 去前缀）
     const defaultCss = await generateCss(['scrollbar'], { scrollbar: { scrollbarWidth: '10px' } });
-    expect(defaultCss).toContain('--soybean-scrollbar-width:10px');
+    expect(defaultCss).toContain('--vean-scrollbar-width:10px');
 
     // `varPrefix` 仍可覆盖为空串（逃生舱）：此时变量回到裸名
     const customCss = await generateCss(['scrollbar'], {
@@ -192,37 +192,37 @@ describe('presetUi preset injection', () => {
   });
 });
 
-describe('presetSbean', () => {
+describe('presetVean', () => {
   function withConfig(json: Record<string, unknown>): string {
-    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sbean-'));
-    fs.writeFileSync(path.join(dir, 'sbean.json'), JSON.stringify(json), 'utf-8');
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'vean-'));
+    fs.writeFileSync(path.join(dir, 'vean.json'), JSON.stringify(json), 'utf-8');
     return dir;
   }
 
-  it('reads the full uno block and applies every SbeanUnoConfig item', () => {
+  it('reads the full uno block and applies every VeanUnoConfig item', () => {
     const dir = withConfig({
       uno: { base: 'zinc', primary: 'indigo', size: 'lg', radius: 'sm' }
     });
 
-    const css = getThemeCss(presetSbean({ cwd: dir }));
+    const css = getThemeCss(presetVean({ cwd: dir }));
     expect(css).toContain('--size: 18px');
     expect(css).toContain('--radius: 0.375rem');
 
     fs.rmSync(dir, { recursive: true, force: true });
   });
 
-  it('falls back to the default theme when sbean.json is missing', () => {
-    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sbean-empty-'));
-    const css = getThemeCss(presetSbean({ cwd: dir }));
+  it('falls back to the default theme when vean.json is missing', () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'vean-empty-'));
+    const css = getThemeCss(presetVean({ cwd: dir }));
     expect(css).toContain('--size: 16px');
     expect(css).toContain('--radius: 0.5rem');
     fs.rmSync(dir, { recursive: true, force: true });
   });
 
-  it('lets user overrides take precedence over sbean.json values', () => {
+  it('lets user overrides take precedence over vean.json values', () => {
     const dir = withConfig({ uno: { base: 'zinc', primary: 'indigo', size: 'sm', radius: 'md' } });
 
-    const css = getThemeCss(presetSbean({ cwd: dir, overrides: { size: 'xl' } }));
+    const css = getThemeCss(presetVean({ cwd: dir, overrides: { size: 'xl' } }));
     expect(css).toContain('--size: 20px');
     expect(css).toContain('--radius: 0.5rem');
 

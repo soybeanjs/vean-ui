@@ -1,11 +1,6 @@
-import type {
-  FlattenedItem,
-  TreeItemData,
-  TreeVirtualizerRootEmits,
-  TreeVirtualizerRootProps
-} from '@soybeanjs/headless/tree';
-import type { MaybeArray } from '@soybeanjs/headless/types';
-import type { VirtualizerContentProps, VirtualizerDynamicContentProps } from '@soybeanjs/headless/virtualizer';
+import type { FlattenedItem, TreeItemData, TreeVirtualizerRootEmits, TreeVirtualizerRootProps } from '@vean/aria/tree';
+import type { MaybeArray } from '@vean/aria/types';
+import type { VirtualizerContentProps, VirtualizerDynamicContentProps } from '@vean/aria/virtualizer';
 
 /**
  * Slots for the Tree component.

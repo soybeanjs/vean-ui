@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useLocaleMessages } from '@soybeanjs/headless';
-import { CalendarRangeCompact, provideCalendarRangeUi } from '@soybeanjs/headless/calendar-range';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useLocaleMessages } from '@vean/aria';
+import { CalendarRangeCompact, provideCalendarRangeUi } from '@vean/aria/calendar-range';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { keysOf } from '@vean/aria/shared';
 import { calendarRangeVariants } from '@/styles/calendar-range';
 import { miniSizeMap } from '@/theme';
 import SSelect from '../select/select.vue';

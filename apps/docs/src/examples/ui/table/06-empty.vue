@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SEmpty, STable } from '@soybeanjs/ui';
-import type { TableColumn } from '@soybeanjs/ui';
+import { SEmpty, STable } from '@vean/ui';
+import type { TableColumn } from '@vean/ui';
 
 interface TableData {
   id: number;

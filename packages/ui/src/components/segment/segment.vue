@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="T extends SegmentOptionData = SegmentOptionData">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { provideSegmentUi, SegmentCompact } from '@soybeanjs/headless/segment';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { provideSegmentUi, SegmentCompact } from '@vean/aria/segment';
 import { segmentVariants } from '@/styles/segment';
 import type { SegmentProps, SegmentEmits, SegmentSlots, SegmentOptionData } from './types';
 

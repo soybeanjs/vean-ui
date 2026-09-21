@@ -1,0 +1,125 @@
+{
+  "component": "primitive",
+  "symbols": {
+    "Primitive": {
+      "props": {
+        "kind": "props",
+        "name": "PrimitiveProps",
+        "type": "Interface PrimitiveProps",
+        "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
+        "description": "Properties for the Primitive component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_primitive_types.primitiveprops.props",
+        "sourcePath": "packages/aria/src/components/primitive/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "asChild",
+            "type": "boolean",
+            "required": false,
+            "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
+            "descriptionKey": "api.generated.packages_aria_src_components_primitive_types.primitiveprops.members.aschild",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "as",
+            "type": "AsTag | Component",
+            "required": false,
+            "description": "The element or component this component should render as. Can be overwrite by `asChild`",
+            "descriptionKey": "api.generated.packages_aria_src_components_primitive_types.primitiveprops.members.as",
+            "default": "'div'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Component",
+                "kind": "typeAlias",
+                "type": "Component",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.43/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [
+                  "PropsOrInstance = any",
+                  "RawBindings = any",
+                  "D = any",
+                  "C extends ComputedOptions = ComputedOptions",
+                  "M extends MethodOptions = MethodOptions",
+                  "E extends EmitsOptions | Record<string, any[]> = {}",
+                  "S extends Record<string, any> = any"
+                ],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    },
+    "PrimitiveWithBase": {
+      "props": {
+        "kind": "props",
+        "name": "PrimitiveWithBaseProps",
+        "type": "Interface PrimitiveWithBaseProps",
+        "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
+        "description": "Properties for the Primitive component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_primitive_types.primitivewithbaseprops.props",
+        "sourcePath": "packages/aria/src/components/primitive/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "asChild",
+            "type": "boolean",
+            "required": false,
+            "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
+            "descriptionKey": "api.generated.packages_aria_src_components_primitive_types.primitivewithbaseprops.members.aschild",
+            "default": null,
+            "inheritedFrom": "asChild",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "as",
+            "type": "AsTag | Component",
+            "required": false,
+            "description": "The element or component this component should render as. Can be overwrite by `asChild`",
+            "descriptionKey": "api.generated.packages_aria_src_components_primitive_types.primitivewithbaseprops.members.as",
+            "default": "'div'",
+            "inheritedFrom": "as",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Component",
+                "kind": "typeAlias",
+                "type": "Component",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.43/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [
+                  "PropsOrInstance = any",
+                  "RawBindings = any",
+                  "D = any",
+                  "C extends ComputedOptions = ComputedOptions",
+                  "M extends MethodOptions = MethodOptions",
+                  "E extends EmitsOptions | Record<string, any[]> = {}",
+                  "S extends Record<string, any> = any"
+                ],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    }
+  }
+}

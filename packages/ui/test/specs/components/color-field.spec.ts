@@ -44,7 +44,7 @@ describe('SColorField', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-color-field-root]').classes()).toContain('h-9');
+      expect(wrapper.find('[data-vean-color-field-root]').classes()).toContain('h-9');
       wrapper.unmount();
     });
   });

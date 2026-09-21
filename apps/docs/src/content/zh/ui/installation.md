@@ -1,43 +1,43 @@
 ---
 head:
   title: 安装
-  description: SoybeanUI 提供两种方式将组件添加到项目中，选择适合你工作流程的方式。
+  description: VeanUI 提供两种方式将组件添加到项目中，选择适合你工作流程的方式。
 ---
 
 # 安装
 
-SoybeanUI 提供两种方式将组件添加到项目中，选择适合你工作流程的方式。
+VeanUI 提供两种方式将组件添加到项目中，选择适合你工作流程的方式。
 
 ## 对比
 
-|              | npm 包                        | CLI (sbean)                              |
-| ------------ | ----------------------------- | ---------------------------------------- |
-| **工作原理** | 安装 `@soybeanjs/ui` 作为依赖 | 将源码复制到你的项目中                   |
-| **自定义**   | 通过 props 和 CSS 变量配置    | 完全控制源码 — 可编辑任何文件            |
-| **更新**     | `pnpm update` 获取最新版本    | `sbean diff` 显示变更，你选择合并哪些    |
-| **打包体积** | Tree-shaking 移除未使用组件   | 只有你添加的组件存在于项目中             |
-| **适合**     | 快速原型开发，标准设置        | 自定义设计系统，完全控制                 |
-| **安装**     | `pnpm add @soybeanjs/ui`      | `npx sbean init && npx sbean add button` |
+|              | npm 包                      | CLI (vean)                                                     |
+| ------------ | --------------------------- | -------------------------------------------------------------- |
+| **工作原理** | 安装 `@vean/ui` 作为依赖    | 将源码复制到你的项目中                                         |
+| **自定义**   | 通过 props 和 CSS 变量配置  | 完全控制源码 — 可编辑任何文件                                  |
+| **更新**     | `pnpm update` 获取最新版本  | `vean diff` 显示变更，你选择合并哪些                           |
+| **打包体积** | Tree-shaking 移除未使用组件 | 只有你添加的组件存在于项目中                                   |
+| **适合**     | 快速原型开发，标准设置      | 自定义设计系统，完全控制                                       |
+| **安装**     | `pnpm add @vean/ui`         | `npx @vean/cli@latest init && npx @vean/cli@latest add button` |
 
 ## npm 包（推荐大多数项目使用）
 
 一条命令安装样式组件库：
 
 ```bash
-pnpm add @soybeanjs/ui
+pnpm add @vean/ui
 ```
 
 ## 导入样式
 
 ```ts
-import '@soybeanjs/ui/styles.css';
+import '@vean/ui/styles.css';
 ```
 
 直接从包中导入组件：
 
 ```vue
 <script setup lang="ts">
-import { SButton } from '@soybeanjs/ui';
+import { SButton } from '@vean/ui';
 </script>
 
 <template>
@@ -50,7 +50,7 @@ import { SButton } from '@soybeanjs/ui';
 ```ts
 // vite.config.ts
 import Components from 'unplugin-vue-components/vite';
-import UiResolver from '@soybeanjs/ui/resolver';
+import UiResolver from '@vean/ui/resolver';
 
 export default defineConfig({
   plugins: [
@@ -72,20 +72,20 @@ export default defineConfig({
 
 ## CLI — 复制粘贴（shadcn 风格）
 
-如果你想完全控制组件源码？使用 `sbean` CLI 将组件直接复制到你的项目中。
+如果你想完全控制组件源码？使用 `vean` CLI 将组件直接复制到你的项目中。
 
 ### 1. 初始化
 
 ```bash
-npx sbean init
+npx @vean/cli@latest init
 ```
 
-这会创建 `sbean.json` 配置文件，并设置 UnoCSS 别名。
+这会创建 `vean.json` 配置文件，并设置 UnoCSS 别名。
 
 ### 2. 添加组件
 
 ```bash
-npx sbean add button
+npx @vean/cli@latest add button
 ```
 
 组件源文件被复制到你的项目中：
@@ -117,15 +117,15 @@ import SButton from '#ui/components/button';
 
 ```bash
 # 查看变更
-npx sbean diff button
+npx @vean/cli@latest diff button
 
 # 更新到最新版本
-npx sbean add button --overwrite
+npx @vean/cli@latest add button --overwrite
 ```
 
 ### CLI 参考
 
-查看 [CLI 文档](/sbean) 获取完整的命令参考。
+查看 [CLI 文档](/cli) 获取完整的命令参考。
 
 ## 下一步
 

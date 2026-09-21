@@ -1,12 +1,12 @@
 {
   "name": "ui/aspect-ratio",
   "package": "ui",
-  "dependencies": ["@soybeanjs/headless"],
+  "dependencies": ["@vean/aria"],
   "files": [
     {
       "path": "packages/ui/src/components/aspect-ratio/index.ts",
       "type": "registry:lib",
-      "content": "export { AspectRatio as SAspectRatio } from '@soybeanjs/headless/aspect-ratio';\nexport type { AspectRatioProps } from '@soybeanjs/headless/aspect-ratio';\n"
+      "content": "export { AspectRatio as SAspectRatio } from '@vean/aria/aspect-ratio';\nexport type { AspectRatioProps } from '@vean/aria/aspect-ratio';\n"
     }
   ],
   "type": "registry:ui"

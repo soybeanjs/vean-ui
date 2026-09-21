@@ -1,11 +1,5 @@
-import type {
-  TabsCompactEmits,
-  TabsCompactProps,
-  TabsCompactSlots,
-  TabsOptionData,
-  TabsUi
-} from '@soybeanjs/headless/tabs';
-import type { AcceptableValue, ClassValue } from '@soybeanjs/headless/types';
+import type { TabsCompactEmits, TabsCompactProps, TabsCompactSlots, TabsOptionData, TabsUi } from '@vean/aria/tabs';
+import type { AcceptableValue, ClassValue } from '@vean/aria/types';
 import type { TabsFill, TabsShape } from '@/styles/tabs';
 import type { ThemeSize } from '@/theme';
 
@@ -43,4 +37,4 @@ export type TabsEmits<T extends AcceptableValue = AcceptableValue> = TabsCompact
  */
 export type TabsSlots<T extends TabsOptionData = TabsOptionData> = TabsCompactSlots<T>;
 
-export type { TabsOptionData } from '@soybeanjs/headless/tabs';
+export type { TabsOptionData } from '@vean/aria/tabs';

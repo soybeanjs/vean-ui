@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends PageTabsOptionData = PageTabsOptionData">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { PageTabsCompact, providePageTabsUi } from '@soybeanjs/headless/page-tabs';
-import type { PageTabsOptionData } from '@soybeanjs/headless/page-tabs';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { PageTabsCompact, providePageTabsUi } from '@vean/aria/page-tabs';
+import type { PageTabsOptionData } from '@vean/aria/page-tabs';
+import { keysOf } from '@vean/aria/shared';
 import { pageTabsVariants } from '@/styles/page-tabs';
 import { provideMenuUi } from '../menu/context';
 import type { PageTabsProps, PageTabsEmits, PageTabsSlots } from './types';

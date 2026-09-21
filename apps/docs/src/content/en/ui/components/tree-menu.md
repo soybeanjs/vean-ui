@@ -1,14 +1,14 @@
 ---
 head:
   title: TreeMenu
-  description: 'A collapsible sidebar navigation tree-menu component. STreeMenu combines the headless TreeMenuCompact family of composite components (TreeMenuRoot/TreeMenuOptionCompact/TreeMenuSlotCompact, zero-style) with the TreeMenuRoot context (controlled/uncontrolled activation and expansion, collapsed sidebar mode, flyout submenus when collapsed, action menus); the UI layer only injects the 8-step size recipe and slot classes. The recursive items data model ships with built-in icon/badge/tag/actions/isGroup/link fields, and node content can be freely customized through the item/item-leading/item-trailing slots.'
+  description: 'A collapsible sidebar navigation tree-menu component. STreeMenu combines the Aria TreeMenuCompact family of composite components (TreeMenuRoot/TreeMenuOptionCompact/TreeMenuSlotCompact, zero-style) with the TreeMenuRoot context (controlled/uncontrolled activation and expansion, collapsed sidebar mode, flyout submenus when collapsed, action menus); the UI layer only injects the 8-step size recipe and slot classes. The recursive items data model ships with built-in icon/badge/tag/actions/isGroup/link fields, and node content can be freely customized through the item/item-leading/item-trailing slots.'
 ---
 
 # TreeMenu
 
 ## Overview
 
-A collapsible sidebar navigation tree-menu component. `STreeMenu` combines the headless `TreeMenuCompact` family of composite components (`TreeMenuRoot`/`TreeMenuOptionCompact`/`TreeMenuSlotCompact`, zero-style) with the `TreeMenuRoot` context (controlled/uncontrolled activation and expansion, collapsed sidebar mode, flyout submenus when collapsed, action menus); the UI layer only injects the 8-step size recipe and slot classes. The recursive `items` data model ships with built-in `icon`/`badge`/`tag`/`actions`/`isGroup`/link fields, and node content can be freely customized through the `item`/`item-leading`/`item-trailing` slots.
+A collapsible sidebar navigation tree-menu component. `STreeMenu` combines the Aria `TreeMenuCompact` family of composite components (`TreeMenuRoot`/`TreeMenuOptionCompact`/`TreeMenuSlotCompact`, zero-style) with the `TreeMenuRoot` context (controlled/uncontrolled activation and expansion, collapsed sidebar mode, flyout submenus when collapsed, action menus); the UI layer only injects the 8-step size recipe and slot classes. The recursive `items` data model ships with built-in `icon`/`badge`/`tag`/`actions`/`isGroup`/link fields, and node content can be freely customized through the `item`/`item-leading`/`item-trailing` slots.
 
 ## Usage
 
@@ -26,18 +26,18 @@ A collapsible sidebar navigation tree-menu component. `STreeMenu` combines the h
 - 🗂️ Grouping — `isGroup` groups with the `group-label` slot; `top`/`bottom` slots host menu header/footer content
 - 🎨 8 sizes + style injection — `size` from xs to 2xl; `class`/`ui` overrides across 20+ named slots
 - ⌨️ Keyboard navigation — WAI-ARIA tree pattern: the root is a single tab stop with `role="tree"`, ↑/↓ roam visible items, → expands or enters children, ← collapses or returns to the parent, Home/End jump to the first/last item, and Enter/Space activates (direction keys only move focus — they never change the active item)
-- ♿ Accessibility — `role="tree"`/`treeitem` semantics with `aria-expanded`/`aria-controls`/`aria-selected`, roving tabindex, `data-soybean-tree-menu-*` data attributes, zero axe violations
+- ♿ Accessibility — `role="tree"`/`treeitem` semantics with `aria-expanded`/`aria-controls`/`aria-selected`, roving tabindex, `data-vean-tree-menu-*` data attributes, zero axe violations
 
 ## Component family
 
 - `STreeMenu` (styled) — entry wrapper; composes `TreeMenuCompact` + the `treeMenuVariants` size recipe + `provideTreeMenuUi` slot-class injection, `useForwardListeners` event merging
 - `STreeMenuStyledItem` (styled) — one row drawn with the item recipe, for content that is not a menu node (a brand, a trigger, a footer row); renders through `Primitive`, so `as` / `asChild` pick the element and `disabled` marks the row
-- `TreeMenuCompact` (headless) — composite root; `TreeMenuRoot` state root + `TreeMenuOptionsCompact` grouping/recursive rendering + `top`/`bottom` slots
-- `TreeMenuRoot` (headless) — state root; `useControllableState` manages activation/expansion/collapse; `backupExpanded` stashes expansion while collapsed and restores it on recovery
-- `TreeMenuOptionsCompact` (headless) — grouping/recursive rendering; with `expandStrategy="selected"` it syncs the expanded state to the selected menu path
-- `TreeMenuOptionCompact` (headless) — single-node composition; leaves render buttons/links + the action menu, parents render a `TreeMenuCollapsible` trigger + recursive `TreeMenuSub` + a collapsed-mode flyout `DropdownMenuCompact`
-- `TreeMenuSlotCompact` (headless) — node content orchestration (icon/label/badge/tag/external-link icon/chevron)
-- Base primitives (headless) — `TreeMenuButton`/`TreeMenuItem`/`TreeMenuCollapsible`/`TreeMenuSub`/`TreeMenuGroup`/`TreeMenuGroupLabel`/`TreeMenuTooltipCompact`, all zero-style
+- `TreeMenuCompact` (Aria) — composite root; `TreeMenuRoot` state root + `TreeMenuOptionsCompact` grouping/recursive rendering + `top`/`bottom` slots
+- `TreeMenuRoot` (Aria) — state root; `useControllableState` manages activation/expansion/collapse; `backupExpanded` stashes expansion while collapsed and restores it on recovery
+- `TreeMenuOptionsCompact` (Aria) — grouping/recursive rendering; with `expandStrategy="selected"` it syncs the expanded state to the selected menu path
+- `TreeMenuOptionCompact` (Aria) — single-node composition; leaves render buttons/links + the action menu, parents render a `TreeMenuCollapsible` trigger + recursive `TreeMenuSub` + a collapsed-mode flyout `DropdownMenuCompact`
+- `TreeMenuSlotCompact` (Aria) — node content orchestration (icon/label/badge/tag/external-link icon/chevron)
+- Base primitives (Aria) — `TreeMenuButton`/`TreeMenuItem`/`TreeMenuCollapsible`/`TreeMenuSub`/`TreeMenuGroup`/`TreeMenuGroupLabel`/`TreeMenuTooltipCompact`, all zero-style
 
 ## Demos
 
@@ -53,18 +53,18 @@ A collapsible sidebar navigation tree-menu component. `STreeMenu` combines the h
 
 ### Architecture and benchmark differences
 
-`TreeMenuRoot` owns all state (activation/expansion/collapse through the `useControllableState` controlled/uncontrolled dual channels). On collapse it stashes the expanded branches via `backupExpanded`, clears expansion, and triggers the flyout menus; on recovery it restores the branches verbatim — a lossless collapse/expand round trip. Composition happens in the headless layer: `TreeMenuOptionCompact` orchestrates leaves (button/link + action menu) and parents (Collapsible trigger + recursive `TreeMenuSub` + flyout menu), while the UI `STreeMenu` only injects the size recipe and slot classes and carries no state. Both the action menu and the flyout menu reuse the data-driven `DropdownMenuCompact` (rendered by `MenuOptions`). The root follows the WAI-ARIA tree pattern — a single roving tab stop with `role="tree"`, `treeitem` items, and `group` sub-lists — and the axe scan reports zero violations. Compared with mainstream sidebar-menu libraries, SoybeanUI is more complete in headless separation, built-in action menus, collapsed flyouts, external link items, and 13-language localization.
+`TreeMenuRoot` owns all state (activation/expansion/collapse through the `useControllableState` controlled/uncontrolled dual channels). On collapse it stashes the expanded branches via `backupExpanded`, clears expansion, and triggers the flyout menus; on recovery it restores the branches verbatim — a lossless collapse/expand round trip. Composition happens in the Aria layer: `TreeMenuOptionCompact` orchestrates leaves (button/link + action menu) and parents (Collapsible trigger + recursive `TreeMenuSub` + flyout menu), while the UI `STreeMenu` only injects the size recipe and slot classes and carries no state. Both the action menu and the flyout menu reuse the data-driven `DropdownMenuCompact` (rendered by `MenuOptions`). The root follows the WAI-ARIA tree pattern — a single roving tab stop with `role="tree"`, `treeitem` items, and `group` sub-lists — and the axe scan reports zero violations. Compared with mainstream sidebar-menu libraries, VeanUI is more complete in Aria separation, built-in action menus, collapsed flyouts, external link items, and 13-language localization.
 
-| Capability                            | SoybeanUI | Ant Design | Element Plus | Naive UI |
-| :------------------------------------ | :-------: | :--------: | :----------: | :------: |
-| headless/style separation             |    ✅     |     —      |      —       |    —     |
-| Controlled activation/expand/collapse |    ✅     |     ✅     |      ✅      |    ✅    |
-| Collapsed sidebar (rail width)        |    ✅     |     ✅     |      ✅      |    ⚠️    |
-| Flyout submenus when collapsed        |    ✅     |     ✅     |      ✅      |    ⚠️    |
-| Built-in action menus (actions)       |    ✅     |     —      |      —       |    —     |
-| Badge/tag (badge/tag)                 |    ✅     |     ⚠️     |      —       |    —     |
-| Groups/icons/external links           |    ✅     |     ✅     |      ✅      |    ✅    |
-| Localized aria-label                  |    ✅     |     ✅     |      ✅      |    ✅    |
+| Capability                            | VeanUI | Ant Design | Element Plus | Naive UI |
+| :------------------------------------ | :----: | :--------: | :----------: | :------: |
+| Aria/style separation                 |   ✅   |     —      |      —       |    —     |
+| Controlled activation/expand/collapse |   ✅   |     ✅     |      ✅      |    ✅    |
+| Collapsed sidebar (rail width)        |   ✅   |     ✅     |      ✅      |    ⚠️    |
+| Flyout submenus when collapsed        |   ✅   |     ✅     |      ✅      |    ⚠️    |
+| Built-in action menus (actions)       |   ✅   |     —      |      —       |    —     |
+| Badge/tag (badge/tag)                 |   ✅   |     ⚠️     |      —       |    —     |
+| Groups/icons/external links           |   ✅   |     ✅     |      ✅      |    ✅    |
+| Localized aria-label                  |   ✅   |     ✅     |      ✅      |    ✅    |
 
 `⚠️` = partial support (Naive UI needs extra `collapsed` + custom popup content for flyouts; Ant Design implements badges through custom `label` nodes).
 
@@ -79,7 +79,7 @@ A collapsible sidebar navigation tree-menu component. `STreeMenu` combines the h
 - A node's `disabled` blocks activation/expansion/actions; disabled items render `data-disabled` and native `disabled` semantics.
 - Clicking a leaf activates it and emits `update:modelValue`; clicking an item with children toggles expansion and emits `update:expanded`.
 - With `expandStrategy="selected"` the expanded state is re-synced to the selected menu path whenever the selected menu changes or the strategy switches to `selected`; manually expanded non-selected branches stay open until the next selection.
-- Data attributes use only `data-soybean-tree-menu-*` (D1-07) with no redundant attributes.
+- Data attributes use only `data-vean-tree-menu-*` (D1-07) with no redundant attributes.
 - `size` supports 8 steps from xs to 2xl; style overrides are injected via `ui` (20+ named slots) and the root `class`.
 
 ## FAQ
@@ -139,8 +139,7 @@ Set `isGroup: true` on a node with `children` to turn it into a group; customize
 ### How do I add link items?
 
 ```vue
-{ label: 'Soybean UI', value: 'soybean-ui', href: 'https://ui.soybeanjs.cn' } { label: 'About', value: 'about', to:
-'/about' }
+{ label: 'Vean', value: 'vean', href: 'https://veanui.com' } { label: 'About', value: 'about', to: '/about' }
 ```
 
 External links automatically show the arrow-up-right icon; `external: true` forces external-link handling.

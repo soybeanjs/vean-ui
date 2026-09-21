@@ -38,22 +38,22 @@ head:
 
 ### 架构与行业对标
 
-SoybeanUI 由 headless 层 `SliderRoot`（`useControllableState` + 值规范化 + `VisuallyHiddenInput` 表单代理）→ `SliderTrack`（指针拖拽，pointer-move/up/cancel 挂载在 document）→ `SliderRange`（滑块间的百分比跨度）→ `SliderThumb`（`role="slider"` + `aria-valuemin/max/now` + `aria-orientation`，聚焦派生步进）组成。`SliderCompact` 负责 root + track + range + thumbs 的组合与滑块迭代；UI 层 `SSlider` 仅通过 `sliderVariants` 计算变体类并经 `provideSliderUi` 注入 `ui` 映射。
+VeanUI 由 Aria 层 `SliderRoot`（`useControllableState` + 值规范化 + `VisuallyHiddenInput` 表单代理）→ `SliderTrack`（指针拖拽，pointer-move/up/cancel 挂载在 document）→ `SliderRange`（滑块间的百分比跨度）→ `SliderThumb`（`role="slider"` + `aria-valuemin/max/now` + `aria-orientation`，聚焦派生步进）组成。`SliderCompact` 负责 root + track + range + thumbs 的组合与滑块迭代；UI 层 `SSlider` 仅通过 `sliderVariants` 计算变体类并经 `provideSliderUi` 注入 `ui` 映射。
 
-| 能力                             | SoybeanUI | Ant Design `Slider` | Element Plus `Slider` | Mantine `Slider` | Naive UI `Slider` | shadcn `Slider` |
-| :------------------------------- | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
-| headless/styled 分离             |    ✅     |          —          |           —           |        —         |         —         |       ✅        |
-| 受控/非受控                      |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| 区间（多滑块）                   |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| 垂直方向                         |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| 反向 / RTL                       |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| 键盘导航（方向键/Home/End/Page） |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| `minStepsBetweenThumbs`          |    ✅     |          —          |           —           |        —         |         —         |       ✅        |
-| 表单代理 / `name` 提交           |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| axe 零违规                       |    ✅     |          —          |           —           |        —         |         —         |        —        |
-| marks 刻度标记                   |    ➕     |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
-| 拖拽时数值气泡 tooltip           |    ➕     |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
-| 数字输入框联动                   |    ➕     |         ✅          |           —           |        —         |         —         |        —        |
+| 能力                             | VeanUI | Ant Design `Slider` | Element Plus `Slider` | Mantine `Slider` | Naive UI `Slider` | shadcn `Slider` |
+| :------------------------------- | :----: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
+| Aria/styled 分离                 |   ✅   |          —          |           —           |        —         |         —         |       ✅        |
+| 受控/非受控                      |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| 区间（多滑块）                   |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| 垂直方向                         |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| 反向 / RTL                       |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| 键盘导航（方向键/Home/End/Page） |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| `minStepsBetweenThumbs`          |   ✅   |          —          |           —           |        —         |         —         |       ✅        |
+| 表单代理 / `name` 提交           |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| axe 零违规                       |   ✅   |          —          |           —           |        —         |         —         |        —        |
+| marks 刻度标记                   |   ➕   |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
+| 拖拽时数值气泡 tooltip           |   ➕   |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
+| 数字输入框联动                   |   ➕   |         ✅          |           —           |        —         |         —         |        —        |
 
 ### 使用注意
 

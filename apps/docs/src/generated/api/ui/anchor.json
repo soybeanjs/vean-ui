@@ -103,8 +103,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.linkprops",
             "default": null,
             "inheritedFrom": "linkProps",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "AnchorLinkProps",
@@ -150,8 +150,8 @@
                 "type": "AnchorLinkProps",
                 "resolvedType": null,
                 "description": "Properties for the AnchorLink component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.titleprops",
             "default": null,
             "inheritedFrom": "titleProps",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -217,7 +217,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.subprops",
             "default": null,
             "inheritedFrom": "subProps",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -242,7 +242,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.bounds",
             "default": null,
             "inheritedFrom": "bounds",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -253,7 +253,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -261,8 +261,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -278,7 +278,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.getcontainer",
             "default": null,
             "inheritedFrom": "getContainer",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -289,7 +289,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.getcurrentanchor",
             "default": null,
             "inheritedFrom": "getCurrentAnchor",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -300,7 +300,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -311,7 +311,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.offsettop",
             "default": null,
             "inheritedFrom": "offsetTop",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -322,7 +322,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -330,8 +330,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -347,7 +347,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.replace",
             "default": null,
             "inheritedFrom": "replace",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -358,7 +358,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.targetoffset",
             "default": null,
             "inheritedFrom": "targetOffset",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -369,7 +369,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -380,7 +380,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchorprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -427,7 +427,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchoremits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -437,7 +437,7 @@
             "required": true,
             "description": "Emitted when active change occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchoremits.callables.activechange",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -447,7 +447,7 @@
             "required": true,
             "description": "Emitted when item select occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_anchor_types.anchoremits.callables.itemselect",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -455,8 +455,8 @@
                 "type": "{ href: string; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.type",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.type",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -485,8 +485,8 @@
             "type": "{ 'update:modelValue': [value: string]; activeChange: [value: string]; itemSelect: [event: MouseEvent, payload: { href: string; }]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; activeChange: [value: string]; itemSelect: [event: MouseEvent, payload: { href: string; }] }",
             "description": "Events for the AnchorRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -497,8 +497,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "referencedTypes": []
               },
               {
@@ -507,8 +507,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when active change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.activechange",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.activechange",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "referencedTypes": []
               },
               {
@@ -517,8 +517,8 @@
                 "parameters": "event: MouseEvent, payload: { href: string; }",
                 "required": true,
                 "description": "Emitted when item select occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.itemselect",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.itemselect",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -533,8 +533,8 @@
         "type": "Interface AnchorCompactProps",
         "resolvedType": "{ items: AnchorOptionData[]; linkProps?: Omit<AnchorLinkProps, 'href'>; indicatorProps?: HTMLAttributes; titleProps?: HTMLAttributes; subProps?: HTMLAttributes; bounds?: number; dir?: Direction; getContainer?: (() => AnchorContainer | null); getCurrentAnchor?: ((activeHref: string) => string); modelValue?: string; offsetTop?: number; orientation?: DataOrientation; replace?: boolean; targetOffset?: number; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AnchorCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.props",
-        "sourcePath": "packages/headless/src/components/anchor/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.props",
+        "sourcePath": "packages/aria/src/components/anchor/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -542,10 +542,10 @@
             "type": "AnchorOptionData[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -553,10 +553,10 @@
             "type": "Omit<AnchorLinkProps, 'href'>",
             "required": false,
             "description": "Properties forwarded to the link element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.linkprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.linkprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "AnchorLinkProps",
@@ -564,8 +564,8 @@
                 "type": "AnchorLinkProps",
                 "resolvedType": null,
                 "description": "Properties for the AnchorLink component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -578,10 +578,10 @@
             "type": "HTMLAttributes",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -603,10 +603,10 @@
             "type": "HTMLAttributes",
             "required": false,
             "description": "Properties forwarded to the title element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.titleprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.titleprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -628,10 +628,10 @@
             "type": "HTMLAttributes",
             "required": false,
             "description": "Properties forwarded to the sub element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.subprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.subprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -653,10 +653,10 @@
             "type": "number",
             "required": false,
             "description": "Bounds.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.bounds",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.bounds",
             "default": null,
             "inheritedFrom": "bounds",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -664,10 +664,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.dir",
             "default": null,
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -675,8 +675,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -689,10 +689,10 @@
             "type": "(() => AnchorContainer | null)",
             "required": false,
             "description": "Get container.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.getcontainer",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.getcontainer",
             "default": null,
             "inheritedFrom": "getContainer",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -700,10 +700,10 @@
             "type": "((activeHref: string) => string)",
             "required": false,
             "description": "Get current anchor.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.getcurrentanchor",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.getcurrentanchor",
             "default": null,
             "inheritedFrom": "getCurrentAnchor",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -711,10 +711,10 @@
             "type": "string",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -722,10 +722,10 @@
             "type": "number",
             "required": false,
             "description": "Offset top.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.offsettop",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.offsettop",
             "default": null,
             "inheritedFrom": "offsetTop",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -733,10 +733,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "Orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.orientation",
             "default": null,
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -744,8 +744,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -758,10 +758,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether replace.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.replace",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.replace",
             "default": null,
             "inheritedFrom": "replace",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -769,10 +769,10 @@
             "type": "number",
             "required": false,
             "description": "Target offset.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.targetoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.targetoffset",
             "default": null,
             "inheritedFrom": "targetOffset",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -780,10 +780,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -791,10 +791,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -829,8 +829,8 @@
         "type": "TypeAlias AnchorCompactEmits: AnchorRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; activeChange: [value: string]; itemSelect: [event: MouseEvent, payload: { href: string; }] }",
         "description": "Events for the AnchorCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/anchor/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/anchor/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -840,8 +840,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -850,8 +850,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when active change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactemits.callables.activechange",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactemits.callables.activechange",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -860,8 +860,8 @@
             "parameters": "event: MouseEvent, payload: { href: string; }",
             "required": true,
             "description": "Emitted when item select occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorcompactemits.callables.itemselect",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorcompactemits.callables.itemselect",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -869,8 +869,8 @@
                 "type": "{ href: string; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.type",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.type",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -899,8 +899,8 @@
             "type": "{ 'update:modelValue': [value: string]; activeChange: [value: string]; itemSelect: [event: MouseEvent, payload: { href: string; }]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; activeChange: [value: string]; itemSelect: [event: MouseEvent, payload: { href: string; }] }",
             "description": "Events for the AnchorRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -911,8 +911,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "referencedTypes": []
               },
               {
@@ -921,8 +921,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when active change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.activechange",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.activechange",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "referencedTypes": []
               },
               {
@@ -931,8 +931,8 @@
                 "parameters": "event: MouseEvent, payload: { href: string; }",
                 "required": true,
                 "description": "Emitted when item select occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.itemselect",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.itemselect",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -947,8 +947,8 @@
         "type": "Interface AnchorItemCompactProps",
         "resolvedType": "{ modelValue?: string; item: AnchorOptionData; linkProps?: Omit<AnchorLinkProps, 'href'>; indicatorProps?: HTMLAttributes; titleProps?: HTMLAttributes; subProps?: HTMLAttributes }",
         "description": "Properties for the AnchorItemCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.props",
-        "sourcePath": "packages/headless/src/components/anchor/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.props",
+        "sourcePath": "packages/aria/src/components/anchor/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -956,10 +956,10 @@
             "type": "string",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -967,10 +967,10 @@
             "type": "AnchorOptionData",
             "required": true,
             "description": "Current item data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.members.item",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.members.item",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "AnchorOptionData",
@@ -978,8 +978,8 @@
                 "type": "AnchorOptionData",
                 "resolvedType": "{ children?: AnchorOptionData[]; title?: string; disabled?: boolean; href: string; target?: (string & {}) | '_blank' | '_parent' | '_self' | '_top' | null }",
                 "description": "Option data for the Anchor component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoroptiondata",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoroptiondata",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -988,10 +988,10 @@
                     "type": "AnchorOptionData[]",
                     "required": false,
                     "description": "Nested child items.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoroptiondata.members.children",
+                    "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoroptiondata.members.children",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                    "sourcePath": "packages/aria/src/components/anchor/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -999,10 +999,10 @@
                     "type": "string",
                     "required": false,
                     "description": "Title text rendered by the component.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoroptiondata.members.title",
+                    "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoroptiondata.members.title",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                    "sourcePath": "packages/aria/src/components/anchor/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1010,10 +1010,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoroptiondata.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoroptiondata.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                    "sourcePath": "packages/aria/src/components/anchor/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1021,10 +1021,10 @@
                     "type": "string",
                     "required": true,
                     "description": "The link of anchor",
-                    "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoroptiondata.members.href",
+                    "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoroptiondata.members.href",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                    "sourcePath": "packages/aria/src/components/anchor/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1032,10 +1032,10 @@
                     "type": "(string & {}) | '_blank' | '_parent' | '_self' | '_top' | null",
                     "required": false,
                     "description": "Where to display the linked URL, as the name for a browsing context.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoroptiondata.members.target",
+                    "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoroptiondata.members.target",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/link/types.ts",
+                    "sourcePath": "packages/aria/src/components/link/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1048,10 +1048,10 @@
             "type": "Omit<AnchorLinkProps, 'href'>",
             "required": false,
             "description": "Properties forwarded to the link element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.members.linkprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.members.linkprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "AnchorLinkProps",
@@ -1059,8 +1059,8 @@
                 "type": "AnchorLinkProps",
                 "resolvedType": null,
                 "description": "Properties for the AnchorLink component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1073,10 +1073,10 @@
             "type": "HTMLAttributes",
             "required": false,
             "description": "Properties forwarded to the indicator element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.members.indicatorprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -1098,10 +1098,10 @@
             "type": "HTMLAttributes",
             "required": false,
             "description": "Properties forwarded to the title element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.members.titleprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.members.titleprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -1123,10 +1123,10 @@
             "type": "HTMLAttributes",
             "required": false,
             "description": "Properties forwarded to the sub element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchoritemcompactprops.members.subprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchoritemcompactprops.members.subprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLAttributes",
@@ -1155,8 +1155,8 @@
         "type": "Interface AnchorLinkProps",
         "resolvedType": "{ href: string; disabled?: boolean; to?: string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric; external?: boolean; target?: (string & {}) | '_blank' | '_parent' | '_self' | '_top' | null; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AnchorLink component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.props",
-        "sourcePath": "packages/headless/src/components/anchor/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.props",
+        "sourcePath": "packages/aria/src/components/anchor/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1164,10 +1164,10 @@
             "type": "string",
             "required": true,
             "description": "The link of anchor",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.href",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.href",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1175,10 +1175,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1186,10 +1186,10 @@
             "type": "string | import(\"vue-router\").RouteLocationAsRelativeGeneric | import(\"vue-router\").RouteLocationAsPathGeneric",
             "required": false,
             "description": "Route Location the link should navigate to when clicked on.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.to",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.to",
             "default": null,
             "inheritedFrom": "to",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "RouteLocationRaw",
@@ -1211,10 +1211,10 @@
             "type": "boolean",
             "required": false,
             "description": "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.external",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.external",
             "default": null,
             "inheritedFrom": "external",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1222,10 +1222,10 @@
             "type": "(string & {}) | '_blank' | '_parent' | '_self' | '_top' | null",
             "required": false,
             "description": "Where to display the linked URL, as the name for a browsing context.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.target",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.target",
             "default": null,
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1233,10 +1233,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1244,10 +1244,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorlinkprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorlinkprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1284,8 +1284,8 @@
         "type": "Interface AnchorRootProps",
         "resolvedType": "{ bounds?: number; dir?: Direction; getContainer?: (() => AnchorContainer | null); getCurrentAnchor?: ((activeHref: string) => string); modelValue?: string; offsetTop?: number; orientation?: DataOrientation; replace?: boolean; targetOffset?: number; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AnchorRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.props",
-        "sourcePath": "packages/headless/src/components/anchor/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.props",
+        "sourcePath": "packages/aria/src/components/anchor/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1293,10 +1293,10 @@
             "type": "number",
             "required": false,
             "description": "Bounds.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.bounds",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.bounds",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1304,10 +1304,10 @@
             "type": "Direction",
             "required": false,
             "description": "Reading direction of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1315,8 +1315,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1329,10 +1329,10 @@
             "type": "(() => AnchorContainer | null)",
             "required": false,
             "description": "Get container.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.getcontainer",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.getcontainer",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1340,10 +1340,10 @@
             "type": "((activeHref: string) => string)",
             "required": false,
             "description": "Get current anchor.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.getcurrentanchor",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.getcurrentanchor",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1351,10 +1351,10 @@
             "type": "string",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1362,10 +1362,10 @@
             "type": "number",
             "required": false,
             "description": "Offset top.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.offsettop",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.offsettop",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1373,10 +1373,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "Orientation of the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1384,8 +1384,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1398,10 +1398,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether replace.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.replace",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.replace",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1409,10 +1409,10 @@
             "type": "number",
             "required": false,
             "description": "Target offset.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.targetoffset",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.targetoffset",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1420,10 +1420,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1431,10 +1431,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1469,8 +1469,8 @@
         "type": "TypeAlias AnchorRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; activeChange: [value: string]; itemSelect: [event: MouseEvent, payload: { href: string; }] }",
         "description": "Events for the AnchorRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.emits",
-        "sourcePath": "packages/headless/src/components/anchor/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.emits",
+        "sourcePath": "packages/aria/src/components/anchor/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1480,8 +1480,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1490,8 +1490,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when active change occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.activechange",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.activechange",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": []
           },
           {
@@ -1500,8 +1500,8 @@
             "parameters": "event: MouseEvent, payload: { href: string; }",
             "required": true,
             "description": "Emitted when item select occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.anchorrootemits.callables.itemselect",
-            "sourcePath": "packages/headless/src/components/anchor/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.anchorrootemits.callables.itemselect",
+            "sourcePath": "packages/aria/src/components/anchor/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1509,8 +1509,8 @@
                 "type": "{ href: string; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_anchor_types.type",
-                "sourcePath": "packages/headless/src/components/anchor/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_anchor_types.type",
+                "sourcePath": "packages/aria/src/components/anchor/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

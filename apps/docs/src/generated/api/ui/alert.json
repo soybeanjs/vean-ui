@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -128,8 +128,8 @@
                 "type": "{ root: ClassValue; content: ClassValue; description: ClassValue; title: ClassValue; icon: ClassValue; close: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Alert component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertui",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertui",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.title",
             "default": null,
             "inheritedFrom": "title",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.description",
             "default": null,
             "inheritedFrom": "description",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.icon",
             "default": null,
             "inheritedFrom": "icon",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "IconValue",
@@ -175,8 +175,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.closable",
             "default": null,
             "inheritedFrom": "closable",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -203,7 +203,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertContentProps",
@@ -211,8 +211,8 @@
                 "type": "AlertContentProps",
                 "resolvedType": null,
                 "description": "Properties for the AlertContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcontentprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcontentprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -228,7 +228,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.titleprops",
             "default": null,
             "inheritedFrom": "titleProps",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertTitleProps",
@@ -236,8 +236,8 @@
                 "type": "AlertTitleProps",
                 "resolvedType": null,
                 "description": "Properties for the AlertTitle component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alerttitleprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alerttitleprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -253,7 +253,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": "descriptionProps",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertDescriptionProps",
@@ -261,8 +261,8 @@
                 "type": "AlertDescriptionProps",
                 "resolvedType": null,
                 "description": "Properties for the AlertDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertdescriptionprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertdescriptionprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -278,7 +278,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.closeprops",
             "default": null,
             "inheritedFrom": "closeProps",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertCloseProps",
@@ -286,8 +286,8 @@
                 "type": "AlertCloseProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AlertClose component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -296,10 +296,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -307,10 +307,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -318,10 +318,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -329,10 +329,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -348,7 +348,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.open",
             "default": "true",
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -359,7 +359,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertprops.members.role",
             "default": "'alert'",
             "inheritedFrom": "role",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           }
         ],
@@ -384,7 +384,7 @@
             "required": true,
             "description": "Emitted when the open changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -394,7 +394,7 @@
             "required": true,
             "description": "Emitted when the close button is clicked.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertemits.callables.close",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -416,11 +416,11 @@
           {
             "name": "AlertCompactEmits",
             "kind": "typeAlias",
-            "type": "import(\"@soybeanjs/headless\").AlertRootEmits & import(\"../../../node_modules/@soybeanjs/headless/src/components/alert/types\").AlertCloseEmits",
+            "type": "import(\"@vean/aria\").AlertRootEmits & import(\"../../../node_modules/@vean/aria/src/components/alert/types\").AlertCloseEmits",
             "resolvedType": "{ \"update:open\": [open: boolean]; close: [event: PointerEvent] }",
             "description": "Events for the AlertCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactemits",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactemits",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -431,8 +431,8 @@
                 "parameters": "open: boolean",
                 "required": true,
                 "description": "Emitted when the open changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               },
               {
@@ -441,8 +441,8 @@
                 "parameters": "event: PointerEvent",
                 "required": true,
                 "description": "Emitted when the close button is clicked.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactemits.callables.close",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactemits.callables.close",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -467,7 +467,7 @@
             "required": false,
             "description": "Custom content for the default slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertslots.callables.default",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -477,7 +477,7 @@
             "required": false,
             "description": "Custom content for the leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -487,7 +487,7 @@
             "required": false,
             "description": "Custom content for the title slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertslots.callables.title",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -497,7 +497,7 @@
             "required": false,
             "description": "Custom content for the description slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertslots.callables.description",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -507,7 +507,7 @@
             "required": false,
             "description": "Custom content for the trailing slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertslots.callables.trailing",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -517,7 +517,7 @@
             "required": false,
             "description": "Custom content for the close slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_alert_types.alertslots.callables.close",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           }
         ],
@@ -528,8 +528,8 @@
             "type": "{ AlertClose?: () => any; leading?: () => any; title?: () => any; description?: () => any; trailing?: () => any; close?: () => any; }",
             "resolvedType": "{ AlertClose?: (() => any); leading?: (() => any); title?: (() => any); description?: (() => any); trailing?: (() => any); close?: (() => any) }",
             "description": "Slots for the AlertCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -540,8 +540,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the default slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.default",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               },
               {
@@ -550,8 +550,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the leading slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.leading",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.leading",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               },
               {
@@ -560,8 +560,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the title slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.title",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.title",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               },
               {
@@ -570,8 +570,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the description slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.description",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.description",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               },
               {
@@ -580,8 +580,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the trailing slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.trailing",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.trailing",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               },
               {
@@ -590,8 +590,8 @@
                 "parameters": "(() => any) | undefined",
                 "required": false,
                 "description": "Custom content for the close slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.close",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.close",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -606,8 +606,8 @@
         "type": "Interface AlertCloseProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AlertClose component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.props",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.props",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -615,10 +615,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -626,8 +626,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -640,10 +640,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -651,10 +651,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -662,10 +662,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -700,8 +700,8 @@
         "type": "TypeAlias AlertCloseEmits",
         "resolvedType": "{ close: [event: PointerEvent] }",
         "description": "Events for the AlertClose component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseemits.emits",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseemits.emits",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -711,8 +711,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when the close button is clicked.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseemits.callables.close",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseemits.callables.close",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -740,8 +740,8 @@
         "type": "Interface AlertCompactProps",
         "resolvedType": "{ title?: string; description?: string; icon?: string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null; closable?: boolean; contentProps?: AlertContentProps; titleProps?: AlertTitleProps; descriptionProps?: AlertDescriptionProps; closeProps?: AlertCloseProps; open?: boolean; role?: 'alert' | 'status' }",
         "description": "Properties for the AlertCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.props",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.props",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -749,10 +749,10 @@
             "type": "string",
             "required": false,
             "description": "Title text rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.title",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.title",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -760,10 +760,10 @@
             "type": "string",
             "required": false,
             "description": "Description text rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.description",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.description",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -771,10 +771,10 @@
             "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null",
             "required": false,
             "description": "Icon rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.icon",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.icon",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "IconValue",
@@ -782,8 +782,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -796,10 +796,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component can be closed.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.closable",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.closable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -807,10 +807,10 @@
             "type": "AlertContentProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertContentProps",
@@ -818,8 +818,8 @@
                 "type": "AlertContentProps",
                 "resolvedType": null,
                 "description": "Properties for the AlertContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcontentprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcontentprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -832,10 +832,10 @@
             "type": "AlertTitleProps",
             "required": false,
             "description": "Properties forwarded to the title element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.titleprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.titleprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertTitleProps",
@@ -843,8 +843,8 @@
                 "type": "AlertTitleProps",
                 "resolvedType": null,
                 "description": "Properties for the AlertTitle component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alerttitleprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alerttitleprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -857,10 +857,10 @@
             "type": "AlertDescriptionProps",
             "required": false,
             "description": "Properties forwarded to the description element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.descriptionprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertDescriptionProps",
@@ -868,8 +868,8 @@
                 "type": "AlertDescriptionProps",
                 "resolvedType": null,
                 "description": "Properties for the AlertDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertdescriptionprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertdescriptionprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -882,10 +882,10 @@
             "type": "AlertCloseProps",
             "required": false,
             "description": "Properties forwarded to the close element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.closeprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.closeprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "AlertCloseProps",
@@ -893,8 +893,8 @@
                 "type": "AlertCloseProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AlertClose component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops",
-                "sourcePath": "packages/headless/src/components/alert/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops",
+                "sourcePath": "packages/aria/src/components/alert/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -903,10 +903,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -914,10 +914,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -925,10 +925,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -936,10 +936,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcloseprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcloseprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -952,10 +952,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the alert. Can be bound with `v-model:open`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.open",
             "default": "true",
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -963,10 +963,10 @@
             "type": "'alert' | 'status'",
             "required": false,
             "description": "The ARIA live region role of the alert. `role=\"alert\"` implies an\nassertive live region (interrupting), while `role=\"status\"` implies a\npolite one (non-interrupting).",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactprops.members.role",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactprops.members.role",
             "default": "'alert'",
             "inheritedFrom": "role",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           }
         ],
@@ -979,8 +979,8 @@
         "type": "TypeAlias AlertCompactEmits: AlertRootEmits & AlertCloseEmits",
         "resolvedType": "{ \"update:open\": [open: boolean]; close: [event: PointerEvent] }",
         "description": "Events for the AlertCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -990,8 +990,8 @@
             "parameters": "open: boolean",
             "required": true,
             "description": "Emitted when the open changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1000,8 +1000,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when the close button is clicked.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactemits.callables.close",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactemits.callables.close",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -1027,8 +1027,8 @@
         "type": "TypeAlias AlertCompactSlots",
         "resolvedType": "{ AlertClose?: (() => any); leading?: (() => any); title?: (() => any); description?: (() => any); trailing?: (() => any); close?: (() => any) }",
         "description": "Slots for the AlertCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1038,8 +1038,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.default",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1048,8 +1048,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.leading",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1058,8 +1058,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the title slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.title",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.title",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1068,8 +1068,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the description slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.description",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.description",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1078,8 +1078,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the trailing slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.trailing",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.trailing",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1088,8 +1088,8 @@
             "parameters": "(() => any) | undefined",
             "required": false,
             "description": "Custom content for the close slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcompactslots.callables.close",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcompactslots.callables.close",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1103,8 +1103,8 @@
         "type": "Interface AlertContentProps",
         "resolvedType": null,
         "description": "Properties for the AlertContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertcontentprops.props",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertcontentprops.props",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1118,8 +1118,8 @@
         "type": "Interface AlertDescriptionProps",
         "resolvedType": null,
         "description": "Properties for the AlertDescription component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertdescriptionprops.props",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertdescriptionprops.props",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1133,8 +1133,8 @@
         "type": "Interface AlertRootProps",
         "resolvedType": "{ open?: boolean; role?: 'alert' | 'status' }",
         "description": "Properties for the AlertRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertrootprops.props",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertrootprops.props",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1142,10 +1142,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the alert. Can be bound with `v-model:open`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertrootprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertrootprops.members.open",
             "default": "true",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           },
           {
@@ -1153,10 +1153,10 @@
             "type": "'alert' | 'status'",
             "required": false,
             "description": "The ARIA live region role of the alert. `role=\"alert\"` implies an\nassertive live region (interrupting), while `role=\"status\"` implies a\npolite one (non-interrupting).",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertrootprops.members.role",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertrootprops.members.role",
             "default": "'alert'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1169,8 +1169,8 @@
         "type": "TypeAlias AlertRootEmits",
         "resolvedType": "{ \"update:open\": [open: boolean] }",
         "description": "Events for the AlertRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertrootemits.emits",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertrootemits.emits",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1180,8 +1180,8 @@
             "parameters": "open: boolean",
             "required": true,
             "description": "Emitted when the open changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alertrootemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/alert/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alertrootemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/alert/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1195,8 +1195,8 @@
         "type": "Interface AlertTitleProps",
         "resolvedType": null,
         "description": "Properties for the AlertTitle component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_alert_types.alerttitleprops.props",
-        "sourcePath": "packages/headless/src/components/alert/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_alert_types.alerttitleprops.props",
+        "sourcePath": "packages/aria/src/components/alert/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],

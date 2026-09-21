@@ -1,8 +1,8 @@
-# @soybeanjs/ui-nuxt
+# @vean/nuxt
 
 English | [中文](./README.zh-CN.md)
 
-Minimal Nuxt integration fixture for `@soybeanjs/ui`.
+Minimal Nuxt integration fixture for `@vean/ui`.
 
 ## 📖 Overview
 
@@ -34,8 +34,8 @@ pnpm preview
 ## 🏗 Tech Stack
 
 - **Nuxt 4** — Vue framework
-- **@soybeanjs/ui** — Styled component library
-- **@soybeanjs/ui/nuxt** — Nuxt module for auto-registration
+- **@vean/ui** — Styled component library
+- **@vean/ui/nuxt** — Nuxt module for auto-registration
 - **UnoCSS** — Utility-first CSS engine
 - **Vue I18n** — Internationalization
 
@@ -47,7 +47,7 @@ apps/nuxt/
 │   ├── app.vue       # Minimal demo page wrapped in SConfigProvider
 │   └── theme.ts      # Local theme context provider
 ├── nuxt.config.ts    # UI module, i18n, UnoCSS
-├── uno.config.ts     # Shared SoybeanUI preset stack
+├── uno.config.ts     # Shared Vean preset stack
 ├── package.json
 └── tsconfig.json
 ```

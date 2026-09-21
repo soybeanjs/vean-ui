@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { createTime } from '@soybeanjs/headless/date';
-import { STimeRangeField } from '@soybeanjs/ui';
+import { createTime } from '@vean/aria/date';
+import { STimeRangeField } from '@vean/ui';
 
 const value = shallowRef({
   start: createTime(10, 0, 0),

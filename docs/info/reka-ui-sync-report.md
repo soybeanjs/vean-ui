@@ -9,7 +9,7 @@
 
 将 reka-ui 自 `aefdca99` 起至 HEAD（v2.9.1 → v2.10.3）的所有提交，系统地检查、分析其对当前 UI 库 headless 组件的功能/API/实现逻辑影响，对确认有效的变更进行代码移植，并编写单元测试、集成测试与 E2E 测试，最终形成测试报告与变更记录。
 
-> 说明：SoybeanUI3 的 headless 包（`@soybeanjs/headless`）是 reka-ui 的重构式移植，目录小写、组件拆分（`context.ts`/`types.ts`/`shared.ts` + 各 slot SFC + Compact 聚合），并新增了 `provideXUi`/`useUiContext` 等桥接层。因此移植基于**语义等价**而非文件拷贝，需逐组件适配到 Soybean 架构。
+> 说明：Vean3 的 headless 包（`@vean/aria`）是 reka-ui 的重构式移植，目录小写、组件拆分（`context.ts`/`types.ts`/`shared.ts` + 各 slot SFC + Compact 聚合），并新增了 `provideXUi`/`useUiContext` 等桥接层。因此移植基于**语义等价**而非文件拷贝，需逐组件适配到 Soybean 架构。
 
 ## 2. 分析方法
 
@@ -104,7 +104,7 @@
 | `combobox.e2e.spec.ts` _(新建)_ | 关联 label 点击后 listbox 保持打开             | 2 通过 |
 | `menu.e2e.spec.ts`              | modal 菜单 Tab 被困在菜单内                    | 5 通过 |
 
-E2E 命令：`pnpm --filter @soybeanjs/ui test:e2e test/browser/specs/components/{tooltip,combobox,menu}.e2e.spec.ts` → **3 文件 / 9 测试通过**（chromium 已安装；运行前需 `pnpm build:libs` 构建 theme + ui-uno）。
+E2E 命令：`pnpm --filter @vean/ui test:e2e test/browser/specs/components/{tooltip,combobox,menu}.e2e.spec.ts` → **3 文件 / 9 测试通过**（chromium 已安装；运行前需 `pnpm build:libs` 构建 theme + unocss）。
 
 ### 5.3 类型检查
 

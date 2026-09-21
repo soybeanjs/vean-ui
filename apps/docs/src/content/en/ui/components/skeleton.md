@@ -1,14 +1,14 @@
 ---
 head:
   title: Skeleton
-  description: A placeholder used to indicate that content is still loading. SSkeleton combines the headless Skeleton primitive (zero styles) with the skeletonVariants style recipe (6 sizes × 2 shapes × animated toggle) and is decorative (aria-hidden by default).
+  description: A placeholder used to indicate that content is still loading. SSkeleton combines the Aria Skeleton primitive (zero styles) with the skeletonVariants style recipe (6 sizes × 2 shapes × animated toggle) and is decorative (aria-hidden by default).
 ---
 
 # Skeleton
 
 ## Overview
 
-A placeholder used to indicate that content is still loading. `SSkeleton` combines the headless `Skeleton` primitive (zero styles) with the `skeletonVariants` style recipe (6 sizes × 2 shapes × animated toggle) and is decorative (`aria-hidden` by default).
+A placeholder used to indicate that content is still loading. `SSkeleton` combines the Aria `Skeleton` primitive (zero styles) with the `skeletonVariants` style recipe (6 sizes × 2 shapes × animated toggle) and is decorative (`aria-hidden` by default).
 
 Use it to reserve space and reduce layout shift while data loads — cards, tables, lists, and detail blocks. Prefer `spinner` for an indefinite "please wait" on an action, and `empty` for the final no-data state.
 
@@ -18,7 +18,7 @@ Use it to reserve space and reduce layout shift while data loads — cards, tabl
 
 ## Features
 
-- 🧩 Headless/styled split — the headless `Skeleton` primitive owns `aria-hidden`/`as`/`asChild`; `SSkeleton` injects `skeletonVariants`
+- 🧩 Aria/styled split — the Aria `Skeleton` primitive owns `aria-hidden`/`as`/`asChild`; `SSkeleton` injects `skeletonVariants`
 - 📐 6 size presets — xs–2xl that set both height and width
 - 🟦 2 shapes — `auto` (rounded) and `rounded` (pill/circle)
 - ⚡ Animated — `animate-pulse` by default; set `animated=false` for a static block
@@ -29,7 +29,7 @@ Use it to reserve space and reduce layout shift while data loads — cards, tabl
 ## Component family
 
 - `SSkeleton` (styled) — the entry wrapper; `skeletonVariants` recipe
-- `Skeleton` (headless) — the state-free primitive; `aria-hidden` default + `as`/`asChild`
+- `Skeleton` (Aria) — the state-free primitive; `aria-hidden` default + `as`/`asChild`
 
 ## Demos
 
@@ -43,16 +43,16 @@ Use it to reserve space and reduce layout shift while data loads — cards, tabl
 
 ### Architecture and benchmark differences
 
-The headless `Skeleton` is a state-free primitive that only owns the decorative `aria-hidden` default and polymorphism, while `SSkeleton` keeps all styling in `skeletonVariants`. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled skeleton with `paragraph`/`avatar`/`title` composition props. SoybeanUI stays minimal (one primitive) and expects consumers to compose placeholders with grid/flex — the `size` scale and `rounded` pill shape cover the common cases the single-package libraries expose as presets.
+The Aria `Skeleton` is a state-free primitive that only owns the decorative `aria-hidden` default and polymorphism, while `SSkeleton` keeps all styling in `skeletonVariants`. This mirrors shadcn/ui's headless/styled split, unlike Ant Design, Element Plus, Mantine and Naive UI which ship a single styled skeleton with `paragraph`/`avatar`/`title` composition props. VeanUI stays minimal (one primitive) and expects consumers to compose placeholders with grid/flex — the `size` scale and `rounded` pill shape cover the common cases the single-package libraries expose as presets.
 
-| Capability               | SoybeanUI | shadcn/ui | Ant Design Skeleton | Element Plus Skeleton | Mantine Skeleton | Naive UI Skeleton |
-| :----------------------- | :-------: | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: |
-| Headless/styled split    |    ✅     |    ✅     |          —          |           —           |        —         |         —         |
-| Animated pulse           |    ✅     |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
-| Size variants (6)        |    ✅     |     —     |          —          |          ✅           |        ✅        |         —         |
-| Shape (rounded / pill)   |    ✅     |     —     |          —          |           —           |        —         |         —         |
-| `aria-hidden` by default |    ✅     |     —     |          —          |           —           |        —         |         —         |
-| `as`/`asChild`           |    ✅     |    ✅     |          —          |           —           |        —         |         —         |
+| Capability               | VeanUI | shadcn/ui | Ant Design Skeleton | Element Plus Skeleton | Mantine Skeleton | Naive UI Skeleton |
+| :----------------------- | :----: | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: |
+| Aria/styled split        |   ✅   |    ✅     |          —          |           —           |        —         |         —         |
+| Animated pulse           |   ✅   |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |
+| Size variants (6)        |   ✅   |     —     |          —          |          ✅           |        ✅        |         —         |
+| Shape (rounded / pill)   |   ✅   |     —     |          —          |           —           |        —         |         —         |
+| `aria-hidden` by default |   ✅   |     —     |          —          |           —           |        —         |         —         |
+| `as`/`asChild`           |   ✅   |    ✅     |          —          |           —           |        —         |         —         |
 
 `—` = unsupported or a different interaction model.
 

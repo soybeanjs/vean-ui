@@ -1,7 +1,7 @@
 {
   "api": {
     "generated": {
-      "packages_headless_src_components_accordion_types": {
+      "packages_aria_src_components_accordion_types": {
         "accordioncompactemits": {
           "callables": {
             "update_modelvalue": ""
@@ -103,7 +103,7 @@
         },
         "accordionui": "UI class overrides for the Accordion component."
       },
-      "packages_headless_src_components_affix_types": {
+      "packages_aria_src_components_affix_types": {
         "affixcompactemits": {
           "callables": {
             "change": "Emitted when change occurs."
@@ -142,7 +142,7 @@
         },
         "affixui": "UI class overrides for the Affix component."
       },
-      "packages_headless_src_components_alert_types": {
+      "packages_aria_src_components_alert_types": {
         "alertcloseemits": {
           "callables": {
             "close": "Emitted when the close button is clicked."
@@ -215,7 +215,7 @@
         },
         "alertui": "UI class overrides for the Alert component."
       },
-      "packages_headless_src_components_anchor_types": {
+      "packages_aria_src_components_anchor_types": {
         "anchorcompactemits": {
           "callables": {
             "activechange": "Emitted when active change occurs.",
@@ -303,12 +303,12 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_arrow_types": {
+      "packages_aria_src_components_arrow_types": {
         "arrowprops": {
           "props": "Properties for the Arrow component."
         }
       },
-      "packages_headless_src_components_aspect_ratio_types": {
+      "packages_aria_src_components_aspect_ratio_types": {
         "aspectratioprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -318,7 +318,7 @@
           "props": "Properties for the AspectRatio component."
         }
       },
-      "packages_headless_src_components_autocomplete_types": {
+      "packages_aria_src_components_autocomplete_types": {
         "autocompleteanchorprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -529,7 +529,7 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_avatar_types": {
+      "packages_aria_src_components_avatar_types": {
         "avatarcompactemits": {
           "callables": {
             "loadingstatuschange": "Event handler called when the image loading status changes. This is useful for controlling what to render as the\nimage is loading."
@@ -580,7 +580,7 @@
         },
         "avatarui": "UI class overrides for the Avatar component."
       },
-      "packages_headless_src_components_backtop_types": {
+      "packages_aria_src_components_backtop_types": {
         "backtopemits": {
           "callables": {
             "change": "Emitted when change occurs.",
@@ -588,7 +588,7 @@
           }
         }
       },
-      "packages_headless_src_components_breadcrumb_types": {
+      "packages_aria_src_components_breadcrumb_types": {
         "breadcrumbcompactellipsisslotprops": {
           "members": {
             "ellipsisitems": "Ellipsis items exposed in the slot scope."
@@ -680,7 +680,7 @@
         },
         "breadcrumbui": "UI class overrides for the Breadcrumb component."
       },
-      "packages_headless_src_components_button_types": {
+      "packages_aria_src_components_button_types": {
         "buttonemits": {
           "callables": {
             "click": "Emitted when click occurs."
@@ -697,7 +697,7 @@
         },
         "buttontype": "Supported button values."
       },
-      "packages_headless_src_components_calendar_range_types": {
+      "packages_aria_src_components_calendar_range_types": {
         "calendarrangecellprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -970,7 +970,7 @@
         "calendarrangeui": "UI class overrides for the CalendarRange component.",
         "type": ""
       },
-      "packages_headless_src_components_calendar_types": {
+      "packages_aria_src_components_calendar_types": {
         "calendarcellprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -1231,7 +1231,7 @@
         "calendarui": "UI class overrides for the Calendar component.",
         "type": ""
       },
-      "packages_headless_src_components_carousel_types": {
+      "packages_aria_src_components_carousel_types": {
         "carouselcompactemits": {
           "callables": {
             "init": "Emitted when init occurs."
@@ -1335,10 +1335,10 @@
         "carouselui": "UI class overrides for the Carousel component.",
         "type": ""
       },
-      "packages_headless_src_components_cascader_index": {
+      "packages_aria_src_components_cascader_index": {
         "cascadervalue": "The value type of the Cascader component.\n\n- `M = false`: single selection. `P = false` -> `T`, `P = true` -> `T[]` (one path).\n- `M = true`: multiple selection. `P = false` -> `T[]`, `P = true` -> `T[][]` (multiple paths)."
       },
-      "packages_headless_src_components_cascader_types": {
+      "packages_aria_src_components_cascader_types": {
         "cascaderarrowprops": {
           "props": "Alias of the popper arrow props used by the cascader arrow part."
         },
@@ -1624,7 +1624,7 @@
           "props": "Properties for the CascaderValue component."
         }
       },
-      "packages_headless_src_components_checkbox_types": {
+      "packages_aria_src_components_checkbox_types": {
         "checkboxcardcompactemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the value of the checkbox changes."
@@ -1780,7 +1780,7 @@
         },
         "checkboxui": "UI class overrides for the Checkbox component."
       },
-      "packages_headless_src_components_clipboard_types": {
+      "packages_aria_src_components_clipboard_types": {
         "clipboardemits": {
           "callables": {
             "click": "Emitted when click occurs.",
@@ -1811,7 +1811,7 @@
         },
         "clipboardstate": "State values for ClipboardState."
       },
-      "packages_headless_src_components_collapsible_types": {
+      "packages_aria_src_components_collapsible_types": {
         "collapsiblecontentprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -1849,7 +1849,7 @@
         },
         "collapsibleui": "UI class overrides for the Collapsible component."
       },
-      "packages_headless_src_components_color_area_types": {
+      "packages_aria_src_components_color_area_types": {
         "colorareaareaprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -1923,7 +1923,7 @@
         },
         "colorareaui": "UI class overrides for the ColorArea component."
       },
-      "packages_headless_src_components_color_field_types": {
+      "packages_aria_src_components_color_field_types": {
         "colorfieldcompactemits": {
           "callables": {
             "update_color": "Emitted when the color value changes.",
@@ -1982,7 +1982,7 @@
         },
         "colorfieldui": "UI class overrides for the ColorField component."
       },
-      "packages_headless_src_components_color_picker_types": {
+      "packages_aria_src_components_color_picker_types": {
         "colorpickercompactemits": {
           "callables": {
             "change": "Emitted when change occurs.",
@@ -2087,7 +2087,7 @@
         },
         "colorpickerui": "UI class overrides for the ColorPicker component."
       },
-      "packages_headless_src_components_color_slider_types": {
+      "packages_aria_src_components_color_slider_types": {
         "colorslidercompactemits": {
           "callables": {
             "change": "Emitted when change occurs.",
@@ -2162,7 +2162,7 @@
         },
         "colorsliderui": "UI class overrides for the ColorSlider component."
       },
-      "packages_headless_src_components_color_swatch_picker_types": {
+      "packages_aria_src_components_color_swatch_picker_types": {
         "colorswatchpickercompactcolorslotprops": {
           "members": {
             "color": "Current swatch color."
@@ -2272,7 +2272,7 @@
           "props": "Properties for the ColorSwatchPickerRoot component."
         }
       },
-      "packages_headless_src_components_color_swatch_types": {
+      "packages_aria_src_components_color_swatch_types": {
         "colorswatchcheckerprops": {
           "props": "Events for the ColorSwatch component."
         },
@@ -2320,7 +2320,7 @@
         },
         "colorswatchui": "UI classes for the ColorSwatch component."
       },
-      "packages_headless_src_components_combobox_index": {
+      "packages_aria_src_components_combobox_index": {
         "comboboxportalprops": {
           "members": {
             "defer": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
@@ -2330,7 +2330,7 @@
           }
         }
       },
-      "packages_headless_src_components_combobox_types": {
+      "packages_aria_src_components_combobox_types": {
         "comboboxanchorprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -2625,7 +2625,7 @@
           "props": "Properties for the ComboboxVirtualizer component."
         }
       },
-      "packages_headless_src_components_command_types": {
+      "packages_aria_src_components_command_types": {
         "commandcompactemits": {
           "callables": {
             "entryfocus": "Event handler called when container is being focused. Can be prevented.",
@@ -2712,7 +2712,7 @@
         },
         "commandui": "UI class overrides for the Command component."
       },
-      "packages_headless_src_components_context_menu_index": {
+      "packages_aria_src_components_context_menu_index": {
         "contextmenuanchorprops": {
           "props": "Properties for the anchor (reference) element, optionally overriding the reference."
         },
@@ -2846,7 +2846,7 @@
         },
         "contextmenuui": "UI class overrides for the Menu component."
       },
-      "packages_headless_src_components_context_menu_types": {
+      "packages_aria_src_components_context_menu_types": {
         "contextmenucheckboxcompactemits": {
           "callables": {
             "closeautofocus": "Event handler called when auto-focusing on close. Can be prevented.",
@@ -3091,7 +3091,7 @@
           "props": "Properties for the ContextMenuWrapperCompact component."
         }
       },
-      "packages_headless_src_components_date_field_types": {
+      "packages_aria_src_components_date_field_types": {
         "datefieldcompactemits": {
           "callables": {
             "update_modelvalue": "Emitted when the model value changes.",
@@ -3181,7 +3181,7 @@
         },
         "datefieldui": "UI class overrides for the DateField component."
       },
-      "packages_headless_src_components_date_picker_types": {
+      "packages_aria_src_components_date_picker_types": {
         "datepickercompactemits": {
           "callables": {
             "closeautofocus": "Event handler called when auto-focusing on close. Can be prevented.",
@@ -3273,7 +3273,7 @@
         },
         "datepickerui": "UI class for the DatePicker component."
       },
-      "packages_headless_src_components_date_range_field_types": {
+      "packages_aria_src_components_date_range_field_types": {
         "daterangefieldcompactemits": {
           "callables": {
             "update_endvalue": "Emitted when the end value changes.",
@@ -3383,7 +3383,7 @@
         "daterangefieldui": "UI class overrides for the DateRangeField component.",
         "daterangetype": ""
       },
-      "packages_headless_src_components_date_range_picker_types": {
+      "packages_aria_src_components_date_range_picker_types": {
         "daterangepickercompactemits": {
           "callables": {
             "closeautofocus": "Event handler called when auto-focusing on close. Can be prevented.",
@@ -3480,7 +3480,7 @@
         },
         "daterangepickerui": "UI class for the DateRangePicker component."
       },
-      "packages_headless_src_components_dialog_types": {
+      "packages_aria_src_components_dialog_types": {
         "dialogalerttype": "Supported dialog alert values.",
         "dialogcancelemits": {
           "callables": {
@@ -3711,7 +3711,7 @@
         },
         "dialogui": "UI class overrides for the Dialog component."
       },
-      "packages_headless_src_components_drawer_index": {
+      "packages_aria_src_components_drawer_index": {
         "draweroverlayprops": {
           "members": {
             "forcemount": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries."
@@ -3725,7 +3725,7 @@
           }
         }
       },
-      "packages_headless_src_components_drawer_types": {
+      "packages_aria_src_components_drawer_types": {
         "drawercancelemits": {
           "callables": {
             "cancel": "Event handler called when the dialog is requested to be canceled."
@@ -3961,7 +3961,7 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_dropdown_menu_index": {
+      "packages_aria_src_components_dropdown_menu_index": {
         "dropdownmenucheckboxitemprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -4049,7 +4049,7 @@
         },
         "dropdownmenuui": "UI class overrides for the Menu component."
       },
-      "packages_headless_src_components_dropdown_menu_types": {
+      "packages_aria_src_components_dropdown_menu_types": {
         "dropdownmenucheckboxcompactemits": {
           "callables": {
             "closeautofocus": "Event handler called when auto-focusing on close. Can be prevented.",
@@ -4323,7 +4323,7 @@
           "props": "Properties for the DropdownMenuWrapperCompact component."
         }
       },
-      "packages_headless_src_components_editable_types": {
+      "packages_aria_src_components_editable_types": {
         "editableactivationmode": "Type information for EditableActivationMode.",
         "editableareaprops": {
           "members": {
@@ -4473,7 +4473,7 @@
         },
         "editableui": "UI class overrides for the Editable component."
       },
-      "packages_headless_src_components_form_types": {
+      "packages_aria_src_components_form_types": {
         "formcompactprops": {
           "members": {
             "controlprops": "Properties forwarded to the control element.",
@@ -4571,7 +4571,7 @@
         "formui": "",
         "type": ""
       },
-      "packages_headless_src_components_hover_card_index": {
+      "packages_aria_src_components_hover_card_index": {
         "hovercardarrowprops": "",
         "hovercardportalprops": {
           "members": {
@@ -4583,7 +4583,7 @@
         },
         "hovercardui": ""
       },
-      "packages_headless_src_components_hover_card_types": {
+      "packages_aria_src_components_hover_card_types": {
         "hovercardcompactemits": {
           "callables": {
             "escapekeydown": "Event handler called when the escape key is down. Can be prevented.",
@@ -4687,10 +4687,10 @@
           "props": "Properties for the HoverCardRoot component."
         }
       },
-      "packages_headless_src_components_icon_types": {
+      "packages_aria_src_components_icon_types": {
         "iconvalue": "Type information for IconValue."
       },
-      "packages_headless_src_components_input_number_types": {
+      "packages_aria_src_components_input_number_types": {
         "inputnumberclearemits": {
           "callables": {
             "clear": "Emitted when the clear button is clicked."
@@ -4823,7 +4823,7 @@
         },
         "inputnumberui": "UI class overrides for the InputNumber component."
       },
-      "packages_headless_src_components_input_otp_types": {
+      "packages_aria_src_components_input_otp_types": {
         "inputotpcompactemits": {
           "callables": {
             "blur": "Emitted when blur occurs.",
@@ -4931,7 +4931,7 @@
         },
         "inputotpui": "UI class overrides for the InputOtp component."
       },
-      "packages_headless_src_components_input_types": {
+      "packages_aria_src_components_input_types": {
         "autocompleteinputemits": {
           "emits": "Events for the InputRoot component."
         },
@@ -5027,7 +5027,7 @@
         },
         "inputui": "UI class overrides for the Input component."
       },
-      "packages_headless_src_components_label_types": {
+      "packages_aria_src_components_label_types": {
         "checkboxlabelprops": {
           "props": "Properties for the Label component."
         },
@@ -5037,7 +5037,7 @@
           }
         }
       },
-      "packages_headless_src_components_layout_types": {
+      "packages_aria_src_components_layout_types": {
         "layoutcollapsible": "Type information for LayoutCollapsible.",
         "layoutcompactemits": {
           "callables": {
@@ -5180,7 +5180,7 @@
         "layoutvariant": "Type information for LayoutVariant.",
         "type": ""
       },
-      "packages_headless_src_components_link_types": {
+      "packages_aria_src_components_link_types": {
         "linkbaseprops": {
           "members": {
             "external": "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases",
@@ -5214,7 +5214,7 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_listbox_types": {
+      "packages_aria_src_components_listbox_types": {
         "comboboxgroupprops": {
           "props": "Properties for the ListboxGroup component."
         },
@@ -5343,7 +5343,7 @@
         },
         "listboxvirtualizerslotsprops": "Properties for the ListboxVirtualizerSlots component."
       },
-      "packages_headless_src_components_menu_index": {
+      "packages_aria_src_components_menu_index": {
         "menuseparatorprops": {
           "members": {
             "decorative": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
@@ -5351,7 +5351,7 @@
           }
         }
       },
-      "packages_headless_src_components_menu_types": {
+      "packages_aria_src_components_menu_types": {
         "menucheckboxgroupemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the value of the checkbox group changes."
@@ -5787,7 +5787,7 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_menubar_types": {
+      "packages_aria_src_components_menubar_types": {
         "menubarcompactemits": {
           "callables": {
             "closeautofocus": "Event handler called when auto-focusing on close. Can be prevented.",
@@ -6002,7 +6002,7 @@
         "menubarui": "UI class overrides for the Menubar component.",
         "type": ""
       },
-      "packages_headless_src_components_nav_menu_types": {
+      "packages_aria_src_components_nav_menu_types": {
         "navmenucompactemits": {
           "callables": {
             "select": "Emitted when a link is selected.",
@@ -6196,7 +6196,7 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_page_tabs_types": {
+      "packages_aria_src_components_page_tabs_types": {
         "pagetabscloseprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -6296,7 +6296,7 @@
         "pagetabsstate": "State values for PageTabsState.",
         "pagetabsui": "UI class overrides for the PageTabs component."
       },
-      "packages_headless_src_components_pagination_types": {
+      "packages_aria_src_components_pagination_types": {
         "paginationbuttonprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -6384,7 +6384,7 @@
         },
         "paginationui": "UI class overrides for the Pagination component."
       },
-      "packages_headless_src_components_password_types": {
+      "packages_aria_src_components_password_types": {
         "passwordcompactemits": {
           "callables": {
             "clear": "Emitted when the clear button is clicked.",
@@ -6440,7 +6440,7 @@
         },
         "passwordui": "UI class overrides for the Password component."
       },
-      "packages_headless_src_components_popconfirm_types": {
+      "packages_aria_src_components_popconfirm_types": {
         "popconfirmanchorprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -6656,7 +6656,7 @@
         "popconfirmtype": "Supported popconfirm values.",
         "popconfirmui": "UI class overrides for the Popconfirm component."
       },
-      "packages_headless_src_components_popover_index": {
+      "packages_aria_src_components_popover_index": {
         "popoverarrowprops": "",
         "popoverportalprops": {
           "members": {
@@ -6667,7 +6667,7 @@
           }
         }
       },
-      "packages_headless_src_components_popover_types": {
+      "packages_aria_src_components_popover_types": {
         "popovercloseemits": {
           "callables": {
             "close": "Emitted when close occurs."
@@ -6799,7 +6799,7 @@
         "popoverui": "UI class overrides for the Popover component.",
         "type": ""
       },
-      "packages_headless_src_components_popper_types": {
+      "packages_aria_src_components_popper_types": {
         "comboboxarrowprops": {
           "props": ""
         },
@@ -6914,7 +6914,7 @@
             "trapfocus": "Whether focus is trapped inside the popup while open (Tab cycles within the layer and body\nscroll is locked for modal layers).",
             "updatepositionstrategy": "Strategy to update the position of the floating element on every animation frame."
           },
-          "props": "Properties for the positioner that floats above the anchor. Mirrors the positioning surface of\nthe headless `PopperPositioner` with the prototype's own defaults."
+          "props": "Properties for the positioner that floats above the anchor. Mirrors the positioning surface of\nthe Aria `PopperPositioner` with the prototype's own defaults."
         },
         "popperpositioningpopupprops": {
           "props": "Properties for the positioning-only popup."
@@ -7050,7 +7050,7 @@
         },
         "poppertriggertype": ""
       },
-      "packages_headless_src_components_portal_types": {
+      "packages_aria_src_components_portal_types": {
         "autocompleteportalprops": {
           "props": "Properties for the Portal component."
         },
@@ -7063,7 +7063,7 @@
           }
         }
       },
-      "packages_headless_src_components_primitive_types": {
+      "packages_aria_src_components_primitive_types": {
         "astag": "Type information for AsTag.",
         "primitiveprops": {
           "members": {
@@ -7080,7 +7080,7 @@
           "props": "Properties for the Primitive component."
         }
       },
-      "packages_headless_src_components_progress_types": {
+      "packages_aria_src_components_progress_types": {
         "progresscirclecompactemits": {
           "callables": {
             "update_max": "Emitted when the max value changes.",
@@ -7190,7 +7190,7 @@
         "progressstate": "State values for ProgressState.",
         "progressui": "UI class overrides for the Progress component."
       },
-      "packages_headless_src_components_radio_group_types": {
+      "packages_aria_src_components_radio_group_types": {
         "radiogroupcardcompactemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the radio group value changes"
@@ -7305,7 +7305,7 @@
         "radioselectevent": "Type information for RadioSelectEvent.",
         "type": ""
       },
-      "packages_headless_src_components_rating_types": {
+      "packages_aria_src_components_rating_types": {
         "ratingitememits": {
           "emits": "Events for the RatingItem component."
         },
@@ -7344,7 +7344,7 @@
           "props": "Properties for the RatingRoot component."
         }
       },
-      "packages_headless_src_components_scroll_area_types": {
+      "packages_aria_src_components_scroll_area_types": {
         "scrollareacompactemits": {
           "emits": "Events for the ScrollAreaCompact component."
         },
@@ -7416,7 +7416,7 @@
           "props": "Properties for the ScrollAreaViewport component."
         }
       },
-      "packages_headless_src_components_segment_types": {
+      "packages_aria_src_components_segment_types": {
         "segmentcompactemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the value changes"
@@ -7487,7 +7487,7 @@
         "segmentui": "UI class overrides for the Segment component.",
         "type": ""
       },
-      "packages_headless_src_components_select_index": {
+      "packages_aria_src_components_select_index": {
         "selectportalprops": {
           "members": {
             "defer": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
@@ -7497,7 +7497,7 @@
           }
         }
       },
-      "packages_headless_src_components_select_types": {
+      "packages_aria_src_components_select_types": {
         "selectclearprops": {
           "members": {
             "arialabel": "Aria label for the clear button.",
@@ -7732,7 +7732,7 @@
           "props": "Properties for the SelectViewport component."
         }
       },
-      "packages_headless_src_components_separator_types": {
+      "packages_aria_src_components_separator_types": {
         "separatorcompactprops": {
           "members": {
             "decorative": "Whether or not the component is purely decorative. <br>When `true`, accessibility-related attributes are updated so\nthat that the rendered element is removed from the accessibility tree.",
@@ -7760,7 +7760,7 @@
         },
         "separatorui": "UI class overrides for the Separator component."
       },
-      "packages_headless_src_components_slider_types": {
+      "packages_aria_src_components_slider_types": {
         "slidercompactemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the slider value changes.",
@@ -7857,7 +7857,7 @@
         },
         "sliderui": "UI class overrides for the Slider component."
       },
-      "packages_headless_src_components_split_nav_types": {
+      "packages_aria_src_components_split_nav_types": {
         "splitnavmode": "Available menu shapes for the SplitNav component.\n\n- `dual-vertical`: level-1 vertical + remaining tree vertical.\n- `vertical-horizontal`: level-1 vertical + nested TreeNav.\n- `horizontal-vertical`: level-1 horizontal + nested TreeMenu.\n- `horizontal-dual-vertical`: level-1 horizontal + nested dual-vertical.",
         "splitnavoptiondata": "Recursive option data for the SplitNav component.",
         "splitnavrootemits": {
@@ -7904,7 +7904,7 @@
         "splitnavui": "UI class overrides for the SplitNav component.",
         "type": ""
       },
-      "packages_headless_src_components_splitter_types": {
+      "packages_aria_src_components_splitter_types": {
         "splittergroupemits": {
           "callables": {
             "layout": "Event handler called when the group layout changes."
@@ -7926,7 +7926,7 @@
         },
         "splitterui": "UI class overrides for the Splitter component."
       },
-      "packages_headless_src_components_stepper_types": {
+      "packages_aria_src_components_stepper_types": {
         "steppercompactemits": {
           "callables": {
             "update_modelvalue": "Emitted when the model value changes."
@@ -8029,7 +8029,7 @@
         "stepperui": "UI class overrides for the Stepper component.",
         "type": ""
       },
-      "packages_headless_src_components_switch_types": {
+      "packages_aria_src_components_switch_types": {
         "switchcompactemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the value of the switch changes."
@@ -8105,7 +8105,7 @@
         },
         "switchui": "UI class overrides for the Switch component."
       },
-      "packages_headless_src_components_table_types": {
+      "packages_aria_src_components_table_types": {
         "tablebasedata": "Type information for TableBaseData.",
         "tablebodyprops": {
           "props": "Properties for the TableBody component."
@@ -8129,7 +8129,7 @@
         },
         "tablecolumn": {
           "callables": {
-            "columns": "Nested child columns of a group column, carrying SoybeanUI extensions.",
+            "columns": "Nested child columns of a group column, carrying Vean extensions.",
             "filteroptions": "Filter options rendered by the filter popover. When omitted, options are\nderived from the source rows."
           },
           "members": {
@@ -8507,7 +8507,7 @@
         },
         "type": ""
       },
-      "packages_headless_src_components_tabs_types": {
+      "packages_aria_src_components_tabs_types": {
         "tabsactivationmode": "Type information for TabsActivationMode.",
         "tabscompactemits": {
           "callables": {
@@ -8588,7 +8588,7 @@
         "tabsui": "UI class overrides for the Tabs component.",
         "type": ""
       },
-      "packages_headless_src_components_tags_input_types": {
+      "packages_aria_src_components_tags_input_types": {
         "tagsinputclearprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -8722,7 +8722,7 @@
         },
         "tagsinputui": "UI class overrides for the TagsInput component."
       },
-      "packages_headless_src_components_textarea_types": {
+      "packages_aria_src_components_textarea_types": {
         "textareaautosizeoptions": {
           "members": {
             "maxrows": "The maximum number of rows to display",
@@ -8822,7 +8822,7 @@
         },
         "textareaui": "UI class overrides for the Textarea component."
       },
-      "packages_headless_src_components_time_field_types": {
+      "packages_aria_src_components_time_field_types": {
         "timefieldcompactemits": {
           "callables": {
             "update_modelvalue": "Emitted when the model value changes.",
@@ -8911,7 +8911,7 @@
         },
         "timefieldui": "UI class overrides for the TimeField component."
       },
-      "packages_headless_src_components_time_range_field_types": {
+      "packages_aria_src_components_time_range_field_types": {
         "timerangefieldcompactemits": {
           "callables": {
             "update_endvalue": "Emitted when the end value changes.",
@@ -9020,7 +9020,7 @@
         },
         "timerangefieldui": "UI class overrides for the TimeRangeField component."
       },
-      "packages_headless_src_components_toast_types": {
+      "packages_aria_src_components_toast_types": {
         "toasterprops": {
           "members": {
             "actionprops": "Properties forwarded to the action element.",
@@ -9070,7 +9070,7 @@
           }
         }
       },
-      "packages_headless_src_components_toggle_group_types": {
+      "packages_aria_src_components_toggle_group_types": {
         "togglegroupitemprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -9108,7 +9108,7 @@
         },
         "togglegroupui": "UI class overrides for the ToggleGroup component."
       },
-      "packages_headless_src_components_toggle_types": {
+      "packages_aria_src_components_toggle_types": {
         "toggleemits": {
           "callables": {
             "update_modelvalue": "Event handler called when the pressed state changes."
@@ -9116,7 +9116,7 @@
           "emits": "Events for the Toggle component."
         }
       },
-      "packages_headless_src_components_toolbar_types": {
+      "packages_aria_src_components_toolbar_types": {
         "toolbarbuttonemits": {
           "callables": {
             "click": "Emitted when click occurs."
@@ -9211,7 +9211,7 @@
         },
         "toolbarui": "UI class overrides for the Toolbar component."
       },
-      "packages_headless_src_components_tooltip_index": {
+      "packages_aria_src_components_tooltip_index": {
         "tooltiparrowprops": "",
         "tooltipportalprops": {
           "members": {
@@ -9223,7 +9223,7 @@
         },
         "tooltipui": ""
       },
-      "packages_headless_src_components_tooltip_types": {
+      "packages_aria_src_components_tooltip_types": {
         "tooltipcompactemits": {
           "callables": {
             "closeautofocus": "Event handler called when auto-focusing on close. Can be prevented.",
@@ -9354,13 +9354,13 @@
           "props": "Properties for the TooltipRoot component."
         }
       },
-      "packages_headless_src_components_tree_menu_types": {
+      "packages_aria_src_components_tree_menu_types": {
         "treemenubadgeprops": {
           "members": {
             "contentprops": "Properties forwarded to the badge bubble element.",
             "open": "Whether the badge bubble is rendered."
           },
-          "props": "Properties for the badge markup rendered inside a TreeMenu option.\n\nThe `badge` family is UI-only (it failed headless admission), so the tree-menu renders its own\nbadge anatomy instead of composing a headless badge primitive. The shape mirrors the retired\n`BadgeCompactProps` minus `content`, which the option supplies through `TreeMenuBaseOptionData.badge`."
+          "props": "Properties for the badge markup rendered inside a TreeMenu option.\n\nThe `badge` family is UI-only (it failed aria admission), so the tree-menu renders its own\nbadge anatomy instead of composing an aria badge primitive. The shape mirrors the retired\n`BadgeCompactProps` minus `content`, which the option supplies through `TreeMenuBaseOptionData.badge`."
         },
         "treemenubaseitemprops": {
           "members": {
@@ -9571,7 +9571,7 @@
         "treemenuuislot": "Available UI slots for the TreeMenu component.",
         "type": ""
       },
-      "packages_headless_src_components_tree_nav_types": {
+      "packages_aria_src_components_tree_nav_types": {
         "treenavbaseoptiondata": "Base option data for a TreeNav entry.\n\nItem customization beyond the fields below (badges, tags, tooltips,\nactions...) is provided via slots instead of extra data fields.",
         "treenavcompactemits": {
           "callables": {
@@ -9715,7 +9715,7 @@
         },
         "treenavui": "UI class overrides for the TreeNav component."
       },
-      "packages_headless_src_components_tree_types": {
+      "packages_aria_src_components_tree_types": {
         "ismultiple": "",
         "treeitememits": {
           "callables": {
@@ -9819,7 +9819,7 @@
           "props": "Properties for the TreeVirtualizerRoot component."
         }
       },
-      "packages_headless_src_components_virtualizer_types": {
+      "packages_aria_src_components_virtualizer_types": {
         "virtualizercontentprops": {
           "members": {
             "as": "The element or component this component should render as. Can be overwrite by `asChild`",
@@ -9853,7 +9853,7 @@
           "props": "Properties for the VirtualizerRoot component."
         }
       },
-      "packages_headless_src_components_visually_hidden_types": {
+      "packages_aria_src_components_visually_hidden_types": {
         "visuallyhiddenfeature": "Type information for VisuallyHiddenFeature.",
         "visuallyhiddeninputprops": {
           "members": {
@@ -9875,7 +9875,7 @@
           "props": "Properties for the VisuallyHidden component."
         }
       },
-      "packages_headless_src_components_watermark_types": {
+      "packages_aria_src_components_watermark_types": {
         "watermarkcompactprops": {
           "members": {
             "content": "The text content of the watermark.",
@@ -9918,10 +9918,10 @@
         },
         "watermarkui": "UI class overrides for the Watermark component."
       },
-      "packages_headless_src_composables_use_collection": {
+      "packages_aria_src_composables_use_collection": {
         "collectionitemdata": ""
       },
-      "packages_headless_src_composables_use_fuse": {
+      "packages_aria_src_composables_use_fuse": {
         "usefuseoptions": {
           "members": {
             "fuseoptions": "",
@@ -9930,7 +9930,7 @@
           }
         }
       },
-      "packages_headless_src_date_formatter": {
+      "packages_aria_src_date_formatter": {
         "formatter": {
           "callables": {
             "custom": "",
@@ -9950,7 +9950,7 @@
           }
         }
       },
-      "packages_headless_src_date_types": {
+      "packages_aria_src_date_types": {
         "datematcher": "",
         "daterange": {
           "members": {
@@ -9990,7 +9990,7 @@
         "weekdayformat": "",
         "weekstartson": ""
       },
-      "packages_headless_src_locale_types": {
+      "packages_aria_src_locale_types": {
         "localemessagesoverrides": {
           "members": {
             "alert": "",
@@ -10027,13 +10027,13 @@
           }
         }
       },
-      "packages_headless_src_types_color": {
+      "packages_aria_src_types_color": {
         "colorchannel": "",
         "colorformat": "",
         "colorspace": "",
         "normalizedcolor": ""
       },
-      "packages_headless_src_types_common": {
+      "packages_aria_src_types_common": {
         "acceptablebooleanvalue": "",
         "align": "",
         "alignside": "",
@@ -10052,20 +10052,20 @@
         "swipedirection": "",
         "uiclass": ""
       },
-      "packages_headless_src_types_dom": {
+      "packages_aria_src_types_dom": {
         "imageloadingstatus": ""
       },
-      "packages_headless_src_types_event": {
+      "packages_aria_src_types_event": {
         "focusoutsideevent": "",
         "pointerdownoutsideevent": "",
         "selectevent": "",
         "treeselectevent": "",
         "treetoggleevent": ""
       },
-      "packages_headless_src_types_path": {
+      "packages_aria_src_types_path": {
         "pathvalue": ""
       },
-      "packages_headless_src_types_vue": {
+      "packages_aria_src_types_vue": {
         "baseprops": ""
       },
       "packages_theme_src_storage": {
@@ -10075,7 +10075,7 @@
             "mode": "the light / dark / auto preference.",
             "options": "the engine options.",
             "presets": "custom theme presets (the theme customizer's saved color schemes).",
-            "style": "the style payload applied by the first-paint script (`#soybean-theme`).\n\nThe snapshot is what removes the theme flash on refresh: the head script\napplies it before any stylesheet is parsed, then the runtime provider\npatches the same element in place."
+            "style": "the style payload applied by the first-paint script (`#vean-theme`).\n\nThe snapshot is what removes the theme flash on refresh: the head script\napplies it before any stylesheet is parsed, then the runtime provider\npatches the same element in place."
           }
         }
       },

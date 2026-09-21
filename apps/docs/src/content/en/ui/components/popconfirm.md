@@ -1,14 +1,14 @@
 ---
 head:
   title: Popconfirm
-  description: 'A confirmation box component based on Popper, used for lightweight secondary confirmation operations. SPopconfirm combines the headless PopconfirmCompact (built on the popper primitives) with the popconfirmVariants style recipe (13 slots, 6 sizes × 4 types).'
+  description: 'A confirmation box component based on Popper, used for lightweight secondary confirmation operations. SPopconfirm combines the Aria PopconfirmCompact (built on the popper primitives) with the popconfirmVariants style recipe (13 slots, 6 sizes × 4 types).'
 ---
 
 # Popconfirm
 
 ## Overview
 
-A confirmation box component based on `Popper`, used for lightweight secondary confirmation operations. `SPopconfirm` combines the headless `PopconfirmCompact` (built on the popper primitives) with the `popconfirmVariants` style recipe (13 slots, 6 sizes × 4 types).
+A confirmation box component based on `Popper`, used for lightweight secondary confirmation operations. `SPopconfirm` combines the Aria `PopconfirmCompact` (built on the popper primitives) with the `popconfirmVariants` style recipe (13 slots, 6 sizes × 4 types).
 
 Use it for a quick inline confirm (delete, destructive action) next to the trigger. For a richer blocking confirmation use `dialog`; for an unobtrusive hint use `tooltip`.
 
@@ -30,10 +30,10 @@ Use it for a quick inline confirm (delete, destructive action) next to the trigg
 ## Component family
 
 - `SPopconfirm` (styled) — the entry wrapper; `popconfirmVariants` recipe with dynamic slot forwarding
-- `PopconfirmCompact` (headless) — the aggregated composite built on `PopperRoot`/`PopperTrigger`/`PopperPositioner`/`PopperPopup`
-- `PopconfirmHeader` / `PopconfirmContent` / `PopconfirmFooter` (headless) — layout sections
-- `PopconfirmTitle` / `PopconfirmDescription` (headless) — the title/description
-- `PopconfirmConfirm` / `PopconfirmCancel` (headless) — footer `<button>`s, emit `confirm`/`cancel`
+- `PopconfirmCompact` (Aria) — the aggregated composite built on `PopperRoot`/`PopperTrigger`/`PopperPositioner`/`PopperPopup`
+- `PopconfirmHeader` / `PopconfirmContent` / `PopconfirmFooter` (Aria) — layout sections
+- `PopconfirmTitle` / `PopconfirmDescription` (Aria) — the title/description
+- `PopconfirmConfirm` / `PopconfirmCancel` (Aria) — footer `<button>`s, emit `confirm`/`cancel`
 
 ## Playground
 
@@ -47,17 +47,17 @@ Use it for a quick inline confirm (delete, destructive action) next to the trigg
 
 ### Architecture and benchmark differences
 
-`PopconfirmCompact` composes the popper trigger/positioner/popup with a confirm-style header, content and footer, while every primitive stays style-free and only the UI wrapper injects the `popconfirmVariants` classes. This mirrors radix-ui/shadcn-ui's headless split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled popconfirm with `title`/`description`/`okText`/`cancelText`/`onConfirm` props; SoybeanUI additionally exposes per-slot `*Props`, a `size` scale, a `type` color/icon system, and localized action labels.
+`PopconfirmCompact` composes the popper trigger/positioner/popup with a confirm-style header, content and footer, while every primitive stays style-free and only the UI wrapper injects the `popconfirmVariants` classes. This mirrors radix-ui/shadcn-ui's headless split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled popconfirm with `title`/`description`/`okText`/`cancelText`/`onConfirm` props; VeanUI additionally exposes per-slot `*Props`, a `size` scale, a `type` color/icon system, and localized action labels.
 
-| Capability               | SoybeanUI | shadcn/ui | Ant Design Popconfirm | Element Plus Popconfirm | Mantine Popconfirm | Naive UI Popconfirm |
-| :----------------------- | :-------: | :-------: | :-------------------: | :---------------------: | :----------------: | :-----------------: |
-| Built on Popper          |    ✅     |    ✅     |           —           |            —            |         —          |          —          |
-| Headless/styled split    |    ✅     |    ✅     |           —           |            —            |         —          |          —          |
-| Type icon + color        |    ✅     |     —     |           —           |           ✅            |         —          |          —          |
-| Title + description      |    ✅     |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
-| Localized confirm/cancel |    ✅     |     —     |           —           |            —            |         —          |          —          |
-| Sizes (6)                |    ✅     |     —     |           —           |            —            |         —          |          —          |
-| Placement (popper)       |    ✅     |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
+| Capability               | VeanUI | shadcn/ui | Ant Design Popconfirm | Element Plus Popconfirm | Mantine Popconfirm | Naive UI Popconfirm |
+| :----------------------- | :----: | :-------: | :-------------------: | :---------------------: | :----------------: | :-----------------: |
+| Built on Popper          |   ✅   |    ✅     |           —           |            —            |         —          |          —          |
+| Aria/styled split        |   ✅   |    ✅     |           —           |            —            |         —          |          —          |
+| Type icon + color        |   ✅   |     —     |           —           |           ✅            |         —          |          —          |
+| Title + description      |   ✅   |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
+| Localized confirm/cancel |   ✅   |     —     |           —           |            —            |         —          |          —          |
+| Sizes (6)                |   ✅   |     —     |           —           |            —            |         —          |          —          |
+| Placement (popper)       |   ✅   |    ✅     |          ✅           |           ✅            |         ✅         |         ✅          |
 
 `—` = unsupported or a different interaction model.
 

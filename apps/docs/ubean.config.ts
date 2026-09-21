@@ -21,7 +21,11 @@ const prerenderRoutes = await collectPrerenderRoutes(rootDir);
 
 export default defineConfig({
   mode: 'ssg',
+<<<<<<< HEAD
   favicon: 'https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202608192144',
+=======
+  favicon: 'https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212',
+>>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean)
   i18n: {
     defaultLocale: 'en',
     locales: [
@@ -47,7 +51,7 @@ export default defineConfig({
     vueRouter: true,
     vueI18n: true
   },
-  // Theme state is owned by @soybeanjs/theme (createThemeInitScript in app.ts);
+  // Theme state is owned by @vean/theme (createThemeInitScript in app.ts);
   // disabling the built-in colorMode avoids a second, conflicting source.
   colorMode: false,
   // Full-text content search (@ubean/content, ubean@0.4.7).

@@ -14,7 +14,7 @@ import { renderComponent } from '../../shared/render';
  * The fixture styles itself with `var(--radius-*)` inline instead of the
  * `rounded-*` utilities: UnoCSS classes that only appear in a spec file are not
  * generated into the test stylesheet, and the variable chain is what this test is
- * actually about (the utility → variable mapping is covered in @soybeanjs/ui-uno).
+ * actually about (the utility → variable mapping is covered in @vean/unocss).
  */
 
 const rungs = ['2xs', 'xs', 'sm', 'md', 'lg', 'none'] as const;

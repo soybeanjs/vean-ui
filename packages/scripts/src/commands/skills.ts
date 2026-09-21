@@ -74,11 +74,11 @@ const skillsDistributionRootDir = path.resolve(repoRoot, 'skills');
 const skillsSourceRootDir = path.resolve(skillsDistributionRootDir, 'skills-source');
 const skillsDistributionSkillsDir = path.resolve(skillsDistributionRootDir, 'skills');
 const claudePluginDir = path.resolve(skillsDistributionRootDir, '.claude-plugin');
-const distributionPackageName = '@soybeanjs/ui-skills';
-const distributionPluginName = 'soybean-ui-skills';
-const distributionDescription = 'Agent skills for SoybeanUI and SoybeanHeadless.';
-const distributionKeywords = ['agentskills', 'soybean-ui', 'soybean-headless', 'vue', 'github-copilot', 'claude-code'];
-const distributedSkillDirs = ['soybean-ui', 'soybean-headless'];
+const distributionPackageName = '@vean/skills';
+const distributionPluginName = 'vean-skills';
+const distributionDescription = 'Agent skills for Vean and Vean Aria.';
+const distributionKeywords = ['agentskills', 'vean-ui', 'vean-aria', 'vue', 'github-copilot', 'claude-code'];
+const distributedSkillDirs = ['vean-ui', 'vean-aria'];
 
 export async function generateSkillsDistribution(): Promise<void> {
   const rootPackage = await readRootPackageManifest();
@@ -182,22 +182,22 @@ function createClaudeMarketplaceManifest(rootPackage: RootPackageManifest): Clau
 
 function createDistributionReadme(): string {
   return [
-    '# Soybean Skills',
+    '# Vean Skills',
     '',
-    'Agent skills for `@soybeanjs/ui` and `@soybeanjs/headless`.',
+    'Agent skills for `@vean/ui` and `@vean/aria`.',
     '',
     '## Installation',
     '',
     '```bash',
-    `npx skills add soybeanjs/soybean-ui/skills`,
+    `npx skills add soybeanjs/vean-ui/skills`,
     '```',
     '',
     'The `skills` CLI installs every skill shipped in the package and places them into the correct agent-specific skills directory.',
     '',
     '## Included Skills',
     '',
-    '- `soybean-ui`: Styled SoybeanUI usage, theming, docs, and component references',
-    '- `soybean-headless`: Headless primitives, Compact patterns, and composition guidance',
+    '- `vean-ui`: Styled Vean usage, theming, docs, and component references',
+    '- `vean-aria`: Aria primitives, Compact patterns, and composition guidance',
     '',
     '## Claude Code Marketplace',
     '',

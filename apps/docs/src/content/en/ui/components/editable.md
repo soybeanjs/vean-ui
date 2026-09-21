@@ -1,14 +1,14 @@
 ---
 head:
   title: Editable
-  description: 'An inline text editor that switches between preview and edit states. In preview mode the value is shown as a focusable text node (or a placeholder); focusing, double-clicking, or clicking the edit button enters edit mode, then submitting (Enter/blur/submit trigger) or cancelling (Esc/cancel trigger) returns to preview. The structure follows the headless core + styled wrapper split: the 8 EditableRoot-family components in @soybeanjs/headless (zero styles) own the full state machine, and SEditable injects the editableVariants styles (8 slots: root/area/preview/input/controls/editTrigger/submitTrigger/cancelTrigger).'
+  description: 'An inline text editor that switches between preview and edit states. In preview mode the value is shown as a focusable text node (or a placeholder); focusing, double-clicking, or clicking the edit button enters edit mode, then submitting (Enter/blur/submit trigger) or cancelling (Esc/cancel trigger) returns to preview. The structure follows the Aria core + styled wrapper split: the 8 EditableRoot-family components in @vean/aria (zero styles) own the full state machine, and SEditable injects the editableVariants styles (8 slots: root/area/preview/input/controls/editTrigger/submitTrigger/cancelTrigger).'
 ---
 
 # Editable
 
 ## Overview
 
-An inline text editor that switches between preview and edit states. In preview mode the value is shown as a focusable text node (or a placeholder); focusing, double-clicking, or clicking the edit button enters edit mode, then submitting (Enter/blur/submit trigger) or cancelling (Esc/cancel trigger) returns to preview. The structure follows the headless core + styled wrapper split: the 8 `EditableRoot`-family components in `@soybeanjs/headless` (zero styles) own the full state machine, and `SEditable` injects the `editableVariants` styles (8 slots: root/area/preview/input/controls/editTrigger/submitTrigger/cancelTrigger).
+An inline text editor that switches between preview and edit states. In preview mode the value is shown as a focusable text node (or a placeholder); focusing, double-clicking, or clicking the edit button enters edit mode, then submitting (Enter/blur/submit trigger) or cancelling (Esc/cancel trigger) returns to preview. The structure follows the Aria core + styled wrapper split: the 8 `EditableRoot`-family components in `@vean/aria` (zero styles) own the full state machine, and `SEditable` injects the `editableVariants` styles (8 slots: root/area/preview/input/controls/editTrigger/submitTrigger/cancelTrigger).
 
 ## Usage
 
@@ -21,19 +21,19 @@ An inline text editor that switches between preview and edit states. In preview 
 - ⌨️ Submit modes — `submitMode`: `blur` (submit on blur, default), `enter` (submit on Enter), `both`, `none` (blur cancels only); Esc always cancels
 - 🔁 Controlled/uncontrolled — `modelValue` + `update:modelValue` for controlled, `defaultValue` for uncontrolled; the `submit` event carries the submitted value
 - 🎛️ Editing UX — `selectOnFocus` (select all on focus), `startWithEditMode` (enter edit on mount), `maxLength`, `autoResize` (inline-grid width)
-- 🧩 Headless/styled split — `EditableCompact` aggregates the 8 primitives and exposes 6 `*Props` channels (area/preview/input/editTrigger/submitTrigger/cancelTrigger)
+- 🧩 Aria/styled split — `EditableCompact` aggregates the 8 primitives and exposes 6 `*Props` channels (area/preview/input/editTrigger/submitTrigger/cancelTrigger)
 - ♿ Accessible by default — focusable preview (`tabindex="0"`), full keyboard support (Enter submits / Esc cancels), localized trigger `aria-label`s, and a hidden input proxy (`VisuallyHiddenInput`) for forms
 - 🎨 8-slot styling — root/area/preview/input/controls/editTrigger/submitTrigger/cancelTrigger plus `size` variants (xs–2xl)
 
 ## Component family
 
 - `SEditable` (styled) — the entry wrapper; pure `defineProps` + `editableVariants` with dynamic 8-slot forwarding and `useForwardListeners` event merging
-- `EditableRoot` (headless) — the state-machine owner: holds `modelValue`/`inputValue`/`isEditing`/`placeholder`/`isEmpty`, exposes `edit`/`cancel`/`submit`; renders `data-dismissable-layer` for blur/outside-click handling; inside a `.form` container with a `name` it renders the hidden input proxy
-- `EditableArea` (headless) — the container; uses an inline-grid layout when `autoResize` is on
-- `EditablePreview` (headless) — the preview text; `tabindex = disabled ? -1 : 0`, activated on focusin/dblclick
-- `EditableInput` (headless) — the real input; activate/cancel/submit keyboard handling and `selectOnFocus` selection
-- `EditableEditTrigger` / `EditableSubmitTrigger` / `EditableCancelTrigger` (headless) — `Button`-based triggers; `aria-label` falls back to `useLocaleMessages` localized messages; disabled when `disabled || readonly`
-- `EditableCompact` (headless) — the aggregated composite of root/area/preview/input and the three triggers; slot props provide `modelValue`/`inputValue`/`isEditing`/`isEmpty`/`edit`/`cancel`/`submit`
+- `EditableRoot` (Aria) — the state-machine owner: holds `modelValue`/`inputValue`/`isEditing`/`placeholder`/`isEmpty`, exposes `edit`/`cancel`/`submit`; renders `data-dismissable-layer` for blur/outside-click handling; inside a `.form` container with a `name` it renders the hidden input proxy
+- `EditableArea` (Aria) — the container; uses an inline-grid layout when `autoResize` is on
+- `EditablePreview` (Aria) — the preview text; `tabindex = disabled ? -1 : 0`, activated on focusin/dblclick
+- `EditableInput` (Aria) — the real input; activate/cancel/submit keyboard handling and `selectOnFocus` selection
+- `EditableEditTrigger` / `EditableSubmitTrigger` / `EditableCancelTrigger` (Aria) — `Button`-based triggers; `aria-label` falls back to `useLocaleMessages` localized messages; disabled when `disabled || readonly`
+- `EditableCompact` (Aria) — the aggregated composite of root/area/preview/input and the three triggers; slot props provide `modelValue`/`inputValue`/`isEditing`/`isEmpty`/`edit`/`cancel`/`submit`
 
 ## Demos
 
@@ -55,20 +55,20 @@ An inline text editor that switches between preview and edit states. In preview 
 
 `EditableRoot` uses `useControllableState` to unify controlled/uncontrolled; `inputValue` (the edit buffer) is separate from `modelValue` (the committed value), and `currentValue` picks one based on the state. While editing, an external `modelValue` push does not overwrite the in-progress input (it is written back only on submit/cancel), so a controlled parent cannot stomp the user's typing. Activation (focus/dblclick/edit trigger) and submission (blur/enter/submit trigger) are decoupled both ways; `useFocusOutside`/`usePointerdownOutside` gate on `isEditing` to implement submit-on-blur. `autoResize` uses an inline-grid + `grid-template-columns: auto` layout so the input hugs its content. The API is co-designed with reka-ui's `Editable` (activation/submit modes, `selectOnFocus`, `startWithEditMode`, and the form proxy are all present); Ant Design's `Typography` editable only offers button activation plus a controlled `editing` flag; Element Plus and shadcn/ui have no equivalent component; Mantine's `EditableText` covers a subset of the activation/submit behavior.
 
-| Capability                              | SoybeanUI | reka-ui | Ant Design Typography | Mantine EditableText | Element Plus | shadcn/ui |
-| :-------------------------------------- | :-------: | :-----: | :-------------------: | :------------------: | :----------: | :-------: |
-| headless/styled split                   |    ✅     |   ✅    |           —           |          —           |      —       |     —     |
-| Activation mode (focus/dblclick/none)   |    ✅     |   ✅    |           —           |          ⚠️          |      —       |     —     |
-| Submit mode (blur/enter/none/both)      |    ✅     |   ✅    |           —           |          ⚠️          |      —       |     —     |
-| Esc to cancel                           |    ✅     |   ✅    |          ⚠️           |          ✅          |      —       |     —     |
-| `selectOnFocus`                         |    ✅     |   ✅    |           —           |          ✅          |      —       |     —     |
-| `startWithEditMode`                     |    ✅     |   ✅    |          ⚠️           |          ✅          |      —       |     —     |
-| `autoResize` (width fits content)       |    ✅     |   ✅    |           —           |          —           |      —       |     —     |
-| Form proxy (`name` + form hidden input) |    ✅     |   ✅    |           —           |          —           |      —       |     —     |
-| Localized trigger `aria-label`          |    ✅     |   ⚠️    |           —           |          —           |      —       |     —     |
-| Controlled/uncontrolled + submit event  |    ✅     |   ✅    |          ✅           |          ✅          |      —       |     —     |
+| Capability                              | VeanUI | reka-ui | Ant Design Typography | Mantine EditableText | Element Plus | shadcn/ui |
+| :-------------------------------------- | :----: | :-----: | :-------------------: | :------------------: | :----------: | :-------: |
+| Aria/styled split                       |   ✅   |   ✅    |           —           |          —           |      —       |     —     |
+| Activation mode (focus/dblclick/none)   |   ✅   |   ✅    |           —           |          ⚠️          |      —       |     —     |
+| Submit mode (blur/enter/none/both)      |   ✅   |   ✅    |           —           |          ⚠️          |      —       |     —     |
+| Esc to cancel                           |   ✅   |   ✅    |          ⚠️           |          ✅          |      —       |     —     |
+| `selectOnFocus`                         |   ✅   |   ✅    |           —           |          ✅          |      —       |     —     |
+| `startWithEditMode`                     |   ✅   |   ✅    |          ⚠️           |          ✅          |      —       |     —     |
+| `autoResize` (width fits content)       |   ✅   |   ✅    |           —           |          —           |      —       |     —     |
+| Form proxy (`name` + form hidden input) |   ✅   |   ✅    |           —           |          —           |      —       |     —     |
+| Localized trigger `aria-label`          |   ✅   |   ⚠️    |           —           |          —           |      —       |     —     |
+| Controlled/uncontrolled + submit event  |   ✅   |   ✅    |          ✅           |          ✅          |      —       |     —     |
 
-`⚠️` = partial (Mantine covers activation/submit subsets via `activateOnFocus`/`submitOnBlur`; AntD covers `startWithEditMode`-like behavior through the controlled `editing` flag; reka-ui hardcodes the trigger `aria-label`, while SoybeanUI localizes it with `useLocaleMessages`).
+`⚠️` = partial (Mantine covers activation/submit subsets via `activateOnFocus`/`submitOnBlur`; AntD covers `startWithEditMode`-like behavior through the controlled `editing` flag; reka-ui hardcodes the trigger `aria-label`, while VeanUI localizes it with `useLocaleMessages`).
 
 ### Cautions
 
@@ -101,7 +101,7 @@ Set `submitMode="none"` — blur runs `cancel()` (no `submit`/`update:modelValue
 
 ### How do I trigger editing with a button?
 
-Use `EditableEditTrigger` (available in the headless composite), or call the exposed method via a ref:
+Use `EditableEditTrigger` (available in the Aria composite), or call the exposed method via a ref:
 
 ```vue
 <SEditable ref="editableRef" default-value="Edit via button" />

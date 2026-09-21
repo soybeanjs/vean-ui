@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { Button } from '@soybeanjs/headless/button';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { Button } from '@vean/aria/button';
+import { useOmitProps } from '@vean/aria/composables';
 import { buttonVariants } from '@/styles/button';
 import { useButtonGroupContext } from './context';
 import type { ButtonProps, ButtonEmits } from './types';

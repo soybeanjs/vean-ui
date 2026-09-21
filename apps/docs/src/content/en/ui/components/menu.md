@@ -1,18 +1,18 @@
 ---
 head:
   title: Menu
-  description: 'The Menu component family lets you build complex nested menus, including dropdowns and context menus. It provides a data-driven approach using SMenuOptions, SMenuCheckboxOptions, and SMenuRadioOptions for easy configuration of groups, submenus, checkboxes, radio items, separators, shortcuts, and link items. The logic layer reuses @soybeanjs/headless/menu with full WAI-ARIA menu semantics and roving-focus keyboard navigation.'
+  description: 'The Menu component family lets you build complex nested menus, including dropdowns and context menus. It provides a data-driven approach using SMenuOptions, SMenuCheckboxOptions, and SMenuRadioOptions for easy configuration of groups, submenus, checkboxes, radio items, separators, shortcuts, and link items. The logic layer reuses @vean/aria/menu with full WAI-ARIA menu semantics and roving-focus keyboard navigation.'
 ---
 
 # Menu
 
 ## Overview
 
-The Menu component family lets you build complex nested menus, including dropdowns and context menus. It provides a data-driven approach using `SMenuOptions`, `SMenuCheckboxOptions`, and `SMenuRadioOptions` for easy configuration of groups, submenus, checkboxes, radio items, separators, shortcuts, and link items. The logic layer reuses `@soybeanjs/headless/menu` with full WAI-ARIA menu semantics and roving-focus keyboard navigation.
+The Menu component family lets you build complex nested menus, including dropdowns and context menus. It provides a data-driven approach using `SMenuOptions`, `SMenuCheckboxOptions`, and `SMenuRadioOptions` for easy configuration of groups, submenus, checkboxes, radio items, separators, shortcuts, and link items. The logic layer reuses `@vean/aria/menu` with full WAI-ARIA menu semantics and roving-focus keyboard navigation.
 
 ## Features
 
-- **Data-driven compact composition** — `SMenuOptions` / `SMenuCheckboxOptions` / `SMenuRadioOptions` recursively render items from an `items` array; the headless `MenuOptionsCompact` owns iteration, default assembly, and submenu recursion.
+- **Data-driven compact composition** — `SMenuOptions` / `SMenuCheckboxOptions` / `SMenuRadioOptions` recursively render items from an `items` array; the Aria `MenuOptionsCompact` owns iteration, default assembly, and submenu recursion.
 - **Full WAI-ARIA menu semantics** — `role="menu"` / `menuitem` / `menuitemcheckbox` / `menuitemradio`, `aria-checked` (including `'mixed'`), `aria-haspopup`, `aria-expanded`, `aria-controls`, `aria-disabled`.
 - **Full keyboard navigation** — roving-focus arrow movement (dir-aware), typeahead character search (skips disabled), Home/End/PageUp/PageDown jumps, Enter/Space selection, Esc close + focus return, Tab loop inside the menu, and submenu open/close arrow keys.
 - **Floating positioning** — built on `@floating-ui/dom` (`autoUpdate` + `arrow`/`flip`/`hide`/`limitShift`/`offset`/`shift`/`size` middleware) with arrow, placement, sideOffset, and CSS variable forwarding.
@@ -21,7 +21,7 @@ The Menu component family lets you build complex nested menus, including dropdow
 - **Floating lifecycle** — dismissable layer (outside pointer / Esc close), Presence (exit animation + `forceMount`), body scroll lock, focus scope/trap, and modal mode.
 - **Disabled items** — per-item `disabled` with `itemProps.disabled` fallback (explicit value wins), `aria-disabled` + `tabindex="-1"`.
 - **Hidden items** — per-item `hidden` drops the option (and its whole subtree) from rendering, the active-path search and keyboard navigation; an item whose children are all hidden renders as a leaf.
-- **Headless composition** — `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` exported from `@soybeanjs/headless/menu`, reused by dropdown-menu, context-menu, and menubar.
+- **Aria composition** — `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` exported from `@vean/aria/menu`, reused by dropdown-menu, context-menu, and menubar.
 
 ## Component family
 
@@ -46,9 +46,9 @@ The Menu component family lets you build complex nested menus, including dropdow
 
 ### Architecture and benchmark comparison
 
-| Concern                  | SoybeanUI                                | Radix UI Menu   | Ant Design Menu / Dropdown | Element Plus Dropdown |
+| Concern                  | VeanUI                                   | Radix UI Menu   | Ant Design Menu / Dropdown | Element Plus Dropdown |
 | :----------------------- | :--------------------------------------- | :-------------- | :------------------------- | :-------------------- |
-| Headless / styled split  | ✅ `@soybeanjs/headless/menu` + `scv()`  | ✅ headless     | ❌ single package          | ❌ single package     |
+| Aria / styled split      | ✅ `@vean/aria/menu` + `scv()`           | ✅ Aria         | ❌ single package          | ❌ single package     |
 | Data-driven compact API  | ✅ plain/checkbox/radio                  | ❌ composition  | ✅ config-driven (items)   | ✅ config-driven      |
 | roving focus + typeahead | ✅ full model (Home/End/PageUp/PageDown) | ✅              | partial                    | partial               |
 | Submenu arrow keys       | ✅ ArrowRight/Left (dir-aware)           | ✅              | partial                    | partial               |
@@ -90,4 +90,4 @@ Arrow keys move focus (dir-aware); typing letters triggers typeahead; `Home`/`En
 
 ### Can I build a fully custom menu?
 
-Yes — compose `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` primitives from `@soybeanjs/headless/menu` and inject styles via `provideMenuUi` (or `SMenuOptions`'s `ui` prop).
+Yes — compose `MenuRoot` / `MenuContent` / `MenuItem` / `MenuCheckboxItem` / `MenuRadioItem` / `MenuSub` / `MenuGroup` primitives from `@vean/aria/menu` and inject styles via `provideMenuUi` (or `SMenuOptions`'s `ui` prop).

@@ -1,11 +1,11 @@
 {
-  "name": "soybean-ui",
+  "name": "vean",
   "version": "0.50.0",
   "private": true,
-  "description": "SoybeanUI is built on top of SoybeanHeadless, providing a collection of styled components for Vue 3.",
-  "homepage": "https://github.com/soybeanjs/soybean-ui",
+  "description": "Vean is a Vue 3 component library built on a 'aria / styled separation'.",
+  "homepage": "https://github.com/soybeanjs/vean-ui",
   "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-ui/issues"
+    "url": "https://github.com/soybeanjs/vean-ui/issues"
   },
   "license": "MIT",
   "author": {
@@ -14,26 +14,26 @@
     "url": "https://github.com/soybeanjs"
   },
   "repository": {
-    "url": "https://github.com/soybeanjs/soybean-ui.git"
+    "url": "https://github.com/soybeanjs/vean-ui.git"
   },
   "type": "module",
   "scripts": {
-    "build": "pnpm build:libs && pnpm build:headless && pnpm build:ui && pnpm build:sbean",
-    "build:docs": "pnpm build:libs && pnpm --filter @soybeanjs/ui-docs build",
-    "build:headless": "pnpm --filter @soybeanjs/headless build",
-    "build:libs": "pnpm --filter @soybeanjs/theme build && pnpm --filter @soybeanjs/ui-uno build",
-    "build:sbean": "pnpm --filter sbean build",
-    "build:ui": "pnpm --filter @soybeanjs/ui build",
+    "build": "pnpm build:libs && pnpm build:aria && pnpm build:ui && pnpm build:cli",
+    "build:aria": "pnpm --filter @vean/aria build",
+    "build:cli": "pnpm --filter @vean/cli build",
+    "build:docs": "pnpm build:libs && pnpm --filter @vean/docs build",
+    "build:libs": "pnpm --filter @vean/theme build && pnpm --filter @vean/unocss build",
+    "build:ui": "pnpm --filter @vean/ui build",
     "check:deps": "pnpm sui check deps",
     "check:generated": "pnpm sui check generated",
     "check:size": "pnpm sui check size",
     "commit": "soy git-commit",
     "dev": "pnpm dev:docs",
-    "dev:docs": "pnpm --filter @soybeanjs/ui-docs dev",
+    "dev:docs": "pnpm --filter @vean/docs dev",
     "fmt": "vp fmt",
     "lint": "vp lint --fix && pnpm lint:vue",
     "lint:vue": "eslint --ext .vue --fix packages/ apps/docs/",
-    "preview": "pnpm --filter @soybeanjs/ui-docs preview",
+    "preview": "pnpm --filter @vean/docs preview",
     "publish-pkg": "pnpm publish -r --access public",
     "release": "soy release -e 'pnpm release-execute'",
     "release-execute": "pnpm soy changelog && pnpm sui gen skills && pnpm sui translate all && pnpm sync-template-versions",
@@ -42,7 +42,7 @@
     "sui": "tsx packages/scripts/src/index.ts",
     "sync-template-versions": "pnpm sui sync-template-versions",
     "test": "pnpm -r run test",
-    "test:e2e": "pnpm --filter @soybeanjs/ui test:e2e",
+    "test:e2e": "pnpm --filter @vean/ui test:e2e",
     "typecheck": "pnpm -r typecheck",
     "upkg": "soy ncu"
   },

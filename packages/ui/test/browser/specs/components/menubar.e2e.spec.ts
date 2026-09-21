@@ -35,7 +35,7 @@ const items: MenuOptionData<string>[] = [
   {
     value: 'github',
     label: 'GitHub',
-    href: 'https://github.com/soybeanjs/soybean-ui'
+    href: 'https://github.com/soybeanjs/vean-ui'
   }
 ];
 
@@ -430,8 +430,8 @@ describe('SMenubar (e2e)', () => {
     await expect.element(moreTrigger).toBeVisible();
 
     // The menubar content always fits inside the measurement wrapper.
-    const menubarEl = document.querySelector('[data-soybean-menubar-root]');
-    const wrapperEl = menubarEl?.closest('[data-soybean-menubar-overflow]');
+    const menubarEl = document.querySelector('[data-vean-menubar-root]');
+    const wrapperEl = menubarEl?.closest('[data-vean-menubar-overflow]');
     expect(menubarEl).not.toBeNull();
     expect(wrapperEl).not.toBeNull();
     if (menubarEl && wrapperEl) {
@@ -458,7 +458,7 @@ describe('SMenubar (e2e)', () => {
     // collapsible mode, so the "more" menu survived while every trigger was
     // rendered right next to it.
     await expect.element(page.getByText('More')).not.toBeInTheDocument();
-    expect(document.querySelector('[data-soybean-menubar-overflow]')).toBeNull();
+    expect(document.querySelector('[data-vean-menubar-overflow]')).toBeNull();
     await expect.element(page.getByText('Support')).toBeInTheDocument();
 
     unmount();

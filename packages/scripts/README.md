@@ -1,12 +1,12 @@
-# @soybeanjs/scripts
+# @vean/scripts
 
 English | [中文](./README.zh-CN.md)
 
-[![github stars](https://img.shields.io/github/stars/soybeanjs/soybean-ui)](https://github.com/soybeanjs/soybean-ui)
+[![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-Repo-service CLI (`sui`) for the SoybeanUI workspace: generators, verification gates, and workspace chores.
+Repo-service CLI (`sui`) for the Vean workspace: generators, verification gates, and workspace chores.
 
-> **Private package — never published to npm** (workspace-only). Not to be confused with the consumer-facing [`sbean`](../cli/README.md) CLI: `sui` serves this repository, `sbean` serves user projects.
+> **Private package — never published to npm** (workspace-only). Not to be confused with the consumer-facing [`vean`](../cli/README.md) CLI: `sui` serves this repository, `vean` serves user projects.
 
 ## 📖 Introduction
 
@@ -25,14 +25,14 @@ Repo-service CLI (`sui`) for the SoybeanUI workspace: generators, verification g
 pnpm sui gen <surface> [name] [--force]
 ```
 
-| Surface                  | Artifact                                                                   |
-| :----------------------- | :------------------------------------------------------------------------- |
-| `catalog [headless\|ui]` | Component catalogs (`headless` constants/namespaced + `ui` constants)      |
-| `api`                    | `apps/docs/src/generated/api/*.json` and locale text                       |
-| `changelog`              | `apps/docs/src/generated/changelog/*.json` and locale summaries            |
-| `schema`                 | `sbean` JSON Schemas (`sbean.json`, `registry-item.json`, `registry.json`) |
-| `skills`                 | Skill docs and distribution files                                          |
-| `all`                    | Every surface above                                                        |
+| Surface              | Artifact                                                                 |
+| :------------------- | :----------------------------------------------------------------------- |
+| `catalog [aria\|ui]` | Component catalogs (`aria` constants/namespaced + `ui` constants)        |
+| `api`                | `apps/docs/src/generated/api/*.json` and locale text                     |
+| `changelog`          | `apps/docs/src/generated/changelog/*.json` and locale summaries          |
+| `schema`             | `vean` JSON Schemas (`vean.json`, `registry-item.json`, `registry.json`) |
+| `skills`             | Skill docs and distribution files                                        |
+| `all`                | Every surface above                                                      |
 
 `--force` regenerates even when the `api` source fingerprint still matches. Generators compare the produced payload against the committed file and skip the write when only `generatedAt` would differ, so a no-op regeneration produces no diff.
 
@@ -57,16 +57,16 @@ pnpm sui check <generated|deps|all>
 
 | Command                                | Description                                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------- |
-| `stub [--reset]`                       | Switch headless development exports between `src` and `dist`                     |
+| `stub [--reset]`                       | Switch aria development exports between `src` and `dist`                         |
 | `reorder-imports [...paths] [--check]` | Reorder Props before Emits in `.vue` import type blocks (`--check` reports only) |
-| `sync-template-versions`               | Sync the `@soybeanjs/*` version constant used by project templates               |
+| `sync-template-versions`               | Sync the `@vean/*` version constant used by project templates                    |
 
 ## 🛠 Development
 
 ```bash
 pnpm sui gen all                                        # run from the repo root
-pnpm --filter @soybeanjs/scripts test                   # vp test run
-pnpm --filter @soybeanjs/scripts typecheck              # tsc --noEmit
+pnpm --filter @vean/scripts test                   # vp test run
+pnpm --filter @vean/scripts typecheck              # tsc --noEmit
 ```
 
 The `sui` binary is `bin/index.js` and loads the TypeScript sources through `tsx`.

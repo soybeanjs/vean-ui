@@ -37,20 +37,20 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 通过复用输入框族系基座构建密码输入：`PasswordCompact` 组合 `InputRoot` / `InputControl` / `InputClear`，并新增由 `useControllableState` 支撑的默认 `visible` 插槽。styled 层在 `inputVariants` 基础上扩展 `visible` 插槽覆写，样式为迷你图标按钮。这与 reka-ui、shadcn 的 headless/styled 分离一致，区别于 Element Plus 等单包方案。
+VeanUI 通过复用输入框族系基座构建密码输入：`PasswordCompact` 组合 `InputRoot` / `InputControl` / `InputClear`，并新增由 `useControllableState` 支撑的默认 `visible` 插槽。styled 层在 `inputVariants` 基础上扩展 `visible` 插槽覆写，样式为迷你图标按钮。这与 reka-ui、shadcn 的 headless/styled 分离一致，区别于 Element Plus 等单包方案。
 
-| 能力                         | SoybeanUI | reka-ui `PasswordInput` | shadcn | Element Plus `el-input` |
-| :--------------------------- | :-------: | :---------------------: | :----: | :---------------------: |
-| headless/styled 分离         |    ✅     |            —            |   —    |            —            |
-| 受控/非受控 `visible`        |    ✅     |           ✅            |   —    |            —            |
-| 显示/隐藏切换（图标）        |    ✅     |           ✅            |   ✅   |           ✅            |
-| i18n 切换标签                |    ✅     |            —            |   —    |           ✅            |
-| `aria-pressed` 语义          |    ✅     |            —            |   —    |            —            |
-| 可清除模式                   |    ✅     |            —            |   ✅   |           ✅            |
-| `disabled` / `readonly` 守卫 |    ✅     |           ✅            |   ✅   |           ✅            |
-| 尺寸变体（xs…2xl）           |    ✅     |            —            |   —    |            —            |
-| 自定义 `visible` 插槽        |    ✅     |            —            |   —    |            —            |
-| 表单代理（隐藏输入框）       |    ✅     |            —            |   —    |            —            |
+| 能力                         | VeanUI | reka-ui `PasswordInput` | shadcn | Element Plus `el-input` |
+| :--------------------------- | :----: | :---------------------: | :----: | :---------------------: |
+| Aria/styled 分离             |   ✅   |            —            |   —    |            —            |
+| 受控/非受控 `visible`        |   ✅   |           ✅            |   —    |            —            |
+| 显示/隐藏切换（图标）        |   ✅   |           ✅            |   ✅   |           ✅            |
+| i18n 切换标签                |   ✅   |            —            |   —    |           ✅            |
+| `aria-pressed` 语义          |   ✅   |            —            |   —    |            —            |
+| 可清除模式                   |   ✅   |            —            |   ✅   |           ✅            |
+| `disabled` / `readonly` 守卫 |   ✅   |           ✅            |   ✅   |           ✅            |
+| 尺寸变体（xs…2xl）           |   ✅   |            —            |   —    |            —            |
+| 自定义 `visible` 插槽        |   ✅   |            —            |   —    |            —            |
+| 表单代理（隐藏输入框）       |   ✅   |            —            |   —    |            —            |
 
 ### 注意事项
 

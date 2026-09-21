@@ -2,6 +2,6 @@ export {
   MenuOptionsCompact as SMenuOptions,
   MenuCheckboxOptionsCompact as SMenuCheckboxOptions,
   MenuRadioOptionsCompact as SMenuRadioOptions
-} from '@soybeanjs/headless/menu';
+} from '@vean/aria/menu';
 
-export type * from '@soybeanjs/headless/menu';
+export type * from '@vean/aria/menu';

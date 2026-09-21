@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SAppShell, SButton, SIcon, STreeMenu } from '@soybeanjs/ui';
-import type { AppShellMenuUi, AppShellUi, LayoutUi } from '@soybeanjs/ui';
+import { SAppShell, SButton, SIcon, STreeMenu } from '@vean/ui';
+import type { AppShellMenuUi, AppShellUi, LayoutUi } from '@vean/ui';
 import { appShellItems } from './menu';
 
 const active = ref('overview');
@@ -31,7 +31,7 @@ const menuUi = {
         <SIcon icon="lucide:hexagon" class="size-6 text-primary" />
       </template>
       <template #title>
-        <span class="truncate font-semibold">Soybean UI</span>
+        <span class="truncate font-semibold">Vean UI</span>
       </template>
       <template #sidebar-start>
         <div class="px-[--sl-spacing] pb-2">

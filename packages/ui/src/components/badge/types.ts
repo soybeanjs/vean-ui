@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'vue';
-import type { BaseProps, ClassValue, UiClass } from '@soybeanjs/headless/types';
+import type { BaseProps, ClassValue, UiClass } from '@vean/aria/types';
 import type { BadgePosition } from '@/styles/badge';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

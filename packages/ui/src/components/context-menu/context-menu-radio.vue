@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends AcceptableBooleanValue = AcceptableBooleanValue">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { ContextMenuRadioCompact } from '@soybeanjs/headless/context-menu';
-import { keysOf } from '@soybeanjs/headless/shared';
-import type { AcceptableBooleanValue } from '@soybeanjs/headless/types';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { ContextMenuRadioCompact } from '@vean/aria/context-menu';
+import { keysOf } from '@vean/aria/shared';
+import type { AcceptableBooleanValue } from '@vean/aria/types';
 import { provideMenuUi } from '../menu/context';
 import type { ContextMenuRadioProps, ContextMenuRadioEmits, ContextMenuRadioSlots } from './types';
 

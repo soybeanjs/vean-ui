@@ -1,8 +1,8 @@
-import type { LayoutCollapsible } from '@soybeanjs/headless/layout';
-import type { MenuOptionData } from '@soybeanjs/headless/menu';
-import type { PageTabsOptionData } from '@soybeanjs/headless/page-tabs';
-import type { SplitNavMode, SplitNavSidebarColumns } from '@soybeanjs/headless/split-nav';
-import type { DataOrientation } from '@soybeanjs/headless/types';
+import type { LayoutCollapsible } from '@vean/aria/layout';
+import type { MenuOptionData } from '@vean/aria/menu';
+import type { PageTabsOptionData } from '@vean/aria/page-tabs';
+import type { SplitNavMode, SplitNavSidebarColumns } from '@vean/aria/split-nav';
+import type { DataOrientation } from '@vean/aria/types';
 import { splitNavPaneMetrics } from '@/styles/split-nav';
 import { themeSizeMap, themeSizeRatio } from '@/theme';
 import type { ThemeSize } from '@/theme';

@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; clear: ClassValue; control: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Input component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputui",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputui",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.inputref",
             "default": null,
             "inheritedFrom": "inputRef",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLInputElement",
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.clearable",
             "default": "false",
             "inheritedFrom": "clearable",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.controlprops",
             "default": null,
             "inheritedFrom": "controlProps",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputControlProps",
@@ -139,8 +139,8 @@
                 "type": "InputControlProps",
                 "resolvedType": null,
                 "description": "Properties for the InputControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcontrolprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcontrolprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.clearprops",
             "default": null,
             "inheritedFrom": "clearProps",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputClearProps",
@@ -164,8 +164,8 @@
                 "type": "InputClearProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the InputClear component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -174,10 +174,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -185,10 +185,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -196,10 +196,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -207,10 +207,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -226,7 +226,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -237,7 +237,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -248,7 +248,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -259,7 +259,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -270,7 +270,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.rootprops",
             "default": null,
             "inheritedFrom": "rootProps",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -278,8 +278,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -295,7 +295,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -306,7 +306,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -317,7 +317,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -328,7 +328,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.autofocus",
             "default": null,
             "inheritedFrom": "autofocus",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -339,7 +339,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.autocomplete",
             "default": null,
             "inheritedFrom": "autocomplete",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -350,7 +350,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxlength",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -361,7 +361,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.minlength",
             "default": null,
             "inheritedFrom": "minlength",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -372,7 +372,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.pattern",
             "default": null,
             "inheritedFrom": "pattern",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -383,7 +383,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -394,7 +394,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputprops.members.type",
             "default": null,
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputTypeHTMLAttribute",
@@ -433,7 +433,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           }
         ],
@@ -444,8 +444,8 @@
             "type": "{ 'update:modelValue': [value: string]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string] }",
             "description": "Events for the InputRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootemits",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootemits",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -456,8 +456,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -482,7 +482,7 @@
             "required": false,
             "description": "Custom content for the leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputCompactSlotProps",
@@ -490,8 +490,8 @@
                 "type": "InputCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -506,7 +506,7 @@
             "required": false,
             "description": "Custom content for the trailing slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputslots.callables.trailing",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputCompactSlotProps",
@@ -514,8 +514,8 @@
                 "type": "InputCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -530,7 +530,7 @@
             "required": false,
             "description": "Custom content for the clear slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_input_types.inputslots.callables.clear",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputCompactSlotProps",
@@ -538,8 +538,8 @@
                 "type": "InputCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -552,11 +552,11 @@
           {
             "name": "InputCompactSlots",
             "kind": "typeAlias",
-            "type": "{ leading?: (props: import(\"@soybeanjs/headless\").InputCompactSlotProps) => any; trailing?: (props: import(\"@soybeanjs/headless\").InputCompactSlotProps) => any; clear?: (props: import(\"@soybeanjs/headless\").InputCompactSlotProps) => any; }",
+            "type": "{ leading?: (props: import(\"@vean/aria\").InputCompactSlotProps) => any; trailing?: (props: import(\"@vean/aria\").InputCompactSlotProps) => any; clear?: (props: import(\"@vean/aria\").InputCompactSlotProps) => any; }",
             "resolvedType": "{ leading?: ((props: InputCompactSlotProps) => any); trailing?: ((props: InputCompactSlotProps) => any); clear?: ((props: InputCompactSlotProps) => any) }",
             "description": "Slots for the InputCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -567,8 +567,8 @@
                 "parameters": "((props: InputCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the leading slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.callables.leading",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.callables.leading",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "referencedTypes": []
               },
               {
@@ -577,8 +577,8 @@
                 "parameters": "((props: InputCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the trailing slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.callables.trailing",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.callables.trailing",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "referencedTypes": []
               },
               {
@@ -587,8 +587,8 @@
                 "parameters": "((props: InputCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the clear slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.callables.clear",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.callables.clear",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -603,8 +603,8 @@
         "type": "Interface InputClearProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the InputClear component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.props",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.props",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -612,10 +612,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -623,8 +623,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -637,10 +637,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -648,10 +648,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -659,10 +659,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -697,8 +697,8 @@
         "type": "TypeAlias InputClearEmits",
         "resolvedType": "{ clear: [event: PointerEvent] }",
         "description": "Events for the InputClear component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearemits.emits",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearemits.emits",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -708,8 +708,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when the clear button is clicked.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearemits.callables.clear",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearemits.callables.clear",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -737,8 +737,8 @@
         "type": "Interface InputCompactProps",
         "resolvedType": "{ inputRef?: ((el: HTMLInputElement) => void); clearable?: boolean; controlProps?: InputControlProps; clearProps?: InputClearProps; defaultValue?: string; modelValue?: string; disabled?: boolean; readonly?: boolean; rootProps?: BaseProps; name?: string; required?: boolean; id?: string; autofocus?: boolean; autocomplete?: 'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'; maxlength?: number; minlength?: number; pattern?: string; placeholder?: string; type?: InputTypeHTMLAttribute }",
         "description": "Properties for the InputCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.props",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.props",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -746,10 +746,10 @@
             "type": "((el: HTMLInputElement) => void)",
             "required": false,
             "description": "The function to set the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.inputref",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.inputref",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLInputElement",
@@ -771,10 +771,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to show the clear trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.clearable",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.clearable",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -782,10 +782,10 @@
             "type": "InputControlProps",
             "required": false,
             "description": "Properties forwarded to the control element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.controlprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.controlprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputControlProps",
@@ -793,8 +793,8 @@
                 "type": "InputControlProps",
                 "resolvedType": null,
                 "description": "Properties for the InputControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcontrolprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcontrolprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -807,10 +807,10 @@
             "type": "InputClearProps",
             "required": false,
             "description": "Properties forwarded to the clear element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.clearprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.clearprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputClearProps",
@@ -818,8 +818,8 @@
                 "type": "InputClearProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the InputClear component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -828,10 +828,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -839,10 +839,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -850,10 +850,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -861,10 +861,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputclearprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputclearprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -877,10 +877,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -888,10 +888,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -899,10 +899,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -910,10 +910,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the input is read-only.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -921,10 +921,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the root element",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.rootprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.rootprops",
             "default": null,
             "inheritedFrom": "rootProps",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -932,8 +932,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -946,10 +946,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -957,10 +957,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -968,10 +968,10 @@
             "type": "string",
             "required": false,
             "description": "Id of the input element",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -979,10 +979,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the input is auto-focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.autofocus",
             "default": null,
             "inheritedFrom": "autofocus",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -990,10 +990,10 @@
             "type": "'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'",
             "required": false,
             "description": "The autocomplete attribute of the input.\n\nSupports the HTML autofill tokens (including password-manager values such as\n`current-password` / `new-password`), in addition to the `on` / `off` switches.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.autocomplete",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.autocomplete",
             "default": null,
             "inheritedFrom": "autocomplete",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1001,10 +1001,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed in the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxlength",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1012,10 +1012,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum number of characters allowed in the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.minlength",
             "default": null,
             "inheritedFrom": "minlength",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1023,10 +1023,10 @@
             "type": "string",
             "required": false,
             "description": "The pattern attribute of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.pattern",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.pattern",
             "default": null,
             "inheritedFrom": "pattern",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1034,10 +1034,10 @@
             "type": "string",
             "required": false,
             "description": "The placeholder of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1045,10 +1045,10 @@
             "type": "InputTypeHTMLAttribute",
             "required": false,
             "description": "The type of the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactprops.members.type",
             "default": null,
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputTypeHTMLAttribute",
@@ -1075,8 +1075,8 @@
         "type": "TypeAlias InputCompactEmits: AutocompleteInputEmits & InputClearEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; clear: [event: PointerEvent] }",
         "description": "Events for the InputCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1086,8 +1086,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1096,8 +1096,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when the clear button is clicked.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactemits.callables.clear",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactemits.callables.clear",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -1123,8 +1123,8 @@
         "type": "Interface InputCompactSlotProps",
         "resolvedType": "{ modelValue?: string; clear: () => void }",
         "description": "Slot properties for the InputCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1132,10 +1132,10 @@
             "type": "string",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1143,10 +1143,10 @@
             "type": "() => void",
             "required": true,
             "description": "Clear handler.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops.members.clear",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops.members.clear",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1159,8 +1159,8 @@
         "type": "TypeAlias InputCompactSlots",
         "resolvedType": "{ leading?: ((props: InputCompactSlotProps) => any); trailing?: ((props: InputCompactSlotProps) => any); clear?: ((props: InputCompactSlotProps) => any) }",
         "description": "Slots for the InputCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.slots",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1170,8 +1170,8 @@
             "parameters": "((props: InputCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.callables.leading",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputCompactSlotProps",
@@ -1179,8 +1179,8 @@
                 "type": "InputCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1194,8 +1194,8 @@
             "parameters": "((props: InputCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the trailing slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.callables.trailing",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.callables.trailing",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputCompactSlotProps",
@@ -1203,8 +1203,8 @@
                 "type": "InputCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1218,8 +1218,8 @@
             "parameters": "((props: InputCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the clear slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslots.callables.clear",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslots.callables.clear",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputCompactSlotProps",
@@ -1227,8 +1227,8 @@
                 "type": "InputCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the InputCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcompactslotprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcompactslotprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1247,8 +1247,8 @@
         "type": "Interface InputControlProps",
         "resolvedType": null,
         "description": "Properties for the InputControl component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcontrolprops.props",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcontrolprops.props",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1262,8 +1262,8 @@
         "type": "Interface InputRootProps",
         "resolvedType": "{ defaultValue?: string; modelValue?: string; disabled?: boolean; readonly?: boolean; rootProps?: BaseProps; name?: string; required?: boolean; id?: string; autofocus?: boolean; autocomplete?: 'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'; maxlength?: number; minlength?: number; pattern?: string; placeholder?: string; type?: InputTypeHTMLAttribute }",
         "description": "Properties for the InputRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.props",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.props",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1271,10 +1271,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1282,10 +1282,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1293,10 +1293,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1304,10 +1304,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the input is read-only.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.readonly",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1315,10 +1315,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the root element",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.rootprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.rootprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -1326,8 +1326,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -1340,10 +1340,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1351,10 +1351,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1362,10 +1362,10 @@
             "type": "string",
             "required": false,
             "description": "Id of the input element",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.id",
             "default": null,
             "inheritedFrom": "InputBaseProps.id",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1373,10 +1373,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the input is auto-focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.autofocus",
             "default": null,
             "inheritedFrom": "InputBaseProps.autofocus",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1384,10 +1384,10 @@
             "type": "'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'",
             "required": false,
             "description": "The autocomplete attribute of the input.\n\nSupports the HTML autofill tokens (including password-manager values such as\n`current-password` / `new-password`), in addition to the `on` / `off` switches.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.autocomplete",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.autocomplete",
             "default": null,
             "inheritedFrom": "InputBaseProps.autocomplete",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1395,10 +1395,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed in the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.maxlength",
             "default": null,
             "inheritedFrom": "InputBaseProps.maxlength",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1406,10 +1406,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum number of characters allowed in the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.minlength",
             "default": null,
             "inheritedFrom": "InputBaseProps.minlength",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1417,10 +1417,10 @@
             "type": "string",
             "required": false,
             "description": "The pattern attribute of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.pattern",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.pattern",
             "default": null,
             "inheritedFrom": "InputBaseProps.pattern",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1428,10 +1428,10 @@
             "type": "string",
             "required": false,
             "description": "The placeholder of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.placeholder",
             "default": null,
             "inheritedFrom": "InputBaseProps.placeholder",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -1439,10 +1439,10 @@
             "type": "InputTypeHTMLAttribute",
             "required": false,
             "description": "The type of the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootprops.members.type",
             "default": null,
             "inheritedFrom": "InputBaseProps.type",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputTypeHTMLAttribute",
@@ -1469,8 +1469,8 @@
         "type": "TypeAlias InputRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string] }",
         "description": "Events for the InputRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootemits.emits",
-        "sourcePath": "packages/headless/src/components/input/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootemits.emits",
+        "sourcePath": "packages/aria/src/components/input/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1480,8 +1480,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           }
         ],

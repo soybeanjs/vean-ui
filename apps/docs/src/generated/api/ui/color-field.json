@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; input: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the ColorField component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldui",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldui",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.inputprops",
             "default": null,
             "inheritedFrom": "inputProps",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFieldInputProps",
@@ -103,8 +103,8 @@
                 "type": "ColorFieldInputProps",
                 "resolvedType": null,
                 "description": "Properties for the ColorFieldInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldinputprops",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldinputprops",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -131,7 +131,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -142,7 +142,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.colorspace",
             "default": null,
             "inheritedFrom": "colorSpace",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSpace",
@@ -150,8 +150,8 @@
                 "type": "'hsl' | 'hsv' | 'oklch'",
                 "resolvedType": "'hsl' | 'hsv' | 'oklch'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorspace",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorspace",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.channel",
             "default": null,
             "inheritedFrom": "channel",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorChannel",
@@ -175,8 +175,8 @@
                 "type": "'alpha' | 'hue' | 'saturation' | 'lightness' | 'brightness' | 'red' | 'green' | 'blue' | 'chroma'",
                 "resolvedType": "'alpha' | 'hue' | 'saturation' | 'lightness' | 'brightness' | 'red' | 'green' | 'blue' | 'chroma'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorchannel",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorchannel",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.format",
             "default": null,
             "inheritedFrom": "format",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFormat",
@@ -200,8 +200,8 @@
                 "type": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "resolvedType": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorformat",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorformat",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -217,7 +217,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -228,7 +228,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -239,7 +239,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -250,7 +250,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.disablewheelchange",
             "default": null,
             "inheritedFrom": "disableWheelChange",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -261,7 +261,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -272,7 +272,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -283,7 +283,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -294,7 +294,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -305,7 +305,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -352,7 +352,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -362,7 +362,7 @@
             "required": true,
             "description": "Emitted when the color value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_color_field_types.colorfieldemits.callables.update_color",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "NormalizedColor",
@@ -370,8 +370,8 @@
                 "type": "import(\"@soybeanjs/colord\").RgbColor | import(\"@soybeanjs/colord\").HslColor | import(\"@soybeanjs/colord\").HsvColor | import(\"@soybeanjs/colord\").OklchColor",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.normalizedcolor",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.normalizedcolor",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -384,11 +384,11 @@
           {
             "name": "ColorFieldRootEmits",
             "kind": "typeAlias",
-            "type": "{ 'update:modelValue': [value: string]; 'update:color': [value: import(\"@soybeanjs/headless/types\").NormalizedColor]; }",
+            "type": "{ 'update:modelValue': [value: string]; 'update:color': [value: import(\"@vean/aria/types\").NormalizedColor]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor] }",
             "description": "Events for the ColorFieldRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -399,8 +399,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "referencedTypes": []
               },
               {
@@ -409,8 +409,8 @@
                 "parameters": "value: NormalizedColor",
                 "required": true,
                 "description": "Emitted when the color value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.callables.update_color",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.callables.update_color",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -425,8 +425,8 @@
         "type": "Interface ColorFieldCompactProps",
         "resolvedType": "{ inputProps?: ColorFieldInputProps; modelValue?: import(\"@soybeanjs/colord\").AnyColor; defaultValue?: import(\"@soybeanjs/colord\").AnyColor; colorSpace?: ColorSpace; channel?: ColorChannel; format?: ColorFormat; placeholder?: string; disabled?: boolean; readonly?: boolean; disableWheelChange?: boolean; step?: number; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorFieldCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.props",
-        "sourcePath": "packages/headless/src/components/color-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.props",
+        "sourcePath": "packages/aria/src/components/color-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -434,10 +434,10 @@
             "type": "ColorFieldInputProps",
             "required": false,
             "description": "Properties forwarded to the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.inputprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.inputprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFieldInputProps",
@@ -445,8 +445,8 @@
                 "type": "ColorFieldInputProps",
                 "resolvedType": null,
                 "description": "Properties for the ColorFieldInput component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldinputprops",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldinputprops",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -459,10 +459,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -470,10 +470,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Default value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -481,10 +481,10 @@
             "type": "ColorSpace",
             "required": false,
             "description": "Color space.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.colorspace",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.colorspace",
             "default": null,
             "inheritedFrom": "colorSpace",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSpace",
@@ -492,8 +492,8 @@
                 "type": "'hsl' | 'hsv' | 'oklch'",
                 "resolvedType": "'hsl' | 'hsv' | 'oklch'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorspace",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorspace",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -506,10 +506,10 @@
             "type": "ColorChannel",
             "required": false,
             "description": "Channel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.channel",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.channel",
             "default": null,
             "inheritedFrom": "channel",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorChannel",
@@ -517,8 +517,8 @@
                 "type": "'alpha' | 'hue' | 'saturation' | 'lightness' | 'brightness' | 'red' | 'green' | 'blue' | 'chroma'",
                 "resolvedType": "'alpha' | 'hue' | 'saturation' | 'lightness' | 'brightness' | 'red' | 'green' | 'blue' | 'chroma'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorchannel",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorchannel",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -531,10 +531,10 @@
             "type": "ColorFormat",
             "required": false,
             "description": "Format.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.format",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.format",
             "default": null,
             "inheritedFrom": "format",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFormat",
@@ -542,8 +542,8 @@
                 "type": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "resolvedType": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorformat",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorformat",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -556,10 +556,10 @@
             "type": "string",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -567,10 +567,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -578,10 +578,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -589,10 +589,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to disable wheel change.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.disablewheelchange",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.disablewheelchange",
             "default": null,
             "inheritedFrom": "disableWheelChange",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -600,10 +600,10 @@
             "type": "number",
             "required": false,
             "description": "Step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.step",
             "default": null,
             "inheritedFrom": "step",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -611,10 +611,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -622,10 +622,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -633,10 +633,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -644,10 +644,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -682,8 +682,8 @@
         "type": "TypeAlias ColorFieldCompactEmits: ColorFieldRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor] }",
         "description": "Events for the ColorFieldCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactemits.emits",
-        "sourcePath": "packages/headless/src/components/color-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/color-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -693,8 +693,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -703,8 +703,8 @@
             "parameters": "value: NormalizedColor",
             "required": true,
             "description": "Emitted when the color value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldcompactemits.callables.update_color",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldcompactemits.callables.update_color",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "NormalizedColor",
@@ -712,8 +712,8 @@
                 "type": "import(\"@soybeanjs/colord\").RgbColor | import(\"@soybeanjs/colord\").HslColor | import(\"@soybeanjs/colord\").HsvColor | import(\"@soybeanjs/colord\").OklchColor",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.normalizedcolor",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.normalizedcolor",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -729,8 +729,8 @@
             "type": "{ 'update:modelValue': [value: string]; 'update:color': [value: NormalizedColor]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor] }",
             "description": "Events for the ColorFieldRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -741,8 +741,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "referencedTypes": []
               },
               {
@@ -751,8 +751,8 @@
                 "parameters": "value: NormalizedColor",
                 "required": true,
                 "description": "Emitted when the color value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.callables.update_color",
-                "sourcePath": "packages/headless/src/components/color-field/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.callables.update_color",
+                "sourcePath": "packages/aria/src/components/color-field/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -767,8 +767,8 @@
         "type": "Interface ColorFieldInputProps",
         "resolvedType": null,
         "description": "Properties for the ColorFieldInput component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldinputprops.props",
-        "sourcePath": "packages/headless/src/components/color-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldinputprops.props",
+        "sourcePath": "packages/aria/src/components/color-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -782,8 +782,8 @@
         "type": "Interface ColorFieldRootProps",
         "resolvedType": "{ modelValue?: import(\"@soybeanjs/colord\").AnyColor; defaultValue?: import(\"@soybeanjs/colord\").AnyColor; colorSpace?: ColorSpace; channel?: ColorChannel; format?: ColorFormat; placeholder?: string; disabled?: boolean; readonly?: boolean; disableWheelChange?: boolean; step?: number; name?: string; required?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ColorFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.props",
-        "sourcePath": "packages/headless/src/components/color-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.props",
+        "sourcePath": "packages/aria/src/components/color-field/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -791,10 +791,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -802,10 +802,10 @@
             "type": "import(\"@soybeanjs/colord\").AnyColor",
             "required": false,
             "description": "Default value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -813,10 +813,10 @@
             "type": "ColorSpace",
             "required": false,
             "description": "Color space.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.colorspace",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.colorspace",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorSpace",
@@ -824,8 +824,8 @@
                 "type": "'hsl' | 'hsv' | 'oklch'",
                 "resolvedType": "'hsl' | 'hsv' | 'oklch'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorspace",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorspace",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -838,10 +838,10 @@
             "type": "ColorChannel",
             "required": false,
             "description": "Channel.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.channel",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.channel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorChannel",
@@ -849,8 +849,8 @@
                 "type": "'alpha' | 'hue' | 'saturation' | 'lightness' | 'brightness' | 'red' | 'green' | 'blue' | 'chroma'",
                 "resolvedType": "'alpha' | 'hue' | 'saturation' | 'lightness' | 'brightness' | 'red' | 'green' | 'blue' | 'chroma'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorchannel",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorchannel",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -863,10 +863,10 @@
             "type": "ColorFormat",
             "required": false,
             "description": "Format.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.format",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.format",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "ColorFormat",
@@ -874,8 +874,8 @@
                 "type": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "resolvedType": "'hsl' | 'oklch' | 'hex' | 'rgb'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.colorformat",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.colorformat",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -888,10 +888,10 @@
             "type": "string",
             "required": false,
             "description": "Placeholder.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.placeholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -899,10 +899,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -910,10 +910,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is readonly.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.readonly",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -921,10 +921,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to disable wheel change.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.disablewheelchange",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.disablewheelchange",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -932,10 +932,10 @@
             "type": "number",
             "required": false,
             "description": "Step.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.step",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.step",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -943,10 +943,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -954,10 +954,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -965,10 +965,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -976,10 +976,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1014,8 +1014,8 @@
         "type": "TypeAlias ColorFieldRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; \"update:color\": [value: NormalizedColor] }",
         "description": "Events for the ColorFieldRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.emits",
-        "sourcePath": "packages/headless/src/components/color-field/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.emits",
+        "sourcePath": "packages/aria/src/components/color-field/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1025,8 +1025,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": []
           },
           {
@@ -1035,8 +1035,8 @@
             "parameters": "value: NormalizedColor",
             "required": true,
             "description": "Emitted when the color value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_color_field_types.colorfieldrootemits.callables.update_color",
-            "sourcePath": "packages/headless/src/components/color-field/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_color_field_types.colorfieldrootemits.callables.update_color",
+            "sourcePath": "packages/aria/src/components/color-field/types.ts",
             "referencedTypes": [
               {
                 "name": "NormalizedColor",
@@ -1044,8 +1044,8 @@
                 "type": "import(\"@soybeanjs/colord\").RgbColor | import(\"@soybeanjs/colord\").HslColor | import(\"@soybeanjs/colord\").HsvColor | import(\"@soybeanjs/colord\").OklchColor",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_color.normalizedcolor",
-                "sourcePath": "packages/headless/src/types/color.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_color.normalizedcolor",
+                "sourcePath": "packages/aria/src/types/color.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { resolveThemeColors } from '@soybeanjs/theme';
-import { SButtonIcon, SSelect, SSpinner, useTheme } from '@soybeanjs/ui';
-import type { SelectOptionData, SpinnerIcon, ThemeColor, ThemeSize } from '@soybeanjs/ui';
+import { resolveThemeColors } from '@vean/theme';
+import { SButtonIcon, SSelect, SSpinner, useTheme } from '@vean/ui';
+import type { SelectOptionData, SpinnerIcon, ThemeColor, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

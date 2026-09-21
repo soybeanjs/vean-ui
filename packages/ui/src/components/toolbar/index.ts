@@ -5,7 +5,7 @@ export {
   ToolbarSeparator as SToolbarSeparator,
   ToolbarToggleGroup as SToolbarToggleGroup,
   ToolbarToggleItem as SToolbarToggleItem
-} from '@soybeanjs/headless/toolbar';
+} from '@vean/aria/toolbar';
 
-export type * from '@soybeanjs/headless/toolbar';
+export type * from '@vean/aria/toolbar';
 export type * from './types';

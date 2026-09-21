@@ -25,8 +25,8 @@ describe('namespaced registry resolution (EC-E02/E04)', () => {
 
   beforeAll(async () => {
     // Isolate cache to avoid collisions with flat-fixture test files
-    cacheDir = await fs.mkdtemp(path.join(os.tmpdir(), 'sbean-ns-cache-'));
-    process.env.SBEAN_CACHE_DIR = cacheDir;
+    cacheDir = await fs.mkdtemp(path.join(os.tmpdir(), 'vean-ns-cache-'));
+    process.env.VEAN_CACHE_DIR = cacheDir;
     server = await startRegistryServer(0, NS_FIXTURES);
     await clearRegistryCache();
   });
@@ -34,7 +34,7 @@ describe('namespaced registry resolution (EC-E02/E04)', () => {
   afterAll(async () => {
     await clearRegistryCache();
     await server.close();
-    delete process.env.SBEAN_CACHE_DIR;
+    delete process.env.VEAN_CACHE_DIR;
     await fs.rm(cacheDir, { recursive: true, force: true }).catch(() => {});
   });
 

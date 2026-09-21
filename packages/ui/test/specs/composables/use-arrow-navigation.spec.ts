@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { COLLECTION_ITEM_ATTRIBUTE } from '../../../../headless/src/constants';
+import { COLLECTION_ITEM_ATTRIBUTE } from '../../../../aria/src/constants';
 import { createMockElement } from '../../shared';
-import { useArrowNavigation } from '../../../../headless/src/composables/use-arrow-navigation';
+import { useArrowNavigation } from '../../../../aria/src/composables/use-arrow-navigation';
 
 describe('useArrowNavigation', () => {
   let currentElement: HTMLElement;

@@ -31,7 +31,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": []
           },
           {
@@ -50,8 +50,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -67,7 +67,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.dir",
             "default": null,
             "inheritedFrom": "Omit.dir",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -75,8 +75,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.loop",
             "default": "false",
             "inheritedFrom": "Omit.loop",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": []
           },
           {
@@ -178,7 +178,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/segment/types.ts",
+            "sourcePath": "packages/aria/src/components/segment/types.ts",
             "referencedTypes": [
               {
                 "name": "SegmentTriggerProps",
@@ -186,8 +186,8 @@
                 "type": "SegmentTriggerProps",
                 "resolvedType": "{ value: string | number; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the SegmentTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmenttriggerprops",
-                "sourcePath": "packages/headless/src/components/segment/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmenttriggerprops",
+                "sourcePath": "packages/aria/src/components/segment/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -196,10 +196,10 @@
                     "type": "string | number",
                     "required": true,
                     "description": "A unique value that associates the trigger with a content.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmenttriggerprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmenttriggerprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -207,10 +207,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the tab.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmenttriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmenttriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                    "sourcePath": "packages/aria/src/components/tabs/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -218,10 +218,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmenttriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmenttriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -229,10 +229,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmenttriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmenttriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -248,7 +248,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.orientation",
             "default": null,
             "inheritedFrom": "Omit.orientation",
-            "sourcePath": "packages/headless/src/composables/use-roving-focus.ts",
+            "sourcePath": "packages/aria/src/composables/use-roving-focus.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -256,8 +256,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -273,7 +273,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.listprops",
             "default": null,
             "inheritedFrom": "listProps",
-            "sourcePath": "packages/headless/src/components/segment/types.ts",
+            "sourcePath": "packages/aria/src/components/segment/types.ts",
             "referencedTypes": [
               {
                 "name": "SegmentListProps",
@@ -281,8 +281,8 @@
                 "type": "SegmentListProps",
                 "resolvedType": null,
                 "description": "Properties for the SegmentList component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmentlistprops",
-                "sourcePath": "packages/headless/src/components/segment/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmentlistprops",
+                "sourcePath": "packages/aria/src/components/segment/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -306,8 +306,8 @@
                 "type": "{ root: ClassValue; trigger: ClassValue; indicator: ClassValue; list: ClassValue; indicatorContent: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Segment component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmentui",
-                "sourcePath": "packages/headless/src/components/segment/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmentui",
+                "sourcePath": "packages/aria/src/components/segment/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -323,7 +323,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.enableindicator",
             "default": null,
             "inheritedFrom": "enableIndicator",
-            "sourcePath": "packages/headless/src/components/segment/types.ts",
+            "sourcePath": "packages/aria/src/components/segment/types.ts",
             "referencedTypes": []
           },
           {
@@ -334,7 +334,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.indicatorprops",
             "default": null,
             "inheritedFrom": "indicatorProps",
-            "sourcePath": "packages/headless/src/components/segment/types.ts",
+            "sourcePath": "packages/aria/src/components/segment/types.ts",
             "referencedTypes": [
               {
                 "name": "SegmentIndicatorProps",
@@ -342,8 +342,8 @@
                 "type": "SegmentIndicatorProps",
                 "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the SegmentIndicator component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmentindicatorprops",
-                "sourcePath": "packages/headless/src/components/segment/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmentindicatorprops",
+                "sourcePath": "packages/aria/src/components/segment/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -352,10 +352,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmentindicatorprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmentindicatorprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -363,10 +363,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_segment_types.segmentindicatorprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_segment_types.segmentindicatorprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -382,7 +382,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_segment_types.thememodesegmentprops.members.activationmode",
             "default": "automatic",
             "inheritedFrom": "activationMode",
-            "sourcePath": "packages/headless/src/components/tabs/types.ts",
+            "sourcePath": "packages/aria/src/components/tabs/types.ts",
             "referencedTypes": [
               {
                 "name": "TabsActivationMode",
@@ -390,8 +390,8 @@
                 "type": "'automatic' | 'manual'",
                 "resolvedType": "'automatic' | 'manual'",
                 "description": "Type information for TabsActivationMode.",
-                "descriptionKey": "api.generated.packages_headless_src_components_tabs_types.tabsactivationmode",
-                "sourcePath": "packages/headless/src/components/tabs/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_tabs_types.tabsactivationmode",
+                "sourcePath": "packages/aria/src/components/tabs/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

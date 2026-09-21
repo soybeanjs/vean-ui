@@ -1,18 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import {
-  SButton,
-  SCard,
-  SEmpty,
-  SKbd,
-  SPagination,
-  SSeparator,
-  SSkeleton,
-  SSpinner,
-  STable,
-  STabs
-} from '@soybeanjs/ui';
-import type { TableColumn, TabsOptionData } from '@soybeanjs/ui';
+import { SButton, SCard, SEmpty, SKbd, SPagination, SSeparator, SSkeleton, SSpinner, STable, STabs } from '@vean/ui';
+import type { TableColumn, TabsOptionData } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewData'

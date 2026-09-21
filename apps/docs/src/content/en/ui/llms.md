@@ -1,22 +1,22 @@
 ---
 head:
   title: LLMs.txt
-  description: "How to use SoybeanUI's generated LLM-friendly documentation with Cursor, Windsurf, GitHub Copilot, ChatGPT, Claude, and similar AI tools."
+  description: "How to use Vean's generated LLM-friendly documentation with Cursor, Windsurf, GitHub Copilot, ChatGPT, Claude, and similar AI tools."
 ---
 
 # LLMs.txt
 
-> How to use SoybeanUI's generated LLM-friendly documentation with Cursor, Windsurf, GitHub Copilot, ChatGPT, Claude, and similar AI tools.
+> How to use Vean's generated LLM-friendly documentation with Cursor, Windsurf, GitHub Copilot, ChatGPT, Claude, and similar AI tools.
 
 ## What is LLMs.txt?
 
-LLMs.txt is a structured documentation format for large language models. SoybeanUI generates dedicated LLM-friendly files during the docs build so AI tools can consume the library docs, API details, and usage guidance more reliably than by reading the rendered website alone.
+LLMs.txt is a structured documentation format for large language models. VeanUI generates dedicated LLM-friendly files during the docs build so AI tools can consume the library docs, API details, and usage guidance more reliably than by reading the rendered website alone.
 
 The generated files are optimized for AI consumption and currently use the English docs set as the source of truth.
 
 ## Available routes
 
-SoybeanUI exposes the following LLM-oriented routes from the docs build output:
+VeanUI exposes the following LLM-oriented routes from the docs build output:
 
 - **/llms.txt** - a compact overview of the docs and component links, intended for normal context windows
 - **/llms-full.txt** - a much larger bundle that includes the rendered documentation content plus generated API details
@@ -44,12 +44,12 @@ Use the per-page Markdown routes when you want to keep prompts narrow, for examp
 
 ### Cursor
 
-You can reference SoybeanUI docs routes directly in Cursor prompts or add them through docs-based context features.
+You can reference VeanUI docs routes directly in Cursor prompts or add them through docs-based context features.
 
 Examples:
 
-- Use https://ui.soybeanjs.cn/llms.txt as the SoybeanUI docs context
-- Follow SoybeanUI component guidance from https://ui.soybeanjs.cn/components/button.md
+- Use https://veanui.com/llms.txt as the VeanUI docs context
+- Follow VeanUI component guidance from https://veanui.com/components/button.md
 
 If you use `@docs`-style references in tools like Cursor or Windsurf, type the trigger manually in the editor UI instead of pasting it.
 
@@ -69,9 +69,9 @@ Any tool that can read URLs or pasted Markdown can use these files.
 
 Examples:
 
-- Follow SoybeanUI docs from https://ui.soybeanjs.cn/llms.txt
-- Use the Button page from https://ui.soybeanjs.cn/components/button.md
-- Use the full SoybeanUI bundle from https://ui.soybeanjs.cn/llms-full.txt
+- Follow VeanUI docs from https://veanui.com/llms.txt
+- Use the Button page from https://veanui.com/components/button.md
+- Use the full VeanUI bundle from https://veanui.com/llms-full.txt
 
 ## Practical recommendations
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { ToolbarRoot, provideToolbarUi } from '@soybeanjs/headless/toolbar';
+import { useOmitProps } from '@vean/aria/composables';
+import { ToolbarRoot, provideToolbarUi } from '@vean/aria/toolbar';
 import { toolbarVariants } from '@/styles/toolbar';
 import type { ToolbarProps } from './types';
 

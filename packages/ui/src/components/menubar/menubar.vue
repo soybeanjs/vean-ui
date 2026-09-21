@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T extends DefinedValue = DefinedValue">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { MenubarCompact, provideMenubarUi } from '@soybeanjs/headless/menubar';
-import { keysOf } from '@soybeanjs/headless/shared';
-import type { DefinedValue } from '@soybeanjs/headless/types';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { MenubarCompact, provideMenubarUi } from '@vean/aria/menubar';
+import { keysOf } from '@vean/aria/shared';
+import type { DefinedValue } from '@vean/aria/types';
 import { menubarVariants } from '@/styles/menubar';
 import { provideMenuUi } from '../menu/context';
 import type { MenubarProps, MenubarEmits, MenubarSlots } from './types';

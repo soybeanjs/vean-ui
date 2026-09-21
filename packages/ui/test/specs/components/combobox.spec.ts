@@ -67,7 +67,7 @@ describe('SCombobox', () => {
         attachTo: document.body
       });
 
-      const value = wrapper.get('[data-soybean-combobox-value]');
+      const value = wrapper.get('[data-vean-combobox-value]');
       expect(value.text()).toBe('Banana');
       expect(value.attributes('data-placeholder')).toBeUndefined();
       wrapper.unmount();
@@ -83,7 +83,7 @@ describe('SCombobox', () => {
         attachTo: document.body
       });
 
-      const value = wrapper.get('[data-soybean-combobox-value]');
+      const value = wrapper.get('[data-vean-combobox-value]');
       expect(value.text()).toContain('Select fruits');
       expect(value.attributes('data-placeholder')).toBe('');
       wrapper.unmount();
@@ -111,12 +111,12 @@ describe('SCombobox', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-combobox-anchor]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-combobox-anchor]').exists()).toBe(true);
 
       await openCombobox(wrapper);
 
-      expect(document.body.querySelector('[data-soybean-combobox-group-label]')).toBeTruthy();
-      expect(document.body.querySelector('[data-soybean-combobox-item-indicator]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-combobox-group-label]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-combobox-item-indicator]')).toBeTruthy();
 
       wrapper.unmount();
     });
@@ -286,7 +286,7 @@ describe('SCombobox', () => {
         attachTo: document.body
       });
 
-      expect(document.body.querySelector('[data-soybean-combobox-clear]')).toBeNull();
+      expect(document.body.querySelector('[data-vean-combobox-clear]')).toBeNull();
       wrapper.unmount();
     });
   });
@@ -609,7 +609,7 @@ describe('SCombobox', () => {
       await openCombobox(wrapper);
 
       const cancel = document.body.querySelector(
-        '[data-soybean-combobox-cancel][aria-label="Clear selection"]'
+        '[data-vean-combobox-cancel][aria-label="Clear selection"]'
       ) as HTMLElement | null;
 
       expect(cancel).not.toBeNull();

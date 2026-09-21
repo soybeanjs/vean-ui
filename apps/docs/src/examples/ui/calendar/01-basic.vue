@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { createDate } from '@soybeanjs/headless/date';
-import type { DateValue, WeekDayFormat, WeekStartsOn } from '@soybeanjs/headless/date';
-import { SCalendar, SButtonIcon, SInputNumber, SSelect, SSwitch } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { createDate } from '@vean/aria/date';
+import type { DateValue, WeekDayFormat, WeekStartsOn } from '@vean/aria/date';
+import { SCalendar, SButtonIcon, SInputNumber, SSelect, SSwitch } from '@vean/ui';
+import type { SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

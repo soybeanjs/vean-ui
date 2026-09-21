@@ -1,8 +1,8 @@
 /**
- * Registry caching system for SBean CLI.
+ * Registry caching system for Vean CLI.
  *
  * Caches remote registry items locally to improve performance and reduce
- * network requests. Cache is stored in ~/.sbean/cache or ${SBEAN_CACHE_DIR}.
+ * network requests. Cache is stored in ~/.vean/cache or ${VEAN_CACHE_DIR}.
  */
 
 import fs from 'fs/promises';
@@ -11,9 +11,9 @@ import path from 'path';
 
 const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
-/** Resolve the cache directory lazily so `SBEAN_CACHE_DIR` overrides take effect at call time. */
+/** Resolve the cache directory lazily so `VEAN_CACHE_DIR` overrides take effect at call time. */
 function getCacheDir(): string {
-  return process.env.SBEAN_CACHE_DIR || path.join(os.homedir(), '.sbean', 'cache');
+  return process.env.VEAN_CACHE_DIR || path.join(os.homedir(), '.vean', 'cache');
 }
 
 export interface CacheEntry<T> {

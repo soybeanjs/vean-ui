@@ -1,14 +1,14 @@
 ---
 head:
   title: Color Swatch Picker
-  description: 'Choose a color quickly from a preset palette, useful for theme panels and suggested color selections. SColorSwatchPicker combines the headless ColorSwatchPickerRoot/Item/ItemSwatch/ItemIndicator primitives (built on the listbox) with the colorSwatchPickerVariants style recipe (6 slots, 6 sizes × 2 shapes).'
+  description: 'Choose a color quickly from a preset palette, useful for theme panels and suggested color selections. SColorSwatchPicker combines the Aria ColorSwatchPickerRoot/Item/ItemSwatch/ItemIndicator primitives (built on the listbox) with the colorSwatchPickerVariants style recipe (6 slots, 6 sizes × 2 shapes).'
 ---
 
 # Color Swatch Picker
 
 ## Overview
 
-Choose a color quickly from a preset palette, useful for theme panels and suggested color selections. `SColorSwatchPicker` combines the headless `ColorSwatchPickerRoot`/`Item`/`ItemSwatch`/`ItemIndicator` primitives (built on the listbox) with the `colorSwatchPickerVariants` style recipe (6 slots, 6 sizes × 2 shapes).
+Choose a color quickly from a preset palette, useful for theme panels and suggested color selections. `SColorSwatchPicker` combines the Aria `ColorSwatchPickerRoot`/`Item`/`ItemSwatch`/`ItemIndicator` primitives (built on the listbox) with the `colorSwatchPickerVariants` style recipe (6 slots, 6 sizes × 2 shapes).
 
 Use a swatch picker for a compact, clickable preset palette (theme panels, brand colors, suggested colors).
 
@@ -18,7 +18,7 @@ Use a swatch picker for a compact, clickable preset palette (theme panels, brand
 
 ## Features
 
-- 🧩 Headless/listbox based — built on the listbox primitives with `role="listbox"`/`option`, roving focus and selection
+- 🧩 Aria/listbox based — built on the listbox primitives with `role="listbox"`/`option`, roving focus and selection
 - 🎨 Preset palette — pass `colors` as an array; each renders a `ColorSwatch` with a check indicator
 - 🔘 Single/multiple — `multiple` (via the listbox `M` generic) selects one or many values
 - ✅ Indicator — an `indicator` slot (default `lucide:check`) marks the active swatch
@@ -29,11 +29,11 @@ Use a swatch picker for a compact, clickable preset palette (theme panels, brand
 ## Component family
 
 - `SColorSwatchPicker` (styled) — the entry wrapper; `colorSwatchPickerVariants` recipe with dynamic slot forwarding
-- `ColorSwatchPickerCompact` (headless) — the aggregated composite; iterates `colors` into items with swatch + indicator
-- `ColorSwatchPickerRoot` (headless) — the listbox root (`modelValue`, `multiple`)
-- `ColorSwatchPickerItem` (headless) — a selectable swatch option (`role="option"`)
-- `ColorSwatchPickerItemSwatch` (headless) — the swatch (`ColorSwatchCompact` base)
-- `ColorSwatchPickerItemIndicator` (headless) — the selection check indicator
+- `ColorSwatchPickerCompact` (Aria) — the aggregated composite; iterates `colors` into items with swatch + indicator
+- `ColorSwatchPickerRoot` (Aria) — the listbox root (`modelValue`, `multiple`)
+- `ColorSwatchPickerItem` (Aria) — a selectable swatch option (`role="option"`)
+- `ColorSwatchPickerItemSwatch` (Aria) — the swatch (`ColorSwatchCompact` base)
+- `ColorSwatchPickerItemIndicator` (Aria) — the selection check indicator
 
 ## Demo
 
@@ -47,16 +47,16 @@ Use a swatch picker for a compact, clickable preset palette (theme panels, brand
 
 ### Architecture and benchmark differences
 
-`ColorSwatchPickerCompact` owns the palette iteration (item + swatch + indicator) while every primitive stays style-free and only the UI wrapper injects the `colorSwatchPickerVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split, built on the shared listbox primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single color-picker with a preset row; SoybeanUI exposes a standalone listbox-based swatch picker with single/multiple selection, a check indicator, shape/size control and full slot overrides.
+`ColorSwatchPickerCompact` owns the palette iteration (item + swatch + indicator) while every primitive stays style-free and only the UI wrapper injects the `colorSwatchPickerVariants` classes. This mirrors radix-ui-color/shadcn-ui headless split, built on the shared listbox primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single color-picker with a preset row; VeanUI exposes a standalone listbox-based swatch picker with single/multiple selection, a check indicator, shape/size control and full slot overrides.
 
-| Capability             | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :--------------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/listbox based |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Single/multiple        |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Check indicator        |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Roving focus           |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Shape (square/circle)  |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| Sizes (6)              |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| Capability            | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :-------------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/listbox based    |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Single/multiple       |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Check indicator       |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Roving focus          |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Shape (square/circle) |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| Sizes (6)             |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = unsupported or a different interaction model.
 

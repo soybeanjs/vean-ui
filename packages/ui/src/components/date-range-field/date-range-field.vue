@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { DateRangeFieldCompact, provideDateRangeFieldUi } from '@soybeanjs/headless/date-range-field';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { DateRangeFieldCompact, provideDateRangeFieldUi } from '@vean/aria/date-range-field';
+import { keysOf } from '@vean/aria/shared';
 import { dateRangeFieldVariants } from '@/styles/date-range-field';
 import type { DateRangeFieldProps, DateRangeFieldEmits, DateRangeFieldSlots } from './types';
 

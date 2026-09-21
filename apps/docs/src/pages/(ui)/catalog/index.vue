@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, watch } from 'vue';
-import { kebabCase, pascalCase } from '@soybeanjs/headless/shared';
+import { kebabCase, pascalCase } from '@vean/aria/shared';
 import { useDocOutline } from '~/composables/use-doc-outline';
 import { menuData, newlyComponentKeys } from '~/constants/menus';
 

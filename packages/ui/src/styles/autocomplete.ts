@@ -26,7 +26,7 @@ export const autocompleteVariants = scv({
     triggerIcon: fieldAffordanceIcon,
     cancel: fieldClearReveal,
     popup: [
-      'relative z-base min-w-[--soybean-popper-anchor-width] overflow-hidden',
+      'relative z-base min-w-[--vean-popper-anchor-width] overflow-hidden',
       overlaySurface,
       overlayShadow,
       ...overlayMotion

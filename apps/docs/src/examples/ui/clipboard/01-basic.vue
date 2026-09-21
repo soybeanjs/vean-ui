@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { resolveThemeColors } from '@soybeanjs/theme';
-import { SButtonIcon, SClipboard, SInput, SSelect, SSwitch, useTheme } from '@soybeanjs/ui';
-import type { ClipboardShape, ClipboardVariant, SelectOptionData, ThemeColor, ThemeSize } from '@soybeanjs/ui';
+import { resolveThemeColors } from '@vean/theme';
+import { SButtonIcon, SClipboard, SInput, SSelect, SSwitch, useTheme } from '@vean/ui';
+import type { ClipboardShape, ClipboardVariant, SelectOptionData, ThemeColor, ThemeSize } from '@vean/ui';
 
 interface Props {
   playgroundRegion?: string;
@@ -26,7 +26,7 @@ interface CustomizerState {
 
 /** 默认形态：`reset` 回到这份快照，所以它是常量而不是状态。 */
 const DEFAULTS: CustomizerState = {
-  value: 'pnpm add @soybeanjs/ui',
+  value: 'pnpm add @vean/ui',
   copyText: 'Copy install command',
   color: 'accent',
   size: 'md',

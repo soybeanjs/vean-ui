@@ -19,10 +19,10 @@ const paginationAction = cv({
       '2xl': `h-12 px-2.875 gap-3`
     },
     variant: {
-      pure: `data-[soybean-pagination-action]:border data-[soybean-pagination-action]:border-border data-[soybean-pagination-action]:bg-card data-[soybean-pagination-action]:text-accent-foreground data-[soybean-pagination-action]:hover:bg-accent/60 data-[soybean-pagination-action]:active:bg-accent`,
-      solid: `data-[soybean-pagination-action]:border-transparent data-[soybean-pagination-action]:bg-primary data-[soybean-pagination-action]:text-primary-foreground data-[soybean-pagination-action]:hover:bg-primary/80 data-[soybean-pagination-action]:hover:text-primary-foreground data-[soybean-pagination-action]:active:bg-primary-600`,
-      outline: `data-[soybean-pagination-action]:border data-[soybean-pagination-action]:border-primary data-[soybean-pagination-action]:bg-card data-[soybean-pagination-action]:text-primary data-[soybean-pagination-action]:hover:bg-transparent`,
-      soft: `data-[soybean-pagination-action]:bg-primary/10 data-[soybean-pagination-action]:hover:bg-primary/10 data-[soybean-pagination-action]:active:bg-primary/20`
+      pure: `data-[vean-pagination-action]:border data-[vean-pagination-action]:border-border data-[vean-pagination-action]:bg-card data-[vean-pagination-action]:text-accent-foreground data-[vean-pagination-action]:hover:bg-accent/60 data-[vean-pagination-action]:active:bg-accent`,
+      solid: `data-[vean-pagination-action]:border-transparent data-[vean-pagination-action]:bg-primary data-[vean-pagination-action]:text-primary-foreground data-[vean-pagination-action]:hover:bg-primary/80 data-[vean-pagination-action]:hover:text-primary-foreground data-[vean-pagination-action]:active:bg-primary-600`,
+      outline: `data-[vean-pagination-action]:border data-[vean-pagination-action]:border-primary data-[vean-pagination-action]:bg-card data-[vean-pagination-action]:text-primary data-[vean-pagination-action]:hover:bg-transparent`,
+      soft: `data-[vean-pagination-action]:bg-primary/10 data-[vean-pagination-action]:hover:bg-primary/10 data-[vean-pagination-action]:active:bg-primary/20`
     },
     shape: {
       rounded: `rounded-full`,

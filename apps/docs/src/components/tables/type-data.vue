@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { STable } from '@soybeanjs/ui';
-import type { TableColumn } from '@soybeanjs/ui';
+import { STable } from '@vean/ui';
+import type { TableColumn } from '@vean/ui';
 import { toTypeAnchorId, typeToVNode } from './type-anchor';
 import { useApiI18n } from './use-api-i18n';
 

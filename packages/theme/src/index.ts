@@ -1,5 +1,5 @@
 /**
- * @soybeanjs/theme — the SoybeanUI theme engine.
+ * @vean/theme — the Vean theme engine.
  *
  * Three layers (docs/theme.md):
  * 1. **palette** (static, `generatePaletteCss`): 26 built-in palettes × 11 levels

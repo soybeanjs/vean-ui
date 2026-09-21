@@ -1,9 +1,5 @@
-import type {
-  ClipboardEmits,
-  ClipboardProps as _ClipboardProps,
-  ClipboardSlotProps
-} from '@soybeanjs/headless/clipboard';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ClipboardEmits, ClipboardProps as _ClipboardProps, ClipboardSlotProps } from '@vean/aria/clipboard';
+import type { ClassValue } from '@vean/aria/types';
 import type { ClipboardShape, ClipboardVariant } from '@/styles/clipboard';
 import type { ThemeColor, ThemeSize } from '@/theme';
 

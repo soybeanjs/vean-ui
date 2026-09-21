@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SSplitNav } from '@soybeanjs/ui';
+import { SSplitNav } from '@vean/ui';
 import { splitNavItems } from './data';
 
-const active = shallowRef('soybean-ui');
+const active = shallowRef('vean-ui');
 </script>
 
 <template>

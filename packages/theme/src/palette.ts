@@ -106,7 +106,7 @@ export function colorAlpha(value: string): number | undefined {
 
 /**
  * encode a complete color as the **channel triple** the token layer stores and
- * the Adapters consume (`hsl(var(--soybean-x) / <alpha>)` needs channels, never a
+ * the Adapters consume (`hsl(var(--vean-x) / <alpha>)` needs channels, never a
  * complete color).
  *
  * This is the inverse of `toChannel` and the reason a complete-color override is
@@ -126,7 +126,7 @@ export function colorChannels(value: string, format: ColorFormat): string | unde
 
   // Alpha is dropped on purpose: a token is a channel triple, and the
   // consumption site composes its own alpha over it
-  // (`hsl(var(--soybean-x) / <alpha>)`) — keeping the value's own alpha would make
+  // (`hsl(var(--vean-x) / <alpha>)`) — keeping the value's own alpha would make
   // that `hsl(… / 0.5 / 1)`, which is invalid. Transparency travels through the
   // token's numeric companion (`ALPHA_TOKENS`) instead.
   const opaque = color.alpha(1);

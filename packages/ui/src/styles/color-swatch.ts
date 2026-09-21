@@ -9,7 +9,7 @@ export const colorSwatchVariants = scv({
       'data-[no-color]:bg-muted/40'
     ],
     checker: `absolute inset-0 bg-[length:8px_8px] bg-[position:0_0,4px_4px]`,
-    fill: 'absolute inset-0 bg-[--soybean-color-swatch-color]'
+    fill: 'absolute inset-0 bg-[--vean-color-swatch-color]'
   },
   variants: {
     size: {

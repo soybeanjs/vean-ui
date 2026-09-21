@@ -1,6 +1,6 @@
 import { computed, toValue } from 'vue';
 import type { MaybeRefOrGetter } from 'vue';
-import { provideMenuUi as _provideMenuUi } from '@soybeanjs/headless/menu';
+import { provideMenuUi as _provideMenuUi } from '@vean/aria/menu';
 import { menuVariants } from '@/styles/menu';
 import type { MenuUiBaseProps } from './types';
 

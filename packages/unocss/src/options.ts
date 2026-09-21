@@ -1,7 +1,7 @@
 import type { Preflight } from 'unocss';
 import type { WebFontsOptions } from 'unocss/preset-web-fonts';
 import type { PresetWind3Options } from 'unocss/preset-wind3';
-import type { ThemeOptions } from '@soybeanjs/theme';
+import type { ThemeOptions } from '@vean/theme';
 import type { PresetAnimationsOptions } from './animations';
 import type { PresetScrollbarOptions } from './scrollbar';
 
@@ -10,7 +10,7 @@ import type { PresetScrollbarOptions } from './scrollbar';
  *
  * Extends the engine's `ThemeOptions` (`base`/`primary`/`surfaceStyle`/`size`/
  * `radius`/etc.) so a single options object can fully drive the generated
- * theme — the preset forwards it to `@soybeanjs/theme` untouched.
+ * theme — the preset forwards it to `@vean/theme` untouched.
  *
  * The built-in presets of the returned stack (`presetWind3` / `presetAnimations` /
  * `presetScrollbar` / `presetWebFonts`) can be configured via the `wind3` /

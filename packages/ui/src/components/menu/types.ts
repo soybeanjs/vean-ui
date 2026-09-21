@@ -1,5 +1,5 @@
-import type { MenuUi } from '@soybeanjs/headless/menu';
-import type { ClassValue, AlignSide } from '@soybeanjs/headless/types';
+import type { MenuUi } from '@vean/aria/menu';
+import type { ClassValue, AlignSide } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

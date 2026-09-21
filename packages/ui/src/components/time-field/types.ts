@@ -1,5 +1,5 @@
-import type { TimeFieldCompactProps, TimeFieldCompactEmits, TimeFieldUi } from '@soybeanjs/headless/time-field';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { TimeFieldCompactProps, TimeFieldCompactEmits, TimeFieldUi } from '@vean/aria/time-field';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

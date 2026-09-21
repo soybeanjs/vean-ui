@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; item: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; description: ClassValue; triggerLeadingIcon: ClassValue; triggerIcon: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Accordion component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionui",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionui",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -95,7 +95,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.items",
             "default": null,
             "inheritedFrom": "items",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -106,7 +106,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.itemprops",
             "default": null,
             "inheritedFrom": "itemProps",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionItemProps",
@@ -114,8 +114,8 @@
                 "type": "AccordionItemProps",
                 "resolvedType": "{ value: string; disabled?: boolean; unmountOnHide?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AccordionItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -124,10 +124,10 @@
                     "type": "string",
                     "required": true,
                     "description": "Value of the accordion item. All items within an accordion should use a unique value.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                    "sourcePath": "packages/aria/src/components/accordion/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -135,10 +135,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the collapsible.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                    "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -146,10 +146,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the element will be unmounted on closed state.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.unmountonhide",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.unmountonhide",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                    "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -157,10 +157,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -168,10 +168,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -187,7 +187,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.headerprops",
             "default": null,
             "inheritedFrom": "headerProps",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionHeaderProps",
@@ -195,8 +195,8 @@
                 "type": "AccordionHeaderProps",
                 "resolvedType": null,
                 "description": "Properties for the AccordionHeader component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionheaderprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionheaderprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -212,7 +212,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.triggerprops",
             "default": null,
             "inheritedFrom": "triggerProps",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionTriggerProps",
@@ -220,8 +220,8 @@
                 "type": "AccordionTriggerProps",
                 "resolvedType": "{ disabledCollapsible?: boolean; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AccordionTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -230,10 +230,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from toggling the collapsible.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.disabledcollapsible",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.disabledcollapsible",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                    "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -241,10 +241,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -252,10 +252,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -263,10 +263,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -274,10 +274,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -293,7 +293,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.contentprops",
             "default": null,
             "inheritedFrom": "contentProps",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionContentProps",
@@ -301,8 +301,8 @@
                 "type": "AccordionContentProps",
                 "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AccordionContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -311,10 +311,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -322,10 +322,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -333,10 +333,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -352,7 +352,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": "descriptionProps",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionDescriptionProps",
@@ -360,8 +360,8 @@
                 "type": "AccordionDescriptionProps",
                 "resolvedType": null,
                 "description": "Properties for the AccordionDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiondescriptionprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiondescriptionprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -377,7 +377,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.collapsible",
             "default": "false",
             "inheritedFrom": "collapsible",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -388,7 +388,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.dir",
             "default": "'ltr'",
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -396,8 +396,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -413,7 +413,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.disabled",
             "default": "false",
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -424,7 +424,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.orientation",
             "default": "'vertical'",
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -432,8 +432,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -449,7 +449,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -460,7 +460,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -471,7 +471,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -482,7 +482,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -493,7 +493,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -501,8 +501,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -532,7 +532,7 @@
             "required": true,
             "description": "",
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           }
         ],
@@ -556,7 +556,7 @@
             "required": false,
             "description": "Custom content for the item slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionslots.callables.item",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -564,8 +564,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -580,7 +580,7 @@
             "required": false,
             "description": "Custom content for the leading slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -588,8 +588,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -604,7 +604,7 @@
             "required": false,
             "description": "Custom content for the title slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionslots.callables.title",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -612,8 +612,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -628,7 +628,7 @@
             "required": false,
             "description": "Custom content for the trigger icon slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionslots.callables.trigger_icon",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -636,8 +636,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -652,7 +652,7 @@
             "required": false,
             "description": "Custom content for the content slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_accordion_types.accordionslots.callables.content",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -660,8 +660,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -680,8 +680,8 @@
         "type": "Interface AccordionCompactProps<T, M>",
         "resolvedType": "{ items: T[]; itemProps?: AccordionItemProps; headerProps?: AccordionHeaderProps; triggerProps?: AccordionTriggerProps; contentProps?: AccordionContentProps; descriptionProps?: AccordionDescriptionProps; collapsible?: boolean; dir?: Direction; disabled?: boolean; orientation?: DataOrientation; unmountOnHide?: boolean; modelValue?: (M extends true ? string[] : string); defaultValue?: (M extends true ? string[] : string); multiple?: M; selectionBehavior?: SelectionBehavior }",
         "description": "Properties for the AccordionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": ["TypeParameter T", "TypeParameter M"],
         "members": [
           {
@@ -689,10 +689,10 @@
             "type": "T[]",
             "required": true,
             "description": "Items rendered by the component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.items",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.items",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -700,10 +700,10 @@
             "type": "AccordionItemProps",
             "required": false,
             "description": "Properties forwarded to the item element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.itemprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.itemprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionItemProps",
@@ -711,8 +711,8 @@
                 "type": "AccordionItemProps",
                 "resolvedType": "{ value: string; disabled?: boolean; unmountOnHide?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AccordionItem component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -721,10 +721,10 @@
                     "type": "string",
                     "required": true,
                     "description": "Value of the accordion item. All items within an accordion should use a unique value.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.value",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.value",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                    "sourcePath": "packages/aria/src/components/accordion/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -732,10 +732,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from interacting with the collapsible.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                    "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -743,10 +743,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, the element will be unmounted on closed state.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.unmountonhide",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.unmountonhide",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                    "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -754,10 +754,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -765,10 +765,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -781,10 +781,10 @@
             "type": "AccordionHeaderProps",
             "required": false,
             "description": "Properties forwarded to the header element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.headerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.headerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionHeaderProps",
@@ -792,8 +792,8 @@
                 "type": "AccordionHeaderProps",
                 "resolvedType": null,
                 "description": "Properties for the AccordionHeader component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionheaderprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionheaderprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -806,10 +806,10 @@
             "type": "AccordionTriggerProps",
             "required": false,
             "description": "Properties forwarded to the trigger element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.triggerprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.triggerprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionTriggerProps",
@@ -817,8 +817,8 @@
                 "type": "AccordionTriggerProps",
                 "resolvedType": "{ disabledCollapsible?: boolean; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AccordionTrigger component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -827,10 +827,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "When `true`, prevents the user from toggling the collapsible.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.disabledcollapsible",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.disabledcollapsible",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                    "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -838,10 +838,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -849,10 +849,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -860,10 +860,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -871,10 +871,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -887,10 +887,10 @@
             "type": "AccordionContentProps",
             "required": false,
             "description": "Properties forwarded to the content element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.contentprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.contentprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionContentProps",
@@ -898,8 +898,8 @@
                 "type": "AccordionContentProps",
                 "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the AccordionContent component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -908,10 +908,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.forcemount",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.forcemount",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/types/component.ts",
+                    "sourcePath": "packages/aria/src/types/component.ts",
                     "referencedTypes": []
                   },
                   {
@@ -919,10 +919,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -930,10 +930,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -946,10 +946,10 @@
             "type": "AccordionDescriptionProps",
             "required": false,
             "description": "Properties forwarded to the description element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.descriptionprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.descriptionprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionDescriptionProps",
@@ -957,8 +957,8 @@
                 "type": "AccordionDescriptionProps",
                 "resolvedType": null,
                 "description": "Properties for the AccordionDescription component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiondescriptionprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiondescriptionprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -971,10 +971,10 @@
             "type": "boolean",
             "required": false,
             "description": "When type is \"single\", allows closing content when clicking trigger for an open item.\n\nWhen type is \"multiple\", this prop has no effect.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.collapsible",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.collapsible",
             "default": "false",
             "inheritedFrom": "collapsible",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -982,10 +982,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the accordion when applicable. If omitted, assumes LTR (left-to-right) reading mode.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.dir",
             "default": "'ltr'",
             "inheritedFrom": "dir",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -993,8 +993,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1007,10 +1007,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the accordion and all its items",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.disabled",
             "default": "false",
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1018,10 +1018,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the accordion.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.orientation",
             "default": "'vertical'",
             "inheritedFrom": "orientation",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1029,8 +1029,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1043,10 +1043,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the element will be unmounted on closed state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.unmountonhide",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1054,10 +1054,10 @@
             "type": "(M extends true ? string[] : string)",
             "required": false,
             "description": "The controlled value of the selected item(s).\n\nUse this when you need to control the state of the items. Can be bound with `v-model`",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1065,10 +1065,10 @@
             "type": "(M extends true ? string[] : string)",
             "required": false,
             "description": "The default value of the selected item(s).\n\nUse this when you need to set the initial state of the items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1076,10 +1076,10 @@
             "type": "M",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.\n\nThis prop will overwrite the inferred type from `modelValue` and `defaultValue`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.multiple",
             "default": null,
             "inheritedFrom": "multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1087,10 +1087,10 @@
             "type": "SelectionBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -1098,8 +1098,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1117,8 +1117,8 @@
         "type": "TypeAlias AccordionCompactEmits<M>: AccordionRootEmits<M>",
         "resolvedType": "{ \"update:modelValue\": [value: M extends true ? string[] : string] }",
         "description": "Events for the AccordionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactemits.emits",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactemits.emits",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [],
         "callables": [
@@ -1128,8 +1128,8 @@
             "parameters": "value: M extends true ? string[] : string",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           }
         ],
@@ -1141,8 +1141,8 @@
         "type": "TypeAlias AccordionCompactSlots<T, M>",
         "resolvedType": "{ item?: ((props: AccordionCompactSlotProps<T, M>) => any); leading?: ((props: AccordionCompactSlotProps<T, M>) => any); title?: ((props: AccordionCompactSlotProps<T, M>) => any); \"trigger-icon\"?: ((props: AccordionCompactSlotProps<T, M>) => any); content?: ((props: AccordionCompactSlotProps<T, M>) => any) }",
         "description": "Slots for the AccordionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslots.slots",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslots.slots",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": ["TypeParameter T", "TypeParameter M"],
         "members": [],
         "callables": [
@@ -1152,8 +1152,8 @@
             "parameters": "((props: AccordionCompactSlotProps<T, M>) => any) | undefined",
             "required": false,
             "description": "Custom content for the item slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslots.callables.item",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslots.callables.item",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -1161,8 +1161,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1176,8 +1176,8 @@
             "parameters": "((props: AccordionCompactSlotProps<T, M>) => any) | undefined",
             "required": false,
             "description": "Custom content for the leading slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslots.callables.leading",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslots.callables.leading",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -1185,8 +1185,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1200,8 +1200,8 @@
             "parameters": "((props: AccordionCompactSlotProps<T, M>) => any) | undefined",
             "required": false,
             "description": "Custom content for the title slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslots.callables.title",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslots.callables.title",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -1209,8 +1209,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1224,8 +1224,8 @@
             "parameters": "((props: AccordionCompactSlotProps<T, M>) => any) | undefined",
             "required": false,
             "description": "Custom content for the trigger icon slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslots.callables.trigger_icon",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslots.callables.trigger_icon",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -1233,8 +1233,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1248,8 +1248,8 @@
             "parameters": "((props: AccordionCompactSlotProps<T, M>) => any) | undefined",
             "required": false,
             "description": "Custom content for the content slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslots.callables.content",
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslots.callables.content",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "AccordionCompactSlotProps",
@@ -1257,8 +1257,8 @@
                 "type": "AccordionCompactSlotProps<T, M>",
                 "resolvedType": null,
                 "description": "Slot properties for the AccordionCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops",
-                "sourcePath": "packages/headless/src/components/accordion/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops",
+                "sourcePath": "packages/aria/src/components/accordion/types.ts",
                 "typeParameters": ["T extends AccordionOptionData = AccordionOptionData", "M extends boolean = false"],
                 "external": false,
                 "members": [],
@@ -1275,8 +1275,8 @@
         "type": "Interface AccordionCompactSlotProps<T, M>",
         "resolvedType": "{ item: T; index: number; modelValue: (M extends true ? string[] : string) | undefined; open: boolean }",
         "description": "Slot properties for the AccordionCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": ["TypeParameter T", "TypeParameter M"],
         "members": [
           {
@@ -1284,10 +1284,10 @@
             "type": "T",
             "required": true,
             "description": "Current item data.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops.members.item",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops.members.item",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1295,10 +1295,10 @@
             "type": "number",
             "required": true,
             "description": "Index of the current item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops.members.index",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops.members.index",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1306,10 +1306,10 @@
             "type": "(M extends true ? string[] : string) | undefined",
             "required": true,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1317,10 +1317,10 @@
             "type": "boolean",
             "required": true,
             "description": "Whether the component is open.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncompactslotprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncompactslotprops.members.open",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1335,8 +1335,8 @@
         "type": "Interface AccordionContentProps",
         "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AccordionContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1344,10 +1344,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1355,10 +1355,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1366,10 +1366,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordioncontentprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordioncontentprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1406,8 +1406,8 @@
         "type": "Interface AccordionDescriptionProps",
         "resolvedType": null,
         "description": "Properties for the AccordionDescription component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiondescriptionprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiondescriptionprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1421,8 +1421,8 @@
         "type": "Interface AccordionHeaderProps",
         "resolvedType": null,
         "description": "Properties for the AccordionHeader component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionheaderprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionheaderprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1436,8 +1436,8 @@
         "type": "Interface AccordionItemProps",
         "resolvedType": "{ value: string; disabled?: boolean; unmountOnHide?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AccordionItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1445,10 +1445,10 @@
             "type": "string",
             "required": true,
             "description": "Value of the accordion item. All items within an accordion should use a unique value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1456,10 +1456,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the collapsible.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -1467,10 +1467,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the element will be unmounted on closed state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.unmountonhide",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.unmountonhide",
             "default": null,
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -1478,10 +1478,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1489,10 +1489,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionitemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionitemprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1529,8 +1529,8 @@
         "type": "Interface AccordionRootProps<M>",
         "resolvedType": "{ collapsible?: boolean; dir?: Direction; disabled?: boolean; orientation?: DataOrientation; unmountOnHide?: boolean; modelValue?: (M extends true ? string[] : string); defaultValue?: (M extends true ? string[] : string); multiple?: M; selectionBehavior?: SelectionBehavior }",
         "description": "Properties for the AccordionRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [
           {
@@ -1538,10 +1538,10 @@
             "type": "boolean",
             "required": false,
             "description": "When type is \"single\", allows closing content when clicking trigger for an open item.\n\nWhen type is \"multiple\", this prop has no effect.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.collapsible",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.collapsible",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1549,10 +1549,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the accordion when applicable. If omitted, assumes LTR (left-to-right) reading mode.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.dir",
             "default": "'ltr'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -1560,8 +1560,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1574,10 +1574,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the accordion and all its items",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.disabled",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1585,10 +1585,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the accordion.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.orientation",
             "default": "'vertical'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -1596,8 +1596,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1610,10 +1610,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the element will be unmounted on closed state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.unmountonhide",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.unmountonhide",
             "default": "`true`",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/accordion/types.ts",
+            "sourcePath": "packages/aria/src/components/accordion/types.ts",
             "referencedTypes": []
           },
           {
@@ -1621,10 +1621,10 @@
             "type": "(M extends true ? string[] : string)",
             "required": false,
             "description": "The controlled value of the selected item(s).\n\nUse this when you need to control the state of the items. Can be bound with `v-model`",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "Omit.modelValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1632,10 +1632,10 @@
             "type": "(M extends true ? string[] : string)",
             "required": false,
             "description": "The default value of the selected item(s).\n\nUse this when you need to set the initial state of the items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "Omit.defaultValue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1643,10 +1643,10 @@
             "type": "M",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.\n\nThis prop will overwrite the inferred type from `modelValue` and `defaultValue`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.multiple",
             "default": null,
             "inheritedFrom": "Omit.multiple",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -1654,10 +1654,10 @@
             "type": "SelectionBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": "selectionBehavior",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -1665,8 +1665,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1684,8 +1684,8 @@
         "type": "TypeAlias AccordionRootEmits<M>: SelectionEmits<M>",
         "resolvedType": "{ \"update:modelValue\": [value: M extends true ? string[] : string] }",
         "description": "Events for the AccordionRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootemits.emits",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootemits.emits",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [],
         "callables": [
@@ -1695,8 +1695,8 @@
             "parameters": "value: M extends true ? string[] : string",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordionrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordionrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           }
         ],
@@ -1710,8 +1710,8 @@
         "type": "Interface AccordionTriggerProps",
         "resolvedType": "{ disabledCollapsible?: boolean; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AccordionTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.props",
-        "sourcePath": "packages/headless/src/components/accordion/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.props",
+        "sourcePath": "packages/aria/src/components/accordion/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1719,10 +1719,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from toggling the collapsible.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.disabledcollapsible",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.disabledcollapsible",
             "default": null,
             "inheritedFrom": "disabledCollapsible",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -1730,10 +1730,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -1741,8 +1741,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1755,10 +1755,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -1766,10 +1766,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1777,10 +1777,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_accordion_types.accordiontriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_accordion_types.accordiontriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

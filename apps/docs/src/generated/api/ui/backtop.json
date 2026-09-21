@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -200,8 +200,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -242,7 +242,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.visibilityheight",
             "default": "400",
             "inheritedFrom": "_BacktopProps.visibilityHeight",
-            "sourcePath": "packages/headless/src/components/backtop/types.ts",
+            "sourcePath": "packages/aria/src/components/backtop/types.ts",
             "referencedTypes": []
           },
           {
@@ -253,7 +253,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.target",
             "default": "window",
             "inheritedFrom": "target",
-            "sourcePath": "packages/headless/src/components/backtop/types.ts",
+            "sourcePath": "packages/aria/src/components/backtop/types.ts",
             "referencedTypes": []
           },
           {
@@ -264,7 +264,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.duration",
             "default": "300",
             "inheritedFrom": "_BacktopProps.duration",
-            "sourcePath": "packages/headless/src/components/backtop/types.ts",
+            "sourcePath": "packages/aria/src/components/backtop/types.ts",
             "referencedTypes": []
           },
           {
@@ -275,7 +275,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -286,7 +286,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -297,7 +297,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -330,7 +330,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopprops.members.type",
             "default": "'button'",
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -338,8 +338,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -369,7 +369,7 @@
             "required": true,
             "description": "Emitted when change occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopemits.callables.change",
-            "sourcePath": "packages/headless/src/components/backtop/types.ts",
+            "sourcePath": "packages/aria/src/components/backtop/types.ts",
             "referencedTypes": []
           },
           {
@@ -379,7 +379,7 @@
             "required": true,
             "description": "Emitted when click occurs.",
             "descriptionKey": "api.generated.packages_ui_src_components_backtop_types.backtopemits.callables.click",
-            "sourcePath": "packages/headless/src/components/backtop/types.ts",
+            "sourcePath": "packages/aria/src/components/backtop/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -404,8 +404,8 @@
             "type": "{ change: [visible: boolean]; click: [event: PointerEvent]; }",
             "resolvedType": "{ change: [visible: boolean]; click: [event: PointerEvent] }",
             "description": "Events for the Backtop component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_backtop_types.backtopemits",
-            "sourcePath": "packages/headless/src/components/backtop/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_backtop_types.backtopemits",
+            "sourcePath": "packages/aria/src/components/backtop/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -416,8 +416,8 @@
                 "parameters": "visible: boolean",
                 "required": true,
                 "description": "Emitted when change occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_backtop_types.backtopemits.callables.change",
-                "sourcePath": "packages/headless/src/components/backtop/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_backtop_types.backtopemits.callables.change",
+                "sourcePath": "packages/aria/src/components/backtop/types.ts",
                 "referencedTypes": []
               },
               {
@@ -426,8 +426,8 @@
                 "parameters": "event: PointerEvent",
                 "required": true,
                 "description": "Emitted when click occurs.",
-                "descriptionKey": "api.generated.packages_headless_src_components_backtop_types.backtopemits.callables.click",
-                "sourcePath": "packages/headless/src/components/backtop/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_backtop_types.backtopemits.callables.click",
+                "sourcePath": "packages/aria/src/components/backtop/types.ts",
                 "referencedTypes": []
               }
             ]

@@ -11,8 +11,8 @@ import type {
   TableUnifiedKey,
   TableSortOrder,
   TableUiSlot
-} from '@soybeanjs/headless/table';
-import type { ClassValue, UiClass } from '@soybeanjs/headless/types';
+} from '@vean/aria/table';
+import type { ClassValue, UiClass } from '@vean/aria/types';
 import type { TableVariant } from '@/styles/table';
 import type { ThemeSize } from '@/theme';
 

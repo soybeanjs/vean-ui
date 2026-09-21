@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { FormError } from '@soybeanjs/headless/form';
-import type { FormErrorProps } from '@soybeanjs/headless/form';
-import { collapseMotion } from '@soybeanjs/headless/shared';
+import { FormError } from '@vean/aria/form';
+import type { FormErrorProps } from '@vean/aria/form';
+import { collapseMotion } from '@vean/aria/shared';
 
 defineOptions({
   name: 'FormErrorMotion'

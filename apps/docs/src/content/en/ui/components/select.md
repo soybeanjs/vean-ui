@@ -38,20 +38,20 @@ Displays a list of options for the user to pick from, triggered by a button. The
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds select on a full ComboBox base: `SelectRoot` → `SelectTrigger` (`role="combobox"`) → `SelectValue` (collection label lookup) → `SelectContentImpl` (DismissableLayer + FocusScope + typeahead + keyboard nav) → `SelectItem`, with `SelectBubbleSelect` proxying native form submission. The `scv()` recipe `selectVariants` declares 16 slots and 7 size variants. This mirrors reka-ui / shadcn select semantics with a data-driven `SelectCompact` aggregation as the SoybeanUI differentiator.
+VeanUI builds select on a full ComboBox base: `SelectRoot` → `SelectTrigger` (`role="combobox"`) → `SelectValue` (collection label lookup) → `SelectContentImpl` (DismissableLayer + FocusScope + typeahead + keyboard nav) → `SelectItem`, with `SelectBubbleSelect` proxying native form submission. The `scv()` recipe `selectVariants` declares 16 slots and 7 size variants. This mirrors reka-ui / shadcn select semantics with a data-driven `SelectCompact` aggregation as the VeanUI differentiator.
 
-| Capability                           | SoybeanUI | reka-ui `Select` | shadcn `Select` | Element Plus `el-select` |
-| :----------------------------------- | :-------: | :--------------: | :-------------: | :----------------------: |
-| headless/styled split                |    ✅     |        ✅        |        —        |            —             |
-| combobox role + keyboard nav         |    ✅     |        ✅        |       ✅        |            ✅            |
-| Typeahead search                     |    ✅     |        ✅        |        —        |            ✅            |
-| Controlled / uncontrolled + multiple |    ✅     |        ✅        |        —        |            ✅            |
-| Grouping + group labels              |    ✅     |        ✅        |       ✅        |            ✅            |
-| Form proxying (BubbleSelect)         |    ✅     |        ✅        |        —        |            ✅            |
-| Item-aligned positioning             |    ✅     |        ✅        |        —        |            —             |
-| Data-driven Compact API              |    ✅     |        —         |        —        |            —             |
-| Virtual scrolling                    |     —     |        —         |        —        |            ✅            |
-| axe-clean (open state)               |    ✅     |        —         |       ✅        |            —             |
+| Capability                           | VeanUI | reka-ui `Select` | shadcn `Select` | Element Plus `el-select` |
+| :----------------------------------- | :----: | :--------------: | :-------------: | :----------------------: |
+| Aria/styled split                    |   ✅   |        ✅        |        —        |            —             |
+| combobox role + keyboard nav         |   ✅   |        ✅        |       ✅        |            ✅            |
+| Typeahead search                     |   ✅   |        ✅        |        —        |            ✅            |
+| Controlled / uncontrolled + multiple |   ✅   |        ✅        |        —        |            ✅            |
+| Grouping + group labels              |   ✅   |        ✅        |       ✅        |            ✅            |
+| Form proxying (BubbleSelect)         |   ✅   |        ✅        |        —        |            ✅            |
+| Item-aligned positioning             |   ✅   |        ✅        |        —        |            —             |
+| Data-driven Compact API              |   ✅   |        —         |        —        |            —             |
+| Virtual scrolling                    |   —    |        —         |        —        |            ✅            |
+| axe-clean (open state)               |   ✅   |        —         |       ✅        |            —             |
 
 ### Cautions
 

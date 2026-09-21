@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -181,7 +181,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonprops.members.type",
             "default": "'button'",
             "inheritedFrom": "_ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -189,8 +189,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -206,7 +206,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonprops.members.disabled",
             "default": null,
             "inheritedFrom": "_ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -217,7 +217,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonprops.members.aschild",
             "default": null,
             "inheritedFrom": "_ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -228,7 +228,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonprops.members.as",
             "default": "'div'",
             "inheritedFrom": "_ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -263,8 +263,8 @@
         "type": "TypeAlias ButtonEmits",
         "resolvedType": "{ click: [event: PointerEvent] }",
         "description": "Events for the Button component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttonemits.emits",
-        "sourcePath": "packages/headless/src/components/button/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttonemits.emits",
+        "sourcePath": "packages/aria/src/components/button/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -274,8 +274,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when click occurs.",
-            "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttonemits.callables.click",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttonemits.callables.click",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -323,8 +323,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -487,7 +487,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttongroupprops.members.orientation",
             "default": "'horizontal'",
             "inheritedFrom": "_ButtonGroupProps.orientation",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -495,8 +495,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -512,7 +512,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttongroupprops.members.dir",
             "default": null,
             "inheritedFrom": "_ButtonGroupProps.dir",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -520,8 +520,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -537,7 +537,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttongroupprops.members.aschild",
             "default": null,
             "inheritedFrom": "_ButtonGroupProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -548,7 +548,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttongroupprops.members.as",
             "default": "'div'",
             "inheritedFrom": "_ButtonGroupProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -605,8 +605,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -630,8 +630,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -680,8 +680,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -833,7 +833,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttoniconprops.members.type",
             "default": "'button'",
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -841,8 +841,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -858,7 +858,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttoniconprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -869,7 +869,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttoniconprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -880,7 +880,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttoniconprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -937,8 +937,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1090,7 +1090,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.type",
             "default": "'button'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -1098,8 +1098,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1115,7 +1115,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -1126,7 +1126,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.aschild",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1137,7 +1137,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.as",
             "default": "'div'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -1170,7 +1170,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.to",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "RouteLocationRaw",
@@ -1195,7 +1195,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.replace",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1206,7 +1206,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.href",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1217,7 +1217,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.activeclass",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1228,7 +1228,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.exactactiveclass",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1239,7 +1239,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.inactiveclass",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1250,7 +1250,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.prefetchedclass",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1261,7 +1261,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.external",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1272,7 +1272,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.ariacurrentvalue",
             "default": "`'page'`",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1283,7 +1283,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.viewtransition",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1294,7 +1294,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.target",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1305,7 +1305,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.rel",
             "default": "'noopener noreferrer'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1316,7 +1316,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.norel",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1327,7 +1327,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.prefetch",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1338,7 +1338,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.prefetchon",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": [
               {
                 "name": "__type",
@@ -1346,8 +1346,8 @@
                 "type": "{ visibility: boolean; interaction: boolean; }",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_components_link_types.type",
-                "sourcePath": "packages/headless/src/components/link/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_link_types.type",
+                "sourcePath": "packages/aria/src/components/link/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1363,7 +1363,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.noprefetch",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           },
           {
@@ -1374,7 +1374,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonlinkprops.members.trailingslash",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/link/types.ts",
+            "sourcePath": "packages/aria/src/components/link/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1453,8 +1453,8 @@
                 "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
                 "description": "Type information for IconValue.",
-                "descriptionKey": "api.generated.packages_headless_src_components_icon_types.iconvalue",
-                "sourcePath": "packages/headless/src/components/_icon/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1503,8 +1503,8 @@
                 "type": "'start' | 'center' | 'end'",
                 "resolvedType": "'start' | 'center' | 'end'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.align",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.align",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1528,8 +1528,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1681,7 +1681,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonloadingprops.members.type",
             "default": "'button'",
             "inheritedFrom": "type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -1689,8 +1689,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1706,7 +1706,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonloadingprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -1717,7 +1717,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonloadingprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -1728,7 +1728,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_button_types.buttonloadingprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

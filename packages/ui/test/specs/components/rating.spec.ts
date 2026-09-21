@@ -19,7 +19,7 @@ describe('SRating', () => {
     it('renders max items by default', () => {
       const wrapper = mount(SRating, { attachTo: document.body });
 
-      expect(wrapper.findAll('[data-soybean-rating-item]')).toHaveLength(5);
+      expect(wrapper.findAll('[data-vean-rating-item]')).toHaveLength(5);
       wrapper.unmount();
     });
 
@@ -49,7 +49,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      const items = wrapper.findAll('[data-soybean-rating-item]');
+      const items = wrapper.findAll('[data-vean-rating-item]');
 
       expect(items[0]?.attributes('data-state')).toBe('full');
       expect(items[2]?.attributes('data-state')).toBe('full');
@@ -63,7 +63,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-rating-item]')).toHaveLength(10);
+      expect(wrapper.findAll('[data-vean-rating-item]')).toHaveLength(10);
       wrapper.unmount();
     });
 
@@ -92,7 +92,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      const items = wrapper.findAll('[data-soybean-rating-item]');
+      const items = wrapper.findAll('[data-vean-rating-item]');
 
       await items[2]?.trigger('pointerenter');
 
@@ -109,7 +109,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      const items = wrapper.findAll('[data-soybean-rating-item]');
+      const items = wrapper.findAll('[data-vean-rating-item]');
 
       await items[2]?.trigger('pointerenter');
       await wrapper.find('[role="slider"]').trigger('pointerleave');
@@ -181,7 +181,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      const items = wrapper.findAll('[data-soybean-rating-item]');
+      const items = wrapper.findAll('[data-vean-rating-item]');
 
       await items[2]?.trigger('click');
 
@@ -244,7 +244,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-rating-item]').trigger('pointermove', { clientX: 5 });
+      await wrapper.find('[data-vean-rating-item]').trigger('pointermove', { clientX: 5 });
 
       expect(wrapper.emitted('hoverChange')).toBeTruthy();
       wrapper.unmount();
@@ -256,7 +256,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-rating-item]').trigger('pointermove', { clientX: 5 });
+      await wrapper.find('[data-vean-rating-item]').trigger('pointermove', { clientX: 5 });
 
       expect(wrapper.emitted('hoverChange')).toBeFalsy();
       wrapper.unmount();
@@ -297,7 +297,7 @@ describe('SRating', () => {
 
       expect(wrapper.find('[role="slider"]').attributes('aria-readonly')).toBe('true');
 
-      await wrapper.find('[data-soybean-rating-item]').trigger('pointermove', { clientX: 10 });
+      await wrapper.find('[data-vean-rating-item]').trigger('pointermove', { clientX: 10 });
 
       expect(wrapper.emitted('hoverChange')).toBeFalsy();
       wrapper.unmount();
@@ -331,7 +331,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      const item = wrapper.find('[data-soybean-rating-item]');
+      const item = wrapper.find('[data-vean-rating-item]');
 
       expect(item.classes()).toContain('data-[state=full]:text-primary');
       wrapper.unmount();
@@ -343,7 +343,7 @@ describe('SRating', () => {
         attachTo: document.body
       });
 
-      const item = wrapper.find('[data-soybean-rating-item]');
+      const item = wrapper.find('[data-vean-rating-item]');
 
       expect(item.classes()).toContain('text-muted-foreground/40');
       wrapper.unmount();

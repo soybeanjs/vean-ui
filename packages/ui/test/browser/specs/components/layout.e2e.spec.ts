@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { defineComponent, h } from 'vue';
-import { provideViewportContext } from '@soybeanjs/headless/composables';
+import { provideViewportContext } from '@vean/aria/composables';
 import { page } from 'vitest/browser';
 import SLayout from '@/components/layout/layout.vue';
 import type { LayoutProps } from '@/components/layout/types';
@@ -10,7 +10,7 @@ import { renderComponent } from '../../shared/render';
  * Layout mobile geometry e2e — real CSS cascade, real custom-property
  * inheritance.
  *
- * The happy-dom unit spec asserts the CSS variables the headless root writes.
+ * The happy-dom unit spec asserts the CSS variables the Aria root writes.
  * That is not enough for the mobile fix: the sidebar-derived gaps reach the
  * slots through a second layer of `--sl-*` aliases owned by the `scv()` recipe,
  * and only a real browser resolves that chain (inline custom property → alias →
@@ -68,7 +68,7 @@ function element(selector: string): HTMLElement {
  */
 async function expectMainGap(startPx: number, endPx: number) {
   await vi.waitFor(() => {
-    const style = getComputedStyle(element('[data-soybean-layout-main]'));
+    const style = getComputedStyle(element('[data-vean-layout-main]'));
 
     expect(style.marginInlineStart).toBe(`${startPx}px`);
     expect(style.marginInlineEnd).toBe(`${endPx}px`);
@@ -88,7 +88,7 @@ async function renderLayout(props: LayoutProps, simulatedMobile?: boolean) {
  */
 async function expectTabOffset(topPx: number) {
   await vi.waitFor(() => {
-    expect(getComputedStyle(element('[data-soybean-layout-tab]')).top).toBe(`${topPx}px`);
+    expect(getComputedStyle(element('[data-vean-layout-tab]')).top).toBe(`${topPx}px`);
   });
 }
 
@@ -99,8 +99,8 @@ async function expectTabOffset(topPx: number) {
  */
 async function expectHeaderAlignedWithMain() {
   await vi.waitFor(() => {
-    const header = element('[data-soybean-layout-header]').getBoundingClientRect();
-    const main = element('[data-soybean-layout-main]').getBoundingClientRect();
+    const header = element('[data-vean-layout-header]').getBoundingClientRect();
+    const main = element('[data-vean-layout-main]').getBoundingClientRect();
 
     expect(Math.abs(header.left - main.left)).toBeLessThanOrEqual(1);
   });
@@ -112,8 +112,8 @@ async function expectHeaderAlignedWithMain() {
  */
 async function expectTabAlignedWithPlaceholder() {
   await vi.waitFor(() => {
-    const tab = element('[data-soybean-layout-tab]').getBoundingClientRect();
-    const placeholder = element('[data-soybean-layout-tab-placeholder]').getBoundingClientRect();
+    const tab = element('[data-vean-layout-tab]').getBoundingClientRect();
+    const placeholder = element('[data-vean-layout-tab-placeholder]').getBoundingClientRect();
 
     expect(Math.abs(tab.top - placeholder.top)).toBeLessThanOrEqual(1);
   });
@@ -143,7 +143,7 @@ describe('SLayout geometry', () => {
     const unmount = await renderLayout({});
 
     await expectMainGap(0, 0);
-    expect(document.querySelector('[data-soybean-layout-sidebar]')).toBeNull();
+    expect(document.querySelector('[data-vean-layout-sidebar]')).toBeNull();
 
     unmount();
   });
@@ -158,11 +158,11 @@ describe('SLayout geometry', () => {
     await expectMainGap(0, 0);
 
     // The desktop sidebar is replaced by the drawer, not merely hidden.
-    expect(document.querySelector('[data-soybean-layout-sidebar]')).toBeNull();
+    expect(document.querySelector('[data-vean-layout-sidebar]')).toBeNull();
 
     await vi.waitFor(() => {
-      const main = element('[data-soybean-layout-main]');
-      const root = element('[data-soybean-layout-root]');
+      const main = element('[data-vean-layout-main]');
+      const root = element('[data-vean-layout-root]');
 
       expect(Math.abs(main.getBoundingClientRect().width - root.getBoundingClientRect().width)).toBeLessThanOrEqual(1);
     });
@@ -192,9 +192,9 @@ describe('SLayout geometry', () => {
     const unmount = await renderLayout({ isMobile: false });
 
     await expectMainGap(SIDEBAR_WIDTH_PX, 0);
-    expect(getComputedStyle(element('[data-soybean-layout-sidebar]')).display).toBe('block');
-    expect(getComputedStyle(element('[data-soybean-layout-rail]')).display).toBe('flex');
-    expect(element('[data-soybean-layout-root]').dataset.mobileSource).toBe('explicit');
+    expect(getComputedStyle(element('[data-vean-layout-sidebar]')).display).toBe('block');
+    expect(getComputedStyle(element('[data-vean-layout-rail]')).display).toBe('flex');
+    expect(element('[data-vean-layout-root]').dataset.mobileSource).toBe('explicit');
 
     unmount();
   });
@@ -208,8 +208,8 @@ describe('SLayout geometry', () => {
     const unmount = await renderLayout({}, true);
 
     await expectMainGap(0, 0);
-    expect(document.querySelector('[data-soybean-layout-sidebar]')).toBeNull();
-    expect(element('[data-soybean-layout-root]').dataset.mobileSource).toBe('explicit');
+    expect(document.querySelector('[data-vean-layout-sidebar]')).toBeNull();
+    expect(element('[data-vean-layout-root]').dataset.mobileSource).toBe('explicit');
 
     unmount();
   });
@@ -217,7 +217,7 @@ describe('SLayout geometry', () => {
   it('reports the viewport as the source when no host publishes one', async () => {
     const unmount = await renderLayout({});
 
-    expect(element('[data-soybean-layout-root]').dataset.mobileSource).toBe('viewport');
+    expect(element('[data-vean-layout-root]').dataset.mobileSource).toBe('viewport');
 
     unmount();
   });

@@ -22,7 +22,7 @@ head:
 - 📋 原生表单代理——隐藏输入携带当前值，支持 `name` / `required`
 - 🃏 卡片变体（`SRadioGroupCard`）——icon、label、description 内容
 - 🎨 `radioGroupVariants` 提供 6 尺寸、8 颜色与 dot/outline 变体
-- 📊 headless 数据驱动聚合——`RadioGroupCompact` / `RadioGroupCardCompact`
+- 📊 Aria 数据驱动聚合——`RadioGroupCompact` / `RadioGroupCardCompact`
 - ♿ `role="radiogroup"` + `role="radio"`，`aria-checked` / `data-state` 双通道反射，axe 零违规
 
 ## 单选框组组件系列
@@ -42,19 +42,19 @@ head:
 
 ### 架构与对标差异
 
-SoybeanUI 以 headless 链路构建单选框组：`RadioGroupRoot`（`useControllableState` + `useRovingFocusGroup`）→ `RadioGroupItem`（选中派生 + `VisuallyHiddenInput` 表单代理）→ `RadioGroupControl`（`Button` 基座 + `role="radio"` + `aria-checked`/`data-state`，聚焦派生选中）→ `RadioGroupIndicator`（`usePresence` 条件挂载）→ `RadioGroupLabel`（`for` ↔ 控件 `id`）。`RadioGroupCompact` / `RadioGroupCardCompact` 持有条目迭代与默认组合，UI 包装器只注入变体类。`scv()` 配方 `radioGroupVariants` / `radioGroupCardVariants` 声明 6 尺寸、8 颜色与 dot/outline 变体。
+VeanUI 以 Aria 链路构建单选框组：`RadioGroupRoot`（`useControllableState` + `useRovingFocusGroup`）→ `RadioGroupItem`（选中派生 + `VisuallyHiddenInput` 表单代理）→ `RadioGroupControl`（`Button` 基座 + `role="radio"` + `aria-checked`/`data-state`，聚焦派生选中）→ `RadioGroupIndicator`（`usePresence` 条件挂载）→ `RadioGroupLabel`（`for` ↔ 控件 `id`）。`RadioGroupCompact` / `RadioGroupCardCompact` 持有条目迭代与默认组合，UI 包装器只注入变体类。`scv()` 配方 `radioGroupVariants` / `radioGroupCardVariants` 声明 6 尺寸、8 颜色与 dot/outline 变体。
 
-| 能力                    | SoybeanUI | Ant Design `Radio` | Element Plus `Radio` | Mantine `Radio` | Naive UI `Radio` | shadcn `RadioGroup` |
-| :---------------------- | :-------: | :----------------: | :------------------: | :-------------: | :--------------: | :-----------------: |
-| headless/styled 分离    |    ✅     |         —          |          —           |        —        |        —         |         ✅          |
-| 单选互斥                |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| Roving-focus 键盘导航   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| 受控/非受控             |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| 卡片变体（icon/描述）   |    ✅     |         —          |          —           |        —        |        —         |          —          |
-| `button` variant        |    ➕     |         ✅         |          ✅          |        —        |        —         |          —          |
-| `Radio.Button` 组合子   |    ➕     |         ✅         |          —           |        —        |        —         |          —          |
-| 表单代理 / `name` 提交  |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
-| axe 零违规（组 + 卡片） |    ✅     |         —          |          —           |        —        |        —         |          —          |
+| 能力                    | VeanUI | Ant Design `Radio` | Element Plus `Radio` | Mantine `Radio` | Naive UI `Radio` | shadcn `RadioGroup` |
+| :---------------------- | :----: | :----------------: | :------------------: | :-------------: | :--------------: | :-----------------: |
+| Aria/styled 分离        |   ✅   |         —          |          —           |        —        |        —         |         ✅          |
+| 单选互斥                |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| Roving-focus 键盘导航   |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| 受控/非受控             |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| 卡片变体（icon/描述）   |   ✅   |         —          |          —           |        —        |        —         |          —          |
+| `button` variant        |   ➕   |         ✅         |          ✅          |        —        |        —         |          —          |
+| `Radio.Button` 组合子   |   ➕   |         ✅         |          —           |        —        |        —         |          —          |
+| 表单代理 / `name` 提交  |   ✅   |         ✅         |          ✅          |       ✅        |        ✅        |         ✅          |
+| axe 零违规（组 + 卡片） |   ✅   |         —          |          —           |        —        |        —         |          —          |
 
 ### 注意事项
 

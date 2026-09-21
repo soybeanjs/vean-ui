@@ -28,9 +28,9 @@ TimeRangeField 是一个分段式时间范围输入组件，提供独立的开�
 
 ## 组件家族
 
-- `STimeRangeField` — 样式包装层，将 props 转发给 headless compact 并注入 `dateRangeFieldVariants`（与 `SDateRangeField` 共享）类
-- `TimeRangeFieldCompact`（headless）— `TimeRangeFieldRoot` + 两组各段一个 `TimeRangeFieldInput` 的数据驱动组合，含 `leading`/`separator`/`trailing` 插槽；无样式用法从 `@soybeanjs/headless/time-range-field` 导入
-- `TimeRangeFieldRoot` / `TimeRangeFieldInput`（headless）— 状态所有者（分段值、范围校验、两个隐藏输入、跨组焦点管理）与绑定共享 `useDateField` 组合式的单个可编辑分段
+- `STimeRangeField` — 样式包装层，将 props 转发给 Aria compact 并注入 `dateRangeFieldVariants`（与 `SDateRangeField` 共享）类
+- `TimeRangeFieldCompact`（Aria）— `TimeRangeFieldRoot` + 两组各段一个 `TimeRangeFieldInput` 的数据驱动组合，含 `leading`/`separator`/`trailing` 插槽；无样式用法从 `@vean/aria/time-range-field` 导入
+- `TimeRangeFieldRoot` / `TimeRangeFieldInput`（Aria）— 状态所有者（分段值、范围校验、两个隐藏输入、跨组焦点管理）与绑定共享 `useDateField` 组合式的单个可编辑分段
 
 ## 演示
 
@@ -44,22 +44,22 @@ TimeRangeField 是一个分段式时间范围输入组件，提供独立的开�
 
 ### 架构与对标差异
 
-`TimeRangeFieldRoot` 通过 `useControllableState` 持有 `TimeRange`，以两个 shallowRef 维护 `startSegmentValues`/`endSegmentValues`，并通过 `isInvalid` 完成范围校验（end 早于 start、`minValue`/`maxValue`、`isTimeUnavailable`）。每个 `TimeRangeFieldInput` 绑定 `date-field` 家族共享的 `useDateField` 组合式；`TimeRangeFieldCompact` 遍历 `createContent` 生成的分段，在两个 `data-time-range-field-part` 分组内各渲染一个输入，分组之间以 `separator` 插槽分隔。跨组焦点移动由 root 的 `moveFocus` 处理——依据 `dir` 映射物理方向键，RTL 下 `ArrowLeft`/`ArrowRight` 互换，分组边界按物理方向（`delta`）而非按键语义跨越。对标库多为「两个独立文本框」（或纯选择面板）；双分段组 + 跨边界键盘导航与 headless/styled 分离是差异点。
+`TimeRangeFieldRoot` 通过 `useControllableState` 持有 `TimeRange`，以两个 shallowRef 维护 `startSegmentValues`/`endSegmentValues`，并通过 `isInvalid` 完成范围校验（end 早于 start、`minValue`/`maxValue`、`isTimeUnavailable`）。每个 `TimeRangeFieldInput` 绑定 `date-field` 家族共享的 `useDateField` 组合式；`TimeRangeFieldCompact` 遍历 `createContent` 生成的分段，在两个 `data-time-range-field-part` 分组内各渲染一个输入，分组之间以 `separator` 插槽分隔。跨组焦点移动由 root 的 `moveFocus` 处理——依据 `dir` 映射物理方向键，RTL 下 `ArrowLeft`/`ArrowRight` 互换，分组边界按物理方向（`delta`）而非按键语义跨越。对标库多为「两个独立文本框」（或纯选择面板）；双分段组 + 跨边界键盘导航与 Aria/styled 分离是差异点。
 
-| 能力                    | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :---------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 双组分段可编辑组        |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 跨组焦点移动            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| RTL 方向反转            |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 受控 / 非受控           |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 键盘增减 / 键入         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 范围校验（start ≤ end） |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isTimeUnavailable`     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 粒度（秒）              |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 双原生表单值            |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   —    |
-| 分隔符 prop / 插槽      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 禁用 / 只读             |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 能力                    | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :---------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 双组分段可编辑组        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 跨组焦点移动            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| RTL 方向反转            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 受控 / 非受控           |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 键盘增减 / 键入         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 范围校验（start ≤ end） |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isTimeUnavailable`     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 粒度（秒）              |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 双原生表单值            |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   —    |
+| 分隔符 prop / 插槽      |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 禁用 / 只读             |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
 
 ### 运行时注意事项
 

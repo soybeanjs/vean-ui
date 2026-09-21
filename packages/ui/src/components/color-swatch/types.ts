@@ -1,5 +1,5 @@
-import type { ColorSwatchCompactProps, ColorSwatchCompactSlots, ColorSwatchUi } from '@soybeanjs/headless/color-swatch';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ColorSwatchCompactProps, ColorSwatchCompactSlots, ColorSwatchUi } from '@vean/aria/color-swatch';
+import type { ClassValue } from '@vean/aria/types';
 import type { ColorSwatchShape } from '@/styles/color-swatch';
 import type { ThemeSize } from '@/theme';
 

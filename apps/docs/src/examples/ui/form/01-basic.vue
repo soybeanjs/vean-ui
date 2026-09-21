@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
+import * as v from 'valibot';
 import {
   SButton,
   SButtonIcon,
@@ -11,15 +12,14 @@ import {
   SSelect,
   SSwitch,
   useForm
-} from '@soybeanjs/ui';
+} from '@vean/ui';
 import type {
   CheckboxGroupOptionData,
   DataOrientation,
   RadioGroupOptionData,
   SelectOptionData,
   ThemeSize
-} from '@soybeanjs/ui';
-import * as v from 'valibot';
+} from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {

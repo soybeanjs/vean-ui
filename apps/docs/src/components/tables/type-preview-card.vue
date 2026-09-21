@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, inject } from 'vue';
-import { SLink } from '@soybeanjs/ui';
+import { SLink } from '@vean/ui';
 import CallableTypeTable from './callable-type-table.vue';
 import type { GeneratedApiTypePreview } from './generated-api';
 import { normalizeTypeRenderContext, provideTypeRenderContext, typeRenderContextKey } from './type-anchor';
@@ -35,7 +35,7 @@ const description = computed(() => resolveApiText(props.preview.description, pro
 </script>
 
 <template>
-  <div data-soybean-hover-card-sub-popup class="min-w-80 max-w-xl max-h-96 overflow-auto p-2 space-y-3">
+  <div data-vean-hover-card-sub-popup class="min-w-80 max-w-xl max-h-96 overflow-auto p-2 space-y-3">
     <p v-if="description" class="text-xs leading-5 text-muted-foreground">
       {{ description }}
     </p>

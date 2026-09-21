@@ -13,10 +13,10 @@ describe('SPassword', () => {
       wrapper.unmount();
     });
 
-    it('marks the root with data-soybean-password', () => {
+    it('marks the root with data-vean-password', () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-password]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-password]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -38,7 +38,7 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-root]').classes()).toContain('h-9');
+      expect(wrapper.find('[data-vean-input-root]').classes()).toContain('h-9');
 
       wrapper.unmount();
     });
@@ -46,7 +46,7 @@ describe('SPassword', () => {
     it('renders the visible trigger as a plain button that never submits forms', () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-password-visible]').attributes('type')).toBe('button');
+      expect(wrapper.find('[data-vean-password-visible]').attributes('type')).toBe('button');
 
       wrapper.unmount();
     });
@@ -103,7 +103,7 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-clearable]').trigger('click');
+      await wrapper.find('[data-vean-input-clearable]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')![0]).toEqual(['']);
@@ -116,7 +116,7 @@ describe('SPassword', () => {
     it('toggles the input type and emits update:visible', async () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
 
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
 
       expect(wrapper.find('input').attributes('type')).toBe('text');
       expect(wrapper.emitted('update:visible')).toBeTruthy();
@@ -128,8 +128,8 @@ describe('SPassword', () => {
     it('toggles back to password and emits update:visible false', async () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
 
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
 
       expect(wrapper.find('input').attributes('type')).toBe('password');
       expect(wrapper.emitted('update:visible')![1]).toEqual([false]);
@@ -141,7 +141,7 @@ describe('SPassword', () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
 
       await wrapper.find('input').setValue('keep-me');
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
 
       expect(wrapper.find('input').element.value).toBe('keep-me');
       expect(wrapper.find('input').attributes('type')).toBe('text');
@@ -151,7 +151,7 @@ describe('SPassword', () => {
 
     it('updates the visible trigger aria-label and aria-pressed', async () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
-      const toggle = wrapper.find('[data-soybean-password-visible]');
+      const toggle = wrapper.find('[data-vean-password-visible]');
 
       expect(toggle.attributes('aria-label')).toBe('Show password');
       expect(toggle.attributes('aria-pressed')).toBe('false');
@@ -178,10 +178,10 @@ describe('SPassword', () => {
 
       expect(wrapper.find('input').attributes('type')).toBe('password');
 
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
 
       expect(wrapper.find('input').attributes('type')).toBe('text');
-      expect(wrapper.find('[data-soybean-password-visible]').attributes('aria-pressed')).toBe('true');
+      expect(wrapper.find('[data-vean-password-visible]').attributes('aria-pressed')).toBe('true');
 
       wrapper.unmount();
     });
@@ -217,7 +217,7 @@ describe('SPassword', () => {
       });
 
       expect(wrapper.find('input').attributes('type')).toBe('text');
-      expect(wrapper.find('[data-soybean-password-visible]').attributes('aria-pressed')).toBe('true');
+      expect(wrapper.find('[data-vean-password-visible]').attributes('aria-pressed')).toBe('true');
 
       wrapper.unmount();
     });
@@ -254,7 +254,7 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-clearable]').trigger('click');
+      await wrapper.find('[data-vean-input-clearable]').trigger('click');
 
       expect(wrapper.emitted('clear')).toBeTruthy();
 
@@ -267,7 +267,7 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-clearable]').attributes('aria-label')).toBe('Clear input');
+      expect(wrapper.find('[data-vean-input-clearable]').attributes('aria-label')).toBe('Clear input');
 
       wrapper.unmount();
     });
@@ -281,7 +281,7 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-clearable]').attributes('aria-label')).toBe('Empty the field');
+      expect(wrapper.find('[data-vean-input-clearable]').attributes('aria-label')).toBe('Empty the field');
 
       wrapper.unmount();
     });
@@ -298,8 +298,8 @@ describe('SPassword', () => {
       });
 
       expect(wrapper.find('input').element.disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-password-visible]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-input-clearable]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-password-visible]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-input-clearable]').element as HTMLButtonElement).disabled).toBe(true);
 
       wrapper.unmount();
     });
@@ -314,8 +314,8 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-clearable]').trigger('click');
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-input-clearable]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeUndefined();
       expect(wrapper.emitted('clear')).toBeUndefined();
@@ -334,8 +334,8 @@ describe('SPassword', () => {
       });
 
       expect(wrapper.find('input').attributes('readonly')).toBeDefined();
-      expect((wrapper.find('[data-soybean-password-visible]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.find('[data-soybean-input-clearable]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-password-visible]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.find('[data-vean-input-clearable]').element as HTMLButtonElement).disabled).toBe(true);
 
       wrapper.unmount();
     });
@@ -348,7 +348,7 @@ describe('SPassword', () => {
         attachTo: document.body
       });
 
-      const hiddenInputs = wrapper.findAll('[data-soybean-visually-hidden-input]');
+      const hiddenInputs = wrapper.findAll('[data-vean-visually-hidden-input]');
       expect(hiddenInputs).toHaveLength(1);
       expect(hiddenInputs[0].attributes('name')).toBe('password');
 
@@ -358,7 +358,7 @@ describe('SPassword', () => {
     it('does not render a visually hidden input without a name', () => {
       const wrapper = mount(SPassword, { attachTo: document.body });
 
-      expect(wrapper.find('[data-soybean-visually-hidden-input]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-visually-hidden-input]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -400,7 +400,7 @@ describe('SPassword', () => {
         { attachTo: document.body }
       );
 
-      await wrapper.find('[data-soybean-password-visible]').trigger('click');
+      await wrapper.find('[data-vean-password-visible]').trigger('click');
 
       const violations = await getA11yViolations(wrapper.element);
 

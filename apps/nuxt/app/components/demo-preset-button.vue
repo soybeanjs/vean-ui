@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SButton, useTheme } from '@soybeanjs/ui';
+import { SButton, useTheme } from '@vean/ui';
 
 // 主题状态由 `SConfigProvider`（库内）统一管理，这里是其后代，可安全消费 `useTheme`。
 const { savePreset, applyPreset, resetPreset, appliedPresetName } = useTheme('DemoPresetToggle');

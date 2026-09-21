@@ -14,28 +14,28 @@ The family was frozen for one release cycle and then removed inside the v0.50.0 
 
 | Surface                                                     | Status                                                |
 | :---------------------------------------------------------- | :---------------------------------------------------- |
-| `@soybeanjs/headless/navigation-menu` sub-path              | Removed — every `NavigationMenu*` primitive and type  |
+| `@vean/aria/navigation-menu` sub-path                       | Removed — every `NavigationMenu*` primitive and type  |
 | `NavigationMenu*` symbols in the headless root export       | Removed (and from the `Headless.*` namespaced export) |
-| `SNavigationMenu` in `@soybeanjs/ui`                        | Removed — no styled counterpart is shipped            |
+| `SNavigationMenu` in `@vean/ui`                             | Removed — no styled counterpart is shipped            |
 | `provideNavigationMenuUi`                                   | Removed — use `provideNavMenuUi`                      |
 | Docs examples, component API data, changelog component page | Removed                                               |
-| `ui/navigation-menu` registry item (`sbean`)                | Removed                                               |
+| `ui/navigation-menu` registry item (`vean`)                 | Removed                                               |
 
 ## Migrating to NavMenu
 
 [`NavMenu`](/components/nav-menu) models the same domain — site-level navigation with hover/click triggers, keyboard navigation, a positioned viewport, and a data-driven `items` API — but on a single shared Popper surface: one `PopperPositioner` whose reference switches to the active trigger, with hover timing driven by one shared state machine. Root props are largely isomorphic (`modelValue` / `defaultValue`, `orientation`, `dir`, `delayDuration`, `skipDelayDuration`, `disableClickTrigger`, `disableHoverTrigger`, `disablePointerLeaveClose`).
 
 ```diff
-- import { SNavigationMenu } from '@soybeanjs/ui';
-+ import { SNavMenu } from '@soybeanjs/ui';
+- import { SNavigationMenu } from '@vean/ui';
++ import { SNavMenu } from '@vean/ui';
 
 - <SNavigationMenu :items="items" />
 + <SNavMenu :items="items" />
 ```
 
 ```diff
-- import { NavigationMenuRoot, NavigationMenuItem } from '@soybeanjs/headless/navigation-menu';
-+ import { NavMenuRoot, NavMenuItem } from '@soybeanjs/headless/nav-menu';
+- import { NavigationMenuRoot, NavigationMenuItem } from '@vean/aria/navigation-menu';
++ import { NavMenuRoot, NavMenuItem } from '@vean/aria/nav-menu';
 ```
 
 ### Component mapping

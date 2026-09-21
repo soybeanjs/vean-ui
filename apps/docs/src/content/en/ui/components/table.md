@@ -1,14 +1,14 @@
 ---
 head:
   title: Table
-  description: 'A data table component for displaying row and column data. STable combines the headless TableCompact aggregation component (9 zero-style base primitives in the TableRoot family) with the tableVariants style recipe (29 slots, 7 sizes × 2 visual variants). Supports a config-driven columns model (grouped headers, index/selection/expand type columns), sorting, filtering, multi/single selection, expandable and tree rows, fixed columns/headers, drag-and-keyboard column resizing, virtualization, and empty states; default/simple variants plus bordered/rounded/striped toggles. All interaction text and aria-labels (sorting, filtering, selection, expansion, column resize) are localized via useLocaleMessages.'
+  description: 'A data table component for displaying row and column data. STable combines the Aria TableCompact aggregation component (9 zero-style base primitives in the TableRoot family) with the tableVariants style recipe (29 slots, 7 sizes × 2 visual variants). Supports a config-driven columns model (grouped headers, index/selection/expand type columns), sorting, filtering, multi/single selection, expandable and tree rows, fixed columns/headers, drag-and-keyboard column resizing, virtualization, and empty states; default/simple variants plus bordered/rounded/striped toggles. All interaction text and aria-labels (sorting, filtering, selection, expansion, column resize) are localized via useLocaleMessages.'
 ---
 
 # Table
 
 ## Overview
 
-A data table component for displaying row and column data. `STable` combines the headless `TableCompact` aggregation component (9 zero-style base primitives in the `TableRoot` family) with the `tableVariants` style recipe (29 slots, 7 sizes × 2 visual variants). Supports a **config-driven `columns` model** (grouped headers, `index`/`selection`/`expand` type columns), sorting, filtering, multi/single selection, expandable and tree rows, fixed columns/headers, drag-and-keyboard column resizing, virtualization, and empty states; `default`/`simple` variants plus `bordered`/`rounded`/`striped` toggles. All interaction text and `aria-label`s (sorting, filtering, selection, expansion, column resize) are localized via `useLocaleMessages`.
+A data table component for displaying row and column data. `STable` combines the Aria `TableCompact` aggregation component (9 zero-style base primitives in the `TableRoot` family) with the `tableVariants` style recipe (29 slots, 7 sizes × 2 visual variants). Supports a **config-driven `columns` model** (grouped headers, `index`/`selection`/`expand` type columns), sorting, filtering, multi/single selection, expandable and tree rows, fixed columns/headers, drag-and-keyboard column resizing, virtualization, and empty states; `default`/`simple` variants plus `bordered`/`rounded`/`striped` toggles. All interaction text and `aria-label`s (sorting, filtering, selection, expansion, column resize) are localized via `useLocaleMessages`.
 
 ## Usage
 
@@ -16,7 +16,7 @@ A data table component for displaying row and column data. `STable` combines the
 
 ## Features
 
-- 📋 Config-driven columns — TanStack-first `columns: TableColumn<T>[]` (`accessorKey`/`header`/`size`/`minSize` + SoybeanUI `align`/`type`/`fixed`/`hidden` extensions), grouped headers (`columns`), `index`/`selection`/`expand` type columns; `rowKey` keeps row identity stable
+- 📋 Config-driven columns — TanStack-first `columns: TableColumn<T>[]` (`accessorKey`/`header`/`size`/`minSize` + VeanUI `align`/`type`/`fixed`/`hidden` extensions), grouped headers (`columns`), `index`/`selection`/`expand` type columns; `rowKey` keeps row identity stable
 - 🔀 Sorting — `enableSorting: true` (or `sortFn` comparator) on a column; controlled `sorting` / `v-model:sorting` (TanStack `SortingState`); `aria-sort` + localized sort-button `aria-label`
 - 🔍 Filtering — `enableColumnFilter: true` (+ `filterPlaceholder`/`filterOptions`); compound `{ keyword, values }` filter values, keyword search, option multi-select, summary count, and clear action are all localized; state is TanStack `ColumnFiltersState` (`v-model:columnFilters`)
 - ✅ Selection — multi-select by default (`multiple` defaults to `true`, checkboxes + header select-all); `multiple={false}` switches to single-select (row radio); controlled `selected` / `v-model:selected`
@@ -28,11 +28,11 @@ A data table component for displaying row and column data. `STable` combines the
 
 ## Component family
 
-- `STable` (styled) — entry wrapper; `tableVariants` recipe (29 slots = 16 headless slots + 11 filter/selection extra slots + 2 internal radio slots); `useOmitProps` forwarding + `useForwardListeners` event merging + full slot passthrough; injects default `header-selection`/`selection`/`header-sort`/`header-filter`/`header-resize`/`tree-toggle`/`expand`/`empty` slot content
-- `TableCompact` (headless) — aggregation state owner over the **`@tanstack/vue-table` engine**: `useTableCompactState` (`sorting`/`columnFilters`/`expanded`/`columnPinning`/`columnSizing` via `useControllableState`, `selected`/`multiple` via `useSelection`), `useTableCompactTable` (engine instance wiring), `useTableCompactData` (header groups/leaf columns/row model), `useTableCompactResize` (pointer + keyboard column widths), `useTableCompactVirtual`; `provideTableCompactContext` bridges the 9 primitives
-- `TableRoot` (headless) — root element, `dir` direction, renders `data-soybean-table-root` and the table semantic container
-- `TableScroll` / `TableContent` / `TableHeader` / `TableBody` / `TableFooter` / `TableRow` / `TableHead` / `TableCell` (headless) — 9 base primitives, all zero-style, each rendering `data-soybean-table-*` data attributes
-- `TableCompactHead` / `TableCompactRow` / `TableCompactCell` / `TableCompactExpandedRow` / `TableVirtualSpacerRow` (headless internal) — composition and rendering components inside the Compact aggregation (not publicly exported)
+- `STable` (styled) — entry wrapper; `tableVariants` recipe (29 slots = 16 Aria slots + 11 filter/selection extra slots + 2 internal radio slots); `useOmitProps` forwarding + `useForwardListeners` event merging + full slot passthrough; injects default `header-selection`/`selection`/`header-sort`/`header-filter`/`header-resize`/`tree-toggle`/`expand`/`empty` slot content
+- `TableCompact` (Aria) — aggregation state owner over the **`@tanstack/vue-table` engine**: `useTableCompactState` (`sorting`/`columnFilters`/`expanded`/`columnPinning`/`columnSizing` via `useControllableState`, `selected`/`multiple` via `useSelection`), `useTableCompactTable` (engine instance wiring), `useTableCompactData` (header groups/leaf columns/row model), `useTableCompactResize` (pointer + keyboard column widths), `useTableCompactVirtual`; `provideTableCompactContext` bridges the 9 primitives
+- `TableRoot` (Aria) — root element, `dir` direction, renders `data-vean-table-root` and the table semantic container
+- `TableScroll` / `TableContent` / `TableHeader` / `TableBody` / `TableFooter` / `TableRow` / `TableHead` / `TableCell` (Aria) — 9 base primitives, all zero-style, each rendering `data-vean-table-*` data attributes
+- `TableCompactHead` / `TableCompactRow` / `TableCompactCell` / `TableCompactExpandedRow` / `TableVirtualSpacerRow` (Aria internal) — composition and rendering components inside the Compact aggregation (not publicly exported)
 - `STableFilterPopover` (styled internal) — the filter popover (SPopover + SInput + SCheckbox + SButton) with localized search/options/summary/clear
 - `STableRadio` (styled internal) — the row radio used in single-select mode (`aria-pressed` semantics), consuming the `radioRoot`/`radioIndicator` recipe slots directly
 - `useTable` / `usePaginatedTable` (UI hooks) — client-side sort/filter/pagination composition hooks
@@ -70,19 +70,19 @@ A data table component for displaying row and column data. `STable` combines the
 
 ### Architecture and benchmark differences
 
-The table engine is [`@tanstack/vue-table`](https://tanstack.com/table) (v9): column defs, sorting, filtering, expanding, pinning, and sizing follow TanStack state contracts (`SortingState`, `ColumnFiltersState`, `ExpandedState`, `ColumnPinningState`, `ColumnSizingState`), and all of them are controlled/uncontrolled dual channels via `useControllableState` + `useSelection`; all base primitives stay zero-style and only the UI wrapper injects `tableVariants` classes. The filter popover and single-select radio are UI-internal components consumed by default slots, but consumers can replace them entirely via same-name slots (`header-filter`/`selection`, etc.). Sort buttons and filter triggers are absolutely-positioned icon buttons with localized `aria-label`s; column resizing supports both pointer (`PointerEvent`) and keyboard (arrow-key) channels. Virtualization uses the built-in `@soybeanjs/headless` virtualizer, rendering only visible rows while syncing measured column widths. Ant Design / Element Plus tables are declarative component instances (`el-table-column`) whose fixed columns rely on config classes; SoybeanUI's controlled state, `aria-sort` semantics, and full-chain localization (including the filter popover) exceed most mainstream libraries.
+The table engine is [`@tanstack/vue-table`](https://tanstack.com/table) (v9): column defs, sorting, filtering, expanding, pinning, and sizing follow TanStack state contracts (`SortingState`, `ColumnFiltersState`, `ExpandedState`, `ColumnPinningState`, `ColumnSizingState`), and all of them are controlled/uncontrolled dual channels via `useControllableState` + `useSelection`; all base primitives stay zero-style and only the UI wrapper injects `tableVariants` classes. The filter popover and single-select radio are UI-internal components consumed by default slots, but consumers can replace them entirely via same-name slots (`header-filter`/`selection`, etc.). Sort buttons and filter triggers are absolutely-positioned icon buttons with localized `aria-label`s; column resizing supports both pointer (`PointerEvent`) and keyboard (arrow-key) channels. Virtualization uses the built-in `@vean/aria` virtualizer, rendering only visible rows while syncing measured column widths. Ant Design / Element Plus tables are declarative component instances (`el-table-column`) whose fixed columns rely on config classes; Vean's controlled state, `aria-sort` semantics, and full-chain localization (including the filter popover) exceed most mainstream libraries.
 
-| Capability                            | SoybeanUI | Ant Design | Element Plus | Naive UI | Mantine Table |
-| :------------------------------------ | :-------: | :--------: | :----------: | :------: | :-----------: |
-| headless/styled split                 |    ✅     |     —      |      —       |    —     |       —       |
-| Config columns + grouped headers      |    ✅     |     ✅     |      ✅      |    ✅    |      ✅       |
-| Sorting (aria-sort + controlled)      |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| Filtering (keyword + multi-select)    |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| Selection (multi/single + select-all) |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| Expandable + tree rows                |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| Fixed columns / fixed header          |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| Drag + keyboard column resize         |    ✅     |     ✅     |      ⚠️      |    ✅    |       —       |
-| Virtualization                        |    ✅     |     ✅     |      ⚠️      |    ✅    |      ⚠️       |
+| Capability                            | VeanUI | Ant Design | Element Plus | Naive UI | Mantine Table |
+| :------------------------------------ | :----: | :--------: | :----------: | :------: | :-----------: |
+| Aria/styled split                     |   ✅   |     —      |      —       |    —     |       —       |
+| Config columns + grouped headers      |   ✅   |     ✅     |      ✅      |    ✅    |      ✅       |
+| Sorting (aria-sort + controlled)      |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| Filtering (keyword + multi-select)    |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| Selection (multi/single + select-all) |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| Expandable + tree rows                |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| Fixed columns / fixed header          |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| Drag + keyboard column resize         |   ✅   |     ✅     |      ⚠️      |    ✅    |       —       |
+| Virtualization                        |   ✅   |     ✅     |      ⚠️      |    ✅    |      ⚠️       |
 
 `⚠️` = partial support (Mantine Table's sorting/filtering/selection are manual; Element Plus virtualization only exists in the separate `el-table-v2`; Element Plus drag-resize requires `border` mode).
 
@@ -178,7 +178,7 @@ The empty state and all interaction `aria-label`s (sort/filter/select/expand/res
 2. **`useTableEngine()`** — inject the engine from any component rendered inside the table subtree (deep custom cells, toolbar widgets):
 
 ```ts
-import { useTableEngine } from '@soybeanjs/headless/table';
+import { useTableEngine } from '@vean/aria/table';
 
 const table = useTableEngine();
 

@@ -469,7 +469,7 @@ describe('palette layer formats and base tokens', () => {
 
   it('keeps the font catalog aligned with shadcn (26 families, three root roles)', () => {
     // 对齐 shadcn 的 `FONT_DEFINITIONS`：同样的 26 个字族、同样的三分类。
-    // 这张清单是**契约**（customizer 的下拉、sbean.json 的 picklist、docs 的字体
+    // 这张清单是**契约**（customizer 的下拉、vean.json 的 picklist、docs 的字体
     // 加载都读它），所以逐类冻结，任何增删都必须有意识地改这里。
     expect(Object.keys(THEME_FONT_SANS)).toEqual([
       'system',
@@ -615,7 +615,7 @@ describe('palette layer formats and base tokens', () => {
     });
 
     // UnoCSS 定义过的档位保持它的取值；扩充档与它无缝相接
-    // （同名同值的上游守卫在 @soybeanjs/ui-uno 的适配器测试里）
+    // （同名同值的上游守卫在 @vean/unocss 的适配器测试里）
     expect(SPACING_GRID_COEFFICIENTS['2xs'] * 0.25).toBeCloseTo(0.625, 10);
     expect(SPACING_GRID_COEFFICIENTS.xs * 0.25).toBeCloseTo(0.75, 10);
     expect(SPACING_GRID_COEFFICIENTS.md * 0.25).toBeCloseTo(1, 10);

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SDrawer, SButton } from '@soybeanjs/ui';
+import { SDrawer, SButton } from '@vean/ui';
 
 const nestedOpen = ref(false);
 

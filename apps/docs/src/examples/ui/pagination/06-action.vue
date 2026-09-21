@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SPagination } from '@soybeanjs/ui';
+import { SPagination } from '@vean/ui';
 </script>
 
 <template>

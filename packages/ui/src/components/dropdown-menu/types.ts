@@ -10,8 +10,8 @@ import type {
   DropdownMenuRadioCompactProps,
   DropdownMenuRadioCompactEmits,
   DropdownMenuRadioCompactSlots
-} from '@soybeanjs/headless/dropdown-menu';
-import type { AcceptableBooleanValue, DefinedValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/dropdown-menu';
+import type { AcceptableBooleanValue, DefinedValue } from '@vean/aria/types';
 import type { MenuUiBaseProps } from '../menu/types';
 
 /**

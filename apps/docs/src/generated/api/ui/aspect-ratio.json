@@ -8,8 +8,8 @@
         "type": "Interface AspectRatioProps",
         "resolvedType": "{ ratio?: number; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the AspectRatio component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_aspect_ratio_types.aspectratioprops.props",
-        "sourcePath": "packages/headless/src/components/aspect-ratio/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_aspect_ratio_types.aspectratioprops.props",
+        "sourcePath": "packages/aria/src/components/aspect-ratio/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -17,10 +17,10 @@
             "type": "number",
             "required": false,
             "description": "The desired ratio. Eg: 16/9",
-            "descriptionKey": "api.generated.packages_headless_src_components_aspect_ratio_types.aspectratioprops.members.ratio",
+            "descriptionKey": "api.generated.packages_aria_src_components_aspect_ratio_types.aspectratioprops.members.ratio",
             "default": "1",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/aspect-ratio/types.ts",
+            "sourcePath": "packages/aria/src/components/aspect-ratio/types.ts",
             "referencedTypes": []
           },
           {
@@ -28,10 +28,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_aspect_ratio_types.aspectratioprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_aspect_ratio_types.aspectratioprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -39,10 +39,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_aspect_ratio_types.aspectratioprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_aspect_ratio_types.aspectratioprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

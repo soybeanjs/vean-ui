@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButton, SButtonIcon, SDropdownMenuRadio, STextarea } from '@soybeanjs/ui';
-import type { MenuRadioOptionData } from '@soybeanjs/ui';
+import { SButton, SButtonIcon, SDropdownMenuRadio, STextarea } from '@vean/ui';
+import type { MenuRadioOptionData } from '@vean/ui';
 
 const mode = shallowRef('auto');
 

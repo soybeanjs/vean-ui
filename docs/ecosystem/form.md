@@ -1,6 +1,6 @@
 # form — Schema 驱动表单技术方案（提案）
 
-> **2026-09 前提变更：** 本文写于「外围包单包自治」时期，标题中的 `@soybeanjs/form` 是当时设想的包名；当前仓库无外围包，文中包结构、lockstep、跨包依赖等设定已不适用。**市场调研结论与能力设计仍然有效**；立项时须先按 [README §立项时必须回答的问题](./README.md#立项时必须回答的问题) 确定落地形态（并入核心 headless/ui、独立包、或 sbean 源码配方）。
+> **2026-09 前提变更：** 本文写于「外围包单包自治」时期，标题中的 `@soybeanjs/form` 是当时设想的包名；当前仓库无外围包，文中包结构、lockstep、跨包依赖等设定已不适用。**市场调研结论与能力设计仍然有效**；立项时须先按 [README §立项时必须回答的问题](./README.md#立项时必须回答的问题) 确定落地形态（并入核心 aria/ui、独立包、或 vean 源码配方）。
 
 > 定位（提案）：提供基于核心 `useForm` + `SForm` 原语的 **Schema 驱动高级表单**——「一份表单 Schema（协议）→ 自动渲染 + 声明式联动 + 组件注册表 + 校验（Standard Schema）」；并作为高级数据网格查询工具栏的查询表单底座。对标 Formily 的深度能力，但以 Vue 3 一等公民 + TypeScript 类型安全 + UnoCSS 主题 + 中文生态差异化。
 >
@@ -18,7 +18,7 @@
 
 - **Formily** 是唯一完整实现「JSON Schema → 自动渲染 + `x-reactions` 声明式联动 + effects」的 Vue 方案，但其 Vue 侧长期低活跃、依赖自研 JSON-Schema 方言、设计器（Designable）2022 年后停滞（[GitHub alibaba/formily](https://github.com/alibaba/formily)、[vue.formilyjs.org](https://vue.formilyjs.org/)）。
 - VeeValidate / TanStack Form / Element Plus / Naive UI 均**只把 schema 用于校验**，不做 schema→UI 自动渲染。
-- **结论**：`@soybeanjs/form` 的差异化定位 =「headless 表单状态（已有 `useForm`）+ 协议驱动渲染层（新增）」。
+- **结论**：`@soybeanjs/form` 的差异化定位 =「aria 表单状态（已有 `useForm`）+ 协议驱动渲染层（新增）」。
 
 ### 1.3 Standard Schema v1 已是事实标准
 
@@ -35,7 +35,7 @@ Formily 的 `x-reactions` 虽强大但不兼容标准 JSON Schema 校验器。`@
 
 ## 2. 现状盘点：核心 useForm / SForm 能力与局限
 
-> 基于 `packages/headless/src/components/form/`（`useForm` / `FormCompact` / `FormField*` / `core/use-form.ts` / `core/use-form-state.ts` / `core/use-field-array.ts`）与 `packages/ui/src/components/form/`，文档见 [apps/docs/src/content/zh/ui/components/form.md](../../apps/docs/src/content/zh/ui/components/form.md)。
+> 基于 `packages/aria/src/components/form/`（`useForm` / `FormCompact` / `FormField*` / `core/use-form.ts` / `core/use-form-state.ts` / `core/use-field-array.ts`）与 `packages/ui/src/components/form/`，文档见 [apps/docs/src/content/zh/ui/components/form.md](../../apps/docs/src/content/zh/ui/components/form.md)。
 
 ### 2.1 已具备（核心表单状态引擎，全部保留）
 
@@ -56,7 +56,7 @@ Formily 的 `x-reactions` 虽强大但不兼容标准 JSON Schema 校验器。`@
 | :-: | :------------------------- | :--------------------------------------------------------------------------------- |
 | L1  | **无 Schema 驱动渲染**     | `useForm` 是 hook/插槽式；没有「一段 JSON Schema → 自动渲染整张表单」的能力        |
 | L2  | **无声明式联动**           | 条件显隐/必填/禁用随依赖字段变化需手写 watch + v-if（对标 Formily `x-reactions`）  |
-| L3  | **无组件注册表**           | 没有「component key → SoybeanUI 控件」的映射与扩展机制                             |
+| L3  | **无组件注册表**           | 没有「component key → Vean 控件」的映射与扩展机制                                  |
 | L4  | **无布局协议**             | 无 FormGrid / 分组折叠 / 分步等布局声明能力（需手写 SFormFieldBase 布局）          |
 | L5  | **无查询表单形态**         | 无「水平紧凑 + 查询/重置」的 ProForm 查询范式（`@soybeanjs/table` 需要）           |
 | L6  | **无类型化 schema 转换器** | 无 `toTypedSchema` 式 input/output 双类型、默认值拾取、提交前 transform 的 DX 细节 |
@@ -72,10 +72,10 @@ Formily 的 `x-reactions` 虽强大但不兼容标准 JSON Schema 校验器。`@
 
 ### 3.2 与现有包边界
 
-| 层       | 包                                                        | 角色                                                                       |
-| :------- | :-------------------------------------------------------- | :------------------------------------------------------------------------- |
-| 状态引擎 | `@soybeanjs/headless` `useForm` + `@soybeanjs/ui` `SForm` | 值/校验/数组/生命周期/a11y（**不新增**）                                   |
-| **本包** | `@soybeanjs/form`                                         | Schema 协议 + 渲染层 + 声明式联动 + 组件注册表 + 查询表单 + 设计器（远期） |
+| 层       | 包                                          | 角色                                                                       |
+| :------- | :------------------------------------------ | :------------------------------------------------------------------------- |
+| 状态引擎 | `@vean/aria` `useForm` + `@vean/ui` `SForm` | 值/校验/数组/生命周期/a11y（**不新增**）                                   |
+| **本包** | `@soybeanjs/form`                           | Schema 协议 + 渲染层 + 声明式联动 + 组件注册表 + 查询表单 + 设计器（远期） |
 
 ### 3.3 双层协议（关键架构决策）
 
@@ -102,7 +102,7 @@ Layer 4  @soybeanjs/form ──► @soybeanjs/{ui, headless, theme}
 ```
 
 - **单包自治**（ADR-0001）：Schema 协议 + 渲染层 + 联动逻辑与样式同居于包内。
-- 运行时依赖：`@soybeanjs/headless`、`@soybeanjs/ui`、`@soybeanjs/theme`；peer 依赖 `vue`、unplugin-vue-components（可选 nuxt / vue-router）。
+- 运行时依赖：`@vean/aria`、`@vean/ui`、`@vean/theme`；peer 依赖 `vue`、unplugin-vue-components（可选 nuxt / vue-router）。
 - 核心 `useForm` 仍是唯一状态引擎；`@soybeanjs/form` 在其上做协议与渲染，不重写状态。
 
 ### 4.2 包结构（目标形态）
@@ -121,7 +121,7 @@ packages/form/
 │   │   ├── form-grid/            # SFormGrid：栅格布局（复用 layout/Fieldset 原语）
 │   │   └── form-designer/        # SFormDesigner：可视化设计器（P2，远期）
 │   ├── composables/              # use-form-schema / use-form-reaction / use-form-query
-│   ├── registry/                 # registry-form-field：component key → SoybeanUI 控件映射（L3）
+│   ├── registry/                 # registry-form-field：component key → Vean 控件映射（L3）
 │   ├── styles/                   # cv()/scv() recipe + @unocss-include
 │   ├── constants/components.ts   # SForm* 名称注册表
 │   ├── resolver/ · nuxt/
@@ -161,7 +161,7 @@ interface SFormItemSchema {
 
 ### 4.4 组件注册表（L3）
 
-`registryFormField(key, component)` 注册/覆盖「component key → SoybeanUI 控件（或自定义控件）」；`SFormItemSchema` 渲染时查注册表，未注册的 key 报错并提示。内置注册 `input`/`select`/`checkbox`/`radio-group`/`switch`/`date-picker`/`input-number`/`tags-input`/`slider` 等核心常用控件，用户可整体替换默认注册表（对齐 SoybeanUI「控件无关」理念）。
+`registryFormField(key, component)` 注册/覆盖「component key → Vean 控件（或自定义控件）」；`SFormItemSchema` 渲染时查注册表，未注册的 key 报错并提示。内置注册 `input`/`select`/`checkbox`/`radio-group`/`switch`/`date-picker`/`input-number`/`tags-input`/`slider` 等核心常用控件，用户可整体替换默认注册表（对齐 Vean「控件无关」理念）。
 
 ## 5. 核心功能
 
@@ -189,21 +189,21 @@ interface SFormItemSchema {
 
 ## 7. 技术选型
 
-| 选型        | 决策                                                          | 理由                                            |
-| :---------- | :------------------------------------------------------------ | :---------------------------------------------- |
-| 状态引擎    | 复用核心 `useForm`（不重写）                                  | Standard Schema 已内建；headless 唯一逻辑层约束 |
-| 校验协议    | Standard Schema v1（一级接口）+ 字段级 `validate`             | 事实标准；与 RHF/VeeValidate/TanStack 一致      |
-| 联动语言    | 自研 `when/fulfill`（参照 Formily `x-reactions`，但类型安全） | 声明式联动是复杂表单高频诉求                    |
-| UI 底座     | `@soybeanjs/ui` 原子组件（SInput/SSelect/SCheckbox…）         | 查询优先，禁止重复造原子                        |
-| 布局        | 复用 `layout`/`Fieldset`/`stepper` 原语                       | 不重复实现栅格/分组/分步                        |
-| 样式        | `cv()`/`scv()` + theme token                                  | 亮暗联动，禁原始 CSS                            |
-| 构建 / 测试 | `vp pack` + vitest + Playwright + axe                         | 对齐 packages/ui                                |
+| 选型        | 决策                                                          | 理由                                        |
+| :---------- | :------------------------------------------------------------ | :------------------------------------------ |
+| 状态引擎    | 复用核心 `useForm`（不重写）                                  | Standard Schema 已内建；aria 唯一逻辑层约束 |
+| 校验协议    | Standard Schema v1（一级接口）+ 字段级 `validate`             | 事实标准；与 RHF/VeeValidate/TanStack 一致  |
+| 联动语言    | 自研 `when/fulfill`（参照 Formily `x-reactions`，但类型安全） | 声明式联动是复杂表单高频诉求                |
+| UI 底座     | `@vean/ui` 原子组件（SInput/SSelect/SCheckbox…）              | 查询优先，禁止重复造原子                    |
+| 布局        | 复用 `layout`/`Fieldset`/`stepper` 原语                       | 不重复实现栅格/分组/分步                    |
+| 样式        | `cv()`/`scv()` + theme token                                  | 亮暗联动，禁原始 CSS                        |
+| 构建 / 测试 | `vp pack` + vitest + Playwright + axe                         | 对齐 packages/ui                            |
 
 ## 8. 兼容性考虑
 
 - **SSR / Nuxt**：schema 是纯数据，SSR 首帧可完整渲染（服务端校验在提交阶段，客户端执行）；Nuxt module 与 resolver 对齐其他包。
 - **类型安全**：`SFormSchema` 与 `Path<Values>` 严格绑定；`component` key 的 props 做条件类型收敛（联动 `props` 强类型约束 `when` 返回类型）。
-- **体积**：schema/渲染层为纯组合与轻组件；控件从 `@soybeanjs/ui` 按需引入。
+- **体积**：schema/渲染层为纯组合与轻组件；控件从 `@vean/ui` 按需引入。
 - **可访问性**：复用核心 `FormField` 的 label-for / aria-invalid / aria-describedby；联动后的显隐/必填/禁用同步到 a11y 状态；纳入 browser e2e 必测项。
 - **版本**：lockstep 同版本；ISchema v1 冻结后新增字段走扩展位（向后兼容）。
 

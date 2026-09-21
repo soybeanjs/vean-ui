@@ -28,9 +28,9 @@ head:
 
 ## 组件族系
 
-- `STimeField`——样式包装层：透传 props 给 headless compact，注入 `dateFieldVariants`（与 `SDateField` 共享）类
-- `TimeFieldCompact`（headless）——由 `TimeFieldRoot` + 每段一个 `TimeFieldInput` 数据驱动组合，并承载 `leading`/`trailing` 插槽；无样式使用时从 `@soybeanjs/headless/time-field` 导入
-- `TimeFieldRoot` / `TimeFieldInput`（headless）——状态所有者（分段值、校验、隐藏输入、焦点管理）与绑定共享 `useDateField` 组合式的单个可编辑分段
+- `STimeField`——样式包装层：透传 props 给 Aria compact，注入 `dateFieldVariants`（与 `SDateField` 共享）类
+- `TimeFieldCompact`（Aria）——由 `TimeFieldRoot` + 每段一个 `TimeFieldInput` 数据驱动组合，并承载 `leading`/`trailing` 插槽；无样式使用时从 `@vean/aria/time-field` 导入
+- `TimeFieldRoot` / `TimeFieldInput`（Aria）——状态所有者（分段值、校验、隐藏输入、焦点管理）与绑定共享 `useDateField` 组合式的单个可编辑分段
 
 ## 演示
 
@@ -44,23 +44,23 @@ head:
 
 ### 架构与行业对标差异
 
-`TimeFieldRoot` 经 `useControllableState` 持有 `TimeValue`，以 shallowRef 维护 `segmentValues`，并通过 `isInvalid` 完成校验。每个 `TimeFieldInput` 绑定 `date-field` 族共享的 `useDateField` 组合式做逐段键盘逻辑；`TimeFieldCompact` 遍历 `createContent` 生成的分段并逐个渲染输入，两侧承载 `leading`/`trailing` 插槽。焦点移动由 Root 的 `moveFocus` 处理，按键按 `dir` 映射物理方向，RTL 下 `ArrowLeft`/`ArrowRight` 互换。多数对标库是「纯文本框 + 选择面板」形态；「分段 spinbutton + 键盘增减/键入」模式与 headless/styled 分离是差异点。
+`TimeFieldRoot` 经 `useControllableState` 持有 `TimeValue`，以 shallowRef 维护 `segmentValues`，并通过 `isInvalid` 完成校验。每个 `TimeFieldInput` 绑定 `date-field` 族共享的 `useDateField` 组合式做逐段键盘逻辑；`TimeFieldCompact` 遍历 `createContent` 生成的分段并逐个渲染输入，两侧承载 `leading`/`trailing` 插槽。焦点移动由 Root 的 `moveFocus` 处理，按键按 `dir` 映射物理方向，RTL 下 `ArrowLeft`/`ArrowRight` 互换。多数对标库是「纯文本框 + 选择面板」形态；「分段 spinbutton + 键盘增减/键入」模式与 Aria/styled 分离是差异点。
 
-| 能力                        | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :-------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离        |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 分段可编辑                  |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 受控 / 非受控               |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 12/24 小时制                |    ✅     |     ✅     |      ✅      |    —    |    ✅    |   —    |
-| 键盘增减 / 键入             |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 段导航 + RTL                |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 范围校验                    |    ✅     |     ✅     |      —       |    —    |    —     |   —    |
-| `isTimeUnavailable`         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 粒度（秒）                  |    ✅     |     ✅     |      ✅      |    —    |    ✅    |   —    |
-| 可配置步长                  |    ✅     |     ✅     |      ✅      |    —    |    —     |   —    |
-| 原生表单值                  |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| `leading` / `trailing` 插槽 |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 禁用 / 只读                 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 能力                        | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :-------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 分段可编辑                  |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 受控 / 非受控               |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 12/24 小时制                |   ✅   |     ✅     |      ✅      |    —    |    ✅    |   —    |
+| 键盘增减 / 键入             |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 段导航 + RTL                |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 范围校验                    |   ✅   |     ✅     |      —       |    —    |    —     |   —    |
+| `isTimeUnavailable`         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 粒度（秒）                  |   ✅   |     ✅     |      ✅      |    —    |    ✅    |   —    |
+| 可配置步长                  |   ✅   |     ✅     |      ✅      |    —    |    —     |   —    |
+| 原生表单值                  |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| `leading` / `trailing` 插槽 |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 禁用 / 只读                 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
 
 ### 使用注意
 

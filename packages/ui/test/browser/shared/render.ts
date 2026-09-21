@@ -12,7 +12,7 @@ export interface RenderOptions {
    * into the document as a `<style>` tag.
    *
    * Required for real color-contrast a11y checks: axe's `color-contrast` rule
-   * needs computed styles, and the theme CSS vars are what give SoybeanUI
+   * needs computed styles, and the theme CSS vars are what give Vean
    * components their actual colors. Without `withTheme`, components render with
    * no/defaults colors and color-contrast results are not meaningful.
    *

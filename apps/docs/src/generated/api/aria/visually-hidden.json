@@ -1,0 +1,186 @@
+{
+  "component": "visually-hidden",
+  "symbols": {
+    "VisuallyHidden": {
+      "props": {
+        "kind": "props",
+        "name": "VisuallyHiddenProps",
+        "type": "Interface VisuallyHiddenProps",
+        "resolvedType": "{ feature?: VisuallyHiddenFeature; asChild?: boolean; as?: AsTag | Component }",
+        "description": "Properties for the VisuallyHidden component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddenprops.props",
+        "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "feature",
+            "type": "VisuallyHiddenFeature",
+            "required": false,
+            "description": "Feature.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddenprops.members.feature",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": [
+              {
+                "name": "VisuallyHiddenFeature",
+                "kind": "typeAlias",
+                "type": "'focusable' | 'fully-hidden'",
+                "resolvedType": "'focusable' | 'fully-hidden'",
+                "description": "Type information for VisuallyHiddenFeature.",
+                "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddenfeature",
+                "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "asChild",
+            "type": "boolean",
+            "required": false,
+            "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddenprops.members.aschild",
+            "default": null,
+            "inheritedFrom": "asChild",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "as",
+            "type": "AsTag | Component",
+            "required": false,
+            "description": "The element or component this component should render as. Can be overwrite by `asChild`",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddenprops.members.as",
+            "default": "'div'",
+            "inheritedFrom": "as",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Component",
+                "kind": "typeAlias",
+                "type": "Component",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.43/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [
+                  "PropsOrInstance = any",
+                  "RawBindings = any",
+                  "D = any",
+                  "C extends ComputedOptions = ComputedOptions",
+                  "M extends MethodOptions = MethodOptions",
+                  "E extends EmitsOptions | Record<string, any[]> = {}",
+                  "S extends Record<string, any> = any"
+                ],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    },
+    "VisuallyHiddenInput": {
+      "props": {
+        "kind": "props",
+        "name": "VisuallyHiddenInputProps",
+        "type": "Interface VisuallyHiddenInputProps",
+        "resolvedType": "{ name: string; value: any; checked?: boolean; required?: boolean; disabled?: boolean; feature?: VisuallyHiddenFeature }",
+        "description": "Properties for the VisuallyHiddenInput component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.props",
+        "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "description": "Name.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.members.name",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "value",
+            "type": "any",
+            "required": true,
+            "description": "Value associated with the current item.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.members.value",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "checked",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the item is checked.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.members.checked",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "required",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the value is required.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.members.required",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "disabled",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the component is disabled.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.members.disabled",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "feature",
+            "type": "VisuallyHiddenFeature",
+            "required": false,
+            "description": "Feature.",
+            "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddeninputprops.members.feature",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+            "referencedTypes": [
+              {
+                "name": "VisuallyHiddenFeature",
+                "kind": "typeAlias",
+                "type": "'focusable' | 'fully-hidden'",
+                "resolvedType": "'focusable' | 'fully-hidden'",
+                "description": "Type information for VisuallyHiddenFeature.",
+                "descriptionKey": "api.generated.packages_aria_src_components_visually_hidden_types.visuallyhiddenfeature",
+                "sourcePath": "packages/aria/src/components/visually-hidden/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    }
+  }
+}

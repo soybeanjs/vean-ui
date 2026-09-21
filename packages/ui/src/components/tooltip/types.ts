@@ -1,10 +1,5 @@
-import type {
-  TooltipCompactEmits,
-  TooltipCompactProps,
-  TooltipCompactSlots,
-  TooltipUi
-} from '@soybeanjs/headless/tooltip';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { TooltipCompactEmits, TooltipCompactProps, TooltipCompactSlots, TooltipUi } from '@vean/aria/tooltip';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

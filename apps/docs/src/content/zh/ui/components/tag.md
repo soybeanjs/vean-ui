@@ -1,18 +1,18 @@
 ---
 head:
   title: 标签
-  description: 用于在内容行内对内容进行分类、筛选或标记的紧凑型标签。STag 组合 headless 层 Tag 基础组件（零样式）与 tagVariants 样式配方（8 种颜色 × 6 种尺寸 × 5 种变体 × 2 种形状），并暴露 leading/trailing/close 插槽。
+  description: 用于在内容行内对内容进行分类、筛选或标记的紧凑型标签。STag 组合 Aria 层 Tag 基础组件（零样式）与 tagVariants 样式配方（8 种颜色 × 6 种尺寸 × 5 种变体 × 2 种形状），并暴露 leading/trailing/close 插槽。
 ---
 
 # 标签
 
 ## 概述
 
-用于在内容行内对内容进行分类、筛选或标记的紧凑型标签。`STag` 组合 headless 层 `Tag` 基础组件（零样式）与 `tagVariants` 样式配方（8 种颜色 × 6 种尺寸 × 5 种变体 × 2 种形状），并暴露 `leading`/`trailing`/`close` 插槽。
+用于在内容行内对内容进行分类、筛选或标记的紧凑型标签。`STag` 组合 Aria 层 `Tag` 基础组件（零样式）与 `tagVariants` 样式配方（8 种颜色 × 6 种尺寸 × 5 种变体 × 2 种形状），并暴露 `leading`/`trailing`/`close` 插槽。
 
 适用于状态标签、分类胶囊、关键词或可筛选的元数据。需要叠加在宿主元素上作为数量/通知气泡的标记请优先使用 `badge`；需要承载更大上下文反馈的提示请优先使用 `alert`。
 
-`STag` 支持 `v-model:open` 受控显隐与带本地化可访问标签的 `closable` 关闭按钮。headless 层 `Tag` 基础组件通过插槽 props 暴露 `close` 动作，便于完全自定义组合。
+`STag` 支持 `v-model:open` 受控显隐与带本地化可访问标签的 `closable` 关闭按钮。Aria 层 `Tag` 基础组件通过插槽 props 暴露 `close` 动作，便于完全自定义组合。
 
 ## 用法
 
@@ -20,7 +20,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — headless 层 `Tag` 负责 `open`/`close` 状态；`STag` 注入 `tagVariants` 类并提供默认关闭控件
+- 🧩 Aria/样式分离 — Aria 层 `Tag` 负责 `open`/`close` 状态；`STag` 注入 `tagVariants` 类并提供默认关闭控件
 - 🎨 8 种颜色 — `ThemeColor` 值（`primary`/`destructive`/`success`/`warning`/`info`/`carbon`/`secondary`/`accent`）
 - 🖌️ 5 种变体 — `solid`/`pure`/`outline`/`soft`/`ghost`/`raw`，覆盖实心、描边与淡色等外观
 - 📐 6 种尺寸 — 来自 `ThemeSize` 的 xs–2xl
@@ -32,7 +32,7 @@ head:
 ## 组件家族
 
 - `STag`（样式层）— 入口包装组件；`tagVariants` 配方 + `leading`/`trailing`/`close` 插槽
-- `Tag`（headless）— 状态基础组件；通过 `useControllableState` 维护 `open`，并通过插槽 props 暴露 `close` 动作
+- `Tag`（Aria）— 状态基础组件；通过 `useControllableState` 维护 `open`，并通过插槽 props 暴露 `close` 动作
 
 ## 演示
 
@@ -46,19 +46,19 @@ head:
 
 ### 架构与对标差异
 
-headless 层 `Tag` 是最小的显隐/关闭状态基础组件，`STag` 将全部样式收敛到 `tagVariants` 配方，并提供默认关闭控件。这与 shadcn/ui 的 headless/样式分离一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供带 `closable`/`onClose` prop 的单一样式化标签。SoybeanUI 的关闭按钮是可聚焦的真实 `<button>`，其 `aria-label` 由 `tag.remove`（如 `Remove {label}`）本地化而来；多个对标库则依赖对屏幕阅读器不够健壮的纯 `×` 字形。
+Aria 层 `Tag` 是最小的显隐/关闭状态基础组件，`STag` 将全部样式收敛到 `tagVariants` 配方，并提供默认关闭控件。这与 shadcn/ui 的 headless/样式分离一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供带 `closable`/`onClose` prop 的单一样式化标签。VeanUI 的关闭按钮是可聚焦的真实 `<button>`，其 `aria-label` 由 `tag.remove`（如 `Remove {label}`）本地化而来；多个对标库则依赖对屏幕阅读器不够健壮的纯 `×` 字形。
 
-| 能力                       | SoybeanUI | shadcn/ui | Ant Design Tag | Element Plus Tag | Mantine Badge | Naive UI Tag |
-| :------------------------- | :-------: | :-------: | :------------: | :--------------: | :-----------: | :----------: |
-| Headless/样式分离          |    ✅     |    ✅     |       —        |        —         |       —       |      —       |
-| 颜色变体（8）              |    ✅     |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
-| 变体（solid/outline/soft） |    ✅     |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
-| 尺寸变体（6）              |    ✅     |     —     |       ✅       |        ✅        |      ✅       |      ✅      |
-| 形状（auto / 胶囊）        |    ✅     |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
-| 可关闭标签                 |    ✅     |     —     |       ✅       |        ✅        |       —       |      ✅      |
-| 本地化关闭 `aria-label`    |    ✅     |     —     |       —        |        ✅        |       —       |      —       |
-| 受控显隐（`open`）         |    ✅     |     —     |       —        |        —         |       —       |      —       |
-| RTL 就绪                   |    ✅     |    ✅     |       ✅       |        —         |       —       |      ✅      |
+| 能力                       | VeanUI | shadcn/ui | Ant Design Tag | Element Plus Tag | Mantine Badge | Naive UI Tag |
+| :------------------------- | :----: | :-------: | :------------: | :--------------: | :-----------: | :----------: |
+| Aria/样式分离              |   ✅   |    ✅     |       —        |        —         |       —       |      —       |
+| 颜色变体（8）              |   ✅   |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
+| 变体（solid/outline/soft） |   ✅   |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
+| 尺寸变体（6）              |   ✅   |     —     |       ✅       |        ✅        |      ✅       |      ✅      |
+| 形状（auto / 胶囊）        |   ✅   |    ✅     |       ✅       |        ✅        |      ✅       |      ✅      |
+| 可关闭标签                 |   ✅   |     —     |       ✅       |        ✅        |       —       |      ✅      |
+| 本地化关闭 `aria-label`    |   ✅   |     —     |       —        |        ✅        |       —       |      —       |
+| 受控显隐（`open`）         |   ✅   |     —     |       —        |        —         |       —       |      —       |
+| RTL 就绪                   |   ✅   |    ✅     |       ✅       |        —         |       —       |      ✅      |
 
 `—` = 不支持或采用不同交互模型。
 

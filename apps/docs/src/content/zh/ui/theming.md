@@ -1,14 +1,14 @@
 ---
 head:
   title: 主题
-  description: SoybeanUI 内置三层主题引擎：静态调色板层、语义 token 层与字面量层。通过 SConfigProvider 配置，或在你需要自己拿到 CSS 时直接驱动引擎。
+  description: VeanUI 内置三层主题引擎：静态调色板层、语义 token 层与字面量层。通过 SConfigProvider 配置，或在你需要自己拿到 CSS 时直接驱动引擎。
 ---
 
 # 主题
 
 ## 概览
 
-Soybean UI 提供了灵活的主题系统，允许你根据应用的设计需求自定义组件外观。你可以轻松调整颜色、圆角以及全局尺寸等设置。
+VeanUI 提供了灵活的主题系统，允许你根据应用的设计需求自定义组件外观。你可以轻松调整颜色、圆角以及全局尺寸等设置。
 
 打开[主题编辑器](/theme-editor)，在实时组件集合中调整每一项配置——那里使用的面板就是应用内嵌给用户使用的 `SThemeCustomizer`。
 
@@ -34,7 +34,7 @@ token 的消费形态是**「通道 + 函数包裹」**：`hsl(var(--primary) / 
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 </script>
 
 <template>
@@ -78,7 +78,7 @@ import { SConfigProvider } from '@soybeanjs/ui';
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider } from '@soybeanjs/ui';
+import { SConfigProvider } from '@vean/ui';
 </script>
 
 <template>
@@ -118,14 +118,14 @@ import { SConfigProvider } from '@soybeanjs/ui';
 
 键就是 **token 名**（`background`、`card-foreground`、`sidebar-ring` …）——与工具类同名，kebab 写法。取值有五种形态（`TokenOverride`）：`palette.level` 引用（`stone.950`）、简单键（`white` / `black`）、CSS Color 4 语法的 `hsl(...)` / `oklch(...)`（可带 `/ <alpha>`），以及 **token 引用** `token.${name}`（如 `ring: 'token.primary'`——解析时拷贝目标 token 的值，颜色覆盖先于引用落地）。颜色分量一律带 `%`——`hsl(238.732 83.529% 66.667%)`、`oklch(60% 0.2 250)`——不用无单位写法（必须与调色板层的通道保持同一种形状）。裸通道三元组（`0 0% 100%`）与 hex / `rgb()` 不在类型内：前者格式有歧义，后者请先用 `colord(...).toHslString()` / `toOklchString()` 转换。
 
-**完整色会被编码成本主题格式的通道**（token 的消费形态是 `hsl(var(--soybean-x) / <alpha>)`，直接塞完整色会让每条声明失效）：写 `border: 'oklch(100% 0 0 / 0.1)'` 时通道进 `--border`、`0.1` 进 `--border-alpha`。没有伴生变量的 token 里写的 alpha 会被丢弃（透明度请用工具类的 `/N` 修饰符）。既不是合法引用、也无法解析的值（`transparent` / `inherit` / 未知色板 / **自引用 `token.primary` 写在 `primary` 上** / `token.ghost` / 成环的 `token.*` 链）会被**忽略**，该 token 保留名义值；**不是 token 的键同样被忽略**——陈旧或手写的键既进不了样式表，也不会把样式表弄坏。
+**完整色会被编码成本主题格式的通道**（token 的消费形态是 `hsl(var(--vean-x) / <alpha>)`，直接塞完整色会让每条声明失效）：写 `border: 'oklch(100% 0 0 / 0.1)'` 时通道进 `--border`、`0.1` 进 `--border-alpha`。没有伴生变量的 token 里写的 alpha 会被丢弃（透明度请用工具类的 `/N` 修饰符）。既不是合法引用、也无法解析的值（`transparent` / `inherit` / 未知色板 / **自引用 `token.primary` 写在 `primary` 上** / `token.ghost` / 成环的 `token.*` 链）会被**忽略**，该 token 保留名义值；**不是 token 的键同样被忽略**——陈旧或手写的键既进不了样式表，也不会把样式表弄坏。
 
 **注意事项：**
 
 - **亮暗两侧彼此独立。** 覆盖只作用于你写它的那个模式：`dark` 保留自己声明的档位，不会从 `light` 推导。两侧都要改就两侧都写。
 - **覆盖值原样生效。** 引擎不测量、不修正、不报告它——引擎没有护栏，没有任何东西会替你走档。
 - **覆盖是逐 token 的，不是逐角色的。** 想整体换品牌色，请改 `primary`（换色板），而不是把引用它的每个 token 都覆盖一遍。
-- **引擎是纯函数。** 这里没有任何 DOM 操作：provider 负责解析映射表、发射别名块，并改写它自己那个 `<style id="soybean-theme">`。
+- **引擎是纯函数。** 这里没有任何 DOM 操作：provider 负责解析映射表、发射别名块，并改写它自己那个 `<style id="vean-theme">`。
 
 ## 已保存的 preset（`theme.preset`）
 
@@ -153,8 +153,8 @@ preset 是一套可被用户重新应用的具名颜色集——主题定制面�
 常规路径是 provider——它独占那个 `<style>` 元素，负责信封持久化与跨标签页同步。当你需要自己拿到 CSS（SSR 渲染、静态构建、截图服务）时，底下这条流水线是公开的：
 
 ```ts
-import { emitThemeCss, generatePaletteCss, resolveThemeMap, resolveTokenColor } from '@soybeanjs/theme';
-import { buildThemeCss } from '@soybeanjs/ui';
+import { emitThemeCss, generatePaletteCss, resolveThemeMap, resolveTokenColor } from '@vean/theme';
+import { buildThemeCss } from '@vean/ui';
 
 // 一次调用完成「解析 + 发射」（SConfigProvider 内联的就是它）
 const css = buildThemeCss({ base: 'gray', primary: 'violet' });
@@ -171,7 +171,7 @@ resolveThemeColors({}, 'light'); // 某个模式的全部 token
 
 `map` 是唯一的中间表示：`light` / `dark` 各持一份"每 token 一条 `palette.level` 引用"的映射，`Object.keys(map.light)` 就是契约的 token 数量。
 
-配合 **[UnoCSS](/overview/installation)** 时，`presetUi()`（主题写在 `sbean.json` 里时用 `presetSbean()`）把调色板层与默认别名块作为 preflight 一起下发，token 无需任何运行时代码即可生效；`@soybeanjs/ui/styles.css` 是等价的预构建样式表。适配器把每个 token 映射成工具类（`bg-card`、`text-card-foreground`、`border-input`、`bg-chart-1`），把色板映射成 `bg-indigo-500` 这类档位，把角色映射成 `bg-primary-500` / `text-destructive-100` 这类色阶。
+配合 **[UnoCSS](/overview/installation)** 时，`presetUi()`（主题写在 `vean.json` 里时用 `presetVean()`）把调色板层与默认别名块作为 preflight 一起下发，token 无需任何运行时代码即可生效；`@vean/ui/styles.css` 是等价的预构建样式表。适配器把每个 token 映射成工具类（`bg-card`、`text-card-foreground`、`border-input`、`bg-chart-1`），把色板映射成 `bg-indigo-500` 这类档位，把角色映射成 `bg-primary-500` / `text-destructive-100` 这类色阶。
 
 ### 颜色
 
@@ -189,7 +189,7 @@ resolveThemeColors({}, 'light'); // 某个模式的全部 token
 
 ```vue
 <script setup lang="ts">
-import { SAccordion } from '@soybeanjs/ui';
+import { SAccordion } from '@vean/ui';
 
 const items = [
   { title: '标题 1', value: 'item-1', description: '内容 1' },

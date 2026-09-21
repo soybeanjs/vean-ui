@@ -1,6 +1,6 @@
 # Nuxt UI 主题系统与 Theme Studio 实现分析
 
-> 定位：调研 Nuxt UI（v4，仓库 `/Users/soybean/Web/Projects/OpenSource/nuxt-ui`）主题系统的实现原理，含主题编辑器与分享链接机制，并与 SoybeanUI 主题方案对比，供主题相关改动的方案选型与借鉴使用。
+> 定位：调研 Nuxt UI（v4，仓库 `/Users/soybean/Web/Projects/OpenSource/nuxt-ui`）主题系统的实现原理，含主题编辑器与分享链接机制，并与 Vean 主题方案对比，供主题相关改动的方案选型与借鉴使用。
 > 状态：📄 调研笔记（基于源码精读，非实施方案）。
 > 基线：2026-09-09 · nuxt-ui 仓库本地副本
 
@@ -147,29 +147,29 @@ theme.setStyleUi(styleComponents(style.value)); // 默认变体 → 组件 defau
 - **跨标签页**：storage 事件监听即时采用。
 - **次序约束**：colors 在 hydration 前落地；icons 必须推迟到 hydration 后（icon 名编译进元素 class，Vue 对 class 不匹配只警告不修补）。
 
-## 4. 与 SoybeanUI 对比
+## 4. 与 Vean 对比
 
-| 维度          | Nuxt UI                                                                           | SoybeanUI                                                            |
-| :------------ | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------- |
-| 包结构        | 单包，主题内嵌 Nuxt module                                                        | 独立 `@soybeanjs/theme` 引擎 + `ui-uno` 适配 + `ui` 运行时，三层解耦 |
-| 色阶来源      | 复用 Tailwind v4 `@theme` token                                                   | 自研 `generatePalette` 从单色值数学推导十级                          |
-| dark 生成     | 手写静态 CSS 两套 + 语义指针 500→400                                              | 算法从 light token 确定性推导，dark 层 diff 最小化                   |
-| CSS 变量层级  | 三层：`--ui-color-*`（原始）→ `--ui-*`（alias）→ `--ui-bg/text`（静态语义）       | 两层：`--background` 等语义 token + `--primary-500` 等 palette 层    |
-| 变量注入时机  | 动态部分 `useHead` SSR 注入；语义部分构建期静态产出                               | 全量运行时由 `createTheme` 生成注入（styleTarget 可配）              |
-| 组件主题表达  | plain object + `tv()` 运行时消费，compoundVariants 按 color 展开                  | `cv()`/`scv()` variants，颜色走语义 token class                      |
-| 定制入口      | `app.config.ts` + `ui`/`class` prop + `theme.unstyled`/`defaultVariants`/`prefix` | `createTheme` options + ConfigProvider props + overrides             |
-| 尺寸/圆角     | 每组件 size variants 硬编码                                                       | 全局 `--size`/`--radius` 变量，运行时可调                            |
-| dark selector | 固定 `.dark` class（color-mode 集成）                                             | 可配置 `class` / `media`（`prefers-color-scheme`）                   |
-| 框架耦合      | 深度绑定 Nuxt/Tailwind（另有 Vue plugin 版）                                      | 框架无关                                                             |
+| 维度          | Nuxt UI                                                                           | Vean                                                              |
+| :------------ | :-------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| 包结构        | 单包，主题内嵌 Nuxt module                                                        | 独立 `@vean/theme` 引擎 + `unocss` 适配 + `ui` 运行时，三层解耦   |
+| 色阶来源      | 复用 Tailwind v4 `@theme` token                                                   | 自研 `generatePalette` 从单色值数学推导十级                       |
+| dark 生成     | 手写静态 CSS 两套 + 语义指针 500→400                                              | 算法从 light token 确定性推导，dark 层 diff 最小化                |
+| CSS 变量层级  | 三层：`--ui-color-*`（原始）→ `--ui-*`（alias）→ `--ui-bg/text`（静态语义）       | 两层：`--background` 等语义 token + `--primary-500` 等 palette 层 |
+| 变量注入时机  | 动态部分 `useHead` SSR 注入；语义部分构建期静态产出                               | 全量运行时由 `createTheme` 生成注入（styleTarget 可配）           |
+| 组件主题表达  | plain object + `tv()` 运行时消费，compoundVariants 按 color 展开                  | `cv()`/`scv()` variants，颜色走语义 token class                   |
+| 定制入口      | `app.config.ts` + `ui`/`class` prop + `theme.unstyled`/`defaultVariants`/`prefix` | `createTheme` options + ConfigProvider props + overrides          |
+| 尺寸/圆角     | 每组件 size variants 硬编码                                                       | 全局 `--size`/`--radius` 变量，运行时可调                         |
+| dark selector | 固定 `.dark` class（color-mode 集成）                                             | 可配置 `class` / `media`（`prefers-color-scheme`）                |
+| 框架耦合      | 深度绑定 Nuxt/Tailwind（另有 Vue plugin 版）                                      | 框架无关                                                          |
 
 哲学差异：
 
 - **Nuxt UI 把 Tailwind v4 当主题引擎**：token、色阶、CSS 产出全依托 `@theme` 与构建期扫描，自己只做 alias 映射、语义层静态 CSS、运行时指针切换。零冗余、生态即官方；代价是深度绑定 Tailwind/Nuxt，dark 语义层手工维护两套 CSS。
-- **SoybeanUI 自研主题引擎**：确定性推导（dark 从 light 自动算出、diff 最小化）、`--size`/`--radius` 全局变量化、dark selector 可插拔、theme 包无 DOM 依赖可 SSR。UnoCSS 只是 class 引擎，token 单一权威在 theme 包。
+- **Vean 自研主题引擎**：确定性推导（dark 从 light 自动算出、diff 最小化）、`--size`/`--radius` 全局变量化、dark selector 可插拔、theme 包无 DOM 依赖可 SSR。UnoCSS 只是 class 引擎，token 单一权威在 theme 包。
 
 ## 5. 可借鉴点
 
-面向 SoybeanUI 的潜在演进（未排期）：
+面向 Vean 的潜在演进（未排期）：
 
 1. **主题编辑器 / 分享链接**：`ThemeDoc` 稀疏文档模式与 `resolveTheme` 的稀疏 override 输入天然契合——一个 schema 可同时作为导出物、分享链接载荷、预设定义。传输层可直接复用 `CompressionStream('deflate-raw')` + base64url + preset 短路方案（现代浏览器零依赖）。
 2. **`unstyled` 模式**：清空默认 class 保留 slots 结构（module 配置级），无样式定制场景友好。

@@ -6,7 +6,7 @@ import SConfigProvider from '@/components/config-provider/config-provider.vue';
 import SPageTabs from '@/components/page-tabs/page-tabs.vue';
 import { getA11yViolations } from '../../shared/a11y';
 
-const TAB_ITEM = '[data-soybean-page-tabs-item]';
+const TAB_ITEM = '[data-vean-page-tabs-item]';
 
 const createItems = () => [
   { value: 'home', label: 'Home', pinned: true, hidePinnedIcon: true },
@@ -28,8 +28,8 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-page-tabs-root]').exists()).toBe(true);
-      expect(wrapper.findAll('[data-soybean-page-tabs-item]')).toHaveLength(3);
+      expect(wrapper.find('[data-vean-page-tabs-root]').exists()).toBe(true);
+      expect(wrapper.findAll('[data-vean-page-tabs-item]')).toHaveLength(3);
 
       wrapper.unmount();
     });
@@ -53,7 +53,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-page-tabs-close]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-page-tabs-close]')).toHaveLength(2);
 
       wrapper.unmount();
     });
@@ -64,7 +64,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-page-tabs-pin]')).toHaveLength(1);
+      expect(wrapper.findAll('[data-vean-page-tabs-pin]')).toHaveLength(1);
 
       wrapper.unmount();
     });
@@ -75,7 +75,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-page-tabs-item]').find('svg').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-page-tabs-item]').find('svg').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -86,7 +86,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      const item = wrapper.findAll('[data-soybean-page-tabs-item]')[0];
+      const item = wrapper.findAll('[data-vean-page-tabs-item]')[0];
 
       expect(item.find('div[class*="h-0.5"]').exists()).toBe(true);
 
@@ -112,8 +112,8 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.findAll('[data-soybean-page-tabs-item]')[0].attributes('data-selected')).toBe('true');
-      expect(wrapper.findAll('[data-soybean-page-tabs-item]')[1].attributes('data-selected')).toBe('false');
+      expect(wrapper.findAll('[data-vean-page-tabs-item]')[0].attributes('data-selected')).toBe('true');
+      expect(wrapper.findAll('[data-vean-page-tabs-item]')[1].attributes('data-selected')).toBe('false');
 
       wrapper.unmount();
     });
@@ -124,7 +124,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')![0][0]).toBe('profile');
@@ -141,9 +141,9 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('click');
 
-      const items = wrapper.findAll('[data-soybean-page-tabs-item]');
+      const items = wrapper.findAll('[data-vean-page-tabs-item]');
 
       expect(items[0].attributes('data-selected')).toBe('false');
       expect(items[1].attributes('data-selected')).toBe('true');
@@ -157,7 +157,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-item]')[0].trigger('click');
 
       expect(wrapper.emitted('click')).toBeFalsy();
 
@@ -170,7 +170,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('mousedown', { button: 1 });
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('mousedown', { button: 1 });
 
       expect(wrapper.emitted('close')).toBeTruthy();
       expect(wrapper.emitted('close')![0][0]).toMatchObject({ value: 'profile', label: 'Profile' });
@@ -184,7 +184,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('mousedown', { button: 1 });
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('mousedown', { button: 1 });
 
       expect(wrapper.emitted('close')).toBeFalsy();
 
@@ -199,7 +199,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('keydown', { key: 'Enter' });
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('keydown', { key: 'Enter' });
 
       expect(wrapper.emitted('update:modelValue')![0][0]).toBe('profile');
 
@@ -212,7 +212,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('keydown', { key: 'Backspace' });
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('keydown', { key: 'Backspace' });
 
       expect(wrapper.emitted('close')).toBeTruthy();
       expect(wrapper.emitted('close')![0][0]).toMatchObject({ value: 'profile' });
@@ -228,7 +228,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-close]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-close]')[0].trigger('click');
 
       expect(wrapper.emitted('close')).toBeTruthy();
       expect(wrapper.emitted('close')![0][0]).toMatchObject({ value: 'profile', label: 'Profile' });
@@ -242,7 +242,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[0].trigger('mousedown', { button: 1 });
+      await wrapper.findAll('[data-vean-page-tabs-item]')[0].trigger('mousedown', { button: 1 });
 
       expect(wrapper.emitted('close')).toBeFalsy();
 
@@ -255,10 +255,10 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-close]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-close]')[0].trigger('click');
 
       expect(wrapper.emitted('close')).toBeFalsy();
-      expect(wrapper.findAll('[data-soybean-page-tabs-item]')).toHaveLength(3);
+      expect(wrapper.findAll('[data-vean-page-tabs-item]')).toHaveLength(3);
 
       wrapper.unmount();
     });
@@ -269,10 +269,10 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-close]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-close]')[0].trigger('click');
 
       expect(wrapper.emitted('close')).toBeTruthy();
-      expect(wrapper.findAll('[data-soybean-page-tabs-item]')).toHaveLength(2);
+      expect(wrapper.findAll('[data-vean-page-tabs-item]')).toHaveLength(2);
 
       wrapper.unmount();
     });
@@ -284,7 +284,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-close]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-page-tabs-close]')[0].trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')!.at(-1)![0]).toBe('settings');
@@ -300,7 +300,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-page-tabs-pin]').trigger('click');
+      await wrapper.find('[data-vean-page-tabs-pin]').trigger('click');
 
       expect(wrapper.emitted('pin')).toBeTruthy();
       expect(wrapper.emitted('pin')![0][0]).toMatchObject({ value: 'home', label: 'Home' });
@@ -379,7 +379,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      const tabs = wrapper.findAll('[data-soybean-page-tabs-item]');
+      const tabs = wrapper.findAll('[data-vean-page-tabs-item]');
 
       expect(tabs[0].attributes('data-draggable')).toBe('false');
       expect(tabs[1].attributes('data-draggable')).toBe('true');
@@ -400,7 +400,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('pointerenter');
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('pointerenter');
 
       expect(wrapper.emitted('contextmenu')).toBeTruthy();
       expect(wrapper.emitted('contextmenu')![0][0]).toMatchObject({
@@ -418,7 +418,7 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-page-tabs-item]')[1].trigger('pointerenter');
+      await wrapper.findAll('[data-vean-page-tabs-item]')[1].trigger('pointerenter');
 
       expect(wrapper.emitted('contextmenu')).toBeTruthy();
 
@@ -433,8 +433,8 @@ describe('SPageTabs', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-page-tabs-close]').attributes('aria-label')).toBe('Close tab');
-      expect(wrapper.find('[data-soybean-page-tabs-pin]').attributes('aria-label')).toBe('Unpin tab');
+      expect(wrapper.find('[data-vean-page-tabs-close]').attributes('aria-label')).toBe('Close tab');
+      expect(wrapper.find('[data-vean-page-tabs-pin]').attributes('aria-label')).toBe('Unpin tab');
 
       wrapper.unmount();
     });
@@ -453,8 +453,8 @@ describe('SPageTabs', () => {
         { attachTo: document.body }
       );
 
-      expect(wrapper.find('[data-soybean-page-tabs-close]').attributes('aria-label')).toBe('关闭标签页');
-      expect(wrapper.find('[data-soybean-page-tabs-pin]').attributes('aria-label')).toBe('取消固定标签页');
+      expect(wrapper.find('[data-vean-page-tabs-close]').attributes('aria-label')).toBe('关闭标签页');
+      expect(wrapper.find('[data-vean-page-tabs-pin]').attributes('aria-label')).toBe('取消固定标签页');
 
       wrapper.unmount();
     });

@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="T extends TreeItemData">
 import { onBeforeUnmount, shallowRef } from 'vue';
-import { collapseMotion } from '@soybeanjs/headless/shared';
-import type { FlattenedItem, TreeItemData, TreeMotionType } from '@soybeanjs/headless/tree';
+import { collapseMotion } from '@vean/aria/shared';
+import type { FlattenedItem, TreeItemData, TreeMotionType } from '@vean/aria/tree';
 
 defineOptions({
   name: 'STreeMotionBlock'
@@ -57,9 +57,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <li data-soybean-tree-motion>
+  <li data-vean-tree-motion>
     <Transition v-bind="motion" :appear="type === 'show'" @after-enter="emit('end')" @after-leave="emit('end')">
-      <ul v-if="visible" class="m-0 list-none p-0" data-soybean-tree-motion-list>
+      <ul v-if="visible" class="m-0 list-none p-0" data-vean-tree-motion-list>
         <template v-for="blockItem in items" :key="blockItem.value">
           <slot name="item" :item="blockItem" />
         </template>

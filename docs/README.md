@@ -17,12 +17,12 @@ docs/
 ├── space-control-scale.md  # 维度刻度契约：spacing / radius 的取值与实测依据 + 什么不该成为刻度族
 ├── figma.md             # Figma 设计资源：DTCG token + 组件取值词汇表的生成、导入步骤与已知边界
 ├── roadmap.md           # 总路线图 + 组件评估明细（核心组件 / 核心内领域 / 未来提案 / 优化）
-├── ui-ai-roadmap.md     # AI/chat 组件路线图（核心 headless/ui 内实现）
-├── ui-shell-roadmap.md  # 中后台壳组件路线图（核心 headless/ui 内实现）
+├── ui-ai-roadmap.md     # AI/chat 组件路线图（核心 aria/ui 内实现）
+├── ui-shell-roadmap.md  # 中后台壳组件路线图（核心 aria/ui 内实现）
 ├── adr/                 # 架构决策记录（ADR）
 │   ├── README.md        # ADR 索引与模板
 │   └── NNNN-*.md
-├── ecosystem/           # 未来提案（editor / table / form / ui-pro / sbean / 商业化）
+├── ecosystem/           # 未来提案（editor / table / form / ui-pro / cli / 商业化）
 │   └── README.md        # 提案索引（主入口；包形态待立项评估）
 ├── research/            # 市场/竞品调研报告
 │   └── README.md        # 调研报告索引
@@ -39,9 +39,9 @@ docs/
 | **维度刻度**   | [space-control-scale.md](./space-control-scale.md)                                     | ✅ 与代码同步：spacing / radius 两条刻度族的取值、与 UnoCSS 的关系、实测覆盖率，以及"什么不该成为刻度族"（字面量全表见 theme.md §3.11） | 主题维护者、组件作者         |
 | **设计交付**   | [figma.md](./figma.md)                                                                 | ✅ 已实施：`sui gen figma` 的产物清单 / 分组结构 / Figma 变量导入步骤 / 投影决定与已知边界（token 契约见 theme.md）                     | 设计维护者、前端维护者       |
 | **路线与规划** | [roadmap.md](./roadmap.md)                                                             | 总路线图 + 组件评估明细                                                                                                                 | 规划者、贡献者               |
-| **核心内领域** | [ui-ai-roadmap.md](./ui-ai-roadmap.md) · [ui-shell-roadmap.md](./ui-shell-roadmap.md)  | AI/chat 与中后台壳组件的回迁规划（headless 准入）                                                                                       | 组件开发者                   |
+| **核心内领域** | [ui-ai-roadmap.md](./ui-ai-roadmap.md) · [ui-shell-roadmap.md](./ui-shell-roadmap.md)  | AI/chat 与中后台壳组件的回迁规划（aria 准入）                                                                                       | 组件开发者                   |
 | **决策记录**   | [adr/](./adr/README.md)                                                                | 架构决策（含已 superseded 的外围包分层 ADR）                                                                                            | 架构师                       |
-| **未来提案**   | [ecosystem/](./ecosystem/README.md)（editor / table / form / ui-pro / sbean / 商业化） | 方向调研；落地形态（核心内 / 独立包 / sbean 配方）立项时评估                                                                            | 规划者、生态开发者           |
+| **未来提案**   | [ecosystem/](./ecosystem/README.md)（editor / table / form / ui-pro / cli / 商业化） | 方向调研；落地形态（核心内 / 独立包 / vean 配方）立项时评估                                                                            | 规划者、生态开发者           |
 | **调研报告**   | [research/](./research/README.md)                                                      | 市场/竞品调研原始结论                                                                                                                   | 规划者                       |
 | **一次性报告** | [info/](./info/README.md)                                                              | 周期审计、同步/适配报告                                                                                                                 | 维护者                       |
 
@@ -51,12 +51,12 @@ docs/
 roadmap.md（组件路线图 + 评估明细）◄──► optimize.md（工程质量评估）
                   ▲
                   │
-    ui-ai-roadmap.md / ui-shell-roadmap.md（核心内领域，遵循 headless 准入）
-                  │
-                  ▼
-    ecosystem/（未来提案）◄── research/（调研依据）
-                  │
-                  └── adr/（决策固化；过期决策标记 superseded）
+    ui-ai-roadmap.md / ui-shell-roadmap.md（核心内领域，遵循 aria 准入）
+                        │
+                        ▼
+        ecosystem/（未来提案）◄── research/（调研依据）
+                        │
+                        └── adr/（决策固化；过期决策标记 superseded）
 ```
 
 > 依赖方向：**调研/评估（源）→ 方案/路线（规划）→ 决策（固化）**。任务拆解与状态跟踪不设常驻文档，按需要使用临时计划 / issue；已完成或已取消的历史规划不在 docs 保留（可经 git 历史追溯）。新增文档时按此链路落位，避免「多份手工副本」漂移（对应 optimize.md F10）。
@@ -67,7 +67,7 @@ roadmap.md（组件路线图 + 评估明细）◄──► optimize.md（工程�
 - **「AI 对话组件怎么做」** → [ui-ai-roadmap.md](./ui-ai-roadmap.md)
 - **「后台壳 / 多模式布局 / 菜单 / 多页签怎么做」** → [ui-shell-roadmap.md](./ui-shell-roadmap.md)
 - **「v0.50.0 升级怎么迁移 / 旧 API 对照」** → 文档站升级指南（`apps/docs/src/content/{en,zh}/ui/migration/v0.50.0.md`，入口在 `/releases` 页）
-- **「这个组件该不该做 headless / 哪些家族已判定合规」** → skill [layers.md Headless admission](../.agents/skills/soybean-ui-develop/layers.md#headless-admission)（含违规形态与已合规对照表）
+- **「这个组件该不该做 aria / 哪些家族已判定合规」** → skill [layers.md Aria admission](../.agents/skills/vean-ui-develop/layers.md#aria-admission)（含违规形态与已合规对照表）
 - **「为什么没有外围包了」** → [adr/0001](./adr/0001-peripheral-package-layering.md)（superseded 说明）+ 两份领域路线图
 - **「editor/table/form 等提案现状」** → [ecosystem/](./ecosystem/README.md)
 - **「竞品/市场依据」** → [research/](./research/README.md)

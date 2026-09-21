@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { DialogProvider, provideDialogUi } from '@soybeanjs/headless/dialog';
+import { DialogProvider, provideDialogUi } from '@vean/aria/dialog';
 import { dialogVariants } from '@/styles/dialog';
 
 defineOptions({

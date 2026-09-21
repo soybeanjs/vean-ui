@@ -32,7 +32,7 @@ export const diff = new Command()
     const config = await getConfig(options.cwd);
 
     if (!config) {
-      console.error('No sbean.json found. Run "sbean init" first.');
+      console.error('No vean.json found. Run "vean init" first.');
       process.exit(1);
     }
 
@@ -44,7 +44,7 @@ export const diff = new Command()
         cwd: config.resolvedPaths.cwd
       });
     } catch {
-      console.error('No registry.json found. Run "sbean build" first.');
+      console.error('No registry.json found. Run "vean build" first.');
       process.exit(1);
     }
 

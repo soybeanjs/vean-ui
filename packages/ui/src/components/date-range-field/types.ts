@@ -3,8 +3,8 @@ import type {
   DateRangeFieldCompactEmits,
   DateRangeFieldCompactSlots,
   DateRangeFieldUi
-} from '@soybeanjs/headless/date-range-field';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/date-range-field';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

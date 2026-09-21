@@ -28,8 +28,8 @@
                 "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.classvalue",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -78,8 +78,8 @@
                 "type": "{ root: ClassValue; clear: ClassValue; control: ClassValue; counter: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Textarea component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaui",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaui",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -120,7 +120,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.textarearef",
             "default": null,
             "inheritedFrom": "textareaRef",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLTextAreaElement",
@@ -145,7 +145,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.clearable",
             "default": "false",
             "inheritedFrom": "clearable",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -156,7 +156,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.showcounter",
             "default": "false",
             "inheritedFrom": "showCounter",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -167,7 +167,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.controlprops",
             "default": null,
             "inheritedFrom": "controlProps",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaControlProps",
@@ -175,8 +175,8 @@
                 "type": "TextareaControlProps",
                 "resolvedType": null,
                 "description": "Properties for the TextareaControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacontrolprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacontrolprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -192,7 +192,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.clearprops",
             "default": null,
             "inheritedFrom": "clearProps",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaClearProps",
@@ -200,8 +200,8 @@
                 "type": "TextareaClearProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the TextareaClear component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -210,10 +210,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -221,10 +221,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -232,10 +232,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -243,10 +243,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -262,7 +262,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.counterprops",
             "default": null,
             "inheritedFrom": "counterProps",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCounterProps",
@@ -270,8 +270,8 @@
                 "type": "TextareaCounterProps",
                 "resolvedType": null,
                 "description": "Properties for the TextareaCounter component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacounterprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacounterprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -287,7 +287,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -298,7 +298,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -309,7 +309,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.autosize",
             "default": null,
             "inheritedFrom": "autosize",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaAutosizeOptions",
@@ -317,8 +317,8 @@
                 "type": "TextareaAutosizeOptions",
                 "resolvedType": "{ minRows?: number; maxRows?: number }",
                 "description": "Type information for TextareaAutosizeOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -327,10 +327,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The minimum number of rows to display",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions.members.minrows",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions.members.minrows",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                    "sourcePath": "packages/aria/src/components/textarea/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -338,10 +338,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The maximum number of rows to display",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions.members.maxrows",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions.members.maxrows",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                    "sourcePath": "packages/aria/src/components/textarea/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -357,7 +357,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -368,7 +368,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.autofocus",
             "default": null,
             "inheritedFrom": "autofocus",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -379,7 +379,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -390,7 +390,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxlength",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -401,7 +401,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.minlength",
             "default": null,
             "inheritedFrom": "minlength",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -412,7 +412,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -423,7 +423,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -434,7 +434,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -445,7 +445,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -470,7 +470,7 @@
             "required": true,
             "description": "Emitted when the model value changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -480,7 +480,7 @@
             "required": true,
             "description": "Emitted when the clear button is clicked.",
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaemits.callables.clear",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -502,11 +502,11 @@
           {
             "name": "TextareaCompactEmits",
             "kind": "typeAlias",
-            "type": "import(\"@soybeanjs/headless\").TextareaRootEmits & import(\"@soybeanjs/headless\").TextareaClearEmits",
+            "type": "import(\"@vean/aria\").TextareaRootEmits & import(\"@vean/aria\").TextareaClearEmits",
             "resolvedType": "{ \"update:modelValue\": [value: string]; clear: [event: PointerEvent] }",
             "description": "Events for the TextareaCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactemits",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactemits",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -517,8 +517,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "referencedTypes": []
               },
               {
@@ -527,8 +527,8 @@
                 "parameters": "event: PointerEvent",
                 "required": true,
                 "description": "Emitted when the clear button is clicked.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactemits.callables.clear",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactemits.callables.clear",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -553,7 +553,7 @@
             "required": false,
             "description": "Custom content for the clear slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaslots.callables.clear",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCompactSlotProps",
@@ -561,8 +561,8 @@
                 "type": "TextareaCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TextareaCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -577,7 +577,7 @@
             "required": false,
             "description": "Custom content for the counter slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaslots.callables.counter",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCompactSlotProps",
@@ -585,8 +585,8 @@
                 "type": "TextareaCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TextareaCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -601,7 +601,7 @@
             "required": false,
             "description": "Custom content for the footer slot.",
             "descriptionKey": "api.generated.packages_ui_src_components_textarea_types.textareaslots.callables.footer",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCompactSlotProps",
@@ -609,8 +609,8 @@
                 "type": "TextareaCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TextareaCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -623,11 +623,11 @@
           {
             "name": "TextareaCompactSlots",
             "kind": "typeAlias",
-            "type": "{ clear?: (props: import(\"@soybeanjs/headless\").TextareaCompactSlotProps) => any; counter?: (props: import(\"@soybeanjs/headless\").TextareaCompactSlotProps) => any; footer?: (props: import(\"@soybeanjs/headless\").TextareaCompactSlotProps) => any; }",
+            "type": "{ clear?: (props: import(\"@vean/aria\").TextareaCompactSlotProps) => any; counter?: (props: import(\"@vean/aria\").TextareaCompactSlotProps) => any; footer?: (props: import(\"@vean/aria\").TextareaCompactSlotProps) => any; }",
             "resolvedType": "{ clear?: ((props: TextareaCompactSlotProps) => any); counter?: ((props: TextareaCompactSlotProps) => any); footer?: ((props: TextareaCompactSlotProps) => any) }",
             "description": "Slots for the TextareaCompact component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -638,8 +638,8 @@
                 "parameters": "((props: TextareaCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the clear slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.callables.clear",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.callables.clear",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "referencedTypes": []
               },
               {
@@ -648,8 +648,8 @@
                 "parameters": "((props: TextareaCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the counter slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.callables.counter",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.callables.counter",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "referencedTypes": []
               },
               {
@@ -658,8 +658,8 @@
                 "parameters": "((props: TextareaCompactSlotProps) => any) | undefined",
                 "required": false,
                 "description": "Custom content for the footer slot.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.callables.footer",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.callables.footer",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -674,8 +674,8 @@
         "type": "Interface TextareaClearProps",
         "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the TextareaClear component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.props",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.props",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -683,10 +683,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -694,8 +694,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -708,10 +708,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -719,10 +719,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -730,10 +730,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -768,8 +768,8 @@
         "type": "TypeAlias TextareaClearEmits",
         "resolvedType": "{ clear: [event: PointerEvent] }",
         "description": "Events for the TextareaClear component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearemits.emits",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearemits.emits",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -779,8 +779,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when the clear button is clicked.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearemits.callables.clear",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearemits.callables.clear",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -808,8 +808,8 @@
         "type": "Interface TextareaCompactProps",
         "resolvedType": "{ textareaRef?: ((el: HTMLTextAreaElement) => void); clearable?: boolean; showCounter?: boolean; controlProps?: TextareaControlProps; clearProps?: TextareaClearProps; counterProps?: TextareaCounterProps; defaultValue?: string; modelValue?: string; autosize?: boolean | TextareaAutosizeOptions; id?: string; autofocus?: boolean; disabled?: boolean; maxlength?: number; minlength?: number; placeholder?: string; readonly?: boolean; name?: string; required?: boolean }",
         "description": "Properties for the TextareaCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.props",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.props",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -817,10 +817,10 @@
             "type": "((el: HTMLTextAreaElement) => void)",
             "required": false,
             "description": "The function to set the textarea element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.textarearef",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.textarearef",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLTextAreaElement",
@@ -842,10 +842,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to show the clear trigger.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.clearable",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.clearable",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -853,10 +853,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether to show the counter.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.showcounter",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.showcounter",
             "default": "false",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -864,10 +864,10 @@
             "type": "TextareaControlProps",
             "required": false,
             "description": "Properties forwarded to the control element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.controlprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.controlprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaControlProps",
@@ -875,8 +875,8 @@
                 "type": "TextareaControlProps",
                 "resolvedType": null,
                 "description": "Properties for the TextareaControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacontrolprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacontrolprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -889,10 +889,10 @@
             "type": "TextareaClearProps",
             "required": false,
             "description": "Properties forwarded to the clear element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.clearprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.clearprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaClearProps",
@@ -900,8 +900,8 @@
                 "type": "TextareaClearProps",
                 "resolvedType": "{ type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
                 "description": "Properties for the TextareaClear component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -910,10 +910,10 @@
                     "type": "ButtonType",
                     "required": false,
                     "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.type",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.type",
                     "default": "'button'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -921,10 +921,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Whether the component is disabled.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.disabled",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.disabled",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/button/types.ts",
+                    "sourcePath": "packages/aria/src/components/button/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -932,10 +932,10 @@
                     "type": "boolean",
                     "required": false,
                     "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.aschild",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.aschild",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -943,10 +943,10 @@
                     "type": "AsTag | Component",
                     "required": false,
                     "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaclearprops.members.as",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaclearprops.members.as",
                     "default": "'div'",
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/primitive/types.ts",
+                    "sourcePath": "packages/aria/src/components/primitive/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -959,10 +959,10 @@
             "type": "TextareaCounterProps",
             "required": false,
             "description": "Properties forwarded to the counter element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.counterprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.counterprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCounterProps",
@@ -970,8 +970,8 @@
                 "type": "TextareaCounterProps",
                 "resolvedType": null,
                 "description": "Properties for the TextareaCounter component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacounterprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacounterprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -984,10 +984,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": "defaultValue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -995,10 +995,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.modelvalue",
             "default": null,
             "inheritedFrom": "modelValue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1006,10 +1006,10 @@
             "type": "boolean | TextareaAutosizeOptions",
             "required": false,
             "description": "When `true` or an options object, enables auto-resizing based on content",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.autosize",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.autosize",
             "default": null,
             "inheritedFrom": "autosize",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaAutosizeOptions",
@@ -1017,8 +1017,8 @@
                 "type": "TextareaAutosizeOptions",
                 "resolvedType": "{ minRows?: number; maxRows?: number }",
                 "description": "Type information for TextareaAutosizeOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1027,10 +1027,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The minimum number of rows to display",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions.members.minrows",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions.members.minrows",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                    "sourcePath": "packages/aria/src/components/textarea/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1038,10 +1038,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The maximum number of rows to display",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions.members.maxrows",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions.members.maxrows",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                    "sourcePath": "packages/aria/src/components/textarea/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1054,10 +1054,10 @@
             "type": "string",
             "required": false,
             "description": "Id of the textarea element",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.id",
             "default": null,
             "inheritedFrom": "id",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1065,10 +1065,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the textarea is auto-focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.autofocus",
             "default": null,
             "inheritedFrom": "autofocus",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1076,10 +1076,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the textarea.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1087,10 +1087,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed in the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.maxlength",
             "default": null,
             "inheritedFrom": "maxlength",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1098,10 +1098,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum number of characters allowed in the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.minlength",
             "default": null,
             "inheritedFrom": "minlength",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1109,10 +1109,10 @@
             "type": "string",
             "required": false,
             "description": "The placeholder of the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.placeholder",
             "default": null,
             "inheritedFrom": "placeholder",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1120,10 +1120,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the textarea is read-only.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.readonly",
             "default": null,
             "inheritedFrom": "readonly",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1131,10 +1131,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1142,10 +1142,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1158,8 +1158,8 @@
         "type": "TypeAlias TextareaCompactEmits: TextareaRootEmits & TextareaClearEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string]; clear: [event: PointerEvent] }",
         "description": "Events for the TextareaCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactemits.emits",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactemits.emits",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1169,8 +1169,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1179,8 +1179,8 @@
             "parameters": "event: PointerEvent",
             "required": true,
             "description": "Emitted when the clear button is clicked.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactemits.callables.clear",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactemits.callables.clear",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "PointerEvent",
@@ -1206,8 +1206,8 @@
         "type": "TypeAlias TextareaCompactSlots",
         "resolvedType": "{ clear?: ((props: TextareaCompactSlotProps) => any); counter?: ((props: TextareaCompactSlotProps) => any); footer?: ((props: TextareaCompactSlotProps) => any) }",
         "description": "Slots for the TextareaCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.slots",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.slots",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1217,8 +1217,8 @@
             "parameters": "((props: TextareaCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the clear slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.callables.clear",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.callables.clear",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCompactSlotProps",
@@ -1226,8 +1226,8 @@
                 "type": "TextareaCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TextareaCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1241,8 +1241,8 @@
             "parameters": "((props: TextareaCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the counter slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.callables.counter",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.callables.counter",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCompactSlotProps",
@@ -1250,8 +1250,8 @@
                 "type": "TextareaCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TextareaCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1265,8 +1265,8 @@
             "parameters": "((props: TextareaCompactSlotProps) => any) | undefined",
             "required": false,
             "description": "Custom content for the footer slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslots.callables.footer",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslots.callables.footer",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaCompactSlotProps",
@@ -1274,8 +1274,8 @@
                 "type": "TextareaCompactSlotProps",
                 "resolvedType": null,
                 "description": "Slot properties for the TextareaCompact component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -1292,8 +1292,8 @@
         "type": "Interface TextareaCompactSlotProps",
         "resolvedType": "{ modelValue?: string; clear: () => void; count: number; maxlength?: number }",
         "description": "Slot properties for the TextareaCompact component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops.slotprops",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1301,10 +1301,10 @@
             "type": "string",
             "required": false,
             "description": "Current model value.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1312,10 +1312,10 @@
             "type": "() => void",
             "required": true,
             "description": "Clear handler.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops.members.clear",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops.members.clear",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1323,10 +1323,10 @@
             "type": "number",
             "required": true,
             "description": "Current character count.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops.members.count",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops.members.count",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1334,10 +1334,10 @@
             "type": "number",
             "required": false,
             "description": "Current maxlength.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacompactslotprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacompactslotprops.members.maxlength",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           }
         ],
@@ -1352,8 +1352,8 @@
         "type": "Interface TextareaControlProps",
         "resolvedType": null,
         "description": "Properties for the TextareaControl component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacontrolprops.props",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacontrolprops.props",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1367,8 +1367,8 @@
         "type": "Interface TextareaCounterProps",
         "resolvedType": null,
         "description": "Properties for the TextareaCounter component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareacounterprops.props",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareacounterprops.props",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -1382,8 +1382,8 @@
         "type": "Interface TextareaRootProps",
         "resolvedType": "{ defaultValue?: string; modelValue?: string; autosize?: boolean | TextareaAutosizeOptions; id?: string; autofocus?: boolean; disabled?: boolean; maxlength?: number; minlength?: number; placeholder?: string; readonly?: boolean; name?: string; required?: boolean }",
         "description": "Properties for the TextareaRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.props",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.props",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -1391,10 +1391,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1402,10 +1402,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1413,10 +1413,10 @@
             "type": "boolean | TextareaAutosizeOptions",
             "required": false,
             "description": "When `true` or an options object, enables auto-resizing based on content",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.autosize",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.autosize",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": [
               {
                 "name": "TextareaAutosizeOptions",
@@ -1424,8 +1424,8 @@
                 "type": "TextareaAutosizeOptions",
                 "resolvedType": "{ minRows?: number; maxRows?: number }",
                 "description": "Type information for TextareaAutosizeOptions.",
-                "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions",
-                "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions",
+                "sourcePath": "packages/aria/src/components/textarea/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [
@@ -1434,10 +1434,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The minimum number of rows to display",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions.members.minrows",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions.members.minrows",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                    "sourcePath": "packages/aria/src/components/textarea/types.ts",
                     "referencedTypes": []
                   },
                   {
@@ -1445,10 +1445,10 @@
                     "type": "number",
                     "required": false,
                     "description": "The maximum number of rows to display",
-                    "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textareaautosizeoptions.members.maxrows",
+                    "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textareaautosizeoptions.members.maxrows",
                     "default": null,
                     "inheritedFrom": null,
-                    "sourcePath": "packages/headless/src/components/textarea/types.ts",
+                    "sourcePath": "packages/aria/src/components/textarea/types.ts",
                     "referencedTypes": []
                   }
                 ],
@@ -1461,10 +1461,10 @@
             "type": "string",
             "required": false,
             "description": "Id of the textarea element",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.id",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.id",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1472,10 +1472,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the textarea is auto-focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.autofocus",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.autofocus",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1483,10 +1483,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the textarea.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.disabled",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.disabled",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1494,10 +1494,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed in the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.maxlength",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.maxlength",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1505,10 +1505,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum number of characters allowed in the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.minlength",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.minlength",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1516,10 +1516,10 @@
             "type": "string",
             "required": false,
             "description": "The placeholder of the textarea",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.placeholder",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.placeholder",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1527,10 +1527,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the textarea is read-only.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.readonly",
             "default": null,
             "inheritedFrom": "TextareaBaseProps.readonly",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           },
           {
@@ -1538,10 +1538,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.name",
             "default": null,
             "inheritedFrom": "name",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -1549,10 +1549,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootprops.members.required",
             "default": null,
             "inheritedFrom": "required",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -1565,8 +1565,8 @@
         "type": "TypeAlias TextareaRootEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string] }",
         "description": "Events for the TextareaRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootemits.emits",
-        "sourcePath": "packages/headless/src/components/textarea/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootemits.emits",
+        "sourcePath": "packages/aria/src/components/textarea/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -1576,8 +1576,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_textarea_types.textarearootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/textarea/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_textarea_types.textarearootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/textarea/types.ts",
             "referencedTypes": []
           }
         ],

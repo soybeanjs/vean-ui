@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { WatermarkCompact, provideWatermarkUi } from '@soybeanjs/headless/watermark';
+import { useOmitProps } from '@vean/aria/composables';
+import { WatermarkCompact, provideWatermarkUi } from '@vean/aria/watermark';
 import { watermarkVariants } from '@/styles/watermark';
 import type { WatermarkProps } from './types';
 

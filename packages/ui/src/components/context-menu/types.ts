@@ -10,8 +10,8 @@ import type {
   ContextMenuRadioCompactProps,
   ContextMenuRadioCompactEmits,
   ContextMenuRadioCompactSlots
-} from '@soybeanjs/headless/context-menu';
-import type { AcceptableBooleanValue, DefinedValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/context-menu';
+import type { AcceptableBooleanValue, DefinedValue } from '@vean/aria/types';
 import type { MenuUiBaseProps } from '../menu/types';
 
 /**

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SSkeleton } from '@soybeanjs/ui';
+import { SSkeleton } from '@vean/ui';
 </script>
 
 <template>

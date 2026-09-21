@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SAlert, SBadge, SButton, SButtonIcon, SPopconfirm, SProgress, STag, toast } from '@soybeanjs/ui';
-import type { TagVariant, ThemeColor } from '@soybeanjs/ui';
+import { SAlert, SBadge, SButton, SButtonIcon, SPopconfirm, SProgress, STag, toast } from '@vean/ui';
+import type { TagVariant, ThemeColor } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewFeedback'

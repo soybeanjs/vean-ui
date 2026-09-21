@@ -1,14 +1,14 @@
 ---
 head:
   title: 命令面板
-  description: 用于快速搜索与执行命令的命令面板组件。SCommand 是基于 headless listbox 基础组件与 Fuse 模糊匹配构建的可搜索命令面板。它把过滤、分组条目聚合与默认条目组合逻辑委托给 headless CommandCompact；UI 包装组件只注入样式。
+  description: 用于快速搜索与执行命令的命令面板组件。SCommand 是基于 Aria listbox 基础组件与 Fuse 模糊匹配构建的可搜索命令面板。它把过滤、分组条目聚合与默认条目组合逻辑委托给 Aria CommandCompact；UI 包装组件只注入样式。
 ---
 
 # 命令面板
 
 ## 概述
 
-用于快速搜索与执行命令的命令面板组件。`SCommand` 是基于 headless listbox 基础组件与 Fuse 模糊匹配构建的可搜索命令面板。它把过滤、分组条目聚合与默认条目组合逻辑委托给 headless `CommandCompact`；UI 包装组件只注入样式。
+用于快速搜索与执行命令的命令面板组件。`SCommand` 是基于 Aria listbox 基础组件与 Fuse 模糊匹配构建的可搜索命令面板。它把过滤、分组条目聚合与默认条目组合逻辑委托给 Aria `CommandCompact`；UI 包装组件只注入样式。
 
 命令面板适合 ⌘K 式面板、可搜索菜单或内联类型过滤。普通操作菜单请用 `dropdown-menu`；紧凑单选列表请用 `select`。
 
@@ -16,12 +16,12 @@ head:
 
 <UsageCode component="command" />
 
-> `SCommand` 现在会把过滤、分组条目聚合与默认条目组合逻辑委托给 headless `CommandCompact`。如果需要无样式、数据驱动的组合入口，可从 `@soybeanjs/headless/command` 直接导入 `CommandCompact`。
+> `SCommand` 现在会把过滤、分组条目聚合与默认条目组合逻辑委托给 Aria `CommandCompact`。如果需要无样式、数据驱动的组合入口，可从 `@vean/aria/command` 直接导入 `CommandCompact`。
 
 ## 特性
 
 - 🔎 模糊搜索 — 基于 Fuse 对 `label`/`groupLabel`/`description` 匹配，`fuseOptions` 可配置（threshold、`resultLimit`、空搜索全匹配）
-- 🧩 Headless/样式分离 — `CommandCompact` 负责过滤、分组与条目组合；`SCommand` 只注入样式
+- 🧩 Aria/样式分离 — `CommandCompact` 负责过滤、分组与条目组合；`SCommand` 只注入样式
 - 📊 分组数据 — `items` 支持嵌套组 `items`（label/value/icon/description/disabled/separator）与扁平条目
 - 🔍 条目描述 — `description` 在标签下方渲染为次级文本，并参与内置过滤
 - 🚀 外部过滤 — `external-filter` 跳过内置模糊过滤，让 items 由外部引擎（如全文内容搜索）过滤与排序
@@ -34,9 +34,9 @@ head:
 ## 组件家族
 
 - `SCommand`（样式层）— 入口包装组件；`commandVariants` 配方配合动态插槽转发
-- `CommandCompact`（headless）— 聚合组件；负责搜索、分组、过滤与默认条目组合
-- `ListboxRoot`/`ListboxFilter`/`ListboxContent`/`ListboxGroup`/`ListboxGroupLabel`/`ListboxItem`（headless）— 底层 listbox 基础组件
-- `Kbd`（headless）— 渲染条目 `shortcut`
+- `CommandCompact`（Aria）— 聚合组件；负责搜索、分组、过滤与默认条目组合
+- `ListboxRoot`/`ListboxFilter`/`ListboxContent`/`ListboxGroup`/`ListboxGroupLabel`/`ListboxItem`（Aria）— 底层 listbox 基础组件
+- `Kbd`（Aria）— 渲染条目 `shortcut`
 
 ## 演示
 
@@ -50,16 +50,16 @@ head:
 
 ### 架构与对标差异
 
-`CommandCompact` 负责 Fuse 搜索、分组条目聚合与默认条目组合，底层 listbox 基础组件保持零样式，仅由 UI 包装组件注入 `commandVariants` 类。这与 cmdk/shadcn-ui 的 headless command 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供 select/autocomplete 而非专用命令面板；SoybeanUI 提供真正的 `⌘K` 式命令面板，带 Fuse 模糊搜索、分组数据、图标/快捷键与完整 listbox 键盘行为。
+`CommandCompact` 负责 Fuse 搜索、分组条目聚合与默认条目组合，底层 listbox 基础组件保持零样式，仅由 UI 包装组件注入 `commandVariants` 类。这与 cmdk/shadcn-ui 的 headless command 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供 select/autocomplete 而非专用命令面板；VeanUI 提供真正的 `⌘K` 式命令面板，带 Fuse 模糊搜索、分组数据、图标/快捷键与完整 listbox 键盘行为。
 
-| 能力              | SoybeanUI | shadcn/ui (cmdk) | Ant Design | Element Plus | Mantine | Naive UI |
-| :---------------- | :-------: | :--------------: | :--------: | :----------: | :-----: | :------: |
-| Headless/样式分离 |    ✅     |        ✅        |     —      |      —       |    —    |    —     |
-| 模糊搜索（Fuse）  |    ✅     |        ✅        |     —      |      —       |    —    |    —     |
-| 分组数据          |    ✅     |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
-| 图标 + 快捷键     |    ✅     |        ✅        |     —      |      —       |   ✅    |    —     |
-| 键盘导航          |    ✅     |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
-| 空态              |    ✅     |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
+| 能力             | VeanUI | shadcn/ui (cmdk) | Ant Design | Element Plus | Mantine | Naive UI |
+| :--------------- | :----: | :--------------: | :--------: | :----------: | :-----: | :------: |
+| Aria/样式分离    |   ✅   |        ✅        |     —      |      —       |    —    |    —     |
+| 模糊搜索（Fuse） |   ✅   |        ✅        |     —      |      —       |    —    |    —     |
+| 分组数据         |   ✅   |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
+| 图标 + 快捷键    |   ✅   |        ✅        |     —      |      —       |   ✅    |    —     |
+| 键盘导航         |   ✅   |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
+| 空态             |   ✅   |        ✅        |     ✅     |      ✅      |   ✅    |    ✅    |
 
 `—` = 不支持或采用不同交互模型。
 

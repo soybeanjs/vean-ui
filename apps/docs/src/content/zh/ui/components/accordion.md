@@ -1,18 +1,18 @@
 ---
 head:
   title: 手风琴
-  description: 一组垂直（或水平）堆叠的交互式标题，每个标题可展开一块内容，支持单选或多选展开。SAccordion 组合 AccordionRoot/AccordionItem/AccordionHeader/AccordionTrigger/AccordionContent/AccordionDescription 这一系列 headless 基础组件（零样式）与 accordionVariants 样式配方（8 个槽、6 种尺寸）。
+  description: 一组垂直（或水平）堆叠的交互式标题，每个标题可展开一块内容，支持单选或多选展开。SAccordion 组合 AccordionRoot/AccordionItem/AccordionHeader/AccordionTrigger/AccordionContent/AccordionDescription 这一系列 Aria 基础组件（零样式）与 accordionVariants 样式配方（8 个槽、6 种尺寸）。
 ---
 
 # 手风琴
 
 ## 概述
 
-一组垂直（或水平）堆叠的交互式标题，每个标题可展开一块内容，支持单选或多选展开。`SAccordion` 组合 `AccordionRoot`/`AccordionItem`/`AccordionHeader`/`AccordionTrigger`/`AccordionContent`/`AccordionDescription` 这一系列 headless 基础组件（零样式）与 `accordionVariants` 样式配方（8 个槽、6 种尺寸）。
+一组垂直（或水平）堆叠的交互式标题，每个标题可展开一块内容，支持单选或多选展开。`SAccordion` 组合 `AccordionRoot`/`AccordionItem`/`AccordionHeader`/`AccordionTrigger`/`AccordionContent`/`AccordionDescription` 这一系列 Aria 基础组件（零样式）与 `accordionVariants` 样式配方（8 个槽、6 种尺寸）。
 
 适用于 FAQ、设置分组、可折叠导航，或任何「展开显示」的模式（一次打开一个或多个区块）。当一次只需显示一个面板且每个面板有持久标签时请优先使用 `tabs`；单个独立折叠区块请优先使用 `collapsible`。
 
-`SAccordion` 通过 `AccordionCompact` 聚合这些基础组件，并以 `items` 数据驱动，提供 `item`/`leading`/`title`/`trigger-icon`/`content` 插槽。需要完全自定义组合时，可直接使用 headless 层的 `AccordionRoot` 系列基础组件。
+`SAccordion` 通过 `AccordionCompact` 聚合这些基础组件，并以 `items` 数据驱动，提供 `item`/`leading`/`title`/`trigger-icon`/`content` 插槽。需要完全自定义组合时，可直接使用 Aria 层的 `AccordionRoot` 系列基础组件。
 
 ## 用法
 
@@ -20,7 +20,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `AccordionCompact` 聚合 6 个基础组件并以 `items` 驱动；`SAccordion` 只注入样式并转发插槽/事件
+- 🧩 Aria/样式分离 — `AccordionCompact` 聚合 6 个基础组件并以 `items` 驱动；`SAccordion` 只注入样式并转发插槽/事件
 - 🎚️ 单选 / 多选 — `multiple` 切换单开/多开（`M extends boolean` 泛型）；`collapsible` 允许全部关闭
 - ⌨️ 键盘导航 — 方向键在触发器间移动（`useArrowNavigation`），遵循 `orientation` 与 `dir`；触发器暴露 `aria-expanded`/`aria-disabled`/`data-state`
 - 🧭 方向 — `vertical`（默认）或 `horizontal`
@@ -32,13 +32,13 @@ head:
 ## 组件家族
 
 - `SAccordion`（样式层）— 入口包装组件；`accordionVariants` 配方配合动态插槽转发
-- `AccordionRoot`（headless）— 状态所有者；`useSelection` 管理单选/多选 `modelValue`，暴露 `dir`/`orientation`
-- `AccordionItem`（headless）— 单个区块；从根派生 open/disabled 状态并接入方向键导航
-- `AccordionHeader`（headless）— 承载触发器的头部容器
-- `AccordionTrigger`（headless）— `<button>` 触发器；`aria-expanded`/`aria-disabled`/`data-state` 与点击切换
-- `AccordionContent`（headless）— 带动画的折叠内容（`CollapsibleContent`）
-- `AccordionDescription`（headless）— 内容中的默认描述文本
-- `AccordionCompact`（headless）— 聚合组件；将 `items` 迭代为条目并暴露自定义插槽
+- `AccordionRoot`（Aria）— 状态所有者；`useSelection` 管理单选/多选 `modelValue`，暴露 `dir`/`orientation`
+- `AccordionItem`（Aria）— 单个区块；从根派生 open/disabled 状态并接入方向键导航
+- `AccordionHeader`（Aria）— 承载触发器的头部容器
+- `AccordionTrigger`（Aria）— `<button>` 触发器；`aria-expanded`/`aria-disabled`/`data-state` 与点击切换
+- `AccordionContent`（Aria）— 带动画的折叠内容（`CollapsibleContent`）
+- `AccordionDescription`（Aria）— 内容中的默认描述文本
+- `AccordionCompact`（Aria）— 聚合组件；将 `items` 迭代为条目并暴露自定义插槽
 
 ## 演示
 
@@ -52,19 +52,19 @@ head:
 
 ### 架构与对标差异
 
-`AccordionCompact` 负责 `items` 迭代与默认内容装配，所有基础组件保持零样式，仅由 UI 包装组件注入 `accordionVariants` 类。这与 shadcn/ui 的 headless 分离及 Radix 的 `Accordion` 原语一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供 `defaultActiveKey`/`activeKey` 配置驱动的折叠。SoybeanUI 的根使用 `useSelection`，使单选/多选共享同一状态模型，方向键导航复用菜单家族一致的 `useArrowNavigation` 组合式函数。
+`AccordionCompact` 负责 `items` 迭代与默认内容装配，所有基础组件保持零样式，仅由 UI 包装组件注入 `accordionVariants` 类。这与 shadcn/ui 的 headless 分离及 Radix 的 `Accordion` 原语一致；而 Ant Design、Element Plus、Mantine、Naive UI 则提供 `defaultActiveKey`/`activeKey` 配置驱动的折叠。VeanUI 的根使用 `useSelection`，使单选/多选共享同一状态模型，方向键导航复用菜单家族一致的 `useArrowNavigation` 组合式函数。
 
-| 能力                        | SoybeanUI | shadcn/ui | Ant Design Collapse | Element Plus Collapse | Mantine Accordion | Naive UI Collapse |
-| :-------------------------- | :-------: | :-------: | :-----------------: | :-------------------: | :---------------: | :---------------: |
-| Headless/样式分离           |    ✅     |    ✅     |          —          |           —           |         —         |         —         |
-| 单选 / 多选                 |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| 可全部关闭                  |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| 方向键导航                  |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| 自定义触发器图标            |    ✅     |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
-| 数据驱动 `items`（Compact） |    ✅     |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
-| 禁用条目                    |    ✅     |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
-| 方向（v/h）                 |    ✅     |     —     |         ✅          |          ✅           |         —         |         —         |
-| `as`/`asChild` 触发器       |    ✅     |    ✅     |          —          |           —           |         —         |         —         |
+| 能力                        | VeanUI | shadcn/ui | Ant Design Collapse | Element Plus Collapse | Mantine Accordion | Naive UI Collapse |
+| :-------------------------- | :----: | :-------: | :-----------------: | :-------------------: | :---------------: | :---------------: |
+| Aria/样式分离               |   ✅   |    ✅     |          —          |           —           |         —         |         —         |
+| 单选 / 多选                 |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| 可全部关闭                  |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| 方向键导航                  |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| 自定义触发器图标            |   ✅   |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
+| 数据驱动 `items`（Compact） |   ✅   |     —     |         ✅          |          ✅           |        ✅         |        ✅         |
+| 禁用条目                    |   ✅   |    ✅     |         ✅          |          ✅           |        ✅         |        ✅         |
+| 方向（v/h）                 |   ✅   |     —     |         ✅          |          ✅           |         —         |         —         |
+| `as`/`asChild` 触发器       |   ✅   |    ✅     |          —          |           —           |         —         |         —         |
 
 `—` = 不支持或采用不同交互模型。
 
@@ -120,7 +120,7 @@ head:
 
 ### 如何构建完全自定义的条目？
 
-使用 `item` 插槽自行组合 headless 部件：
+使用 `item` 插槽自行组合 Aria 部件：
 
 ```vue
 <SAccordion :items="items">

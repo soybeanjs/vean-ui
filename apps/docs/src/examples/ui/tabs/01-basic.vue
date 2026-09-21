@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SButtonIcon, SSelect, STabs, SSwitch } from '@soybeanjs/ui';
-import type { DataOrientation, SelectOptionData, ThemeSize } from '@soybeanjs/ui';
+import { SButtonIcon, SSelect, STabs, SSwitch } from '@vean/ui';
+import type { DataOrientation, SelectOptionData, ThemeSize } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -14,7 +14,7 @@ const { t } = useI18n();
 
 /**
  * `TabsShape` / `TabsFill` live in the UI package's style recipe (`styles/tabs.ts`)
- * and are not re-exported from `@soybeanjs/ui`, so the customizer tracks them with
+ * and are not re-exported from `@vean/ui`, so the customizer tracks them with
  * local literal unions instead of reaching into package internals.
  */
 type TabsShapeOption = 'square' | 'rounded';

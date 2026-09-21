@@ -141,7 +141,7 @@ const keyboardItems = [
 ];
 
 function getButtonWithText(wrapper: VueWrapper, label: string) {
-  const button = wrapper.findAll('[data-soybean-tree-menu-button]').find(item => item.text().includes(label));
+  const button = wrapper.findAll('[data-vean-tree-menu-button]').find(item => item.text().includes(label));
 
   if (!button) {
     throw new Error(`tree menu button with text "${label}" not found`);
@@ -161,7 +161,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tree-menu-root]').exists()).toBe(true);
       expect(wrapper.text()).toContain('Workspace');
       expect(wrapper.text()).toContain('Projects');
       expect(wrapper.text()).toContain('Profile');
@@ -193,7 +193,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const groupLabel = wrapper.find('[data-soybean-tree-menu-group-label]');
+      const groupLabel = wrapper.find('[data-vean-tree-menu-group-label]');
 
       expect(groupLabel.exists()).toBe(true);
       expect(groupLabel.text()).toContain('Workspace');
@@ -225,18 +225,18 @@ describe('STreeMenu', () => {
           items: [
             {
               value: 'soybean',
-              label: 'Soybean UI',
-              href: 'https://ui.soybeanjs.cn'
+              label: 'Vean',
+              href: 'https://veanui.com'
             }
           ]
         },
         attachTo: document.body
       });
 
-      const link = wrapper.find('a[data-soybean-tree-menu-button]');
+      const link = wrapper.find('a[data-vean-tree-menu-button]');
 
       expect(link.exists()).toBe(true);
-      expect(link.attributes('href')).toBe('https://ui.soybeanjs.cn');
+      expect(link.attributes('href')).toBe('https://veanui.com');
 
       wrapper.unmount();
     });
@@ -249,7 +249,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const actionButton = wrapper.find('[data-soybean-dropdown-menu-trigger]');
+      const actionButton = wrapper.find('[data-vean-dropdown-menu-trigger]');
 
       expect(actionButton.exists()).toBe(true);
       expect(actionButton.attributes('aria-label')).toBe('Open Design Engineering actions');
@@ -349,7 +349,7 @@ describe('STreeMenu', () => {
         }
       });
 
-      expect(wrapper.findAll('[data-soybean-tree-menu-collapsible-root]')).toHaveLength(0);
+      expect(wrapper.findAll('[data-vean-tree-menu-collapsible-root]')).toHaveLength(0);
       expect(wrapper.text()).toContain('Workspace');
 
       wrapper.unmount();
@@ -366,7 +366,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const selectedButton = wrapper.find('[data-soybean-tree-menu-button][data-selected="true"]');
+      const selectedButton = wrapper.find('[data-vean-tree-menu-button][data-selected="true"]');
 
       expect(selectedButton.exists()).toBe(true);
       expect(selectedButton.text()).toContain('Overview');
@@ -383,7 +383,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-tree-menu-button]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-tree-menu-button]')[0].trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')![0][0]).toBe('overview');
@@ -400,13 +400,13 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      await wrapper.findAll('[data-soybean-tree-menu-button]')[0].trigger('click');
+      await wrapper.findAll('[data-vean-tree-menu-button]')[0].trigger('click');
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)?.[0]).toBe('overview');
 
       await wrapper.setProps({ modelValue: 'projects' });
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-selected="true"]').text()).toContain('Projects');
+      expect(wrapper.find('[data-vean-tree-menu-button][data-selected="true"]').text()).toContain('Projects');
 
       wrapper.unmount();
     });
@@ -423,13 +423,13 @@ describe('STreeMenu', () => {
 
       expect(wrapper.text()).not.toContain('Profile');
 
-      const parentTrigger = wrapper.find('[data-soybean-tree-menu-collapsible-trigger]');
+      const parentTrigger = wrapper.find('[data-vean-tree-menu-collapsible-trigger]');
 
       expect(parentTrigger.attributes('aria-expanded')).toBe('false');
 
       await parentTrigger.trigger('click');
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.text()).toContain('Profile');
 
       wrapper.unmount();
@@ -446,9 +446,9 @@ describe('STreeMenu', () => {
 
       expect(wrapper.text()).toContain('Profile');
 
-      await wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-collapsible-trigger]').trigger('click');
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
       expect(wrapper.text()).not.toContain('Profile');
 
       wrapper.unmount();
@@ -462,7 +462,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').trigger('click');
+      await wrapper.find('[data-vean-tree-menu-collapsible-trigger]').trigger('click');
 
       expect(wrapper.emitted('update:expanded')?.at(-1)?.[0]).toEqual(['settings']);
 
@@ -483,13 +483,13 @@ describe('STreeMenu', () => {
       await wrapper.setProps({ collapsed: true });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
       expect(wrapper.text()).not.toContain('Profile');
 
       await wrapper.setProps({ collapsed: false });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('expanded');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('expanded');
       expect(wrapper.text()).toContain('Profile');
 
       wrapper.unmount();
@@ -506,14 +506,14 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const trigger = wrapper.find('[data-soybean-tree-menu-collapsible-trigger]');
+      const trigger = wrapper.find('[data-vean-tree-menu-collapsible-trigger]');
 
       expect(trigger.attributes('aria-expanded')).toBe('true');
 
       await getButtonWithText(wrapper, 'Security').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)?.[0]).toBe('security');
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.text()).toContain('Profile');
       expect(wrapper.emitted('update:expanded')).toBeFalsy();
 
@@ -529,7 +529,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.text()).toContain('Security');
 
       wrapper.unmount();
@@ -544,12 +544,12 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
 
       await wrapper.setProps({ modelValue: 'security' });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.emitted('update:expanded')?.at(-1)?.[0]).toEqual(['settings']);
 
       wrapper.unmount();
@@ -575,7 +575,7 @@ describe('STreeMenu', () => {
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)?.[0]).toBe('security');
       expect(wrapper.emitted('update:expanded')).toBeFalsy();
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
 
       wrapper.unmount();
     });
@@ -592,7 +592,7 @@ describe('STreeMenu', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.text()).toContain('Security');
       expect(wrapper.text()).toContain('Profile');
 
@@ -628,14 +628,14 @@ describe('STreeMenu', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
 
       await getButtonWithText(wrapper, 'Projects').trigger('click');
       await nextTick();
 
       expect(wrapper.emitted('update:modelValue')?.at(-1)?.[0]).toBe('projects');
       expect(wrapper.emitted('update:expanded')?.at(-1)?.[0]).toEqual(['projects']);
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
       expect(wrapper.text()).not.toContain('Profile');
 
       wrapper.unmount();
@@ -652,7 +652,7 @@ describe('STreeMenu', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
       expect(wrapper.text()).not.toContain('Profile');
 
       wrapper.unmount();
@@ -670,7 +670,7 @@ describe('STreeMenu', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
 
       wrapper.unmount();
     });
@@ -685,13 +685,13 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
 
       await wrapper.setProps({ expandStrategy: 'selected' });
       await nextTick();
 
       expect(wrapper.emitted('update:expanded')?.at(-1)?.[0]).toEqual(['settings', 'security']);
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
 
       wrapper.unmount();
     });
@@ -711,7 +711,7 @@ describe('STreeMenu', () => {
       await wrapper.setProps({ expandStrategy: 'keep' });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.text()).toContain('Profile');
 
       wrapper.unmount();
@@ -730,12 +730,12 @@ describe('STreeMenu', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
 
       await wrapper.setProps({ collapsed: false });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(wrapper.text()).toContain('Security');
 
       wrapper.unmount();
@@ -755,7 +755,7 @@ describe('STreeMenu', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('data-state')).toBe('collapsed');
       expect(document.body.textContent).toContain('Reports');
       expect(document.body.textContent).toContain('Insights');
 
@@ -773,7 +773,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const lockedButton = wrapper.findAll('[data-soybean-tree-menu-button]')[1];
+      const lockedButton = wrapper.findAll('[data-vean-tree-menu-button]')[1];
 
       expect(lockedButton.attributes('data-disabled')).toBeDefined();
 
@@ -792,11 +792,11 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const sectionTrigger = wrapper.find('[data-soybean-tree-menu-collapsible-trigger]');
+      const sectionTrigger = wrapper.find('[data-vean-tree-menu-collapsible-trigger]');
 
       await sectionTrigger.trigger('click');
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
       expect(wrapper.text()).not.toContain('Child');
 
       wrapper.unmount();
@@ -812,7 +812,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const buttons = wrapper.findAll('[data-soybean-tree-menu-button]');
+      const buttons = wrapper.findAll('[data-vean-tree-menu-button]');
 
       expect(buttons.length).toBeGreaterThan(0);
       buttons.forEach(button => {
@@ -835,7 +835,7 @@ describe('STreeMenu', () => {
       await nextTick();
       await nextTick();
 
-      const trigger = wrapper.find('[data-soybean-tree-menu-collapsible-trigger]');
+      const trigger = wrapper.find('[data-vean-tree-menu-collapsible-trigger]');
 
       expect(trigger.attributes('aria-expanded')).toBe('true');
       expect(trigger.attributes('aria-controls')).toBeTruthy();
@@ -852,7 +852,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-button][data-selected="true"]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-tree-menu-button][data-selected="true"]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -868,16 +868,16 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-tree-menu-root]').attributes('role')).toBe('tree');
+      expect(wrapper.find('[data-vean-tree-menu-root]').attributes('role')).toBe('tree');
 
-      const item = wrapper.find('[data-soybean-tree-menu-item]');
+      const item = wrapper.find('[data-vean-tree-menu-item]');
 
       // The item wrapper carries the treeitem role and its selection state.
       expect(item.attributes('role')).toBe('treeitem');
       expect(item.attributes('aria-selected')).toBe('false');
 
       // Nested lists become groups.
-      expect(wrapper.find('[data-soybean-tree-menu-sub]').attributes('role')).toBe('group');
+      expect(wrapper.find('[data-vean-tree-menu-sub]').attributes('role')).toBe('group');
 
       wrapper.unmount();
     });
@@ -892,7 +892,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const buttons = wrapper.findAll('[data-soybean-tree-menu-button]');
+      const buttons = wrapper.findAll('[data-vean-tree-menu-button]');
 
       // Every item is removed from the natural tab order.
       buttons.forEach(button => {
@@ -900,7 +900,7 @@ describe('STreeMenu', () => {
       });
 
       // Entering the tree focuses the active item.
-      await wrapper.find('[data-soybean-tree-menu-root]').trigger('focus');
+      await wrapper.find('[data-vean-tree-menu-root]').trigger('focus');
       await nextTick();
 
       expect(document.activeElement?.textContent).toContain('Profile');
@@ -917,7 +917,7 @@ describe('STreeMenu', () => {
         attachTo: document.body
       });
 
-      const [overview, , projects] = wrapper.findAll('[data-soybean-tree-menu-button]');
+      const [overview, , projects] = wrapper.findAll('[data-vean-tree-menu-button]');
 
       (overview.element as HTMLElement).focus();
 
@@ -959,7 +959,7 @@ describe('STreeMenu', () => {
       await settings.trigger('keydown', { key: 'ArrowRight' });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('true');
       expect(document.activeElement).toBe(settings.element);
 
       // Expanded branch: moves into the first child.
@@ -979,7 +979,7 @@ describe('STreeMenu', () => {
       await settings.trigger('keydown', { key: 'ArrowLeft' });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
+      expect(wrapper.find('[data-vean-tree-menu-collapsible-trigger]').attributes('aria-expanded')).toBe('false');
       expect(document.activeElement).toBe(settings.element);
 
       wrapper.unmount();
@@ -1087,8 +1087,8 @@ describe('STreeMenu', () => {
  * that is not a menu node: a brand, a trigger, a footer row.
  */
 describe('STreeMenuStyledItem', () => {
-  const root = '[data-soybean-tree-menu-styled-item]';
-  const row = '[data-soybean-tree-menu-styled-item-button]';
+  const root = '[data-vean-tree-menu-styled-item]';
+  const row = '[data-vean-tree-menu-styled-item-button]';
 
   const slots = { default: '<span data-row>Row</span>' };
 
@@ -1126,7 +1126,7 @@ describe('STreeMenuStyledItem', () => {
     const link = wrapper.find('[data-link]');
 
     expect(link.attributes('href')).toBe('#row');
-    expect(link.attributes('data-soybean-tree-menu-styled-item-button')).toBeDefined();
+    expect(link.attributes('data-vean-tree-menu-styled-item-button')).toBeDefined();
     // The consumer's element keeps its own semantics.
     expect(link.attributes('type')).toBeUndefined();
 

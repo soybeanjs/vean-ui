@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 import STreeMenuStyledItem from '../tree-menu/tree-menu-styled-item.vue';
 import type { AppShellBrandLayout } from './shared';
@@ -83,7 +83,7 @@ const showTitle = computed(() => Boolean(slots.title) && props.layout.titleVisib
 <template>
   <div
     :class="[regionClass, inSidebar ? 'group' : undefined]"
-    data-soybean-app-shell-logo
+    data-vean-app-shell-logo
     :data-placement="placement"
     :data-aligned="aligned ? 'true' : undefined"
     :data-collapsed="collapsed ? 'true' : undefined"
@@ -105,11 +105,11 @@ const showTitle = computed(() => Boolean(slots.title) && props.layout.titleVisib
       as="div"
       :size="size"
       :ui="{ button: 'group-data-[state=collapsed]:justify-center' }"
-      data-soybean-app-shell-logo-mark
+      data-vean-app-shell-logo-mark
       class="w-full min-w-0"
     >
       <slot name="logo" v-bind="slotProps" />
-      <span v-if="showTitle" class="truncate" data-soybean-app-shell-logo-title>
+      <span v-if="showTitle" class="truncate" data-vean-app-shell-logo-title>
         <slot name="title" v-bind="slotProps" />
       </span>
     </STreeMenuStyledItem>
@@ -120,21 +120,21 @@ const showTitle = computed(() => Boolean(slots.title) && props.layout.titleVisib
       placement does not fake it.
     -->
     <template v-else-if="inSidebar">
-      <div :class="markClass" :style="markStyle" data-soybean-app-shell-logo-mark>
+      <div :class="markClass" :style="markStyle" data-vean-app-shell-logo-mark>
         <STreeMenuStyledItem as="div" :size="size" :ui="{ button: 'justify-center' }" class="w-full">
           <slot name="logo" v-bind="slotProps" />
         </STreeMenuStyledItem>
       </div>
-      <div v-if="showTitle" :class="titleClass" :style="titleStyle" data-soybean-app-shell-logo-title>
+      <div v-if="showTitle" :class="titleClass" :style="titleStyle" data-vean-app-shell-logo-title>
         <slot name="title" v-bind="slotProps" />
       </div>
     </template>
 
     <template v-else>
-      <div :class="markClass" :style="markStyle" data-soybean-app-shell-logo-mark>
+      <div :class="markClass" :style="markStyle" data-vean-app-shell-logo-mark>
         <slot name="logo" v-bind="slotProps" />
       </div>
-      <div v-if="showTitle" :class="titleClass" :style="titleStyle" data-soybean-app-shell-logo-title>
+      <div v-if="showTitle" :class="titleClass" :style="titleStyle" data-vean-app-shell-logo-title>
         <slot name="title" v-bind="slotProps" />
       </div>
     </template>

@@ -1,14 +1,14 @@
 ---
 head:
   title: Form
-  description: 'A form composition layer for building validated forms with a headless core and styled wrappers. The useForm composable is backed by the TanStack Form engine (@tanstack/vue-form) for field-level subscriptions, field arrays, and the submit lifecycle, accepts any Standard Schema validator (Zod, Valibot, ArkType, Yup, …), and returns a context with SFormField / SFormFieldArray used to render the form. Fields register through slots, so any SoybeanUI input (SInput, SSelect, SCheckbox, SSwitch, SRadioGroup, …) or a plain custom control works without a per-control API.'
+  description: 'A form composition layer for building validated forms with an Aria core and styled wrappers. The useForm composable is backed by the TanStack Form engine (@tanstack/vue-form) for field-level subscriptions, field arrays, and the submit lifecycle, accepts any Standard Schema validator (Zod, Valibot, ArkType, Yup, …), and returns a context with SFormField / SFormFieldArray used to render the form. Fields register through slots, so any VeanUI input (SInput, SSelect, SCheckbox, SSwitch, SRadioGroup, …) or a plain custom control works without a per-control API.'
 ---
 
 # Form
 
 ## Overview
 
-A form composition layer for building validated forms with a headless core and styled wrappers. The `useForm` composable is backed by the **TanStack Form engine** (`@tanstack/vue-form`) — field-level subscriptions, field arrays, and the submit lifecycle come from the engine — and accepts any **Standard Schema** validator (Zod, Valibot, ArkType, Yup, …). It returns a context object with `SFormField` / `SFormFieldArray` used to render the form. Fields register through slots, so any SoybeanUI input (`SInput`, `SSelect`, `SCheckbox`, `SSwitch`, `SRadioGroup`, …) or a plain custom control works without a per-control API.
+A form composition layer for building validated forms with an Aria core and styled wrappers. The `useForm` composable is backed by the **TanStack Form engine** (`@tanstack/vue-form`) — field-level subscriptions, field arrays, and the submit lifecycle come from the engine — and accepts any **Standard Schema** validator (Zod, Valibot, ArkType, Yup, …). It returns a context object with `SFormField` / `SFormFieldArray` used to render the form. Fields register through slots, so any VeanUI input (`SInput`, `SSelect`, `SCheckbox`, `SSwitch`, `SRadioGroup`, …) or a plain custom control works without a per-control API.
 
 ## Usage
 
@@ -21,7 +21,7 @@ A form composition layer for building validated forms with a headless core and s
 - ✅ Field-level rules — per-field `validate` accepts a sync or async function or a Standard Schema validator, merged with schema errors by the engine; pass it through a Ref / ComputedRef to swap rules reactively
 - 🔁 Validate timing — `validateMode` sets when the schema and field-level validators run (`blur` | `change` | `submit`), `validateOnMounted` validates on mount; validators are registered on the engine's async slots, so each validation cause runs them exactly once and async Standard Schemas are supported
 - 📦 Field arrays — `append` / `prepend` / `remove` / `insert` / `swap` / `move` / `update` / `replace` with nested path registration (`social[0].name`, TanStack canonical format)
-- 🧩 Headless/styled split — `useForm`/`FormCompact` in `@soybeanjs/headless` (zero styles); `SForm*` wrappers inject `formVariants` classes (6 slots: field/fieldArray/label/control/description/error); the error enter/leave animation lives in the UI layer
+- 🧩 Aria/styled split — `useForm`/`FormCompact` in `@vean/aria` (zero styles); `SForm*` wrappers inject `formVariants` classes (6 slots: field/fieldArray/label/control/description/error); the error enter/leave animation lives in the UI layer
 - ♿ Accessible by default — label `<label :for>` association, `aria-invalid` on error, `aria-describedby` linking description + error to the control
 - 🎨 Composable layout — `label` / `control` / `description` / `error` slots plus `*Props` passthrough; `SFormFieldBase` for custom rows
 - 🧰 Control-agnostic — fields receive `model-value` + a11y attributes via slot forwarding, so any value-aware control integrates
@@ -29,11 +29,11 @@ A form composition layer for building validated forms with a headless core and s
 ## Component family
 
 - `useForm` (styled) — the entry composable; returns a context with `form` (TanStack `FormApi`), `state`, `isSubmitting`, `handleSubmit`/`handleReset`, plus the bound `SFormField` / `SFormFieldArray` components
-- `SForm` / `FormCompact` (headless) — the `<form>` element owner; forwards `orientation`/`fieldProps`/`fieldArrayProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps` to descendants via context
-- `SFormField` / `FormFieldCompact` (headless) — registers one field by `name`; owns the field's error/meta and renders label + description + control + error
-- `SFormFieldArray` / `FormFieldArrayCompact` (headless) — registers a field array; default slot receives `fields`/`append`/`prepend`/`remove`/`insert`/`swap`/`move`/`update`/`replace`
-- `SFormFieldBase` / `FormFieldBaseCompact` (headless) — layout wrapper for custom rows; provides `formFieldId` / `ariaDescribedBy` / `ariaInvalid` to its slot
-- `FormField` / `FormLabel` / `FormControl` / `FormDescription` / `FormError` (headless) — low-level primitives used internally by the compact (also exported for custom compositions)
+- `SForm` / `FormCompact` (Aria) — the `<form>` element owner; forwards `orientation`/`fieldProps`/`fieldArrayProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps` to descendants via context
+- `SFormField` / `FormFieldCompact` (Aria) — registers one field by `name`; owns the field's error/meta and renders label + description + control + error
+- `SFormFieldArray` / `FormFieldArrayCompact` (Aria) — registers a field array; default slot receives `fields`/`append`/`prepend`/`remove`/`insert`/`swap`/`move`/`update`/`replace`
+- `SFormFieldBase` / `FormFieldBaseCompact` (Aria) — layout wrapper for custom rows; provides `formFieldId` / `ariaDescribedBy` / `ariaInvalid` to its slot
+- `FormField` / `FormLabel` / `FormControl` / `FormDescription` / `FormError` (Aria) — low-level primitives used internally by the compact (also exported for custom compositions)
 - Core engine — `@tanstack/vue-form` (`FormApi` + Vue `Field` / `Subscribe` / `useSelector`); the former `useHeadlessForm` / `useFormState` / `useFieldArray` self-built engine was retired in v0.50.0
 
 ## Demos
@@ -56,21 +56,21 @@ A form composition layer for building validated forms with a headless core and s
 
 ### Architecture and benchmark differences
 
-`useForm` wraps TanStack's `useForm`: the schema is registered as a form-level validator and each field-level `validate` as a field validator, and the engine owns values, field meta, error distribution by path, and the submit lifecycle. `validateMode` maps onto a TanStack validator timing (`onChange` / `onBlur` / `onSubmit`); the schema is registered on the async slots, which also accept sync returns, so each validator runs exactly once per validation cause and async Standard Schemas work. Submit-cause field slots are always attached so `handleSubmit` awaits field validation. `useFieldArray` exposes mutation helpers built on the engine's array operations (`pushFieldValue`, `insertFieldValue`, `removeFieldValue`, `swapFieldValues`, `moveFieldValues`, `replaceFieldValue`). `FormFieldBaseCompact` merges `fieldProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps` from the form context and injects a11y state (`aria-invalid`, `aria-describedby`) into the control slot; the error enter/leave height-collapse animation is composed in the UI layer. Most benchmark libraries couple the schema validator to a framework-specific rule object; the Standard Schema interface plus the headless/styled split on top of a mainstream engine are the differentiators.
+`useForm` wraps TanStack's `useForm`: the schema is registered as a form-level validator and each field-level `validate` as a field validator, and the engine owns values, field meta, error distribution by path, and the submit lifecycle. `validateMode` maps onto a TanStack validator timing (`onChange` / `onBlur` / `onSubmit`); the schema is registered on the async slots, which also accept sync returns, so each validator runs exactly once per validation cause and async Standard Schemas work. Submit-cause field slots are always attached so `handleSubmit` awaits field validation. `useFieldArray` exposes mutation helpers built on the engine's array operations (`pushFieldValue`, `insertFieldValue`, `removeFieldValue`, `swapFieldValues`, `moveFieldValues`, `replaceFieldValue`). `FormFieldBaseCompact` merges `fieldProps`/`labelProps`/`controlProps`/`descriptionProps`/`errorProps` from the form context and injects a11y state (`aria-invalid`, `aria-describedby`) into the control slot; the error enter/leave height-collapse animation is composed in the UI layer. Most benchmark libraries couple the schema validator to a framework-specific rule object; the Standard Schema interface plus the Aria/styled split on top of a mainstream engine are the differentiators.
 
-| Capability                          | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | React Hook Form |
-| :---------------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :-------------: |
-| headless/styled split               |    ✅     |     —      |      —       |    —    |    —     |        —        |
-| Standard Schema (Zod/Valibot…)      |    ✅     |     ⚠️     |      —       |   ✅    |    —     |       ✅        |
-| Field-level sync/async rules        |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |       ✅        |
-| `validateMode`                      |    ✅     |     ⚠️     |      ✅      |    —    |    ✅    |        —        |
-| Field array (append/remove/move)    |    ✅     |     ✅     |      —       |   ✅    |    —     |       ✅        |
-| Nested path registration            |    ✅     |     ✅     |      —       |    —    |    —     |       ✅        |
-| Submitting state (`isSubmitting`)   |    ✅     |     —      |      —       |   ✅    |    —     |       ✅        |
-| `aria-invalid` + `aria-describedby` |    ✅     |     —      |      —       |   ✅    |    —     |        —        |
-| Per-part slots + `*Props`           |    ✅     |     ⚠️     |      —       |    —    |    —     |        —        |
+| Capability                          | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | React Hook Form |
+| :---------------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :-------------: |
+| Aria/styled split                   |   ✅   |     —      |      —       |    —    |    —     |        —        |
+| Standard Schema (Zod/Valibot…)      |   ✅   |     ⚠️     |      —       |   ✅    |    —     |       ✅        |
+| Field-level sync/async rules        |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |       ✅        |
+| `validateMode`                      |   ✅   |     ⚠️     |      ✅      |    —    |    ✅    |        —        |
+| Field array (append/remove/move)    |   ✅   |     ✅     |      —       |   ✅    |    —     |       ✅        |
+| Nested path registration            |   ✅   |     ✅     |      —       |    —    |    —     |       ✅        |
+| Submitting state (`isSubmitting`)   |   ✅   |     —      |      —       |   ✅    |    —     |       ✅        |
+| `aria-invalid` + `aria-describedby` |   ✅   |     —      |      —       |   ✅    |    —     |        —        |
+| Per-part slots + `*Props`           |   ✅   |     ⚠️     |      —       |    —    |    —     |        —        |
 
-`⚠️` = partial (Ant Design covers most rules via `rules`/`validateTrigger` but has no Standard Schema; its `required`/`colon`/`labelAlign`/`labelWidth`/`layout` are style-level conveniences that SoybeanUI keeps out of the core).
+`⚠️` = partial (Ant Design covers most rules via `rules`/`validateTrigger` but has no Standard Schema; its `required`/`colon`/`labelAlign`/`labelWidth`/`layout` are style-level conveniences that VeanUI keeps out of the core).
 
 ### Migration from v0.4x (`useHeadlessForm` → TanStack Form)
 
@@ -101,7 +101,7 @@ v0.50.0 replaces the self-built `useHeadlessForm` engine with `@tanstack/vue-for
 - Array item errors are stored under bracketed keys (`emails[0]`) and do not bubble to the array root — validate the whole array (e.g. `min(1)`) at the array level, or render per-item errors with nested `SFormField`s using the bracketed path.
 - With Zod v4, `z.number()` does not coerce string values — a text input reports `"Invalid input: expected number"`. Use `z.coerce.number()` (or parse the value) when the control is an `<input type="text">`.
 - The control slot is value-agnostic: fields forward `model-value` (and `aria-invalid`/`aria-describedby`). Custom controls must accept and emit `modelValue`.
-- The form element itself renders only `data-soybean-form`/`data-orientation` — validation styles live on the field/control/error parts, so style it with the `SForm` `ui`/`class` props.
+- The form element itself renders only `data-vean-form`/`data-orientation` — validation styles live on the field/control/error parts, so style it with the `SForm` `ui`/`class` props.
 - Field-level `validate` merges with the schema in the engine's error map — pass a function (return `undefined` for valid) or a Standard Schema validator; a Ref / ComputedRef source rebinds rules reactively.
 - Disabling is control-level: `disabled` on the input blocks interaction but the field still validates on submit unless you also gate the value.
 

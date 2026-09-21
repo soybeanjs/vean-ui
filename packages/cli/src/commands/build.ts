@@ -14,7 +14,7 @@ export const buildOptionsSchema = v.object({
 
 export const build = new Command()
   .name('build')
-  .description('build components for the sbean registry')
+  .description('build components for the vean registry')
   .argument('[registry]', 'path to registry.json file', './registry.json')
   .option('-o, --output <path>', 'destination directory for json files', './public/r')
   .option('-c, --cwd <cwd>', 'the working directory. defaults to the current directory.', process.cwd())
@@ -32,7 +32,7 @@ export const build = new Command()
     } catch {
       console.error(
         `Registry file not found: ${resolvedRegistryFile}\n` +
-          `Run "sbean init" first to create a project, then create your registry.json.`
+          `Run "vean init" first to create a project, then create your registry.json.`
       );
       process.exit(1);
     }

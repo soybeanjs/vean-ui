@@ -36,7 +36,7 @@ describe('SEditable', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-editable-preview]').text()).toBe('Empty preview');
+      expect(wrapper.find('[data-vean-editable-preview]').text()).toBe('Empty preview');
       wrapper.unmount();
     });
 
@@ -57,7 +57,7 @@ describe('SEditable', () => {
         attachTo: document.body
       });
 
-      const root = wrapper.find('[data-soybean-editable-root]');
+      const root = wrapper.find('[data-vean-editable-root]');
 
       expect(root.exists()).toBe(true);
       expect(root.attributes('data-state')).toBe('preview');
@@ -72,9 +72,9 @@ describe('SEditable', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-editable-area]').attributes('data-empty')).toBeUndefined();
-      expect(wrapper.find('[data-soybean-editable-preview]').attributes('data-placeholder-shown')).toBeUndefined();
-      expect(wrapper.find('[data-soybean-editable-input]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-editable-area]').attributes('data-empty')).toBeUndefined();
+      expect(wrapper.find('[data-vean-editable-preview]').attributes('data-placeholder-shown')).toBeUndefined();
+      expect(wrapper.find('[data-vean-editable-input]').exists()).toBe(true);
       wrapper.unmount();
     });
 
@@ -116,7 +116,7 @@ describe('SEditable', () => {
       await nextTick();
 
       expect(wrapper.find('input').element.hidden).toBe(false);
-      expect(wrapper.find('[data-soybean-editable-root]').attributes('data-state')).toBe('edit');
+      expect(wrapper.find('[data-vean-editable-root]').attributes('data-state')).toBe('edit');
       expect(wrapper.emitted('update:state')?.[0]).toEqual(['edit']);
 
       wrapper.unmount();
@@ -156,7 +156,7 @@ describe('SEditable', () => {
       expect(wrapper.find('input').element.hidden).toBe(true);
 
       // none 模式仍可经 edit trigger 编程进入编辑
-      await wrapper.find('[data-soybean-editable-edit-trigger]').trigger('click');
+      await wrapper.find('[data-vean-editable-edit-trigger]').trigger('click');
       await nextTick();
 
       expect(wrapper.find('input').element.hidden).toBe(false);
@@ -171,7 +171,7 @@ describe('SEditable', () => {
       });
 
       expect(wrapper.find('input').element.hidden).toBe(false);
-      expect((wrapper.find('[data-soybean-editable-preview]').element as HTMLElement).hidden).toBe(true);
+      expect((wrapper.find('[data-vean-editable-preview]').element as HTMLElement).hidden).toBe(true);
 
       wrapper.unmount();
     });
@@ -182,7 +182,7 @@ describe('SEditable', () => {
         attachTo: document.body
       });
 
-      const preview = wrapper.find('[data-soybean-editable-preview]');
+      const preview = wrapper.find('[data-vean-editable-preview]');
 
       await preview.trigger('focusin');
       await nextTick();
@@ -338,9 +338,7 @@ describe('SEditable', () => {
       expect(value.value).toBe('user typing...');
       value.value = 'external';
       await nextTick();
-      expect((wrapper.find('[data-soybean-editable-preview]').element as HTMLElement).textContent).toContain(
-        'external'
-      );
+      expect((wrapper.find('[data-vean-editable-preview]').element as HTMLElement).textContent).toContain('external');
 
       wrapper.unmount();
     });
@@ -352,7 +350,7 @@ describe('SEditable', () => {
       });
 
       await wrapper.find('input').setValue('b');
-      await wrapper.find('[data-soybean-editable-submit-trigger]').trigger('click');
+      await wrapper.find('[data-vean-editable-submit-trigger]').trigger('click');
       await nextTick();
 
       expect(wrapper.emitted('update:modelValue')?.[0]).toEqual(['b']);
@@ -368,7 +366,7 @@ describe('SEditable', () => {
       });
 
       await wrapper.find('input').setValue('b');
-      await wrapper.find('[data-soybean-editable-cancel-trigger]').trigger('click');
+      await wrapper.find('[data-vean-editable-cancel-trigger]').trigger('click');
       await nextTick();
 
       expect(wrapper.emitted('update:modelValue')).toBeFalsy();
@@ -411,9 +409,9 @@ describe('SEditable', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-editable-area]').attributes('data-probe')).toBe('area-probe');
-      expect(wrapper.find('[data-soybean-editable-preview]').attributes('data-probe')).toBe('preview-probe');
-      expect(wrapper.find('[data-soybean-editable-input]').attributes('data-probe')).toBe('input-probe');
+      expect(wrapper.find('[data-vean-editable-area]').attributes('data-probe')).toBe('area-probe');
+      expect(wrapper.find('[data-vean-editable-preview]').attributes('data-probe')).toBe('preview-probe');
+      expect(wrapper.find('[data-vean-editable-input]').attributes('data-probe')).toBe('input-probe');
 
       wrapper.unmount();
     });
@@ -435,7 +433,7 @@ describe('SEditable', () => {
       expect(wrapper.text()).toContain('Custom preview');
 
       // 自定义 preview 无默认 tabindex 交互，经 edit trigger 进入编辑
-      await wrapper.find('[data-soybean-editable-edit-trigger]').trigger('click');
+      await wrapper.find('[data-vean-editable-edit-trigger]').trigger('click');
       await nextTick();
 
       expect(wrapper.text()).toContain('Custom input true');
@@ -464,7 +462,7 @@ describe('SEditable', () => {
       });
 
       expect(wrapper.find('input').attributes('placeholder')).toBe('Type here');
-      expect(wrapper.find('[data-soybean-editable-preview]').text()).toBe('Click to edit');
+      expect(wrapper.find('[data-vean-editable-preview]').text()).toBe('Click to edit');
 
       wrapper.unmount();
     });
@@ -475,10 +473,10 @@ describe('SEditable', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-editable-area]').classes()).toContain('h-6');
-      expect(wrapper.find('[data-soybean-editable-area]').classes()).toContain('text-2xs');
-      expect(wrapper.find('[data-soybean-editable-submit-trigger]').classes()).toContain('p-0.75');
-      expect(wrapper.find('[data-soybean-editable-submit-trigger]').classes()).toContain('w-fit');
+      expect(wrapper.find('[data-vean-editable-area]').classes()).toContain('h-6');
+      expect(wrapper.find('[data-vean-editable-area]').classes()).toContain('text-2xs');
+      expect(wrapper.find('[data-vean-editable-submit-trigger]').classes()).toContain('p-0.75');
+      expect(wrapper.find('[data-vean-editable-submit-trigger]').classes()).toContain('w-fit');
 
       wrapper.unmount();
     });
@@ -499,7 +497,7 @@ describe('SEditable', () => {
 
       expect(wrapper.find('input').element.hidden).toBe(true);
       expect((editTrigger.element as HTMLButtonElement).disabled).toBe(true);
-      expect(wrapper.find('[data-soybean-editable-root]').attributes('data-disabled')).toBeDefined();
+      expect(wrapper.find('[data-vean-editable-root]').attributes('data-disabled')).toBeDefined();
 
       wrapper.unmount();
     });

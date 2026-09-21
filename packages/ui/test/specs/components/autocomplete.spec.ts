@@ -99,14 +99,14 @@ describe('SAutocomplete', () => {
       });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-autocomplete-anchor]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-autocomplete-trigger]').exists()).toBe(true);
-      expect(document.body.querySelector('[data-soybean-autocomplete-content]')).toBeTruthy();
-      expect(document.body.querySelector('[data-soybean-autocomplete-viewport]')).toBeTruthy();
-      expect(document.body.querySelector('[data-soybean-autocomplete-group]')).toBeTruthy();
-      expect(document.body.querySelector('[data-soybean-autocomplete-group-label]')).toBeTruthy();
-      expect(document.body.querySelector('[data-soybean-autocomplete-item]')).toBeTruthy();
-      expect(document.body.querySelector('[data-soybean-combobox-item]')).toBeTruthy();
+      expect(wrapper.find('[data-vean-autocomplete-anchor]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-autocomplete-trigger]').exists()).toBe(true);
+      expect(document.body.querySelector('[data-vean-autocomplete-content]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-autocomplete-viewport]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-autocomplete-group]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-autocomplete-group-label]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-autocomplete-item]')).toBeTruthy();
+      expect(document.body.querySelector('[data-vean-combobox-item]')).toBeTruthy();
 
       wrapper.unmount();
     });

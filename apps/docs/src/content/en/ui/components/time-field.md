@@ -28,9 +28,9 @@ A segmented time input that renders individually editable hour, minute, and opti
 
 ## Component family
 
-- `STimeField` — the styled wrapper that forwards props to the headless compact and injects `dateFieldVariants` (shared with `SDateField`) classes
-- `TimeFieldCompact` (headless) — data-driven composition of `TimeFieldRoot` + one `TimeFieldInput` per segment, plus `leading`/`trailing` slots; import from `@soybeanjs/headless/time-field` for unstyled usage
-- `TimeFieldRoot` / `TimeFieldInput` (headless) — the state owner (segment values, validation, hidden input, focus management) and a single editable segment bound to the shared `useDateField` composable
+- `STimeField` — the styled wrapper that forwards props to the Aria compact and injects `dateFieldVariants` (shared with `SDateField`) classes
+- `TimeFieldCompact` (Aria) — data-driven composition of `TimeFieldRoot` + one `TimeFieldInput` per segment, plus `leading`/`trailing` slots; import from `@vean/aria/time-field` for unstyled usage
+- `TimeFieldRoot` / `TimeFieldInput` (Aria) — the state owner (segment values, validation, hidden input, focus management) and a single editable segment bound to the shared `useDateField` composable
 
 ## Demos
 
@@ -44,23 +44,23 @@ A segmented time input that renders individually editable hour, minute, and opti
 
 ### Architecture and benchmark differences
 
-`TimeFieldRoot` owns the `TimeValue` via `useControllableState`, keeps `segmentValues` as a shallowRef, and runs validation through `isInvalid`. Each `TimeFieldInput` binds the same `useDateField` composable used by the `date-field` family for per-part keydown logic; `TimeFieldCompact` iterates the segments produced by `createContent` and renders one input each, with `leading`/`trailing` slots around them. Focus movement is handled by the root's `moveFocus`, mapping the physical arrow key from `dir` so RTL swaps `ArrowLeft`/`ArrowRight`. Most benchmark libraries ship a plain text input or select-based picker; the segmented spinbutton pattern with keyboard increment/typing and the headless/styled split are the differentiators.
+`TimeFieldRoot` owns the `TimeValue` via `useControllableState`, keeps `segmentValues` as a shallowRef, and runs validation through `isInvalid`. Each `TimeFieldInput` binds the same `useDateField` composable used by the `date-field` family for per-part keydown logic; `TimeFieldCompact` iterates the segments produced by `createContent` and renders one input each, with `leading`/`trailing` slots around them. Focus movement is handled by the root's `moveFocus`, mapping the physical arrow key from `dir` so RTL swaps `ArrowLeft`/`ArrowRight`. Most benchmark libraries ship a plain text input or select-based picker; the segmented spinbutton pattern with keyboard increment/typing and the Aria/styled split are the differentiators.
 
-| Capability                   | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :--------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled split        |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Segmented editable segments  |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Controlled / uncontrolled    |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 12/24-hour cycle             |    ✅     |     ✅     |      ✅      |    —    |    ✅    |   —    |
-| Keyboard increment/typing    |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Segment navigation + RTL     |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Range validation             |    ✅     |     ✅     |      —       |    —    |    —     |   —    |
-| `isTimeUnavailable`          |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Granularity (second)         |    ✅     |     ✅     |      ✅      |    —    |    ✅    |   —    |
-| Configurable step            |    ✅     |     ✅     |      ✅      |    —    |    —     |   —    |
-| Native form value            |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| `leading` / `trailing` slots |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| Disabled / readonly          |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| Capability                   | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :--------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled split            |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Segmented editable segments  |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Controlled / uncontrolled    |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 12/24-hour cycle             |   ✅   |     ✅     |      ✅      |    —    |    ✅    |   —    |
+| Keyboard increment/typing    |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Segment navigation + RTL     |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Range validation             |   ✅   |     ✅     |      —       |    —    |    —     |   —    |
+| `isTimeUnavailable`          |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Granularity (second)         |   ✅   |     ✅     |      ✅      |    —    |    ✅    |   —    |
+| Configurable step            |   ✅   |     ✅     |      ✅      |    —    |    —     |   —    |
+| Native form value            |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| `leading` / `trailing` slots |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| Disabled / readonly          |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
 
 ### Cautions
 

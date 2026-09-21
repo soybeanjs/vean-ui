@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SButton, SDrawer, SInput, STextarea } from '@soybeanjs/ui';
+import { SButton, SDrawer, SInput, STextarea } from '@vean/ui';
 
 const open = ref(false);
 

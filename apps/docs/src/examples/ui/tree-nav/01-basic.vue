@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButtonIcon, SInput, SSelect, SSwitch, STreeNav } from '@soybeanjs/ui';
-import type { SelectOptionData, ThemeSize, TreeNavOptionData } from '@soybeanjs/ui';
+import { SButtonIcon, SInput, SSelect, SSwitch, STreeNav } from '@vean/ui';
+import type { SelectOptionData, ThemeSize, TreeNavOptionData } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 
 interface Props {
@@ -90,7 +90,7 @@ const items: TreeNavOptionData[] = [
     value: 'github',
     label: 'GitHub',
     icon: 'lucide:github',
-    href: 'https://github.com/soybeanjs/soybean-ui'
+    href: 'https://github.com/soybeanjs/vean-ui'
   },
   { value: 'discord', label: 'Discord', icon: 'lucide:message-circle', href: 'https://discord.gg/soybeanjs' },
   { value: 'releases', label: 'Releases', icon: 'lucide:tags' },

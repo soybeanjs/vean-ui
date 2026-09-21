@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { flushPromises, mount } from '@vue/test-utils';
-import { toISODateString } from '@soybeanjs/headless/date';
+import { toISODateString } from '@vean/aria/date';
 import { addMonths } from 'date-fns/addMonths';
 import SCalendarRange from '@/components/calendar-range/calendar-range.vue';
 import { getA11yViolations } from '../../shared/a11y';
@@ -14,11 +14,11 @@ function mountRange(props?: Record<string, unknown>) {
 }
 
 function focusableValue(wrapper: ReturnType<typeof mountRange>, value: string) {
-  return wrapper.get(`[data-soybean-calendar-range-cell-trigger][data-value="${value}"]`);
+  return wrapper.get(`[data-vean-calendar-range-cell-trigger][data-value="${value}"]`);
 }
 
 function rangeCell(wrapper: ReturnType<typeof mountRange>, value: string) {
-  const cell = focusableValue(wrapper, value).element.closest('[data-soybean-calendar-range-cell]');
+  const cell = focusableValue(wrapper, value).element.closest('[data-vean-calendar-range-cell]');
 
   if (!cell) {
     throw new Error(`No range cell found for ${value}`);
@@ -52,7 +52,7 @@ describe('SCalendarRange', () => {
     it('renders multiple month grids when numberOfMonths is set', () => {
       const wrapper = mountRange({ numberOfMonths: 2 });
 
-      expect(wrapper.findAll('[data-soybean-calendar-range-grid]').length).toBe(2);
+      expect(wrapper.findAll('[data-vean-calendar-range-grid]').length).toBe(2);
       expect(wrapper.text()).toContain('April');
       wrapper.unmount();
     });
@@ -63,7 +63,7 @@ describe('SCalendarRange', () => {
         defaultPlaceholder: new Date(2026, 2 - 1, 1)
       });
 
-      const bodyRows = wrapper.find('[data-soybean-calendar-range-grid-body]').findAll('tr');
+      const bodyRows = wrapper.find('[data-vean-calendar-range-grid-body]').findAll('tr');
 
       expect(bodyRows.length).toBe(6);
       wrapper.unmount();
@@ -421,7 +421,7 @@ describe('SCalendarRange', () => {
         isDateDisabled: (date: Date) => date.getDate() === 18
       });
 
-      const focused = wrapper.get('[data-soybean-calendar-range-cell-trigger][tabindex="0"]');
+      const focused = wrapper.get('[data-vean-calendar-range-cell-trigger][tabindex="0"]');
 
       expect(focused.attributes('data-value')).not.toBe('2026-04-18');
       wrapper.unmount();
@@ -432,7 +432,7 @@ describe('SCalendarRange', () => {
     it('moves to the next month when the next button is clicked', async () => {
       const wrapper = mountRange();
 
-      await wrapper.get('[data-soybean-calendar-range-next]').trigger('click');
+      await wrapper.get('[data-vean-calendar-range-next]').trigger('click');
       await nextTick();
 
       expect(wrapper.text()).toContain('May');
@@ -442,7 +442,7 @@ describe('SCalendarRange', () => {
     it('moves to the previous month when the prev button is clicked', async () => {
       const wrapper = mountRange();
 
-      await wrapper.get('[data-soybean-calendar-range-prev]').trigger('click');
+      await wrapper.get('[data-vean-calendar-range-prev]').trigger('click');
       await nextTick();
 
       expect(wrapper.text()).toContain('March');
@@ -455,8 +455,8 @@ describe('SCalendarRange', () => {
         maxValue: new Date(2026, 4 - 1, 30)
       });
 
-      expect((wrapper.get('[data-soybean-calendar-range-prev]').element as HTMLButtonElement).disabled).toBe(true);
-      expect((wrapper.get('[data-soybean-calendar-range-next]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.get('[data-vean-calendar-range-prev]').element as HTMLButtonElement).disabled).toBe(true);
+      expect((wrapper.get('[data-vean-calendar-range-next]').element as HTMLButtonElement).disabled).toBe(true);
       wrapper.unmount();
     });
 
@@ -465,7 +465,7 @@ describe('SCalendarRange', () => {
         prevProps: { prevPage: (date: Date) => addMonths(date, -2) }
       });
 
-      const prevButton = wrapper.get('[data-soybean-calendar-range-prev]');
+      const prevButton = wrapper.get('[data-vean-calendar-range-prev]');
 
       await prevButton.trigger('click');
       await nextTick();
@@ -481,16 +481,16 @@ describe('SCalendarRange', () => {
         nextProps: { 'aria-label': 'Go forward' }
       });
 
-      expect(wrapper.get('[data-soybean-calendar-range-prev]').attributes('aria-label')).toBe('Go back');
-      expect(wrapper.get('[data-soybean-calendar-range-next]').attributes('aria-label')).toBe('Go forward');
+      expect(wrapper.get('[data-vean-calendar-range-prev]').attributes('aria-label')).toBe('Go back');
+      expect(wrapper.get('[data-vean-calendar-range-next]').attributes('aria-label')).toBe('Go forward');
       wrapper.unmount();
     });
 
     it('provides default localized aria-labels for navigation buttons', () => {
       const wrapper = mountRange();
 
-      expect(wrapper.get('[data-soybean-calendar-range-prev]').attributes('aria-label')).toBe('Previous page');
-      expect(wrapper.get('[data-soybean-calendar-range-next]').attributes('aria-label')).toBe('Next page');
+      expect(wrapper.get('[data-vean-calendar-range-prev]').attributes('aria-label')).toBe('Previous page');
+      expect(wrapper.get('[data-vean-calendar-range-next]').attributes('aria-label')).toBe('Next page');
       wrapper.unmount();
     });
   });
@@ -531,7 +531,7 @@ describe('SCalendarRange', () => {
       const wrapper = mountRange({ disabled: true });
 
       expect(wrapper.attributes('data-disabled')).toBeDefined();
-      expect(wrapper.get('[data-soybean-calendar-range-grid]').attributes('aria-disabled')).toBe('true');
+      expect(wrapper.get('[data-vean-calendar-range-grid]').attributes('aria-disabled')).toBe('true');
       wrapper.unmount();
     });
   });

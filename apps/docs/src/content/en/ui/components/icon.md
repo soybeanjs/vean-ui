@@ -24,7 +24,7 @@ head:
 
 ```vue
 <script setup lang="ts">
-import { SIcon } from '@soybeanjs/ui';
+import { SIcon } from '@vean/ui';
 </script>
 
 <template>
@@ -45,7 +45,7 @@ You can also set a default size globally via `SConfigProvider`:
 
 ```vue
 <script setup lang="ts">
-import { SConfigProvider, SIcon } from '@soybeanjs/ui';
+import { SConfigProvider, SIcon } from '@vean/ui';
 </script>
 
 <template>
@@ -59,7 +59,7 @@ import { SConfigProvider, SIcon } from '@soybeanjs/ui';
 
 ```vue
 <script setup lang="ts">
-import { SIcon } from '@soybeanjs/ui';
+import { SIcon } from '@vean/ui';
 import CustomIcon from './CustomIcon.vue';
 </script>
 
@@ -91,11 +91,11 @@ import CustomIcon from './CustomIcon.vue';
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits the icon into a headless layer (`_icon` in `@soybeanjs/headless`, providing the `IconValue` type and render hook) and a styled layer (`SIcon` in `@soybeanjs/ui`, wrapping Iconify rendering, size inheritance, and accessibility logic). This differs from single-package libraries such as Ant Design, Element Plus, MUI, Mantine, and Naive UI.
+VeanUI splits the icon into an Aria layer (`_icon` in `@vean/aria`, providing the `IconValue` type and render hook) and a styled layer (`SIcon` in `@vean/ui`, wrapping Iconify rendering, size inheritance, and accessibility logic). This differs from single-package libraries such as Ant Design, Element Plus, MUI, Mantine, and Naive UI.
 
-| Aspect        | SoybeanUI                                                         | Ant Design / Element Plus / MUI / Mantine / Naive UI |
+| Aspect        | VeanUI                                                            | Ant Design / Element Plus / MUI / Mantine / Naive UI |
 | :------------ | :---------------------------------------------------------------- | :--------------------------------------------------- |
-| Architecture  | headless + styled split                                           | single package                                       |
+| Architecture  | Aria + styled split                                               | single package                                       |
 | Icon source   | Iconify (200+ icon sets, on-demand loading)                       | built-in icon set / custom SVG                       |
 | Styling       | UnoCSS utility classes                                            | CSS-in-JS / SCSS / CSS vars                          |
 | Sizing        | prop + `SConfigProvider` global inheritance                       | prop / token                                         |

@@ -1,12 +1,12 @@
 ---
 head:
   title: Skills
-  description: 安装 SoybeanUI skills，让 AI 编码代理能够更稳定地理解组件用法、主题系统、headless 组合模式以及生成式参考资料。
+  description: 安装 VeanUI skills，让 AI 编码代理能够更稳定地理解组件用法、主题系统、aria 组合模式以及生成式参考资料。
 ---
 
 # Skills
 
-> 安装 SoybeanUI skills，让 AI 编码代理能够更稳定地理解组件用法、主题系统、headless 组合模式以及生成式参考资料。
+> 安装 VeanUI skills，让 AI 编码代理能够更稳定地理解组件用法、主题系统、aria 组合模式以及生成式参考资料。
 
 ## 什么是 Skills？
 
@@ -14,45 +14,47 @@ Skills 是提供给 AI 编码代理的结构化知识文件。它们会把特定
 
 它和 MCP server 不同。Skills 不提供实时工具调用，而是把整理好的说明和参考内容直接放进模型上下文。
 
-SoybeanUI 目前公开提供两个 skill：
+VeanUI 目前公开提供两个 skill：
 
-- **soybean-ui**：面向样式层包的使用方式、主题配置、文档导航与生成组件参考
-- **soybean-headless**：面向 headless primitives、Compact 模式、组合方式与共享组件参考
+- **vean-ui**：面向样式层包的使用方式、主题配置、文档导航与生成组件参考
+- **vean-aria**：面向 aria primitives、Compact 模式、组合方式与共享组件参考
 
-## SoybeanUI skills 覆盖什么
+## VeanUI skills 覆盖什么
 
 这些 skill 可以帮助 AI 代理处理下列问题：
 
-- 什么时候该使用 `@soybeanjs/ui`，什么时候该使用 `@soybeanjs/headless`
+- 什么时候该使用 `@vean/ui`，什么时候该使用 `@vean/aria`
 - 如何配置主题、语言和方向
 - 如何高效使用组件 API 与生成参考资料
-- 如何把 headless primitives 组合成自定义样式包装层
+- 如何把 aria primitives 组合成自定义样式包装层
 - 如何在不加载整站文档的前提下导航文档与参考内容
 
 ## 使用方式
+
+> **仓库改名尚未落地。** 本页所有安装路径都从 GitHub 解析技能源，因此只有在仓库改名 `soybeanjs/soybean-ui` → `soybeanjs/vean-ui` 落地后才能生效：在此之前 `github.com/soybeanjs/vean-ui` 返回 404，请改用当前 slug `soybeanjs/soybean-ui`，例如 `npx skills add soybeanjs/soybean-ui/skills`。
 
 ### Skills CLI
 
 最直接的安装方式是使用 `skills` CLI：
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills
+npx skills add soybeanjs/vean-ui/skills
 ```
 
 你也可以指定目标代理：
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills --agent cursor
-npx skills add soybeanjs/soybean-ui/skills --agent claude-code
+npx skills add soybeanjs/vean-ui/skills --agent cursor
+npx skills add soybeanjs/vean-ui/skills --agent claude-code
 ```
 
 如果希望全局安装，使其在多个项目里都可用：
 
 ```bash
-npx skills add soybeanjs/soybean-ui/skills --global
+npx skills add soybeanjs/vean-ui/skills --global
 ```
 
-安装这个包会同时提供 `soybean-ui` 和 `soybean-headless`。
+安装这个包会同时提供 `vean-ui` 和 `vean-aria`。
 
 ### Skills URL
 
@@ -61,13 +63,13 @@ npx skills add soybeanjs/soybean-ui/skills --global
 样式层 skill：
 
 ```text
-https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui
+https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui
 ```
 
-Headless skill：
+Aria skill：
 
 ```text
-https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
+https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria
 ```
 
 ### Claude Code
@@ -75,8 +77,8 @@ https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
 Claude Code 也可以直接从 GitHub 目录安装单个 skill：
 
 ```bash
-claude skill add https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui
-claude skill add https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
+claude skill add https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui
+claude skill add https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria
 ```
 
 发布出来的 skills 包中也包含 Claude marketplace 所需的元数据。
@@ -85,16 +87,16 @@ claude skill add https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills
 
 任何支持 GitHub skill 目录或自定义说明目录的 AI 工具，都可以复用同一套来源。
 
-- **SoybeanUI skill 入口**：https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui/SKILL.md
-- **SoybeanUI skill 目录**：https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-ui
-- **SoybeanHeadless skill 入口**：https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless/SKILL.md
-- **SoybeanHeadless skill 目录**：https://github.com/soybeanjs/soybean-ui/tree/main/skills/skills/soybean-headless
+- **VeanUI skill 入口**：https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui/SKILL.md
+- **VeanUI skill 目录**：https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-ui
+- **VeanAria skill 入口**：https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria/SKILL.md
+- **VeanAria skill 目录**：https://github.com/soybeanjs/vean-ui/tree/main/skills/skills/vean-aria
 
 ## 实际建议
 
-1. 如果你同时会用样式层与 headless 包，优先安装完整的 `@soybeanjs/ui-skills`。
-2. 需要组件用法、主题配置和文档导航时，使用 `soybean-ui`。
-3. 需要组合模式或自定义样式包装方案时，使用 `soybean-headless`。
+1. 如果你同时会用样式层与 aria 包，优先安装完整的 `@vean/skills`。
+2. 需要组件用法、主题配置和文档导航时，使用 `vean-ui`。
+3. 需要组合模式或自定义样式包装方案时，使用 `vean-aria`。
 4. 当你需要文档全局上下文而不是技能包上下文时，再把 `llms.txt` 当作补充来源。
 
 ## 相关页面

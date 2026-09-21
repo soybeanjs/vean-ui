@@ -39,7 +39,7 @@ export async function runSyncTemplateVersions(): Promise<void> {
  * The version is read from the root \`package.json\` at release time so that
  * project templates always scaffold with the latest published version.
  */
-export const SOYBEAN_VERSION = '${version}';
+export const VEAN_VERSION = '${version}';
 `;
 
   const versionsPath = path.join(rootDir, 'packages/cli/src/templates/versions.ts');

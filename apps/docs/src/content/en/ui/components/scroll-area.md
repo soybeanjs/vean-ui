@@ -20,7 +20,7 @@ A custom scroll container that keeps native scrolling behavior while rendering s
 - **Keyboard accessible viewport** — the viewport is focusable (`tabindex="0"`) with a visible focus ring; arrow keys scroll natively.
 - **RTL scroll normalization** — detects the three browser RTL `scrollLeft` modes (`default` / `negative` / `reverse`) once per document (cached in a `WeakMap`) and normalizes them to a consistent 0 → max coordinate space for thumb math and drag behavior.
 - **Full ARIA semantics** — scrollbars and thumbs are `aria-hidden` (custom scrollbars are purely decorative for AT); the root exposes `dir` from `useDirection`.
-- **Composable structure** — `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb` / `ScrollAreaCorner` are all exported from `@soybeanjs/headless/scroll-area` for custom styled builds, plus the `ScrollAreaCompact` aggregation.
+- **Composable structure** — `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb` / `ScrollAreaCorner` are all exported from `@vean/aria/scroll-area` for custom styled builds, plus the `ScrollAreaCompact` aggregation.
 - **Per-slot props forwarding** — `viewportProps`, `verticalScrollbarProps`, `horizontalScrollbarProps`, `thumbProps`, `cornerProps` on the compact component forward attributes to each region.
 - **Corner rendering** — the corner is rendered only when both scrollbars are visible, sized by the crossing scrollbar thicknesses.
 - **Size scaling** — `size` (xs…2xl) scales scrollbar thickness via `scrollAreaVariants`.
@@ -42,9 +42,9 @@ A custom scroll container that keeps native scrolling behavior while rendering s
 
 ### Architecture and benchmark comparison
 
-| Concern                        | SoybeanUI                                                                                                 | Radix UI ScrollArea                          | Ant Design `ScrollBar`      |
+| Concern                        | VeanUI                                                                                                    | Radix UI ScrollArea                          | Ant Design `ScrollBar`      |
 | :----------------------------- | :-------------------------------------------------------------------------------------------------------- | :------------------------------------------- | :-------------------------- |
-| Headless / styled separation   | ✅ `@soybeanjs/headless/scroll-area` ships logic; `@soybeanjs/ui` ships `scv()` recipe                    | ❌ single package (headless-style core only) | ❌ single styled package    |
+| Aria / styled separation       | ✅ `@vean/aria/scroll-area` ships logic; `@vean/ui` ships `scv()` recipe                                  | ❌ single package (headless-style core only) | ❌ single styled package    |
 | Visibility modes               | `auto` / `always` / `hover` / `scroll` / `glimpse`                                                        | `auto` / `always` / `hover` / `scroll`       | `auto` / `always` / `hover` |
 | Hide delay control             | `scrollHideDelay` prop (default 600ms)                                                                    | `scrollHideDelay` prop (default 600ms)       | —                           |
 | RTL `scrollLeft` normalization | ✅ 3-mode detection (`default` / `negative` / `reverse`) + `WeakMap` cache                                | ✅ same approach                             | —                           |
@@ -84,7 +84,7 @@ Set `dir="rtl"` on the root (or rely on `ConfigProvider`). The component detects
 
 ### Can I customize the scrollbar appearance?
 
-Yes — pass `ui` (per-slot classes) to `SScrollArea`, or forward attributes via `verticalScrollbarProps` / `horizontalScrollbarProps` / `thumbProps`. For full control, build your own `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb` composition from `@soybeanjs/headless/scroll-area`.
+Yes — pass `ui` (per-slot classes) to `SScrollArea`, or forward attributes via `verticalScrollbarProps` / `horizontalScrollbarProps` / `thumbProps`. For full control, build your own `ScrollAreaRoot` / `ScrollAreaViewport` / `ScrollAreaScrollbar` / `ScrollAreaThumb` composition from `@vean/aria/scroll-area`.
 
 ### How do I make the viewport keyboard focusable?
 

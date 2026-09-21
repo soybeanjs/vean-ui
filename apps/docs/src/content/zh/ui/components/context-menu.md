@@ -1,14 +1,14 @@
 ---
 head:
   title: 右键菜单
-  description: 在指针位置显示的菜单，通过右键触发。SContextMenu 是基于共享 headless menu 基础组件构建的数据驱动菜单，经 contextmenu 事件在指针位置打开（触屏上也可长按，经 pressOpenDelay）。家族还提供复选（SContextMenuCheckbox）、单选（SContextMenuRadio）与自定义（SContextMenuWrapper）变体。
+  description: 在指针位置显示的菜单，通过右键触发。SContextMenu 是基于共享 Aria menu 基础组件构建的数据驱动菜单，经 contextmenu 事件在指针位置打开（触屏上也可长按，经 pressOpenDelay）。家族还提供复选（SContextMenuCheckbox）、单选（SContextMenuRadio）与自定义（SContextMenuWrapper）变体。
 ---
 
 # 右键菜单
 
 ## 概述
 
-在指针位置显示的菜单，通过右键触发。`SContextMenu` 是基于共享 headless menu 基础组件构建的数据驱动菜单，经 `contextmenu` 事件在指针位置打开（触屏上也可长按，经 `pressOpenDelay`）。家族还提供复选（`SContextMenuCheckbox`）、单选（`SContextMenuRadio`）与自定义（`SContextMenuWrapper`）变体。
+在指针位置显示的菜单，通过右键触发。`SContextMenu` 是基于共享 Aria menu 基础组件构建的数据驱动菜单，经 `contextmenu` 事件在指针位置打开（触屏上也可长按，经 `pressOpenDelay`）。家族还提供复选（`SContextMenuCheckbox`）、单选（`SContextMenuRadio`）与自定义（`SContextMenuWrapper`）变体。
 
 右键菜单适合指针相关的操作（文件、画布、树节点）。按钮触发的菜单请用 `dropdown-menu`；丰富的悬停预览请用 `hover-card`。
 
@@ -20,7 +20,7 @@ head:
 
 - 🖱️ 右键触发 — 经 `contextmenu` 事件在指针位置打开；`event.preventDefault()` 阻止原生菜单
 - 📱 长按触发 — `pressOpenDelay`（默认 700ms）在触屏/触控笔上长按打开
-- 🧩 基于 headless menu — 构建于共享 menu 基础组件，带完整键盘导航、类型过滤与 roving focus
+- 🧩 基于 Aria menu — 构建于共享 menu 基础组件，带完整键盘导航、类型过滤与 roving focus
 - 📊 数据驱动 — 传入 `items`（含 `value`/`label`/`icon`/`disabled`/`hidden`/`separator`…）或使用条目插槽
 - 🙈 隐藏项 — 条目标记 `hidden` 后（连同整棵子树）不会出现在菜单中
 - ☑️ 复选 / 🔘 单选变体 — `SContextMenuCheckbox`/`SContextMenuRadio` 用于可选择的菜单
@@ -33,9 +33,9 @@ head:
 - `SContextMenu`（样式层）— 数据驱动菜单；转发至 `ContextMenuCompact`
 - `SContextMenuCheckbox` / `SContextMenuRadio`（样式层）— 带 `v-model` 的可选择菜单
 - `SContextMenuWrapper`（样式层）— 自定义内容菜单
-- `ContextMenuCompact` / `ContextMenuWrapperCompact` / `ContextMenuCheckboxCompact` / `ContextMenuRadioCompact`（headless）— 聚合组件
-- `ContextMenuRoot` / `ContextMenuTrigger` / `ContextMenuContent`（headless）— 指针锚定的触发器与菜单表面
-- `MenuOptions`/`MenuItem`/…（headless）— 共享 menu 基础组件
+- `ContextMenuCompact` / `ContextMenuWrapperCompact` / `ContextMenuCheckboxCompact` / `ContextMenuRadioCompact`（Aria）— 聚合组件
+- `ContextMenuRoot` / `ContextMenuTrigger` / `ContextMenuContent`（Aria）— 指针锚定的触发器与菜单表面
+- `MenuOptions`/`MenuItem`/…（Aria）— 共享 menu 基础组件
 
 ## 演示
 
@@ -49,16 +49,16 @@ head:
 
 ### 架构与对标差异
 
-右键菜单家族在指针锚定的 popover portal 内组合共享 `menu` 基础组件；UI 包装组件只注入共享 `menuVariants` 类（经 `provideMenuUi`）并转发 prop/插槽。这与 radix-ui/shadcn-ui 的 headless menu 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供单一样式化右键菜单（或复用其下拉的 `trigger="contextmenu"`）；SoybeanUI 额外提供复选/单选/自定义变体、`size` 尺寸体系，以及经共享 menu 层的完整键盘/类型过滤行为。
+右键菜单家族在指针锚定的 popover portal 内组合共享 `menu` 基础组件；UI 包装组件只注入共享 `menuVariants` 类（经 `provideMenuUi`）并转发 prop/插槽。这与 radix-ui/shadcn-ui 的 headless menu 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供单一样式化右键菜单（或复用其下拉的 `trigger="contextmenu"`）；VeanUI 额外提供复选/单选/自定义变体、`size` 尺寸体系，以及经共享 menu 层的完整键盘/类型过滤行为。
 
-| 能力            | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :-------------- | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| 指针定位        |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
-| 右键触发        |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
-| 长按（触屏）    |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 复选 / 单选     |    ✅     |    ✅     |     —      |      —       |   ✅    |    —     |
-| 键盘 + 类型过滤 |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 尺寸（6）       |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| 能力            | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :-------------- | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| 指针定位        |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
+| 右键触发        |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |
+| 长按（触屏）    |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 复选 / 单选     |   ✅   |    ✅     |     —      |      —       |   ✅    |    —     |
+| 键盘 + 类型过滤 |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 尺寸（6）       |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = 不支持或采用不同交互模型。
 

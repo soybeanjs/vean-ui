@@ -1,6 +1,6 @@
 import { addComponent, defineNuxtModule } from '@nuxt/kit';
 import type { NuxtModule } from '@nuxt/schema';
-//---import { keysOf, kebabCase } from '@soybeanjs/headless/shared';
+//---import { keysOf, kebabCase } from '@vean/aria/shared';
 import { components } from '../constants/components';
 
 export interface ModuleOptions {
@@ -9,8 +9,8 @@ export interface ModuleOptions {
 
 const nuxtModule: NuxtModule<ModuleOptions> = defineNuxtModule({
   meta: {
-    name: '@soybeanjs/ui/nuxt',
-    configKey: '@soybeanjs/ui',
+    name: '@vean/ui/nuxt',
+    configKey: '@vean/ui',
     compatibility: {
       nuxt: '>=3.14'
     }
@@ -39,7 +39,7 @@ const nuxtModule: NuxtModule<ModuleOptions> = defineNuxtModule({
       addComponent({
         name: `${component}`,
         export: component,
-        filePath: '@soybeanjs/ui'
+        filePath: '@vean/ui'
       });
     }
   }

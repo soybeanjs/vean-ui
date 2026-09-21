@@ -1,14 +1,14 @@
-# UNOCSS PRESET — @soybeanjs/ui-uno
+# UNOCSS PRESET — @vean/unocss
 
 ## AI ASSISTANT BRIDGE
 
 For any AI assistant editing files under `packages/unocss/`:
 
-1. Read [docs/theme.md](../../docs/theme.md) **§0.4 (consumption)** and **§5 (the adapter)** before changing the mapping. The token contract itself belongs to `@soybeanjs/theme` — see [packages/theme/AGENTS.md](../theme/AGENTS.md).
+1. Read [docs/theme.md](../../docs/theme.md) **§0.4 (consumption)** and **§5 (the adapter)** before changing the mapping. The token contract itself belongs to `@vean/theme` — see [packages/theme/AGENTS.md](../theme/AGENTS.md).
 2. For `**/*.{ts,tsx,js,jsx}` edits, also load the global `typescript-functional-style` skill.
 
-**Package:** `packages/unocss/` → publishes as `@soybeanjs/ui-uno`
-**Role:** The **single UnoCSS adapter** over `@soybeanjs/theme`. Token ownership stays in the theme package; this package only maps it into UnoCSS.
+**Package:** `packages/unocss/` → publishes as `@vean/unocss`
+**Role:** The **single UnoCSS adapter** over `@vean/theme`. Token ownership stays in the theme package; this package only maps it into UnoCSS.
 
 ## BUILD
 
@@ -17,8 +17,8 @@ For any AI assistant editing files under `packages/unocss/`:
 
 ## THE TWO RULES EVERY EMITTED UTILITY DEPENDS ON
 
-1. **Colors must be `hsl(var(--soybean-x) / <alpha-value>)`.** A bare `var()` makes UnoCSS drop the opacity modifier **silently** — so the function wrapper and the `<alpha-value>` slot are both mandatory. `buildThemeColors` / `buildThemePreflight` own this; `cssColorRef` is the variant for references that need a fixed alpha.
-2. **The palette layer and the default alias block ship in the preflight**, so `--zinc-100` / `--background` resolve with **no runtime JS**. A themed (non-default) configuration is then injected on top by the provider. `uiCSS: true` is what adds that static layer — the docs app and `packages/ui/uno.config.ts` both set it. `apps/nuxt` deliberately omits it and instead loads the **built** stylesheet via `css: ['@soybeanjs/ui/styles.css']` in `nuxt.config.ts`, so there are two accepted ways to ship component styles; pick per consumer rather than assuming `uiCSS` is required.
+1. **Colors must be `hsl(var(--vean-x) / <alpha-value>)`.** A bare `var()` makes UnoCSS drop the opacity modifier **silently** — so the function wrapper and the `<alpha-value>` slot are both mandatory. `buildThemeColors` / `buildThemePreflight` own this; `cssColorRef` is the variant for references that need a fixed alpha.
+2. **The palette layer and the default alias block ship in the preflight**, so `--zinc-100` / `--background` resolve with **no runtime JS**. A themed (non-default) configuration is then injected on top by the provider. `uiCSS: true` is what adds that static layer — the docs app and `packages/ui/uno.config.ts` both set it. `apps/nuxt` deliberately omits it and instead loads the **built** stylesheet via `css: ['@vean/ui/styles.css']` in `nuxt.config.ts`, so there are two accepted ways to ship component styles; pick per consumer rather than assuming `uiCSS` is required.
 
 ## SPACING: THE ONE MAPPING THAT IS EASY TO GET WRONG
 
@@ -32,14 +32,14 @@ The name/value parity guard against upstream UnoCSS lives in `test/theme.spec.ts
 
 ## API
 
-- `presetUi(options?)` returns **an array of presets**, not a single preset: `presetWind3` + `presetAnimations` + `presetScrollbar` + optional `presetWebFonts` + the `soybean-ui-uno` self preset. It is designed to be spread as the entire `presets` array.
+- `presetUi(options?)` returns **an array of presets**, not a single preset: `presetWind3` + `presetAnimations` + `presetScrollbar` + optional `presetWebFonts` + the `vean-uno` self preset. It is designed to be spread as the entire `presets` array.
 - `presetWind3` is always first and required — utility classes come from it, and the `darkSelector` option is translated by `resolveWind3Dark` into wind3's `dark` form (`'class'` / `'media'` / a custom selector).
 - `uiCSS` / `globalCSS` / `resetCSS` are all **off by default**; each one adds a preflight section. `styles.css` (the library's own component styles) is always attached to the self preset's preflights.
-- `presetSbean({ cwd })` is a separate bridge that reads `sbean.json` and forwards its `uno` block plus the four font roles into `presetUi`. Its font catalog is built from the engine's own `THEME_FONT_*` tables, so a family the engine knows resolves here without a second list.
+- `presetVean({ cwd })` is a separate bridge that reads `vean.json` and forwards its `uno` block plus the four font roles into `presetUi`. Its font catalog is built from the engine's own `THEME_FONT_*` tables, so a family the engine knows resolves here without a second list.
 
 ## ANTI-PATTERNS
 
-- **NO token vocabulary of its own** — every color key, literal, and rung comes from `@soybeanjs/theme` (`SEMANTIC_TOKENS`, `PALETTE_KEYS`, `RADIUS_RUNG_KEYS`, `SPACING_GRID_COEFFICIENTS`). Hand-written token or palette lists drift from the contract.
-- **NO bundling of `@soybeanjs/theme` or `unocss`** — both are `neverBundle` in `vite.config.ts`.
+- **NO token vocabulary of its own** — every color key, literal, and rung comes from `@vean/theme` (`SEMANTIC_TOKENS`, `PALETTE_KEYS`, `RADIUS_RUNG_KEYS`, `SPACING_GRID_COEFFICIENTS`). Hand-written token or palette lists drift from the contract.
+- **NO bundling of `@vean/theme` or `unocss`** — both are `neverBundle` in `vite.config.ts`.
 - **NO minification of preflight CSS here** — preflight bodies are small; final minification happens in the consumer's build (`Vite build.cssMinify` / the uno CLI).
 - **NO changes to the theme layer's semantics.** If a token needs a different level, that is `CORE_RULES` in `packages/theme` — this package must follow, never compensate.

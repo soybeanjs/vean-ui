@@ -1,8 +1,8 @@
 import { computed, ref } from 'vue';
 import type { ComputedRef, Ref } from 'vue';
-import { DEFAULT_OPTIONS } from '@soybeanjs/theme';
-import type { ThemeModePreference, ThemeOptions, ThemeOverrides } from '@soybeanjs/theme';
-import { readThemeEnvelope, writeThemeEnvelope, THEME_STORAGE_KEY } from '@soybeanjs/theme/storage';
+import { DEFAULT_OPTIONS } from '@vean/theme';
+import type { ThemeModePreference, ThemeOptions, ThemeOverrides } from '@vean/theme';
+import { readThemeEnvelope, writeThemeEnvelope, THEME_STORAGE_KEY } from '@vean/theme/storage';
 
 /** the editable theme settings state: engine options plus the mode preference. */
 export type ThemeSettingsState = ThemeOptions & { mode?: ThemeModePreference };

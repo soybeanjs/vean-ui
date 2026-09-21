@@ -12,8 +12,8 @@ import {
   registryItemSchema,
   registryItemTypeSchema,
   registrySchema,
-  sbeanBaseConfigSchema,
-  sbeanBaseItemConfigSchema
+  veanBaseConfigSchema,
+  veanBaseItemConfigSchema
 } from '../src/registry/schema';
 
 describe('config schema', () => {
@@ -55,7 +55,7 @@ describe('config schema', () => {
   it('accepts full config with optional fields', () => {
     const fullConfig = {
       ...minimalConfig,
-      $schema: 'https://ui.soybeanjs.cn/schema.json',
+      $schema: 'https://veanui.com/schema.json',
       uno: {
         ...minimalConfig.uno,
         size: 'lg'
@@ -80,7 +80,7 @@ describe('registry item schema', () => {
       type: 'registry:ui',
       name: 'button',
       description: 'A button component',
-      dependencies: ['@soybeanjs/headless', '@soybeanjs/cva'],
+      dependencies: ['@vean/aria', '@soybeanjs/cva'],
       files: [{ path: 'button.vue', type: 'registry:ui' }]
     };
 
@@ -119,13 +119,13 @@ describe('registry item schema', () => {
 describe('registry schema', () => {
   it('parses a valid registry', () => {
     const registry = {
-      name: 'soybean-ui',
-      homepage: 'https://ui.soybeanjs.cn',
+      name: 'vean',
+      homepage: 'https://veanui.com',
       items: [
         {
           type: 'registry:ui',
           name: 'button',
-          dependencies: ['@soybeanjs/headless'],
+          dependencies: ['@vean/aria'],
           files: [{ path: 'button.vue', type: 'registry:ui' }]
         }
       ]
@@ -165,7 +165,7 @@ describe('registry item uno field (ADR-005)', () => {
       type: 'registry:style',
       name: 'rich-uno',
       uno: {
-        presets: ['@soybeanjs/ui-uno', 'presetIcons'],
+        presets: ['@vean/unocss', 'presetIcons'],
         rules: [['^btn-(.+)$', 'btn-$1']],
         shortcuts: { 'btn-primary': 'bg-primary text-primary-foreground' },
         theme: { colors: { brand: '#3b82f6' } },
@@ -191,7 +191,7 @@ describe('registry item uno field (ADR-005)', () => {
       type: 'registry:base',
       name: 'starter-base',
       uno: {
-        presets: ['@soybeanjs/ui-uno'],
+        presets: ['@vean/unocss'],
         safelist: ['sr-only']
       },
       config: {},
@@ -222,11 +222,11 @@ describe('registry item uno field (ADR-005)', () => {
 });
 
 // ---------------------------------------------------------------------------
-// ADR-009: registry:base config is typed SoybeanUI-native (sbeanBaseConfigSchema)
+// ADR-009: registry:base config is typed Vean-native (veanBaseConfigSchema)
 // ---------------------------------------------------------------------------
 
-describe('sbeanBaseConfigSchema (ADR-009)', () => {
-  it('parses a full SoybeanUI-native base config', () => {
+describe('veanBaseConfigSchema (ADR-009)', () => {
+  it('parses a full Vean-native base config', () => {
     const config = {
       uno: {
         base: 'zinc',
@@ -241,13 +241,13 @@ describe('sbeanBaseConfigSchema (ADR-009)', () => {
         components: '@/components',
         composables: '@/composables'
       },
-      themePackage: '@soybeanjs/theme',
+      themePackage: '@vean/theme',
       resolver: './src/ui/resolver',
       iconLibrary: 'lucide',
       rtl: false,
       pointer: 'fine'
     };
-    expect(v.safeParse(sbeanBaseConfigSchema, config).success).toBe(true);
+    expect(v.safeParse(veanBaseConfigSchema, config).success).toBe(true);
   });
 
   it('rejects an invalid uno.base value', () => {
@@ -260,13 +260,13 @@ describe('sbeanBaseConfigSchema (ADR-009)', () => {
         components: '@/components',
         composables: '@/composables'
       },
-      themePackage: '@soybeanjs/theme',
+      themePackage: '@vean/theme',
       resolver: './src/ui/resolver',
       iconLibrary: 'lucide',
       rtl: false,
       pointer: 'fine'
     };
-    expect(v.safeParse(sbeanBaseConfigSchema, config).success).toBe(false);
+    expect(v.safeParse(veanBaseConfigSchema, config).success).toBe(false);
   });
 
   it('rejects an invalid pointer value', () => {
@@ -279,13 +279,13 @@ describe('sbeanBaseConfigSchema (ADR-009)', () => {
         components: '@/components',
         composables: '@/composables'
       },
-      themePackage: '@soybeanjs/theme',
+      themePackage: '@vean/theme',
       resolver: './src/ui/resolver',
       iconLibrary: 'lucide',
       rtl: false,
       pointer: 'touch'
     };
-    expect(v.safeParse(sbeanBaseConfigSchema, config).success).toBe(false);
+    expect(v.safeParse(veanBaseConfigSchema, config).success).toBe(false);
   });
 
   it('accepts every PRESET_BASE_COLORS / PRIMARY / SIZE / RADIUS / ICON value', () => {
@@ -300,46 +300,46 @@ describe('sbeanBaseConfigSchema (ADR-009)', () => {
             components: '@/components',
             composables: '@/composables'
           },
-          themePackage: '@soybeanjs/theme',
+          themePackage: '@vean/theme',
           resolver: './src/ui/resolver',
           iconLibrary: PRESET_ICON_LIBRARIES[0],
           rtl: false,
           pointer: 'fine'
         };
-        expect(v.safeParse(sbeanBaseConfigSchema, config).success).toBe(true);
+        expect(v.safeParse(veanBaseConfigSchema, config).success).toBe(true);
       }
     }
   });
 });
 
 describe('registry:base config deep-partial (ADR-009)', () => {
-  it('sbeanBaseItemConfigSchema accepts empty object (all fields optional)', () => {
-    expect(v.safeParse(sbeanBaseItemConfigSchema, {}).success).toBe(true);
+  it('veanBaseItemConfigSchema accepts empty object (all fields optional)', () => {
+    expect(v.safeParse(veanBaseItemConfigSchema, {}).success).toBe(true);
   });
 
-  it('sbeanBaseItemConfigSchema accepts a partial uno (only base color)', () => {
-    expect(v.safeParse(sbeanBaseItemConfigSchema, { uno: { base: 'zinc' } }).success).toBe(true);
+  it('veanBaseItemConfigSchema accepts a partial uno (only base color)', () => {
+    expect(v.safeParse(veanBaseItemConfigSchema, { uno: { base: 'zinc' } }).success).toBe(true);
   });
 
-  it('sbeanBaseItemConfigSchema accepts a partial aliases (only ui)', () => {
-    expect(v.safeParse(sbeanBaseItemConfigSchema, { aliases: { ui: '@/ui' } }).success).toBe(true);
+  it('veanBaseItemConfigSchema accepts a partial aliases (only ui)', () => {
+    expect(v.safeParse(veanBaseItemConfigSchema, { aliases: { ui: '@/ui' } }).success).toBe(true);
   });
 
-  it('sbeanBaseItemConfigSchema accepts only themePackage + resolver', () => {
+  it('veanBaseItemConfigSchema accepts only themePackage + resolver', () => {
     expect(
-      v.safeParse(sbeanBaseItemConfigSchema, {
-        themePackage: '@soybeanjs/theme',
+      v.safeParse(veanBaseItemConfigSchema, {
+        themePackage: '@vean/theme',
         resolver: './src/ui/resolver'
       }).success
     ).toBe(true);
   });
 
-  it('sbeanBaseItemConfigSchema rejects an invalid uno.base even when partial', () => {
-    expect(v.safeParse(sbeanBaseItemConfigSchema, { uno: { base: 'rainbow' } }).success).toBe(false);
+  it('veanBaseItemConfigSchema rejects an invalid uno.base even when partial', () => {
+    expect(v.safeParse(veanBaseItemConfigSchema, { uno: { base: 'rainbow' } }).success).toBe(false);
   });
 
-  it('sbeanBaseItemConfigSchema rejects an invalid pointer even when partial', () => {
-    expect(v.safeParse(sbeanBaseItemConfigSchema, { pointer: 'touch' }).success).toBe(false);
+  it('veanBaseItemConfigSchema rejects an invalid pointer even when partial', () => {
+    expect(v.safeParse(veanBaseItemConfigSchema, { pointer: 'touch' }).success).toBe(false);
   });
 
   it('parses a registry:base item with empty config (backward compat)', () => {
@@ -360,7 +360,7 @@ describe('registry:base config deep-partial (ADR-009)', () => {
           components: '@/components',
           composables: '@/composables'
         },
-        themePackage: '@soybeanjs/theme',
+        themePackage: '@vean/theme',
         resolver: './src/ui/resolver',
         iconLibrary: 'lucide',
         rtl: false,

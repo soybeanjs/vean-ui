@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { RatingItem, RatingRoot } from '@soybeanjs/headless/rating';
-import type { RatingItemState } from '@soybeanjs/headless/rating';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { RatingItem, RatingRoot } from '@vean/aria/rating';
+import type { RatingItemState } from '@vean/aria/rating';
 import { ratingItemVariants, ratingVariants } from '@/styles/rating';
 import { SIcon } from '../icon';
 import type { RatingProps, RatingEmits } from './types';

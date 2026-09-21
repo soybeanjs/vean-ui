@@ -90,7 +90,7 @@ describe('SInput', () => {
         props: { name: 'email' },
         attachTo: document.body
       });
-      const hiddenInputs = wrapper.findAll('[data-soybean-visually-hidden-input]');
+      const hiddenInputs = wrapper.findAll('[data-vean-visually-hidden-input]');
       expect(hiddenInputs).toHaveLength(1);
       expect(hiddenInputs[0].attributes('name')).toBe('email');
       wrapper.unmount();
@@ -98,7 +98,7 @@ describe('SInput', () => {
 
     it('does not render a visually hidden input without a name', () => {
       const wrapper = mount(SInput, { attachTo: document.body });
-      expect(wrapper.find('[data-soybean-visually-hidden-input]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-visually-hidden-input]').exists()).toBe(false);
       wrapper.unmount();
     });
 
@@ -107,7 +107,7 @@ describe('SInput', () => {
         props: { size: 'lg' },
         attachTo: document.body
       });
-      expect(wrapper.find('[data-soybean-input-root]').classes()).toContain('h-9');
+      expect(wrapper.find('[data-vean-input-root]').classes()).toContain('h-9');
       wrapper.unmount();
     });
   });
@@ -158,7 +158,7 @@ describe('SInput', () => {
         attachTo: document.body
       });
 
-      await wrapper.find('[data-soybean-input-clearable]').trigger('click');
+      await wrapper.find('[data-vean-input-clearable]').trigger('click');
 
       expect(wrapper.emitted('update:modelValue')).toBeTruthy();
       expect(wrapper.emitted('update:modelValue')![0]).toEqual(['']);
@@ -213,7 +213,7 @@ describe('SInput', () => {
         attachTo: document.body
       });
 
-      const clearButton = wrapper.find('[data-soybean-input-clearable]');
+      const clearButton = wrapper.find('[data-vean-input-clearable]');
       expect(clearButton.attributes('aria-disabled')).toBe('true');
 
       await clearButton.trigger('click');
@@ -232,7 +232,7 @@ describe('SInput', () => {
         attachTo: document.body
       });
 
-      expect(wrapper.find('[data-soybean-input-clearable]').attributes('aria-disabled')).toBe('true');
+      expect(wrapper.find('[data-vean-input-clearable]').attributes('aria-disabled')).toBe('true');
       wrapper.unmount();
     });
   });
@@ -243,7 +243,7 @@ describe('SInput', () => {
         props: { clearable: true },
         attachTo: document.body
       });
-      expect(wrapper.find('[data-soybean-input-clearable]').attributes('aria-label')).toBe('Clear input');
+      expect(wrapper.find('[data-vean-input-clearable]').attributes('aria-label')).toBe('Clear input');
       wrapper.unmount();
     });
 
@@ -255,7 +255,7 @@ describe('SInput', () => {
         },
         attachTo: document.body
       });
-      expect(wrapper.find('[data-soybean-input-clearable]').attributes('aria-label')).toBe('Empty the field');
+      expect(wrapper.find('[data-vean-input-clearable]').attributes('aria-label')).toBe('Empty the field');
       wrapper.unmount();
     });
   });

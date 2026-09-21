@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { ColorSliderCompact, provideColorSliderUi } from '@soybeanjs/headless/color-slider';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
+import { ColorSliderCompact, provideColorSliderUi } from '@vean/aria/color-slider';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
 import { sliderVariants } from '@/styles/slider';
 import type { ColorSliderProps, ColorSliderEmits } from './types';
 

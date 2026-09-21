@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { VisuallyHidden } from '@soybeanjs/headless';
-import { SButtonIcon, SIcon, SInput, SSelect } from '@soybeanjs/ui';
-import type { SelectOptionData } from '@soybeanjs/ui';
+import { VisuallyHidden } from '@vean/aria';
+import { SButtonIcon, SIcon, SInput, SSelect } from '@vean/ui';
+import type { SelectOptionData } from '@vean/ui';
 
 interface Props {
   playgroundRegion?: string;

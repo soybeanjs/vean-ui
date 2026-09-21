@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { STreeNav } from '@soybeanjs/ui';
-import type { TreeNavOptionData } from '@soybeanjs/ui';
+import { STreeNav } from '@vean/ui';
+import type { TreeNavOptionData } from '@vean/ui';
 
 const items: TreeNavOptionData[] = [
   { value: 'guide', label: 'Guide' },

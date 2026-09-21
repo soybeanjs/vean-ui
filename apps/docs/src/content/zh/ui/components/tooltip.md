@@ -1,14 +1,14 @@
 ---
 head:
   title: 文字提示
-  description: 当元素获得键盘焦点或鼠标悬停时，显示与该元素相关信息的弹出层。STooltip 组合 headless TooltipRoot/TooltipTrigger/TooltipPositioner/TooltipPopup/TooltipArrow 基础组件家族（构建于共享 Popper）与 tooltipVariants 样式配方（3 个槽、6 种尺寸）。
+  description: 当元素获得键盘焦点或鼠标悬停时，显示与该元素相关信息的弹出层。STooltip 组合 Aria TooltipRoot/TooltipTrigger/TooltipPositioner/TooltipPopup/TooltipArrow 基础组件家族（构建于共享 Popper）与 tooltipVariants 样式配方（3 个槽、6 种尺寸）。
 ---
 
 # 文字提示
 
 ## 概述
 
-当元素获得键盘焦点或鼠标悬停时，显示与该元素相关信息的弹出层。`STooltip` 组合 headless `TooltipRoot`/`TooltipTrigger`/`TooltipPositioner`/`TooltipPopup`/`TooltipArrow` 基础组件家族（构建于共享 `Popper`）与 `tooltipVariants` 样式配方（3 个槽、6 种尺寸）。
+当元素获得键盘焦点或鼠标悬停时，显示与该元素相关信息的弹出层。`STooltip` 组合 Aria `TooltipRoot`/`TooltipTrigger`/`TooltipPositioner`/`TooltipPopup`/`TooltipArrow` 基础组件家族（构建于共享 `Popper`）与 `tooltipVariants` 样式配方（3 个槽、6 种尺寸）。
 
 文字提示适合简短、不可交互的提示。丰富的悬停内容请用 `hover-card`；点击触发的内容请用 `popover`；确认请用 `popconfirm`。
 
@@ -18,7 +18,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `TooltipCompact` 聚合 popper 触发器、定位器、弹层与箭头；`STooltip` 只注入样式并转发插槽/事件
+- 🧩 Aria/样式分离 — `TooltipCompact` 聚合 popper 触发器、定位器、弹层与箭头；`STooltip` 只注入样式并转发插槽/事件
 - 🖱️ 悬停 + 焦点 — 指针悬停或键盘焦点时打开；Escape 或指针离开时关闭
 - ⏱️ 延迟调节 — `delayDuration`（打开）与 `skipDelayDuration`（触发间隔），全局默认值经 `ConfigProvider`
 - 🎯 定位 — 完整 popper `placement` 控制，带碰撞避免与按侧滑入动画
@@ -31,12 +31,12 @@ head:
 ## 组件家族
 
 - `STooltip`（样式层）— 入口包装组件；`tooltipVariants` 配方配合动态插槽转发
-- `TooltipRoot`（headless）— 状态持有者；经 `useControllableState` 维护 `open`，提供 `delayDuration`/`skipDelayDuration`/`disabled`/`ignoreNonKeyboardFocus`，合并全局 `ConfigProvider` tooltip 配置
-- `TooltipTrigger`（headless）— 悬停/聚焦打开提示的锚点
-- `TooltipPositioner` / `TooltipPositionerImpl`（headless）— 定位表面（构建于 `PopperPositioner`）
-- `TooltipPopup`（headless）— 弹层主体；暴露视觉隐藏的 `role="tooltip"` 文本节点供屏幕阅读器
-- `TooltipArrow`（headless）— popper 箭头
-- `TooltipCompact`（headless）— 聚合组件；组合触发器/定位器/弹层/箭头并暴露各插槽
+- `TooltipRoot`（Aria）— 状态持有者；经 `useControllableState` 维护 `open`，提供 `delayDuration`/`skipDelayDuration`/`disabled`/`ignoreNonKeyboardFocus`，合并全局 `ConfigProvider` tooltip 配置
+- `TooltipTrigger`（Aria）— 悬停/聚焦打开提示的锚点
+- `TooltipPositioner` / `TooltipPositionerImpl`（Aria）— 定位表面（构建于 `PopperPositioner`）
+- `TooltipPopup`（Aria）— 弹层主体；暴露视觉隐藏的 `role="tooltip"` 文本节点供屏幕阅读器
+- `TooltipArrow`（Aria）— popper 箭头
+- `TooltipCompact`（Aria）— 聚合组件；组合触发器/定位器/弹层/箭头并暴露各插槽
 
 ## 演示
 
@@ -50,16 +50,16 @@ head:
 
 ### 架构与对标差异
 
-`TooltipCompact` 负责触发器/定位器/弹层/箭头组合，所有基础组件保持零样式，仅由 UI 包装组件注入 `tooltipVariants` 类。这与 radix-ui/shadcn-ui 的 headless 分离一致，构建于共享 `Popper` 基础组件之上。Ant Design、Element Plus、Mantine、Naive UI 提供带 `title`/`placement` prop 的单一样式化提示；SoybeanUI 额外暴露逐槽 `*Props`、`size` 尺寸体系、箭头开关、带 `ConfigProvider` 全局默认的 `delayDuration`/`skipDelayDuration` 调节模型，以及无障碍的视觉隐藏 `role="tooltip"` 节点。
+`TooltipCompact` 负责触发器/定位器/弹层/箭头组合，所有基础组件保持零样式，仅由 UI 包装组件注入 `tooltipVariants` 类。这与 radix-ui/shadcn-ui 的 headless 分离一致，构建于共享 `Popper` 基础组件之上。Ant Design、Element Plus、Mantine、Naive UI 提供带 `title`/`placement` prop 的单一样式化提示；VeanUI 额外暴露逐槽 `*Props`、`size` 尺寸体系、箭头开关、带 `ConfigProvider` 全局默认的 `delayDuration`/`skipDelayDuration` 调节模型，以及无障碍的视觉隐藏 `role="tooltip"` 节点。
 
-| 能力              | SoybeanUI | shadcn/ui | Ant Design Tooltip | Element Plus Tooltip | Mantine Tooltip | Naive UI Tooltip |
-| :---------------- | :-------: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
-| Headless/样式分离 |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Popper 定位（12） |    ✅     |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
-| 延迟调节          |    ✅     |    ✅     |         —          |          ✅          |       ✅        |        —         |
-| 箭头              |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| 尺寸（6）         |    ✅     |     —     |         —          |          —           |        —        |        —         |
-| 焦点触发          |    ✅     |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
+| 能力              | VeanUI | shadcn/ui | Ant Design Tooltip | Element Plus Tooltip | Mantine Tooltip | Naive UI Tooltip |
+| :---------------- | :----: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
+| Aria/样式分离     |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Popper 定位（12） |   ✅   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
+| 延迟调节          |   ✅   |    ✅     |         —          |          ✅          |       ✅        |        —         |
+| 箭头              |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| 尺寸（6）         |   ✅   |     —     |         —          |          —           |        —        |        —         |
+| 焦点触发          |   ✅   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
 
 `—` = 不支持或采用不同交互模型。
 

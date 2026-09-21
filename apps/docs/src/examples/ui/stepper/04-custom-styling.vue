@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SStepper } from '@soybeanjs/ui';
+import { SStepper } from '@vean/ui';
 
 const value = ref(2);
 

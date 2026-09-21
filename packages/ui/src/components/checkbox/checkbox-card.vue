@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { CheckboxCardCompact, provideCheckboxCardUi } from '@soybeanjs/headless/checkbox';
-import { useOmitProps } from '@soybeanjs/headless/composables';
+import { CheckboxCardCompact, provideCheckboxCardUi } from '@vean/aria/checkbox';
+import { useOmitProps } from '@vean/aria/composables';
 import { checkboxCardVariants } from '@/styles/checkbox';
 import type { CheckboxCardProps, CheckboxEmits } from './types';
 

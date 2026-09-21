@@ -4,7 +4,7 @@ import { scv } from '@soybeanjs/cva';
 export const treeNavVariants = scv({
   slots: {
     overflow: 'group',
-    root: 'flex w-fit items-center rounded-md bg-card group-data-[soybean-tree-nav-overflow]:min-w-max',
+    root: 'flex w-fit items-center rounded-md bg-card group-data-[vean-tree-nav-overflow]:min-w-max',
     item: [
       'group/item relative flex cursor-pointer select-none items-center rounded-sm',
       'font-medium outline-none transition-colors-200',

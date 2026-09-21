@@ -28,9 +28,9 @@
       }
     },
     {
-      "id": "headless/entry",
+      "id": "aria/entry",
       "kind": "file",
-      "path": "packages/headless/dist/index.js",
+      "path": "packages/aria/dist/index.js",
       "budget": {
         "gzip": 11264
       }
@@ -44,9 +44,9 @@
       }
     },
     {
-      "id": "headless/tarball",
+      "id": "aria/tarball",
       "kind": "pack",
-      "packageDir": "packages/headless",
+      "packageDir": "packages/aria",
       "budget": {
         "raw": 816128
       }
@@ -88,9 +88,9 @@
       }
     },
     {
-      "id": "consumer/headless-dialog",
+      "id": "consumer/aria-dialog",
       "kind": "bundle",
-      "entry": "packages/headless/dist/index.js",
+      "entry": "packages/aria/dist/index.js",
       "import": "{ DialogRoot, DialogContent }",
       "budget": {
         "brotli": 4608
@@ -128,9 +128,9 @@
       }
     },
     {
-      "id": "worstcase/headless-barrel",
+      "id": "worstcase/aria-barrel",
       "kind": "bundle",
-      "entry": "packages/headless/dist/index.js",
+      "entry": "packages/aria/dist/index.js",
       "gate": false,
       "budget": {
         "brotli": 313344

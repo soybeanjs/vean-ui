@@ -3,8 +3,8 @@ import type {
   PaginationCompactEmits,
   PaginationCompactSlots,
   PaginationUi
-} from '@soybeanjs/headless/pagination';
-import type { ClassValue } from '@soybeanjs/headless/types';
+} from '@vean/aria/pagination';
+import type { ClassValue } from '@vean/aria/types';
 import type { PaginationShape, PaginationVariant } from '@/styles/pagination';
 import type { ThemeSize } from '@/theme';
 

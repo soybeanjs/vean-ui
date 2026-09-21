@@ -1,14 +1,14 @@
 ---
 head:
   title: 表格
-  description: 用于展示行列数据的数据表格组件。STable 将 headless 层 TableCompact 聚合组件（TableRoot 一族的 9 个基础原语，零样式）与 tableVariants 样式配方（29 个槽位，7 种尺寸 × 2 种视觉变体）组合。支持配置式 columns（分组表头、index/selection/expand 类型列）、排序、筛选、多选/单选、展开行与树形行、固定列/表头、列宽拖拽调整与键盘调整、虚拟滚动与空状态展示；default/simple 两种变体配合 bordered/rounded/striped 开关。所有交互文案与 aria-label（排序、筛选、选择、展开、列宽调整）均经 useLocaleMessages 本地化。
+  description: 用于展示行列数据的数据表格组件。STable 将 Aria 层 TableCompact 聚合组件（TableRoot 一族的 9 个基础原语，零样式）与 tableVariants 样式配方（29 个槽位，7 种尺寸 × 2 种视觉变体）组合。支持配置式 columns（分组表头、index/selection/expand 类型列）、排序、筛选、多选/单选、展开行与树形行、固定列/表头、列宽拖拽调整与键盘调整、虚拟滚动与空状态展示；default/simple 两种变体配合 bordered/rounded/striped 开关。所有交互文案与 aria-label（排序、筛选、选择、展开、列宽调整）均经 useLocaleMessages 本地化。
 ---
 
 # 表格
 
 ## 概述
 
-用于展示行列数据的数据表格组件。`STable` 将 headless 层 `TableCompact` 聚合组件（`TableRoot` 一族的 9 个基础原语，零样式）与 `tableVariants` 样式配方（29 个槽位，7 种尺寸 × 2 种视觉变体）组合。支持**配置式 `columns`**（分组表头、`index`/`selection`/`expand` 类型列）、排序、筛选、多选/单选、展开行与树形行、固定列/表头、列宽拖拽调整与键盘调整、虚拟滚动与空状态展示；`default`/`simple` 两种变体配合 `bordered`/`rounded`/`striped` 开关。所有交互文案与 `aria-label`（排序、筛选、选择、展开、列宽调整）均经 `useLocaleMessages` 本地化。
+用于展示行列数据的数据表格组件。`STable` 将 Aria 层 `TableCompact` 聚合组件（`TableRoot` 一族的 9 个基础原语，零样式）与 `tableVariants` 样式配方（29 个槽位，7 种尺寸 × 2 种视觉变体）组合。支持**配置式 `columns`**（分组表头、`index`/`selection`/`expand` 类型列）、排序、筛选、多选/单选、展开行与树形行、固定列/表头、列宽拖拽调整与键盘调整、虚拟滚动与空状态展示；`default`/`simple` 两种变体配合 `bordered`/`rounded`/`striped` 开关。所有交互文案与 `aria-label`（排序、筛选、选择、展开、列宽调整）均经 `useLocaleMessages` 本地化。
 
 ## 用法
 
@@ -16,7 +16,7 @@ head:
 
 ## 特性
 
-- 📋 配置式列模型 — TanStack 优先的 `columns: TableColumn<T>[]`（`accessorKey`/`header`/`size`/`minSize` + SoybeanUI 扩展 `align`/`type`/`fixed`/`hidden`），分组表头（`columns`）、`index`/`selection`/`expand` 类型列；`rowKey` 保证行身份稳定
+- 📋 配置式列模型 — TanStack 优先的 `columns: TableColumn<T>[]`（`accessorKey`/`header`/`size`/`minSize` + VeanUI 扩展 `align`/`type`/`fixed`/`hidden`），分组表头（`columns`）、`index`/`selection`/`expand` 类型列；`rowKey` 保证行身份稳定
 - 🔀 排序 — 列上 `enableSorting: true`（或 `sortFn` 自定义比较）；受控 `sorting` / `v-model:sorting`（TanStack `SortingState`）；`aria-sort` + 排序按钮 `aria-label` 本地化
 - 🔍 筛选 — 列上 `enableColumnFilter: true`（+ `filterPlaceholder`/`filterOptions`）；`{ keyword, values }` 复合筛选值，弹层内关键字搜索、选项多选、汇总计数与清除操作全部本地化；状态为 TanStack `ColumnFiltersState`（`v-model:columnFilters`）
 - ✅ 选择 — 默认多选（`multiple` 默认 `true`，复选框 + 表头全选），`multiple={false}` 切换为单选（行内 radio）；受控 `selected` / `v-model:selected`
@@ -28,11 +28,11 @@ head:
 
 ## 组件家族
 
-- `STable`（styled）— 入口包装；`tableVariants` 配方（29 槽位 = 16 个 headless 槽 + 11 个筛选/选择扩展槽 + 2 个内部 radio 槽）；`useOmitProps` 转发 + `useForwardListeners` 事件合并 + 全插槽透传；注入默认 `header-selection`/`selection`/`header-sort`/`header-filter`/`header-resize`/`tree-toggle`/`expand`/`empty` 插槽内容
-- `TableCompact`（headless）— 聚合状态所有者，构建在 **`@tanstack/vue-table` 引擎**之上：`useTableCompactState`（`sorting`/`columnFilters`/`expanded`/`columnPinning`/`columnSizing` 经 `useControllableState`，`selected`/`multiple` 经 `useSelection`）、`useTableCompactTable`（引擎实例接线）、`useTableCompactData`（表头分组/叶子列/行模型）、`useTableCompactResize`（指针 + 键盘列宽）、`useTableCompactVirtual`；`provideTableCompactContext` 桥接 9 个原语
-- `TableRoot`（headless）— 根元素，`dir` 方向，渲染 `data-soybean-table-root` 与表语义容器
-- `TableScroll` / `TableContent` / `TableHeader` / `TableBody` / `TableFooter` / `TableRow` / `TableHead` / `TableCell`（headless）— 9 个基础原语，全部零样式，渲染 `data-soybean-table-*` 数据属性
-- `TableCompactHead` / `TableCompactRow` / `TableCompactCell` / `TableCompactExpandedRow` / `TableVirtualSpacerRow`（headless 内部）— Compact 聚合内部的组合与渲染组件（不对外导出）
+- `STable`（styled）— 入口包装；`tableVariants` 配方（29 槽位 = 16 个 Aria 槽 + 11 个筛选/选择扩展槽 + 2 个内部 radio 槽）；`useOmitProps` 转发 + `useForwardListeners` 事件合并 + 全插槽透传；注入默认 `header-selection`/`selection`/`header-sort`/`header-filter`/`header-resize`/`tree-toggle`/`expand`/`empty` 插槽内容
+- `TableCompact`（Aria）— 聚合状态所有者，构建在 **`@tanstack/vue-table` 引擎**之上：`useTableCompactState`（`sorting`/`columnFilters`/`expanded`/`columnPinning`/`columnSizing` 经 `useControllableState`，`selected`/`multiple` 经 `useSelection`）、`useTableCompactTable`（引擎实例接线）、`useTableCompactData`（表头分组/叶子列/行模型）、`useTableCompactResize`（指针 + 键盘列宽）、`useTableCompactVirtual`；`provideTableCompactContext` 桥接 9 个原语
+- `TableRoot`（Aria）— 根元素，`dir` 方向，渲染 `data-vean-table-root` 与表语义容器
+- `TableScroll` / `TableContent` / `TableHeader` / `TableBody` / `TableFooter` / `TableRow` / `TableHead` / `TableCell`（Aria）— 9 个基础原语，全部零样式，渲染 `data-vean-table-*` 数据属性
+- `TableCompactHead` / `TableCompactRow` / `TableCompactCell` / `TableCompactExpandedRow` / `TableVirtualSpacerRow`（Aria 内部）— Compact 聚合内部的组合与渲染组件（不对外导出）
 - `STableFilterPopover`（styled 内部）— 筛选弹层（SPopover + SInput + SCheckbox + SButton），本地化搜索/选项/汇总/清除
 - `STableRadio`（styled 内部）— 单选模式的行内 radio 按钮（`aria-pressed` 语义），直接消费 `tableVariants` 的 `radioRoot`/`radioIndicator` 槽
 - `useTable` / `usePaginatedTable`（UI hooks）— 客户端排序/筛选/分页组合钩子
@@ -70,19 +70,19 @@ head:
 
 ### 架构与对标差异
 
-表格引擎为 [`@tanstack/vue-table`](https://tanstack.com/table)（v9）：列定义、排序、筛选、展开、固定、列宽均遵循 TanStack 状态契约（`SortingState`、`ColumnFiltersState`、`ExpandedState`、`ColumnPinningState`、`ColumnSizingState`），且全部经 `useControllableState` + `useSelection` 提供受控/非受控双通道；所有基础原语保持零样式，仅 UI 包装注入 `tableVariants` 类名。筛选弹层与单选 radio 作为 UI 内部组件被默认插槽消费，但消费者可用同名插槽（`header-filter`/`selection` 等）整体替换。排序按钮与筛选触发器为绝对定位图标按钮，配合本地化 `aria-label` 保持可访问；列宽调整同时支持指针（`PointerEvent`）与键盘（方向键）两种通道。虚拟滚动基于 `@soybeanjs/headless` 内置 virtualizer，仅渲染可视行并同步测量列宽。而 Ant Design / Element Plus 的表格为声明式组件实例（`el-table-column`），固定列依赖配置类名；SoybeanUI 的受控状态与 `aria-sort` 语义、以及全链路本地化（含筛选弹层）超出多数主流库。
+表格引擎为 [`@tanstack/vue-table`](https://tanstack.com/table)（v9）：列定义、排序、筛选、展开、固定、列宽均遵循 TanStack 状态契约（`SortingState`、`ColumnFiltersState`、`ExpandedState`、`ColumnPinningState`、`ColumnSizingState`），且全部经 `useControllableState` + `useSelection` 提供受控/非受控双通道；所有基础原语保持零样式，仅 UI 包装注入 `tableVariants` 类名。筛选弹层与单选 radio 作为 UI 内部组件被默认插槽消费，但消费者可用同名插槽（`header-filter`/`selection` 等）整体替换。排序按钮与筛选触发器为绝对定位图标按钮，配合本地化 `aria-label` 保持可访问；列宽调整同时支持指针（`PointerEvent`）与键盘（方向键）两种通道。虚拟滚动基于 `@vean/aria` 内置 virtualizer，仅渲染可视行并同步测量列宽。而 Ant Design / Element Plus 的表格为声明式组件实例（`el-table-column`），固定列依赖配置类名；VeanUI 的受控状态与 `aria-sort` 语义、以及全链路本地化（含筛选弹层）超出多数主流库。
 
-| 能力                            | SoybeanUI | Ant Design | Element Plus | Naive UI | Mantine Table |
-| :------------------------------ | :-------: | :--------: | :----------: | :------: | :-----------: |
-| headless/样式分离               |    ✅     |     —      |      —       |    —     |       —       |
-| 配置式 columns + 分组表头       |    ✅     |     ✅     |      ✅      |    ✅    |      ✅       |
-| 排序（aria-sort + 受控/非受控） |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| 筛选（关键字 + 选项多选）       |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| 选择（多选/单选 + 全选）        |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| 展开行 + 树形行                 |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| 固定列 / 固定表头               |    ✅     |     ✅     |      ✅      |    ✅    |      ⚠️       |
-| 列宽拖拽 + 键盘调整             |    ✅     |     ✅     |      ⚠️      |    ✅    |       —       |
-| 虚拟滚动                        |    ✅     |     ✅     |      ⚠️      |    ✅    |      ⚠️       |
+| 能力                            | VeanUI | Ant Design | Element Plus | Naive UI | Mantine Table |
+| :------------------------------ | :----: | :--------: | :----------: | :------: | :-----------: |
+| Aria/样式分离                   |   ✅   |     —      |      —       |    —     |       —       |
+| 配置式 columns + 分组表头       |   ✅   |     ✅     |      ✅      |    ✅    |      ✅       |
+| 排序（aria-sort + 受控/非受控） |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| 筛选（关键字 + 选项多选）       |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| 选择（多选/单选 + 全选）        |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| 展开行 + 树形行                 |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| 固定列 / 固定表头               |   ✅   |     ✅     |      ✅      |    ✅    |      ⚠️       |
+| 列宽拖拽 + 键盘调整             |   ✅   |     ✅     |      ⚠️      |    ✅    |       —       |
+| 虚拟滚动                        |   ✅   |     ✅     |      ⚠️      |    ✅    |      ⚠️       |
 
 `⚠️` = 部分支持（Mantine Table 的排序/筛选/选择为手动实现；Element Plus 虚拟滚动仅存在于独立的 `el-table-v2`；Element Plus 列宽拖拽仅限 `border` 模式）。
 
@@ -179,7 +179,7 @@ head:
 2. **`useTableEngine()`** — 在表格子树内渲染的任意组件中注入引擎（深层自定义单元格、工具栏组件）：
 
 ```ts
-import { useTableEngine } from '@soybeanjs/headless/table';
+import { useTableEngine } from '@vean/aria/table';
 
 const table = useTableEngine();
 

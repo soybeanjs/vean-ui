@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
-import { components as headlessComponents } from '../../headless/src/constants/components';
+import { components as ariaComponents } from '../../aria/src/constants/components';
 import { components as uiComponents } from '../../ui/src/constants/components';
-import { kebabCase } from '../../headless/src/shared/string';
+import { kebabCase } from '../../aria/src/shared/string';
 import { resolveChangelogComponent, resolveNoteReleaseVersion, resolveReleaseLine } from '../src/commands/changelog';
 import { componentRenameMap, releaseChangelogNotes } from '../src/commands/changelog-notes';
 
@@ -15,7 +15,7 @@ function readPublishedVersions(): string[] {
 }
 
 describe('commands/changelog component attribution', () => {
-  it('resolves headless families and UI-only components alike', () => {
+  it('resolves aria families and UI-only components alike', () => {
     expect(resolveChangelogComponent('table')).toBe('table');
     expect(resolveChangelogComponent('badge')).toBe('badge');
     expect(resolveChangelogComponent('card')).toBe('card');
@@ -36,7 +36,7 @@ describe('commands/changelog component attribution', () => {
 
   it('only maps renames onto components that exist in a catalog', () => {
     const catalogNames = new Set(
-      [...Object.keys(headlessComponents), ...Object.keys(uiComponents)].map(name => kebabCase(name))
+      [...Object.keys(ariaComponents), ...Object.keys(uiComponents)].map(name => kebabCase(name))
     );
 
     for (const [from, to] of Object.entries(componentRenameMap)) {

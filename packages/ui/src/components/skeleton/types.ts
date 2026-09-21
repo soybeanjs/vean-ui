@@ -1,5 +1,5 @@
-import type { PrimitiveWithBaseProps } from '@soybeanjs/headless/primitive';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { PrimitiveWithBaseProps } from '@vean/aria/primitive';
+import type { ClassValue } from '@vean/aria/types';
 import type { SkeletonShape } from '@/styles/skeleton';
 import type { ThemeSize } from '@/theme';
 

@@ -29,10 +29,10 @@ head:
 
 ## 组件家族
 
-- `SCalendar` — 样式包装层，将 props 转发给 headless compact 并注入 `calendarVariants` 类（12 个 slot，prev/next 复用按钮图标 recipe）
-- `CalendarCompact`（headless）— `CalendarRoot` + 头部（prev/heading/next）+ 每月一个网格（grid head/body 行内的 `CalendarCellTrigger`）的数据驱动组合；无样式用法从 `@soybeanjs/headless/calendar` 导入
-- `CalendarRoot`（headless）— 状态所有者：`useControllableState` 管理值与占位符，`useCalendar` 管理网格/月份翻页与校验，`useCalendarState` 派生选中/无效状态
-- `CalendarCellTrigger` / `CalendarCell` / `CalendarGrid*`（headless）— 可编辑的日期按钮（键盘处理、焦点管理、数据属性）及其语义化网格单元格包装
+- `SCalendar` — 样式包装层，将 props 转发给 Aria compact 并注入 `calendarVariants` 类（12 个 slot，prev/next 复用按钮图标 recipe）
+- `CalendarCompact`（Aria）— `CalendarRoot` + 头部（prev/heading/next）+ 每月一个网格（grid head/body 行内的 `CalendarCellTrigger`）的数据驱动组合；无样式用法从 `@vean/aria/calendar` 导入
+- `CalendarRoot`（Aria）— 状态所有者：`useControllableState` 管理值与占位符，`useCalendar` 管理网格/月份翻页与校验，`useCalendarState` 派生选中/无效状态
+- `CalendarCellTrigger` / `CalendarCell` / `CalendarGrid*`（Aria）— 可编辑的日期按钮（键盘处理、焦点管理、数据属性）及其语义化网格单元格包装
 
 ## 演示
 
@@ -46,22 +46,22 @@ head:
 
 ### 架构与对标差异
 
-`CalendarRoot` 通过 `useControllableState` 持有值（`multiple` 时为数组），以占位符驱动网格翻页，并把网格创建委托给 `useCalendar`（在 locale/周首日/占位符变化时重建网格，并以 `minValue`/`maxValue` 限制翻页）。`useCalendarState` 派生选中/无效状态。`CalendarCellTrigger` 是唯一交互部件：读取共享上下文，计算 `data-focused`/`data-selected`/`data-today`/`data-unavailable`/`data-outside-view`，处理 Arrow/Enter/Space 键（`dir` 感知方向，RTL 下 ArrowLeft/ArrowRight 互换），并在导航跨网格边界时翻到相邻月份。Compact 负责迭代月份/周/日与头部接线（prev/heading/next + 月份/年份 Select）。对标库多为单体日历面板；headless/styled 分离、逐部件 `*Props` 透传与插槽驱动单元格渲染是差异点。
+`CalendarRoot` 通过 `useControllableState` 持有值（`multiple` 时为数组），以占位符驱动网格翻页，并把网格创建委托给 `useCalendar`（在 locale/周首日/占位符变化时重建网格，并以 `minValue`/`maxValue` 限制翻页）。`useCalendarState` 派生选中/无效状态。`CalendarCellTrigger` 是唯一交互部件：读取共享上下文，计算 `data-focused`/`data-selected`/`data-today`/`data-unavailable`/`data-outside-view`，处理 Arrow/Enter/Space 键（`dir` 感知方向，RTL 下 ArrowLeft/ArrowRight 互换），并在导航跨网格边界时翻到相邻月份。Compact 负责迭代月份/周/日与头部接线（prev/heading/next + 月份/年份 Select）。对标库多为单体日历面板；Aria/styled 分离、逐部件 `*Props` 透传与插槽驱动单元格渲染是差异点。
 
-| 能力                         | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :--------------------------- | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 单选 / 多选                  |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| 键盘网格导航                 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| RTL 方向反转                 |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `numberOfMonths` 网格        |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| `minValue`/`maxValue`        |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `isDateDisabled`/不可用      |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `fixedWeeks`/`weekStartsOn`  |    ✅     |     —      |      ✅      |   ✅    |    —     |   —    |
-| 月份/年份 Select 控件        |    ✅     |     ✅     |      ✅      |    —    |    —     |   —    |
-| 自定义 `prevPage`/`nextPage` |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 逐部件 `*Props` 透传         |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 本地化 `aria-label`          |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   —    |
+| 能力                         | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :--------------------------- | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离             |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 单选 / 多选                  |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 键盘网格导航                 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| RTL 方向反转                 |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `numberOfMonths` 网格        |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| `minValue`/`maxValue`        |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `isDateDisabled`/不可用      |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `fixedWeeks`/`weekStartsOn`  |   ✅   |     —      |      ✅      |   ✅    |    —     |   —    |
+| 月份/年份 Select 控件        |   ✅   |     ✅     |      ✅      |    —    |    —     |   —    |
+| 自定义 `prevPage`/`nextPage` |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 逐部件 `*Props` 透传         |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 本地化 `aria-label`          |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   —    |
 
 ### 运行时注意事项
 

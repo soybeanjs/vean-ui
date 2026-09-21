@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { themeSizeKeys } from '@soybeanjs/theme';
+import { themeSizeKeys } from '@vean/theme';
 import {
   SAvatar,
   SBadge,
@@ -15,8 +15,8 @@ import {
   SSwitch,
   STag,
   STextarea
-} from '@soybeanjs/ui';
-import type { RadioGroupOptionData, SegmentOptionData, SelectOptionData } from '@soybeanjs/ui';
+} from '@vean/ui';
+import type { RadioGroupOptionData, SegmentOptionData, SelectOptionData } from '@vean/ui';
 
 defineOptions({
   name: 'ThemeEditorPreviewSize'
@@ -40,7 +40,11 @@ const segments: SegmentOptionData<string>[] = [
 ];
 
 // bound via :src — a static src value containing `//` breaks vue-tsc's generated v-for scope (tsgo quirk)
+<<<<<<< HEAD
 const avatarSrc = 'https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202609141212';
+=======
+const avatarSrc = 'https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212';
+>>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean)
 
 const textLadder = [
   { token: 'text-4xs', class: 'text-4xs' },

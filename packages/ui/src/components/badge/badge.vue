@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useControllableState, useOmitProps } from '@soybeanjs/headless/composables';
+import { useControllableState, useOmitProps } from '@vean/aria/composables';
 import { badgeVariants } from '@/styles/badge';
 import type { BadgeProps, BadgeEmits, BadgeSlots } from './types';
 
@@ -49,9 +49,9 @@ const ui = computed(() =>
 </script>
 
 <template>
-  <div v-bind="forwardedProps" data-soybean-badge-root :class="ui.root">
+  <div v-bind="forwardedProps" data-vean-badge-root :class="ui.root">
     <slot />
-    <span v-if="open" v-bind="contentProps" data-soybean-badge-content :class="ui.content">
+    <span v-if="open" v-bind="contentProps" data-vean-badge-content :class="ui.content">
       <slot name="content">{{ content }}</slot>
     </span>
   </div>

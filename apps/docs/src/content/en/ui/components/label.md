@@ -35,11 +35,11 @@ The `SLabel` component renders a native `<label>` element that provides an acces
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits `Label` into a headless layer (`@soybeanjs/headless/label`) that owns the `<label>` element, `for` association, and double-click text-selection prevention, and a styled layer (`@soybeanjs/ui`) that owns the `cv()` variant recipe (size). This follows the shadcn/ui headless/styled separation, which itself derives from Radix UI's Label primitive.
+VeanUI splits `Label` into an Aria layer (`@vean/aria/label`) that owns the `<label>` element, `for` association, and double-click text-selection prevention, and a styled layer (`@vean/ui`) that owns the `cv()` variant recipe (size). This follows the shadcn/ui headless/styled separation, which itself derives from Radix UI's Label primitive.
 
-| Aspect               | SoybeanUI                     | shadcn/ui `Label` | Ant Design `Form.Label` | Element Plus `FormLabel` | MUI `InputLabel` |
+| Aspect               | VeanUI                        | shadcn/ui `Label` | Ant Design `Form.Label` | Element Plus `FormLabel` | MUI `InputLabel` |
 | :------------------- | :---------------------------- | :---------------- | :---------------------- | :----------------------- | :--------------- |
-| Architecture         | headless + styled split       | headless + styled | form-coupled            | form-coupled             | styled only      |
+| Architecture         | Aria + styled split           | Aria + styled     | form-coupled            | form-coupled             | styled only      |
 | Native `<label>`     | ✅                            | ✅                | ✅ (within Form)        | ✅ (within Form)         | ✅               |
 | `for` association    | ✅ standalone                 | ✅ standalone     | auto via Form           | auto via Form            | auto via Form    |
 | Size scaling         | `xs`–`2xl`                    | —                 | —                       | —                        | `size`           |
@@ -64,4 +64,4 @@ Yes. If you wrap the input inside the label (`<SLabel>Email <SInput /></SLabel>`
 The base class includes `peer-disabled:opacity-50`. When the sibling input (with `peer` class) is disabled, the label opacity drops to 50%. This is a UX convention from shadcn/ui.
 
 **How do I prevent the double-click selection prevention?**
-The selection prevention is built into the headless layer. If you need standard text selection behavior, use the headless `Label` directly and omit the `@mousedown` handler, or override it in your own wrapper.
+The selection prevention is built into the Aria layer. If you need standard text selection behavior, use the Aria `Label` directly and omit the `@mousedown` handler, or override it in your own wrapper.

@@ -1,5 +1,5 @@
-import type { InputCompactProps, InputCompactSlots, InputRootEmits, InputUi } from '@soybeanjs/headless/input';
-import type { ClassValue } from '@soybeanjs/headless/types';
+import type { InputCompactProps, InputCompactSlots, InputRootEmits, InputUi } from '@vean/aria/input';
+import type { ClassValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

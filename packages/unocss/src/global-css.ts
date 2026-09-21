@@ -1,4 +1,4 @@
-import type { ColorFormat } from '@soybeanjs/theme';
+import type { ColorFormat } from '@vean/theme';
 import { cssAlphaColorRef, cssColorRef } from './theme';
 
 /**

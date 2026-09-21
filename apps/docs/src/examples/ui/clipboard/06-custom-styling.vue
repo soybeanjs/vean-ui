@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SClipboard, SIcon } from '@soybeanjs/ui';
+import { SClipboard, SIcon } from '@vean/ui';
 
 const value = 'custom-styling-example';
 </script>

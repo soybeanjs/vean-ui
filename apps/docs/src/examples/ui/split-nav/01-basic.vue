@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { SButtonIcon, SSelect, SSplitNav, SSwitch } from '@soybeanjs/ui';
-import type { SelectOptionData, SplitNavMode, ThemeSize, TreeMenuExpandStrategy } from '@soybeanjs/ui';
+import { SButtonIcon, SSelect, SSplitNav, SSwitch } from '@vean/ui';
+import type { SelectOptionData, SplitNavMode, ThemeSize, TreeMenuExpandStrategy } from '@vean/ui';
 import { themeSizeOptions } from '~/constants/theme';
 import { splitNavItems } from './data';
 
@@ -58,7 +58,7 @@ const EXPAND_STRATEGY_KEYS: readonly TreeMenuExpandStrategy[] = ['keep', 'select
 const modeItems: SelectOptionData<SplitNavMode>[] = toOptions(MODE_KEYS);
 const expandStrategyItems: SelectOptionData<TreeMenuExpandStrategy>[] = toOptions(EXPAND_STRATEGY_KEYS);
 
-const active = shallowRef('soybean-ui');
+const active = shallowRef('vean-ui');
 const mode = shallowRef<SplitNavMode>(DEFAULTS.mode);
 const size = shallowRef<ThemeSize>(DEFAULTS.size);
 const expandStrategy = shallowRef<TreeMenuExpandStrategy>(DEFAULTS.expandStrategy);
@@ -67,7 +67,7 @@ const collapsed = shallowRef(DEFAULTS.collapsed);
 const containerClass = computed(() => CONTAINER_LAYOUT[mode.value]);
 
 const reset = (): void => {
-  active.value = 'soybean-ui';
+  active.value = 'vean-ui';
   mode.value = DEFAULTS.mode;
   size.value = DEFAULTS.size;
   expandStrategy.value = DEFAULTS.expandStrategy;

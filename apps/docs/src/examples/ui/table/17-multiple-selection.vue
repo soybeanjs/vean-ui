@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { STable } from '@soybeanjs/ui';
-import type { TableColumn } from '@soybeanjs/ui';
+import { STable } from '@vean/ui';
+import type { TableColumn } from '@vean/ui';
 
 interface TableData {
   id: number;

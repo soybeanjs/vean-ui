@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { kebabCase, pascalCase } from '@soybeanjs/headless/shared';
+import { kebabCase, pascalCase } from '@vean/aria/shared';
 import PlaygroundGallery from '~/components/playground-gallery.vue';
 import { chartMenuData } from '~/constants/menus';
 

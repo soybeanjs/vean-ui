@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SContextMenuWrapper, SMenuCheckboxOptions, SMenuOptions, SMenuRadioOptions } from '@soybeanjs/ui';
-import type { MenuCheckboxOptionData, MenuOptionData, MenuRadioOptionData } from '@soybeanjs/ui';
+import { SContextMenuWrapper, SMenuCheckboxOptions, SMenuOptions, SMenuRadioOptions } from '@vean/ui';
+import type { MenuCheckboxOptionData, MenuOptionData, MenuRadioOptionData } from '@vean/ui';
 import ContextMenuTrigger from './_trigger.vue';
 
 const menus: MenuOptionData<string>[] = [

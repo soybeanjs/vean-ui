@@ -1,10 +1,10 @@
 {
-  "name": "@soybeanjs/ui-uno",
+  "name": "@vean/unocss",
   "version": "0.50.0",
-  "description": "unocss preset for Soybean UI",
-  "homepage": "https://github.com/soybeanjs/soybean-ui/tree/main/packages/unocss",
+  "description": "unocss preset for Vean",
+  "homepage": "https://github.com/soybeanjs/vean-ui/tree/main/packages/unocss",
   "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-ui/issues"
+    "url": "https://github.com/soybeanjs/vean-ui/issues"
   },
   "license": "MIT",
   "author": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/soybeanjs"
   },
   "repository": {
-    "url": "https://github.com/soybeanjs/soybean-ui.git"
+    "url": "https://github.com/soybeanjs/vean-ui.git"
   },
   "files": [
     "dist"
@@ -39,8 +39,8 @@
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
-    "@soybeanjs/theme": "workspace:^",
     "@unocss/preset-mini": "^66.10.5",
+    "@vean/theme": "workspace:^",
     "unocss": "^66.10.5"
   },
   "devDependencies": {

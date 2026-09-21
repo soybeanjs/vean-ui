@@ -38,22 +38,22 @@ A slider for picking one or more numeric values within a continuous range, suppo
 
 ### Architecture and benchmark differences
 
-SoybeanUI builds the slider from headless `SliderRoot` (`useControllableState` + value normalization + `VisuallyHiddenInput` form proxy) → `SliderTrack` (pointer drag, pointer-move/up/cancel on the document) → `SliderRange` (percentage span between thumbs) → `SliderThumb` (`role="slider"` + `aria-valuemin/max/now` + `aria-orientation`, focus-derived step navigation). `SliderCompact` composes root + track + range + thumbs and owns thumb iteration; the UI wrapper `SSlider` only computes variant classes via `sliderVariants` and injects the `ui` map through `provideSliderUi`.
+VeanUI builds the slider from Aria `SliderRoot` (`useControllableState` + value normalization + `VisuallyHiddenInput` form proxy) → `SliderTrack` (pointer drag, pointer-move/up/cancel on the document) → `SliderRange` (percentage span between thumbs) → `SliderThumb` (`role="slider"` + `aria-valuemin/max/now` + `aria-orientation`, focus-derived step navigation). `SliderCompact` composes root + track + range + thumbs and owns thumb iteration; the UI wrapper `SSlider` only computes variant classes via `sliderVariants` and injects the `ui` map through `provideSliderUi`.
 
-| Capability                          | SoybeanUI | Ant Design `Slider` | Element Plus `Slider` | Mantine `Slider` | Naive UI `Slider` | shadcn `Slider` |
-| :---------------------------------- | :-------: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
-| headless/styled split               |    ✅     |          —          |           —           |        —         |         —         |       ✅        |
-| Controlled/uncontrolled             |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Range (multi-thumb)                 |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Vertical orientation                |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Inverted / RTL                      |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Keyboard nav (Arrows/Home/End/Page) |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| `minStepsBetweenThumbs`             |    ✅     |          —          |           —           |        —         |         —         |       ✅        |
-| Form proxy / `name` submit          |    ✅     |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
-| Axe-clean                           |    ✅     |          —          |           —           |        —         |         —         |        —        |
-| Marks (scale ticks)                 |    ➕     |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
-| Value tooltip while dragging        |    ➕     |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
-| Linked number input                 |    ➕     |         ✅          |           —           |        —         |         —         |        —        |
+| Capability                          | VeanUI | Ant Design `Slider` | Element Plus `Slider` | Mantine `Slider` | Naive UI `Slider` | shadcn `Slider` |
+| :---------------------------------- | :----: | :-----------------: | :-------------------: | :--------------: | :---------------: | :-------------: |
+| Aria/styled split                   |   ✅   |          —          |           —           |        —         |         —         |       ✅        |
+| Controlled/uncontrolled             |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Range (multi-thumb)                 |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Vertical orientation                |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Inverted / RTL                      |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Keyboard nav (Arrows/Home/End/Page) |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| `minStepsBetweenThumbs`             |   ✅   |          —          |           —           |        —         |         —         |       ✅        |
+| Form proxy / `name` submit          |   ✅   |         ✅          |          ✅           |        ✅        |        ✅         |       ✅        |
+| Axe-clean                           |   ✅   |          —          |           —           |        —         |         —         |        —        |
+| Marks (scale ticks)                 |   ➕   |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
+| Value tooltip while dragging        |   ➕   |         ✅          |          ✅           |        ✅        |        ✅         |        —        |
+| Linked number input                 |   ➕   |         ✅          |           —           |        —         |         —         |        —        |
 
 ### Cautions
 

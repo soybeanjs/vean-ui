@@ -119,13 +119,13 @@ describe('SIcon', () => {
   });
 
   describe('attributes', () => {
-    it('carries the data-soybean-icon attribute', () => {
+    it('carries the data-vean-icon attribute', () => {
       const wrapper = mount(SIcon, {
         props: { icon: 'lucide:check' },
         attachTo: document.body
       });
 
-      expect(wrapper.find('svg').attributes('data-soybean-icon')).toBeDefined();
+      expect(wrapper.find('svg').attributes('data-vean-icon')).toBeDefined();
 
       wrapper.unmount();
     });

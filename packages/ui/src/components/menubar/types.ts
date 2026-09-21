@@ -1,10 +1,5 @@
-import type {
-  MenubarCompactProps,
-  MenubarCompactEmits,
-  MenubarCompactSlots,
-  MenubarUi
-} from '@soybeanjs/headless/menubar';
-import type { ClassValue, AlignSide, DefinedValue } from '@soybeanjs/headless/types';
+import type { MenubarCompactProps, MenubarCompactEmits, MenubarCompactSlots, MenubarUi } from '@vean/aria/menubar';
+import type { ClassValue, AlignSide, DefinedValue } from '@vean/aria/types';
 import type { ThemeSize } from '@/theme';
 
 /**

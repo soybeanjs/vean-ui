@@ -1,5 +1,5 @@
 /**
- * `sbean scan` — auto-generate registry.json from the component source tree.
+ * `vean scan` — auto-generate registry.json from the component source tree.
  *
  * Scans `${UI_SOURCE_PATH}/components/` and produces a registry.json with:
  *   - name, type, files (auto-detected)
@@ -33,7 +33,7 @@ const IGNORE_PACKAGES = new Set([
   'vite',
   'unocss',
   '@unocss/core',
-  '@soybeanjs/ui-uno'
+  '@vean/unocss'
 ]);
 
 export const scan = new Command()
@@ -160,10 +160,9 @@ export const scan = new Command()
     const registry = {
       name:
         existingMap.size > 0
-          ? ((JSON.parse(await fs.readFile(path.resolve(options.cwd, options.output), 'utf-8')) as any).name ??
-            'soybean-ui')
-          : 'soybean-ui',
-      homepage: 'https://ui.soybeanjs.cn',
+          ? ((JSON.parse(await fs.readFile(path.resolve(options.cwd, options.output), 'utf-8')) as any).name ?? 'vean')
+          : 'vean',
+      homepage: 'https://veanui.com',
       packages: existingPackages,
       items
     };

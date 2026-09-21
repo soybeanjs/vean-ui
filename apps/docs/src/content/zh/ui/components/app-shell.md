@@ -107,7 +107,7 @@ head:
 
 | 关注点        | SoybeanUI `SAppShell`                                                  | Ant Design Pro `ProLayout`         | Element Plus    | shadcn/ui        |
 | :------------ | :--------------------------------------------------------------------- | :--------------------------------- | :-------------- | :--------------- |
-| 分层          | headless `layout` 族之上的样式聚合层；`SLayout` 仍可单独使用           | 单一样式包                         | 单一样式包      | 复制即用块，非库 |
+| 分层          | Aria `layout` 族之上的样式聚合层；`SLayout` 仍可单独使用               | 单一样式包                         | 单一样式包      | 复制即用块，非库 |
 | 模式数量      | 6（`sidebar`、`top` + 4 种分栏形态），由单个 `mode` 驱动               | 6（`side`/`top`/`mix` 及顶栏变体） | —               | 1                |
 | 菜单树        | 一份 `items` 树，按模式交给 `STreeMenu` / `STreeNav` / `SSplitNav`     | 路由/属性                          | `el-menu` 配置  | 手写组合         |
 | 侧栏几何      | 由 `mode` + `size` 推导，并与菜单面板对齐                              | 数值属性                           | 数值属性        | 手写 CSS         |
@@ -115,7 +115,7 @@ head:
 | 面包屑 / 页签 | `breadcrumbs` / `tabs` 数据属性，交给 `SBreadcrumb` / `SPageTabs` 渲染 | `menu` 配置 + `PageContainer`      | 手写组合        | 手写组合         |
 | 路由依赖      | 无——数据进、事件出                                                     | 默认依赖 Vue Router                | 无              | 无               |
 | 覆盖能力      | `ui` / `layoutUi` / `menuUi` + 每区域插槽                              | `token` / 插槽                     | CSS 变量        | 改复制来的源码   |
-| 无障碍        | 由被组合的 headless 组件族承担                                         | 包级实现                           | 包级实现        | 手动             |
+| 无障碍        | 由被组合的 Aria 组件族承担                                             | 包级实现                           | 包级实现        | 手动             |
 
 ### 注意事项
 

@@ -1,14 +1,14 @@
 ---
 head:
   title: 工具栏
-  description: 用于将相关操作、链接和切换控件组织到同一个支持 roving focus 的紧凑工具栏中。SToolbar 组合 headless 工具栏基础组件（ToolbarRoot/ToolbarButton/ToolbarLink/ToolbarSeparator/ToolbarToggleGroup/ToolbarToggleItem）与 toolbarVariants 样式配方（7 个槽、6 种尺寸 × 2 个方向）。
+  description: 用于将相关操作、链接和切换控件组织到同一个支持 roving focus 的紧凑工具栏中。SToolbar 组合 Aria 工具栏基础组件（ToolbarRoot/ToolbarButton/ToolbarLink/ToolbarSeparator/ToolbarToggleGroup/ToolbarToggleItem）与 toolbarVariants 样式配方（7 个槽、6 种尺寸 × 2 个方向）。
 ---
 
 # 工具栏
 
 ## 概述
 
-用于将相关操作、链接和切换控件组织到同一个支持 roving focus 的紧凑工具栏中。`SToolbar` 组合 headless 工具栏基础组件（`ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem`）与 `toolbarVariants` 样式配方（7 个槽、6 种尺寸 × 2 个方向）。
+用于将相关操作、链接和切换控件组织到同一个支持 roving focus 的紧凑工具栏中。`SToolbar` 组合 Aria 工具栏基础组件（`ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem`）与 `toolbarVariants` 样式配方（7 个槽、6 种尺寸 × 2 个方向）。
 
 工具栏适合密集、可键盘导航的一行操作。单个操作按钮请用 `button`；成组按钮请用 `toggle-group`。
 
@@ -18,7 +18,7 @@ head:
 
 ## 特性
 
-- 🧩 Headless/样式分离 — `ToolbarRoot` 提供工具栏上下文；每个部分（`button`/`link`/`separator`/`toggle-group`）都是薄样式化基础组件
+- 🧩 Aria/样式分离 — `ToolbarRoot` 提供工具栏上下文；每个部分（`button`/`link`/`separator`/`toggle-group`）都是薄样式化基础组件
 - ⌨️ Roving focus — 方向键在工具栏项间导航，Home/End，可选 `loop`；分隔线与禁用项被跳过
 - ↔️ 方向 — `horizontal`（默认）或 `vertical`；分隔线自动翻转方向
 - 🔘 切换组 — `SToolbarToggleGroup`/`SToolbarToggleItem` 用 `v-model` 实现单选/多选切换
@@ -33,7 +33,7 @@ head:
 - `SToolbarLink`（样式层）— 工具栏链接（`Link` 基座，可选 `showIcon`）
 - `SToolbarSeparator`（样式层）— 方向感知分隔线（`SeparatorRoot` 基座）
 - `SToolbarToggleGroup` / `SToolbarToggleItem`（样式层）— 切换组控件（`ToggleGroupRoot`/`ToggleGroupItem` 基座）
-- `ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem`（headless）— 底层基础组件
+- `ToolbarRoot`/`ToolbarButton`/`ToolbarLink`/`ToolbarSeparator`/`ToolbarToggleGroup`/`ToolbarToggleItem`（Aria）— 底层基础组件
 
 ## 演示
 
@@ -47,16 +47,16 @@ head:
 
 ### 架构与对标差异
 
-工具栏家族是多槽组合：`ToolbarRoot` 提供 roving focus + 方向上下文，每个部分（按钮/链接/分隔线/切换组）复用 button、link、separator、toggle-group 基础组件，UI 包装组件按槽注入 `toolbarVariants` 类。这与 radix-ui/shadcn-ui 的 headless toolbar/toggle-group 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供按钮/分段控件而非带方向感知分隔线的专用 roving-focus 工具栏容器；SoybeanUI 提供带 `loop`/RTL 支持与 `size` 尺寸体系的完整工具栏。
+工具栏家族是多槽组合：`ToolbarRoot` 提供 roving focus + 方向上下文，每个部分（按钮/链接/分隔线/切换组）复用 button、link、separator、toggle-group 基础组件，UI 包装组件按槽注入 `toolbarVariants` 类。这与 radix-ui/shadcn-ui 的 headless toolbar/toggle-group 分离一致。Ant Design、Element Plus、Mantine、Naive UI 提供按钮/分段控件而非带方向感知分隔线的专用 roving-focus 工具栏容器；VeanUI 提供带 `loop`/RTL 支持与 `size` 尺寸体系的完整工具栏。
 
-| 能力                | SoybeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
-| :------------------ | :-------: | :-------: | :--------: | :----------: | :-----: | :------: |
-| Headless/样式分离   |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| Roving focus + loop |    ✅     |    ✅     |     —      |      —       |   ✅    |    —     |
-| 方向感知            |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 切换组              |    ✅     |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
-| 链接支持            |    ✅     |    ✅     |     —      |      —       |    —    |    —     |
-| 尺寸（6）           |    ✅     |     —     |     —      |      —       |    —    |    —     |
+| 能力                | VeanUI | shadcn/ui | Ant Design | Element Plus | Mantine | Naive UI |
+| :------------------ | :----: | :-------: | :--------: | :----------: | :-----: | :------: |
+| Aria/样式分离       |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| Roving focus + loop |   ✅   |    ✅     |     —      |      —       |   ✅    |    —     |
+| 方向感知            |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 切换组              |   ✅   |    ✅     |     ✅     |      ✅      |   ✅    |    —     |
+| 链接支持            |   ✅   |    ✅     |     —      |      —       |    —    |    —     |
+| 尺寸（6）           |   ✅   |     —     |     —      |      —       |    —    |    —     |
 
 `—` = 不支持或采用不同交互模型。
 

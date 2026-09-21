@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useOmitProps, useForwardListeners } from '@soybeanjs/headless/composables';
-import { ContextMenuWrapperCompact } from '@soybeanjs/headless/context-menu';
+import { useOmitProps, useForwardListeners } from '@vean/aria/composables';
+import { ContextMenuWrapperCompact } from '@vean/aria/context-menu';
 import { provideMenuUi } from '../menu/context';
 import type { ContextMenuWrapperProps, ContextMenuWrapperEmits } from './types';
 

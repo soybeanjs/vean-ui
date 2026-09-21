@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { provideViewportContext } from '@soybeanjs/headless/composables';
+import { provideViewportContext } from '@vean/aria/composables';
 import { playgroundDeviceMetas, playgroundPreviewFrame } from '~/constants/playground';
 import type { PlaygroundDevice } from '~/constants/playground';
 

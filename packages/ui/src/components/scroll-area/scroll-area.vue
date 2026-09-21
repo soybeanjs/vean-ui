@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps } from '@soybeanjs/headless/composables';
-import { ScrollAreaCompact, provideScrollAreaUi } from '@soybeanjs/headless/scroll-area';
+import { useOmitProps } from '@vean/aria/composables';
+import { ScrollAreaCompact, provideScrollAreaUi } from '@vean/aria/scroll-area';
 import { scrollAreaVariants } from '@/styles/scroll-area';
 import type { ScrollAreaProps } from './types';
 

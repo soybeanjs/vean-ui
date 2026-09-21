@@ -1,8 +1,8 @@
 <script setup lang="ts" generic="M extends boolean = false, T extends DefinedValue = string">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { ToggleGroupRoot, provideToggleGroupUi } from '@soybeanjs/headless/toggle-group';
-import type { DefinedValue } from '@soybeanjs/headless/types';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { ToggleGroupRoot, provideToggleGroupUi } from '@vean/aria/toggle-group';
+import type { DefinedValue } from '@vean/aria/types';
 import { toggleGroupVariants } from '@/styles/toggle-group';
 import type { ToggleGroupProps, ToggleGroupEmits } from './types';
 
@@ -10,9 +10,9 @@ defineOptions({
   name: 'SToggleGroup'
 });
 
-// Functional defaults must be declared here as well as in the headless root: without them,
+// Functional defaults must be declared here as well as in the Aria root: without them,
 // absent boolean props would be cast to `false` and forwarded as explicit values, overriding
-// the headless defaults (see C42 audit).
+// the Aria defaults (see C42 audit).
 const props = withDefaults(defineProps<ToggleGroupProps<M, T>>(), {
   disabled: () => false,
   rovingFocus: () => true,

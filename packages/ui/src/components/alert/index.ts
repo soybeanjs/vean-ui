@@ -1,4 +1,4 @@
 export { default as SAlert } from './alert.vue';
 
-export type * from '@soybeanjs/headless/alert';
+export type * from '@vean/aria/alert';
 export type * from './types';

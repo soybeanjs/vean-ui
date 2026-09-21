@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useForwardListeners, useOmitProps } from '@soybeanjs/headless/composables';
-import { TagsInputCompact, provideTagsInputUi } from '@soybeanjs/headless/tags-input';
+import { useForwardListeners, useOmitProps } from '@vean/aria/composables';
+import { TagsInputCompact, provideTagsInputUi } from '@vean/aria/tags-input';
 import { tagsInputVariants } from '@/styles/tags-input';
 import type { TagsInputProps, TagsInputEmits, TagsInputSlots } from './types';
 

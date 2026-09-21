@@ -50,11 +50,11 @@
               {
                 "name": "CollapsibleUi",
                 "kind": "typeAlias",
-                "type": "{ root: import(\"@soybeanjs/headless\").ClassValue; trigger: import(\"@soybeanjs/headless\").ClassValue; content: import(\"@soybeanjs/headless\").ClassValue; }",
+                "type": "{ root: import(\"@vean/aria\").ClassValue; trigger: import(\"@vean/aria\").ClassValue; content: import(\"@vean/aria\").ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Collapsible component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibleui",
-                "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibleui",
+                "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -70,7 +70,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleprops.members.defaultopen",
             "default": null,
             "inheritedFrom": "defaultOpen",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -81,7 +81,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleprops.members.open",
             "default": null,
             "inheritedFrom": "open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -92,7 +92,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleprops.members.disabled",
             "default": null,
             "inheritedFrom": "disabled",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -103,7 +103,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleprops.members.unmountonhide",
             "default": null,
             "inheritedFrom": "unmountOnHide",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -114,7 +114,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleprops.members.aschild",
             "default": null,
             "inheritedFrom": "asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -125,7 +125,7 @@
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleprops.members.as",
             "default": "'div'",
             "inheritedFrom": "as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -172,7 +172,7 @@
             "required": true,
             "description": "Event handler called when the open state of the collapsible changes.",
             "descriptionKey": "api.generated.packages_ui_src_components_collapsible_types.collapsibleemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           }
         ],
@@ -183,8 +183,8 @@
             "type": "{ 'update:open': [value: boolean]; }",
             "resolvedType": "{ \"update:open\": [value: boolean] }",
             "description": "Events for the CollapsibleRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -195,8 +195,8 @@
                 "parameters": "value: boolean",
                 "required": true,
                 "description": "Event handler called when the open state of the collapsible changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
-                "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/collapsible/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -211,8 +211,8 @@
         "type": "Interface CollapsibleContentProps",
         "resolvedType": "{ forceMount?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the CollapsibleContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblecontentprops.props",
-        "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblecontentprops.props",
+        "sourcePath": "packages/aria/src/components/collapsible/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -220,10 +220,10 @@
             "type": "boolean",
             "required": false,
             "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblecontentprops.members.forcemount",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblecontentprops.members.forcemount",
             "default": null,
             "inheritedFrom": "forceMount",
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -231,10 +231,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblecontentprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblecontentprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -242,10 +242,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblecontentprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblecontentprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -282,8 +282,8 @@
         "type": "Interface CollapsibleRootProps",
         "resolvedType": "{ defaultOpen?: boolean; open?: boolean; disabled?: boolean; unmountOnHide?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the CollapsibleRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.props",
-        "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.props",
+        "sourcePath": "packages/aria/src/components/collapsible/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -291,10 +291,10 @@
             "type": "boolean",
             "required": false,
             "description": "The open state of the collapsible when it is initially rendered.\n\nUse when you do not need to control its open state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.members.defaultopen",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.members.defaultopen",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -302,10 +302,10 @@
             "type": "boolean",
             "required": false,
             "description": "The controlled open state of the collapsible. Can be bound with `v-model`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.members.open",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.members.open",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -313,10 +313,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the collapsible.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -324,10 +324,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the element will be unmounted on closed state.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.members.unmountonhide",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.members.unmountonhide",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -335,10 +335,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.members.aschild",
             "default": null,
             "inheritedFrom": "PrimitiveWithBaseProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -346,10 +346,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootprops.members.as",
             "default": "'div'",
             "inheritedFrom": "PrimitiveWithBaseProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -384,8 +384,8 @@
         "type": "TypeAlias CollapsibleRootEmits",
         "resolvedType": "{ \"update:open\": [value: boolean] }",
         "description": "Events for the CollapsibleRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits.emits",
-        "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits.emits",
+        "sourcePath": "packages/aria/src/components/collapsible/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -395,8 +395,8 @@
             "parameters": "value: boolean",
             "required": true,
             "description": "Event handler called when the open state of the collapsible changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsiblerootemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           }
         ],
@@ -410,8 +410,8 @@
         "type": "Interface CollapsibleTriggerProps",
         "resolvedType": "{ disabledCollapsible?: boolean; type?: ButtonType; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the CollapsibleTrigger component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibletriggerprops.props",
-        "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibletriggerprops.props",
+        "sourcePath": "packages/aria/src/components/collapsible/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -419,10 +419,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from toggling the collapsible.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibletriggerprops.members.disabledcollapsible",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibletriggerprops.members.disabledcollapsible",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/collapsible/types.ts",
+            "sourcePath": "packages/aria/src/components/collapsible/types.ts",
             "referencedTypes": []
           },
           {
@@ -430,10 +430,10 @@
             "type": "ButtonType",
             "required": false,
             "description": "The type of the button element. Can be one of 'button', 'submit', or 'reset'.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibletriggerprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibletriggerprops.members.type",
             "default": "'button'",
             "inheritedFrom": "ButtonProps.type",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": [
               {
                 "name": "ButtonType",
@@ -441,8 +441,8 @@
                 "type": "'button' | 'submit' | 'reset'",
                 "resolvedType": "'button' | 'submit' | 'reset'",
                 "description": "Supported button values.",
-                "descriptionKey": "api.generated.packages_headless_src_components_button_types.buttontype",
-                "sourcePath": "packages/headless/src/components/button/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_button_types.buttontype",
+                "sourcePath": "packages/aria/src/components/button/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -455,10 +455,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether the component is disabled.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibletriggerprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibletriggerprops.members.disabled",
             "default": null,
             "inheritedFrom": "ButtonProps.disabled",
-            "sourcePath": "packages/headless/src/components/button/types.ts",
+            "sourcePath": "packages/aria/src/components/button/types.ts",
             "referencedTypes": []
           },
           {
@@ -466,10 +466,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibletriggerprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibletriggerprops.members.aschild",
             "default": null,
             "inheritedFrom": "ButtonProps.asChild",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -477,10 +477,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_collapsible_types.collapsibletriggerprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_collapsible_types.collapsibletriggerprops.members.as",
             "default": "'div'",
             "inheritedFrom": "ButtonProps.as",
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",

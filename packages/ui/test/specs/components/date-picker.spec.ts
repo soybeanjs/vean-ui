@@ -1,14 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import { toISODateString } from '@soybeanjs/headless/date';
+import { toISODateString } from '@vean/aria/date';
 import { SDatePicker } from '@/components/date-picker';
 import { getA11yViolations } from '../../shared/a11y';
 
 describe('sDatePicker', () => {
   const findPopup = () => document.body.querySelector('[data-dismissable-layer][role="dialog"]');
   const findTrigger = (wrapper: ReturnType<typeof mount>) => wrapper.find('button[aria-haspopup="dialog"]');
-  const findCalendar = () => document.body.querySelector('[data-soybean-calendar-root]');
+  const findCalendar = () => document.body.querySelector('[data-vean-calendar-root]');
   const waitForDismissableLayer = async () => new Promise(resolve => window.setTimeout(resolve, 0));
 
   const mountDatePicker = (props?: Record<string, unknown>, slots?: Record<string, string>) =>
@@ -25,7 +25,7 @@ describe('sDatePicker', () => {
     it('should render with default slot', () => {
       const wrapper = mountDatePicker();
 
-      expect(wrapper.find('[data-soybean-date-field-root]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-date-field-root]').exists()).toBe(true);
       expect(findTrigger(wrapper).exists()).toBe(true);
 
       wrapper.unmount();
@@ -34,7 +34,7 @@ describe('sDatePicker', () => {
     it('should render with custom class', () => {
       const wrapper = mountDatePicker({ class: 'custom-class' });
 
-      const root = wrapper.find('[data-soybean-date-field-root]');
+      const root = wrapper.find('[data-vean-date-field-root]');
 
       expect(root.classes()).toContain('custom-class');
 
@@ -53,7 +53,7 @@ describe('sDatePicker', () => {
       const wrapper = mountDatePicker(undefined, { leading: '<span data-test="leading">L</span>' });
 
       expect(wrapper.find('[data-test="leading"]').exists()).toBe(true);
-      expect(wrapper.find('[data-soybean-date-field-root]').find('[data-test="leading"]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-date-field-root]').find('[data-test="leading"]').exists()).toBe(true);
 
       wrapper.unmount();
     });
@@ -233,7 +233,7 @@ describe('sDatePicker', () => {
     it('should have data-disabled attribute when disabled', () => {
       const wrapper = mountDatePicker({ disabled: true });
 
-      const root = wrapper.find('[data-soybean-date-field-root]');
+      const root = wrapper.find('[data-vean-date-field-root]');
 
       expect(root.attributes('data-disabled')).toBe('');
 
@@ -291,7 +291,7 @@ describe('sDatePicker', () => {
     it('should apply ui.root class overrides', () => {
       const wrapper = mountDatePicker({ ui: { root: 'my-root-cls' } });
 
-      expect(wrapper.find('[data-soybean-date-field-root]').classes()).toContain('my-root-cls');
+      expect(wrapper.find('[data-vean-date-field-root]').classes()).toContain('my-root-cls');
 
       wrapper.unmount();
     });

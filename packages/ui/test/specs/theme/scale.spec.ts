@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createGenerator } from 'unocss';
-import { presetUi } from '@soybeanjs/ui-uno';
+import { presetUi } from '@vean/unocss';
 import type { ThemeSize } from '@/theme';
 import { fieldMinSize, fieldSize } from '../../../src/styles/_field';
 

@@ -1,14 +1,14 @@
 ---
 head:
   title: Popover
-  description: 'Displays rich content in a portal, triggered by a button. SPopover combines the headless PopoverRoot/PopoverTrigger/PopoverPositioner/PopoverPopup/PopoverArrow/PopoverClose primitive family (built on the shared Popper + dialog-style dismissable/focus layers) with the popoverVariants style recipe (5 slots, 6 sizes).'
+  description: 'Displays rich content in a portal, triggered by a button. SPopover combines the Aria PopoverRoot/PopoverTrigger/PopoverPositioner/PopoverPopup/PopoverArrow/PopoverClose primitive family (built on the shared Popper + dialog-style dismissable/focus layers) with the popoverVariants style recipe (5 slots, 6 sizes).'
 ---
 
 # Popover
 
 ## Overview
 
-Displays rich content in a portal, triggered by a button. `SPopover` combines the headless `PopoverRoot`/`PopoverTrigger`/`PopoverPositioner`/`PopoverPopup`/`PopoverArrow`/`PopoverClose` primitive family (built on the shared `Popper` + dialog-style dismissable/focus layers) with the `popoverVariants` style recipe (5 slots, 6 sizes).
+Displays rich content in a portal, triggered by a button. `SPopover` combines the Aria `PopoverRoot`/`PopoverTrigger`/`PopoverPositioner`/`PopoverPopup`/`PopoverArrow`/`PopoverClose` primitive family (built on the shared `Popper` + dialog-style dismissable/focus layers) with the `popoverVariants` style recipe (5 slots, 6 sizes).
 
 Use a popover for contextual, non-critical rich content (menus of actions, settings, help). For navigation menus use `dropdown-menu`; for a small hover hint use `tooltip`; for a blocking confirmation use `popconfirm` or `dialog`.
 
@@ -18,7 +18,7 @@ Use a popover for contextual, non-critical rich content (menus of actions, setti
 
 ## Features
 
-- 🧩 Headless/styled split — `PopoverCompact` aggregates the popper positioner, popup, arrow and close; `SPopover` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `PopoverCompact` aggregates the popper positioner, popup, arrow and close; `SPopover` only injects styles and forwards slots/events
 - 🎯 Placement — full popper `placement` control (12 directions) with collision avoidance and side-aware slide animations
 - 🎭 Modal toggle — `modal` controls outside-pointer blocking, `useHideOthers`, body scroll lock and focus trapping
 - 🔽 Arrow — `showArrow` renders a positioned arrow; configurable via `arrowProps`
@@ -29,13 +29,13 @@ Use a popover for contextual, non-critical rich content (menus of actions, setti
 ## Component family
 
 - `SPopover` (styled) — the entry wrapper; `popoverVariants` recipe with dynamic slot forwarding
-- `PopoverRoot` (headless) — the state owner; `open` via `useControllableState`, `dir`/`modal`/`disabled`, provides the popper root
-- `PopoverTrigger` (headless) — a `Button` that toggles the popover
-- `PopoverPositioner` / `PopoverPositionerImpl` (headless) — the focus-trapped, dismissable, positioned surface (built on `PopperPositioner`)
-- `PopoverPopup` (headless) — the popup body
-- `PopoverArrow` (headless) — the popper arrow
-- `PopoverClose` (headless) — the close `<button>`, emits `close` and toggles `open`
-- `PopoverCompact` (headless) — the aggregated composite; composes positioner/popup/arrow/close and exposes the slots
+- `PopoverRoot` (Aria) — the state owner; `open` via `useControllableState`, `dir`/`modal`/`disabled`, provides the popper root
+- `PopoverTrigger` (Aria) — a `Button` that toggles the popover
+- `PopoverPositioner` / `PopoverPositionerImpl` (Aria) — the focus-trapped, dismissable, positioned surface (built on `PopperPositioner`)
+- `PopoverPopup` (Aria) — the popup body
+- `PopoverArrow` (Aria) — the popper arrow
+- `PopoverClose` (Aria) — the close `<button>`, emits `close` and toggles `open`
+- `PopoverCompact` (Aria) — the aggregated composite; composes positioner/popup/arrow/close and exposes the slots
 
 ## Demos
 
@@ -49,17 +49,17 @@ Use a popover for contextual, non-critical rich content (menus of actions, setti
 
 ### Architecture and benchmark differences
 
-`PopoverCompact` owns the positioner/popup/arrow/close composition while every primitive stays style-free and only the UI wrapper injects the `popoverVariants` classes. This mirrors radix-ui/shadcn-ui's headless/styled split, built on the shared `Popper` primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single styled popover with `placement`/`trigger`/`width` props; SoybeanUI additionally exposes per-slot `*Props`, a `size` scale, an arrow toggle, and a `modal` mode the single-package popovers generally lack.
+`PopoverCompact` owns the positioner/popup/arrow/close composition while every primitive stays style-free and only the UI wrapper injects the `popoverVariants` classes. This mirrors radix-ui/shadcn-ui's headless/styled split, built on the shared `Popper` primitives. Ant Design, Element Plus, Mantine and Naive UI ship a single styled popover with `placement`/`trigger`/`width` props; VeanUI additionally exposes per-slot `*Props`, a `size` scale, an arrow toggle, and a `modal` mode the single-package popovers generally lack.
 
-| Capability            | SoybeanUI | shadcn/ui | Ant Design Popover | Element Plus Popover | Mantine Popover | Naive UI Popover |
-| :-------------------- | :-------: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
-| Headless/styled split |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Popper placement (12) |    ✅     |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
-| Arrow                 |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Modal mode            |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Close button          |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
-| Sizes (6)             |    ✅     |     —     |         —          |          —           |        —        |        —         |
-| Focus trap + loop     |    ✅     |    ✅     |         —          |          —           |        —        |        —         |
+| Capability            | VeanUI | shadcn/ui | Ant Design Popover | Element Plus Popover | Mantine Popover | Naive UI Popover |
+| :-------------------- | :----: | :-------: | :----------------: | :------------------: | :-------------: | :--------------: |
+| Aria/styled split     |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Popper placement (12) |   ✅   |    ✅     |         ✅         |          ✅          |       ✅        |        ✅        |
+| Arrow                 |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Modal mode            |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Close button          |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
+| Sizes (6)             |   ✅   |     —     |         —          |          —           |        —        |        —         |
+| Focus trap + loop     |   ✅   |    ✅     |         —          |          —           |        —        |        —         |
 
 `—` = unsupported or a different interaction model.
 

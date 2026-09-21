@@ -13,22 +13,22 @@ head:
 ## 特性
 
 - **WAI-ARIA 标签页模式** — 列表渲染为 `tablist`，触发器为 `role="tab"`，面板为 `role="tabpanel"`；活动标签带 `aria-selected`，每个触发器通过 `aria-controls`/`aria-labelledby` 关联面板，`aria-orientation` 反映布局方向。
-- **数据驱动的 Compact 组合** — `STabs` 将条目迭代、默认触发器/内容组合与指示器渲染委托给泛型 headless `TabsCompact<T>`，由它负责每个条目的 ARIA 接线。
+- **数据驱动的 Compact 组合** — `STabs` 将条目迭代、默认触发器/内容组合与指示器渲染委托给泛型 Aria `TabsCompact<T>`，由它负责每个条目的 ARIA 接线。
 - **受控/非受控状态** — `modelValue` 支持 `v-model`（受控）；`defaultValue` 提供非受控用法，底层基于 `useControllableState`。
 - **两种激活模式** — `activationMode: 'automatic'` 在聚焦时激活标签（ARIA 默认）；`'manual'` 仅在点击 / `Enter` / `Space` 时激活。
 - **完整键盘导航** — `useRovingFocusGroup` 提供方向键（与 Home/End）移动并跳过禁用标签；`Enter` / `Space` 激活聚焦的标签。
 - **基于 Presence 的内容挂载** — `unmountOnHide: true`（默认）在退出动画后卸载非活动面板；`false` 保持所有面板挂载但带 `hidden` 属性；`forceMount` 无条件将面板保留在 DOM 中。
-- **动画指示器** — 滑动指示器通过 CSS 变量（`--soybean-tabs-indicator-size` / `--soybean-tabs-indicator-position`）追踪活动标签，由 `ResizeObserver` 测量并在值/方向变化时重新定位；RTL 偏移自动镜像。
+- **动画指示器** — 滑动指示器通过 CSS 变量（`--vean-tabs-indicator-size` / `--vean-tabs-indicator-position`）追踪活动标签，由 `ResizeObserver` 测量并在值/方向变化时重新定位；RTL 偏移自动镜像。
 - **水平与垂直布局** — `orientation: 'vertical'` 纵向堆叠列表并让指示器沿块轴移动。
 - **三个自定义插槽** — `trigger`（scoped `{ ...item, active }`）、`content`（scoped `{ ...item, active }`）与 `indicator`。
 - **六种视觉变体** — `size`（xs…2xl）、`orientation`（horizontal / vertical）、`shape`（square / rounded）、`fill`（full / auto）与 `enableIndicator`（回退为实心活动触发器样式），通过 `tabsVariants` 的 `scv()` 配方应用。
-- **Headless 组合** — `TabsRoot` / `TabsList` / `TabsTrigger` / `TabsContent` / `TabsIndicator` / `TabsCompact` 均可从 `@soybeanjs/headless/tabs` 导入，用于完全自定义样式构建。
+- **Aria 组合** — `TabsRoot` / `TabsList` / `TabsTrigger` / `TabsContent` / `TabsIndicator` / `TabsCompact` 均可从 `@vean/aria/tabs` 导入，用于完全自定义样式构建。
 
 ## 用法
 
 <UsageCode component="tabs" />
 
-> `STabs` 现在将条目迭代、默认触发器/内容组合与指示器渲染委托给 headless 的 `TabsCompact`。如需无样式、数据驱动的用法，请从 `@soybeanjs/headless/tabs` 导入 `TabsCompact`。
+> `STabs` 现在将条目迭代、默认触发器/内容组合与指示器渲染委托给 Aria 的 `TabsCompact`。如需无样式、数据驱动的用法，请从 `@vean/aria/tabs` 导入 `TabsCompact`。
 
 ## 演示
 
@@ -42,9 +42,9 @@ head:
 
 ### 架构与竞品对比
 
-| 关注点                           | SoybeanUI                                       | shadcn-vue / Radix `Tabs`          | Ant Design `Tabs`                   | Element Plus `Tabs` |
+| 关注点                           | VeanUI                                          | shadcn-vue / Radix `Tabs`          | Ant Design `Tabs`                   | Element Plus `Tabs` |
 | :------------------------------- | :---------------------------------------------- | :--------------------------------- | :---------------------------------- | :------------------ |
-| Headless / 样式双层分离          | ✅ `@soybeanjs/headless/tabs` + `scv()`         | ✅ headless 原语                   | ❌ 单一包                           | ❌ 单一包           |
+| Aria / 样式双层分离              | ✅ `@vean/aria/tabs` + `scv()`                  | ✅ Aria 原语                       | ❌ 单一包                           | ❌ 单一包           |
 | 数据驱动 Compact API             | ✅ 泛型 `TabsCompact<T>` + `items`              | ✅ `TabList`/`Tab`/`TabPanel` 部件 | ✅ 配置驱动（items）                | ✅ 配置驱动         |
 | 受控/非受控                      | ✅ `modelValue` / `defaultValue`                | ✅ `modelValue` / `defaultValue`   | ✅ `activeKey` / `defaultActiveKey` | ✅ `v-model`        |
 | 激活模式                         | ✅ `automatic` / `manual`                       | ✅                                 | ❌（始终自动）                      | ❌（始终自动）      |
@@ -87,7 +87,7 @@ head:
 
 ### 能完全自定义标签渲染吗？
 
-可以——`trigger` 插槽接收 scoped `{ ...item, active }`，`content` 插槽接收 `{ ...item, active }`，`indicator` 替换指示器内容。如需完全自定义结构，可从 `@soybeanjs/headless/tabs` 组合 `TabsRoot` / `TabsList` / `TabsTrigger` / `TabsContent` / `TabsIndicator`，并通过 `provideTabsUi`（或 `STabs` 的 `ui` prop）注入样式。
+可以——`trigger` 插槽接收 scoped `{ ...item, active }`，`content` 插槽接收 `{ ...item, active }`，`indicator` 替换指示器内容。如需完全自定义结构，可从 `@vean/aria/tabs` 组合 `TabsRoot` / `TabsList` / `TabsTrigger` / `TabsContent` / `TabsIndicator`，并通过 `provideTabsUi`（或 `STabs` 的 `ui` prop）注入样式。
 
 ### 需要自己接线 `aria-controls` 吗？
 

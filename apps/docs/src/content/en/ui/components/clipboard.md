@@ -27,7 +27,7 @@ Built on `SButton`, it inherits the same `color`/`size`/`variant`/`shape` theme 
 - 🎨 Reuses `SButton`'s 8 variants, 8 colors, 6 sizes, and 4 shapes
 - 🔌 Inherits `SButton`'s `as`/`asChild` polymorphism and `class` override
 - 🛡️ Falls back to `execCommand('copy')` when the async Clipboard API is unavailable (disable with `legacy`)
-- ♿ Keeps button semantics, disabled behavior, and `data-state` in the headless layer
+- ♿ Keeps button semantics, disabled behavior, and `data-state` in the Aria layer
 - 🎯 TypeScript-safe with fully typed `ClipboardSlotProps`
 
 ## Demos
@@ -42,11 +42,11 @@ Built on `SButton`, it inherits the same `color`/`size`/`variant`/`shape` theme 
 
 ### Architecture and benchmark differences
 
-SoybeanUI splits the clipboard into a headless layer (`@soybeanjs/headless/clipboard`) that owns copy state, button semantics, and slot props, and a styled layer (`@soybeanjs/ui`) that reuses the button variant recipe. This mirrors the headless/styled split used by `shadcn/ui` copy patterns and differs from single-package libraries such as Ant Design, Element Plus, MUI, Mantine, and Naive UI.
+VeanUI splits the clipboard into an Aria layer (`@vean/aria/clipboard`) that owns copy state, button semantics, and slot props, and a styled layer (`@vean/ui`) that reuses the button variant recipe. This mirrors the headless/styled split used by `shadcn/ui` copy patterns and differs from single-package libraries such as Ant Design, Element Plus, MUI, Mantine, and Naive UI.
 
-| Aspect        | SoybeanUI                                                                              | Ant Design / Element Plus / MUI / Mantine / Naive UI          |
+| Aspect        | VeanUI                                                                                 | Ant Design / Element Plus / MUI / Mantine / Naive UI          |
 | :------------ | :------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
-| Architecture  | headless + styled split on top of `Button`                                             | single-package `CopyButton` / `Typography.Paragraph copyable` |
+| Architecture  | Aria + styled split on top of `Button`                                                 | single-package `CopyButton` / `Typography.Paragraph copyable` |
 | Styling       | UnoCSS utilities via shared `buttonVariants` recipe                                    | CSS-in-JS / SCSS / CSS vars                                   |
 | Customization | `class`, `as` / `asChild`, `leading` / `default` / `trailing` slots                    | `icon`, `text`, `format`, component overrides                 |
 | Fallback      | `legacy` prop enables a self-implemented `execCommand('copy')` fallback in `shared.ts` | library-specific fallback behavior                            |

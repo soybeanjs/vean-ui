@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useOmitProps, useForwardListeners } from '@soybeanjs/headless/composables';
-import { PaginationCompact, providePaginationUi } from '@soybeanjs/headless/pagination';
-import { keysOf } from '@soybeanjs/headless/shared';
+import { useOmitProps, useForwardListeners } from '@vean/aria/composables';
+import { PaginationCompact, providePaginationUi } from '@vean/aria/pagination';
+import { keysOf } from '@vean/aria/shared';
 import { paginationVariants } from '@/styles/pagination';
 import type { PaginationProps, PaginationEmits, PaginationSlots } from './types';
 

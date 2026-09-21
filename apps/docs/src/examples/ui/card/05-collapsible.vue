@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SCard, SCardCollapsibleTrigger } from '@soybeanjs/ui';
+import { SCard, SCardCollapsibleTrigger } from '@vean/ui';
 </script>
 
 <template>

@@ -153,7 +153,7 @@ describe('theme envelope', () => {
       JSON.stringify({
         v: 1,
         options: {},
-        style: ':root {\n  --soybean-background: var(--zinc-50);\n}'
+        style: ':root {\n  --vean-background: var(--zinc-50);\n}'
       })
     );
     const v2 = parseThemeEnvelope(

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { SSelect, SSplitNav } from '@soybeanjs/ui';
-import type { TreeMenuExpandStrategy } from '@soybeanjs/ui';
+import { SSelect, SSplitNav } from '@vean/ui';
+import type { TreeMenuExpandStrategy } from '@vean/ui';
 import { splitNavItems } from './data';
 
 const active = shallowRef('realtime');

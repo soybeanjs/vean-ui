@@ -10,7 +10,7 @@ head:
 
 A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
 
-`SDialog` is the declarative wrapper for inline usage. `dialog(...)` is the imperative API for creating alert-style dialogs programmatically. It combines the `DialogRoot`/`DialogTrigger`/`DialogOverlay`/`DialogPopup`/`DialogHeader`/`DialogContent`/`DialogFooter`/`DialogTitle`/`DialogDescription`/`DialogClose`/`DialogFullscreen`/`DialogCancel`/`DialogConfirm` headless primitive family (zero styles) with the `dialogVariants` style recipe (12 slots, 6 sizes).
+`SDialog` is the declarative wrapper for inline usage. `dialog(...)` is the imperative API for creating alert-style dialogs programmatically. It combines the `DialogRoot`/`DialogTrigger`/`DialogOverlay`/`DialogPopup`/`DialogHeader`/`DialogContent`/`DialogFooter`/`DialogTitle`/`DialogDescription`/`DialogClose`/`DialogFullscreen`/`DialogCancel`/`DialogConfirm` Aria primitive family (zero styles) with the `dialogVariants` style recipe (12 slots, 6 sizes).
 
 Mount `SDialogProvider` once near your app root before calling the imperative `dialog(...)` API.
 
@@ -25,7 +25,7 @@ Mount `SDialogProvider` once near your app root before calling the imperative `d
 ```vue
 <script setup lang="ts">
 import { h } from 'vue';
-import { SButton, SDialogProvider, dialog } from '@soybeanjs/ui';
+import { SButton, SDialogProvider, dialog } from '@vean/ui';
 
 function openWarningDialog() {
   dialog.warning('Delete Project', {
@@ -45,7 +45,7 @@ function openWarningDialog() {
 
 ## Features
 
-- 🧩 Headless/styled split — `DialogCompact` aggregates the primitives and composes the overlay/popup/header/content/footer; `SDialog` only injects styles and forwards slots/events
+- 🧩 Aria/styled split — `DialogCompact` aggregates the primitives and composes the overlay/popup/header/content/footer; `SDialog` only injects styles and forwards slots/events
 - 🖱️ Declarative + imperative — inline `SDialog` with a trigger, or `dialog.*` API driven by `SDialogProvider`
 - 🎭 Modal by default — `modal` renders `aria-modal`, `useHideOthers`, outside-pointer blocking and focus trapping; toggle with `modal={false}`
 - ⚠️ Alert mode — `isAlert` switches to `role="alertdialog"`, adds the type icon and `aria-live` (`polite`/`assertive`)
@@ -62,16 +62,16 @@ function openWarningDialog() {
 
 - `SDialog` (styled) — the entry wrapper; `dialogVariants` recipe with dynamic slot forwarding
 - `SDialogProvider` (styled) — hosts the imperative `dialog(...)` API; subscribes to `DialogState`
-- `DialogRoot` (headless) — the state owner; `open` via `useControllableState`, `dir`/`modal`, `provideDialogRootContext`
-- `DialogTrigger` (headless) — a `Button` that opens the dialog
-- `DialogOverlay` (headless) — the dimmed backdrop
-- `DialogPopup` / `DialogPopupImpl` (headless) — the focus-trapped, dismissable surface hosting the dialog body
-- `DialogTitle` / `DialogDescription` (headless) — the labelled/described elements
-- `DialogClose` (headless) — the close control, toggles `open` and emits `close`
-- `DialogFullscreen` (headless) — the fullscreen toggle, toggles the `fullscreen` state and emits `fullscreen`
-- `DialogCancel` / `DialogConfirm` (headless) — footer actions, emit `cancel`/`confirm`
-- `DialogHeader` / `DialogContent` / `DialogFooter` (headless) — layout sections
-- `DialogCompact` (headless) — the aggregated composite; composes all primitives and exposes the per-part slots
+- `DialogRoot` (Aria) — the state owner; `open` via `useControllableState`, `dir`/`modal`, `provideDialogRootContext`
+- `DialogTrigger` (Aria) — a `Button` that opens the dialog
+- `DialogOverlay` (Aria) — the dimmed backdrop
+- `DialogPopup` / `DialogPopupImpl` (Aria) — the focus-trapped, dismissable surface hosting the dialog body
+- `DialogTitle` / `DialogDescription` (Aria) — the labelled/described elements
+- `DialogClose` (Aria) — the close control, toggles `open` and emits `close`
+- `DialogFullscreen` (Aria) — the fullscreen toggle, toggles the `fullscreen` state and emits `fullscreen`
+- `DialogCancel` / `DialogConfirm` (Aria) — footer actions, emit `cancel`/`confirm`
+- `DialogHeader` / `DialogContent` / `DialogFooter` (Aria) — layout sections
+- `DialogCompact` (Aria) — the aggregated composite; composes all primitives and exposes the per-part slots
 
 ## Demos
 
@@ -85,18 +85,18 @@ function openWarningDialog() {
 
 ### Architecture and benchmark differences
 
-`DialogCompact` owns the overlay/popup/header/content/footer composition and the imperative `dialog(...)` state flow while every primitive stays style-free and only the UI wrapper injects the `dialogVariants` classes. This mirrors radix-ui/shadcn-ui's headless/styled split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled dialog with `mask`/`closable`/`keyboard`/`width` props; SoybeanUI additionally exposes a per-slot `*Props` channel, a `size` scale, and an imperative provider API (`dialog.*`) that the single-package libraries fold into a static service.
+`DialogCompact` owns the overlay/popup/header/content/footer composition and the imperative `dialog(...)` state flow while every primitive stays style-free and only the UI wrapper injects the `dialogVariants` classes. This mirrors radix-ui/shadcn-ui's headless/styled split. Ant Design, Element Plus, Mantine and Naive UI ship a single styled dialog with `mask`/`closable`/`keyboard`/`width` props; VeanUI additionally exposes a per-slot `*Props` channel, a `size` scale, and an imperative provider API (`dialog.*`) that the single-package libraries fold into a static service.
 
-| Capability                    | SoybeanUI | shadcn/ui | Ant Design Modal | Element Plus Dialog | Mantine Modal | Naive UI Dialog |
-| :---------------------------- | :-------: | :-------: | :--------------: | :-----------------: | :-----------: | :-------------: |
-| Headless/styled split         |    ✅     |    ✅     |        —         |          —          |       —       |        —        |
-| Imperative API                |    ✅     |     —     |        ✅        |         ✅          |      ✅       |       ✅        |
-| Modal (aria-modal + trap)     |    ✅     |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
-| Alert mode (alertdialog)      |    ✅     |    ✅     |        ✅        |          —          |       —       |       ✅        |
-| Focus return on close         |    ✅     |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
-| Sizes (6)                     |    ✅     |     —     |        —         |          —          |       —       |        —        |
-| Localized cancel/confirm text |    ✅     |     —     |        —         |          —          |       —       |        —        |
-| Pure (no header/footer)       |    ✅     |     —     |        —         |          —          |       —       |        —        |
+| Capability                    | VeanUI | shadcn/ui | Ant Design Modal | Element Plus Dialog | Mantine Modal | Naive UI Dialog |
+| :---------------------------- | :----: | :-------: | :--------------: | :-----------------: | :-----------: | :-------------: |
+| Aria/styled split             |   ✅   |    ✅     |        —         |          —          |       —       |        —        |
+| Imperative API                |   ✅   |     —     |        ✅        |         ✅          |      ✅       |       ✅        |
+| Modal (aria-modal + trap)     |   ✅   |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
+| Alert mode (alertdialog)      |   ✅   |    ✅     |        ✅        |          —          |       —       |       ✅        |
+| Focus return on close         |   ✅   |    ✅     |        ✅        |         ✅          |      ✅       |       ✅        |
+| Sizes (6)                     |   ✅   |     —     |        —         |          —          |       —       |        —        |
+| Localized cancel/confirm text |   ✅   |     —     |        —         |          —          |       —       |        —        |
+| Pure (no header/footer)       |   ✅   |     —     |        —         |          —          |       —       |        —        |
 
 `—` = unsupported or a different interaction model.
 
@@ -134,7 +134,7 @@ Set `is-alert` with an `alert-type`. The popup gets `role="alertdialog"` and the
 Mount `SDialogProvider` once, then call `dialog.*` from anywhere (see the Overview section for a full example):
 
 ```ts
-import { dialog } from '@soybeanjs/ui';
+import { dialog } from '@vean/ui';
 dialog.warning('Disk full', { description: 'Free up space.' });
 ```
 

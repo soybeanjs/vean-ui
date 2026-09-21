@@ -1,23 +1,23 @@
-# @soybeanjs/theme
+# @vean/theme
 
 [English](./README.md) | 中文
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](../../LICENSE)
-[![npm version](https://img.shields.io/npm/v/@soybeanjs/theme)](https://www.npmjs.com/package/@soybeanjs/theme)
-[![npm downloads](https://img.shields.io/npm/dt/@soybeanjs/theme)](https://www.npmjs.com/package/@soybeanjs/theme)
-[![github stars](https://img.shields.io/github/stars/soybeanjs/soybean-ui)](https://github.com/soybeanjs/soybean-ui)
+[![npm version](https://img.shields.io/npm/v/@vean/theme)](https://www.npmjs.com/package/@vean/theme)
+[![npm downloads](https://img.shields.io/npm/dt/@vean/theme)](https://www.npmjs.com/package/@vean/theme)
+[![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
 > 完整设计规格、token 契约与 AI Agent 接入手册见 [docs/theme.md](../../docs/theme.md)(本文只覆盖包级用法)。
 
-SoybeanUI 主题引擎:**静态调色板层 + 语义别名层**——一张声明式映射表,不含任何测量或修正。
+Vean 主题引擎:**静态调色板层 + 语义别名层**——一张声明式映射表,不含任何测量或修正。
 
 > 状态:✅ 已实施(第一代引擎已退役,本包是唯一实现;设计以 [docs/theme.md](../../docs/theme.md) 为准)。
-> 适配器与运行时(UnoCSS 预设、`SConfigProvider`、首帧脚本、持久化、定制面板)分别在 `@soybeanjs/ui-uno` 与 `@soybeanjs/ui`,不在本包内。
+> 适配器与运行时(UnoCSS 预设、`SConfigProvider`、首帧脚本、持久化、定制面板)分别在 `@vean/unocss` 与 `@vean/ui`,不在本包内。
 
 ## 📦 安装
 
 ```bash
-pnpm add @soybeanjs/theme
+pnpm add @vean/theme
 ```
 
 ## 🧩 三层模型
@@ -55,7 +55,7 @@ UnoCSS 侧以具名 key 与数字 key 两条路暴露间距(`gap-md` / `p-2xl` /
 ## 🚀 快速开始
 
 ```ts
-import { resolveThemeMap, emitThemeCss, generatePaletteCss } from '@soybeanjs/theme';
+import { resolveThemeMap, emitThemeCss, generatePaletteCss } from '@vean/theme';
 
 // 1) Layer 1(静态,构建期产出一次)
 const paletteCss = generatePaletteCss({ format: 'hsl' });
@@ -65,7 +65,7 @@ const map = resolveThemeMap({ base: 'zinc', primary: 'indigo', surfaceStyle: 'la
 const themeCss = emitThemeCss(map); // token 名默认不带前缀;需要命名空间时传 { prefix: 'acme' }
 
 // 3) 需要完整色时(canvas / 图表 / 颜色计算)
-import { resolveTokenColor } from '@soybeanjs/theme';
+import { resolveTokenColor } from '@vean/theme';
 const primary = resolveTokenColor({ primary: 'indigo' }, 'primary', 'dark');
 ```
 
@@ -99,9 +99,9 @@ theme.colors = {
 ## 🧪 命令
 
 ```bash
-pnpm --filter @soybeanjs/theme test        # 层级不变量、发射契约、JS↔CSS 同源、家族划分、维度刻度、预算
-pnpm --filter @soybeanjs/theme typecheck
-pnpm --filter @soybeanjs/theme build       # vp pack + dist/palette.css
+pnpm --filter @vean/theme test        # 层级不变量、发射契约、JS↔CSS 同源、家族划分、维度刻度、预算
+pnpm --filter @vean/theme typecheck
+pnpm --filter @vean/theme build       # vp pack + dist/palette.css
 ```
 
 ## 📌 尚未包含
@@ -110,7 +110,7 @@ pnpm --filter @soybeanjs/theme build       # vp pack + dist/palette.css
 
 ## 📖 文档
 
-设计规格与 AI Agent 接入手册:[docs/theme.md](../../docs/theme.md) · 刻度依据:[docs/space-control-scale.md](../../docs/space-control-scale.md) · 文档站:[ui.soybeanjs.cn](https://ui.soybeanjs.cn)
+设计规格与 AI Agent 接入手册:[docs/theme.md](../../docs/theme.md) · 刻度依据:[docs/space-control-scale.md](../../docs/space-control-scale.md) · 文档站:[veanui.com](https://veanui.com)
 
 ## 📄 License
 

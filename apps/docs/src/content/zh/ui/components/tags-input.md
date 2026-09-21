@@ -28,12 +28,12 @@ head:
 
 ## 组件家族
 
-- `STagsInput` — 样式包装层，将 props 转发给 headless compact 并注入 `tagsInputVariants` 类（6 个 slot：root/item/itemText/itemDelete/control/clear）
-- `TagsInputCompact`（headless）— `TagsInputRoot` + 每个值一个 `TagsInputItem`（默认 item 文本/删除）+ `Control` + `Clear`（由 `clearable` 门控）的数据驱动组合；无样式用法从 `@soybeanjs/headless/tags-input` 导入
-- `TagsInputRoot`（headless）— 状态所有者：`useControllableState` 管理值数组、集合注册、键盘/删除/清空逻辑与视觉隐藏表单输入
-- `TagsInputControl`（headless）— 提交型输入：分隔符输入、粘贴拆分、`Enter`/`Tab`/失焦提交、输入法组合保护
-- `TagsInputItem` / `TagsInputItemText` / `TagsInputItemDelete`（headless）— 注册到集合的标签项、其文本 span 与可键盘操作的删除按钮
-- `TagsInputClear`（headless）— 清空按钮，默认样式在根组件有值时显示，渲染由 `clearable` 门控
+- `STagsInput` — 样式包装层，将 props 转发给 Aria compact 并注入 `tagsInputVariants` 类（6 个 slot：root/item/itemText/itemDelete/control/clear）
+- `TagsInputCompact`（Aria）— `TagsInputRoot` + 每个值一个 `TagsInputItem`（默认 item 文本/删除）+ `Control` + `Clear`（由 `clearable` 门控）的数据驱动组合；无样式用法从 `@vean/aria/tags-input` 导入
+- `TagsInputRoot`（Aria）— 状态所有者：`useControllableState` 管理值数组、集合注册、键盘/删除/清空逻辑与视觉隐藏表单输入
+- `TagsInputControl`（Aria）— 提交型输入：分隔符输入、粘贴拆分、`Enter`/`Tab`/失焦提交、输入法组合保护
+- `TagsInputItem` / `TagsInputItemText` / `TagsInputItemDelete`（Aria）— 注册到集合的标签项、其文本 span 与可键盘操作的删除按钮
+- `TagsInputClear`（Aria）— 清空按钮，默认样式在根组件有值时显示，渲染由 `clearable` 门控
 
 ## 演示
 
@@ -47,21 +47,21 @@ head:
 
 ### 架构与对标差异
 
-`TagsInputRoot` 经 `useControllableState` 持有值数组与集合注册表（每个 `Item` 通过 `useCollectionItem` 注册）。`TagsInputControl` 只负责提交：监听分隔符/粘贴/Enter/Tab/失焦，经根组件的 `onAddValue` 校验并归一化，被拒绝时通过 `invalid` 事件上报。键盘选中状态（`selectedElement`）位于根组件，控制层的 keydown 处理器据此用方向键移动选中（逻辑方向，RTL 感知）并用 `Backspace`/`Delete`/`Home`/`End` 删除标签。compact 以 `index-value` 键迭代值数组，使重复值保持稳定且避免原地值修补。多数对标库把标签作为某个 Select 的一种模式提供；headless/styled 分离、逐部件 `*Props` 透传、插槽驱动的标签渲染以及 `invalid`/`addTag`/`removeTag` 事件面是本组件的差异点。
+`TagsInputRoot` 经 `useControllableState` 持有值数组与集合注册表（每个 `Item` 通过 `useCollectionItem` 注册）。`TagsInputControl` 只负责提交：监听分隔符/粘贴/Enter/Tab/失焦，经根组件的 `onAddValue` 校验并归一化，被拒绝时通过 `invalid` 事件上报。键盘选中状态（`selectedElement`）位于根组件，控制层的 keydown 处理器据此用方向键移动选中（逻辑方向，RTL 感知）并用 `Backspace`/`Delete`/`Home`/`End` 删除标签。compact 以 `index-value` 键迭代值数组，使重复值保持稳定且避免原地值修补。多数对标库把标签作为某个 Select 的一种模式提供；Aria/styled 分离、逐部件 `*Props` 透传、插槽驱动的标签渲染以及 `invalid`/`addTag`/`removeTag` 事件面是本组件的差异点。
 
-| 能力                      | SoybeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
-| :------------------------ | :-------: | :--------: | :----------: | :-----: | :------: | :----: |
-| headless/styled 分离      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 受控 / 非受控             |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| Enter / 分隔符 / 粘贴添加 |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
-| 键盘选中 + 删除           |    ✅     |     —      |      —       |   ✅    |    —     |   —    |
-| RTL 方向反转              |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| `max` / `duplicate` 约束  |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
-| `RegExp` 分隔符           |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 逐部件 `*Props` 透传      |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 自定义标签插槽            |    ✅     |     ✅     |      ✅      |   ✅    |    —     |   ✅   |
-| 表单隐藏输入序列化        |    ✅     |     —      |      —       |    —    |    —     |   —    |
-| 本地化 `aria-label`       |    ✅     |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| 能力                      | VeanUI | Ant Design | Element Plus | Mantine | Naive UI | shadcn |
+| :------------------------ | :----: | :--------: | :----------: | :-----: | :------: | :----: |
+| Aria/styled 分离          |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 受控 / 非受控             |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| Enter / 分隔符 / 粘贴添加 |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   ✅   |
+| 键盘选中 + 删除           |   ✅   |     —      |      —       |   ✅    |    —     |   —    |
+| RTL 方向反转              |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| `max` / `duplicate` 约束  |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
+| `RegExp` 分隔符           |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 逐部件 `*Props` 透传      |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 自定义标签插槽            |   ✅   |     ✅     |      ✅      |   ✅    |    —     |   ✅   |
+| 表单隐藏输入序列化        |   ✅   |     —      |      —       |    —    |    —     |   —    |
+| 本地化 `aria-label`       |   ✅   |     ✅     |      ✅      |   ✅    |    ✅    |   —    |
 
 ### 注意事项
 

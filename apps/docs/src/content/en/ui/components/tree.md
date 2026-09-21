@@ -1,14 +1,14 @@
 ---
 head:
   title: Tree
-  description: 'A component for displaying hierarchical tree data with selection and expand/collapse support. STree combines the headless TreeRoot family of base primitives (TreeRoot/TreeItem/TreeVirtualizerRoot/TreeVirtualizerItem, zero-style) with the TreeRoot context (controlled/uncontrolled selection and expansion, single/multiple selection, cascading selection, Roving Focus keyboard navigation); STreeVirtualizer layers virtualization on top to smoothly handle 1000+ nodes. Node content is fully customized through the item slot — icons, checkboxes, indentation, and connector lines are all injected by the consumer.'
+  description: 'A component for displaying hierarchical tree data with selection and expand/collapse support. STree combines the Aria TreeRoot family of base primitives (TreeRoot/TreeItem/TreeVirtualizerRoot/TreeVirtualizerItem, zero-style) with the TreeRoot context (controlled/uncontrolled selection and expansion, single/multiple selection, cascading selection, Roving Focus keyboard navigation); STreeVirtualizer layers virtualization on top to smoothly handle 1000+ nodes. Node content is fully customized through the item slot — icons, checkboxes, indentation, and connector lines are all injected by the consumer.'
 ---
 
 # Tree
 
 ## Overview
 
-A component for displaying hierarchical tree data with selection and expand/collapse support. `STree` combines the headless `TreeRoot` family of base primitives (`TreeRoot`/`TreeItem`/`TreeVirtualizerRoot`/`TreeVirtualizerItem`, zero-style) with the `TreeRoot` context (controlled/uncontrolled selection and expansion, single/multiple selection, cascading selection, Roving Focus keyboard navigation); `STreeVirtualizer` layers virtualization on top to smoothly handle 1000+ nodes. Node content is fully customized through the `item` slot — icons, checkboxes, indentation, and connector lines are all injected by the consumer.
+A component for displaying hierarchical tree data with selection and expand/collapse support. `STree` combines the Aria `TreeRoot` family of base primitives (`TreeRoot`/`TreeItem`/`TreeVirtualizerRoot`/`TreeVirtualizerItem`, zero-style) with the `TreeRoot` context (controlled/uncontrolled selection and expansion, single/multiple selection, cascading selection, Roving Focus keyboard navigation); `STreeVirtualizer` layers virtualization on top to smoothly handle 1000+ nodes. Node content is fully customized through the `item` slot — icons, checkboxes, indentation, and connector lines are all injected by the consumer.
 
 ## Usage
 
@@ -23,16 +23,16 @@ A component for displaying hierarchical tree data with selection and expand/coll
 - 📂 Expansion strategy — `toggleBehavior: 'multiple' | 'single'` (multiple expanded nodes by default; `single` collapses the previous node when expanding a new one, accordion-like)
 - ⌨️ Keyboard navigation — Roving Focus: `↑/↓` move focus, `→/←` expand/collapse or enter/return to a parent level, `Enter`/`Space` select, character typeahead for quick location; `loop` (default `true`) wraps around; full RTL support
 - ⚡ Virtualization — `STreeVirtualizer` + `height` renders only visible nodes, staying smooth with 1000+ nodes
-- ♿ Accessibility — `role="tree"`/`treeitem` with `aria-expanded`/`aria-selected`/`aria-level`/`aria-setsize`/`aria-posinset`/`aria-multiselectable`/`aria-disabled`, plus `data-soybean-tree-*` data attributes
+- ♿ Accessibility — `role="tree"`/`treeitem` with `aria-expanded`/`aria-selected`/`aria-level`/`aria-setsize`/`aria-posinset`/`aria-multiselectable`/`aria-disabled`, plus `data-vean-tree-*` data attributes
 
 ## Component family
 
-- `STree` (styled) — entry wrapper; `TreeRootProps<T, U, M>` generic passthrough + `useForwardListeners` event merging + `top`/`item`/`bottom` slots; `withDefaults` mirrors the headless `loop: true` default
+- `STree` (styled) — entry wrapper; `TreeRootProps<T, U, M>` generic passthrough + `useForwardListeners` event merging + `top`/`item`/`bottom` slots; `withDefaults` mirrors the Aria `loop: true` default
 - `STreeVirtualizer` (styled) — virtualized wrapper; forwards `contentProps`/`dynamicContentProps` to `VirtualizerContent`; the `item` slot additionally exposes `virtualItem`
-- `TreeRoot` (headless) — root component; `useControllableState` manages selection/expansion, `useSelectionBehavior` handles single/multi/range selection, `useRovingFocusGroup` + `useTypeahead` implement keyboard navigation; `provideTreeRootContext` bridges child items
-- `TreeItem` (headless) — single node; `useRovingFocusGroupItem` manages focus, renders `aria-*` and `data-*` attributes, dispatches `select`/`toggle` events via `handleAndDispatchCustomEvent`
-- `TreeVirtualizerRoot` (headless) — virtualized root; `VirtualizerRoot` + TanStack Virtual, forwards flattened `flattenItems`
-- `TreeVirtualizerItem` (headless) — virtualized node; combines `TreeItem` + `VirtualizerItem` (`data-soybean-tree-virtualizer-item`)
+- `TreeRoot` (Aria) — root component; `useControllableState` manages selection/expansion, `useSelectionBehavior` handles single/multi/range selection, `useRovingFocusGroup` + `useTypeahead` implement keyboard navigation; `provideTreeRootContext` bridges child items
+- `TreeItem` (Aria) — single node; `useRovingFocusGroupItem` manages focus, renders `aria-*` and `data-*` attributes, dispatches `select`/`toggle` events via `handleAndDispatchCustomEvent`
+- `TreeVirtualizerRoot` (Aria) — virtualized root; `VirtualizerRoot` + TanStack Virtual, forwards flattened `flattenItems`
+- `TreeVirtualizerItem` (Aria) — virtualized node; combines `TreeItem` + `VirtualizerItem` (`data-vean-tree-virtualizer-item`)
 
 ## Demos
 
@@ -49,22 +49,22 @@ A component for displaying hierarchical tree data with selection and expand/coll
 
 ### Architecture and benchmark differences
 
-`TreeRoot` owns all state (selection/expansion through the `useControllableState` controlled/uncontrolled dual channels) and the selection strategy (`useSelectionBehavior`'s toggle/replace/range selection); all base primitives stay zero-style. `STree`/`STreeVirtualizer` only mirror the `loop` default and pass through slots — the node visuals are fully composed inside the `item` slot via `STreeItem`/`STreeVirtualizerItem` (indentation, icons, checkboxes, focus states all injected through classes). Keyboard navigation builds on Roving Focus (`↑/↓` move, `→/←` expand/collapse, typeahead) and additionally supports `Shift` range selection — an interaction beyond the default contract of most mainstream tree components. Virtualization builds on the `@soybeanjs/headless` virtualizer and renders only visible nodes.
+`TreeRoot` owns all state (selection/expansion through the `useControllableState` controlled/uncontrolled dual channels) and the selection strategy (`useSelectionBehavior`'s toggle/replace/range selection); all base primitives stay zero-style. `STree`/`STreeVirtualizer` only mirror the `loop` default and pass through slots — the node visuals are fully composed inside the `item` slot via `STreeItem`/`STreeVirtualizerItem` (indentation, icons, checkboxes, focus states all injected through classes). Keyboard navigation builds on Roving Focus (`↑/↓` move, `→/←` expand/collapse, typeahead) and additionally supports `Shift` range selection — an interaction beyond the default contract of most mainstream tree components. Virtualization builds on the `@vean/aria` virtualizer and renders only visible nodes.
 
-| Capability                                      | SoybeanUI | Ant Design | Element Plus | Naive UI |
-| :---------------------------------------------- | :-------: | :--------: | :----------: | :------: |
-| headless/style separation                       |    ✅     |     —      |      —       |    —     |
-| Single/multiple selection (toggle/replace)      |    ✅     |     ✅     |      ✅      |    ✅    |
-| Expansion strategy (single/multiple toggle)     |    ✅     |     ✅     |      ✅      |    ✅    |
-| Cascading selection (propagate/bubble/parent)   |    ✅     |     ✅     |      ✅      |    ⚠️    |
-| Keyboard navigation (arrows + loop + typeahead) |    ✅     |     ✅     |      ✅      |    ⚠️    |
-| Virtualization (1k nodes)                       |    ✅     |     ✅     |      ⚠️      |    ✅    |
-| Checkable mode (checkbox)                       |    ⚠️     |     ✅     |      ✅      |    ✅    |
-| Draggable reordering                            |     —     |     ✅     |      ✅      |    ✅    |
-| Async child loading (loadData)                  |     —     |     ✅     |      ✅      |    ✅    |
-| Search filtering (searchValue)                  |     —     |     ✅     |      ✅      |    —     |
+| Capability                                      | VeanUI | Ant Design | Element Plus | Naive UI |
+| :---------------------------------------------- | :----: | :--------: | :----------: | :------: |
+| Aria/style separation                           |   ✅   |     —      |      —       |    —     |
+| Single/multiple selection (toggle/replace)      |   ✅   |     ✅     |      ✅      |    ✅    |
+| Expansion strategy (single/multiple toggle)     |   ✅   |     ✅     |      ✅      |    ✅    |
+| Cascading selection (propagate/bubble/parent)   |   ✅   |     ✅     |      ✅      |    ⚠️    |
+| Keyboard navigation (arrows + loop + typeahead) |   ✅   |     ✅     |      ✅      |    ⚠️    |
+| Virtualization (1k nodes)                       |   ✅   |     ✅     |      ⚠️      |    ✅    |
+| Checkable mode (checkbox)                       |   ⚠️   |     ✅     |      ✅      |    ✅    |
+| Draggable reordering                            |   —    |     ✅     |      ✅      |    ✅    |
+| Async child loading (loadData)                  |   —    |     ✅     |      ✅      |    ✅    |
+| Search filtering (searchValue)                  |   —    |     ✅     |      ✅      |    —     |
 
-`⚠️` = partial support (SoybeanUI checkable can be built via `multiple` + a custom `item` slot checkbox icon + the `data-selected`/`data-contains-selected` states; Naive UI has no built-in range selection or character location).
+`⚠️` = partial support (VeanUI checkable can be built via `multiple` + a custom `item` slot checkbox icon + the `data-selected`/`data-contains-selected` states; Naive UI has no built-in range selection or character location).
 
 ### Cautions
 
@@ -73,7 +73,7 @@ A component for displaying hierarchical tree data with selection and expand/coll
 - Parent nodes are **not selectable by default** (`allowParentSelect` defaults to `false`); enable it explicitly when needed.
 - `propagateSelect`/`bubbleSelect` only take effect in multi-select mode (`multiple` + array value); with both on, the semi-checked state is expressed via `data-contains-selected`/`isIndeterminate`.
 - With `toggleBehavior: 'single'`, expansion is accordion-like — only one branch stays expanded (`findParentPath` rebuilds the path).
-- `loop` defaults to `true` (keyboard focus wraps around); both `STree` and `STreeVirtualizer` mirror this default in their wrappers, so no extra work is needed when using the headless `TreeRoot` directly.
+- `loop` defaults to `true` (keyboard focus wraps around); both `STree` and `STreeVirtualizer` mirror this default in their wrappers, so no extra work is needed when using the Aria `TreeRoot` directly.
 - Virtualization requires a `height`; the `STreeVirtualizer` `item` slot additionally provides `virtualItem` (for `:data` passthrough and absolute-position styling).
 - Expand and collapse animate with a height-collapsing transition on the moved subtree. `STreeVirtualizer` has an opt-in `animated` prop that renders visible items in normal document flow (dynamic mode) so item positions stay correct across expand/collapse without absolute offsets — it is off by default since dynamic measuring is heavier for very large datasets, and while a motion runs the transition list renders fully in document flow before windowing resumes.
 - Node text is fully provided by slots — the component has no hardcoded copy, so no localization is needed.

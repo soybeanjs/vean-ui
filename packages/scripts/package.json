@@ -1,8 +1,8 @@
 {
-  "name": "@soybeanjs/scripts",
+  "name": "@vean/scripts",
   "version": "0.50.0",
   "private": true,
-  "description": "SoybeanUI repo generators (api / changelog / metadata / skills), not published. Binary: sui.",
+  "description": "Vean repo generators (api / changelog / metadata / skills), not published. Binary: sui.",
   "license": "MIT",
   "bin": {
     "sui": "./bin/index.js"
@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "@soybeanjs/colord": "^0.8.1",
-    "@soybeanjs/theme": "workspace:^",
     "@types/node": "^26.6.4",
+    "@vean/theme": "workspace:^",
     "cac": "^7.0.0",
     "esbuild": "^0.28.2",
     "tsx": "^4.23.15",

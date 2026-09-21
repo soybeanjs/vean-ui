@@ -1,16 +1,16 @@
-# CONSUMER AGENT SKILLS — @soybeanjs/ui-skills
+# CONSUMER AGENT SKILLS — @vean/skills
 
 ## AI ASSISTANT BRIDGE
 
 **`skills/skills/` is a GENERATED DISTRIBUTION — never hand-edit it.** Edit `skills/skills-source/` and run `pnpm sui gen skills`.
 
-**Directory:** `skills/` → publishes as `@soybeanjs/ui-skills`. It is **not a pnpm workspace member** (`pnpm-workspace.yaml` covers only `packages/**` and `apps/**`), so it is excluded from `pnpm -r run test`, `typecheck`, and the release version bump. Its `version` is written by the release chain, not by hand.
+**Directory:** `skills/` → publishes as `@vean/skills`. It is **not a pnpm workspace member** (`pnpm-workspace.yaml` covers only `packages/**` and `apps/**`), so it is excluded from `pnpm -r run test`, `typecheck`, and the release version bump. Its `version` is written by the release chain, not by hand.
 
 ## THE SOURCE → DISTRIBUTION SPLIT
 
 | Path                    | Nature                                                                                                                     |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `skills/skills-source/` | **Hand-edited source.** `soybean-ui/` and `soybean-headless/`, each with `SKILL.md` + `REFERENCE.md` + `references/*.md`.  |
+| `skills/skills-source/` | **Hand-edited source.** `vean-ui/` and `vean-aria/`, each with `SKILL.md` + `REFERENCE.md` + `references/*.md`.            |
 | `skills/skills/`        | **Generated output.** Adds one `components/<name>.md` per component, plus the distribution manifest and `.claude-plugin/`. |
 
 The generator is `packages/scripts/src/commands/skills-docs.ts` (+ `skills.ts` for the distribution assembly).
@@ -29,10 +29,10 @@ Consequence: adding a component, renaming one, re-categorizing it in the sidebar
 
 Everything here is written for a _consumer_ of the published packages, not for someone working in this repo:
 
-- `soybean-ui` — styled usage, theming, component reference.
-- `soybean-headless` — headless primitives, Compact patterns, composition guidance.
+- `vean-ui` — styled usage, theming, component reference.
+- `vean-aria` — aria primitives, Compact patterns, composition guidance.
 
-Do not state repo-internal paths, workspace build commands, or generator details inside a skill's prose, and do not reference the project-local `.agents/skills/soybean-ui-develop/` skill (that one is for developing this repo). The two catalogs have different audiences.
+Do not state repo-internal paths, workspace build commands, or generator details inside a skill's prose, and do not reference the project-local `.agents/skills/vean-ui-develop/` skill (that one is for developing this repo). The two catalogs have different audiences.
 
 ## ANTI-PATTERNS
 

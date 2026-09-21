@@ -112,7 +112,7 @@ describe('SSheet', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-fullscreen]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-dialog-fullscreen]').exists()).toBe(false);
 
       wrapper.unmount();
     });
@@ -131,11 +131,11 @@ describe('SSheet', () => {
 
       await nextTick();
 
-      const popup = wrapper.find('[data-soybean-dialog-popup]');
+      const popup = wrapper.find('[data-vean-dialog-popup]');
 
       expect(popup.attributes('data-fullscreen')).toBeUndefined();
 
-      await wrapper.find('[data-soybean-dialog-fullscreen]').trigger('click');
+      await wrapper.find('[data-vean-dialog-fullscreen]').trigger('click');
       await nextTick();
 
       // The internal state has to flip, not just the emitted event: omitting the
@@ -143,7 +143,7 @@ describe('SSheet', () => {
       // absent Boolean prop to `false`, which `DialogRoot` then reads as a
       // *controlled* `false` and refuses to update.
       expect(popup.attributes('data-fullscreen')).toBeDefined();
-      expect(wrapper.find('[data-soybean-dialog-fullscreen]').attributes('aria-pressed')).toBe('true');
+      expect(wrapper.find('[data-vean-dialog-fullscreen]').attributes('aria-pressed')).toBe('true');
       expect(wrapper.emitted('update:fullscreen')![0][0]).toBe(true);
 
       wrapper.unmount();
@@ -163,13 +163,13 @@ describe('SSheet', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
 
       await wrapper.setProps({ open: false });
       await wrapper.setProps({ open: true });
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
+      expect(wrapper.find('[data-vean-dialog-popup]').attributes('data-fullscreen')).toBeDefined();
 
       wrapper.unmount();
     });
@@ -192,7 +192,7 @@ describe('SSheet', () => {
 
       await nextTick();
 
-      expect(wrapper.find('[data-soybean-dialog-popup]').classes()).toEqual(
+      expect(wrapper.find('[data-vean-dialog-popup]').classes()).toEqual(
         expect.arrayContaining([
           'data-[fullscreen]:w-full',
           'data-[fullscreen]:max-w-none',

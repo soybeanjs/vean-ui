@@ -8,8 +8,8 @@
         "type": "Interface CommandGroupLabelProps",
         "resolvedType": null,
         "description": "Properties for the ListboxGroupLabel component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commandgrouplabelprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commandgrouplabelprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -23,8 +23,8 @@
         "type": "Interface CommandInputProps",
         "resolvedType": null,
         "description": "Properties for the ListboxFilter component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commandinputprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commandinputprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -38,8 +38,8 @@
         "type": "Interface CommandItemProps",
         "resolvedType": null,
         "description": "Properties for the ListboxItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commanditemprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commanditemprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -51,8 +51,8 @@
         "type": "TypeAlias CommandItemEmits",
         "resolvedType": null,
         "description": "Events for the ListboxItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commanditememits.emits",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commanditememits.emits",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -66,8 +66,8 @@
         "type": "Interface CommandListProps",
         "resolvedType": null,
         "description": "Properties for the ListboxContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commandlistprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commandlistprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -81,8 +81,8 @@
         "type": "Interface CommandRootProps<M>",
         "resolvedType": null,
         "description": "Properties for the ListboxRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commandrootprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commandrootprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [],
         "callables": [],
@@ -94,8 +94,8 @@
         "type": "TypeAlias CommandRootEmits<M>: SelectionEmits<M> & { entryFocus: [event: CustomEvent]; highlight: [payload?: CollectionItemData<ListboxCollectionItemData>]; leave: [event: Event] }",
         "resolvedType": null,
         "description": "Events for the ListboxRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.commandrootemits.emits",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.commandrootemits.emits",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": ["TypeParameter M"],
         "members": [],
         "callables": [],
@@ -109,8 +109,8 @@
         "type": "Interface ListboxContentProps",
         "resolvedType": null,
         "description": "Properties for the ListboxContent component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxcontentprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxcontentprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -124,8 +124,8 @@
         "type": "Interface ListboxFilterProps",
         "resolvedType": "{ inputRef?: ((el: HTMLInputElement) => void); controlProps?: InputControlProps; defaultValue?: string; modelValue?: string; disabled?: boolean; readonly?: boolean; rootProps?: BaseProps; name?: string; required?: boolean; id?: string; autofocus?: boolean; autocomplete?: 'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'; maxlength?: number; minlength?: number; pattern?: string; placeholder?: string; type?: InputTypeHTMLAttribute }",
         "description": "Properties for the ListboxFilter component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -133,10 +133,10 @@
             "type": "((el: HTMLInputElement) => void)",
             "required": false,
             "description": "The function to set the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.inputref",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.inputref",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "HTMLInputElement",
@@ -158,10 +158,10 @@
             "type": "InputControlProps",
             "required": false,
             "description": "The props of the input extra props.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.controlprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.controlprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "InputControlProps",
@@ -169,8 +169,8 @@
                 "type": "InputControlProps",
                 "resolvedType": null,
                 "description": "Properties for the InputControl component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputcontrolprops",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputcontrolprops",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -183,10 +183,10 @@
             "type": "string",
             "required": false,
             "description": "The default value of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -194,10 +194,10 @@
             "type": "string",
             "required": false,
             "description": "The controlled value of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -205,10 +205,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the input.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -216,10 +216,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the input is read-only.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.readonly",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.readonly",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -227,10 +227,10 @@
             "type": "BaseProps",
             "required": false,
             "description": "Properties forwarded to the root element",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.rootprops",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.rootprops",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "BaseProps",
@@ -238,8 +238,8 @@
                 "type": "import(\"../../types\").DataAttributes & import(\"vue\").HTMLAttributes",
                 "resolvedType": "DataAttributes & T",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_vue.baseprops",
-                "sourcePath": "packages/headless/src/types/vue.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_vue.baseprops",
+                "sourcePath": "packages/aria/src/types/vue.ts",
                 "typeParameters": ["T = HTMLAttributes"],
                 "external": false,
                 "members": [],
@@ -252,10 +252,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.name",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -263,10 +263,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.required",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -274,10 +274,10 @@
             "type": "string",
             "required": false,
             "description": "Id of the input element",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.id",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.id",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -285,10 +285,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, the input is auto-focused.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.autofocus",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.autofocus",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -296,10 +296,10 @@
             "type": "'search' | 'name' | 'email' | 'tel' | 'url' | 'on' | 'off' | 'username' | 'current-password' | 'new-password' | 'one-time-code' | 'given-name' | 'family-name' | 'organization' | 'street-address' | 'address-level2' | 'postal-code' | 'country' | 'cc-name' | 'cc-number' | 'cc-exp' | 'cc-csc' | 'transaction-amount'",
             "required": false,
             "description": "The autocomplete attribute of the input.\n\nSupports the HTML autofill tokens (including password-manager values such as\n`current-password` / `new-password`), in addition to the `on` / `off` switches.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.autocomplete",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.autocomplete",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -307,10 +307,10 @@
             "type": "number",
             "required": false,
             "description": "The maximum number of characters allowed in the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.maxlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.maxlength",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -318,10 +318,10 @@
             "type": "number",
             "required": false,
             "description": "The minimum number of characters allowed in the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.minlength",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.minlength",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -329,10 +329,10 @@
             "type": "string",
             "required": false,
             "description": "The pattern attribute of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.pattern",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.pattern",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -340,10 +340,10 @@
             "type": "string",
             "required": false,
             "description": "The placeholder of the input",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.placeholder",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.placeholder",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           },
           {
@@ -351,10 +351,10 @@
             "type": "InputTypeHTMLAttribute",
             "required": false,
             "description": "The type of the input element.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilterprops.members.type",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilterprops.members.type",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": [
               {
                 "name": "InputTypeHTMLAttribute",
@@ -381,8 +381,8 @@
         "type": "TypeAlias ListboxFilterEmits",
         "resolvedType": "{ \"update:modelValue\": [value: string] }",
         "description": "Events for the ListboxFilter component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilteremits.emits",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilteremits.emits",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -392,8 +392,8 @@
             "parameters": "value: string",
             "required": true,
             "description": "Emitted when the model value changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxfilteremits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxfilteremits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "referencedTypes": []
           }
         ],
@@ -404,8 +404,8 @@
             "type": "{ 'update:modelValue': [value: string]; }",
             "resolvedType": "{ \"update:modelValue\": [value: string] }",
             "description": "Events for the InputRoot component.",
-            "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootemits",
-            "sourcePath": "packages/headless/src/components/input/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootemits",
+            "sourcePath": "packages/aria/src/components/input/types.ts",
             "typeParameters": [],
             "external": false,
             "members": [],
@@ -416,8 +416,8 @@
                 "parameters": "value: string",
                 "required": true,
                 "description": "Emitted when the model value changes.",
-                "descriptionKey": "api.generated.packages_headless_src_components_input_types.inputrootemits.callables.update_modelvalue",
-                "sourcePath": "packages/headless/src/components/input/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_input_types.inputrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/input/types.ts",
                 "referencedTypes": []
               }
             ]
@@ -432,8 +432,8 @@
         "type": "Interface ListboxGroupProps",
         "resolvedType": null,
         "description": "Properties for the ListboxGroup component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxgroupprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxgroupprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -447,8 +447,8 @@
         "type": "Interface ListboxGroupLabelProps",
         "resolvedType": null,
         "description": "Properties for the ListboxGroupLabel component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxgrouplabelprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxgrouplabelprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [],
@@ -462,8 +462,8 @@
         "type": "Interface ListboxItemProps",
         "resolvedType": "{ value: string; disabled?: boolean; asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ListboxItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -471,10 +471,10 @@
             "type": "string",
             "required": true,
             "description": "The value given as data when submitted with a `name`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.value",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.value",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -482,10 +482,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with the item.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -493,10 +493,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.aschild",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -504,10 +504,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemprops.members.as",
             "default": "'div'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -542,8 +542,8 @@
         "type": "TypeAlias ListboxItemEmits",
         "resolvedType": "{ select: [event: SelectEvent<string>] }",
         "description": "Events for the ListboxItem component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitememits.emits",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitememits.emits",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -553,8 +553,8 @@
             "parameters": "event: SelectEvent<string>",
             "required": true,
             "description": "Event handler called when the selecting item. <br> It can be prevented by calling `event.preventDefault`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitememits.callables.select",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitememits.callables.select",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "SelectEvent",
@@ -562,8 +562,8 @@
                 "type": "CustomEvent<{ originalEvent: MouseEvent; value?: string | undefined; }>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_event.selectevent",
-                "sourcePath": "packages/headless/src/types/event.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_event.selectevent",
+                "sourcePath": "packages/aria/src/types/event.ts",
                 "typeParameters": ["T"],
                 "external": false,
                 "members": [],
@@ -582,8 +582,8 @@
         "type": "Interface ListboxItemIndicatorProps",
         "resolvedType": "{ asChild?: boolean; as?: AsTag | Component }",
         "description": "Properties for the ListboxItemIndicator component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemindicatorprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemindicatorprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -591,10 +591,10 @@
             "type": "boolean",
             "required": false,
             "description": "Change the default rendered element for the one passed as a child, merging their props and behavior.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemindicatorprops.members.aschild",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemindicatorprops.members.aschild",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": []
           },
           {
@@ -602,10 +602,10 @@
             "type": "AsTag | Component",
             "required": false,
             "description": "The element or component this component should render as. Can be overwrite by `asChild`",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxitemindicatorprops.members.as",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxitemindicatorprops.members.as",
             "default": "'div'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/primitive/types.ts",
+            "sourcePath": "packages/aria/src/components/primitive/types.ts",
             "referencedTypes": [
               {
                 "name": "Component",
@@ -642,8 +642,8 @@
         "type": "Interface ListboxRootProps<M>",
         "resolvedType": "{ orientation?: DataOrientation; dir?: Direction; disabled?: boolean; highlightOnHover?: boolean; modelValue?: (M extends true ? string[] : string); defaultValue?: (M extends true ? string[] : string); multiple?: M; clearable?: boolean; selectionBehavior?: SelectionBehavior; name?: string; required?: boolean }",
         "description": "Properties for the ListboxRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": ["M extends boolean = false"],
         "members": [
           {
@@ -651,10 +651,10 @@
             "type": "DataOrientation",
             "required": false,
             "description": "The orientation of the listbox. <br>Mainly so arrow navigation is done accordingly (left & right vs. up & down)",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.orientation",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.orientation",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "DataOrientation",
@@ -662,8 +662,8 @@
                 "type": "'vertical' | 'horizontal'",
                 "resolvedType": "'vertical' | 'horizontal'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.dataorientation",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.dataorientation",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -676,10 +676,10 @@
             "type": "Direction",
             "required": false,
             "description": "The reading direction of the listbox when applicable. <br> If omitted, inherits globally from `ConfigProvider` or\nassumes LTR (left-to-right) reading mode.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.dir",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.dir",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "Direction",
@@ -687,8 +687,8 @@
                 "type": "'ltr' | 'rtl'",
                 "resolvedType": "'ltr' | 'rtl'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.direction",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -701,10 +701,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, prevents the user from interacting with listbox",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.disabled",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.disabled",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -712,10 +712,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, hover over item will trigger highlight",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.highlightonhover",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.highlightonhover",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -723,10 +723,10 @@
             "type": "(M extends true ? string[] : string)",
             "required": false,
             "description": "The controlled value of the selected item(s).\n\nUse this when you need to control the state of the items. Can be bound with `v-model`",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.modelvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.modelvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -734,10 +734,10 @@
             "type": "(M extends true ? string[] : string)",
             "required": false,
             "description": "The default value of the selected item(s).\n\nUse this when you need to set the initial state of the items.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.defaultvalue",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.defaultvalue",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -745,10 +745,10 @@
             "type": "M",
             "required": false,
             "description": "Determines whether a \"single\" or \"multiple\" items can be selected at a time.\n\nThis prop will overwrite the inferred type from `modelValue` and `defaultValue`.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.multiple",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.multiple",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -756,10 +756,10 @@
             "type": "boolean",
             "required": false,
             "description": "Whether selected item can be cleared when `multiple` is false.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.clearable",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.clearable",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -767,10 +767,10 @@
             "type": "SelectionBehavior",
             "required": false,
             "description": "How multiple selection should behave in the collection.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.selectionbehavior",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.selectionbehavior",
             "default": "'toggle'",
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": [
               {
                 "name": "SelectionBehavior",
@@ -778,8 +778,8 @@
                 "type": "'toggle' | 'replace'",
                 "resolvedType": "'toggle' | 'replace'",
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_types_common.selectionbehavior",
-                "sourcePath": "packages/headless/src/types/common.ts",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.selectionbehavior",
+                "sourcePath": "packages/aria/src/types/common.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],
@@ -792,10 +792,10 @@
             "type": "string",
             "required": false,
             "description": "The name of the field. Submitted with its owning form as part of a name/value pair.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.name",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.name",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           },
           {
@@ -803,10 +803,10 @@
             "type": "boolean",
             "required": false,
             "description": "When `true`, indicates that the user must set the value before the owning form can be submitted.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootprops.members.required",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootprops.members.required",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/types/component.ts",
+            "sourcePath": "packages/aria/src/types/component.ts",
             "referencedTypes": []
           }
         ],
@@ -819,8 +819,8 @@
         "type": "TypeAlias ListboxRootEmits<M>",
         "resolvedType": "{ \"update:modelValue\": [value: M extends true ? string[] : string]; highlight: [payload?: CollectionItemData<ListboxCollectionItemData> | undefined]; entryFocus: [event: CustomEvent<any>]; leave: [event: Event] }",
         "description": "Events for the ListboxRoot component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootemits.emits",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootemits.emits",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": ["M extends boolean = false"],
         "members": [],
         "callables": [
@@ -830,8 +830,8 @@
             "parameters": "value: M extends true ? string[] : string",
             "required": true,
             "description": "",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootemits.callables.update_modelvalue",
-            "sourcePath": "packages/headless/src/types/common.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/types/common.ts",
             "referencedTypes": []
           },
           {
@@ -840,8 +840,8 @@
             "parameters": "payload?: CollectionItemData<ListboxCollectionItemData> | undefined",
             "required": true,
             "description": "Event handler when highlighted element changes.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootemits.callables.highlight",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootemits.callables.highlight",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "CollectionItemData",
@@ -849,8 +849,8 @@
                 "type": "CollectionItemData<ListboxCollectionItemData>",
                 "resolvedType": null,
                 "description": "",
-                "descriptionKey": "api.generated.packages_headless_src_composables_use_collection.collectionitemdata",
-                "sourcePath": "packages/headless/src/composables/use-collection.ts",
+                "descriptionKey": "api.generated.packages_aria_src_composables_use_collection.collectionitemdata",
+                "sourcePath": "packages/aria/src/composables/use-collection.ts",
                 "typeParameters": ["ItemData = Record<string, any>"],
                 "external": false,
                 "members": [],
@@ -864,8 +864,8 @@
             "parameters": "event: CustomEvent<any>",
             "required": true,
             "description": "Event handler called when container is being focused. Can be prevented.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootemits.callables.entryfocus",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootemits.callables.entryfocus",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "CustomEvent",
@@ -888,8 +888,8 @@
             "parameters": "event: Event",
             "required": true,
             "description": "Event handler called when the mouse leave the container",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxrootemits.callables.leave",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxrootemits.callables.leave",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "Event",
@@ -917,8 +917,8 @@
         "type": "Interface ListboxVirtualizerProps",
         "resolvedType": "{ options: string[]; overscan?: number; estimateSize?: number | ((index: number) => number); textContent?: ((option: string) => string) }",
         "description": "Properties for the ListboxVirtualizer component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerprops.props",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerprops.props",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [
           {
@@ -926,10 +926,10 @@
             "type": "string[]",
             "required": true,
             "description": "List of items",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerprops.members.options",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerprops.members.options",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -937,10 +937,10 @@
             "type": "number",
             "required": false,
             "description": "Number of items rendered outside the visible area",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerprops.members.overscan",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerprops.members.overscan",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -948,10 +948,10 @@
             "type": "number | ((index: number) => number)",
             "required": false,
             "description": "Estimated size (in px) of each item",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerprops.members.estimatesize",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerprops.members.estimatesize",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           },
           {
@@ -959,10 +959,10 @@
             "type": "((option: string) => string)",
             "required": false,
             "description": "Text content for each item to achieve type-ahead feature",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerprops.members.textcontent",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerprops.members.textcontent",
             "default": null,
             "inheritedFrom": null,
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": []
           }
         ],
@@ -975,8 +975,8 @@
         "type": "TypeAlias ListboxVirtualizerSlots",
         "resolvedType": "{ ListboxVirtualizer: (props: ListboxVirtualizerSlotsProps) => any }",
         "description": "Slots for the ListboxVirtualizer component.",
-        "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerslots.slots",
-        "sourcePath": "packages/headless/src/components/listbox/types.ts",
+        "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerslots.slots",
+        "sourcePath": "packages/aria/src/components/listbox/types.ts",
         "typeParameters": [],
         "members": [],
         "callables": [
@@ -986,8 +986,8 @@
             "parameters": "props: { option: string; virtualizer: Virtualizer<HTMLElement, Element>; virtualItem: VirtualItem; }",
             "required": true,
             "description": "Custom content for the default slot.",
-            "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerslots.callables.default",
-            "sourcePath": "packages/headless/src/components/listbox/types.ts",
+            "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerslots.callables.default",
+            "sourcePath": "packages/aria/src/components/listbox/types.ts",
             "referencedTypes": [
               {
                 "name": "ListboxVirtualizerSlotsProps",
@@ -995,8 +995,8 @@
                 "type": "{ option: string; virtualizer: Virtualizer<HTMLElement, Element>; virtualItem: VirtualItem; }",
                 "resolvedType": null,
                 "description": "Properties for the ListboxVirtualizerSlots component.",
-                "descriptionKey": "api.generated.packages_headless_src_components_listbox_types.listboxvirtualizerslotsprops",
-                "sourcePath": "packages/headless/src/components/listbox/types.ts",
+                "descriptionKey": "api.generated.packages_aria_src_components_listbox_types.listboxvirtualizerslotsprops",
+                "sourcePath": "packages/aria/src/components/listbox/types.ts",
                 "typeParameters": [],
                 "external": false,
                 "members": [],

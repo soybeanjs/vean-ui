@@ -34,7 +34,7 @@ const closeDrawer = () => {
       v-if="shouldShowSidebar"
       class="md:hidden fixed top-[calc(var(--app-header)+0.5rem)] start-0 end-0 z-50 ps-2 py-1"
     >
-      <SDrawer v-model:open="visible" side="left" class="rounded-tl-none! rounded-bl-none!">
+      <SDrawer v-model:open="visible" side="left" :show-confirm="false" class="rounded-tl-none! rounded-bl-none!">
         <template #trigger>
           <SButtonIcon
             variant="pure"

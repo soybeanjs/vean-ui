@@ -1,13 +1,6 @@
 {
   "not_found": "Not found",
   "not_found_page": "Not found page",
-  "legacy_notice": {
-    "region": "Brand transition notice",
-    "brand": "SoybeanUI is now VeanUI",
-    "cta": "Migration guide",
-    "detail": "Packages moved to {'@'}vean/aria and {'@'}vean/ui, and the docs moved to veanui.com.",
-    "timeline": "This site redirects in Nov 2026; the {'@'}soybeanjs packages are deprecated in Apr 2027."
-  },
   "playground": {
     "title": "VeanUI Playground",
     "loading": "Loading...",

@@ -1,13 +1,6 @@
 {
   "not_found": "未找到",
   "not_found_page": "未找到页面",
-  "legacy_notice": {
-    "region": "品牌更名提示",
-    "brand": "SoybeanUI 已更名为 VeanUI",
-    "cta": "迁移指南",
-    "detail": "包名迁移至 {'@'}vean/aria 与 {'@'}vean/ui，文档站迁至 veanui.com。",
-    "timeline": "本站将于 2026 年 11 月重定向，{'@'}soybeanjs 系列包将于 2027 年 4 月标记废弃。"
-  },
   "playground": {
     "title": "VeanUI 演练场",
     "loading": "加载中...",

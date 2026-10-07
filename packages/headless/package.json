@@ -112,7 +112,7 @@
     "@floating-ui/dom": "^1.8.0",
     "@soybeanjs/colord": "^0.8.1",
     "@tanstack/vue-form": "^1.33.5",
-    "@tanstack/vue-table": "^9.2.4",
+    "@tanstack/vue-table": "^9.2.6",
     "@tanstack/vue-virtual": "^3.13.39",
     "@vueuse/core": "^15.0.0",
     "date-fns": "^4.4.0",
@@ -120,7 +120,7 @@
   },
   "devDependencies": {
     "@vue/test-utils": "^2.5.1",
-    "nuxt": ">=4.5.2",
+    "nuxt": ">=4.6.0",
     "typescript": "catalog:",
     "unplugin-vue": "8.0.0",
     "unplugin-vue-components": "^32.1.0",

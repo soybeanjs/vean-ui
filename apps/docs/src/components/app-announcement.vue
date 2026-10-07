@@ -10,7 +10,7 @@ const { t } = useI18n();
  * `localStorage`, so the SSR output and the first client frame are identical
  * and hydration stays clean. The bar is time-boxed by the dates it prints.
  */
-const REBRAND_GUIDE_URL = 'https://veanui.com/ui/migration/rebrand/';
+const REBRAND_GUIDE_URL = 'https://veanui.com/overview/migration/rebrand/';
 </script>
 
 <template>

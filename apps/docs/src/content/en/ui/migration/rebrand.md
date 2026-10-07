@@ -243,6 +243,11 @@ pnpm typecheck && pnpm build
 
 ## 9. Transition period
 
-- The old packages receive one final forwarder release (re-exporting `@vean/*` with a console warning). They stay installable but get no further updates.
-- The old domain (`ui.soybeanjs.cn`) does **path-preserving 301s**: `/r/*`, `/schema/*`, `/components/*.md`, `/llms*.txt` are reachable at the same paths on the new domain (`veanui.com`), so **existing installations of the old `sbean` CLI keep working**. Both domains stay online for at least 12 months.
-- Once the transition ends, the old packages are marked `deprecated` and the old domain keeps its 301s until SEO equity has fully transferred. **Migrate now rather than relying on the forwarder packages.**
+The rebrand moved the repository, the packages and the docs site at different times, so the old and new names overlap on purpose:
+
+- **The GitHub repository moved immediately.** `soybeanjs/soybean-ui` is now `soybeanjs/vean-ui` (2026-10); the old URL keeps redirecting, so existing links, releases, tags and issues stay reachable.
+- **The old packages do not receive a forwarder release.** `@soybeanjs/headless`, `@soybeanjs/ui`, `@soybeanjs/theme` and `@soybeanjs/ui-uno` stop at `0.50.0`; there is no re-export shim and no `deprecated` flag yet, so pinned versions keep installing exactly as they are. Migrate to `@vean/aria`, `@vean/ui`, `@vean/theme` and `@vean/unocss` instead of waiting for one.
+- **The old docs site (`ui.soybeanjs.cn`) is frozen, not retired.** It keeps serving its own pre-rebrand content with a banner pointing here until **Nov 2026**, when it starts doing path-preserving 301s to `veanui.com`. `/r/*` and `/schema/*` are the exception: they keep serving the old `sbean` payloads for 12 months, so existing `sbean` CLI installations keep working against the old registry.
+- **The old packages are marked `deprecated` on npm in Apr 2027.** Deprecation is reversible and does not break already-installed or lockfile-pinned versions.
+
+**Migrate now rather than waiting for the redirects** — the automated path is [`vean migrate`](#6-migrate-with-vean-migrate-or-by-hand).

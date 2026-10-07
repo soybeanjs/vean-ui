@@ -1,5 +1,5 @@
 /**
- * Syncs the @soybeanjs/* version constant used by project templates.
+ * Syncs the @vean/* version constant used by project templates.
  *
  * Reads the current version from the root `package.json` and writes it to
  * `packages/cli/src/templates/versions.ts`. This ensures that newly
@@ -31,7 +31,7 @@ export async function runSyncTemplateVersions(): Promise<void> {
 
   // Generate versions.ts
   const content = `/**
- * Current version of @soybeanjs/* packages.
+ * Current version of @vean/* packages.
  *
  * This file is auto-generated during release by \`packages/scripts/src/commands/sync-template-versions.ts\`.
  * Do not edit manually — run \`pnpm sync-template-versions\` to update.

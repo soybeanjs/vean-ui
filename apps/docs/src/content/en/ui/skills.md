@@ -31,8 +31,6 @@ The bundled skills help agents answer tasks such as:
 
 ## Usage
 
-> **Repository rename not yet live.** Every installation path on this page resolves skills from GitHub, so the commands below only work once the repository rename `soybeanjs/soybean-ui` → `soybeanjs/vean-ui` has landed. Until then `github.com/soybeanjs/vean-ui` returns 404 — use the current slug `soybeanjs/soybean-ui` instead, for example `npx skills add soybeanjs/soybean-ui/skills`.
-
 ### Skills CLI
 
 The easiest installation path is the `skills` CLI:

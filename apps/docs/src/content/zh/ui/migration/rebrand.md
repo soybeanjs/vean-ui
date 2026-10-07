@@ -228,6 +228,11 @@ pnpm typecheck && pnpm build
 
 ## 9. 过渡期说明
 
-- 旧包会发布最后一版转发包（re-export 到 `@vean/*` 并给出控制台警告），可安装但不再更新。
-- 旧域名（`ui.soybeanjs.cn`）做**路径保持型 301**：`/r/*`、`/schema/*`、`/components/*.md`、`/llms*.txt` 在新域名（`veanui.com`）上同路径可用，因此**存量旧版 `sbean` CLI 不会失效**。新旧域名并行服务至少 12 个月。
-- 过渡期结束后旧包会被标记 `deprecated`，旧域名仍保留 301 直到 SEO 权重完全转移。**建议尽快完成迁移，不要依赖转发包。**
+改品牌分几步走，仓库、包和文档站的切换时间并不一致，因此新旧名字会刻意共存一段时间：
+
+- **GitHub 仓库已立即改名。** `soybeanjs/soybean-ui` 现在是 `soybeanjs/vean-ui`（2026-10）；旧地址保持重定向，已有链接、release、tag 和 issue 仍然可达。
+- **旧包不会收到转发版本。** `@soybeanjs/headless`、`@soybeanjs/ui`、`@soybeanjs/theme`、`@soybeanjs/ui-uno` 停在 `0.50.0`：没有 re-export 兼容层，暂时也**没有** `deprecated` 标记，因此锁定版本的安装行为完全不变。请迁移到 `@vean/aria`、`@vean/ui`、`@vean/theme`、`@vean/unocss`，不要等转发包。
+- **旧文档站（`ui.soybeanjs.cn`）是被冻结，不是被关停。** 它继续提供改名前的内容，并在顶部显示指向本站的提示；到 **2026 年 11 月**开始做路径保持型 301 跳转到 `veanui.com`。`/r/*` 与 `/schema/*` 是例外：它们继续提供旧的 `sbean` 数据 12 个月，因此存量 `sbean` CLI 仍能正常工作。
+- **旧包在 2027 年 4 月于 npm 上标记 `deprecated`。** 该操作可逆，且不会破坏已安装或锁定在 lockfile 里的版本。
+
+**建议现在就迁移，不要等重定向** —— 自动化路径见第 6 节的 `vean migrate`。

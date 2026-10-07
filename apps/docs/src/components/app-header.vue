@@ -15,7 +15,7 @@ const { isScrolled, isAtTop } = useScrollState();
   <header
     :data-scrolled="isScrolled"
     :data-at-top="isAtTop"
-    class="docs-header-shell group fixed top-0 start-0 end-0 z-49 px-4 transition-all-800 data-[scrolled=true]:top-3 after:content-empty after:pointer-events-none after:absolute after:bottom-0 after:start-0 after:end-0 after:h-px after:bg-border after:opacity-0 after:transition-opacity after:duration-300 data-[at-top=true]:after:opacity-100 sm:px-6"
+    class="docs-header-shell group fixed top-[--docs-notice-h] start-0 end-0 z-49 px-4 transition-all-800 data-[scrolled=true]:top-[calc(var(--docs-notice-h)+0.75rem)] after:content-empty after:pointer-events-none after:absolute after:bottom-0 after:start-0 after:end-0 after:h-px after:bg-border after:opacity-0 after:transition-opacity after:duration-300 data-[at-top=true]:after:opacity-100 sm:px-6"
   >
     <div
       class="docs-header-frame mx-auto flex max-w-360 min-h-[--app-header-main] items-center justify-between gap-3 px-6 py-3 group-data-[scrolled=true]:min-h-0 lt-md:group-data-[scrolled=true]:py-2 transition-all-300 xl:gap-4"

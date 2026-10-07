@@ -22,7 +22,10 @@ const closeDrawer = () => {
 </script>
 
 <template>
-  <div class="[--app-header-main:3.75rem] [--app-header:--app-header-main] min-h-full pt-[--app-header] text-sm">
+  <div
+    class="[--docs-notice-h:2.25rem] [--app-header-main:3.75rem] [--app-header:calc(var(--app-header-main)+var(--docs-notice-h))] min-h-full pt-[--app-header] text-sm"
+  >
+    <AppAnnouncement />
     <AppHeader />
     <div
       v-if="shouldShowSidebar"

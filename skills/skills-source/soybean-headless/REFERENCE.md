@@ -21,9 +21,9 @@ pnpm add @soybeanjs/headless
 ```ts
 import { AccordionRoot } from '@soybeanjs/headless';
 import { useControllableState } from '@soybeanjs/headless/composables';
-import { transformPropsToContext } from '@soybeanjs/headless/shared';
 import { createMonth } from '@soybeanjs/headless/date';
 import * as H from '@soybeanjs/headless/namespaced';
+import { transformPropsToContext } from '@soybeanjs/headless/shared';
 import type { UiClass } from '@soybeanjs/headless/types';
 ```
 

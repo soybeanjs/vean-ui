@@ -1,0 +1,29 @@
+name: pulls.review
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: pulls-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  analyze:
+    name: Analyze pull request
+    runs-on: ubuntu-latest
+    steps:
+      # Pinned to a full commit SHA (v0.3.1) instead of a mutable tag: this step
+      # receives a paid API key and a write-scoped GITHUB_TOKEN. Bump manually.
+      - uses: antfu/pulls.review@a64631fdec19131003d1e1b4cf1e352118c69516 # v0.3.1
+        with:
+          api-key: ${{ secrets.OPENAI_KEY }}
+          provider: openai-compatible
+          # ZCode — GLM Coding Plan, OpenAI-compatible endpoint.
+          base-url: https://open.bigmodel.cn/api/coding/paas/v4
+          model: glm-5.3
+          locale: zh-CN

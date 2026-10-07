@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Vean
+# VeanUI
 
 English | [中文](./README.zh-CN.md)
 
@@ -13,11 +13,20 @@ English | [中文](./README.zh-CN.md)
 [![npm downloads](https://img.shields.io/npm/dt/@vean/ui)](https://www.npmjs.com/package/@vean/ui)
 [![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-Vean is an elegant, modern, accessible and high-quality UI component library with shadcn-like design for Vue 3, built on top of a robust aria foundation. It provides a comprehensive set of accessible, customizable, and performant components.
+VeanUI is an elegant, modern, accessible and high-quality UI component library with shadcn-like design for Vue 3, built on top of a robust aria foundation. It provides a comprehensive set of accessible, customizable, and performant components.
+
+## 🏷️ Name & Branding
+
+**VeanUI** is the product brand. The name comes from **V**ue + Soy**bean** — **Vue + Soybean** — the two things it is built on: Vue 3, and the [SoybeanJS](https://github.com/soybeanjs) community that maintains it. The `UI` suffix marks the product itself, keeping it distinct from the `@vean/*` npm packages and the `vean` CLI.
+
+The project was previously named **SoybeanUI** and was renamed to VeanUI in v0.50.0. The rename covers the npm scope (`@soybeanjs/*` → `@vean/*`), the logic-layer package name (`headless` → `aria`), and the runtime contract (`data-soybean-*` / `--soybean-*` → `data-vean-*` / `--vean-*`). The `S` component prefix, design tokens, and the `localStorage` theme key are unchanged.
+
+- Migrating an existing project: [Upgrade Guide: SoybeanUI → VeanUI](https://veanui.com/overview/migration/rebrand)
+- One-shot rewrite: `npx @vean/cli@latest migrate rebrand`
 
 ## 📚 Architecture
 
-Vean's component runtime uses a strict **two-layer separation**. In the
+VeanUI's component runtime uses a strict **two-layer separation**. In the
 diagram below, arrows mean “depends on”:
 
 ```
@@ -129,12 +138,12 @@ registerLocale('custom', customMessages);
 
 ```ts
 import { AccordionRoot } from '@vean/aria'; // all components
+import type { AccordionUiSlot } from '@vean/aria/accordion'; // per-component
 import { useControllableState } from '@vean/aria/composables'; // 28 composables
-import { transformPropsToContext } from '@vean/aria/shared'; // pure TS utils
 import { createMonth } from '@vean/aria/date'; // shared date helpers
 import { registerLocale } from '@vean/aria/locale'; // locale registry
 import * as Aria from '@vean/aria/namespaced'; // namespace object
-import type { AccordionUiSlot } from '@vean/aria/accordion'; // per-component
+import { transformPropsToContext } from '@vean/aria/shared'; // pure TS utils
 import type { UiClass } from '@vean/aria/types'; // shared type surface
 ```
 

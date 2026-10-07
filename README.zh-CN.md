@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Vean
+# VeanUI
 
 [English](./README.md) | 中文
 
@@ -13,11 +13,20 @@
 [![npm downloads](https://img.shields.io/npm/dt/@vean/ui)](https://www.npmjs.com/package/@vean/ui)
 [![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-Vean 是一个优雅、现代、可访问且高质量的 UI 组件库，具有 shadcn-like 设计，适用于 Vue 3，构建在强大的 Aria 基础之上。它提供了一套全面、可访问、可定制且高性能的组件。
+VeanUI 是一个优雅、现代、可访问且高质量的 UI 组件库，具有 shadcn-like 设计，适用于 Vue 3，构建在强大的 Aria 基础之上。它提供了一套全面、可访问、可定制且高性能的组件。
+
+## 🏷️ 名称与品牌
+
+**VeanUI** 是产品品牌名，来源于 **V**ue + Soy**bean**（Vue + Soybean）—— 即它赖以构建的两样东西：Vue 3，以及维护它的 [SoybeanJS](https://github.com/soybeanjs) 社区。后缀 `UI` 标识产品本身，以便与 `@vean/*` npm 包和 `vean` CLI 区分。
+
+项目原名 **SoybeanUI**，在 v0.50.0 更名为 VeanUI。本次更名涵盖 npm scope（`@soybeanjs/*` → `@vean/*`）、逻辑层包名（`headless` → `aria`）以及运行时契约（`data-soybean-*` / `--soybean-*` → `data-vean-*` / `--vean-*`）。组件前缀 `S`、设计令牌与 `localStorage` 主题 key 均保持不变。
+
+- 迁移现有项目：[升级指南：SoybeanUI → VeanUI](https://veanui.com/zh/overview/migration/rebrand)
+- 一键改写：`npx @vean/cli@latest migrate rebrand`
 
 ## 📚 架构
 
-Vean 的组件运行时采用严格的**双层分离**设计。下图中的箭头表示“依赖于”：
+VeanUI 的组件运行时采用严格的**双层分离**设计。下图中的箭头表示“依赖于”：
 
 ```
 应用 ──> @vean/ui ──> @vean/aria
@@ -126,12 +135,12 @@ registerLocale('custom', customMessages);
 
 ```ts
 import { AccordionRoot } from '@vean/aria'; // 所有组件
+import type { AccordionUiSlot } from '@vean/aria/accordion'; // 单组件类型
 import { useControllableState } from '@vean/aria/composables'; // 28 个 composable
-import { transformPropsToContext } from '@vean/aria/shared'; // 纯 TS 工具
 import { createMonth } from '@vean/aria/date'; // 日期工具
 import { registerLocale } from '@vean/aria/locale'; // locale 注册表
 import * as Aria from '@vean/aria/namespaced'; // 命名空间导入
-import type { AccordionUiSlot } from '@vean/aria/accordion'; // 单组件类型
+import { transformPropsToContext } from '@vean/aria/shared'; // 纯 TS 工具
 import type { UiClass } from '@vean/aria/types'; // 共享类型导出
 ```
 

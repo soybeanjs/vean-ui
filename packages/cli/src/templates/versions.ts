@@ -1,5 +1,5 @@
 /**
- * Current version of @soybeanjs/* packages.
+ * Current version of @vean/* packages.
  *
  * This file is auto-generated during release by `packages/scripts/src/commands/sync-template-versions.ts`.
  * Do not edit manually — run `pnpm sync-template-versions` to update.

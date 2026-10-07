@@ -11,7 +11,7 @@
  *   - `{{uiDir}}`          — the component output directory (e.g. "src/ui")
  *   - `{{resolverPath}}`   — relative import path for the Vean resolver
  *
- * @soybeanjs/* package versions are pinned to `{@link VEAN_VERSION}` and
+ * @vean/* package versions are pinned to `{@link VEAN_VERSION}` and
  * kept in sync during release via `scripts/sync-template-versions.ts`.
  */
 

@@ -31,8 +31,6 @@ VeanUI 目前公开提供两个 skill：
 
 ## 使用方式
 
-> **仓库改名尚未落地。** 本页所有安装路径都从 GitHub 解析技能源，因此只有在仓库改名 `soybeanjs/soybean-ui` → `soybeanjs/vean-ui` 落地后才能生效：在此之前 `github.com/soybeanjs/vean-ui` 返回 404，请改用当前 slug `soybeanjs/soybean-ui`，例如 `npx skills add soybeanjs/soybean-ui/skills`。
-
 ### Skills CLI
 
 最直接的安装方式是使用 `skills` CLI：

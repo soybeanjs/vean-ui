@@ -2,10 +2,6 @@
 @import './frosted.css';
 
 html {
-  /* Height of the legacy-site brand notice. `0px` is the safe default for any
-     layout that does not render `<AppAnnouncement />`; the legacy layouts
-     override it with their real height so `--app-header` can depend on it. */
-  --docs-notice-h: 0px;
   --docs-page-bg-solid: rgb(244, 247, 255);
   --docs-page-bg: linear-gradient(
     180deg,

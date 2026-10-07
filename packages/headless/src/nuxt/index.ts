@@ -1,11 +1,12 @@
 import { addComponent, defineNuxtModule } from 'nuxt/kit';
+import type { NuxtModule } from 'nuxt/schema';
 import { components } from '../constants';
 
 export interface ModuleOptions {
   components: Partial<Record<keyof typeof components, boolean>> | boolean;
 }
 
-export default defineNuxtModule({
+const nuxtModule: NuxtModule<ModuleOptions> = defineNuxtModule({
   meta: {
     name: '@soybeanjs/headless/nuxt',
     configKey: '@soybeanjs/headless',
@@ -40,3 +41,5 @@ export default defineNuxtModule({
     }
   }
 });
+
+export default nuxtModule;

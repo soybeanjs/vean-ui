@@ -1,4 +1,5 @@
 import { addComponent, defineNuxtModule } from '@nuxt/kit';
+import type { NuxtModule } from '@nuxt/schema';
 //---import { keysOf, kebabCase } from '@soybeanjs/headless/shared';
 import { components } from '../constants/components';
 
@@ -6,7 +7,7 @@ export interface ModuleOptions {
   components: Partial<Record<keyof typeof components, boolean>> | boolean;
 }
 
-export default defineNuxtModule({
+const nuxtModule: NuxtModule<ModuleOptions> = defineNuxtModule({
   meta: {
     name: '@soybeanjs/ui/nuxt',
     configKey: '@soybeanjs/ui',
@@ -43,3 +44,5 @@ export default defineNuxtModule({
     }
   }
 });
+
+export default nuxtModule;

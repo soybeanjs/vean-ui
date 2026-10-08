@@ -94,4 +94,6 @@ jobs:
           github_action_config.auto_describe: 'true'
           github_action_config.auto_improve: 'false'
           github_action_config.pr_actions: '["opened", "reopened", "ready_for_review", "synchronize"]'
+          # [A/B 测试 step 1] 保持 handle_push_trigger=false 不变，只动注释，
+          # 用来验证 PR188 那条 finding 所述的机制：push 事件下本 job 是否空跑。
           github_action_config.handle_push_trigger: 'false'

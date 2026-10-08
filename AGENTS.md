@@ -154,6 +154,7 @@ pnpm sui sync-template-versions  # Sync the @vean/* version constant used by pro
 ## GIT COMMIT CONVENTION
 
 - **Follow Conventional Commits**: `<type>(<scope>): <subject>`, e.g. `fix(dialog): prevent nested popup from closing on outside click`.
+- **`type` and `scope` are both required and must never be omitted**; lowercase kebab-case (write `ci(workflows): …`, never bare `ci: …`).
 - **Commit messages must be written in English.**
 
 ## LOCAL DEVELOPMENT GOTCHAS

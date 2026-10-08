@@ -17,7 +17,7 @@ permissions:
 # 按事件类型拆组：评论触发的运行不能被 push 取消（否则用户主动请求的 review
 # 可能在中途消失且无任何提示），评论之间也不互相取消，只排队。
 concurrency:
-  group: pr-agent-${{ github.event_name }}-${{ github.event.pull_request.number || github.event.issue.number }}
+  group: pr-agent-${{ github.event.pull_request.number || github.event.issue.number }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
@@ -94,6 +94,4 @@ jobs:
           github_action_config.auto_describe: 'true'
           github_action_config.auto_improve: 'false'
           github_action_config.pr_actions: '["opened", "reopened", "ready_for_review", "synchronize"]'
-          # [A/B 测试 step 1] 保持 handle_push_trigger=false 不变，只动注释，
-          # 用来验证 PR188 那条 finding 所述的机制：push 事件下本 job 是否空跑。
           github_action_config.handle_push_trigger: 'false'

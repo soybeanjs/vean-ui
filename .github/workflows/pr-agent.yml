@@ -95,3 +95,15 @@ jobs:
           github_action_config.auto_improve: 'false'
           github_action_config.pr_actions: '["opened", "reopened", "ready_for_review", "synchronize"]'
           github_action_config.handle_push_trigger: 'false'
+
+          # ── 评审聚焦 ─────────────────────────────────────────────
+          # 把本仓库已核实的 PR-Agent 自身配置语义直接喂给评审模型，
+          # 消除「用通用启发式误判 PR-Agent 配置键」这一类误报。
+          pr_reviewer.extra_instructions: |-
+            以下为本仓库已核实的 PR-Agent 自身配置语义，评审时不得据此报缺陷：
+            1. handle_push_trigger: 'false' 只影响「PR 分支收到新提交(synchronize)时是否改跑 push_commands」。为 false 时 synchronize 正常落入 pr_actions 通用评审路径（上游源码先判 synchronize、仅在 push_trigger 为真时才提前 return）。它与 pr_actions 含 "synchronize" 是有意组合：不是死配置，也不会让 push 空跑。
+            2. config.restricted_mode: 'true' 是最小权限（无 contents 权限）的有意选择。
+            3. 本 workflow 只允许 pull_request 与 issue_comment 两个触发器；不要以「缺少 push 触发器」为由报缺陷。
+            4. 对配置键的语义以本说明为准；只有注释与实际代码行为不一致时才可报。
+          # 评审发现以行内评论落在 Files tab，而不是只堆在总结评论里
+          pr_reviewer.inline_key_issues: 'true'

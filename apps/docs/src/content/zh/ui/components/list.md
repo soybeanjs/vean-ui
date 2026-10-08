@@ -67,7 +67,7 @@ Aria 层不存在 `list` 家族：纯 `ul`/`li` 不含自身的键盘、焦点�
 
 ### Roadmap
 
-内置虚拟化列表或 `dataSource`/`renderItem` 配置模式为已评估增强项，当前交由独立的 `virtualizer` 承担（见 `docs/roadmap.md`）。
+内置虚拟化列表或 `dataSource`/`renderItem` 配置模式为已评估增强项，当前交由独立的 `virtualizer` 承担（见 `docs/roadmap/README.md`）。
 
 ## FAQ
 

@@ -1,7 +1,7 @@
 import type { FeedbackSchemeKey, PaletteKey, ThemeRadius, ThemeSize, ThemeSpacing, ThemeOptions } from './types';
 
 /**
- * Engine defaults and the base-token tables (docs/theme.md §3.11).
+ * Engine defaults and the base-token tables (docs/design/theme.md §3.11).
  */
 
 /** Size preset → root font-size in pixels. */
@@ -207,7 +207,7 @@ export const DEFAULT_OPTIONS = {
   feedback: DEFAULT_FEEDBACK_SCHEME,
   surfaceStyle: 'layered',
   // 语义层与字面量层都**不加前缀**：token 名与 shadcn 一一对应（`--background` /
-  // `--card` / `--ring`…），这是"对齐 shadcn 词表"的前提（docs/theme.md §4.4）。
+  // `--card` / `--ring`…），这是"对齐 shadcn 词表"的前提（docs/design/theme.md §4.4）。
   // 需要命名空间的宿主把 `prefix` 设成自己的字符串即可（`false` 是默认）。
   prefix: false,
   size: 'md',

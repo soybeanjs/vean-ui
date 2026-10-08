@@ -16,7 +16,7 @@ import {
 import type { ColorFormat, EmitThemeOptions, RoleRampRole, ThemeOptions, SemanticToken } from '@vean/theme';
 
 /**
- * The token adapter (docs/theme.md §5).
+ * The token adapter (docs/design/theme.md §5).
  *
  * Two rules that the emitted utilities depend on:
  *
@@ -67,7 +67,7 @@ const alphaVarOf = (token: SemanticToken, prefix: string | false | undefined): s
  * pre-refactor look is `oklch(100% 0 0 / 0.1)`). UnoCSS hoists the companion
  * into `--un-border-opacity`, which keeps the opacity modifier meaningful:
  * `border-border` renders the hairline, `border-border/60` overrides the alpha
- * to 0.6 (docs/theme.md §3.4 / §5.2).
+ * to 0.6 (docs/design/theme.md §3.4 / §5.2).
  */
 export function buildSemanticColors(
   format: ColorFormat = 'hsl',
@@ -188,7 +188,7 @@ const SPACING_GRID_SUBDIVISIONS = 4;
 const SPACING_GRID_STEP = parseFloat(SPACING_GRID) / SPACING_GRID_SUBDIVISIONS;
 
 /**
- * The remaining `theme` keys that the token contract owns (docs/theme.md §5.1).
+ * The remaining `theme` keys that the token contract owns (docs/design/theme.md §5.1).
  *
  * Mapped families:
  *
@@ -212,14 +212,14 @@ const SPACING_GRID_STEP = parseFloat(SPACING_GRID) / SPACING_GRID_SUBDIVISIONS;
  *   (`h-5` … `h-14`), so nothing needs mapping. A control height is the height
  *   column of the size vector rather than a scale of its own, and numeric
  *   heights scale with the density knob (`size`) because they are rem
- *   (docs/space-control-scale.md §3.1);
+ *   (docs/design/space-control-scale.md §3.1);
  * - `boxShadow` / `duration` / `easing` — UnoCSS owns these three families
  *   outright, and so does the theme: a `--shadow-*` / `--duration-*` / `--ease-*`
  *   token would have no reader at all, because the adapter does not map
  *   `boxShadow` and components write numeric durations. Elevation is
  *   `shadow-sm|md|lg|xl`, motion is `duration-200` / `ease-in-out`; both are
  *   UnoCSS's own values, so a theme cannot silently change how a component moves
- *   (docs/theme.md §5.3).
+ *   (docs/design/theme.md §5.3).
  *
  * `fontSize` is *extended*, not replaced: the adapter contributes the three
  * rungs below Wind3's `xs` and leaves `xs`…`9xl` to Wind3 (deep-merged themes).
@@ -288,7 +288,7 @@ export function buildThemeEntries(prefix: string | false = DEFAULT_OPTIONS.prefi
      * are added here (they are also the three the library writes: `text-2xs` /
      * `text-3xs` / `text-4xs`). Wind3's theme is deep-merged with this one, so
      * nothing below replaces its scale — and a theme can no longer change how
-     * large a component's text is (docs/theme.md §5.3).
+     * large a component's text is (docs/design/theme.md §5.3).
      */
     fontSize: {
       '4xs': ['0.375rem', '0.5rem'],

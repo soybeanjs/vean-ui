@@ -192,7 +192,7 @@ export const tableVariants = scv({
     },
     striped: {
       true: {
-        // 洗色而非实心 `muted`：`muted` 与行 hover 的 `accent` 同档（docs/theme.md §3.2），
+        // 洗色而非实心 `muted`：`muted` 与行 hover 的 `accent` 同档（docs/design/theme.md §3.2），
         // 实心斑马纹会让偶数行的 hover 与静止面同色、失去反馈
         row: 'data-[row]:even:bg-muted/40'
       }

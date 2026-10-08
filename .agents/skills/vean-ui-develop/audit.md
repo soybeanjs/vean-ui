@@ -120,7 +120,7 @@ Seven dimensions and their item counts, sources, and benchmark mapping:
 | D2-09 | Mobile adaptation (within desktop-first scope) | Desktop-first, but responsive breakpoints do not break basic mobile usability                                                                                                                                    | 375px viewport is basically usable                            |
 | D2-10 | High DPI and zoom                              | At 150%/200% browser zoom the layout does not overflow or overlap                                                                                                                                                | Manual verification                                           |
 | D2-11 | Enhancement feature evaluation                 | Evaluate whether valuable features from benchmark libraries should be added (e.g. `loading`, `error`, `count`, `showCount`, `clearable`, `filterable`, `virtualScroll`, `remote`, `form validation integration`) | One enhancement recommendation list per component             |
-| D2-12 | Gap regression roadmap                         | Identified feature gaps are written back to `docs/roadmap.md` under "out of scope" or as new enhancement items                                                                                                   | Docs synced                                                   |
+| D2-12 | Gap regression roadmap                         | Identified feature gaps are written back to `docs/roadmap/README.md` under "out of scope" or as new enhancement items                                                                                            | Docs synced                                                   |
 
 ### D3. API design
 

@@ -84,7 +84,7 @@ AG Grid（社区 MIT / 企业版 $999/开发者）与 Handsontable（非商业�
 | 复合层     | 中后台「查询列表页」装配（历史 admin 方向，已取消） | 壳路线已明确 ProTable 不进壳，任何列表页装配都应**包装**本提案的 Pro 能力而非重复实现 |
 | **本提案** | 高级数据网格内核                                    | 数据源抽象 + 查询/分页/编辑/列管理/导出等 Pro 能力                                    |
 
-> 注：已取消的 admin 方向（见 [ui-shell-roadmap.md §4.7](../ui-shell-roadmap.md)）曾规划壳内 ProTable；现行边界是 ProTable 不在壳组件范围内，其落地形态（并入核心 ui 或随本提案独立）在立项时统一决策，避免两处重复实现。
+> 注：已取消的 admin 方向（见 [ui-shell-roadmap.md §4.7](../roadmap/ui-shell-roadmap.md)）曾规划壳内 ProTable；现行边界是 ProTable 不在壳组件范围内，其落地形态（并入核心 ui 或随本提案独立）在立项时统一决策，避免两处重复实现。
 
 ### 3.3 命名与前缀
 

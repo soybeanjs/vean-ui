@@ -17,7 +17,7 @@ const textStack = [
 ];
 
 /**
- * elevation 的四档：阴影**不是**主题 token（docs/theme.md §5.3），直接用 UnoCSS
+ * elevation 的四档：阴影**不是**主题 token（docs/design/theme.md §5.3），直接用 UnoCSS
  * 的档位——`shadow-sm` / `shadow` / `shadow-md` / `shadow-lg` 都是它的值。
  */
 const shadows = [

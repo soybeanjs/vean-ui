@@ -13,7 +13,7 @@ import {
 } from '../src/storage';
 
 /**
- * P4 —— persistence + first paint (docs/theme.md §6.2–§6.3).
+ * P4 —— persistence + first paint (docs/design/theme.md §6.2–§6.3).
  *
  * The envelope contract: one key, per-field validation (a bad field must not
  * discard the rest), version-gated reads, and one debounced writer.

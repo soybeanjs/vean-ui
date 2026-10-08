@@ -2,15 +2,15 @@
 
 > 状态：**Accepted · 2026-09**（§11 为 2026-09 实施修订：四个 ui 复合组件收窄为一个 `SAppShell`）
 > 适用仓库：`@vean/aria` + `@vean/ui`（核心两层，不新增任何包）
-> 规范约束：组件开发 skill（[.agents/skills/vean-ui-develop/](../.agents/skills/vean-ui-develop/SKILL.md)），尤其是 [layers.md Aria admission（R1–R8）](../.agents/skills/vean-ui-develop/layers.md#aria-admission)
-> 关联文档：[ui-ai-roadmap.md](./ui-ai-roadmap.md)（AI 域同款决策）· [roadmap.md](./roadmap.md)（原子组件评估）
+> 规范约束：组件开发 skill（[.agents/skills/vean-ui-develop/](../../.agents/skills/vean-ui-develop/SKILL.md)），尤其是 [layers.md Aria admission（R1–R8）](../../.agents/skills/vean-ui-develop/layers.md#aria-admission)
+> 关联文档：[ui-ai-roadmap.md](./ui-ai-roadmap.md)（AI 域同款决策）· [roadmap.md](./README.md)（原子组件评估）
 
 ## 1. 背景与目标
 
 ### 1.1 为什么不再建 admin 包
 
 - `@soybeanjs/admin` 中后台复合层提案已于 **v0.40.0 取消，包已删除**；`@soybeanjs/chart` 同步取消（图表改为文档站基于 [TanStack Charts](https://tanstack.com/charts) 的 shadcn 风格示例）。
-- 原 `admin` 分支（2026-08，6 个 `SApp*` 壳组件 + 6 种菜单模式）验证了交互范式，但它是**独立第三层包**：独立依赖树、独立前缀叙事、与核心包 lockstep 发布，收益不抵维护成本。ADR-0001 的单包自治模型对 AI 域已 [superseded](./adr/0001-peripheral-package-layering.md)，本路线图对中后台壳域作出同样决策。
+- 原 `admin` 分支（2026-08，6 个 `SApp*` 壳组件 + 6 种菜单模式）验证了交互范式，但它是**独立第三层包**：独立依赖树、独立前缀叙事、与核心包 lockstep 发布，收益不抵维护成本。ADR-0001 的单包自治模型对 AI 域已 [superseded](../adr/0001-peripheral-package-layering.md)，本路线图对中后台壳域作出同样决策。
 - 与 AI 域（见 [ui-ai-roadmap.md](./ui-ai-roadmap.md)）相同的结论：**壳组件今后全部在核心 aria/ui 内实现，统一 `S` 前缀，不使用 `App*` 命名**。
 
 ### 1.2 目标
@@ -41,7 +41,7 @@
 | 面包屑       | `SBreadcrumb` + `SDropdownMenu`（子级溢出可组合）                                                                                                                                                                                                                                                                                               | `SAppBreadcrumb`                               |
 | 命令面板底座 | `SCommand`（fuzzy 过滤已内置，`useFuse` 在 aria）、`SCombobox`、`SDialog`                                                                                                                                                                                                                                                                       | `SAppCommandPalette`                           |
 | 分栏         | `SSplitter`                                                                                                                                                                                                                                                                                                                                     | `SAppSplitPanel`                               |
-| 空态/结果    | `SEmpty`；`SResult` 在 [roadmap.md](./roadmap.md) P1 计划中                                                                                                                                                                                                                                                                                     | `SAppEmptyState`、`SAppResult`                 |
+| 空态/结果    | `SEmpty`；`SResult` 在 [roadmap.md](./README.md) P1 计划中                                                                                                                                                                                                                                                                                      | `SAppEmptyState`、`SAppResult`                 |
 | 主题         | `SThemeCustomizer`、`SThemeModeSelect`、`SThemeModeSwitch`                                                                                                                                                                                                                                                                                      | `SAppThemeDrawer`                              |
 | 页脚         | `SLayoutFooter`（layout 插槽）                                                                                                                                                                                                                                                                                                                  | `SAppFooter`                                   |
 
@@ -54,7 +54,7 @@
 
 ## 3. Aria 准入总表（强制门）
 
-准入依据 [layers.md R1–R8](../.agents/skills/vean-ui-develop/layers.md#aria-admission)。aria 零样式（连 `hidden` / `sr-only` 都不允许），UI 层不写任何 ARIA/键盘语义。
+准入依据 [layers.md R1–R8](../../.agents/skills/vean-ui-develop/layers.md#aria-admission)。aria 零样式（连 `hidden` / `sr-only` 都不允许），UI 层不写任何 ARIA/键盘语义。
 
 ### 3.1 准入：3 项纯逻辑（无新 DOM 组件家族）
 
@@ -79,7 +79,7 @@
 
 ### 3.3 不新建组件：复用或配方交付
 
-- 页脚 → `SLayoutFooter` 插槽；分栏 → `SSplitter`；空态 → `SEmpty`；结果页 → 已在 [roadmap.md](./roadmap.md) P1 的 `SResult`。
+- 页脚 → `SLayoutFooter` 插槽；分栏 → `SSplitter`；空态 → `SEmpty`；结果页 → 已在 [roadmap.md](./README.md) P1 的 `SResult`。
 - `SCommandPalette` / 主题抽屉 / 面包屑溢出 / router-tabs 适配 → 以文档示例 + 可选 vean 源码配方交付，不进库导出（见 §7.2）。
 - 面包屑激活路径不新增组件：`useShellNav` 的 `activeTrail` 输出直接喂给既有 `SBreadcrumb`。
 
@@ -160,17 +160,17 @@ interface ShellNavNode {
 
 ### 4.7 范围边界（S7）：ProTable / ProForm 不进本路线
 
-schema 驱动的查询表格 / 表单依赖 table/form 引擎（v0.50.0 已完成 `@tanstack/vue-table` / `@tanstack/vue-form` 更换，另见 [ecosystem/table.md](./ecosystem/table.md)、[ecosystem/form.md](./ecosystem/form.md) 提案），不搭壳组件便车，避免 schema 过早固化。权限按钮含业务/指令语义，收录标准 S1–S5 不通过，列为范围外。
+schema 驱动的查询表格 / 表单依赖 table/form 引擎（v0.50.0 已完成 `@tanstack/vue-table` / `@tanstack/vue-form` 更换，另见 [ecosystem/table.md](../ecosystem/table.md)、[ecosystem/form.md](../ecosystem/form.md) 提案），不搭壳组件便车，避免 schema 过早固化。权限按钮含业务/指令语义，收录标准 S1–S5 不通过，列为范围外。
 
 ## 5. P0 — 主链路（5 项）
 
-|  #  | 交付物                                                                          | 层                | 验收要点                                                                                                 |
-| :-: | :------------------------------------------------------------------------------ | :---------------- | :------------------------------------------------------------------------------------------------------- |
-|  1  | `useMediaQuery`                                                                 | aria composable   | 单测覆盖订阅/清理/SSR 回退；从 `./composables` 导出                                                      |
-|  2  | shell 导航模型 + `useShellNav`（`ShellNavNode`、裁剪、激活匹配、`activeTrail`） | aria `shell` 模块 | 纯函数单测（嵌套、隐藏节点仍参与匹配、最长前缀）；`@vean/aria/shell` 子路径 + barrel/catalog 生成        |
-|  3  | `SLayoutShell`（`vertical` + `horizontal`）                                     | ui 复合           | 复用 LayoutCompact/Placeholder；受控 `mode`/`isMobile`/`open`；零新增 ARIA；recipe 走 `scv()`            |
-|  4  | `SShellMenu`（两模式）                                                          | ui 复合           | 消费 `useShellNav` 输出；侧栏折叠联动；顶栏挂载点渲染；键盘语义由菜单族保证                              |
-|  5  | `SPageHeader`                                                                   | ui 单类/少槽复合  | 标题/描述/面包屑插槽/返回事件/操作区；同步从 [roadmap.md](./roadmap.md) 「延后市场」表移除 PageHeader 行 |
+|  #  | 交付物                                                                          | 层                | 验收要点                                                                                                |
+| :-: | :------------------------------------------------------------------------------ | :---------------- | :------------------------------------------------------------------------------------------------------ |
+|  1  | `useMediaQuery`                                                                 | aria composable   | 单测覆盖订阅/清理/SSR 回退；从 `./composables` 导出                                                     |
+|  2  | shell 导航模型 + `useShellNav`（`ShellNavNode`、裁剪、激活匹配、`activeTrail`） | aria `shell` 模块 | 纯函数单测（嵌套、隐藏节点仍参与匹配、最长前缀）；`@vean/aria/shell` 子路径 + barrel/catalog 生成       |
+|  3  | `SLayoutShell`（`vertical` + `horizontal`）                                     | ui 复合           | 复用 LayoutCompact/Placeholder；受控 `mode`/`isMobile`/`open`；零新增 ARIA；recipe 走 `scv()`           |
+|  4  | `SShellMenu`（两模式）                                                          | ui 复合           | 消费 `useShellNav` 输出；侧栏折叠联动；顶栏挂载点渲染；键盘语义由菜单族保证                             |
+|  5  | `SPageHeader`                                                                   | ui 单类/少槽复合  | 标题/描述/面包屑插槽/返回事件/操作区；同步从 [roadmap.md](./README.md) 「延后市场」表移除 PageHeader 行 |
 
 每个组件按 skill 流程交付：aria 单测 → ui 包装 → playground → docs 示例（en/zh）→ browser e2e（Tier 1）→ `gen catalog/api`。
 
@@ -198,7 +198,7 @@ schema 驱动的查询表格 / 表单依赖 table/form 引擎（v0.50.0 已完�
 
 ### 7.3 范围外
 
-- `SProTable` / `SProForm`：跟随已随 v0.50 落地的 table/form 引擎（`@tanstack/vue-table` / `@tanstack/vue-form`）与 [ecosystem/table.md](./ecosystem/table.md)、[ecosystem/form.md](./ecosystem/form.md) 提案；
+- `SProTable` / `SProForm`：跟随已随 v0.50 落地的 table/form 引擎（`@tanstack/vue-table` / `@tanstack/vue-form`）与 [ecosystem/table.md](../ecosystem/table.md)、[ecosystem/form.md](../ecosystem/form.md) 提案；
 - `SPermissionButton` / 权限指令：业务语义，应由宿主鉴权层实现；
 - 通知中心、全局搜索后端、水印业务封装等应用级功能（`SWatermark` 等原子已在核心库）。
 
@@ -246,7 +246,7 @@ schema 驱动的查询表格 / 表单依赖 table/form 引擎（v0.50.0 已完�
 | S10 | **修订（§11）**：模式词汇直接继承 `SplitNavMode`（4 值逐字复用）+ 两个单面板模式 `sidebar` / `top`；`AppShellMode ⊇ SplitNavMode`                                                                                            |
 | S11 | **修订（§11.4）**：单面板模式归属 `SAppShell`，不并入 `SSplitNav`；两个模式名固定为 `sidebar` / `top`（评估过 `tree` / `nav` 与 `vertical` / `horizontal`）；`SSplitNav` 保留 4 个分栏模式与原名，改名属破坏性变更，本次不做 |
 
-> ADR 状态：[ADR-0001 外围包单包分层](./adr/0001-peripheral-package-layering.md) 对 admin 域同样标记为 superseded；若未来出现真正独立的领域包提案，须新立 ADR 而非复用该模型。
+> ADR 状态：[ADR-0001 外围包单包分层](../adr/0001-peripheral-package-layering.md) 对 admin 域同样标记为 superseded；若未来出现真正独立的领域包提案，须新立 ADR 而非复用该模型。
 
 ## 11. 交付记录：AppShell（2026-09 修订）
 

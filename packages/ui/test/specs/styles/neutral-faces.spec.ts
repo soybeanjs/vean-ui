@@ -10,11 +10,11 @@ import { toggleGroupVariants } from '@/styles/toggle-group';
  * 中性交互面的样式契约。
  *
  * 填充族按 **角色 × 强弱** 分档：`muted`（静态弱化面）与 `accent`（瞬时交互面）**同档**
- * （对齐 shadcn 默认，docs/theme.md §3.2），`secondary`（静态实心填充）定在强档
+ * （对齐 shadcn 默认，docs/design/theme.md §3.2），`secondary`（静态实心填充）定在强档
  * （亮 `{b}.200` / 暗 `{b}.800`）。同档折叠之后，中性交互面靠**同一填充的 alpha 阶梯**承担
  * 可见性：静止 `accent/40`（或 `card` / 透明）→ hover `accent/60` → 选中 / 按压 `accent`。
  *
- * **按钮族不走这条阶梯**（docs/theme.md §3.2 的 alpha 阶梯由 toggle / toggle-group / anchor /
+ * **按钮族不走这条阶梯**（docs/design/theme.md §3.2 的 alpha 阶梯由 toggle / toggle-group / anchor /
  * pagination 承担）：无底色形态的 hover **直接升到实心** `accent`（`color="secondary"` 用实心
  * `secondary`），按压回落到前景角色的 alpha 洗色；`solid` / `soft` 的静止面本身就是实心填充。
  *

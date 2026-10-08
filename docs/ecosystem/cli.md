@@ -182,5 +182,5 @@ vean migrate rebrand -w --runtime-contract --cli --new-domain veanui.com
 | [packages/cli/docs/GLOSSARY.md](../../packages/cli/docs/GLOSSARY.md)                                     | 术语表（附 file:line）                     |
 | [packages/cli/docs/comparison-with-shadcn-vue.md](../../packages/cli/docs/comparison-with-shadcn-vue.md) | vs shadcn-vue 能力对标与审计               |
 | [packages/cli/README.md](../../packages/cli/README.md)                                                   | 用户侧入门 README（精简）                  |
-| [roadmap.md §配套基础设施](../roadmap.md)                                                                | vean 在整体路线中的定位                    |
+| [roadmap.md §配套基础设施](../roadmap/README.md)                                                         | vean 在整体路线中的定位                    |
 | [optimize.md §3.4](../optimize.md)                                                                       | vean 模块边界评估与依赖声明改进项          |

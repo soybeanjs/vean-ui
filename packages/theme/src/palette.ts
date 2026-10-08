@@ -28,7 +28,7 @@ interface PaletteColorItem {
  * (`240 4.8% 95.9%`) rather than a complete color, matching the library-wide
  * convention: consumers wrap it as `hsl(var(--zinc-100) / <alpha>)`. Naked
  * channels keep alpha composition available and avoid a second "complete color"
- * variable per token (see docs/theme.md §3.1).
+ * variable per token (see docs/design/theme.md §3.1).
  */
 
 /**
@@ -113,7 +113,7 @@ export function colorAlpha(value: string): number | undefined {
  * not emitted verbatim: `oklch(60% 0.2 250)` inside `--primary` would make
  * every consumption site (`hsl(var(--primary) / 1)`) invalid at
  * computed-value time — the declaration is dropped and the token silently
- * disappears (measured in Chromium; docs/theme.md §4.2).
+ * disappears (measured in Chromium; docs/design/theme.md §4.2).
  *
  * Returns `undefined` when colord cannot parse the value.
  */

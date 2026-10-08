@@ -2,7 +2,7 @@ import { SPACING_GRID } from './defaults';
 import type { LiteralToken, ThemeFont, ThemeRadius, TokenPrefix } from './types';
 
 /**
- * The literal (non-color) layer (docs/theme.md §3.11).
+ * The literal (non-color) layer (docs/design/theme.md §3.11).
  *
  * Dimension, layering, line and typography tokens. These are plain CSS values
  * (not palette references), which is why they live beside — not inside — the
@@ -28,7 +28,7 @@ import type { LiteralToken, ThemeFont, ThemeRadius, TokenPrefix } from './types'
  * The **type scale is not here** (removed 2026-09-22, decision #25): font sizes
  * and line heights are UnoCSS's own `fontSize` tuples (`text-sm` → `0.875rem` /
  * `1.25rem`), with the three small rungs the adapter adds on top (`4xs` / `3xs` /
- * `2xs`, docs/theme.md §5.1 / §5.3). Nothing in the library read `--text-*` /
+ * `2xs`, docs/design/theme.md §5.1 / §5.3). Nothing in the library read `--text-*` /
  * `--leading-*` directly, and a themed type scale means a component's text can
  * change size when a theme changes — a typography decision, not a colour one.
  *
@@ -37,13 +37,13 @@ import type { LiteralToken, ThemeFont, ThemeRadius, TokenPrefix } from './types'
  * (`SPACING_GRID_COEFFICIENTS`) consumed by the UnoCSS mapping — a variable per
  * rung would have exactly one reader (the adapter, which can compute it) while
  * adding 18 declarations to every theme block, so the values live in the class
- * mapping instead (docs/theme.md §3.11).
+ * mapping instead (docs/design/theme.md §3.11).
  *
  * Control heights are **not** a family either: the 8 rungs were exactly the
  * numeric height grid (`h-5` … `h-14`), nothing in the library or the
  * user-facing docs used them, and a control height is the size vector's height
- * column rather than a scale of its own (docs/theme.md §3.11,
- * docs/space-control-scale.md §3.1).
+ * column rather than a scale of its own (docs/design/theme.md §3.11,
+ * docs/design/space-control-scale.md §3.1).
  */
 export const LITERAL_DEFAULTS: Record<LiteralToken, string> = {
   size: '16px',
@@ -112,7 +112,7 @@ export const RADIUS_RUNG_KEYS = Object.keys(LITERAL_DEFAULTS)
  * UnoCSS-defined rungs keep its own values (preset-mini `_theme/misc.ts`,
  * `xs` 0.75rem … `9xl` 8rem, asserted against upstream in the adapter tests) and
  * the downward extension `6xs` … `2xs` plus the missing middle name `md` continues
- * the 2px grid below it (docs/space-control-scale.md §1.1 / §1.3).
+ * the 2px grid below it (docs/design/space-control-scale.md §1.1 / §1.3).
  */
 export const SPACING_GRID_COEFFICIENTS = {
   '6xs': 0.5,

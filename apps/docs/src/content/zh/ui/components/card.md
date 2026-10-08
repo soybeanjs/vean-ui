@@ -73,7 +73,7 @@ head:
 
 ### Roadmap
 
-核心卡片 API 无阻塞缺口。交互式操作栏（`CardActions` 快捷方式）与 hover 抬升样式变体为已评估增强项，记录在 `docs/roadmap.md`。
+核心卡片 API 无阻塞缺口。交互式操作栏（`CardActions` 快捷方式）与 hover 抬升样式变体为已评估增强项，记录在 `docs/roadmap/README.md`。
 
 ## FAQ
 

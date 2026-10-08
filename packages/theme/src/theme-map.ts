@@ -33,13 +33,13 @@ import type {
 } from './types';
 
 /**
- * Resolve the theme map (docs/theme.md §1, §3, §4.2).
+ * Resolve the theme map (docs/design/theme.md §1, §3, §4.2).
  *
  * Pipeline: declared level rules → region mirrors → overrides → literal
  * (non-colour) layer. **No measurement pass**: every token's level is declared
  * in `CORE_RULES` (or derived from the feedback scheme), so the same options
  * always produce the same map and nothing in the output depends on what the
- * palette happens to measure — there is no contrast guard (docs/theme.md §4.3).
+ * palette happens to measure — there is no contrast guard (docs/design/theme.md §4.3).
  */
 
 /**
@@ -193,7 +193,7 @@ function resolveMirrors(
 
 /**
  * the literal (non-color) layer: dimension, elevation shadows, motion, layering
- * and typography tokens (docs/theme.md §3.11).
+ * and typography tokens (docs/design/theme.md §3.11).
  */
 function buildLiterals(options: ThemeOptions): Record<LiteralToken, string> {
   return literalTokens({
@@ -206,7 +206,7 @@ function buildLiterals(options: ThemeOptions): Record<LiteralToken, string> {
 }
 
 /**
- * whether an override value is the `token.${name}` reference form (docs/theme.md §4.2).
+ * whether an override value is the `token.${name}` reference form (docs/design/theme.md §4.2).
  */
 function isTokenRefForm(value: string): boolean {
   return value.startsWith('token.');
@@ -235,7 +235,7 @@ function parseTokenRef(value: string, source: SemanticToken): SemanticToken | un
 
 /**
  * parse an override value into a token value, or `undefined` when the value is
- * not part of the vocabulary (`ColorValue`, docs/theme.md §4.2).
+ * not part of the vocabulary (`ColorValue`, docs/design/theme.md §4.2).
  *
  * - a `palette.level` reference stays a reference, so the palette layer can still
  *   be swapped;
@@ -298,7 +298,7 @@ function resolveRefTarget(
  *
  * An override is user intent and wins outright — with the guard gone there is
  * nothing to correct it against, and nothing to report either (a theme either
- * declares readable levels or it does not, docs/theme.md §4.3).
+ * declares readable levels or it does not, docs/design/theme.md §4.3).
  *
  * Two passes: colour values first, then `token.*` references (snapshot copy of
  * the target's `TokenValue`). Invalid refs — unknown name, self-reference, or a
@@ -319,7 +319,7 @@ function applyOverrides(
    * key. Spreading one in emits a declaration for a token that does not exist,
    * and - because overrides may cover a single mode - leaves the *other* mode
    * without that key, which makes the emitter's dark-block diff read `undefined`
-   * and throw (docs/theme.md §6.2).
+   * and throw (docs/design/theme.md §6.2).
    */
   const entries = (Object.entries(overrides ?? {}) as [SemanticToken, string][]).filter(([token]) =>
     isSemanticToken(token)

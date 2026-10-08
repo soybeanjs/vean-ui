@@ -2,23 +2,23 @@
 
 > 本文档是项目的**总路线图**，覆盖三大板块：
 >
-> 1. **核心组件路线**：按 **高 / 中 / 低** 三级优先级分类所有待实现组件，附「已实现组件参考」「延后至组件市场」与「范围外组件」清单；调研方法与调研库清单见「[调研方法与评估维度](#调研方法与评估维度)」与「[附录 A](#附录-a--调研的组件库14-个)」。
-> 2. **领域扩展路线**：AI/chat 与中后台壳均确定在核心 aria/ui 内实现，分别见 [ui-ai-roadmap.md](./ui-ai-roadmap.md) 与 [ui-shell-roadmap.md](./ui-shell-roadmap.md)；editor / table / form / ui-pro 保留为未来提案（落地形态待立项评估），见 [领域扩展路线](#领域扩展路线domains--proposals) 与 [docs/ecosystem/](./ecosystem/README.md)。
-> 3. **项目优化路线**：来自 [optimize.md](./optimize.md) 的 F1–F11 工程改进项及执行阶段，详见 [项目优化路线](#项目优化路线engineering-optimization)。
+> 1. **核心组件路线**：按 **高 / 中 / 低** 三级优先级分类所有待实现组件，附「延后至组件市场」与「范围外组件」清单（已发布组件清单见附录 B，用法与 API 以文档站为权威）；调研方法与调研库清单见「[调研方法与评估维度](#调研方法与评估维度)」与「[附录 A](#附录-a--调研的组件库14-个)」。
+> 2. **领域扩展路线**：AI/chat 与中后台壳均确定在核心 aria/ui 内实现，分别见 [ui-ai-roadmap.md](./ui-ai-roadmap.md) 与 [ui-shell-roadmap.md](./ui-shell-roadmap.md)；editor / table / form / ui-pro 保留为未来提案（落地形态待立项评估），见 [领域扩展路线](#领域扩展路线domains--proposals) 与 [docs/ecosystem/](../ecosystem/README.md)。
+> 3. **项目优化路线**：来自 [optimize.md](../optimize.md) 的 F1–F11 工程改进项及执行阶段，详见 [项目优化路线](#项目优化路线engineering-optimization)。
 
 ## 概述
 
-| 类别                   | 数量 | 说明                                                                                                                                                       |
-| :--------------------- | :--: | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 已发布（shipped）      |  96  | `accordion` … `watermark`，见 `packages/ui/src/index.ts`                                                                                                   |
-| 高优先级（P0 + P1）    |  22  | 关键缺口与强需求，优先实现（P0 × 9 + P1 × 13）                                                                                                             |
-| 中优先级（P2）         |  11  | 有用且有一定需求，按计划推进                                                                                                                               |
-| 低优先级（P3）         |  12  | 小众但功能独立，择机实现                                                                                                                                   |
-| 延后至组件市场         |  12  | 复合型 / 小众，将以源码形式分发                                                                                                                            |
-| 范围外                 | 60+  | 移动端专用、已被覆盖、图表、业务专属等                                                                                                                     |
-| 核心内领域             |  2   | AI/chat（[ui-ai-roadmap.md](./ui-ai-roadmap.md)）、中后台壳（[ui-shell-roadmap.md](./ui-shell-roadmap.md)）——逻辑在 aria 域模块、组件在 ui，统一 `S` 前缀  |
-| 未来提案（形态待评估） |  4   | editor（富文本）、table（高级数据网格）、form（Schema 表单）、ui-pro（增值）；ui-x/admin/chart 已取消不发布，详见 [docs/ecosystem/](./ecosystem/README.md) |
-| 工程优化项             |  11  | F1–F11，见 [optimize.md](./optimize.md)，分阶段 A–D 推进                                                                                                   |
+| 类别                   | 数量 | 说明                                                                                                                                                        |
+| :--------------------- | :--: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 已发布（shipped）      |  96  | `accordion` … `watermark`，见 `packages/ui/src/index.ts`                                                                                                    |
+| 高优先级（P0 + P1）    |  22  | 关键缺口与强需求，优先实现（P0 × 9 + P1 × 13）                                                                                                              |
+| 中优先级（P2）         |  11  | 有用且有一定需求，按计划推进                                                                                                                                |
+| 低优先级（P3）         |  12  | 小众但功能独立，择机实现                                                                                                                                    |
+| 延后至组件市场         |  12  | 复合型 / 小众，将以源码形式分发                                                                                                                             |
+| 范围外                 | 60+  | 移动端专用、已被覆盖、图表、业务专属等                                                                                                                      |
+| 核心内领域             |  2   | AI/chat（[ui-ai-roadmap.md](./ui-ai-roadmap.md)）、中后台壳（[ui-shell-roadmap.md](./ui-shell-roadmap.md)）——逻辑在 aria 域模块、组件在 ui，统一 `S` 前缀   |
+| 未来提案（形态待评估） |  4   | editor（富文本）、table（高级数据网格）、form（Schema 表单）、ui-pro（增值）；ui-x/admin/chart 已取消不发布，详见 [docs/ecosystem/](../ecosystem/README.md) |
+| 工程优化项             |  11  | F1–F11，见 [optimize.md](../optimize.md)，分阶段 A–D 推进                                                                                                   |
 
 ### 优先级映射说明
 
@@ -62,7 +62,7 @@
 
 关键缺口与强需求组件，应优先实现。共 **22** 个组件（P0 × 9 + P1 × 13）。
 
-> **注：** `Rating`（原 P0 #1）已发布至 `@vean/ui`（`SRating`，见 [packages/ui/src/components/rating](../packages/ui/src/components/rating)），自活跃路线图移除；下方序号沿用源文档，未重排。
+> **注：** `Rating`（原 P0 #1）已发布至 `@vean/ui`（`SRating`，见 [packages/ui/src/components/rating](../../packages/ui/src/components/rating)），自活跃路线图移除；下方序号沿用源文档，未重排。
 
 ### 概要
 
@@ -104,7 +104,7 @@
 
 #### 1. `Rating` — ✅ 已发布（shipped）
 
-`Rating` 已实现并发布为 `SRating`，源码位于 [packages/ui/src/components/rating](../packages/ui/src/components/rating) 与 [packages/aria/src/components/rating](../packages/aria/src/components/rating)。原路线图条目（P0、Demand 10/14、Low effort、单类 `cv()` 模式）已达成，自活跃路线图移除。
+`Rating` 已实现并发布为 `SRating`，源码位于 [packages/ui/src/components/rating](../../packages/ui/src/components/rating) 与 [packages/aria/src/components/rating](../../packages/aria/src/components/rating)。原路线图条目（P0、Demand 10/14、Low effort、单类 `cv()` 模式）已达成，自活跃路线图移除。
 
 ---
 
@@ -1081,16 +1081,16 @@
 
 > **2026-09 更新：** 原表中的 `PageHeader`、`Navbar`、`Sidebar`、`AppShell` 已转入核心内壳领域规划（`SPageHeader`、`SLayoutShell`、`SShellMenu`、`SLogo` + aria `shell` 域模块），见 [ui-shell-roadmap.md](./ui-shell-roadmap.md)，不再走市场分发。
 
-| 组件                | 延后原因（复合 + 小众）                                                                                                                            | 基于原子组件                                                | 需求度 |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- | :----: |
-| `Tour`              | 引导 walkthrough — 高亮引擎 + 步骤管理 + popover 定位，小众（引导场景）。                                                                          | `popover`, `dialog`, `button`, `icon`                       |  3/14  |
-| `TreeTable`         | 树形表格 — 扩展 table 支持展开/折叠行 + tree 状态，小众企业场景。                                                                                  | `table`, `tree`, `collapsible`                              |  3/14  |
-| `Comment`           | 评论块 — avatar + author + content + actions + 嵌套回复，社交域小众。                                                                              | `avatar`, `typography`, `button`, `tag`                     |  2/14  |
-| `Galleria`          | 完整图库/灯箱 — carousel + 缩略图条 + zoom + 全屏，小众。                                                                                          | `carousel`, `image`, `dialog`, `button`                     |  2/14  |
-| `OrganizationChart` | 组织架构图 — tree + 自定义节点渲染 + 连接线，小众企业场景。                                                                                        | `tree`, `card`, `icon`                                      |  2/14  |
-| `RichTextEditor`    | 所见即所得编辑器 — 工具栏 + contenteditable + 插件，体量大。落地形态待评估（见 [ecosystem/editor.md](./ecosystem/editor.md) 提案），不走市场分发。 | `toolbar`, `button`, `icon`, `tooltip` + Tiptap/ProseMirror |  3/14  |
-| `Dock`              | macOS 风格 Dock — 放大效果 + tooltip + 应用图标，小众平台特性。                                                                                    | `tooltip`, `icon`, `popover`                                |  2/14  |
-| `DynamicInput`      | 可编辑输入列表 — 增/删/排序多行表单字段，复合表单模式。                                                                                            | `input`, `button`, `icon`, `list`                           |  1/14  |
+| 组件                | 延后原因（复合 + 小众）                                                                                                                             | 基于原子组件                                                | 需求度 |
+| :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- | :----: |
+| `Tour`              | 引导 walkthrough — 高亮引擎 + 步骤管理 + popover 定位，小众（引导场景）。                                                                           | `popover`, `dialog`, `button`, `icon`                       |  3/14  |
+| `TreeTable`         | 树形表格 — 扩展 table 支持展开/折叠行 + tree 状态，小众企业场景。                                                                                   | `table`, `tree`, `collapsible`                              |  3/14  |
+| `Comment`           | 评论块 — avatar + author + content + actions + 嵌套回复，社交域小众。                                                                               | `avatar`, `typography`, `button`, `tag`                     |  2/14  |
+| `Galleria`          | 完整图库/灯箱 — carousel + 缩略图条 + zoom + 全屏，小众。                                                                                           | `carousel`, `image`, `dialog`, `button`                     |  2/14  |
+| `OrganizationChart` | 组织架构图 — tree + 自定义节点渲染 + 连接线，小众企业场景。                                                                                         | `tree`, `card`, `icon`                                      |  2/14  |
+| `RichTextEditor`    | 所见即所得编辑器 — 工具栏 + contenteditable + 插件，体量大。落地形态待评估（见 [ecosystem/editor.md](../ecosystem/editor.md) 提案），不走市场分发。 | `toolbar`, `button`, `icon`, `tooltip` + Tiptap/ProseMirror |  3/14  |
+| `Dock`              | macOS 风格 Dock — 放大效果 + tooltip + 应用图标，小众平台特性。                                                                                     | `tooltip`, `icon`, `popover`                                |  2/14  |
+| `DynamicInput`      | 可编辑输入列表 — 增/删/排序多行表单字段，复合表单模式。                                                                                             | `input`, `button`, `icon`, `list`                           |  1/14  |
 
 ### 市场设计说明
 
@@ -1098,202 +1098,6 @@
 - **Registry：** CLI 或配置文件列出可用的市场组件及元数据（名称、描述、依赖、所用原子组件）。
 - **组合方式：** 每个市场组件从 `@vean/ui`（原子）与 `@vean/aria`（组合式）导入，无需新的 aria 逻辑，仅做组合。
 - **版本控制：** 市场组件标注所兼容的核心库版本。
-
----
-
-## 已实现组件参考（Implemented Reference）
-
-已在 `@vean/ui` 中发布并整理了详细 API 文档的组件。
-
-> **约定：** 所有组件以 `S` 为前缀（如 `SButton`、`SButtonGroup`），从 `@vean/ui` 导入。
-
-### `SButtonGroup`
-
-将多个 `SButton` 组合为视觉上相连的集群。设置在 group 上的 variant / size / color 等样式属性会**传播给所有子按钮**——子按钮继承 group 的值，除非显式覆盖。
-
-**源码：** [button-group.vue](../packages/ui/src/components/button/button-group.vue) · [types.ts](../packages/ui/src/components/button/types.ts) · [styles/button.ts](../packages/ui/src/styles/button.ts) · [context.ts](../packages/ui/src/components/button/context.ts)
-
-**典型场景：** 工具栏动作集群、视图模式切换、分页集群、表单动作栏、共享 variant 的拆分动作行。
-
-**关键特性：**
-
-- 通过 `provideButtonGroupContext()` 提供响应式上下文；子 `SButton` 通过 `useButtonGroupContext()` 读取。
-- `color` / `size` / `variant` / `shape` / `shadow` / `fitContent` —— 子按钮显式设置则覆盖，否则继承。
-- `disabled` —— **OR 逻辑**，group 或子按钮任一为 `true` 则禁用。
-- `orientation`（`'horizontal' | 'vertical'`，默认 `'horizontal'`）；`dir` 回退至 `SConfigProvider`。
-- 无 `UiContext` —— 样式完全由根上的 `buttonGroupVariants` recipe 通过 UnoCSS 后代选择器（`[&>*]`）作用于子元素。
-
-**基础示例：**
-
-```vue
-<script setup lang="ts">
-import { SButton, SButtonGroup } from '@vean/ui';
-</script>
-
-<template>
-  <SButtonGroup variant="pure" color="accent">
-    <SButton>Save</SButton>
-    <SButton>Cancel</SButton>
-    <SButton>Delete</SButton>
-  </SButtonGroup>
-</template>
-```
-
-#### 属性（Props）
-
-`ButtonGroupProps` extends `ButtonProps` (which extends the aria `ButtonProps`), inheriting all button styling props. The group-specific props are:
-
-| Prop          | Type                         | Default                          | Description                                                                   |
-| :------------ | :--------------------------- | :------------------------------- | :---------------------------------------------------------------------------- |
-| `orientation` | `'horizontal' \| 'vertical'` | `'horizontal'`                   | Layout direction of the button cluster.                                       |
-| `dir`         | `'ltr' \| 'rtl'`             | `'ltr'` (from `SConfigProvider`) | Text direction. Falls back to the `SConfigProvider`'s `dir` value if not set. |
-
-**Inherited styling props** (propagated to all child `SButton` via context):
-
-| Prop         | Type                                                                                                    | Default     | Description                                                                            |
-| :----------- | :------------------------------------------------------------------------------------------------------ | :---------- | :------------------------------------------------------------------------------------- |
-| `color`      | `'primary' \| 'destructive' \| 'success' \| 'warning' \| 'info' \| 'carbon' \| 'secondary' \| 'accent'` | `'primary'` | Theme colour shared by all children.                                                   |
-| `size`       | `'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl' \| '2xl'`                                                         | `'md'`      | Visual size shared by all children.                                                    |
-| `variant`    | `'solid' \| 'pure' \| 'plain' \| 'outline' \| 'dashed' \| 'soft' \| 'ghost' \| 'link'`                  | `'solid'`   | Visual variant shared by all children.                                                 |
-| `shape`      | `'auto' \| 'rounded' \| 'square' \| 'circle'`                                                           | `'auto'`    | Button shape shared by all children.                                                   |
-| `shadow`     | `'none' \| 'sm' \| 'md' \| 'lg'`                                                                        | `'sm'`      | Shadow style shared by all children.                                                   |
-| `fitContent` | `boolean`                                                                                               | `false`     | Whether buttons fit their content width (no full-width stretch).                       |
-| `disabled`   | `boolean`                                                                                               | `undefined` | If `true`, **all** children are disabled (OR'd with each child's own `disabled` prop). |
-
-**Inherited from aria `ButtonProps` / `PrimitiveProps`:**
-
-| Prop      | Type                              | Default     | Description                                                                           |
-| :-------- | :-------------------------------- | :---------- | :------------------------------------------------------------------------------------ |
-| `type`    | `'button' \| 'submit' \| 'reset'` | `'button'`  | Native `<button>` type (forwarded to the root element).                               |
-| `as`      | `string`                          | `'div'`     | Polymorphic root element tag (via `Primitive`).                                       |
-| `asChild` | `boolean`                         | `false`     | If `true`, merges props onto the single child element instead of rendering a wrapper. |
-| `class`   | `ClassValue`                      | `undefined` | Additional UnoCSS classes applied to the root element.                                |
-
-> All remaining HTML attributes (e.g. `id`, `data-*`, `aria-*`) are forwarded to the root element via `v-bind="forwardedProps"`.
-
-#### 事件（Events）
-
-`SButtonGroup` has **no custom events**. It is a presentational container — click events are handled by the individual child `SButton` components (which emit `click: [event: PointerEvent]`).
-
-#### 插槽（Slots）
-
-| Slot      | Description                                                                                       |
-| :-------- | :------------------------------------------------------------------------------------------------ |
-| `default` | One or more `SButton` (or `SButtonIcon`, `SButtonLoading`, `SButtonLink`) components as children. |
-
-#### 上下文传播（Context Propagation）
-
-`SButtonGroup` provides a reactive context via `provideButtonGroupContext()`. Child `SButton` components read this context via `useButtonGroupContext()`:
-
-| Prop         | Propagation Rule                                                                                |
-| :----------- | :---------------------------------------------------------------------------------------------- |
-| `color`      | Child's own `color` prop takes **precedence** if explicitly set; otherwise inherits from group. |
-| `size`       | Same — child prop overrides, otherwise inherits.                                                |
-| `variant`    | Same — child prop overrides, otherwise inherits.                                                |
-| `shape`      | Same — child prop overrides, otherwise inherits.                                                |
-| `shadow`     | Same — child prop overrides, otherwise inherits.                                                |
-| `fitContent` | Same — child prop overrides, otherwise inherits.                                                |
-| `disabled`   | **OR logic** — child is disabled if **either** the group **or** the child has `disabled: true`. |
-
-#### 样式（Styling）
-
-The `buttonGroupVariants` recipe (from [styles/button.ts](../packages/ui/src/styles/button.ts)) applies connector classes to children via descendant selectors:
-
-- **Base:** `[&>*]:relative focus-visible:[&>*]:z-2 not-first:not-last:[&>*]:rounded-0` — positions children relatively, raises focused child z-index, removes rounding from middle children.
-- **Horizontal:** `inline-flex` — removes the trailing border from all but the last child; removes the start rounding from the first child and the end rounding from the last child.
-- **Vertical:** `flex flex-col` — same logic but for vertical borders/rounding.
-
-This means the group itself does not render visible borders — it relies on each child `SButton`'s own border (from `variant: 'outline' | 'pure' | 'plain' | 'dashed'`).
-
-#### 示例（Code Examples）
-
-**Basic — horizontal group with shared variant:**
-
-```vue
-<script setup lang="ts">
-import { SButton, SButtonGroup } from '@vean/ui';
-</script>
-
-<template>
-  <SButtonGroup variant="pure" color="accent">
-    <SButton>Save</SButton>
-    <SButton>Cancel</SButton>
-    <SButton>Delete</SButton>
-  </SButtonGroup>
-</template>
-```
-
-**Vertical orientation:**
-
-```vue
-<template>
-  <SButtonGroup orientation="vertical" variant="outline" color="warning" class="w-30">
-    <SButton>Button 1</SButton>
-    <SButton>Button 2</SButton>
-    <SButton>Button 3</SButton>
-  </SButtonGroup>
-</template>
-```
-
-**Mixed variants — child overrides group defaults:**
-
-The group sets `variant="solid"` and `color="primary"`, but individual children can override:
-
-```vue
-<template>
-  <SButtonGroup variant="solid" color="primary" size="sm">
-    <!-- Inherits solid/primary/sm from group -->
-    <SButton>Save</SButton>
-    <!-- Overrides variant to outline -->
-    <SButton variant="outline">Preview</SButton>
-    <!-- Overrides color to destructive -->
-    <SButton color="destructive">Delete</SButton>
-  </SButtonGroup>
-</template>
-```
-
-**Disabled group — all children disabled:**
-
-```vue
-<template>
-  <SButtonGroup variant="outline" disabled>
-    <SButton>Save</SButton>
-    <SButton>Cancel</SButton>
-    <SButton>Delete</SButton>
-  </SButtonGroup>
-</template>
-```
-
-**With icon buttons and different shapes:**
-
-```vue
-<template>
-  <SButtonGroup variant="soft" color="info" shape="rounded">
-    <SButtonIcon icon="mdi:format-align-left" />
-    <SButtonIcon icon="mdi:format-align-center" />
-    <SButtonIcon icon="mdi:format-align-right" />
-    <SButtonIcon icon="mdi:format-align-justify" />
-  </SButtonGroup>
-</template>
-```
-
-**Polymorphic root — render as a `<div>` with custom attributes:**
-
-```vue
-<template>
-  <SButtonGroup as="div" class="my-toolbar" data-role="toolbar" variant="plain" size="lg">
-    <SButton>Action 1</SButton>
-    <SButton>Action 2</SButton>
-  </SButtonGroup>
-</template>
-```
-
-#### 实现说明（Implementation Notes）
-
-- **Pattern:** Context-provider — `SButtonGroup` calls `provideButtonGroupContext(transformPropsToContext(props, [...keys]))` to expose reactive `ComputedRef` values. Child `SButton` reads them via `useButtonGroupContext()` (returns `undefined` if not inside a group, so `SButton` works standalone too).
-- **No `UiContext`:** The group does not use `provideButtonGroupUi()` — it has no slot-level class injection. Styling is applied entirely through the `buttonGroupVariants` recipe on the root, which targets children via UnoCSS descendant selectors (`[&>*]`).
-- **Direction support:** `dir` falls back to `SConfigProvider`'s `dir` value, enabling RTL layouts without prop drilling.
-- **Aria layer:** `SButtonGroup` lives in the UI layer only — the aria `Button` primitive does not have a group concept. The context is UI-layer-specific (`packages/ui/src/components/button/context.ts`).
 
 ---
 
@@ -1329,19 +1133,14 @@ The group sets `variant="solid"` and `color="primary"`, but individual children 
 
 ## 领域扩展路线（Domains & Proposals）
 
-Vean 当前是**单组件库 + 源码分发工具链**形态：仓库不包含任何外围 npm 包（`@soybeanjs/ui-x`、`@soybeanjs/admin`、`@soybeanjs/chart` 均已移除；[ADR-0001](./adr/0001-peripheral-package-layering.md) 的外围包分层模型相应 superseded）。新领域按两类推进：
+Vean 当前是**单组件库 + 源码分发工具链**形态：仓库不包含任何外围 npm 包（`@soybeanjs/ui-x`、`@soybeanjs/admin`、`@soybeanjs/chart` 均已移除；[ADR-0001](../adr/0001-peripheral-package-layering.md) 的外围包分层模型相应 superseded）。新领域按两类推进：
 
 1. **核心内领域（in-core domains）**：通过 aria 准入（R1–R8）的领域逻辑放 `@vean/aria`（域模块 + composables，零样式），样式组件放 `@vean/ui`，统一 `S` 前缀，遵循同一套两层契约与发布节奏。
 2. **未来提案（proposals）**：editor / table / form / ui-pro 保留为方向与调研资产；落地形态（并入核心 ui、独立包、或仅 vean 源码配方）立项时重新评估，不预设第三层包。
 
 ### 分层现状
 
-```
-Layer 3  样式组件层      @vean/ui（S 前缀，96 组 / 144 导出；AI、shell 领域组件加入此层）
-Layer 2  无头逻辑层      @vean/aria（94 公共组件 / 28 composables；领域模块 /ai、/shell 加入此层）
-Layer 1  主题与样式引擎  @vean/theme · @soybeanjs/unocss
-横切     源码分发与文档  @soybeanjs/vean-ui（CLI / registry / MCP，非运行时依赖）
-```
+分层图与组件计数不在本文件维护副本：唯一图见 [ecosystem/README.md「当前分层」](../ecosystem/README.md#当前分层无外围包)，架构真相源见 [architecture.md](../architecture.md)。
 
 依赖铁律不变：**ui → aria 单向**；aria 零样式；ARIA / 键盘语义不出 aria。
 
@@ -1354,14 +1153,14 @@ Layer 1  主题与样式引擎  @vean/theme · @soybeanjs/unocss
 
 ### 未来提案（落地形态待评估）
 
-| 提案     | 方向                                                    | 现状                                                            | 技术方案                                                                                                |
-| :------- | :------------------------------------------------------ | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| `editor` | 富文本编辑器（Tiptap 内核，仅 MIT 免费边界，UI 层自建） | 2026-08 完成市场调研与收费边界核实                              | [ecosystem/editor.md](./ecosystem/editor.md)                                                            |
-| `table`  | 高级数据网格 / ProTable                                 | 2026-08 调研完成；内核已于 v0.50.0 更换为 `@tanstack/vue-table` | [ecosystem/table.md](./ecosystem/table.md)                                                              |
-| `form`   | Schema 驱动高级表单（协议驱动渲染 + 声明式联动）        | 2026-08 调研完成                                                | [ecosystem/form.md](./ecosystem/form.md)                                                                |
-| `ui-pro` | 增值 / 高级组件（探索性，与商业化一并评估）             | 无代码，仅方向预留                                              | [ecosystem/ui-pro.md](./ecosystem/ui-pro.md) · [commercialization.md](./ecosystem/commercialization.md) |
+| 提案     | 方向                                                    | 现状                                                            | 技术方案                                                                                                  |
+| :------- | :------------------------------------------------------ | :-------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| `editor` | 富文本编辑器（Tiptap 内核，仅 MIT 免费边界，UI 层自建） | 2026-08 完成市场调研与收费边界核实                              | [ecosystem/editor.md](../ecosystem/editor.md)                                                             |
+| `table`  | 高级数据网格 / ProTable                                 | 2026-08 调研完成；内核已于 v0.50.0 更换为 `@tanstack/vue-table` | [ecosystem/table.md](../ecosystem/table.md)                                                               |
+| `form`   | Schema 驱动高级表单（协议驱动渲染 + 声明式联动）        | 2026-08 调研完成                                                | [ecosystem/form.md](../ecosystem/form.md)                                                                 |
+| `ui-pro` | 增值 / 高级组件（探索性，与商业化一并评估）             | 无代码，仅方向预留                                              | [ecosystem/ui-pro.md](../ecosystem/ui-pro.md) · [commercialization.md](../ecosystem/commercialization.md) |
 
-> 这些提案写于「外围包单包自治」时期，文中包结构、lockstep、跨包白名单依赖等前提**已不适用**，阅读时以本页为准；立项必须先产出形态决策（核心内实现 / 独立包 / vean 配方三选一），必要时新立 ADR。市场调研原始结论见 [research/](./research/README.md)。
+> 这些提案写于「外围包单包自治」时期，文中包结构、lockstep、跨包白名单依赖等前提**已不适用**，阅读时以本页为准；立项必须先产出形态决策（核心内实现 / 独立包 / vean 配方三选一），必要时新立 ADR。市场调研原始结论见 [research/](../research/README.md)。
 
 ### 配套基础设施（已就绪）
 
@@ -1373,34 +1172,9 @@ Layer 1  主题与样式引擎  @vean/theme · @soybeanjs/unocss
 
 ## 项目优化路线（Engineering Optimization）
 
-来自 [optimize.md](./optimize.md)（2026-08-02 评估，CodeGraph 全量图谱交叉校验）的 11 项发现，按风险分 P0/P1/P2，按执行顺序分四个阶段。**原则：先解决依赖闭包、CI 构建一致性与发布安全，再考虑目录拆分或新构建工具。**
+工程质量改进项（F1–F11）的唯一权威是 [optimize.md](../optimize.md)：P0/P1/P2 分级、执行阶段 A–D、各 F 项验收与最新状态（如 F4 已收敛）均以该文件为准，本文件不再维护副本表——此前的手抄副本已发生过基线与状态漂移（即 optimize.md F10 指出的形态）。
 
-### 优化项总览
-
-| ID  | 发现                                                                              |   严重度    | 阶段 | 优先级 |
-| :-- | :-------------------------------------------------------------------------------- | :---------: | :--: | :----: |
-| F1  | Workspace 依赖闭包不完整（`shamefullyHoist` 掩盖未声明依赖）                      |    Major    |  A   |   高   |
-| F2  | PR CI 未覆盖「可发布 / 可部署」（不 build、不查生成物）                           |    Major    |  A   |   高   |
-| F3  | 生成物非原子批次，已有可复现漂移（Rating 半完成状态）                             |    Major    |  B   |   高   |
-| F4  | 私有 apps 双向与链式源码依赖（docs ↔ playground）——已随 playground 并入 docs 消除 |     Low     |  D   |   中   |
-| F5  | Docs 构建图一次性 eager 引入 582 demo + 735 源文件                                |  Moderate   |  D   |   中   |
-| F6  | 高影响 seam（createTheme / presetUi / useUiContext）缺契约测试                    |  Moderate   |  C   |   高   |
-| F7  | 构建图与 workspace 依赖图未对齐（theme 改动复用旧 dist 风险）                     |  Moderate   |  C   |   中   |
-| F8  | TypeScript 声明 7.0.2 与锁定 6.0.3 分裂                                           |    Minor    |  C   |   中   |
-| F9  | 类型逃逸（28 行 `as any` / `@ts-expect-error`）与书面约束不一致                   |    Minor    |  —   |   低   |
-| F10 | 文档事实多手写副本，计数 / 版本已发生漂移                                         |    Minor    |  B   |   低   |
-| F11 | 覆盖率策略未量化                                                                  | Enhancement |  —   |   低   |
-
-### 执行阶段与时间节点
-
-| 阶段 | 主题           | 内容                                                                                                                              | 时间窗（建议）              |
-| :--: | :------------- | :-------------------------------------------------------------------------------------------------------------------------------- | :-------------------------- |
-|  A   | 依赖与发布安全 | 直接依赖审计补齐；六包 pack/install/import smoke；CI lint 改非修改模式；PR CI 增加包构建与 docs SSG；aria/Nuxt 独立 typecheck     | 2026-08-14 ~ 08-28          |
-|  B   | 生成一致性     | API/changelog 确定性重放；公共组件交付面集合校验；修复 Rating index/menu/docs 缺口；en/zh-CN 文件树对齐；CI 阻断半生成状态        | 2026-08-28 ~ 09-11          |
-|  C   | 高影响 seam    | theme / UnoCSS preset / `useUiContext` 直接契约测试；浏览器 e2e 扩展（浮层、键盘、颜色对比）；统一 root build 依赖图；TS 版本统一 | 2026-09-11 ~ 10-09          |
-|  D   | Docs 可扩展性  | demo catalog 按组件 lazy；raw TS 解析迁移至 API generator；Nuxt fixture 所有权；docs build budget                                 | 2026-10-09 后（需基线数据） |
-
-> 明确**不建议**立即执行的方案：引入 Turbo、自动生成全部 barrel、为两个消费者新建 shared package、统一覆盖率数字、一次性清零类型逃逸（理由见 [optimize.md §6](./optimize.md#6-不建议立即执行的方案)）。
+总体原则不变：**先解决依赖闭包、CI 构建一致性与发布安全，再考虑目录拆分或新构建工具。**
 
 ---
 
@@ -1412,7 +1186,7 @@ Layer 1  主题与样式引擎  @vean/theme · @soybeanjs/unocss
 | :------------------------ | :---------------------------------------------------------- | :---------------------------------------------- | :---------------------------------------- |
 | **M-AI** AI 核心组件      | P0–P3 批次，详见 [ui-ai-roadmap.md §11](./ui-ai-roadmap.md) | 以该路线图为准                                  | 每组件全交付面（源码/测试/文档/示例/API） |
 | **M-SH** 中后台壳         | M1–M4，详见 [ui-shell-roadmap.md §9](./ui-shell-roadmap.md) | 建议排在 v0.50 重构窗口之后                     | aria 逻辑单测 + shell Tier 2 冒烟 e2e     |
-| **M-OPT** 工程优化        | F1–F11，阶段 A–D 见上节                                     | F 项按需滚动推进                                | 见 [optimize.md](./optimize.md) 各 F 项   |
+| **M-OPT** 工程优化        | F1–F11，阶段 A–D 见 [optimize.md](../optimize.md)           | F 项按需滚动推进                                | 见 [optimize.md](../optimize.md) 各 F 项  |
 | **M-CMP1** 核心组件第一批 | P0 组件 9 个（Upload / Timeline / Typography 等）           | 按「P0 → P1 → P2 → P3」顺序滚动，无既定官方时间 | 每组件全交付面                            |
 | **M-CMP2** 核心组件第二批 | P1 组件 13 个（含 `Result`，壳路线复用）                    | 同上                                            | 同上                                      |
 | **M-CMP3** 核心组件收尾   | P2 × 11 + P3 × 12，视容量穿插                               | 同上                                            | P2/P3 可转入组件市场                      |
@@ -1454,6 +1228,8 @@ Layer 1  主题与样式引擎  @vean/theme · @soybeanjs/unocss
 The following 24 component concepts appear in **all 4** of MUI/Ant Design/Mantine/Chakra and **all 4** of Element Plus/Naive UI/Vuetify/Quasar — the table-stakes of any UI library. All are already shipped in `@vean/ui`:
 
 `Button`, `Input`, `Select`, `Checkbox`, `Radio`, `Switch`, `Slider`, `Form`, `Table`, `Card`, `Dialog/Modal`, `Tabs`, `Menu`, `Pagination`, `Avatar`, `Badge`, `Tooltip`, `Carousel`, `Skeleton`, `Progress`, `Alert`, `Accordion/Collapse`, `Stepper/Steps`, `Tag`.
+
+> 各组件的用法与完整 API 以文档站组件页为权威（`apps/docs`，路由 `/components/<name>`；API 数据由 `pnpm sui gen api` 生成于 `apps/docs/src/generated/api/`），本文件不再维护手写副本。
 
 ## 附录 C — 实现模式速查
 

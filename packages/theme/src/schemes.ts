@@ -1,7 +1,7 @@
 import type { FeedbackSchemeKey, PaletteKey, PaletteLevel, PaletteLevelRef, StatusName } from './types';
 
 /**
- * Scheme data (docs/theme.md §3.6).
+ * Scheme data (docs/design/theme.md §3.6).
  *
  * A scheme is plain data: `palette.level` references for the light and dark
  * mode. Keeping schemes as data (not code) is what lets the status dimension

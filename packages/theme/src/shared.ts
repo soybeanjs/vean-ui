@@ -150,7 +150,7 @@ export function resolveDocumentColorScheme(mode: ThemeMode, darkSelector: DarkSe
  * (`not-a-palette.999`, `zinc.999`) has no channel to alias, so accepting it
  * would emit a dangling `var(--zinc-999)` — and the JS resolver would return
  * nothing for the same token, breaking the "JS and CSS never disagree"
- * invariant (docs/theme.md §3.1). Both halves come from colord's tables.
+ * invariant (docs/design/theme.md §3.1). Both halves come from colord's tables.
  */
 export function isPaletteLevelRef(value: string): value is PaletteLevelRef {
   const [palette, level] = value.split('.');

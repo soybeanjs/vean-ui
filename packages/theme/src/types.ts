@@ -16,7 +16,7 @@ import type {
 } from './semantic';
 
 /**
- * The theme engine type surface (docs/theme.md §0.3, §3).
+ * The theme engine type surface (docs/design/theme.md §0.3, §3).
  *
  * Three layers, three kinds of values:
  * - **palette** (Layer 1): naked channels, `--zinc-100: 240 4.8% 95.9%`
@@ -136,7 +136,7 @@ export interface ThemeFont {
  * The multiplier moves the grid *unit* (`--spacing-unit`), the one variable
  * the family emits; the rungs themselves are coefficients on that unit and live
  * in UnoCSS's `theme.spacing` mapping rather than in CSS variables
- * (docs/theme.md §3.11).
+ * (docs/design/theme.md §3.11).
  */
 export type ThemeSpacingValue = ThemeSpacing | number;
 
@@ -156,7 +156,7 @@ export type FeedbackSchemeKey = string;
 
 /**
  * a color value as a user supplies it — the vocabulary of the override API
- * (docs/theme.md §4.2):
+ * (docs/design/theme.md §4.2):
  *
  * - a `palette.level` reference: `stone.950` / `indigo.600` (colord's level
  *   color key, so the engine and the palette library agree on the shape);
@@ -201,7 +201,7 @@ export interface ThemeOverrides {
  * how a token gets its value: a palette level (with an optional neutral-palette
  * variant), a mirror of another token, or a simple palette key. Every arm is
  * *declared* — the engine never measures one value to decide another
- * (docs/theme.md §4.3).
+ * (docs/design/theme.md §4.3).
  */
 export type TokenRule =
   | {
@@ -256,7 +256,7 @@ export type LiteralToken =
  * This is the single intermediate representation: the CSS emitter and the JS
  * resolvers both read it, so they cannot disagree. There is no report field: the
  * map holds the *declared* values and nothing measures or corrects them
- * (docs/theme.md §2.2).
+ * (docs/design/theme.md §2.2).
  */
 export interface ThemeMap {
   light: Record<SemanticToken, TokenValue>;

@@ -67,7 +67,7 @@ There is no Aria `list` family: a plain `ul`/`li` carries no keyboard, focus or 
 
 ### Roadmap
 
-A built-in virtualized list or a `dataSource`/`renderItem` config mode is evaluated as an enhancement, delegated to the standalone `virtualizer` today (see `docs/roadmap.md`).
+A built-in virtualized list or a `dataSource`/`renderItem` config mode is evaluated as an enhancement, delegated to the standalone `virtualizer` today (see `docs/roadmap/README.md`).
 
 ## FAQ
 

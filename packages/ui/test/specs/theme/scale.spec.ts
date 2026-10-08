@@ -5,7 +5,7 @@ import type { ThemeSize } from '@/theme';
 import { fieldMinSize, fieldSize } from '../../../src/styles/_field';
 
 /**
- * The control ladder (docs/space-control-scale.md §1.6).
+ * The control ladder (docs/design/space-control-scale.md §1.6).
  *
  * `fieldSize` / `fieldMinSize` are the library's control-height policy: one row per
  * size, with height + horizontal padding + gap + text from the same rung. The heights
@@ -112,7 +112,7 @@ describe('control ladder — one row per size', () => {
     expect(css).toContain('gap:calc(var(--spacing-unit) * 2)');
     // 字号不进主题：`text-sm` 直接取 UnoCSS 的元组
     expect(css).toContain('font-size:0.875rem');
-    // 控件高度不是刻度族（docs/space-control-scale.md §3.1）：这些类名不产出任何声明
+    // 控件高度不是刻度族（docs/design/space-control-scale.md §3.1）：这些类名不产出任何声明
     const removed = await generate('h-control-md min-h-control-md size-control-md');
 
     expect(removed).not.toContain('control-');

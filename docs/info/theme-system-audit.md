@@ -1,11 +1,11 @@
 # Vean 主题系统深度分析与优化报告
 
 > 定位：对 `packages/theme`（`@vean/theme`）及其消费面（`@vean/unocss`、`@vean/ui` 的 `SConfigProvider` / `SThemeCustomizer`）做一次工程级审计：架构、token 完整性、派生正确性、可访问性、持久化与首帧策略；同时与 11 个主流组件库的主题实现横向对比，并吸收 [nuxt-theme.md](../research/nuxt-theme.md) 的既有调研结论。
-> 状态：📄 审计快照——描述的是**重构前**的引擎，结论针对旧实现，**不代表现状**（现状以 [theme.md](../theme.md) 为准）
+> 状态：📄 审计快照——描述的是**重构前**的引擎，结论针对旧实现，**不代表现状**（现状以 [theme.md](../design/theme.md) 为准）
 > 基线：2026-09-18 · 分支 `vean` · `@vean/theme@0.50.0-beta.1`
 > 方法：源码精读 + 引擎实测（本文所有数字均由附录 A 的脚本在本地跑出，非估算）+ 官方文档/源码检索（引用 URL 见附录 C）
 >
-> **后续：** 本报告是那次重构的输入，方案已落在 [theme.md](../theme.md)（三层架构 / token 契约 / 无对比度护栏 / 与新旧的逐项对照）。本报告为审计快照，落盘后不再更新。
+> **后续：** 本报告是那次重构的输入，方案已落在 [theme.md](../design/theme.md)（三层架构 / token 契约 / 无对比度护栏 / 与新旧的逐项对照）。本报告为审计快照，落盘后不再更新。
 
 ---
 
@@ -105,7 +105,7 @@
 对 Vean 的具体建议（可分批落地）：
 
 1. **单信箱**：把 `__SOYBEAN_THEME` / `__SOYBEAN_THEME_CSS` / `__SOYBEAN_THEME_PRESETS` / `__SOYBEAN_THEME_APPLIED_PRESET` 合并为**一个带 `v` 字段的信封**（`{ v: 2, mode, config, presets, appliedPreset, css? }`），**一个防抖 250ms 的写入者**（Nuxt UI 的 `nuxt-ui-theme` 就是这么做的，见 [nuxt-theme.md](../research/nuxt-theme.md) §3.6）。这直接消灭第 6 条结论里的全部问题：写入竞争、跨标签漏听、`Object.assign` 清不掉字段。
-2. **cookie 镜像**（仅在 SSR 场景启用）：`vean-theme=dark`（`Path=/; Max-Age=31536000; SameSite=Lax; Secure`，**不要 `HttpOnly`**），服务端读它 → 渲染 `<html class style="color-scheme">` + 用同一份 config 调 `createTheme()` 产出正确 CSS。**这样 `injectCss` + `!important` 那套补丁在 SSR 下可以整体删掉**（[docs/theme.md §9.4](../theme.md) 已论证过这条路径，本报告补充：cookie 会让 HTML 变为 per-user，`Vary: Cookie` 会摧毁 CDN 缓存命中率，所以只在 SSR 档启用，SSG 档继续用快照）。
+2. **cookie 镜像**（仅在 SSR 场景启用）：`vean-theme=dark`（`Path=/; Max-Age=31536000; SameSite=Lax; Secure`，**不要 `HttpOnly`**），服务端读它 → 渲染 `<html class style="color-scheme">` + 用同一份 config 调 `createTheme()` 产出正确 CSS。**这样 `injectCss` + `!important` 那套补丁在 SSR 下可以整体删掉**（[docs/design/theme.md §9.4](../design/theme.md) 已论证过这条路径，本报告补充：cookie 会让 HTML 变为 per-user，`Vary: Cookie` 会摧毁 CDN 缓存命中率，所以只在 SSR 档启用，SSG 档继续用快照）。
 3. **`color-scheme` 必须落到两处**：`<meta name="color-scheme" content="light dark">`（head 最前，防画布/滚动条首帧闪白）与 `html { color-scheme: light }` / `.dark { color-scheme: dark }`（引擎生成，或由脚本设 `style.colorScheme`）。这不是锦上添花：主流 4 个实现里 next-themes（`enableColorScheme`）、Mantine、MUI、Starlight 至少有一个在做，而**没有任何一家靠 `.dark class` 解决原生控件配色**。当前 docs 站被迫在 `apps/docs/src/styles/global.css:77` 写 `.dark * { color-scheme: dark }`，就是这条缺失的账单。
 4. **首帧脚本的工程细节**：必须是 `<head>` 里**第一个** `<script>`（先于任何样式表与其他脚本），支持 `nonce`，读存储全部包 `try/catch`（Firefox 第三方上下文里访问 `localStorage` 会抛 `SecurityError`）。当前脚本已是 IIFE + try/catch（`ssr.ts:125-169`），但**缺 nonce**，且 `storage.ts:306-312` 的 `getStorage()` 用 `typeof window.localStorage === 'undefined'` 判断——**读属性本身就会抛**，必须包 try/catch。
 5. **`auto` 三态维持现状**：显式存 `'auto'`（而不是 Tailwind 那种"键不存在 = system"）是对的，跨标签/跨设备语义更清晰。但要补上：`storage` 事件要覆盖**全部**键（现状只监听 2 个）、`matchMedia` 变更监听（现状已实现，`use-theme.ts:204-217`，✅）。
@@ -417,7 +417,7 @@ light 三者同为 `{p}.100`，dark 同为 `{p}.800`；`secondaryForeground` lig
 **3.7.4 首帧脚本**
 
 优点：纯 IIFE + try/catch（`ssr.ts:125-169`）、`media` 选择器时跳过 class 切换、`auto` 会读 `matchMedia`、按需注入 CSS 快照。
-缺口：**(i) 无 `nonce`**（严格 CSP 下脚本被拦，`docs/theme.md` §5 已把它列为待补强）；**(ii) 不设置 `color-scheme`**；**(iii) 快照注入用正则给每条自定义属性加 `!important`**（`ssr.ts:136`），这是"服务端无法算出正确 CSS"的补偿手段——SSR 档启用 cookie 后可整体移除（§1.3）；**(iv) 文档没有强调脚本必须是 `<head>` 里第一个脚本**（HTML 规范里"有阻塞脚本的样式表"会把 parser-inserted script 延后，置于样式表或外链脚本之后会破坏"首帧前执行"的保证）。
+缺口：**(i) 无 `nonce`**（严格 CSP 下脚本被拦，`docs/design/theme.md` §5 已把它列为待补强）；**(ii) 不设置 `color-scheme`**；**(iii) 快照注入用正则给每条自定义属性加 `!important`**（`ssr.ts:136`），这是"服务端无法算出正确 CSS"的补偿手段——SSR 档启用 cookie 后可整体移除（§1.3）；**(iv) 文档没有强调脚本必须是 `<head>` 里第一个脚本**（HTML 规范里"有阻塞脚本的样式表"会把 parser-inserted script 延后，置于样式表或外链脚本之后会破坏"首帧前执行"的保证）。
 
 **3.7.5 缺 `color-scheme`（P1）**
 
@@ -448,7 +448,7 @@ const getStorage = (): Storage | null => {
 ### 3.9 命名与文档债
 
 1. **品牌前缀不一致**：`THEME_STORAGE_KEY = '__SOYBEAN_THEME'`、`THEME_INIT_STYLE_ID = '__SOYBEAN_THEME_INIT'`（`ssr.ts:32`）vs 运行时 `<style id="__Vean_theme">`（`hooks.ts:47`）vs UI 层的 `--soybean-sidebar-width` / `--soybean-layout-*-z-index`（23 + 18 + 若干处）。最近一次提交整体改名 SoybeanUI → Vean（`ba2780547`），前缀应统一（存储键改名需带迁移：读旧键 → 写新键 → 删旧键）。
-2. **README 过时**（`packages/theme/README.md`）：仍在描述 `createTheme({ preset })` 选项（现为 `overrides`）、`/ssr` 的 `cookie 解析` 与 `createThemeStore`（不存在）、`MenuColor` / `MenuAccent` 类型（已删除）。`docs/theme.md` §3 已自认这一点，但 README 未改。
+2. **README 过时**（`packages/theme/README.md`）：仍在描述 `createTheme({ preset })` 选项（现为 `overrides`）、`/ssr` 的 `cookie 解析` 与 `createThemeStore`（不存在）、`MenuColor` / `MenuAccent` 类型（已删除）。`docs/design/theme.md` §3 已自认这一点，但 README 未改。
 3. **代码注释引用已删除的规格编号**：`§3.1` / `§3.2` / `§4.2` / `§5.6` / `§5.8.2` / `D7` / `D8` / `ADR-4` / `ADR-5` 大量出现在 `derive.ts` / `tokens.ts` / `preset.ts` / `use-theme.ts` 的注释与测试名里，而 `docs/theme-refactor-plan.md`、`docs/adr/000{7,8,9}-*` 已于 `7943bc0eb` 删除。**读者无法解析这些引用**。建议：要么恢复为 `docs/adr/0002-theme-engine.md` 之类的**现存** ADR（把 level 表、D8 不偏移规则、对比度契约写进去），要么把注释改写成自解释的散文。
 4. **没有 token 参考文档**：40 个 token 的语义散在 `types.ts` 的 JSDoc 里（质量不错），但没有面向消费者的"token 表 + 各 token 在明暗下的值 + 用途"页面；主题能力（format/schemes/levels/overrides）只在 `SThemeCustomizer` 的交互面板里可发现。
 
@@ -542,7 +542,7 @@ const getStorage = (): Storage | null => {
 
 ## 6. 建议的目标形态（分阶段）
 
-> 本节只给"修什么、什么顺序"；**"改成什么样"（分层参照、token 清单、机制与迁移）见 [theme.md](../theme.md)**。
+> 本节只给"修什么、什么顺序"；**"改成什么样"（分层参照、token 清单、机制与迁移）见 [theme.md](../design/theme.md)**。
 
 ### 阶段 1：止血（不改变公开 API，1 个 PR 可完成 P0 全部 + P1 的 7 项）
 
@@ -596,8 +596,8 @@ node_modules/.bin/tsx probe.ts
 ```
 
 ```ts
-import { createTheme, generateThemePreset, resolveTheme } from '../packages/theme/src/index';
 import { resolveColorValue } from '../packages/theme/src/shared';
+import { createTheme, generateThemePreset, resolveTheme } from '../packages/theme/src/index';
 
 // ① 档位塌陷
 for (const lightLevel of [0, 1, 2] as const) {
@@ -664,7 +664,7 @@ console.log('ring:', ratio(v('ring'), v('background')).toFixed(2)); // 2.99
 - `packages/theme/src/*.ts`（引擎 12 个模块，约 2350 行）、`packages/theme/test/*.spec.ts`
 - `packages/unocss/src/{colors,preset,global-css,options}.ts`、`packages/ui/src/theme/*.ts`
 - `packages/ui/src/components/config-provider/{use-theme,hooks}.ts`、`packages/ui/src/components/theme-customizer/*`
-- [docs/theme.md §9.4](../theme.md)（持久化与 FOUC 策略）、[docs/research/nuxt-theme.md](../research/nuxt-theme.md)（Nuxt UI 调研）
+- [docs/design/theme.md §9.4](../design/theme.md)（持久化与 FOUC 策略）、[docs/research/nuxt-theme.md](../research/nuxt-theme.md)（Nuxt UI 调研）
 - 已删除的规格文档（`git show 7943bc0eb^:docs/theme-refactor-plan.md`）：核心 10 键、档位表、D7/D8/ADR-4/5 决策原文
 
 **外部（官方文档 / 源码）**

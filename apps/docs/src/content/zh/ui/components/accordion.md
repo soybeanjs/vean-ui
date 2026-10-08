@@ -78,7 +78,7 @@ head:
 
 ### Roadmap
 
-核心手风琴 API 无阻塞缺口。边框 `variant` 变体与 `left` 图标触发器布局为已评估增强项，记录在 `docs/roadmap.md`。
+核心手风琴 API 无阻塞缺口。边框 `variant` 变体与 `left` 图标触发器布局为已评估增强项，记录在 `docs/roadmap/README.md`。
 
 ## FAQ
 

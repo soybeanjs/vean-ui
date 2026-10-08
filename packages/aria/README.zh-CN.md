@@ -145,12 +145,12 @@ import { transformPropsToContext } from '@soybeanjs/headless/shared'; // 纯 TS 
 import type { UiClass } from '@soybeanjs/headless/types'; // 共享类型导出
 =======
 import { AccordionRoot } from '@vean/aria'; // 组件 + 类型
+import type { AccordionUiSlot } from '@vean/aria/accordion'; // 单组件类型
 import { useControllableState } from '@vean/aria/composables'; // 28 个 composable
-import { transformPropsToContext } from '@vean/aria/shared'; // 纯 TS 工具
 import { createMonth } from '@vean/aria/date'; // 日期工具
 import { registerLocale } from '@vean/aria/locale'; // locale 注册表
 import * as H from '@vean/aria/namespaced'; // 命名空间导入
-import type { AccordionUiSlot } from '@vean/aria/accordion'; // 单组件类型
+import { transformPropsToContext } from '@vean/aria/shared'; // 纯 TS 工具
 import type { UiClass } from '@vean/aria/types'; // 共享类型导出
 >>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean):packages/aria/README.zh-CN.md
 ```

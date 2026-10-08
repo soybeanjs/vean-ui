@@ -1,7 +1,7 @@
 # 主题引擎：@vean/theme 与旧版引擎的差异
 
 > 定位：`@vean/theme`（本分支）的**唯一权威文档**——它相对**旧版引擎**（`main` 上的第一代 `packages/theme`）在**产物、契约、机制、接线**四个层面上的差异与优势，以及新版当前的完整 token 契约、引擎 API、运行时接线与验收标准。读者：主题维护者、组件作者、**AI Agent**。
-> 读法：第 0 节是速览与对照表；第 1–2 节回答"新版比旧版好在哪、代价是什么"；第 3 节起是新版自身的规格（token 表 / 机制 / 接线 / 验收）。旧版的实测数字来自 [theme-system-audit.md](./info/theme-system-audit.md)（重构前的审计快照，仅作**证据**保留，不代表现状）。
+> 读法：第 0 节是速览与对照表；第 1–2 节回答"新版比旧版好在哪、代价是什么"；第 3 节起是新版自身的规格（token 表 / 机制 / 接线 / 验收）。旧版的实测数字来自 [theme-system-audit.md](../info/theme-system-audit.md)（重构前的审计快照，仅作**证据**保留，不代表现状）。
 > 基线：2026-09-22 · 分支 `vean` · `@vean/theme@0.50.0-beta.1`
 
 ---
@@ -134,7 +134,7 @@ cd packages/theme && pnpm exec vitest run -u   # 有意识地更新映射快照
 | **本文件**                                    | 唯一权威：新旧差异与优势 + token 契约 + 引擎 API + 接入手册 + 验收 |
 | `packages/theme/README.md`                    | 包级 README（面向 npm 消费者，本文件的精简版）                     |
 | `docs/info/theme-system-audit.md`             | 重构前审计快照（**历史证据**，本文的旧版数字来源）                 |
-| `docs/space-control-scale.md`                 | 间距 / 半径刻度的契约与实测依据（§1.6 每 size 控件向量）           |
+| `docs/design/space-control-scale.md`          | 间距 / 半径刻度的契约与实测依据（§1.6 每 size 控件向量）           |
 | `apps/docs/src/content/{en,zh}/ui/theming.md` | 面向用户的主题指南（配置项 / overrides / preset / 直接使用引擎）   |
 
 ---
@@ -540,8 +540,8 @@ token 名与 shadcn 完全同名且**不带前缀**，因此 shadcn 的片段、
 
 ## 8. 相关
 
-- [theme-system-audit.md](./info/theme-system-audit.md) — 重构前审计（**历史证据**，本文旧版数字的来源）
+- [theme-system-audit.md](../info/theme-system-audit.md) — 重构前审计（**历史证据**，本文旧版数字的来源）
 - [space-control-scale.md](./space-control-scale.md) — 间距 / 半径刻度的契约与实测依据
-- [architecture.md](./architecture.md) — 工作区架构与依赖方向
+- [architecture.md](../architecture.md) — 工作区架构与依赖方向
 - `packages/theme/README.md` — 包级用法（本文的精简版）
 - 面向用户的主题指南：`apps/docs/src/content/{en,zh}/ui/theming.md`

@@ -246,7 +246,7 @@ export const DEFAULT_VARIANT_GROUPS: VariantGroupMeta[] = [
 const ALL_TOKENS: VariantTokenMeta[] = DEFAULT_VARIANT_GROUPS.flatMap(group => group.tokens);
 
 /**
- * The full-variants linkage model (docs/theme.md §4).
+ * The full-variants linkage model (docs/design/theme.md §4).
  *
  * The groups mirror the v2 token families (surfaces / fills / hairlines / brand /
  * region / status / charts); every entry is a v2 `SemanticToken`, so an override

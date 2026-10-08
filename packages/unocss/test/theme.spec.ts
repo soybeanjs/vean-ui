@@ -7,7 +7,7 @@ import { presetUi } from '../src/preset';
 import { buildThemeColors, buildThemeEntries } from '../src/theme';
 
 /**
- * The token adapter (docs/theme.md §5).
+ * The token adapter (docs/design/theme.md §5).
  *
  * The assertions that matter:
  * - semantic + palette colors are `hsl(var(--…-x) / <alpha-value>)` so the
@@ -247,7 +247,7 @@ describe('theme adapter — dimension / layering keys', () => {
     // 网格单位（系数 1 = 0.25rem）不是枚举步长：只走单位的多重数会把库里 77 处
     // 八分之一 / 十六分之一档漏给 preset-mini 硬编码的 `n × 0.25rem`。默认主题下
     // 两者数值相同，所以它只在改了 `spacing` 之后显形——`p-0.625` 冻结成
-    // `0.15625rem` 而 `p-0.75` 跟着旋钮走（docs/space-control-scale.md §1.4）
+    // `0.15625rem` 而 `p-0.75` 跟着旋钮走（docs/design/space-control-scale.md §1.4）
     expect(css).toContain('padding:calc(var(--spacing-unit) * 0.625)');
     expect(css).toContain('padding-top:calc(var(--spacing-unit) * 0.875)');
     expect(css).toContain('margin-top:calc(var(--spacing-unit) * 0.4375)');
@@ -269,7 +269,7 @@ describe('theme adapter — dimension / layering keys', () => {
     // 任意值与分数是逃生舱：保留原义，不被包一层 calc
     expect(css).toContain('padding:7px');
     expect(css).toContain('padding:50%');
-    // 已知副作用（docs/space-control-scale.md §1.4）：inset / basis 与间距同表，会一起缩放
+    // 已知副作用（docs/design/space-control-scale.md §1.4）：inset / basis 与间距同表，会一起缩放
     expect(css).toContain('flex-basis:calc(var(--spacing-unit) * 4)');
   });
 

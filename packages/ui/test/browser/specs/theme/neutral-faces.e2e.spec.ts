@@ -3,7 +3,7 @@ import { defineComponent, h } from 'vue';
 import { renderComponent } from '../../shared/render';
 
 /**
- * 中性交互面的**实测色差**契约（docs/theme.md §3.2 / §3.9）。
+ * 中性交互面的**实测色差**契约（docs/design/theme.md §3.2 / §3.9）。
  *
  * `muted` / `accent` / `secondary` 同档（对齐 shadcn 默认）之后，"静止实心 fill → 交互实心 fill"
  * 这类配方会渲染成**完全相同的颜色**，而类名字符串依然正确 —— 只有真实引擎能看出来。

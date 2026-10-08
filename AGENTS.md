@@ -62,12 +62,12 @@ from the styled wrapper to its nested aria parts via `provideXUi(ui)` and
 
 Other publishable modules:
 
-- **@vean/theme** (`packages/theme/`): theme engine — static palette layer + semantic alias layer (a declared mapping table, no measurement or correction), envelope storage + first-paint script. **Docs: [docs/theme.md](docs/theme.md) (§0 is the AI-agent handbook).**
+- **@vean/theme** (`packages/theme/`): theme engine — static palette layer + semantic alias layer (a declared mapping table, no measurement or correction), envelope storage + first-paint script. **Docs: [docs/design/theme.md](docs/design/theme.md) (§0 is the AI-agent handbook).**
 - **@vean/unocss** (`packages/unocss/`): UnoCSS preset over `@vean/theme`.
 - **@vean/cli** (`packages/cli/`, bin `vean`): source-distribution CLI, registry, schemas, templates, and MCP.
 - **@vean/skills** (`skills/`): generated consumer-facing agent skills.
 
-> There is **no** `@soybeanjs/admin` or `@soybeanjs/chart` package, and no standalone AI package: AI/chat components ship inside aria + ui under the standard `S` prefix — the component plan lives in [docs/ui-ai-roadmap.md](docs/ui-ai-roadmap.md). The former admin direction returns as an in-core **shell domain** (aria `src/shell/` + ui composites such as `SLayoutShell`/`SPageHeader`), planned in [docs/ui-shell-roadmap.md](docs/ui-shell-roadmap.md). Charts are not part of the core library: the docs site shows shadcn-styled demos built directly on [TanStack Charts](https://tanstack.com/charts) (see `apps/docs/src/examples/chart/` + the docs-local `apps/docs/src/components/chart/` theming shell).
+> There is **no** `@soybeanjs/admin` or `@soybeanjs/chart` package, and no standalone AI package: AI/chat components ship inside aria + ui under the standard `S` prefix — the component plan lives in [docs/roadmap/ui-ai-roadmap.md](docs/roadmap/ui-ai-roadmap.md). The former admin direction returns as an in-core **shell domain** (aria `src/shell/` + ui composites such as `SLayoutShell`/`SPageHeader`), planned in [docs/roadmap/ui-shell-roadmap.md](docs/roadmap/ui-shell-roadmap.md). Charts are not part of the core library: the docs site shows shadcn-styled demos built directly on [TanStack Charts](https://tanstack.com/charts) (see `apps/docs/src/examples/chart/` + the docs-local `apps/docs/src/components/chart/` theming shell).
 
 Private packages and applications:
 
@@ -83,8 +83,8 @@ Private packages and applications:
 | New component (styled)             | `packages/ui/src/components/[name]/` + `packages/ui/src/styles/[name].ts` | style recipe → types.ts → `*.vue` → index.ts                                                     |
 | Variant definitions                | `packages/ui/src/styles/[name].ts`                                        | `cv()` / `scv()` with `// @unocss-include` at top                                                |
 | Shared hooks                       | `packages/aria/src/composables/`                                          | `use-*.ts`, pure Vue composables (~30 total)                                                     |
-| Theme engine (design/API/handbook) | `docs/theme.md`                                                           | **单一权威**：新旧差异与优势 / token 契约 / 引擎 API / 接入手册（§0）/ 验收                      |
-| Theme dimension scale              | `docs/space-control-scale.md`                                             | spacing / radius 的取值与实测依据；什么不该成为刻度族（控件高度 / 图标 / 字号 / 阴影动效）       |
+| Theme engine (design/API/handbook) | `docs/design/theme.md`                                                    | **单一权威**：新旧差异与优势 / token 契约 / 引擎 API / 接入手册（§0）/ 验收                      |
+| Theme dimension scale              | `docs/design/space-control-scale.md`                                      | spacing / radius 的取值与实测依据；什么不该成为刻度族（控件高度 / 图标 / 字号 / 阴影动效）       |
 | Theme/sizing                       | `packages/ui/src/theme/`                                                  | `ThemeColor` (8 roles), `ThemeSize` (xs…2xl)                                                     |
 | Token CSS generation               | `packages/theme/src/`                                                     | `resolveThemeMap(options)` → `emitThemeCss(map)`（Layer 2）/ `generatePaletteCss()`（Layer 1）   |
 | UnoCSS adapter                     | `packages/unocss/`                                                        | `presetUi()` / `presetVean()`                                                                    |

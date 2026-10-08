@@ -4,7 +4,7 @@
 > **调研日期**：2026-08-14（本地时区 Asia/Shanghai）。所有价格/许可信息基于 2025–2026 年公开资料核实，**价格可能随时变动**，下文对每条事实均标注来源与「已核实/待核实」状态。
 > **方法**：以 WebSearch + WebFetch 抓取一手来源（官方定价页、许可页、公司官网、GitHub 官方仓库）；二手来源（第三方对比文、行业综述）仅作佐证并明确标注。
 >
-> **2026-09 注**：下文引用的 `@soybeanjs/ui-x` / `SxSender` / `use-x-stream` 已随 ui-x 包移除，AI 流式能力改为核心 headless/ui 的 `useStream` / `SSender`（见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)）；`@soybeanjs/admin` / `SAppLayout` 亦已取消，中后台壳方向改为核心内 shell 领域（见 [../ui-shell-roadmap.md](../ui-shell-roadmap.md)）；editor/table/form 的独立包前提同步失效（见 [../ecosystem/README.md](../ecosystem/README.md)）。调研结论与定价事实不受影响，引用按此折算。**分生态商业化方向与横向建议自 2026-09 起收敛到 [ecosystem/commercialization.md](../ecosystem/commercialization.md)，本报告只保留调研事实（§1–§2）与来源清单（§5）**，见 [§3](#3-分生态商业化方向) 的迁移映射。
+> **2026-09 注**：下文引用的 `@soybeanjs/ui-x` / `SxSender` / `use-x-stream` 已随 ui-x 包移除，AI 流式能力改为核心 headless/ui 的 `useStream` / `SSender`（见 [../ui-ai-roadmap.md](../roadmap/ui-ai-roadmap.md)）；`@soybeanjs/admin` / `SAppLayout` 亦已取消，中后台壳方向改为核心内 shell 领域（见 [../ui-shell-roadmap.md](../roadmap/ui-shell-roadmap.md)）；editor/table/form 的独立包前提同步失效（见 [../ecosystem/README.md](../ecosystem/README.md)）。调研结论与定价事实不受影响，引用按此折算。**分生态商业化方向与横向建议自 2026-09 起收敛到 [ecosystem/commercialization.md](../ecosystem/commercialization.md)，本报告只保留调研事实（§1–§2）与来源清单（§5）**，见 [§3](#3-分生态商业化方向) 的迁移映射。
 
 ---
 
@@ -17,7 +17,7 @@
 3. **商业化必须与「开源免费边界」严格切割**：Vean 核心（headless/ui/theme）保持 MIT；外围包的**基础能力保持 MIT**，**付费能力放入独立包/独立子路径**（如 `*-pro` 或 `*/pro` 子路径），用 license key 本地校验（参考 Handsontable/Zeta 先例），不破坏开源信任。
 4. **中国背景 = 差异化机会也是约束**：中国政企市场（私有化部署、信创、等保、发票合规、source escrow）是国外商业组件库服务不到/服务不好的空白；同时中国市场对「开源免费」的支付意愿低于欧美，需要**本地化定价（人民币）+ 企业服务**补足（参考 Univer 与 Element Plus 赞助模式）。
 5. **「赞助 + 生态位」只能作为起步收入**：Element Plus / Naive UI / TanStack 的赞助收入规模有限（Element Plus GitHub Sponsors 当前仅 3 个 sponsor 在档），TanStack 依赖企业合作赞助；真正的可持续收入必须来自企业付费产品/服务，而不是捐赠。
-6. **AI 是 2025–2026 年所有先例都在追加的付费点**：AG Grid 新出 AI Toolkit/MCP Server（企业版内）、Tiptap 的 AI Toolkit 为 add-on、Retool 卖 AI credits、Jotform 卖 AI Agent——Vean 可复用核心 headless/ui 的流式 AI 能力（`useStream` / `SSender`，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)），把「AI 功能订阅」作为横切付费项。
+6. **AI 是 2025–2026 年所有先例都在追加的付费点**：AG Grid 新出 AI Toolkit/MCP Server（企业版内）、Tiptap 的 AI Toolkit 为 add-on、Retool 卖 AI credits、Jotform 卖 AI Agent——Vean 可复用核心 headless/ui 的流式 AI 能力（`useStream` / `SSender`，见 [../ui-ai-roadmap.md](../roadmap/ui-ai-roadmap.md)），把「AI 功能订阅」作为横切付费项。
 7. **风险预警**：头部先例（Tiptap）已在 2025-06 移除免费云计划并持续抬高付费墙（二手来源）；组件库赛道同质化严重，免费替代品（Lexical/BlockNote 等）众多；付费产品一旦上线，维护承诺（SLA、安全补丁、source escrow）会显著抬高运营成本，**需要先验证需求信号再投入**。
 
 ### 1.2 先例商业模式汇总表

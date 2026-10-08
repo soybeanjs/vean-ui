@@ -1,6 +1,6 @@
 # UI THEME SYSTEM
 
-> 本目录是主题引擎在 UI 层的接线（适配器 / 状态核心 / 面板元数据）。引擎本身的架构、token 契约与接入手册见 [docs/theme.md](../../../../docs/theme.md)（§0 是 AI Agent 速览）。
+> 本目录是主题引擎在 UI 层的接线（适配器 / 状态核心 / 面板元数据）。引擎本身的架构、token 契约与接入手册见 [docs/design/theme.md](../../../../docs/design/theme.md)（§0 是 AI Agent 速览）。
 
 Design tokens, class merging, and size context for the styled layer.
 

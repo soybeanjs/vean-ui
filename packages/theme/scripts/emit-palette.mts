@@ -2,7 +2,7 @@
  * Write the static palette layer to `dist/palette.css`.
  *
  * The palette table never changes at runtime, so it ships as a plain stylesheet
- * that consumers can cache forever (docs/theme.md §3). The format is a
+ * that consumers can cache forever (docs/design/theme.md §3). The format is a
  * build-time choice: `PALETTE_FORMAT=hsl|oklch pnpm build`.
  */
 import { mkdirSync, writeFileSync } from 'node:fs';

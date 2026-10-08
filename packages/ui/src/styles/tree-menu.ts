@@ -33,7 +33,7 @@ export const treeMenuVariants = scv({
     group: 'flex flex-col m-0 p-0 list-none',
     groupLabel: `flex items-center text-sidebar-foreground/70 group-data-[state=collapsed]:size-0 group-data-[state=collapsed]:p-0 group-data-[state=collapsed]:opacity-0 group-data-[state=collapsed]:overflow-hidden transition-[height,padding,opacity]-200`,
     // 侧栏交互面用 `--sidebar-accent-foreground` 的 alpha 洗色：暗色 `--sidebar` 与
-    // `--sidebar-accent` 同档（docs/theme.md §3.9），实心 `bg-sidebar-accent` 的 hover 会与
+    // `--sidebar-accent` 同档（docs/design/theme.md §3.9），实心 `bg-sidebar-accent` 的 hover 会与
     // 静止面渲染成同色（browser e2e 守这条色差）。
     item: 'relative m-0 p-0 group-data-[state=collapsed]:hover:bg-sidebar-accent-foreground/10 group-data-[state=collapsed]:hover:rounded-sm',
     button: [

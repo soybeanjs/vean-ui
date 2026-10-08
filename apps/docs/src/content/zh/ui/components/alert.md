@@ -74,7 +74,7 @@ head:
 
 ### Roadmap
 
-全宽 `Banner` 变体记录在 `docs/roadmap.md`（P2）。
+全宽 `Banner` 变体记录在 `docs/roadmap/README.md`（P2）。
 
 ## FAQ
 

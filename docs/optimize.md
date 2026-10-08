@@ -8,7 +8,7 @@
 >
 > **方法：** CodeGraph 1.5.0 全量代码图谱 + workspace 清单、配置、生成物与文档交叉校验
 >
-> **2026-09 注记：** 本评估反映 2026-09-06 基线（含 admin / chart / ui-x 共 9 个发布包、14 个子 workspace）。其后 `@soybeanjs/ui-x` 整包移除（AI 组件回归核心 aria/ui，见 [ui-ai-roadmap.md](./ui-ai-roadmap.md)），中后台壳方向亦明确为核心内领域（aria `src/shell/` + ui 复合组件，见 [ui-shell-roadmap.md](./ui-shell-roadmap.md)）；当前为 7 packages + 2 apps + skills 共 10 个子 workspace、6 个发布包（含 ui-skills）。下文中涉及外围包的包清单、构建链（`… → ui-x → …`）与生成路径均为当时事实，阅读时按此注记折算。
+> **2026-09 注记：** 本评估反映 2026-09-06 基线（含 admin / chart / ui-x 共 9 个发布包、14 个子 workspace）。其后 `@soybeanjs/ui-x` 整包移除（AI 组件回归核心 aria/ui，见 [ui-ai-roadmap.md](./roadmap/ui-ai-roadmap.md)），中后台壳方向亦明确为核心内领域（aria `src/shell/` + ui 复合组件，见 [ui-shell-roadmap.md](./roadmap/ui-shell-roadmap.md)）；当前为 7 packages + 2 apps + skills 共 10 个子 workspace、6 个发布包（含 ui-skills）。下文中涉及外围包的包清单、构建链（`… → ui-x → …`）与生成路径均为当时事实，阅读时按此注记折算。
 
 ## 1. 结论摘要
 
@@ -209,7 +209,7 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
   `year-picker`、`year-range-picker`；此前 `input-number`/`number-input`
   命名分歧已解决。`DocMd` 按相同 path 切换 locale，剩余差异仍可能导致语言
   切换 404。
-- **已解决：** `docs/roadmap.md` 与 `docs/components.md` 曾以不同 shipped
+- **已解决：** `docs/roadmap/README.md` 与 `docs/components.md` 曾以不同 shipped
   计数为基线（87/88），现已统一；rating 的应用生成面缺口已消除。（`components.md`
   已于 2026-09 并入 `roadmap.md`，两文档手工双维护的根因随之消除。）
 - **已解决：** API/changelog 生成器曾把当前时间写入 `generatedAt`，使“重新生成后
@@ -321,7 +321,7 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
   menu、menubar、nav-menu、select、split-nav、textarea、tooltip）；浮层、
   键盘导航和颜色对比场景仍按风险清单扩展。
 - `packages/aria`（以及 ui-x/admin/chart）已定义 `vue-tsc --noEmit
---skipLibCheck` 的 workspace `typecheck` script；仅 `apps/nuxt` 仍未定义，
+  --skipLibCheck` 的 workspace `typecheck` script；仅 `apps/nuxt` 仍未定义，
   递归 typecheck 不能证明它可作为独立单元通过。
 
 **建议：**

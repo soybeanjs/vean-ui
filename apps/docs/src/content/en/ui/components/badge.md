@@ -71,7 +71,7 @@ Use it for unread counts, notification badges, status dots, or any small label a
 
 ### Roadmap
 
-Count formatting (`max`, rendering `99+`), a bare `dot` mode, and `offset` positioning are evaluated enhancements carried in `docs/roadmap.md` — they are not part of the current public API.
+Count formatting (`max`, rendering `99+`), a bare `dot` mode, and `offset` positioning are evaluated enhancements carried in `docs/roadmap/README.md` — they are not part of the current public API.
 
 ## FAQ
 

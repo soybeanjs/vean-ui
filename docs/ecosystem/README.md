@@ -1,10 +1,10 @@
 # Vean 领域提案与生态工具链
 
-> 本目录存放**未来领域提案**（editor / table / form / ui-pro）、商业化策略建议，以及 vean 源码分发工具链文档，是 [roadmap.md](../roadmap.md)「领域扩展路线」的展开。
+> 本目录存放**未来领域提案**（editor / table / form / ui-pro）、商业化策略建议，以及 vean 源码分发工具链文档，是 [roadmap.md](../roadmap/README.md)「领域扩展路线」的展开。
 >
 > **现状（2026-09）：仓库不包含任何外围 npm 包。**
 >
-> - AI/chat 与中后台壳已确定为**核心内领域**，在 `@vean/aria` + `@vean/ui` 内实现，分别见 [ui-ai-roadmap.md](../ui-ai-roadmap.md) 与 [ui-shell-roadmap.md](../ui-shell-roadmap.md)。
+> - AI/chat 与中后台壳已确定为**核心内领域**，在 `@vean/aria` + `@vean/ui` 内实现，分别见 [ui-ai-roadmap.md](../roadmap/ui-ai-roadmap.md) 与 [ui-shell-roadmap.md](../roadmap/ui-shell-roadmap.md)。
 > - `@soybeanjs/ui-x`（2026-09 移除）、`@soybeanjs/admin` / `@soybeanjs/chart`（v0.40.0 取消）均不再存在；图表改为文档站基于 [TanStack Charts](https://tanstack.com/charts) 的 shadcn 风格示例（`apps/docs/src/examples/chart/`）。
 > - 下列提案写于「外围包单包自治」时期，**包形态、lockstep、跨包白名单等前提已不适用**：每个提案立项时必须先做形态决策（并入核心 ui / 独立包 / vean 源码配方，三选一），必要时新立 ADR。调研结论与竞品分析仍然有效。
 >

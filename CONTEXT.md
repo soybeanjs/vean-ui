@@ -91,7 +91,7 @@ localStorage 里的单一条目（键 `__VEAN_THEME`），携带 schema 版本�
 
 ## 外围包（peripheral package）
 
-围绕核心 `@vean/aria` + `@vean/ui` 构建的领域扩展包。**当前仓库没有外围包**：`@soybeanjs/ui-x`（AI 组件）已于 2026-09 整包移除，AI/chat 组件改为在核心 aria/ui 内按标准两层契约实现（统一 `S` 前缀，领域逻辑放 aria `src/ai/`，见 [docs/ui-ai-roadmap.md](./docs/ui-ai-roadmap.md)）；`@soybeanjs/admin` 中后台方向同样回迁为核心内**壳领域**（aria `src/shell/` + ui 复合组件，见 [docs/ui-shell-roadmap.md](./docs/ui-shell-roadmap.md)）。未来领域（editor/table/form/ui-pro 等）是否采用外围包形态须立项时按 [docs/ecosystem/README.md](./docs/ecosystem/README.md) 决策；若采用，每个外围包为单一包（领域逻辑与样式同居），不另建"领域逻辑包"。图表不作为任何包交付：文档站直接基于 [TanStack Charts](https://tanstack.com/charts) 展示 shadcn 风格示例（`@soybeanjs/chart` 曾规划，已于 v0.40.0 移除）。
+围绕核心 `@vean/aria` + `@vean/ui` 构建的领域扩展包。**当前仓库没有外围包**：`@soybeanjs/ui-x`（AI 组件）已于 2026-09 整包移除，AI/chat 组件改为在核心 aria/ui 内按标准两层契约实现（统一 `S` 前缀，领域逻辑放 aria `src/ai/`，见 [docs/roadmap/ui-ai-roadmap.md](./docs/roadmap/ui-ai-roadmap.md)）；`@soybeanjs/admin` 中后台方向同样回迁为核心内**壳领域**（aria `src/shell/` + ui 复合组件，见 [docs/roadmap/ui-shell-roadmap.md](./docs/roadmap/ui-shell-roadmap.md)）。未来领域（editor/table/form/ui-pro 等）是否采用外围包形态须立项时按 [docs/ecosystem/README.md](./docs/ecosystem/README.md) 决策；若采用，每个外围包为单一包（领域逻辑与样式同居），不另建"领域逻辑包"。图表不作为任何包交付：文档站直接基于 [TanStack Charts](https://tanstack.com/charts) 展示 shadcn 风格示例（`@soybeanjs/chart` 曾规划，已于 v0.40.0 移除）。
 
 ## 原子原语（atomic primitive）
 

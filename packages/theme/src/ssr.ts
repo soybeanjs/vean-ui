@@ -3,7 +3,7 @@ import { THEME_STORAGE_KEY, THEME_STYLE_ID } from './storage';
 import type { DarkSelectorValue } from './types';
 
 /**
- * First-paint helpers (docs/theme.md §6.3).
+ * First-paint helpers (docs/design/theme.md §6.3).
  *
  * The mechanism is a **single runtime `<style id="vean-theme">` owned by the
  * head script and taken over by the provider**:

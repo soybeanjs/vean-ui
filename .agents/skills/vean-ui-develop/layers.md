@@ -82,7 +82,7 @@ The families below pass the deletion test or R8 and are frequently misjudged as 
 | `tree-nav` / `split-nav`                                    | Overflow measurement reflow (ResizeObserver), shell split-navigation composition                  |
 | `spinner` / `icon` / `theme-mode-switch` / `palette-picker` | UI-only, or composed from existing primitives (R3)                                                |
 
-Roadmap items expected to be UI-only or a composition — apply the deletion test before opening an aria directory: `Statistic`, `Result`, `Space`, `Banner`, `GradientText`, `Blockquote`, `Descriptions` (definition-list anatomy only), `Typography` (style convention only). `Upload`, `TreeSelect`, `Mention` and `Dropzone` carry real interaction and follow R2 normally. Component evaluation details: [docs/roadmap.md](../../../docs/roadmap.md).
+Roadmap items expected to be UI-only or a composition — apply the deletion test before opening an aria directory: `Statistic`, `Result`, `Space`, `Banner`, `GradientText`, `Blockquote`, `Descriptions` (definition-list anatomy only), `Typography` (style convention only). `Upload`, `TreeSelect`, `Mention` and `Dropzone` carry real interaction and follow R2 normally. Component evaluation details: [docs/roadmap/README.md](../../../docs/roadmap/README.md).
 
 ### Implementation order
 

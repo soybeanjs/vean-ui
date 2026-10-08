@@ -4,7 +4,7 @@
 
 For any AI assistant editing files under `packages/unocss/`:
 
-1. Read [docs/theme.md](../../docs/theme.md) **§0.4 (consumption)** and **§5 (the adapter)** before changing the mapping. The token contract itself belongs to `@vean/theme` — see [packages/theme/AGENTS.md](../theme/AGENTS.md).
+1. Read [docs/design/theme.md](../../docs/design/theme.md) **§0.4 (consumption)** and **§5 (the adapter)** before changing the mapping. The token contract itself belongs to `@vean/theme` — see [packages/theme/AGENTS.md](../theme/AGENTS.md).
 2. For `**/*.{ts,tsx,js,jsx}` edits, also load the global `typescript-functional-style` skill.
 
 **Package:** `packages/unocss/` → publishes as `@vean/unocss`

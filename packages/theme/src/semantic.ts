@@ -5,7 +5,7 @@ import type { PaletteLevel, TokenRule } from './types';
  *
  * This module is the **single source of truth** for token semantics — the
  * engine, the UnoCSS mapping and the acceptance tests all read from here
- * (docs/theme.md §3).
+ * (docs/design/theme.md §3).
  *
  * Names are the shadcn vocabulary, unprefixed: `background` / `card` /
  * `popover` for the elevation axis, `muted` / `accent` / `secondary` for fills,
@@ -32,7 +32,7 @@ export type RoleRampRole = (typeof ROLE_RAMP_ROLES)[number];
 
 /**
  * the two token suffixes every status exposes: the solid fill and the text
- * drawn on it (docs/theme.md §3.6).
+ * drawn on it (docs/design/theme.md §3.6).
  *
  * A status is a **solid role**: `--destructive` is the fill and
  * `--destructive-foreground` the on-solid text, exactly as in shadcn. The
@@ -51,7 +51,7 @@ export type StatusToken = `${StatusName}${(typeof STATUS_SUFFIXES)[number]}`;
 
 /**
  * the chart series derivation: each `chart-N` is a level of the **primary**
- * palette (docs/theme.md §3.8).
+ * palette (docs/design/theme.md §3.8).
  *
  * A chart series is a monochrome ramp of the brand hue rather than a palette of
  * its own, so re-colouring the charts is the same knob as re-colouring the brand:
@@ -80,7 +80,7 @@ export const CHART_TOKENS = Object.keys(CHART_RAMP) as ChartToken[];
 /**
  * the elevation axis, ordered from "closest to the page" to "furthest": the
  * invariant `lum(background) < lum(card) ≤ lum(popover)` must hold in both
- * modes (docs/theme.md §3.1).
+ * modes (docs/design/theme.md §3.1).
  */
 export const SURFACE_TOKENS = ['background', 'card', 'popover'] as const;
 
@@ -93,7 +93,7 @@ export const FILL_TOKENS = ['muted', 'accent', 'accent-foreground', 'secondary',
  * the text roles (the `foreground` ladder).
  *
  * `foreground` / `muted-foreground` are the two tiers of neutral text
- * (docs/theme.md §3.3); the weaker emphasis levels are expressed as an alpha on
+ * (docs/design/theme.md §3.3); the weaker emphasis levels are expressed as an alpha on
  * the same token (`text-muted-foreground/70`), so there is no third tier.
  *
  * `card-foreground` / `popover-foreground` exist because shadcn's raised
@@ -133,13 +133,13 @@ export const CARBON_TOKENS = ['carbon'] as const;
  * It is a **surface-agnostic black**: the token holds the black channels and
  * carries its concentration in the numeric companion (`--mask-alpha`, 0.25 light
  * / 0.30 dark), so one token replaces the `bg-black/25 dark:bg-black/30`
- * duplication that every modal overlay used to restate (docs/theme.md §3.1 / §3.10).
+ * duplication that every modal overlay used to restate (docs/design/theme.md §3.1 / §3.10).
  */
 export const MASK_TOKENS = ['mask'] as const;
 
 /**
  * the region (region axis) roles: the sidebar mirrors global roles and adds the
- * two shadcn pairs that make a sidebar self-sufficient (docs/theme.md §3.9).
+ * two shadcn pairs that make a sidebar self-sufficient (docs/design/theme.md §3.9).
  */
 export const REGION_TOKENS = [
   'sidebar',
@@ -164,7 +164,7 @@ export type RegionToken = (typeof REGION_TOKENS)[number];
  * hairline: `oklch(100% 0 0 / 0.1)` for the lines, `/ 0.15` for `input`); a
  * naked channel cannot carry alpha inside one variable, so each pairs with
  * `--{token}-alpha` and consumers compose them
- * (`hsl(var(--border) / var(--border-alpha))`, docs/theme.md §3.4).
+ * (`hsl(var(--border) / var(--border-alpha))`, docs/design/theme.md §3.4).
  *
  * `borderOpacity` scales this whole family and nothing else.
  */
@@ -218,7 +218,7 @@ export type SemanticToken = CoreToken | StatusToken | ChartToken;
  * membership before the value can reach the emitter — an unknown key would
  * otherwise be spread into the mode map and emitted as a declaration for a token
  * that does not exist (and, when only one mode is overridden, make the emitter
- * read `undefined` for the other mode and throw, docs/theme.md §6.2).
+ * read `undefined` for the other mode and throw, docs/design/theme.md §6.2).
  */
 export const isSemanticToken = (value: string): value is SemanticToken =>
   (SEMANTIC_TOKENS as readonly string[]).includes(value);
@@ -251,7 +251,7 @@ export const CORE_RULES: Record<CoreToken, TokenRule> = {
   mask: { kind: 'simple', light: 'black', dark: 'black' },
   // —— fills ——
   // 弱档（`{b}.100` / `{b}.800`）留给静态弱化面与瞬时交互面：`muted` 与 `accent` 同档是有意的
-  // （对齐 shadcn 默认），瞬时可见性由配方的 alpha 阶梯承担（docs/theme.md §3.2）。
+  // （对齐 shadcn 默认），瞬时可见性由配方的 alpha 阶梯承担（docs/design/theme.md §3.2）。
   muted: { kind: 'level', source: 'base', light: 100, dark: 800 },
   accent: { kind: 'level', source: 'base', light: 100, dark: 800 },
   'accent-foreground': { kind: 'level', source: 'base', light: 900, dark: 50 },
@@ -328,7 +328,7 @@ export const CORE_RULES: Record<CoreToken, TokenRule> = {
  * Dark mode draws hairline whites (`oklch(100% 0 0 / 0.1)` before the refactor),
  * which cannot carry alpha inside a single channel variable
  * (`hsl(var(--vean-x) / a)` requires `--vean-x` to be alpha-free), hence a separate
- * numeric variable (docs/theme.md §4.4). `borderOpacity` scales the border
+ * numeric variable (docs/design/theme.md §4.4). `borderOpacity` scales the border
  * family; the mask's concentration is a design value of its own (0.25 light /
  * 0.30 dark) and is deliberately not tied to that knob.
  */

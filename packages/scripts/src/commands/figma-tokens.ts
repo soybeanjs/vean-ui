@@ -13,14 +13,14 @@ import {
 import type { LiteralToken, PaletteKey, SimpleColorName, ThemeMode } from '@vean/theme';
 
 /**
- * Design-token export for Figma (docs/figma.md).
+ * Design-token export for Figma (docs/design/figma.md).
  *
  * Ported from the same `resolveThemeMap` / `resolveThemeColors` the CSS emitter
  * uses, so the design artifact and the stylesheet can never disagree — the
  * engine's own JS resolution exists for exactly this ("exporting a theme to a
  * non-CSS target", packages/theme/src/resolve.ts).
  *
- * Two deliberate projection decisions, both documented in docs/figma.md:
+ * Two deliberate projection decisions, both documented in docs/design/figma.md:
  *
  * 1. **Values are resolved, not referenced.** The CSS layer aliases semantic
  *    tokens to palette channels (`--background: var(--zinc-50)`); here every

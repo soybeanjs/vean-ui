@@ -5,7 +5,7 @@ import type { JsonObject } from '../shared/json';
 
 /**
  * The component prop vocabulary, projected from the generated API data
- * (`pnpm sui gen api`) for the Figma package in docs/figma.md.
+ * (`pnpm sui gen api`) for the Figma package in docs/design/figma.md.
  *
  * This is deliberately **not** a variant matrix. The API data describes each
  * symbol's props, and `@soybeanjs/cva` recipes constrain those props with

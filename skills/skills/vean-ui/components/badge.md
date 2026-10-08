@@ -118,7 +118,7 @@ Events for the badge root element.
 
 ### Roadmap
 
-Count formatting (`max`, rendering `99+`), a bare `dot` mode, and `offset` positioning are evaluated enhancements carried in `docs/roadmap.md` — they are not part of the current public API.
+Count formatting (`max`, rendering `99+`), a bare `dot` mode, and `offset` positioning are evaluated enhancements carried in `docs/roadmap/README.md` — they are not part of the current public API.
 
 ## FAQ
 

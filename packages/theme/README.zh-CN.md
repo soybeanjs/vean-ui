@@ -7,11 +7,11 @@
 [![npm downloads](https://img.shields.io/npm/dt/@vean/theme)](https://www.npmjs.com/package/@vean/theme)
 [![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-> 完整设计规格、token 契约与 AI Agent 接入手册见 [docs/theme.md](../../docs/theme.md)(本文只覆盖包级用法)。
+> 完整设计规格、token 契约与 AI Agent 接入手册见 [docs/design/theme.md](../../docs/design/theme.md)(本文只覆盖包级用法)。
 
 Vean 主题引擎:**静态调色板层 + 语义别名层**——一张声明式映射表,不含任何测量或修正。
 
-> 状态:✅ 已实施(第一代引擎已退役,本包是唯一实现;设计以 [docs/theme.md](../../docs/theme.md) 为准)。
+> 状态:✅ 已实施(第一代引擎已退役,本包是唯一实现;设计以 [docs/design/theme.md](../../docs/design/theme.md) 为准)。
 > 适配器与运行时(UnoCSS 预设、`SConfigProvider`、首帧脚本、持久化、定制面板)分别在 `@vean/unocss` 与 `@vean/ui`,不在本包内。
 
 ## 📦 安装
@@ -43,7 +43,7 @@ pnpm add @vean/theme
 
 ## 📐 维度刻度
 
-两条字面值刻度([space-control-scale.md](../../docs/space-control-scale.md)):
+两条字面值刻度([space-control-scale.md](../../docs/design/space-control-scale.md)):
 
 | 刻度             | 档位                                 | 值                                                                                                                                                                      |
 | :--------------- | :----------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -110,7 +110,7 @@ pnpm --filter @vean/theme build       # vp pack + dist/palette.css
 
 ## 📖 文档
 
-设计规格与 AI Agent 接入手册:[docs/theme.md](../../docs/theme.md) · 刻度依据:[docs/space-control-scale.md](../../docs/space-control-scale.md) · 文档站:[veanui.com](https://veanui.com)
+设计规格与 AI Agent 接入手册:[docs/design/theme.md](../../docs/design/theme.md) · 刻度依据:[docs/design/space-control-scale.md](../../docs/design/space-control-scale.md) · 文档站:[veanui.com](https://veanui.com)
 
 ## 📄 License
 

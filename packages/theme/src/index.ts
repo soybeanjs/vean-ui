@@ -1,7 +1,7 @@
 /**
  * @vean/theme — the Vean theme engine.
  *
- * Three layers (docs/theme.md):
+ * Three layers (docs/design/theme.md):
  * 1. **palette** (static, `generatePaletteCss`): 26 built-in palettes × 11 levels
  *    plus `white` / `black`, stored as naked channels so alpha composition and
  *    color inheritance both work.
@@ -18,7 +18,7 @@
  * every token takes, and `overrides` are applied verbatim.
  * Nothing is measured, shifted or corrected — readability is the theme author's
  * call, checked in the customizer or by `axe`, not an engine contract
- * (docs/theme.md §4.3).
+ * (docs/design/theme.md §4.3).
  */
 
 export { resolveThemeMap } from './theme-map';

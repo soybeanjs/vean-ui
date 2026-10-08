@@ -8,8 +8,8 @@ superseded（对 AI 域与 admin 壳域均失效；单包分层模型仅作为�
 >
 > 补注（2026-09）：
 >
-> 1. 最后的单包外围实例 `@soybeanjs/ui-x` 已整包移除，AI/chat 组件改为按标准 headless/ui 两层契约在核心库内重新实现，统一 `S` 前缀，准入判据与迁移决策见 [`docs/ui-ai-roadmap.md`](../ui-ai-roadmap.md)（决策 A1）。
-> 2. admin 壳组件回迁方向明确为**核心内领域**（不新建包）：领域逻辑进 `@vean/aria` 的 `shell` 域模块，复合组件进 `@vean/ui`，见 [`docs/ui-shell-roadmap.md`](../ui-shell-roadmap.md)（决策 S1/S2）。
+> 1. 最后的单包外围实例 `@soybeanjs/ui-x` 已整包移除，AI/chat 组件改为按标准 headless/ui 两层契约在核心库内重新实现，统一 `S` 前缀，准入判据与迁移决策见 [`docs/roadmap/ui-ai-roadmap.md`](../roadmap/ui-ai-roadmap.md)（决策 A1）。
+> 2. admin 壳组件回迁方向明确为**核心内领域**（不新建包）：领域逻辑进 `@vean/aria` 的 `shell` 域模块，复合组件进 `@vean/ui`，见 [`docs/roadmap/ui-shell-roadmap.md`](../roadmap/ui-shell-roadmap.md)（决策 S1/S2）。
 >
 > 自此仓库内不再有任何外围单包，本 ADR 全面 superseded；未来新领域立项时按 [`docs/ecosystem/README.md`](../ecosystem/README.md) 的形态决策（核心内 / 独立包 / sbean 配方）重新裁定。下文为历史决策记录，保留备查。
 
@@ -44,5 +44,5 @@ Vean 周边 UI 组件生态（ui-x / admin / chart …）在初始化时出现�
 ## 相关
 
 - [`docs/ecosystem/README.md`](../ecosystem/README.md) —— 领域提案索引与落地形态决策框架。
-- [`docs/ui-ai-roadmap.md`](../ui-ai-roadmap.md) / [`docs/ui-shell-roadmap.md`](../ui-shell-roadmap.md) —— 两个核心内领域的现行规划。
+- [`docs/roadmap/ui-ai-roadmap.md`](../roadmap/ui-ai-roadmap.md) / [`docs/roadmap/ui-shell-roadmap.md`](../roadmap/ui-shell-roadmap.md) —— 两个核心内领域的现行规划。
 - [`CONTEXT.md`](../../CONTEXT.md) —— 外围包 / 原子原语 / 包装型组件 术语定义。

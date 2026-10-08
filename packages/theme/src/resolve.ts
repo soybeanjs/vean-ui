@@ -16,7 +16,7 @@ import type {
 } from './types';
 
 /**
- * JS-side color resolution (docs/theme.md §3.1).
+ * JS-side color resolution (docs/design/theme.md §3.1).
  *
  * The CSS variables hold **naked channels**, which is what CSS needs (alpha
  * composition) but not what other consumers need (canvas, WebGL, color math,
@@ -57,7 +57,7 @@ const ALPHA_TOKEN_SET: ReadonlySet<string> = new Set(ALPHA_TOKENS);
  * fold a token's numeric alpha companion into its resolved color.
  *
  * The CSS side composes it where it is consumed
- * (`hsl(var(--border) / var(--border-alpha))`, docs/theme.md §3.4 / §3.10);
+ * (`hsl(var(--border) / var(--border-alpha))`, docs/design/theme.md §3.4 / §3.10);
  * the JS side has to return the same color, or the dark border would resolve to
  * an opaque white here and a 10% white in the browser (§3.1 — JS and CSS never
  * disagree).

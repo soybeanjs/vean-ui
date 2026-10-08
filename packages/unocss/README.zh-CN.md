@@ -93,8 +93,8 @@ export default defineConfig({
 
 ## 📖 文档
 
-- 主题引擎与 token 契约:[docs/theme.md](../../docs/theme.md)(§0 是 AI Agent 手册)
-- 刻度依据:[docs/space-control-scale.md](../../docs/space-control-scale.md)
+- 主题引擎与 token 契约:[docs/design/theme.md](../../docs/design/theme.md)(§0 是 AI Agent 手册)
+- 刻度依据:[docs/design/space-control-scale.md](../../docs/design/space-control-scale.md)
 - 文档站:[veanui.com](https://veanui.com)
 
 ## 📄 License

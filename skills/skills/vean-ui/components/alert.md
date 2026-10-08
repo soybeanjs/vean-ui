@@ -194,7 +194,7 @@ Events for the AlertRoot component.
 
 ### Roadmap
 
-A full-width `Banner` variant is tracked in `docs/roadmap.md` (P2).
+A full-width `Banner` variant is tracked in `docs/roadmap/README.md` (P2).
 
 ## FAQ
 

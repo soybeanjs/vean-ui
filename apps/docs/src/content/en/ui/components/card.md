@@ -73,7 +73,7 @@ The card is **collapsible by default** — the content area animates open/closed
 
 ### Roadmap
 
-No blocking gaps identified for the core card API. A `card`-level interactive action bar / `CardActions` shortcut and hover-lift style variants are evaluated enhancements tracked in `docs/roadmap.md`.
+No blocking gaps identified for the core card API. A `card`-level interactive action bar / `CardActions` shortcut and hover-lift style variants are evaluated enhancements tracked in `docs/roadmap/README.md`.
 
 ## FAQ
 

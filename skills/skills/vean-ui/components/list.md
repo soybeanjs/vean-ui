@@ -117,7 +117,7 @@ Slots for the ListItem component.
 
 ### Roadmap
 
-A built-in virtualized list or a `dataSource`/`renderItem` config mode is evaluated as an enhancement, delegated to the standalone `virtualizer` today (see `docs/roadmap.md`).
+A built-in virtualized list or a `dataSource`/`renderItem` config mode is evaluated as an enhancement, delegated to the standalone `virtualizer` today (see `docs/roadmap/README.md`).
 
 ## FAQ
 

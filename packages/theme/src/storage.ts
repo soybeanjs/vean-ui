@@ -4,7 +4,7 @@ import { isSemanticToken } from './semantic';
 import type { SemanticToken, SurfaceStyle, ThemeModePreference, ThemeOptions, ThemeOverrides } from './types';
 
 /**
- * Persistence (docs/theme.md §6.2).
+ * Persistence (docs/design/theme.md §6.2).
  *
  * One key, one envelope, one writer:
  *
@@ -33,7 +33,7 @@ export const THEME_STORAGE_KEY = '__VEAN_THEME';
  * `foreground-subtle`). A pre-v2 payload is therefore **translated**, not
  * discarded: `migrateTokenKey` renames what has a v2 counterpart, drops the rest,
  * and the unreadable first-paint snapshot is dropped so the provider re-emits it
- * on mount (docs/theme.md §6.2).
+ * on mount (docs/design/theme.md §6.2).
  *
  * Older-but-known versions are accepted on purpose (a returning user keeps their
  * theme); only a **future** version is refused, because that shape cannot be
@@ -118,7 +118,7 @@ function isThemeFont(value: unknown): boolean {
 }
 
 /**
- * the token renames a pre-v2 payload still speaks (docs/theme.md §3.12 / §6.2).
+ * the token renames a pre-v2 payload still speaks (docs/design/theme.md §3.12 / §6.2).
  */
 const V1_TOKEN_ALIASES: Readonly<Record<string, string>> = {
   surface: 'card',
@@ -134,7 +134,7 @@ const V1_TOKEN_ALIASES: Readonly<Record<string, string>> = {
  * the deleted `border-strong` / `foreground-subtle` / `{s}-text` / `{s}-subtle`
  * / `{s}-border` roles, and anything a hand-edited payload invented. Returning
  * `undefined` is what keeps the engine's promise that every emitted declaration
- * belongs to the contract (docs/theme.md §6.2).
+ * belongs to the contract (docs/design/theme.md §6.2).
  */
 function migrateTokenKey(key: string, version: number): SemanticToken | undefined {
   if (isSemanticToken(key)) {

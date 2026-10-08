@@ -1,9 +1,9 @@
 # Figma 设计资源：`sui gen figma`
 
 > 定位：把 `@vean/theme` 的 **token** 与 `@vean/ui` 的**组件取值词汇**导出成 Figma 可直接导入的产物（`apps/docs/public/figma/`），回答"组件库怎么变出对应的设计资源"。读者：设计维护者、前端维护者、**AI Agent**。
-> 状态：✅ 已实施。生成物随 `pnpm sui gen figma` 提交，受 `pnpm check:generated` 漂移闸门约束。真相源是 [`packages/scripts/src/commands/figma-tokens.ts`](../packages/scripts/src/commands/figma-tokens.ts)（token 投影）、[`figma-components.ts`](../packages/scripts/src/commands/figma-components.ts)（prop 词汇表）、[`figma.ts`](../packages/scripts/src/commands/figma.ts)（写入编排）。
+> 状态：✅ 已实施。生成物随 `pnpm sui gen figma` 提交，受 `pnpm check:generated` 漂移闸门约束。真相源是 [`packages/scripts/src/commands/figma-tokens.ts`](../../packages/scripts/src/commands/figma-tokens.ts)（token 投影）、[`figma-components.ts`](../../packages/scripts/src/commands/figma-components.ts)（prop 词汇表）、[`figma.ts`](../../packages/scripts/src/commands/figma.ts)（写入编排）。
 > 基线：2026-10-03 · 分支 `main` · 版本 `0.50.0-beta.3`
-> 相关：[theme.md](./theme.md)（三层 token 契约与引擎 API）· [space-control-scale.md](./space-control-scale.md)（spacing / radius 两族刻度）· [ecosystem/commercialization.md](./ecosystem/commercialization.md)（完整 kit 的商业化位）
+> 相关：[theme.md](./theme.md)（三层 token 契约与引擎 API）· [space-control-scale.md](./space-control-scale.md)（spacing / radius 两族刻度）· [ecosystem/commercialization.md](../ecosystem/commercialization.md)（完整 kit 的商业化位）
 
 ---
 
@@ -17,13 +17,13 @@
 pnpm sui gen figma        # 生成 4 个文件（离线、确定性、可重复）
 ```
 
-| 问题                         | 答案                                                                                                         |
-| :--------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| 需要设计人力吗               | 不需要。跑一次命令 + 导入一次即可                                                                            |
-| 主题改了怎么办               | 重跑命令，再用 **Import mode** 覆盖 Figma 侧已有 mode（§3.2）                                                |
-| 能拿到组件库的变体**结构**吗 | 只有**取值词汇表**，没有交叉约束（§5.1）                                                                     |
-| 是一套画好的组件库吗         | 不是。component set 仍需按词汇表搭建，属 [commercialization.md](./ecosystem/commercialization.md) 的商业化位 |
-| 生成的 JSON 能提交/部署吗    | 能。落在 `apps/docs/public/figma/`，docs 站部署后可直接下载                                                  |
+| 问题                         | 答案                                                                                                          |
+| :--------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| 需要设计人力吗               | 不需要。跑一次命令 + 导入一次即可                                                                             |
+| 主题改了怎么办               | 重跑命令，再用 **Import mode** 覆盖 Figma 侧已有 mode（§3.2）                                                 |
+| 能拿到组件库的变体**结构**吗 | 只有**取值词汇表**，没有交叉约束（§5.1）                                                                      |
+| 是一套画好的组件库吗         | 不是。component set 仍需按词汇表搭建，属 [commercialization.md](../ecosystem/commercialization.md) 的商业化位 |
+| 生成的 JSON 能提交/部署吗    | 能。落在 `apps/docs/public/figma/`，docs 站部署后可直接下载                                                   |
 
 ---
 

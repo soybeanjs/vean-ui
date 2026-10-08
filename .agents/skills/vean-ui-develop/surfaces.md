@@ -161,7 +161,7 @@ Common groups:
 - `aria`
 - `charts` (docs-site TanStack Charts examples — there is no chart package)
 
-AI/chat components live in the core `@vean/aria` / `@vean/ui` packages (unified `S` prefix) and use the core group set above; there is no separate AI package. Component plan and group placement: [docs/ui-ai-roadmap.md](../../../docs/ui-ai-roadmap.md). The admin shell direction is likewise an in-core domain (`src/shell` aria module + ui composites): [docs/ui-shell-roadmap.md](../../../docs/ui-shell-roadmap.md).
+AI/chat components live in the core `@vean/aria` / `@vean/ui` packages (unified `S` prefix) and use the core group set above; there is no separate AI package. Component plan and group placement: [docs/roadmap/ui-ai-roadmap.md](../../../docs/roadmap/ui-ai-roadmap.md). The admin shell direction is likewise an in-core domain (`src/shell` aria module + ui composites): [docs/roadmap/ui-shell-roadmap.md](../../../docs/roadmap/ui-shell-roadmap.md).
 
 ### Quality requirements
 

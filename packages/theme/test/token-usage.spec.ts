@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { ALPHA_TOKENS, LITERAL_DEFAULTS, PALETTE_LEVELS, ROLE_RAMP_ROLES, SEMANTIC_TOKENS } from '../src/index';
 
 /**
- * The token naming contract, enforced across the workspace (docs/theme.md §4.4,
+ * The token naming contract, enforced across the workspace (docs/design/theme.md §4.4,
  * acceptance §7-14): the **theme engine's** token vocabulary is unprefixed —
  * `--background`, `--card`, `--radius`, `--chart-1` — so a `var(--vean-background)`
  * is a stale reference. The prefix removal is scoped to that layer: the library's
@@ -18,7 +18,7 @@ import { ALPHA_TOKENS, LITERAL_DEFAULTS, PALETTE_LEVELS, ROLE_RAMP_ROLES, SEMANT
  * The palette layer (`--indigo-500`, `--white`) and third-party namespaces
  * (`--color-*`, `--un-*`, `--ts-*`) are never flagged; the storage key and the
  * style element id (`__VEAN_THEME`, `vean-theme`) are not variables at all and
- * are out of scope. `docs/theme.md` (outside the scanned roots) is where the
+ * are out of scope. `docs/design/theme.md` (outside the scanned roots) is where the
  * migration quotes the pre-realignment names.
  *
  * Scanned: the packages' sources and the docs app's authored files. Skipped:

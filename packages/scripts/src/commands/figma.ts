@@ -5,7 +5,7 @@ import { collectComponentProps, readComponentApiDocuments } from './figma-compon
 import { buildFigmaTokenDocuments } from './figma-tokens';
 
 /**
- * The committed Figma export (docs/figma.md), served by the docs site so a
+ * The committed Figma export (docs/design/figma.md), served by the docs site so a
  * designer can download it straight from the deployment.
  *
  * Four files, two audiences:

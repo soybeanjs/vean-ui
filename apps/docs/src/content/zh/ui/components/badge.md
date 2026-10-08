@@ -71,7 +71,7 @@ head:
 
 ### Roadmap
 
-数量格式化（`max`，渲染 `99+`）、纯 `dot` 模式与 `offset` 定位为已评估的增强项，记录在 `docs/roadmap.md`——它们不属于当前公共 API。
+数量格式化（`max`，渲染 `99+`）、纯 `dot` 模式与 `offset` 定位为已评估的增强项，记录在 `docs/roadmap/README.md`——它们不属于当前公共 API。
 
 ## FAQ
 

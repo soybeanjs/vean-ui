@@ -33,27 +33,27 @@ The pnpm workspace contains the private root project plus eleven child
 workspaces: seven publishable packages, two private packages, and two private
 applications.
 
-| Area                | Workspace           | Purpose                                                                                                                                                                               |
-| ------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Component logic     | `@vean/aria`        | State, behavior, a11y, focus, keyboard interaction, locale, and unstyled composition                                                                                                  |
-| Styled components   | `@vean/ui`          | `S`-prefixed wrappers, UnoCSS recipes, theme-facing props, Nuxt module, and resolver                                                                                                  |
-| Theme engine        | `@vean/theme`       | Theme option normalization, CSS-variable generation, dark derivation, SSR/storage                                                                                                     |
-| UnoCSS integration  | `@vean/unocss`      | UnoCSS preset, preflights, animations, fonts, and generated theme CSS                                                                                                                 |
-| AI conversation UI  | aria + ui (planned) | AI/chat components planned under the standard `S` prefix; see [ui-ai-roadmap.md](ui-ai-roadmap.md)                                                                                    |
-| Admin shell domain  | aria + ui (planned) | Shell modes, navigation model, and tabs state in a aria `shell` domain; `SLayoutShell` / `SShellMenu` / `SPageHeader` / `SLogo` in ui; see [ui-shell-roadmap.md](ui-shell-roadmap.md) |
-| Source distribution | `vean`              | CLI, registry, schemas, templates, and MCP tools for copy-source delivery                                                                                                             |
-| Repo service CLI    | `@vean/scripts`     | PRIVATE; `sui` CLI for metadata, API, changelog, locale, and skill generators                                                                                                         |
-| Agent distribution  | `@vean/skills`      | Generated, publishable Vean and Aria agent skills                                                                                                                                     |
-| Documentation       | `@vean/docs`        | ubean SSG documentation, API reference, changelog, and interactive demos                                                                                                              |
-| Integration fixture | `@vean/nuxt`        | Self-contained minimal Nuxt/UnoCSS integration fixture                                                                                                                                |
+| Area                | Workspace           | Purpose                                                                                                                                                                                         |
+| ------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Component logic     | `@vean/aria`        | State, behavior, a11y, focus, keyboard interaction, locale, and unstyled composition                                                                                                            |
+| Styled components   | `@vean/ui`          | `S`-prefixed wrappers, UnoCSS recipes, theme-facing props, Nuxt module, and resolver                                                                                                            |
+| Theme engine        | `@vean/theme`       | Theme option normalization, CSS-variable generation, dark derivation, SSR/storage                                                                                                               |
+| UnoCSS integration  | `@vean/unocss`      | UnoCSS preset, preflights, animations, fonts, and generated theme CSS                                                                                                                           |
+| AI conversation UI  | aria + ui (planned) | AI/chat components planned under the standard `S` prefix; see [ui-ai-roadmap.md](./roadmap/ui-ai-roadmap.md)                                                                                    |
+| Admin shell domain  | aria + ui (planned) | Shell modes, navigation model, and tabs state in a aria `shell` domain; `SLayoutShell` / `SShellMenu` / `SPageHeader` / `SLogo` in ui; see [ui-shell-roadmap.md](./roadmap/ui-shell-roadmap.md) |
+| Source distribution | `vean`              | CLI, registry, schemas, templates, and MCP tools for copy-source delivery                                                                                                                       |
+| Repo service CLI    | `@vean/scripts`     | PRIVATE; `sui` CLI for metadata, API, changelog, locale, and skill generators                                                                                                                   |
+| Agent distribution  | `@vean/skills`      | Generated, publishable Vean and Aria agent skills                                                                                                                                               |
+| Documentation       | `@vean/docs`        | ubean SSG documentation, API reference, changelog, and interactive demos                                                                                                                        |
+| Integration fixture | `@vean/nuxt`        | Self-contained minimal Nuxt/UnoCSS integration fixture                                                                                                                                          |
 
 There is no admin, chart, or standalone AI package. AI/chat components are
 planned to ship inside aria + ui under the standard `S` prefix, with domain
-logic in a aria `src/ai/` module (see [ui-ai-roadmap.md](ui-ai-roadmap.md)).
+logic in a aria `src/ai/` module (see [ui-ai-roadmap.md](./roadmap/ui-ai-roadmap.md)).
 The former admin direction returns as an in-core **shell domain**: shell mode
 orchestration, the unified navigation model, and router-agnostic tabs state
 land in a aria `src/shell/` module (subpath `/shell`), while composites
-ship in ui (see [ui-shell-roadmap.md](ui-shell-roadmap.md)).
+ship in ui (see [ui-shell-roadmap.md](./roadmap/ui-shell-roadmap.md)).
 Charts are deliberately outside the library: the docs site renders
 shadcn-styled demos built directly on
 [TanStack Charts](https://tanstack.com/charts), with a docs-local theming shell
@@ -395,7 +395,7 @@ Development and publication resolution differ:
 | UI public groups              | `packages/ui/src/index.ts`                                            |
 | Generated component inventory | each package's `src/constants/components.ts`                          |
 | Component development rules   | `.agents/skills/vean-ui-develop/`                                     |
-| Unshipped-component roadmap   | `docs/roadmap.md`                                                     |
+| Unshipped-component roadmap   | `docs/roadmap/README.md`                                              |
 | Workspace architecture        | this document                                                         |
 | Improvement backlog           | `docs/optimize.md`                                                    |
 

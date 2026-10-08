@@ -74,7 +74,7 @@ Use it for inline feedback that must not be missed. Prefer `toast` for transient
 
 ### Roadmap
 
-A full-width `Banner` variant is tracked in `docs/roadmap.md` (P2).
+A full-width `Banner` variant is tracked in `docs/roadmap/README.md` (P2).
 
 ## FAQ
 

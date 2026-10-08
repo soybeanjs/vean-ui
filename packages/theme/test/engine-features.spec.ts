@@ -43,7 +43,7 @@ const coefficientOf = (value: string): number => {
 
 /**
  * v2-only engine features: overrides, schemes, prefix, borderOpacity
- * and the base-token tables (docs/theme.md §3.6–§3.11, §4.2).
+ * and the base-token tables (docs/design/theme.md §3.6–§3.11, §4.2).
  */
 
 describe('schemes drive the status and chart tokens', () => {
@@ -158,7 +158,7 @@ describe('overrides win outright', () => {
   });
 
   it('accepts every documented override form and emits a channel triple for each', () => {
-    // `ColorValue` 的四种形态（docs/theme.md §4.2）：palette.level 引用、简单键、
+    // `ColorValue` 的四种形态（docs/design/theme.md §4.2）：palette.level 引用、简单键、
     // hsl()、oklch()。断言的是**契约**而不是逐字输出：CSS 侧永远是通道或引用，
     // JS 侧永远是可用的完整色。
     const forms: { token: SemanticToken; value: ColorValue }[] = [
@@ -621,7 +621,7 @@ describe('palette layer formats and base tokens', () => {
     expect(SPACING_GRID_COEFFICIENTS.md * 0.25).toBeCloseTo(1, 10);
     expect(SPACING_GRID_COEFFICIENTS.lg * 0.25).toBeCloseTo(1.125, 10);
 
-    // 控件高度不进字面量层（docs/space-control-scale.md §3.1）：8 档本来就等于数字
+    // 控件高度不进字面量层（docs/design/space-control-scale.md §3.1）：8 档本来就等于数字
     // height 刻度（`h-5`…`h-14`），且库内零消费
     expect(Object.keys(literal).filter(key => key.includes('control'))).toEqual([]);
   });

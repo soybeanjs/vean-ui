@@ -68,7 +68,7 @@ Layer 4  @soybeanjs/editor ──► @soybeanjs/{ui, headless, theme}
 
 - 单包自治（ADR-0001）：不建 headless-editor 中间层——Tiptap 本身就是 headless 内核，本包是「styled + 组合」层，角色类似 `packages/ui` 之于 aria，但内生于单包。
 - 跨包依赖：默认无；未来若需在 admin 表单中嵌入，由 admin 声明 `editor` optional peerDep（需先在 CONTEXT.md 白名单加边）。
-- **内核 peer 策略**：`@tiptap/core`、`@tiptap/vue-3` 为 peer dependency（用户自选版本）；`@tiptap/starter-kit` 等扩展按需 peer 或 optional peer（对齐核心 AI markdown 组件对 shiki/mermaid 的 optional peer 模式，见 [../ui-ai-roadmap.md](../ui-ai-roadmap.md)）。
+- **内核 peer 策略**：`@tiptap/core`、`@tiptap/vue-3` 为 peer dependency（用户自选版本）；`@tiptap/starter-kit` 等扩展按需 peer 或 optional peer（对齐核心 AI markdown 组件对 shiki/mermaid 的 optional peer 模式，见 [../ui-ai-roadmap.md](../roadmap/ui-ai-roadmap.md)）。
 
 ### 2.2 包结构（目标形态）
 
@@ -103,7 +103,7 @@ packages/editor/
 | 内核与扩展    | **仅使用 MIT 部分**：core / vue-3 / 全部基础扩展 + 2025-06 已开源的 8 个原 Pro 扩展（DragHandle、FileHandler、Mathematics、Emoji、Details、TableOfContents、InvisibleCharacters、UniqueID）  |
 | UI 层         | 全部自建（参考 MIT 社区项目 shadcn-tiptap / minimal-tiptap 的组件切分；官方付费 UI Components 仅作视觉参考，禁止抄代码）                                                                     |
 | 协作          | 官方 Collaboration / Cloud Documents 为付费 bundle——**不依赖**；提供 Y.js 集成点（用户自建 Hocuspocus OSS 或购买 Tiptap Cloud 均可，`@tiptap/extension-collaboration` 当前许可在立项时验证） |
-| AI            | Content AI 付费——不依赖；slash 命令与 ai-elements 式交互留集成点（可对接核心库 `SSender` / `useStream` 流式能力自建免费方案，见 [ui-ai-roadmap](../ui-ai-roadmap.md)）                       |
+| AI            | Content AI 付费——不依赖；slash 命令与 ai-elements 式交互留集成点（可对接核心库 `SSender` / `useStream` 流式能力自建免费方案，见 [ui-ai-roadmap](../roadmap/ui-ai-roadmap.md)）               |
 | DOCX 导入导出 | Conversion 付费——不依赖；Markdown 双向自建（markdown-it / tiptap markdown 扩展，MIT）；DOCX 留待需求信号                                                                                     |
 
 ## 3. 核心功能

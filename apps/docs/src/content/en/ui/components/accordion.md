@@ -78,7 +78,7 @@ Use it for FAQs, settings groups, collapsible navigation, or any "expand to reve
 
 ### Roadmap
 
-No blocking gaps identified for the core accordion API. A bordered `variant` set and a `left`-icon trigger layout are evaluated as enhancements tracked in `docs/roadmap.md`.
+No blocking gaps identified for the core accordion API. A bordered `variant` set and a `left`-icon trigger layout are evaluated as enhancements tracked in `docs/roadmap/README.md`.
 
 ## FAQ
 

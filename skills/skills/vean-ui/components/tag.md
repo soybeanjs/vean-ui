@@ -94,7 +94,7 @@ The Aria `Tag` is a minimal present/close state primitive, and `STag` keeps all 
 
 ### Roadmap
 
-No blocking gaps identified for the core tag API. A dedicated standalone `tag-group` and `checkable` tag behavior are evaluated enhancements tracked in `docs/roadmap.md`.
+No blocking gaps identified for the core tag API. A dedicated standalone `tag-group` and `checkable` tag behavior are evaluated enhancements tracked in `docs/roadmap/README.md`.
 
 ## FAQ
 

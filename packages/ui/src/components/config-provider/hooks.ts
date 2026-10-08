@@ -15,7 +15,7 @@ import { createThemeContext, provideThemeContext } from './use-theme';
  * keeps its content in sync. Nothing is rendered into the component tree, so
  * there is no server/client style-content mismatch and no `!important` dance —
  * precedence comes from specificity (the static default layer ships
- * `:where(...)`-weakened, docs/theme.md §6.1 / §6.3).
+ * `:where(...)`-weakened, docs/design/theme.md §6.1 / §6.3).
  *
  * **Persistence**: one envelope, one writer. The derived payload (options +
  * mode + style snapshot + custom presets) goes into `__VEAN_THEME` through a

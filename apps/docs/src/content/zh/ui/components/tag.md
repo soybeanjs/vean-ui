@@ -72,7 +72,7 @@ Aria 层 `Tag` 是最小的显隐/关闭状态基础组件，`STag` 将全部样
 
 ### Roadmap
 
-核心标签 API 无阻塞缺口。独立的 `tag-group` 与 `checkable` 标签行为为已评估增强项，记录在 `docs/roadmap.md`。
+核心标签 API 无阻塞缺口。独立的 `tag-group` 与 `checkable` 标签行为为已评估增强项，记录在 `docs/roadmap/README.md`。
 
 ## FAQ
 

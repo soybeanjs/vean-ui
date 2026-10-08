@@ -93,8 +93,8 @@ Types: `UiUnocssOptions`, `VeanPresetOptions`, `PresetAnimationsOptions`, `Prese
 
 ## 📖 Documentation
 
-- Theme engine and token contract: [docs/theme.md](../../docs/theme.md) (§0 is the AI-agent handbook)
-- Scale rationale: [docs/space-control-scale.md](../../docs/space-control-scale.md)
+- Theme engine and token contract: [docs/design/theme.md](../../docs/design/theme.md) (§0 is the AI-agent handbook)
+- Scale rationale: [docs/design/space-control-scale.md](../../docs/design/space-control-scale.md)
 - Docs site: [veanui.com](https://veanui.com)
 
 ## 📄 License

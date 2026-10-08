@@ -9,14 +9,14 @@ import { resolveThemeMap } from '../src/theme-map';
 import type { ThemeMode, TokenValue } from '../src/types';
 
 /**
- * P0/P1 —— map resolution, emission and JS resolution (docs/theme.md §3, §4, §5).
+ * P0/P1 —— map resolution, emission and JS resolution (docs/design/theme.md §3, §4, §5).
  */
 
 /**
  * the hsl channel of a token value (`palette.level` → the palette layer's channel).
  *
  * Lives here rather than in the engine: with the contrast guard removed
- * (docs/theme.md §4.3) nothing in `src/` needs to read a channel back, but the
+ * (docs/design/theme.md §4.3) nothing in `src/` needs to read a channel back, but the
  * ladder invariant below is still worth asserting.
  */
 const channelHsl = (value: TokenValue): string | undefined => {
@@ -105,7 +105,7 @@ describe('theme map — structure and invariants', () => {
   });
 
   it('keeps the weak fills on the collapsed shadcn-parity rung', () => {
-    // `muted` / `accent` **同档**（对齐 shadcn 默认，docs/theme.md §3.2）：一个是静态弱化面、
+    // `muted` / `accent` **同档**（对齐 shadcn 默认，docs/design/theme.md §3.2）：一个是静态弱化面、
     // 一个是瞬时交互面，交互可见性不再由档差承担，而由配方的 alpha 阶梯承担
     // （字符串层 `packages/ui/test/specs/styles/neutral-faces.spec.ts`，
     // 实测色差层 `packages/ui/test/browser/specs/theme/neutral-faces.e2e.spec.ts`）。
@@ -192,7 +192,7 @@ describe('theme map — structure and invariants', () => {
   });
 
   it('gives status foregrounds the same light base level as primary-foreground in light mode', () => {
-    // docs/theme.md §7-2：亮色下状态 on-solid 文字与 primary 视觉一致（`{b}.50`）
+    // docs/design/theme.md §7-2：亮色下状态 on-solid 文字与 primary 视觉一致（`{b}.50`）
     const map = resolveThemeMap(DEFAULTS);
     const expected = { kind: 'palette', palette: 'zinc', level: 50 } as const;
 
@@ -216,7 +216,7 @@ describe('theme map — structure and invariants', () => {
    * 断言的是**对比度**而非具体档位：档位是策略，对比度才是契约，将来改档位只要仍达标就不该失败。
    *
    * 只覆盖暗色：亮色侧状态实心配 `{b}.50` 是旧版就有的基线缺陷（2.06–3.60:1），
-   * 修它会把"白字色块"改成"淡彩块"这一视觉语言变更，属于单独的设计决策（docs/theme.md §3.6）。
+   * 修它会把"白字色块"改成"淡彩块"这一视觉语言变更，属于单独的设计决策（docs/design/theme.md §3.6）。
    * 所以这里只钉住"暗色确实翻档了"，不把亮色的已知缺口写成硬约束。
    */
   it('keeps every status foreground readable on its fill in dark mode', () => {
@@ -314,7 +314,7 @@ describe('semantic layer (Layer 2) emission', () => {
     expect(css).toContain('--radius-none: 0;');
     expect(css).toContain('--radius-full: 9999px;');
     expect(css).toContain('--z-base: 50;');
-    // 控件高度不是刻度族（docs/space-control-scale.md §3.1）：不发射任何 control-height 变量
+    // 控件高度不是刻度族（docs/design/space-control-scale.md §3.1）：不发射任何 control-height 变量
     expect(css).not.toContain('--control-height');
     // 间距族只发网格单位（旋钮）；18 档是 `theme.spacing` 映射里的系数，不进 CSS 变量
     expect(css).toContain('--spacing-unit: 0.25rem;');

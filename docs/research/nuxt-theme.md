@@ -174,7 +174,7 @@ theme.setStyleUi(styleComponents(style.value)); // 默认变体 → 组件 defau
 1. **主题编辑器 / 分享链接**：`ThemeDoc` 稀疏文档模式与 `resolveTheme` 的稀疏 override 输入天然契合——一个 schema 可同时作为导出物、分享链接载荷、预设定义。传输层可直接复用 `CompressionStream('deflate-raw')` + base64url + preset 短路方案（现代浏览器零依赖）。
 2. **`unstyled` 模式**：清空默认 class 保留 slots 结构（module 配置级），无样式定制场景友好。
 3. **全局 `defaultVariants`**：一处配置改全库默认 size/color/variant，按「组件能力表」过滤不支持值（`VARIANT_SUPPORT` / `SIZE_SUPPORT`），避免给无该轴的组件注入无效默认值。
-4. **分享链接的 SSR 直出模式**：`?doc=` query + 服务端解码应用 + boot restore 让位 + 消费即焚。若未来 docs 站做主题分享，此模式与 [theme.md §6.3](../theme.md) 方案 A 的快照注入互补（前者服务端渲染正确主题，后者首帧脚本补正）。
+4. **分享链接的 SSR 直出模式**：`?doc=` query + 服务端解码应用 + boot restore 让位 + 消费即焚。若未来 docs 站做主题分享，此模式与 [theme.md §6.3](../design/theme.md) 方案 A 的快照注入互补（前者服务端渲染正确主题，后者首帧脚本补正）。
 5. **单一 storage key 原子写**：多设置共享一个 key、一个防抖 watcher 拥有所有写入，消除恢复时序错乱——比我们按 key 分散存储更稳。
 
 ## 6. 参考资料（源码路径）

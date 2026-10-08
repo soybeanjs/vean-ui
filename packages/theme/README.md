@@ -7,11 +7,11 @@ English | [中文](./README.zh-CN.md)
 [![npm downloads](https://img.shields.io/npm/dt/@vean/theme)](https://www.npmjs.com/package/@vean/theme)
 [![github stars](https://img.shields.io/github/stars/soybeanjs/vean-ui)](https://github.com/soybeanjs/vean-ui)
 
-> The full design spec, token contract, and AI-agent handbook live in [docs/theme.md](../../docs/theme.md) (this README only covers package-level usage).
+> The full design spec, token contract, and AI-agent handbook live in [docs/design/theme.md](../../docs/design/theme.md) (this README only covers package-level usage).
 
 The Vean theme engine: **a static palette layer plus a semantic alias layer** — a declarative mapping table with no measurement and no correction.
 
-> Status: ✅ Implemented (the first-generation engine is retired; this package is the only implementation, and [docs/theme.md](../../docs/theme.md) is the design authority).
+> Status: ✅ Implemented (the first-generation engine is retired; this package is the only implementation, and [docs/design/theme.md](../../docs/design/theme.md) is the design authority).
 > Adapters and runtime (UnoCSS preset, `SConfigProvider`, first-paint script, persistence, customizer panel) live in `@vean/unocss` and `@vean/ui`, not in this package.
 
 ## 📦 Installation
@@ -43,7 +43,7 @@ Surface levels are **fixed declarations** (`CORE_RULES`); there is no runtime "s
 
 ## 📐 Dimension Scales
 
-Two literal scales ([space-control-scale.md](../../docs/space-control-scale.md)):
+Two literal scales ([space-control-scale.md](../../docs/design/space-control-scale.md)):
 
 | Scale            | Slots                                     | Value                                                                                                                                                                                                                                                                                                          |
 | :--------------- | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -110,7 +110,7 @@ Custom palette registration (beyond the built-in 26) is deferred — use `overri
 
 ## 📖 Documentation
 
-Design spec and AI-agent handbook: [docs/theme.md](../../docs/theme.md) · scale rationale: [docs/space-control-scale.md](../../docs/space-control-scale.md) · docs site: [veanui.com](https://veanui.com)
+Design spec and AI-agent handbook: [docs/design/theme.md](../../docs/design/theme.md) · scale rationale: [docs/design/space-control-scale.md](../../docs/design/space-control-scale.md) · docs site: [veanui.com](https://veanui.com)
 
 ## 📄 License
 

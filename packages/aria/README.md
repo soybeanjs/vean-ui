@@ -145,12 +145,12 @@ import { transformPropsToContext } from '@soybeanjs/headless/shared'; // pure TS
 import type { UiClass } from '@soybeanjs/headless/types'; // shared type surface
 =======
 import { AccordionRoot } from '@vean/aria'; // components + types
+import type { AccordionUiSlot } from '@vean/aria/accordion'; // per-component
 import { useControllableState } from '@vean/aria/composables'; // 28 composables
-import { transformPropsToContext } from '@vean/aria/shared'; // pure TS utils
 import { createMonth } from '@vean/aria/date'; // shared date helpers
 import { registerLocale } from '@vean/aria/locale'; // locale registry
 import * as H from '@vean/aria/namespaced'; // namespace object
-import type { AccordionUiSlot } from '@vean/aria/accordion'; // per-component
+import { transformPropsToContext } from '@vean/aria/shared'; // pure TS utils
 import type { UiClass } from '@vean/aria/types'; // shared type surface
 >>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean):packages/aria/README.md
 ```

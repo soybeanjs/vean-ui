@@ -15,7 +15,7 @@ import type {
 } from './types';
 
 /**
- * CSS emission for the refactored engine (docs/theme.md §3, §5).
+ * CSS emission for the refactored engine (docs/design/theme.md §3, §5).
  *
  * Two artifacts:
  * - `generatePaletteCss` — Layer 1, the static palette table (26 × 11 + white/black)
@@ -45,7 +45,7 @@ export function tokenVar(token: SemanticToken, prefix: TokenPrefix | undefined):
  * token layer stores channels and the adapters consume them wrapped
  * (`hsl(var(--vean-x) / <alpha>)`), so the color is encoded into the theme's
  * format here. Emitting it verbatim would invalidate every consumption site and
- * silently drop the token (docs/theme.md §4.2).
+ * silently drop the token (docs/design/theme.md §4.2).
  */
 function renderValue(value: TokenValue, format: ColorFormat): string {
   if (value.kind === 'palette') {

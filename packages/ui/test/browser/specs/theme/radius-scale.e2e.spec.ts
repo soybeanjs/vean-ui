@@ -3,7 +3,7 @@ import { defineComponent, h } from 'vue';
 import { renderComponent } from '../../shared/render';
 
 /**
- * The radius ladder in a real engine (docs/theme.md §3.11, space-control-scale.md §2.2).
+ * The radius ladder in a real engine (docs/design/theme.md §3.11, space-control-scale.md §2.2).
  *
  * The bug this guards can only be seen here: a negative `border-radius` is an
  * invalid computed value, so the declaration is dropped and the browser silently

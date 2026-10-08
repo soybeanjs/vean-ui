@@ -1,7 +1,7 @@
 # 维度刻度：spacing 与 radius
 
 > 定位：`@vean/theme` 字面量层里两条**刻度族**的当前契约——取值、单位、与 UnoCSS 的关系、消费面——以及一条判断准则：**哪些维度不该成为刻度族**（控件高度 / 图标 / 字号 / 阴影动效）。
-> 状态：✅ 与代码同步。真相源是 [`packages/theme/src/literals.ts`](../packages/theme/src/literals.ts) 与 [`packages/unocss/src/theme.ts`](../packages/unocss/src/theme.ts)；实测数据的口径与复现方式见 §4。
+> 状态：✅ 与代码同步。真相源是 [`packages/theme/src/literals.ts`](../../packages/theme/src/literals.ts) 与 [`packages/unocss/src/theme.ts`](../../packages/unocss/src/theme.ts)；实测数据的口径与复现方式见 §4。
 > 相关：[theme.md](./theme.md) §3.11（字面量全表）· §5.1（UnoCSS theme key 归属）· §5.3（三处不回主题的刻度）
 
 ---
@@ -25,7 +25,7 @@
 
 ### 1.1 取值
 
-`SPACING_GRID_COEFFICIENTS`（[literals.ts](../packages/theme/src/literals.ts)）是唯一真相源；下表是它在**默认单位**（`--spacing-unit: 0.25rem`，根字号 16px）下的取值：
+`SPACING_GRID_COEFFICIENTS`（[literals.ts](../../packages/theme/src/literals.ts)）是唯一真相源；下表是它在**默认单位**（`--spacing-unit: 0.25rem`，根字号 16px）下的取值：
 
 | 档位  | 系数 | 默认值 | 来源                                             |
 | :---- | ---: | -----: | :----------------------------------------------- |
@@ -94,15 +94,15 @@ p-5xs    → padding: var(--spacing-unit)           /* 系数 1 发射裸引用 
 
 ### 1.5 消费面
 
-| 面                | 写法                                                                                                                                            | 说明                                                                       |
-| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------- |
-| 库内 recipe       | 数字类：`h-8 px-2.5 gap-2 text-sm`                                                                                                              | 具名档 0 处。数字类读同一个单位，所以旋钮照样作用到它们身上                |
-| 主题定制面板      | 具名档：[`preview-spacing.vue`](../apps/docs/src/components/theme-editor/preview-spacing.vue) 逐档渲染 `p-2xs` … `p-2xl` + `gap-3xs` … `gap-xl` | 面板需要的是"整条刻度可见"；滑块改的是 `spacing` 选项，不是某档的值        |
-| 消费者 / 组件作者 | 任选：`gap-md` ≡ `gap-4`（同值同源）                                                                                                            | 写具名档可读性更好，写数字类与 UnoCSS 文档一致；两条路都不会绕过 `spacing` |
+| 面                | 写法                                                                                                                                               | 说明                                                                       |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------- |
+| 库内 recipe       | 数字类：`h-8 px-2.5 gap-2 text-sm`                                                                                                                 | 具名档 0 处。数字类读同一个单位，所以旋钮照样作用到它们身上                |
+| 主题定制面板      | 具名档：[`preview-spacing.vue`](../../apps/docs/src/components/theme-editor/preview-spacing.vue) 逐档渲染 `p-2xs` … `p-2xl` + `gap-3xs` … `gap-xl` | 面板需要的是"整条刻度可见"；滑块改的是 `spacing` 选项，不是某档的值        |
+| 消费者 / 组件作者 | 任选：`gap-md` ≡ `gap-4`（同值同源）                                                                                                               | 写具名档可读性更好，写数字类与 UnoCSS 文档一致；两条路都不会绕过 `spacing` |
 
 ### 1.6 每 size 控件向量就是这条刻度上的一段窗口
 
-[`_field.ts`](../packages/ui/src/styles/_field.ts) 的 `fieldSize` 是表单控件的共有向量，它的 padding-x 与 gap **各自都是 spacing 刻度上连续相邻的 6 档**（高度列见 §3.1）：
+[`_field.ts`](../../packages/ui/src/styles/_field.ts) 的 `fieldSize` 是表单控件的共有向量，它的 padding-x 与 gap **各自都是 spacing 刻度上连续相邻的 6 档**（高度列见 §3.1）：
 
 | size  | 高度        | padding-x              | gap                     | 文本        |
 | :---- | :---------- | :--------------------- | :---------------------- | :---------- |

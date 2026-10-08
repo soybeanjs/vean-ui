@@ -25,13 +25,16 @@
 
 ### 3.1 目录
 
-| 目录              | 内容                             | 必带索引            |
-| :---------------- | :------------------------------- | :------------------ |
-| `docs/`（根）     | 跨领域核心文档（架构/路线/任务） | `README.md`（已建） |
-| `docs/adr/`       | 架构决策记录                     | `README.md`         |
-| `docs/ecosystem/` | 生态扩展包方案 + 商业化          | `README.md`（已建） |
-| `docs/research/`  | 市场/竞品调研                    | `README.md`         |
-| `docs/info/`      | 一次性/周期报告                  | `README.md`         |
+| 目录              | 内容                                                   | 必带索引                              |
+| :---------------- | :----------------------------------------------------- | :------------------------------------ |
+| `docs/`（根）     | 跨领域核心文档（架构 / 质量评估 / 治理）               | `README.md`（已建）                   |
+| `docs/roadmap/`   | 路线与规划（总路线图 + 核心内领域路线图）              | `README.md`（已建，总路线图兼任索引） |
+| `docs/design/`    | 设计原理与设计交付（主题引擎 / 维度刻度 / Figma 交付） | `README.md`（已建）                   |
+| `docs/adr/`       | 架构决策记录                                           | `README.md`                           |
+| `docs/agents/`    | AI Agent 协作约定（issue / triage / 领域文档）         | `README.md`（已建）                   |
+| `docs/ecosystem/` | 生态扩展包方案 + 商业化                                | `README.md`（已建）                   |
+| `docs/research/`  | 市场/竞品调研                                          | `README.md`                           |
+| `docs/info/`      | 一次性/周期报告                                        | `README.md`                           |
 
 > 注：组件检查 / 审计（D1–D7）的**方法与交付面**由组件开发技能 `.agents/skills/vean-ui-develop/audit.md` 定义，历史检查报告（`docs/check-reports/`、`docs/check.md`）已于 2026-08-14 清理归档，不再在 `docs/` 维护。
 
@@ -57,6 +60,8 @@
 
 ```
 新信息要落盘
+ ├─ 属于「路线 / 规划 / 组件评估明细」？ ─────► docs/roadmap/
+ ├─ 属于「设计原理 / 设计交付契约」？ ───────► docs/design/
  ├─ 属于「已接受的决策」？ ─────────────────► docs/adr/NNNN-*.md
  ├─ 属于「生态包方案 / 商业化」？ ──────────► docs/ecosystem/
  ├─ 属于「市场 / 竞品调研原始结论」？ ──────► docs/research/
@@ -81,16 +86,17 @@
 
 ### 5.2 单事实源清单
 
-| 事实           | 唯一权威文档/文件                                       |
-| :------------- | :------------------------------------------------------ |
-| 工作区架构     | `docs/architecture.md`                                  |
-| 工程质量改进项 | `docs/optimize.md`（F1–F11）                            |
-| 组件评估明细   | `docs/roadmap.md`                                       |
-| 核心内领域规划 | `docs/ui-ai-roadmap.md` · `docs/ui-shell-roadmap.md`    |
-| 组件审计方法   | `.agents/skills/vean-ui-develop/audit.md`（D1–D7）      |
-| 未来领域提案   | `docs/ecosystem/`（每方向一篇，立项时确定落地形态）     |
-| 商业化策略     | `docs/ecosystem/commercialization.md`（方向与横向建议） |
-| 调研结论       | `docs/research/`                                        |
+| 事实           | 唯一权威文档/文件                                                    |
+| :------------- | :------------------------------------------------------------------- |
+| 工作区架构     | `docs/architecture.md`                                               |
+| 工程质量改进项 | `docs/optimize.md`（F1–F11）                                         |
+| 组件评估明细   | `docs/roadmap/README.md`                                             |
+| 核心内领域规划 | `docs/roadmap/ui-ai-roadmap.md` · `docs/roadmap/ui-shell-roadmap.md` |
+| 组件审计方法   | `.agents/skills/vean-ui-develop/audit.md`（D1–D7）                   |
+| 未来领域提案   | `docs/ecosystem/`（每方向一篇，立项时确定落地形态）                  |
+| 商业化策略     | `docs/ecosystem/commercialization.md`（方向与横向建议）              |
+| 调研结论       | `docs/research/`                                                     |
+| Agent 协作约定 | `docs/agents/`（issue / triage / domain）                            |
 
 ### 5.3 交叉引用维护（强制）
 

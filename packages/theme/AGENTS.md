@@ -4,10 +4,10 @@
 
 For any AI assistant editing files under `packages/theme/`:
 
-1. Read [docs/theme.md](../../docs/theme.md) **§0 first** — it is the AI-agent handbook for this package (code map, engine API, hard rules, common tasks, verification commands). §1–2 explain the difference from the legacy engine; §3+ is the current spec.
+1. Read [docs/design/theme.md](../../docs/design/theme.md) **§0 first** — it is the AI-agent handbook for this package (code map, engine API, hard rules, common tasks, verification commands). §1–2 explain the difference from the legacy engine; §3+ is the current spec.
 2. For `**/*.{ts,tsx,js,jsx}` edits, also load the global `typescript-functional-style` skill.
 
-The remaining content here is package-local context an agent would otherwise get wrong. Normative token/engine rules live in `docs/theme.md`.
+The remaining content here is package-local context an agent would otherwise get wrong. Normative token/engine rules live in `docs/design/theme.md`.
 
 **Package:** `packages/theme/` → publishes as `@vean/theme`
 **Role:** Theme engine. Turns a declarative contract (palette table + alias rules + literals) into a `ThemeMap` and emits CSS. **Pure functions: no DOM reads, no color measurement, no value correction.**
@@ -29,10 +29,10 @@ The remaining content here is package-local context an agent would otherwise get
 
 ## HARD RULES
 
-- **Change a level in `CORE_RULES`, never in emission logic or the snapshot.** The engine will not correct you — after changing a level, update the map snapshot deliberately (`cd packages/theme && pnpm exec vitest run -u`, per [docs/theme.md](../../docs/theme.md) §0.7), then confirm the default theme's per-value assertions still hold.
+- **Change a level in `CORE_RULES`, never in emission logic or the snapshot.** The engine will not correct you — after changing a level, update the map snapshot deliberately (`cd packages/theme && pnpm exec vitest run -u`, per [docs/design/theme.md](../../docs/design/theme.md) §0.7), then confirm the default theme's per-value assertions still hold.
 - **Radius rungs must emit as a positive multiple of the seed**: `calc(var(--radius) * k)`; `test/engine-features.spec.ts` asserts that shape with a regex, so an absolute length slips through only by failing the test. Radius rungs come from `LITERAL_DEFAULTS` filtered by `RADIUS_RUNG_KEYS` (`2xs`…`4xl`, 9 rungs).
 - **The spacing family emits exactly one variable** — `spacing-unit` (= `SPACING_GRID`). The 18 rungs (`6xs`…`9xl`) are **coefficients** in `SPACING_GRID_COEFFICIENTS`, not tokens, and they feed `theme.spacing` in the UnoCSS mapping instead of the literal layer. Changing the unit therefore moves every rung and numeric utility class at once. The name/value parity guard against upstream UnoCSS lives in the `@vean/unocss` adapter tests, not here.
-- **Control heights are deliberately not a literal family** (see [docs/space-control-scale.md](../../docs/space-control-scale.md) §3.1): the 8 heights equal the numeric scale (`h-5`…`h-14`) and have zero in-repo consumers. `engine-features.spec.ts` asserts no `literal` key contains `control`.
+- **Control heights are deliberately not a literal family** (see [docs/design/space-control-scale.md](../../docs/design/space-control-scale.md) §3.1): the 8 heights equal the numeric scale (`h-5`…`h-14`) and have zero in-repo consumers. `engine-features.spec.ts` asserts no `literal` key contains `control`.
 - **Do not hand-write palette lists or level arrays** — keys come from `@soybeanjs/colord` (`tailwindPaletteKeys`, `tailwindNeutralPaletteKeys`, `paletteColorLevels`).
 - **Semantic tokens are unprefixed** (`--background`, `--card`, `--radius`, `--chart-1`). The library's own component-scoped variables keep the `--vean-` namespace (`--vean-sidebar-width`, `--vean-scrollbar-*`). A `var(--vean-background)` is a **stale reference** that silently drops the declaration; `test/token-usage.spec.ts` scans the whole workspace for this, so realign rather than adding an exception.
 - **`control` is ambiguous**: it is a _slot name_ (switch / checkbox / radio-group / carousel / form / input / textarea / tags-input / input-number), unrelated to fill tokens. Bulk renames must skip it.

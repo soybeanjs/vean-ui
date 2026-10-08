@@ -11,12 +11,15 @@
   "dependencies": {
     "@nuxt/icon": "2.5.1",
     "@nuxtjs/i18n": "10.6.0",
+    "@vean/theme": "workspace:^",
     "nuxt": "^4.6.0",
     "vue": "^3.5.43",
     "vue-router": "^5.4.0"
   },
   "devDependencies": {
+    "@soybeanjs/unocss-preset": "^0.2.0",
     "@unocss/nuxt": "^66.10.5",
+    "@vean/unocss": "workspace:^",
     "unocss": "^66.10.5"
   }
 }

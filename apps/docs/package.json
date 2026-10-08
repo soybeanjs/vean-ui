@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "@iconify/vue": "^5.0.3",
+    "@shikijs/langs": "^4.5.0",
+    "@shikijs/themes": "^4.5.0",
     "@soybeanjs/colord": "^0.8.1",
     "@tanstack/charts": "^1.0.0",
     "@ubean/content": "^0.6.0",

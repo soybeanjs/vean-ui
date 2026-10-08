@@ -111,6 +111,7 @@
   "dependencies": {
     "@floating-ui/dom": "^1.8.0",
     "@soybeanjs/colord": "^0.8.1",
+    "@tanstack/table-core": "^9.2.6",
     "@tanstack/vue-form": "^1.33.5",
     "@tanstack/vue-table": "^9.2.7",
     "@tanstack/vue-virtual": "^3.13.39",

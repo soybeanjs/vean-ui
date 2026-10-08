@@ -74,6 +74,7 @@
     "@iconify/vue": "^5.0.3",
     "@soybeanjs/colord": "^0.8.1",
     "@soybeanjs/cva": "^0.1.1",
+    "@tanstack/vue-virtual": "^3.13.39",
     "@vean/aria": "workspace:^",
     "@vean/theme": "workspace:^"
   },

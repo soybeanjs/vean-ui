@@ -34,6 +34,7 @@ const RUNTIME_DEP_ALLOWLISTS: Readonly<Record<string, readonly string[]>> = {
   '@vean/aria': [
     '@floating-ui/dom',
     '@soybeanjs/colord',
+    '@tanstack/table-core',
     '@tanstack/vue-form',
     '@tanstack/vue-table',
     '@tanstack/vue-virtual',
@@ -41,7 +42,15 @@ const RUNTIME_DEP_ALLOWLISTS: Readonly<Record<string, readonly string[]>> = {
     'date-fns',
     'embla-carousel'
   ],
-  '@vean/ui': ['@iconify/vue', '@soybeanjs/colord', '@soybeanjs/cva', '@vean/aria', '@vean/theme', 'markstream-vue']
+  '@vean/ui': [
+    '@iconify/vue',
+    '@soybeanjs/colord',
+    '@soybeanjs/cva',
+    '@tanstack/vue-virtual',
+    '@vean/aria',
+    '@vean/theme',
+    'markstream-vue'
+  ]
 };
 
 const SOURCE_EXTENSIONS = new Set(['.ts', '.tsx', '.mts', '.cts', '.js', '.jsx', '.mjs', '.cjs', '.vue']);

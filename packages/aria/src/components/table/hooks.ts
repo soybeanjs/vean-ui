@@ -124,6 +124,22 @@ function toReactiveTableOptions(options: TableEngineOptions | undefined): Record
   );
 }
 
+/**
+ * TanStack spreads its own column-sizing default (`size: 150`, `minSize: 20`)
+ * into every column def. Those numbers reach the cells as inline
+ * `width`/`min-width`, which pins unsized columns to 150px and makes the table
+ * overflow its scroll container whenever the columns do not fit side by side.
+ * Clearing `size` keeps columns content-sized unless the consumer sets `size`
+ * on a column or supplies `defaultColumn` through `tableOptions`.
+ */
+function getTableDefaultColumnOptions(options: TableEngineOptions | undefined): {
+  defaultColumn: TableEngineOptions['defaultColumn'];
+} {
+  return {
+    defaultColumn: { size: undefined, ...options?.defaultColumn }
+  };
+}
+
 function getColumnWidthValue(column: TableColumn, columnSizing: ColumnSizingState): number | undefined {
   const key = getTableColumnKey(column);
 
@@ -291,6 +307,7 @@ export function useTableCompactTable<T extends TableBaseData = TableBaseData>(
 
   const table = useTable<SoybeanTableFeatures, T>({
     ...toReactiveTableOptions(props.tableOptions),
+    ...toReactiveTableOptions(getTableDefaultColumnOptions(props.tableOptions)),
     features: soybeanTableFeatures,
     data: computed(() => props.data),
     columns: columns as unknown as ComputedRef<ColumnDef<SoybeanTableFeatures, T, unknown>[]>,

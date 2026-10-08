@@ -2,13 +2,17 @@
 
 > **评估时间：** 2026-09-06
 >
-> **适用版本：** `0.31.0`
+> **适用版本：** `0.31.0`（评估基线）
+>
+> **复核时间：** 2026-10-09 · 复核版本 `0.50.0`
 >
 > **详细架构：** [architecture.md](./architecture.md)
 >
 > **方法：** CodeGraph 1.5.0 全量代码图谱 + workspace 清单、配置、生成物与文档交叉校验
 >
-> **2026-09 注记：** 本评估反映 2026-09-06 基线（含 admin / chart / ui-x 共 9 个发布包、14 个子 workspace）。其后 `@soybeanjs/ui-x` 整包移除（AI 组件回归核心 aria/ui，见 [ui-ai-roadmap.md](./roadmap/ui-ai-roadmap.md)），中后台壳方向亦明确为核心内领域（aria `src/shell/` + ui 复合组件，见 [ui-shell-roadmap.md](./roadmap/ui-shell-roadmap.md)）；当前为 7 packages + 2 apps + skills 共 10 个子 workspace、6 个发布包（含 ui-skills）。下文中涉及外围包的包清单、构建链（`… → ui-x → …`）与生成路径均为当时事实，阅读时按此注记折算。
+> **2026-09 注记：** 本评估反映 2026-09-06 基线（含 admin / chart / ui-x 共 9 个发布包、14 个子 workspace）。其后 `@soybeanjs/ui-x` 整包移除（AI 组件回归核心 aria/ui，见 [ui-ai-roadmap.md](./roadmap/ui-ai-roadmap.md)），中后台壳方向亦明确为核心内领域（aria `src/shell/` + ui 复合组件，见 [ui-shell-roadmap.md](./roadmap/ui-shell-roadmap.md)）；下文中涉及外围包的包清单、构建链（`… → ui-x → …`）与生成路径均为当时事实。
+>
+> **2026-10-09 复核：** 现行结构为 9 个 workspace project（私有根 + 8 个成员）：5 个发布包（aria、cli、theme、ui、unocss）、1 个私有包（scripts）、2 个私有应用（docs、nuxt）。此前注记所称「7 packages + 2 apps + skills 共 10 个子 workspace、6 个发布包（含 ui-skills）」有误：`ui-skills` 与 `shared` 均已不存在，`skills/` 是生成分发物而非 workspace 成员。复核版本 `0.50.0`；各 F 项现状见下方逐项复核标记。
 
 ## 1. 结论摘要
 
@@ -21,7 +25,7 @@
   生成逻辑。
 - `vean`、组件包、文档站（含示例）、生成脚本均有明确用途。
 - TypeScript 严格模式、119 个 UI 单测文件、16 个 vean 测试文件及
-  browser e2e 已形成基础质量网。
+  browser e2e 已形成基础质量网（2026-10-09 复核：ui 124、cli 18、browser e2e 38）。
 
 当前主要风险不在组件目录是否“分得够细”，而在跨 workspace 的工程约束没有
 完全机器化：
@@ -37,6 +41,8 @@
 建议先解决依赖闭包、CI 构建/生成一致性和发布包 smoke test，再进行目录拆分或
 引入新的构建编排工具。
 
+**2026-10-09 复核摘要：** 生成一致性与双语文件树已闭环；F3、F4、F8 可关闭；F6、F9、F10 大幅改善；F1 的 4 处残留未声明依赖已于同日修复（保留 `shamefullyHoist: true` 为既定决策）；F2、F5、F7、F11 未动。以下各 F 项末尾的「2026-10-09 复核」为准。
+
 ## 2. 评估基线
 
 ### 2.1 CodeGraph 覆盖
@@ -47,7 +53,7 @@
 - 边：55,503。
 - 语言分布：1,121 Vue、926 TypeScript、4 YAML、1 JavaScript、1 TSX。
 - Git 跟踪文件总数：2,730。未进入代码图谱的 Markdown、JSON、CSS、资源文件
-  通过直接读取和内容检索校验。
+  通过直接读取和内容检索校验。（2026-10-09 复核未重跑 CodeGraph 基线。）
 
 ### 2.2 当前规模
 
@@ -59,6 +65,16 @@
 - UI：96 个公共组件组、144 个 `S` 前缀导出。
 - Docs 示例：582 个示例 SFC（`apps/docs/src/examples`）。
 - Browser e2e：11 个组件级 spec。
+
+**2026-10-09 复核（实测）：**
+
+- pnpm 识别 9 个 workspace project：私有根 + 8 个成员（aria、cli、scripts、theme、ui、unocss、docs、nuxt）。
+- 可发布包 5 个（aria、cli、theme、ui、unocss）；私有包 1 个（scripts）；私有应用 2 个（docs、nuxt）。
+- Aria：89 个组件目录；catalog 87 个族、565 个导出条目；32 个 composable。
+- UI：95 个组件族、143 个 `S` 前缀导出（`packages/ui/src/constants/components.ts`）。
+- Docs 示例：358 个示例 SFC，目录已重组为 `examples/ui` 与 `examples/chart`。
+- Browser e2e：38 个 spec；单测 ui 124、aria 22、cli 18。
+- 双语组件 Markdown：en 96 / zh 96，集合差 0。
 
 ### 2.3 证据边界
 
@@ -136,7 +152,6 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
    `devDependencies`；运行时 external 必须是 production dependency 或明确的
    peer dependency。
 2. 对五个发布包（aria、cli、theme、ui、unocss）执行 `pnpm pack` 后在临时空项目中安装并 import 每个公共入口。
-   （aria、cli、theme、ui、unocss）执行 `pnpm pack` 后在临时空项目中安装并 import 每个公共入口。
 3. 为 docs、nuxt 分别执行 filtered install/build smoke test。
 4. 完成闭包后再尝试关闭 `shamefullyHoist`；若暂时不能关闭，记录仍依赖 hoist
    的工具和原因。
@@ -144,9 +159,11 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 **验收条件：**
 
 - 直接依赖扫描无未声明项。
-- 九个 tarball 在空目录中可安装并导入。
+- 五个发布包的 tarball 在空目录中可安装并导入。
 - 三个 app 可在仅安装其声明依赖的条件下构建。
 - `shamefullyHoist` 不再是隐式依赖正确性的必要条件，或保留项有明确清单。
+
+**2026-10-09 复核：** 部分已闭环——CI 已新增 `pnpm check:deps`（`packages/scripts/src/commands/dependency-gate.ts`：禁 banned import + 校验运行时依赖白名单）。实测发现 4 处未声明依赖，**已于同日全部修复**：`packages/cli/package.json` 增 `@vean/theme`（对应 `packages/cli/src/registry/config.ts:2`、`packages/cli/src/commands/info.ts:3`）；`packages/aria/package.json` 增 `@tanstack/table-core`（对应 `packages/aria/src/components/table/*.ts`）；`packages/ui/package.json` 增 `@tanstack/vue-virtual`（对应 `packages/ui/src/components/tree/tree-virtualizer-animated.vue:3` type-only 导入）；`apps/nuxt/package.json` 增 `@soybeanjs/unocss-preset`、`@vean/unocss`、`@vean/theme`（对应 `apps/nuxt/uno.config.ts` 与 `nuxt.config.ts:1`）。`apps/docs` 另增 `@shikijs/langs`、`@shikijs/themes`（`apps/docs/src/shared/highlight.ts` 直接 dynamic import 其子路径）。`RUNTIME_DEP_ALLOWLISTS` 同步加入 `@tanstack/table-core`、`@tanstack/vue-virtual`。修复后 `pnpm check:deps` 通过，再扫描无残留。原先的 `packages/ui` → `@vueuse/core` 未声明项已消除（现存代码仅有一处注释提及）；`apps/docs` 的 `@soybeanjs/colord`、`@vueuse/core`、`unocss`、`@soybeanjs/unocss-preset`、`@vean/unocss` 均已声明，`unocss-preset-animations` 已被 `@vean/unocss` 内置的本地 `presetAnimations` 取代（`packages/unocss/src/animations.ts`）。**决策：保留 `shamefullyHoist: true`**（本地开发与生成链依赖 hoist），因此「关闭 hoist」不再是验收条件，改为「未声明依赖清单为空」——该项现已满足。
 
 ### F2. PR CI 未覆盖“可发布/可部署”
 
@@ -191,6 +208,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - CI 检查后工作树必须保持干净。
 - tag workflow 只重复已在 PR 验证的构建，不首次发现构建错误。
 - 发布使用的依赖图与已验证 lockfile 一致。
+
+**2026-10-09 复核：** 部分闭环——`.github/workflows/ci.yml` 已含 `pnpm check:deps`、`pnpm check:generated`、`pnpm check:size`（后两者为新增闸门），install 使用 `--frozen-lockfile`。残留：`ci.yml` 仍运行 `pnpm lint`（root 脚本为 `vp lint --fix && pnpm lint:vue`）且其后无 `git diff --exit-code`；无 docs SSG build smoke；无 tarball import smoke；`release.yml` 仍用 `pnpm install --no-frozen-lockfile` 且不重跑 unit/browser tests。
 
 ### F3. 生成物不是原子批次，已有可复现漂移
 
@@ -246,6 +265,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - 新增/删除公共组件但未补 docs 或 index 时，CI 给出具体缺失集合。
 - 同一路径在 en/zh-CN 均存在，或被显式列为有 owner 的单语言例外。
 
+**2026-10-09 复核：** 末项已满足——en/zh 组件 Markdown 各 96 个，集合差 0（中文 6 个 picker 文件已与英文对齐）。`docs/components.md` 已并入 `docs/roadmap/README.md`。F3 可关闭。
+
 ## P1：近期治理
 
 ### F4. 私有 Apps 源码依赖（已收敛）
@@ -270,6 +291,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 
 - app 之间不存在源码级相互 import。
 - Nuxt i18n 配置引用的文件可解析，且 fixture 有可重复的 build smoke。
+
+**2026-10-09 复核：** 维持「已收敛」。`apps/nuxt` 仍无 `typecheck` 与 build smoke（见 F6）。
 
 ### F5. Docs 构建图一次性 eager 引入过多源码
 
@@ -307,6 +330,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - runtime/SSG 展示层不解析 TypeScript 声明文本。
 - 基线指标和允许回归阈值写入 CI 或工程文档。
 
+**2026-10-09 复核：** 仍未处理——`apps/docs/src/constants/globs.ts` 仍为 eager `import.meta.glob`；`apps/docs/src/components/tables/generated-api.ts` 1,486 行（原 1,489）。示例数由 582 变为 358（目录重组为 `examples/ui`、`examples/chart`）。
+
 ### F6. 高影响 seam 缺直接契约测试
 
 **严重度：Moderate · 置信度：高**
@@ -314,7 +339,7 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 **事实：**
 
 - `createTheme` 影响 10 个符号，CodeGraph 找不到受影响测试。
-- `packages/theme` 和 `packages/unocss` 无测试目录。
+- （2026-09 基线）`packages/theme` 和 `packages/unocss` 无测试目录。**2026-10-09 复核已不成立**：theme 有 4 个 spec（`engine-features`、`engine-map`、`runtime`、`token-usage` + 快照），unocss 有 3 个（`preset`、`theme`、`token-utilities`）。
 - `useUiContext` 影响 68 个符号；CodeGraph 能关联 7 个下游测试，但没有
   `use-ui-context` 的直接单测。
 - Browser e2e 当前有 11 个组件级 spec（button、combobox、dialog、drawer、
@@ -342,6 +367,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - Theme/UnoCSS 改动能在 package 级测试失败，而不是依赖下游人工发现。
 - Browser e2e 优先覆盖平台 API 和真实焦点行为。
 - 根递归 typecheck 覆盖每个需要独立发布或验证的 workspace。
+
+**2026-10-09 复核：** 新增 theme/unocss 契约测试并扩容 browser e2e 至 38 个 spec；仍缺 `useUiContext` 直接单测与 `apps/nuxt` 的独立 `typecheck`（`apps/nuxt/package.json` 无该 script）。
 
 ### F7. 构建图与 workspace 依赖图未完全对齐
 
@@ -374,6 +401,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - 修改 theme 后无需人工记忆额外前置命令。
 - 同一依赖顺序不在 package.json 和 Vite Plus config 重复维护。
 
+**2026-10-09 复核：** 未处理。root `pnpm build` = `build:libs`（theme → unocss）+ aria + ui + cli；UI-only 包链（ui-x/admin/chart）已随整包移除消失。
+
 ### F8. TypeScript 声明版本与实际锁定版本分裂
 
 **严重度：Moderate · 置信度：高**
@@ -403,6 +432,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - manifest、catalog 和 lockfile 对有效 TypeScript 主版本表达一致（已满足）。
 - 双轨分组有原因、owner 和删除条件。
 
+**2026-10-09 复核：** 已关闭——`pnpm-workspace.yaml` 现只有单轨 `typescript: npm:typescript-native-bridge@latest`，`catalog:ts6` 已删除，仓库不再同时运行两个 TS 主版本。
+
 ## P2：持续改进
 
 ### F9. 类型逃逸与书面约束不一致
@@ -428,6 +459,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 
 - 每个发布源码例外都有局部说明或被 typed helper 替代。
 - 新 PR 不增加未解释的 escape。
+
+**2026-10-09 复核：** 28 行 / 17 文件 → 10 行 / 8 文件（`packages/aria/src` 4 行、`packages/ui/src` 1 行、`packages/cli/src` 5 行）。
 
 ### F10. 文档事实有多个手写副本
 
@@ -457,6 +490,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - 自动检查能发现计数、版本、hook 命令和绝对本机链接漂移。
 - 每类事实只有一个权威来源。
 
+**2026-10-09 复核：** 本轮已执行 `docs/` 重构：`drawer.md` 归档为 `docs/info/drawer-refactor-report.md`、`agents/` 登记进 `docs/README.md` 与 `docs/GOVERNANCE.md`、`roadmap.md` 去重（F1–F11 抄本与「已实现组件参考」移除）、主题与刻度文档迁入 `docs/design/`。组件计数以 `pnpm sui gen catalog` 产出的 `packages/{aria,ui}/src/constants/components.ts` 为权威；模板版本由 `pnpm sui sync-template-versions` 同步。残留：README 中的人工计数与 Markdown link check。
+
 ### F11. 覆盖率策略尚未量化
 
 **严重度：Enhancement · 置信度：高**
@@ -479,18 +514,24 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 - coverage 目标能对应具体风险，并有逐步提升计划。
 - 不因低价值 wrapper 行数挤占高价值行为测试投入。
 
+**2026-10-09 复核：** 未处理，仍无 coverage threshold。
+
 ## 5. 推荐执行顺序
 
 ### 阶段 A：依赖与发布安全（1–2 周）
 
+> **2026-10-09 复核：** 1 部分完成——4 处未声明依赖已全部补齐（`@vean/cli → @vean/theme`、aria `@tanstack/table-core`、ui type-only `@tanstack/vue-virtual`、nuxt 两个 preset，见 F1 复核）；3、4、5 未动。
+
 1. 完成 direct dependency audit。
-2. 添加九个 package 的 pack/install/import smoke。
+2. 添加五个发布包的 pack/install/import smoke。
 3. 将 CI lint 改为非修改检查并验证 clean tree。
 4. PR CI 已包含 package build；补 docs SSG build。
 5. 为 Nuxt 增加独立 typecheck（aria 已具备），并收紧 release
    lockfile/test gate。
 
 ### 阶段 B：生成一致性（1–2 周）
+
+> **2026-10-09 复核：** 1、3、4、5 已完成（确定性生成 + `check generated` 进 CI；rating 缺口已补；en/zh 集合差 0）。仅 2「公共组件交付面集合校验」待补。
 
 1. 让 API/changelog 生成可确定重放。
 2. 实现公共组件交付面集合校验。
@@ -499,6 +540,8 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 5. 在 CI 中阻断部分生成状态。
 
 ### 阶段 C：高影响 seam（2–4 周）
+
+> **2026-10-09 复核：** 1 部分完成（theme、UnoCSS preset 契约测试已建，`useUiContext` 仍缺）；2 部分完成（e2e 11 → 38）；3 未动。
 
 1. 增加 theme、UnoCSS preset、`useUiContext` 直接测试。
 2. 扩展真实浏览器场景（浮层、键盘导航、颜色对比）。
@@ -537,7 +580,7 @@ install、隔离构建、发布 tarball 或不同包管理器消费时，可能�
 
 - clean/cached package build time；
 - docs SSG build time、峰值内存、route chunk 大小；
-- 九个 tarball 的独立安装矩阵；
+- 五个发布包的独立安装矩阵；
 - package/目录级 unit coverage；
 - browser e2e 场景与耗时清单。
 

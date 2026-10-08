@@ -27,6 +27,20 @@ If a nearer scoped `AGENTS.md` exists for your target path, use it only to narro
 **Monorepo:** pnpm workspaces — private root + 8 members (6 packages + 2 apps): 5 publishable packages, 1 private package (`@vean/scripts`), 2 private apps. `skills/` is a **generated distribution**, not a workspace member.
 **Stack:** Vue 3 + TypeScript (strict) + UnoCSS + @soybeanjs/cva
 
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Five canonical triage roles, label strings equal to the role names (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` glossary at the repo root + shared `docs/adr/`. See `docs/agents/domain.md`.
+
 ## ARCHITECTURE
 
 The canonical workspace map, labeled dependency graph, build/test flows, and
@@ -76,8 +90,8 @@ Private packages and applications:
 | UnoCSS adapter                     | `packages/unocss/`                                                        | `presetUi()` / `presetVean()`                                                                    |
 | Source-distribution CLI            | `packages/cli/`                                                           | commands → registry/schema/templates/MCP                                                         |
 | Repo-service CLI (`sui`)           | `packages/scripts/`                                                       | `gen` (offline) / `translate` (DeepL) / `check` groups, `size`, `stub`, `reorder-imports`        |
-| Utility functions                  | `packages/aria/src/shared/`                                           | Pure TS helpers (DOM, focus, tree, form, guard, comparison)                                      |
-| Global types                       | `packages/aria/src/types/`                                            | `ClassValue`, `UiClass<S>`, `PropsToContext<T,K>`, `PrimitiveProps`                              |
+| Utility functions                  | `packages/aria/src/shared/`                                               | Pure TS helpers (DOM, focus, tree, form, guard, comparison)                                      |
+| Global types                       | `packages/aria/src/types/`                                                | `ClassValue`, `UiClass<S>`, `PropsToContext<T,K>`, `PrimitiveProps`                              |
 | Generated API data                 | `apps/docs/src/generated/api/`                                            | `pnpm sui gen api` baseline + `pnpm sui translate api --locale <locale>` locale text             |
 | Generated changelog data           | `apps/docs/src/generated/changelog/`                                      | `pnpm sui gen changelog` baseline + `pnpm sui translate changelog` locale summaries              |
 | Docs content                       | `apps/docs/src/content/{en,zh}/`                                          | Markdown rendering `<UsageCode>`, `<PlaygroundGallery>`, `<ComponentApi>`                        |

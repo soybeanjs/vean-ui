@@ -151,6 +151,11 @@ pnpm sui sync-template-versions  # Sync the @vean/* version constant used by pro
 
 **Release** (`pnpm release` → `soy release -e 'pnpm release-execute'`): versions are bumped across all workspaces in lockstep from the root `package.json`, then `release-execute` runs `soy changelog && sui gen skills && sui translate all && sync-template-versions`. Two consequences: never hand-edit a single package's version (they must stay equal), and `sui translate all` means a release **requires** `DEEPL_API_KEY` — the chain is not offline. `sync-template-versions` rewrites `packages/cli/src/templates/versions.ts`, a generated constant, so scaffolder versions follow the root bump automatically.
 
+## GIT COMMIT CONVENTION
+
+- **Follow Conventional Commits**: `<type>(<scope>): <subject>`, e.g. `fix(dialog): prevent nested popup from closing on outside click`.
+- **Commit messages must be written in English.**
+
 ## LOCAL DEVELOPMENT GOTCHAS
 
 - **Dev and published entry points differ per package.** `packages/{aria,ui,cli}/package.json` `exports` resolve to `./src/...` so the workspace consumes source directly, and `publishConfig.exports` swaps to `./dist/...`. `packages/{theme,unocss}` have **no** dev indirection — they always resolve from `dist/`.

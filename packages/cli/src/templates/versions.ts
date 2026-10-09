@@ -7,4 +7,4 @@
  * The version is read from the root `package.json` at release time so that
  * project templates always scaffold with the latest published version.
  */
-export const VEAN_VERSION = '0.50.1';
+export const VEAN_VERSION = '0.50.2';

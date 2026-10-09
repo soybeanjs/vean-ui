@@ -1,6 +1,6 @@
 {
   "name": "@vean/aria",
-  "version": "0.50.1",
+  "version": "0.50.2",
   "description": "Vean Aria is a collection unstyled components for Vue 3. It is designed to be lightweight and easy to use.",
   "homepage": "https://github.com/soybeanjs/vean-ui",
   "bugs": {

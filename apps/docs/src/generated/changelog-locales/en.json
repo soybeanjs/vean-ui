@@ -3710,6 +3710,11 @@
             "eed66": "document the VeanUI brand and rename history",
             "f355b": "declare missing direct dependencies across workspaces",
             "f77bb": "rename SoybeanUI to Vean"
+          },
+          "2": {
+            "109ee": "raise the vue peer floor and enforce it in the dependency gate",
+            "4e35b": "add the missing theme-customizer reference",
+            "53e7b": "guard skill docs against missing component coverage"
           }
         }
       }

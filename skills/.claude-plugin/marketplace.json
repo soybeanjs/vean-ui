@@ -14,7 +14,7 @@
       "keywords": ["agentskills", "vean-ui", "vean-aria", "vue", "github-copilot", "claude-code"],
       "name": "vean-skills",
       "source": "./",
-      "version": "0.50.1"
+      "version": "0.50.2"
     }
   ]
 }

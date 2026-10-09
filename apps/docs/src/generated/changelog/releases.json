@@ -1,7 +1,56 @@
 {
-  "generatedAt": "2026-10-09T07:18:00.514Z",
+  "generatedAt": "2026-10-09T13:34:37.038Z",
   "schemaVersion": 1,
   "releases": [
+    {
+      "version": "v0.50.2",
+      "compareUrl": "https://github.com/soybeanjs/vean-ui/compare/v0.50.1...v0.50.2",
+      "date": "2026-10-09",
+      "entryCount": 3,
+      "componentCount": 0,
+      "components": [],
+      "newComponents": [],
+      "typeCounts": {
+        "fix": 2,
+        "docs": 1
+      },
+      "notes": [],
+      "entries": [
+        {
+          "type": "fix",
+          "scope": "scripts",
+          "summary": "guard skill docs against missing component coverage",
+          "summaryKey": "changelog.generated.v0.50.2.53e7b",
+          "commitHash": "53e7b",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/53e7b320c",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": []
+        },
+        {
+          "type": "fix",
+          "scope": "scripts",
+          "summary": "raise the vue peer floor and enforce it in the dependency gate",
+          "summaryKey": "changelog.generated.v0.50.2.109ee",
+          "commitHash": "109ee",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/109ee2482",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": []
+        },
+        {
+          "type": "docs",
+          "scope": "skills",
+          "summary": "add the missing theme-customizer reference",
+          "summaryKey": "changelog.generated.v0.50.2.4e35b",
+          "commitHash": "4e35b",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/4e35b4a31",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": []
+        }
+      ]
+    },
     {
       "version": "v0.50.1",
       "compareUrl": "https://github.com/soybeanjs/vean-ui/compare/v0.50.0...v0.50.1",

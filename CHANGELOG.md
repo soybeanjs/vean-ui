@@ -1,5 +1,21 @@
 # Changelog
 
+## [v0.50.2](https://github.com/soybeanjs/vean-ui/compare/v0.50.1...v0.50.2) (2026-10-09)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **scripts**:
+  - guard skill docs against missing component coverage &nbsp;-&nbsp; by @soybeanjs [<samp>(53e7b)</samp>](https://github.com/soybeanjs/vean-ui/commit/53e7b320c)
+  - raise the vue peer floor and enforce it in the dependency gate &nbsp;-&nbsp; by @soybeanjs [<samp>(109ee)</samp>](https://github.com/soybeanjs/vean-ui/commit/109ee2482)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **skills**: add the missing theme-customizer reference &nbsp;-&nbsp; by @soybeanjs [<samp>(4e35b)</samp>](https://github.com/soybeanjs/vean-ui/commit/4e35b4a31)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.50.1](https://github.com/soybeanjs/vean-ui/compare/v0.50.0...v0.50.1) (2026-10-09)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes

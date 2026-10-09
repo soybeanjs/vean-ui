@@ -1,6 +1,6 @@
 {
   "name": "vean",
-  "version": "0.50.1",
+  "version": "0.50.2",
   "private": true,
   "description": "Vean is a Vue 3 component library built on a 'aria / styled separation'.",
   "homepage": "https://github.com/soybeanjs/vean-ui",

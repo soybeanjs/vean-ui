@@ -101,9 +101,27 @@ export const DEFAULT_AZURE_TRANSLATE_ENDPOINT = 'https://api.cognitive.microsoft
 export const DEFAULT_TRANSLATE_RETRY_COUNT = 3;
 export const DEFAULT_TRANSLATE_RETRY_DELAY_MS = 1500;
 
-/** Azure caps one request at 1 000 elements and 50 000 characters; stay below it. */
-export const AZURE_MAX_ITEMS_PER_REQUEST = 1000;
-export const AZURE_MAX_CHARACTERS_PER_REQUEST = 45000;
+/** Azure's own per-request transport caps; exceeding either returns `400`. */
+export const AZURE_MAX_ITEMS_PER_REQUEST = 1_000;
+export const AZURE_MAX_CHARACTERS_PER_REQUEST = 50_000;
+
+/**
+ * Azure meters source characters on a sliding window, and the ceiling is far
+ * below what the tier table suggests. Measured on `southeastasia` against real
+ * `api` payloads:
+ * - `429` is a token-bucket rejection, not a quota: it clears in ~15 s after a
+ *   burst, so the process was never out of monthly characters;
+ * - ~30 000 characters is the burst allowance — a 10 000 x 4 burst is rejected
+ *   on the fourth request, and ~70 000 characters parks the window for ~30 s;
+ * - ~555 characters/s sustains indefinitely (tried 500/s = 60 s clean, 1 000/s
+ *   and 2 000/s both fail after ~35 s), i.e. roughly 2 000 000 characters/hour.
+ *
+ * The defaults therefore spend 75% of the sustained ceiling and keep every
+ * request inside the burst allowance, so the pacer never leans on the reject
+ * path. `AZURE_CHARACTERS_PER_HOUR` overrides the budget for another tier.
+ */
+export const DEFAULT_AZURE_CHARACTERS_PER_HOUR = 1_500_000;
+export const AZURE_DEFAULT_CHARACTERS_PER_REQUEST = 10_000;
 
 const deepLLanguageMap = new Map<string, string>([
   ['bg', 'BG'],
@@ -419,12 +437,95 @@ export function toProviderLanguage(locale: string, provider: TranslationProvider
   return provider === 'azure' ? toAzureLanguage(locale) : toDeepLLanguage(locale);
 }
 
+/**
+ * Azure character meter for this run. The budget is read from the environment so
+ * tests and other Azure tiers can pace against a different window; otherwise the
+ * default documented next to `DEFAULT_AZURE_CHARACTERS_PER_HOUR` applies.
+ */
+function resolveAzureCharacterBudget(): { charactersPerHour: number; charactersPerRequest: number } {
+  const requestedPerHour = getRetryEnvNumber(['AZURE_CHARACTERS_PER_HOUR'], Number.NaN);
+  const requestedPerMinute = getRetryEnvNumber(['AZURE_CHARACTERS_PER_MINUTE'], Number.NaN);
+  const charactersPerHour =
+    requestedPerHour > 0
+      ? requestedPerHour
+      : requestedPerMinute > 0
+        ? requestedPerMinute * 60
+        : DEFAULT_AZURE_CHARACTERS_PER_HOUR;
+
+  return {
+    charactersPerHour,
+    charactersPerRequest: Math.min(
+      getRetryEnvNumber(['AZURE_CHARACTERS_PER_REQUEST'], AZURE_DEFAULT_CHARACTERS_PER_REQUEST),
+      AZURE_MAX_CHARACTERS_PER_REQUEST
+    )
+  };
+}
+
 function shouldRetryRequest(status: number): boolean {
   return status === 429 || status >= 500;
 }
 
+/** `Retry-After` in either form the spec allows; `null` when the header is absent or unusable. */
+function readRetryAfterMs(response: Response): number | null {
+  const header = response.headers.get('retry-after')?.trim();
+
+  if (!header) {
+    return null;
+  }
+
+  const seconds = Number(header);
+
+  if (Number.isFinite(seconds) && seconds >= 0) {
+    return seconds * 1000;
+  }
+
+  const date = Date.parse(header);
+
+  return Number.isNaN(date) ? null : Math.max(date - Date.now(), 0);
+}
+
 function getRetryDelay(attempt: number, retryDelayMs: number): number {
   return retryDelayMs * 2 ** attempt;
+}
+
+/**
+ * The pacer tracks the characters this process still owes the window instead of
+ * spacing requests by a fixed interval: Azure charges the sliding window, so a
+ * uniform cadence still overruns as soon as one batch is larger than the last.
+ * Capacity equals one request, which keeps traffic smooth rather than bursty.
+ */
+export function createCharacterBudgetGate(
+  charactersPerHour: number,
+  capacity: number
+): (characters: number) => Promise<void> {
+  const refillPerMs = charactersPerHour / 3_600_000;
+  let availableCharacters = capacity;
+  let lastRefillAt = Date.now();
+
+  const refill = (): void => {
+    const now = Date.now();
+
+    availableCharacters = Math.min(capacity, availableCharacters + (now - lastRefillAt) * refillPerMs);
+    lastRefillAt = now;
+  };
+
+  return async characters => {
+    refill();
+
+    const deficit = characters - availableCharacters;
+
+    if (deficit > 0) {
+      const waitMs = Math.ceil(deficit / refillPerMs);
+
+      console.log(`Azure character budget reached; waiting ${Math.ceil(waitMs / 1000)}s before the next batch.`);
+      await wait(waitMs);
+      refill();
+    }
+
+    // Charged before the request, so a rejected attempt still draws down the
+    // budget and the retry has to wait its turn like any other batch.
+    availableCharacters -= characters;
+  };
 }
 
 async function wait(ms: number): Promise<void> {
@@ -513,9 +614,12 @@ async function postJson(options: {
   body: unknown;
   retryCount: number;
   retryDelayMs: number;
+  beforeRequest?: () => Promise<void>;
   describeFailure: (responseText: string, statusText: string) => string;
 }): Promise<{ ok: true; payload: unknown } | { ok: false; message: string; status: number }> {
   for (let attempt = 0; attempt <= options.retryCount; attempt += 1) {
+    await options.beforeRequest?.();
+
     const response = await fetch(options.url, {
       method: 'POST',
       headers: options.headers,
@@ -527,9 +631,12 @@ async function postJson(options: {
     }
 
     const responseText = await readResponseText(response);
+    // A throttled response usually states when the window reopens; honoring it
+    // beats doubling our own delay from a guess.
+    const retryAfterMs = readRetryAfterMs(response);
 
     if (attempt < options.retryCount && shouldRetryRequest(response.status)) {
-      const delayMs = getRetryDelay(attempt, options.retryDelayMs);
+      const delayMs = retryAfterMs ?? getRetryDelay(attempt, options.retryDelayMs);
       console.log(
         `Translation request failed with ${response.status}. Retrying in ${delayMs}ms (${attempt + 1}/${options.retryCount})...`
       );
@@ -625,17 +732,27 @@ export async function requestAzureTranslations(options: {
   retryDelayMs: number;
   protectPlaceholders?: boolean;
   sourceLanguage?: string;
+  /**
+   * Shared across every request of a run: a per-call gate would hand each batch
+   * a fresh budget and burst straight into a `429`.
+   */
+  awaitCharacterBudget?: (characters: number) => Promise<void>;
 }): Promise<Map<string, string>> {
   const preparedEntries = prepareEntries(options);
   const sourceLanguage = options.sourceLanguage ?? toAzureLanguage(options.sourceLocale);
   const targetLanguage = toAzureLanguage(options.targetLocale);
   const translatedEntries = new Map<string, string>();
-
-  for (const batch of splitEntriesByCharacterBudget(
+  const budget = resolveAzureCharacterBudget();
+  const awaitCharacterBudget =
+    options.awaitCharacterBudget ?? createCharacterBudgetGate(budget.charactersPerHour, budget.charactersPerRequest);
+  const batches = splitEntriesByCharacterBudget(
     preparedEntries,
     AZURE_MAX_ITEMS_PER_REQUEST,
-    AZURE_MAX_CHARACTERS_PER_REQUEST
-  )) {
+    budget.charactersPerRequest
+  );
+
+  for (const batch of batches) {
+    const requestCharacters = batch.reduce((total, entry) => total + entry.protectedSource.length, 0);
     const requestUrl = new URL(`${options.endpoint}/translate`);
 
     requestUrl.searchParams.set('api-version', '3.0');
@@ -652,6 +769,7 @@ export async function requestAzureTranslations(options: {
       body: batch.map(entry => ({ text: entry.protectedSource })),
       retryCount: options.retryCount,
       retryDelayMs: options.retryDelayMs,
+      beforeRequest: () => awaitCharacterBudget(requestCharacters),
       describeFailure: (responseText, statusText) =>
         getAzureErrorMessage(parseAzureErrorResponse(responseText), responseText || statusText)
     });
@@ -727,6 +845,7 @@ export async function requestProviderTranslations(options: {
   retryDelayMs: number;
   protectPlaceholders?: boolean;
   sourceLanguage?: string;
+  awaitCharacterBudget?: (characters: number) => Promise<void>;
 }): Promise<Map<string, string>> {
   if (options.provider.provider === 'azure') {
     return requestAzureTranslations({
@@ -739,7 +858,8 @@ export async function requestProviderTranslations(options: {
       retryCount: options.retryCount,
       retryDelayMs: options.retryDelayMs,
       protectPlaceholders: options.protectPlaceholders,
-      sourceLanguage: options.sourceLanguage
+      sourceLanguage: options.sourceLanguage,
+      awaitCharacterBudget: options.awaitCharacterBudget
     });
   }
 
@@ -778,12 +898,21 @@ export async function translateEntries(options: {
   );
   const translatedTextCache = new Map<string, string>();
   const translatedEntries = new Map<string, string>();
+  const azureBudget = resolveAzureCharacterBudget();
+  // Created once per run, not per batch: every batch draws from the same window,
+  // which is what Azure meters.
+  const awaitCharacterBudget =
+    provider.provider === 'azure'
+      ? createCharacterBudgetGate(azureBudget.charactersPerHour, azureBudget.charactersPerRequest)
+      : undefined;
   // Azure bills and caps per request, so it is chunked by the request budget
   // (`--batch-size` would otherwise throttle it to DeepL-sized requests); DeepL
-  // keeps the explicit, user-tunable batch size.
+  // keeps the explicit, user-tunable batch size. The character budget matches
+  // the one `requestAzureTranslations` paces against so the reported batch
+  // count equals the number of HTTP requests.
   const entryChunks =
     provider.provider === 'azure'
-      ? splitEntriesByCharacterBudget(options.entries, AZURE_MAX_ITEMS_PER_REQUEST, AZURE_MAX_CHARACTERS_PER_REQUEST)
+      ? splitEntriesByCharacterBudget(options.entries, AZURE_MAX_ITEMS_PER_REQUEST, azureBudget.charactersPerRequest)
       : chunkArray(options.entries, options.batchSize);
 
   options.onProviderResolved?.(provider);
@@ -808,7 +937,8 @@ export async function translateEntries(options: {
         retryCount,
         retryDelayMs,
         sourceLanguage: options.sourceLanguage,
-        protectPlaceholders: options.protectPlaceholders
+        protectPlaceholders: options.protectPlaceholders,
+        awaitCharacterBudget
       });
 
       uncachedEntries.forEach(entry => {

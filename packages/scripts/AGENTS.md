@@ -18,13 +18,13 @@ Declared with **cac** in `src/cli.ts` — not hand-dispatched. Every action rece
 
 Three groups plus workspace commands:
 
-| Group                                               | Nature                                                                                                          |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `gen`                                               | **Deterministic, offline.** Never touches the network.                                                          |
-| `translate`                                         | **The only networked group** (Azure Translate, DeepL fallback); needs `AZURE_TRANSLATE_KEY` or `DEEPL_API_KEY`. |
-| `check`                                             | Verification gates; exit 1 on drift.                                                                            |
-| `size`                                              | Measures shipped artifacts and consumer imports; `check size` is the gate form.                                 |
-| `stub`, `reorder-imports`, `sync-template-versions` | One-off workspace helpers.                                                                                      |
+| Group                                               | Nature                                                                                                                                                        |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `gen`                                               | **Deterministic, offline.** Never touches the network.                                                                                                        |
+| `translate`                                         | **The only networked group** (Azure Translate, DeepL fallback); needs `AZURE_TRANSLATE_KEY` or `DEEPL_API_KEY`. Paces Azure by characters/hour, not requests. |
+| `check`                                             | Verification gates; exit 1 on drift.                                                                                                                          |
+| `size`                                              | Measures shipped artifacts and consumer imports; `check size` is the gate form.                                                                               |
+| `stub`, `reorder-imports`, `sync-template-versions` | One-off workspace helpers.                                                                                                                                    |
 
 ## DETERMINISM IS A CONTRACT, NOT A NICETY
 

@@ -52,6 +52,8 @@ Provider credentials, checked in this order:
 
 The run prints `Translation provider: <azure|deepl>` before it starts.
 
+Azure meters source characters rather than requests, so the command paces itself: 1 500 000 characters/hour at 10 000 characters per request, which stays under the measured ceiling (~555 characters/s on `southeastasia`) and under the ~30 000-character burst allowance. A rejected request waits for `Retry-After` when Azure sends it. Override with `AZURE_CHARACTERS_PER_HOUR` / `AZURE_CHARACTERS_PER_REQUEST` for a different tier.
+
 ### check
 
 ```bash

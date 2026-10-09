@@ -52,6 +52,8 @@ pnpm sui translate <surface> [options]
 
 运行开始时会打印 `Translation provider: <azure|deepl>`。
 
+Azure 按源字符数而不是请求数计费,因此命令会自我限速:每小时 1 500 000 字符、每个请求 10 000 字符,低于实测上限(`southeastasia` 约 555 字符/秒)和约 30 000 字符的突发额度。被拒绝的请求会在 Azure 返回 `Retry-After` 时按该值等待。换套餐时用 `AZURE_CHARACTERS_PER_HOUR` / `AZURE_CHARACTERS_PER_REQUEST` 覆盖。
+
 ### check
 
 ```bash

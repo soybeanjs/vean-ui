@@ -4,6 +4,7 @@ import path from 'node:path';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { JsonObject } from '../src/shared/json';
 import {
+  createCharacterBudgetGate,
   getPendingEntries,
   requestAzureTranslations,
   requestDeepLTranslations,
@@ -20,6 +21,7 @@ interface MockFetchOptions {
   ok?: boolean;
   status?: number;
   statusText?: string;
+  retryAfter?: string;
 }
 
 function createMockResponse(
@@ -29,16 +31,21 @@ function createMockResponse(
   ok: boolean;
   status: number;
   statusText: string;
+  headers: { get: (name: string) => string | null };
   json: () => Promise<unknown>;
   text: () => Promise<string>;
 } {
-  const { ok = true, status = 200, statusText = 'OK' } = options;
+  const { ok = true, status = 200, statusText = 'OK', retryAfter } = options;
   const body = typeof payload === 'string' ? payload : JSON.stringify(payload);
+  const headers = new Map(Object.entries(retryAfter === undefined ? {} : { 'retry-after': retryAfter }));
 
   return {
     ok,
     status,
     statusText,
+    headers: {
+      get: (name: string) => headers.get(name.toLowerCase()) ?? null
+    },
     async json() {
       return payload;
     },
@@ -313,6 +320,43 @@ describe('shared/translate', () => {
       const result = getPendingEntries(source, new Map(), false, null, key => key !== 'b');
 
       expect(result.map(entry => entry.key)).toEqual(['a']);
+    });
+  });
+
+  describe('createCharacterBudgetGate', () => {
+    it('lets a request through while the budget covers it', async () => {
+      const awaitBudget = createCharacterBudgetGate(3_600_000, 100);
+      const startedAt = Date.now();
+
+      await awaitBudget(50);
+      await awaitBudget(50);
+
+      expect(Date.now() - startedAt).toBeLessThan(50);
+    });
+
+    it('waits for the budget to refill before the next request', async () => {
+      // 3 600 000 characters/hour refills one character per millisecond.
+      const awaitBudget = createCharacterBudgetGate(3_600_000, 100);
+
+      await awaitBudget(100);
+
+      const startedAt = Date.now();
+
+      await awaitBudget(100);
+
+      expect(Date.now() - startedAt).toBeGreaterThanOrEqual(90);
+    });
+
+    it('charges the budget before the request, so a rejected batch still draws it down', async () => {
+      const awaitBudget = createCharacterBudgetGate(3_600_000, 100);
+
+      await awaitBudget(100);
+
+      const startedAt = Date.now();
+
+      await awaitBudget(60);
+
+      expect(Date.now() - startedAt).toBeGreaterThanOrEqual(50);
     });
   });
 

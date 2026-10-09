@@ -5,6 +5,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { menuData } from '../../../../apps/docs/src/constants/menus';
 import type { MenuData } from '../../../../apps/docs/src/constants/menus';
+import { components as uiComponentCatalog } from '../../../../packages/ui/src/constants/components';
 
 type FrontmatterResult = {
   content: string;
@@ -47,6 +48,30 @@ type SkillComponentDoc = {
 
 type GenerateSkillDocsOptions = {
   skillsRootDir?: string;
+};
+
+/**
+ * Coverage gaps between the UI component catalog and the docs pages that feed
+ * the skill output. Every UI family must have a docs page (source/content/{en,zh}
+ * plus a `menus.ts` entry); a docs page that is neither a catalog family nor a
+ * menu entry is a typo or a stranded page.
+ */
+export type ComponentCoverageGaps = {
+  /** catalog families whose kebab-case slug has no docs page */
+  missingDocs: string[];
+  /** catalog families missing from `menuData` (they silently fall into "Other") */
+  unregisteredFamilies: string[];
+  /** docs pages that are neither a catalog family nor a menu entry */
+  orphanDocs: string[];
+};
+
+export type ComponentCoverageInput = {
+  /** kebab-case slugs of the docs pages that feed the skill output */
+  documentedSlugs: readonly string[];
+  /** camelCase family keys of the UI component catalog */
+  families: readonly string[];
+  /** `menuData` item keys (camelCase) */
+  menuItems: readonly string[];
 };
 
 const siteBaseUrl = 'https://veanui.com';
@@ -100,6 +125,11 @@ const skillOrderedCategoryKeys = [
 export async function generateSkillDocs(options: GenerateSkillDocsOptions = {}): Promise<void> {
   const outputPaths = resolveSkillOutputPaths(options.skillsRootDir ?? defaultSkillsRootDir);
   const docs = await collectSourceDocs();
+
+  // Fail before any write: a catalog family without a docs page is invisible in
+  // the generated skills, and regenerating cannot recover it.
+  assertComponentCoverage(docs);
+
   const sortedDocs = docs.sort((left, right) => left.slug.localeCompare(right.slug));
 
   await rm(outputPaths.veanUiComponentsOutputDir, { recursive: true, force: true });
@@ -119,6 +149,88 @@ export async function generateSkillDocs(options: GenerateSkillDocsOptions = {}):
   ]);
 
   console.log(`Generated Vean skill docs for ${sortedDocs.length} components.`);
+}
+
+/** `menuData` item keys across every group. */
+function collectMenuItems(): string[] {
+  return menuData.flatMap(group => group.items);
+}
+
+/**
+ * Compare the UI component catalog with the docs pages and menu registration
+ * that drive the skill output. Pure so the rule can be unit tested; the caller
+ * runs it against the repository tree.
+ */
+export function collectComponentCoverageGaps(input: ComponentCoverageInput): ComponentCoverageGaps {
+  const documentedSlugs = new Set(input.documentedSlugs);
+  const familySlugs = new Set(input.families.map(toKebabCase));
+  const menuSlugs = new Set(input.menuItems.map(toKebabCase));
+
+  return {
+    missingDocs: [...familySlugs].filter(slug => !documentedSlugs.has(slug)).sort(),
+    unregisteredFamilies: [...familySlugs].filter(slug => !menuSlugs.has(slug)).sort(),
+    orphanDocs: [...documentedSlugs].filter(slug => !familySlugs.has(slug) && !menuSlugs.has(slug)).sort()
+  };
+}
+
+/**
+ * Guard the skill generation against silent component loss. Without this the
+ * generator only ever compares the files it already knows about, so a new
+ * catalog family with no docs page never appears in `skills/` and no check
+ * notices (`sui check generated` only proves the committed files are current).
+ */
+function assertComponentCoverage(docs: SkillComponentDoc[]): void {
+  assertCoverageGaps(
+    collectComponentCoverageGaps({
+      documentedSlugs: docs.map(doc => doc.slug),
+      families: Object.keys(uiComponentCatalog),
+      menuItems: collectMenuItems()
+    })
+  );
+}
+
+/**
+ * Read the docs directory and reject a catalog that does not match it. Used as
+ * a pre-flight check before the skills distribution is rebuilt, so a coverage
+ * gap fails fast instead of leaving a half-written distribution behind.
+ */
+export async function assertSkillDocsCoverage(): Promise<void> {
+  const docsDir = path.resolve(repoRoot, 'apps/docs/src/content/en/ui/components');
+  const documentedSlugs = (await collectMarkdownFiles(docsDir)).map(filePath => path.basename(filePath, '.md'));
+
+  assertCoverageGaps(
+    collectComponentCoverageGaps({
+      documentedSlugs,
+      families: Object.keys(uiComponentCatalog),
+      menuItems: collectMenuItems()
+    })
+  );
+}
+
+function assertCoverageGaps(gaps: ComponentCoverageGaps): void {
+  const lines = [
+    ...gaps.missingDocs.map(slug => `- missing docs page: ${slug}`),
+    ...gaps.unregisteredFamilies.map(slug => `- missing menuData entry: ${slug}`),
+    ...gaps.orphanDocs.map(slug => `- orphan docs page (no catalog family, no menu entry): ${slug}`)
+  ];
+
+  if (lines.length === 0) {
+    return;
+  }
+
+  throw new Error(
+    [
+      'Skill docs are out of sync with the UI component catalog.',
+      ...lines,
+      '',
+      'How to fix:',
+      '  docs page:     add apps/docs/src/content/en/ui/components/<slug>.md and the zh counterpart',
+      '  menu entry:    add the camelCase key to the right group in apps/docs/src/constants/menus.ts',
+      '  orphan page:   rename it to the catalog family slug, or drop it',
+      '',
+      'Then rerun: pnpm sui gen skills'
+    ].join('\n')
+  );
 }
 
 async function collectSourceDocs(): Promise<SkillComponentDoc[]> {

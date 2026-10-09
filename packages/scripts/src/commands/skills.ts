@@ -2,7 +2,7 @@
 
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { generateSkillDocs } from './skills-docs';
+import { assertSkillDocsCoverage, generateSkillDocs } from './skills-docs';
 
 type PackageAuthor = {
   email?: string;
@@ -82,6 +82,8 @@ const distributedSkillDirs = ['vean-ui', 'vean-aria'];
 
 export async function generateSkillsDistribution(): Promise<void> {
   const rootPackage = await readRootPackageManifest();
+
+  await assertSkillDocsCoverage();
 
   await mkdir(skillsDistributionRootDir, { recursive: true });
   await rm(skillsDistributionSkillsDir, { force: true, recursive: true });

@@ -2,7 +2,7 @@
 
 Source URL: https://veanui.com/components/theme-mode-select
 Markdown URL: https://veanui.com/components/theme-mode-select.md
-Category: Other
+Category: Utilities
 Description: SThemeModeSelect is a context-bound dropdown bound to the active SConfigProvider theme. It exposes the three ThemeModePreference options — auto (follows the OS prefers-color-scheme), light, and dark — each with a scheme icon, letting users pick a color scheme preference directly.
 
 ## Overview

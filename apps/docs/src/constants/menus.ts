@@ -114,6 +114,7 @@ export const menuData: MenuData[] = [
       'badge',
       'kbd',
       'progress',
+      'rating',
       'scrollArea',
       'skeleton',
       'tag',
@@ -135,7 +136,7 @@ export const menuData: MenuData[] = [
   {
     value: 'utilities',
     i18n: 'sidebar.utilities',
-    items: ['visuallyHidden']
+    items: ['themeCustomizer', 'themeModeSegment', 'themeModeSelect', 'themeModeSwitch', 'visuallyHidden']
   },
   {
     // aria product line — placeholder until the aria docs land (D8)

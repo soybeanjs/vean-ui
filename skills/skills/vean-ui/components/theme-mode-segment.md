@@ -2,7 +2,7 @@
 
 Source URL: https://veanui.com/components/theme-mode-segment
 Markdown URL: https://veanui.com/components/theme-mode-segment.md
-Category: Other
+Category: Utilities
 Description: SThemeModeSegment is a context-bound segmented control bound to the active SConfigProvider theme. It exposes the three ThemeModePreference options — auto (follows the OS prefers-color-scheme), light, and dark — as icon-led segment options, letting users pick a color scheme preference directly. Visual props are inherited from the Segment component, with shape defaulting to rounded.
 
 ## Overview

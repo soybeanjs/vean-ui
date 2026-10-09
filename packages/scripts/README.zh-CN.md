@@ -13,7 +13,7 @@ Vean 工作仓的服务 CLI(`sui`):生成器、校验门与工作区杂务。
 `sui` 保证每一处提交进仓库的生成产物都可复现。所有命令都在 `src/cli.ts` 用 [cac](https://github.com/cacjs/cac) 声明,因此 `--help` / `--version` / 未知选项 / 缺失参数的处理只有一处。共有三个命令组和若干一次性工作区命令:
 
 - **`gen`** —— 确定性、离线:重新生成已提交的产物。
-- **`translate`** —— 唯一联网的命令组(DeepL),需要 `DEEPL_API_KEY`。
+- **`translate`** —— 唯一联网的命令组;优先 Azure 翻译,DeepL 作为兜底(需要 `AZURE_TRANSLATE_KEY` 或 `DEEPL_API_KEY`)。
 - **`check`** —— 仓库未达发布状态时以退出码 `1` 失败的校验门。
 - **工作区命令** —— `stub`、`reorder-imports`、`sync-template-versions`。
 
@@ -42,7 +42,15 @@ pnpm sui gen <surface> [name] [--force]
 pnpm sui translate <surface> [options]
 ```
 
-产物面:`api` | `changelog` | `locale` | `all`。选项:`--locale <locale>`(默认所有非源语言)、`--source-locale <locale>`(默认 `en`)、`--batch-size <number>`(默认 20)、`--limit <number>`、`--overwrite`、`--dry-run`(只报告待翻译数量,不调用 API)。需要 `DEEPL_API_KEY`。
+产物面:`api` | `changelog` | `locale` | `all`。选项:`--locale <locale>`(默认所有非源语言)、`--source-locale <locale>`(默认 `en`)、`--batch-size <number>`(默认 20)、`--limit <number>`、`--overwrite`、`--dry-run`(只报告待翻译数量,不调用 API)。
+
+翻译服务的凭据按以下顺序解析:
+
+1. `TRANSLATE_PROVIDER=azure|deepl` —— 显式指定。
+2. `AZURE_TRANSLATE_KEY` —— Azure 翻译(配合 `AZURE_TRANSLATE_REGION`、`AZURE_TEXT_TRANSLATE_URL`)。
+3. `DEEPL_API_KEY` / `TRANSLATE_API_KEY` —— DeepL(配合 `DEEPL_BASE_URL`)。
+
+运行开始时会打印 `Translation provider: <azure|deepl>`。
 
 ### check
 

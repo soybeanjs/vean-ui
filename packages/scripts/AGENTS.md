@@ -18,13 +18,13 @@ Declared with **cac** in `src/cli.ts` — not hand-dispatched. Every action rece
 
 Three groups plus workspace commands:
 
-| Group                                               | Nature                                                                          |
-| --------------------------------------------------- | ------------------------------------------------------------------------------- |
-| `gen`                                               | **Deterministic, offline.** Never touches the network.                          |
-| `translate`                                         | **The only networked group** (DeepL) and the only one needing `DEEPL_API_KEY`.  |
-| `check`                                             | Verification gates; exit 1 on drift.                                            |
-| `size`                                              | Measures shipped artifacts and consumer imports; `check size` is the gate form. |
-| `stub`, `reorder-imports`, `sync-template-versions` | One-off workspace helpers.                                                      |
+| Group                                               | Nature                                                                                                          |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `gen`                                               | **Deterministic, offline.** Never touches the network.                                                          |
+| `translate`                                         | **The only networked group** (Azure Translate, DeepL fallback); needs `AZURE_TRANSLATE_KEY` or `DEEPL_API_KEY`. |
+| `check`                                             | Verification gates; exit 1 on drift.                                                                            |
+| `size`                                              | Measures shipped artifacts and consumer imports; `check size` is the gate form.                                 |
+| `stub`, `reorder-imports`, `sync-template-versions` | One-off workspace helpers.                                                                                      |
 
 ## DETERMINISM IS A CONTRACT, NOT A NICETY
 
@@ -71,4 +71,4 @@ CI reuses the report written by the previous main-branch run as a pull request's
 - **NO `process.argv` parsing** in a command file — add the option to the `cli.ts` declaration.
 - **NO hand-edited generated output.** The gates exist precisely because those files have one author.
 - **NO unregistered output paths** (see above).
-- **NO printing secrets.** `translate` reads `DEEPL_API_KEY` from the env; never log it.
+- **NO printing secrets.** `translate` reads `AZURE_TRANSLATE_KEY` / `DEEPL_API_KEY` from the env; never log them.

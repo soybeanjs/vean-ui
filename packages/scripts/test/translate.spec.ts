@@ -5,9 +5,13 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { JsonObject } from '../src/shared/json';
 import {
   getPendingEntries,
-  requestTranslations,
+  requestAzureTranslations,
+  requestDeepLTranslations,
   resolveTargetLocales,
   resolveTranslateOptions,
+  resolveTranslationProvider,
+  splitEntriesByCharacterBudget,
+  toAzureLanguage,
   toDeepLLanguage,
   translateJsonLocaleFile
 } from '../src/shared/translate';
@@ -82,6 +86,111 @@ describe('shared/translate', () => {
     it('normalizes underscores and falls back to uppercase', () => {
       expect(toDeepLLanguage('de')).toBe('DE');
       expect(toDeepLLanguage('xx-zz')).toBe('XX-ZZ');
+    });
+  });
+
+  describe('toAzureLanguage', () => {
+    it('maps forked languages to Azure BCP-47 codes', () => {
+      expect(toAzureLanguage('zh')).toBe('zh-Hans');
+      expect(toAzureLanguage('zh-CN')).toBe('zh-Hans');
+      expect(toAzureLanguage('zh-TW')).toBe('zh-Hant');
+      expect(toAzureLanguage('zh-HK')).toBe('zh-Hant');
+      expect(toAzureLanguage('pt-BR')).toBe('pt');
+    });
+
+    it('lowercases the language subtag and keeps the uppercase region', () => {
+      expect(toAzureLanguage('ja')).toBe('ja');
+      expect(toAzureLanguage('es_MX')).toBe('es-MX');
+      expect(toAzureLanguage('fr-CA')).toBe('fr-CA');
+    });
+
+    it('drops a region Azure does not publish', () => {
+      expect(toAzureLanguage('en-GB')).toBe('en');
+      expect(toAzureLanguage('de-AT')).toBe('de');
+    });
+
+    it('keeps script subtags in Title Case', () => {
+      expect(toAzureLanguage('sr-cyrl')).toBe('sr-Cyrl');
+      expect(toAzureLanguage('az-Latn')).toBe('az-Latn');
+    });
+  });
+
+  describe('resolveTranslationProvider', () => {
+    it('prefers Azure when both credentials are present', () => {
+      vi.stubEnv('AZURE_TRANSLATE_KEY', 'azure-key');
+      vi.stubEnv('AZURE_TRANSLATE_REGION', 'southeastasia');
+      vi.stubEnv('AZURE_TEXT_TRANSLATE_URL', 'https://api.cognitive.microsofttranslator.com/');
+      vi.stubEnv('DEEPL_API_KEY', 'deepl-key');
+
+      expect(resolveTranslationProvider()).toEqual({
+        provider: 'azure',
+        apiKey: 'azure-key',
+        endpoint: 'https://api.cognitive.microsofttranslator.com',
+        region: 'southeastasia'
+      });
+    });
+
+    it('falls back to DeepL when only DEEPL_API_KEY is set', () => {
+      vi.stubEnv('DEEPL_API_KEY', 'deepl-key');
+
+      expect(resolveTranslationProvider()).toEqual({
+        provider: 'deepl',
+        apiKey: 'deepl-key',
+        endpoint: 'https://api-free.deepl.com/v2'
+      });
+    });
+
+    it('defaults to the global Azure endpoint when only the key is set', () => {
+      vi.stubEnv('AZURE_TRANSLATE_KEY', 'azure-key');
+
+      expect(resolveTranslationProvider()).toMatchObject({
+        provider: 'azure',
+        endpoint: 'https://api.cognitive.microsofttranslator.com'
+      });
+    });
+
+    it('honors an explicit provider override', () => {
+      vi.stubEnv('AZURE_TRANSLATE_KEY', 'azure-key');
+      vi.stubEnv('DEEPL_API_KEY', 'deepl-key');
+
+      expect(resolveTranslationProvider({ requestedProvider: 'deepl' }).provider).toBe('deepl');
+    });
+
+    it('rejects an unknown provider', () => {
+      expect(() => resolveTranslationProvider({ requestedProvider: 'google' })).toThrow(
+        'Unknown translation provider: google'
+      );
+    });
+
+    it('throws when no credentials are configured', () => {
+      expect(() => resolveTranslationProvider({ env: {} })).toThrow('Missing translation credentials');
+    });
+  });
+
+  describe('splitEntriesByCharacterBudget', () => {
+    it('splits on the item limit', () => {
+      const entries = [1, 2, 3, 4, 5].map(index => ({ key: `k${index}`, source: 'text' }));
+
+      expect(splitEntriesByCharacterBudget(entries, 2, 1000).map(batch => batch.length)).toEqual([2, 2, 1]);
+    });
+
+    it('splits on the cumulative character budget', () => {
+      const entries = [
+        { key: 'a', source: 'aa' },
+        { key: 'b', source: 'bb' },
+        { key: 'c', source: 'cc' }
+      ];
+
+      expect(splitEntriesByCharacterBudget(entries, 100, 4).map(batch => batch.length)).toEqual([2, 1]);
+    });
+
+    it('keeps an entry larger than the budget in its own batch', () => {
+      const entries = [
+        { key: 'a', source: 'x'.repeat(50) },
+        { key: 'b', source: 'y' }
+      ];
+
+      expect(splitEntriesByCharacterBudget(entries, 100, 10).map(batch => batch.length)).toEqual([1, 1]);
     });
   });
 
@@ -207,11 +316,11 @@ describe('shared/translate', () => {
     });
   });
 
-  describe('requestTranslations', () => {
+  describe('requestDeepLTranslations', () => {
     it('posts a DeepL-shaped request and maps responses back to keys', async () => {
       mockFetch(() => createMockResponse({ translations: [{ text: '你好' }, { text: '世界' }] }));
 
-      const result = await requestTranslations({
+      const result = await requestDeepLTranslations({
         entries: [
           { key: 'root.title', source: 'Hello' },
           { key: 'root.desc', source: 'World' }
@@ -250,7 +359,7 @@ describe('shared/translate', () => {
     it('protects and restores {placeholders} when requested', async () => {
       mockFetch(() => createMockResponse({ translations: [{ text: '世界 SBPH0TOKEN 值' }] }));
 
-      const result = await requestTranslations({
+      const result = await requestDeepLTranslations({
         entries: [{ key: 'root', source: 'World {color} value' }],
         sourceLocale: 'en',
         targetLocale: 'zh',
@@ -282,7 +391,7 @@ describe('shared/translate', () => {
         return createMockResponse({ translations: [{ text: '你好' }] });
       });
 
-      const result = await requestTranslations({
+      const result = await requestDeepLTranslations({
         entries: [{ key: 'root', source: 'Hello' }],
         sourceLocale: 'en',
         targetLocale: 'zh',
@@ -301,7 +410,7 @@ describe('shared/translate', () => {
       mockFetch(() => createMockResponse({ message: 'Bad Request' }, { ok: false, status: 400 }));
 
       await expect(
-        requestTranslations({
+        requestDeepLTranslations({
           entries: [{ key: 'root', source: 'Hello' }],
           sourceLocale: 'en',
           targetLocale: 'zh',
@@ -312,6 +421,139 @@ describe('shared/translate', () => {
           retryDelayMs: 1
         })
       ).rejects.toThrow('Translation request failed: 400 Bad Request');
+    });
+  });
+
+  describe('requestAzureTranslations', () => {
+    it('posts an Azure-shaped request and maps responses back to keys', async () => {
+      mockFetch(() =>
+        createMockResponse([
+          { translations: [{ text: '你好', to: 'zh-Hans' }] },
+          { translations: [{ text: '世界', to: 'zh-Hans' }] }
+        ])
+      );
+
+      const result = await requestAzureTranslations({
+        entries: [
+          { key: 'root.title', source: 'Hello' },
+          { key: 'root.desc', source: 'World' }
+        ],
+        sourceLocale: 'en',
+        targetLocale: 'zh-CN',
+        apiKey: 'test-key',
+        endpoint: 'https://api.cognitive.microsofttranslator.com',
+        region: 'southeastasia',
+        retryCount: 0,
+        retryDelayMs: 1
+      });
+
+      const [requestUrl, init] = vi.mocked(fetch).mock.calls[0] ?? [];
+      const query = new URL(String(requestUrl)).searchParams;
+
+      expect(init?.method).toBe('POST');
+      expect(init?.headers).toEqual({
+        'Content-Type': 'application/json',
+        'Ocp-Apim-Subscription-Key': 'test-key',
+        'Ocp-Apim-Subscription-Region': 'southeastasia'
+      });
+      expect(query.get('api-version')).toBe('3.0');
+      expect(query.get('from')).toBe('en');
+      expect(query.get('to')).toBe('zh-Hans');
+      expect(jsonBody(init)).toEqual([{ text: 'Hello' }, { text: 'World' }]);
+      expect(result).toEqual(
+        new Map([
+          ['root.title', '你好'],
+          ['root.desc', '世界']
+        ])
+      );
+    });
+
+    it('omits the region header when no region is configured', async () => {
+      mockFetch(() => createMockResponse([{ translations: [{ text: '你好' }] }]));
+
+      await requestAzureTranslations({
+        entries: [{ key: 'root', source: 'Hello' }],
+        sourceLocale: 'en',
+        targetLocale: 'zh',
+        apiKey: 'test-key',
+        endpoint: 'https://api.cognitive.microsofttranslator.com',
+        retryCount: 0,
+        retryDelayMs: 1
+      });
+
+      const init = vi.mocked(fetch).mock.calls[0]?.[1];
+
+      expect(init?.headers).toEqual({
+        'Content-Type': 'application/json',
+        'Ocp-Apim-Subscription-Key': 'test-key'
+      });
+    });
+
+    it('protects and restores {placeholders} when requested', async () => {
+      mockFetch(() => createMockResponse([{ translations: [{ text: '世界 SBPH0TOKEN 值' }] }]));
+
+      const result = await requestAzureTranslations({
+        entries: [{ key: 'root', source: 'World {color} value' }],
+        sourceLocale: 'en',
+        targetLocale: 'zh',
+        apiKey: 'test-key',
+        endpoint: 'https://api.cognitive.microsofttranslator.com',
+        retryCount: 0,
+        retryDelayMs: 1,
+        protectPlaceholders: true
+      });
+
+      const init = vi.mocked(fetch).mock.calls[0]?.[1];
+
+      expect(jsonBody(init)).toEqual([{ text: 'World SBPH0TOKEN value' }]);
+      expect(result.get('root')).toBe('世界 {color} 值');
+    });
+
+    it('splits oversized entry sets into several requests', async () => {
+      mockFetch((_input, init) => {
+        const batch = JSON.parse(String(init?.body)) as { text: string }[];
+
+        return createMockResponse(batch.map(item => ({ translations: [{ text: item.text.toUpperCase() }] })));
+      });
+
+      const entries = Array.from({ length: 1200 }, (_value, index) => ({
+        key: `k${index}`,
+        source: `text-${index}`
+      }));
+      const result = await requestAzureTranslations({
+        entries,
+        sourceLocale: 'en',
+        targetLocale: 'zh',
+        apiKey: 'test-key',
+        endpoint: 'https://api.cognitive.microsofttranslator.com',
+        retryCount: 0,
+        retryDelayMs: 1
+      });
+
+      expect(vi.mocked(fetch)).toHaveBeenCalledTimes(2);
+      expect(result.size).toBe(1200);
+      expect(result.get('k1199')).toBe('TEXT-1199');
+    });
+
+    it('throws with the Azure error detail on non-retryable failures', async () => {
+      mockFetch(() =>
+        createMockResponse(
+          { error: { code: '401000', message: 'The request is not authorized.' } },
+          { ok: false, status: 401 }
+        )
+      );
+
+      await expect(
+        requestAzureTranslations({
+          entries: [{ key: 'root', source: 'Hello' }],
+          sourceLocale: 'en',
+          targetLocale: 'zh',
+          apiKey: 'test-key',
+          endpoint: 'https://api.cognitive.microsofttranslator.com',
+          retryCount: 0,
+          retryDelayMs: 1
+        })
+      ).rejects.toThrow('Translation request failed: 401 The request is not authorized.');
     });
   });
 

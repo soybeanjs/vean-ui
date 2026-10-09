@@ -60,4 +60,4 @@ Markdown pages consume the data through host components: `<UsageCode component="
 - **Note attribution is by release line.** `releaseChangelogNotes` keys name the release line (`v0.50.0` covers `v0.50.0-beta.1` … `v0.50.0`); the generator attaches the note to the **newest published release of that line**. So a note for an unreleased stable shows on the current prerelease, moves to the stable automatically, and the guide label (`UpgradeGuideEntry.version` / sidebar title) is the release line — never a beta build.
 - **Convention: component pages.** Nothing fails if one locale is missing a component page; the site just shows an untranslated route. Treat the pairing as required anyway.
 
-Non-English _generated_ copy is filled by `pnpm sui translate api` / `translate changelog` (needs `DEEPL_API_KEY`); do not hand-write into the `*-locales` JSON.
+Non-English _generated_ copy is filled by `pnpm sui translate api` / `translate changelog` (needs `AZURE_TRANSLATE_KEY` or `DEEPL_API_KEY`); do not hand-write into the `*-locales` JSON.

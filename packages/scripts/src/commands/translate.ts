@@ -14,12 +14,14 @@ import {
 } from '../shared/locale-file';
 import {
   getPendingEntries,
+  getTranslateSourceLanguage,
   resolveTargetLocales,
   resolveTranslateTargetKeys,
+  resolveTranslationProvider,
   translateEntries,
   translateJsonLocaleFile
 } from '../shared/translate';
-import type { TranslateCliOptions, TranslateTargetKey } from '../shared/translate';
+import type { TranslateCliOptions, TranslateTargetKey, TranslationProviderConfig } from '../shared/translate';
 import { generateApiData } from './api';
 import { generateApiLocaleTemplates } from './api-i18n';
 import { generateChangelogData } from './changelog';
@@ -71,8 +73,8 @@ async function translateJsonLocale(options: {
   localeDir: string;
   locale: string;
   cli: TranslateCliOptions;
+  provider: TranslationProviderConfig;
   createContext: () => string;
-  apiKeyErrorMessage: string;
 }): Promise<void> {
   const logPrefix = `${options.label} ${options.locale}`;
 
@@ -86,8 +88,8 @@ async function translateJsonLocale(options: {
     limit: options.cli.limit,
     dryRun: options.cli.dryRun,
     createContext: options.createContext,
-    apiKeyErrorMessage: options.apiKeyErrorMessage,
-    sourceLanguage: process.env.DEEPL_SOURCE_LANG?.trim() || undefined,
+    provider: options.provider,
+    sourceLanguage: getTranslateSourceLanguage(),
     onPendingResolved: context => {
       console.log(
         context.pendingCount
@@ -108,7 +110,7 @@ async function translateJsonLocale(options: {
   });
 }
 
-function createApiTarget(target: DocsTarget): TranslateTarget {
+function createApiTarget(target: DocsTarget, provider: TranslationProviderConfig): TranslateTarget {
   const label = `api (${target.key})`;
   const localeDir = path.join(target.generatedDir, 'api-locales');
 
@@ -126,13 +128,13 @@ function createApiTarget(target: DocsTarget): TranslateTarget {
         localeDir,
         locale,
         cli,
-        createContext: () => createApiTranslationContext(locale),
-        apiKeyErrorMessage: 'DEEPL_API_KEY is required to translate API descriptions.'
+        provider,
+        createContext: () => createApiTranslationContext(locale)
       })
   };
 }
 
-function createChangelogTarget(target: DocsTarget): TranslateTarget {
+function createChangelogTarget(target: DocsTarget, provider: TranslationProviderConfig): TranslateTarget {
   const label = `changelog (${target.key})`;
   const localeDir = path.join(target.generatedDir, 'changelog-locales');
 
@@ -150,24 +152,28 @@ function createChangelogTarget(target: DocsTarget): TranslateTarget {
         localeDir,
         locale,
         cli,
-        createContext: () => createChangelogTranslationContext(locale),
-        apiKeyErrorMessage: 'DEEPL_API_KEY is required to translate changelog summaries.'
+        provider,
+        createContext: () => createChangelogTranslationContext(locale)
       })
   };
 }
 
 /** Aria locale bundles are hand-written source, so there is nothing to prepare. */
-function createLocaleTarget(): TranslateTarget {
+function createLocaleTarget(provider: TranslationProviderConfig): TranslateTarget {
   return {
     key: 'locale',
     label: 'locale',
     availableLocales: listLocaleNames,
     prepare: async () => {},
-    translateLocale: translateAriaLocale
+    translateLocale: (locale, cli) => translateAriaLocale(locale, cli, provider)
   };
 }
 
-async function translateAriaLocale(locale: string, cli: TranslateCliOptions): Promise<void> {
+async function translateAriaLocale(
+  locale: string,
+  cli: TranslateCliOptions,
+  provider: TranslationProviderConfig
+): Promise<void> {
   const logPrefix = `locale ${locale}`;
   const sourceMessages = await readLocaleMessages(cli.sourceLocale);
 
@@ -201,7 +207,8 @@ async function translateAriaLocale(locale: string, cli: TranslateCliOptions): Pr
     sourceLocale: cli.sourceLocale,
     targetLocale: locale,
     createContext: entries => createLocaleTranslationContext(locale, entries),
-    sourceLanguage: process.env.DEEPL_SOURCE_LANG?.trim() || undefined,
+    provider,
+    sourceLanguage: getTranslateSourceLanguage(),
     protectPlaceholders: true,
     onBatchStart: context => {
       console.log(
@@ -226,17 +233,26 @@ async function translateAriaLocale(locale: string, cli: TranslateCliOptions): Pr
   );
 }
 
-function createTargets(targetKey: TranslateTargetKey): TranslateTarget[] {
+function createTargets(targetKey: TranslateTargetKey, provider: TranslationProviderConfig): TranslateTarget[] {
   if (targetKey === 'locale') {
-    return [createLocaleTarget()];
+    return [createLocaleTarget(provider)];
   }
 
-  return docsTargets.map(target => (targetKey === 'api' ? createApiTarget(target) : createChangelogTarget(target)));
+  return docsTargets.map(target =>
+    targetKey === 'api' ? createApiTarget(target, provider) : createChangelogTarget(target, provider)
+  );
 }
 
 export async function runTranslate(requestedTarget: string, cli: TranslateCliOptions): Promise<void> {
+  // Resolved once for the whole run: the provider is a property of the
+  // environment, not of one surface or one locale, and failing before any
+  // `prepare()` regeneration keeps a credential problem from dirtying the tree.
+  const provider = resolveTranslationProvider();
+
+  console.log(`Translation provider: ${provider.provider}`);
+
   for (const targetKey of resolveTranslateTargetKeys(requestedTarget)) {
-    for (const target of createTargets(targetKey)) {
+    for (const target of createTargets(targetKey, provider)) {
       const availableLocales = await target.availableLocales();
 
       if (!availableLocales.includes(cli.sourceLocale)) {

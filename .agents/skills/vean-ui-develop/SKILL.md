@@ -197,7 +197,7 @@ Run these after the corresponding source changes. Never hand-edit generated outp
 - `pnpm sui gen changelog` — regenerates `apps/docs/src/generated/changelog/*.json` and `apps/docs/src/generated/changelog-locales/*.json` base data.
 - `pnpm sui gen schema` / `pnpm sui gen skills` — regenerates the vean JSON Schemas / the skills distribution.
 - `pnpm sui gen all` — regenerates every surface above.
-- `pnpm sui translate <api|changelog|locale|all>` — refreshes the surface it translates and then fills pending entries through DeepL (`--locale`, `--dry-run`, `--limit`, `--overwrite`). This is the only command that needs `DEEPL_API_KEY`.
+- `pnpm sui translate <api|changelog|locale|all>` — refreshes the surface it translates and then fills pending entries through Azure Translate (DeepL fallback) (`--locale`, `--dry-run`, `--limit`, `--overwrite`). This is the only command that needs translation credentials (`AZURE_TRANSLATE_KEY` preferred, else `DEEPL_API_KEY`).
 - `pnpm sui check generated` — regenerates every surface and diffs it against git; CI runs it, so committed generated data cannot drift unnoticed.
 - `pnpm sui check deps` — dependency gate: banned imports plus the aria/ui runtime dependency whitelists.
 

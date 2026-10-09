@@ -13,7 +13,7 @@ Repo-service CLI (`sui`) for the Vean workspace: generators, verification gates,
 `sui` keeps every committed generated surface reproducible. Each command is declared with [cac](https://github.com/cacjs/cac) in `src/cli.ts`, so `--help` / `--version` / unknown-option / missing-argument handling lives in one place. There are three command groups plus one-off workspace commands:
 
 - **`gen`** — deterministic and offline: regenerates the committed artifacts.
-- **`translate`** — the only networked group (DeepL); needs `DEEPL_API_KEY`.
+- **`translate`** — the only networked group; Azure Translate preferred, DeepL as fallback (`AZURE_TRANSLATE_KEY` or `DEEPL_API_KEY`).
 - **`check`** — verification gates that exit `1` when the repository is not release-ready.
 - **workspace commands** — `stub`, `reorder-imports`, `sync-template-versions`.
 
@@ -42,7 +42,15 @@ pnpm sui gen <surface> [name] [--force]
 pnpm sui translate <surface> [options]
 ```
 
-Surfaces: `api` | `changelog` | `locale` | `all`. Options: `--locale <locale>` (default: every non-source locale), `--source-locale <locale>` (default `en`), `--batch-size <number>` (default 20), `--limit <number>`, `--overwrite`, `--dry-run` (report pending counts without calling the API). Requires `DEEPL_API_KEY`.
+Surfaces: `api` | `changelog` | `locale` | `all`. Options: `--locale <locale>` (default: every non-source locale), `--source-locale <locale>` (default `en`), `--batch-size <number>` (default 20), `--limit <number>`, `--overwrite`, `--dry-run` (report pending counts without calling the API).
+
+Provider credentials, checked in this order:
+
+1. `TRANSLATE_PROVIDER=azure|deepl` — explicit override.
+2. `AZURE_TRANSLATE_KEY` — Azure Translator (with `AZURE_TRANSLATE_REGION`, `AZURE_TEXT_TRANSLATE_URL`).
+3. `DEEPL_API_KEY` / `TRANSLATE_API_KEY` — DeepL (with `DEEPL_BASE_URL`).
+
+The run prints `Translation provider: <azure|deepl>` before it starts.
 
 ### check
 

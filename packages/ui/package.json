@@ -105,7 +105,7 @@
     "@nuxt/schema": "^4.3.0",
     "nuxt": ">=4.0.0",
     "unplugin-vue-components": "^31.0.0",
-    "vue": ">=3.2.0",
+    "vue": ">=3.5.0",
     "vue-router": ">=4.0.0"
   },
   "peerDependenciesMeta": {

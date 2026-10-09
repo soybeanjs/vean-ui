@@ -341,6 +341,12 @@ Pull requests and pushes to `main`/`master` run:
 4. the `check` gates — `pnpm check:deps`, `pnpm check:generated`, `pnpm check:size`;
 5. Playwright Chromium browser tests.
 
+`pnpm check:deps` is not only a banned-import and whitelist scan: it also asserts that a
+package declaring a `vue` peer covers every Vue API its `src` imports by value. A `dist`
+importing `useId` or `useTemplateRef` while `peerDependencies.vue` still says `>=3.2.0` is a
+latent consumer-side build failure (`MISSING_EXPORT … is not exported by
+vue.runtime.esm-bundler.js`), so the floor is treated as a contract and verified in CI.
+
 CI runs `pnpm install --frozen-lockfile && pnpm build` (all packages) in both
 jobs before typecheck/lint/test; browser tests run as a separate `e2e` job.
 

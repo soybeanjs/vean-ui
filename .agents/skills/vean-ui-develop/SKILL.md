@@ -199,7 +199,7 @@ Run these after the corresponding source changes. Never hand-edit generated outp
 - `pnpm sui gen all` — regenerates every surface above.
 - `pnpm sui translate <api|changelog|locale|all>` — refreshes the surface it translates and then fills pending entries through Azure Translate (DeepL fallback) (`--locale`, `--dry-run`, `--limit`, `--overwrite`). This is the only command that needs translation credentials (`AZURE_TRANSLATE_KEY` preferred, else `DEEPL_API_KEY`).
 - `pnpm sui check generated` — regenerates every surface and diffs it against git; CI runs it, so committed generated data cannot drift unnoticed.
-- `pnpm sui check deps` — dependency gate: banned imports plus the aria/ui runtime dependency whitelists.
+- `pnpm sui check deps` — dependency gate: banned imports, the aria/ui runtime dependency whitelists, and the `vue` peer floors (`VUE_API_FLOORS`). A package that imports a Vue API newer than its declared `peerDependencies.vue` floor fails here, because otherwise it fails in a _consumer's_ bundler instead.
 
 Generation is content-aware: a document whose payload did not change keeps its committed `generatedAt` and is not rewritten, so a no-op run leaves `git status` clean. On top of that, `gen api` skips the TypeDoc extraction entirely (~40s → ~0.15s) when a fingerprint of its inputs and its on-disk output still matches the last run; the fingerprint lives in `node_modules/.cache/sui/`. `--force` bypasses it.
 

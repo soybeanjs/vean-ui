@@ -136,7 +136,7 @@ pnpm sui gen skills            # Generate skill docs and distribution files (ski
 pnpm sui gen all               # Regenerate every surface above
 pnpm sui translate <api|changelog|locale|all> [--locale <locale>]  # Fill pending translations via Azure (fallback: DeepL)
 pnpm sui check generated       # Regenerate every surface and diff it against git (also a CI gate)
-pnpm sui check deps            # Enforce the dependency gate: banned import scan + runtime dependency whitelists
+pnpm sui check deps            # Enforce the dependency gate: banned imports + runtime dependency whitelists + vue peer floors
 pnpm sui size                  # Measure shipped artifacts + consumer-import bytes against size-budget.json
 pnpm check:deps                # CI alias of `pnpm sui check deps`
 pnpm check:generated           # CI alias of `pnpm sui check generated`
@@ -147,6 +147,7 @@ pnpm sui sync-template-versions  # Sync the @vean/* version constant used by pro
 
 - **Pre-commit hook** (Vite Plus, `.vite-hooks/pre-commit`): `vp staged`
 - **CI** (`.github/workflows/ci.yml`, on PRs and pushes to `main`/`master`): install + `pnpm build` → `pnpm check:deps` → `pnpm check:generated` → typecheck → lint → test → `pnpm check:size`, plus a `size-comment` job (sticky PR comment) and a separate `e2e` job (Playwright chromium). It does not build the docs site; `release.yml` handles tag-triggered build and release.
+- **`vue` peer floors are enforced, not aspirational.** `pnpm check:deps` also asserts that every package declaring a `vue` peer covers the Vue APIs its `src` imports by value (`VUE_API_FLOORS` in `packages/scripts/src/commands/dependency-gate.ts`). A `dist` that imports a newer API than the declared floor breaks consumers at _their_ build time with `MISSING_EXPORT "useTemplateRef" is not exported by …/vue.runtime.esm-bundler.js` — a message that names the consumer's dependency, not ours. Keep the floor at the highest API you use: `@vean/ui` and `@vean/aria` are `>=3.5.0` because they import `useId` / `useTemplateRef` / `onWatcherCleanup`.
 - **Formatter**: `vp fmt`
 
 **Release** (`pnpm release` → `soy release -e 'pnpm release-execute'`): versions are bumped across all workspaces in lockstep from the root `package.json`, then `release-execute` runs `soy changelog && sui gen skills && sui translate all && sync-template-versions`. Two consequences: never hand-edit a single package's version (they must stay equal), and `sui translate all` means a release **requires** translation credentials (`AZURE_TRANSLATE_KEY` or `DEEPL_API_KEY`) — the chain is not offline. `sync-template-versions` rewrites `packages/cli/src/templates/versions.ts`, a generated constant, so scaffolder versions follow the root bump automatically.

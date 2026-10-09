@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T11:25:44.370Z",
+  "generatedAt": "2026-10-09T07:18:00.514Z",
   "schemaVersion": 1,
   "components": {
     "accordion": {
@@ -89,9 +89,9 @@
     "button": {
       "component": "button",
       "file": "button.json",
-      "latestVersion": "v0.50.0",
-      "versionCount": 7,
-      "entryCount": 21
+      "latestVersion": "v0.50.1",
+      "versionCount": 8,
+      "entryCount": 22
     },
     "calendar": {
       "component": "calendar",
@@ -565,9 +565,9 @@
     "table": {
       "component": "table",
       "file": "table.json",
-      "latestVersion": "v0.50.0",
-      "versionCount": 14,
-      "entryCount": 46
+      "latestVersion": "v0.50.1",
+      "versionCount": 15,
+      "entryCount": 47
     },
     "tabs": {
       "component": "tabs",

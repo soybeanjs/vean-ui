@@ -1,6 +1,6 @@
 {
   "name": "@vean/unocss",
-  "version": "0.50.0",
+  "version": "0.50.1",
   "description": "unocss preset for Vean",
   "homepage": "https://github.com/soybeanjs/vean-ui/tree/main/packages/unocss",
   "bugs": {

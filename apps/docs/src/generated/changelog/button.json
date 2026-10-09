@@ -1,8 +1,25 @@
 {
   "component": "button",
-  "generatedAt": "2026-10-02T11:25:44.370Z",
+  "generatedAt": "2026-10-09T07:18:00.514Z",
   "schemaVersion": 1,
   "versions": [
+    {
+      "version": "v0.50.1",
+      "compareUrl": "https://github.com/soybeanjs/vean-ui/compare/v0.50.0...v0.50.1",
+      "date": "2026-10-09",
+      "entries": [
+        {
+          "type": "optimization",
+          "scope": "button",
+          "summary": "restore soft variant styles for button component",
+          "summaryKey": "changelog.generated.v0.50.1.98b80",
+          "commitHash": "98b80",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/98b80b3fd",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope"
+        }
+      ]
+    },
     {
       "version": "v0.50.0",
       "compareUrl": "https://github.com/soybeanjs/soybean-ui/compare/v0.40.1...v0.50.0",

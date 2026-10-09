@@ -1,6 +1,6 @@
 {
   "name": "@vean/ui",
-  "version": "0.50.0",
+  "version": "0.50.1",
   "description": "Vean is built on top of Vean Aria, providing a collection of styled components for Vue 3.",
   "homepage": "https://github.com/soybeanjs/vean-ui",
   "bugs": {

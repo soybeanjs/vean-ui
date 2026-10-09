@@ -1,6 +1,6 @@
 {
   "name": "@vean/scripts",
-  "version": "0.50.0",
+  "version": "0.50.1",
   "private": true,
   "description": "Vean repo generators (api / changelog / metadata / skills), not published. Binary: sui.",
   "license": "MIT",

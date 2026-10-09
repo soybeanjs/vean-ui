@@ -1,6 +1,6 @@
 {
   "name": "@vean/skills",
-  "version": "0.50.0",
+  "version": "0.50.1",
   "private": true,
   "description": "Agent skills for Vean and Vean Aria.",
   "keywords": [

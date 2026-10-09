@@ -1,6 +1,6 @@
 {
   "name": "@vean/theme",
-  "version": "0.50.0",
+  "version": "0.50.1",
   "description": "The Vean theme engine: a static palette layer plus a declarative semantic alias layer (no measurement or correction).",
   "homepage": "https://github.com/soybeanjs/vean-ui",
   "bugs": {

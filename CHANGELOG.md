@@ -1,5 +1,86 @@
 # Changelog
 
+## [v0.50.1](https://github.com/soybeanjs/vean-ui/compare/v0.50.0...v0.50.1) (2026-10-09)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **projects**: rename SoybeanUI to Vean &nbsp;-&nbsp; by @soybeanjs [<samp>(f77bb)</samp>](https://github.com/soybeanjs/vean-ui/commit/f77bb70ed)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **scripts**:
+  - add sui size command and CI bundle-size gate &nbsp;-&nbsp; by @soybeanjs [<samp>(df039)</samp>](https://github.com/soybeanjs/vean-ui/commit/df039cb37)
+  - add sui gen figma for Figma design-token export &nbsp;-&nbsp; by @soybeanjs [<samp>(08471)</samp>](https://github.com/soybeanjs/vean-ui/commit/08471ceca)
+  - prefer Azure Translator over DeepL in sui translate &nbsp;-&nbsp; by @soybeanjs [<samp>(d2bf0)</samp>](https://github.com/soybeanjs/vean-ui/commit/d2bf07e0a)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **docs**:
+  - point the legacy notice at the real rebrand guide route &nbsp;-&nbsp; by @soybeanjs [<samp>(484a9)</samp>](https://github.com/soybeanjs/vean-ui/commit/484a91481)
+  - point the legacy notice at the real rebrand guide route" &nbsp;-&nbsp; by @soybeanjs [<samp>(3bed0)</samp>](https://github.com/soybeanjs/vean-ui/commit/3bed060b9)
+- **nuxt**:
+  - annotate module export type for portable declarations &nbsp;-&nbsp; by @soybeanjs [<samp>(13131)</samp>](https://github.com/soybeanjs/vean-ui/commit/1313176c0)
+- **projects**:
+  - fix docs type error &nbsp;-&nbsp; by @soybeanjs [<samp>(7ad40)</samp>](https://github.com/soybeanjs/vean-ui/commit/7ad404507)
+- **scripts**:
+  - raise timeout for real-build size measurement spec &nbsp;-&nbsp; by @soybeanjs [<samp>(7501d)</samp>](https://github.com/soybeanjs/vean-ui/commit/7501de156)
+  - pace Azure translate by characters instead of retrying 429s &nbsp;-&nbsp; by @soybeanjs [<samp>(87ba6)</samp>](https://github.com/soybeanjs/vean-ui/commit/87ba676a7)
+- **styles**:
+  - update table styles for better responsiveness &nbsp;-&nbsp; by @soybeanjs [<samp>(ea02c)</samp>](https://github.com/soybeanjs/vean-ui/commit/ea02c5fa7)
+- **table**:
+  - stop TanStack default column size from forcing overflow &nbsp;-&nbsp; by @soybeanjs [<samp>(e3746)</samp>](https://github.com/soybeanjs/vean-ui/commit/e3746c694)
+- **workflow**:
+  - upload hidden size-report artifact &nbsp;-&nbsp; by @soybeanjs [<samp>(2684e)</samp>](https://github.com/soybeanjs/vean-ui/commit/2684ee95c)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **button**: restore soft variant styles for button component &nbsp;-&nbsp; by @soybeanjs [<samp>(98b80)</samp>](https://github.com/soybeanjs/vean-ui/commit/98b80b3fd)
+- **docs**: add show-confirm prop to SDrawer component &nbsp;-&nbsp; by @soybeanjs [<samp>(6184c)</samp>](https://github.com/soybeanjs/vean-ui/commit/6184c1695)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **agents**:
+  - add agent skills config (issue tracker, triage labels, domain docs) &nbsp;-&nbsp; by @soybeanjs [<samp>(c2f47)</samp>](https://github.com/soybeanjs/vean-ui/commit/c2f470f38)
+  - require conventional commits with English commit messages &nbsp;-&nbsp; by @soybeanjs [<samp>(4e40c)</samp>](https://github.com/soybeanjs/vean-ui/commit/4e40c55ee)
+  - require explicit type and scope in commit messages &nbsp;-&nbsp; by @soybeanjs [<samp>(940a9)</samp>](https://github.com/soybeanjs/vean-ui/commit/940a9a36a)
+- **api**:
+  - update zh-CN.json &nbsp;-&nbsp; by @soybeanjs [<samp>(7dcd3)</samp>](https://github.com/soybeanjs/vean-ui/commit/7dcd3e3de)
+- **projects**:
+  - update ui registry &nbsp;-&nbsp; by @soybeanjs [<samp>(a7ee3)</samp>](https://github.com/soybeanjs/vean-ui/commit/a7ee3d6d0)
+  - add brand transition notice to the legacy docs site &nbsp;-&nbsp; by @soybeanjs [<samp>(b3f17)</samp>](https://github.com/soybeanjs/vean-ui/commit/b3f1702b7)
+  - follow up on the repository rename &nbsp;-&nbsp; by @soybeanjs [<samp>(4e5a9)</samp>](https://github.com/soybeanjs/vean-ui/commit/4e5a9366c)
+  - add brand transition notice to the legacy docs site" &nbsp;-&nbsp; by @soybeanjs [<samp>(1c2af)</samp>](https://github.com/soybeanjs/vean-ui/commit/1c2afc697)
+- **readme**:
+  - document the VeanUI brand and rename history &nbsp;-&nbsp; by @soybeanjs [<samp>(eed66)</samp>](https://github.com/soybeanjs/vean-ui/commit/eed660efd)
+- **repo**:
+  - archive drawer report, index agents docs, reorganize roadmap and design docs &nbsp;-&nbsp; by @soybeanjs [<samp>(2a96d)</samp>](https://github.com/soybeanjs/vean-ui/commit/2a96d9673)
+  - re-baseline optimize.md against 0.50.0 &nbsp;-&nbsp; by @soybeanjs [<samp>(a61c7)</samp>](https://github.com/soybeanjs/vean-ui/commit/a61c73bda)
+
+### &nbsp;&nbsp;&nbsp;📦 Build
+
+- **deps**: declare missing direct dependencies across workspaces &nbsp;-&nbsp; by @soybeanjs [<samp>(f355b)</samp>](https://github.com/soybeanjs/vean-ui/commit/f355b5cce)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(95570)</samp>](https://github.com/soybeanjs/vean-ui/commit/955707c8b)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(62841)</samp>](https://github.com/soybeanjs/vean-ui/commit/62841def8)
+- **docs**:
+  - regenerate api data and skill reference &nbsp;-&nbsp; by @soybeanjs [<samp>(a0db8)</samp>](https://github.com/soybeanjs/vean-ui/commit/a0db8bad9)
+  - regenerate api data for vue-router 5.4.0 &nbsp;-&nbsp; by @soybeanjs [<samp>(79778)</samp>](https://github.com/soybeanjs/vean-ui/commit/79778da12)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**:
+  - add pulls.review workflow for automated PR analysis &nbsp;-&nbsp; by @soybeanjs [<samp>(7ed24)</samp>](https://github.com/soybeanjs/vean-ui/commit/7ed24b523)
+  - add PR-Agent review workflow &nbsp;-&nbsp; by @soybeanjs [<samp>(e2f86)</samp>](https://github.com/soybeanjs/vean-ui/commit/e2f86b70c)
+- **workflows**:
+  - remove pulls-review workflow (superseded by pr-agent) &nbsp;-&nbsp; by @soybeanjs [<samp>(b9c89)</samp>](https://github.com/soybeanjs/vean-ui/commit/b9c894628)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.50.0](https://github.com/soybeanjs/soybean-ui/compare/v0.40.1...v0.50.0) (2026-10-02)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes

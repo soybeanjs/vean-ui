@@ -54,11 +54,7 @@ const regionTiles = [
         <div class="space-y-4 p-4">
           <div class="flex items-center gap-3">
             <SInput placeholder="Search" size="sm" class="w-40" />
-            <SAvatar
-              size="sm"
-              src="https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202609141212"
-              fallback-label="V"
-            />
+            <SAvatar size="sm" src="https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202609141212" fallback-label="V" />
           </div>
           <SProgress :model-value="68" />
           <div class="flex flex-wrap gap-2">

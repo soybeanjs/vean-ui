@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: 'https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144'
+          href: 'https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202608192144'
         }
       ],
       // Applies the persisted theme (from localStorage) to <html> before first

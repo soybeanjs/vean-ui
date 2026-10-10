@@ -21,7 +21,7 @@ const prerenderRoutes = await collectPrerenderRoutes(rootDir);
 
 export default defineConfig({
   mode: 'ssg',
-  favicon: 'https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144',
+  favicon: 'https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202608192144',
   i18n: {
     defaultLocale: 'en',
     locales: [

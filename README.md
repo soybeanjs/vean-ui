@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/soybeanjs/soybean-ui">
-    <img src="https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144" alt="Logo" width="150" />
+    <img src="https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202608192144" alt="Logo" width="150" />
   </a>
 </p>
 
@@ -129,12 +129,12 @@ registerLocale('custom', customMessages);
 
 ```ts
 import { AccordionRoot } from '@soybeanjs/headless'; // all components
+import type { AccordionUiSlot } from '@soybeanjs/headless/accordion'; // per-component
 import { useControllableState } from '@soybeanjs/headless/composables'; // 28 composables
-import { transformPropsToContext } from '@soybeanjs/headless/shared'; // pure TS utils
 import { createMonth } from '@soybeanjs/headless/date'; // shared date helpers
 import { registerLocale } from '@soybeanjs/headless/locale'; // locale registry
 import * as Headless from '@soybeanjs/headless/namespaced'; // namespace object
-import type { AccordionUiSlot } from '@soybeanjs/headless/accordion'; // per-component
+import { transformPropsToContext } from '@soybeanjs/headless/shared'; // pure TS utils
 import type { UiClass } from '@soybeanjs/headless/types'; // shared type surface
 ```
 

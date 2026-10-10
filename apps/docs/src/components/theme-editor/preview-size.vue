@@ -40,7 +40,7 @@ const segments: SegmentOptionData<string>[] = [
 ];
 
 // bound via :src — a static src value containing `//` breaks vue-tsc's generated v-for scope (tsgo quirk)
-const avatarSrc = 'https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202609141212';
+const avatarSrc = 'https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202609141212';
 
 const textLadder = [
   { token: 'text-4xs', class: 'text-4xs' },

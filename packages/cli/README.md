@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/soybeanjs/soybean-ui">
-    <img src="https://r2.soybeanjs.tech/soybeanjs/logo-sbean.svg?v=202608192144" alt="Logo" width="150" />
+    <img src="https://img.soybeanjs.dev/logo-sbean.svg?v=202608192144" alt="Logo" width="150" />
   </a>
 </p>
 

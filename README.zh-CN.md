@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/soybeanjs/soybean-ui">
-    <img src="https://r2.soybeanjs.tech/soybeanjs/logo-soybean-ui.svg?v=202608192144" alt="Logo" width="150" />
+    <img src="https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202608192144" alt="Logo" width="150" />
   </a>
 </p>
 
@@ -126,12 +126,12 @@ registerLocale('custom', customMessages);
 
 ```ts
 import { AccordionRoot } from '@soybeanjs/headless'; // 所有组件
+import type { AccordionUiSlot } from '@soybeanjs/headless/accordion'; // 单组件类型
 import { useControllableState } from '@soybeanjs/headless/composables'; // 28 个 composable
-import { transformPropsToContext } from '@soybeanjs/headless/shared'; // 纯 TS 工具
 import { createMonth } from '@soybeanjs/headless/date'; // 日期工具
 import { registerLocale } from '@soybeanjs/headless/locale'; // locale 注册表
 import * as Headless from '@soybeanjs/headless/namespaced'; // 命名空间导入
-import type { AccordionUiSlot } from '@soybeanjs/headless/accordion'; // 单组件类型
+import { transformPropsToContext } from '@soybeanjs/headless/shared'; // 纯 TS 工具
 import type { UiClass } from '@soybeanjs/headless/types'; // 共享类型导出
 ```
 

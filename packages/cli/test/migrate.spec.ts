@@ -120,7 +120,7 @@ describe('migrate rules', () => {
   });
 
   it('rewrites hostnames only when asked', () => {
-    const source = 'https://ui.soybeanjs.cn/r/ui/button.json https://r2.soybeanjs.tech/soybeanjs/logo.svg';
+    const source = 'https://ui.soybeanjs.cn/r/ui/button.json https://img.soybeanjs.dev/logo.svg';
 
     expect(buildRules({}).some(rule => rule.id.startsWith('domain:'))).toBe(false);
     expect(applyRules(source, buildRules({ newDomain: 'veanui.com' })).text).toBe(
@@ -133,7 +133,7 @@ describe('migrate rules', () => {
 
   it('applies --repo-slug and --new-cdn on their own', () => {
     const repo = 'https://github.com/soybeanjs/soybean-ui/tree/main/docs';
-    const cdn = 'https://r2.soybeanjs.tech/soybeanjs/logo.svg';
+    const cdn = 'https://img.soybeanjs.dev/logo.svg';
 
     expect(applyRules(repo, buildRules({ repoSlug: 'soybeanjs/vean-ui' })).text).toBe(
       'https://github.com/soybeanjs/vean-ui/tree/main/docs'

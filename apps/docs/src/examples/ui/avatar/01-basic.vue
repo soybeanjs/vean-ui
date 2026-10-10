@@ -23,11 +23,7 @@ interface CustomizerState {
 /** 默认形态：`reset` 回到这份快照，所以它是常量而不是状态。 */
 const DEFAULTS: CustomizerState = {
   size: 'md',
-<<<<<<< HEAD
-  src: 'https://img.soybeanjs.dev/logo-soybean-ui.svg?v=202608192144',
-=======
   src: 'https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212',
->>>>>>> f77bb70ed (refactor(projects)!: rename SoybeanUI to Vean)
   fallbackLabel: 'S',
   delayMs: null
 };

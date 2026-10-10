@@ -106,6 +106,10 @@ export const CLI_RULES: readonly MigrateRule[] = [
  * The CDN object-path prefix (`r2.soybeanjs.tech/soybeanjs/...`) is deliberately
  * left alone: it names an object inside the bucket, so rewriting it without
  * moving the object produces 404s — bind a custom domain to the bucket instead.
+ *
+ * Both CDN generations are rewritten: the retired `r2.soybeanjs.tech` bucket and
+ * its `img.soybeanjs.dev` successor, so a project that already followed the
+ * bucket move still migrates in one pass.
  */
 export function buildHostnameRules({ newDomain, newCdn, repoSlug }: MigrateRuleOptions): readonly MigrateRule[] {
   const rules: MigrateRule[] = [];
@@ -117,7 +121,7 @@ export function buildHostnameRules({ newDomain, newCdn, repoSlug }: MigrateRuleO
   const cdnHost = newCdn ?? (newDomain ? `assets.${newDomain}` : undefined);
 
   if (cdnHost) {
-    rules.push({ id: 'domain:cdn', pattern: /r2\.soybeanjs\.tech/g, to: cdnHost });
+    rules.push({ id: 'domain:cdn', pattern: /(?:r2\.soybeanjs\.tech|img\.soybeanjs\.dev)/g, to: cdnHost });
   }
 
   if (repoSlug) {

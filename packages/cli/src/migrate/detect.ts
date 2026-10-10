@@ -18,7 +18,7 @@ export interface TierMarkers {
   runtimeContract: number;
   /** `sbean` CLI references. */
   cli: number;
-  /** `ui.soybeanjs.cn` / `r2.soybeanjs.tech` / the old repository link. */
+  /** `ui.soybeanjs.cn` / `r2.soybeanjs.tech` / `img.soybeanjs.dev` / the old repository link. */
   hostnames: number;
 }
 
@@ -45,7 +45,7 @@ const MARKER_PATTERNS: Readonly<Record<keyof TierMarkers, RegExp>> = {
   packages: /@soybeanjs\/(?:headless|ui|ui-uno|ui-skills|theme)(?![\w-])/g,
   runtimeContract: /(?:data-soybean-|--soybean-)/g,
   cli: /\bsbean\b/g,
-  hostnames: /ui\.soybeanjs\.cn|r2\.soybeanjs\.tech|github\.com\/soybeanjs\/soybean-ui/g
+  hostnames: /ui\.soybeanjs\.cn|r2\.soybeanjs\.tech|img\.soybeanjs\.dev|github\.com\/soybeanjs\/soybean-ui/g
 };
 
 const MANIFEST_FILE = 'package.json';

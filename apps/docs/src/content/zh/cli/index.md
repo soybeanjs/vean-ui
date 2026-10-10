@@ -168,7 +168,7 @@ vean migrate [migration] [options]
 | `--runtime-contract`       | 同时改写 `data-soybean-*` 属性与 `--soybean-*` CSS 变量                    | `false`  |
 | `--cli`                    | 同时改写 `sbean` CLI 引用，并把 `sbean.json` 重命名为 `vean.json`          | `false`  |
 | `--new-domain <host>`      | 同时把 `ui.soybeanjs.cn` 改写为 `<host>`（CDN 目标随之为 `assets.<host>`） | —        |
-| `--new-cdn <host>`         | 只改写 `r2.soybeanjs.tech` CDN 主机                                        | —        |
+| `--new-cdn <host>`         | 只改写 `r2.soybeanjs.tech` / `img.soybeanjs.dev` CDN 主机                  | —        |
 | `--repo-slug <owner/repo>` | 只改写 `github.com/soybeanjs/soybean-ui`                                   | —        |
 | `-f, --force`              | 项目里没有任何 SoybeanUI 痕迹时也照常运行                                  | `false`  |
 | `-q, --quiet`              | 只输出汇总，不逐文件打印 diff                                              | `false`  |

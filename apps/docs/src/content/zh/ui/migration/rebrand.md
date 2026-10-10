@@ -156,7 +156,7 @@ npx @vean/cli@latest migrate rebrand --write --cli
 npx @vean/cli@latest migrate rebrand --write --new-domain veanui.com --repo-slug soybeanjs/vean-ui
 ```
 
-命令是**规则式文本改写**（不是 AST 重写）：包名 / import 始终改写，运行时契约、CLI、域名三类需显式开启；默认 dry-run、幂等、跳过 `node_modules`、构建产物、lockfile 与 `CHANGELOG.md`。域名映射：`ui.soybeanjs.cn` → `--new-domain`，`r2.soybeanjs.tech` → `assets.<new-domain>`（可用 `--new-cdn` 覆盖），CDN 的对象路径前缀 `/soybeanjs/` 刻意保留（改它而不搬对象会 404）。完整选项见 [`vean migrate`](/cli#vean-migrate)。
+命令是**规则式文本改写**（不是 AST 重写）：包名 / import 始终改写，运行时契约、CLI、域名三类需显式开启；默认 dry-run、幂等、跳过 `node_modules`、构建产物、lockfile 与 `CHANGELOG.md`。域名映射：`ui.soybeanjs.cn` → `--new-domain`，`r2.soybeanjs.tech`（及其后继 `img.soybeanjs.dev`）→ `assets.<new-domain>`（可用 `--new-cdn` 覆盖），CDN 的对象路径前缀 `/soybeanjs/` 刻意保留（改它而不搬对象会 404）。完整选项见 [`vean migrate`](/cli#vean-migrate)。
 
 命令**只面向 SoybeanUI 时代的项目**：先做 preflight（`package.json` 里的 `@soybeanjs/*` 依赖、`sbean.json`、源码标识符、`data-soybean-*` / `--soybean-*` 契约、`sbean` 调用），全都没有就拒绝执行——退出码 1、不写任何文件；只匹配到旧域名链接时也拒绝，除非你明确传了域名类选项。确实需要强制运行用 `--force`。每次运行结束会打印两组按项目实际情况生成的提示：**Worth adding**（本次没开、但项目里仍有对应改动的开关）与 **Still manual**（真正适用的人工步骤）。
 

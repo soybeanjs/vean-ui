@@ -169,7 +169,7 @@ vean migrate [migration] [options]
 | `--runtime-contract`       | Also rewrite `data-soybean-*` attributes and `--soybean-*` CSS variables        | `false`     |
 | `--cli`                    | Also rewrite `sbean` CLI references and rename `sbean.json` to `vean.json`      | `false`     |
 | `--new-domain <host>`      | Also rewrite `ui.soybeanjs.cn` to `<host>` (CDN target becomes `assets.<host>`) | —           |
-| `--new-cdn <host>`         | Rewrite only the `r2.soybeanjs.tech` CDN host                                   | —           |
+| `--new-cdn <host>`         | Rewrite only the `r2.soybeanjs.tech` / `img.soybeanjs.dev` CDN host             | —           |
 | `--repo-slug <owner/repo>` | Rewrite only `github.com/soybeanjs/soybean-ui`                                  | —           |
 | `-f, --force`              | Run even when the project shows no SoybeanUI-era trace                          | `false`     |
 | `-q, --quiet`              | Print the summary only, without per-file previews                               | `false`     |

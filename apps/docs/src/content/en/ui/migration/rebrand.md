@@ -159,9 +159,10 @@ npx @vean/cli@latest migrate rebrand --write --new-domain veanui.com --repo-slug
 The command is a **rule-based text rewrite** (not an AST transform): package specifiers always
 apply, while the runtime-contract, CLI and hostname tiers are opt-in. It is dry-run by default,
 idempotent, and never touches `node_modules`, build output, lock files or `CHANGELOG.md`.
-Hostnames: `ui.soybeanjs.cn` → `--new-domain`, `r2.soybeanjs.tech` → `assets.<new-domain>`
-(override with `--new-cdn`); the CDN object-path prefix `/soybeanjs/` is deliberately preserved —
-rewriting it without moving the objects would 404. Full option list: [`vean migrate`](/cli#vean-migrate).
+Hostnames: `ui.soybeanjs.cn` → `--new-domain`, `r2.soybeanjs.tech` (and its `img.soybeanjs.dev`
+successor) → `assets.<new-domain>` (override with `--new-cdn`); the CDN object-path prefix
+`/soybeanjs/` is deliberately preserved — rewriting it without moving the objects would 404. Full
+option list: [`vean migrate`](/cli#vean-migrate).
 
 The command **only targets SoybeanUI-era projects**: a preflight looks for `@soybeanjs/*`
 dependencies in `package.json`, a `sbean.json`, `@soybeanjs/*` specifiers in source,

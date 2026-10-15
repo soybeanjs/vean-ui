@@ -1,0 +1,58 @@
+---
+/**
+ * Port of `apps/docs/src/components/header-nav.vue`.
+ *
+ * Same six entries and `selected` rule (`path.startsWith(...)`); rendered as static
+ * links instead of `SNavMenu`.
+ */
+import type { Locale } from '../i18n';
+import { createTranslator } from '../i18n';
+import { renderIcon } from '../plugin/icons';
+
+interface Props {
+  locale: Locale;
+  /** Bare path (locale prefix stripped) used for the active state. */
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+const t = createTranslator(locale);
+
+const menus = [
+  { value: 'getting-started', labelKey: 'layout.header.getting_started', icon: 'lucide:rocket', to: '/overview/installation' },
+  { value: 'components', labelKey: 'layout.header.components', icon: 'lucide:layout-grid', to: '/components' },
+  { value: 'chart', labelKey: 'layout.header.chart', icon: 'lucide:bar-chart-3', to: '/chart' },
+  { value: 'theme-editor', labelKey: 'layout.header.theme', icon: 'lucide:palette', to: '/theme-editor' },
+  { value: 'playground', labelKey: 'layout.header.playground', icon: 'lucide:flask-conical', to: '/playground' },
+  { value: 'releases', labelKey: 'layout.header.releases', icon: 'lucide:git-commit-horizontal', to: '/releases' }
+];
+
+function href(to: string): string {
+  return locale === 'zh' ? (to === '/' ? '/zh' : `/zh${to}`) : to;
+}
+---
+
+<nav class="lt-xl:!hidden flex-y-center gap-1" aria-label={locale === 'zh' ? '主导航' : 'Main navigation'}>
+  {
+    menus.map(item => {
+      const selected = path.startsWith(item.to);
+
+      return (
+        <a
+          href={href(item.to)}
+          class:list={[
+            'flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-sm transition-colors',
+            selected
+              ? 'bg-accent text-accent-foreground'
+              : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
+          ]}
+          data-selected={String(selected)}
+          aria-current={selected ? 'page' : undefined}
+        >
+          <Fragment set:html={renderIcon(item.icon, { class: 'shrink-0' })} />
+          <span>{t(item.labelKey)}</span>
+        </a>
+      );
+    })
+  }
+</nav>

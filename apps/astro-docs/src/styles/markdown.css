@@ -1,0 +1,187 @@
+.markdown-wrapper {
+  --uno: 'relative min-w-0 max-w-none text-start text-base leading-[1.75] text-foreground';
+
+  > :first-child {
+    --uno: mt-0;
+  }
+
+  > :last-child {
+    --uno: mb-0;
+  }
+
+  > h1 {
+    --uno: 'mb-8 text-4xl font-black leading-[0.94] tracking-[-0.055em] text-balance text-foreground';
+  }
+
+  > h2 {
+    --uno: 'mt-14 mb-5 border-t pt-8 text-3xl font-bold leading-tight tracking-[-0.035em] text-foreground scroll-mt-28';
+  }
+
+  > h3 {
+    --uno: 'mt-10 mb-4 text-2xl font-semibold leading-tight tracking-[-0.025em] text-foreground scroll-mt-28';
+  }
+
+  > h4 {
+    --uno: 'mt-8 mb-3 text-lg font-semibold leading-7 text-foreground/92 scroll-mt-28';
+  }
+
+  > p {
+    --uno: 'my-5 max-w-none text-base leading-[1.75] text-muted-foreground';
+  }
+
+  > hr {
+    --uno: 'my-10 h-px border-none bg-linear-to-r from-transparent via-border to-transparent';
+  }
+
+  > ul {
+    --uno: 'my-5 list-disc ps-6 space-y-3 text-base leading-[1.75] text-muted-foreground';
+
+    > li {
+      --uno: 'marker:text-foreground/20';
+    }
+  }
+
+  > ol {
+    --uno: 'my-5 list-decimal ps-6 space-y-3 text-base leading-[1.75] text-muted-foreground';
+
+    > li {
+      --uno: 'marker:text-foreground/50';
+    }
+  }
+
+  li > p,
+  li > ul,
+  li > ol {
+    --uno: 'my-2';
+  }
+
+  strong {
+    --uno: 'font-semibold text-foreground';
+  }
+
+  code {
+    --uno: 'font-mono text-[13px] leading-6';
+  }
+
+  code:not(pre code) {
+    --uno: 'rounded-xl border px-2.5 py-1 font-semibold text-primary';
+    background: color-mix(in srgb, hsl(var(--primary) / 0.1) 72%, var(--docs-chip-bg));
+    border-color: color-mix(in srgb, hsl(var(--primary) / 0.16) 70%, transparent);
+  }
+
+  pre {
+    --uno: 'my-0 max-w-full overflow-x-auto rounded-none bg-transparent px-5 py-5 text-[13px] leading-6';
+  }
+
+  a:not([data-vean-link]) {
+    --uno: 'font-medium text-primary decoration-primary/40 underline underline-offset-4 transition-colors duration-200 hover:text-primary/80';
+  }
+
+  /* The frame must not scroll: an absolutely positioned overlay inside its own
+     scroll container belongs to the scrollable overflow region and scrolls away
+     with the content. Both DOM shapes the panel takes are handled — the fence
+     path (highlight.ts puts the class on shiki's <pre>, so the content box is
+     `> code`) and the CodeBlock path (code-block.vue, `> pre`); the content box
+     scrolls, while the badge (::before), the sheen (::after) and the copy button
+     (a child of the <pre> in the fence path) stay pinned to the frame. */
+  .md-code-block {
+    --uno: 'relative flex max-w-full flex-col overflow-hidden border border-border rounded-xl p-0';
+    background: color-mix(in srgb, var(--docs-surface-strong) 96%, transparent);
+    box-shadow: var(--docs-shadow), var(--docs-panel-inset);
+    -webkit-backdrop-filter: saturate(170%) blur(var(--docs-panel-blur));
+    backdrop-filter: saturate(170%) blur(var(--docs-panel-blur));
+  }
+
+  .md-code-block::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 26%);
+  }
+
+  .md-code-block::before {
+    content: attr(data-lang);
+    --uno: 'absolute left-3 top-3 z-1 border border-border bg-accent rounded-full px-2.5 py-1 text-2xs font-semibold uppercase tracking-[0.2em] text-muted-foreground';
+  }
+
+  .md-code-block > pre,
+  .md-code-block > code {
+    --uno: 'block min-h-0 max-w-full max-h-150 overflow-auto px-5 pt-12 pb-5';
+  }
+
+  blockquote {
+    --uno: 'my-6 rounded-4 border px-5 py-4';
+    background: color-mix(in srgb, hsl(var(--primary) / 0.08) 68%, var(--docs-panel-bg));
+    border-color: color-mix(in srgb, hsl(var(--primary) / 0.2) 64%, transparent);
+    box-shadow: var(--docs-panel-shadow), var(--docs-panel-inset);
+
+    * {
+      --uno: 'not-italic text-foreground/82';
+    }
+  }
+
+  details {
+    --uno: 'my-6 overflow-hidden rounded-4 border';
+    background: color-mix(in srgb, var(--docs-panel-bg) 92%, transparent);
+    border-color: color-mix(in srgb, var(--docs-panel-border) 78%, transparent);
+    box-shadow: var(--docs-panel-shadow), var(--docs-panel-inset);
+  }
+
+  details > summary {
+    --uno: 'cursor-pointer list-none select-none px-5 py-4 text-sm font-semibold text-foreground';
+  }
+
+  details[open] > summary {
+    --uno: 'border-b';
+    background: color-mix(in srgb, var(--docs-chip-bg) 82%, transparent);
+    border-color: color-mix(in srgb, var(--docs-panel-border) 76%, transparent);
+  }
+
+  details > :not(summary) {
+    --uno: 'px-5 py-4';
+  }
+
+  > table {
+    --uno: 'my-6 block w-full overflow-x-auto overflow-y-hidden rounded-4 text-sm';
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid color-mix(in srgb, var(--docs-panel-border) 80%, transparent);
+    border-radius: var(--docs-panel-radius);
+    background: color-mix(in srgb, var(--docs-panel-bg) 96%, transparent);
+    box-shadow: var(--docs-panel-shadow), var(--docs-panel-inset);
+    -webkit-backdrop-filter: saturate(160%) blur(8px);
+    backdrop-filter: saturate(160%) blur(8px);
+  }
+
+  > table thead th {
+    --uno: 'px-4 py-3 text-start text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground';
+    background: var(--docs-table-head-bg);
+  }
+
+  > table tbody td {
+    --uno: 'px-4 py-3 align-top text-sm leading-6 text-muted-foreground';
+    border-top: 1px solid var(--docs-table-row-border);
+  }
+
+  > table tbody tr:nth-child(even) td {
+    background: color-mix(in srgb, var(--docs-chip-bg) 44%, transparent);
+  }
+
+  .docs-page-grid > & {
+    --uno: 'relative';
+  }
+
+  .code-btn {
+    --uno: 'inline-flex items-center rounded-full border px-3 py-1 font-mono text-xs font-semibold text-primary text-center text-nowrap';
+    background: color-mix(in srgb, hsl(var(--primary) / 0.09) 72%, var(--docs-chip-bg));
+    border-color: color-mix(in srgb, hsl(var(--primary) / 0.18) 64%, transparent);
+  }
+
+  .code-btn-outline {
+    --uno: 'inline-flex items-center rounded-full border px-3 py-1 font-mono text-xs font-medium text-foreground text-nowrap';
+    background: var(--docs-chip-bg);
+    border-color: color-mix(in srgb, var(--docs-chip-border) 90%, transparent);
+    box-decoration-break: clone;
+  }
+}

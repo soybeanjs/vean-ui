@@ -1,0 +1,993 @@
+{
+  "not_found": "Not found",
+  "not_found_page": "Not found page",
+  "playground": {
+    "title": "VeanUI Playground",
+    "loading": "Loading...",
+    "empty": {
+      "title": "No examples yet",
+      "description": "Playground examples for this library are coming soon."
+    },
+    "view": {
+      "docs": "Docs",
+      "playground": "Playground"
+    },
+    "switcher": {
+      "device": "Preview device",
+      "view": "Example view"
+    },
+    "preview": "Preview",
+    "code": "Code",
+    "device": {
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "ipad": "Tablet",
+      "fullscreen": "Fullscreen",
+      "exit_fullscreen": "Exit fullscreen"
+    },
+    "reset": "Reset",
+    "examples": {
+      "accordion": {
+        "basic": "Basic",
+        "custom-icon": "Custom Icon",
+        "custom-styling": "Custom Styling"
+      },
+      "area": {
+        "basic": "Basic"
+      },
+      "bar": {
+        "basic": "Basic"
+      },
+      "line": {
+        "basic": "Basic"
+      },
+      "pie": {
+        "donut": "Donut"
+      },
+      "affix": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "alert": {
+        "basic": "Basic",
+        "slot": "Slot"
+      },
+      "anchor": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "arrow": {
+        "basic": "Basic"
+      },
+      "app-shell": {
+        "basic": "Basic",
+        "collapse-mobile": "Collapse & Mobile",
+        "custom-slots": "Custom Slots",
+        "layout-composition": "Layout Composition",
+        "tabs-breadcrumb": "Tabs & Breadcrumb"
+      },
+      "aspect-ratio": {
+        "basic": "Basic"
+      },
+      "autocomplete": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "disabled": "Disabled",
+        "grouped": "Grouped",
+        "open-on-focus": "Open On Focus"
+      },
+      "avatar": {
+        "basic": "Basic"
+      },
+      "backtop": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "target": "Target"
+      },
+      "badge": {
+        "basic": "Basic",
+        "slot": "Slot"
+      },
+      "drawer": {
+        "basic": "Basic",
+        "nested": "Nested",
+        "snap-points": "Snap Points",
+        "swipe": "Swipe",
+        "form-inputs": "Form Inputs"
+      },
+      "breadcrumb": {
+        "basic": "Basic",
+        "ellipsis-dropdown": "Ellipsis Dropdown",
+        "item-dropdown": "Item Dropdown",
+        "link": "Link",
+        "separator": "Separator"
+      },
+      "calendar": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "disabled": "Disabled"
+      },
+      "card": {
+        "basic": "Basic",
+        "collapsible": "Collapsible",
+        "only-content": "Only Content",
+        "title-slot": "Title Slot"
+      },
+      "carousel": {
+        "basic": "Basic",
+        "dot": "Dot",
+        "multi": "Multi",
+        "progress": "Progress",
+        "snap": "Snap",
+        "vertical": "Vertical"
+      },
+      "checkbox": {
+        "basic": "Basic",
+        "card": "Card",
+        "card-group": "Card Group",
+        "group": "Group",
+        "icon": "Icon"
+      },
+      "clipboard": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "icon-only": "Icon Only"
+      },
+      "collapsible": {
+        "basic": "Basic"
+      },
+      "color-area": {
+        "basic": "Basic",
+        "oklch": "OKLCH"
+      },
+      "color-field": {
+        "basic": "Basic"
+      },
+      "color-picker": {
+        "basic": "Basic",
+        "oklch": "OKLCH"
+      },
+      "color-slider": {
+        "basic": "Basic"
+      },
+      "color-swatch": {
+        "basic": "Basic"
+      },
+      "color-swatch-picker": {
+        "basic": "Basic"
+      },
+      "combobox": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "group": "Group"
+      },
+      "command": {
+        "basic": "Basic",
+        "dialog": "Dialog"
+      },
+      "context-menu": {
+        "basic": "Basic",
+        "checkbox": "Checkbox",
+        "mix": "Mixed",
+        "radio": "Radio"
+      },
+      "date-field": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "with-time": "With Time"
+      },
+      "date-picker": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "date-range-field": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "date-range-picker": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "dialog": {
+        "basic": "Basic",
+        "dialog-api": "Dialog API",
+        "draggable": "Draggable",
+        "footer": "Footer",
+        "fullscreen": "Fullscreen",
+        "prevent": "Prevent",
+        "state": "State"
+      },
+      "sheet": {
+        "basic": "Basic"
+      },
+      "dropdown-menu": {
+        "basic": "Basic",
+        "checkbox": "Checkbox",
+        "mix": "Mixed",
+        "radio": "Radio"
+      },
+      "editable": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "empty": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "slot": "Slot"
+      },
+      "form": {
+        "basic": "Basic"
+      },
+      "hover-card": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "input": {
+        "basic": "Basic",
+        "slot": "Slot"
+      },
+      "input-number": {
+        "basic": "Basic",
+        "slot": "Slot"
+      },
+      "input-otp": {
+        "basic": "Basic",
+        "custom-slot": "Custom Slot",
+        "placeholder": "Placeholder"
+      },
+      "kbd": {
+        "basic": "Basic"
+      },
+      "label": {
+        "basic": "Basic"
+      },
+      "layout": {
+        "basic": "Basic"
+      },
+      "link": {
+        "basic": "Basic"
+      },
+      "list": {
+        "basic": "Basic"
+      },
+      "menu": {
+        "basic": "Basic"
+      },
+      "menubar": {
+        "basic": "Basic",
+        "controlled": "Controlled"
+      },
+      "navMenu": {
+        "basic": "Basic",
+        "vertical": "Vertical"
+      },
+      "navigation-menu": {
+        "basic": "Basic",
+        "horizontal": "Horizontal",
+        "vertical": "Vertical"
+      },
+      "page-tabs": {
+        "basic": "Basic"
+      },
+      "pagination": {
+        "action": "Action",
+        "basic": "Basic",
+        "show": "Show",
+        "slot": "Slot"
+      },
+      "password": {
+        "basic": "Basic",
+        "icon": "Icon"
+      },
+      "popconfirm": {
+        "basic": "Basic"
+      },
+      "popover": {
+        "basic": "Basic"
+      },
+      "popper": {
+        "basic-click": "Basic (Click)",
+        "hover": "Hover",
+        "contextmenu": "Context Menu",
+        "nested": "Nested",
+        "nested-hover": "Nested Hover",
+        "controlled": "Controlled",
+        "virtual-reference": "Virtual Reference",
+        "with-arrow-portal": "Arrow & Portal"
+      },
+      "progress": {
+        "basic": "Basic",
+        "circle": "Circle",
+        "provider": "Provider",
+        "slot": "Slot"
+      },
+      "radio-group": {
+        "basic": "Basic",
+        "card": "Card"
+      },
+      "calendar-range": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "disabled": "Disabled"
+      },
+      "scroll-area": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "horizontal": "Horizontal"
+      },
+      "segment": {
+        "basic": "Basic",
+        "icon": "Icon"
+      },
+      "select": {
+        "basic": "Basic",
+        "default-value": "Default Value",
+        "disabled": "Disabled",
+        "group": "Group",
+        "separator": "Separator",
+        "slots": "Top & Bottom Slots"
+      },
+      "separator": {
+        "basic": "Basic"
+      },
+      "skeleton": {
+        "basic": "Basic",
+        "custom-size": "Custom Size"
+      },
+      "slider": {
+        "basic": "Basic"
+      },
+      "spinner": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "split-nav": {
+        "basic": "Basic",
+        "custom": "Custom",
+        "expand-strategy": "Expand Strategy",
+        "horizontal-dual-vertical": "Horizontal Dual Vertical",
+        "horizontal-vertical": "Horizontal Vertical",
+        "open-event": "Open Event",
+        "teleport": "Teleport",
+        "top-slots": "Top Slots",
+        "vertical-horizontal": "Vertical Horizontal"
+      },
+      "splitter": {
+        "basic": "Basic",
+        "collapsible": "Collapsible",
+        "custom-handle": "Custom Handle"
+      },
+      "stepper": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling",
+        "linear": "Linear",
+        "vertical": "Vertical"
+      },
+      "switch": {
+        "basic": "Basic",
+        "slot": "Slot"
+      },
+      "table": {
+        "basic": "Basic",
+        "bottom": "Bottom",
+        "empty": "Empty",
+        "expandable": "Expandable",
+        "filtering": "Filtering",
+        "fixed": "Fixed",
+        "footer": "Footer",
+        "grouped": "Grouped",
+        "multiple-selection": "Multiple Selection",
+        "resizable": "Resizable",
+        "row-events": "Row Events",
+        "single-selection": "Single Selection",
+        "sorting": "Sorting",
+        "tree": "Tree",
+        "virtualized": "Virtualized"
+      },
+      "tabs": {
+        "basic": "Basic",
+        "custom": "Custom"
+      },
+      "tag": {
+        "basic": "Basic",
+        "slot": "Slot"
+      },
+      "tags-input": {
+        "basic": "Basic"
+      },
+      "textarea": {
+        "basic": "Basic",
+        "footer": "Footer"
+      },
+      "time-field": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "time-range-field": {
+        "basic": "Basic",
+        "custom-styling": "Custom Styling"
+      },
+      "toast": {
+        "action": "Action",
+        "appearance": "Appearance",
+        "basic": "Basic",
+        "control": "Control",
+        "promise": "Promise",
+        "stack": "Stack"
+      },
+      "toggle": {
+        "basic": "Basic"
+      },
+      "toggle-group": {
+        "basic": "Basic"
+      },
+      "toolbar": {
+        "basic": "Basic",
+        "link": "Link",
+        "toggle-group": "Toggle Group"
+      },
+      "tooltip": {
+        "basic": "Basic"
+      },
+      "theme-customizer": {
+        "basic": "Basic"
+      },
+      "tree": {
+        "basic": "Basic",
+        "virtualizer": "Virtualizer"
+      },
+      "tree-menu": {
+        "basic": "Basic"
+      },
+      "tree-nav": {
+        "basic": "Basic",
+        "selection": "Selection",
+        "links": "Link Items",
+        "disabled": "Disabled",
+        "collapsible": "Overflow Collapsing"
+      },
+      "virtualizer": {
+        "basic": "Basic",
+        "dynamic": "Dynamic",
+        "horizontal": "Horizontal"
+      },
+      "visually-hidden": {
+        "basic": "Basic"
+      },
+      "bubble": {
+        "basic": "Basic",
+        "variant": "Variant",
+        "loading": "Loading",
+        "typing": "Typing"
+      },
+      "bubble-list": {
+        "basic": "Basic",
+        "custom-item": "Custom Item"
+      },
+      "sender": {
+        "basic": "Basic",
+        "loading": "Loading",
+        "with-attachments": "With Attachments",
+        "suggestions": "Slash & Mention Suggestions"
+      },
+      "markdown": {
+        "basic": "Basic",
+        "streaming": "Streaming"
+      },
+      "attachments": {
+        "basic": "Basic",
+        "custom-item": "Custom Item"
+      },
+      "file-card": {
+        "basic": "Basic",
+        "clickable": "Clickable"
+      },
+      "code-block": {
+        "basic": "Basic",
+        "highlight": "Highlight"
+      },
+      "conversations": {
+        "basic": "Basic",
+        "custom-title": "Custom Group Title"
+      },
+      "welcome": {
+        "basic": "Basic",
+        "custom-slots": "Custom Slots"
+      },
+      "prompts": {
+        "basic": "Basic",
+        "select": "Select Event"
+      },
+      "sources": {
+        "basic": "Basic",
+        "without-url": "Without URL"
+      },
+      "suggestion": {
+        "basic": "Basic",
+        "select": "Select Event"
+      },
+      "think": {
+        "basic": "Basic",
+        "custom-trigger": "Custom Trigger"
+      },
+      "thought-chain": {
+        "basic": "Basic",
+        "custom-slots": "Custom Slots"
+      },
+      "actions": {
+        "basic": "Basic",
+        "disabled": "Disabled"
+      },
+      "actions-copy": {
+        "basic": "Basic",
+        "custom-label": "Custom Label"
+      },
+      "actions-feedback": {
+        "basic": "Basic",
+        "custom-icons": "Custom Icons"
+      },
+      "folder": {
+        "basic": "Basic",
+        "custom-icon": "Custom Icon"
+      },
+      "notification": {
+        "basic": "Basic",
+        "custom-slots": "Custom Slots"
+      },
+      "mermaid": {
+        "basic": "Basic",
+        "code-mode": "Code Mode"
+      }
+    }
+  },
+  "locale": {
+    "en": "English",
+    "zh": "Chinese"
+  },
+  "layout": {
+    "header": {
+      "search": "Search Docs",
+      "search_empty": "No related documents found",
+      "menu": "Menu",
+      "getting_started": "Getting Started",
+      "components": "Components",
+      "chart": "Chart",
+      "releases": "Releases",
+      "playground": "Playground",
+      "aria": "Aria",
+      "github": "GitHub",
+      "theme": "Theme",
+      "theme_configurator": "Theme Configurator",
+      "language": "Language"
+    }
+  },
+  "components": {
+    "catalog": {
+      "title": "Component Catalog",
+      "description": "Browse every VeanUI component by category and jump straight into the dedicated docs page for each one.",
+      "helper": "Use the category view below or press Command + K to jump to a component directly.",
+      "kicker": "Component catalog and entry points",
+      "group_count": "{count} components",
+      "actions": {
+        "start": "Quick Start",
+        "learn": "Learn the architecture"
+      },
+      "badges": {
+        "new": "New"
+      },
+      "stats": {
+        "total": "Total components",
+        "categories": "Categories",
+        "featured": "Featured",
+        "new": "New components"
+      },
+      "stats_title": "Catalog at a glance",
+      "quick_actions": {
+        "quick_start": {
+          "title": "Set up first",
+          "desc": "If the package is not installed yet, start from the quick-start guide before browsing deeper."
+        },
+        "introduction": {
+          "title": "Understand the layers",
+          "desc": "Learn the aria and UI split first so component choices stay intentional."
+        },
+        "theming": {
+          "title": "Review theming early",
+          "desc": "If styling and slot overrides matter, the theming guide saves time before implementation."
+        }
+      },
+      "featured": {
+        "input": "A reliable base for plain text entry and more complex form composition.",
+        "select": "A high-frequency choice for filtering, picking, and structured input flows.",
+        "dialog": "The core overlay for confirmations, editing, and interruptive flows.",
+        "table": "A key surface for dense data reading, comparison, and structured display.",
+        "form": "The entry point for aligning validation, inputs, and submission feedback."
+      },
+      "sections": {
+        "featured": {
+          "title": "High-signal components"
+        }
+      }
+    },
+    "home": {
+      "title": "VeanUI",
+      "description": "A powerful, elegant Vue 3 component system with aria primitives and ready-to-use styled wrappers.",
+      "kicker": "Vue 3 Component System",
+      "actions": {
+        "start": "Get Started",
+        "browse": "Browse Components",
+        "github": "GitHub"
+      },
+      "stats_title": "Library overview",
+      "stats": {
+        "components": "Components",
+        "categories": "Categories",
+        "packages": "Packages",
+        "guides": "Guides"
+      },
+      "features": {
+        "styled_wrappers": {
+          "title": "Styled Wrappers",
+          "desc": "{'@'}vean/ui ships S-prefixed styled components so common product surfaces can be delivered without rebuilding presentation from scratch."
+        },
+        "accessible": {
+          "title": "Accessibility Built In",
+          "desc": "Follows WAI-ARIA patterns with keyboard navigation, focus management, and semantic state handling included."
+        },
+        "type_safe": {
+          "title": "Type-safe APIs",
+          "desc": "Built with TypeScript so components, slots, and configuration surfaces stay explicit during implementation."
+        },
+        "slot_overrides": {
+          "title": "Slot-level Overrides",
+          "desc": "Override local styling precisely through ui slot maps instead of rewriting entire components."
+        },
+        "theme_ready": {
+          "title": "Theme-ready Variants",
+          "desc": "Variants are organized with UnoCSS and {'@'}soybeanjs/cva so design tokens and themes stay scalable."
+        },
+        "component_coverage": {
+          "title": "Broad Component Coverage",
+          "desc": "Covers general UI, forms, navigation, overlays, and data display for the screens teams build most often."
+        },
+        "ecosystem": {
+          "title": "Vue Ecosystem Friendly",
+          "desc": "Works smoothly with Nuxt, auto-import workflows, and living examples that shorten adoption time."
+        },
+        "aria_first": {
+          "title": "Aria First",
+          "desc": "{'@'}vean/aria focuses on state, behavior, and accessibility semantics without shipping any visual styling."
+        }
+      },
+      "quick_links": {
+        "get_started": {
+          "title": "Quick Setup",
+          "desc": "Install the package, wire the styling layer, and get the first screen rendering end to end."
+        },
+        "introduction": {
+          "title": "Understand the Split",
+          "desc": "Review how the unstyled aria layer and the styled UI layer divide responsibility before choosing an integration strategy."
+        },
+        "components": {
+          "title": "Browse the Catalog",
+          "desc": "Narrow the component choice set quickly by scanning primitives, patterns, and utilities by category."
+        },
+        "theming": {
+          "title": "Configure Theming",
+          "desc": "Learn how tokens, variants, and ui slot overrides work together before deeper customization."
+        }
+      },
+      "sections": {
+        "highlights": {
+          "title": "Core Features"
+        },
+        "two_modes": {
+          "title": "Two Ways to Use VeanUI",
+          "description": "Choose the distribution mode that fits your workflow — npm package for quick integration, or CLI copy-paste for full source control.",
+          "npm": {
+            "title": "NPM Package",
+            "subtitle": "Traditional dependency",
+            "description": "Install {'@'}vean/ui as a dependency. Auto-import, tree-shaking, and seamless updates via your package manager.",
+            "feature_0": "One-command install",
+            "feature_1": "Auto-import with unplugin-vue-components",
+            "feature_2": "Tree-shaking — only bundle what you use",
+            "feature_3": "Seamless updates via package manager",
+            "feature_4": "Nuxt module support",
+            "cta": "Install Package"
+          },
+          "cli": {
+            "title": "CLI · Copy-Paste",
+            "subtitle": "shadcn-style",
+            "description": "Copy source code into your project with the vean CLI. Full control, full customization — you own the code.",
+            "feature_0": "Components live in your source tree",
+            "feature_1": "Edit any file — full customization",
+            "feature_2": "vean diff to review upstream changes",
+            "feature_3": "Only the components you add exist",
+            "feature_4": "Perfect for custom design systems",
+            "cta": "Try the CLI"
+          }
+        },
+        "featured": {
+          "title": "High-signal Components",
+          "desc": "If you want to feel the system quickly, these components show the most representative interaction surfaces."
+        },
+        "categories": {
+          "title": "Browse by Scenario"
+        }
+      },
+      "featured": {
+        "button": "A foundational entry point for actions, state transitions, and forward motion in a flow.",
+        "input": "A reliable starting point for entry, search, and richer form composition.",
+        "select": "Covers filtering, mapping, and structured option selection in frequent product scenarios.",
+        "dialog": "A core overlay capability for confirmations, editing flows, and interruptive tasks.",
+        "table": "A key component for dense data reading, comparison, and structured presentation.",
+        "form": "Aligns field composition, validation, and submission feedback inside one workflow."
+      }
+    }
+  },
+  "sidebar": {
+    "introduction": "Introduction",
+    "quick_start": "Quick Start",
+    "theming": "Theming",
+    "llms": "LLMs.txt",
+    "skills": "Skills",
+    "general": "General",
+    "layout": "Layout",
+    "navigation": "Navigation",
+    "forms": "Forms",
+    "data_display": "Data Display",
+    "feedback": "Feedback",
+    "overlay": "Overlay",
+    "utilities": "Utilities",
+    "installation": "Installation",
+    "cli": "CLI",
+    "migration": "Upgrade Guides",
+    "aria": "Aria"
+  },
+  "migration": {
+    "kicker": "Upgrade Guide",
+    "title": "Upgrading to {version}",
+    "helper": "This guide lists every breaking change in the release with the matching migration steps and code samples."
+  },
+  "api": {
+    "ui_layer": "UI Layer",
+    "chart_layer": "Chart Layer",
+    "admin_layer": "Admin Layer",
+    "props": "Props",
+    "emits": "Emits",
+    "slots": "Slots",
+    "columns": {
+      "prop_name": "Prop",
+      "emit_name": "Emit Name",
+      "slot_name": "Slot Name",
+      "field_name": "Field",
+      "type": "Type",
+      "default": "Default",
+      "parameters": "Parameters",
+      "description": "Description"
+    },
+    "actions": {
+      "open_full_type": "Open full type"
+    },
+    "aria_layer": "Aria Layer"
+  },
+  "changelog": {
+    "actions": {
+      "compare_release": "Compare release",
+      "view_commit": "View commit"
+    },
+    "meta": {
+      "scope": "Scope",
+      "authors": "Authors"
+    },
+    "sources": {
+      "curated": "Curated mapping"
+    },
+    "notes": {
+      "breaking": "Breaking changes",
+      "info": "Release note"
+    },
+    "empty": {
+      "title": "No component-specific release notes yet",
+      "desc": "Release entries appear here when CHANGELOG items are scoped to this component or manually mapped."
+    },
+    "types": {
+      "breaking": "Breaking",
+      "feature": "Feature",
+      "fix": "Fix",
+      "optimization": "Optimization",
+      "refactor": "Refactor",
+      "docs": "Docs",
+      "chore": "Chore",
+      "style": "Style"
+    }
+  },
+  "releases_page": {
+    "kicker": "Release overview",
+    "title": "Releases",
+    "summary": "Track recent releases, see which components changed, and jump directly into the parts of the system most relevant to your upgrade.",
+    "badges": {
+      "new": "New"
+    },
+    "breaking_banner": {
+      "title": "Breaking changes",
+      "desc": "This release contains {count} breaking change(s). Review them before upgrading."
+    },
+    "filter": {
+      "title": "Filter by component",
+      "desc": "Narrow the release timeline to the components you actually use, then jump back into their docs from the matched entries.",
+      "placeholder": "Search components like dialog, table, or date-picker",
+      "clear": "Clear",
+      "suggestions": "Suggestions",
+      "enter_hint": "Press Enter to pick the first match.",
+      "related_only": "Only component-related entries",
+      "related_only_desc": "Hide shared release items like docs, deps, workflow, and other non-component changes.",
+      "no_match": "No matching component found in tracked release data."
+    },
+    "latest": {
+      "title": "Latest snapshot",
+      "desc": "Start with the newest release, then scan older versions only if your upgrade path crosses multiple published tags."
+    },
+    "sections": {
+      "recent": {
+        "title": "Recent releases",
+        "desc": "Each release groups shipped entries, affected components, and the fastest links back into component docs."
+      },
+      "impacted": {
+        "title": "Affected components"
+      },
+      "highlights": {
+        "title": "Selected highlights"
+      }
+    },
+    "stats": {
+      "entries": "Entries",
+      "components": "Components",
+      "versions": "Releases tracked"
+    },
+    "actions": {
+      "compare_release": "Compare release",
+      "full_changelog": "Full changelog",
+      "browse_components": "Browse components",
+      "view_full_release": "View full release",
+      "collapse_release": "Collapse full release",
+      "upgrade_guide": "Read the upgrade guide"
+    },
+    "empty": {
+      "title": "No release data yet",
+      "desc": "Run the changelog generation command to populate this page.",
+      "filtered_title": "No matching releases",
+      "filtered_desc": "No tracked release currently matches this component filter."
+    },
+    "more_entries": "+ {count} more entries in the full changelog"
+  },
+  "component_detail": {
+    "kicker": "Component detail entry",
+    "helper": "Use the quick jump panel to reach overview, usage, demos, and API first, then continue through the full page.",
+    "summary": "{component} belongs to the {category} category. Start with demos and usage, then use the API tables to finish integration and styling decisions.",
+    "changelog": {
+      "desc": "Version history is grouped by release so you can quickly see what changed for this component across published versions."
+    },
+    "actions": {
+      "catalog": "Back to catalog"
+    },
+    "sections": {
+      "overview": "Overview",
+      "usage": "Usage",
+      "demos": "Demos",
+      "api": "API",
+      "changelog": "Changelog"
+    },
+    "quick_jump": {
+      "title": "Quick jump"
+    },
+    "related": {
+      "title": "Related components",
+      "desc": "If you are composing interactions in the same family, these components usually pair well together."
+    }
+  },
+  "chart": {
+    "sidebar": {
+      "charts": "Charts"
+    },
+    "catalog": {
+      "title": "TanStack Chart Demos"
+    },
+    "kinds": {
+      "area": "Area chart: magnitude and trend over time, with stacking support.",
+      "bar": "Bar chart: compare values across discrete categories.",
+      "line": "Line chart: trend over a continuous interval, with multiple series.",
+      "pie": "Donut chart: each category's share of the whole.",
+      "scatter": "Scatter chart: correlation between two numeric dimensions."
+    }
+  },
+  "themeEditor": {
+    "title": "Theme editor",
+    "description": "Tune the theme on the left and every component below follows. The panel is the real SThemeCustomizer — colors, radius, size, spacing, fonts, surfaces, borders and the per-token overrides apply to this page as you change them.",
+    "mode": "Color mode",
+    "group": {
+      "all": "All",
+      "color": "Color",
+      "size": "Size",
+      "font": "Font",
+      "structure": "Structure",
+      "region": "Region"
+    },
+    "sections": {
+      "colors": {
+        "title": "Brand color",
+        "description": "primary, the fills derived from the base palette, and the role ramp"
+      },
+      "feedback": {
+        "title": "Status colors",
+        "description": "the feedback scheme: destructive, success, warning and info"
+      },
+      "forms": {
+        "title": "Form controls",
+        "description": "hairline tokens, control fills and the focus ring"
+      },
+      "data": {
+        "title": "Data display",
+        "description": "surfaces, muted fills and table borders"
+      },
+      "surfaces": {
+        "title": "Surfaces & shadows",
+        "description": "the elevation ladder, nested card / popover surfaces and surfaceStyle"
+      },
+      "borders": {
+        "title": "Borders & focus",
+        "description": "hairline tokens, the focus ring and the modal mask"
+      },
+      "overlay": {
+        "title": "Overlays",
+        "description": "dialogs and popups on the popover surface, plus the mask"
+      },
+      "size": {
+        "title": "Size",
+        "description": "the ladder every control and text rung reads"
+      },
+      "radius": {
+        "title": "Radius",
+        "description": "one seed drives the whole rung ladder"
+      },
+      "spacing": {
+        "title": "Spacing",
+        "description": "one unit drives padding, margin and gap"
+      },
+      "font": {
+        "title": "Font",
+        "description": "the three typography roles: sans, heading and mono stacks"
+      },
+      "sidebar": {
+        "title": "Region — sidebar",
+        "description": "the region skin, mirroring the global roles"
+      },
+      "charts": {
+        "title": "Chart colors",
+        "description": "chart-1 to chart-5, derived from primary"
+      },
+      "contrast": {
+        "title": "Contrast",
+        "description": "the fill to foreground pairs, side by side"
+      }
+    }
+  },
+  "button": {
+    "back_to_home": "Back to Home"
+  },
+  "aria": {
+    "catalog": {
+      "title": "Aria",
+      "notice": {
+        "title": "Documentation in progress",
+        "description": "Aria documentation is being written. Meanwhile, browse the styled API reference under Components."
+      }
+    }
+  },
+  "docs": {
+    "code": {
+      "copy": "Copy code",
+      "copied": "Copied"
+    }
+  }
+}

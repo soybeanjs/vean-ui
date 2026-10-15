@@ -1,0 +1,93 @@
+---
+/**
+ * Port of `apps/docs/src/components/sider-menu.vue`.
+ *
+ * The ubean sidebar is a `STreeMenu` Vue component (roving focus group, per-item
+ * `data-vean-*` hooks and a long utility class string repeated on every row). This
+ * is the static equivalent: the same link tree rendered as nested `<ul>`/`<a>`, with
+ * the active row marked by `aria-current`. Navigation needs no client runtime, so no
+ * island is hydrated — the markup difference this creates is measured and called out
+ * in the benchmark report.
+ */
+import type { Locale } from '../i18n';
+import { menusFor, selectedMenuValue, type MenuNode } from '../sidebar';
+import { renderIcon } from '../plugin/icons';
+
+interface Props {
+  locale: Locale;
+  /** Bare path (locale prefix stripped) used to pick the section and active row. */
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+const menus = menusFor(locale, path);
+const selected = selectedMenuValue(path);
+
+/** Locale-prefixed href (`prefix_except_default`). */
+function href(to: string): string {
+  return locale === 'zh' ? (to === '/' ? '/zh' : `/zh${to}`) : to;
+}
+
+function isSelected(node: MenuNode): boolean {
+  return node.value === selected || (node.to !== undefined && node.to === path);
+}
+
+function hasSelectedChild(node: MenuNode): boolean {
+  return (node.children ?? []).some(child => isSelected(child) || hasSelectedChild(child));
+}
+
+const linkClass =
+  'flex items-center gap-2 rounded-sm px-2 py-1.5 text-sm transition-colors outline-none ' +
+  'data-[selected=true]:bg-sidebar-primary/10 data-[selected=true]:text-sidebar-primary ' +
+  'data-[child-selected=true]:text-sidebar-primary hover:bg-sidebar-accent-foreground/10';
+---
+
+<div class="max-h-full overflow-auto md:border md:border-border/50 md:dark:border-border md:rounded-xl">
+  <nav
+    class="flex flex-col gap-1.25 p-2 text-sm text-sidebar-foreground"
+    aria-label={locale === 'zh' ? '文档导航' : 'Documentation navigation'}
+  >
+    {
+      menus.map(group => (
+        <div class="mb-1.25">
+          <div class="flex h-8 items-center gap-2 px-2 py-1.5 text-xs text-sidebar-foreground/70">
+            {group.icon ? <Fragment set:html={renderIcon(group.icon, { class: 'shrink-0' })} /> : null}
+            <span>{group.label}</span>
+          </div>
+          <ul class="m-0 flex list-none flex-col gap-1.25 p-0">
+            {(group.children ?? []).map(node => (
+              <li class="m-0 p-0">
+                <a
+                  href={href(node.to ?? '#')}
+                  class={linkClass}
+                  data-selected={String(isSelected(node))}
+                  data-child-selected={String(hasSelectedChild(node))}
+                  aria-current={isSelected(node) ? 'page' : undefined}
+                >
+                  <span class="truncate">{node.label}</span>
+                  {node.tag ? <span class="text-[10px] text-primary">{node.tag}</span> : null}
+                </a>
+                {node.children ? (
+                  <ul class="m-0 flex list-none flex-col gap-1.25 p-0 ps-3">
+                    {node.children.map(child => (
+                      <li class="m-0 p-0">
+                        <a
+                          href={href(child.to ?? '#')}
+                          class={linkClass}
+                          data-selected={String(isSelected(child))}
+                          aria-current={isSelected(child) ? 'page' : undefined}
+                        >
+                          <span class="truncate">{child.label}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </nav>
+</div>

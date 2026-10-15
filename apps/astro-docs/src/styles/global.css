@@ -1,0 +1,111 @@
+@import './markdown.css';
+@import './frosted.css';
+
+html {
+  --docs-page-bg-solid: rgb(244, 247, 255);
+  --docs-page-bg: linear-gradient(
+    180deg,
+    rgba(244, 247, 255, 0.96) 0%,
+    rgba(235, 241, 251, 0.9) 48%,
+    rgba(248, 250, 255, 0.98) 100%
+  );
+  --scrollbar-color-light: rgba(0, 0, 0, 0.5);
+  --scrollbar-color-dark: rgba(255, 255, 255, 0.5);
+  --scrollbar-size: 8px;
+  --scrollbar-color: var(--scrollbar-color-light);
+  --docs-chip-bg: rgba(255, 255, 255, 0.58);
+  --docs-chip-bg-strong: rgba(255, 255, 255, 0.7);
+  --docs-chip-border: rgba(255, 255, 255, 0.36);
+  --docs-panel-bg: rgba(255, 255, 255, 0.46);
+  --docs-panel-bg-strong: rgba(255, 255, 255, 0.58);
+  --docs-surface: var(--docs-panel-bg);
+  --docs-surface-strong: var(--docs-panel-bg-strong);
+  --docs-shell-bg: rgba(255, 255, 255, 0.2);
+  --docs-shell-border: rgba(255, 255, 255, 0.34);
+  --docs-shell-blur: 18px;
+}
+
+html.dark {
+  --docs-page-bg-solid: rgb(14, 12, 18);
+  --docs-page-bg: linear-gradient(
+    180deg,
+    rgba(18, 15, 22, 0.985) 0%,
+    rgba(24, 19, 26, 0.985) 40%,
+    rgba(14, 12, 18, 1) 100%
+  );
+  --scrollbar-color: var(--scrollbar-color-dark);
+  --docs-chip-bg: rgba(41, 32, 43, 0.66);
+  --docs-chip-bg-strong: rgba(50, 38, 52, 0.78);
+  --docs-chip-border: rgba(255, 255, 255, 0.075);
+  --docs-panel-bg: rgba(31, 25, 34, 0.62);
+  --docs-panel-bg-strong: rgba(38, 29, 40, 0.76);
+  --docs-shell-bg: rgba(27, 22, 30, 0.32);
+  --docs-shell-border: rgba(255, 255, 255, 0.075);
+  --docs-shell-blur: 20px;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+/* for safari */
+.dark * {
+  color-scheme: dark;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-color);
+  border-radius: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.shiki,
+.shiki span {
+  color: var(--shiki-light);
+}
+.shiki {
+  background: var(--shiki-light-bg);
+}
+
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark);
+  background: var(--shiki-dark-bg);
+}

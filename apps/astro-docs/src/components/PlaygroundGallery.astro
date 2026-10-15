@@ -1,0 +1,160 @@
+---
+/**
+ * Port of `apps/docs/src/components/playground-gallery.vue`.
+ *
+ * Same card structure (title, device switcher, view switcher, exit-fullscreen) and
+ * the same frame classes from `apps/docs/src/constants/playground.ts`.
+ *
+ * The split from the original is deliberate and is the core of this port's
+ * architecture:
+ *
+ * - the **card shell, the code panel and the device/tab controls are build-time
+ *   markup** — the ubean gallery lazy-loads shiki on the client for every code tab,
+ *   which is one of the costs this comparison is about;
+ * - only the **live demo** is a Vue island (`ExamplePreview.vue`), because the
+ *   example SFCs are genuinely interactive;
+ * - switching is a delegated listener in `scripts/playground.ts`, so no gallery
+ *   component tree is hydrated per example.
+ *
+ * `playgroundRegion` support is decided here, at build time, by reading the example
+ * module's own `props` table — the ubean version does the same check at runtime
+ * (`shared/playground-region.ts`).
+ */
+import { createTranslator, type Locale } from '../i18n';
+import { loadExamples } from '../plugin/component-loader';
+import { renderIcon } from '../plugin/icons';
+import ExamplePreview from './ExamplePreview.vue';
+
+interface Props {
+  component: string;
+  locale: Locale;
+  /** Build-time highlighted code per example name (`plugin/code-highlight.ts`). */
+  codeHtml?: Record<string, string>;
+}
+
+const { component, locale, codeHtml } = Astro.props;
+const t = createTranslator(locale);
+
+const devices = [
+  { value: 'desktop', labelKey: 'playground.device.desktop', icon: 'lucide:monitor' },
+  { value: 'mobile', labelKey: 'playground.device.mobile', icon: 'lucide:smartphone' },
+  { value: 'ipad', labelKey: 'playground.device.ipad', icon: 'lucide:tablet' },
+  { value: 'fullscreen', labelKey: 'playground.device.fullscreen', icon: 'lucide:maximize' }
+];
+
+const tabs = [
+  { value: 'preview', labelKey: 'playground.preview', icon: 'lucide:eye' },
+  { value: 'code', labelKey: 'playground.code', icon: 'lucide:code' }
+];
+
+/** `playground.examples.<component>.<file>` when translated, else the pascal-cased file name. */
+function exampleTitle(name: string): string {
+  const key = `playground.examples.${component}.${name}`;
+  const translated = t(key);
+
+  if (translated !== key) {
+    return translated;
+  }
+
+  return name
+    .split('-')
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
+const examples = await Promise.all(
+  loadExamples(component).map(async entry => {
+    const module = (await entry.componentLoader()) as { default: { props?: Record<string, unknown> } };
+    const acceptsRegion = Boolean(module.default?.props?.playgroundRegion);
+    const region = `playground-${component}-${entry.name}`;
+
+    return {
+      name: entry.name,
+      title: exampleTitle(entry.name),
+      region: acceptsRegion ? region : undefined,
+      code: codeHtml?.[entry.name]
+    };
+  })
+);
+
+const iconButtonClass =
+  'inline-flex size-7 items-center justify-center rounded-sm text-muted-foreground transition-colors hover:bg-accent';
+---
+
+<div class="my-6 flex flex-col gap-6" data-playground-gallery>
+  {
+    examples.length === 0 ? (
+      <p class="text-sm text-muted-foreground">{t('playground.empty.title')}</p>
+    ) : (
+      examples.map(example => (
+        <section
+          data-playground-card
+          data-device="desktop"
+          data-tab="preview"
+          class="docs-card overflow-hidden rounded-xl border border-border/50 bg-card text-card-foreground dark:border-border"
+        >
+          <header class="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 px-4 py-3">
+            <h3 class="m-0 text-base font-semibold tracking-tight">{example.title}</h3>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <div
+                class="flex items-center gap-1 rounded-md border border-border p-0.5"
+                role="group"
+                aria-label={t('playground.switcher.device')}
+              >
+                {devices.map(device => (
+                  <button
+                    type="button"
+                    class:list={[iconButtonClass, device.value === 'desktop' ? 'bg-accent text-accent-foreground' : '']}
+                    data-playground-device={device.value}
+                    aria-label={t(device.labelKey)}
+                    aria-pressed={String(device.value === 'desktop')}
+                  >
+                    <Fragment set:html={renderIcon(device.icon)} />
+                  </button>
+                ))}
+              </div>
+
+              <div
+                class="flex items-center gap-1 rounded-md border border-border p-0.5"
+                role="group"
+                aria-label={t('playground.switcher.view')}
+              >
+                {tabs.map(tab => (
+                  <button
+                    type="button"
+                    class:list={[
+                      'inline-flex items-center gap-1 rounded-sm px-2 py-1 text-xs transition-colors',
+                      tab.value === 'preview'
+                        ? 'bg-accent text-accent-foreground'
+                        : 'text-muted-foreground hover:bg-accent'
+                    ]}
+                    data-playground-tab={tab.value}
+                    aria-pressed={String(tab.value === 'preview')}
+                  >
+                    <Fragment set:html={renderIcon(tab.icon)} />
+                    <span class="sr-only sm:not-sr-only">{t(tab.labelKey)}</span>
+                  </button>
+                ))}
+              </div>
+
+              <button type="button" class:list={[iconButtonClass, 'hidden']} data-playground-exit aria-label={t('playground.device.exit_fullscreen')}>
+                ×
+              </button>
+            </div>
+          </header>
+
+          <div class="px-4 py-4">
+            {example.region ? <div id={example.region} class="mb-4 flex flex-wrap items-center gap-3" /> : null}
+
+            <div data-playground-panel="preview" class="rounded-md border border-dashed p-4 sm:p-5 min-h-36 w-full">
+              <ExamplePreview client:load component={component} name={example.name} region={example.region} />
+            </div>
+
+            <div data-playground-panel="code" hidden class="markdown-wrapper" set:html={example.code} />
+          </div>
+        </section>
+      ))
+    )
+  }
+</div>

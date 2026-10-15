@@ -1,0 +1,85 @@
+---
+/**
+ * Port of `apps/docs/src/components/app-header.vue`.
+ *
+ * Structure and copy match the ubean header (logo + site name, search trigger,
+ * header nav, version tag, toolbar). Two deliberate differences, both recorded in
+ * the benchmark report:
+ *
+ * - the site name is **not** an `<h1>` (same reasoning as the original: a global
+ *   header heading competes with the page `<h1>` and trips Lighthouse's
+ *   `heading-order` check);
+ * - the search dialog is not ported. The ubean trigger opens a `SDialog` whose body
+ *   pulls the full-text index, the generated API member index and the release
+ *   graph; this trigger is static markup with no dialog attached, so no search
+ *   runtime is part of the Astro bundle. The `__search.json` index *is* generated
+ *   (`plugin/search-index.ts`) so the artifact shape is comparable.
+ *
+ * The version tag reads `version` from the docs package so both sites show the same
+ * number.
+ */
+import type { Locale } from '../i18n';
+import { createTranslator } from '../i18n';
+import { renderIcon } from '../plugin/icons';
+import { docsVersion } from '../plugin/version';
+import AppLogo from './AppLogo.astro';
+import HeaderNav from './HeaderNav.astro';
+import ToolBar from './ToolBar.astro';
+
+interface Props {
+  locale: Locale;
+  /** Bare path (locale prefix stripped). */
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+const t = createTranslator(locale);
+
+function href(to: string): string {
+  return locale === 'zh' ? (to === '/' ? '/zh' : `/zh${to}`) : to;
+}
+
+const searchButtonClass =
+  'inline-flex items-center justify-center gap-3 rounded-md px-4 h-8 text-sm font-medium shadow-sm ' +
+  'bg-accent text-accent-foreground outline-none transition-all-150 ' +
+  'hover:bg-accent active:bg-accent-foreground/10 focus-visible:ring-3 focus-visible:ring-accent-foreground/10';
+---
+
+<header
+  data-scrolled="false"
+  data-at-top="true"
+  class="docs-header-shell group fixed top-0 start-0 end-0 z-49 px-4 sm:px-6"
+>
+  <div class="docs-header-frame mx-auto flex max-w-360 min-h-[--app-header-main] items-center justify-between gap-3 px-6 py-3 xl:gap-4">
+    <div class="flex min-w-0 items-center gap-4 lg:gap-6 xl:gap-8">
+      <a href={href('/')} class="group flex items-center gap-3 outline-none">
+        <div class="size-8 transition-transform duration-300 group-hover:scale-110">
+          <AppLogo />
+        </div>
+        <div
+          class="bg-gradient-to-r from-primary-600 to-primary bg-clip-text text-lg font-bold whitespace-nowrap text-transparent dark:from-primary dark:to-primary-300"
+        >
+          VeanUI
+        </div>
+      </a>
+
+      <button type="button" class={searchButtonClass} aria-label={t('layout.header.search')}>
+        <Fragment set:html={renderIcon('lucide:search', { class: 'shrink-0 text-base' })} />
+        <span class="hidden sm:inline">{t('layout.header.search')}</span>
+        <kbd
+          class="ms-auto inline-flex h-5 min-w-5 items-center justify-center rounded-sm border border-border bg-card px-0.75 text-xs font-medium text-muted-foreground shadow-[0_2px_0_0]"
+        >
+          ⌘K
+        </kbd>
+      </button>
+    </div>
+
+    <div class="flex items-center gap-3 xl:gap-4">
+      <HeaderNav locale={locale} path={path} />
+
+      <span class="text-xs font-semibold text-muted-foreground">v{docsVersion}</span>
+
+      <ToolBar locale={locale} path={path} />
+    </div>
+  </div>
+</header>

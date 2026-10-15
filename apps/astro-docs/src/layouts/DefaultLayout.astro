@@ -1,0 +1,111 @@
+---
+/**
+ * Port of `apps/docs/src/layouts/default.vue`.
+ *
+ * Same three regions as the ubean layout: fixed header, a fixed left sider shown
+ * only for the doc sections, and the content column that optionally reserves an
+ * 18rem right-hand outline column at `xl`. The visibility rules come from
+ * `./types.ts` (`shouldShowSidebar` / `shouldReserveOutlineSpace`), copied from the
+ * original.
+ *
+ * The ubean version renders a mobile `SDrawer` for the sider; here the sider markup
+ * is hidden below `md` and the mobile drawer is not ported (the same links are
+ * reachable from the header nav) — noted in the report.
+ */
+import type { PageLayoutProps } from './types';
+import { shouldReserveOutlineSpace, shouldShowSidebar } from './types';
+import PageHead from '../components/PageHead.astro';
+import AppHeader from '../components/AppHeader.astro';
+import SiderMenu from '../components/SiderMenu.astro';
+import '../styles/global.css';
+import '../styles/markdown.css';
+import '../styles/frosted.css';
+import 'uno.css';
+
+const { locale, path, fullPath, title, description, outline } = Astro.props as PageLayoutProps;
+
+const showSidebar = shouldShowSidebar(path);
+const reserveOutline = shouldReserveOutlineSpace(path);
+const hasOutline = (outline?.length ?? 0) > 0;
+
+/** Flatten the outline tree to the anchor list the right column renders. */
+interface FlatAnchor {
+  href: string;
+  title: string;
+  depth: number;
+}
+
+function flatten(items: { href: string; title: string; children?: unknown[] }[], depth = 0): FlatAnchor[] {
+  return items.flatMap(item => [
+    { href: item.href, title: item.title, depth },
+    ...flatten((item.children ?? []) as never, depth + 1)
+  ]);
+}
+
+const anchors = flatten(outline ?? []);
+---
+
+<!doctype html>
+<html lang={locale === 'zh' ? 'zh-CN' : 'en'} dir="ltr" data-copy-label={locale === 'zh' ? '复制代码' : 'Copy code'} data-copied-label={locale === 'zh' ? '已复制' : 'Copied'}>
+  <head>
+    <PageHead {locale} {path} {fullPath} {title} {description} />
+  </head>
+  <body>
+    <div class="[--app-header-main:3.75rem] [--app-header:--app-header-main] min-h-full pt-[--app-header] text-sm">
+      <AppHeader {locale} {path} />
+
+      {
+        showSidebar ? (
+          <div class="lt-md:!hidden fixed top-[calc(var(--app-header)+0.5rem)] start-0 z-49 h-[calc(100vh-var(--app-header)-0.5rem)] w-55 p-3">
+            <SiderMenu {locale} {path} />
+          </div>
+        ) : null
+      }
+
+      <div class:list={[showSidebar ? 'lt-md:ms-0 md:ms-55' : 'ms-0']}>
+        <div class="px-4 py-5 md:px-8 md:pt-5 md:pb-7 xl:px-10">
+          <div
+            class:list={[
+              reserveOutline ? 'xl:grid xl:grid-cols-[minmax(0,1fr)_18rem] xl:items-start xl:gap-8' : ''
+            ]}
+          >
+            <main class="min-w-0">
+              <slot />
+            </main>
+
+            {
+              reserveOutline ? (
+                <aside class:list={['lt-xl:hidden xl:w-72 xl:min-w-0', hasOutline ? 'opacity-100' : 'opacity-0']}>
+                  <div class="fixed top-[calc(var(--app-header)+1.25rem)] end-8 z-40 w-72">
+                    <div class="max-h-[calc(100vh-var(--app-header)-2.5rem)] overflow-auto rounded-xl border border-border/50 p-3 dark:border-border">
+                      <nav aria-label={locale === 'zh' ? '本页目录' : 'On this page'}>
+                        <ul class="m-0 flex list-none flex-col gap-1 p-0 text-sm">
+                          {
+                            anchors.map(anchor => (
+                              <li style={`padding-inline-start:${anchor.depth * 0.75}rem`}>
+                                <a
+                                  href={anchor.href}
+                                  class="block truncate rounded-sm px-2 py-1 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                                >
+                                  {anchor.title}
+                                </a>
+                              </li>
+                            ))
+                          }
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </aside>
+              ) : null
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      import '../scripts/copy-code';
+      import '../scripts/playground';
+    </script>
+  </body>
+</html>

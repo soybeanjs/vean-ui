@@ -1,0 +1,37 @@
+---
+/**
+ * Port of `apps/docs/src/layouts/home.vue`.
+ *
+ * The home page has no sidebar and no outline column — just the header and the
+ * page content. Head assembly is shared with `DefaultLayout.astro` through
+ * `components/PageHead.astro`.
+ */
+import type { PageLayoutProps } from './types';
+import PageHead from '../components/PageHead.astro';
+import AppHeader from '../components/AppHeader.astro';
+import '../styles/global.css';
+import '../styles/markdown.css';
+import '../styles/frosted.css';
+import 'uno.css';
+
+const { locale, path, fullPath, title, description } = Astro.props as PageLayoutProps;
+---
+
+<!doctype html>
+<html lang={locale === 'zh' ? 'zh-CN' : 'en'} dir="ltr" data-copy-label={locale === 'zh' ? '复制代码' : 'Copy code'} data-copied-label={locale === 'zh' ? '已复制' : 'Copied'}>
+  <head>
+    <PageHead {locale} {path} {fullPath} {title} {description} />
+  </head>
+  <body>
+    <div class="[--app-header-main:3.75rem] [--app-header:--app-header-main] min-h-full pt-[--app-header] text-sm">
+      <AppHeader {locale} {path} />
+      <main class="mx-auto max-w-360 px-4 py-6 sm:px-6">
+        <slot />
+      </main>
+    </div>
+    <script>
+      import '../scripts/copy-code';
+      import '../scripts/playground';
+    </script>
+  </body>
+</html>

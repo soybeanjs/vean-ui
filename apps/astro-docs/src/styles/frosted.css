@@ -1,0 +1,27 @@
+.docs-header-shell[data-scrolled='true'] {
+  .docs-header-frame {
+    background: color-mix(in srgb, var(--docs-shell-bg) 76%, transparent);
+    border: 1px solid color-mix(in srgb, rgba(148, 163, 184, 0.24) 74%, var(--docs-shell-border));
+    box-shadow:
+      0 20px 44px -30px #0f172a2e,
+      var(--docs-shell-inset);
+    -webkit-backdrop-filter: saturate(170%) blur(calc(var(--docs-shell-blur) - 4px));
+    backdrop-filter: saturate(170%) blur(calc(var(--docs-shell-blur) - 4px));
+    border-radius: 999px;
+  }
+}
+
+.docs-topbar-shell[data-scrolled='true'] {
+  .docs-topbar-frame {
+    background: color-mix(in srgb, var(--docs-shell-bg) 76%, transparent);
+    border: 1px solid color-mix(in srgb, rgba(148, 163, 184, 0.24) 74%, var(--docs-shell-border));
+    border-top: 0;
+    box-shadow:
+      0 20px 44px -30px #0f172a2e,
+      var(--docs-shell-inset);
+    -webkit-backdrop-filter: saturate(170%) blur(calc(var(--docs-shell-blur) - 4px));
+    backdrop-filter: saturate(170%) blur(calc(var(--docs-shell-blur) - 4px));
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}

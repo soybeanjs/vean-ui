@@ -49,6 +49,9 @@ __screenshots__/
 .nitro
 .cache
 
+# Astro build cache (types + content collections)
+.astro
+
 # Misc
 .fleet
 .idea

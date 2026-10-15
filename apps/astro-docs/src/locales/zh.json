@@ -1,0 +1,993 @@
+{
+  "not_found": "未找到",
+  "not_found_page": "未找到页面",
+  "playground": {
+    "title": "VeanUI 演练场",
+    "loading": "加载中...",
+    "empty": {
+      "title": "暂无示例",
+      "description": "该库的 Playground 示例即将推出。"
+    },
+    "view": {
+      "docs": "文档",
+      "playground": "演练场"
+    },
+    "switcher": {
+      "device": "预览设备",
+      "view": "示例视图"
+    },
+    "preview": "预览",
+    "code": "代码",
+    "device": {
+      "desktop": "桌面端",
+      "mobile": "移动端",
+      "ipad": "平板端",
+      "fullscreen": "全屏",
+      "exit_fullscreen": "退出全屏"
+    },
+    "reset": "重置",
+    "examples": {
+      "accordion": {
+        "basic": "基础",
+        "custom-icon": "自定义图标",
+        "custom-styling": "自定义样式"
+      },
+      "area": {
+        "basic": "基础"
+      },
+      "bar": {
+        "basic": "基础"
+      },
+      "line": {
+        "basic": "基础"
+      },
+      "pie": {
+        "donut": "环形图"
+      },
+      "affix": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "alert": {
+        "basic": "基础",
+        "slot": "插槽"
+      },
+      "anchor": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "arrow": {
+        "basic": "基础"
+      },
+      "app-shell": {
+        "basic": "基础",
+        "collapse-mobile": "折叠与移动端",
+        "custom-slots": "自定义插槽",
+        "layout-composition": "布局手写对照",
+        "tabs-breadcrumb": "页签与面包屑"
+      },
+      "aspect-ratio": {
+        "basic": "基础"
+      },
+      "autocomplete": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "disabled": "禁用",
+        "grouped": "分组",
+        "open-on-focus": "聚焦即打开"
+      },
+      "avatar": {
+        "basic": "基础"
+      },
+      "backtop": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "target": "目标容器"
+      },
+      "badge": {
+        "basic": "基础",
+        "slot": "插槽"
+      },
+      "drawer": {
+        "basic": "基础",
+        "nested": "嵌套",
+        "snap-points": "吸附点",
+        "swipe": "滑动",
+        "form-inputs": "表单输入"
+      },
+      "breadcrumb": {
+        "basic": "基础",
+        "ellipsis-dropdown": "省略下拉",
+        "item-dropdown": "条目下拉",
+        "link": "链接",
+        "separator": "分隔符"
+      },
+      "calendar": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "disabled": "禁用"
+      },
+      "card": {
+        "basic": "基础",
+        "collapsible": "可折叠",
+        "only-content": "仅内容",
+        "title-slot": "标题插槽"
+      },
+      "carousel": {
+        "basic": "基础",
+        "dot": "圆点",
+        "multi": "多项",
+        "progress": "进度",
+        "snap": "对齐",
+        "vertical": "垂直"
+      },
+      "checkbox": {
+        "basic": "基础",
+        "card": "卡片",
+        "card-group": "卡片组",
+        "group": "分组",
+        "icon": "图标"
+      },
+      "clipboard": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "icon-only": "仅图标"
+      },
+      "collapsible": {
+        "basic": "基础"
+      },
+      "color-area": {
+        "basic": "基础",
+        "oklch": "OKLCH"
+      },
+      "color-field": {
+        "basic": "基础"
+      },
+      "color-picker": {
+        "basic": "基础",
+        "oklch": "OKLCH"
+      },
+      "color-slider": {
+        "basic": "基础"
+      },
+      "color-swatch": {
+        "basic": "基础"
+      },
+      "color-swatch-picker": {
+        "basic": "基础"
+      },
+      "combobox": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "group": "分组"
+      },
+      "command": {
+        "basic": "基础",
+        "dialog": "对话框"
+      },
+      "context-menu": {
+        "basic": "基础",
+        "checkbox": "复选",
+        "mix": "混合",
+        "radio": "单选"
+      },
+      "date-field": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "with-time": "含时间"
+      },
+      "date-picker": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "date-range-field": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "date-range-picker": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "dialog": {
+        "basic": "基础",
+        "dialog-api": "Dialog API",
+        "draggable": "可拖拽",
+        "footer": "底部",
+        "fullscreen": "全屏",
+        "prevent": "阻止关闭",
+        "state": "状态"
+      },
+      "sheet": {
+        "basic": "基础"
+      },
+      "dropdown-menu": {
+        "basic": "基础",
+        "checkbox": "复选",
+        "mix": "混合",
+        "radio": "单选"
+      },
+      "editable": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "empty": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "slot": "插槽"
+      },
+      "form": {
+        "basic": "基础"
+      },
+      "hover-card": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "input": {
+        "basic": "基础",
+        "slot": "插槽"
+      },
+      "input-number": {
+        "basic": "基础",
+        "slot": "插槽"
+      },
+      "input-otp": {
+        "basic": "基础",
+        "custom-slot": "自定义插槽",
+        "placeholder": "占位"
+      },
+      "kbd": {
+        "basic": "基础"
+      },
+      "label": {
+        "basic": "基础"
+      },
+      "layout": {
+        "basic": "基础"
+      },
+      "link": {
+        "basic": "基础"
+      },
+      "list": {
+        "basic": "基础"
+      },
+      "menu": {
+        "basic": "基础"
+      },
+      "menubar": {
+        "basic": "基础",
+        "controlled": "受控"
+      },
+      "navMenu": {
+        "basic": "基础",
+        "vertical": "纵向"
+      },
+      "navigation-menu": {
+        "basic": "基础",
+        "horizontal": "水平",
+        "vertical": "垂直"
+      },
+      "page-tabs": {
+        "basic": "基础"
+      },
+      "pagination": {
+        "action": "操作",
+        "basic": "基础",
+        "show": "显示",
+        "slot": "插槽"
+      },
+      "password": {
+        "basic": "基础",
+        "icon": "图标"
+      },
+      "popconfirm": {
+        "basic": "基础"
+      },
+      "popover": {
+        "basic": "基础"
+      },
+      "popper": {
+        "basic-click": "基础（点击）",
+        "hover": "悬浮",
+        "contextmenu": "右键菜单",
+        "nested": "嵌套",
+        "nested-hover": "嵌套悬浮",
+        "controlled": "受控",
+        "virtual-reference": "虚拟引用",
+        "with-arrow-portal": "箭头与 Portal"
+      },
+      "progress": {
+        "basic": "基础",
+        "circle": "环形",
+        "provider": "Provider",
+        "slot": "插槽"
+      },
+      "radio-group": {
+        "basic": "基础",
+        "card": "卡片"
+      },
+      "calendar-range": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "disabled": "禁用"
+      },
+      "scroll-area": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "horizontal": "水平"
+      },
+      "segment": {
+        "basic": "基础",
+        "icon": "图标"
+      },
+      "select": {
+        "basic": "基础",
+        "default-value": "默认值",
+        "disabled": "禁用",
+        "group": "分组",
+        "separator": "分隔符",
+        "slots": "顶部与底部插槽"
+      },
+      "separator": {
+        "basic": "基础"
+      },
+      "skeleton": {
+        "basic": "基础",
+        "custom-size": "自定义尺寸"
+      },
+      "slider": {
+        "basic": "基础"
+      },
+      "spinner": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "split-nav": {
+        "basic": "基础",
+        "custom": "定制",
+        "expand-strategy": "展开策略",
+        "horizontal-dual-vertical": "横双竖",
+        "horizontal-vertical": "横竖",
+        "open-event": "展开事件",
+        "teleport": "挂载",
+        "top-slots": "顶部插槽",
+        "vertical-horizontal": "竖横"
+      },
+      "splitter": {
+        "basic": "基础",
+        "collapsible": "可折叠",
+        "custom-handle": "自定义拖拽柄"
+      },
+      "stepper": {
+        "basic": "基础",
+        "custom-styling": "自定义样式",
+        "linear": "线性",
+        "vertical": "垂直"
+      },
+      "switch": {
+        "basic": "基础",
+        "slot": "插槽"
+      },
+      "table": {
+        "basic": "基础",
+        "bottom": "底部",
+        "empty": "空状态",
+        "expandable": "可展开",
+        "filtering": "过滤",
+        "fixed": "固定",
+        "footer": "底部",
+        "grouped": "分组",
+        "multiple-selection": "多选",
+        "resizable": "可调整列宽",
+        "row-events": "行事件",
+        "single-selection": "单选",
+        "sorting": "排序",
+        "tree": "树形",
+        "virtualized": "虚拟滚动"
+      },
+      "tabs": {
+        "basic": "基础",
+        "custom": "自定义"
+      },
+      "tag": {
+        "basic": "基础",
+        "slot": "插槽"
+      },
+      "tags-input": {
+        "basic": "基础"
+      },
+      "textarea": {
+        "basic": "基础",
+        "footer": "底部"
+      },
+      "time-field": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "time-range-field": {
+        "basic": "基础",
+        "custom-styling": "自定义样式"
+      },
+      "toast": {
+        "action": "操作",
+        "appearance": "外观",
+        "basic": "基础",
+        "control": "控制",
+        "promise": "Promise",
+        "stack": "堆叠"
+      },
+      "toggle": {
+        "basic": "基础"
+      },
+      "toggle-group": {
+        "basic": "基础"
+      },
+      "toolbar": {
+        "basic": "基础",
+        "link": "链接",
+        "toggle-group": "切换组"
+      },
+      "tooltip": {
+        "basic": "基础"
+      },
+      "theme-customizer": {
+        "basic": "基础"
+      },
+      "tree": {
+        "basic": "基础",
+        "virtualizer": "虚拟列表"
+      },
+      "tree-menu": {
+        "basic": "基础"
+      },
+      "tree-nav": {
+        "basic": "基础",
+        "selection": "选择态",
+        "links": "链接项",
+        "disabled": "禁用",
+        "collapsible": "溢出折叠"
+      },
+      "virtualizer": {
+        "basic": "基础",
+        "dynamic": "动态",
+        "horizontal": "水平"
+      },
+      "visually-hidden": {
+        "basic": "基础"
+      },
+      "bubble": {
+        "basic": "基础",
+        "variant": "变体",
+        "loading": "加载中",
+        "typing": "打字机效果"
+      },
+      "bubble-list": {
+        "basic": "基础",
+        "custom-item": "自定义条目"
+      },
+      "sender": {
+        "basic": "基础",
+        "loading": "加载中",
+        "with-attachments": "带附件",
+        "suggestions": "斜杠 / 提及建议"
+      },
+      "markdown": {
+        "basic": "基础",
+        "streaming": "流式渲染"
+      },
+      "attachments": {
+        "basic": "基础",
+        "custom-item": "自定义条目"
+      },
+      "file-card": {
+        "basic": "基础",
+        "clickable": "可点击"
+      },
+      "code-block": {
+        "basic": "基础",
+        "highlight": "语法高亮"
+      },
+      "conversations": {
+        "basic": "基础",
+        "custom-title": "自定义分组标题"
+      },
+      "welcome": {
+        "basic": "基础",
+        "custom-slots": "自定义插槽"
+      },
+      "prompts": {
+        "basic": "基础",
+        "select": "选择事件"
+      },
+      "sources": {
+        "basic": "基础",
+        "without-url": "无链接"
+      },
+      "suggestion": {
+        "basic": "基础",
+        "select": "选择事件"
+      },
+      "think": {
+        "basic": "基础",
+        "custom-trigger": "自定义触发器"
+      },
+      "thought-chain": {
+        "basic": "基础",
+        "custom-slots": "自定义插槽"
+      },
+      "actions": {
+        "basic": "基础",
+        "disabled": "禁用"
+      },
+      "actions-copy": {
+        "basic": "基础",
+        "custom-label": "自定义标签"
+      },
+      "actions-feedback": {
+        "basic": "基础",
+        "custom-icons": "自定义图标"
+      },
+      "folder": {
+        "basic": "基础",
+        "custom-icon": "自定义图标"
+      },
+      "notification": {
+        "basic": "基础",
+        "custom-slots": "自定义插槽"
+      },
+      "mermaid": {
+        "basic": "基础",
+        "code-mode": "代码模式"
+      }
+    }
+  },
+  "locale": {
+    "en": "英语",
+    "zh": "中文"
+  },
+  "layout": {
+    "header": {
+      "search": "搜索文档",
+      "search_empty": "没有找到相关文档",
+      "menu": "菜单",
+      "getting_started": "开始使用",
+      "components": "组件",
+      "chart": "图表",
+      "releases": "更新日志",
+      "playground": "演练场",
+      "aria": "Aria",
+      "github": "GitHub",
+      "theme": "主题",
+      "theme_configurator": "主题配置",
+      "language": "语言"
+    }
+  },
+  "components": {
+    "catalog": {
+      "title": "组件总览",
+      "description": "按分类浏览 VeanUI 的全部组件，并直接跳转到每个组件对应的文档页面。",
+      "helper": "你可以先按下面的分类浏览，也可以按 Command + K 直接搜索组件。",
+      "kicker": "组件目录与入口",
+      "group_count": "{count} 个组件",
+      "actions": {
+        "start": "快速开始",
+        "learn": "先看架构"
+      },
+      "badges": {
+        "new": "新增"
+      },
+      "stats": {
+        "total": "组件总数",
+        "categories": "分类数",
+        "featured": "精选组件",
+        "new": "新增组件"
+      },
+      "stats_title": "目录速览",
+      "quick_actions": {
+        "quick_start": {
+          "title": "先跑通接入",
+          "desc": "如果你还没装包和完成样式接入，先从快速开始页进入。"
+        },
+        "introduction": {
+          "title": "先理解分层",
+          "desc": "先弄清 aria 与 UI 的职责边界，再挑组件会更准确。"
+        },
+        "theming": {
+          "title": "先看主题能力",
+          "desc": "想做样式体系对齐或 slot 覆盖时，先读主题指南最省时间。"
+        }
+      },
+      "featured": {
+        "input": "表单输入最常用的起始组件，可快速扩展到复杂录入场景。",
+        "select": "在数据选择、筛选和组合输入场景里都很高频。",
+        "dialog": "承载确认、编辑与强打断流程的核心浮层组件。",
+        "table": "用于复杂数据展示、对比与结构化阅读。",
+        "form": "统一表单组织、校验和交互反馈的组合入口。"
+      },
+      "sections": {
+        "featured": {
+          "title": "高频组件"
+        }
+      }
+    },
+    "home": {
+      "title": "VeanUI",
+      "description": "面向 Vue 3 的强大而优雅的组件系统，提供无头交互能力与开箱即用的样式封装。",
+      "kicker": "Vue 3 组件系统",
+      "actions": {
+        "start": "开始使用",
+        "browse": "浏览组件",
+        "github": "GitHub"
+      },
+      "stats_title": "库概览",
+      "stats": {
+        "components": "组件数",
+        "categories": "分类数",
+        "packages": "包数",
+        "guides": "指南数"
+      },
+      "features": {
+        "styled_wrappers": {
+          "title": "样式包装层",
+          "desc": "{'@'}vean/ui 提供带默认样式的 S 前缀组件，让常见界面可以直接交付而不必从零包样式。"
+        },
+        "accessible": {
+          "title": "内建可访问性",
+          "desc": "遵循 WAI-ARIA 模式，覆盖键盘导航、焦点管理与语义状态同步。"
+        },
+        "type_safe": {
+          "title": "类型安全 API",
+          "desc": "基于 TypeScript 构建，组件、插槽与配置项都有清晰的类型反馈。"
+        },
+        "slot_overrides": {
+          "title": "Slot 级样式覆盖",
+          "desc": "通过 ui prop 和 slot 映射精确覆盖局部样式，而不是整体重写组件。"
+        },
+        "theme_ready": {
+          "title": "Theme-ready Variants",
+          "desc": "基于 UnoCSS 与 {'@'}soybeanjs/cva 组织变体，便于统一令牌和主题扩展。"
+        },
+        "component_coverage": {
+          "title": "完整组件版图",
+          "desc": "覆盖通用、表单、导航、浮层与数据展示等核心界面场景。"
+        },
+        "ecosystem": {
+          "title": "Vue 生态友好",
+          "desc": "提供 Nuxt、自动导入与文档示例支持，让接入、演示和维护更顺手。"
+        },
+        "aria_first": {
+          "title": "Aria First",
+          "desc": "{'@'}vean/aria 只提供状态、行为与可访问性语义，便于直接复用到自定义设计系统。"
+        }
+      },
+      "quick_links": {
+        "get_started": {
+          "title": "快速接入",
+          "desc": "完成安装、样式接入与首个页面渲染，先把基础链路跑通。"
+        },
+        "introduction": {
+          "title": "理解双层分工",
+          "desc": "先看无头能力与带样式封装如何分工，再决定接入深度与样式策略。"
+        },
+        "components": {
+          "title": "浏览组件版图",
+          "desc": "按类别查看基础组件、模式组件与工具组件，快速收敛选型范围。"
+        },
+        "theming": {
+          "title": "配置主题系统",
+          "desc": "理解 tokens、variants 与 ui slot 覆盖的关系，避免后续返工。"
+        }
+      },
+      "sections": {
+        "highlights": {
+          "title": "核心特性"
+        },
+        "two_modes": {
+          "title": "两种使用方式",
+          "description": "选择适合你工作流程的分发模式 — npm 包快速集成，或 CLI 复制粘贴完全掌控源码。",
+          "npm": {
+            "title": "NPM 包",
+            "subtitle": "传统依赖",
+            "description": "将 {'@'}vean/ui 作为依赖安装。自动导入、Tree-shaking，通过包管理器无缝升级。",
+            "feature_0": "一行命令安装",
+            "feature_1": "支持 unplugin-vue-components 自动导入",
+            "feature_2": "Tree-shaking — 只打包使用的代码",
+            "feature_3": "通过包管理器无缝升级",
+            "feature_4": "Nuxt 模块支持",
+            "cta": "安装 npm 包"
+          },
+          "cli": {
+            "title": "CLI · 复制粘贴",
+            "subtitle": "shadcn 风格",
+            "description": "通过 vean CLI 将源码复制到你的项目中。完全控制、完全自定义 — 你拥有代码。",
+            "feature_0": "组件存在于你的源码树中",
+            "feature_1": "可编辑任何文件 — 完全自定义",
+            "feature_2": "vean diff 查看上游变更",
+            "feature_3": "只有你添加的组件才会存在",
+            "feature_4": "自定义设计系统的最佳选择",
+            "cta": "尝试 CLI"
+          }
+        },
+        "featured": {
+          "title": "高频组件入口",
+          "desc": "如果你想先感受体系能力，这些组件最能代表 VeanUI 的常用交互面。"
+        },
+        "categories": {
+          "title": "按场景浏览组件"
+        }
+      },
+      "featured": {
+        "button": "用于操作触发、状态切换与主要流程推进的基础入口。",
+        "input": "适合作为输入、搜索与复杂表单编排的通用起点。",
+        "select": "覆盖筛选、映射与结构化选项选择等高频场景。",
+        "dialog": "承载确认、编辑与强打断流程的核心浮层能力。",
+        "table": "面向复杂数据阅读、对比与结构化展示的关键组件。",
+        "form": "把字段组织、校验与提交反馈统一到同一工作流。"
+      }
+    }
+  },
+  "sidebar": {
+    "introduction": "介绍",
+    "quick_start": "快速开始",
+    "theming": "主题",
+    "llms": "LLMs.txt",
+    "skills": "Skills",
+    "general": "通用",
+    "layout": "布局",
+    "navigation": "导航",
+    "forms": "表单",
+    "data_display": "数据展示",
+    "feedback": "反馈",
+    "overlay": "浮层",
+    "utilities": "工具",
+    "installation": "安装",
+    "cli": "CLI",
+    "migration": "升级指南",
+    "aria": "Aria"
+  },
+  "migration": {
+    "kicker": "升级指南",
+    "title": "升级到 {version}",
+    "helper": "本指南逐条列出该版本的破坏性变更，并给出对应的迁移方法与代码示例。"
+  },
+  "api": {
+    "ui_layer": "UI 层",
+    "chart_layer": "Chart 层",
+    "admin_layer": "Admin 层",
+    "props": "属性",
+    "emits": "事件",
+    "slots": "插槽",
+    "columns": {
+      "prop_name": "属性名",
+      "emit_name": "事件名",
+      "slot_name": "插槽名",
+      "field_name": "字段名",
+      "type": "类型",
+      "default": "默认值",
+      "parameters": "参数",
+      "description": "描述"
+    },
+    "actions": {
+      "open_full_type": "查看完整类型"
+    },
+    "aria_layer": "Aria 层"
+  },
+  "changelog": {
+    "actions": {
+      "compare_release": "对比版本",
+      "view_commit": "查看提交"
+    },
+    "meta": {
+      "scope": "范围",
+      "authors": "作者"
+    },
+    "sources": {
+      "curated": "人工映射"
+    },
+    "notes": {
+      "breaking": "破坏性更新",
+      "info": "版本说明"
+    },
+    "empty": {
+      "title": "暂无组件级发布记录",
+      "desc": "当 CHANGELOG 条目使用该组件 scope，或被人工映射到该组件时，这里会展示对应版本变更。"
+    },
+    "types": {
+      "breaking": "破坏性变更",
+      "feature": "新功能",
+      "fix": "修复",
+      "optimization": "优化",
+      "refactor": "重构",
+      "docs": "文档",
+      "chore": "维护",
+      "style": "样式"
+    }
+  },
+  "releases_page": {
+    "kicker": "发布概览",
+    "title": "更新日志",
+    "badges": {
+      "new": "新增"
+    },
+    "breaking_banner": {
+      "title": "破坏性变更",
+      "desc": "本版本包含 {count} 项破坏性变更，升级前请先阅读。"
+    },
+    "summary": "用全局视角查看最近版本、受影响组件与升级入口，再按需跳回具体组件文档处理升级细节。",
+    "filter": {
+      "title": "按组件筛选",
+      "desc": "只看你实际使用到的组件相关版本，再从命中的条目直接跳回对应组件文档。",
+      "placeholder": "搜索 dialog、table、date-picker 等组件",
+      "clear": "清空",
+      "suggestions": "候选组件",
+      "enter_hint": "按回车可直接选中第一个匹配项。",
+      "related_only": "仅看组件相关条目",
+      "related_only_desc": "隐藏 docs、deps、workflow 等共享范围的非组件变更。",
+      "no_match": "当前收录的版本数据里没有匹配的组件。"
+    },
+    "latest": {
+      "title": "最新版本快照",
+      "desc": "先看最新发布，再在升级路径跨越多个 tag 时补看更早版本，避免在完整 changelog 里来回搜索。"
+    },
+    "sections": {
+      "recent": {
+        "title": "最近发布",
+        "desc": "每个版本卡片都会汇总已发布条目、受影响组件，以及跳回组件文档的最快入口。"
+      },
+      "impacted": {
+        "title": "受影响组件"
+      },
+      "highlights": {
+        "title": "重点变更"
+      }
+    },
+    "stats": {
+      "entries": "条目数",
+      "components": "组件数",
+      "versions": "收录版本"
+    },
+    "actions": {
+      "compare_release": "对比版本",
+      "full_changelog": "完整 Changelog",
+      "browse_components": "浏览组件",
+      "view_full_release": "查看完整内容",
+      "collapse_release": "收起完整内容",
+      "upgrade_guide": "查看升级指南"
+    },
+    "empty": {
+      "title": "暂无发布数据",
+      "desc": "运行 changelog 生成命令后，这个页面会自动展示版本汇总内容。",
+      "filtered_title": "没有匹配的版本",
+      "filtered_desc": "当前组件筛选下没有命中的已收录版本。"
+    },
+    "more_entries": "完整 changelog 中还有 {count} 条变更"
+  },
+  "component_detail": {
+    "kicker": "组件详情入口",
+    "helper": "先用快捷跳转面板找到概述、用法、演示和 API，再往下细读完整文档内容。",
+    "summary": "{component} 属于 {category} 分类。建议先看演示与用法，再对照 API 表格完成接入和样式调整。",
+    "changelog": {
+      "desc": "版本记录按发布版本分组，便于快速查看这个组件在不同版本里的实际变更。"
+    },
+    "actions": {
+      "catalog": "返回目录"
+    },
+    "sections": {
+      "overview": "概述",
+      "usage": "用法",
+      "demos": "演示",
+      "api": "API",
+      "changelog": "更新日志"
+    },
+    "quick_jump": {
+      "title": "快速跳转"
+    },
+    "related": {
+      "title": "同分类组件",
+      "desc": "如果你在同一类交互里做组合，这些组件通常会一起出现。"
+    }
+  },
+  "chart": {
+    "sidebar": {
+      "charts": "图表"
+    },
+    "catalog": {
+      "title": "TanStack 图表示例"
+    },
+    "kinds": {
+      "area": "面积图：展示随时间变化的量级与趋势，支持堆叠。",
+      "bar": "柱状图：对比离散类目之间的数值。",
+      "line": "折线图：展示连续区间内的趋势变化，支持多系列。",
+      "pie": "环形图：展示各分类占整体的比例。",
+      "scatter": "散点图：展示两个数值维度之间的相关性。"
+    }
+  },
+  "themeEditor": {
+    "title": "主题编辑器",
+    "description": "左侧调整主题配置，下方组件实时跟随。面板即真实的 SThemeCustomizer：颜色、圆角、尺寸、间距、字体、表面、描边与逐 token 覆盖都会即时作用于当前页面。",
+    "mode": "明暗模式",
+    "group": {
+      "all": "全部",
+      "color": "颜色",
+      "size": "尺寸",
+      "font": "字体",
+      "structure": "结构",
+      "region": "区域"
+    },
+    "sections": {
+      "colors": {
+        "title": "品牌色",
+        "description": "primary、由中性基调派生的填充，以及角色色阶"
+      },
+      "feedback": {
+        "title": "状态色",
+        "description": "feedback 方案：destructive、success、warning、info"
+      },
+      "forms": {
+        "title": "表单控件",
+        "description": "细线 token、控件填充与焦点环"
+      },
+      "data": {
+        "title": "数据展示",
+        "description": "表面、弱化填充与表格描边"
+      },
+      "surfaces": {
+        "title": "表面与阴影",
+        "description": "层次阶梯、嵌套的 card / popover 表面与 surfaceStyle"
+      },
+      "borders": {
+        "title": "描边与焦点",
+        "description": "细线 token、焦点环与模态遮罩"
+      },
+      "overlay": {
+        "title": "浮层",
+        "description": "对话框与弹层所在的 popover 表面，以及遮罩"
+      },
+      "size": {
+        "title": "尺寸",
+        "description": "控件与文字档位共用的 size 刻度"
+      },
+      "radius": {
+        "title": "圆角",
+        "description": "一个种子驱动整条圆角刻度"
+      },
+      "spacing": {
+        "title": "间距",
+        "description": "一个变量驱动内外边距与 gap"
+      },
+      "font": {
+        "title": "字体",
+        "description": "三套字族角色：无衬线、标题与等宽 stack"
+      },
+      "sidebar": {
+        "title": "区域 · 侧栏",
+        "description": "镜像全局角色的区域皮肤"
+      },
+      "charts": {
+        "title": "图表色",
+        "description": "由 primary 派生的 chart-1 至 chart-5"
+      },
+      "contrast": {
+        "title": "对比度",
+        "description": "填充与其前景的配对一览"
+      }
+    }
+  },
+  "button": {
+    "back_to_home": "返回首页"
+  },
+  "aria": {
+    "catalog": {
+      "title": "Aria",
+      "notice": {
+        "title": "文档建设中",
+        "description": "Aria 文档正在编写中，可先查阅组件（Components）下的样式化 API 参考。"
+      }
+    }
+  },
+  "docs": {
+    "code": {
+      "copy": "复制代码",
+      "copied": "已复制"
+    }
+  }
+}

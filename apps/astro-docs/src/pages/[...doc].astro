@@ -1,0 +1,184 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { collectRoutes, localizedPath, type DocsRoute } from '../plugin/routes';
+import { renderDoc, type DocSegment, type OutlineItem } from '../plugin/markdown';
+import { loadComponentApiSections } from '../plugin/api';
+import { renderApiTablesHtml } from '../plugin/api-tables';
+import { renderDataTableHtml } from '../plugin/data-table';
+import { highlightCode } from '../plugin/code-highlight';
+import { loadExamples, loadExampleCode } from '../plugin/component-loader';
+import { createTranslator } from '../i18n';
+import { DOCS_ROOT } from '../plugin/examples';
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import HomeLayout from '../layouts/HomeLayout.astro';
+import ChartDemo from '../components/ChartDemo.astro';
+import PlaygroundGallery from '../components/PlaygroundGallery.astro';
+import TailwindPalette from '../components/TailwindPalette.vue';
+
+/**
+ * The single page every URL renders through.
+ *
+ * `getStaticPaths` enumerates the same route table as the ubean SSG build
+ * (`src/plugin/routes.ts`, derived from the shared markdown tree), so the emitted
+ * URL set is identical (238 URLs: static shells, content slugs and `/chart/<kind>`
+ * demo pages, each with its `/zh` mirror). Layout is picked by route kind exactly
+ * like the ubean pages: `/` -> home, everything else -> default.
+ */
+export const getStaticPaths: GetStaticPaths = async () => {
+  const routes = await collectRoutes();
+  const unique = new Map<string, DocsRoute>();
+
+  for (const route of routes) {
+    unique.set(localizedPath(route), route);
+  }
+
+  return [...unique].map(([fullPath, route]) => ({
+    params: { doc: fullPath === '/' ? undefined : fullPath.replace(/^\//u, '') },
+    props: { route }
+  }));
+};
+
+interface Props {
+  route: DocsRoute;
+}
+
+const CONTENT_ROOT = path.join(DOCS_ROOT, 'src/content');
+
+const { route } = Astro.props;
+const { locale } = route;
+const barePath = route.path;
+const fullPath = localizedPath(route);
+const t = createTranslator(locale);
+
+let title: string | undefined;
+let description: string | undefined;
+let segments: DocSegment[] = [];
+let outline: OutlineItem[] = [];
+
+if (route.isContent && route.slug) {
+  const source = await readFile(path.join(CONTENT_ROOT, locale, `${route.slug}.md`), 'utf8');
+  const rendered = await renderDoc(source);
+
+  segments = rendered.segments;
+  outline = rendered.outline;
+  title = rendered.frontmatter.title;
+  description = rendered.frontmatter.description;
+} else if (route.chart) {
+  const pascal = (value: string): string =>
+    value
+      .split('-')
+      .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+      .join('');
+
+  title = `${pascal(route.chart)} | ${t('layout.header.chart')}`;
+  description = t(`chart.kinds.${route.chart}`, '');
+}
+
+/**
+ * Resolve every non-HTML segment to final markup here, at build time. The ubean
+ * site defers the same work to the client (shiki on viewport intersection, the API
+ * tables through the Vue table runtime) — that architectural difference is one of
+ * the things this comparison measures, so it is kept rather than worked around.
+ */
+const highlightCache = new Map<string, string>();
+
+async function highlightCached(code: string, lang = 'vue'): Promise<string> {
+  const key = `${lang}\u0000${code}`;
+  const cached = highlightCache.get(key);
+
+  if (cached !== undefined) {
+    return cached;
+  }
+
+  const html = await highlightCode(code, lang);
+  highlightCache.set(key, html);
+
+  return html;
+}
+
+interface ResolvedSegment {
+  kind: DocSegment['kind'];
+  html?: string;
+  component?: string;
+  codeHtml?: Record<string, string>;
+}
+
+const resolved: ResolvedSegment[] = [];
+
+for (const segment of segments) {
+  if (segment.kind === 'html') {
+    resolved.push({ kind: 'html', html: segment.html });
+  } else if (segment.kind === 'usage-code') {
+    const code = await loadExampleCode(segment.component, segment.file);
+
+    resolved.push({ kind: 'usage-code', html: code ? await highlightCached(code) : undefined });
+  } else if (segment.kind === 'playground') {
+    // Pre-highlight every example so the card's code panel is pure markup and no
+    // syntax highlighter enters the client bundle.
+    const codeHtml: Record<string, string> = {};
+
+    for (const example of loadExamples(segment.component)) {
+      const code = await example.codeLoader?.();
+
+      if (code) {
+        codeHtml[example.name] = await highlightCached(code);
+      }
+    }
+
+    resolved.push({ kind: 'playground', component: segment.component, codeHtml });
+  } else if (segment.kind === 'api') {
+    const layers = segment.component ? await loadComponentApiSections(segment.component, locale) : [];
+
+    resolved.push({ kind: 'api', html: layers.length ? renderApiTablesHtml(layers, t) : '' });
+  } else if (segment.kind === 'data-table') {
+    resolved.push({ kind: 'data-table', html: renderDataTableHtml(segment.preset, segment.rows as never, t) });
+  } else {
+    resolved.push({ kind: 'tailwind-palette' });
+  }
+}
+
+/** Chart demo pages render the same gallery, so their code panels are pre-highlighted here too. */
+const chartCode: Record<string, string> = {};
+
+if (route.chart) {
+  for (const example of loadExamples(route.chart)) {
+    const code = await example.codeLoader?.();
+
+    if (code) {
+      chartCode[example.name] = await highlightCached(code);
+    }
+  }
+}
+
+const Layout = barePath === '/' ? HomeLayout : DefaultLayout;
+---
+
+<Layout locale={locale} path={barePath} fullPath={fullPath} title={title} description={description} outline={outline}>
+  {route.chart ? (
+    <ChartDemo kind={route.chart} locale={locale} codeHtml={chartCode} />
+  ) : (
+    resolved.map(segment => {
+      if (segment.kind === 'playground') {
+        return (
+          <PlaygroundGallery component={segment.component} locale={locale} codeHtml={segment.codeHtml} />
+        );
+      }
+
+      if (segment.kind === 'tailwind-palette') {
+        return <TailwindPalette client:visible />;
+      }
+
+      if (segment.kind === 'usage-code' && !segment.html) {
+        return (
+          <div class="my-6 rounded-xl border border-destructive/40 bg-destructive/5 px-4 py-3 text-sm text-destructive">
+            {`${route.component ?? ''} not found`}
+          </div>
+        );
+      }
+
+      return <Fragment set:html={segment.html} />;
+    })
+  )}
+</Layout>

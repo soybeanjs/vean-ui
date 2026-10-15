@@ -1,0 +1,53 @@
+---
+/**
+ * Port of `apps/docs/src/components/tool-bar.vue`.
+ *
+ * The ubean toolbar renders three `@vean/ui` components (locale dropdown, theme
+ * customizer popover, light/dark switch). The dropdowns are the only interactive
+ * parts, so they are the only islands; the GitHub link is static markup.
+ *
+ * Icons are inlined at build time by `../plugin/icons` — see that module for why
+ * (the ubean artifact renders `<svg data-vean-icon></svg>` with empty contents and
+ * resolves the glyph in JS).
+ */
+import type { Locale } from '../i18n';
+import { createTranslator } from '../i18n';
+import { alternateLocalePath } from '../site-context';
+import { renderIcon } from '../plugin/icons';
+import LocaleToggler from './LocaleToggler.vue';
+import ThemeConfigurator from './ThemeConfigurator.vue';
+import ThemeSchemaToggler from './ThemeSchemaToggler.vue';
+
+interface Props {
+  locale: Locale;
+  /** Bare path, so the locale toggle can link to the same page in the other locale. */
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+const t = createTranslator(locale);
+
+// Resolved at build time: the alternate-locale URL is static per page, so the
+// island only needs the href (and never pulls the route table into the client).
+const alternatePath = alternateLocalePath(path, locale);
+
+const iconButtonClass =
+  'inline-flex items-center justify-center rounded-md size-9 text-foreground outline-none ' +
+  'hover:bg-accent focus-visible:ring-3 focus-visible:ring-accent-foreground/10 transition-colors';
+---
+
+<div class="flex-y-center gap-4">
+  <a
+    href="https://github.com/soybeanjs/vean-ui"
+    class={iconButtonClass}
+    aria-label={t('layout.header.github')}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <Fragment set:html={renderIcon('mdi:github')} />
+  </a>
+
+  <LocaleToggler client:idle locale={locale} alternatePath={alternatePath} />
+  <ThemeConfigurator client:idle locale={locale} />
+  <ThemeSchemaToggler client:idle locale={locale} />
+</div>

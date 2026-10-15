@@ -1,0 +1,72 @@
+---
+/**
+ * Head assembly shared by every layout.
+ *
+ * Mirrors the head the ubean SSG build emits for a docs page (verified against
+ * `apps/docs/dist/public/overview/installation/index.html`):
+ *
+ *   charset, viewport, title
+ *   -> font preconnects (`docsFontPreconnectLinks`)
+ *   -> theme-init inline script (must be the first script; see `@vean/theme/ssr`)
+ *   -> stylesheet
+ *   -> favicon
+ *   -> hreflang alternates + canonical + og:locale
+ *   -> description / og / twitter
+ *
+ * The theme script is emitted verbatim from `createThemeInitScript()` so both sites
+ * read the same `__VEAN_THEME` envelope out of `localStorage`.
+ */
+import { createThemeInitScript } from '@vean/theme/ssr';
+import { docsFontPreconnectLinks } from '../shared/fonts';
+import { createTranslator, type Locale } from '../i18n';
+import { alternateLocalePath } from '../site-context';
+
+interface Props {
+  locale: Locale;
+  path: string;
+  fullPath: string;
+  title?: string;
+  description?: string;
+}
+
+const { locale, path, fullPath, title, description } = Astro.props;
+const t = createTranslator(locale);
+
+/** `DOCS_SITE_URL` mirrors `ubean.config.ts` (`baseUrl`). */
+const siteUrl = (import.meta.env.DOCS_SITE_URL ?? 'https://veanui.com').replace(/\/$/u, '');
+
+const canonical = `${siteUrl}${fullPath === '/' ? '/' : fullPath}`;
+const alternatePath = alternateLocalePath(path, locale);
+const alternateUrl = `${siteUrl}${alternatePath === '/' ? '/' : alternatePath}`;
+
+const pageTitle = title ? `${title}` : t('components.home.title');
+const pageDescription = description ?? t('components.home.description');
+
+const themeScript = createThemeInitScript();
+const favicon = 'https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212';
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{pageTitle}</title>
+
+{docsFontPreconnectLinks.map(link => <link rel={link.rel} href={link.href} crossorigin={link.crossorigin} />)}
+
+<!-- Must stay ahead of any other script: it restores the theme before first paint. -->
+<script is:inline set:html={themeScript}></script>
+
+<link rel="icon" href={favicon} />
+
+<link rel="alternate" href={locale === 'en' ? canonical : alternateUrl} hreflang="en" />
+<link rel="alternate" href={locale === 'zh' ? canonical : alternateUrl} hreflang="zh-CN" />
+<link rel="alternate" href={locale === 'zh' ? canonical : alternateUrl} hreflang="zh" />
+<link rel="alternate" href={locale === 'en' ? canonical : alternateUrl} hreflang="x-default" />
+<link rel="canonical" href={canonical} />
+
+<meta property="og:locale" content={locale === 'zh' ? 'zh_CN' : 'en'} />
+<meta property="og:locale:alternate" content={locale === 'zh' ? 'en' : 'zh_CN'} />
+<meta name="description" content={pageDescription} />
+<meta property="og:title" content={pageTitle} />
+<meta name="twitter:title" content={pageTitle} />
+<meta property="og:description" content={pageDescription} />
+<meta name="twitter:description" content={pageDescription} />

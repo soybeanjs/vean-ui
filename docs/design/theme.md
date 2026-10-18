@@ -110,7 +110,7 @@ createThemeInitScript() / isServerRuntime()                                     
 | 新增状态角色                | 往 `STATUS_NAMES` 加名 → `STATUS_SUFFIXES` 自动展开实心 / `-foreground`；再在 scheme 数据里补该角色                                                                                                            |
 | 调整角色 ramp（50–950）     | 不用逐条改：`ROLE_RAMP_ROLES` 驱动发射的 55 条引用与 unocss 的 `buildRoleRampColors`                                                                                                                           |
 | 改默认主题                  | `defaults.ts` 的 `DEFAULT_OPTIONS`（base / primary / feedback / surfaceStyle / size / radius / spacing）                                                                                                       |
-| 让面板出现新 token 的覆盖项 | `packages/ui/src/theme/use-theme-variants.ts` 的 `DEFAULT_VARIANT_GROUPS` + `theme-customizer/locale.ts`（中英同步）                                                                                           |
+| 让面板出现新 token 的覆盖项 | `packages/ui/src/theme/use-theme-variants.ts` 的 `DEFAULT_VARIANT_GROUPS` + `_shared/locale.ts`（中英同步）                                                                                           |
 | 新增 feedback 方案          | `schemes.ts` 加数据（`palette.level` 引用即可）                                                                                                                                                                |
 | 改图表色                    | 不用动 token 表：`primary` 决定图表色，档位在 `semantic.ts` 的 `CHART_RAMP`；个别系列用 `overrides['chart-N']`                                                                                                 |
 

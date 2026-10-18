@@ -1789,7 +1789,8 @@
         "ui/slider",
         "ui/tabs",
         "ui/theme-base-select",
-        "ui/theme-mode-segment"
+        "ui/theme-mode-segment",
+        "ui/theme-primary-select"
       ],
       "files": [
         {
@@ -1809,11 +1810,11 @@
           "type": "registry:ui"
         },
         {
-          "path": "packages/ui/src/components/theme-customizer/locale.ts",
+          "path": "packages/ui/src/components/_shared/locale.ts",
           "type": "registry:lib"
         },
         {
-          "path": "packages/ui/src/components/theme-customizer/use-locale.ts",
+          "path": "packages/ui/src/components/_shared/use-locale.ts",
           "type": "registry:lib"
         },
         {
@@ -1831,7 +1832,7 @@
       "name": "ui/theme-base-select",
       "type": "registry:ui",
       "dependencies": ["@vean/theme"],
-      "registryDependencies": ["ui/theme-customizer"],
+      "registryDependencies": ["ui/select"],
       "files": [
         {
           "path": "packages/ui/src/components/theme-base-select/theme-base-select.vue",
@@ -1919,7 +1920,7 @@
       "name": "ui/theme-primary-select",
       "type": "registry:ui",
       "dependencies": ["@vean/theme"],
-      "registryDependencies": ["ui/theme-customizer"],
+      "registryDependencies": ["ui/select"],
       "files": [
         {
           "path": "packages/ui/src/components/theme-primary-select/theme-primary-select.vue",

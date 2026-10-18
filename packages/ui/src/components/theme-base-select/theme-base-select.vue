@@ -4,7 +4,7 @@ import ColorDecorator from '../_shared/color-decorator.vue';
 import { usePaletteSwatches } from '../_shared/use-palette-swatches';
 import { useTheme } from '../config-provider/use-theme';
 import SSelect from '../select/select.vue';
-import { useThemeCustomizerLocale } from '../theme-customizer/use-locale';
+import { useThemeCustomizerLocale } from '../_shared/use-locale';
 import type { ThemeBaseSelectProps } from './types';
 
 defineOptions({

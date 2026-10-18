@@ -12,7 +12,7 @@ import SColorPicker from '../color-picker/color-picker.vue';
 import SSelect from '../select/select.vue';
 import type { SelectOptionData } from '../select/types';
 import SSwitch from '../switch/switch.vue';
-import { useThemeLocale } from '../theme-customizer/locale';
+import { useThemeLocale } from '../_shared/locale';
 import STooltip from '../tooltip/tooltip.vue';
 import {
   DEFAULT_LEVEL,

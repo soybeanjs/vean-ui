@@ -42,7 +42,7 @@ import ThemePrimarySelect from '../theme-primary-select/theme-primary-select.vue
 import FeedbackSchemaSelect from './feedback-schema-select.vue';
 import SectionItem from './section-item.vue';
 import type { ThemeCustomizerProps, ThemeCustomizerSection } from './types';
-import { useThemeCustomizerLocale } from './use-locale';
+import { useThemeCustomizerLocale } from '../_shared/use-locale';
 
 defineOptions({
   name: 'SThemeCustomizer'

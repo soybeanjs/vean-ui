@@ -5,7 +5,7 @@ import { useTheme } from '../config-provider/use-theme';
 import SIcon from '../icon/icon.vue';
 import SSelect from '../select/select.vue';
 import type { SelectOptionData } from '../select/types';
-import { useThemeLocale } from '../theme-customizer/locale';
+import { useThemeLocale } from '../_shared/locale';
 import type { ThemeModeSelectProps } from './types';
 
 defineOptions({

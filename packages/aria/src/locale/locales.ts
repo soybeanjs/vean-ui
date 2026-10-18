@@ -1,3 +1,4 @@
+import { shallowReactive } from 'vue';
 import type { Direction } from '../types';
 import enLocale from './langs/en';
 import zhCNLocale from './langs/zh-CN';
@@ -5,11 +6,16 @@ import type { LocaleMessages, LocaleRegistry } from './types';
 
 /**
  * The locale registry is a simple in-memory object that maps locale keys to their corresponding registry entries.
+ *
+ * It is `shallowReactive` so that a `registerLocale()` call made after a component
+ * has already mounted invalidates the computeds that read it (`useLocaleMessages`
+ * and any locale picker enumerating `listLocales()`). Deep reactivity is
+ * unnecessary: entries are immutable once registered and only keys are added.
  */
-const localeRegistry: Record<string, LocaleRegistry> = {
+const localeRegistry = shallowReactive<Record<string, LocaleRegistry>>({
   [enLocale.key]: enLocale,
   [zhCNLocale.key]: zhCNLocale
-};
+});
 
 /**
  * Register a locale so `useLocaleMessages()` can resolve it by name.
@@ -55,6 +61,19 @@ export function registerLocale(localeOrKey: LocaleRegistry | string, messagesOrL
 
 export function resolveLocaleRegistry(locale?: string): LocaleRegistry {
   return locale ? (localeRegistry[locale] ?? enLocale) : enLocale;
+}
+
+/**
+ * List every registered locale, in registration order (`en` and `zh-CN` first,
+ * then whatever the host app registered).
+ *
+ * This is the enumeration counterpart to `resolveLocaleRegistry`: consumers that
+ * need to *offer* a locale choice (a locale picker) must read the registry rather
+ * than assume a fixed language list, otherwise they would advertise locales whose
+ * messages do not exist and silently fall back to `en`.
+ */
+export function listLocales(): LocaleRegistry[] {
+  return Object.values(localeRegistry);
 }
 
 /**

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:28:42.215Z",
+  "generatedAt": "2026-10-18T11:54:16.113Z",
   "packages": {
     "aria": {
       "components": {
@@ -632,6 +632,11 @@
             "ListboxRoot",
             "ListboxVirtualizer"
           ]
+        },
+        "locale-select": {
+          "component": "locale-select",
+          "file": "locale-select.json",
+          "symbols": ["LocaleSelect"]
         },
         "menu": {
           "component": "menu",

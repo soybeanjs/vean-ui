@@ -12876,6 +12876,21 @@
         },
         "listui": "List 组件的 UI 类重写。"
       },
+      "packages_ui_src_components_locale_select_types": {
+        "localeselectprops": {
+          "members": {
+            "arialabel": "触发器的无障碍名称。\n\n该触发器本身没有可见的文本标签——它显示的是所选\n语言环境名称——因此如果没有此名称，该按钮在辅助\n技术中将无法命名（axe `button-name`）。覆盖此名称可将控件名称本地化。",
+            "icons": "按语言环境覆盖图标，以语言环境键为键。仅在\n`showIcon` 启用时渲染。任何 Iconify 集合均可使用，例如\n`{ 'zh-CN': 'circle-flags:cn' }`。",
+            "locale": "受控语言环境键（`v-model:locale`）。\n\n若省略该键，触发器将显示父级 `SConfigProvider` 的 `locale`\n，且组件会发出 `update:locale` 事件，但不拥有该值。",
+            "locales": "按给定顺序提供显式的语言环境键。注册表中缺失的键\n将被忽略，因此这会缩小并重新排序注册表，而非\n扩展它。\n\n默认包含所有已注册的语言环境，按注册顺序排列。",
+            "placeholder": "当解析出的语言环境未注册时，将显示此占位符文本。",
+            "showicon": "是否在触发器和每个选项前渲染前缀图标。\n\n这里刻意不提供内置的“语言环境 → 图标”映射：国旗标识的是国家而非语言（`en` 不代表“美国”，`ar` 覆盖 20 多个国家，`es` 同理），因此默认只显示文字。需要图标时传入 `icons`。",
+            "size": "下拉菜单触发器的视觉尺寸。",
+            "triggericon": "当所选语言环境在 `icons` 中没有条目时，触发器使用的兜底图标。\n\n每个语言环境的 `icons[locale]` 优先于此，因为针对具体语言的图标信息量更大；`triggerIcon` 只在没有适用语言图标时生效。"
+          },
+          "props": "LocaleSelect 组件的属性。\n\n一个下拉菜单，其中包含在 `@vean/aria` 的语言环境\n注册表（`listLocales()`）中注册的语言环境。仅显示已注册的语言环境，因此每个选项\n都是消息能够实际解析的语言环境——`en` 和 `zh-CN` 是\n预先注册的，其余选项会在应用程序在初始化时调用\n`registerLocale(...)` 后，其他选项才会显示。\n\n该组件绝不会将语言环境写入 `SConfigProvider`：它要么\n通过 `v-model:locale` 进行控制，要么在省略该属性时，仅读取\n提供程序的 `locale` 值用于显示。"
+        }
+      },
       "packages_ui_src_components_menubar_types": {
         "menubaremits": {
           "callables": {

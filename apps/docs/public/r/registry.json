@@ -1109,6 +1109,27 @@
       "package": "ui"
     },
     {
+      "name": "ui/locale-select",
+      "type": "registry:ui",
+      "dependencies": ["@vean/aria"],
+      "registryDependencies": ["ui/icon", "ui/select"],
+      "files": [
+        {
+          "path": "packages/ui/src/components/locale-select/locale-select.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/locale-select/types.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/locale-select/index.ts",
+          "type": "registry:lib"
+        }
+      ],
+      "package": "ui"
+    },
+    {
       "name": "ui/list",
       "type": "registry:ui",
       "dependencies": ["@vean/aria"],

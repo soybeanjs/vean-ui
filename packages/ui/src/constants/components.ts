@@ -49,6 +49,7 @@ export const components = {
   layout: ['SLayout', 'SLayoutTrigger'],
   link: ['SLink'],
   list: ['SList', 'SListItem'],
+  localeSelect: ['SLocaleSelect'],
   menu: ['SMenuOptions', 'SMenuCheckboxOptions', 'SMenuRadioOptions'],
   menubar: ['SMenubar'],
   navMenu: ['SNavMenu'],

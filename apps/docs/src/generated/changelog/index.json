@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:29:21.514Z",
+  "generatedAt": "2026-10-18T11:55:01.287Z",
   "schemaVersion": 1,
   "components": {
     "accordion": {
@@ -365,6 +365,13 @@
       "latestVersion": "v0.15.0",
       "versionCount": 3,
       "entryCount": 12
+    },
+    "locale-select": {
+      "component": "locale-select",
+      "file": "locale-select.json",
+      "latestVersion": null,
+      "versionCount": 0,
+      "entryCount": 0
     },
     "menu": {
       "component": "menu",

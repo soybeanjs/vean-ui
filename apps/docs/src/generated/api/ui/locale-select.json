@@ -1,0 +1,151 @@
+{
+  "component": "locale-select",
+  "symbols": {
+    "LocaleSelect": {
+      "props": {
+        "kind": "props",
+        "name": "LocaleSelectProps",
+        "type": "Interface LocaleSelectProps",
+        "resolvedType": "{ locale?: string; locales?: string[]; size?: ThemeSize; showIcon?: boolean; icons?: Record<string, IconValue>; triggerIcon?: string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null; placeholder?: string; ariaLabel?: string }",
+        "description": "Properties for the LocaleSelect component.\n\nA dropdown that offers the locales registered in `@vean/aria`'s locale\nregistry (`listLocales()`). Only registered locales appear, so every option\nis a locale whose messages actually resolve — `en` and `zh-CN` are\npre-registered, everything else appears once the app calls\n`registerLocale(...)` during setup.\n\nThe component never writes the locale into `SConfigProvider`: it is either\ncontrolled through `v-model:locale` or, when that is omitted, reads the\nprovider's `locale` for display only.",
+        "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.props",
+        "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "locale",
+            "type": "string",
+            "required": false,
+            "description": "The controlled locale key (`v-model:locale`).\n\nWhen omitted, the trigger displays the parent `SConfigProvider`'s `locale`\nand the component emits `update:locale` without owning the value.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.locale",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "locales",
+            "type": "string[]",
+            "required": false,
+            "description": "Explicit locale keys to offer, in the given order. Keys missing from the\nregistry are dropped, so this narrows and reorders the registry rather than\nextending it.\n\nDefaults to every registered locale, in registration order.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.locales",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "size",
+            "type": "ThemeSize",
+            "required": false,
+            "description": "Visual size of the select trigger.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.size",
+            "default": "'md'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ThemeSize",
+                "kind": "typeAlias",
+                "type": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "resolvedType": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "description": "the component size / density preset.",
+                "descriptionKey": "api.generated.packages_theme_src_types.themesize",
+                "sourcePath": "packages/theme/src/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "showIcon",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render a leading icon in the trigger and in each option.\n\nThere is no built-in locale-to-icon map on purpose: flags identify\ncountries, not languages (`en` is not \"the US\", `ar` spans 20+ countries,\n`es` spans 20+ more), so the default is text-only. Supply `icons` to opt in.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.showicon",
+            "default": "false",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "icons",
+            "type": "Record<string, IconValue>",
+            "required": false,
+            "description": "Per-locale icon overrides, keyed by locale key. Only rendered when\n`showIcon` is on. Any Iconify collection works, e.g.\n`{ 'zh-CN': 'circle-flags:cn' }`.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.icons",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": [
+              {
+                "name": "IconValue",
+                "kind": "typeAlias",
+                "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
+                "resolvedType": null,
+                "description": "Type information for IconValue.",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "triggerIcon",
+            "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null",
+            "required": false,
+            "description": "Fallback icon for the trigger when the selected locale has no entry in\n`icons`.\n\nA per-locale `icons[locale]` wins over this, because a locale-specific\nicon is the more informative of the two; `triggerIcon` is only what the\ntrigger shows when no per-locale icon applies.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.triggericon",
+            "default": "'lucide:languages'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": [
+              {
+                "name": "IconValue",
+                "kind": "typeAlias",
+                "type": "string | import(\"vue\").Component | import(\"vue\").VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
+                "resolvedType": "string | Component | VNode<import(\"vue\").RendererNode, import(\"vue\").RendererElement, { [key: string]: any; }> | null | undefined",
+                "description": "Type information for IconValue.",
+                "descriptionKey": "api.generated.packages_aria_src_components_icon_types.iconvalue",
+                "sourcePath": "packages/aria/src/components/_icon/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "placeholder",
+            "type": "string",
+            "required": false,
+            "description": "Placeholder text rendered when the resolved locale is not registered.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.placeholder",
+            "default": "'Select a locale'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "ariaLabel",
+            "type": "string",
+            "required": false,
+            "description": "Accessible name for the trigger.\n\nThe trigger has no visible text label of its own — it shows the selected\nlocale name — so without this the button would be unnamed for assistive\ntechnology (axe `button-name`). Override it to localize the control's name.",
+            "descriptionKey": "api.generated.packages_ui_src_components_locale_select_types.localeselectprops.members.arialabel",
+            "default": "'Language'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/locale-select/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    }
+  }
+}

@@ -12876,6 +12876,21 @@
         },
         "listui": "UI class overrides for the List component."
       },
+      "packages_ui_src_components_locale_select_types": {
+        "localeselectprops": {
+          "members": {
+            "arialabel": "Accessible name for the trigger.\n\nThe trigger has no visible text label of its own — it shows the selected\nlocale name — so without this the button would be unnamed for assistive\ntechnology (axe `button-name`). Override it to localize the control's name.",
+            "icons": "Per-locale icon overrides, keyed by locale key. Only rendered when\n`showIcon` is on. Any Iconify collection works, e.g.\n`{ 'zh-CN': 'circle-flags:cn' }`.",
+            "locale": "The controlled locale key (`v-model:locale`).\n\nWhen omitted, the trigger displays the parent `SConfigProvider`'s `locale`\nand the component emits `update:locale` without owning the value.",
+            "locales": "Explicit locale keys to offer, in the given order. Keys missing from the\nregistry are dropped, so this narrows and reorders the registry rather than\nextending it.\n\nDefaults to every registered locale, in registration order.",
+            "placeholder": "Placeholder text rendered when the resolved locale is not registered.",
+            "showicon": "Whether to render a leading icon in the trigger and in each option.\n\nThere is no built-in locale-to-icon map on purpose: flags identify\ncountries, not languages (`en` is not \"the US\", `ar` spans 20+ countries,\n`es` spans 20+ more), so the default is text-only. Supply `icons` to opt in.",
+            "size": "Visual size of the select trigger.",
+            "triggericon": "Fallback icon for the trigger when the selected locale has no entry in\n`icons`.\n\nA per-locale `icons[locale]` wins over this, because a locale-specific\nicon is the more informative of the two; `triggerIcon` is only what the\ntrigger shows when no per-locale icon applies."
+          },
+          "props": "Properties for the LocaleSelect component.\n\nA dropdown that offers the locales registered in `@vean/aria`'s locale\nregistry (`listLocales()`). Only registered locales appear, so every option\nis a locale whose messages actually resolve — `en` and `zh-CN` are\npre-registered, everything else appears once the app calls\n`registerLocale(...)` during setup.\n\nThe component never writes the locale into `SConfigProvider`: it is either\ncontrolled through `v-model:locale` or, when that is omitted, reads the\nprovider's `locale` for display only."
+        }
+      },
       "packages_ui_src_components_menubar_types": {
         "menubaremits": {
           "callables": {

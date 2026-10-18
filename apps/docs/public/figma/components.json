@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:30:09.420Z",
+  "generatedAt": "2026-10-18T11:58:59.904Z",
   "components": {
     "accordion": {
       "dir": ["ltr", "rtl"],
@@ -650,6 +650,9 @@
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "selectionBehavior": ["toggle", "replace"]
+    },
+    "locale-select": {
+      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "menu": {
       "align": ["start", "center", "end"],

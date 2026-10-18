@@ -48,6 +48,7 @@ export * from './components/label';
 export * from './components/layout';
 export * from './components/link';
 export * from './components/list';
+export * from './components/locale-select';
 export * from './components/menu';
 export * from './components/menubar';
 export * from './components/nav-menu';

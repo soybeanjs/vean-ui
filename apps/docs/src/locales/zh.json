@@ -432,6 +432,9 @@
       "theme-customizer": {
         "basic": "基础"
       },
+      "theme-primary-select": {
+        "basic": "基础"
+      },
       "tree": {
         "basic": "基础",
         "virtualizer": "虚拟列表"

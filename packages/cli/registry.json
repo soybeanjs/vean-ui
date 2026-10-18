@@ -1882,6 +1882,27 @@
       "package": "ui"
     },
     {
+      "name": "ui/theme-primary-select",
+      "type": "registry:ui",
+      "dependencies": ["@vean/theme"],
+      "registryDependencies": ["ui/theme-customizer"],
+      "files": [
+        {
+          "path": "packages/ui/src/components/theme-primary-select/theme-primary-select.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/theme-primary-select/types.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/theme-primary-select/index.ts",
+          "type": "registry:lib"
+        }
+      ],
+      "package": "ui"
+    },
+    {
       "name": "ui/time-field",
       "type": "registry:ui",
       "dependencies": ["@vean/aria"],

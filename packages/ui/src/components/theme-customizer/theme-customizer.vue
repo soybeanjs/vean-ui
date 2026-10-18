@@ -38,9 +38,9 @@ import SSlider from '../slider/slider.vue';
 import STabs from '../tabs/tabs.vue';
 import type { TabsOptionData } from '../tabs/types';
 import ThemeModeSegment from '../theme-mode-segment/theme-mode-segment.vue';
+import ThemePrimarySelect from '../theme-primary-select/theme-primary-select.vue';
 import BasePaletteSelect from './base-palette-select.vue';
 import FeedbackSchemaSelect from './feedback-schema-select.vue';
-import PrimaryPaletteSelect from './primary-palette-select.vue';
 import SectionItem from './section-item.vue';
 import type { ThemeCustomizerProps, ThemeCustomizerSection } from './types';
 import { useThemeCustomizerLocale } from './use-locale';
@@ -85,11 +85,6 @@ const settings = useThemeSettings({
 const baseValue = computed<PaletteKey>({
   get: () => settings.state.value.base ?? 'zinc',
   set: value => settings.setState({ base: value })
-});
-
-const primaryValue = computed<PaletteKey>({
-  get: () => settings.state.value.primary ?? 'indigo',
-  set: value => settings.setState({ primary: value })
 });
 
 const radiusValue = computed<ThemeRadius>({
@@ -342,6 +337,15 @@ watch(
     settings.setState({ mode: value });
   }
 );
+
+// —— primary 由 <ThemePrimarySelect> 直接绑定主题上下文，settings.state.primary 仅在初始化时快照。
+//    与 mode 同理：不同步就会在下一次 commit 时把过期的 primary 写回 runtime。 ——
+watch(
+  () => theme.primary.value,
+  value => {
+    settings.setState({ primary: value });
+  }
+);
 </script>
 
 <template>
@@ -369,7 +373,7 @@ watch(
             </SectionItem>
 
             <SectionItem :label="resolveLabel('primary')">
-              <PrimaryPaletteSelect v-model="primaryValue" class="w-50" />
+              <ThemePrimarySelect :simple="false" class="w-50" />
             </SectionItem>
           </SectionItem>
 

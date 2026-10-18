@@ -432,6 +432,9 @@
       "theme-customizer": {
         "basic": "Basic"
       },
+      "theme-primary-select": {
+        "basic": "Basic"
+      },
       "tree": {
         "basic": "Basic",
         "virtualizer": "Virtualizer"

@@ -14242,6 +14242,15 @@
           "props": "Properties for the ThemeModeSwitch component.\n\nA context-bound toggle bound to the active `SConfigProvider` theme. It shows\nthe current *effective* scheme (so an `auto` preference is reflected as the\nOS-resolved light/dark) and pins an explicit `light` / `dark` preference when\ntoggled. To restore `auto`, use `SThemeModeSelect`."
         }
       },
+      "packages_ui_src_components_theme_primary_select_types": {
+        "themeprimaryselectprops": {
+          "members": {
+            "simple": "Render the minimal form: a single `500` swatch in the trigger and in each\noption, instead of the five-level palette stack the theme customizer shows.",
+            "size": "Visual size of the select trigger."
+          },
+          "props": "Properties for the ThemePrimarySelect component.\n\nA context-bound dropdown bound to the active `SConfigProvider` theme. It\nlists every built-in palette (`PaletteKey`) and writes the chosen one back as\nthe theme `primary`, so no `modelValue` is accepted."
+        }
+      },
       "packages_ui_src_components_time_field_types": {
         "timefieldemits": {
           "callables": {

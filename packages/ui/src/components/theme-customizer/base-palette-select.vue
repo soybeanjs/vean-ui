@@ -4,7 +4,7 @@ import { NEUTRAL_PALETTES, PALETTE_LEVELS, paletteColor } from '@vean/theme';
 import type { PaletteLevel, PaletteKey } from '@vean/theme';
 import SSelect from '../select/select.vue';
 import type { SelectOptionData } from '../select/types';
-import ColorDecorator from './color-decorator.vue';
+import ColorDecorator from '../_shared/color-decorator.vue';
 import { useThemeCustomizerLocale } from './use-locale';
 
 interface Props {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T07:18:00.514Z",
+  "generatedAt": "2026-10-18T06:35:23.981Z",
   "schemaVersion": 1,
   "components": {
     "accordion": {
@@ -621,6 +621,13 @@
     "theme-mode-switch": {
       "component": "theme-mode-switch",
       "file": "theme-mode-switch.json",
+      "latestVersion": null,
+      "versionCount": 0,
+      "entryCount": 0
+    },
+    "theme-primary-select": {
+      "component": "theme-primary-select",
+      "file": "theme-primary-select.json",
       "latestVersion": null,
       "versionCount": 0,
       "entryCount": 0

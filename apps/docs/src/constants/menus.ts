@@ -136,7 +136,14 @@ export const menuData: MenuData[] = [
   {
     value: 'utilities',
     i18n: 'sidebar.utilities',
-    items: ['themeCustomizer', 'themeModeSegment', 'themeModeSelect', 'themeModeSwitch', 'visuallyHidden']
+    items: [
+      'themeCustomizer',
+      'themeModeSegment',
+      'themeModeSelect',
+      'themeModeSwitch',
+      'themePrimarySelect',
+      'visuallyHidden'
+    ]
   },
   {
     // aria product line — placeholder until the aria docs land (D8)

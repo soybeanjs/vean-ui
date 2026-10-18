@@ -14242,6 +14242,15 @@
           "props": "ThemeModeSwitch 组件的属性。\n\n一个与当前活动的 `SConfigProvider` 主题绑定的上下文切换控件。 它显示\n当前*实际*的配色方案（因此 `auto` 偏好设置将体现为\n操作系统解析的浅色/深色模式），并在\n切换时锁定显式的 `light` / `dark` 偏好设置。要恢复 `auto` 模式，请使用 `SThemeModeSelect`。"
         }
       },
+      "packages_ui_src_components_theme_primary_select_types": {
+        "themeprimaryselectprops": {
+          "members": {
+            "simple": "呈现最简形式：在触发器和每个\n选项中仅显示单个 `500` 色块，而非主题自定义器中显示的五级调色板堆叠。",
+            "size": "下拉菜单触发器的视觉尺寸。"
+          },
+          "props": "ThemePrimarySelect 组件的属性。\n\n一个与当前活动的 `SConfigProvider` 主题绑定的上下文下拉菜单。它\n列出所有内置调色板（`PaletteKey`），并将选中的调色板写回为\n主题的 `primary`，因此不接受 `modelValue`。"
+        }
+      },
       "packages_ui_src_components_time_field_types": {
         "timefieldemits": {
           "callables": {

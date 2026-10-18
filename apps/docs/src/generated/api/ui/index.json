@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T07:06:11.908Z",
+  "generatedAt": "2026-10-18T06:34:37.464Z",
   "schemaVersion": 4,
   "components": {
     "accordion": {
@@ -949,6 +949,11 @@
       "component": "theme-mode-switch",
       "file": "theme-mode-switch.json",
       "symbols": ["ThemeModeSwitch"]
+    },
+    "theme-primary-select": {
+      "component": "theme-primary-select",
+      "file": "theme-primary-select.json",
+      "symbols": ["ThemePrimarySelect"]
     },
     "time-field": {
       "component": "time-field",

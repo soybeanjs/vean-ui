@@ -8,7 +8,7 @@ head:
 
 ## Overview
 
-`SThemeBaseSelect` is a context-bound dropdown bound to the active `SConfigProvider` theme. It lists the neutral palettes (`NEUTRAL_PALETTES` — gray, slate, zinc, neutral, stone, soot) and writes the selection back as the theme `base`, so every neutral surface token (background, card, border, muted) re-derives at once.
+`SThemeBaseSelect` is a context-bound dropdown bound to the active `SConfigProvider` theme. It lists the nine neutral palettes (`NEUTRAL_PALETTES` — slate, mist, gray, zinc, neutral, stone, taupe, olive, mauve) and writes the selection back as the theme `base`, so every neutral surface token (background, card, border, muted) re-derives at once.
 
 Use it when a page needs a one-click neutral surface switch — a settings panel, a navbar theme menu, or a compact replacement for the full `SThemeCustomizer`. Prefer `SThemeCustomizer` when the user also needs the primary palette, radius, size, spacing, or custom presets.
 
@@ -20,7 +20,7 @@ It shares the theme context with `SThemePrimarySelect`, `SThemeModeSelect` and `
 
 ## Features
 
-- 🎨 Every neutral palette as an option, sourced from the theme engine's own `NEUTRAL_PALETTES`
+- 🎨 All nine neutral palettes as options, sourced from the theme engine's own `NEUTRAL_PALETTES`
 - 🧩 `simple` mode collapses the palette stack to a single `500` swatch in the trigger and each option
 - 🎚 `size` forwards to the underlying select trigger, matching the theme size scale (`xs`…`2xl`)
 - 🔗 Writes through the shared theme context — no `modelValue`, no local mirror state

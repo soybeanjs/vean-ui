@@ -25,7 +25,7 @@ It shares the theme context with `SThemeModeSelect` and `SThemeModeSwitch`: all 
 - 🎚 `size` forwards to the underlying select trigger, matching the theme size scale (`xs`…`2xl`)
 - 🔗 Writes through the shared theme context — no `modelValue`, no local mirror state
 - ♿ Exposes an `aria-label` on the trigger so the select is reachable without visible text
-- 🎯 Reuses the theme customizer's primary picker, so both surfaces render identical swatches
+- 🎯 Shares the `ColorDecorator` swatch renderer with `SThemeBaseSelect`, so both surfaces render identical swatches
 
 ## Demos
 

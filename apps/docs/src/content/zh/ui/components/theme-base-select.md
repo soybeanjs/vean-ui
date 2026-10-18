@@ -8,7 +8,7 @@ head:
 
 ## 概述
 
-`SThemeBaseSelect` 是一个绑定到当前 `SConfigProvider` 主题的上下文下拉选择。它列出中性调色板（`NEUTRAL_PALETTES` —— gray、slate、zinc、neutral、stone、soot），并把选中的一项写回主题 `base`，因此所有中性表面 token（背景、卡片、边框、muted）会一次性重新派生。
+`SThemeBaseSelect` 是一个绑定到当前 `SConfigProvider` 主题的上下文下拉选择。它列出九个中性调色板（`NEUTRAL_PALETTES` —— slate、mist、gray、zinc、neutral、stone、taupe、olive、mauve），并把选中的一项写回主题 `base`，因此所有中性表面 token（背景、卡片、边框、muted）会一次性重新派生。
 
 适用于需要「一键换中性表面色」的场景 —— 设置面板、顶栏主题菜单，或作为 `SThemeCustomizer` 的精简替代。当用户还需要主色、圆角、字号、间距或自定义预设时，请改用 `SThemeCustomizer`。
 
@@ -20,7 +20,7 @@ head:
 
 ## 特性
 
-- 🎨 全部中性调色板作为选项，直接取自主题引擎的 `NEUTRAL_PALETTES`
+- 🎨 九个中性调色板全部作为选项，直接取自主题引擎的 `NEUTRAL_PALETTES`
 - 🧩 `simple` 模式把色板堆叠收敛成单个 `500` 色块，触发器与每个选项都生效
 - 🎚 `size` 透传给底层 select 触发器，与主题尺寸刻度（`xs`…`2xl`）一致
 - 🔗 通过共享主题上下文写入 —— 没有 `modelValue`，也没有本地镜像状态

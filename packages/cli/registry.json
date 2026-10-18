@@ -1828,6 +1828,10 @@
         {
           "path": "packages/ui/src/components/theme-base-select/index.ts",
           "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/_shared/use-palette-swatches.ts",
+          "type": "registry:lib"
         }
       ],
       "package": "ui"
@@ -1911,6 +1915,10 @@
         },
         {
           "path": "packages/ui/src/components/theme-primary-select/index.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/_shared/use-palette-swatches.ts",
           "type": "registry:lib"
         }
       ],

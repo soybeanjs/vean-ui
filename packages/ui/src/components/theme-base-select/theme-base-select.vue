@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { NEUTRAL_PALETTES, PALETTE_LEVELS, paletteColor } from '@vean/theme';
-import type { PaletteLevel, PaletteKey } from '@vean/theme';
+import { NEUTRAL_PALETTES } from '@vean/theme';
 import ColorDecorator from '../_shared/color-decorator.vue';
+import { usePaletteSwatches } from '../_shared/use-palette-swatches';
 import { useTheme } from '../config-provider/use-theme';
 import SSelect from '../select/select.vue';
-import type { SelectOptionData } from '../select/types';
 import { useThemeCustomizerLocale } from '../theme-customizer/use-locale';
 import type { ThemeBaseSelectProps } from './types';
 
@@ -22,32 +20,11 @@ const { base } = useTheme('ThemeBaseSelect');
 
 const { resolveLabel } = useThemeCustomizerLocale();
 
-/** the single swatch level rendered by the minimal form. */
-const SIMPLE_LEVEL: PaletteLevel = 500;
-
-/**
- * `undefined` keeps the shared multi-level stack, so the non-simple form stays
- * identical to the theme customizer's base picker.
- */
-const decorateLevels = computed<PaletteLevel[] | undefined>(() => (props.simple ? [SIMPLE_LEVEL] : undefined));
-
-const overlap = computed(() => !props.simple);
-
-/** the palette swatch colors, resolved from the engine's own palette data. */
-const swatchOf = (key: PaletteKey): Record<PaletteLevel, string> =>
-  Object.fromEntries(PALETTE_LEVELS.map(level => [level, paletteColor(key, level, 'hsl') ?? ''])) as Record<
-    PaletteLevel,
-    string
-  >;
-
-const currentColors = computed(() => swatchOf(base.value));
-
-const items = computed<SelectOptionData<PaletteKey>[]>(() =>
-  NEUTRAL_PALETTES.map(key => ({
-    label: key,
-    value: key
-  }))
-);
+const { decorateLevels, overlap, swatchOf, currentColors, items } = usePaletteSwatches({
+  keys: NEUTRAL_PALETTES,
+  current: base,
+  simple: () => props.simple
+});
 </script>
 
 <template>

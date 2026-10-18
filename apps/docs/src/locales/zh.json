@@ -429,6 +429,9 @@
       "tooltip": {
         "basic": "基础"
       },
+      "theme-base-select": {
+        "basic": "基础"
+      },
       "theme-customizer": {
         "basic": "基础"
       },

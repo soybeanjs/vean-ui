@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:29:51.308Z",
+  "generatedAt": "2026-10-18T10:30:09.420Z",
   "components": {
     "accordion": {
       "dir": ["ltr", "rtl"],
@@ -9,14 +9,32 @@
       "type": ["button", "submit", "reset"]
     },
     "alert": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "role": ["alert", "status"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "type": ["button", "submit", "reset"],
       "variant": ["solid", "pure", "outline", "soft", "ghost"]
     },
     "anchor": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
@@ -79,26 +97,78 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "backtop": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "shadow": ["sm", "md", "lg", "none"],
       "shape": ["auto", "rounded", "square", "circle"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "type": ["button", "submit", "reset"],
-      "variant": ["link", "solid", "pure", "outline", "soft", "ghost", "plain", "dashed"]
+      "variant": [
+        "link",
+        "solid",
+        "pure",
+        "outline",
+        "soft",
+        "ghost",
+        "plain",
+        "dashed"
+      ]
     },
     "badge": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "position": ["top-right", "bottom-right", "top-left", "bottom-left"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "breadcrumb": {
-      "ariaCurrentValue": ["true", "false", "page", "date", "time", "step", "location"],
+      "ariaCurrentValue": [
+        "true",
+        "false",
+        "page",
+        "date",
+        "time",
+        "step",
+        "location"
+      ],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "trailingSlash": ["append", "remove"]
     },
     "button": {
-      "ariaCurrentValue": ["true", "false", "page", "date", "time", "step", "location"],
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "ariaCurrentValue": [
+        "true",
+        "false",
+        "page",
+        "date",
+        "time",
+        "step",
+        "location"
+      ],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "loadingPosition": ["start", "center", "end"],
       "orientation": ["vertical", "horizontal"],
@@ -107,7 +177,16 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "trailingSlash": ["append", "remove"],
       "type": ["button", "submit", "reset"],
-      "variant": ["link", "solid", "pure", "outline", "soft", "ghost", "plain", "dashed"]
+      "variant": [
+        "link",
+        "solid",
+        "pure",
+        "outline",
+        "soft",
+        "ghost",
+        "plain",
+        "dashed"
+      ]
     },
     "calendar": {
       "dir": ["ltr", "rtl"],
@@ -157,7 +236,16 @@
       "updatePositionStrategy": ["always", "optimized"]
     },
     "checkbox": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "shape": ["rounded", "square"],
@@ -165,11 +253,29 @@
       "type": ["button", "submit", "reset"]
     },
     "clipboard": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "shape": ["auto", "rounded", "square", "circle"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "type": ["button", "submit", "reset"],
-      "variant": ["link", "solid", "pure", "outline", "soft", "ghost", "plain", "dashed"]
+      "variant": [
+        "link",
+        "solid",
+        "pure",
+        "outline",
+        "soft",
+        "ghost",
+        "plain",
+        "dashed"
+      ]
     },
     "collapsible": {
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
@@ -183,7 +289,17 @@
       "yChannel": ["hue", "saturation", "lightness", "brightness", "chroma"]
     },
     "color-field": {
-      "channel": ["alpha", "hue", "saturation", "lightness", "brightness", "red", "green", "blue", "chroma"],
+      "channel": [
+        "alpha",
+        "hue",
+        "saturation",
+        "lightness",
+        "brightness",
+        "red",
+        "green",
+        "blue",
+        "chroma"
+      ],
       "colorSpace": ["hsl", "hsv", "oklch"],
       "format": ["hsl", "oklch", "hex", "rgb"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
@@ -197,8 +313,27 @@
       "type": ["button", "submit", "reset"]
     },
     "color-slider": {
-      "channel": ["alpha", "hue", "saturation", "lightness", "brightness", "red", "green", "blue", "chroma"],
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "channel": [
+        "alpha",
+        "hue",
+        "saturation",
+        "lightness",
+        "brightness",
+        "red",
+        "green",
+        "blue",
+        "chroma"
+      ],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "colorSpace": ["hsl", "hsv", "oklch"],
       "dir": ["ltr", "rtl"],
       "format": ["hsl", "oklch", "hex", "rgb"],
@@ -472,7 +607,15 @@
       "variant": ["sidebar", "floating", "inset"]
     },
     "link": {
-      "ariaCurrentValue": ["true", "false", "page", "date", "time", "step", "location"],
+      "ariaCurrentValue": [
+        "true",
+        "false",
+        "page",
+        "date",
+        "time",
+        "step",
+        "location"
+      ],
       "trailingSlash": ["append", "remove"]
     },
     "list": {
@@ -557,7 +700,15 @@
     },
     "nav-menu": {
       "align": ["start", "center", "end"],
-      "ariaCurrentValue": ["true", "false", "page", "date", "time", "step", "location"],
+      "ariaCurrentValue": [
+        "true",
+        "false",
+        "page",
+        "date",
+        "time",
+        "step",
+        "location"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
@@ -629,7 +780,15 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "sticky": ["partial", "always"],
       "trigger": ["contextmenu", "click", "hover"],
-      "type": ["success", "warning", "info", "error", "button", "submit", "reset"],
+      "type": [
+        "success",
+        "warning",
+        "info",
+        "error",
+        "button",
+        "submit",
+        "reset"
+      ],
       "updatePositionStrategy": ["always", "optimized"]
     },
     "popover": {
@@ -656,13 +815,31 @@
       "updatePositionStrategy": ["always", "optimized"]
     },
     "progress": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "direction": ["ltr", "rtl"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "radio-group": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
@@ -670,7 +847,16 @@
       "variant": ["outline", "dot"]
     },
     "rating": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
@@ -732,20 +918,43 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "slider": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "thumbAlignment": ["overflow", "contain"]
     },
     "spinner": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "split-nav": {
       "dir": ["ltr", "rtl"],
       "expandStrategy": ["keep", "selected"],
-      "mode": ["dual-vertical", "vertical-horizontal", "horizontal-vertical", "horizontal-dual-vertical"],
+      "mode": [
+        "dual-vertical",
+        "vertical-horizontal",
+        "horizontal-vertical",
+        "horizontal-dual-vertical"
+      ],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "splitter": {
@@ -754,13 +963,31 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "stepper": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "switch": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "shape": ["rounded", "square"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
@@ -780,7 +1007,16 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "tag": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "shape": ["auto", "rounded"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "variant": ["solid", "pure", "outline", "soft", "ghost", "raw"]
@@ -819,6 +1055,9 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "type": ["button", "submit", "reset"]
     },
+    "theme-base-select": {
+      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+    },
     "theme-customizer": {
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
@@ -834,7 +1073,19 @@
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "theme-mode-switch": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
+      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+    },
+    "theme-primary-select": {
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "time-field": {
@@ -850,18 +1101,43 @@
     },
     "toast": {
       "dir": ["ltr", "rtl"],
-      "position": ["top-right", "bottom-right", "top-left", "bottom-left", "top-center", "bottom-center"],
+      "position": [
+        "top-right",
+        "bottom-right",
+        "top-left",
+        "bottom-left",
+        "top-center",
+        "bottom-center"
+      ],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
     },
     "toggle": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "shape": ["auto", "rounded", "square", "circle"],
       "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
       "type": ["button", "submit", "reset"],
       "variant": ["outline", "soft", "ghost"]
     },
     "toggle-group": {
-      "color": ["primary", "secondary", "accent", "destructive", "success", "warning", "info", "carbon"],
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "selectionBehavior": ["toggle", "replace"],
@@ -870,7 +1146,15 @@
       "variant": ["outline", "soft", "ghost"]
     },
     "toolbar": {
-      "ariaCurrentValue": ["true", "false", "page", "date", "time", "step", "location"],
+      "ariaCurrentValue": [
+        "true",
+        "false",
+        "page",
+        "date",
+        "time",
+        "step",
+        "location"
+      ],
       "dir": ["ltr", "rtl"],
       "orientation": ["vertical", "horizontal"],
       "selectionBehavior": ["toggle", "replace"],

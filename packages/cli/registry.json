@@ -1772,27 +1772,20 @@
         "ui/select",
         "ui/slider",
         "ui/tabs",
+        "ui/theme-base-select",
         "ui/theme-mode-segment"
       ],
       "files": [
+        {
+          "path": "packages/ui/src/components/_shared/color-decorator.vue",
+          "type": "registry:ui"
+        },
         {
           "path": "packages/ui/src/components/theme-customizer/theme-customizer.vue",
           "type": "registry:ui"
         },
         {
-          "path": "packages/ui/src/components/theme-customizer/base-palette-select.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "packages/ui/src/components/theme-customizer/color-decorator.vue",
-          "type": "registry:ui"
-        },
-        {
           "path": "packages/ui/src/components/theme-customizer/feedback-schema-select.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "packages/ui/src/components/theme-customizer/primary-palette-select.vue",
           "type": "registry:ui"
         },
         {
@@ -1813,6 +1806,27 @@
         },
         {
           "path": "packages/ui/src/components/theme-customizer/index.ts",
+          "type": "registry:lib"
+        }
+      ],
+      "package": "ui"
+    },
+    {
+      "name": "ui/theme-base-select",
+      "type": "registry:ui",
+      "dependencies": ["@vean/theme"],
+      "registryDependencies": ["ui/theme-customizer"],
+      "files": [
+        {
+          "path": "packages/ui/src/components/theme-base-select/theme-base-select.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/theme-base-select/types.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/theme-base-select/index.ts",
           "type": "registry:lib"
         }
       ],

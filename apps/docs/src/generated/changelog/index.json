@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T06:35:23.981Z",
+  "generatedAt": "2026-10-18T10:29:21.514Z",
   "schemaVersion": 1,
   "components": {
     "accordion": {
@@ -596,6 +596,13 @@
       "latestVersion": "v0.19.0",
       "versionCount": 2,
       "entryCount": 5
+    },
+    "theme-base-select": {
+      "component": "theme-base-select",
+      "file": "theme-base-select.json",
+      "latestVersion": null,
+      "versionCount": 0,
+      "entryCount": 0
     },
     "theme-customizer": {
       "component": "theme-customizer",

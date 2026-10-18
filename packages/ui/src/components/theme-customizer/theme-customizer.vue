@@ -16,7 +16,6 @@ import {
 } from '@vean/theme';
 import type {
   FeedbackSchemeKey,
-  PaletteKey,
   SemanticToken,
   SurfaceStyle,
   ThemeFont,
@@ -37,9 +36,9 @@ import type { SelectOptionData } from '../select/types';
 import SSlider from '../slider/slider.vue';
 import STabs from '../tabs/tabs.vue';
 import type { TabsOptionData } from '../tabs/types';
+import ThemeBaseSelect from '../theme-base-select/theme-base-select.vue';
 import ThemeModeSegment from '../theme-mode-segment/theme-mode-segment.vue';
 import ThemePrimarySelect from '../theme-primary-select/theme-primary-select.vue';
-import BasePaletteSelect from './base-palette-select.vue';
 import FeedbackSchemaSelect from './feedback-schema-select.vue';
 import SectionItem from './section-item.vue';
 import type { ThemeCustomizerProps, ThemeCustomizerSection } from './types';
@@ -82,11 +81,6 @@ const settings = useThemeSettings({
 
 // —— 基础 token 绑定 ——
 // mode 偏好由 <ThemeModeSegment> 直接绑定主题上下文，此处无需重复状态。
-const baseValue = computed<PaletteKey>({
-  get: () => settings.state.value.base ?? 'zinc',
-  set: value => settings.setState({ base: value })
-});
-
 const radiusValue = computed<ThemeRadius>({
   get: () => (settings.state.value.radius ?? 'md') as ThemeRadius,
   set: value => settings.setState({ radius: value })
@@ -338,12 +332,20 @@ watch(
   }
 );
 
-// —— primary 由 <ThemePrimarySelect> 直接绑定主题上下文，settings.state.primary 仅在初始化时快照。
-//    与 mode 同理：不同步就会在下一次 commit 时把过期的 primary 写回 runtime。 ——
+// —— base / primary 由 <ThemeBaseSelect> / <ThemePrimarySelect> 直接绑定主题上下文，
+//    settings.state 里那两项仅作初始化快照。与 mode 同理：不同步就会在下一次 commit 时
+//    把过期的值写回 runtime。 ——
 watch(
   () => theme.primary.value,
   value => {
     settings.setState({ primary: value });
+  }
+);
+
+watch(
+  () => theme.base.value,
+  value => {
+    settings.setState({ base: value });
   }
 );
 </script>
@@ -369,7 +371,7 @@ watch(
           <!-- palette -->
           <SectionItem v-if="sectionVisible('palette')" :title="resolveLabel('palette')" orientation="vertical">
             <SectionItem :label="resolveLabel('base')">
-              <BasePaletteSelect v-model="baseValue" class="w-50" />
+              <ThemeBaseSelect :simple="false" class="w-50" />
             </SectionItem>
 
             <SectionItem :label="resolveLabel('primary')">

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T06:34:37.464Z",
+  "generatedAt": "2026-10-18T10:28:42.215Z",
   "packages": {
     "aria": {
       "components": {
@@ -993,6 +993,11 @@
             "TextareaCounter",
             "TextareaRoot"
           ]
+        },
+        "theme-base-select": {
+          "component": "theme-base-select",
+          "file": "theme-base-select.json",
+          "symbols": ["ThemeBaseSelect"]
         },
         "theme-customizer": {
           "component": "theme-customizer",

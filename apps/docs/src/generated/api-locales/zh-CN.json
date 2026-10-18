@@ -14185,6 +14185,15 @@
           "slots": "Textarea 组件的槽位。"
         }
       },
+      "packages_ui_src_components_theme_base_select_types": {
+        "themebaseselectprops": {
+          "members": {
+            "simple": "呈现最简形式：在触发器和每个\n选项中仅显示单个 `500` 色块，而非主题自定义器中显示的五级调色板堆叠。",
+            "size": "下拉菜单触发器的视觉尺寸。"
+          },
+          "props": "ThemeBaseSelect 组件的属性。\n\n一个与当前活动的 `SConfigProvider` 主题绑定的上下文下拉菜单。它\n列出中性调色板（`NEUTRAL_PALETTES`），并将选中的调色板写回为\n主题的 `base`，因此不接受 `modelValue`。"
+        }
+      },
       "packages_ui_src_components_theme_customizer_types": {
         "themecustomizerprops": {
           "members": {

@@ -137,6 +137,7 @@ export const menuData: MenuData[] = [
     value: 'utilities',
     i18n: 'sidebar.utilities',
     items: [
+      'themeBaseSelect',
       'themeCustomizer',
       'themeModeSegment',
       'themeModeSelect',

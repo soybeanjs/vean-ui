@@ -429,6 +429,9 @@
       "tooltip": {
         "basic": "Basic"
       },
+      "theme-base-select": {
+        "basic": "Basic"
+      },
       "theme-customizer": {
         "basic": "Basic"
       },

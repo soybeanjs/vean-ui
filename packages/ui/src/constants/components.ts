@@ -78,6 +78,7 @@ export const components = {
   tag: ['STag'],
   tagsInput: ['STagsInput', 'STagsInputItemText', 'STagsInputItemDelete'],
   textarea: ['STextarea', 'STextareaClear'],
+  themeBaseSelect: ['SThemeBaseSelect'],
   themeCustomizer: ['SThemeCustomizer'],
   themeModeSegment: ['SThemeModeSegment'],
   themeModeSelect: ['SThemeModeSelect'],

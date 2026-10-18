@@ -14185,6 +14185,15 @@
           "slots": "Slots for the Textarea component."
         }
       },
+      "packages_ui_src_components_theme_base_select_types": {
+        "themebaseselectprops": {
+          "members": {
+            "simple": "Render the minimal form: a single `500` swatch in the trigger and in each\noption, instead of the five-level palette stack the theme customizer shows.",
+            "size": "Visual size of the select trigger."
+          },
+          "props": "Properties for the ThemeBaseSelect component.\n\nA context-bound dropdown bound to the active `SConfigProvider` theme. It\nlists the neutral palettes (`NEUTRAL_PALETTES`) and writes the chosen one\nback as the theme `base`, so no `modelValue` is accepted."
+        }
+      },
       "packages_ui_src_components_theme_customizer_types": {
         "themecustomizerprops": {
           "members": {

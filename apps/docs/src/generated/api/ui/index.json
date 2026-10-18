@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T06:34:37.464Z",
+  "generatedAt": "2026-10-18T10:28:42.215Z",
   "schemaVersion": 4,
   "components": {
     "accordion": {
@@ -929,6 +929,11 @@
       "component": "textarea",
       "file": "textarea.json",
       "symbols": ["Textarea", "TextareaClear", "TextareaCompact", "TextareaControl", "TextareaCounter", "TextareaRoot"]
+    },
+    "theme-base-select": {
+      "component": "theme-base-select",
+      "file": "theme-base-select.json",
+      "symbols": ["ThemeBaseSelect"]
     },
     "theme-customizer": {
       "component": "theme-customizer",

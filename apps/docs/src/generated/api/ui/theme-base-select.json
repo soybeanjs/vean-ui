@@ -1,0 +1,57 @@
+{
+  "component": "theme-base-select",
+  "symbols": {
+    "ThemeBaseSelect": {
+      "props": {
+        "kind": "props",
+        "name": "ThemeBaseSelectProps",
+        "type": "Interface ThemeBaseSelectProps",
+        "resolvedType": "{ size?: ThemeSize; simple?: boolean }",
+        "description": "Properties for the ThemeBaseSelect component.\n\nA context-bound dropdown bound to the active `SConfigProvider` theme. It\nlists the neutral palettes (`NEUTRAL_PALETTES`) and writes the chosen one\nback as the theme `base`, so no `modelValue` is accepted.",
+        "descriptionKey": "api.generated.packages_ui_src_components_theme_base_select_types.themebaseselectprops.props",
+        "sourcePath": "packages/ui/src/components/theme-base-select/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "size",
+            "type": "ThemeSize",
+            "required": false,
+            "description": "Visual size of the select trigger.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_base_select_types.themebaseselectprops.members.size",
+            "default": "'md'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-base-select/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ThemeSize",
+                "kind": "typeAlias",
+                "type": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "resolvedType": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "description": "the component size / density preset.",
+                "descriptionKey": "api.generated.packages_theme_src_types.themesize",
+                "sourcePath": "packages/theme/src/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "simple",
+            "type": "boolean",
+            "required": false,
+            "description": "Render the minimal form: a single `500` swatch in the trigger and in each\noption, instead of the five-level palette stack the theme customizer shows.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_base_select_types.themebaseselectprops.members.simple",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-base-select/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    }
+  }
+}

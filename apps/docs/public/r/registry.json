@@ -628,7 +628,12 @@
       "name": "ui/config-provider",
       "type": "registry:ui",
       "dependencies": ["@vean/aria", "@vean/theme"],
-      "registryDependencies": ["ui/dialog", "ui/icon", "ui/progress", "ui/toast"],
+      "registryDependencies": [
+        "ui/dialog",
+        "ui/icon",
+        "ui/progress",
+        "ui/toast"
+      ],
       "files": [
         {
           "path": "packages/ui/src/components/config-provider/context.ts",
@@ -1240,7 +1245,12 @@
       "name": "ui/palette-picker",
       "type": "registry:ui",
       "dependencies": ["@soybeanjs/colord", "@vean/theme"],
-      "registryDependencies": ["ui/color-picker", "ui/select", "ui/switch", "ui/tooltip"],
+      "registryDependencies": [
+        "ui/color-picker",
+        "ui/select",
+        "ui/switch",
+        "ui/tooltip"
+      ],
       "files": [
         {
           "path": "packages/ui/src/components/palette-picker/palette-picker.vue",
@@ -1651,7 +1661,13 @@
       "name": "ui/table",
       "type": "registry:ui",
       "dependencies": ["@vean/aria"],
-      "registryDependencies": ["ui/button", "ui/checkbox", "ui/empty", "ui/input", "ui/popover"],
+      "registryDependencies": [
+        "ui/button",
+        "ui/checkbox",
+        "ui/empty",
+        "ui/input",
+        "ui/popover"
+      ],
       "files": [
         {
           "path": "packages/ui/src/components/table/table-radio.vue",
@@ -1772,27 +1788,20 @@
         "ui/select",
         "ui/slider",
         "ui/tabs",
+        "ui/theme-base-select",
         "ui/theme-mode-segment"
       ],
       "files": [
+        {
+          "path": "packages/ui/src/components/_shared/color-decorator.vue",
+          "type": "registry:ui"
+        },
         {
           "path": "packages/ui/src/components/theme-customizer/theme-customizer.vue",
           "type": "registry:ui"
         },
         {
-          "path": "packages/ui/src/components/theme-customizer/base-palette-select.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "packages/ui/src/components/theme-customizer/color-decorator.vue",
-          "type": "registry:ui"
-        },
-        {
           "path": "packages/ui/src/components/theme-customizer/feedback-schema-select.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "packages/ui/src/components/theme-customizer/primary-palette-select.vue",
           "type": "registry:ui"
         },
         {
@@ -1813,6 +1822,31 @@
         },
         {
           "path": "packages/ui/src/components/theme-customizer/index.ts",
+          "type": "registry:lib"
+        }
+      ],
+      "package": "ui"
+    },
+    {
+      "name": "ui/theme-base-select",
+      "type": "registry:ui",
+      "dependencies": ["@vean/theme"],
+      "registryDependencies": ["ui/theme-customizer"],
+      "files": [
+        {
+          "path": "packages/ui/src/components/theme-base-select/theme-base-select.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/theme-base-select/types.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/theme-base-select/index.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/_shared/use-palette-swatches.ts",
           "type": "registry:lib"
         }
       ],
@@ -1876,6 +1910,31 @@
         },
         {
           "path": "packages/ui/src/components/theme-mode-switch/index.ts",
+          "type": "registry:lib"
+        }
+      ],
+      "package": "ui"
+    },
+    {
+      "name": "ui/theme-primary-select",
+      "type": "registry:ui",
+      "dependencies": ["@vean/theme"],
+      "registryDependencies": ["ui/theme-customizer"],
+      "files": [
+        {
+          "path": "packages/ui/src/components/theme-primary-select/theme-primary-select.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "packages/ui/src/components/theme-primary-select/types.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/theme-primary-select/index.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "packages/ui/src/components/_shared/use-palette-swatches.ts",
           "type": "registry:lib"
         }
       ],

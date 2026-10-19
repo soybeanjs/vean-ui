@@ -18,6 +18,7 @@
   },
   "type": "module",
   "scripts": {
+    "bench": "pnpm --filter @vean/benchmarks bench",
     "build": "pnpm build:libs && pnpm build:aria && pnpm build:ui && pnpm build:cli",
     "build:aria": "pnpm --filter @vean/aria build",
     "build:cli": "pnpm --filter @vean/cli build",

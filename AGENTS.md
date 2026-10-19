@@ -24,7 +24,7 @@ Load the component development skill for any task that creates, migrates, extend
 If a nearer scoped `AGENTS.md` exists for your target path, use it only to narrow which skill sections apply.
 
 **Version:** all workspaces are versioned in lockstep from the root `package.json` (currently `0.50.0-beta.3`)
-**Monorepo:** pnpm workspaces — private root + 8 members (6 packages + 2 apps): 5 publishable packages, 1 private package (`@vean/scripts`), 2 private apps. `skills/` is a **generated distribution**, not a workspace member.
+**Monorepo:** pnpm workspaces — private root + 9 members (6 packages + 2 apps + 1 benchmark workspace): 5 publishable packages, 2 private packages (`@vean/scripts`, `@vean/benchmarks`), 2 private apps. `skills/` is a **generated distribution**, not a workspace member.
 **Stack:** Vue 3 + TypeScript (strict) + UnoCSS + @soybeanjs/cva
 
 ## Agent skills
@@ -112,6 +112,7 @@ Private packages and applications:
 | Docs site wiring                   | `apps/docs/src/constants/menus.ts` + `apps/docs/src/components/`          | Sidebar entries + `<ComponentApi>` / `<UsageCode>` / `<PlaygroundGallery>` host components                   |
 | Unit tests (aria / ui)             | `packages/aria/test/specs/`, `packages/ui/test/specs/`                    | happy-dom specs; UI helpers: `test/shared/a11y.ts`, `test/browser/shared/render.ts`                          |
 | Perf benchmarks                    | `packages/aria/test/perf/`                                                | `benchmark()` / `benchmarkMount()`; hand-rolled because `vitest bench` runs on the Node side                 |
+| Cross-library benchmarks           | `benchmarks/`                                                             | aria / reka-ui / Base UI / bits-ui adapters + one harness; `pnpm bench` (see its README)                     |
 | Code navigation (optional)         | `.codegraph/` (gitignored, local)                                         | `codegraph explore`, `codegraph impact <symbol>`, `codegraph affected <files>`, `codegraph sync`             |
 
 ## BUILD & CI
@@ -126,6 +127,7 @@ pnpm fmt              # vp fmt (formatter)
 pnpm test             # recursive unit tests of every workspace that defines `test` (aria, ui, theme, unocss, vean, scripts via `vp test`)
 pnpm test:e2e         # browser e2e (Vitest Browser Mode + playwright chromium; run `pnpm exec playwright install chromium` first)
 pnpm test:perf        # perf tier: mount / pure / gesture timings (observational, not gated)
+pnpm bench            # cross-library comparison: aria / reka-ui / Base UI / bits-ui (own workspace)
 pnpm typecheck        # pnpm -r typecheck (per-workspace vue-tsc / tsc)
 pnpm release          # Generate changelog + sync templates + publish (soy release)
 pnpm stub             # switch aria development exports to src (`--reset` restores dist exports)

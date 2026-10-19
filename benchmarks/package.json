@@ -1,0 +1,30 @@
+{
+  "name": "@vean/benchmarks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "vitest run --config vitest.bench.config.ts",
+    "bench:watch": "vitest --config vitest.bench.config.ts",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "dependencies": {
+    "@base-ui-components/react": "1.0.0-rc.0",
+    "bits-ui": "2.19.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "reka-ui": "2.11.0",
+    "svelte": "5.57.2"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vitest/browser": "^5.0.5",
+    "@vitest/browser-playwright": "^5.0.5",
+    "playwright": "^1.64.1",
+    "vitest": "5.0.5",
+    "vitest-browser-vue": "^3.1.0"
+  }
+}

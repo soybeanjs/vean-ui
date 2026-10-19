@@ -1,6 +1,7 @@
 packages:
   - 'packages/**'
   - 'apps/**'
+  - 'benchmarks'
   # ubean writes a runtime package.json into `dist/server`; keep build output out of the workspace.
   - '!apps/**/dist/**'
 catalog:

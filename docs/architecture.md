@@ -79,6 +79,7 @@ vean/
 ├── apps/
 │   ├── docs/                # ubean documentation site + component examples
 │   └── nuxt/                # Nuxt integration fixture
+├── benchmarks/              # @vean/benchmarks (private): cross-library mount + gesture comparison
 ├── docs/
 │   ├── architecture.md      # This workspace architecture reference
 │   ├── optimize.md          # Prioritized architecture/quality assessment

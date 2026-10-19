@@ -85,32 +85,32 @@ Three consecutive runs agreed within ~5%; reproduce with `pnpm bench`.
 
 | shape           | `@vean/aria` | `reka-ui` | Base UI | bits-ui |
 | --------------- | -----------: | --------: | ------: | ------: |
-| accordion/10    |          4.4 |       3.1 |     2.3 |     1.3 |
-| accordion/50    |         17.1 |      12.8 |     4.2 |     5.5 |
-| select-open/20  |          7.7 |       9.8 |     5.5 |     1.8 |
-| select-open/100 |         24.5 |      32.5 |     6.2 |     4.7 |
+| accordion/10    |          4.1 |       3.3 |     2.6 |     1.3 |
+| accordion/50    |         16.4 |      13.3 |     4.2 |     5.7 |
+| select-open/20  |          7.9 |      10.2 |     5.8 |     1.9 |
+| select-open/100 |         25.6 |      33.3 |     7.0 |     6.0 |
 
 ### Interaction
 
 | shape                   | `@vean/aria` | `reka-ui` | Base UI | bits-ui |
 | ----------------------- | -----------: | --------: | ------: | ------: |
-| accordion-toggle/10     |          1.6 |       1.1 |     0.9 |     0.3 |
-| select-gesture-open/100 |         29.8 |      35.0 |     6.3 |     4.9 |
+| accordion-toggle/10     |          1.5 |       1.1 |     1.0 |     0.2 |
+| select-gesture-open/100 |         31.4 |      36.4 |     6.8 |     5.0 |
 
 ### What the numbers say
 
 - **Aria is not the slowest to mount, but it is the slowest at scale.** It beats
-  `reka-ui` on `select-open/100` (24.5 vs 32.5) and loses to it on
-  `accordion/50` (17.1 vs 12.8). Both libraries sit 2–4× above Base UI.
+  `reka-ui` on `select-open/100` (25.6 vs 33.3) and loses to it on `accordion/50`
+  (16.4 vs 13.3). Both libraries sit 2–4× above Base UI.
 - **reka-ui's item path degrades faster than ours.** It wins the accordion and
   loses the select, and the select gap widens with N (20 options: aria ahead by
-  2.1 ms; 100 options: ahead by 8.0 ms). That is our one structural advantage over
+  2.3 ms; 100 options: ahead by 7.7 ms). That is our one structural advantage over
   the closest peer, and it is worth understanding before it is claimed.
-- **Aria's per-item cost is roughly linear and high**: 10 → 50 items costs 12.7 ms
-  in `accordion`, 20 → 100 options costs 16.8 ms in `select`.
-- **`select-gesture-open/100` tracks `select-open/100` almost exactly** (29.8 vs
-  24.5), so the gesture itself adds ~5 ms on top of the render. Interaction here
-  is render-bound, not event-bound.
+- **Aria's per-item cost is roughly linear and high**: 10 → 50 items costs 12.3 ms
+  in `accordion`, 20 → 100 options costs 17.7 ms in `select`.
+- **`select-gesture-open/100` tracks `select-open/100` closely** (31.4 vs 25.6),
+  so the gesture itself adds ~6 ms on top of the render. Interaction here is
+  render-bound, not event-bound.
 - **Nothing here is a verdict.** Four small, unstyled trees in a headless browser.
   A library can be 4× faster to mount and still lose on bundle size, keyboard
   behaviour, or the maintainability of the wrapper you have to write yourself.
@@ -146,22 +146,53 @@ progressively fewer aria layers, 50 items, three rounds each (p50, ms):
 | full item (header + trigger + content)                   | 15.20 |
 | `AccordionCompact`                                       | 17.20 |
 
+The ladder above is the pre-fix baseline that located the two costs. Re-measured
+entry points after the fixes: `root + trigger` 5.10 → 4.00 ms, `AccordionCompact`
+16.70 → 14.80 ms.
+
 Two findings, both structural rather than accidental:
 
-- **`CollapsibleTrigger` costs ~3 ms per 50 items, and it is a four-component
+- **`CollapsibleTrigger` cost ~3 ms per 50 items, and it was a four-component
   chain**: `AccordionTrigger` → `CollapsibleTrigger` → `Button` → `Primitive`,
-  plus `Icon` in the compact. At 50 items that is 250 component instances for what
-  renders as a `<button>` with a `<div>` and an `<svg>` inside. Reka builds the
-  same trigger with one `Primitive` and lands at 12.8 ms for the whole accordion.
-- **`usePresence` in `CollapsibleContent` costs ~2 ms per 50 closed items** even
-  though nothing is animating: it calls `getComputedStyle` on every content node
-  at mount, and the measured tree runs 50 `getComputedStyle` calls plus 100
-  `getBoundingClientRect` calls (`CollapsibleContent.handleNodeStyle` reads the
-  full dimensions of every content element on mount, open or closed).
+  plus `Icon` in the compact. At 50 items that was 250 component instances for
+  what renders as a `<button>` with a `<div>` and an `<svg>` inside. Reka builds
+  the same trigger with one `Primitive`.
 
-Both are per-item multipliers on every accordion, every dialog, every row that
-embeds a disclosure. Neither is a benchmark artefact — the same shapes are on the
-critical path of `TableCompact` and `SelectCompact` mount numbers above.
+  **Fixed.** `CollapsibleTrigger` now renders the button semantics inline on a
+  single `Primitive` and keeps the `Button` layer's exact DOM — `type="button"`,
+  the `disabled`/`aria-disabled`/`data-disabled`/`data-normal` markers,
+  `tabindex="-1"` while disabled, and `data-vean-button`, which consumers style.
+  Fourteen DOM cases (default, root-disabled, `as`, `class`, `aria-*`, custom
+  `data-*`, `asChild`, `asChild` + disabled) are byte-identical to the old chain.
+  `AccordionCompact` at 50 items went 16.7 → 14.8 ms.
+
+  The `Button` layer alone measured ~1.2 ms per 50 items, so the chain around it
+  costs more than the layer does. The gain also depends on what replaces it:
+  `useOmitProps` builds a fresh object on every read and was measured dearer than
+  the layer it helps remove. The first version of the rewrite also set
+  `tabindex: undefined` on the normal path, which `asChild`'s `mergeProps` copies
+  over the caller's own `tabindex` and silently broke the tree menu's single tab
+  stop — on an `asChild` element, attributes must be omitted, never set to
+  `undefined`.
+
+- **`usePresence` in `CollapsibleContent` measured ~2 ms per 50 closed items**
+  even though nothing is animating: it calls `getComputedStyle` on every content
+  node at mount, and the measured tree ran 50 `getComputedStyle` calls plus 100
+  `getBoundingClientRect` calls (`CollapsibleContent.handleNodeStyle` read the full
+  dimensions of every content element on mount, open or closed).
+
+  **Partly fixed.** `handleNodeStyle` now returns early while closed, which took
+  the `getBoundingClientRect` count from 100 to 0. The wall clock barely moved
+  (4.4 → 4.2 ms), which is the useful part of the finding: inside headless
+  Chromium a forced layout on 50 small nodes is nearly free, so the 2 ms was
+  instance creation, not measurement. The `getComputedStyle` calls remain —
+  `usePresence` needs them to decide whether an exit animation exists.
+
+Both were per-item multipliers on every accordion, every dialog, every row that
+embeds a disclosure. Neither was a benchmark artefact — the same shapes are on the
+critical path of `TableCompact` and `SelectCompact` mount numbers above. One is
+now gone, the other reduced; what remains is mostly per-instance Vue overhead in
+components that exist to compose behaviour.
 
 What was ruled out, so it does not get re-investigated: `provide`/`inject` of the
 context (2.5 vs 2.3 ms), `useId` (~0), `useControllableState` (~0), and the

@@ -46,6 +46,18 @@ function handleNodeStyle() {
 
   if (!node) return;
 
+  // Nothing to measure while the content is closed.
+  //
+  // `usePresence` reports its initial value on mount, so this runs once for every
+  // content element as soon as it appears — including the closed ones, which is
+  // the common case (a 50-item accordion has 50 closed contents). Measuring a
+  // closed content reads a 0×0 box and writes "0px" over the `0px` that `style`
+  // already declares, so the work produces no observable change: only a
+  // `getComputedStyle` read, a forced layout, and two CSS custom-property writes
+  // per item. The measurement is only meaningful on the open transition, where
+  // the box has a real height to record.
+  if (!isOpen.value) return;
+
   const nodeStyle = node.style;
 
   // Capture the inline value to restore after the measurement freeze. It has to

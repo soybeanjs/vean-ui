@@ -47,6 +47,43 @@ from `packages/ui`:
 Do NOT mirror a ui e2e assertion into an aria spec. Tier 1 already reaches the
 aria code through the wrapper; a second copy buys nothing and doubles runtime.
 
+### Tier 1c — Perf tier (measure, do not assert behaviour)
+
+A third tier with a different job: it **measures cost**, not correctness.
+
+- Location: `packages/aria/test/perf/specs/{area}.perf.spec.ts`
+- Config: `packages/aria/vitest.perf.config.ts` (same `--config` rule)
+- Glob: `test/perf/**/*.perf.spec.ts`
+- Stack: Vitest Browser Mode + Playwright chromium, **no** `vitest-browser-vue`
+  render helper's timing, **no** axe
+- Harness: `benchmark(name, run, { batch, iterations, warmup })` from
+  `packages/aria/test/perf/shared/benchmark.ts`; `benchmarkMount(case, options)`
+  from `packages/aria/test/perf/shared/mount.ts`
+- Run: `pnpm test:perf` (root) or `pnpm --filter @vean/aria test:perf`
+
+Three axes, each its own spec file:
+
+| File               | Axis            | Measures                                                    |
+| ------------------ | --------------- | ----------------------------------------------------------- |
+| `components.perf`  | mount           | render + forced layout of a `*Compact` at a given data size |
+| `pure.perf`        | pure functions  | tree helpers, fuzzy search, at 1k–5k nodes                  |
+| `interaction.perf` | gesture latency | dispatch → settled DOM for open/close and toggle            |
+
+The perf tier is **observational**: it prints a table on every run and its
+ceilings sit an order of magnitude above the measured value, so only a
+catastrophic regression fails. It is not part of the CI gate — a shared runner's
+timings are noise, and a flaky perf gate gets deleted within a month.
+
+Two rules the files depend on:
+
+- **`vitest bench` is unusable here.** tinybench runs its loop on the Node side,
+  so it cannot time work that happens in the browser. Hence the hand-written
+  harness — the same reason base-ui wrote `@mui/internal-benchmark`.
+- **Batch cheap work.** `performance.now()` is clamped to ~100 µs in Chromium, so
+  a 5 µs function reads as `0.000` or `0.100`. `batch: N` runs N calls per sample
+  and divides; the printed table carries a `batch` column so the number is
+  interpretable.
+
 ### Tier 2 — App-level smoke harness (documented, minimal)
 
 - Runs against the docs app (`apps/docs`, ubean SSG) as a real built/dev server — the playground was merged into docs in v0.40.0; examples live under `apps/docs/src/examples/`. There is no separate playground app.
@@ -211,6 +248,7 @@ pnpm --filter @vean/ui test:e2e:update         # refresh VRT baselines + snapsho
 pnpm --filter @vean/ui test:e2e:watch          # watch mode
 pnpm --filter @vean/ui test:e2e:ui             # Vitest UI
 pnpm --filter @vean/aria test:browser          # aria-tier browser specs
+pnpm test:perf                                 # perf tier (measure only)
 # single file:
 pnpm --filter @vean/ui test:e2e \
   test/browser/specs/components/button.e2e.spec.ts
@@ -228,16 +266,17 @@ The browser-binary install is explicit because `pnpm install` does not fetch Pla
 
 ## Relationship to the unit spec
 
-| Concern             | Happy-dom unit spec (`test/specs/**`)            | Browser e2e spec (`test/browser/**`)                         |
-| ------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
-| Render              | `mount()` from `@vue/test-utils`                 | `renderComponent()` from `vitest-browser-vue`                |
-| Interaction         | `wrapper.trigger('click' \| 'pointerdown' \| …)` | `userEvent.click` / `userEvent.keyboard`                     |
-| Assertion           | `wrapper.find/attributes/emitted`                | `expect.element(page.getByRole(...))`                        |
-| Portal              | disabled (`portalProps: { disabled: true }`)     | real `Teleport`                                              |
-| Platform APIs       | mocked (ResizeObserver, pointer capture, …)      | real                                                         |
-| a11y color-contrast | disabled                                         | enabled (with `withTheme: true`)                             |
-| Speed               | fast                                             | slower                                                       |
-| Purpose             | rendering + emit wiring + structural a11y        | real input + overlay lifecycle + focus + color-contrast a11y |
+| Concern                    | Happy-dom unit spec (`test/specs/**`)            | Browser e2e spec (`test/browser/**`)                                 |
+| -------------------------- | ------------------------------------------------ | -------------------------------------------------------------------- |
+| Render                     | `mount()` from `@vue/test-utils`                 | `renderComponent()` from `vitest-browser-vue`                        |
+| Interaction                | `wrapper.trigger('click' \| 'pointerdown' \| …)` | `userEvent.click` / `userEvent.keyboard`                             |
+| Assertion                  | `wrapper.find/attributes/emitted`                | `expect.element(page.getByRole(...))`                                |
+| Portal                     | disabled (`portalProps: { disabled: true }`)     | real `Teleport`                                                      |
+| Platform APIs              | mocked (ResizeObserver, pointer capture, …)      | real                                                                 |
+| a11y color-contrast        | disabled                                         | enabled (with `withTheme: true`)                                     |
+| Speed                      | fast                                             | slower                                                               |
+| Purpose                    | rendering + emit wiring + structural a11y        | real input + overlay lifecycle + focus + color-contrast a11y         |
+| Perf tier (`test/perf/**`) | —                                                | measures mount / pure / gesture cost; prints a table, not assertions |
 
 The two tiers answer different questions. Keep both. Do not migrate unit specs into e2e; do not duplicate e2e-only assertions back into the unit spec.
 

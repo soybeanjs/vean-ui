@@ -111,6 +111,7 @@ Private packages and applications:
 | Generated consumer skills          | `skills/skills-source/`                                                   | Hand-edit the source; `pnpm sui gen skills` emits `skills/skills/`                                           |
 | Docs site wiring                   | `apps/docs/src/constants/menus.ts` + `apps/docs/src/components/`          | Sidebar entries + `<ComponentApi>` / `<UsageCode>` / `<PlaygroundGallery>` host components                   |
 | Unit tests (aria / ui)             | `packages/aria/test/specs/`, `packages/ui/test/specs/`                    | happy-dom specs; UI helpers: `test/shared/a11y.ts`, `test/browser/shared/render.ts`                          |
+| Perf benchmarks                    | `packages/aria/test/perf/`                                                | `benchmark()` / `benchmarkMount()`; hand-rolled because `vitest bench` runs on the Node side                 |
 | Code navigation (optional)         | `.codegraph/` (gitignored, local)                                         | `codegraph explore`, `codegraph impact <symbol>`, `codegraph affected <files>`, `codegraph sync`             |
 
 ## BUILD & CI
@@ -124,6 +125,7 @@ pnpm lint             # vp lint --fix && pnpm lint:vue (uses @soybeanjs/eslint-c
 pnpm fmt              # vp fmt (formatter)
 pnpm test             # recursive unit tests of every workspace that defines `test` (aria, ui, theme, unocss, vean, scripts via `vp test`)
 pnpm test:e2e         # browser e2e (Vitest Browser Mode + playwright chromium; run `pnpm exec playwright install chromium` first)
+pnpm test:perf        # perf tier: mount / pure / gesture timings (observational, not gated)
 pnpm typecheck        # pnpm -r typecheck (per-workspace vue-tsc / tsc)
 pnpm release          # Generate changelog + sync templates + publish (soy release)
 pnpm stub             # switch aria development exports to src (`--reset` restores dist exports)

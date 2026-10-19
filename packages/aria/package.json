@@ -107,6 +107,8 @@
     "test": "vp test run",
     "test:browser": "vitest run --config vitest.browser.config.ts",
     "test:browser:watch": "vitest watch --config vitest.browser.config.ts",
+    "test:perf": "vitest run --config vitest.perf.config.ts",
+    "test:perf:watch": "vitest watch --config vitest.perf.config.ts",
     "test:watch": "vp test watch",
     "typecheck": "vue-tsc --noEmit --skipLibCheck"
   },

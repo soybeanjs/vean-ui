@@ -44,6 +44,7 @@
     "test": "pnpm -r run test",
     "test:e2e": "pnpm --filter @vean/ui test:e2e",
     "test:e2e:browser": "pnpm test:e2e && pnpm --filter @vean/aria test:browser",
+    "test:perf": "pnpm --filter @vean/aria test:perf",
     "typecheck": "pnpm -r typecheck",
     "upkg": "soy ncu"
   },

@@ -126,3 +126,45 @@ Three consecutive runs agreed within ~5%; reproduce with `pnpm bench`.
 - **Anything at scale.** These are small, unstyled trees in a headless browser on
   one machine. They rank implementations against each other; they do not predict a
   production page.
+
+## Attribution: why `@vean/aria` mounts slower
+
+The comparison raises an obvious question — aria is 2–4× Base UI on mount — so
+this section records where the time goes, measured by building the same tree with
+progressively fewer aria layers, 50 items, three rounds each (p50, ms):
+
+| layer built                                              |   p50 |
+| -------------------------------------------------------- | ----: |
+| plain `div`/`button` + a leaf component                  |  1.00 |
+| + `CollapsibleRoot` per item                             |  2.10 |
+| + `CollapsibleRoot` + `CollapsibleTrigger`               |  5.20 |
+| + `CollapsibleRoot` + `CollapsibleContent`               |  4.40 |
+| + `CollapsibleRoot` + trigger + content                  |  9.20 |
+| `AccordionItem` only (root + item, plain children)       |  3.30 |
+| `AccordionItem` + `AccordionContent`                     |  7.00 |
+| `AccordionItem` + `AccordionHeader` + `AccordionTrigger` |  8.60 |
+| full item (header + trigger + content)                   | 15.20 |
+| `AccordionCompact`                                       | 17.20 |
+
+Two findings, both structural rather than accidental:
+
+- **`CollapsibleTrigger` costs ~3 ms per 50 items, and it is a four-component
+  chain**: `AccordionTrigger` → `CollapsibleTrigger` → `Button` → `Primitive`,
+  plus `Icon` in the compact. At 50 items that is 250 component instances for what
+  renders as a `<button>` with a `<div>` and an `<svg>` inside. Reka builds the
+  same trigger with one `Primitive` and lands at 12.8 ms for the whole accordion.
+- **`usePresence` in `CollapsibleContent` costs ~2 ms per 50 closed items** even
+  though nothing is animating: it calls `getComputedStyle` on every content node
+  at mount, and the measured tree runs 50 `getComputedStyle` calls plus 100
+  `getBoundingClientRect` calls (`CollapsibleContent.handleNodeStyle` reads the
+  full dimensions of every content element on mount, open or closed).
+
+Both are per-item multipliers on every accordion, every dialog, every row that
+embeds a disclosure. Neither is a benchmark artefact — the same shapes are on the
+critical path of `TableCompact` and `SelectCompact` mount numbers above.
+
+What was ruled out, so it does not get re-investigated: `provide`/`inject` of the
+context (2.5 vs 2.3 ms), `useId` (~0), `useControllableState` (~0), and the
+`Icon` slots in `AccordionCompact` (16.9 with vs 17.8 without — noise). Raw DOM
+layout thrash is also not it: 100 read/write pairs on a 250-node tree measures
+0.2 ms.

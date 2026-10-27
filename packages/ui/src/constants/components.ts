@@ -98,6 +98,7 @@ export const components = {
     'SToolbarToggleItem'
   ],
   tooltip: ['STooltip'],
+  tour: ['STour', 'STourStep'],
   tree: ['STree', 'STreeVirtualizer', 'STreeItem', 'STreeVirtualizerItem'],
   treeMenu: ['STreeMenu', 'STreeMenuStyledItem'],
   treeNav: ['STreeNav'],

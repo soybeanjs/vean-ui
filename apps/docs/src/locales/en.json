@@ -429,6 +429,17 @@
       "tooltip": {
         "basic": "Basic"
       },
+      "tour": {
+        "basic": "Basic",
+        "controlled-step": "Controlled Step",
+        "custom-content": "Custom Content",
+        "mask-configuration": "Mask Configuration",
+        "custom-indicators": "Custom Indicators",
+        "primary-appearance": "Primary Appearance",
+        "placement": "Placement",
+        "target-types": "Target Types",
+        "scroll-lock": "Page Scroll Locking"
+      },
       "theme-base-select": {
         "basic": "Basic"
       },
@@ -543,6 +554,93 @@
       "mermaid": {
         "basic": "Basic",
         "code-mode": "Code Mode"
+      }
+    },
+    "tour": {
+      "common": {
+        "start": "Start tour"
+      },
+      "basic": {
+        "profile": "Profile",
+        "settings": "Settings",
+        "profileTitle": "Your profile",
+        "profileDescription": "Manage your personal information here.",
+        "settingsTitle": "Settings",
+        "settingsDescription": "Adjust preferences for your workspace."
+      },
+      "controlled": {
+        "startAtStep": "Start at step {step}",
+        "resetStep": "Reset step",
+        "workspace": "Workspace overview",
+        "projectList": "Project list",
+        "workspaceTitle": "Workspace",
+        "workspaceDescription": "See the main workspace overview.",
+        "projectsTitle": "Projects",
+        "projectsDescription": "Open a project to continue your work."
+      },
+      "customContent": {
+        "start": "Show custom tour",
+        "target": "Customizable target",
+        "title": "Custom content",
+        "description": "Replace the default panel with your own layout.",
+        "gotIt": "Got it"
+      },
+      "mask": {
+        "on": "Mask: On",
+        "off": "Mask: Off",
+        "start": "Start tour",
+        "target": "Profile settings",
+        "title": "Profile",
+        "description": "The spotlight can be shown with or without a dimming mask."
+      },
+      "indicators": {
+        "start": "Start tour",
+        "profile": "Profile",
+        "settings": "Settings",
+        "projects": "Projects",
+        "profileDescription": "Update your personal information.",
+        "settingsDescription": "Adjust your workspace preferences.",
+        "projectsDescription": "Open a project to continue."
+      },
+      "primary": {
+        "start": "Start primary tour",
+        "workspace": "Workspace overview",
+        "projects": "Project list",
+        "workspaceDescription": "See your workspace overview.",
+        "projectsDescription": "Open a project to continue."
+      },
+      "placement": {
+        "start": "Explore placements",
+        "target": "Placement target",
+        "description": "This step uses the {placement} placement.",
+        "topStart": "top-start",
+        "top": "top",
+        "topEnd": "top-end",
+        "rightStart": "right-start",
+        "right": "right",
+        "rightEnd": "right-end",
+        "bottomStart": "bottom-start",
+        "bottom": "bottom",
+        "bottomEnd": "bottom-end",
+        "leftStart": "left-start",
+        "left": "left",
+        "leftEnd": "left-end"
+      },
+      "targetTypes": {
+        "start": "Start target tour",
+        "selector": "Selector target",
+        "selectorDescription": "Targets can be CSS selectors.",
+        "templateRef": "Template ref target",
+        "templateRefTitle": "Template ref target",
+        "templateRefDescription": "Use a resolver when the target comes from a Vue template ref."
+      },
+      "scrollLock": {
+        "lockedStart": "Start with page scroll locked",
+        "unlockedStart": "Start with page scrolling enabled",
+        "target": "Page scroll target",
+        "title": "Page scrolling",
+        "lockedDescription": "Page scrolling is locked while the tour is open.",
+        "unlockedDescription": "You can scroll the page while the tour is open."
       }
     }
   },
@@ -993,7 +1091,8 @@
   "docs": {
     "code": {
       "copy": "Copy code",
-      "copied": "Copied"
+      "copied": "Copied",
+      "exampleNotFound": "Example code not found for {component}/{file}."
     }
   }
 }

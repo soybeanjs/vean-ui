@@ -535,6 +535,9 @@ import {
   TooltipProvider,
   TooltipRoot,
   TooltipTrigger,
+  TourCompact,
+  TourRoot,
+  TourStepRoot,
   TreeItem,
   TreeMenuButton,
   TreeMenuCollapsible,
@@ -1886,6 +1889,16 @@ export const Tooltip = {
   Positioner: typeof TooltipPositioner;
   Popup: typeof TooltipPopup;
   Arrow: typeof TooltipArrow;
+};
+
+export const Tour = {
+  Root: TourRoot,
+  Compact: TourCompact,
+  StepRoot: TourStepRoot
+} as {
+  Root: typeof TourRoot;
+  Compact: typeof TourCompact;
+  StepRoot: typeof TourStepRoot;
 };
 
 export const Tree = {

@@ -102,6 +102,14 @@ const messages: LocaleMessages = {
   breadcrumb: {
     nav: 'Gezinti yolu'
   },
+  tour: {
+    ariaLabel: 'Ürün turu',
+    close: 'Turu kapat',
+    previous: 'Önceki',
+    next: 'Sonraki',
+    finish: 'Bitir',
+    stepOf: '{total} adımdan {current}. adım'
+  },
   stepper: {
     step: 'Adım {step}',
     ariaLabel: 'Adım adım ilerleme',

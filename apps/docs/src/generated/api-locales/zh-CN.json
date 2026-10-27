@@ -9354,6 +9354,141 @@
           "props": "TooltipRoot 组件的属性。"
         }
       },
+      "packages_aria_src_components_tour_types": {
+        "tourclosereason": "引导的关闭原因。",
+        "tourcompactemits": {
+          "callables": {
+            "change": "当前引导步骤变化时触发，参数为从 `0` 开始的步骤索引。",
+            "close": "关闭引导时触发。",
+            "finish": "",
+            "update_current": "",
+            "update_modelvalue": "",
+            "update_open": "打开状态变化时触发。"
+          },
+          "emits": "TourCompact 组件的事件。"
+        },
+        "tourcompactprops": {
+          "members": {
+            "arrowprops": "转发给箭头的属性。",
+            "autoscroll": "步骤打开时将当前目标滚动到可视区域。",
+            "closelabel": "关闭按钮的无障碍标签，默认使用当前语言。",
+            "closeonpressescape": "是否允许按 Escape 键关闭引导。",
+            "current": "",
+            "defaultcurrent": "",
+            "defaultopen": "非受控模式下的初始打开状态。",
+            "dir": "气泡内容的文字方向。",
+            "finishtext": "最后一步按钮的文本，默认使用当前语言。",
+            "lockscroll": "",
+            "maskclosable": "点击遮罩是否关闭引导。",
+            "modelvalue": "",
+            "nexttext": "下一步按钮的文本，默认使用当前语言。",
+            "open": "",
+            "placement": "默认的气泡位置；当前步骤可单独设置位置覆盖该值。",
+            "popupprops": "转发给气泡表面的属性。",
+            "portalprops": "转发给 Portal 的属性。",
+            "positionerprops": "转发给定位器的属性；`open`、`reference` 和 `placement` 由引导组件控制。",
+            "previoustext": "上一步按钮的文本，默认使用当前语言。",
+            "scrollintoviewoptions": "传给 `Element.scrollIntoView` 的选项。设为 `false` 可禁用滚动；默认使用平滑滚动，并将目标滚动到视口中央。",
+            "showarrow": "是否显示浮动气泡箭头。",
+            "showclose": "是否显示关闭按钮。",
+            "showmask": "是否显示页面遮罩和目标高亮区域。",
+            "showprogress": "是否显示本地化的步骤计数。",
+            "spotlightpadding": "目标元素边缘与高亮区域边缘之间的间距，单位为像素。",
+            "spotlightradius": "高亮镂空的圆角半径，单位为像素。",
+            "steps": ""
+          },
+          "props": "TourCompact 组件的属性。"
+        },
+        "tourcompactslots": {
+          "callables": {
+            "close": "自定义关闭按钮内容。",
+            "content": "",
+            "default": "",
+            "description": "自定义当前步骤的说明内容。",
+            "indicators": "替换默认的圆点指示器；`current` 从 `0` 开始计数。",
+            "next": "自定义下一步或完成按钮内容。",
+            "previous": "自定义上一步按钮内容。",
+            "title": "自定义当前步骤的标题。"
+          },
+          "slots": "TourCompact 组件提供的插槽。"
+        },
+        "tourrootemits": {
+          "callables": {
+            "change": "当前引导步骤变化时触发，参数为从 `0` 开始的步骤索引。",
+            "close": "关闭引导时触发。",
+            "finish": "",
+            "update_current": "",
+            "update_modelvalue": "",
+            "update_open": "打开状态变化时触发。"
+          },
+          "emits": "TourRoot 组件的事件。"
+        },
+        "tourrootprops": {
+          "members": {
+            "autoscroll": "步骤打开时将当前目标滚动到可视区域。",
+            "closeonpressescape": "是否允许按 Escape 键关闭引导。",
+            "current": "",
+            "defaultcurrent": "",
+            "defaultopen": "非受控模式下的初始打开状态。",
+            "dir": "气泡内容的文字方向。",
+            "lockscroll": "",
+            "modelvalue": "",
+            "open": "",
+            "placement": "默认的气泡位置；当前步骤可单独设置位置覆盖该值。",
+            "scrollintoviewoptions": "传给 `Element.scrollIntoView` 的选项。设为 `false` 可禁用滚动；默认使用平滑滚动，并将目标滚动到视口中央。",
+            "spotlightpadding": "目标元素边缘与高亮区域边缘之间的间距，单位为像素。",
+            "spotlightradius": "高亮镂空的圆角半径，单位为像素。",
+            "steps": ""
+          },
+          "props": "TourRoot 组件的属性。"
+        },
+        "tourslotprops": {
+          "members": {
+            "close": "关闭引导，可选传入关闭原因。",
+            "current": "当前步骤索引，从 `0` 开始；可用于自定义步骤指示器。",
+            "currentstep": "当前步骤编号，从 `1` 开始。",
+            "isfirststep": "当前步骤是否为第一步。",
+            "islaststep": "当前步骤是否为最后一步。",
+            "next": "切换到下一步；处于最后一步时结束引导。",
+            "previous": "存在上一步时切换到上一步。",
+            "step": "当前步骤配置。",
+            "total": "引导步骤总数；这是 `totalSteps` 的别名，可用于自定义步骤指示器。",
+            "totalsteps": "引导步骤总数。"
+          },
+          "slotprops": "TourRoot 默认插槽接收的参数。"
+        },
+        "tourstep": {
+          "members": {
+            "description": "步骤的补充说明内容。",
+            "placement": "当前步骤的气泡位置，会覆盖引导组件的默认位置。",
+            "showarrow": "",
+            "showclose": "",
+            "showmask": "",
+            "target": "要高亮并用于定位气泡的元素。",
+            "title": "步骤标题。"
+          }
+        },
+        "tourstepprops": {
+          "members": {
+            "description": "",
+            "placement": "",
+            "showarrow": "",
+            "showclose": "",
+            "showmask": "",
+            "target": "",
+            "title": ""
+          },
+          "props": ""
+        },
+        "tourstepslots": {
+          "callables": {
+            "default": ""
+          },
+          "slots": ""
+        },
+        "tourtarget": "",
+        "tourui": "引导组件的 UI 样式类覆盖配置。"
+      },
       "packages_aria_src_components_tree_menu_types": {
         "treemenubadgeprops": {
           "members": {
@@ -10023,6 +10158,7 @@
             "tag": "",
             "tagsinput": "",
             "textarea": "",
+            "tour": "",
             "treemenu": ""
           }
         }
@@ -14503,6 +14639,68 @@
             "trigger": "触发槽的自定义内容。"
           },
           "slots": "Tooltip 组件的插槽。"
+        }
+      },
+      "packages_ui_src_components_tour_types": {
+        "touremits": {
+          "callables": {
+            "change": "当前引导步骤变化时触发，参数为从 `0` 开始的步骤索引。",
+            "close": "关闭引导时触发。",
+            "finish": "",
+            "update_current": "",
+            "update_modelvalue": "",
+            "update_open": "打开状态变化时触发。"
+          },
+          "emits": "Tour 组件的事件。"
+        },
+        "tourprops": {
+          "members": {
+            "arrowprops": "转发给箭头的属性。",
+            "autoscroll": "步骤打开时将当前目标滚动到可视区域。",
+            "class": "应用于气泡表面的样式类。",
+            "closelabel": "关闭按钮的无障碍标签，默认使用当前语言。",
+            "closeonpressescape": "是否允许按 Escape 键关闭引导。",
+            "current": "",
+            "defaultcurrent": "",
+            "defaultopen": "非受控模式下的初始打开状态。",
+            "dir": "气泡内容的文字方向。",
+            "finishtext": "最后一步按钮的文本，默认使用当前语言。",
+            "lockscroll": "",
+            "maskclosable": "点击遮罩是否关闭引导。",
+            "modelvalue": "",
+            "nexttext": "下一步按钮的文本，默认使用当前语言。",
+            "open": "",
+            "placement": "默认的气泡位置；当前步骤可单独设置位置覆盖该值。",
+            "popupprops": "转发给气泡表面的属性。",
+            "portalprops": "转发给 Portal 的属性。",
+            "positionerprops": "转发给定位器的属性；`open`、`reference` 和 `placement` 由引导组件控制。",
+            "previoustext": "上一步按钮的文本，默认使用当前语言。",
+            "scrollintoviewoptions": "传给 `Element.scrollIntoView` 的选项。设为 `false` 可禁用滚动；默认使用平滑滚动，并将目标滚动到视口中央。",
+            "showarrow": "是否显示浮动气泡箭头。",
+            "showclose": "是否显示关闭按钮。",
+            "showmask": "是否显示页面遮罩和目标高亮区域。",
+            "showprogress": "是否显示本地化的步骤计数。",
+            "size": "组件的视觉尺寸。",
+            "spotlightpadding": "目标元素边缘与高亮区域边缘之间的间距，单位为像素。",
+            "spotlightradius": "高亮镂空的圆角半径，单位为像素。",
+            "steps": "",
+            "type": "设为 `primary` 时，气泡使用主色强调样式；不设置时使用默认样式。",
+            "ui": "组件各插槽的样式类覆盖配置。"
+          },
+          "props": "Tour 组件的属性。"
+        },
+        "tourslots": {
+          "callables": {
+            "close": "自定义关闭按钮内容。",
+            "content": "",
+            "default": "",
+            "description": "自定义当前步骤的说明内容。",
+            "indicators": "替换默认的圆点指示器；`current` 从 `0` 开始计数。",
+            "next": "自定义下一步或完成按钮内容。",
+            "previous": "自定义上一步按钮内容。",
+            "title": "自定义当前步骤的标题。"
+          },
+          "slots": "Tour 组件的插槽。"
         }
       },
       "packages_ui_src_components_tree_menu_types": {

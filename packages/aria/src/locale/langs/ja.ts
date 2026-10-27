@@ -102,6 +102,14 @@ const messages: LocaleMessages = {
   breadcrumb: {
     nav: 'パンくずリスト'
   },
+  tour: {
+    ariaLabel: '製品ツアー',
+    close: 'ツアーを閉じる',
+    previous: '前へ',
+    next: '次へ',
+    finish: '完了',
+    stepOf: '{total}ステップ中 {current}ステップ'
+  },
   stepper: {
     step: 'ステップ {step}',
     ariaLabel: 'ステップ進行状況',

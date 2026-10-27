@@ -126,7 +126,7 @@ export const menuData: MenuData[] = [
   {
     value: 'feedback',
     i18n: 'sidebar.feedback',
-    items: ['alert', 'toast']
+    items: ['alert', 'toast', 'tour']
   },
   {
     value: 'overlay',

@@ -102,6 +102,14 @@ const messages: LocaleMessages = {
   breadcrumb: {
     nav: 'Хлебные крошки'
   },
+  tour: {
+    ariaLabel: 'Обзор продукта',
+    close: 'Закрыть обзор',
+    previous: 'Назад',
+    next: 'Далее',
+    finish: 'Завершить',
+    stepOf: 'Шаг {current} из {total}'
+  },
   stepper: {
     step: 'Шаг {step}',
     ariaLabel: 'Пошаговый прогресс',

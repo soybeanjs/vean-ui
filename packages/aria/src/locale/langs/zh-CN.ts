@@ -102,6 +102,14 @@ const messages: LocaleMessages = {
   breadcrumb: {
     nav: '面包屑'
   },
+  tour: {
+    ariaLabel: '产品功能引导',
+    close: '关闭引导',
+    previous: '上一步',
+    next: '下一步',
+    finish: '完成',
+    stepOf: '第 {current} 步，共 {total} 步'
+  },
   stepper: {
     step: '第 {step} 步',
     ariaLabel: '分步进度',

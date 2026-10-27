@@ -429,6 +429,17 @@
       "tooltip": {
         "basic": "基础"
       },
+      "tour": {
+        "basic": "基础",
+        "controlled-step": "受控步骤",
+        "custom-content": "自定义内容",
+        "mask-configuration": "遮罩配置",
+        "custom-indicators": "自定义指示器",
+        "primary-appearance": "强调样式",
+        "placement": "位置",
+        "target-types": "目标类型",
+        "scroll-lock": "页面滚动锁定"
+      },
       "theme-base-select": {
         "basic": "基础"
       },
@@ -543,6 +554,93 @@
       "mermaid": {
         "basic": "基础",
         "code-mode": "代码模式"
+      }
+    },
+    "tour": {
+      "common": {
+        "start": "开始引导"
+      },
+      "basic": {
+        "profile": "个人资料",
+        "settings": "设置",
+        "profileTitle": "个人资料",
+        "profileDescription": "在这里管理个人资料。",
+        "settingsTitle": "设置",
+        "settingsDescription": "设置工作区偏好。"
+      },
+      "controlled": {
+        "startAtStep": "从第 {step} 步开始",
+        "resetStep": "重置步骤",
+        "workspace": "工作区概览",
+        "projectList": "项目列表",
+        "workspaceTitle": "工作区概览",
+        "workspaceDescription": "浏览工作区的主要信息。",
+        "projectsTitle": "项目",
+        "projectsDescription": "打开项目后可继续操作。"
+      },
+      "customContent": {
+        "start": "显示自定义引导",
+        "target": "自定义目标",
+        "title": "自定义内容",
+        "description": "使用自定义布局替换默认引导面板。",
+        "gotIt": "知道了"
+      },
+      "mask": {
+        "on": "页面遮罩：开启",
+        "off": "页面遮罩：关闭",
+        "start": "开始引导",
+        "target": "个人资料设置",
+        "title": "个人资料",
+        "description": "可以选择是否显示页面遮罩。"
+      },
+      "indicators": {
+        "start": "开始引导",
+        "profile": "个人资料",
+        "settings": "设置",
+        "projects": "项目",
+        "profileDescription": "更新个人资料。",
+        "settingsDescription": "管理工作区偏好设置。",
+        "projectsDescription": "打开项目后可继续操作。"
+      },
+      "primary": {
+        "start": "查看主色引导样式",
+        "workspace": "工作区概览",
+        "projects": "项目列表",
+        "workspaceDescription": "浏览工作区概览。",
+        "projectsDescription": "打开项目后可继续操作。"
+      },
+      "placement": {
+        "start": "查看气泡的不同位置",
+        "target": "目标元素",
+        "description": "气泡位于目标的{placement}。",
+        "topStart": "上方靠左",
+        "top": "上方",
+        "topEnd": "上方靠右",
+        "rightStart": "右侧靠上",
+        "right": "右侧",
+        "rightEnd": "右侧靠下",
+        "bottomStart": "下方靠左",
+        "bottom": "下方",
+        "bottomEnd": "下方靠右",
+        "leftStart": "左侧靠上",
+        "left": "左侧",
+        "leftEnd": "左侧靠下"
+      },
+      "targetTypes": {
+        "start": "体验不同目标类型",
+        "selector": "CSS 选择器目标",
+        "selectorDescription": "通过 CSS 选择器定位引导目标。",
+        "templateRef": "Vue 模板 ref",
+        "templateRefTitle": "Vue 模板 ref",
+        "templateRefDescription": "也可以通过函数从 Vue 模板 ref 中获取目标元素。"
+      },
+      "scrollLock": {
+        "lockedStart": "开始引导并锁定页面滚动",
+        "unlockedStart": "开始引导并允许页面滚动",
+        "target": "页面滚动目标",
+        "title": "页面滚动",
+        "lockedDescription": "引导打开期间，页面滚动已锁定。",
+        "unlockedDescription": "引导打开期间，页面仍可滚动。"
       }
     }
   },
@@ -993,7 +1091,8 @@
   "docs": {
     "code": {
       "copy": "复制代码",
-      "copied": "已复制"
+      "copied": "已复制",
+      "exampleNotFound": "未找到 {component}/{file} 的示例代码。"
     }
   }
 }

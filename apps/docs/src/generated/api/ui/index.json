@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:28:42.215Z",
+  "generatedAt": "2026-10-27T01:53:16.461Z",
   "schemaVersion": 4,
   "components": {
     "accordion": {
@@ -1012,6 +1012,11 @@
         "TooltipRoot",
         "TooltipTrigger"
       ]
+    },
+    "tour": {
+      "component": "tour",
+      "file": "tour.json",
+      "symbols": ["Tour", "TourCompact", "TourRoot", "TourStep", "TourStepRoot"]
     },
     "tree": {
       "component": "tree",

@@ -1,0 +1,2786 @@
+{
+  "component": "tour",
+  "symbols": {
+    "Tour": {
+      "props": {
+        "kind": "props",
+        "name": "TourProps",
+        "type": "Interface TourProps",
+        "resolvedType": "{ class?: string | false | Record<string, any> | ClassValue[] | null; type?: 'primary'; size?: ThemeSize; ui?: Partial<TourUi>; showMask?: boolean; maskClosable?: boolean; showArrow?: boolean; showClose?: boolean; showProgress?: boolean; previousText?: string; nextText?: string; finishText?: string; closeLabel?: string; portalProps?: PopperPortalProps; positionerProps?: Omit<PopperPositioningPositionerProps, 'open' | 'placement' | 'reference'>; popupProps?: PopperPositioningPopupProps; arrowProps?: PopperArrowProps; steps?: readonly TourStep[]; modelValue?: boolean; open?: boolean; defaultOpen?: boolean; current?: number; defaultCurrent?: number; placement?: Placement; dir?: Direction; lockScroll?: boolean; autoScroll?: boolean; scrollIntoViewOptions?: boolean | ScrollIntoViewOptions; closeOnPressEscape?: boolean; spotlightPadding?: number; spotlightRadius?: number }",
+        "description": "Properties for the Tour component.",
+        "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.props",
+        "sourcePath": "packages/ui/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "class",
+            "type": "string | false | Record<string, any> | ClassValue[] | null",
+            "required": false,
+            "description": "Class applied to the popup surface.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.class",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ClassValue",
+                "kind": "typeAlias",
+                "type": "string | false | Record<string, any> | ClassValue[] | null | undefined",
+                "resolvedType": "string | false | Record<string, any> | ClassValue[] | null | undefined",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.classvalue",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "type",
+            "type": "'primary'",
+            "required": false,
+            "description": "Use the emphasized primary bubble appearance. Omit for the default appearance.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.type",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "size",
+            "type": "ThemeSize",
+            "required": false,
+            "description": "Visual size of the component.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.size",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ThemeSize",
+                "kind": "typeAlias",
+                "type": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "resolvedType": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "description": "the component size / density preset.",
+                "descriptionKey": "api.generated.packages_theme_src_types.themesize",
+                "sourcePath": "packages/theme/src/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "ui",
+            "type": "Partial<TourUi>",
+            "required": false,
+            "description": "Per-slot class overrides for the component.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.ui",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourUi",
+                "kind": "typeAlias",
+                "type": "{ header: ClassValue; trigger: ClassValue; description: ClassValue; title: ClassValue; anchor: ClassValue; close: ClassValue; indicator: ClassValue; footer: ClassValue; positioner: ClassValue; popup: ClassValue; arrow: ClassValue; subTrigger: ClassValue; next: ClassValue; previous: ClassValue; actions: ClassValue; mask: ClassValue; indicators: ClassValue; progress: ClassValue; }",
+                "resolvedType": null,
+                "description": "UI class overrides for the Tour component.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourui",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "showMask",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the dimming mask and target spotlight.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.showmask",
+            "default": "true",
+            "inheritedFrom": "showMask",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "maskClosable",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether clicking the mask closes the tour.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.maskclosable",
+            "default": "false",
+            "inheritedFrom": "maskClosable",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showArrow",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the popper arrow.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.showarrow",
+            "default": "true",
+            "inheritedFrom": "showArrow",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showClose",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the close button.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.showclose",
+            "default": "true",
+            "inheritedFrom": "showClose",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showProgress",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the localized step counter.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.showprogress",
+            "default": "true",
+            "inheritedFrom": "showProgress",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "previousText",
+            "type": "string",
+            "required": false,
+            "description": "Text for the previous-step button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.previoustext",
+            "default": null,
+            "inheritedFrom": "previousText",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "nextText",
+            "type": "string",
+            "required": false,
+            "description": "Text for the next-step button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.nexttext",
+            "default": null,
+            "inheritedFrom": "nextText",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "finishText",
+            "type": "string",
+            "required": false,
+            "description": "Text for the final-step button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.finishtext",
+            "default": null,
+            "inheritedFrom": "finishText",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "closeLabel",
+            "type": "string",
+            "required": false,
+            "description": "Accessible label for the close button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.closelabel",
+            "default": null,
+            "inheritedFrom": "closeLabel",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "portalProps",
+            "type": "PopperPortalProps",
+            "required": false,
+            "description": "Properties forwarded to the portal.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.portalprops",
+            "default": null,
+            "inheritedFrom": "portalProps",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperPortalProps",
+                "kind": "interface",
+                "type": "PopperPortalProps",
+                "resolvedType": "{ to?: string | HTMLElement; disabled?: boolean; defer?: boolean; forceMount?: boolean }",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [
+                  {
+                    "name": "to",
+                    "type": "string | HTMLElement",
+                    "required": false,
+                    "description": "Vue native teleport component prop `:to`\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#basic-usage}",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.to",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "disabled",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Disable teleport and render the component inline\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#disabling-teleport}",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.disabled",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "defer",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.defer",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "forceMount",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.forcemount",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/types/component.ts",
+                    "referencedTypes": []
+                  }
+                ],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "positionerProps",
+            "type": "Omit<PopperPositioningPositionerProps, 'open' | 'placement' | 'reference'>",
+            "required": false,
+            "description": "Properties forwarded to the floating positioner. `open`, `reference` and `placement` are controlled by Tour.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.positionerprops",
+            "default": null,
+            "inheritedFrom": "positionerProps",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperPositioningPositionerProps",
+                "kind": "interface",
+                "type": "PopperPositioningPositionerProps",
+                "resolvedType": null,
+                "description": "Properties for the positioning-only positioner. Same positioning surface as\n`PopperPositionerProps` minus the interactive-shell concerns (presence, focus trap,\nhoverable content) plus an `open` input the domain layer wires to its own state.\nFields are spelled out (not `Omit`) so the SFC compiler can resolve runtime props keys.",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioningpositionerprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "popupProps",
+            "type": "PopperPositioningPopupProps",
+            "required": false,
+            "description": "Properties forwarded to the popup surface.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.popupprops",
+            "default": null,
+            "inheritedFrom": "popupProps",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperPositioningPopupProps",
+                "kind": "interface",
+                "type": "PopperPositioningPopupProps",
+                "resolvedType": null,
+                "description": "Properties for the positioning-only popup.",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioningpopupprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "arrowProps",
+            "type": "PopperArrowProps",
+            "required": false,
+            "description": "Properties forwarded to the arrow.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.arrowprops",
+            "default": null,
+            "inheritedFrom": "arrowProps",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperArrowProps",
+                "kind": "interface",
+                "type": "PopperArrowProps",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperarrowprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "steps",
+            "type": "readonly TourStep[]",
+            "required": false,
+            "description": "Ordered steps for data-driven usage. Omit when using TourStep children.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.steps",
+            "default": null,
+            "inheritedFrom": "steps",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "modelValue",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the tour is open. Bind with `v-model`.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.modelvalue",
+            "default": null,
+            "inheritedFrom": "modelValue",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "open",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the tour is open. Alias for `modelValue`, bind with `v-model:open`.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.open",
+            "default": null,
+            "inheritedFrom": "open",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "defaultOpen",
+            "type": "boolean",
+            "required": false,
+            "description": "Initial open state when uncontrolled.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.defaultopen",
+            "default": null,
+            "inheritedFrom": "defaultOpen",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "current",
+            "type": "number",
+            "required": false,
+            "description": "Zero-based active step. Bind with `v-model:current`.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.current",
+            "default": null,
+            "inheritedFrom": "current",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "defaultCurrent",
+            "type": "number",
+            "required": false,
+            "description": "Initial active step when uncontrolled. Defaults to `0`.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.defaultcurrent",
+            "default": null,
+            "inheritedFrom": "defaultCurrent",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "placement",
+            "type": "Placement",
+            "required": false,
+            "description": "Default popup placement, overridden by the active step's placement.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.placement",
+            "default": "'bottom'",
+            "inheritedFrom": "placement",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Placement",
+                "kind": "typeAlias",
+                "type": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "resolvedType": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.placement",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "dir",
+            "type": "Direction",
+            "required": false,
+            "description": "Reading direction for the floating popup.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.dir",
+            "default": null,
+            "inheritedFrom": "dir",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Direction",
+                "kind": "typeAlias",
+                "type": "'ltr' | 'rtl'",
+                "resolvedType": "'ltr' | 'rtl'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "lockScroll",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether page scrolling is locked while the tour is open.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.lockscroll",
+            "default": "true",
+            "inheritedFrom": "lockScroll",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "autoScroll",
+            "type": "boolean",
+            "required": false,
+            "description": "Scroll the active target into view when a step opens.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.autoscroll",
+            "default": "true",
+            "inheritedFrom": "autoScroll",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "scrollIntoViewOptions",
+            "type": "boolean | ScrollIntoViewOptions",
+            "required": false,
+            "description": "Options passed to `Element.scrollIntoView`. `false` disables scrolling. Defaults to smooth, centered scrolling.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.scrollintoviewoptions",
+            "default": "true",
+            "inheritedFrom": "scrollIntoViewOptions",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ScrollIntoViewOptions",
+                "kind": "interface",
+                "type": "ScrollIntoViewOptions",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2/node_modules/typescript-native-bridge/lib/lib.dom.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "closeOnPressEscape",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether Escape closes the tour.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.closeonpressescape",
+            "default": "true",
+            "inheritedFrom": "closeOnPressEscape",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "spotlightPadding",
+            "type": "number",
+            "required": false,
+            "description": "Space between the target bounds and the spotlight cutout, in pixels.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.spotlightpadding",
+            "default": "6",
+            "inheritedFrom": "spotlightPadding",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "spotlightRadius",
+            "type": "number",
+            "required": false,
+            "description": "Corner radius of the spotlight cutout, in pixels.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourprops.members.spotlightradius",
+            "default": "2",
+            "inheritedFrom": "spotlightRadius",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      },
+      "emits": {
+        "kind": "emits",
+        "name": "TourEmits",
+        "type": "TypeAlias TourEmits: TourCompactEmits",
+        "resolvedType": "{ \"update:modelValue\": [value: boolean]; \"update:open\": [value: boolean]; \"update:current\": [value: number]; close: [reason: TourCloseReason]; finish: [current: number]; change: [current: number] }",
+        "description": "Events for the Tour component.",
+        "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.emits",
+        "sourcePath": "packages/ui/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [],
+        "callables": [
+          {
+            "name": "update:modelValue",
+            "type": "[value: boolean]",
+            "parameters": "value: boolean",
+            "required": true,
+            "description": "Emitted when the open state changes.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "update:open",
+            "type": "[value: boolean]",
+            "parameters": "value: boolean",
+            "required": true,
+            "description": "Emitted when the open state changes.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "update:current",
+            "type": "[value: number]",
+            "parameters": "value: number",
+            "required": true,
+            "description": "Emitted when the active zero-based step changes.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.callables.update_current",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "close",
+            "type": "[reason: TourCloseReason]",
+            "parameters": "reason: TourCloseReason",
+            "required": true,
+            "description": "Emitted when the tour closes.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.callables.close",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourCloseReason",
+                "kind": "typeAlias",
+                "type": "'escape' | 'mask' | 'close-button' | 'finish'",
+                "resolvedType": null,
+                "description": "Why the tour was closed.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourclosereason",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "finish",
+            "type": "[current: number]",
+            "parameters": "current: number",
+            "required": true,
+            "description": "Emitted after the final step is completed with its zero-based index.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.callables.finish",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "change",
+            "type": "[current: number]",
+            "parameters": "current: number",
+            "required": true,
+            "description": "Emitted when the active step changes. The index starts at `0`.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.touremits.callables.change",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "referencedTypes": [
+          {
+            "name": "TourRootEmits",
+            "kind": "typeAlias",
+            "type": "{ 'update:modelValue': [value: boolean]; 'update:open': [value: boolean]; 'update:current': [value: number]; close: [reason: import(\"@vean/aria\").TourCloseReason]; finish: [current: number]; change: [current: number]; }",
+            "resolvedType": "{ \"update:modelValue\": [value: boolean]; \"update:open\": [value: boolean]; \"update:current\": [value: number]; close: [reason: TourCloseReason]; finish: [current: number]; change: [current: number] }",
+            "description": "Events for the TourRoot component.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "typeParameters": [],
+            "external": false,
+            "members": [],
+            "callables": [
+              {
+                "name": "update:modelValue",
+                "type": "[value: boolean]",
+                "parameters": "value: boolean",
+                "required": true,
+                "description": "Emitted when the open state changes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "update:open",
+                "type": "[value: boolean]",
+                "parameters": "value: boolean",
+                "required": true,
+                "description": "Emitted when the open state changes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "update:current",
+                "type": "[value: number]",
+                "parameters": "value: number",
+                "required": true,
+                "description": "Emitted when the active zero-based step changes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_current",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "close",
+                "type": "[reason: TourCloseReason]",
+                "parameters": "reason: TourCloseReason",
+                "required": true,
+                "description": "Emitted when the tour closes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.close",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "finish",
+                "type": "[current: number]",
+                "parameters": "current: number",
+                "required": true,
+                "description": "Emitted after the final step is completed with its zero-based index.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.finish",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "change",
+                "type": "[current: number]",
+                "parameters": "current: number",
+                "required": true,
+                "description": "Emitted when the active step changes. The index starts at `0`.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              }
+            ]
+          }
+        ]
+      },
+      "slots": {
+        "kind": "slots",
+        "name": "TourSlots",
+        "type": "TypeAlias TourSlots: TourCompactSlots",
+        "resolvedType": "{ TourStepRoot?: (() => VNodeChild); content?: ((props: TourSlotProps) => VNodeChild); title?: ((props: TourSlotProps) => VNodeChild); description?: ((props: TourSlotProps) => VNodeChild); indicators?: ((props: TourSlotProps) => VNodeChild); close?: ((props: TourSlotProps) => VNodeChild); previous?: ((props: TourSlotProps) => VNodeChild); next?: ((props: TourSlotProps) => VNodeChild) }",
+        "description": "Slots for the Tour component.",
+        "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.slots",
+        "sourcePath": "packages/ui/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [],
+        "callables": [
+          {
+            "name": "default",
+            "type": "(() => VNodeChild) | undefined",
+            "parameters": "(() => VNodeChild) | undefined",
+            "required": false,
+            "description": "Ordered TourStep children.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.default",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "content",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Replaces the complete default popup content.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.content",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "title",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom active step title.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.title",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom active step description.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.description",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "indicators",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Replaces the default step indicator dots. `current` is zero-based.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.indicators",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "close",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom close button content.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.close",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "previous",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom previous button content.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.previous",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "next",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom next or finish button content.",
+            "descriptionKey": "api.generated.packages_ui_src_components_tour_types.tourslots.callables.next",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "referencedTypes": [
+          {
+            "name": "TourCompactSlots",
+            "kind": "typeAlias",
+            "type": "{ TourStepRoot?: () => import(\"vue\").VNodeChild; content?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; title?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; description?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; indicators?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; close?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; previous?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; next?: (props: import(\"@vean/aria\").TourSlotProps) => import(\"vue\").VNodeChild; }",
+            "resolvedType": "{ TourStepRoot?: (() => VNodeChild); content?: ((props: TourSlotProps) => VNodeChild); title?: ((props: TourSlotProps) => VNodeChild); description?: ((props: TourSlotProps) => VNodeChild); indicators?: ((props: TourSlotProps) => VNodeChild); close?: ((props: TourSlotProps) => VNodeChild); previous?: ((props: TourSlotProps) => VNodeChild); next?: ((props: TourSlotProps) => VNodeChild) }",
+            "description": "Slots exposed by the TourCompact component.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "typeParameters": [],
+            "external": false,
+            "members": [],
+            "callables": [
+              {
+                "name": "default",
+                "type": "(() => VNodeChild) | undefined",
+                "parameters": "(() => VNodeChild) | undefined",
+                "required": false,
+                "description": "Ordered TourStep children.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.default",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "content",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Replaces the complete default popup content.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.content",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "title",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Custom active step title.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.title",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "description",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Custom active step description.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.description",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "indicators",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Replaces the default step indicator dots. `current` is zero-based.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.indicators",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "close",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Custom close button content.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.close",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "previous",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Custom previous button content.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.previous",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "next",
+                "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+                "required": false,
+                "description": "Custom next or finish button content.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.next",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              }
+            ]
+          }
+        ]
+      },
+      "slotProps": {
+        "kind": "slotProps",
+        "name": "TourSlotProps",
+        "type": "Interface TourSlotProps",
+        "resolvedType": "{ step: TourStep | undefined; currentStep: number; current: number; totalSteps: number; total: number; isFirstStep: boolean; isLastStep: boolean; previous: () => void; next: () => void; close: (reason?: TourCloseReason) => void }",
+        "description": "Props exposed to the TourRoot default slot.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.slotprops",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "step",
+            "type": "TourStep | undefined",
+            "required": true,
+            "description": "Active step definition.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.step",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourStep",
+                "kind": "interface",
+                "type": "TourStep",
+                "resolvedType": "{ target?: TourTarget; title?: string; description?: string; placement?: Placement; showMask?: boolean; showArrow?: boolean; showClose?: boolean }",
+                "description": "Content and target configuration for one tour step.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [
+                  {
+                    "name": "target",
+                    "type": "TourTarget",
+                    "required": false,
+                    "description": "Element to highlight and position the bubble against.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.target",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "title",
+                    "type": "string",
+                    "required": false,
+                    "description": "Step heading.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.title",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "description",
+                    "type": "string",
+                    "required": false,
+                    "description": "Supporting step content.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.description",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "placement",
+                    "type": "Placement",
+                    "required": false,
+                    "description": "Step-specific popup placement. Overrides the tour-level placement.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.placement",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "showMask",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Whether to render the mask for this step. Overrides the tour-level setting.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.showmask",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "showArrow",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Whether to render the popup arrow for this step. Overrides the tour-level setting.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.showarrow",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "showClose",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Whether to render the close button for this step. Overrides the tour-level setting.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.showclose",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/tour/types.ts",
+                    "referencedTypes": []
+                  }
+                ],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "currentStep",
+            "type": "number",
+            "required": true,
+            "description": "Active step number, starting from `1`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.currentstep",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "current",
+            "type": "number",
+            "required": true,
+            "description": "Active step index, starting from `0`; useful for custom indicators.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.current",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "totalSteps",
+            "type": "number",
+            "required": true,
+            "description": "Number of configured tour steps.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.totalsteps",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "total",
+            "type": "number",
+            "required": true,
+            "description": "Number of configured tour steps; alias for custom indicators.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.total",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "isFirstStep",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether the active step is the first step.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.isfirststep",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "isLastStep",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether the active step is the final step.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.islaststep",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "previous",
+            "type": "() => void",
+            "required": true,
+            "description": "Move to the previous step when one exists.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.previous",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "next",
+            "type": "() => void",
+            "required": true,
+            "description": "Move to the next step or finish the tour.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.next",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "close",
+            "type": "(reason?: TourCloseReason) => void",
+            "required": true,
+            "description": "Close the tour with an optional close reason.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops.members.close",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    },
+    "TourCompact": {
+      "props": {
+        "kind": "props",
+        "name": "TourCompactProps",
+        "type": "Interface TourCompactProps",
+        "resolvedType": "{ showMask?: boolean; maskClosable?: boolean; showArrow?: boolean; showClose?: boolean; showProgress?: boolean; previousText?: string; nextText?: string; finishText?: string; closeLabel?: string; portalProps?: PopperPortalProps; positionerProps?: Omit<PopperPositioningPositionerProps, 'open' | 'placement' | 'reference'>; popupProps?: PopperPositioningPopupProps; arrowProps?: PopperArrowProps; steps?: readonly TourStep[]; modelValue?: boolean; open?: boolean; defaultOpen?: boolean; current?: number; defaultCurrent?: number; placement?: Placement; dir?: Direction; lockScroll?: boolean; autoScroll?: boolean; scrollIntoViewOptions?: boolean | ScrollIntoViewOptions; closeOnPressEscape?: boolean; spotlightPadding?: number; spotlightRadius?: number }",
+        "description": "Properties for the TourCompact component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.props",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "showMask",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the dimming mask and target spotlight.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.showmask",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "maskClosable",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether clicking the mask closes the tour.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.maskclosable",
+            "default": "false",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showArrow",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the popper arrow.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.showarrow",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showClose",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the close button.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.showclose",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showProgress",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the localized step counter.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.showprogress",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "previousText",
+            "type": "string",
+            "required": false,
+            "description": "Text for the previous-step button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.previoustext",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "nextText",
+            "type": "string",
+            "required": false,
+            "description": "Text for the next-step button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.nexttext",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "finishText",
+            "type": "string",
+            "required": false,
+            "description": "Text for the final-step button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.finishtext",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "closeLabel",
+            "type": "string",
+            "required": false,
+            "description": "Accessible label for the close button. Defaults to the active locale.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.closelabel",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "portalProps",
+            "type": "PopperPortalProps",
+            "required": false,
+            "description": "Properties forwarded to the portal.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.portalprops",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperPortalProps",
+                "kind": "interface",
+                "type": "PopperPortalProps",
+                "resolvedType": "{ to?: string | HTMLElement; disabled?: boolean; defer?: boolean; forceMount?: boolean }",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [
+                  {
+                    "name": "to",
+                    "type": "string | HTMLElement",
+                    "required": false,
+                    "description": "Vue native teleport component prop `:to`\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#basic-usage}",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.to",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "disabled",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Disable teleport and render the component inline\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#disabling-teleport}",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.disabled",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "defer",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Defer the resolving of a Teleport target until other parts of the application have mounted (requires Vue 3.5.0+)\n\n{@link https://vuejs.org/guide/built-ins/teleport.html#deferred-teleport}",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.defer",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/components/portal/types.ts",
+                    "referencedTypes": []
+                  },
+                  {
+                    "name": "forceMount",
+                    "type": "boolean",
+                    "required": false,
+                    "description": "Used to force mounting when more control is needed.\n\nUseful when controlling animation with Vue animation libraries.",
+                    "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperportalprops.members.forcemount",
+                    "default": null,
+                    "inheritedFrom": null,
+                    "sourcePath": "packages/aria/src/types/component.ts",
+                    "referencedTypes": []
+                  }
+                ],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "positionerProps",
+            "type": "Omit<PopperPositioningPositionerProps, 'open' | 'placement' | 'reference'>",
+            "required": false,
+            "description": "Properties forwarded to the floating positioner. `open`, `reference` and `placement` are controlled by Tour.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.positionerprops",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperPositioningPositionerProps",
+                "kind": "interface",
+                "type": "PopperPositioningPositionerProps",
+                "resolvedType": null,
+                "description": "Properties for the positioning-only positioner. Same positioning surface as\n`PopperPositionerProps` minus the interactive-shell concerns (presence, focus trap,\nhoverable content) plus an `open` input the domain layer wires to its own state.\nFields are spelled out (not `Omit`) so the SFC compiler can resolve runtime props keys.",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioningpositionerprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "popupProps",
+            "type": "PopperPositioningPopupProps",
+            "required": false,
+            "description": "Properties forwarded to the popup surface.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.popupprops",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperPositioningPopupProps",
+                "kind": "interface",
+                "type": "PopperPositioningPopupProps",
+                "resolvedType": null,
+                "description": "Properties for the positioning-only popup.",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperpositioningpopupprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "arrowProps",
+            "type": "PopperArrowProps",
+            "required": false,
+            "description": "Properties forwarded to the arrow.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.arrowprops",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "PopperArrowProps",
+                "kind": "interface",
+                "type": "PopperArrowProps",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_components_popper_types.popperarrowprops",
+                "sourcePath": "packages/aria/src/components/popper/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "steps",
+            "type": "readonly TourStep[]",
+            "required": false,
+            "description": "Ordered steps for data-driven usage. Omit when using TourStep children.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.steps",
+            "default": null,
+            "inheritedFrom": "steps",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "modelValue",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the tour is open. Bind with `v-model`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.modelvalue",
+            "default": null,
+            "inheritedFrom": "modelValue",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "open",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the tour is open. Alias for `modelValue`, bind with `v-model:open`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.open",
+            "default": null,
+            "inheritedFrom": "open",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "defaultOpen",
+            "type": "boolean",
+            "required": false,
+            "description": "Initial open state when uncontrolled.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.defaultopen",
+            "default": null,
+            "inheritedFrom": "defaultOpen",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "current",
+            "type": "number",
+            "required": false,
+            "description": "Zero-based active step. Bind with `v-model:current`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.current",
+            "default": null,
+            "inheritedFrom": "current",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "defaultCurrent",
+            "type": "number",
+            "required": false,
+            "description": "Initial active step when uncontrolled. Defaults to `0`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.defaultcurrent",
+            "default": null,
+            "inheritedFrom": "defaultCurrent",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "placement",
+            "type": "Placement",
+            "required": false,
+            "description": "Default popup placement, overridden by the active step's placement.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.placement",
+            "default": "'bottom'",
+            "inheritedFrom": "placement",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Placement",
+                "kind": "typeAlias",
+                "type": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "resolvedType": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.placement",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "dir",
+            "type": "Direction",
+            "required": false,
+            "description": "Reading direction for the floating popup.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.dir",
+            "default": null,
+            "inheritedFrom": "dir",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Direction",
+                "kind": "typeAlias",
+                "type": "'ltr' | 'rtl'",
+                "resolvedType": "'ltr' | 'rtl'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "lockScroll",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether page scrolling is locked while the tour is open.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.lockscroll",
+            "default": "true",
+            "inheritedFrom": "lockScroll",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "autoScroll",
+            "type": "boolean",
+            "required": false,
+            "description": "Scroll the active target into view when a step opens.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.autoscroll",
+            "default": "true",
+            "inheritedFrom": "autoScroll",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "scrollIntoViewOptions",
+            "type": "boolean | ScrollIntoViewOptions",
+            "required": false,
+            "description": "Options passed to `Element.scrollIntoView`. `false` disables scrolling. Defaults to smooth, centered scrolling.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.scrollintoviewoptions",
+            "default": "true",
+            "inheritedFrom": "scrollIntoViewOptions",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ScrollIntoViewOptions",
+                "kind": "interface",
+                "type": "ScrollIntoViewOptions",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2/node_modules/typescript-native-bridge/lib/lib.dom.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "closeOnPressEscape",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether Escape closes the tour.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.closeonpressescape",
+            "default": "true",
+            "inheritedFrom": "closeOnPressEscape",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "spotlightPadding",
+            "type": "number",
+            "required": false,
+            "description": "Space between the target bounds and the spotlight cutout, in pixels.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.spotlightpadding",
+            "default": "6",
+            "inheritedFrom": "spotlightPadding",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "spotlightRadius",
+            "type": "number",
+            "required": false,
+            "description": "Corner radius of the spotlight cutout, in pixels.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactprops.members.spotlightradius",
+            "default": "2",
+            "inheritedFrom": "spotlightRadius",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      },
+      "emits": {
+        "kind": "emits",
+        "name": "TourCompactEmits",
+        "type": "TypeAlias TourCompactEmits: TourRootEmits",
+        "resolvedType": "{ \"update:modelValue\": [value: boolean]; \"update:open\": [value: boolean]; \"update:current\": [value: number]; close: [reason: TourCloseReason]; finish: [current: number]; change: [current: number] }",
+        "description": "Events for the TourCompact component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.emits",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [],
+        "callables": [
+          {
+            "name": "update:modelValue",
+            "type": "[value: boolean]",
+            "parameters": "value: boolean",
+            "required": true,
+            "description": "Emitted when the open state changes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "update:open",
+            "type": "[value: boolean]",
+            "parameters": "value: boolean",
+            "required": true,
+            "description": "Emitted when the open state changes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "update:current",
+            "type": "[value: number]",
+            "parameters": "value: number",
+            "required": true,
+            "description": "Emitted when the active zero-based step changes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.callables.update_current",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "close",
+            "type": "[reason: TourCloseReason]",
+            "parameters": "reason: TourCloseReason",
+            "required": true,
+            "description": "Emitted when the tour closes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.callables.close",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourCloseReason",
+                "kind": "typeAlias",
+                "type": "'escape' | 'mask' | 'close-button' | 'finish'",
+                "resolvedType": null,
+                "description": "Why the tour was closed.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourclosereason",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "finish",
+            "type": "[current: number]",
+            "parameters": "current: number",
+            "required": true,
+            "description": "Emitted after the final step is completed with its zero-based index.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.callables.finish",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "change",
+            "type": "[current: number]",
+            "parameters": "current: number",
+            "required": true,
+            "description": "Emitted when the active step changes. The index starts at `0`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactemits.callables.change",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "referencedTypes": [
+          {
+            "name": "TourRootEmits",
+            "kind": "typeAlias",
+            "type": "{ 'update:modelValue': [value: boolean]; 'update:open': [value: boolean]; 'update:current': [value: number]; close: [reason: TourCloseReason]; finish: [current: number]; change: [current: number]; }",
+            "resolvedType": "{ \"update:modelValue\": [value: boolean]; \"update:open\": [value: boolean]; \"update:current\": [value: number]; close: [reason: TourCloseReason]; finish: [current: number]; change: [current: number] }",
+            "description": "Events for the TourRoot component.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "typeParameters": [],
+            "external": false,
+            "members": [],
+            "callables": [
+              {
+                "name": "update:modelValue",
+                "type": "[value: boolean]",
+                "parameters": "value: boolean",
+                "required": true,
+                "description": "Emitted when the open state changes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_modelvalue",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "update:open",
+                "type": "[value: boolean]",
+                "parameters": "value: boolean",
+                "required": true,
+                "description": "Emitted when the open state changes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_open",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "update:current",
+                "type": "[value: number]",
+                "parameters": "value: number",
+                "required": true,
+                "description": "Emitted when the active zero-based step changes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_current",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "close",
+                "type": "[reason: TourCloseReason]",
+                "parameters": "reason: TourCloseReason",
+                "required": true,
+                "description": "Emitted when the tour closes.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.close",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "finish",
+                "type": "[current: number]",
+                "parameters": "current: number",
+                "required": true,
+                "description": "Emitted after the final step is completed with its zero-based index.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.finish",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "change",
+                "type": "[current: number]",
+                "parameters": "current: number",
+                "required": true,
+                "description": "Emitted when the active step changes. The index starts at `0`.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.change",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              }
+            ]
+          }
+        ]
+      },
+      "slots": {
+        "kind": "slots",
+        "name": "TourCompactSlots",
+        "type": "TypeAlias TourCompactSlots",
+        "resolvedType": "{ TourStepRoot?: (() => VNodeChild); content?: ((props: TourSlotProps) => VNodeChild); title?: ((props: TourSlotProps) => VNodeChild); description?: ((props: TourSlotProps) => VNodeChild); indicators?: ((props: TourSlotProps) => VNodeChild); close?: ((props: TourSlotProps) => VNodeChild); previous?: ((props: TourSlotProps) => VNodeChild); next?: ((props: TourSlotProps) => VNodeChild) }",
+        "description": "Slots exposed by the TourCompact component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.slots",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [],
+        "callables": [
+          {
+            "name": "default",
+            "type": "(() => VNodeChild) | undefined",
+            "parameters": "(() => VNodeChild) | undefined",
+            "required": false,
+            "description": "Ordered TourStep children.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.default",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "content",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Replaces the complete default popup content.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.content",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "title",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom active step title.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.title",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom active step description.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.description",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "indicators",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Replaces the default step indicator dots. `current` is zero-based.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.indicators",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "close",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom close button content.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.close",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "previous",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom previous button content.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.previous",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "next",
+            "type": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "parameters": "((props: TourSlotProps) => VNodeChild) | undefined",
+            "required": false,
+            "description": "Custom next or finish button content.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourcompactslots.callables.next",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourSlotProps",
+                "kind": "interface",
+                "type": "TourSlotProps",
+                "resolvedType": null,
+                "description": "Props exposed to the TourRoot default slot.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourslotprops",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              },
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "referencedTypes": []
+      }
+    },
+    "TourRoot": {
+      "props": {
+        "kind": "props",
+        "name": "TourRootProps",
+        "type": "Interface TourRootProps",
+        "resolvedType": "{ steps?: readonly TourStep[]; modelValue?: boolean; open?: boolean; defaultOpen?: boolean; current?: number; defaultCurrent?: number; placement?: Placement; dir?: Direction; lockScroll?: boolean; autoScroll?: boolean; scrollIntoViewOptions?: boolean | ScrollIntoViewOptions; closeOnPressEscape?: boolean; spotlightPadding?: number; spotlightRadius?: number }",
+        "description": "Properties for the TourRoot component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.props",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "steps",
+            "type": "readonly TourStep[]",
+            "required": false,
+            "description": "Ordered steps for data-driven usage. Omit when using TourStep children.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.steps",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "modelValue",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the tour is open. Bind with `v-model`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.modelvalue",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "open",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether the tour is open. Alias for `modelValue`, bind with `v-model:open`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.open",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "defaultOpen",
+            "type": "boolean",
+            "required": false,
+            "description": "Initial open state when uncontrolled.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.defaultopen",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "current",
+            "type": "number",
+            "required": false,
+            "description": "Zero-based active step. Bind with `v-model:current`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.current",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "defaultCurrent",
+            "type": "number",
+            "required": false,
+            "description": "Initial active step when uncontrolled. Defaults to `0`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.defaultcurrent",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "placement",
+            "type": "Placement",
+            "required": false,
+            "description": "Default popup placement, overridden by the active step's placement.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.placement",
+            "default": "'bottom'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Placement",
+                "kind": "typeAlias",
+                "type": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "resolvedType": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.placement",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "dir",
+            "type": "Direction",
+            "required": false,
+            "description": "Reading direction for the floating popup.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.dir",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Direction",
+                "kind": "typeAlias",
+                "type": "'ltr' | 'rtl'",
+                "resolvedType": "'ltr' | 'rtl'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.direction",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "lockScroll",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether page scrolling is locked while the tour is open.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.lockscroll",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "autoScroll",
+            "type": "boolean",
+            "required": false,
+            "description": "Scroll the active target into view when a step opens.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.autoscroll",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "scrollIntoViewOptions",
+            "type": "boolean | ScrollIntoViewOptions",
+            "required": false,
+            "description": "Options passed to `Element.scrollIntoView`. `false` disables scrolling. Defaults to smooth, centered scrolling.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.scrollintoviewoptions",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ScrollIntoViewOptions",
+                "kind": "interface",
+                "type": "ScrollIntoViewOptions",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/typescript-native-bridge@6.0.3-bridge.18.tsgo.7.0.2/node_modules/typescript-native-bridge/lib/lib.dom.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "closeOnPressEscape",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether Escape closes the tour.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.closeonpressescape",
+            "default": "true",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "spotlightPadding",
+            "type": "number",
+            "required": false,
+            "description": "Space between the target bounds and the spotlight cutout, in pixels.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.spotlightpadding",
+            "default": "6",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "spotlightRadius",
+            "type": "number",
+            "required": false,
+            "description": "Corner radius of the spotlight cutout, in pixels.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootprops.members.spotlightradius",
+            "default": "2",
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      },
+      "emits": {
+        "kind": "emits",
+        "name": "TourRootEmits",
+        "type": "TypeAlias TourRootEmits",
+        "resolvedType": "{ \"update:modelValue\": [value: boolean]; \"update:open\": [value: boolean]; \"update:current\": [value: number]; close: [reason: TourCloseReason]; finish: [current: number]; change: [current: number] }",
+        "description": "Events for the TourRoot component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.emits",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [],
+        "callables": [
+          {
+            "name": "update:modelValue",
+            "type": "[value: boolean]",
+            "parameters": "value: boolean",
+            "required": true,
+            "description": "Emitted when the open state changes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_modelvalue",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "update:open",
+            "type": "[value: boolean]",
+            "parameters": "value: boolean",
+            "required": true,
+            "description": "Emitted when the open state changes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_open",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "update:current",
+            "type": "[value: number]",
+            "parameters": "value: number",
+            "required": true,
+            "description": "Emitted when the active zero-based step changes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.update_current",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "close",
+            "type": "[reason: TourCloseReason]",
+            "parameters": "reason: TourCloseReason",
+            "required": true,
+            "description": "Emitted when the tour closes.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.close",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourCloseReason",
+                "kind": "typeAlias",
+                "type": "'escape' | 'mask' | 'close-button' | 'finish'",
+                "resolvedType": null,
+                "description": "Why the tour was closed.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourclosereason",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "finish",
+            "type": "[current: number]",
+            "parameters": "current: number",
+            "required": true,
+            "description": "Emitted after the final step is completed with its zero-based index.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.finish",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "change",
+            "type": "[current: number]",
+            "parameters": "current: number",
+            "required": true,
+            "description": "Emitted when the active step changes. The index starts at `0`.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourrootemits.callables.change",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "referencedTypes": []
+      }
+    },
+    "TourStep": {
+      "props": {
+        "kind": "props",
+        "name": "TourStepProps",
+        "type": "TypeAlias TourStepProps: TourStep",
+        "resolvedType": "{ target?: TourTarget; title?: string; description?: string; placement?: Placement; showMask?: boolean; showArrow?: boolean; showClose?: boolean }",
+        "description": "Props for a declarative TourStep component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.props",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "target",
+            "type": "TourTarget",
+            "required": false,
+            "description": "Element to highlight and position the bubble against.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.target",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "TourTarget",
+                "kind": "typeAlias",
+                "type": "string | HTMLElement | SVGElement | (() => HTMLElement | SVGElement | null | undefined)",
+                "resolvedType": "string | HTMLElement | SVGElement | (() => HTMLElement | SVGElement | null | undefined)",
+                "description": "A target element, selector, or lazy resolver for a tour step.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourtarget",
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "required": false,
+            "description": "Step heading.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.title",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false,
+            "description": "Supporting step content.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.description",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "placement",
+            "type": "Placement",
+            "required": false,
+            "description": "Step-specific popup placement. Overrides the tour-level placement.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.placement",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "Placement",
+                "kind": "typeAlias",
+                "type": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "resolvedType": "'top' | 'right' | 'bottom' | 'left' | 'top-start' | 'top-end' | 'right-start' | 'right-end' | 'bottom-start' | 'bottom-end' | 'left-start' | 'left-end'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_aria_src_types_common.placement",
+                "sourcePath": "packages/aria/src/types/common.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "showMask",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the mask for this step. Overrides the tour-level setting.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.showmask",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showArrow",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the popup arrow for this step. Overrides the tour-level setting.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.showarrow",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          },
+          {
+            "name": "showClose",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to render the close button for this step. Overrides the tour-level setting.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepprops.members.showclose",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": [
+          {
+            "name": "TourStep",
+            "kind": "interface",
+            "type": "TourStep",
+            "resolvedType": "{ target?: TourTarget; title?: string; description?: string; placement?: Placement; showMask?: boolean; showArrow?: boolean; showClose?: boolean }",
+            "description": "Content and target configuration for one tour step.",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "typeParameters": [],
+            "external": false,
+            "members": [
+              {
+                "name": "target",
+                "type": "TourTarget",
+                "required": false,
+                "description": "Element to highlight and position the bubble against.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.target",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "required": false,
+                "description": "Step heading.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.title",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "required": false,
+                "description": "Supporting step content.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.description",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "placement",
+                "type": "Placement",
+                "required": false,
+                "description": "Step-specific popup placement. Overrides the tour-level placement.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.placement",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "showMask",
+                "type": "boolean",
+                "required": false,
+                "description": "Whether to render the mask for this step. Overrides the tour-level setting.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.showmask",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "showArrow",
+                "type": "boolean",
+                "required": false,
+                "description": "Whether to render the popup arrow for this step. Overrides the tour-level setting.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.showarrow",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              },
+              {
+                "name": "showClose",
+                "type": "boolean",
+                "required": false,
+                "description": "Whether to render the close button for this step. Overrides the tour-level setting.",
+                "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstep.members.showclose",
+                "default": null,
+                "inheritedFrom": null,
+                "sourcePath": "packages/aria/src/components/tour/types.ts",
+                "referencedTypes": []
+              }
+            ],
+            "callables": []
+          }
+        ]
+      },
+      "slots": {
+        "kind": "slots",
+        "name": "TourStepSlots",
+        "type": "TypeAlias TourStepSlots",
+        "resolvedType": "{ TourStepRoot?: (() => VNodeChild) }",
+        "description": "Slots exposed by a declarative TourStep component.",
+        "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepslots.slots",
+        "sourcePath": "packages/aria/src/components/tour/types.ts",
+        "typeParameters": [],
+        "members": [],
+        "callables": [
+          {
+            "name": "default",
+            "type": "(() => VNodeChild) | undefined",
+            "parameters": "(() => VNodeChild) | undefined",
+            "required": false,
+            "description": "",
+            "descriptionKey": "api.generated.packages_aria_src_components_tour_types.tourstepslots.callables.default",
+            "sourcePath": "packages/aria/src/components/tour/types.ts",
+            "referencedTypes": [
+              {
+                "name": "VNodeChild",
+                "kind": "typeAlias",
+                "type": "VNodeChild",
+                "resolvedType": null,
+                "description": "",
+                "descriptionKey": null,
+                "sourcePath": "node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+                "typeParameters": [],
+                "external": true,
+                "members": [],
+                "callables": []
+              }
+            ]
+          }
+        ],
+        "referencedTypes": []
+      }
+    },
+    "TourStepRoot": {}
+  }
+}

@@ -9354,6 +9354,141 @@
           "props": "Properties for the TooltipRoot component."
         }
       },
+      "packages_aria_src_components_tour_types": {
+        "tourclosereason": "Why the tour was closed.",
+        "tourcompactemits": {
+          "callables": {
+            "change": "Emitted when the active step changes. The index starts at `0`.",
+            "close": "Emitted when the tour closes.",
+            "finish": "Emitted after the final step is completed with its zero-based index.",
+            "update_current": "Emitted when the active zero-based step changes.",
+            "update_modelvalue": "Emitted when the open state changes.",
+            "update_open": "Emitted when the open state changes."
+          },
+          "emits": "Events for the TourCompact component."
+        },
+        "tourcompactprops": {
+          "members": {
+            "arrowprops": "Properties forwarded to the arrow.",
+            "autoscroll": "Scroll the active target into view when a step opens.",
+            "closelabel": "Accessible label for the close button. Defaults to the active locale.",
+            "closeonpressescape": "Whether Escape closes the tour.",
+            "current": "Zero-based active step. Bind with `v-model:current`.",
+            "defaultcurrent": "Initial active step when uncontrolled. Defaults to `0`.",
+            "defaultopen": "Initial open state when uncontrolled.",
+            "dir": "Reading direction for the floating popup.",
+            "finishtext": "Text for the final-step button. Defaults to the active locale.",
+            "lockscroll": "Whether page scrolling is locked while the tour is open.",
+            "maskclosable": "Whether clicking the mask closes the tour.",
+            "modelvalue": "Whether the tour is open. Bind with `v-model`.",
+            "nexttext": "Text for the next-step button. Defaults to the active locale.",
+            "open": "Whether the tour is open. Alias for `modelValue`, bind with `v-model:open`.",
+            "placement": "Default popup placement, overridden by the active step's placement.",
+            "popupprops": "Properties forwarded to the popup surface.",
+            "portalprops": "Properties forwarded to the portal.",
+            "positionerprops": "Properties forwarded to the floating positioner. `open`, `reference` and `placement` are controlled by Tour.",
+            "previoustext": "Text for the previous-step button. Defaults to the active locale.",
+            "scrollintoviewoptions": "Options passed to `Element.scrollIntoView`. `false` disables scrolling. Defaults to smooth, centered scrolling.",
+            "showarrow": "Whether to render the popper arrow.",
+            "showclose": "Whether to render the close button.",
+            "showmask": "Whether to render the dimming mask and target spotlight.",
+            "showprogress": "Whether to render the localized step counter.",
+            "spotlightpadding": "Space between the target bounds and the spotlight cutout, in pixels.",
+            "spotlightradius": "Corner radius of the spotlight cutout, in pixels.",
+            "steps": "Ordered steps for data-driven usage. Omit when using TourStep children."
+          },
+          "props": "Properties for the TourCompact component."
+        },
+        "tourcompactslots": {
+          "callables": {
+            "close": "Custom close button content.",
+            "content": "Replaces the complete default popup content.",
+            "default": "Ordered TourStep children.",
+            "description": "Custom active step description.",
+            "indicators": "Replaces the default step indicator dots. `current` is zero-based.",
+            "next": "Custom next or finish button content.",
+            "previous": "Custom previous button content.",
+            "title": "Custom active step title."
+          },
+          "slots": "Slots exposed by the TourCompact component."
+        },
+        "tourrootemits": {
+          "callables": {
+            "change": "Emitted when the active step changes. The index starts at `0`.",
+            "close": "Emitted when the tour closes.",
+            "finish": "Emitted after the final step is completed with its zero-based index.",
+            "update_current": "Emitted when the active zero-based step changes.",
+            "update_modelvalue": "Emitted when the open state changes.",
+            "update_open": "Emitted when the open state changes."
+          },
+          "emits": "Events for the TourRoot component."
+        },
+        "tourrootprops": {
+          "members": {
+            "autoscroll": "Scroll the active target into view when a step opens.",
+            "closeonpressescape": "Whether Escape closes the tour.",
+            "current": "Zero-based active step. Bind with `v-model:current`.",
+            "defaultcurrent": "Initial active step when uncontrolled. Defaults to `0`.",
+            "defaultopen": "Initial open state when uncontrolled.",
+            "dir": "Reading direction for the floating popup.",
+            "lockscroll": "Whether page scrolling is locked while the tour is open.",
+            "modelvalue": "Whether the tour is open. Bind with `v-model`.",
+            "open": "Whether the tour is open. Alias for `modelValue`, bind with `v-model:open`.",
+            "placement": "Default popup placement, overridden by the active step's placement.",
+            "scrollintoviewoptions": "Options passed to `Element.scrollIntoView`. `false` disables scrolling. Defaults to smooth, centered scrolling.",
+            "spotlightpadding": "Space between the target bounds and the spotlight cutout, in pixels.",
+            "spotlightradius": "Corner radius of the spotlight cutout, in pixels.",
+            "steps": "Ordered steps for data-driven usage. Omit when using TourStep children."
+          },
+          "props": "Properties for the TourRoot component."
+        },
+        "tourslotprops": {
+          "members": {
+            "close": "Close the tour with an optional close reason.",
+            "current": "Active step index, starting from `0`; useful for custom indicators.",
+            "currentstep": "Active step number, starting from `1`.",
+            "isfirststep": "Whether the active step is the first step.",
+            "islaststep": "Whether the active step is the final step.",
+            "next": "Move to the next step or finish the tour.",
+            "previous": "Move to the previous step when one exists.",
+            "step": "Active step definition.",
+            "total": "Number of configured tour steps; alias for custom indicators.",
+            "totalsteps": "Number of configured tour steps."
+          },
+          "slotprops": "Props exposed to the TourRoot default slot."
+        },
+        "tourstep": {
+          "members": {
+            "description": "Supporting step content.",
+            "placement": "Step-specific popup placement. Overrides the tour-level placement.",
+            "showarrow": "Whether to render the popup arrow for this step. Overrides the tour-level setting.",
+            "showclose": "Whether to render the close button for this step. Overrides the tour-level setting.",
+            "showmask": "Whether to render the mask for this step. Overrides the tour-level setting.",
+            "target": "Element to highlight and position the bubble against.",
+            "title": "Step heading."
+          }
+        },
+        "tourstepprops": {
+          "members": {
+            "description": "Supporting step content.",
+            "placement": "Step-specific popup placement. Overrides the tour-level placement.",
+            "showarrow": "Whether to render the popup arrow for this step. Overrides the tour-level setting.",
+            "showclose": "Whether to render the close button for this step. Overrides the tour-level setting.",
+            "showmask": "Whether to render the mask for this step. Overrides the tour-level setting.",
+            "target": "Element to highlight and position the bubble against.",
+            "title": "Step heading."
+          },
+          "props": "Props for a declarative TourStep component."
+        },
+        "tourstepslots": {
+          "callables": {
+            "default": ""
+          },
+          "slots": "Slots exposed by a declarative TourStep component."
+        },
+        "tourtarget": "A target element, selector, or lazy resolver for a tour step.",
+        "tourui": "UI class overrides for the Tour component."
+      },
       "packages_aria_src_components_tree_menu_types": {
         "treemenubadgeprops": {
           "members": {
@@ -10023,6 +10158,7 @@
             "tag": "",
             "tagsinput": "",
             "textarea": "",
+            "tour": "",
             "treemenu": ""
           }
         }
@@ -14503,6 +14639,68 @@
             "trigger": "Custom content for the trigger slot."
           },
           "slots": "Slots for the Tooltip component."
+        }
+      },
+      "packages_ui_src_components_tour_types": {
+        "touremits": {
+          "callables": {
+            "change": "Emitted when the active step changes. The index starts at `0`.",
+            "close": "Emitted when the tour closes.",
+            "finish": "Emitted after the final step is completed with its zero-based index.",
+            "update_current": "Emitted when the active zero-based step changes.",
+            "update_modelvalue": "Emitted when the open state changes.",
+            "update_open": "Emitted when the open state changes."
+          },
+          "emits": "Events for the Tour component."
+        },
+        "tourprops": {
+          "members": {
+            "arrowprops": "Properties forwarded to the arrow.",
+            "autoscroll": "Scroll the active target into view when a step opens.",
+            "class": "Class applied to the popup surface.",
+            "closelabel": "Accessible label for the close button. Defaults to the active locale.",
+            "closeonpressescape": "Whether Escape closes the tour.",
+            "current": "Zero-based active step. Bind with `v-model:current`.",
+            "defaultcurrent": "Initial active step when uncontrolled. Defaults to `0`.",
+            "defaultopen": "Initial open state when uncontrolled.",
+            "dir": "Reading direction for the floating popup.",
+            "finishtext": "Text for the final-step button. Defaults to the active locale.",
+            "lockscroll": "Whether page scrolling is locked while the tour is open.",
+            "maskclosable": "Whether clicking the mask closes the tour.",
+            "modelvalue": "Whether the tour is open. Bind with `v-model`.",
+            "nexttext": "Text for the next-step button. Defaults to the active locale.",
+            "open": "Whether the tour is open. Alias for `modelValue`, bind with `v-model:open`.",
+            "placement": "Default popup placement, overridden by the active step's placement.",
+            "popupprops": "Properties forwarded to the popup surface.",
+            "portalprops": "Properties forwarded to the portal.",
+            "positionerprops": "Properties forwarded to the floating positioner. `open`, `reference` and `placement` are controlled by Tour.",
+            "previoustext": "Text for the previous-step button. Defaults to the active locale.",
+            "scrollintoviewoptions": "Options passed to `Element.scrollIntoView`. `false` disables scrolling. Defaults to smooth, centered scrolling.",
+            "showarrow": "Whether to render the popper arrow.",
+            "showclose": "Whether to render the close button.",
+            "showmask": "Whether to render the dimming mask and target spotlight.",
+            "showprogress": "Whether to render the localized step counter.",
+            "size": "Visual size of the component.",
+            "spotlightpadding": "Space between the target bounds and the spotlight cutout, in pixels.",
+            "spotlightradius": "Corner radius of the spotlight cutout, in pixels.",
+            "steps": "Ordered steps for data-driven usage. Omit when using TourStep children.",
+            "type": "Use the emphasized primary bubble appearance. Omit for the default appearance.",
+            "ui": "Per-slot class overrides for the component."
+          },
+          "props": "Properties for the Tour component."
+        },
+        "tourslots": {
+          "callables": {
+            "close": "Custom close button content.",
+            "content": "Replaces the complete default popup content.",
+            "default": "Ordered TourStep children.",
+            "description": "Custom active step description.",
+            "indicators": "Replaces the default step indicator dots. `current` is zero-based.",
+            "next": "Custom next or finish button content.",
+            "previous": "Custom previous button content.",
+            "title": "Custom active step title."
+          },
+          "slots": "Slots for the Tour component."
         }
       },
       "packages_ui_src_components_tree_menu_types": {

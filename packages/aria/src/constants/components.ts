@@ -532,6 +532,7 @@ export const components = {
     'TooltipPopup',
     'TooltipArrow'
   ],
+  tour: ['TourRoot', 'TourCompact', 'TourStepRoot'],
   tree: ['TreeRoot', 'TreeItem', 'TreeVirtualizerRoot', 'TreeVirtualizerItem'],
   treeMenu: [
     'TreeMenuCompact',

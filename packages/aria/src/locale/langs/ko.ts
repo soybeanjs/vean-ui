@@ -102,6 +102,14 @@ const messages: LocaleMessages = {
   breadcrumb: {
     nav: '이동 경로'
   },
+  tour: {
+    ariaLabel: '제품 둘러보기',
+    close: '둘러보기 닫기',
+    previous: '이전',
+    next: '다음',
+    finish: '완료',
+    stepOf: '{total}단계 중 {current}단계'
+  },
   stepper: {
     step: '단계 {step}',
     ariaLabel: '단계 진행 상황',

@@ -272,6 +272,21 @@ export interface LocaleStepperMessages {
   stepOf: string;
 }
 
+export interface LocaleTourMessages {
+  /** Accessible label for a tour popup without a step title. */
+  ariaLabel: string;
+  /** Accessible label for the close button. */
+  close: string;
+  /** Label for the previous-step button. */
+  previous: string;
+  /** Label for the next-step button. */
+  next: string;
+  /** Label for the final-step button. */
+  finish: string;
+  /** Current-step announcement. Supports `{current}` and `{total}` placeholders. */
+  stepOf: string;
+}
+
 export interface LocaleTableMessages {
   /** Title shown in the empty-state slot when there are no rows. */
   emptyTitle: string;
@@ -414,6 +429,7 @@ export interface LocaleMessages {
   select: LocaleSelectMessages;
   slider: LocaleSliderMessages;
   stepper: LocaleStepperMessages;
+  tour: LocaleTourMessages;
   table: LocaleTableMessages;
   tag: LocaleTagMessages;
   tagsInput: LocaleTagsInputMessages;

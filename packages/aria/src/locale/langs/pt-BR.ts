@@ -102,6 +102,14 @@ const messages: LocaleMessages = {
   breadcrumb: {
     nav: 'Trilha de navegação'
   },
+  tour: {
+    ariaLabel: 'Tour do produto',
+    close: 'Fechar tour',
+    previous: 'Anterior',
+    next: 'Próximo',
+    finish: 'Concluir',
+    stepOf: 'Etapa {current} de {total}'
+  },
   stepper: {
     step: 'Etapa {step}',
     ariaLabel: 'Progresso por etapas',

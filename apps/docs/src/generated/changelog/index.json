@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T13:58:47.892Z",
+  "generatedAt": "2026-10-30T14:01:42.099Z",
   "schemaVersion": 1,
   "components": {
     "accordion": {
@@ -285,9 +285,9 @@
     "form": {
       "component": "form",
       "file": "form.json",
-      "latestVersion": "v0.50.0",
-      "versionCount": 12,
-      "entryCount": 30
+      "latestVersion": "v0.51.4",
+      "versionCount": 13,
+      "entryCount": 31
     },
     "hover-card": {
       "component": "hover-card",
@@ -635,9 +635,9 @@
     "theme-mode-toggle": {
       "component": "theme-mode-toggle",
       "file": "theme-mode-toggle.json",
-      "latestVersion": null,
-      "versionCount": 0,
-      "entryCount": 0
+      "latestVersion": "v0.51.4",
+      "versionCount": 1,
+      "entryCount": 1
     },
     "theme-primary-select": {
       "component": "theme-primary-select",

@@ -1,6 +1,24 @@
 {
   "component": "theme-mode-toggle",
-  "generatedAt": "2026-10-30T13:58:47.892Z",
+  "generatedAt": "2026-10-30T14:01:42.099Z",
   "schemaVersion": 1,
-  "versions": []
+  "versions": [
+    {
+      "version": "v0.51.4",
+      "compareUrl": "https://github.com/soybeanjs/vean-ui/compare/v0.51.3...v0.51.4",
+      "date": "2026-10-30",
+      "entries": [
+        {
+          "type": "feature",
+          "scope": "theme-mode-toggle",
+          "summary": "add a cycling theme mode button",
+          "summaryKey": "changelog.generated.v0.51.4.ca020",
+          "commitHash": "ca020",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/ca020f37a",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope"
+        }
+      ]
+    }
+  ]
 }

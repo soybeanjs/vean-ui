@@ -1,5 +1,27 @@
 # Changelog
 
+## [v0.51.4](https://github.com/soybeanjs/vean-ui/compare/v0.51.3...v0.51.4) (2026-10-30)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **theme-mode-toggle**: add a cycling theme mode button &nbsp;-&nbsp; by @soybeanjs [<samp>(ca020)</samp>](https://github.com/soybeanjs/vean-ui/commit/ca020f37a)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **form**: render the field label and description only when provided &nbsp;-&nbsp; by @soybeanjs [<samp>(891fd)</samp>](https://github.com/soybeanjs/vean-ui/commit/891fda806)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update docs api and skills &nbsp;-&nbsp; by @soybeanjs [<samp>(6adf8)</samp>](https://github.com/soybeanjs/vean-ui/commit/6adf8bc2b)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(2d5c6)</samp>](https://github.com/soybeanjs/vean-ui/commit/2d5c68c74)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.51.3](https://github.com/soybeanjs/vean-ui/compare/v0.51.2...v0.51.3) (2026-10-27)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features

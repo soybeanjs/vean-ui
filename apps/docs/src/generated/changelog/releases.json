@@ -1,7 +1,69 @@
 {
-  "generatedAt": "2026-10-26T16:21:17.818Z",
+  "generatedAt": "2026-10-30T14:01:42.099Z",
   "schemaVersion": 1,
   "releases": [
+    {
+      "version": "v0.51.4",
+      "compareUrl": "https://github.com/soybeanjs/vean-ui/compare/v0.51.3...v0.51.4",
+      "date": "2026-10-30",
+      "entryCount": 4,
+      "componentCount": 2,
+      "components": ["theme-mode-toggle", "form"],
+      "newComponents": [],
+      "typeCounts": {
+        "feature": 1,
+        "fix": 1,
+        "docs": 1,
+        "chore": 1
+      },
+      "notes": [],
+      "entries": [
+        {
+          "type": "feature",
+          "scope": "theme-mode-toggle",
+          "summary": "add a cycling theme mode button",
+          "summaryKey": "changelog.generated.v0.51.4.ca020",
+          "commitHash": "ca020",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/ca020f37a",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": ["theme-mode-toggle"]
+        },
+        {
+          "type": "fix",
+          "scope": "form",
+          "summary": "render the field label and description only when provided",
+          "summaryKey": "changelog.generated.v0.51.4.891fd",
+          "commitHash": "891fd",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/891fda806",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": ["form"]
+        },
+        {
+          "type": "docs",
+          "scope": "projects",
+          "summary": "update docs api and skills",
+          "summaryKey": "changelog.generated.v0.51.4.6adf8",
+          "commitHash": "6adf8",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/6adf8bc2b",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": []
+        },
+        {
+          "type": "chore",
+          "scope": "deps",
+          "summary": "update deps",
+          "summaryKey": "changelog.generated.v0.51.4.2d5c6",
+          "commitHash": "2d5c6",
+          "commitUrl": "https://github.com/soybeanjs/vean-ui/commit/2d5c68c74",
+          "authors": ["soybeanjs"],
+          "source": "exact-scope",
+          "components": []
+        }
+      ]
+    },
     {
       "version": "v0.51.3",
       "compareUrl": "https://github.com/soybeanjs/vean-ui/compare/v0.51.2...v0.51.3",

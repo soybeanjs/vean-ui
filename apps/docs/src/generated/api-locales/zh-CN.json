@@ -14256,13 +14256,13 @@
       "packages_ui_src_components_theme_mode_toggle_types": {
         "thememodetoggleprops": {
           "members": {
-            "arialabel": "",
-            "color": "",
-            "shape": "",
-            "size": "",
-            "variant": ""
+            "arialabel": "按钮的无障碍标签。默认显示本地化的\n`Scheme: <当前首选项>` 文本，该文本同时用于生成 `title` 工具提示。",
+            "color": "按钮的主题颜色。",
+            "shape": "按钮的形状。",
+            "size": "按钮的视觉尺寸。",
+            "variant": "该按钮的视觉变体。"
           },
-          "props": ""
+          "props": "ThemeModeToggle 组件的属性。\n\n一个与当前活跃的 `SConfigProvider` 主题绑定的上下文循环按钮。\n每次点击会将首选项循环切换为 `auto` -> `light` -> `dark` ->\n`auto`，且图标始终显示*当前*的首选项（显示器 / 太阳 /\n月亮）——因此与 `SThemeModeSwitch` 不同，它无需下拉菜单即可显示并返回 `auto`\n状态。"
         }
       },
       "packages_ui_src_components_theme_primary_select_types": {

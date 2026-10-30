@@ -29,8 +29,8 @@ const error = computed(() => state.value.meta.error);
 
 <template>
   <FormFieldBaseCompact data-vean-form-field v-bind="forwardedProps" :error="error">
-    <template #label>
-      <slot v-if="slots.label || label" name="label" v-bind="state" />
+    <template v-if="slots.label || label" #label>
+      <slot name="label" v-bind="state" />
     </template>
     <template #default="slotProps">
       <Slot
@@ -45,8 +45,8 @@ const error = computed(() => state.value.meta.error);
         <slot v-bind="state" />
       </Slot>
     </template>
-    <template #description>
-      <slot v-if="slots.description || description" name="description" v-bind="state" />
+    <template v-if="slots.description || description" #description>
+      <slot name="description" v-bind="state" />
     </template>
     <template v-if="slots.error" #error="errorScope">
       <slot name="error" v-bind="errorScope" />

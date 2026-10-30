@@ -142,6 +142,40 @@ function mountArrayForm(options: HarnessOptions = {}) {
   return mount(Form, { attachTo: document.body });
 }
 
+/** 单字段表单：可选 label / description，用于断言两者的条件渲染 */
+function mountSingleField(options: { label?: string; description?: string; slotDescription?: boolean } = {}) {
+  const Form = defineComponent({
+    setup() {
+      const { handleSubmit, SFormField } = useForm({
+        schema,
+        defaultValues: { username: '' } as any,
+        onSubmit: async () => {}
+      });
+
+      return { handleSubmit, SFormField };
+    },
+    render() {
+      const slots: Record<string, () => unknown> = { default: () => h(SInput, { placeholder: 'username' }) };
+
+      if (options.slotDescription) {
+        slots.description = () => h('span', { 'data-test': 'slot-description' }, 'Slot description');
+      }
+
+      return h(
+        SForm,
+        { onSubmit: this.handleSubmit },
+        {
+          default: () => [
+            h(this.SFormField, { name: 'username', label: options.label, description: options.description }, slots)
+          ]
+        }
+      );
+    }
+  });
+
+  return mount(Form, { attachTo: document.body });
+}
+
 async function submitForm(wrapper: ReturnType<typeof mount>) {
   await wrapper.find('form').trigger('submit');
   // Schema 和字段级 validator 走引擎的异步槽（带 debounce setTimeout），提交生命周期
@@ -199,6 +233,26 @@ describe('SForm', () => {
       expect(attrs.name).toBeUndefined();
       expect(attrs.validate).toBeUndefined();
       wrapper.unmount();
+    });
+
+    it('does not render the label or description blocks when neither prop nor slot is given', () => {
+      const wrapper = mountSingleField();
+
+      expect(wrapper.find('[data-vean-form-label]').exists()).toBe(false);
+      expect(wrapper.find('[data-vean-form-description]').exists()).toBe(false);
+      wrapper.unmount();
+    });
+
+    it('renders the description block only when a description is provided', () => {
+      const fromProp = mountSingleField({ label: 'Username', description: 'Enter your username' });
+
+      expect(fromProp.find('[data-vean-form-description]').text()).toBe('Enter your username');
+      fromProp.unmount();
+
+      const fromSlot = mountSingleField({ label: 'Username', slotDescription: true });
+
+      expect(fromSlot.find('[data-test="slot-description"]').exists()).toBe(true);
+      fromSlot.unmount();
     });
 
     it('renders the array field wrapper when isFieldArray', () => {

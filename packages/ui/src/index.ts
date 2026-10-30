@@ -88,6 +88,7 @@ export * from './components/theme-customizer';
 export * from './components/theme-mode-segment';
 export * from './components/theme-mode-select';
 export * from './components/theme-mode-switch';
+export * from './components/theme-mode-toggle';
 export * from './components/theme-primary-select';
 export * from './components/palette-picker';
 export * from './components/tree';

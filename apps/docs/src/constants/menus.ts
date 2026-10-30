@@ -142,6 +142,7 @@ export const menuData: MenuData[] = [
       'themeModeSegment',
       'themeModeSelect',
       'themeModeSwitch',
+      'themeModeToggle',
       'themePrimarySelect',
       'visuallyHidden'
     ]

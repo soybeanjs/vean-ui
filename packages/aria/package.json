@@ -116,7 +116,7 @@
     "@tanstack/table-core": "^9.3.1",
     "@tanstack/vue-form": "^1.33.5",
     "@tanstack/vue-table": "^9.3.1",
-    "@tanstack/vue-virtual": "^3.13.49",
+    "@tanstack/vue-virtual": "^3.13.50",
     "@vueuse/core": "^15.0.0",
     "date-fns": "^4.4.0",
     "embla-carousel": "^8.6.0"
@@ -125,17 +125,17 @@
     "@vitest/browser": "^5.0.5",
     "@vitest/browser-playwright": "^5.0.5",
     "@vue/test-utils": "^2.5.1",
-    "nuxt": ">=4.6.2",
+    "nuxt": ">=4.6.3",
     "playwright": "^1.64.1",
     "typescript": "catalog:",
-    "unplugin-vue": "8.0.0",
+    "unplugin-vue": "8.0.1",
     "unplugin-vue-components": "^32.1.0",
     "vite-plus": "catalog:",
     "vitest": "5.0.5",
     "vitest-browser-vue": "^3.1.0",
     "vue": "3.5.44",
     "vue-router": "5.4.0",
-    "vue-tsc": "^3.3.13"
+    "vue-tsc": "^3.3.14"
   },
   "peerDependencies": {
     "nuxt": ">=4.0.0",

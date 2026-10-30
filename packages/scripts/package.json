@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@soybeanjs/colord": "^0.8.1",
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "@vean/theme": "workspace:^",
     "cac": "^7.1.0",
     "esbuild": "^0.28.2",

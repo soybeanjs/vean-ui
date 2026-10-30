@@ -95,7 +95,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "@types/prompts": "^2.4.9",
     "@valibot/to-json-schema": "^1.8.0",
     "rimraf": "^6.1.3",

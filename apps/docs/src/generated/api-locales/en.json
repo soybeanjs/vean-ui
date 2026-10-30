@@ -14253,6 +14253,18 @@
           "props": "Properties for the ThemeModeSwitch component.\n\nA context-bound toggle bound to the active `SConfigProvider` theme. It shows\nthe current *effective* scheme (so an `auto` preference is reflected as the\nOS-resolved light/dark) and pins an explicit `light` / `dark` preference when\ntoggled. To restore `auto`, use `SThemeModeSelect`."
         }
       },
+      "packages_ui_src_components_theme_mode_toggle_types": {
+        "thememodetoggleprops": {
+          "members": {
+            "arialabel": "Accessible label of the button. Defaults to the localized\n`Scheme: <current preference>` text, which also drives the `title` tooltip.",
+            "color": "Theme color of the button.",
+            "shape": "Shape of the button.",
+            "size": "Visual size of the button.",
+            "variant": "Visual variant of the button."
+          },
+          "props": "Properties for the ThemeModeToggle component.\n\nA context-bound cycling button bound to the active `SConfigProvider` theme.\nEach click advances the preference through `auto` -> `light` -> `dark` ->\n`auto`, and the icon always shows the *current* preference (monitor / sun /\nmoon) — so unlike `SThemeModeSwitch` it can express and return to `auto`\nwithout a dropdown."
+        }
+      },
       "packages_ui_src_components_theme_primary_select_types": {
         "themeprimaryselectprops": {
           "members": {

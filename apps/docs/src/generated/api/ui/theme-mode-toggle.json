@@ -1,0 +1,132 @@
+{
+  "component": "theme-mode-toggle",
+  "symbols": {
+    "ThemeModeToggle": {
+      "props": {
+        "kind": "props",
+        "name": "ThemeModeToggleProps",
+        "type": "Interface ThemeModeToggleProps",
+        "resolvedType": "{ size?: ThemeSize; color?: ThemeColor; variant?: ButtonVariant; shape?: ButtonShape; ariaLabel?: string }",
+        "description": "Properties for the ThemeModeToggle component.\n\nA context-bound cycling button bound to the active `SConfigProvider` theme.\nEach click advances the preference through `auto` -> `light` -> `dark` ->\n`auto`, and the icon always shows the *current* preference (monitor / sun /\nmoon) — so unlike `SThemeModeSwitch` it can express and return to `auto`\nwithout a dropdown.",
+        "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_toggle_types.thememodetoggleprops.props",
+        "sourcePath": "packages/ui/src/components/theme-mode-toggle/types.ts",
+        "typeParameters": [],
+        "members": [
+          {
+            "name": "size",
+            "type": "ThemeSize",
+            "required": false,
+            "description": "Visual size of the button.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_toggle_types.thememodetoggleprops.members.size",
+            "default": "'md'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-mode-toggle/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ThemeSize",
+                "kind": "typeAlias",
+                "type": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "resolvedType": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'",
+                "description": "the component size / density preset.",
+                "descriptionKey": "api.generated.packages_theme_src_types.themesize",
+                "sourcePath": "packages/theme/src/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "color",
+            "type": "ThemeColor",
+            "required": false,
+            "description": "Theme color of the button.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_toggle_types.thememodetoggleprops.members.color",
+            "default": "'accent'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-mode-toggle/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ThemeColor",
+                "kind": "typeAlias",
+                "type": "'primary' | 'secondary' | 'accent' | 'destructive' | 'success' | 'warning' | 'info' | 'carbon'",
+                "resolvedType": "'primary' | 'secondary' | 'accent' | 'destructive' | 'success' | 'warning' | 'info' | 'carbon'",
+                "description": "the component `color` prop vocabulary — the v2 role families a component can\npaint with (fills, statuses, carbon). Maps 1:1 onto the style recipes.",
+                "descriptionKey": "api.generated.packages_ui_src_theme_types.themecolor",
+                "sourcePath": "packages/ui/src/theme/types.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "variant",
+            "type": "ButtonVariant",
+            "required": false,
+            "description": "Visual variant of the button.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_toggle_types.thememodetoggleprops.members.variant",
+            "default": "'ghost'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-mode-toggle/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ButtonVariant",
+                "kind": "typeAlias",
+                "type": "'link' | 'solid' | 'pure' | 'outline' | 'soft' | 'ghost' | 'plain' | 'dashed'",
+                "resolvedType": "'link' | 'solid' | 'pure' | 'outline' | 'soft' | 'ghost' | 'plain' | 'dashed'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_ui_src_styles_button.buttonvariant",
+                "sourcePath": "packages/ui/src/styles/button.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "shape",
+            "type": "ButtonShape",
+            "required": false,
+            "description": "Shape of the button.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_toggle_types.thememodetoggleprops.members.shape",
+            "default": "'square'",
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-mode-toggle/types.ts",
+            "referencedTypes": [
+              {
+                "name": "ButtonShape",
+                "kind": "typeAlias",
+                "type": "'auto' | 'rounded' | 'square' | 'circle'",
+                "resolvedType": "'auto' | 'rounded' | 'square' | 'circle'",
+                "description": "",
+                "descriptionKey": "api.generated.packages_ui_src_styles_button.buttonshape",
+                "sourcePath": "packages/ui/src/styles/button.ts",
+                "typeParameters": [],
+                "external": false,
+                "members": [],
+                "callables": []
+              }
+            ]
+          },
+          {
+            "name": "ariaLabel",
+            "type": "string",
+            "required": false,
+            "description": "Accessible label of the button. Defaults to the localized\n`Scheme: <current preference>` text, which also drives the `title` tooltip.",
+            "descriptionKey": "api.generated.packages_ui_src_components_theme_mode_toggle_types.thememodetoggleprops.members.arialabel",
+            "default": null,
+            "inheritedFrom": null,
+            "sourcePath": "packages/ui/src/components/theme-mode-toggle/types.ts",
+            "referencedTypes": []
+          }
+        ],
+        "callables": [],
+        "referencedTypes": []
+      }
+    }
+  }
+}

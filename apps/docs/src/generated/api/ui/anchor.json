@@ -1198,7 +1198,7 @@
                 "resolvedType": null,
                 "description": "",
                 "descriptionKey": null,
-                "sourcePath": "node_modules/.pnpm/vue-router@5.4.0_@types+node@26.6.5_@volar+typescript@2.4.28_typescript-native-bridge@6_82a9d4bfed9fccbf6f8370b610688ec7/node_modules/vue-router/dist/index-u4XkZVDG.d.ts",
+                "sourcePath": "node_modules/.pnpm/vue-router@5.4.0_@types+node@26.6.6_@volar+typescript@2.4.30_typescript-native-bridge@6_04a5614e4687ec058a30c5baa8cc70eb/node_modules/vue-router/dist/index-u4XkZVDG.d.ts",
                 "typeParameters": ["Name extends keyof RouteMap = keyof RouteMap"],
                 "external": true,
                 "members": [],

@@ -1,12 +1,32 @@
 {
-  "generatedAt": "2026-10-18T10:30:09.420Z",
+  "generatedAt": "2026-10-30T13:58:47.873Z",
   "components": {
     "accordion": {
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "selectionBehavior": ["toggle", "replace"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "alert": {
       "color": [
@@ -19,10 +39,30 @@
         "info",
         "carbon"
       ],
-      "role": ["alert", "status"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "variant": ["solid", "pure", "outline", "soft", "ghost"]
+      "role": [
+        "alert",
+        "status"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "solid",
+        "pure",
+        "outline",
+        "soft",
+        "ghost"
+      ]
     },
     "anchor": {
       "color": [
@@ -35,17 +75,47 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "app-shell": {
-      "expandStrategy": ["keep", "selected"],
-      "side": ["right", "left"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "expandStrategy": [
+        "keep",
+        "selected"
+      ],
+      "side": [
+        "right",
+        "left"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "autocomplete": {
-      "align": ["start", "center", "end"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
       "autocomplete": [
         "search",
         "name",
@@ -71,7 +141,10 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "dir": ["ltr", "rtl"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -86,15 +159,45 @@
         "left-start",
         "left-end"
       ],
-      "position": ["inline", "popper"],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "position": [
+        "inline",
+        "popper"
+      ],
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "avatar": {
-      "crossorigin": ["", "anonymous", "use-credentials"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "crossorigin": [
+        "",
+        "anonymous",
+        "use-credentials"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "backtop": {
       "color": [
@@ -107,10 +210,31 @@
         "info",
         "carbon"
       ],
-      "shadow": ["sm", "md", "lg", "none"],
-      "shape": ["auto", "rounded", "square", "circle"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
+      "shadow": [
+        "sm",
+        "md",
+        "lg",
+        "none"
+      ],
+      "shape": [
+        "auto",
+        "rounded",
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
       "variant": [
         "link",
         "solid",
@@ -133,8 +257,20 @@
         "info",
         "carbon"
       ],
-      "position": ["top-right", "bottom-right", "top-left", "bottom-left"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "position": [
+        "top-right",
+        "bottom-right",
+        "top-left",
+        "bottom-left"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "breadcrumb": {
       "ariaCurrentValue": [
@@ -146,8 +282,18 @@
         "step",
         "location"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "trailingSlash": ["append", "remove"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "trailingSlash": [
+        "append",
+        "remove"
+      ]
     },
     "button": {
       "ariaCurrentValue": [
@@ -169,14 +315,48 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "loadingPosition": ["start", "center", "end"],
-      "orientation": ["vertical", "horizontal"],
-      "shadow": ["sm", "md", "lg", "none"],
-      "shape": ["auto", "rounded", "square", "circle"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "trailingSlash": ["append", "remove"],
-      "type": ["button", "submit", "reset"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "loadingPosition": [
+        "start",
+        "center",
+        "end"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "shadow": [
+        "sm",
+        "md",
+        "lg",
+        "none"
+      ],
+      "shape": [
+        "auto",
+        "rounded",
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "trailingSlash": [
+        "append",
+        "remove"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
       "variant": [
         "link",
         "solid",
@@ -189,32 +369,109 @@
       ]
     },
     "calendar": {
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "weekdayFormat": ["narrow", "short", "long"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "weekdayFormat": [
+        "narrow",
+        "short",
+        "long"
+      ]
     },
     "calendar-range": {
-      "dir": ["ltr", "rtl"],
-      "fixedDate": ["start", "end"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "weekdayFormat": ["narrow", "short", "long"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "fixedDate": [
+        "start",
+        "end"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "weekdayFormat": [
+        "narrow",
+        "short",
+        "long"
+      ]
     },
     "card": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "carousel": {
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "cascader": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
-      "expandTrigger": ["click", "hover"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "expandTrigger": [
+        "click",
+        "hover"
+      ],
       "placement": [
         "top",
         "right",
@@ -229,11 +486,30 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "showCheckedStrategy": ["child", "parent"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "showCheckedStrategy": [
+        "child",
+        "parent"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "checkbox": {
       "color": [
@@ -246,11 +522,31 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "shape": ["rounded", "square"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "shape": [
+        "rounded",
+        "square"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "clipboard": {
       "color": [
@@ -263,9 +559,25 @@
         "info",
         "carbon"
       ],
-      "shape": ["auto", "rounded", "square", "circle"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
+      "shape": [
+        "auto",
+        "rounded",
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
       "variant": [
         "link",
         "solid",
@@ -278,15 +590,54 @@
       ]
     },
     "collapsible": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "color-area": {
-      "colorSpace": ["hsl", "hsv", "oklch"],
-      "format": ["hsl", "oklch", "hex", "rgb"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "xChannel": ["hue", "saturation", "lightness", "brightness", "chroma"],
-      "yChannel": ["hue", "saturation", "lightness", "brightness", "chroma"]
+      "colorSpace": [
+        "hsl",
+        "hsv",
+        "oklch"
+      ],
+      "format": [
+        "hsl",
+        "oklch",
+        "hex",
+        "rgb"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "xChannel": [
+        "hue",
+        "saturation",
+        "lightness",
+        "brightness",
+        "chroma"
+      ],
+      "yChannel": [
+        "hue",
+        "saturation",
+        "lightness",
+        "brightness",
+        "chroma"
+      ]
     },
     "color-field": {
       "channel": [
@@ -300,17 +651,61 @@
         "blue",
         "chroma"
       ],
-      "colorSpace": ["hsl", "hsv", "oklch"],
-      "format": ["hsl", "oklch", "hex", "rgb"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "colorSpace": [
+        "hsl",
+        "hsv",
+        "oklch"
+      ],
+      "format": [
+        "hsl",
+        "oklch",
+        "hex",
+        "rgb"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "color-picker": {
-      "colorSpace": ["hsl", "hsv", "oklch"],
-      "defaultFormat": ["hsl", "oklch", "hex", "rgb"],
-      "dir": ["ltr", "rtl"],
-      "format": ["hsl", "oklch", "hex", "rgb"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "colorSpace": [
+        "hsl",
+        "hsv",
+        "oklch"
+      ],
+      "defaultFormat": [
+        "hsl",
+        "oklch",
+        "hex",
+        "rgb"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "format": [
+        "hsl",
+        "oklch",
+        "hex",
+        "rgb"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "color-slider": {
       "channel": [
@@ -334,25 +729,80 @@
         "info",
         "carbon"
       ],
-      "colorSpace": ["hsl", "hsv", "oklch"],
-      "dir": ["ltr", "rtl"],
-      "format": ["hsl", "oklch", "hex", "rgb"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "colorSpace": [
+        "hsl",
+        "hsv",
+        "oklch"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "format": [
+        "hsl",
+        "oklch",
+        "hex",
+        "rgb"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "color-swatch": {
-      "shape": ["square", "circle"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "shape": [
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "color-swatch-picker": {
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "selectionBehavior": ["toggle", "replace"],
-      "shape": ["square", "circle"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "shape": [
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "combobox": {
-      "align": ["start", "center", "end"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
       "autocomplete": [
         "search",
         "name",
@@ -378,7 +828,10 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "dir": ["ltr", "rtl"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -393,24 +846,68 @@
         "left-start",
         "left-end"
       ],
-      "position": ["inline", "popper"],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "position": [
+        "inline",
+        "popper"
+      ],
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "command": {
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "selectionBehavior": ["toggle", "replace"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "config-provider": {
-      "dir": ["ltr", "rtl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ]
     },
     "context-menu": {
-      "dir": ["ltr", "rtl"],
-      "indicatorPosition": ["start", "end"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "indicatorPosition": [
+        "start",
+        "end"
+      ],
       "placement": [
         "top",
         "right",
@@ -425,49 +922,180 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "type": ["button", "submit", "reset"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "date-field": {
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "date-picker": {
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "weekdayFormat": ["narrow", "short", "long"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "weekdayFormat": [
+        "narrow",
+        "short",
+        "long"
+      ]
     },
     "date-range-field": {
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["start", "end"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "start",
+        "end"
+      ]
     },
     "date-range-picker": {
-      "dir": ["ltr", "rtl"],
-      "fixedDate": ["start", "end"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "weekdayFormat": ["narrow", "short", "long"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "fixedDate": [
+        "start",
+        "end"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "weekdayFormat": [
+        "narrow",
+        "short",
+        "long"
+      ]
     },
     "dialog": {
-      "alertType": ["success", "warning", "info", "error", "DialogConfirm"],
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "alertType": [
+        "success",
+        "warning",
+        "info",
+        "error",
+        "DialogConfirm"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "drawer": {
-      "alertType": ["success", "warning", "info", "error", "DialogConfirm"],
-      "dir": ["ltr", "rtl"],
-      "side": ["top", "right", "bottom", "left"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "swipeDirection": ["right", "left", "up", "down"],
-      "type": ["button", "submit", "reset"]
+      "alertType": [
+        "success",
+        "warning",
+        "info",
+        "error",
+        "DialogConfirm"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "side": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "swipeDirection": [
+        "right",
+        "left",
+        "up",
+        "down"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "dropdown-menu": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
-      "indicatorPosition": ["start", "end"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "indicatorPosition": [
+        "start",
+        "end"
+      ],
       "placement": [
         "top",
         "right",
@@ -482,30 +1110,100 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "trigger": ["click", "hover"],
-      "type": ["button", "submit", "reset"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "trigger": [
+        "click",
+        "hover"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "editable": {
-      "activationMode": ["none", "focus", "dblclick"],
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "submitMode": ["none", "enter", "both", "blur"],
-      "type": ["button", "submit", "reset"]
+      "activationMode": [
+        "none",
+        "focus",
+        "dblclick"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "submitMode": [
+        "none",
+        "enter",
+        "both",
+        "blur"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "empty": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "form": {
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "hover-card": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -520,10 +1218,26 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "input": {
       "autocomplete": [
@@ -551,8 +1265,19 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "input-number": {
       "autocomplete": [
@@ -580,30 +1305,106 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "input-otp": {
-      "align": ["start", "center", "end"],
-      "inputmode": ["text", "numeric"],
-      "pushPasswordManagerStrategy": ["none", "increase-width"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "inputmode": [
+        "text",
+        "numeric"
+      ],
+      "pushPasswordManagerStrategy": [
+        "none",
+        "increase-width"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "kbd": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "variant": ["solid", "outline", "ghost"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "variant": [
+        "solid",
+        "outline",
+        "ghost"
+      ]
     },
     "label": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "layout": {
-      "collapsible": ["icon", "offcanvas"],
-      "orientation": ["vertical", "horizontal"],
-      "scrollBehavior": ["content", "wrapper"],
-      "side": ["right", "left"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["header", "tab", "footer", "button", "submit", "reset"],
-      "variant": ["sidebar", "floating", "inset"]
+      "collapsible": [
+        "icon",
+        "offcanvas"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "scrollBehavior": [
+        "content",
+        "wrapper"
+      ],
+      "side": [
+        "right",
+        "left"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "header",
+        "tab",
+        "footer",
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "sidebar",
+        "floating",
+        "inset"
+      ]
     },
     "link": {
       "ariaCurrentValue": [
@@ -615,10 +1416,20 @@
         "step",
         "location"
       ],
-      "trailingSlash": ["append", "remove"]
+      "trailingSlash": [
+        "append",
+        "remove"
+      ]
     },
     "list": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "listbox": {
       "autocomplete": [
@@ -646,13 +1457,29 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "selectionBehavior": ["toggle", "replace"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ]
     },
     "menu": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -667,15 +1494,38 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "sticky": ["partial", "always"],
-      "type": ["button", "submit", "reset"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "menubar": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
-      "indicatorPosition": ["start", "end"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "indicatorPosition": [
+        "start",
+        "end"
+      ],
       "placement": [
         "top",
         "right",
@@ -690,15 +1540,42 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "trigger": ["click", "hover"],
-      "type": ["button", "submit", "reset"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "trigger": [
+        "click",
+        "hover"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "nav-menu": {
-      "align": ["start", "center", "end"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
       "ariaCurrentValue": [
         "true",
         "false",
@@ -708,26 +1585,89 @@
         "step",
         "location"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "trailingSlash": ["append", "remove"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "trailingSlash": [
+        "append",
+        "remove"
+      ]
     },
     "page-tabs": {
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "variant": ["chrome", "card", "slider"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "chrome",
+        "card",
+        "slider"
+      ]
     },
     "pagination": {
-      "shape": ["rounded", "square"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "variant": ["solid", "pure", "outline", "soft"]
+      "shape": [
+        "rounded",
+        "square"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "solid",
+        "pure",
+        "outline",
+        "soft"
+      ]
     },
     "palette-picker": {
-      "format": ["hsl", "oklch"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "format": [
+        "hsl",
+        "oklch"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "password": {
       "autocomplete": [
@@ -755,12 +1695,30 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "popconfirm": {
-      "align": ["start", "center", "end"],
-      "ariaMode": ["none", "controls", "describedby"],
-      "dir": ["ltr", "rtl"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "ariaMode": [
+        "none",
+        "controls",
+        "describedby"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -775,10 +1733,27 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "trigger": ["contextmenu", "click", "hover"],
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "trigger": [
+        "contextmenu",
+        "click",
+        "hover"
+      ],
       "type": [
         "success",
         "warning",
@@ -788,11 +1763,21 @@
         "submit",
         "reset"
       ],
-      "updatePositionStrategy": ["always", "optimized"]
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "popover": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -807,11 +1792,31 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "type": ["button", "submit", "reset"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "progress": {
       "color": [
@@ -824,9 +1829,22 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "direction": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "direction": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "radio-group": {
       "color": [
@@ -839,11 +1857,31 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "variant": ["outline", "dot"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "outline",
+        "dot"
+      ]
     },
     "rating": {
       "color": [
@@ -856,28 +1894,92 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "variant": ["outline", "filled"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "variant": [
+        "outline",
+        "filled"
+      ]
     },
     "scroll-area": {
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["auto", "always", "hover", "scroll", "glimpse"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "auto",
+        "always",
+        "hover",
+        "scroll",
+        "glimpse"
+      ]
     },
     "segment": {
-      "activationMode": ["automatic", "manual"],
-      "dir": ["ltr", "rtl"],
-      "fill": ["auto", "full"],
-      "orientation": ["vertical", "horizontal"],
-      "shape": ["rounded", "square"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "activationMode": [
+        "automatic",
+        "manual"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "fill": [
+        "auto",
+        "full"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "shape": [
+        "rounded",
+        "square"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "select": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -892,29 +1994,104 @@
         "left-start",
         "left-end"
       ],
-      "position": ["popper", "item-aligned"],
-      "positionStrategy": ["fixed", "absolute"],
-      "selectionBehavior": ["toggle", "replace"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "type": ["button", "submit", "reset"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "position": [
+        "popper",
+        "item-aligned"
+      ],
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "separator": {
-      "align": ["start", "center", "end"],
-      "border": ["solid", "dashed", "dotted"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "border": [
+        "solid",
+        "dashed",
+        "dotted"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "sheet": {
-      "alertType": ["success", "warning", "info", "error", "DialogConfirm"],
-      "dir": ["ltr", "rtl"],
-      "side": ["top", "right", "bottom", "left"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "alertType": [
+        "success",
+        "warning",
+        "info",
+        "error",
+        "DialogConfirm"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "side": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "skeleton": {
-      "shape": ["auto", "rounded"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "shape": [
+        "auto",
+        "rounded"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "slider": {
       "color": [
@@ -927,10 +2104,26 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "thumbAlignment": ["overflow", "contain"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "thumbAlignment": [
+        "overflow",
+        "contain"
+      ]
     },
     "spinner": {
       "color": [
@@ -943,23 +2136,56 @@
         "info",
         "carbon"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "split-nav": {
-      "dir": ["ltr", "rtl"],
-      "expandStrategy": ["keep", "selected"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "expandStrategy": [
+        "keep",
+        "selected"
+      ],
       "mode": [
         "dual-vertical",
         "vertical-horizontal",
         "horizontal-vertical",
         "horizontal-dual-vertical"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "splitter": {
-      "dir": ["ltr", "rtl"],
-      "direction": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "direction": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "stepper": {
       "color": [
@@ -972,9 +2198,22 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "switch": {
       "color": [
@@ -987,23 +2226,75 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "shape": ["rounded", "square"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "shape": [
+        "rounded",
+        "square"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "table": {
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "variant": ["TableVirtualSpacerRow", "simple"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "variant": [
+        "TableVirtualSpacerRow",
+        "simple"
+      ]
     },
     "tabs": {
-      "activationMode": ["automatic", "manual"],
-      "dir": ["ltr", "rtl"],
-      "fill": ["auto", "full"],
-      "orientation": ["vertical", "horizontal"],
-      "shape": ["rounded", "square"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "activationMode": [
+        "automatic",
+        "manual"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "fill": [
+        "auto",
+        "full"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "shape": [
+        "rounded",
+        "square"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "tag": {
       "color": [
@@ -1016,9 +2307,26 @@
         "info",
         "carbon"
       ],
-      "shape": ["auto", "rounded"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "variant": ["solid", "pure", "outline", "soft", "ghost", "raw"]
+      "shape": [
+        "auto",
+        "rounded"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "variant": [
+        "solid",
+        "pure",
+        "outline",
+        "soft",
+        "ghost",
+        "raw"
+      ]
     },
     "tags-input": {
       "autocomplete": [
@@ -1046,30 +2354,98 @@
         "cc-csc",
         "transaction-amount"
       ],
-      "dir": ["ltr", "rtl"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "textarea": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "theme-base-select": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "theme-customizer": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "theme-mode-segment": {
-      "activationMode": ["automatic", "manual"],
-      "dir": ["ltr", "rtl"],
-      "fill": ["auto", "full"],
-      "orientation": ["vertical", "horizontal"],
-      "shape": ["rounded", "square"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "activationMode": [
+        "automatic",
+        "manual"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "fill": [
+        "auto",
+        "full"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "shape": [
+        "rounded",
+        "square"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "theme-mode-select": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "theme-mode-switch": {
       "color": [
@@ -1082,24 +2458,108 @@
         "info",
         "carbon"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
+    },
+    "theme-mode-toggle": {
+      "color": [
+        "primary",
+        "secondary",
+        "accent",
+        "destructive",
+        "success",
+        "warning",
+        "info",
+        "carbon"
+      ],
+      "shape": [
+        "auto",
+        "rounded",
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "variant": [
+        "link",
+        "solid",
+        "pure",
+        "outline",
+        "soft",
+        "ghost",
+        "plain",
+        "dashed"
+      ]
     },
     "theme-primary-select": {
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "time-field": {
-      "dir": ["ltr", "rtl"],
-      "granularity": ["hour", "minute", "second"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "granularity": [
+        "hour",
+        "minute",
+        "second"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "time-range-field": {
-      "dir": ["ltr", "rtl"],
-      "granularity": ["hour", "minute", "second"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["start", "end"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "granularity": [
+        "hour",
+        "minute",
+        "second"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "start",
+        "end"
+      ]
     },
     "toast": {
-      "dir": ["ltr", "rtl"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "position": [
         "top-right",
         "bottom-right",
@@ -1108,7 +2568,14 @@
         "top-center",
         "bottom-center"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ]
     },
     "toggle": {
       "color": [
@@ -1121,10 +2588,30 @@
         "info",
         "carbon"
       ],
-      "shape": ["auto", "rounded", "square", "circle"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "variant": ["outline", "soft", "ghost"]
+      "shape": [
+        "auto",
+        "rounded",
+        "square",
+        "circle"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "outline",
+        "soft",
+        "ghost"
+      ]
     },
     "toggle-group": {
       "color": [
@@ -1137,12 +2624,36 @@
         "info",
         "carbon"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "selectionBehavior": ["toggle", "replace"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"],
-      "variant": ["outline", "soft", "ghost"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ],
+      "variant": [
+        "outline",
+        "soft",
+        "ghost"
+      ]
     },
     "toolbar": {
       "ariaCurrentValue": [
@@ -1154,16 +2665,46 @@
         "step",
         "location"
       ],
-      "dir": ["ltr", "rtl"],
-      "orientation": ["vertical", "horizontal"],
-      "selectionBehavior": ["toggle", "replace"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "trailingSlash": ["append", "remove"],
-      "type": ["button", "submit", "reset"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "orientation": [
+        "vertical",
+        "horizontal"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "trailingSlash": [
+        "append",
+        "remove"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "tooltip": {
-      "align": ["start", "center", "end"],
-      "dir": ["ltr", "rtl"],
+      "align": [
+        "start",
+        "center",
+        "end"
+      ],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -1178,24 +2719,69 @@
         "left-start",
         "left-end"
       ],
-      "positionStrategy": ["fixed", "absolute"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "sticky": ["partial", "always"],
-      "updatePositionStrategy": ["always", "optimized"]
+      "positionStrategy": [
+        "fixed",
+        "absolute"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "sticky": [
+        "partial",
+        "always"
+      ],
+      "updatePositionStrategy": [
+        "always",
+        "optimized"
+      ]
     },
     "tree": {
-      "dir": ["ltr", "rtl"],
-      "selectionBehavior": ["toggle", "replace"],
-      "toggleBehavior": ["multiple", "single"]
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
+      "selectionBehavior": [
+        "toggle",
+        "replace"
+      ],
+      "toggleBehavior": [
+        "multiple",
+        "single"
+      ]
     },
     "tree-menu": {
-      "expandStrategy": ["keep", "selected"],
-      "side": ["right", "left"],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "type": ["button", "submit", "reset"]
+      "expandStrategy": [
+        "keep",
+        "selected"
+      ],
+      "side": [
+        "right",
+        "left"
+      ],
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "type": [
+        "button",
+        "submit",
+        "reset"
+      ]
     },
     "tree-nav": {
-      "dir": ["ltr", "rtl"],
+      "dir": [
+        "ltr",
+        "rtl"
+      ],
       "placement": [
         "top",
         "right",
@@ -1210,8 +2796,18 @@
         "left-start",
         "left-end"
       ],
-      "size": ["xs", "sm", "md", "lg", "xl", "2xl"],
-      "trigger": ["click", "hover"]
+      "size": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl"
+      ],
+      "trigger": [
+        "click",
+        "hover"
+      ]
     }
   }
 }

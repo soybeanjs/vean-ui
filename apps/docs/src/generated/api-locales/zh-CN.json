@@ -14253,6 +14253,18 @@
           "props": "ThemeModeSwitch 组件的属性。\n\n一个与当前活动的 `SConfigProvider` 主题绑定的上下文切换控件。 它显示\n当前*实际*的配色方案（因此 `auto` 偏好设置将体现为\n操作系统解析的浅色/深色模式），并在\n切换时锁定显式的 `light` / `dark` 偏好设置。要恢复 `auto` 模式，请使用 `SThemeModeSelect`。"
         }
       },
+      "packages_ui_src_components_theme_mode_toggle_types": {
+        "thememodetoggleprops": {
+          "members": {
+            "arialabel": "",
+            "color": "",
+            "shape": "",
+            "size": "",
+            "variant": ""
+          },
+          "props": ""
+        }
+      },
       "packages_ui_src_components_theme_primary_select_types": {
         "themeprimaryselectprops": {
           "members": {

@@ -331,7 +331,7 @@
                 "resolvedType": null,
                 "description": "",
                 "descriptionKey": null,
-                "sourcePath": "node_modules/.pnpm/@tanstack+virtual-core@3.19.8/node_modules/@tanstack/virtual-core/dist/esm/index.d.ts",
+                "sourcePath": "node_modules/.pnpm/@tanstack+virtual-core@3.19.9/node_modules/@tanstack/virtual-core/dist/esm/index.d.ts",
                 "typeParameters": [],
                 "external": true,
                 "members": [],

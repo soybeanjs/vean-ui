@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:28:42.215Z",
+  "generatedAt": "2026-10-30T13:58:09.645Z",
   "schemaVersion": 4,
   "components": {
     "accordion": {
@@ -954,6 +954,11 @@
       "component": "theme-mode-switch",
       "file": "theme-mode-switch.json",
       "symbols": ["ThemeModeSwitch"]
+    },
+    "theme-mode-toggle": {
+      "component": "theme-mode-toggle",
+      "file": "theme-mode-toggle.json",
+      "symbols": ["ThemeModeToggle"]
     },
     "theme-primary-select": {
       "component": "theme-primary-select",

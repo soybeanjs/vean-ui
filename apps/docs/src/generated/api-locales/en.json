@@ -10331,7 +10331,7 @@
           },
           "slots": "Slots for the AppShell component."
         },
-        "appshelluislot": "Available UI slots for the AppShell component.\n\n`layout*` slots are merged into the `SLayout` `ui` map instead of being\nrendered directly: they theme layout regions the shell does not own the\nmarkup of. `layoutUi` takes precedence over them.",
+        "appshelluislot": "Available UI slots for the AppShell component.\n\n`layout*` slots are merged into the `SLayout` `ui` map instead of being\nrendered directly: they theme layout regions the shell does not own the\nmarkup of. `layoutUi` takes precedence over them.\n\nThe content, tab, and footer regions have no slot of their own — the shell\nrenders no wrapper around them, so `layoutContent` / `layoutTab` /\n`layoutFooter` theme the layout's own regions. `header` stays a slot: it wraps\nthe `headerStart` / `headerCenter` / `headerEnd` regions.",
         "type": ""
       },
       "packages_ui_src_components_autocomplete_types": {

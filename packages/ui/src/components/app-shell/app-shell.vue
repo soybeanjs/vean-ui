@@ -631,38 +631,32 @@ function handleBreadcrumbClick(item: BreadcrumbOptionData) {
       </div>
     </template>
     <template #tab>
-      <div :class="ui.tab" data-vean-app-shell-tab>
-        <slot name="tabs">
-          <SPageTabs
-            v-if="showTabs"
-            v-bind="tabProps"
-            :size="size"
-            :items="tabItems"
-            :model-value="tabValue"
-            :ui="tabUi"
-            class="h-full grow-1"
-            @update:model-value="handleTabModelUpdate"
-            @update:items="handleTabsUpdate"
-            @click="handleTabClick"
-            @close="handleTabClose"
-            @pin="handleTabPin"
-            @contextmenu="handleTabContextmenu"
-            @select-context-menu="handleTabSelectContextMenu"
-            @tab-drag-start="handleTabDragStart"
-            @tab-drag-move="handleTabDragMove"
-            @tab-drag-reorder="handleTabDragReorder"
-            @tab-drag-end="handleTabDragEnd"
-          />
-        </slot>
-      </div>
+      <slot name="tabs">
+        <SPageTabs
+          v-if="showTabs"
+          v-bind="tabProps"
+          :size="size"
+          :items="tabItems"
+          :model-value="tabValue"
+          :ui="tabUi"
+          class="h-full grow-1"
+          @update:model-value="handleTabModelUpdate"
+          @update:items="handleTabsUpdate"
+          @click="handleTabClick"
+          @close="handleTabClose"
+          @pin="handleTabPin"
+          @contextmenu="handleTabContextmenu"
+          @select-context-menu="handleTabSelectContextMenu"
+          @tab-drag-start="handleTabDragStart"
+          @tab-drag-move="handleTabDragMove"
+          @tab-drag-reorder="handleTabDragReorder"
+          @tab-drag-end="handleTabDragEnd"
+        />
+      </slot>
     </template>
-    <div :class="ui.content" data-vean-app-shell-content>
-      <slot />
-    </div>
+    <slot />
     <template #footer>
-      <div :class="ui.footer" data-vean-app-shell-footer>
-        <slot name="footer" />
-      </div>
+      <slot name="footer" />
     </template>
   </SLayout>
 </template>

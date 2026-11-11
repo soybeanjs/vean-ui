@@ -88,7 +88,7 @@ describe('SAppShell', () => {
       expect(wrapper.find('[data-vean-app-shell-sidebar]').exists()).toBe(true);
       expect(wrapper.find('[data-vean-app-shell-header]').exists()).toBe(true);
       expect(wrapper.find('[data-vean-app-shell-menu-sidebar]').exists()).toBe(true);
-      expect(wrapper.find('[data-vean-app-shell-content]').exists()).toBe(true);
+      expect(wrapper.find('[data-vean-layout-content]').exists()).toBe(true);
       expect(wrapper.findComponent(STreeMenu).exists()).toBe(true);
       expect(wrapper.find('[data-vean-layout-root]').attributes('data-orientation')).toBe('horizontal');
 
@@ -261,6 +261,22 @@ describe('SAppShell', () => {
       expect(withTabs.findComponent(SPageTabs).exists()).toBe(true);
 
       withTabs.unmount();
+    });
+
+    it('themes the layout own content, tab, and footer regions', () => {
+      const wrapper = mount(SAppShell, {
+        props: { items, tabs, tabValue: 'overview' },
+        slots: { default: '<span>Page</span>', footer: '<span>Footer</span>' },
+        attachTo: document.body
+      });
+
+      // No wrapper of its own: the shell's region classes land on the layout's nodes.
+      expect(wrapper.find('[data-vean-layout-content]').text()).toContain('Page');
+      expect(wrapper.find('[data-vean-layout-content]').classes()).toContain('w-full');
+      expect(wrapper.find('[data-vean-layout-tab]').classes()).toContain('justify-between');
+      expect(wrapper.find('[data-vean-layout-footer]').text()).toContain('Footer');
+
+      wrapper.unmount();
     });
 
     it('applies the root class and per-slot ui overrides', () => {

@@ -10331,7 +10331,7 @@
           },
           "slots": "AppShell 组件的插槽。"
         },
-        "appshelluislot": "AppShell 组件可用的 UI 插槽。\n\n`layout*` 插槽会被合并到 `SLayout` 的 `ui` 映射中，而不是\n直接渲染：它们用于为 shell 不拥有其\n标记的布局区域应用主题。`layoutUi` 的优先级高于它们。",
+        "appshelluislot": "AppShell 组件可用的 UI 插槽。\n\n`layout*` 插槽会被合并到 `SLayout` 的 `ui` 映射中，而不是\n直接渲染：它们用于为 shell 不拥有其\n标记的布局区域应用主题。`layoutUi` 的优先级高于它们。\n\n内容、页签与页脚区域没有自己的插槽 —— shell 不会为它们渲染包裹层，\n所以 `layoutContent` / `layoutTab` /\n`layoutFooter` 作用于布局自己的区域。`header` 仍是插槽：\n它包裹 `headerStart` / `headerCenter` / `headerEnd` 三个区域。",
         "type": ""
       },
       "packages_ui_src_components_autocomplete_types": {

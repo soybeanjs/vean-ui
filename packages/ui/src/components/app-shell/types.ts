@@ -113,6 +113,11 @@ export interface AppShellMenuUi {
  * `layout*` slots are merged into the `SLayout` `ui` map instead of being
  * rendered directly: they theme layout regions the shell does not own the
  * markup of. `layoutUi` takes precedence over them.
+ *
+ * The content, tab, and footer regions have no slot of their own — the shell
+ * renders no wrapper around them, so `layoutContent` / `layoutTab` /
+ * `layoutFooter` theme the layout's own regions. `header` stays a slot: it wraps
+ * the `headerStart` / `headerCenter` / `headerEnd` regions.
  */
 export type AppShellUiSlot =
   | 'root'
@@ -133,9 +138,6 @@ export type AppShellUiSlot =
   | 'breadcrumb'
   | 'breadcrumbTrigger'
   | 'breadcrumbTriggerIcon'
-  | 'tab'
-  | 'content'
-  | 'footer'
   | 'layoutHeader'
   | 'layoutTab'
   | 'layoutContent'

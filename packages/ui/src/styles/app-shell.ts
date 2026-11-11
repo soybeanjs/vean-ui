@@ -61,13 +61,10 @@ export const appShellVariants = scv({
     breadcrumb: 'min-w-0 overflow-hidden group-data-[mobile=true]/layout:hidden',
     breadcrumbTrigger: 'inline-flex min-w-0 items-center [&>span]:truncate',
     breadcrumbTriggerIcon: 'shrink-0 opacity-70',
-    tab: 'flex justify-between h-full',
-    content: 'w-full',
-    footer: 'flex items-center h-full w-full px-[--sl-spacing]',
     layoutHeader: 'border-b border-border',
-    layoutTab: 'border-b border-border',
-    layoutContent: '',
-    layoutFooter: 'border-t border-border'
+    layoutTab: 'flex justify-between border-b border-border',
+    layoutContent: 'w-full',
+    layoutFooter: 'flex items-center px-[--sl-spacing] border-t border-border'
   },
   variants: {
     size: {

@@ -75,7 +75,7 @@
               {
                 "name": "LayoutUi",
                 "kind": "typeAlias",
-                "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; sidebar: ClassValue; tab: ClassValue; footer: ClassValue; sidebarRoot: ClassValue; sidebarWrapper: ClassValue; sidebarGapHandler: ClassValue; main: ClassValue; rail: ClassValue; mobile: ClassValue; mobileDrawer: ClassValue; mobileOverlay: ClassValue; headerPlaceholder: ClassValue; tabPlaceholder: ClassValue; footerPlaceholder: ClassValue; }",
+                "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; sidebar: ClassValue; sidebarRoot: ClassValue; sidebarWrapper: ClassValue; sidebarGapHandler: ClassValue; main: ClassValue; tab: ClassValue; footer: ClassValue; rail: ClassValue; mobile: ClassValue; mobileDrawer: ClassValue; mobileOverlay: ClassValue; headerPlaceholder: ClassValue; tabPlaceholder: ClassValue; footerPlaceholder: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Layout component.",
                 "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutui",

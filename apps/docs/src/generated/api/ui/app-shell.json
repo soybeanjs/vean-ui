@@ -50,9 +50,9 @@
               {
                 "name": "AppShellUiSlot",
                 "kind": "typeAlias",
-                "type": "'root' | 'header' | 'trigger' | 'content' | 'sidebar' | 'logo' | 'logoMark' | 'logoTitle' | 'menuSidebar' | 'menuMount' | 'triggerRow' | 'triggerRail' | 'triggerCell' | 'headerStart' | 'headerCenter' | 'headerEnd' | 'breadcrumb' | 'breadcrumbTrigger' | 'breadcrumbTriggerIcon' | 'tab' | 'footer' | 'layoutHeader' | 'layoutTab' | 'layoutContent' | 'layoutFooter'",
+                "type": "'root' | 'header' | 'trigger' | 'sidebar' | 'logo' | 'logoMark' | 'logoTitle' | 'menuSidebar' | 'menuMount' | 'triggerRow' | 'triggerRail' | 'triggerCell' | 'headerStart' | 'headerCenter' | 'headerEnd' | 'breadcrumb' | 'breadcrumbTrigger' | 'breadcrumbTriggerIcon' | 'layoutHeader' | 'layoutTab' | 'layoutContent' | 'layoutFooter'",
                 "resolvedType": null,
-                "description": "Available UI slots for the AppShell component.\n\n`layout*` slots are merged into the `SLayout` `ui` map instead of being\nrendered directly: they theme layout regions the shell does not own the\nmarkup of. `layoutUi` takes precedence over them.",
+                "description": "Available UI slots for the AppShell component.\n\n`layout*` slots are merged into the `SLayout` `ui` map instead of being\nrendered directly: they theme layout regions the shell does not own the\nmarkup of. `layoutUi` takes precedence over them.\n\nThe content, tab, and footer regions have no slot of their own — the shell\nrenders no wrapper around them, so `layoutContent` / `layoutTab` /\n`layoutFooter` theme the layout's own regions. `header` stays a slot: it wraps\nthe `headerStart` / `headerCenter` / `headerEnd` regions.",
                 "descriptionKey": "api.generated.packages_ui_src_components_app_shell_types.appshelluislot",
                 "sourcePath": "packages/ui/src/components/app-shell/types.ts",
                 "typeParameters": [],
@@ -63,7 +63,7 @@
               {
                 "name": "UiClass",
                 "kind": "typeAlias",
-                "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; sidebar: ClassValue; logo: ClassValue; logoMark: ClassValue; logoTitle: ClassValue; menuSidebar: ClassValue; menuMount: ClassValue; triggerRow: ClassValue; triggerRail: ClassValue; triggerCell: ClassValue; headerStart: ClassValue; headerCenter: ClassValue; headerEnd: ClassValue; breadcrumb: ClassValue; breadcrumbTrigger: ClassValue; breadcrumbTriggerIcon: ClassValue; tab: ClassValue; footer: ClassValue; layoutHeader: ClassValue; layoutTab: ClassValue; layoutContent: ClassValue; layoutFooter: ClassValue; }",
+                "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; sidebar: ClassValue; logo: ClassValue; logoMark: ClassValue; logoTitle: ClassValue; menuSidebar: ClassValue; menuMount: ClassValue; triggerRow: ClassValue; triggerRail: ClassValue; triggerCell: ClassValue; headerStart: ClassValue; headerCenter: ClassValue; headerEnd: ClassValue; breadcrumb: ClassValue; breadcrumbTrigger: ClassValue; breadcrumbTriggerIcon: ClassValue; layoutHeader: ClassValue; layoutTab: ClassValue; layoutContent: ClassValue; layoutFooter: ClassValue; }",
                 "resolvedType": null,
                 "description": "",
                 "descriptionKey": "api.generated.packages_aria_src_types_common.uiclass",
@@ -243,7 +243,7 @@
               {
                 "name": "LayoutUi",
                 "kind": "typeAlias",
-                "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; sidebar: ClassValue; tab: ClassValue; footer: ClassValue; sidebarRoot: ClassValue; sidebarWrapper: ClassValue; sidebarGapHandler: ClassValue; main: ClassValue; rail: ClassValue; mobile: ClassValue; mobileDrawer: ClassValue; mobileOverlay: ClassValue; headerPlaceholder: ClassValue; tabPlaceholder: ClassValue; footerPlaceholder: ClassValue; }",
+                "type": "{ root: ClassValue; header: ClassValue; trigger: ClassValue; content: ClassValue; sidebar: ClassValue; sidebarRoot: ClassValue; sidebarWrapper: ClassValue; sidebarGapHandler: ClassValue; main: ClassValue; tab: ClassValue; footer: ClassValue; rail: ClassValue; mobile: ClassValue; mobileDrawer: ClassValue; mobileOverlay: ClassValue; headerPlaceholder: ClassValue; tabPlaceholder: ClassValue; footerPlaceholder: ClassValue; }",
                 "resolvedType": null,
                 "description": "UI class overrides for the Layout component.",
                 "descriptionKey": "api.generated.packages_aria_src_components_layout_types.layoutui",

@@ -3775,6 +3775,12 @@
             "6adf8": "update docs api and skills",
             "891fd": "render the field label and description only when provided",
             "ca020": "add a cycling theme mode button"
+          },
+          "5": {
+            "91970": "bind the avatar url so template codegen keeps array lookups",
+            "5005d": "update deps",
+            "dcfa4": "update docs api",
+            "e3679": "drop duplicate content, tab, and footer ui slots"
           }
         }
       }

@@ -1,5 +1,27 @@
 # Changelog
 
+## [v0.51.5](https://github.com/soybeanjs/vean-ui/compare/v0.51.4...v0.51.5) (2026-11-11)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **app-shell**: drop duplicate content, tab, and footer ui slots &nbsp;-&nbsp; by @soybeanjs [<samp>(e3679)</samp>](https://github.com/soybeanjs/vean-ui/commit/e36796bef)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **docs**: bind the avatar url so template codegen keeps array lookups &nbsp;-&nbsp; by @soybeanjs [<samp>(91970)</samp>](https://github.com/soybeanjs/vean-ui/commit/919703a71)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update docs api &nbsp;-&nbsp; by @soybeanjs [<samp>(dcfa4)</samp>](https://github.com/soybeanjs/vean-ui/commit/dcfa43422)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(5005d)</samp>](https://github.com/soybeanjs/vean-ui/commit/5005decf0)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.51.4](https://github.com/soybeanjs/vean-ui/compare/v0.51.3...v0.51.4) (2026-10-30)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features

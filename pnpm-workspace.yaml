@@ -4,9 +4,9 @@ packages:
   # ubean writes a runtime package.json into `dist/server`; keep build output out of the workspace.
   - '!apps/**/dist/**'
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@latest
-  vite-plus: latest
-  typescript: npm:typescript-native-bridge@latest
+  vite: npm:@voidzero-dev/vite-plus-core@1.6.0
+  vite-plus: 1.6.0
+  typescript: npm:typescript-native-bridge@6.0.3-bridge.19.tsgo.7.0.2
 overrides:
   vite: 'catalog:'
   vitest: '5.0.5'

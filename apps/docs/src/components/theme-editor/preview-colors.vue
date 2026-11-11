@@ -45,6 +45,12 @@ const primaryRampLabels = ['50', '100', '200', '300', '400', '500', '600', '700'
 const sliderValue = ref([56]);
 const ratingValue = ref(3);
 const page = ref(2);
+
+// Bound, not a literal attribute: `@vue/language-core` turns every `//` in a
+// component's literal props into a comment while generating the template code,
+// so a literal `https://…` corrupts the generated code and breaks `arr[i]`
+// lookups further down the template.
+const avatarSrc = 'https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212';
 </script>
 
 <template>
@@ -81,7 +87,7 @@ const page = ref(2);
       <SSlider v-model="sliderValue" class="w-40" :thumb-props="{ 'aria-label': 'Progress' }" />
       <SProgress :model-value="64" class="w-40" />
       <SRating v-model="ratingValue" />
-      <SAvatar src="https://img.soybeanjs.dev/logo-vean-ui.svg?v=202609141212" fallback-label="S" />
+      <SAvatar :src="avatarSrc" fallback-label="S" />
       <SPagination v-model:page="page" :total="120" :items-per-page="10" />
     </div>
   </div>

@@ -10,7 +10,7 @@ const active = ref('overview');
 // renders, and takes precedence over the `layout*` defaults the shell injects.
 const ui = {
   header: 'bg-muted/40',
-  footer: 'justify-center text-muted-foreground'
+  layoutFooter: 'justify-center text-muted-foreground'
 } satisfies AppShellUi;
 
 const layoutUi = {

@@ -11,13 +11,13 @@ const { t, locale } = useI18n();
 const route = useRoute();
 const router = useRouter();
 
-const iconMap: Record<string, string> = {
+const iconMap: Record<Locale, string> = {
   en: 'lucide:spell-check-2',
   zh: 'lucide:languages'
 };
-const locales = ['zh', 'en'];
+const locales: Locale[] = ['zh', 'en'];
 
-const items = computed<MenuOptionData<string>[]>(() => {
+const items = computed<MenuOptionData<Locale>[]>(() => {
   return locales.map(item => {
     return {
       label: t(`locale.${snakeCase(item)}`),
